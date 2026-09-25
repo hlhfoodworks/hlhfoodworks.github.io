@@ -720,9 +720,10 @@ const html = `<!DOCTYPE html>
     /* Fix iOS zoom on search focus: font-size must be ≥16px */
     #search { font-size: 16px; }
 
-    /* Search results: auto-size up to 4 results, scroll beyond */
-    #search-results { max-height: none; }
-    #search-results .sr-item { min-height: 44px; display: flex; align-items: center; }
+    /* Search results: sized by JS to show label + up to 4 items, scroll beyond */
+    #search-results { overflow-y: auto; }
+    #search-results .sr-item { padding-top: 5px; padding-bottom: 5px; }
+    #search-results .sr-label { padding-top: 5px; padding-bottom: 3px; }
   }
 </style>
 </head>
@@ -856,6 +857,7 @@ const html = `<!DOCTYPE html>
   function runSearch() {
     const q = search.value.trim().toLowerCase();
     searchResults.innerHTML = '';
+    searchResults.style.maxHeight = '';
     if (!q) { searchResults.style.display = 'none'; return; }
 
     const matches = allRecipes.filter(function (r) {
@@ -882,6 +884,20 @@ const html = `<!DOCTYPE html>
       });
     }
     searchResults.style.display = 'block';
+
+    // On narrow screens, cap height to show label + up to 4 items (5 lines max), scroll beyond
+    if (window.innerWidth <= 480) {
+      searchResults.style.maxHeight = 'none';
+      const children = searchResults.children;
+      if (children.length > 0) {
+        const maxVisible = Math.min(children.length, 5); // label counts as 1
+        let h = 0;
+        for (let i = 0; i < maxVisible; i++) {
+          h += children[i].getBoundingClientRect().height;
+        }
+        searchResults.style.maxHeight = h + 'px';
+      }
+    }
   }
 
   favBtn.addEventListener('click', function () {
