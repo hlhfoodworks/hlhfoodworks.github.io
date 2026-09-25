@@ -111,6 +111,17 @@
   }
   #fav-toggle:hover { background: #4e3522; }
   #fav-toggle .star { color: var(--fav); }
+  #fav-toggle.active {
+    background: var(--fav);
+    color: #1a0e00;
+    font-weight: bold;
+  }
+  #fav-toggle.active .star { color: #1a0e00; }
+  #fav-toggle.active:hover { background: #e09a10; }
+  .nav-recipe.nav-hidden { display: none; }
+  .nav-cluster.nav-hidden { display: none; }
+  .nav-sub.nav-hidden { display: none; }
+  .nav-section.nav-hidden { display: none; }
 
   /* ── Nav tree ── */
   #nav-tree { flex: 1; overflow-y: auto; padding: 6px 0 24px; }
@@ -3183,12 +3194,12 @@
 
   favBtn.addEventListener('click', function () {
     favOnly = !favOnly;
-    favBtn.style.background = favOnly ? '#4e3522' : '';
-    favBtn.querySelector('.star').style.color = favOnly ? '#f5c842' : '';
+    favBtn.classList.toggle('active', favOnly);
     applyFilters();
   });
 
   function applyFilters() {
+    // ── Main content panel ────────────────────────────────────────────────
     allRecipes.forEach(function (r) {
       const favMatch = !favOnly || r.dataset.fav === '1';
       r.classList.toggle('hidden', !favMatch);
@@ -3204,6 +3215,39 @@
     document.querySelectorAll('.section').forEach(function (s) {
       const visible = s.querySelectorAll('.recipe:not(.hidden)').length > 0;
       s.classList.toggle('all-hidden', !visible && favOnly);
+    });
+
+    // ── Sidebar nav ───────────────────────────────────────────────────────
+    // Build a set of favorite recipe titles for quick lookup
+    const favTitles = new Set();
+    allRecipes.forEach(function (r) {
+      if (r.dataset.fav === '1') favTitles.add(r.dataset.title);
+    });
+
+    // Show/hide individual recipe nav items
+    document.querySelectorAll('.nav-recipe').forEach(function (li) {
+      const link = li.querySelector('.nav-recipe-link');
+      const title = link ? link.dataset.recipeTitle : '';
+      const show = !favOnly || favTitles.has(title);
+      li.classList.toggle('nav-hidden', !show);
+    });
+
+    // Hide cluster nav items if all their recipes are hidden
+    document.querySelectorAll('.nav-cluster').forEach(function (li) {
+      const anyVisible = li.querySelectorAll('.nav-recipe:not(.nav-hidden)').length > 0;
+      li.classList.toggle('nav-hidden', !anyVisible && favOnly);
+    });
+
+    // Hide subsection nav items if all their recipes are hidden
+    document.querySelectorAll('.nav-sub').forEach(function (li) {
+      const anyVisible = li.querySelectorAll('.nav-recipe:not(.nav-hidden)').length > 0;
+      li.classList.toggle('nav-hidden', !anyVisible && favOnly);
+    });
+
+    // Hide section nav items if all their recipes are hidden
+    document.querySelectorAll('.nav-section').forEach(function (li) {
+      const anyVisible = li.querySelectorAll('.nav-recipe:not(.nav-hidden)').length > 0;
+      li.classList.toggle('nav-hidden', !anyVisible && favOnly);
     });
   }
 })();
