@@ -1,0 +1,7 @@
+﻿node_modules/
+*.docx
+*.pdf
+cookbook_text.txt
+toc_pages.js
+*.tmp
+.DS_Store
