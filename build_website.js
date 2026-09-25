@@ -87,6 +87,19 @@ const CLUSTER_MAP = {
   'Pasta with Sausage, Basil, and Mustard':              'Italian',
   // Noodles: Asian — Japanese
   'Stir-Fried Udon Noodles With Pork and Scallions':    'Japanese',
+  // Lamb — Mediterranean/Greek
+  'Garlic & Rosemary Grilled Lamb Chops':                'Mediterranean/Greek',
+  // Lamb — Indian
+  'Luscious Tandoori Lamb Chops':                        'Indian',
+  // Beef — American
+  'Four Peppercorn Crusted Rotisserie Rib Roast':        'American',
+  // Ground Beef — American
+  'Taco Night!!':                                        'American',
+  // Dressings — American
+  'Horseradish Sauce':                                   'American',
+  'Cherry Barbecue Sauce':                               'American',
+  // Dressings — Latin/South American
+  'Authentic Chimichurri':                               'Latin/South American',
   // Turkey — American
   'Expertly Spiced and Glazed Roast Turkey':             'American',
   'Turkey and Quinoa Meatloaf':                          'American',

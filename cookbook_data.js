@@ -1622,9 +1622,149 @@ const data = {
             ]
           }
         ]},
-        { title: "Lamb", recipes: [] },
-        { title: "Beef", recipes: [] },
-        { title: "Ground Beef", recipes: [] },
+        { title: "Lamb", recipes: [
+          {
+            title: "Garlic & Rosemary Grilled Lamb Chops",
+            favorite: true,
+            servings: "Serves 4   |   Prep: 15 min   |   Cook: 10 min   |   Total: 25 min (plus 1 hr to overnight marinating)",
+            source: "Jannese, Delish D'Lites",
+            ingredientGroups: [
+              { label: "Marinade", ingredients: [
+                "4 cloves garlic, minced",
+                "1 Tbsp fresh rosemary, chopped",
+                "1 1/4 tsp kosher salt",
+                "1/2 tsp ground black pepper",
+                "Zest of 1 lemon",
+                "1/4 cup olive oil"
+              ]},
+              { label: "Chops", ingredients: [
+                "2 lbs lamb loin or rib chops, thick cut"
+              ]}
+            ],
+            steps: [
+              "Combine garlic, rosemary, salt, pepper, lemon zest, and olive oil in a measuring cup.",
+              "Pour marinade over lamb chops, flipping to coat completely. Cover and marinate in the fridge for at least 1 hour, or overnight.",
+              "Grill on medium-high heat for 7–10 minutes, until internal temperature reads 135°F.",
+              "Transfer to a plate, cover loosely with foil, and rest 5 minutes before serving."
+            ]
+          },
+          {
+            title: "Luscious Tandoori Lamb Chops",
+            servings: "Serves 4   |   Active: 30 min   |   Total: ~9 hrs (including overnight marinade)",
+            source: "Suvir Saran, Food & Wine",
+            ingredientGroups: [
+              { label: "Chops + marinade (overnight)", ingredients: [
+                "8 lamb rib chops (about 2 1/2 lbs)",
+                "3/4 cup whole-milk Greek yogurt",
+                "1/4 cup heavy cream",
+                "3 Tbsp fresh lemon juice",
+                "1 (3-inch) piece fresh ginger, peeled and minced",
+                "4 large garlic cloves, minced",
+                "1 Tbsp malt vinegar",
+                "1 Tbsp garam masala",
+                "1 Tbsp ground cumin",
+                "1 Tbsp paprika",
+                "1/2 tsp cayenne pepper",
+                "1/4 tsp ground mace (optional)",
+                "1/4 tsp freshly grated nutmeg",
+                "1 tsp kosher salt, plus more to season"
+              ]},
+              { label: "Before grilling (Step 3)", ingredients: [
+                "2 Tbsp vegetable oil"
+              ]},
+              { label: "Finish (Step 4)", ingredients: [
+                "3 Tbsp unsalted butter, melted"
+              ]}
+            ],
+            steps: [
+              "Score one side of each chop with three diagonal slashes, about 1/4 inch deep.",
+              "Whisk together yogurt, cream, lemon juice, ginger, garlic, malt vinegar, garam masala, cumin, paprika, cayenne, mace (if using), nutmeg, and salt. Add chops, turn to coat, cover, and refrigerate overnight.",
+              "Remove chops from refrigerator. Add oil to marinade, toss with chops, and let stand at room temperature 30 minutes.",
+              "Grill over moderately high heat for 8 minutes, turning once. Brush with melted butter and grill 2 more minutes per side for medium-rare. Season with salt and serve."
+            ]
+          }
+        ]},
+        { title: "Beef", recipes: [
+          {
+            id: "rib-roast",
+            title: "Four Peppercorn Crusted Rotisserie Rib Roast",
+            favorite: true,
+            servings: "Serves 4–6",
+            source: "Lauren Muhlheim (family recipe, December 2020)",
+            comments: [
+              {html: "Best served with <a href='#horseradish-sauce'>Horseradish Sauce</a>."}
+            ],
+            ingredientGroups: [
+              { label: "Peppercorn crust", ingredients: [
+                "2 tsp black peppercorns",
+                "2 tsp white peppercorns",
+                "2 tsp green peppercorns",
+                "1 tsp pink peppercorns",
+                "1 tsp salt"
+              ]},
+              { label: "Roast", ingredients: [
+                "1 boneless beef rib roast (3 1/2 to 4 lbs)"
+              ]}
+            ],
+            steps: [
+              "Place peppercorns in a zip-lock bag and crush with a rolling pin until coarsely ground. Stir in salt.",
+              "Coat the roast all over with the peppercorn-salt mixture.",
+              "Cook on rotisserie: 18–20 min per lb for rare (140°F internal), 25–30 min per lb for medium (160°F), or 35–40 min per lb for well done (170°F).",
+              "Remove from rotisserie and slice 1/4 inch thick. Serve with Horseradish Sauce."
+            ]
+          }
+        ]},
+        { title: "Ground Beef", recipes: [
+          {
+            title: "Taco Night!!",
+            servings: "Makes 12 tacos   |   Active: 35 min   |   Total: 3½ hrs",
+            source: "Molly Baz, The Club",
+            ingredientGroups: [
+              { label: "Prep — aromatics + spice mix (Step 1)", ingredients: [
+                "1 large onion, roughly chopped",
+                "6 cloves garlic, roughly chopped",
+                "1/4 cup fresh ginger, roughly chopped (from a 3- to 4-inch piece; no need to peel)",
+                "1 large bunch cilantro, stems thinly sliced, leaves reserved for serving",
+                "1 Tbsp ground cinnamon",
+                "2 1/2 tsp ground turmeric",
+                "2 tsp ground cardamom",
+                "1 1/2 tsp Aleppo pepper or red pepper flakes, plus more to taste",
+                "1/2 tsp ground cloves",
+                "Kosher salt and freshly ground black pepper"
+              ]},
+              { label: "Ragù (Step 2)", ingredients: [
+                "2 lbs (80% lean) ground beef",
+                "2 Tbsp olive oil, plus more as needed",
+                "1 1/2 cups whole milk",
+                "2 cups low-sodium chicken broth, plus more as needed",
+                "One (28-oz) can crushed or chopped tomatoes",
+                "1 Tbsp honey",
+                "Apple cider vinegar, to taste"
+              ]},
+              { label: "Fennel-apple slaw (Step 3)", ingredients: [
+                "2 Granny Smith apples, thinly sliced into half moons",
+                "1 large bulb fennel, preferably with fronds, halved and thinly sliced crosswise",
+                "1/3 cup apple cider vinegar",
+                "1 Tbsp honey"
+              ]},
+              { label: "Serve (Step 4)", ingredients: [
+                "One (12-count) package hard taco shells",
+                "Sour cream, for serving"
+              ]}
+            ],
+            steps: [
+              "Roughly chop onion, garlic, and ginger. Thinly slice cilantro stems; reserve leaves for serving. In a small bowl, mix cinnamon, turmeric, cardamom, Aleppo pepper, cloves, and 1 Tbsp salt.",
+              "Break ground beef into 4 pieces and shape into rough balls. Season all over with 1 Tbsp plus 1 tsp salt.",
+              "Heat a large Dutch oven over high heat for 2 full minutes. Add olive oil, swirl to coat, and add beef. Sear without moving until deeply browned and crusty on the underside, 6–10 minutes. Flip and cook until the second sides are deeply golden and a fond has formed on the bottom, 4–6 minutes more. (Meat will not be cooked through at this point.)",
+              "Remove meat to a plate. Add more olive oil if the pot is dry. Reduce heat to medium-high and add onions, garlic, ginger, and cilantro stems. Sauté, stirring occasionally, until translucent and just starting to turn golden, 5–8 minutes.",
+              "Return meat and any accumulated juices to the pot. Sprinkle the spice mix over everything and stir, breaking meat into roughly ping-pong–sized balls, until fragrant, 2–3 minutes.",
+              "Add milk, chicken broth, tomatoes, and 1 Tbsp honey. Stir, scraping the bottom to release the fond. Bring to a low boil, then partially cover and reduce to a gentle simmer. Cook, stirring occasionally and adding splashes of broth as needed to maintain a saucy, chili-like consistency, until meat is tender and sauce is reduced, 1 hour 45 minutes to 2 hours 15 minutes. (Going 2½–3 hours makes the meat even more tender — add more broth as needed.) Remove from heat and season to taste with salt, Aleppo pepper, and a big splash of apple cider vinegar. Keep warm. Do ahead: can be made up to 2 days ahead; rewarm gently on the stovetop.",
+              "While the ragù braises, make the slaw: combine sliced apples, fennel, half the reserved cilantro leaves, and fennel fronds (roughly chopped, if you have them) in a large bowl. Dress with 1/3 cup apple cider vinegar and 1 Tbsp honey; toss to coat. Season with salt and pepper. Keep chilled until serving.",
+              "Preheat oven to 375°F. Place taco shells on a baking sheet and bake until just warm, 4 minutes.",
+              "Fill shells with ragù and a dollop of sour cream. Top with cilantro leaves and fennel-apple slaw. Serve immediately."
+            ]
+          }
+        ]},
         { title: "Fish", recipes: [] },
         { title: "Shellfish", recipes: [] },
         { title: "Other", recipes: [] }
@@ -2356,6 +2496,79 @@ const data = {
           ],
           steps: [
             "In a small bowl, whisk together the olive oil, vinegar, garlic, oregano, mustard, salt, and several grinds of pepper."
+          ]
+        },
+        {
+          id: "horseradish-sauce",
+          title: "Horseradish Sauce",
+          favorite: true,
+          servings: "Serves 8   |   Total: 5 min",
+          source: "CAROL46, Allrecipes",
+          comments: [
+            {html: "A classic accompaniment to <a href='#rib-roast'>Four Peppercorn Crusted Rotisserie Rib Roast</a>. Note: prepared horseradish in the jar already contains vinegar — you may want to reduce or omit the added cider vinegar. Can also be made with nonfat sour cream and low-fat mayo."}
+          ],
+          ingredientGroups: [
+            { ingredients: [
+              "1/2 cup sour cream",
+              "3 Tbsp mayonnaise",
+              "2 Tbsp prepared horseradish",
+              "1 Tbsp cider vinegar",
+              "1/8 tsp mustard powder",
+              "1/8 tsp cayenne pepper",
+              "Salt and freshly ground black pepper, to taste"
+            ]}
+          ],
+          steps: [
+            "Whisk all ingredients together in a small bowl until smooth and creamy. Season to taste with salt and pepper. Store covered in the refrigerator for up to 3 days."
+          ]
+        },
+        {
+          title: "Cherry Barbecue Sauce",
+          favorite: true,
+          servings: "Makes about 3½ cups   |   Total: 30 min",
+          source: "Ilene Harrington, Taste of Home",
+          ingredientGroups: [
+            { label: "Sauté", ingredients: [
+              "1 medium onion, chopped",
+              "2 Tbsp butter",
+              "2 garlic cloves, minced"
+            ]},
+            { label: "Sauce", ingredients: [
+              "2 cups fresh or frozen dark sweet cherries, pitted and coarsely chopped",
+              "1 cup ketchup",
+              "2/3 cup packed brown sugar",
+              "1/4 cup cider vinegar",
+              "1 Tbsp Worcestershire sauce",
+              "2 tsp ground mustard",
+              "1/2 tsp pepper",
+              "1/8 tsp Liquid Smoke (optional)"
+            ]}
+          ],
+          steps: [
+            "In a large saucepan, sauté onion in butter until tender, about 5 minutes. Add garlic; cook 1 minute longer.",
+            "Stir in remaining ingredients. Cook uncovered over medium-low heat, stirring occasionally, until cherries are tender and sauce has thickened, about 20 minutes."
+          ]
+        },
+        {
+          title: "Authentic Chimichurri",
+          servings: "Serves 8   |   Total: 10 min (ideally rests 2 hrs)",
+          source: "Karina Carrel, Cafe Delites",
+          ingredientGroups: [
+            { ingredients: [
+              "1/2 cup olive oil",
+              "2 Tbsp red wine vinegar",
+              "1/2 cup fresh parsley, finely chopped",
+              "3–4 cloves garlic, finely chopped or minced",
+              "2 small red chilies (or 1), deseeded and finely chopped (about 1 Tbsp)",
+              "3/4 tsp dried oregano",
+              "1 tsp coarse salt",
+              "1/2 tsp pepper"
+            ]}
+          ],
+          steps: [
+            "Finely chop garlic and chili.",
+            "Mix all ingredients together in a bowl until well combined.",
+            "Let sit at least 5–10 minutes before serving (ideally 2 hours for fuller flavor). Use to baste meats while grilling, or serve as a condiment."
           ]
         }
       ]
