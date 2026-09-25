@@ -343,7 +343,18 @@
       position: static;
       height: auto;
     }
-    #nav.nav-open { display: flex; }
+    /* When open, fix to viewport so it's visible regardless of scroll position */
+    #nav.nav-open {
+      display: flex;
+      position: fixed;
+      top: 47px; /* sits just below the mobile header bar */
+      left: 0;
+      right: 0;
+      z-index: 99;
+      max-height: calc(80vh - 47px);
+      overflow-y: auto;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+    }
     /* Hide the header inside nav since mobile-header replaces it */
     #nav-header { display: none; }
 
