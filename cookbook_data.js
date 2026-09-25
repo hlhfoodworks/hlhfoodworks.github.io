@@ -1215,7 +1215,60 @@ const data = {
     {
       title: "Vegetarian Mains",
       subsections: [
-        { title: "Vegetables", recipes: [] },
+        { title: "Vegetables", recipes: [
+          {
+            title: "Eggplant Parmesan",
+            servings: "Serves 6–8   |   Prep: 20 minutes   |   Cook: 40 minutes   |   Total: 1 hour",
+            source: "https://www.loveandlemons.com/eggplant-parmesan/",
+            ingredientGroups: [
+              { label: "Eggplant", ingredients: [
+                "2 large eggplants, cut into ¼-inch-thick rounds"
+              ]},
+              { label: "Egg wash", ingredients: [
+                "3 large eggs, beaten"
+              ]},
+              { label: "Panko coating", ingredients: [
+                "1½ cups panko breadcrumbs",
+                "1 cup grated Parmesan cheese (of the 1¼ cups total)",
+                "2 teaspoons dried oregano",
+                "2 tablespoons fresh thyme leaves",
+                "½ teaspoon Aleppo pepper or red pepper flakes",
+                "½ teaspoon sea salt",
+                "Freshly ground black pepper",
+                "Extra-virgin olive oil, for drizzling"
+              ]},
+              { label: "Assembly", ingredients: [
+                "28 ounces marinara sauce",
+                "2 large fresh mozzarella balls, thinly sliced (or one package shredded mozzarella)",
+                "¼ cup grated Parmesan cheese (remaining from the 1¼ cups total)",
+                "Extra-virgin olive oil, for drizzling",
+                "Sea salt, for sprinkling"
+              ]},
+              { label: "To serve", ingredients: [
+                "⅓ cup fresh basil leaves"
+              ]}
+            ],
+            steps: [
+              "Preheat the oven to 400°F and line 2 baking sheets with parchment paper.",
+              { lead: "Set up the breading stations:", bullets: [
+                "Beat the eggs in a shallow bowl.",
+                "In a second shallow bowl, combine the panko, 1 cup Parmesan, oregano, thyme, Aleppo pepper, salt, and several grinds of black pepper."
+              ]},
+              { lead: "Bread and bake the eggplant:", bullets: [
+                "Dip each eggplant slice in the egg wash, then press into the panko mixture to coat on all sides.",
+                "Arrange in a single layer on the baking sheets. Drizzle with olive oil.",
+                "Bake 18–25 minutes, until tender and golden brown. (Use convection setting if available for extra crispness.)"
+              ]},
+              { lead: "Assemble and bake:", bullets: [
+                "Spread ½ cup marinara in the bottom of a 9×13-inch baking dish.",
+                "Layer half the eggplant, then 1 cup marinara, then half the mozzarella. Repeat with the remaining eggplant, remaining marinara, and remaining mozzarella.",
+                "Top with the remaining ¼ cup Parmesan, a drizzle of olive oil, and a few pinches of sea salt.",
+                "Bake at 400°F for 20 minutes, until the cheese is melted and bubbling."
+              ]},
+              "Turn the oven to broil and broil for 2–4 minutes, until the cheese is browned in spots. Remove from the oven, top with fresh basil, and serve."
+            ]
+          }
+        ]},
         { title: "Tofu", recipes: [] },
         { title: "Mushroom", recipes: [] }
       ]

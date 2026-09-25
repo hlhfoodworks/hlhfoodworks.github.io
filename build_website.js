@@ -24,6 +24,8 @@ const CLUSTER_MAP = {
   'D.L. Jardine\'s Fajita Marinade':                     'Latin/South American',
   'Peruvian Roasted Chicken With Spicy Cilantro Sauce':  'Latin/South American',
   'Slow-Cooker Chicken Mole':                             'Latin/South American',
+  // Vegetables — Italian
+  'Eggplant Parmesan':                                    'Italian',
   // Chicken — Italian
   'Chicken Cacciatore':                                   'Italian',
   'Chicken Piccata':                                      'Italian',
