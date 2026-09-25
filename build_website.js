@@ -645,9 +645,75 @@ const html = `<!DOCTYPE html>
     #main { padding: 16px; }
     .recipe-body { grid-template-columns: 1fr; }
   }
+
+  /* ── Mobile (iPhone) ── */
+  #mobile-header {
+    display: none;
+  }
+  @media (max-width: 480px) {
+    /* Sticky top bar with hamburger */
+    #mobile-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--nav-bg);
+      color: var(--nav-text);
+      padding: 10px 16px;
+      border-bottom: 1px solid #5a3e28;
+    }
+    #mobile-header-title {
+      font-size: 0.9rem;
+      color: var(--nav-hover);
+      letter-spacing: 0.03em;
+      font-family: Georgia, 'Times New Roman', serif;
+    }
+    #hamburger {
+      background: none;
+      border: none;
+      color: var(--nav-text);
+      font-size: 1.3rem;
+      cursor: pointer;
+      padding: 4px 6px;
+      line-height: 1;
+    }
+    #hamburger:hover { color: var(--nav-hover); }
+
+    /* Nav collapsed by default; toggled via JS */
+    #nav {
+      display: none;
+      width: 100%;
+      min-width: unset;
+      position: static;
+      height: auto;
+    }
+    #nav.nav-open { display: flex; }
+    /* Hide the header inside nav since mobile-header replaces it */
+    #nav-header { display: none; }
+
+    #main {
+      padding: 14px 12px;
+    }
+
+    /* Bigger touch targets in nav */
+    .section-hd { padding: 10px 14px; }
+    .sub-hd { padding: 8px 14px 8px 22px; }
+    .cluster-hd { padding: 7px 14px 7px 32px; }
+    .nav-recipe-link { padding-top: 6px; padding-bottom: 6px; }
+
+    /* Tighter recipe cards */
+    .recipe { padding: 14px 16px; }
+  }
 </style>
 </head>
 <body>
+
+<div id="mobile-header">
+  <span id="mobile-header-title">Muhlheim Family Cookbook</span>
+  <button id="hamburger" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+</div>
 
 <div id="nav">
   <div id="nav-header"><h1>Muhlheim Family Cookbook</h1></div>
@@ -673,6 +739,25 @@ const html = `<!DOCTYPE html>
 (function () {
   // ── Recipe title → DOM id lookup ──────────────────────────────────────
   const RECIPE_IDS = ${JSON.stringify(recipeLookup, null, 2)};
+
+  // ── Hamburger toggle (mobile) ─────────────────────────────────────────
+  const hamburger = document.getElementById('hamburger');
+  const nav = document.getElementById('nav');
+  if (hamburger && nav) {
+    hamburger.addEventListener('click', function () {
+      const isOpen = nav.classList.toggle('nav-open');
+      hamburger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      hamburger.textContent = isOpen ? '✕' : '☰';
+    });
+    // Close nav when a recipe link is tapped on mobile
+    nav.addEventListener('click', function (e) {
+      if (e.target.closest('.nav-recipe-link') && window.innerWidth <= 480) {
+        nav.classList.remove('nav-open');
+        hamburger.setAttribute('aria-expanded', 'false');
+        hamburger.textContent = '☰';
+      }
+    });
+  }
 
   // ── Collapsible nav ───────────────────────────────────────────────────
 
