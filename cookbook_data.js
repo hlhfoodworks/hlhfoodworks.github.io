@@ -1217,6 +1217,62 @@ const data = {
       subsections: [
         { title: "Vegetables", recipes: [
           {
+            title: "Eggplant Involtini",
+            servings: "Serves 4   |   Total: 1 hour",
+            comments: [
+              "A lighter, weeknight-friendly take on eggplant parmesan — no breading, no frying. The eggplant is roasted or grilled into silky planks, rolled around a three-cheese filling, and baked in homemade tomato sauce. If you don't want to make the sauce, 3 cups of good store-bought sauce works fine."
+            ],
+            source: "https://smittenkitchen.com/2022/09/eggplant-involtini/",
+            ingredientGroups: [
+              { label: "Eggplant", ingredients: [
+                "2 medium eggplants (about 1 pound each), tops trimmed",
+                "Olive oil, for brushing",
+                "Kosher salt and freshly ground black pepper"
+              ]},
+              { label: "Tomato sauce", ingredients: [
+                "2 tablespoons olive oil",
+                "3 garlic cloves, minced",
+                "1 teaspoon kosher salt",
+                "Aleppo pepper or red pepper flakes, to taste",
+                "½ teaspoon dried oregano",
+                "1 (28-ounce) can whole or crushed tomatoes"
+              ]},
+              { label: "Filling", ingredients: [
+                "1 cup ricotta",
+                "4 ounces mozzarella, coarsely grated",
+                "¼ cup grated Parmesan (of the ½ cup total)",
+                "Finely grated zest from half a lemon",
+                "½ teaspoon kosher salt",
+                "Freshly ground black pepper"
+              ]},
+              { label: "To finish", ingredients: [
+                "¼ cup grated Parmesan (remaining)",
+                "Juice from half a lemon",
+                "Fresh basil leaves"
+              ]}
+            ],
+            steps: [
+              { lead: "Prep and cook the eggplant:", bullets: [
+                "Heat the oven to 425°F. Cut the eggplants into generous ¼-inch-thick lengthwise planks. Arrange on parchment-lined baking sheets, brush both sides with olive oil, and season well with salt and pepper.",
+                "To roast: Bake 10–12 minutes on the first side, flip, and roast another 8–10 minutes, until browned on each side.",
+                "To grill: Grill over high heat until dark marks appear, about 8 minutes on the first side and 5 on the second.",
+                "Set aside to cool."
+              ]},
+              { lead: "Make the sauce:", bullets: [
+                "Heat 2 tablespoons olive oil in an 11- to 12-inch ovenproof pot over medium. Add the garlic, salt, Aleppo pepper, and oregano; cook 1 minute.",
+                "Add the tomatoes (it will splatter — be careful) and stir. Simmer 10 minutes, stirring occasionally. Taste and adjust seasoning; blend if you prefer a smoother texture.",
+                "Ladle out 1 cup sauce and set aside for serving. If your pot isn't ovenproof, transfer the remaining sauce to a 2-quart baking dish."
+              ]},
+              "Make the filling: In a bowl, combine the ricotta, mozzarella, ¼ cup Parmesan, lemon zest, ½ teaspoon salt, and a few grinds of pepper.",
+              { lead: "Assemble the rolls:", bullets: [
+                "Place about 1 tablespoon of filling at the end of each eggplant plank (a little less on smaller ones), using all the filling.",
+                "Roll into a cigar and place seam-side down in the sauce."
+              ]},
+              "Bake: Brush the tops lightly with olive oil. Bake uncovered about 30 minutes, until bubbly at the edges and browned on top.",
+              "Squeeze the lemon juice over the top and scatter with fresh basil. Serve with the reserved sauce and extra Parmesan on the side."
+            ]
+          },
+          {
             title: "Eggplant Parmesan",
             servings: "Serves 6–8   |   Prep: 20 minutes   |   Cook: 40 minutes   |   Total: 1 hour",
             source: "https://www.loveandlemons.com/eggplant-parmesan/",
@@ -1349,6 +1405,38 @@ const data = {
       title: "Pickling",
       recipes: [
         {
+          title: "Dill Pickles",
+          servings: "Makes 4 (8-oz) or 2 (16-oz) jars   |   Prep: 10 minutes   |   Chilling: 1–5 days",
+          comments: [
+            "Chips are lightly pickled after 1 day; spears take 2 days. The best flavor develops around day 5 or 6 — worth the wait. Keep refrigerated for several weeks."
+          ],
+          source: "https://www.loveandlemons.com/dill-pickles-recipe/",
+          ingredientGroups: [
+            { label: "Cucumbers and aromatics", ingredients: [
+              "12–14 Persian cucumbers, or 8–10 small pickling cucumbers",
+              "4 garlic cloves, halved",
+              "2 teaspoons mustard seeds",
+              "2 teaspoons peppercorns",
+              "Fresh dill sprigs, a few per jar"
+            ]},
+            { label: "Brine", ingredients: [
+              "2 cups water",
+              "2 cups distilled white vinegar",
+              "¼ cup cane sugar",
+              "2 tablespoons sea salt"
+            ]}
+          ],
+          steps: [
+            "Prep the cucumbers: For spears, slice lengthwise into quarters. For chips, thinly slice crosswise.",
+            "Pack the jars: Divide the cucumbers among 4 (8-oz) or 2 (16-oz) jars. Divide the garlic, mustard seeds, peppercorns, and dill sprigs evenly among the jars.",
+            { lead: "Make the brine and fill:", bullets: [
+              "Combine the water, vinegar, sugar, and salt in a medium saucepan over medium heat. Stir until the sugar and salt dissolve, about 1 minute.",
+              "Let cool slightly, then pour over the cucumbers. Set aside to cool to room temperature."
+            ]},
+            "Refrigerate: Chips are lightly pickled after 1 day and grow more flavorful from there. Spears are lightly pickled after 2 days; best flavor develops around day 5 or 6. Keeps in the fridge for several weeks."
+          ]
+        },
+        {
           title: "Quick Pickled Green Onions",
           servings: "Makes about 8 servings   |   Prep: 15 minutes   |   Pickling: 2 hours minimum (best after 24–48 hours)",
           source: "https://www.forkintheroad.co/quick-pickled-green-onions/",
@@ -1381,6 +1469,31 @@ const data = {
               "Pour the hot brine over the green onions until completely submerged. Close the lid tightly."
             ]},
             "Let the jar cool to room temperature on the counter, then refrigerate. Ready after 2 hours, best after 24–48 hours. Keeps up to 1 month refrigerated."
+          ]
+        },
+        {
+          title: "Quick Pickled Red Onions",
+          servings: "Makes about 8 servings   |   Prep: 5 minutes   |   Total: 15 minutes",
+          comments: [
+            "Great on burgers, grain bowls, salads, sandwiches, or a cheese board. Ready to eat in just 15 minutes, and keeps in the fridge for up to 2 weeks."
+          ],
+          source: "https://www.kitchentreaty.com/quick-pickled-red-onions/",
+          ingredientGroups: [
+            { label: "Red onion", ingredients: [
+              "1 medium red onion, peeled, halved, and sliced as thinly as possible"
+            ]},
+            { label: "Brine", ingredients: [
+              "3/4 cup apple cider vinegar (or white vinegar)",
+              "1/2 cup water",
+              "2 teaspoons granulated sugar",
+              "1 teaspoon kosher salt"
+            ]}
+          ],
+          steps: [
+            "Slice the onion as thinly as possible and pack into a quart-size mason jar.",
+            "Make the brine: Add the vinegar, water, sugar, and salt to a small saucepan. Bring just to a boil over high heat, stirring to dissolve.",
+            "Carefully pour the hot brine over the onions. Press the onions down with a spoon to make sure they are fully submerged.",
+            "Let sit at room temperature for 15 minutes, then serve. Store covered in the fridge for up to 2 weeks, keeping the onions submerged in liquid."
           ]
         }
       ]

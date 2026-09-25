@@ -25,6 +25,7 @@ const CLUSTER_MAP = {
   'Peruvian Roasted Chicken With Spicy Cilantro Sauce':  'Latin/South American',
   'Slow-Cooker Chicken Mole':                             'Latin/South American',
   // Vegetables — Italian
+  'Eggplant Involtini':                                   'Italian',
   'Eggplant Parmesan':                                    'Italian',
   // Chicken — Italian
   'Chicken Cacciatore':                                   'Italian',
