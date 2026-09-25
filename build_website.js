@@ -716,6 +716,13 @@ const html = `<!DOCTYPE html>
 
     /* Tighter recipe cards */
     .recipe { padding: 14px 16px; }
+
+    /* Fix iOS zoom on search focus: font-size must be ≥16px */
+    #search { font-size: 16px; }
+
+    /* Search results: auto-size up to 4 results, scroll beyond */
+    #search-results { max-height: none; }
+    #search-results .sr-item { min-height: 44px; display: flex; align-items: center; }
   }
 </style>
 </head>
