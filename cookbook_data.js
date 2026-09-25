@@ -2109,7 +2109,7 @@ const data = {
                 ]},
                 { label: "Sausage + sauce", ingredients: [
                   "1 Tbsp extra-virgin olive oil",
-                  "8 sausage links (about 1 1/2 lbs), casings removed, meat crumbled — hot Italian, sweet Italian, sage, or breakfast sausage (such as Jimmy Dean) all work",
+                  "8 hot Italian sausage links, casings removed, meat crumbled (about 1 1/2 lbs); or substitute one 1-lb roll sweet Italian or sage sausage (such as Jimmy Dean)",
                   "3/4 cup dry white wine",
                   "3/4 cup heavy cream",
                   "3 Tbsp grainy mustard",
