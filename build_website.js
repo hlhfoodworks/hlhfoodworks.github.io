@@ -717,6 +717,9 @@ const html = `<!DOCTYPE html>
     /* Tighter recipe cards */
     .recipe { padding: 14px 16px; }
 
+    /* Offset scroll targets so fixed header doesn't cover them (47px header + 10px buffer) */
+    .recipe { scroll-margin-top: 57px; }
+
     /* Fix iOS zoom on search focus: font-size must be ≥16px */
     #search { font-size: 16px; }
 
@@ -768,9 +771,9 @@ const html = `<!DOCTYPE html>
       hamburger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
       hamburger.textContent = isOpen ? '✕' : '☰';
     });
-    // Close nav when a recipe link is tapped on mobile
+    // Close nav when a recipe link (nav tree or search result) is tapped on mobile
     nav.addEventListener('click', function (e) {
-      if (e.target.closest('.nav-recipe-link') && window.innerWidth <= 480) {
+      if ((e.target.closest('.nav-recipe-link') || e.target.closest('.sr-item')) && window.innerWidth <= 480) {
         nav.classList.remove('nav-open');
         hamburger.setAttribute('aria-expanded', 'false');
         hamburger.textContent = '☰';
