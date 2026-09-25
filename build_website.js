@@ -720,8 +720,8 @@ const html = `<!DOCTYPE html>
     /* Fix iOS zoom on search focus: font-size must be ≥16px */
     #search { font-size: 16px; }
 
-    /* Search results: override desktop cap; JS will set exact height */
-    #search-results { max-height: none !important; overflow-y: auto; }
+    /* Search results: clear desktop cap so JS inline style can take over */
+    #search-results { max-height: none; overflow-y: auto; flex-shrink: 0; }
     #search-results .sr-item { padding-top: 5px; padding-bottom: 5px; }
     #search-results .sr-label { padding-top: 5px; padding-bottom: 3px; }
   }
@@ -856,8 +856,8 @@ const html = `<!DOCTYPE html>
 
   function runSearch() {
     const q = search.value.trim().toLowerCase();
-    searchResults.innerHTML = '';
     searchResults.style.maxHeight = '';
+    searchResults.innerHTML = '';
     if (!q) { searchResults.style.display = 'none'; return; }
 
     const matches = allRecipes.filter(function (r) {
@@ -885,21 +885,21 @@ const html = `<!DOCTYPE html>
     }
     searchResults.style.display = 'block';
 
-    // On narrow screens, cap height to show label + up to 4 items (5 lines max), scroll beyond.
-    // Use offsetHeight (intrinsic, unclipped) so items hidden by overflow still measure correctly.
+    // On narrow screens, cap to show label + up to 4 items (5 lines), scroll beyond.
+    // Use requestAnimationFrame so browser finishes layout before we measure.
     if (window.innerWidth <= 480) {
-      searchResults.style.maxHeight = 'none'; // ensure no inline cap while measuring
-      const children = searchResults.children;
-      if (children.length > 0) {
-        const maxVisible = Math.min(children.length, 5); // label + up to 4 recipes
+      searchResults.style.maxHeight = ''; // clear any previous inline cap
+      requestAnimationFrame(function () {
+        const children = searchResults.children;
+        if (children.length === 0) return;
+        const maxVisible = Math.min(children.length, 5); // label counts as 1
         let h = 0;
         for (let i = 0; i < maxVisible; i++) {
           h += children[i].offsetHeight;
         }
-        // Add container's own vertical padding (4px top + 4px bottom from default style)
-        h += 8;
+        h += 8; // container's top+bottom padding
         searchResults.style.maxHeight = h + 'px';
-      }
+      });
     }
   }
 
