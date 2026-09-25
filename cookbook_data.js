@@ -1346,6 +1346,46 @@ const data = {
       ]
     },
     {
+      title: "Pickling",
+      recipes: [
+        {
+          title: "Quick Pickled Green Onions",
+          servings: "Makes about 8 servings   |   Prep: 15 minutes   |   Pickling: 2 hours minimum (best after 24–48 hours)",
+          source: "https://www.forkintheroad.co/quick-pickled-green-onions/",
+          comments: [
+            "Ready to eat after 2 hours, but the flavor deepens significantly after 24–48 hours. Keeps refrigerated up to 1 month as long as the onions stay fully submerged in brine."
+          ],
+          ingredientGroups: [
+            { label: "Green onions and aromatics", ingredients: [
+              "1 bunch green onions (about 10), roots trimmed",
+              "1-inch piece fresh ginger",
+              "2 whole garlic cloves",
+              "2 teaspoons ground mustard",
+              "1 teaspoon Aleppo pepper or red pepper flakes (optional)"
+            ]},
+            { label: "Brine", ingredients: [
+              "2 cups water",
+              "1 cup rice vinegar (or white wine vinegar, apple cider vinegar, or plain white vinegar)",
+              "1 tablespoon salt",
+              "1 tablespoon sugar"
+            ]}
+          ],
+          steps: [
+            { lead: "Prep the green onions:", bullets: [
+              "Cut off the roots.",
+              "Either slice into thin rounds for sprinkling, or cut each green onion in half lengthwise and then into 2–4-inch spears for layering on salads, burgers, and sandwiches."
+            ]},
+            "Pack the jar: Add the green onions to a large jar. Add the ginger, garlic, ground mustard, and Aleppo pepper (if using).",
+            { lead: "Make the brine:", bullets: [
+              "Combine the water, vinegar, salt, and sugar in a small saucepan. Bring to a boil, stirring to dissolve.",
+              "Pour the hot brine over the green onions until completely submerged. Close the lid tightly."
+            ]},
+            "Let the jar cool to room temperature on the counter, then refrigerate. Ready after 2 hours, best after 24–48 hours. Keeps up to 1 month refrigerated."
+          ]
+        }
+      ]
+    },
+    {
       title: "Rice",
       recipes: [
         {
