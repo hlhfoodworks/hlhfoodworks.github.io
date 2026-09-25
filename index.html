@@ -271,6 +271,7 @@
     font-style: italic; font-size: 0.9rem; color: var(--muted);
     margin-bottom: 6px; border-left: 3px solid var(--accent2); padding-left: 10px;
   }
+  .comments a { color: var(--accent2); }
   .source { font-size: 0.8rem; color: #999; margin-bottom: 14px; font-family: 'Helvetica Neue', Arial, sans-serif; }
   .source a { color: #999; }
 
@@ -482,7 +483,12 @@
 <li class="nav-recipe"><a class="nav-recipe-link" data-recipe-title="One-Pot Japanese Curry Chicken and Rice" href="#"><span class="nav-star"></span><span class="nav-title">One-Pot Japanese Curry Chicken and Rice</span></a></li>
 </ul></li>
 </ul></li>
-<li class="nav-sub empty"><a class="nav-hd sub-hd" href="#sub-meat-mains-turkey" data-toggle="sub-meat-mains-turkey-children">Turkey</a></li>
+<li class="nav-sub"><a class="nav-hd sub-hd" href="#sub-meat-mains-turkey" data-toggle="sub-meat-mains-turkey-children"><span class="arrow">▶</span>Turkey</a><ul class="nav-l3 collapsed" id="sub-meat-mains-turkey-children"><li class="nav-cluster"><a class="nav-hd cluster-hd" href="#meat-mains-turkey--american" data-toggle="meat-mains-turkey--american-children"><span class="arrow">▶</span>American</a><ul class="nav-l4 collapsed" id="meat-mains-turkey--american-children"><li class="nav-recipe"><a class="nav-recipe-link" data-recipe-title="Expertly Spiced and Glazed Roast Turkey" href="#"><span class="nav-star"></span><span class="nav-title">Expertly Spiced and Glazed Roast Turkey</span></a></li>
+<li class="nav-recipe"><a class="nav-recipe-link" data-recipe-title="Turkey and Quinoa Meatloaf" href="#"><span class="nav-star"></span><span class="nav-title">Turkey and Quinoa Meatloaf</span></a></li>
+</ul></li>
+<li class="nav-cluster"><a class="nav-hd cluster-hd" href="#meat-mains-turkey--indian" data-toggle="meat-mains-turkey--indian-children"><span class="arrow">▶</span>Indian</a><ul class="nav-l4 collapsed" id="meat-mains-turkey--indian-children"><li class="nav-recipe"><a class="nav-recipe-link" data-recipe-title="Turkey Tikka Masala" href="#"><span class="nav-star"></span><span class="nav-title">Turkey Tikka Masala</span></a></li>
+</ul></li>
+</ul></li>
 <li class="nav-sub empty"><a class="nav-hd sub-hd" href="#sub-meat-mains-pork" data-toggle="sub-meat-mains-pork-children">Pork</a></li>
 <li class="nav-sub empty"><a class="nav-hd sub-hd" href="#sub-meat-mains-lamb" data-toggle="sub-meat-mains-lamb-children">Lamb</a></li>
 <li class="nav-sub empty"><a class="nav-hd sub-hd" href="#sub-meat-mains-beef" data-toggle="sub-meat-mains-beef-children">Beef</a></li>
@@ -498,7 +504,8 @@
 <li class="nav-sub empty"><a class="nav-hd sub-hd" href="#sub-vegetarian-mains-tofu" data-toggle="sub-vegetarian-mains-tofu-children">Tofu</a></li>
 <li class="nav-sub empty"><a class="nav-hd sub-hd" href="#sub-vegetarian-mains-mushroom" data-toggle="sub-vegetarian-mains-mushroom-children">Mushroom</a></li>
 </ul></li>
-<li class="nav-section" data-sec="sec-vegetable-sides"><span class="nav-hd section-hd" data-toggle="sec-vegetable-sides-children"><span class="arrow">▶</span>Vegetable Sides</span><ul class="nav-l2 collapsed" id="sec-vegetable-sides-children"><li class="nav-recipe"><a class="nav-recipe-link" data-recipe-title="Charred Broccoli and Cauliflower Salad" href="#"><span class="nav-star"></span><span class="nav-title">Charred Broccoli and Cauliflower Salad</span></a></li>
+<li class="nav-section" data-sec="sec-vegetable-sides"><span class="nav-hd section-hd" data-toggle="sec-vegetable-sides-children"><span class="arrow">▶</span>Vegetable Sides</span><ul class="nav-l2 collapsed" id="sec-vegetable-sides-children"><li class="nav-recipe"><a class="nav-recipe-link" data-recipe-title="Butter Lettuce and Citrus Salad" href="#"><span class="nav-star"></span><span class="nav-title">Butter Lettuce and Citrus Salad</span></a></li>
+<li class="nav-recipe"><a class="nav-recipe-link" data-recipe-title="Charred Broccoli and Cauliflower Salad" href="#"><span class="nav-star"></span><span class="nav-title">Charred Broccoli and Cauliflower Salad</span></a></li>
 <li class="nav-recipe"><a class="nav-recipe-link" data-recipe-title="Joan's on Third Butter Lettuce Salad (Copycat)" href="#"><span class="nav-star"></span><span class="nav-title">Joan's on Third Butter Lettuce Salad (Copycat)</span></a></li>
 </ul></li>
 <li class="nav-section" data-sec="sec-pickling"><span class="nav-hd section-hd" data-toggle="sec-pickling-children"><span class="arrow">▶</span>Pickling</span><ul class="nav-l2 collapsed" id="sec-pickling-children"><li class="nav-recipe"><a class="nav-recipe-link" data-recipe-title="Dill Pickles" href="#"><span class="nav-star"></span><span class="nav-title">Dill Pickles</span></a></li>
@@ -514,14 +521,16 @@
 </ul></li>
 <li class="nav-sub empty"><a class="nav-hd sub-hd" href="#sub-noodles-asian" data-toggle="sub-noodles-asian-children">Asian</a></li>
 </ul></li>
-<li class="nav-section" data-sec="sec-baking"><span class="nav-hd section-hd" data-toggle="sec-baking-children"><span class="arrow">▶</span>Baking</span><ul class="nav-l2 collapsed" id="sec-baking-children"><li class="nav-sub empty"><a class="nav-hd sub-hd" href="#sub-baking-savory" data-toggle="sub-baking-savory-children">Savory</a></li>
+<li class="nav-section" data-sec="sec-baking"><span class="nav-hd section-hd" data-toggle="sec-baking-children"><span class="arrow">▶</span>Baking</span><ul class="nav-l2 collapsed" id="sec-baking-children"><li class="nav-sub"><a class="nav-hd sub-hd" href="#sub-baking-savory" data-toggle="sub-baking-savory-children"><span class="arrow">▶</span>Savory</a><ul class="nav-l3 collapsed" id="sub-baking-savory-children"><li class="nav-recipe"><a class="nav-recipe-link" data-recipe-title="72-Hour Pizza Dough" href="#"><span class="nav-star"></span><span class="nav-title">72-Hour Pizza Dough</span></a></li>
+</ul></li>
 <li class="nav-sub"><a class="nav-hd sub-hd" href="#sub-baking-sweet" data-toggle="sub-baking-sweet-children"><span class="arrow">▶</span>Sweet</a><ul class="nav-l3 collapsed" id="sub-baking-sweet-children"><li class="nav-recipe"><a class="nav-recipe-link" data-recipe-title="Eric's Chocolate Chip Cookies" href="#"><span class="nav-star"></span><span class="nav-title">Eric's Chocolate Chip Cookies</span></a></li>
 <li class="nav-recipe"><a class="nav-recipe-link" data-recipe-title="Chocolate &quot;Birthday Cake&quot;" href="#"><span class="nav-star"></span><span class="nav-title">Chocolate &quot;Birthday Cake&quot;</span></a></li>
 <li class="nav-recipe"><a class="nav-recipe-link" data-recipe-title="Nana's Poundcake" href="#"><span class="nav-star">★</span><span class="nav-title">Nana's Poundcake</span></a></li>
 <li class="nav-recipe"><a class="nav-recipe-link" data-recipe-title="Brenda's Noodle Kugel" href="#"><span class="nav-star">★</span><span class="nav-title">Brenda's Noodle Kugel</span></a></li>
 </ul></li>
 </ul></li>
-<li class="nav-section" data-sec="sec-dressings"><span class="nav-hd section-hd" data-toggle="sec-dressings-children"><span class="arrow">▶</span>Dressings</span><ul class="nav-l2 collapsed" id="sec-dressings-children"><li class="nav-recipe"><a class="nav-recipe-link" data-recipe-title="Lemon Mustard Vinaigrette" href="#"><span class="nav-star"></span><span class="nav-title">Lemon Mustard Vinaigrette</span></a></li>
+<li class="nav-section" data-sec="sec-dressings"><span class="nav-hd section-hd" data-toggle="sec-dressings-children"><span class="arrow">▶</span>Dressings</span><ul class="nav-l2 collapsed" id="sec-dressings-children"><li class="nav-recipe"><a class="nav-recipe-link" data-recipe-title="Joan's on Third Chili Aioli" href="#"><span class="nav-star"></span><span class="nav-title">Joan's on Third Chili Aioli</span></a></li>
+<li class="nav-recipe"><a class="nav-recipe-link" data-recipe-title="Lemon Mustard Vinaigrette" href="#"><span class="nav-star"></span><span class="nav-title">Lemon Mustard Vinaigrette</span></a></li>
 <li class="nav-recipe"><a class="nav-recipe-link" data-recipe-title="Greek Salad Dressing" href="#"><span class="nav-star"></span><span class="nav-title">Greek Salad Dressing</span></a></li>
 </ul></li>
 <li class="nav-section empty" data-sec="sec-desserts"><span class="nav-hd section-hd" data-toggle="sec-desserts-children">Desserts</span></li>
@@ -2355,7 +2364,132 @@
 </section>
 <section id="sub-meat-mains-turkey" class="subsection">
   <h3 class="subsection-heading">Turkey</h3>
-  <p class="empty"><em>No recipes yet.</em></p>
+  <div class="cluster-group" id="meat-mains-turkey--american">
+  <h4 class="cluster-heading">American</h4>
+  <article class="recipe" id="meat-mains-turkey-0" data-title="Expertly Spiced and Glazed Roast Turkey">
+  <h3>Expertly Spiced and Glazed Roast Turkey</h3>
+  <p class="meta">Serves 8–10   |   Active: 45 min   |   Total: About 2 hrs (plus 24–48 hrs dry-brining)</p><p class="comments">Turkey is spatchcocked for more even roasting. Begin 24–48 hours ahead for the dry brine.<br>Option: after removing the backbone, also separate the wings and legs for even faster, more even cooking as individual pieces — see Step 1.<br>Requires a spice mill or mortar and pestle.</p><p class="source">Source: <a href="https://www.epicurious.com/recipes/food/views/expertly-spiced-and-glazed-roast-turkey" target="_blank" rel="noopener">https://www.epicurious.com/recipes/food/views/expertly-spiced-and-glazed-roast-turkey</a></p>
+  <div class="recipe-body">
+    <div class="ingredients-col">
+      <h4 class="col-heading">Ingredients</h4>
+      <div class="ing-group"><h4>Spice rub (combine in a small bowl)</h4><ul class="ingredients"><li>2 Tbsp whole black peppercorns</li>
+<li>2 Tbsp whole pink or black peppercorns</li>
+<li>1/2 cup Diamond Crystal or 1/4 cup plus 1 1/2 tsp Morton kosher salt</li>
+<li>2 Tbsp garlic powder</li>
+<li>2 Tbsp onion powder</li>
+<li>1 Tbsp smoked paprika</li>
+<li>1 Tbsp light brown sugar</li></ul></div>
+<div class="ing-group"><h4>Turkey</h4><ul class="ingredients"><li>1 (12-14 lb.) turkey, neck and giblets removed</li></ul></div>
+<div class="ing-group"><h4>Glaze</h4><ul class="ingredients"><li>Small handful hardy herbs (sage, rosemary, bay leaves, and/or thyme)</li>
+<li>4 garlic cloves, crushed</li>
+<li>2 (2x1&quot;) strips orange zest</li>
+<li>1/3 cup low-sodium soy sauce</li>
+<li>1/3 cup sherry vinegar or red wine vinegar</li>
+<li>1/3 cup (packed) light brown sugar</li></ul></div>
+<div class="ing-group"><h4>For roasting</h4><ul class="ingredients"><li>6 Tbsp neutral oil (vegetable, peanut, or canola)</li>
+<li>1 cup water, plus more as needed</li></ul></div>
+    </div>
+    <div class="steps-col">
+      <h4 class="col-heading">Steps</h4>
+      <ol class="steps"><li><strong>Spatchcock the turkey (preferred method):</strong><ul class="sub-steps"><li>Place turkey breast side down. Using kitchen shears, cut along one side of the backbone all the way through, then cut along the other side to remove the backbone entirely. Save for stock.</li>
+<li>Flip turkey breast side up. Press firmly on the breastbone with the heel of your hand until it cracks and the bird lies flat.</li>
+<li>Option — full breakdown: after removing the backbone, also separate the wings (grip each wing, pull outward, cut through the joint) and the legs (cut through skin, pull back until ball joint pops out, cut through joint). You'll have 5 separate pieces: 2 wings, 2 legs, 1 breast.</li></ul></li>
+<li>Make the spice rub: Finely grind both peppercorns in a spice mill or mortar and pestle. Transfer to a bowl and mix in kosher salt, garlic powder, onion powder, paprika, and 1 Tbsp brown sugar.</li>
+<li>Place turkey on a wire rack set inside a rimmed baking sheet. Sprinkle spice rub liberally all over, patting to adhere (you may not use all of it). Refrigerate uncovered at least 24 hours and up to 2 days.</li>
+<li>Remove turkey from rack; rinse baking sheet and rack if needed. Line baking sheet with 3 layers of foil, set rack back inside, and return turkey skin side up. Let sit at room temperature 2–3 hours.</li>
+<li>Meanwhile, make the glaze: Cook herbs, garlic, orange zest, soy sauce, vinegar, and 1/3 cup brown sugar in a small saucepan over medium heat, stirring occasionally, until sugar dissolves and glaze thickens slightly (barely coats a spoon), 10–12 minutes. Remove from heat.</li>
+<li>Place a rack in the middle of the oven; preheat to 425°F. Rub turkey all over with oil and pour 1 cup water into the baking sheet. Roast, rotating baking sheet halfway through, until skin is mostly golden brown, 20–25 minutes.</li>
+<li>Reduce oven to 300°F. Continue roasting, brushing with glaze every 20 minutes and adding more water by 1/2-cupfuls as needed to keep some liquid in the pan, until an instant-read thermometer reads 150°F in the thickest part of the breast and 170°F in the thickest part of the thigh, 50–70 minutes more (total time 1–1 1/2 hours; fully broken-down pieces may finish faster). Skin should be deep golden brown and shiny.</li>
+<li>Transfer to a cutting board, tent loosely with foil, and rest 30–60 minutes before carving.</li></ol>
+    </div>
+  </div>
+</article>
+<article class="recipe" id="meat-mains-turkey-1" data-title="Turkey and Quinoa Meatloaf">
+  <h3>Turkey and Quinoa Meatloaf</h3>
+  <p class="meta">Serves 4   |   Total: 1 hr 10 min</p><p class="comments">Best served with <a href="#joan-chili-aioli">Joan's on Third Chili Aioli</a>.</p><p class="source">Source: <a href="https://www.allrecipes.com/recipe/213211/turkey-and-quinoa-meatloaf/" target="_blank" rel="noopener">https://www.allrecipes.com/recipe/213211/turkey-and-quinoa-meatloaf/</a></p>
+  <div class="recipe-body">
+    <div class="ingredients-col">
+      <h4 class="col-heading">Ingredients</h4>
+      <div class="ing-group"><h4>Quinoa</h4><ul class="ingredients"><li>1/4 cup quinoa</li>
+<li>1/2 cup water</li></ul></div>
+<div class="ing-group"><h4>Sauté</h4><ul class="ingredients"><li>1 tsp olive oil</li>
+<li>1 small onion, chopped</li>
+<li>1 clove garlic, chopped</li></ul></div>
+<div class="ing-group"><h4>Meatloaf</h4><ul class="ingredients"><li>1 (20 oz) package ground turkey</li>
+<li>1 Tbsp tomato paste</li>
+<li>1 Tbsp hot pepper sauce</li>
+<li>2 Tbsp Worcestershire sauce</li>
+<li>1 egg</li>
+<li>1 1/2 tsp salt</li>
+<li>1 tsp black pepper</li></ul></div>
+<div class="ing-group"><h4>Glaze (combine in small bowl)</h4><ul class="ingredients"><li>2 Tbsp brown sugar</li>
+<li>2 tsp Worcestershire sauce</li>
+<li>1 tsp water</li></ul></div>
+    </div>
+    <div class="steps-col">
+      <h4 class="col-heading">Steps</h4>
+      <ol class="steps"><li>Bring quinoa and 1/2 cup water to a boil in a small saucepan. Reduce heat to medium-low, cover, and simmer until quinoa is tender and water is absorbed, 15–20 minutes. Set aside to cool.</li>
+<li>Preheat oven to 350°F.</li>
+<li>Heat olive oil in a skillet over medium heat. Add onion; cook, stirring, until softened and translucent, about 5 minutes. Add garlic and cook 1 minute more. Remove from heat and let cool.</li>
+<li>In a large bowl, mix together ground turkey, cooled quinoa, sautéed onion and garlic, tomato paste, hot pepper sauce, Worcestershire sauce, egg, salt, and pepper until well combined. Transfer to a loaf pan.</li>
+<li>Spread the glaze evenly over the top of the meatloaf.</li>
+<li>Bake until no longer pink in the center and an instant-read thermometer reads at least 160°F, about 50 minutes. Let cool 10 minutes before slicing.</li></ol>
+    </div>
+  </div>
+</article>
+</div>
+<div class="cluster-group" id="meat-mains-turkey--indian">
+  <h4 class="cluster-heading">Indian</h4>
+  <article class="recipe" id="meat-mains-turkey-2" data-title="Turkey Tikka Masala">
+  <h3>Turkey Tikka Masala</h3>
+  <p class="meta">Serves 6   |   Total: 1 1/2 hrs, plus 4 hrs marinating</p><p class="comments">A great way to use leftover Thanksgiving turkey.<br>Marinate the turkey for at least 4 hours, or overnight, for best results.</p><p class="source">Source: Samin Nosrat, NYT Cooking (November 22, 2016)</p>
+  <div class="recipe-body">
+    <div class="ingredients-col">
+      <h4 class="col-heading">Ingredients</h4>
+      <div class="ing-group"><h4>Marinade (combine in bowl; fold in turkey; cover and refrigerate)</h4><ul class="ingredients"><li>2 tsp garam masala</li>
+<li>2 tsp ground coriander</li>
+<li>2 tsp ground cumin</li>
+<li>1 Tbsp paprika</li>
+<li>4 tsp ground turmeric</li>
+<li>1 tsp kosher salt</li>
+<li>6 cloves garlic, finely grated</li>
+<li>4 tsp finely grated fresh ginger</li>
+<li>1 cup whole-milk yogurt</li>
+<li>4 cups cooked turkey (about 1 lb), cut into 1 1/2-inch pieces</li></ul></div>
+<div class="ing-group"><h4>Masala — first addition (all go in together)</h4><ul class="ingredients"><li>3 Tbsp ghee or neutral-tasting oil</li>
+<li>1 large onion, thinly sliced</li>
+<li>6 cardamom pods, crushed</li>
+<li>1 bay leaf</li>
+<li>1 tsp paprika</li>
+<li>1/2 tsp Aleppo pepper or red pepper flakes</li>
+<li>1 tsp garam masala</li>
+<li>Pinch kosher salt</li></ul></div>
+<div class="ing-group"><h4>Masala — second addition</h4><ul class="ingredients"><li>1 Tbsp ghee or neutral-tasting oil</li>
+<li>2 Tbsp finely grated fresh ginger</li>
+<li>4 cloves garlic, finely grated</li>
+<li>2 serrano peppers, finely chopped</li></ul></div>
+<div class="ing-group"><h4>Add after onions are browned</h4><ul class="ingredients"><li>2 Tbsp tomato paste</li>
+<li>1 (28-oz) can whole peeled tomatoes</li></ul></div>
+<div class="ing-group"><h4>Cream and season</h4><ul class="ingredients"><li>2 cups heavy cream</li>
+<li>3/4 cup coarsely chopped fresh cilantro, plus sprigs for garnish</li>
+<li>1 1/2 tsp kosher salt, plus more to taste</li></ul></div>
+<div class="ing-group"><h4>Finish</h4><ul class="ingredients"><li>Juice of 1 small lemon</li>
+<li>Jasmine or Basmati rice, for serving</li></ul></div>
+    </div>
+    <div class="steps-col">
+      <h4 class="col-heading">Steps</h4>
+      <ol class="steps"><li>Make the marinade: Stir together garam masala, coriander, cumin, paprika, turmeric, salt, garlic, ginger, and yogurt in a medium bowl. Fold in turkey. Cover and refrigerate 4 hours or overnight.</li>
+<li>Make the masala: Heat a Dutch oven over medium-high heat. Add 3 Tbsp ghee or oil, then add onion, cardamom, bay leaf, paprika, Aleppo pepper or red pepper flakes, garam masala, and a pinch of salt. Reduce heat to medium and cook, stirring occasionally, until onions are brown and tender, 10–15 minutes.</li>
+<li>Make space in the center of the pot; add 1 Tbsp ghee or oil. When shimmering, add ginger, garlic, and serrano peppers and sizzle about 10 seconds. Stir into the spiced onions. Stir in tomato paste. Add whole peeled tomatoes with their juices, crushing them with your hands as you add them. Bring to a boil, then reduce heat and simmer, stirring often, until liquid is almost gone, 8–10 minutes.</li>
+<li>Add heavy cream and cilantro. Season with 1 1/2 tsp kosher salt; taste and adjust. Simmer over low heat, stirring occasionally, until sauce thickens, about 40 minutes. Discard bay leaf.</li>
+<li>Line a baking sheet with foil; position an oven rack about 6 inches from the broiler; turn on broiler. Lay marinated turkey in a single layer on the foil. Stir any remaining marinade into the sauce. Broil until turkey begins to blacken in spots, 6–8 minutes.</li>
+<li>Using a hand blender (or blender), purée the sauce. Add broiled turkey and return to a simmer for 5–10 minutes, stirring occasionally, until just warmed through. Just before serving, stir in lemon juice. Taste and adjust salt.</li>
+<li>Serve hot, garnished with cilantro sprigs, alongside Jasmine or Basmati rice. Refrigerate leftovers up to 3 days or freeze up to 2 months.</li></ol>
+    </div>
+  </div>
+</article>
+</div>
+
 </section>
 <section id="sub-meat-mains-pork" class="subsection">
   <h3 class="subsection-heading">Pork</h3>
@@ -2486,7 +2620,29 @@
 </section>
 <section id="sec-vegetable-sides" class="section">
   <h2>Vegetable Sides</h2>
-  <article class="recipe" id="vegetable-sides-0" data-title="Charred Broccoli and Cauliflower Salad">
+  <article class="recipe" id="vegetable-sides-0" data-title="Butter Lettuce and Citrus Salad">
+  <h3>Butter Lettuce and Citrus Salad</h3>
+  <p class="meta">Serves 2–3</p><p class="comments">&quot;Supreming&quot; citrus means cutting away the peel and pith, then slicing between the membranes to release clean segments.</p><p class="source">Source: The Gourmandise School (The Pizza Class)</p>
+  <div class="recipe-body">
+    <div class="ingredients-col">
+      <h4 class="col-heading">Ingredients</h4>
+      <div class="ing-group"><ul class="ingredients"><li>1 head butter lettuce</li>
+<li>1 shallot</li>
+<li>Salt &amp; pepper to taste</li>
+<li>1 grapefruit or orange</li>
+<li>2 Tbsp lemon juice</li>
+<li>¼ cup olive oil</li></ul></div>
+    </div>
+    <div class="steps-col">
+      <h4 class="col-heading">Steps</h4>
+      <ol class="steps"><li>Remove any wilted leaves from the butter lettuce. Tear into bite-sized pieces and place in a medium bowl.</li>
+<li>Mince the shallot and place in a small bowl with a pinch of salt and pepper.</li>
+<li>Supreme (segment) your grapefruit right over the small bowl to catch any juices. Set the segmented citrus aside.</li>
+<li>Add lemon juice to the shallot bowl, then whisk in the olive oil. Dress the butter lettuce with the citronette. Plate and tuck the segmented citrus into and on top of the greens.</li></ol>
+    </div>
+  </div>
+</article>
+<article class="recipe" id="vegetable-sides-1" data-title="Charred Broccoli and Cauliflower Salad">
   <h3>Charred Broccoli and Cauliflower Salad</h3>
   <p class="meta">6 to 8   |   Total: 30 min   |   Active: 25 min</p><p class="comments">Great as a side at a barbecue with grilled seafood or meat, or to take to a potluck.</p><p class="source">Source: <a href="https://www.foodnetwork.com/recipes/ree-drummond/charred-broccoli-and-cauliflower-salad-19673188" target="_blank" rel="noopener">https://www.foodnetwork.com/recipes/ree-drummond/charred-broccoli-and-cauliflower-salad-19673188</a></p>
   <div class="recipe-body">
@@ -2520,7 +2676,7 @@
     </div>
   </div>
 </article>
-<article class="recipe" id="vegetable-sides-1" data-title="Joan's on Third Butter Lettuce Salad (Copycat)">
+<article class="recipe" id="vegetable-sides-2" data-title="Joan's on Third Butter Lettuce Salad (Copycat)">
   <h3>Joan's on Third Butter Lettuce Salad (Copycat)</h3>
   <p class="meta">Serves 4</p><p class="comments">Original recipe uses French feta; family uses goat cheese in oil instead. Shallot is in the original but was skipped. Dressing recipe from CopyKat Recipes.</p><p class="source">Source: Copycat recipe based on Joan's on Third, Los Angeles</p>
   <div class="recipe-body">
@@ -2797,7 +2953,28 @@
 <section id="sec-baking" class="section"><h2>Baking</h2>
 <section id="sub-baking-savory" class="subsection">
   <h3 class="subsection-heading">Savory</h3>
-  <p class="empty"><em>No recipes yet.</em></p>
+  <article class="recipe" id="baking-savory-0" data-title="72-Hour Pizza Dough">
+  <h3>72-Hour Pizza Dough</h3>
+  <p class="meta">Makes 3 pizzas (~283g each)</p><p class="source">Source: The Gourmandise School (The Pizza Class)</p>
+  <div class="recipe-body">
+    <div class="ingredients-col">
+      <h4 class="col-heading">Ingredients</h4>
+      <div class="ing-group"><ul class="ingredients"><li>350 ml water</li>
+<li>½ Tbsp dry yeast</li>
+<li>500g bread flour (or strong all-purpose, like King Arthur)</li>
+<li>3 tsps kosher salt (Diamond Crystal preferred)</li></ul></div>
+    </div>
+    <div class="steps-col">
+      <h4 class="col-heading">Steps</h4>
+      <ol class="steps"><li>In a large bowl, combine the water and yeast. Add the flour and salt and mix with one hand until it just forms a smooth dough. Cover and let rise at room temperature for 12–24 hours. It will nearly double in size.</li>
+<li>After this initial ferment, place the dough in the fridge for another 12–48 hours.</li>
+<li>Remove the dough from the fridge and lightly flour your counter. Divide the dough into 3 portions of about 283 grams each. Gently purse one of your dough balls so that just one seam at the bottom of the dough remains, much like a balloon you'd blow into.</li>
+<li>Move to a part of your counter that is un-floured and give the dough a gentle rub, seam side down, on that area. Place the dough ball on a floured part of the counter to rest for 4 hours (closer to 3½ hours on a warm day). Repeat with the remaining dough balls; once all have been pre-shaped, lightly flour the tops and cover them. Place them a couple of inches apart to give them room to get slack again.</li>
+<li>Preheat your oven to 450°F with a baking steel or pizza stone inside. For best results, preheat for at least 45 minutes to 1 hour. Alternatively, if using a pizza oven (e.g. Ooni), preheat according to its instructions until it reaches 700–900°F.</li>
+<li>Shape your pizzas most of the way before placing them on a floured peel or baking sheet turned upside-down. Just before baking, place the pizza on the peel, finish stretching it, and add toppings. For a conventional oven: move the pizza to the stone or steel by tilting the peel slightly, shoving the pizza forward and jerking back to release it onto the hot surface. For a pizza oven: launch directly onto the hot stone and bake for 60–90 seconds, rotating once halfway through.</li></ol>
+    </div>
+  </div>
+</article>
 </section>
 <section id="sub-baking-sweet" class="subsection">
   <h3 class="subsection-heading">Sweet</h3>
@@ -2921,7 +3098,28 @@
 </section>
 <section id="sec-dressings" class="section">
   <h2>Dressings</h2>
-  <article class="recipe" id="dressings-0" data-title="Lemon Mustard Vinaigrette">
+  <article class="recipe" id="joan-chili-aioli" data-title="Joan's on Third Chili Aioli">
+  <h3>Joan's on Third Chili Aioli</h3>
+  <p class="meta">Makes about 2 cups   |   Prep: 10 min</p><p class="source">Source: Los Angeles Times (adapted from Joan's on Third)</p>
+  <div class="recipe-body">
+    <div class="ingredients-col">
+      <h4 class="col-heading">Ingredients</h4>
+      <div class="ing-group"><ul class="ingredients"><li>2 cups mayonnaise</li>
+<li>3 cloves garlic, peeled and minced</li>
+<li>1/4 cup plus 3 Tbsp canola oil blend</li>
+<li>1 tsp ground cumin</li>
+<li>1 1/2 tsp lemon juice</li>
+<li>3 Tbsp dark chili powder</li>
+<li>1 Tbsp plus 1/2 tsp paprika</li>
+<li>Salt and pepper</li></ul></div>
+    </div>
+    <div class="steps-col">
+      <h4 class="col-heading">Steps</h4>
+      <ol class="steps"><li>Whisk together all ingredients in a small bowl until smooth. Taste and season with salt and pepper.</li></ol>
+    </div>
+  </div>
+</article>
+<article class="recipe" id="dressings-1" data-title="Lemon Mustard Vinaigrette">
   <h3>Lemon Mustard Vinaigrette</h3>
   <p class="meta">6   |   Prep: 5 minutes</p><p class="comments">Garlic doubled from the original recipe, and microplaned rather than minced for a smoother, more evenly distributed flavor.</p><p class="source">Source: <a href="https://www.theharvestkitchen.com/lemon-mustard-vinaigrette/" target="_blank" rel="noopener">https://www.theharvestkitchen.com/lemon-mustard-vinaigrette/</a></p>
   <div class="recipe-body">
@@ -2945,7 +3143,7 @@
     </div>
   </div>
 </article>
-<article class="recipe" id="dressings-1" data-title="Greek Salad Dressing">
+<article class="recipe" id="dressings-2" data-title="Greek Salad Dressing">
   <h3>Greek Salad Dressing</h3>
   <p class="meta">6   |   Prep: 5 minutes</p><p class="comments">Garlic doubled from the original recipe, and microplaned rather than minced for a smoother, more evenly distributed flavor.</p><p class="source">Source: <a href="https://www.loveandlemons.com/greek-salad-dressing/" target="_blank" rel="noopener">https://www.loveandlemons.com/greek-salad-dressing/</a></p>
   <div class="recipe-body">
@@ -3028,10 +3226,14 @@
   "Crispy Chicken Katsu Bowls": "meat-mains-chicken-44",
   "Japanese Fried Chicken (Shio Koji Karaage)": "meat-mains-chicken-45",
   "One-Pot Japanese Curry Chicken and Rice": "meat-mains-chicken-46",
+  "Expertly Spiced and Glazed Roast Turkey": "meat-mains-turkey-0",
+  "Turkey and Quinoa Meatloaf": "meat-mains-turkey-1",
+  "Turkey Tikka Masala": "meat-mains-turkey-2",
   "Eggplant Involtini": "vegetarian-mains-vegetables-0",
   "Eggplant Parmesan": "vegetarian-mains-vegetables-1",
-  "Charred Broccoli and Cauliflower Salad": "vegetable-sides-0",
-  "Joan's on Third Butter Lettuce Salad (Copycat)": "vegetable-sides-1",
+  "Butter Lettuce and Citrus Salad": "vegetable-sides-0",
+  "Charred Broccoli and Cauliflower Salad": "vegetable-sides-1",
+  "Joan's on Third Butter Lettuce Salad (Copycat)": "vegetable-sides-2",
   "Dill Pickles": "pickling-0",
   "Quick Pickled Green Onions": "pickling-1",
   "Quick Pickled Red Onions": "pickling-2",
@@ -3040,12 +3242,14 @@
   "Artichoke Pesto Pasta with Fried Peppercorns": "noodles-italian-1",
   "Lemon Fusilli with Arugula": "noodles-italian-2",
   "Christy's Pesto (Adapted)": "noodles-italian-3",
+  "72-Hour Pizza Dough": "baking-savory-0",
   "Eric's Chocolate Chip Cookies": "baking-sweet-0",
   "Chocolate \"Birthday Cake\"": "baking-sweet-1",
   "Nana's Poundcake": "baking-sweet-2",
   "Brenda's Noodle Kugel": "baking-sweet-3",
-  "Lemon Mustard Vinaigrette": "dressings-0",
-  "Greek Salad Dressing": "dressings-1"
+  "Joan's on Third Chili Aioli": "joan-chili-aioli",
+  "Lemon Mustard Vinaigrette": "dressings-1",
+  "Greek Salad Dressing": "dressings-2"
 };
 
   // ── Hamburger toggle (mobile) ─────────────────────────────────────────

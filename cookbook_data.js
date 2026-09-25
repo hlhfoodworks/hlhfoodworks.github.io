@@ -1202,7 +1202,162 @@ const data = {
             }
           ]
         },
-        { title: "Turkey", recipes: [] },
+        { title: "Turkey", recipes: [
+          {
+            title: "Expertly Spiced and Glazed Roast Turkey",
+            servings: "Serves 8–10   |   Active: 45 min   |   Total: About 2 hrs (plus 24–48 hrs dry-brining)",
+            comments: [
+              "Turkey is spatchcocked for more even roasting. Begin 24–48 hours ahead for the dry brine.",
+              "Option: after removing the backbone, also separate the wings and legs for even faster, more even cooking as individual pieces — see Step 1.",
+              "Requires a spice mill or mortar and pestle."
+            ],
+            source: "https://www.epicurious.com/recipes/food/views/expertly-spiced-and-glazed-roast-turkey",
+            ingredientGroups: [
+              { label: "Spice rub (combine in a small bowl)", ingredients: [
+                "2 Tbsp whole black peppercorns",
+                "2 Tbsp whole pink or black peppercorns",
+                "1/2 cup Diamond Crystal or 1/4 cup plus 1 1/2 tsp Morton kosher salt",
+                "2 Tbsp garlic powder",
+                "2 Tbsp onion powder",
+                "1 Tbsp smoked paprika",
+                "1 Tbsp light brown sugar"
+              ]},
+              { label: "Turkey", ingredients: [
+                "1 (12-14 lb.) turkey, neck and giblets removed"
+              ]},
+              { label: "Glaze", ingredients: [
+                "Small handful hardy herbs (sage, rosemary, bay leaves, and/or thyme)",
+                "4 garlic cloves, crushed",
+                "2 (2x1\") strips orange zest",
+                "1/3 cup low-sodium soy sauce",
+                "1/3 cup sherry vinegar or red wine vinegar",
+                "1/3 cup (packed) light brown sugar"
+              ]},
+              { label: "For roasting", ingredients: [
+                "6 Tbsp neutral oil (vegetable, peanut, or canola)",
+                "1 cup water, plus more as needed"
+              ]}
+            ],
+            steps: [
+              { lead: "Spatchcock the turkey (preferred method):",
+                bullets: [
+                  "Place turkey breast side down. Using kitchen shears, cut along one side of the backbone all the way through, then cut along the other side to remove the backbone entirely. Save for stock.",
+                  "Flip turkey breast side up. Press firmly on the breastbone with the heel of your hand until it cracks and the bird lies flat.",
+                  "Option — full breakdown: after removing the backbone, also separate the wings (grip each wing, pull outward, cut through the joint) and the legs (cut through skin, pull back until ball joint pops out, cut through joint). You'll have 5 separate pieces: 2 wings, 2 legs, 1 breast."
+                ]
+              },
+              "Make the spice rub: Finely grind both peppercorns in a spice mill or mortar and pestle. Transfer to a bowl and mix in kosher salt, garlic powder, onion powder, paprika, and 1 Tbsp brown sugar.",
+              "Place turkey on a wire rack set inside a rimmed baking sheet. Sprinkle spice rub liberally all over, patting to adhere (you may not use all of it). Refrigerate uncovered at least 24 hours and up to 2 days.",
+              "Remove turkey from rack; rinse baking sheet and rack if needed. Line baking sheet with 3 layers of foil, set rack back inside, and return turkey skin side up. Let sit at room temperature 2–3 hours.",
+              "Meanwhile, make the glaze: Cook herbs, garlic, orange zest, soy sauce, vinegar, and 1/3 cup brown sugar in a small saucepan over medium heat, stirring occasionally, until sugar dissolves and glaze thickens slightly (barely coats a spoon), 10–12 minutes. Remove from heat.",
+              "Place a rack in the middle of the oven; preheat to 425°F. Rub turkey all over with oil and pour 1 cup water into the baking sheet. Roast, rotating baking sheet halfway through, until skin is mostly golden brown, 20–25 minutes.",
+              "Reduce oven to 300°F. Continue roasting, brushing with glaze every 20 minutes and adding more water by 1/2-cupfuls as needed to keep some liquid in the pan, until an instant-read thermometer reads 150°F in the thickest part of the breast and 170°F in the thickest part of the thigh, 50–70 minutes more (total time 1–1 1/2 hours; fully broken-down pieces may finish faster). Skin should be deep golden brown and shiny.",
+              "Transfer to a cutting board, tent loosely with foil, and rest 30–60 minutes before carving."
+            ]
+          },
+          {
+            title: "Turkey and Quinoa Meatloaf",
+            servings: "Serves 4   |   Total: 1 hr 10 min",
+            comments: [
+              { html: 'Best served with <a href="#joan-chili-aioli">Joan\'s on Third Chili Aioli</a>.' }
+            ],
+            source: "https://www.allrecipes.com/recipe/213211/turkey-and-quinoa-meatloaf/",
+            ingredientGroups: [
+              { label: "Quinoa", ingredients: [
+                "1/4 cup quinoa",
+                "1/2 cup water"
+              ]},
+              { label: "Sauté", ingredients: [
+                "1 tsp olive oil",
+                "1 small onion, chopped",
+                "1 clove garlic, chopped"
+              ]},
+              { label: "Meatloaf", ingredients: [
+                "1 (20 oz) package ground turkey",
+                "1 Tbsp tomato paste",
+                "1 Tbsp hot pepper sauce",
+                "2 Tbsp Worcestershire sauce",
+                "1 egg",
+                "1 1/2 tsp salt",
+                "1 tsp black pepper"
+              ]},
+              { label: "Glaze (combine in small bowl)", ingredients: [
+                "2 Tbsp brown sugar",
+                "2 tsp Worcestershire sauce",
+                "1 tsp water"
+              ]}
+            ],
+            steps: [
+              "Bring quinoa and 1/2 cup water to a boil in a small saucepan. Reduce heat to medium-low, cover, and simmer until quinoa is tender and water is absorbed, 15–20 minutes. Set aside to cool.",
+              "Preheat oven to 350°F.",
+              "Heat olive oil in a skillet over medium heat. Add onion; cook, stirring, until softened and translucent, about 5 minutes. Add garlic and cook 1 minute more. Remove from heat and let cool.",
+              "In a large bowl, mix together ground turkey, cooled quinoa, sautéed onion and garlic, tomato paste, hot pepper sauce, Worcestershire sauce, egg, salt, and pepper until well combined. Transfer to a loaf pan.",
+              "Spread the glaze evenly over the top of the meatloaf.",
+              "Bake until no longer pink in the center and an instant-read thermometer reads at least 160°F, about 50 minutes. Let cool 10 minutes before slicing."
+            ]
+          },
+          {
+            title: "Turkey Tikka Masala",
+            servings: "Serves 6   |   Total: 1 1/2 hrs, plus 4 hrs marinating",
+            comments: [
+              "A great way to use leftover Thanksgiving turkey.",
+              "Marinate the turkey for at least 4 hours, or overnight, for best results."
+            ],
+            source: "Samin Nosrat, NYT Cooking (November 22, 2016)",
+            ingredientGroups: [
+              { label: "Marinade (combine in bowl; fold in turkey; cover and refrigerate)", ingredients: [
+                "2 tsp garam masala",
+                "2 tsp ground coriander",
+                "2 tsp ground cumin",
+                "1 Tbsp paprika",
+                "4 tsp ground turmeric",
+                "1 tsp kosher salt",
+                "6 cloves garlic, finely grated",
+                "4 tsp finely grated fresh ginger",
+                "1 cup whole-milk yogurt",
+                "4 cups cooked turkey (about 1 lb), cut into 1 1/2-inch pieces"
+              ]},
+              { label: "Masala — first addition (all go in together)", ingredients: [
+                "3 Tbsp ghee or neutral-tasting oil",
+                "1 large onion, thinly sliced",
+                "6 cardamom pods, crushed",
+                "1 bay leaf",
+                "1 tsp paprika",
+                "1/2 tsp Aleppo pepper or red pepper flakes",
+                "1 tsp garam masala",
+                "Pinch kosher salt"
+              ]},
+              { label: "Masala — second addition", ingredients: [
+                "1 Tbsp ghee or neutral-tasting oil",
+                "2 Tbsp finely grated fresh ginger",
+                "4 cloves garlic, finely grated",
+                "2 serrano peppers, finely chopped"
+              ]},
+              { label: "Add after onions are browned", ingredients: [
+                "2 Tbsp tomato paste",
+                "1 (28-oz) can whole peeled tomatoes"
+              ]},
+              { label: "Cream and season", ingredients: [
+                "2 cups heavy cream",
+                "3/4 cup coarsely chopped fresh cilantro, plus sprigs for garnish",
+                "1 1/2 tsp kosher salt, plus more to taste"
+              ]},
+              { label: "Finish", ingredients: [
+                "Juice of 1 small lemon",
+                "Jasmine or Basmati rice, for serving"
+              ]}
+            ],
+            steps: [
+              "Make the marinade: Stir together garam masala, coriander, cumin, paprika, turmeric, salt, garlic, ginger, and yogurt in a medium bowl. Fold in turkey. Cover and refrigerate 4 hours or overnight.",
+              "Make the masala: Heat a Dutch oven over medium-high heat. Add 3 Tbsp ghee or oil, then add onion, cardamom, bay leaf, paprika, Aleppo pepper or red pepper flakes, garam masala, and a pinch of salt. Reduce heat to medium and cook, stirring occasionally, until onions are brown and tender, 10–15 minutes.",
+              "Make space in the center of the pot; add 1 Tbsp ghee or oil. When shimmering, add ginger, garlic, and serrano peppers and sizzle about 10 seconds. Stir into the spiced onions. Stir in tomato paste. Add whole peeled tomatoes with their juices, crushing them with your hands as you add them. Bring to a boil, then reduce heat and simmer, stirring often, until liquid is almost gone, 8–10 minutes.",
+              "Add heavy cream and cilantro. Season with 1 1/2 tsp kosher salt; taste and adjust. Simmer over low heat, stirring occasionally, until sauce thickens, about 40 minutes. Discard bay leaf.",
+              "Line a baking sheet with foil; position an oven rack about 6 inches from the broiler; turn on broiler. Lay marinated turkey in a single layer on the foil. Stir any remaining marinade into the sauce. Broil until turkey begins to blacken in spots, 6–8 minutes.",
+              "Using a hand blender (or blender), purée the sauce. Add broiled turkey and return to a simmer for 5–10 minutes, stirring occasionally, until just warmed through. Just before serving, stir in lemon juice. Taste and adjust salt.",
+              "Serve hot, garnished with cilantro sprigs, alongside Jasmine or Basmati rice. Refrigerate leftovers up to 3 days or freeze up to 2 months."
+            ]
+          }
+        ]},
         { title: "Pork", recipes: [] },
         { title: "Lamb", recipes: [] },
         { title: "Beef", recipes: [] },
@@ -1332,6 +1487,31 @@ const data = {
     {
       title: "Vegetable Sides",
       recipes: [
+        {
+          title: "Butter Lettuce and Citrus Salad",
+          servings: "Serves 2–3",
+          comments: ["\"Supreming\" citrus means cutting away the peel and pith, then slicing between the membranes to release clean segments."],
+          source: "The Gourmandise School (The Pizza Class)",
+          ingredientGroups: [
+            {
+              label: null,
+              ingredients: [
+                "1 head butter lettuce",
+                "1 shallot",
+                "Salt & pepper to taste",
+                "1 grapefruit or orange",
+                "2 Tbsp lemon juice",
+                "¼ cup olive oil"
+              ]
+            }
+          ],
+          steps: [
+            "Remove any wilted leaves from the butter lettuce. Tear into bite-sized pieces and place in a medium bowl.",
+            "Mince the shallot and place in a small bowl with a pinch of salt and pepper.",
+            "Supreme (segment) your grapefruit right over the small bowl to catch any juices. Set the segmented citrus aside.",
+            "Add lemon juice to the shallot bowl, then whisk in the olive oil. Dress the butter lettuce with the citronette. Plate and tuck the segmented citrus into and on top of the greens."
+          ]
+        },
         {
           title: "Charred Broccoli and Cauliflower Salad",
           servings: "6 to 8   |   Total: 30 min   |   Active: 25 min",
@@ -1634,7 +1814,32 @@ const data = {
     {
       title: "Baking",
       subsections: [
-        { title: "Savory", recipes: [] },
+        { title: "Savory", recipes: [
+          {
+            title: "72-Hour Pizza Dough",
+            servings: "Makes 3 pizzas (~283g each)",
+            source: "The Gourmandise School (The Pizza Class)",
+            ingredientGroups: [
+              {
+                label: null,
+                ingredients: [
+                  "350 ml water",
+                  "½ Tbsp dry yeast",
+                  "500g bread flour (or strong all-purpose, like King Arthur)",
+                  "3 tsps kosher salt (Diamond Crystal preferred)"
+                ]
+              }
+            ],
+            steps: [
+              "In a large bowl, combine the water and yeast. Add the flour and salt and mix with one hand until it just forms a smooth dough. Cover and let rise at room temperature for 12–24 hours. It will nearly double in size.",
+              "After this initial ferment, place the dough in the fridge for another 12–48 hours.",
+              "Remove the dough from the fridge and lightly flour your counter. Divide the dough into 3 portions of about 283 grams each. Gently purse one of your dough balls so that just one seam at the bottom of the dough remains, much like a balloon you'd blow into.",
+              "Move to a part of your counter that is un-floured and give the dough a gentle rub, seam side down, on that area. Place the dough ball on a floured part of the counter to rest for 4 hours (closer to 3½ hours on a warm day). Repeat with the remaining dough balls; once all have been pre-shaped, lightly flour the tops and cover them. Place them a couple of inches apart to give them room to get slack again.",
+              "Preheat your oven to 450°F with a baking steel or pizza stone inside. For best results, preheat for at least 45 minutes to 1 hour. Alternatively, if using a pizza oven (e.g. Ooni), preheat according to its instructions until it reaches 700–900°F.",
+              "Shape your pizzas most of the way before placing them on a floured peel or baking sheet turned upside-down. Just before baking, place the pizza on the peel, finish stretching it, and add toppings. For a conventional oven: move the pizza to the stone or steel by tilting the peel slightly, shoving the pizza forward and jerking back to release it onto the hot surface. For a pizza oven: launch directly onto the hot stone and bake for 60–90 seconds, rotating once halfway through."
+            ]
+          }
+        ]},
         {
           title: "Sweet",
           recipes: [
@@ -1752,6 +1957,27 @@ const data = {
     {
       title: "Dressings",
       recipes: [
+        {
+          id: "joan-chili-aioli",
+          title: "Joan's on Third Chili Aioli",
+          servings: "Makes about 2 cups   |   Prep: 10 min",
+          source: "Los Angeles Times (adapted from Joan's on Third)",
+          ingredientGroups: [
+            { ingredients: [
+              "2 cups mayonnaise",
+              "3 cloves garlic, peeled and minced",
+              "1/4 cup plus 3 Tbsp canola oil blend",
+              "1 tsp ground cumin",
+              "1 1/2 tsp lemon juice",
+              "3 Tbsp dark chili powder",
+              "1 Tbsp plus 1/2 tsp paprika",
+              "Salt and pepper"
+            ]}
+          ],
+          steps: [
+            "Whisk together all ingredients in a small bowl until smooth. Taste and season with salt and pepper."
+          ]
+        },
         {
           title: "Lemon Mustard Vinaigrette",
           servings: "6   |   Prep: 5 minutes",

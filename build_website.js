@@ -73,6 +73,11 @@ const CLUSTER_MAP = {
   'Crispy Chicken Katsu Bowls':                          'Japanese',
   'Japanese Fried Chicken (Shio Koji Karaage)':          'Japanese',
   'One-Pot Japanese Curry Chicken and Rice':             'Japanese',
+  // Turkey — American
+  'Expertly Spiced and Glazed Roast Turkey':             'American',
+  'Turkey and Quinoa Meatloaf':                          'American',
+  // Turkey — Indian
+  'Turkey Tikka Masala':                                 'Indian',
 };
 
 // ── Helpers ────────────────────────────────────────────────────────────────
@@ -114,13 +119,13 @@ function renderStep(step) {
 }
 
 function renderRecipe(recipe, idPrefix, idx) {
-  const id = `${idPrefix}-${idx}`;
+  const id = recipe.id || `${idPrefix}-${idx}`;
   const title = displayTitle(recipe);
   const isFav = recipe.favorite ? ' data-fav="1"' : '';
 
   const servings = recipe.servings ? `<p class="meta">${esc(recipe.servings)}</p>` : '';
   const comments = (recipe.comments || []).length
-    ? `<p class="comments">${recipe.comments.map(esc).join('<br>')}</p>` : '';
+    ? `<p class="comments">${recipe.comments.map(c => typeof c === 'object' && c.html ? c.html : esc(c)).join('<br>')}</p>` : '';
   const source = recipe.source
     ? `<p class="source">Source: ${
         recipe.source.startsWith('http')
@@ -327,11 +332,11 @@ function buildRecipeLookup(data) {
     const sl = slug(section.title);
 
     if (section.recipes) {
-      section.recipes.forEach((r, i) => { map[r.title] = `${sl}-${i}`; });
+      section.recipes.forEach((r, i) => { map[r.title] = r.id || `${sl}-${i}`; });
     } else if (section.subsections) {
       for (const sub of section.subsections) {
         const subsl = `${sl}-${slug(sub.title)}`;
-        (sub.recipes || []).forEach((r, i) => { map[r.title] = `${subsl}-${i}`; });
+        (sub.recipes || []).forEach((r, i) => { map[r.title] = r.id || `${subsl}-${i}`; });
       }
     }
   }
@@ -617,6 +622,7 @@ const html = `<!DOCTYPE html>
     font-style: italic; font-size: 0.9rem; color: var(--muted);
     margin-bottom: 6px; border-left: 3px solid var(--accent2); padding-left: 10px;
   }
+  .comments a { color: var(--accent2); }
   .source { font-size: 0.8rem; color: #999; margin-bottom: 14px; font-family: 'Helvetica Neue', Arial, sans-serif; }
   .source a { color: #999; }
 
