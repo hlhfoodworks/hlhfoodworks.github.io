@@ -73,6 +73,20 @@ const CLUSTER_MAP = {
   'Crispy Chicken Katsu Bowls':                          'Japanese',
   'Japanese Fried Chicken (Shio Koji Karaage)':          'Japanese',
   'One-Pot Japanese Curry Chicken and Rice':             'Japanese',
+  // Pork — American
+  'Sloppy Moes':                                         'American',
+  // Pork — Latin/South American
+  'Slow Cooker Pork Mole':                               'Latin/South American',
+  'Haitian Pork Griot':                                  'Latin/South American',
+  'Carnitas':                                            'Latin/South American',
+  // Pork — Korean-inspired
+  'Crispy Pork Lettuce Wraps With Spicy Cucumbers':      'Korean-inspired',
+  // Pork — Chinese
+  'Moo Shu Mushrooms':                                   'Chinese',
+  // Noodles: Italian — Italian
+  'Pasta with Sausage, Basil, and Mustard':              'Italian',
+  // Noodles: Asian — Japanese
+  'Stir-Fried Udon Noodles With Pork and Scallions':    'Japanese',
   // Turkey — American
   'Expertly Spiced and Glazed Roast Turkey':             'American',
   'Turkey and Quinoa Meatloaf':                          'American',

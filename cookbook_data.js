@@ -1257,6 +1257,7 @@ const data = {
           },
           {
             title: "Turkey and Quinoa Meatloaf",
+            favorite: true,
             servings: "Serves 4   |   Total: 1 hr 10 min",
             comments: [
               { html: 'Best served with <a href="#joan-chili-aioli">Joan\'s on Third Chili Aioli</a>.' }
@@ -1358,7 +1359,269 @@ const data = {
             ]
           }
         ]},
-        { title: "Pork", recipes: [] },
+        { title: "Pork", recipes: [
+          {
+            title: "Sloppy Moes",
+            favorite: true,
+            servings: "Serves 6   |   Active: 20 min   |   Total: 45 min",
+            source: "Molly Baz, Cook This Book",
+            ingredientGroups: [
+              { label: "Prep", ingredients: [
+                "2 ears fresh corn",
+                "1 lb cherry tomatoes, halved"
+              ]},
+              { label: "Ragu", ingredients: [
+                "1 lb spicy Italian sausage, casings removed",
+                "1 medium yellow onion, chopped",
+                "3 cloves garlic, chopped",
+                "1/4 cup tomato paste",
+                "3 Tbsp red wine vinegar",
+                "1 Tbsp honey",
+                "2 Tbsp sambal oelek",
+                "2 sprigs fresh basil",
+                "1/3 cup water"
+              ]},
+              { label: "Herb salad", ingredients: [
+                "2 scallions, thinly sliced",
+                "1 cup fresh basil leaves",
+                "Splash red wine vinegar",
+                "Drizzle olive oil"
+              ]},
+              { label: "For serving", ingredients: [
+                "6 brioche hot dog buns",
+                "2 Tbsp unsalted butter",
+                "Parmigiano-Reggiano, for grating"
+              ]}
+            ],
+            steps: [
+              "Using the large holes of a box grater, grate the corn kernels from the cobs into a bowl.",
+              "Heat a large skillet over medium-high. Add sausage and cook, breaking into pieces, until browned, 4–5 min.",
+              "Reduce heat to medium. Add onion and cook, stirring, until softened, about 3 min. Add garlic and cook until fragrant, 1 min.",
+              "Add tomato paste and stir to coat. Cook, stirring, until it begins to stick to the pan, 1–2 min.",
+              "Add red wine vinegar, honey, sambal, basil sprigs, water, grated corn, and halved cherry tomatoes. Stir to combine. Bring to a boil, then cover, reduce heat to low, and simmer until thickened, about 15 min. Remove basil sprigs.",
+              "Meanwhile, toss scallions and basil leaves in a small bowl. Dress with a splash of red wine vinegar and a drizzle of olive oil.",
+              "Toast brioche buns in a skillet with butter until golden.",
+              "Serve sausage ragu in toasted buns, topped with herb salad. Grate Parmigiano-Reggiano generously over the top."
+            ]
+          },
+          {
+            title: "Slow Cooker Pork Mole",
+            servings: "Serves 8   |   Total: 8–10 hours (plus 30 min prep)",
+            source: "Adapted from Muy Bueno (Yvette Marquez-Sharpnack) and Food Network Kitchen",
+            ingredientGroups: [
+              { label: "Pork", ingredients: [
+                "1 bone-in pork butt (5–6 lbs)",
+                "Salt and pepper"
+              ]},
+              { label: "Dried chiles — rehydrate (Step 2)", ingredients: [
+                "4 dried ancho chiles, stems and seeds removed",
+                "3 dried California or New Mexico red chiles, stems and seeds removed"
+              ]},
+              { label: "Toast in cast iron (Step 3)", ingredients: [
+                "2 corn tortillas, torn into pieces",
+                "1/3 cup sesame seeds",
+                "1/4 cup raisins",
+                "1 medium yellow onion, roughly chopped",
+                "4 cloves garlic, smashed",
+                "1 tsp ground cinnamon",
+                "1 tsp ground cumin"
+              ]},
+              { label: "Blend into sauce (Step 4)", ingredients: [
+                "3 chipotle chiles in adobo",
+                "1 Tbsp adobo sauce",
+                "1 28-oz can crushed fire-roasted tomatoes",
+                "1 cup fresh cilantro",
+                "1 cup chicken broth",
+                "2 oz Guittard bittersweet chocolate (or other good-quality bittersweet), roughly chopped",
+                "Salt"
+              ]},
+              { label: "For serving", ingredients: [
+                "Warm corn tortillas",
+                "Sliced radishes, chopped white onion, fresh cilantro, lime wedges, crumbled queso fresco (optional)"
+              ]}
+            ],
+            steps: [
+              "Season pork butt all over with salt and pepper and place in a slow cooker.",
+              "Toast dried ancho and California/NM chiles in a dry cast-iron skillet over medium heat, pressing with a spatula, until fragrant and slightly darkened, about 1 minute per side. Transfer to a bowl, cover with boiling water, and soak 20 minutes. Drain, reserving 1/2 cup soaking liquid.",
+              "In the same cast-iron skillet over medium heat, add tortilla pieces, sesame seeds, raisins, onion, and garlic. Toast, stirring frequently, until sesame seeds are golden, raisins are plump, and tortillas are crisp, 4–5 min. Add cinnamon and cumin and stir 30 seconds.",
+              "Transfer toasted mixture to a blender. Add soaked chiles, chipotle chiles, adobo sauce, fire-roasted tomatoes, cilantro, chicken broth, chocolate, and reserved chile soaking liquid. Blend until very smooth. Taste and season generously with salt.",
+              "Pour sauce over pork in slow cooker. Cook on Low 8–10 hours, until pork is very tender and pulls apart easily.",
+              "Using two forks, shred the pork directly in the slow cooker, pulling the meat apart into pieces. Remove and discard the bone. Skim any excess fat from the surface if desired, and stir the shredded pork into the sauce.",
+              "Serve with warm tortillas and toppings."
+            ]
+          },
+          {
+            id: "haitian-pork-griot",
+            title: "Haitian Pork Griot",
+            favorite: true,
+            servings: "Serves 6   |   Total: 3 hours, plus overnight marinating",
+            source: "Patrick Celestin, adapted by Melissa Clark (NYT Cooking)",
+            comments: [
+              {html: "Best served with <a href='#haitian-pikliz'>Pikliz</a>."}
+            ],
+            ingredientGroups: [
+              { label: "Marinade + pork", ingredients: [
+                "1 small Scotch bonnet or habanero chile",
+                "1 medium onion, diced",
+                "1 small green bell pepper, diced",
+                "1 small red bell pepper, diced",
+                "1/4 cup fresh Italian parsley, chopped, plus more for serving",
+                "1 Tbsp kosher salt, plus more to taste",
+                "1 Tbsp coarsely ground black pepper",
+                "6 sprigs fresh thyme, plus more leaves for serving",
+                "2 garlic cloves, finely chopped",
+                "1/4 cup cane vinegar or cider vinegar",
+                "Juice of 1 orange",
+                "Juice of 1 lemon",
+                "Juice of 1/2 lime",
+                "1 Tbsp Worcestershire sauce",
+                "3 lbs pork shoulder, not too lean, cut into 1 1/2-inch chunks"
+              ]},
+              { label: "Finish", ingredients: [
+                "2 Tbsp coconut oil (melted) or olive oil, plus more as needed"
+              ]},
+              { label: "For serving", ingredients: [
+                "Cooked rice",
+                "Pikliz (see recipe)"
+              ]}
+            ],
+            steps: [
+              "Quarter chile and remove seeds and membranes. Finely chop one quarter; leave the rest in whole pieces. Handle carefully, preferably wearing gloves — they are extremely hot.",
+              "Combine all marinade ingredients (chiles, onion, bell peppers, parsley, salt, pepper, thyme, garlic, vinegar, citrus juices, Worcestershire) with pork in a large Dutch oven. Toss well. Cover and refrigerate overnight.",
+              "The next day, remove from refrigerator 1–3 hours before cooking. Heat oven to 325°F. Place pot over high heat and bring to a simmer; cover and transfer to oven. Cook, stirring occasionally, until meat is very tender, 1 1/2–2 hours.",
+              "Using a slotted spoon, remove meat, letting all excess liquid drip back into the pot and removing any vegetable or herb bits. Transfer to a rimmed baking sheet. Drizzle with 2 Tbsp oil and salt to taste; toss gently.",
+              "Strain braising liquid, discarding solids. Return sauce to pot and simmer over high heat until reduced by half, 25–30 min.",
+              "Meanwhile, heat the broiler. Broil meat, tossing occasionally, until evenly browned, 5–10 min — nicely browned in spots but not dried out.",
+              "Drizzle meat with additional oil and top with sauce, parsley, and thyme leaves. Serve on rice with pikliz."
+            ]
+          },
+          {
+            title: "Carnitas",
+            servings: "Serves 10–12   |   Total: 10 hrs 15 min",
+            source: "Nagi Maehashi, RecipeTin Eats",
+            ingredientGroups: [
+              { label: "Pork + rub", ingredients: [
+                "4 lbs boneless pork shoulder (pork butt), skinless",
+                "2 1/2 tsp salt",
+                "1 tsp black pepper",
+                "1 Tbsp dried oregano",
+                "2 tsp ground cumin",
+                "1 Tbsp olive oil"
+              ]},
+              { label: "Slow cooker aromatics", ingredients: [
+                "1 medium onion, chopped",
+                "1 jalapeño, deseeded and chopped",
+                "4 cloves garlic, minced",
+                "3/4 cup fresh orange juice (from 2 oranges)"
+              ]},
+              { label: "To crisp", ingredients: [
+                "1 Tbsp vegetable oil"
+              ]},
+              { label: "For serving", ingredients: [
+                "Warm corn or flour tortillas",
+                "Diced avocado, pico de gallo, grated cheese, sour cream (optional toppings)"
+              ]}
+            ],
+            steps: [
+              "Combine salt, pepper, oregano, cumin, and olive oil to form the rub. Pat pork dry and rub all over. Place fat-side up in slow cooker; top with onion, jalapeño, and garlic. Pour orange juice over.",
+              "Cook on Low 10 hours or High 7 hours, until pork is fall-apart tender.",
+              "Transfer pork to a cutting board; let cool slightly and shred with two forks. Skim fat from juices. If you have more than 2 cups of juice, simmer on the stove to reduce. Reserve.",
+              "Heat 1 Tbsp vegetable oil in a large non-stick skillet over high heat. Working in batches, spread pork in a single layer and drizzle with some juices. Let the juices evaporate and the bottom brown and crisp, then briefly sear the other side. Repeat for remaining batches.",
+              "Serve immediately in warm tortillas with toppings, drizzled with more juices."
+            ]
+          },
+          {
+            title: "Crispy Pork Lettuce Wraps With Spicy Cucumbers",
+            servings: "Serves 2   |   Total: 3 hours (including marinating and roasting)",
+            source: "Alison Roman, Bon Appétit (October 2015)",
+            ingredientGroups: [
+              { label: "Pork + rub", ingredients: [
+                "1 12-oz piece skin-on pork belly (about 4x3 1/2x1 1/4 inches)",
+                "Kosher salt and freshly ground pepper",
+                "2 Tbsp light brown sugar, divided"
+              ]},
+              { label: "Braise", ingredients: [
+                "4 chiles de árbol",
+                "2 star anise pods",
+                "2 Tbsp soy sauce",
+                "1 1/4 cups water"
+              ]},
+              { label: "Spicy cucumber salad", ingredients: [
+                "2 Persian or kirby cucumbers, thinly sliced",
+                "2 scallions, thinly sliced",
+                "1/2 red chile (Fresno or jalapeño), thinly sliced",
+                "2 Tbsp unseasoned rice wine vinegar"
+              ]},
+              { label: "Gochujang-miso sauce", ingredients: [
+                "3 Tbsp gochujang",
+                "3 Tbsp white miso"
+              ]},
+              { label: "For serving", ingredients: [
+                "1 small head lettuce (Little Gem or romaine hearts), torn",
+                "1/2 bunch mint",
+                "1/2 cup kimchi (optional)"
+              ]}
+            ],
+            steps: [
+              "Diagonally score the fat side of the pork belly, cutting through the fat but stopping at the flesh, about 1/4 inch apart. Season with salt, pepper, and 1 Tbsp brown sugar. Wrap tightly in plastic wrap and refrigerate at least 2 hours or up to 2 days.",
+              "Preheat oven to 400°F. Unwrap pork and nestle into the smallest baking dish you have. Add chiles de árbol, star anise, soy sauce, remaining 1 Tbsp brown sugar, and 1 1/4 cups water. Roast until most fat has rendered, meat is tender, and top is browned and crisp, 2–2 1/2 hours.",
+              "Meanwhile, toss cucumbers, scallions, red chile, and vinegar in a small bowl. In a separate small bowl, mix gochujang and miso.",
+              "Transfer pork to a cutting board and rest 10 min. Pour off pan juices into a measuring glass; skim fat from surface.",
+              "Slice pork into 1/2-inch slices and arrange on a platter. Pour pan juices over. Serve with lettuce, cucumber salad, mint, kimchi (if using), and gochujang-miso sauce.",
+              "Do ahead: Pork can be cooked 2 days ahead. Cool, cover, and chill. Reheat before serving."
+            ]
+          },
+          {
+            title: "Moo Shu Mushrooms",
+            servings: "Serves 4   |   Total: 45 min",
+            source: "J. Kenji López-Alt, NYT Cooking (January 28, 2020)",
+            comments: [
+              "If you can't find dried day lily buds, substitute 4 oz canned sliced bamboo shoots and skip the soaking step."
+            ],
+            ingredientGroups: [
+              { label: "Dried ingredients — rehydrate (Step 1)", ingredients: [
+                "1/3 cup dried Chinese wood ear mushrooms (about 10 grams)",
+                "1/4 packed cup dried day lily buds (about 15 grams)"
+              ]},
+              { label: "Pork marinade (Step 2)", ingredients: [
+                "2 oz pork loin or pork sirloin, cut into 1 1/2- to 2-inch slivers",
+                "1/2 tsp Shaoxing wine or dry sherry",
+                "1/2 tsp light soy sauce or shoyu",
+                "1/2 tsp cornstarch",
+                "1/4 tsp white pepper",
+                "Pinch kosher salt"
+              ]},
+              { label: "Stir-fry sauce (Step 3)", ingredients: [
+                "2 1/2 tsp Shaoxing wine or dry sherry",
+                "2 1/2 tsp light soy sauce or shoyu",
+                "1/2 tsp cornstarch",
+                "1/4 tsp white pepper"
+              ]},
+              { label: "Stir-fry (Steps 4–7)", ingredients: [
+                "4 Tbsp roasted sesame oil, divided",
+                "3 eggs, beaten with a pinch of salt",
+                "2 slices fresh ginger",
+                "1/2 lb mixed sliced fresh mushrooms (shimeji, shiitake, enoki, oyster or maitake)",
+                "2 scallions, thinly sliced on a sharp bias",
+                "1/4 tsp MSG (optional)",
+                "Kosher salt and white pepper, to taste"
+              ]},
+              { label: "For serving", ingredients: [
+                "Mandarin pancakes or warm flour tortillas",
+                "Hoisin sauce or sweet bean sauce"
+              ]}
+            ],
+            steps: [
+              "Rehydrate dried ingredients: Place wood ear mushrooms and day lily buds in separate bowls. Cover with very hot water and soak until rehydrated, about 15 min. Drain well. Remove tough centers from wood ears, then thinly slice. Cut day lilies into 2-inch pieces.",
+              "Prepare pork marinade: Whisk together Shaoxing wine, soy sauce, cornstarch, white pepper, and a pinch of salt. Add pork and stir vigorously for 10 seconds. Set aside 15 min at room temperature.",
+              "Make stir-fry sauce: Whisk together remaining Shaoxing wine, soy sauce, cornstarch, and white pepper in a small bowl until no lumps remain.",
+              "Cook eggs: Heat wok over high until lightly smoking. Add 2 Tbsp sesame oil, swirl to coat. Pour in beaten eggs and cook without moving 10 seconds. Break up eggs with a spatula until barely set, 30–45 seconds. Transfer to a large bowl.",
+              "Wipe out wok, return to high heat until smoking. Add 1 Tbsp oil, swirl. Add 1 ginger slice, let sizzle 5 seconds. Add pork and stir-fry until just cooked through, about 1 min. Discard ginger; transfer pork to bowl with eggs.",
+              "Wipe out wok, return to high heat. Add remaining 1 Tbsp oil, swirl. Add remaining ginger slice, sizzle 5 seconds. Add fresh mushrooms and stir-fry until lightly browned, 2–3 min. Add scallions, sliced wood ears, and day lilies; stir-fry until softened, about 30 seconds.",
+              "Return pork and eggs to wok. Stir sauce and add to wok with MSG (if using). Stir-fry to combine; season with salt and white pepper. Discard ginger. Serve immediately with Mandarin pancakes and hoisin sauce."
+            ]
+          }
+        ]},
         { title: "Lamb", recipes: [] },
         { title: "Beef", recipes: [] },
         { title: "Ground Beef", recipes: [] },
@@ -1675,6 +1938,38 @@ const data = {
             "Carefully pour the hot brine over the onions. Press the onions down with a spoon to make sure they are fully submerged.",
             "Let sit at room temperature for 15 minutes, then serve. Store covered in the fridge for up to 2 weeks, keeping the onions submerged in liquid."
           ]
+        },
+        {
+          id: "haitian-pikliz",
+          title: "Pikliz",
+          favorite: true,
+          servings: "Makes 1 quart   |   Prep: 30 min   |   Ready after: 3 days' pickling",
+          source: "Patrick Celestin, adapted by Melissa Clark (NYT Cooking)",
+          comments: [
+            {html: "The traditional Haitian accompaniment to <a href='#haitian-pork-griot'>Pork Griot</a>. Also wonderful with rice and beans, roast chicken, or any dish that needs a spicy, vinegary punch. Keeps refrigerated for at least 3 weeks."}
+          ],
+          ingredientGroups: [
+            { label: "Pickle", ingredients: [
+              "2 cups thinly sliced green cabbage",
+              "1 medium onion, halved and thinly sliced",
+              "1 large carrot, peeled and coarsely grated (1 cup)",
+              "1/2 medium bell pepper (green, red or yellow), seeded and thinly sliced (1 cup)",
+              "2 scallions, thinly sliced",
+              "4 Scotch bonnet or habanero chiles, seeded and very thinly sliced",
+              "4 garlic cloves, finely chopped",
+              "1 1/4 tsp kosher salt",
+              "12 black peppercorns",
+              "4 whole cloves"
+            ]},
+            { label: "Brine", ingredients: [
+              "1 1/2 cups cane vinegar, cider vinegar or white vinegar",
+              "Juice of 1/2 lime"
+            ]}
+          ],
+          steps: [
+            "Combine cabbage, onion, carrot, bell pepper, scallions, chiles, garlic, salt, peppercorns, and cloves in a large bowl. Toss well.",
+            "Pack tightly into a 1-quart jar with a tightfitting lid. Pour vinegar and lime juice over vegetables, pressing down until completely submerged. Cover and refrigerate for at least 3 days before opening. Keeps for at least 3 weeks refrigerated."
+          ]
         }
       ]
     },
@@ -1802,12 +2097,71 @@ const data = {
                 "With the processor running, add the olive oil, walnuts, salt, Parmesan, and warm water; process until smooth.",
                 "Portion into individual packages (3 heaping tablespoons each) and freeze."
               ]
+            },
+            {
+              title: "Pasta with Sausage, Basil, and Mustard",
+              favorite: true,
+              servings: "Serves 4   |   Active: 10 min   |   Total: 20 min",
+              source: "Nigel Slater, Food & Wine (September 2002)",
+              ingredientGroups: [
+                { label: "Pasta", ingredients: [
+                  "1 lb penne, rigatoni, or medium shells"
+                ]},
+                { label: "Sausage + sauce", ingredients: [
+                  "1 Tbsp extra-virgin olive oil",
+                  "8 sausage links (about 1 1/2 lbs), casings removed, meat crumbled — hot Italian, sweet Italian, sage, or breakfast sausage (such as Jimmy Dean) all work",
+                  "3/4 cup dry white wine",
+                  "3/4 cup heavy cream",
+                  "3 Tbsp grainy mustard",
+                  "Pinch of Aleppo pepper or red pepper flakes"
+                ]},
+                { label: "Finish", ingredients: [
+                  "1 cup fresh basil, thinly sliced"
+                ]}
+              ],
+              steps: [
+                "Cook pasta in a large pot of boiling salted water until al dente. Drain.",
+                "Meanwhile, heat olive oil in a large, deep skillet over moderately high heat. Add sausage meat and brown, breaking up as it cooks, about 5 min.",
+                "Add wine and simmer, scraping up any browned bits from the bottom, until reduced by half, about 5 min.",
+                "Add cream, mustard, and Aleppo pepper; simmer 2 min.",
+                "Remove from heat. Add drained pasta and basil; toss to coat. Serve immediately."
+              ]
             }
           ]
         },
         {
           title: "Asian",
-          recipes: []
+          recipes: [
+            {
+              title: "Stir-Fried Udon Noodles With Pork and Scallions",
+              servings: "Serves 4   |   Total: 25 min",
+              source: "Claire Saffitz, Bon Appétit (April 2019)",
+              ingredientGroups: [
+                { label: "Noodles + cabbage", ingredients: [
+                  "4 cups very coarsely chopped green cabbage (about 1/4 medium head)",
+                  "2 (7-oz.) packages instant udon noodles, flavor packets discarded"
+                ]},
+                { label: "Stir-fry", ingredients: [
+                  "2 Tbsp vegetable oil, divided",
+                  "2 tsp toasted sesame oil",
+                  "8 oz ground pork",
+                  "5 scallions, white and pale green parts coarsely chopped, dark green parts thinly sliced (kept separate)",
+                  "2 tsp finely grated peeled ginger",
+                  "1 tsp Aleppo pepper or red pepper flakes",
+                  "1/3 cup mirin (sweet Japanese rice wine)",
+                  "1/3 cup soy sauce",
+                  "1 Tbsp toasted sesame seeds, plus more for serving"
+                ]}
+              ],
+              steps: [
+                "Heat 1 Tbsp vegetable oil in a large skillet over medium-high. Cook cabbage, tossing often, until edges are browned, about 4 min. Reduce heat to low and continue cooking until thickest parts are tender, about 4 min more. Remove from heat.",
+                "Place udon noodles in a large heatproof bowl; cover with 6 cups boiling water. Let sit 1 minute, stirring to separate, then drain. Toss noodles with sesame oil. Add reserved cabbage to bowl.",
+                "Wipe out skillet. Heat remaining 1 Tbsp vegetable oil over medium-high. Add pork, spreading across the pan; cook undisturbed until underside is browned, about 3 min. Break up meat and continue cooking until no longer pink, about 1 min. Add scallion whites and pale greens, ginger, and Aleppo pepper; cook, tossing, until scallions soften and skillet starts to brown, about 1 min.",
+                "Add noodle-cabbage mixture, mirin, and soy sauce. Cook, tossing constantly and scraping up browned bits, until noodles are coated, about 45 seconds. Remove from heat; toss in dark scallion greens and 1 Tbsp sesame seeds.",
+                "Divide among bowls and top with more sesame seeds."
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1960,6 +2314,7 @@ const data = {
         {
           id: "joan-chili-aioli",
           title: "Joan's on Third Chili Aioli",
+          favorite: true,
           servings: "Makes about 2 cups   |   Prep: 10 min",
           source: "Los Angeles Times (adapted from Joan's on Third)",
           ingredientGroups: [

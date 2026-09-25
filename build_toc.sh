@@ -21,4 +21,9 @@ node build_cookbook.js
 echo "=== Step 6: Generating website ==="
 node build_website.js
 
-echo "=== Done! ==="
+echo "=== Step 7: Publishing to website ==="
+git add cookbook_data.js index.html build_website.js recipe_utils.js
+git commit -m "Update cookbook: $(date '+%Y-%m-%d')" || echo "(nothing new to commit)"
+git push
+
+echo "=== Done! Website will update in ~1 minute at https://hlhfoodworks.github.io ==="
