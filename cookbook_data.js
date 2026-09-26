@@ -1023,7 +1023,8 @@ const data = {
               title: "Chile Crisp Chicken n' Peanuts Scoop",
               servings: "Serves 6   |   Active: 15–20 minutes",
               comments: [
-                "A not-so-classic chicken salad made spicy with chile crisp and nutty with peanut butter — no cooking required. Be gentle when mixing; the acid in the dressing can break down the chicken if you overwork it. A few careful folds are all it takes."
+                "A not-so-classic chicken salad made spicy with chile crisp and nutty with peanut butter — no cooking required. Be gentle when mixing; the acid in the dressing can break down the chicken if you overwork it. A few careful folds are all it takes.",
+                "Excellent served over pan-fried udon noodles."
               ],
               source: "Molly Baz",
               ingredientGroups: [
@@ -1649,6 +1650,33 @@ const data = {
             ]
           },
           {
+            title: "Lula Kebabs",
+            servings: "Serves 6   |   Prep: 30 min   |   Cook: 10 min   |   Total: 40 min",
+            source: "Janelle Leatherwood, The Stuffed Grape Leaf",
+            ingredientGroups: [
+              { ingredients: [
+                "1 lb ground lamb",
+                "1 lb ground beef",
+                "1/2 cup fresh parsley, finely chopped",
+                "1/4 cup fresh mint, finely chopped",
+                "1/2 yellow onion, grated or very finely minced",
+                "1/2 Tbsp ground cumin",
+                "2 tsp allspice",
+                "1/2 tsp ground coriander",
+                "1/2 tsp garlic powder",
+                "2 tsp fresh lemon juice",
+                "1 Tbsp extra-virgin olive oil",
+                "2 Tbsp tomato paste",
+                "Kosher salt and black pepper, to taste"
+              ]}
+            ],
+            steps: [
+              "Combine both ground meats, parsley, mint, onion, cumin, allspice, coriander, garlic powder, lemon juice, olive oil, and tomato paste in a large bowl. Season with salt and pepper and mix until evenly combined.",
+              "Shape mixture into long, flattened patties and thread onto skewers if desired.",
+              "Grill over medium-high heat until cooked through but not dried out, about 10 minutes total, turning once."
+            ]
+          },
+          {
             title: "Luscious Tandoori Lamb Chops",
             servings: "Serves 4   |   Active: 30 min   |   Total: ~9 hrs (including overnight marinade)",
             source: "Suvir Saran, Food & Wine",
@@ -1712,6 +1740,148 @@ const data = {
               "Cook on rotisserie: 18–20 min per lb for rare (140°F internal), 25–30 min per lb for medium (160°F), or 35–40 min per lb for well done (170°F).",
               "Remove from rotisserie and slice 1/4 inch thick. Serve with Horseradish Sauce."
             ]
+          },
+          {
+            title: "The Best Passover Brisket",
+            servings: "Serves 12   |   Prep: 15 min   |   Cook: 3 hrs 30 min   |   Total: 3 hrs 45 min",
+            source: "Phoebe Lapine, Feed Me Phoebe",
+            ingredientGroups: [
+              { label: "Brisket (Steps 1–2)", ingredients: [
+                "One 5-lb brisket",
+                "8 garlic cloves, each cut lengthwise into 4 pieces",
+                "Sea salt and black pepper",
+                "1 Tbsp olive oil",
+                "1 qt beef stock"
+              ]},
+              { label: "Caramelized onions (Step 3 — while brisket braises)", ingredients: [
+                "2 Vidalia or sweet onions, thinly sliced"
+              ]},
+              { label: "Sauce (Step 4)", ingredients: [
+                "1 cup ketchup",
+                "1/4 cup coconut sugar or brown sugar",
+                "1 tsp paprika",
+                "1 tsp smoked paprika",
+                "1/4 tsp cayenne",
+                "1/2 tsp dried thyme or rosemary",
+                "2 bay leaves"
+              ]}
+            ],
+            steps: [
+              "Preheat oven to 500°F. Trim fat cap to an even 1/4-inch layer. Using a paring knife, make vertical incisions all over the meat and insert a piece of garlic into each. Season both sides generously with salt and pepper. Place in a large braiser, Dutch oven, or rimmed metal baking dish fat-side up and brown in the oven, about 10 minutes per side.",
+              "Remove pan from oven and pour in beef stock. (If using Pyrex, let the pan cool a few minutes first to prevent shattering.) Turn oven down to 350°F, cover tightly with a lid or foil, and braise for 1 hour.",
+              "While the brisket braises, heat olive oil in a large skillet over medium-low. Add onions and sauté, stirring occasionally, until soft and caramelized, about 30 minutes.",
+              "Remove brisket from oven. Whisk ketchup, sugar, paprika, smoked paprika, cayenne, thyme or rosemary, and bay leaves into the pan juices. Arrange caramelized onions on top of the meat. Cover and return to oven for 2–3 more hours. (2 hours for sliceable brisket; 3 hours for falling-apart, pulled-style.)",
+              "Transfer brisket to a cutting board and slice against the grain. Return slices to the sauce and serve. Can be made 1–2 days ahead and reheated gently."
+            ]
+          },
+          {
+            id: "sous-vide-beef-ribs",
+            title: "Sous Vide Beef Back Ribs",
+            servings: "Serves 6–8   |   Prep: 20 min   |   Sous vide: 24 hrs   |   Finish: 10 min   |   Total: ~24.5 hrs",
+            source: "Sip Bite Go, Two Kooks in the Kitchen, Went Here 8 This (Family hybrid)",
+            comments: [
+              {html: "Season with <a href='#steak-seasoning-rub'>Steak Seasoning Rub</a> (3× batch) before the sous vide, and serve alongside <a href='#cherry-bbq-sauce'>Cherry Barbecue Sauce</a>."}
+            ],
+            ingredientGroups: [
+              { label: "Rub (Step 1)", ingredients: [
+                "Steak Seasoning Rub — 3× batch for 2 racks (see recipe)"
+              ]},
+              { label: "Ribs (Steps 1–3)", ingredients: [
+                "2 racks beef back ribs (~7–8 lbs total; also sold as beef spare ribs)"
+              ]},
+              { label: "Optional dripping glaze (Step 4)", ingredients: [
+                "½ cup drippings from the sous vide bags, strained",
+                "1 tsp Dijon mustard",
+                "2 Tbsp maple syrup or brown sugar",
+                "1 tsp cornstarch"
+              ]},
+              { label: "Serve (Step 5)", ingredients: [
+                "Cherry Barbecue Sauce (see recipe), warmed"
+              ]}
+            ],
+            steps: [
+              "Make a 3× batch of the Steak Seasoning Rub. Remove the silver skin membrane from the underside of each rack: slide a knife tip under the tissue at one end of a bone, grab it firmly with a paper towel, and peel the membrane off in one sheet. Pat ribs dry and rub generously all over. Vacuum seal each rack flat in its own bag.",
+              "Fill your sous vide container and set the circulator to 150°F. Submerge the sealed bags and cook for 24 hours.",
+              "Remove ribs from bags. To make the glaze, reserve ½ cup drippings; otherwise discard. Pat ribs very dry with paper towels — the drier they are, the better the char.",
+              "Optional glaze: Strain reserved drippings into a small saucepan. Refrigerate or freeze for 20–30 minutes until fat starts to congeal; skim and discard fat. Add Dijon, maple syrup, and cornstarch; whisk to combine. Bring to a boil, then reduce heat and simmer about 5 minutes until thickened and glossy.",
+              "Heat grill to high. Grill ribs 2–3 minutes per side until nicely charred. (If using the glaze, brush on both sides before and during grilling.) Slice between the bones and serve with Cherry Barbecue Sauce on the side."
+            ]
+          },
+          {
+            title: "Dijon and Cognac Beef Stew",
+            servings: "Serves 4–6   |   Total: about 3 hours",
+            source: "Regina Schrambling, NYT Cooking",
+            comments: [
+              "Slow-cooker variation: render salt pork and sear flour-dusted beef in a sauté pan, then transfer to slow cooker with onions, shallots, carrots, mushrooms, and red wine. Deglaze pan with Cognac, then add 1 cup (not 2) stock, Dijon, and 1 Tbsp Pommery mustard; transfer to slow cooker. Cook on low 6–8 hours. Stir in remaining 3 Tbsp Pommery mustard before serving."
+            ],
+            ingredientGroups: [
+              { label: "Aromatics (Step 1)", ingredients: [
+                "1/4 lb salt pork, diced",
+                "1 large onion, finely diced",
+                "3 shallots, chopped",
+                "2 Tbsp unsalted butter, plus more as needed"
+              ]},
+              { label: "Beef (Step 2)", ingredients: [
+                "2 lbs beef chuck, cut into 1-inch cubes",
+                "2 Tbsp all-purpose flour",
+                "Kosher salt and black pepper"
+              ]},
+              { label: "Braise (Step 3)", ingredients: [
+                "1/2 cup Cognac",
+                "2 cups beef stock",
+                "1/2 cup Dijon mustard",
+                "1 Tbsp Pommery mustard (or other whole-grain Dijon)"
+              ]},
+              { label: "Add-ins (Steps 4–5)", ingredients: [
+                "4 large carrots, peeled and cut into half-moon slices",
+                "2 Tbsp unsalted butter",
+                "1/2 lb mushrooms, stemmed, cleaned, and quartered",
+                "3 Tbsp Pommery mustard (remaining)",
+                "1/4 cup red wine"
+              ]}
+            ],
+            steps: [
+              "Place salt pork in a Dutch oven over low heat and cook until fat is rendered. Remove and discard solids. Raise heat, add onion and shallots, and cook until softened but not browned, 10–15 minutes. Transfer to a bowl with a slotted spoon.",
+              "Add 2 Tbsp butter to the pot if needed to augment fat. Dust beef cubes with flour, season with salt and pepper, and shake off excess. Working in batches, brown beef over medium-high until well browned and almost crusty on all sides; transfer to the bowl with onions. Repeat.",
+              "Add Cognac to the empty pot and cook, stirring, until the bottom is deglazed. Add stock, Dijon mustard, and 1 Tbsp Pommery mustard; whisk to blend. Return meat and onions to pot. Reduce heat, partly cover, and simmer gently until meat is very tender, about 1 1/2 hours.",
+              "Add carrots and continue simmering until tender, about 30 minutes. Meanwhile, heat 2 Tbsp butter in a medium skillet over medium-high and sauté mushrooms until browned.",
+              "Stir mushrooms into the stew along with the remaining 3 Tbsp Pommery mustard and red wine. Simmer 5 minutes, taste, and adjust seasoning. Serve hot."
+            ]
+          },
+          {
+            title: "Asian Braised Short Ribs",
+            favorite: true,
+            servings: "Serves 6   |   Prep: 30 min   |   Cook: 6 hrs (slow cooker)   |   Total: ~6.5 hrs",
+            source: "Williams-Sonoma Kitchen",
+            ingredientGroups: [
+              { label: "Short ribs (Steps 1–2)", ingredients: [
+                "2 Tbsp whole Chinese five spice (ground in spice grinder)",
+                "4 lbs bone-in beef short ribs",
+                "2–3 Tbsp olive oil"
+              ]},
+              { label: "Aromatics + braising liquid (Step 3)", ingredients: [
+                "1 large yellow onion, cut into 1/4-inch slices",
+                "4 garlic cloves, thinly sliced",
+                "1/3 cup plum wine",
+                "1/3 cup soy sauce",
+                "1/3 cup rice vinegar",
+                "1/4 cup sesame oil",
+                "1 Tbsp chili garlic paste",
+                "2 Tbsp fresh ginger, grated",
+                "Zest of 1 orange, peeled into 1/2-inch strips",
+                "Juice of 1 orange",
+                "1/4 cup sugar dissolved in 3/4 cup boiling water"
+              ]},
+              { label: "Serve", ingredients: [
+                "Steamed rice"
+              ]}
+            ],
+            steps: [
+              "Grind Chinese five spice in a spice grinder. Season short ribs all over with ground five spice; shake off excess.",
+              "In a heavy sauté pan over medium-high heat, warm 1 Tbsp olive oil. Working in batches, brown ribs on all sides, 10–12 minutes total, adding more oil as needed. Transfer to a slow cooker.",
+              "Add more oil to pan if needed. Reduce heat to medium, add onion and garlic, and cook, stirring occasionally, until soft, about 5 minutes. Add plum wine and stir to deglaze, scraping up browned bits. Increase heat to medium-high and cook until wine is reduced by half, 2–3 minutes. Transfer to slow cooker along with soy sauce, rice vinegar, sesame oil, chili garlic paste, ginger, orange zest, orange juice, and sugar mixture. Cover and cook on high for 6 hours.",
+              "Skim fat from the surface. Serve ribs and sauce over steamed rice."
+            ]
           }
         ]},
         { title: "Ground Beef", recipes: [
@@ -1762,6 +1932,48 @@ const data = {
               "While the ragù braises, make the slaw: combine sliced apples, fennel, half the reserved cilantro leaves, and fennel fronds (roughly chopped, if you have them) in a large bowl. Dress with 1/3 cup apple cider vinegar and 1 Tbsp honey; toss to coat. Season with salt and pepper. Keep chilled until serving.",
               "Preheat oven to 375°F. Place taco shells on a baking sheet and bake until just warm, 4 minutes.",
               "Fill shells with ragù and a dollop of sour cream. Top with cilantro leaves and fennel-apple slaw. Serve immediately."
+            ]
+          },
+          {
+            title: "Korean Beef Bowl",
+            servings: "Serves 4   |   Active: 20 min   |   Total: 25 min",
+            source: "Khin's Kitchen, Glebe Kitchen, Chef Savvy (Family hybrid)",
+            ingredientGroups: [
+              { label: "Sauce (mix ahead, Step 1)", ingredients: [
+                "3 Tbsp low-sodium soy sauce",
+                "2 Tbsp brown sugar",
+                "1 1/2 Tbsp mirin",
+                "1 1/2 Tbsp gochujang",
+                "2 tsp sesame oil",
+                "1/4 tsp black pepper"
+              ]},
+              { label: "Creamy gochujang drizzle (Step 2)", ingredients: [
+                "3 Tbsp mayonnaise",
+                "1 Tbsp sour cream",
+                "1–2 tsp gochujang, to taste",
+                "1 tsp rice wine vinegar"
+              ]},
+              { label: "Beef and aromatics (Steps 3–4)", ingredients: [
+                "1 Tbsp vegetable oil",
+                "1/2 large sweet onion, finely diced",
+                "4 cloves garlic, minced",
+                "1 tsp fresh ginger, grated",
+                "1 1/2 lbs lean ground beef"
+              ]},
+              { label: "Serve (Step 6)", ingredients: [
+                "Steamed white rice",
+                "3 green onions, thinly sliced",
+                "1 Tbsp toasted sesame seeds",
+                "Kimchi"
+              ]}
+            ],
+            steps: [
+              "Whisk all sauce ingredients together in a small bowl. Set aside.",
+              "Stir together mayo, sour cream, gochujang, and rice wine vinegar until smooth. Refrigerate until serving.",
+              "Heat oil in a large skillet or wok over medium-high. Add onion and cook, stirring, until softened and lightly golden, 3–4 minutes. Add garlic and ginger; cook 1 minute more.",
+              "Add ground beef, breaking into small pieces, and cook until browned and cooked through, 4–5 minutes. Drain excess fat if needed.",
+              "Pour sauce over beef and stir to combine. Simmer 2–3 minutes until slightly thickened.",
+              "Spoon over rice. Garnish with green onions and sesame seeds. Drizzle with creamy gochujang sauce. Serve with kimchi on the side."
             ]
           }
         ]},
@@ -2266,6 +2478,49 @@ const data = {
                 "Add cream, mustard, and Aleppo pepper; simmer 2 min.",
                 "Remove from heat. Add drained pasta and basil; toss to coat. Serve immediately."
               ]
+            },
+            {
+              title: "Spiced Meatballs with Pappardelle",
+              servings: "Serves 4   |   Total: 1 hr 15 min",
+              source: "Molly Baz, The Club",
+              ingredientGroups: [
+                { label: "Sauce (Step 1)", ingredients: [
+                  "3 Tbsp unsalted butter",
+                  "1 large yellow onion, finely chopped",
+                  "1 cinnamon stick",
+                  "1 tsp Aleppo pepper or red pepper flakes",
+                  "1 (28-oz) can crushed tomatoes",
+                  "2 Tbsp red wine vinegar",
+                  "Kosher salt"
+                ]},
+                { label: "Meatball mixture — also used as toasted breadcrumbs (Step 2)", ingredients: [
+                  "1 large egg",
+                  "2 Tbsp extra-virgin olive oil",
+                  "1 cup panko breadcrumbs",
+                  "1 1/2 tsp garam masala (or baharat or hawaij)",
+                  "1 1/2 tsp ground turmeric",
+                  "1 Tbsp kosher salt, plus more",
+                  "1/3 cup golden raisins or currants",
+                  "3 garlic cloves, finely grated",
+                  "1 bunch dill, coarsely chopped (reserve a handful for garnish)",
+                  "1 bunch cilantro, coarsely chopped (reserve a handful for garnish)"
+                ]},
+                { label: "Beef (Step 3)", ingredients: [
+                  "1 lb ground beef (80/20)"
+                ]},
+                { label: "Finish + serve (Steps 4–5)", ingredients: [
+                  "1/2 cup water",
+                  "1 Tbsp unsalted butter",
+                  "1 lb fresh pappardelle or other fresh long pasta"
+                ]}
+              ],
+              steps: [
+                "Preheat oven to 400°F. In a large Dutch oven over medium heat, melt 3 Tbsp butter. Add onion, cinnamon stick, Aleppo pepper or red pepper flakes, and a big pinch of salt. Cook, stirring, until onions begin to soften, 5–6 minutes. Add crushed tomatoes and red wine vinegar. Cover with a tight-fitting lid and transfer to oven for 20 minutes.",
+                "Meanwhile, in a large bowl, whisk together egg and olive oil. Add panko, garam masala, turmeric, salt, raisins, and grated garlic; mix well. Coarsely chop dill and cilantro (reserving a handful of each for garnish) and stir into the panko mixture. Scoop out 3/4 cup of this mixture and spread on a small rimmed baking sheet; toast in the oven until golden and crisp, stirring once, 9–14 minutes. Let cool. (These are your breadcrumbs.)",
+                "Add ground beef to the remaining panko mixture and work with your hands until evenly combined. Divide into 8 equal portions and roll into balls.",
+                "Bring a large pot of salted water to a boil. Remove Dutch oven from oven, uncover, and stir in 1/2 cup water. Nestle meatballs in the sauce, turning once to coat. Return lid slightly ajar and bake until meatballs are just cooked through and bouncy, 12–16 minutes. Remove from oven and keep covered.",
+                "Transfer meatballs to a plate. Cook pappardelle per package directions until just al dente. Use tongs to transfer pasta into the sauce, add 1 Tbsp butter, and toss to coat, adding pasta water as needed. Divide pasta and sauce among bowls, top with meatballs, toasted breadcrumbs, and fresh herbs."
+              ]
             }
           ]
         },
@@ -2523,10 +2778,42 @@ const data = {
           ]
         },
         {
+          id: "steak-seasoning-rub",
+          title: "Steak Seasoning Rub",
+          servings: "Makes enough for 4 large steaks   |   Total: 5 min",
+          source: "Sommer Collier, A Spicy Perspective",
+          comments: [
+            {html: "We use a 3× batch for 2 racks of <a href='#sous-vide-beef-ribs'>Sous Vide Beef Back Ribs</a>."},
+            "Keeps in an airtight jar in a cool, dry place for up to 3 months."
+          ],
+          ingredientGroups: [
+            { ingredients: [
+              "1 Tbsp kosher salt",
+              "1 Tbsp brown sugar, packed",
+              "2 tsp smoked paprika",
+              "2 tsp ground ancho chile pepper (or chili powder)",
+              "1 tsp dried thyme",
+              "1 tsp black pepper",
+              "½ tsp garlic powder",
+              "½ tsp onion powder",
+              "½ tsp ground mustard",
+              "½ tsp ground cumin"
+            ]}
+          ],
+          steps: [
+            "Mix all ingredients together in a small bowl until combined.",
+            "Use immediately, or store in an airtight jar in a cool, dry place for up to 3 months. Rub generously over all sides of the meat before cooking; let rest at least 20 minutes before grilling or searing."
+          ]
+        },
+        {
+          id: "cherry-bbq-sauce",
           title: "Cherry Barbecue Sauce",
           favorite: true,
           servings: "Makes about 3½ cups   |   Total: 30 min",
           source: "Ilene Harrington, Taste of Home",
+          comments: [
+            {html: "The go-to sauce for <a href='#sous-vide-beef-ribs'>Sous Vide Beef Back Ribs</a>. Serve warm on the side."}
+          ],
           ingredientGroups: [
             { label: "Sauté", ingredients: [
               "1 medium onion, chopped",

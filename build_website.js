@@ -89,14 +89,27 @@ const CLUSTER_MAP = {
   'Stir-Fried Udon Noodles With Pork and Scallions':    'Japanese',
   // Lamb — Mediterranean/Greek
   'Garlic & Rosemary Grilled Lamb Chops':                'Mediterranean/Greek',
+  // Lamb — Middle Eastern/Persian
+  'Lula Kebabs':                                         'Middle Eastern/Persian',
   // Lamb — Indian
   'Luscious Tandoori Lamb Chops':                        'Indian',
   // Beef — American
   'Four Peppercorn Crusted Rotisserie Rib Roast':        'American',
+  'The Best Passover Brisket':                           'American',
+  'Sous Vide Beef Back Ribs':                            'American',
+  // Beef — French
+  'Dijon and Cognac Beef Stew':                          'French',
+  // Beef — Chinese
+  'Asian Braised Short Ribs':                            'Chinese',
   // Ground Beef — American
   'Taco Night!!':                                        'American',
+  // Ground Beef — Korean-inspired
+  'Korean Beef Bowl':                                    'Korean-inspired',
+  // Noodles: Italian — Middle Eastern/Persian
+  'Spiced Meatballs with Pappardelle':                   'Middle Eastern/Persian',
   // Dressings — American
   'Horseradish Sauce':                                   'American',
+  'Steak Seasoning Rub':                                 'American',
   'Cherry Barbecue Sauce':                               'American',
   // Dressings — Latin/South American
   'Authentic Chimichurri':                               'Latin/South American',
