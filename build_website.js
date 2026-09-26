@@ -1167,9 +1167,27 @@ const html = `<!DOCTYPE html>
     });
   });
   window.addEventListener('afterprint', function () {
-    document.querySelectorAll('.recipe.printing').forEach(function (r) {
-      r.classList.remove('printing');
-    });
+    // On iOS Safari, afterprint fires while the print dialog is still open and
+    // the preview is live — removing .printing immediately blanks the preview.
+    // Instead, defer removal until the user's first interaction after returning
+    // to the page (touchstart/click). A 30s timeout is the safety net.
+    var isIOS = /iPhone|iPad|iPod/.test(navigator.userAgent);
+
+    function cleanup() {
+      document.querySelectorAll('.recipe.printing').forEach(function (r) {
+        r.classList.remove('printing');
+      });
+      document.removeEventListener('touchstart', cleanup, true);
+      document.removeEventListener('click', cleanup, true);
+    }
+
+    if (isIOS) {
+      document.addEventListener('touchstart', cleanup, { once: true, capture: true });
+      document.addEventListener('click',      cleanup, { once: true, capture: true });
+      setTimeout(cleanup, 30000); // safety net
+    } else {
+      cleanup();
+    }
   });
 
   // Collapse all open nav menus
