@@ -843,7 +843,7 @@ const html = `<!DOCTYPE html>
   @media print {
     @page { margin: 0.75in; }
     /* Reset body layout so sidebar isn't part of the flow */
-    body { display: block !important; background: white !important; }
+    body { display: block !important; background: white !important; min-height: 0 !important; }
     /* Hide sidebar and chrome */
     #nav, #mobile-header, #cookbook-title, .print-btn { display: none !important; }
     /* Main area: full width, no extra padding */
@@ -863,8 +863,13 @@ const html = `<!DOCTYPE html>
       padding: 0 !important; margin: 0 !important;
       font-size: 0.88rem;
     }
-    /* Let the two-column ingredient/step layout fill the page */
-    .recipe.printing .recipe-body { grid-template-columns: 1fr 1.6fr; gap: 20px; }
+    /* Let the two-column ingredient/step layout fill the page, and allow
+       it to break across pages (without this Chrome pushes the whole grid
+       to page 2, leaving a blank gap after the recipe header on page 1) */
+    .recipe.printing .recipe-body {
+      grid-template-columns: 1fr 1.6fr; gap: 20px;
+      break-inside: auto; page-break-inside: auto;
+    }
     .recipe.printing .print-btn { display: none !important; }
   }
 
@@ -1149,9 +1154,14 @@ const html = `<!DOCTYPE html>
       const recipe = btn.closest('.recipe');
       if (!recipe) return;
       recipe.classList.add('printing');
-      // Small delay so iOS Safari picks up the class change before
-      // capturing the print layout (without it, Safari prints a blank page).
-      setTimeout(function () { window.print(); }, 100);
+      // Two nested rAFs guarantee at least 2 paint frames have committed,
+      // then a 150ms buffer for iOS Safari which is especially slow to
+      // capture the updated layout for the print compositor.
+      requestAnimationFrame(function () {
+        requestAnimationFrame(function () {
+          setTimeout(function () { window.print(); }, 150);
+        });
+      });
     });
   });
   window.addEventListener('afterprint', function () {
