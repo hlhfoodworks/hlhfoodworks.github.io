@@ -863,12 +863,17 @@ const html = `<!DOCTYPE html>
       padding: 0 !important; margin: 0 !important;
       font-size: 0.88rem;
     }
-    /* Let the two-column ingredient/step layout fill the page, and allow
-       it to break across pages (without this Chrome pushes the whole grid
-       to page 2, leaving a blank gap after the recipe header on page 1) */
+    /* Switch from side-by-side grid to stacked columns for print.
+       A two-column grid is a single grid row; Chrome won't break inside it,
+       so the whole block gets pushed to page 2 leaving a blank gap on page 1.
+       Stacking avoids that entirely — ingredients flow top-to-bottom, then steps. */
     .recipe.printing .recipe-body {
-      grid-template-columns: 1fr 1.6fr; gap: 20px;
-      break-inside: auto; page-break-inside: auto;
+      display: block !important;
+    }
+    .recipe.printing .ingredients-col,
+    .recipe.printing .steps-col {
+      width: 100%;
+      break-inside: auto;
     }
     .recipe.printing .print-btn { display: none !important; }
   }
