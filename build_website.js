@@ -9,17 +9,17 @@ const { displayTitle } = require('./recipe_utils.js');
 // Add entries here whenever a subsection grows large enough to need grouping.
 const CLUSTER_MAP = {
   // Chicken — American/Contemporary
-  'Baked Crunchy Hot Honey Chicken':                      'American',
-  'Brown Butter Sage Skillet Chicken':                    'American',
-  'Company Baked Chicken':                                'American',
-  'Creamy Spinach-Artichoke Chicken Stew':                'American',
-  'Crispy Chicken With Lime Butter':                      'American',
-  'Crispy Spice Rubbed Chicken Thighs':                   'American',
-  'Grilled Buffalo Wings':                                'American',
-  'Skillet Chicken and Zucchini With Charred Scallion Salsa': 'American',
-  'Spring Chicken Paillard':                              'American',
-  'Sweet and Sour Chicken':                               'American',
-  'Weeknight Fancy Chicken and Rice':                     'American',
+  'Baked Crunchy Hot Honey Chicken':                      'General',
+  'Brown Butter Sage Skillet Chicken':                    'General',
+  'Company Baked Chicken':                                'General',
+  'Creamy Spinach-Artichoke Chicken Stew':                'General',
+  'Crispy Chicken With Lime Butter':                      'General',
+  'Crispy Spice Rubbed Chicken Thighs':                   'General',
+  'Grilled Buffalo Wings':                                'General',
+  'Skillet Chicken and Zucchini With Charred Scallion Salsa': 'General',
+  'Spring Chicken Paillard':                              'General',
+  'Sweet and Sour Chicken':                               'General',
+  'Weeknight Fancy Chicken and Rice':                     'General',
   // Chicken — Latin/South American
   'Chicken Fajita Marinade':                              'Latin/South American',
   'D.L. Jardine\'s Fajita Marinade':                     'Latin/South American',
@@ -76,7 +76,7 @@ const CLUSTER_MAP = {
   'Japanese Fried Chicken (Shio Koji Karaage)':          'Japanese',
   'One-Pot Japanese Curry Chicken and Rice':             'Japanese',
   // Pork — American
-  'Sloppy Moes':                                         'American',
+  'Sloppy Moes':                                         'General',
   // Pork — Latin/South American
   'Slow Cooker Pork Mole':                               'Latin/South American',
   'Haitian Pork Griot':                                  'Latin/South American',
@@ -97,18 +97,18 @@ const CLUSTER_MAP = {
   // Lamb — Indian
   'Luscious Tandoori Lamb Chops':                        'Indian',
   // Beef — American
-  'Four Peppercorn Crusted Rotisserie Rib Roast':        'American',
-  'The Best Passover Brisket':                           'American',
-  'Sous Vide Beef Back Ribs':                            'American',
-  'Hearty Beef Stew With Red Onions and Ale':            'American',
+  'Four Peppercorn Crusted Rotisserie Rib Roast':        'General',
+  'The Best Passover Brisket':                           'General',
+  'Sous Vide Beef Back Ribs':                            'General',
+  'Hearty Beef Stew With Red Onions and Ale':            'General',
   // Beef — French
   'Dijon and Cognac Beef Stew':                          'French',
   // Beef — Chinese
   'Asian Braised Short Ribs':                            'Chinese',
   // Shellfish — American
-  'Shrimp with Orzo and Peas':                           'American',
-  'Spicy Grilled Shrimp':                                'American',
-  'Bacon-Wrapped Scallops with Chili Butter':            'American',
+  'Shrimp with Orzo and Peas':                           'General',
+  'Spicy Grilled Shrimp':                                'General',
+  'Bacon-Wrapped Scallops with Chili Butter':            'General',
   // Shellfish — French
   'Moules Marinières':                                   'French',
   // Shellfish — Italian
@@ -116,10 +116,10 @@ const CLUSTER_MAP = {
   // Shellfish — Chinese
   'Yang Chow Slippery Shrimp':                           'Chinese',
   // Fish — American
-  'Dry-Brined Salmon':                                   'American',
-  'Baked Lemon Salmon with Creamy Dill Sauce':           'American',
-  'Sriracha Maple Salmon':                               'American',
-  'Fish and Chips with Malt Vinegar Mayonnaise':         'American',
+  'Dry-Brined Salmon':                                   'General',
+  'Baked Lemon Salmon with Creamy Dill Sauce':           'General',
+  'Sriracha Maple Salmon':                               'General',
+  'Fish and Chips with Malt Vinegar Mayonnaise':         'General',
   // Fish — French
   'Smoked Salmon Niçoise Salad':                         'French',
   // Fish — Italian
@@ -129,25 +129,25 @@ const CLUSTER_MAP = {
   // Fish — Japanese
   'Spicy Tuna Salad with Crispy Rice':                   'Japanese',
   // Ground Beef — American
-  'Taco Night!!':                                        'American',
-  'Sweet Potato Shepherd\'s Pie':                        'American',
+  'Taco Night!!':                                        'General',
+  'Sweet Potato Shepherd\'s Pie':                        'General',
   // Ground Beef — Korean-inspired
   'Korean Beef Bowl':                                    'Korean-inspired',
   // Noodles: Italian — Middle Eastern/Persian
   'Spiced Meatballs with Pappardelle':                   'Middle Eastern/Persian',
   // Dressings — American
-  'Horseradish Sauce':                                   'American',
-  'Steak Seasoning Rub':                                 'American',
-  'Cherry Barbecue Sauce':                               'American',
+  'Horseradish Sauce':                                   'General',
+  'Steak Seasoning Rub':                                 'General',
+  'Cherry Barbecue Sauce':                               'General',
   // Dressings — Latin/South American
   'Authentic Chimichurri':                               'Latin/South American',
   // Desserts — American
-  'Lauren\'s Banana Pudding':                            'American',
+  'Lauren\'s Banana Pudding':                            'General',
   // Drinks — American
-  'Melon Ball':                                          'American',
+  'Melon Ball':                                          'General',
   // Turkey — American
-  'Expertly Spiced and Glazed Roast Turkey':             'American',
-  'Turkey and Quinoa Meatloaf':                          'American',
+  'Expertly Spiced and Glazed Roast Turkey':             'General',
+  'Turkey and Quinoa Meatloaf':                          'General',
   // Turkey — Indian
   'Turkey Tikka Masala':                                 'Indian',
   // Other (Meat Mains) — French
@@ -155,8 +155,8 @@ const CLUSTER_MAP = {
   // Other (Meat Mains) — Italian
   'Sheet-Pan Italian Sub Dinner':                        'Italian',
   // Tofu — American
-  'Tofu Stir Fry':                                       'American',
-  'Sesame Ginger Tofu and Veggie Stir Fry':              'American',
+  'Tofu Stir Fry':                                       'General',
+  'Sesame Ginger Tofu and Veggie Stir Fry':              'General',
   // Tofu — West African
   'Baked Tofu With Peanut Sauce and Coconut-Lime Rice':  'West African',
   // Mushroom — Italian
@@ -167,24 +167,28 @@ const CLUSTER_MAP = {
   // Vegetables — Latin/South American
   'Slow Cooker Vegan Mole Chili':                        'Latin/South American',
   // Vegetable Sides — American
-  'Sautéed Mushrooms':                                   'American',
-  'Coleslaw Salad':                                      'American',
-  'Summer Salad':                                        'American',
+  'Sautéed Mushrooms':                                   'General',
+  'Coleslaw Salad':                                      'General',
+  'Summer Salad':                                        'General',
   // Baking: Sweet — American
-  'Jumbo Banana-Nut Muffins':                            'American',
-  'Filled Coffee Cake':                                  'American',
-  'Nut Butter Balls':                                    'American',
-  'Red Velvet Cake':                                     'American',
+  'Jumbo Banana-Nut Muffins':                            'General',
+  "Eric's Chocolate Chip Cookies":                       'General',
+  'Chocolate "Birthday Cake"':                           'General',
+  "Nana's Poundcake":                                    'General',
+  'Filled Coffee Cake':                                  'General',
+  'Nut Butter Balls':                                    'General',
+  'Red Velvet Cake':                                     'General',
   // Baking: Sweet — Central/Eastern European
   'Blintz Soufflé':                                      'Central/Eastern European',
+  "Brenda's Noodle Kugel":                               'Central/Eastern European',
   "Min Cohen's Inscrutable Apple Cake":                  'Central/Eastern European',
   // Turkey — American
-  'Bristol Farms Turkey Salad (Copycat)':                'American',
+  'Bristol Farms Turkey Salad (Copycat)':                'General',
   // Dressings and Sauces — French
   'Béarnaise Sauce':                                     'French',
   // Appetizers — American
-  "Barbara Glabman's Cheese Ball":                       'American',
-  'Shrimp Dip':                                          'American',
+  "Barbara Glabman's Cheese Ball":                       'General',
+  'Shrimp Dip':                                          'General',
   // Appetizers — Central/Eastern European
   'Chopped Eggplant':                                    'Central/Eastern European',
 };
@@ -203,20 +207,46 @@ function slug(title) {
   return title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 }
 
-// Group an array of recipes by their CLUSTER_MAP entry, preserving order.
-// Returns [{cluster, recipes}] — or null if none of the recipes have a cluster.
+// Cuisine-cluster sort order — General always first.
+const CLUSTER_ORDER = [
+  'General',
+  'Latin/South American',
+  'Italian',
+  'French',
+  'Central/Eastern European',
+  'Mediterranean/Greek',
+  'Moroccan/North African',
+  'West African',
+  'Middle Eastern/Persian',
+  'Indian',
+  'Thai',
+  'Vietnamese',
+  'Filipino',
+  'Korean-inspired',
+  'Chinese',
+  'Japanese',
+];
+
+// Group an array of recipes by their CLUSTER_MAP entry.
+// Merges all recipes with the same cluster (non-consecutive runs are combined).
+// Returns [{cluster, recipes}] sorted by CLUSTER_ORDER, or null if all recipes
+// fall into a single cluster (no headers needed).
 function groupByCluster(recipes) {
-  const hasCluster = recipes.some(r => CLUSTER_MAP[r.title]);
-  if (!hasCluster) return null;
-  const groups = [];
+  const clusterMap = new Map();
   for (const recipe of recipes) {
-    const c = CLUSTER_MAP[recipe.title] || 'Other';
-    if (!groups.length || groups[groups.length - 1].cluster !== c) {
-      groups.push({ cluster: c, recipes: [] });
-    }
-    groups[groups.length - 1].recipes.push(recipe);
+    const c = CLUSTER_MAP[recipe.title] || 'General';
+    if (!clusterMap.has(c)) clusterMap.set(c, []);
+    clusterMap.get(c).push(recipe);
   }
-  return groups;
+  // If there's only one cluster, no headers needed — return null.
+  if (clusterMap.size <= 1) return null;
+  // Sort clusters by CLUSTER_ORDER; unknown clusters go at the end.
+  const sorted = [...clusterMap.entries()].sort(([a], [b]) => {
+    const ai = CLUSTER_ORDER.indexOf(a);
+    const bi = CLUSTER_ORDER.indexOf(b);
+    return (ai === -1 ? 999 : ai) - (bi === -1 ? 999 : bi);
+  });
+  return sorted.map(([cluster, recipes]) => ({ cluster, recipes }));
 }
 
 // ── Content rendering ──────────────────────────────────────────────────────
@@ -578,6 +608,17 @@ const html = `<!DOCTYPE html>
   }
   #fav-toggle.active .star { color: #1a0e00; }
   #fav-toggle.active:hover { background: #e09a10; }
+  #collapse-all {
+    display: flex; align-items: center; gap: 8px;
+    padding: 7px 14px;
+    font-size: 0.82rem; cursor: pointer;
+    color: var(--nav-text);
+    background: none; border: none; border-bottom: 1px solid #5a3e28;
+    text-align: left; width: 100%;
+    font-family: inherit;
+  }
+  #collapse-all:hover { background: #4e3522; }
+  #collapse-all .collapse-icon { font-size: 0.85rem; color: #a8906e; }
   .nav-recipe.nav-hidden { display: none; }
   .nav-cluster.nav-hidden { display: none; }
   .nav-sub.nav-hidden { display: none; }
@@ -667,16 +708,22 @@ const html = `<!DOCTYPE html>
     text-indent: -0.55em; /* first line flush, subsequent lines indented */
   }
 
-  /* Level 2 recipe links (for flat sections) */
-  .nav-l2 .nav-recipe-link {
+  /* Level 2 recipe links — direct (flat sections with no cluster headers) */
+  .nav-l2 > li.nav-recipe > .nav-recipe-link {
     padding-left: 28px;
     font-size: 0.8rem;
     color: #c4ad90;
   }
-  /* Level 3 recipe links (subsection without clusters) */
-  .nav-l3 .nav-recipe-link {
+  /* Level 3 recipe links — direct (subsection, no cluster headers) */
+  .nav-l3 > li.nav-recipe > .nav-recipe-link {
     padding-left: 38px;
     font-size: 0.78rem;
+  }
+  /* Cluster children (nav-l4) inside nav-l2: must indent past cluster heading at 32px */
+  .nav-l2 .nav-l4 .nav-recipe-link {
+    padding-left: 46px;
+    font-size: 0.78rem;
+    color: #a8906e;
   }
 
   /* ── Main ── */
@@ -873,6 +920,7 @@ const html = `<!DOCTYPE html>
   </div>
   <div id="search-results"></div>
   <button id="fav-toggle"><span class="star">★</span> Favorites only</button>
+  <button id="collapse-all"><span class="collapse-icon">⊟</span> Collapse all</button>
   <div id="nav-tree">
     ${navHtml}
   </div>
@@ -1036,6 +1084,16 @@ const html = `<!DOCTYPE html>
     favOnly = !favOnly;
     favBtn.classList.toggle('active', favOnly);
     applyFilters();
+  });
+
+  // Collapse all open nav menus
+  document.getElementById('collapse-all').addEventListener('click', function () {
+    document.querySelectorAll('.nav-hd.open').forEach(function (hd) {
+      hd.classList.remove('open');
+    });
+    document.querySelectorAll('.nav-l2, .nav-l3, .nav-l4').forEach(function (list) {
+      list.classList.add('collapsed');
+    });
   });
 
   function applyFilters() {

@@ -1,89 +1,6 @@
 const data = {
   sections: [
     {
-      title: "Appetizers",
-      recipes: [
-        {
-          title: "Barbara Glabman's Cheese Ball",
-          servings: "1 large cheese ball (12–16 as an appetizer)",
-          source: "Family recipe card, credited to Barbara Glabman",
-          comments: [
-            "Old English Sharp Cheddar Spread (Kraft) is still available. Smokelle tube cheese (Kraft) is no longer produced — substitute any smoked cheese spread, such as Kaukauna Smoked Cheddar Spread.",
-            "Best if refrigerated overnight before serving."
-          ],
-          ingredientGroups: [
-            { label: "Cheese mixture", ingredients: [
-              "2 — 8 oz. packages cream cheese, softened",
-              "1 glass (about 5 oz.) Old English or nippy cheddar cheese spread",
-              "1 tube Smokelle processed cheese (Kraft) or substitute: any smoked cheese spread such as Kaukauna Smoked Cheddar Spread",
-              "1 — 3 oz. package blue cheese, crumbled",
-              "1/8 teaspoon onion salt",
-              "3 small cloves garlic (or 2 medium), minced"
-            ]},
-            { label: "For rolling", ingredients: [
-              "Chopped nuts and/or minced parsley"
-            ]}
-          ],
-          steps: [
-            "Let all cheeses soften to room temperature.",
-            "Combine cream cheese, cheddar spread, smoked cheese, and blue cheese in a large bowl. Mix until thoroughly blended.",
-            "Add onion salt and garlic; mix well.",
-            "Shape the mixture into a ball (or log) on a sheet of plastic wrap. Roll in chopped nuts, minced parsley, or a combination to coat the outside.",
-            "Wrap tightly and refrigerate at least 2 hours (overnight is better) before serving. Serve with crackers."
-          ]
-        },
-        {
-          title: "Shrimp Dip",
-          servings: "Makes about 2 cups",
-          source: "Family recipe card (Grandmother Brenda)",
-          ingredientGroups: [
-            { ingredients: [
-              "1 — 8 oz. block cream cheese, softened",
-              "1 — 4.5 oz. can small shrimp, drained and mashed",
-              "2 tablespoons mayonnaise",
-              "2 tablespoons chili sauce",
-              "1 tablespoon lemon juice",
-              "1/4 teaspoon curry powder"
-            ]}
-          ],
-          steps: [
-            "Beat cream cheese until smooth and fluffy.",
-            "Drain canned shrimp and mash well with a fork.",
-            "Mix in mashed shrimp, mayonnaise, chili sauce, lemon juice, and curry powder until well combined.",
-            "Taste and adjust seasoning.",
-            "Refrigerate at least 30 minutes before serving. Serve with crackers or sliced bread."
-          ]
-        },
-        {
-          title: "Chopped Eggplant",
-          source: "Family recipe card (Grandmother Brenda; card reads \"Recipe from Mother\")",
-          comments: [
-            "A classic Jewish-style eggplant spread. The card gives only an ingredient list — steps are reconstructed from traditional method."
-          ],
-          ingredientGroups: [
-            { label: "Roast first", ingredients: [
-              "1 large eggplant"
-            ]},
-            { label: "Add to chopped eggplant", ingredients: [
-              "1 medium onion, diced and fried in oil until golden",
-              "3 hard-boiled eggs, finely chopped",
-              "Vinegar to taste (start with 1–2 teaspoons)",
-              "Mayonnaise to taste (start with 2–3 tablespoons)",
-              "Salt, pepper, and paprika to taste"
-            ]}
-          ],
-          steps: [
-            "Preheat oven to 400°F. Pierce eggplant several times with a fork. Roast on a baking sheet until very soft and collapsed, 45–60 minutes. Let cool.",
-            "While eggplant roasts, fry diced onion in a little oil over medium heat until golden and sweet, about 15 minutes. Set aside.",
-            "Peel roasted eggplant and drain in a colander to remove excess liquid. Chop finely (do not puree).",
-            "Combine chopped eggplant, hard-boiled eggs, and fried onion in a bowl.",
-            "Add vinegar and mayonnaise to taste; season with salt, pepper, and a pinch of paprika.",
-            "Refrigerate at least 1 hour. Serve as a spread with crackers, matzo, or rye bread."
-          ]
-        }
-      ]
-    },
-    {
       title: "Breakfast",
       recipes: [
         {
@@ -181,6 +98,89 @@ const data = {
             "Sift the flour and salt over the egg mixture, whisking steadily until smooth. Add the melted butter and mix briskly until combined.",
             "Pour the batter into the pan(s). Bake for 15 minutes at 450°F for small pancakes; for one large pancake, bake 15 minutes at 450°F then reduce to 350°F and bake 10 minutes more.",
             "Sprinkle the lemon juice over the pancake(s) and dust with confectioners' sugar. Serve at once, while puffed and hot."
+          ]
+        }
+      ]
+    },
+    {
+      title: "Appetizers",
+      recipes: [
+        {
+          title: "Barbara Glabman's Cheese Ball",
+          servings: "1 large cheese ball (12–16 as an appetizer)",
+          source: "Family recipe card, credited to Barbara Glabman",
+          comments: [
+            "Old English Sharp Cheddar Spread (Kraft) is still available. Smokelle tube cheese (Kraft) is no longer produced — substitute any smoked cheese spread, such as Kaukauna Smoked Cheddar Spread.",
+            "Best if refrigerated overnight before serving."
+          ],
+          ingredientGroups: [
+            { label: "Cheese mixture", ingredients: [
+              "2 — 8 oz. packages cream cheese, softened",
+              "1 glass (about 5 oz.) Old English or nippy cheddar cheese spread",
+              "1 tube Smokelle processed cheese (Kraft) or substitute: any smoked cheese spread such as Kaukauna Smoked Cheddar Spread",
+              "1 — 3 oz. package blue cheese, crumbled",
+              "1/8 teaspoon onion salt",
+              "3 small cloves garlic (or 2 medium), minced"
+            ]},
+            { label: "For rolling", ingredients: [
+              "Chopped nuts and/or minced parsley"
+            ]}
+          ],
+          steps: [
+            "Let all cheeses soften to room temperature.",
+            "Combine cream cheese, cheddar spread, smoked cheese, and blue cheese in a large bowl. Mix until thoroughly blended.",
+            "Add onion salt and garlic; mix well.",
+            "Shape the mixture into a ball (or log) on a sheet of plastic wrap. Roll in chopped nuts, minced parsley, or a combination to coat the outside.",
+            "Wrap tightly and refrigerate at least 2 hours (overnight is better) before serving. Serve with crackers."
+          ]
+        },
+        {
+          title: "Shrimp Dip",
+          servings: "Makes about 2 cups",
+          source: "Family recipe card (Grandmother Brenda)",
+          ingredientGroups: [
+            { ingredients: [
+              "1 — 8 oz. block cream cheese, softened",
+              "1 — 4.5 oz. can small shrimp, drained and mashed",
+              "2 tablespoons mayonnaise",
+              "2 tablespoons chili sauce",
+              "1 tablespoon lemon juice",
+              "1/4 teaspoon curry powder"
+            ]}
+          ],
+          steps: [
+            "Beat cream cheese until smooth and fluffy.",
+            "Drain canned shrimp and mash well with a fork.",
+            "Mix in mashed shrimp, mayonnaise, chili sauce, lemon juice, and curry powder until well combined.",
+            "Taste and adjust seasoning.",
+            "Refrigerate at least 30 minutes before serving. Serve with crackers or sliced bread."
+          ]
+        },
+        {
+          title: "Chopped Eggplant",
+          source: "Family recipe card (Grandmother Brenda; card reads \"Recipe from Mother\")",
+          comments: [
+            "A classic Jewish-style eggplant spread. The card gives only an ingredient list — steps are reconstructed from traditional method."
+          ],
+          ingredientGroups: [
+            { label: "Roast first", ingredients: [
+              "1 large eggplant"
+            ]},
+            { label: "Add to chopped eggplant", ingredients: [
+              "1 medium onion, diced and fried in oil until golden",
+              "3 hard-boiled eggs, finely chopped",
+              "Vinegar to taste (start with 1–2 teaspoons)",
+              "Mayonnaise to taste (start with 2–3 tablespoons)",
+              "Salt, pepper, and paprika to taste"
+            ]}
+          ],
+          steps: [
+            "Preheat oven to 400°F. Pierce eggplant several times with a fork. Roast on a baking sheet until very soft and collapsed, 45–60 minutes. Let cool.",
+            "While eggplant roasts, fry diced onion in a little oil over medium heat until golden and sweet, about 15 minutes. Set aside.",
+            "Peel roasted eggplant and drain in a colander to remove excess liquid. Chop finely (do not puree).",
+            "Combine chopped eggplant, hard-boiled eggs, and fried onion in a bowl.",
+            "Add vinegar and mayonnaise to taste; season with salt, pepper, and a pinch of paprika.",
+            "Refrigerate at least 1 hour. Serve as a spread with crackers, matzo, or rye bread."
           ]
         }
       ]
