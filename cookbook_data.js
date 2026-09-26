@@ -2549,7 +2549,77 @@ const data = {
             ]
           }
         ] },
-        { title: "Other", recipes: [] }
+        { title: "Other", recipes: [
+          {
+            title: "Peppered Duck Breast With Red Wine Sauce",
+            servings: "Serves 6   |   Total: ~1½ hours (including 1 hour marinate)",
+            source: "David Tanis, NYT Cooking",
+            comments: [
+              "A steak au poivre made with duck. Fancy enough for a gathering, relaxed enough for any night you want something special. The sauce can be made ahead and reheated, thinned with a little broth."
+            ],
+            ingredientGroups: [
+              { label: "Prep / Marinate (Step 1 — start up to 1 day ahead)", ingredients: [
+                "3 Muscovy duck breasts (about 1 lb each)",
+                "Salt",
+                "1 Tbsp freshly crushed black peppercorns (about 1 tsp per breast)",
+                "4 garlic cloves, sliced",
+                "Fresh thyme sprigs"
+              ]},
+              { label: "Sauce (Steps 2–3 — make while duck marinates)", ingredients: [
+                "2 Tbsp unsalted butter, divided",
+                "Reserved duck tenderloins (from Step 1)",
+                "1 large shallot, sliced",
+                "1 Tbsp tomato paste",
+                "1 small thyme sprig",
+                "2 cups unsalted chicken broth",
+                "¼ cup + 2 Tbsp medium-bodied red wine",
+                "1 Tbsp Cognac or brandy",
+                "2 tsp potato starch"
+              ]}
+            ],
+            steps: [
+              "Remove the tenderloins (the thin strips on the undersides of the duck breasts) and reserve for the sauce. With a sharp knife, trim away any gristle from the undersides and any excess fat. Score the skin in a diamond pattern, cutting through the fat but not into the meat. Lightly sprinkle salt on both sides, then rub 1 tsp crushed black peppercorns all over each breast. Sprinkle with the garlic and a few thyme sprigs, cover, and leave at room temperature for 1 hour. (For deeper flavor, refrigerate for several hours or overnight, then return to room temperature before cooking.)",
+              "Heat 1 Tbsp butter in a saucepan over medium heat. Add the shallot and reserved duck tenderloins and let them brown well, stirring occasionally, 5–8 minutes. Stir in the tomato paste and thyme sprig and let fry for 1 minute.",
+              "Add the broth and ¼ cup wine, raise heat to a brisk simmer, and reduce to about 1¼ cups, about 10 minutes. Strain the sauce and return to heat. Add the remaining 2 Tbsp red wine and the Cognac or brandy and cook 1 minute more. Dissolve the potato starch in 2 Tbsp cold water, then stir into the sauce. Whisk in the remaining 1 Tbsp butter. Season with salt.",
+              "Remove and discard the garlic and thyme from the breasts. Heat a large, heavy skillet over medium-high. When hot, lay in the duck breasts skin-side down and let sizzle. Lower heat to medium and cook for a total of 7 minutes, checking to ensure the skin isn't browning too quickly. Turn over and cook another 3 minutes for rare, 4–5 minutes for medium-rare. Transfer to a warm platter and rest 10 minutes. Slice crosswise at a slight angle and serve with the sauce."
+            ]
+          },
+          {
+            title: "Sheet-Pan Italian Sub Dinner",
+            servings: "Serves 4   |   Total: 25 min",
+            source: "Ali Slagle, NYT Cooking",
+            comments: [
+              "All the flavors of an Italian sub — salami, radicchio, tomatoes, pepperoncini, chickpeas — roasted until caramelized and briny. Can swap in cauliflower florets, cubes of squash, or halved red potatoes for the radicchio."
+            ],
+            ingredientGroups: [
+              { label: "Vinaigrette (Step 1)", ingredients: [
+                "4 garlic cloves",
+                "2 Tbsp dried oregano",
+                "2 tsp kosher salt",
+                "¼ cup red wine vinegar",
+                "¼ cup extra-virgin olive oil"
+              ]},
+              { label: "Roast (Step 2)", ingredients: [
+                "1 (14-oz) can chickpeas, drained and patted dry",
+                "5 oz salami (casing removed if present), cut into ½-inch pieces",
+                "1 red onion, peeled, halved lengthwise, cut into ½-inch wedges",
+                "1 medium head radicchio (about ¾ lb), quartered lengthwise",
+                "1 cup cherry or grape tomatoes, halved",
+                "8 pepperoncini peppers"
+              ]},
+              { label: "Serve (Step 3)", ingredients: [
+                "½ cup ricotta",
+                "Kosher salt and black pepper",
+                "Crusty bread"
+              ]}
+            ],
+            steps: [
+              "Heat oven to 450°F. Coarsely chop the garlic, then add the dried oregano and 2 tsp salt on top and chop together until it forms a paste. Transfer to a bowl and stir in the vinegar and olive oil.",
+              "Pour half the dressing into a large bowl. Add the chickpeas, salami, red onion, radicchio, tomatoes, and pepperoncini. Mix gently to coat, trying not to break up the radicchio and onion. Spread evenly on a baking sheet. Roast, tossing halfway through, until the red onions and chickpeas are golden, 15–20 minutes.",
+              "Season the ricotta with salt and pepper. Serve the roasted mixture with crusty bread and a dollop of ricotta and extra vinaigrette, or assemble into sandwiches."
+            ]
+          }
+        ] }
       ]
     },
     {
@@ -2663,10 +2733,342 @@ const data = {
               ]},
               "Turn the oven to broil and broil for 2–4 minutes, until the cheese is browned in spots. Remove from the oven, top with fresh basil, and serve."
             ]
+          },
+          {
+            title: "Slow Cooker Vegan Mole Chili",
+            servings: "Serves 6   |   Prep: 25 min   |   Cook: 5 hours   |   Total: ~5 hr 25 min",
+            source: "Emily Stoffel, The Pig & Quill",
+            comments: [
+              "Rich, hearty vegan chili with mole-inspired depth. Greek yogurt is a great topping but omit to keep strictly vegan.",
+              "Tofu note: Freeze the entire tofu block until firm (overnight works — keep a block or two in the freezer as a habit). Thaw in the refrigerator, then drain as usual. Slice into 4–5 slabs and gently press out extra moisture between two plates. Finely dice per the recipe. Frozen-and-thawed tofu becomes sponge-like and soaks up the slow-cooked flavors."
+            ],
+            ingredientGroups: [
+              { label: "Steep chilies (Step 1 — start first)", ingredients: [
+                "3 oz dried ancho chilies"
+              ]},
+              { label: "Spice paste (Step 2 — toast while chilies steep)", ingredients: [
+                "¼ cup light cooking oil (such as avocado)",
+                "3 Tbsp chili powder",
+                "1 Tbsp cacao powder",
+                "1½ tsp Mexican oregano",
+                "1 tsp cinnamon",
+                "1 tsp cumin",
+                "1 tsp paprika"
+              ]},
+              { label: "Slow cooker (Step 4)", ingredients: [
+                "1 medium red onion, finely diced",
+                "1 medium sweet potato, peeled and finely diced",
+                "4 garlic cloves, minced",
+                "14 oz block tofu, frozen, thawed, drained, and finely diced (see note)",
+                "1 can chickpeas, rinsed and drained",
+                "3 bay leaves",
+                "¼ cup coconut sugar",
+                "1 tsp sea salt",
+                "1½ oz good dark chocolate (at least 70%)",
+                "3 cups mushroom stock (or vegetable stock)"
+              ]},
+              { label: "Serve", ingredients: [
+                "Cilantro (optional)",
+                "Greek yogurt (optional; omit if strictly vegan)",
+                "Quinoa, rice, or other grain"
+              ]}
+            ],
+            steps: [
+              "Remove stems and seeds from the ancho chilies. Place in a bowl, cover with very hot tap water, and steep covered for 20 minutes.",
+              "Meanwhile, heat the oil in a small saucepan or skillet. Add the chili powder, cacao, oregano, cinnamon, cumin, and paprika; heat until bubbling and very fragrant, about 60 seconds. Remove from heat and set aside. Use this time to dice your veggies and prepare the tofu (see note).",
+              "When the chilies have finished steeping, drain, reserving ¼ cup soaking liquid. Add chilies and reserved liquid to a food processor and blend until nearly smooth.",
+              "Combine all the veggies, tofu, chickpeas, processed chilies, and spice paste in the slow cooker. Add the bay leaves, coconut sugar, salt, chocolate, and stock. Stir well. Cook on High for 5 hours, or until the vegetables have all but dissolved. Adjust salt to taste. Serve with grain and toppings of choice."
+            ]
           }
         ]},
-        { title: "Tofu", recipes: [] },
-        { title: "Mushroom", recipes: [] }
+        { title: "Tofu", recipes: [
+          {
+            title: "Tofu Stir Fry",
+            servings: "Serves 2   |   Prep: 20 min   |   Cook: 15 min   |   Total: 35 min",
+            source: "Kahnita Wilkerson, Tasty",
+            ingredientGroups: [
+              { label: "Sauce (Step 1 — make first)", ingredients: [
+                "2 garlic cloves, minced (of 4 total)",
+                "2 tsp fresh ginger, grated",
+                "1 Tbsp honey",
+                "1 tsp sriracha",
+                "¼ cup lime juice",
+                "¼ cup reduced-sodium soy sauce"
+              ]},
+              { label: "Tofu (Step 2 — press while making sauce)", ingredients: [
+                "1 block extra-firm tofu"
+              ]},
+              { label: "Stir Fry (Steps 3–6)", ingredients: [
+                "2 Tbsp sesame oil",
+                "2 garlic cloves, minced (remaining)",
+                "1 cup white onion, sliced",
+                "1 cup carrot, sliced",
+                "1 cup red bell pepper, sliced",
+                "½ cup edamame, frozen, thawed",
+                "3 cups soba noodles, cooked",
+                "1 Tbsp sesame seeds"
+              ]},
+              { label: "Garnish", ingredients: [
+                "Green onion, chopped"
+              ]}
+            ],
+            steps: [
+              "In a medium bowl, mix together 2 cloves of garlic, the ginger, honey, sriracha, lime juice, and soy sauce. Set aside.",
+              "Wrap the tofu in a dish towel, then place a plate on top. Let drain for 10–15 minutes, then remove the plate, unwrap the tofu, and slice into cubes.",
+              "In a wok or large frying pan, heat the sesame oil over medium heat. Add the tofu and pan-fry for 5–7 minutes, stirring occasionally.",
+              "Add the remaining 2 cloves of minced garlic and the onion and stir until softened, about 1 minute.",
+              "Add the carrot, bell pepper, and edamame and cook, stirring occasionally, until tender, 2–3 minutes.",
+              "Add the soba noodles, reserved sauce, and sesame seeds. Cook for 1–2 minutes, stirring occasionally, until warmed through. Remove from heat.",
+              "Garnish with green onions and serve."
+            ]
+          },
+          {
+            title: "Sesame Ginger Tofu and Veggie Stir Fry",
+            servings: "Serves 3   |   Prep: 25 min   |   Cook: 15 min   |   Total: 40 min",
+            source: "Marzia, Little Spice Jar",
+            ingredientGroups: [
+              { label: "Press tofu (Step 1 — start first)", ingredients: [
+                "14 oz extra-firm tofu",
+                "1 Tbsp cornstarch",
+                "½ tsp kosher salt"
+              ]},
+              { label: "Sauce (Step 2 — blend while tofu presses)", ingredients: [
+                "1 Tbsp sesame oil",
+                "1½ Tbsp grated ginger",
+                "1½ Tbsp minced garlic",
+                "1 Tbsp rice vinegar",
+                "3 Tbsp soy sauce (or GF tamari)",
+                "¼ tsp Aleppo pepper or red pepper flakes",
+                "3 Tbsp brown sugar",
+                "1 Tbsp cornstarch",
+                "2 Tbsp water"
+              ]},
+              { label: "Stir Fry (Steps 3–4)", ingredients: [
+                "3 Tbsp avocado oil",
+                "2½ cups green beans, cut into 1-inch pieces",
+                "1 cup baby carrots, cut lengthwise"
+              ]},
+              { label: "Serve (optional)", ingredients: [
+                "Rice, quinoa, noodles, or cauliflower rice"
+              ]}
+            ],
+            steps: [
+              "TOFU: Drain tofu. Place on a plate with a folded tea towel, then top with another tea towel, another plate, and a heavy cast iron skillet or metal cans (or use a tofu press). Let drain 15–20 minutes or up to 1 hour. Cut into ¾–1 inch cubes and toss in 1 Tbsp cornstarch and ½ tsp salt in a zip-top bag until coated.",
+              "SAUCE: While the tofu is pressing, combine all sauce ingredients in a blender until completely smooth. (Shortcut: if using garlic paste and ginger paste, simply whisk together in a bowl.) Set aside.",
+              "CRISPY TOFU: In a wok or large nonstick skillet over medium-high heat, add 2 Tbsp avocado oil. Add tofu and fry for 3–7 minutes, flipping as needed to brown on all sides. Add 2 Tbsp of the prepared sauce and cook until the sauce coats and caramelizes on the tofu, about 2–3 minutes. Remove to a plate.",
+              "STIR FRY: Add the remaining 1 Tbsp avocado oil to the pan if needed. Add the veggies and cook for 3–4 minutes, tossing to desired doneness. Add the tofu back to the skillet. Stir the sauce to recombine, then pour it in. Stir to coat. Cook 1–2 minutes more until the tofu soaks up the sauce.",
+              "Serve warm with rice, quinoa, noodles, cauliflower rice, or on its own. Best eaten fresh; the tofu loses crispness as it sits."
+            ]
+          },
+          {
+            title: "Baked Tofu With Peanut Sauce and Coconut-Lime Rice",
+            servings: "Serves 4   |   Total: ~45 min",
+            source: "Yewande Komolafe, NYT Cooking",
+            comments: [
+              "The peanut sauce is inspired by West African groundnut stews. Fish sauce adds umami but is optional; omit it to keep the dish vegan. Peanut sauce can be made 2–3 days ahead and refrigerated."
+            ],
+            ingredientGroups: [
+              { label: "Pickled peppers (Step 2 — start first)", ingredients: [
+                "4 Tbsp lime juice (of ⅔ cup total)",
+                "½ tsp kosher salt",
+                "8 baby bell peppers or 1 medium bell pepper (any color), stemmed and thinly sliced lengthwise",
+                "Freshly ground black pepper"
+              ]},
+              { label: "Coconut-lime rice (Step 3)", ingredients: [
+                "1 cup long-grain rice (jasmine or basmati)",
+                "½ cup full-fat coconut milk",
+                "1 cup water",
+                "Salt"
+              ]},
+              { label: "Peanut sauce (Step 4)", ingredients: [
+                "4 Tbsp lime juice (remaining from the ⅔ cup)",
+                "1 cup smooth, natural peanut butter",
+                "1 Tbsp red miso",
+                "1 Tbsp grated ginger",
+                "1 Tbsp fish sauce (optional)",
+                "2 tsp chopped habanero pepper (stem and seeds removed) or 1 Tbsp sambal",
+                "2 Tbsp peanut or vegetable oil",
+                "1 Tbsp buckwheat honey or molasses (+ 1 Tbsp more for dressing in Step 5)",
+                "¾ cup water"
+              ]},
+              { label: "Tofu (Step 5 — roast)", ingredients: [
+                "2 (14-oz) packages extra-firm tofu, drained and sliced crosswise ¼-inch thick",
+                "Peanut or vegetable oil, for brushing pan and drizzling",
+                "Salt"
+              ]},
+              { label: "Assembly (Step 6)", ingredients: [
+                "Zest of 1 lime",
+                "3 cups peppery greens (arugula, mizuna, or baby mustard greens)",
+                "2 scallions, trimmed and thinly sliced"
+              ]}
+            ],
+            steps: [
+              "Heat oven to 450°F and lightly brush a large rimmed sheet pan with oil.",
+              "In a small bowl, stir 4 Tbsp lime juice with ½ tsp salt until dissolved. Add the sliced peppers and a few cracks of black pepper. Set aside to quick-pickle.",
+              "In a small pot, combine the rice with 1 cup water and the coconut milk. Season with salt and bring to a simmer. Cover and cook over medium-low until just tender, 12–15 minutes. Remove from heat; keep covered until serving.",
+              "In a medium bowl, whisk together the remaining 4 Tbsp lime juice, peanut butter, miso, ginger, fish sauce (if using), habanero (or sambal), 2 Tbsp oil, 1 Tbsp honey, and ¾ cup water until smooth. Season to taste with salt.",
+              "Arrange tofu in a single layer on the oiled baking sheet; season with salt. Spoon about 2 Tbsp peanut sauce over each piece, coating the top and letting it run down the sides. Drizzle with a little oil and roast until the glaze is set, deep brown, and caramelized along the edges, 18–20 minutes. Add the remaining lime juice and 1 Tbsp honey to the leftover sauce in the bowl to make the dressing; set aside.",
+              "Divide the greens among bowls. Stir the lime zest and half the scallions into the rice, then fluff with a fork. Top greens with rice, then the tofu. Spoon the peanut dressing over everything and garnish with the drained pickled peppers and remaining scallions."
+            ]
+          }
+        ] },
+        { title: "Mushroom", recipes: [
+          {
+            title: "Oven Polenta with Roasted Mushrooms and Thyme",
+            servings: "Serves 4   |   Total: ~55 min",
+            source: "Claire Saffitz, Bon Appétit",
+            comments: [
+              "A \"no-stir\" oven polenta — the oven does the work while the mushrooms roast on the rack above. For an indulgent touch, stir a little heavy cream mixed with a finely grated garlic clove into the finished polenta."
+            ],
+            ingredientGroups: [
+              { label: "Mushrooms (Step 1 — go into oven first)", ingredients: [
+                "1½ lbs mixed mushrooms (crimini, shiitake, oyster, and/or maitake), torn into 1-inch pieces",
+                "4 thyme sprigs, plus thyme leaves for serving",
+                "6 garlic cloves, smashed",
+                "Kosher salt and freshly ground pepper",
+                "¼ cup extra-virgin olive oil"
+              ]},
+              { label: "Polenta (Step 2)", ingredients: [
+                "4½ cups water",
+                "2 Tbsp unsalted butter",
+                "Kosher salt",
+                "1 cup polenta"
+              ]},
+              { label: "Finish polenta (Step 4)", ingredients: [
+                "4 oz Parmesan, finely grated, plus more for serving"
+              ]},
+              { label: "Finish mushrooms (Step 5)", ingredients: [
+                "1 Tbsp red wine vinegar"
+              ]},
+              { label: "Serve", ingredients: [
+                "Flaky sea salt",
+                "Thyme leaves",
+                "More Parmesan"
+              ]}
+            ],
+            steps: [
+              "Place racks in upper and lower thirds of oven; preheat to 325°F. Combine mushrooms, thyme sprigs, and garlic on a large rimmed baking sheet. Season generously with kosher salt and pepper; drizzle with olive oil. Toss to coat, then spread in an even layer. (Don't crowd the mushrooms or they'll steam instead of crisping.) Transfer to the upper rack.",
+              "Bring 4½ cups water to a simmer in a large ovenproof saucepan over medium-high heat. Add butter and a generous pinch of kosher salt; whisk to melt. Gradually whisk in the polenta (adding slowly prevents clumps). Return to a boil, immediately cover the pot, and transfer to the lower rack. Bake, shaking the mushroom pan occasionally, until polenta is tender, 25–30 minutes.",
+              "Remove polenta from oven. Raise oven temperature as high as it will go (but don't broil). Continue roasting mushrooms until crispy around the edges, 5–10 more minutes.",
+              "Uncover the polenta and whisk vigorously, scraping the bottom, until smooth and thick. Gradually whisk in the Parmesan until melted and incorporated. Season with kosher salt and pepper. Cover and keep warm over low heat.",
+              "Remove mushrooms from oven; drizzle with red wine vinegar. Toss to coat and let cool slightly.",
+              "Divide polenta among bowls and top with mushrooms, thyme leaves, flaky sea salt, and more Parmesan."
+            ]
+          },
+          {
+            title: "Stuffed Portobello Mushrooms with Crispy Goat Cheese",
+            servings: "Serves 4   |   Prep: 15 min   |   Cook: 45 min   |   Total: 1 hour",
+            source: "Laura Davidson, A Beautiful Plate",
+            comments: [
+              "Use large portobello mushrooms roughly 4 inches wide with slightly deeper caps — they're easier to stuff. Two mushrooms per serving makes a hearty main; one per person if serving as a side. For gluten-free, substitute gluten-free breadcrumbs."
+            ],
+            ingredientGroups: [
+              { label: "Marinara (Step 1 — make first, or substitute 1½ cups store-bought; Rao's recommended)", ingredients: [
+                "1 Tbsp olive oil",
+                "4 garlic cloves, roughly chopped",
+                "2 Tbsp tomato paste",
+                "2 dried bay leaves",
+                "1 Tbsp dried oregano",
+                "1 (28-oz) can Italian crushed tomatoes",
+                "Salt and freshly ground black pepper"
+              ]},
+              { label: "Roast mushrooms (Step 2)", ingredients: [
+                "8 large (4-inch wide) portobello mushrooms, stems trimmed",
+                "Extra-virgin olive oil",
+                "Kosher salt and freshly ground black pepper"
+              ]},
+              { label: "Sautéed spinach (Step 3)", ingredients: [
+                "1 Tbsp extra-virgin olive oil",
+                "1 shallot, finely sliced",
+                "6 oz baby spinach",
+                "Kosher salt and freshly ground black pepper"
+              ]},
+              { label: "Crispy breadcrumb topping (Step 4)", ingredients: [
+                "2 Tbsp unsalted butter",
+                "1 shallot, finely diced",
+                "½ cup panko breadcrumbs",
+                "1 garlic clove, finely minced",
+                "Kosher salt and freshly ground black pepper"
+              ]},
+              { label: "Assembly (Steps 6–8)", ingredients: [
+                "4 oz goat cheese, cold from the fridge"
+              ]}
+            ],
+            steps: [
+              "MARINARA: Warm 1 Tbsp olive oil in a medium saucepan over medium heat. Add the garlic and stir continuously for 30 seconds — do not let it brown. Add the tomato paste; stir over low heat for 1 minute. Add the bay leaves, oregano, and crushed tomatoes. Stir, bring to a low simmer, cover, and cook 30 minutes. Season with salt and pepper. (Can be made well ahead; reheat before using.)",
+              "MUSHROOMS: Preheat oven to 450°F with rack in center. Lightly brush a sheet pan with olive oil. Place portobellos stem-side up, brush lightly with olive oil, and season with salt and pepper. Roast 15–25 minutes (check after 10 minutes), until tender. Drain any moisture that collects in the caps. Transfer to a large plate.",
+              "SPINACH: Heat olive oil in a sauté pan over medium-low heat. Add the sliced shallots and sauté 3–4 minutes until soft and translucent. Add the spinach, raise heat to medium-high, and sauté until just wilted, stirring continuously. Season with salt and pepper; set aside.",
+              "BREADCRUMBS: Melt the butter in a small sauté pan over medium heat. Once sizzling, add the diced shallots and a pinch of salt; cook 1–2 minutes. Add the panko and minced garlic; toast 3–4 minutes, stirring constantly, until very light golden. Transfer to a shallow bowl and season with salt and pepper.",
+              "Reduce oven to 425°F. Line the same sheet pan with parchment paper (or set a baking rack inside the pan so mushrooms don't sit in released juice).",
+              "Arrange mushrooms stem-side up on the pan, touching each other. Fill each with a large spoonful of marinara. Top with the sautéed spinach.",
+              "Slice the goat cheese into ½-inch thick slices (roughly ½ oz each — it may crumble a bit). Press both sides of each slice into the panko topping and place on top of a mushroom. Sprinkle remaining breadcrumbs over.",
+              "Bake at 425°F for 10–15 minutes until heated through, breadcrumbs are golden brown, and the goat cheese just begins to soften. Watch closely so the breadcrumbs don't burn. Serve immediately."
+            ]
+          },
+          {
+            title: "Truffle Mushroom Risotto",
+            servings: "Serves 4   |   Prep: 20 min   |   Cook: 20 min   |   Total: 40 min",
+            source: "Jenny Goycochea, So Much Food",
+            comments: [
+              "A go-to \"fancy\" dinner that's actually easy. The risotto should flow like slow-moving lava, not form a stiff ball. Black truffle puree is available at specialty grocery stores and online."
+            ],
+            ingredientGroups: [
+              { label: "Risotto base (Step 1)", ingredients: [
+                "2 Tbsp unsalted butter (of 4 oz / 1 stick total, divided)",
+                "2 small shallots, finely minced",
+                "1½ cups arborio rice",
+                "½ cup dry white wine"
+              ]},
+              { label: "Broth (Steps 1–2 — add gradually while stirring)", ingredients: [
+                "6 cups chicken or vegetable broth, warmed"
+              ]},
+              { label: "Mushrooms (Step 3 — sear while rice cooks)", ingredients: [
+                "1 Tbsp unsalted butter + 1 Tbsp neutral oil",
+                "12 oz cremini mushrooms, quartered",
+                "Salt and freshly cracked pepper"
+              ]},
+              { label: "Finish (Step 4)", ingredients: [
+                "Remaining 5 Tbsp unsalted butter",
+                "2 Tbsp black truffle puree",
+                "½ cup mascarpone",
+                "⅔ cup freshly grated Parmesan, plus more for garnish",
+                "Salt and freshly cracked pepper"
+              ]},
+              { label: "Garnish", ingredients: [
+                "Chopped chives",
+                "Extra Parmesan"
+              ]}
+            ],
+            steps: [
+              "Heat 2 Tbsp butter over medium heat in a wide-bottomed skillet or pan with at least 3-inch sides. Add shallots and cook 2–3 minutes until softened. Add rice and stir to coat all grains in butter. Toast about 1 minute. Add wine and stir continuously.",
+              "Once the wine is absorbed, add 1 cup warm broth, stirring constantly. Once absorbed, add another cup. Continue adding broth 1 cup at a time, stirring and waiting for each addition to absorb, until the rice is just slightly al dente. (The pan bottom exposed when you drag your spoon across it tells you it's time to add more broth.)",
+              "While the rice cooks, heat 1 Tbsp butter and 1 Tbsp neutral oil in a cast iron skillet over medium-high. Add mushrooms and let sear without stirring until golden brown on one side. Stir and cook 2–3 minutes more. Season lightly with salt and pepper.",
+              "When the rice is done, turn off the heat. Stir in ⅔ of the cooked mushrooms, the truffle puree, remaining 5 Tbsp butter, mascarpone, and Parmesan. Stir until all the cheese and butter has melted. Season to taste with salt and pepper.",
+              "Ladle risotto into bowls. Top with the remaining mushrooms, extra Parmesan, and chopped chives."
+            ]
+          },
+          {
+            title: "Roasted Portobellos With Pesto",
+            servings: "Serves 4   |   Total: 30 min",
+            source: "Martha Rose Shulman, NYT Cooking",
+            comments: [
+              "Uses Christy's Pesto (Adapted) already in this cookbook (see Noodles section). Homemade or store-bought pesto both work. Serve with rice or noodles tossed with butter for a simple meal. These reheat well a few hours later."
+            ],
+            ingredientGroups: [
+              { label: "Mushrooms", ingredients: [
+                "8 medium (roasting size) portobello mushrooms",
+                "1 Tbsp extra-virgin olive oil",
+                "Salt and freshly ground pepper"
+              ]},
+              { label: "Fill", ingredients: [
+                "¼ cup pesto (see Christy's Pesto (Adapted) in this cookbook)"
+              ]}
+            ],
+            steps: [
+              "Preheat oven to 400°F. Remove the stems from the mushrooms and carefully scrape away the gills using a spoon. Toss with the olive oil and season with salt and pepper. Place rounded-side down on a lightly oiled baking sheet. Roast 8–10 minutes, until beginning to soften and release liquid. Remove from oven and fill each cap with pesto. Return to the oven and roast until thoroughly softened, about 10 more minutes. Serve immediately."
+            ]
+          }
+        ] }
       ]
     },
     {
@@ -2762,6 +3164,35 @@ const data = {
             "Place the torn butter lettuce in a large serving bowl.",
             "Sprinkle the crumbled goat cheese and dried cranberries evenly over the lettuce.",
             "Drizzle the vinaigrette lightly over the top just before serving and toss gently to combine."
+          ]
+        },
+        {
+          title: "Sautéed Mushrooms",
+          servings: "Serves 6   |   Prep: 10 min   |   Cook: 20 min   |   Total: 30 min",
+          source: "Sommer Collier, A Spicy Perspective",
+          comments: [
+            "The classic steak topping — also great over chicken, pork chops, or grain bowls. Have patience: let the mushrooms release all their moisture before they begin to brown. Leftovers keep in the fridge up to 10 days; reheat on the stovetop with a little extra butter."
+          ],
+          ingredientGroups: [
+            { label: "Sear (Steps 1–2)", ingredients: [
+              "2 lbs button mushrooms, halved",
+              "2 Tbsp unsalted butter",
+              "2 Tbsp olive oil"
+            ]},
+            { label: "Aromatics (Step 2)", ingredients: [
+              "3 garlic cloves, minced",
+              "Salt and pepper to taste"
+            ]},
+            { label: "Glaze (Step 3)", ingredients: [
+              "1½ Tbsp fresh thyme leaves",
+              "¾ cup dry sherry"
+            ]}
+          ],
+          steps: [
+            "Place a large sauté pan over medium heat. Add the butter and olive oil. Once the butter has melted, add the mushrooms.",
+            "Let the mushrooms sear for 5 minutes, stirring to flip them. Add the garlic and salt and pepper to taste. Sear another 5 minutes to develop a rich caramelized color.",
+            "Stir in the thyme leaves and sherry. Lower heat to medium-low and simmer about 10 minutes, stirring occasionally, until the mushrooms have absorbed the sherry and only a small amount of moisture remains in the pan.",
+            "Taste and adjust salt and pepper. Serve warm over steak, chicken, pork chops, or as a side dish."
           ]
         }
       ]

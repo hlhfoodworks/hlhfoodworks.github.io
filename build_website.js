@@ -147,6 +147,24 @@ const CLUSTER_MAP = {
   'Turkey and Quinoa Meatloaf':                          'American',
   // Turkey — Indian
   'Turkey Tikka Masala':                                 'Indian',
+  // Other (Meat Mains) — French
+  'Peppered Duck Breast With Red Wine Sauce':            'French',
+  // Other (Meat Mains) — Italian
+  'Sheet-Pan Italian Sub Dinner':                        'Italian',
+  // Tofu — American
+  'Tofu Stir Fry':                                       'American',
+  'Sesame Ginger Tofu and Veggie Stir Fry':              'American',
+  // Tofu — West African
+  'Baked Tofu With Peanut Sauce and Coconut-Lime Rice':  'West African',
+  // Mushroom — Italian
+  'Oven Polenta with Roasted Mushrooms and Thyme':       'Italian',
+  'Stuffed Portobello Mushrooms with Crispy Goat Cheese': 'Italian',
+  'Truffle Mushroom Risotto':                            'Italian',
+  'Roasted Portobellos With Pesto':                      'Italian',
+  // Vegetables — Latin/South American
+  'Slow Cooker Vegan Mole Chili':                        'Latin/South American',
+  // Vegetable Sides — American
+  'Sautéed Mushrooms':                                   'American',
 };
 
 // ── Helpers ────────────────────────────────────────────────────────────────
