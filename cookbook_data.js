@@ -1777,6 +1777,7 @@ const data = {
           {
             id: "sous-vide-beef-ribs",
             title: "Sous Vide Beef Back Ribs",
+            favorite: true,
             servings: "Serves 6–8   |   Prep: 20 min   |   Sous vide: 24 hrs   |   Finish: 10 min   |   Total: ~24.5 hrs",
             source: "Sip Bite Go, Two Kooks in the Kitchen, Went Here 8 This (Family hybrid)",
             comments: [
@@ -1805,6 +1806,59 @@ const data = {
               "Remove ribs from bags. To make the glaze, reserve ½ cup drippings; otherwise discard. Pat ribs very dry with paper towels — the drier they are, the better the char.",
               "Optional glaze: Strain reserved drippings into a small saucepan. Refrigerate or freeze for 20–30 minutes until fat starts to congeal; skim and discard fat. Add Dijon, maple syrup, and cornstarch; whisk to combine. Bring to a boil, then reduce heat and simmer about 5 minutes until thickened and glossy.",
               "Heat grill to high. Grill ribs 2–3 minutes per side until nicely charred. (If using the glaze, brush on both sides before and during grilling.) Slice between the bones and serve with Cherry Barbecue Sauce on the side."
+            ]
+          },
+          {
+            title: "Hearty Beef Stew With Red Onions and Ale",
+            servings: "Serves 6   |   Total: 3 hours",
+            source: "Melissa Clark, NYT Cooking",
+            comments: [
+              "Tastes even better a day or two later; can be frozen for up to two months. Serve over mashed potatoes, noodles, or polenta."
+            ],
+            ingredientGroups: [
+              { label: "Beef (Steps 1 & 3)", ingredients: [
+                "2 lbs boneless beef stew meat, cut into 1-inch chunks",
+                "Kosher salt and black pepper",
+                "1–2 Tbsp all-purpose flour",
+                "2 Tbsp unsalted butter",
+                "1 Tbsp olive oil, plus more as needed"
+              ]},
+              { label: "Onions (Step 2 — prep while beef rests)", ingredients: [
+                "3 medium red onions (2 sliced into half-moons; 1 cut into ½-inch wedges for Step 6)"
+              ]},
+              { label: "Aromatics (Steps 4–5)", ingredients: [
+                "4 garlic cloves, thinly sliced",
+                "1 Tbsp tomato paste",
+                "1 tsp ground coriander",
+                "¼ tsp ground allspice"
+              ]},
+              { label: "Liquid (Step 5)", ingredients: [
+                "2 cups beef or chicken stock (preferably homemade)",
+                "1 cup ale or beer (nonalcoholic is fine)",
+                "1 cup water",
+                "1 rosemary sprig"
+              ]},
+              { label: "Vegetables (Step 6)", ingredients: [
+                "3 carrots, sliced",
+                "Red onion wedges (from Step 2 prep)"
+              ]},
+              { label: "Finish (Step 7)", ingredients: [
+                "1 Tbsp cider vinegar or sherry vinegar, plus more to taste"
+              ]},
+              { label: "Garnish", ingredients: [
+                "Chopped fresh chives",
+                "Flaky sea salt",
+                "Freshly ground black pepper"
+              ]}
+            ],
+            steps: [
+              "Season beef all over with salt and pepper. Set aside while you prepare the onions.",
+              "Peel onions. Cut 2 of them in half root to stem, then thinly slice crosswise into half-moons. Cut the third onion root to stem into ½-inch wedges; set wedges aside for Step 6.",
+              "Dust beef cubes lightly with flour. Heat butter and 1 Tbsp oil in a large Dutch oven over medium-high. Working in batches (do not crowd the pan), sear beef until dark all over, 5–6 minutes per batch. Transfer to a bowl as they brown. Add more oil and adjust heat as needed to prevent burning.",
+              "Stir in sliced onions; raise heat to medium-high if you lowered it. Cook, stirring occasionally, until pale golden and soft, 10–15 minutes. Add garlic and sauté until fragrant and lightly golden at the edges, 2–3 minutes more.",
+              "Make a well in the center of the onions. Stir in tomato paste, coriander, and allspice; cook, stirring, until paste is darkened, about 1 minute. Stir in stock, ale, 1 cup water, and rosemary sprig. Return beef and any accumulated juices to the pot; bring to a simmer. Partly cover and simmer gently for 45 minutes.",
+              "Give the beef a stir, then add reserved onion wedges. Simmer 15 minutes, then add carrots. Continue simmering until meat, onions, and carrots are tender, 30–45 minutes more.",
+              "If sauce seems thin, use a slotted spoon to transfer meat and vegetables to a platter; cover with foil to keep warm. Discard rosemary. Return pot to stove and simmer until thickened, 5–10 minutes. Stir in vinegar. Taste and adjust salt and vinegar. Spoon sauce over meat; garnish with chives, flaky sea salt, and more black pepper."
             ]
           },
           {
@@ -1975,10 +2029,526 @@ const data = {
               "Pour sauce over beef and stir to combine. Simmer 2–3 minutes until slightly thickened.",
               "Spoon over rice. Garnish with green onions and sesame seeds. Drizzle with creamy gochujang sauce. Serve with kimchi on the side."
             ]
+          },
+          {
+            title: "Sweet Potato Shepherd's Pie",
+            servings: "Serves 6   |   Total: ~50 min",
+            source: "Shira Rosenbluth's mother",
+            comments: [
+              "For a 9\"×13\" pan, double the recipe."
+            ],
+            ingredientGroups: [
+              { label: "Sweet potato topping (Steps 1–2)", ingredients: [
+                "5–6 sweet potatoes, peeled",
+                "1½ tsp salt",
+                "2–3 Tbsp mayonnaise",
+                "Oil, for brushing"
+              ]},
+              { label: "Meat filling (Steps 3–4)", ingredients: [
+                "1 Tbsp oil",
+                "1 large onion, chopped",
+                "1 lb ground beef",
+                "½ tsp garlic powder",
+                "½ tsp onion powder",
+                "½ tsp paprika",
+                "¼ tsp salt",
+                "¼ tsp pepper",
+                "1 Tbsp soy sauce",
+                "1 Tbsp teriyaki sauce",
+                "2 Tbsp Marsala wine",
+                "2 Tbsp tomato paste",
+                "½ cup water",
+                "1 cup frozen peas and carrots"
+              ]}
+            ],
+            steps: [
+              "Place sweet potatoes in a pot with water and bring to a boil. Cover and simmer until fork tender. Drain, reserving ½ cup of the cooking water. Season with salt, mayonnaise, and 2 Tbsp of the reserved water; mash until smooth. Add more water and salt to taste.",
+              "Preheat oven to 400°F.",
+              "Heat oil in a large frying pan over medium flame. Add onion and sauté until translucent, about 3 minutes. Add ground beef and sauté until no longer pink.",
+              "Add garlic powder, onion powder, paprika, salt, pepper, soy sauce, and teriyaki sauce; mix well to incorporate. Add Marsala wine, tomato paste, water, peas and carrots; mix well and cook 3 minutes.",
+              "Transfer meat mixture to a 9\" round pan. Top with mashed sweet potatoes. Using a fork, make a design on the surface. Lightly brush the top with oil. Bake uncovered at 400°F for 25 minutes."
+            ]
           }
         ]},
-        { title: "Fish", recipes: [] },
-        { title: "Shellfish", recipes: [] },
+        { title: "Fish", recipes: [
+          {
+            title: "Dry-Brined Salmon",
+            servings: "Serves 4   |   Prep: 5 min   |   Marinate: 8 hrs – 2 days   |   Cook: 15 min   |   Total: ~8.5 hrs+",
+            source: "J. Kenji López-Alt, NYT Cooking",
+            comments: [
+              "Marinating with Shio Koji — a fermented rice-and-koji paste — acts as a rich dry brine: it firms the flesh, prevents albumin leakage, and makes the skin virtually nonstick and chip-crisp. Even a short 30–45-minute rest improves the fish.",
+              "Works with any type of salmon; especially dramatic with leaner coho or sockeye."
+            ],
+            ingredientGroups: [
+              { label: "Marinate (Step 1)", ingredients: [
+                "4 (5- to 7-oz) skin-on salmon fillets",
+                "¼ cup Shio Koji paste (about 1 Tbsp per fillet)"
+              ]},
+              { label: "Stovetop (Steps 2–3)", ingredients: [
+                "Neutral oil for cooking"
+              ]},
+              { label: "Broiler (Steps 4–5)", ingredients: [
+                "Small amount of neutral oil"
+              ]},
+              { label: "Serve", ingredients: [
+                "Extra-virgin olive oil",
+                "Lemon wedges"
+              ]}
+            ],
+            steps: [
+              "Smear Shio Koji paste over the flesh side of each fillet. Place fillets flesh-side down in a Pyrex dish. Transfer to the refrigerator (uncovered or loosely covered with foil) and marinate at least 8 hours and up to 2 days. Before cooking, scrape off the Shio Koji and pat fillets very dry with paper towels.",
+              "To cook under the broiler, skip to Step 4. To cook on the stovetop, coat each fillet with a thin film of oil on all sides. Heat a skillet large enough to hold the fillets over medium-low for 2 minutes.",
+              "Add fillets skin-side down; press down for the first few minutes to keep skin flat and in contact with the pan. Cook, moving fillets occasionally, until skin is brown and crisp, 4–5 minutes total. (If the fillet doesn't release, give it another 15–30 seconds.) Flip and cook until as done as you like: 100–105°F for medium-rare, 130–135°F for well done. Remove from pan and rest 5 minutes, skin-side up. Serve with a drizzle of olive oil and a lemon wedge.",
+              "To cook under the broiler: adjust a rack 6 inches below the broiler element. Heat broiler to high. Rub a small amount of oil all over each fillet and arrange skin-side up on a rimmed baking sheet.",
+              "For medium-rare, broil until skin is brown, crisp, and charred in spots, 4–5 minutes. (For more well done, increase distance to 8 inches and cook 7–8 minutes total.) Rest 5 minutes, skin-side up. Serve with a drizzle of olive oil and a lemon wedge."
+            ]
+          },
+          {
+            title: "Baked Lemon Salmon with Creamy Dill Sauce",
+            servings: "Serves 4   |   Prep: 10 min   |   Rest: 10 min   |   Cook: 15 min   |   Total: 35 min",
+            source: "Jaclyn, Cooking Classy",
+            ingredientGroups: [
+              { label: "Salmon (Steps 1–2)", ingredients: [
+                "4 (6-oz) salmon fillets",
+                "2 Tbsp extra-virgin olive oil",
+                "1½ tsp lemon zest",
+                "2 Tbsp fresh lemon juice",
+                "Salt and freshly ground black pepper"
+              ]},
+              { label: "Creamy Dill Sauce (Step 3 — make ahead)", ingredients: [
+                "⅓ cup fat-free plain Greek yogurt",
+                "3 Tbsp full-fat mayonnaise",
+                "1 clove garlic, finely minced",
+                "1 Tbsp chopped fresh dill",
+                "2–3 tsp milk (to reach desired consistency)",
+                "½ tsp honey",
+                "Salt and freshly ground black pepper"
+              ]}
+            ],
+            steps: [
+              "Preheat oven to 400°F. Whisk together olive oil, lemon zest, and lemon juice in a small bowl. Grease a 13×9-inch baking dish. Place salmon fillets in the dish, season one side with salt and pepper, flip, drizzle with lemon mixture, and gently rub over the fillets. Season tops with salt and pepper. Let rest at room temperature 10 minutes.",
+              "Bake 12–16 minutes, until cooked through (cook time varies with fillet thickness and desired doneness). Serve warm topped with Creamy Dill Sauce.",
+              "Make the sauce: In a bowl, mix together Greek yogurt, mayonnaise, garlic, dill, honey, and enough milk to reach desired consistency. Season with salt and pepper. Refrigerate until ready to serve; let come to room temperature about 20 minutes before serving so it's not ice-cold over warm salmon. Keeps refrigerated for a few days — also makes an excellent vegetable dip."
+            ]
+          },
+          {
+            title: "Sriracha Maple Salmon",
+            servings: "Serves 4   |   Active: 10 min   |   Total: 16 min",
+            source: "Ree Drummond, Food Network (The Pioneer Woman)",
+            ingredientGroups: [
+              { label: "Fish & veg (Step 2)", ingredients: [
+                "4 (6-oz) skinless salmon fillets",
+                "3 medium zucchinis, cut into 1-inch rounds",
+                "3 Tbsp olive oil"
+              ]},
+              { label: "Sauce (Step 3)", ingredients: [
+                "¼ cup low-sodium soy sauce",
+                "¼ cup maple syrup",
+                "3 Tbsp grated fresh ginger",
+                "3 Tbsp rice wine vinegar",
+                "2 Tbsp Sriracha",
+                "1 tsp cornstarch",
+                "4 cloves garlic, grated",
+                "3 green onions, sliced — whites and greens separated"
+              ]},
+              { label: "Serve (Step 4)", ingredients: [
+                "Cooked rice"
+              ]}
+            ],
+            steps: [
+              "Turn oven to broil. Position rack in the upper third of the oven.",
+              "Arrange salmon fillets flesh-side up on one side of a large baking dish; place zucchini on the other side. Drizzle both with olive oil.",
+              "Whisk together soy sauce, maple syrup, ginger, rice wine vinegar, Sriracha, cornstarch, garlic, and the white parts of the green onions in a small bowl. Pour sauce over salmon and zucchini. Broil 7 minutes. Remove from oven, spoon sauce over salmon, and flip zucchini. Return to broiler and cook until salmon is cooked through and sauce has thickened, 6–7 minutes more.",
+              "Spread cooked rice on a large platter. Arrange salmon on top and zucchini alongside. Spoon over remaining sauce from the baking dish. Garnish with the reserved green onion tops. Serve."
+            ]
+          },
+          {
+            title: "Fish and Chips with Malt Vinegar Mayonnaise",
+            servings: "Serves 4   |   Special equipment: deep-fry thermometer",
+            source: "Adam Evans, Bon Appétit (September 2013)",
+            comments: [
+              "Key: beer and club soda must be ice-cold. Chill the batter if prepping ahead.",
+              "Corn flour (more finely ground than cornmeal) is available at Latin markets, natural-foods stores, and bobsredmill.com."
+            ],
+            ingredientGroups: [
+              { label: "Malt Vinegar Mayonnaise (Steps 1–2 — make first, up to 1 day ahead)", ingredients: [
+                "1 large egg yolk",
+                "2 Tbsp malt vinegar, divided",
+                "1 cup vegetable oil",
+                "Kosher salt and freshly ground black pepper"
+              ]},
+              { label: "Frying oil (Step 3)", ingredients: [
+                "Vegetable oil for frying (about 4 cups)"
+              ]},
+              { label: "Batter (Step 4)", ingredients: [
+                "2 cups all-purpose flour",
+                "2 tsp baking powder",
+                "1 tsp baking soda",
+                "1 tsp kosher salt, plus more for seasoning",
+                "½ tsp freshly ground black pepper, plus more",
+                "12 oz (or more) chilled light lager",
+                "1 cup chilled club soda",
+                "1 Tbsp malt vinegar"
+              ]},
+              { label: "Dredge & fish (Step 5)", ingredients: [
+                "1 cup corn flour or all-purpose flour",
+                "1½ lb cod, haddock, or pollack, cut into long 1½\"-wide strips"
+              ]},
+              { label: "Serve (Step 6)", ingredients: [
+                "French fries",
+                "Old Bay seasoning",
+                "Flaky sea salt (such as Maldon)",
+                "Chopped fresh dill",
+                "Lemon wedges"
+              ]}
+            ],
+            steps: [
+              "Make the mayonnaise: Whisk egg yolk and 1 Tbsp malt vinegar in a small bowl. Whisking constantly, very slowly drizzle in vegetable oil — drop by drop at first — until mayonnaise is thickened and smooth. Whisk in remaining 1 Tbsp vinegar. Season with salt and pepper. Cover and chill. (Can be made 1 day ahead.)",
+              "When ready to fry, fit a large pot with a deep-fry thermometer; pour in oil to measure 3 inches. Heat over medium-high until thermometer registers 375°F.",
+              "Meanwhile, whisk flour, baking powder, baking soda, 1 tsp salt, and ½ tsp pepper in a large bowl. Whisking constantly, slowly add beer, club soda, and 1 Tbsp vinegar, adding more beer if batter is too thick (it should be the consistency of thin pancake batter).",
+              "Place corn flour in a shallow bowl. Season fish with salt and pepper. Working in batches (returning oil to 375°F between batches), dredge fish in corn flour, shaking off excess; dip in batter, letting excess drip back into bowl; and fry until golden brown and crisp, about 2 minutes per side. Transfer to a paper towel–lined baking sheet.",
+              "Season fish and fries with Old Bay, flaky sea salt, and dill. Serve with malt vinegar mayonnaise and lemon wedges."
+            ]
+          },
+          {
+            title: "Smoked Salmon Niçoise Salad",
+            favorite: true,
+            servings: "Serves 2–4   |   Active: 15 min   |   Total: 45 min",
+            source: "Molly Yeh, Food Network (Girl Meets Farm)",
+            comments: [
+              "Can also be made with high-end jarred tuna in oil in place of the smoked salmon."
+            ],
+            ingredientGroups: [
+              { label: "Roasted potatoes (Step 2)", ingredients: [
+                "1 lb rainbow fingerling potatoes, quartered",
+                "1 Tbsp olive oil",
+                "½ tsp kosher salt + freshly ground black pepper"
+              ]},
+              { label: "Haricot verts & eggs (Step 3)", ingredients: [
+                "8 oz haricot verts, trimmed",
+                "1 Tbsp olive oil",
+                "¼ tsp kosher salt + freshly ground black pepper",
+                "4 large eggs"
+              ]},
+              { label: "Dressing (Step 5)", ingredients: [
+                "½ cup white wine vinegar",
+                "¼ cup Dijon mustard",
+                "2 tsp fresh thyme leaves, chopped",
+                "½ small red onion, finely chopped",
+                "¼ cup olive oil"
+              ]},
+              { label: "Salad (Step 6)", ingredients: [
+                "1 head Boston, Bibb, or butter lettuce, leaves separated",
+                "One 4- to 6-oz smoked salmon fillet, broken into large chunks (or high-end jarred tuna in oil)",
+                "16 cherry tomatoes, halved",
+                "1 cup niçoise or kalamata olives"
+              ]}
+            ],
+            steps: [
+              "Preheat oven to 425°F.",
+              "Toss quartered potatoes with 1 Tbsp olive oil, ½ tsp salt, and a few grinds of pepper on a baking sheet. Roast 15 minutes.",
+              "Meanwhile, toss haricot verts with 1 Tbsp olive oil, ¼ tsp salt, and pepper on one side of a second baking sheet. Place eggs on the other side. After potatoes have roasted 15 minutes, add the second baking sheet to the oven. Continue roasting until potatoes are golden and easily pierced with a fork and green beans are tender-crisp, about 15 minutes more.",
+              "Immediately transfer eggs to a bowl of ice water and let sit 10 minutes. Peel and quarter.",
+              "Whisk vinegar, Dijon, thyme, and red onion in a medium bowl. Whisking constantly, slowly drizzle in ¼ cup olive oil until emulsified.",
+              "Divide lettuce among serving plates. Arrange potatoes, haricot verts, salmon (or tuna), eggs, cherry tomatoes, and olives on top. Drizzle with dressing, sprinkle with salt and a few grinds of pepper."
+            ]
+          },
+          {
+            title: "Sole with Lemon-Caper Sauce",
+            servings: "Serves 2–4   |   Total: 20 min (all active)",
+            source: "Giada De Laurentiis, Food Network (Giada Entertains)",
+            ingredientGroups: [
+              { label: "Fish (Step 1)", ingredients: [
+                "4 fillets of lemon sole",
+                "1¼ tsp kosher salt",
+                "⅓ cup all-purpose flour, for dredging",
+                "2 Tbsp extra-virgin olive oil",
+                "2 Tbsp unsalted butter"
+              ]},
+              { label: "Sauce (Step 2)", ingredients: [
+                "¼ cup capers, drained and rinsed",
+                "1 clove garlic, minced",
+                "½ cup chicken stock",
+                "¼ cup freshly squeezed lemon juice (from about 1½ lemons)",
+                "½ tsp Calabrian chili paste",
+                "½ tsp chopped fresh oregano",
+                "2 Tbsp unsalted butter (remaining)"
+              ]},
+              { label: "Finish", ingredients: [
+                "2 Tbsp chopped fresh Italian parsley"
+              ]}
+            ],
+            steps: [
+              "Pat sole fillets dry with paper towels. Season evenly with 1 tsp salt. Heat a medium skillet over high heat; add 1 Tbsp olive oil and 1 Tbsp butter. When butter is fully melted and bubbles have subsided, dredge 2 fillets in flour, shaking off excess. Add to skillet; reduce heat to medium-high. Cook until beginning to brown around the edges, 2–3 minutes. Flip gently and cook 30 seconds more. Transfer to a plate. Repeat with remaining 1 Tbsp olive oil, 1 Tbsp butter, and fish.",
+              "With all 4 fillets out of the skillet, add capers and garlic and cook over medium heat, stirring, until fragrant, about 15 seconds. Add chicken stock and lemon juice; stir, scraping up any browned bits. Season with remaining ¼ tsp salt. Simmer about 2 minutes to reduce slightly. Finish by stirring in the remaining 2 Tbsp butter, Calabrian chili paste, and oregano. Spoon sauce over fish, sprinkle with parsley, and serve."
+            ]
+          },
+          {
+            title: "Fast Vietnamese Caramel Bluefish",
+            favorite: true,
+            servings: "Serves 4   |   Total: 20 min",
+            source: "Melissa Clark, NYT Cooking",
+            comments: [
+              "Can be made with any rich, flaky fish such as sea bass — not just bluefish."
+            ],
+            ingredientGroups: [
+              { label: "Fish (Step 1)", ingredients: [
+                "4 (6-oz) skin-on bluefish fillets (or any rich, flaky fish such as sea bass)",
+                "1 Tbsp peanut, grapeseed, or safflower oil"
+              ]},
+              { label: "Sauce (Steps 1–2)", ingredients: [
+                "1 stalk lemongrass (or substitute a 2-inch strip of lemon or lime zest, peeled with a peeler — no bruising needed)",
+                "⅓ cup light brown sugar",
+                "2 Tbsp Asian fish sauce",
+                "1½ Tbsp soy sauce",
+                "1 tsp grated fresh ginger",
+                "½ tsp black pepper"
+              ]},
+              { label: "Garnish & serve (Step 4)", ingredients: [
+                "Sliced scallions",
+                "Thinly sliced jalapeño",
+                "Fresh cilantro",
+                "Cooked rice (optional)"
+              ]}
+            ],
+            steps: [
+              "Brush fish all over with oil. Remove outer layer of lemongrass stalk and cut stalk into 2-inch lengths; using the butt of a kitchen knife, pound and bruise stalks all over.",
+              "Place lemongrass pieces, sugar, fish sauce, soy sauce, ginger, and black pepper in a large skillet. Bring to a simmer over medium-high heat; reduce sauce 1–2 minutes until syrupy.",
+              "Add fish skin-side down. Simmer, basting frequently with pan sauce, for 2 minutes. Carefully turn fish and continue cooking until just cooked through, 2–3 minutes more.",
+              "Transfer to a serving plate. Garnish with scallions, jalapeño, and cilantro. Drizzle with additional sauce. Serve over rice if desired."
+            ]
+          },
+          {
+            title: "Spicy Tuna Salad with Crispy Rice",
+            servings: "Serves 4   |   Prep: 5 min   |   Cook: 30 min   |   Total: 35 min",
+            source: "Ali Slagle, NYT Cooking",
+            ingredientGroups: [
+              { label: "Rice (Step 1)", ingredients: [
+                "1½ cups sushi rice, rinsed well",
+                "2 cups water",
+                "1 Tbsp unseasoned rice vinegar",
+                "2 tsp granulated sugar",
+                "1 tsp kosher salt (Diamond Crystal)"
+              ]},
+              { label: "Tuna salad (Step 2 — make while rice cooks)", ingredients: [
+                "3 scallions, trimmed and thinly sliced",
+                "2 Persian or mini seedless cucumbers, thinly sliced",
+                "4 (5-oz) cans water-packed tuna, drained",
+                "⅓ cup mayonnaise",
+                "1½ Tbsp Sriracha, plus more to taste",
+                "2 tsp soy sauce",
+                "2 tsp unseasoned rice vinegar"
+              ]},
+              { label: "Salt cucumbers (Step 3)", ingredients: [
+                "Pinch of kosher salt"
+              ]},
+              { label: "Crisp rice (Step 4)", ingredients: [
+                "3 Tbsp neutral oil (such as grapeseed), plus more as needed"
+              ]}
+            ],
+            steps: [
+              "In a large nonstick skillet with a lid, stir together 2 cups water, rice, 1 Tbsp rice vinegar, sugar, and 1 tsp salt. Bring to a boil over high heat, then cover, reduce heat to low, and cook until rice is tender, 18–20 minutes.",
+              "Meanwhile, thinly slice scallions and cucumbers. In a large bowl, stir together scallions, tuna, mayonnaise, Sriracha, soy sauce, and remaining 2 tsp rice vinegar. Taste and add more Sriracha for heat. Refrigerate until rice is ready (or up to 5 days).",
+              "Sprinkle cucumbers with a pinch of salt.",
+              "Crisp the rice: make 4–5 small holes in the rice in the skillet, then pour oil down the sides of the pan and into the divots. Increase heat to medium and cook until rice is browned at the edges, 4–7 minutes. (Lift the rice to check.) If you don't see oil bubbling in the holes, add a teaspoon or two more oil.",
+              "Divide rice, crispy-side up, among bowls or plates. Serve with a scoop of spicy tuna and the cucumbers alongside."
+            ]
+          }
+        ] },
+        { title: "Shellfish", recipes: [
+          {
+            title: "Moules Marinières",
+            servings: "Serves 4   |   Prep: 45 min   |   Cook: 15 min   |   Total: 1 hour",
+            source: "Florence Fabricant, NYT Cooking; garlic and cream option adapted from George Duran, Food Network",
+            ingredientGroups: [
+              { label: "Clean (Step 1)", ingredients: [
+                "6 lbs mussels"
+              ]},
+              { label: "Sauté (Step 2)", ingredients: [
+                "4 Tbsp unsalted butter, divided",
+                "4 Tbsp finely minced shallots (about 2 medium shallots)",
+                "OPTIONAL: 2–4 garlic cloves, finely minced"
+              ]},
+              { label: "Steam (Step 3)", ingredients: [
+                "4 cups dry white wine"
+              ]},
+              { label: "Optional — makes moules à la crème (Step 5)", ingredients: [
+                "½ cup heavy cream"
+              ]},
+              { label: "Serve", ingredients: [
+                "Freshly ground black pepper",
+                "2 Tbsp minced fresh parsley",
+                "Crusty bread"
+              ]}
+            ],
+            steps: [
+              "Scrub the mussels under cold water. Pull off any beards (the fibrous tufts near the hinge). Discard any that are cracked or don't close when tapped.",
+              "In a large pot (at least 8 quarts), melt 2 Tbsp of the butter over low heat. Add shallots (and garlic, if using) and sauté until soft but not browned, about 3–5 minutes.",
+              "Add the wine; raise heat to medium. Add mussels, cover, and steam until they open, about 10–15 minutes.",
+              "Using a slotted spoon, remove mussels from the pot; divide among warmed bowls. Discard any that did not open.",
+              "FOR MOULES À LA CRÈME: Stir the cream into the remaining broth and simmer 2–3 minutes until slightly thickened.",
+              "Taste the broth. If too salty, dilute with a little water. Add the remaining 2 Tbsp butter and swirl until melted. Season with pepper. Ladle broth over mussels, taking care not to disturb any sediment at the bottom of the pot.",
+              "Sprinkle with parsley and serve immediately with crusty bread.",
+              "TIP: After the meal, shuck and refrigerate any leftover mussels."
+            ]
+          },
+          {
+            title: "Shrimp with Orzo and Peas",
+            servings: "Serves 2–4   |   Total: ~20 min",
+            source: "Adapted from Pampered Chef, 29 Minutes to Dinner",
+            ingredientGroups: [
+              { label: "Season shrimp (Step 1)", ingredients: [
+                "½ lb shrimp, peeled and deveined",
+                "1 Tbsp vegetable oil",
+                "¼ tsp salt",
+                "¼ tsp pepper",
+                "⅛ tsp sugar"
+              ]},
+              { label: "Orzo (Step 2)", ingredients: [
+                "2 cups chicken broth",
+                "1 cup white wine",
+                "1 clove garlic, minced",
+                "8 oz orzo"
+              ]},
+              { label: "Finish (Step 3)", ingredients: [
+                "1 cup frozen peas",
+                "1 Tbsp fresh lemon juice",
+                "1 Tbsp unsalted butter"
+              ]},
+              { label: "Serve", ingredients: [
+                "1 Tbsp lemon zest, grated",
+                "1 Tbsp fresh parsley, finely chopped",
+                "Freshly grated Parmesan (optional)"
+              ]}
+            ],
+            steps: [
+              "In a large bowl, toss shrimp with salt, pepper, and sugar. Heat oil in a large skillet over medium-high. Cook shrimp 3 minutes. Turn and remove from heat; let stand 1 minute until pink and opaque. Remove shrimp from skillet.",
+              "Add broth, wine, garlic, and orzo to the skillet. Bring to a boil. Cover and cook on medium-low until orzo is tender, 10–12 minutes.",
+              "Return shrimp to skillet; add peas, butter, and lemon juice. Cover and let stand 3–5 minutes until heated through. Remove from heat and top with lemon zest and parsley. Serve with freshly grated Parmesan if desired."
+            ]
+          },
+          {
+            title: "Spicy Grilled Shrimp",
+            servings: "Serves 4   |   Total: 20 min",
+            source: "Mark Bittman, NYT Cooking (1999)",
+            ingredientGroups: [
+              { label: "Paste & shrimp (Steps 1–2)", ingredients: [
+                "1 large clove garlic",
+                "1 Tbsp coarse salt",
+                "½ tsp cayenne",
+                "1 tsp paprika",
+                "2 Tbsp olive oil",
+                "2 tsp fresh-squeezed lemon juice",
+                "1½–2 lbs large shrimp (15–18 per pound), peeled, rinsed, and dried"
+              ]},
+              { label: "Serve", ingredients: [
+                "Lemon wedges"
+              ]}
+            ],
+            steps: [
+              "Start a charcoal or gas grill, or heat the broiler. Make the fire as hot as it will get and put the rack close to the heat source.",
+              "Mince garlic with salt; mix with cayenne and paprika, then make into a paste with olive oil and lemon juice. Smear paste all over shrimp. Grill or broil 2–3 minutes per side, turning once. Serve immediately or at room temperature with lemon wedges.",
+              "NOTE: For best results, make sure your paprika is fresh — if it doesn't taste vibrant and smoky, it's time to buy more."
+            ]
+          },
+          {
+            title: "Bacon-Wrapped Scallops with Chili Butter",
+            servings: "Serves 6–8   |   Prep: 15 min   |   Cook: 20 min   |   Total: 35 min",
+            source: "Ree Drummond, The Pioneer Woman",
+            ingredientGroups: [
+              { label: "Assemble (Step 1)", ingredients: [
+                "2 lbs large scallops",
+                "½ lb bacon, cut into thirds or halves",
+                "Wooden skewers"
+              ]},
+              { label: "Chili butter (Step 3)", ingredients: [
+                "1 stick (8 Tbsp) unsalted butter",
+                "2 tsp chili powder",
+                "Dash of cayenne"
+              ]}
+            ],
+            steps: [
+              "Preheat oven to 425°F. Wrap a piece of bacon around each scallop and secure with a wooden skewer.",
+              "Cook on a drip pan for 20 minutes, until bacon is sizzling and brown. (Alternatively: broil for 15 minutes, until bacon is sizzling and brown.)",
+              "Melt butter; stir in chili powder and cayenne. Drizzle over scallops before serving.",
+              "NOTE: Can also be cooked on the grill."
+            ]
+          },
+          {
+            title: "Shrimp Scampi with Linguini",
+            servings: "Serves 4–6   |   Prep: 15 min   |   Cook: 25 min   |   Total: 40 min",
+            source: "Tyler Florence, Food Network (Food 911)",
+            ingredientGroups: [
+              { label: "Pasta (Step 1)", ingredients: [
+                "1 lb linguini"
+              ]},
+              { label: "Shrimp (Step 2)", ingredients: [
+                "2 Tbsp unsalted butter",
+                "2 Tbsp extra-virgin olive oil",
+                "2 shallots, finely diced",
+                "2 cloves garlic, minced",
+                "Pinch Aleppo pepper or red pepper flakes (optional)",
+                "1 lb shrimp, peeled and deveined",
+                "Kosher salt and freshly ground black pepper"
+              ]},
+              { label: "Sauce & finish (Step 3)", ingredients: [
+                "½ cup dry white wine",
+                "Juice of 1 lemon",
+                "2 Tbsp unsalted butter",
+                "2 Tbsp extra-virgin olive oil"
+              ]},
+              { label: "Serve", ingredients: [
+                "¼ cup finely chopped fresh parsley",
+                "Extra-virgin olive oil, for drizzling"
+              ]}
+            ],
+            steps: [
+              "Bring a large pot of salted water to a boil. Add linguini and cook 6–8 minutes until not quite done (it will finish in the sauce). Drain.",
+              "Meanwhile, melt 2 Tbsp butter with 2 Tbsp olive oil in a large skillet over medium-high heat. Sauté shallots, garlic, and red pepper flakes (if using) until shallots are translucent, 3–4 minutes. Season shrimp with salt and pepper; add to pan and cook until pink, 2–3 minutes. Remove shrimp and set aside.",
+              "Add wine and lemon juice to the pan; bring to a boil. Add remaining 2 Tbsp butter and 2 Tbsp olive oil; when butter has melted, return shrimp to the pan along with parsley and drained pasta. Toss well; season with salt and pepper. Drizzle with olive oil and serve immediately."
+            ]
+          },
+          {
+            title: "Yang Chow Slippery Shrimp",
+            servings: "Serves 4   |   Total: 25 min",
+            source: "Los Angeles Times (Yang Chow Restaurant)",
+            ingredientGroups: [
+              { label: "Coat shrimp (Step 2)", ingredients: [
+                "1 lb large shrimp, peeled, deveined, and butterflied",
+                "¼ cup cornstarch"
+              ]},
+              { label: "Cornstarch slurry (Step 3 — mix ahead)", ingredients: [
+                "2 tsp cornstarch",
+                "2 tsp water"
+              ]},
+              { label: "Fry (Step 4)", ingredients: [
+                "2 cups oil"
+              ]},
+              { label: "Sauce (Step 5)", ingredients: [
+                "2 large cloves garlic, minced",
+                "½ tsp minced fresh ginger",
+                "½ tsp cayenne",
+                "1 Tbsp tomato sauce or ketchup",
+                "1 Tbsp white vinegar",
+                "1 Tbsp white wine",
+                "1½ Tbsp sugar",
+                "½ tsp salt",
+                "¼ cup water"
+              ]},
+              { label: "Finish (Step 6)", ingredients: [
+                "4 green onions, sliced"
+              ]}
+            ],
+            steps: [
+              "Peel, devein, and butterfly the shrimp.",
+              "Toss shrimp with ¼ cup cornstarch until completely coated.",
+              "Combine 2 tsp cornstarch with 2 tsp water in a small bowl; set aside.",
+              "Heat oil in a skillet or wok over medium heat until hot. Deep-fry shrimp until golden, about 45 seconds. Remove shrimp and drain the oil from the wok, leaving 1 Tbsp.",
+              "Reheat wok. Add garlic, ginger, and cayenne; stir a few seconds. Add tomato sauce, vinegar, wine, sugar, salt, ¼ cup water, and the cornstarch slurry. Cook and stir until sauce thickens.",
+              "Add shrimp and toss until coated. Add green onions, stir, turn out onto a platter, and serve."
+            ]
+          }
+        ] },
         { title: "Other", recipes: [] }
       ]
     },
@@ -2862,7 +3432,36 @@ const data = {
     },
     {
       title: "Desserts",
-      recipes: []
+      recipes: [
+        {
+          title: "Lauren's Banana Pudding",
+          favorite: true,
+          servings: "Serves 10–12   |   Prep: 15 min   |   Rest: 1 hr (pudding) + overnight   |   Total: ~1.25 hrs active",
+          source: "Lauren Muhlheim",
+          comments: [
+            "Inspired by Magnolia Bakery."
+          ],
+          ingredientGroups: [
+            { label: "Pudding base (Step 1 — make 1 hour ahead)", ingredients: [
+              "1½ cups cold water",
+              "1 (14 oz) can sweetened condensed milk",
+              "⅔ cup instant vanilla pudding powder (or 1 whole box)"
+            ]},
+            { label: "Whipped cream (Step 2)", ingredients: [
+              "3 cups heavy cream"
+            ]},
+            { label: "Assembly (Step 3)", ingredients: [
+              "1 box vanilla wafers",
+              "3–4 bananas, sliced"
+            ]}
+          ],
+          steps: [
+            "Whisk together cold water, sweetened condensed milk, and pudding powder until smooth. Let sit until congealed, about 1 hour.",
+            "In a separate bowl, whip heavy cream until soft peaks form.",
+            "Fold pudding mixture into the whipped cream. In a large serving bowl, start with a layer of vanilla wafers, then sliced bananas, then pudding. Repeat layers until ingredients are used up. Refrigerate overnight so wafers soften."
+          ]
+        }
+      ]
     },
     {
       title: "Drinks",

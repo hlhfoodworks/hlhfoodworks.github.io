@@ -97,12 +97,37 @@ const CLUSTER_MAP = {
   'Four Peppercorn Crusted Rotisserie Rib Roast':        'American',
   'The Best Passover Brisket':                           'American',
   'Sous Vide Beef Back Ribs':                            'American',
+  'Hearty Beef Stew With Red Onions and Ale':            'American',
   // Beef — French
   'Dijon and Cognac Beef Stew':                          'French',
   // Beef — Chinese
   'Asian Braised Short Ribs':                            'Chinese',
+  // Shellfish — American
+  'Shrimp with Orzo and Peas':                           'American',
+  'Spicy Grilled Shrimp':                                'American',
+  'Bacon-Wrapped Scallops with Chili Butter':            'American',
+  // Shellfish — French
+  'Moules Marinières':                                   'French',
+  // Shellfish — Italian
+  'Shrimp Scampi with Linguini':                         'Italian',
+  // Shellfish — Chinese
+  'Yang Chow Slippery Shrimp':                           'Chinese',
+  // Fish — American
+  'Dry-Brined Salmon':                                   'American',
+  'Baked Lemon Salmon with Creamy Dill Sauce':           'American',
+  'Sriracha Maple Salmon':                               'American',
+  'Fish and Chips with Malt Vinegar Mayonnaise':         'American',
+  // Fish — French
+  'Smoked Salmon Niçoise Salad':                         'French',
+  // Fish — Italian
+  'Sole with Lemon-Caper Sauce':                         'Italian',
+  // Fish — Vietnamese
+  'Fast Vietnamese Caramel Bluefish':                    'Vietnamese',
+  // Fish — Japanese
+  'Spicy Tuna Salad with Crispy Rice':                   'Japanese',
   // Ground Beef — American
   'Taco Night!!':                                        'American',
+  'Sweet Potato Shepherd\'s Pie':                        'American',
   // Ground Beef — Korean-inspired
   'Korean Beef Bowl':                                    'Korean-inspired',
   // Noodles: Italian — Middle Eastern/Persian
@@ -113,6 +138,8 @@ const CLUSTER_MAP = {
   'Cherry Barbecue Sauce':                               'American',
   // Dressings — Latin/South American
   'Authentic Chimichurri':                               'Latin/South American',
+  // Desserts — American
+  'Lauren\'s Banana Pudding':                            'American',
   // Drinks — American
   'Melon Ball':                                          'American',
   // Turkey — American
