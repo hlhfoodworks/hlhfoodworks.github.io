@@ -100,6 +100,8 @@ const CLUSTER_MAP = {
   'Cherry Barbecue Sauce':                               'American',
   // Dressings — Latin/South American
   'Authentic Chimichurri':                               'Latin/South American',
+  // Drinks — American
+  'Melon Ball':                                          'American',
   // Turkey — American
   'Expertly Spiced and Glazed Roast Turkey':             'American',
   'Turkey and Quinoa Meatloaf':                          'American',

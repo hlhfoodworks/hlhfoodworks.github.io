@@ -2576,6 +2576,29 @@ const data = {
     {
       title: "Desserts",
       recipes: []
+    },
+    {
+      title: "Drinks",
+      recipes: [
+        {
+          title: "Melon Ball",
+          servings: "Makes 1 drink",
+          source: "The Kitchn",
+          ingredientGroups: [
+            { ingredients: [
+              "2 oz Midori",
+              "1 oz vodka",
+              "Fresh-squeezed orange juice, to top",
+              "Fresh melon balls, for garnish (optional)"
+            ]}
+          ],
+          steps: [
+            "Fill a glass with ice. Add Midori and vodka.",
+            "Top off with orange juice.",
+            "Garnish with melon balls, if desired."
+          ]
+        }
+      ]
     }
   ]
 };
