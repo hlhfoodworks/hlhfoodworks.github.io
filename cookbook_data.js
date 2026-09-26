@@ -297,6 +297,24 @@ const data = {
               ]
             },
             {
+              title: "Sweet and Sour Chicken",
+              servings: "Flexible — same sauce works for a few pieces or a large batch",
+              comments: [
+                "Sauce amounts stay the same whether cooking a few pieces or a large batch — it's very forgiving.",
+                "Russian dressing can be hard to find; regular French dressing (not creamy) works just as well.",
+                "Marcie's note: \"You can't mess-up with this recipe — last night it was in the oven for 2½ hours!\""
+              ],
+              source: "Family recipe, credited to Marcie (in a letter to Lauren)",
+              ingredientGroups: [
+                { label: "Sauce (combine and pour over chicken)", ingredients: ["1 envelope dry onion soup mix", "1 bottle Russian salad dressing (regular French dressing works if Russian isn't available; NOT creamy French)", "1 bottle (about 18 oz) apricot preserves"] },
+                { label: "Main", ingredients: ["Chicken parts (any amount — see Comments)"] }
+              ],
+              steps: [
+                "Spread chicken parts out in a baking dish. Cover with the Russian dressing, apricot preserves, and onion soup mix.",
+                "Bake covered at 350°F for 1 hour, then uncover and continue baking for 30 minutes to 1 hour more. Check occasionally — if the chicken starts to look burned from the apricot preserves, re-cover."
+              ]
+            },
+            {
               title: "Weeknight Fancy Chicken and Rice",
               servings: "4 to 6   |   Total: 50 minutes",
               comments: ["Garnish is flexible — dried cranberries, hazelnuts, or pine nuts can stand in for or join the apricots and almonds."],
@@ -599,6 +617,25 @@ const data = {
                 "Add the olives, garlic, shallot, and the remaining 1 teaspoon each salt, pepper, and oregano to the pot. Cook over medium heat, stirring, until fragrant, about 2 minutes. Add the rice and stir to coat. Add the broth and bring to a simmer.",
                 "Remove the pot from the heat. Place the browned chicken thighs on top of the rice, skin side up, then cover with the caramelized lemon slices. Cover tightly with a lid or foil and bake until the rice is cooked and the chicken is cooked through, about 30 minutes.",
                 "Serve topped with the parsley and a squeeze of juice from the remaining lemon."
+              ]
+            },
+            {
+              title: "Roast Lemon-Garlic Chicken with Green Olives",
+              servings: "4",
+              comments: [
+                "The lemon-herb mixture can be made up to 4 hours ahead, covered, and kept at room temperature.",
+                "Can double the recipe; or use half black olives for a contrast of color."
+              ],
+              source: "Seriously Simple (cookbook)",
+              ingredientGroups: [
+                { label: "Lemon-herb mixture (combine in a small bowl)", ingredients: ["1 tablespoon finely chopped lemon zest", "1/3 cup fresh lemon juice", "2 tablespoons olive oil", "1/4 cup finely chopped mixed fresh herbs (such as rosemary, thyme, parsley, basil, and/or oregano)", "Salt and freshly ground black pepper to taste"] },
+                { label: "For roasting", ingredients: ["1 (3 1/2-pound) fryer chicken, cut up", "25 garlic cloves, peeled"] },
+                { label: "For the pan sauce", ingredients: ["3/4 cup chicken broth", "1/3 cup pitted French green olives, rinsed", "2 tablespoons finely chopped mixed fresh herbs (for garnish)"] }
+              ],
+              steps: [
+                "Lemon-herb mixture: In a small bowl, combine the lemon zest and juice, olive oil, 1/4 cup of the herbs, and salt and pepper. Stir to combine.",
+                "Preheat oven to 425°F. Arrange chicken pieces in a roasting pan and pour the lemon-herb mixture over. Arrange the garlic cloves all around the chicken, stirring them to coat with the mixture. Roast about 40 minutes, or until chicken is nicely browned and opaque throughout.",
+                "Remove chicken from oven. Add broth to the pan and place over medium-high heat on the stovetop. Stir to scrape up browned bits from the bottom. Add olives and stir; cook a few minutes to heat through. Garnish with the remaining 2 tablespoons herbs and serve from the pan, or transfer to a platter. Serve immediately."
               ]
             },
             {
@@ -3414,6 +3451,25 @@ const data = {
               ]
             },
             {
+              title: "Brie Linguine",
+              servings: "6   |   Prep: 15 minutes, plus 2–3 hours resting",
+              comments: [
+                "A very intense pasta, best served as a side dish.",
+                "Flavored fresh pasta — red pepper, basil, or spinach — provides wonderful color and taste."
+              ],
+              source: "More Than a Tea Party (cookbook), Brunch and Luncheon chapter, p. 105",
+              ingredientGroups: [
+                { label: "Sauce (mix together and let sit 2–3 hours at room temperature before serving)", ingredients: ["4 large, ripe tomatoes, peeled and coarsely chopped", "1 small red onion, coarsely chopped", "3 garlic cloves, finely minced", "1/2–3/4 cup fresh basil leaves, well washed and dried", "1/2 cup olive oil", "3/4 pound Brie cheese, rind removed and broken into chunks", "2 ounces Prosciutto, cut into thin strips", "1–2 teaspoons salt", "1–2 teaspoons freshly ground black pepper", "4 sun-dried tomatoes, well-chopped (optional)"] },
+                { label: "Pasta", ingredients: ["1 pound linguine"] },
+                { label: "Garnish", ingredients: ["Freshly grated Parmesan cheese"] }
+              ],
+              steps: [
+                "Sauce: In a large bowl, mix together the tomatoes, onion, garlic, basil, olive oil, Brie, Prosciutto, salt, pepper, and sun-dried tomatoes (if using). Cover and let sit at room temperature for at least 2–3 hours before serving.",
+                "Cook linguine in boiling salted water until al dente. Drain.",
+                "Toss pasta with tomato-Brie mixture, correct seasoning, and garnish generously with Parmesan. Serve immediately."
+              ]
+            },
+            {
               title: "Lemon Fusilli with Arugula",
               favorite: true,
               servings: "4 to 5   |   Prep: 10 minutes   |   Cook: 30 minutes   |   Total: 40 minutes",
@@ -3641,6 +3697,30 @@ const data = {
                 "Frosting: Cream the confectioners' sugar with the butter until smooth. Add the vanilla and beat well.",
                 "Melt the 2-3 oz chocolate and add to the frosting; mix until smooth. Add a bit more confectioners' sugar if needed to reach a spreadable consistency.",
                 "Spread over the cooled cake."
+              ]
+            },
+            {
+              title: "Jumbo Banana-Nut Muffins",
+              servings: "Makes 12 muffins",
+              comments: [
+                "Recipe scaled 1.5x from original (from 9 jumbo muffins to 12). Walnuts made optional.",
+                "1 cup mashed ripe banana ≈ 2 medium bananas."
+              ],
+              source: "Mostly Muffins (cookbook), p. 14",
+              ingredientGroups: [
+                { label: "Dry ingredients (combine in a large bowl)", ingredients: ["1 1/2 cups all-purpose flour", "1 1/2 cups whole-wheat flour", "1 1/2 teaspoons baking powder", "1 1/2 teaspoons baking soda", "1/4 teaspoon salt"] },
+                { label: "Wet base (cream in another bowl)", ingredients: ["3/4 cup lightly salted butter or margarine, softened", "3/4 cup sugar"] },
+                { label: "Beat in", ingredients: ["3 eggs"] },
+                { label: "Stir in", ingredients: ["2 cups mashed ripe banana (about 4 medium bananas)", "6 tablespoons (3/8 cup) milk", "1 1/2 teaspoons vanilla"] },
+                { label: "Fold in (optional)", ingredients: ["3/4 cup broken walnuts (optional)"] }
+              ],
+              steps: [
+                "Preheat oven to 375°F. Grease muffin cups and the edges surrounding the cups.",
+                "In a large bowl, stir together the flours, baking powder, baking soda, and salt.",
+                "In another bowl, cream butter and sugar until light and fluffy; beat in eggs. Stir in banana, milk, and vanilla.",
+                "Add dry ingredients to wet mixture and stir just to combine. Fold in walnuts if using.",
+                "Spoon batter into prepared muffin cups; bake 25 to 30 minutes or until a cake tester inserted in the center comes out clean.",
+                "Remove muffin tin(s) to wire rack. Cool 5 minutes before removing muffins from cups; finish cooling on rack. Serve warm or store in an airtight container at room temperature. These muffins freeze well."
               ]
             },
             {

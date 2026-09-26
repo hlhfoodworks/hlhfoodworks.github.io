@@ -18,6 +18,7 @@ const CLUSTER_MAP = {
   'Grilled Buffalo Wings':                                'American',
   'Skillet Chicken and Zucchini With Charred Scallion Salsa': 'American',
   'Spring Chicken Paillard':                              'American',
+  'Sweet and Sour Chicken':                               'American',
   'Weeknight Fancy Chicken and Rice':                     'American',
   // Chicken — Latin/South American
   'Chicken Fajita Marinade':                              'Latin/South American',
@@ -39,6 +40,7 @@ const CLUSTER_MAP = {
   'Greek Chicken and Orzo Pasta Salad':                   'Mediterranean/Greek',
   'Mediterranean Grilled Chicken Thighs with Dill Yogurt Sauce': 'Mediterranean/Greek',
   'One-Pot Chicken and Rice With Caramelized Lemon':     'Mediterranean/Greek',
+  'Roast Lemon-Garlic Chicken with Green Olives':        'Mediterranean/Greek',
   // Chicken — Moroccan/North African
   'Chicken Tagine With Olives and Preserved Lemons':     'Moroccan/North African',
   'Sheet-Pan Chicken With Chickpeas, Cumin and Turmeric': 'Moroccan/North African',
@@ -84,6 +86,7 @@ const CLUSTER_MAP = {
   // Pork — Chinese
   'Moo Shu Mushrooms':                                   'Chinese',
   // Noodles: Italian — Italian
+  'Brie Linguine':                                       'Italian',
   'Pasta with Sausage, Basil, and Mustard':              'Italian',
   // Noodles: Asian — Japanese
   'Stir-Fried Udon Noodles With Pork and Scallions':    'Japanese',
@@ -165,6 +168,8 @@ const CLUSTER_MAP = {
   'Slow Cooker Vegan Mole Chili':                        'Latin/South American',
   // Vegetable Sides — American
   'Sautéed Mushrooms':                                   'American',
+  // Baking: Sweet — American
+  'Jumbo Banana-Nut Muffins':                            'American',
 };
 
 // ── Helpers ────────────────────────────────────────────────────────────────
