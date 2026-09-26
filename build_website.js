@@ -168,8 +168,25 @@ const CLUSTER_MAP = {
   'Slow Cooker Vegan Mole Chili':                        'Latin/South American',
   // Vegetable Sides — American
   'Sautéed Mushrooms':                                   'American',
+  'Coleslaw Salad':                                      'American',
+  'Summer Salad':                                        'American',
   // Baking: Sweet — American
   'Jumbo Banana-Nut Muffins':                            'American',
+  'Filled Coffee Cake':                                  'American',
+  'Nut Butter Balls':                                    'American',
+  'Red Velvet Cake':                                     'American',
+  // Baking: Sweet — Central/Eastern European
+  'Blintz Soufflé':                                      'Central/Eastern European',
+  "Min Cohen's Inscrutable Apple Cake":                  'Central/Eastern European',
+  // Turkey — American
+  'Bristol Farms Turkey Salad (Copycat)':                'American',
+  // Dressings and Sauces — French
+  'Béarnaise Sauce':                                     'French',
+  // Appetizers — American
+  "Barbara Glabman's Cheese Ball":                       'American',
+  'Shrimp Dip':                                          'American',
+  // Appetizers — Central/Eastern European
+  'Chopped Eggplant':                                    'Central/Eastern European',
 };
 
 // ── Helpers ────────────────────────────────────────────────────────────────

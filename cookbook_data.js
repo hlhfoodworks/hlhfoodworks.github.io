@@ -1,6 +1,89 @@
 const data = {
   sections: [
     {
+      title: "Appetizers",
+      recipes: [
+        {
+          title: "Barbara Glabman's Cheese Ball",
+          servings: "1 large cheese ball (12–16 as an appetizer)",
+          source: "Family recipe card, credited to Barbara Glabman",
+          comments: [
+            "Old English Sharp Cheddar Spread (Kraft) is still available. Smokelle tube cheese (Kraft) is no longer produced — substitute any smoked cheese spread, such as Kaukauna Smoked Cheddar Spread.",
+            "Best if refrigerated overnight before serving."
+          ],
+          ingredientGroups: [
+            { label: "Cheese mixture", ingredients: [
+              "2 — 8 oz. packages cream cheese, softened",
+              "1 glass (about 5 oz.) Old English or nippy cheddar cheese spread",
+              "1 tube Smokelle processed cheese (Kraft) or substitute: any smoked cheese spread such as Kaukauna Smoked Cheddar Spread",
+              "1 — 3 oz. package blue cheese, crumbled",
+              "1/8 teaspoon onion salt",
+              "3 small cloves garlic (or 2 medium), minced"
+            ]},
+            { label: "For rolling", ingredients: [
+              "Chopped nuts and/or minced parsley"
+            ]}
+          ],
+          steps: [
+            "Let all cheeses soften to room temperature.",
+            "Combine cream cheese, cheddar spread, smoked cheese, and blue cheese in a large bowl. Mix until thoroughly blended.",
+            "Add onion salt and garlic; mix well.",
+            "Shape the mixture into a ball (or log) on a sheet of plastic wrap. Roll in chopped nuts, minced parsley, or a combination to coat the outside.",
+            "Wrap tightly and refrigerate at least 2 hours (overnight is better) before serving. Serve with crackers."
+          ]
+        },
+        {
+          title: "Shrimp Dip",
+          servings: "Makes about 2 cups",
+          source: "Family recipe card (Grandmother Brenda)",
+          ingredientGroups: [
+            { ingredients: [
+              "1 — 8 oz. block cream cheese, softened",
+              "1 — 4.5 oz. can small shrimp, drained and mashed",
+              "2 tablespoons mayonnaise",
+              "2 tablespoons chili sauce",
+              "1 tablespoon lemon juice",
+              "1/4 teaspoon curry powder"
+            ]}
+          ],
+          steps: [
+            "Beat cream cheese until smooth and fluffy.",
+            "Drain canned shrimp and mash well with a fork.",
+            "Mix in mashed shrimp, mayonnaise, chili sauce, lemon juice, and curry powder until well combined.",
+            "Taste and adjust seasoning.",
+            "Refrigerate at least 30 minutes before serving. Serve with crackers or sliced bread."
+          ]
+        },
+        {
+          title: "Chopped Eggplant",
+          source: "Family recipe card (Grandmother Brenda; card reads \"Recipe from Mother\")",
+          comments: [
+            "A classic Jewish-style eggplant spread. The card gives only an ingredient list — steps are reconstructed from traditional method."
+          ],
+          ingredientGroups: [
+            { label: "Roast first", ingredients: [
+              "1 large eggplant"
+            ]},
+            { label: "Add to chopped eggplant", ingredients: [
+              "1 medium onion, diced and fried in oil until golden",
+              "3 hard-boiled eggs, finely chopped",
+              "Vinegar to taste (start with 1–2 teaspoons)",
+              "Mayonnaise to taste (start with 2–3 tablespoons)",
+              "Salt, pepper, and paprika to taste"
+            ]}
+          ],
+          steps: [
+            "Preheat oven to 400°F. Pierce eggplant several times with a fork. Roast on a baking sheet until very soft and collapsed, 45–60 minutes. Let cool.",
+            "While eggplant roasts, fry diced onion in a little oil over medium heat until golden and sweet, about 15 minutes. Set aside.",
+            "Peel roasted eggplant and drain in a colander to remove excess liquid. Chop finely (do not puree).",
+            "Combine chopped eggplant, hard-boiled eggs, and fried onion in a bowl.",
+            "Add vinegar and mayonnaise to taste; season with salt, pepper, and a pinch of paprika.",
+            "Refrigerate at least 1 hour. Serve as a spread with crackers, matzo, or rye bread."
+          ]
+        }
+      ]
+    },
+    {
       title: "Breakfast",
       recipes: [
         {
@@ -1241,6 +1324,38 @@ const data = {
           ]
         },
         { title: "Turkey", recipes: [
+          {
+            title: "Bristol Farms Turkey Salad (Copycat)",
+            servings: "Serves 6–8",
+            source: "Grandmother Brenda's ingredient list, inspired by Bristol Farms deli turkey salad",
+            comments: [
+              "Quantities reconstructed from the ingredient card — adjust mayo and mustard to taste.",
+              "Great served in a sandwich, on lettuce cups, or with crackers."
+            ],
+            ingredientGroups: [
+              { label: "Dressing (whisk together)", ingredients: [
+                "1/2 cup mayonnaise",
+                "1 tablespoon Dijon mustard",
+                "1 tablespoon honey",
+                "1/2 teaspoon dried tarragon",
+                "1/2 teaspoon dried dill weed",
+                "Salt and pepper to taste"
+              ]},
+              { label: "Salad", ingredients: [
+                "2 lbs. cooked turkey breast, diced",
+                "1/2 cup walnuts, roughly chopped",
+                "1/3 cup dried cranberries",
+                "3 green onions, thinly sliced",
+                "2 stalks celery, finely diced"
+              ]}
+            ],
+            steps: [
+              "Whisk together all dressing ingredients in a small bowl.",
+              "Combine turkey, walnuts, dried cranberries, green onions, and celery in a large bowl.",
+              "Pour dressing over turkey mixture and toss to coat. Taste and adjust seasoning.",
+              "Refrigerate at least 30 minutes before serving."
+            ]
+          },
           {
             title: "Expertly Spiced and Glazed Roast Turkey",
             servings: "Serves 8–10   |   Active: 45 min   |   Total: About 2 hrs (plus 24–48 hrs dry-brining)",
@@ -3184,6 +3299,30 @@ const data = {
           ]
         },
         {
+          title: "Coleslaw Salad",
+          source: "Family recipe card (Grandmother Brenda)",
+          ingredientGroups: [
+            { label: "Dressing (whisk together)", ingredients: [
+              "1/4 cup vinegar",
+              "1/2 cup oil",
+              "1/2 cup sugar",
+              "3/4 teaspoon pepper",
+              "2 teaspoons salt"
+            ]},
+            { label: "Salad", ingredients: [
+              "1 package coleslaw mix",
+              "Dried cranberries, to taste",
+              "Slivered almonds, toasted, to taste"
+            ]}
+          ],
+          steps: [
+            "Toast slivered almonds in a dry skillet over medium heat, stirring frequently, until golden and fragrant, about 3–4 minutes. Let cool.",
+            "Whisk together all dressing ingredients until sugar dissolves.",
+            "Combine coleslaw mix, dried cranberries, and toasted almonds in a large bowl.",
+            "Pour dressing over salad and toss. Let sit at least 15 minutes before serving so the cabbage softens slightly."
+          ]
+        },
+        {
           title: "Joan's on Third Butter Lettuce Salad (Copycat)",
           servings: "Serves 4",
           comments: ["Original recipe uses French feta; family uses goat cheese in oil instead. Shallot is in the original but was skipped. Dressing recipe from CopyKat Recipes."],
@@ -3230,6 +3369,40 @@ const data = {
             "Let the mushrooms sear for 5 minutes, stirring to flip them. Add the garlic and salt and pepper to taste. Sear another 5 minutes to develop a rich caramelized color.",
             "Stir in the thyme leaves and sherry. Lower heat to medium-low and simmer about 10 minutes, stirring occasionally, until the mushrooms have absorbed the sherry and only a small amount of moisture remains in the pan.",
             "Taste and adjust salt and pepper. Serve warm over steak, chicken, pork chops, or as a side dish."
+          ]
+        },
+        {
+          title: "Summer Salad",
+          source: "Family recipe card (Grandmother Brenda)",
+          comments: [
+            "The dressing makes more than needed for one salad — leftovers keep refrigerated for 1–2 weeks."
+          ],
+          ingredientGroups: [
+            { label: "Dressing (make first; whisk together)", ingredients: [
+              "1 cup vinegar",
+              "1/2 cup oil",
+              "1/2 cup sugar",
+              "1/2 cup ketchup",
+              "2 cloves garlic, crushed",
+              "1/2 teaspoon paprika",
+              "1/2 teaspoon mustard (dry or prepared)",
+              "1 teaspoon salt"
+            ]},
+            { label: "Salad", ingredients: [
+              "1 bag romaine lettuce",
+              "5–6 mushrooms, diced",
+              "1 container cherry tomatoes",
+              "1/2 to 1 mango, cubed",
+              "1/2 avocado, cubed",
+              "Handful of salted cashews",
+              "Handful of sunflower seeds"
+            ]}
+          ],
+          steps: [
+            "Whisk together all dressing ingredients. Refrigerate until ready to use.",
+            "Tear romaine into a large bowl. Add mushrooms, cherry tomatoes, mango, and avocado.",
+            "Top with cashews and sunflower seeds.",
+            "Drizzle dressing over salad just before serving and toss."
           ]
         }
       ]
@@ -3741,6 +3914,145 @@ const data = {
               ]
             },
             {
+              title: "Filled Coffee Cake",
+              servings: "Serves 12–16   |   Bake: 350–375°F for 30–40 minutes",
+              source: "Family recipe card, credited to Nana Regina (card reads \"delicious! Mother's\")",
+              ingredientGroups: [
+                { label: "Cake (cream butter and sugar, then add in order)", ingredients: [
+                  "1/2 cup butter, softened (or margarine)",
+                  "2 cups sugar",
+                  "4 eggs, well beaten",
+                  "1 teaspoon vanilla",
+                  "3 cups flour",
+                  "2 teaspoons baking powder",
+                  "1/2 teaspoon salt",
+                  "1 cup milk"
+                ]},
+                { label: "Filling (combine; spread over half the batter)", ingredients: [
+                  "1 cup brown sugar",
+                  "1 cup nuts, chopped",
+                  "2 tablespoons butter",
+                  "2 tablespoons flour",
+                  "1 teaspoon cinnamon"
+                ]}
+              ],
+              steps: [
+                "Preheat oven to 350–375°F. Grease a 9x13 pan (or tube pan).",
+                "Cream butter and sugar until light and fluffy. Add well-beaten eggs and vanilla; beat well.",
+                "Whisk together flour, baking powder, and salt in a separate bowl.",
+                "Alternately add the flour mixture and the milk to the butter mixture in 3 additions each, beginning and ending with flour. Stir until just combined.",
+                "Make filling: combine brown sugar, nuts, butter, flour, and cinnamon; mix until crumbly.",
+                "Pour half the batter into the prepared pan. Spread the filling evenly over the batter. Pour remaining batter on top.",
+                "Bake 30–40 minutes until a toothpick inserted in the center comes out clean."
+              ]
+            },
+            {
+              title: "Nut Butter Balls",
+              servings: "About 4 dozen   |   Bake: 325°F for 25 minutes",
+              source: "Family recipe card (Grandmother Brenda's collection)",
+              comments: [
+                "Card notes 'double recipe' — these quantities are the base (single) recipe."
+              ],
+              ingredientGroups: [
+                { label: "Dough (work together by hand)", ingredients: [
+                  "2 cups flour",
+                  "1/4 cup sugar",
+                  "1/2 teaspoon salt",
+                  "1/2 lb. (2 sticks) butter, softened",
+                  "2 teaspoons vanilla"
+                ]},
+                { label: "Coating", ingredients: [
+                  "1 cup chopped nuts"
+                ]},
+                { label: "Finish (after baking)", ingredients: [
+                  "Powdered sugar, for rolling"
+                ]}
+              ],
+              steps: [
+                "Preheat oven to 325°F.",
+                "Sift together flour, sugar, and salt. Add softened butter and vanilla; work together with hands until a dough forms.",
+                "Shape into 1-inch balls, then roll each ball in the chopped nuts to coat.",
+                "Place on an ungreased baking sheet. Bake 25 minutes.",
+                "While still warm, roll in powdered sugar to coat. Let cool completely."
+              ]
+            },
+            {
+              title: "Red Velvet Cake",
+              servings: "One 6-layer cake   |   Bake: 350°F for 30 minutes",
+              source: "Family recipe card (Grandmother Brenda; card noted as \"original on paper yellow with age\")",
+              comments: [
+                "Uses a cooked ermine frosting (flour-and-milk based) rather than the cream cheese frosting common in modern versions.",
+                "The 2 oz. of red food coloring gives the classic deep red color."
+              ],
+              ingredientGroups: [
+                { label: "Paste (Step 1 — make first)", ingredients: [
+                  "3 tablespoons unsweetened cocoa powder (Dutch-process; e.g. Nestlé Toll House Cocoa or Hershey's Special Dark)",
+                  "2 oz. red food coloring"
+                ]},
+                { label: "Cake", ingredients: [
+                  "1/2 cup vegetable shortening",
+                  "1-3/4 cups sugar",
+                  "2 eggs, beaten",
+                  "1 cup buttermilk",
+                  "2-1/2 cups cake flour",
+                  "1 teaspoon vanilla",
+                  "1 teaspoon salt",
+                  "1 teaspoon baking soda",
+                  "1 tablespoon white vinegar"
+                ]},
+                { label: "Frosting — Part 1 (cook and cool completely)", ingredients: [
+                  "5 tablespoons flour",
+                  "1 cup milk"
+                ]},
+                { label: "Frosting — Part 2 (cream together, then combine with Part 1)", ingredients: [
+                  "1/2 cup butter, softened",
+                  "1/2 cup vegetable shortening",
+                  "1 cup granulated sugar",
+                  "2 tablespoons vanilla"
+                ]}
+              ],
+              steps: [
+                "Preheat oven to 350°F. Grease and flour cake pans.",
+                "In a small bowl, mix cocoa powder and red food coloring into a paste. Set aside.",
+                "Cream shortening and sugar until light. Add beaten eggs; mix well. Add the cocoa-coloring paste; blend.",
+                "Add salt and vanilla. Alternately add buttermilk and flour in 3 additions each, beginning and ending with flour. Mix well.",
+                "Fold in baking soda and vinegar (the mixture will bubble slightly). Do not overmix.",
+                "Pour into well-greased pans. Bake at 350°F for 30 minutes. Cool completely. Split each layer horizontally to make 6 thin layers total.",
+                "Frosting Part 1: Cook flour and milk together in a saucepan over low heat, stirring constantly, until very thick (paste consistency). Set aside to cool completely.",
+                "Frosting Part 2: Cream butter, shortening, and granulated sugar until light. Add vanilla. Add the cooled flour-milk paste to the creamed mixture. Beat at high speed until light and fluffy, like whipped cream.",
+                "Frost between layers and on the outside of the cake."
+              ]
+            },
+            {
+              title: "Blintz Soufflé",
+              servings: "Serves 6–8   |   Bake: 350°F covered 1 hour, then uncovered 10 minutes",
+              source: "Family recipe, courtesy of Marsha Firestone (noted on card as smaller recipe for small casserole)",
+              comments: [
+                "Marsha Firestone's smaller version — uses 2 packages of blintzes and a smaller casserole dish.",
+                "Frozen cheese blintzes from the store work perfectly."
+              ],
+              ingredientGroups: [
+                { label: "Pan (Step 1)", ingredients: [
+                  "1 stick (1/2 cup) butter",
+                  "2 packages (about 12) frozen cheese blintzes"
+                ]},
+                { label: "Custard (beat together; pour over blintzes)", ingredients: [
+                  "6 eggs",
+                  "2/3 cup sugar",
+                  "1/2 teaspoon vanilla",
+                  "1 teaspoon orange juice",
+                  "1-1/2 cups sour cream"
+                ]}
+              ],
+              steps: [
+                "Preheat oven to 350°F.",
+                "Melt butter in a casserole dish. Arrange frozen blintzes in a single layer on top.",
+                "Beat eggs with sugar, vanilla, orange juice, and sour cream until smooth. Pour evenly over blintzes.",
+                "Bake covered for 1 hour.",
+                "Uncover and bake an additional 10 minutes until golden and puffed."
+              ]
+            },
+            {
               title: "Brenda's Noodle Kugel",
               favorite: true,
               source: "Family recipe card, credited to Brenda",
@@ -3779,13 +4091,51 @@ const data = {
                 "Mix the melted butter with the corn flakes and spread over the cooled casserole.",
                 "Return to the oven and bake for another 15 minutes, until the topping is golden and crisp."
               ]
+            },
+            {
+              title: "Min Cohen's Inscrutable Apple Cake",
+              servings: "Serves 8–10   |   Bake: 375°F for 40–45 minutes",
+              source: "Mrs. Min Cohen's recipe, transcribed by Grandmother Brenda",
+              comments: [
+                "Grandmother Brenda wrote on the card: \"I never made this because I do not understand it -- but Perhaps Renee will tell you -- It was a delicious cake!\"",
+                "Steps reconstructed from the ingredient list and standard apple tart method."
+              ],
+              ingredientGroups: [
+                { label: "Pastry (make first; refrigerate 30–60 minutes)", ingredients: [
+                  "2 cups flour",
+                  "3/4 cup vegetable shortening",
+                  "2 egg yolks",
+                  "1/4 teaspoon salt",
+                  "7 tablespoons cold water"
+                ]},
+                { label: "Filling", ingredients: [
+                  "7–8 apples, sliced thin",
+                  "1 cup sugar",
+                  "Lemon juice to taste",
+                  "1 teaspoon cinnamon"
+                ]},
+                { label: "Glaze (drizzle over warm cake)", ingredients: [
+                  "1 cup powdered sugar",
+                  "1 tablespoon flour",
+                  "1 teaspoon vanilla",
+                  "2 tablespoons milk"
+                ]}
+              ],
+              steps: [
+                "Make pastry: combine flour and shortening; add egg yolks, salt, and cold water. Mix until just combined. Knead briefly, then refrigerate 30–60 minutes.",
+                "Preheat oven to 375°F. Roll pastry out very thin. Use about 2/3 to line a baking pan; reserve the rest for the top.",
+                "Make filling: toss sliced apples with sugar, a squeeze of lemon juice, and cinnamon.",
+                "Spread apple filling over the pastry. Cover with remaining rolled-out pastry.",
+                "Bake at 375°F for 40–45 minutes until golden.",
+                "Make glaze: beat powdered sugar, flour, vanilla, and milk until smooth. Drizzle over warm cake."
+              ]
             }
           ]
         }
       ]
     },
     {
-      title: "Dressings",
+      title: "Dressings and Sauces",
       recipes: [
         {
           id: "joan-chili-aioli",
@@ -3937,6 +4287,36 @@ const data = {
             "Finely chop garlic and chili.",
             "Mix all ingredients together in a bowl until well combined.",
             "Let sit at least 5–10 minutes before serving (ideally 2 hours for fuller flavor). Use to baste meats while grilling, or serve as a condiment."
+          ]
+        },
+        {
+          title: "Béarnaise Sauce",
+          servings: "Makes about 3/4 cup",
+          source: "Printed clipping, original source unknown (collected by Nana Regina)",
+          comments: [
+            "A typed clipping from Nana Regina's collection. Serve immediately — Béarnaise does not reheat well."
+          ],
+          ingredientGroups: [
+            { label: "Reduction (Step 1)", ingredients: [
+              "1/4 cup dry white wine",
+              "2 tablespoons white wine vinegar or sherry vinegar",
+              "1 tablespoon minced shallot",
+              "1/4 teaspoon kosher salt"
+            ]},
+            { label: "Sauce", ingredients: [
+              "4 teaspoons chopped fresh tarragon, divided",
+              "3 egg yolks",
+              "3/4 cup (1-1/2 sticks) unsalted butter, melted and kept warm",
+              "1/8 teaspoon freshly ground black pepper"
+            ]}
+          ],
+          steps: [
+            "Make the reduction: combine wine, vinegar, shallot, and salt in a small saucepan. Bring to a simmer; cook until reduced to about 1 tablespoon of liquid, 4–5 minutes. Cool slightly and strain through a fine-mesh strainer, pressing on the solids.",
+            "Set up a double boiler: fill a medium pot with 2 inches of water and bring to a simmer. Rest a heatproof bowl over the pot. Add the strained reduction and egg yolks to the bowl.",
+            "Whisk constantly until the mixture becomes pale, thick, and ribbony, about 2–3 minutes.",
+            "Remove from heat. Whisking constantly, drizzle in warm melted butter in a very thin, slow stream until fully emulsified.",
+            "Stir in 3 teaspoons of the chopped tarragon and the black pepper. Taste and adjust salt. Garnish with remaining 1 teaspoon tarragon.",
+            "Serve immediately, or keep warm by setting the bowl over warm (not simmering) water."
           ]
         }
       ]
