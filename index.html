@@ -348,24 +348,31 @@
 
   /* ── Print media ── */
   @media print {
-    /* Hide all chrome */
+    @page { margin: 0.75in; }
+    /* Reset body layout so sidebar isn't part of the flow */
+    body { display: block !important; background: white !important; }
+    /* Hide sidebar and chrome */
     #nav, #mobile-header, #cookbook-title, .print-btn { display: none !important; }
-    #main { padding: 0; max-width: none; }
-    body { display: block; }
-    /* Hide all sections/clusters/recipes by default */
-    .section, .subsection, .cluster-group, .recipe { display: none !important; }
-    /* Un-hide the section, subsection, and cluster containing the printing recipe,
-       plus the recipe itself */
-    .recipe.printing { display: block !important; border: none; padding: 0; margin: 0; box-shadow: none; }
-    .recipe.printing .recipe-body { grid-template-columns: 1fr 1.6fr; }
-    /* Show ancestor wrappers of the printing recipe */
-    .section:has(.recipe.printing),
-    .subsection:has(.recipe.printing),
-    .cluster-group:has(.recipe.printing) { display: block !important; }
-    /* Hide section/subsection/cluster headings — just show the recipe */
-    .section > h2, .subsection-heading, .cluster-heading { display: none; }
-    /* Ensure recipe prints cleanly */
-    .recipe.printing { page-break-inside: avoid; }
+    /* Main area: full width, no extra padding */
+    #main { padding: 0 !important; max-width: none !important; flex: none !important; }
+    /* Collapse section/subsection/cluster containers so they add no whitespace */
+    .section, .subsection, .cluster-group {
+      margin: 0 !important; padding: 0 !important; border: none !important;
+    }
+    /* Hide all structural headings */
+    .section > h2, .subsection-heading, .cluster-heading { display: none !important; }
+    /* Hide all recipe cards that are NOT the one being printed */
+    .recipe:not(.printing) { display: none !important; }
+    /* The printing recipe — full width, no card chrome */
+    .recipe.printing {
+      display: block !important;
+      border: none !important; box-shadow: none !important;
+      padding: 0 !important; margin: 0 !important;
+      font-size: 0.88rem;
+    }
+    /* Let the two-column ingredient/step layout fill the page */
+    .recipe.printing .recipe-body { grid-template-columns: 1fr 1.6fr; gap: 20px; }
+    .recipe.printing .print-btn { display: none !important; }
   }
 
   /* ── Responsive ── */
@@ -6219,7 +6226,9 @@
       const recipe = btn.closest('.recipe');
       if (!recipe) return;
       recipe.classList.add('printing');
-      window.print();
+      // Small delay so iOS Safari picks up the class change before
+      // capturing the print layout (without it, Safari prints a blank page).
+      setTimeout(function () { window.print(); }, 100);
     });
   });
   window.addEventListener('afterprint', function () {
