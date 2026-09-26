@@ -282,7 +282,10 @@ function renderRecipe(recipe, idPrefix, idx) {
   const steps = (recipe.steps || []).map(renderStep).join('\n');
 
   return `<article class="recipe" id="${esc(id)}"${isFav} data-title="${esc(recipe.title)}">
-  <h3>${esc(title)}</h3>
+  <div class="recipe-header-row">
+    <h3>${esc(title)}</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print ${esc(recipe.title)}">🖨 Print</button>
+  </div>
   ${servings}${comments}${source}
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -811,6 +814,53 @@ const html = `<!DOCTYPE html>
   .subsection.all-hidden { display: none; }
   .section.all-hidden { display: none; }
 
+  /* ── Print button ── */
+  .recipe-header-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 4px;
+  }
+  .recipe-header-row h3 { margin-bottom: 0; flex: 1; }
+  .print-btn {
+    flex-shrink: 0;
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    color: var(--muted);
+    font-size: 0.72rem;
+    padding: 3px 8px;
+    cursor: pointer;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    white-space: nowrap;
+    margin-top: 2px;
+    transition: background 0.12s, color 0.12s;
+  }
+  .print-btn:hover { background: var(--border); color: var(--text); }
+
+  /* ── Print media ── */
+  @media print {
+    /* Hide all chrome */
+    #nav, #mobile-header, #cookbook-title, .print-btn { display: none !important; }
+    #main { padding: 0; max-width: none; }
+    body { display: block; }
+    /* Hide all sections/clusters/recipes by default */
+    .section, .subsection, .cluster-group, .recipe { display: none !important; }
+    /* Un-hide the section, subsection, and cluster containing the printing recipe,
+       plus the recipe itself */
+    .recipe.printing { display: block !important; border: none; padding: 0; margin: 0; box-shadow: none; }
+    .recipe.printing .recipe-body { grid-template-columns: 1fr 1.6fr; }
+    /* Show ancestor wrappers of the printing recipe */
+    .section:has(.recipe.printing),
+    .subsection:has(.recipe.printing),
+    .cluster-group:has(.recipe.printing) { display: block !important; }
+    /* Hide section/subsection/cluster headings — just show the recipe */
+    .section > h2, .subsection-heading, .cluster-heading { display: none; }
+    /* Ensure recipe prints cleanly */
+    .recipe.printing { page-break-inside: avoid; }
+  }
+
   /* ── Responsive ── */
   @media (max-width: 700px) {
     body { flex-direction: column; }
@@ -1084,6 +1134,21 @@ const html = `<!DOCTYPE html>
     favOnly = !favOnly;
     favBtn.classList.toggle('active', favOnly);
     applyFilters();
+  });
+
+  // ── Print single recipe ───────────────────────────────────────────────
+  document.querySelectorAll('.print-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      const recipe = btn.closest('.recipe');
+      if (!recipe) return;
+      recipe.classList.add('printing');
+      window.print();
+    });
+  });
+  window.addEventListener('afterprint', function () {
+    document.querySelectorAll('.recipe.printing').forEach(function (r) {
+      r.classList.remove('printing');
+    });
   });
 
   // Collapse all open nav menus

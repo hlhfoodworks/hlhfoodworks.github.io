@@ -321,6 +321,53 @@
   .subsection.all-hidden { display: none; }
   .section.all-hidden { display: none; }
 
+  /* ── Print button ── */
+  .recipe-header-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 4px;
+  }
+  .recipe-header-row h3 { margin-bottom: 0; flex: 1; }
+  .print-btn {
+    flex-shrink: 0;
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    color: var(--muted);
+    font-size: 0.72rem;
+    padding: 3px 8px;
+    cursor: pointer;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    white-space: nowrap;
+    margin-top: 2px;
+    transition: background 0.12s, color 0.12s;
+  }
+  .print-btn:hover { background: var(--border); color: var(--text); }
+
+  /* ── Print media ── */
+  @media print {
+    /* Hide all chrome */
+    #nav, #mobile-header, #cookbook-title, .print-btn { display: none !important; }
+    #main { padding: 0; max-width: none; }
+    body { display: block; }
+    /* Hide all sections/clusters/recipes by default */
+    .section, .subsection, .cluster-group, .recipe { display: none !important; }
+    /* Un-hide the section, subsection, and cluster containing the printing recipe,
+       plus the recipe itself */
+    .recipe.printing { display: block !important; border: none; padding: 0; margin: 0; box-shadow: none; }
+    .recipe.printing .recipe-body { grid-template-columns: 1fr 1.6fr; }
+    /* Show ancestor wrappers of the printing recipe */
+    .section:has(.recipe.printing),
+    .subsection:has(.recipe.printing),
+    .cluster-group:has(.recipe.printing) { display: block !important; }
+    /* Hide section/subsection/cluster headings — just show the recipe */
+    .section > h2, .subsection-heading, .cluster-heading { display: none; }
+    /* Ensure recipe prints cleanly */
+    .recipe.printing { page-break-inside: avoid; }
+  }
+
   /* ── Responsive ── */
   @media (max-width: 700px) {
     body { flex-direction: column; }
@@ -668,7 +715,10 @@
   <section id="sec-breakfast" class="section">
   <h2>Breakfast</h2>
   <article class="recipe" id="breakfast-0" data-fav="1" data-title="Glazed Cinnamon Rolls (Tangzhong Version)">
-  <h3>★ Glazed Cinnamon Rolls (Tangzhong Version)</h3>
+  <div class="recipe-header-row">
+    <h3>★ Glazed Cinnamon Rolls (Tangzhong Version)</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Glazed Cinnamon Rolls (Tangzhong Version)">🖨 Print</button>
+  </div>
   <p class="meta">One dozen round rolls   |   Cook: 15-17 minutes</p><p class="comments">This dough uses a tangzhong (a pre-cooked flour-and-milk paste) for a softer, more tender roll and better keeping quality.<br>The filling here is doubled from the original for a more generous swirl, the glaze includes optional cinnamon and food coloring.</p><p class="source">Source: The Breakfast Book, by Marion Cunningham, adapted to use a tangzhong (see https://www.theperfectloaf.com/how-to-make-tangzhong/)</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -710,7 +760,10 @@
   </div>
 </article>
 <article class="recipe" id="breakfast-1" data-fav="1" data-title="Homemade Biscuits">
-  <h3>★ Homemade Biscuits</h3>
+  <div class="recipe-header-row">
+    <h3>★ Homemade Biscuits</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Homemade Biscuits">🖨 Print</button>
+  </div>
   <p class="meta">8 large biscuits   |   Prep: 15 minutes   |   Cook: 15 to 20 minutes</p><p class="comments">Cut into 8 big squares rather than small rounds, so these come out extra generous.<br>Whole milk plus a splash of white vinegar stands in for buttermilk here — no need to track down real buttermilk.</p><p class="source">Source: Adapted from Inspired Taste (inspiredtaste.net), by Adam and Joanne Gallagher</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -742,7 +795,10 @@
   </div>
 </article>
 <article class="recipe" id="breakfast-2" data-title="Raised Waffles">
-  <h3>Raised Waffles</h3>
+  <div class="recipe-header-row">
+    <h3>Raised Waffles</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Raised Waffles">🖨 Print</button>
+  </div>
   <p class="meta">About 8 waffles</p><p class="comments">The batter keeps well in the refrigerator for several days.</p><p class="source">Source: The Breakfast Book, by Marion Cunningham (originally from an early Fannie Farmer cookbook)</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -767,7 +823,10 @@
   </div>
 </article>
 <article class="recipe" id="breakfast-3" data-title="Baked German Pancake (or Dutch Babies)">
-  <h3>Baked German Pancake (or Dutch Babies)</h3>
+  <div class="recipe-header-row">
+    <h3>Baked German Pancake (or Dutch Babies)</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Baked German Pancake (or Dutch Babies)">🖨 Print</button>
+  </div>
   <p class="meta">One 12-inch pancake, or four 6-inch Dutch babies   |   Cook: 15-25 minutes</p><p class="source">Source: The Breakfast Book, by Marion Cunningham</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -797,7 +856,10 @@
   <div class="cluster-group" id="appetizers--general">
   <h4 class="cluster-heading">General</h4>
   <article class="recipe" id="appetizers-0" data-title="Barbara Glabman's Cheese Ball">
-  <h3>Barbara Glabman's Cheese Ball</h3>
+  <div class="recipe-header-row">
+    <h3>Barbara Glabman's Cheese Ball</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Barbara Glabman's Cheese Ball">🖨 Print</button>
+  </div>
   <p class="meta">1 large cheese ball (12–16 as an appetizer)</p><p class="comments">Old English Sharp Cheddar Spread (Kraft) is still available. Smokelle tube cheese (Kraft) is no longer produced — substitute any smoked cheese spread, such as Kaukauna Smoked Cheddar Spread.<br>Best if refrigerated overnight before serving.</p><p class="source">Source: Family recipe card, credited to Barbara Glabman</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -821,7 +883,10 @@
   </div>
 </article>
 <article class="recipe" id="appetizers-1" data-title="Shrimp Dip">
-  <h3>Shrimp Dip</h3>
+  <div class="recipe-header-row">
+    <h3>Shrimp Dip</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Shrimp Dip">🖨 Print</button>
+  </div>
   <p class="meta">Makes about 2 cups</p><p class="source">Source: Family recipe card (Grandmother Brenda)</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -847,7 +912,10 @@
 <div class="cluster-group" id="appetizers--central-eastern-european">
   <h4 class="cluster-heading">Central/Eastern European</h4>
   <article class="recipe" id="appetizers-2" data-title="Chopped Eggplant">
-  <h3>Chopped Eggplant</h3>
+  <div class="recipe-header-row">
+    <h3>Chopped Eggplant</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Chopped Eggplant">🖨 Print</button>
+  </div>
   <p class="comments">A classic Jewish-style eggplant spread. The card gives only an ingredient list — steps are reconstructed from traditional method.</p><p class="source">Source: Family recipe card (Grandmother Brenda; card reads &quot;Recipe from Mother&quot;)</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -879,7 +947,10 @@
   <div class="cluster-group" id="meat-mains-chicken--general">
   <h4 class="cluster-heading">General</h4>
   <article class="recipe" id="meat-mains-chicken-0" data-title="Baked Crunchy Hot Honey Chicken">
-  <h3>Baked Crunchy Hot Honey Chicken</h3>
+  <div class="recipe-header-row">
+    <h3>Baked Crunchy Hot Honey Chicken</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Baked Crunchy Hot Honey Chicken">🖨 Print</button>
+  </div>
   <p class="meta">6   |   Prep: 15 minutes   |   Cook: 25 minutes   |   Total: 40 minutes</p><p class="source">Source: Half Baked Harvest, by Tieghan Gerard</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -915,7 +986,10 @@
   </div>
 </article>
 <article class="recipe" id="meat-mains-chicken-1" data-title="Brown Butter Sage Skillet Chicken">
-  <h3>Brown Butter Sage Skillet Chicken</h3>
+  <div class="recipe-header-row">
+    <h3>Brown Butter Sage Skillet Chicken</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Brown Butter Sage Skillet Chicken">🖨 Print</button>
+  </div>
   <p class="meta">4   |   Prep: 10 minutes   |   Cook: 20 minutes   |   Total: 30 minutes</p><p class="comments">Thin-sliced chicken breasts cook fastest; if starting with standard breasts, slice horizontally through the middle for thinner cutlets.<br>Great served over egg noodles, orzo, or a light pasta.</p><p class="source">Source: Nourish and Fete, by Monica</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -941,7 +1015,10 @@
   </div>
 </article>
 <article class="recipe" id="meat-mains-chicken-2" data-fav="1" data-title="Company Baked Chicken">
-  <h3>★ Company Baked Chicken</h3>
+  <div class="recipe-header-row">
+    <h3>★ Company Baked Chicken</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Company Baked Chicken">🖨 Print</button>
+  </div>
   <p class="comments">Marked &quot;v. good!&quot; on the original card.</p><p class="source">Source: Family recipe card, credited to Grandmother Brenda</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -966,7 +1043,10 @@
   </div>
 </article>
 <article class="recipe" id="meat-mains-chicken-3" data-title="Creamy Spinach-Artichoke Chicken Stew">
-  <h3>Creamy Spinach-Artichoke Chicken Stew</h3>
+  <div class="recipe-header-row">
+    <h3>Creamy Spinach-Artichoke Chicken Stew</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Creamy Spinach-Artichoke Chicken Stew">🖨 Print</button>
+  </div>
   <p class="meta">4 to 6   |   Total: 50 minutes</p><p class="source">Source: NYT Cooking, by Sarah DiGregorio</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -1001,7 +1081,10 @@
   </div>
 </article>
 <article class="recipe" id="meat-mains-chicken-4" data-title="Crispy Chicken With Lime Butter">
-  <h3>Crispy Chicken With Lime Butter</h3>
+  <div class="recipe-header-row">
+    <h3>Crispy Chicken With Lime Butter</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Crispy Chicken With Lime Butter">🖨 Print</button>
+  </div>
   <p class="meta">4   |   Prep: 5 minutes   |   Cook: 35 minutes   |   Total: 40 minutes</p><p class="comments">The rendered chicken fat (schmaltz) can be saved to pan-fry vegetables, enrich a soup or sauce, or spread on toast.</p><p class="source">Source: NYT Cooking, by Eric Kim</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -1027,7 +1110,10 @@
   </div>
 </article>
 <article class="recipe" id="meat-mains-chicken-5" data-fav="1" data-title="Crispy Spice Rubbed Chicken Thighs">
-  <h3>★ Crispy Spice Rubbed Chicken Thighs</h3>
+  <div class="recipe-header-row">
+    <h3>★ Crispy Spice Rubbed Chicken Thighs</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Crispy Spice Rubbed Chicken Thighs">🖨 Print</button>
+  </div>
   <p class="meta">3 to 4   |   Prep: 5 minutes   |   Cook: 30 minutes   |   Total: 35 minutes</p><p class="source">Source: Fifteen Spatulas</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -1057,7 +1143,10 @@
   </div>
 </article>
 <article class="recipe" id="meat-mains-chicken-6" data-title="Grilled Buffalo Wings">
-  <h3>Grilled Buffalo Wings</h3>
+  <div class="recipe-header-row">
+    <h3>Grilled Buffalo Wings</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Grilled Buffalo Wings">🖨 Print</button>
+  </div>
   <p class="meta">6 to 8   |   Total: 35 minutes</p><p class="comments">Crowding the wings close together on the grill is intentional — it creates steam that helps render the fat and keep the meat moist before crisping.</p><p class="source">Source: Food Network, by Katie Lee Biegel, from The Kitchen</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -1082,7 +1171,10 @@
   </div>
 </article>
 <article class="recipe" id="meat-mains-chicken-7" data-title="Skillet Chicken and Zucchini With Charred Scallion Salsa">
-  <h3>Skillet Chicken and Zucchini With Charred Scallion Salsa</h3>
+  <div class="recipe-header-row">
+    <h3>Skillet Chicken and Zucchini With Charred Scallion Salsa</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Skillet Chicken and Zucchini With Charred Scallion Salsa">🖨 Print</button>
+  </div>
   <p class="meta">4   |   Total: 40 minutes</p><p class="comments">Any seasonal, quick-roasting vegetable can stand in for the zucchini — cherry tomatoes or asparagus both work well.<br>If cilantro isn't your thing, basil is a good substitute, or use a mix of the two.</p><p class="source">Source: NYT Cooking, by Colu Henry</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -1113,7 +1205,10 @@
   </div>
 </article>
 <article class="recipe" id="meat-mains-chicken-8" data-title="Spring Chicken Paillard">
-  <h3>Spring Chicken Paillard</h3>
+  <div class="recipe-header-row">
+    <h3>Spring Chicken Paillard</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Spring Chicken Paillard">🖨 Print</button>
+  </div>
   <p class="meta">4   |   Total: 1 hour 25 minutes (includes marinating)</p><p class="comments">Inspired by the chicken paillard at Pastis in New York City.</p><p class="source">Source: Food Network, by Katie Lee Biegel</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -1161,7 +1256,10 @@
   </div>
 </article>
 <article class="recipe" id="meat-mains-chicken-9" data-title="Sweet and Sour Chicken">
-  <h3>Sweet and Sour Chicken</h3>
+  <div class="recipe-header-row">
+    <h3>Sweet and Sour Chicken</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Sweet and Sour Chicken">🖨 Print</button>
+  </div>
   <p class="meta">Flexible — same sauce works for a few pieces or a large batch</p><p class="comments">Sauce amounts stay the same whether cooking a few pieces or a large batch — it's very forgiving.<br>Russian dressing can be hard to find; regular French dressing (not creamy) works just as well.<br>Marcie's note: &quot;You can't mess-up with this recipe — last night it was in the oven for 2½ hours!&quot;</p><p class="source">Source: Family recipe, credited to Marcie (in a letter to Lauren)</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -1179,7 +1277,10 @@
   </div>
 </article>
 <article class="recipe" id="meat-mains-chicken-10" data-title="Weeknight Fancy Chicken and Rice">
-  <h3>Weeknight Fancy Chicken and Rice</h3>
+  <div class="recipe-header-row">
+    <h3>Weeknight Fancy Chicken and Rice</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Weeknight Fancy Chicken and Rice">🖨 Print</button>
+  </div>
   <p class="meta">4 to 6   |   Total: 50 minutes</p><p class="comments">Garnish is flexible — dried cranberries, hazelnuts, or pine nuts can stand in for or join the apricots and almonds.</p><p class="source">Source: NYT Cooking, from Asha Gomez and Martha Hall Foose, adapted by Sara Bonisteel</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -1217,7 +1318,10 @@
 <div class="cluster-group" id="meat-mains-chicken--latin-south-american">
   <h4 class="cluster-heading">Latin/South American</h4>
   <article class="recipe" id="meat-mains-chicken-11" data-title="Chicken Fajita Marinade">
-  <h3>Chicken Fajita Marinade</h3>
+  <div class="recipe-header-row">
+    <h3>Chicken Fajita Marinade</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Chicken Fajita Marinade">🖨 Print</button>
+  </div>
   <p class="meta">4   |   Prep: 10 minutes   |   Cook: 1 minute   |   Total: 41 minutes (includes 30 minutes marinating)</p><p class="comments">This is a marinade rather than a full dish — cook the marinated chicken and vegetables however you like (grill, skillet, or oven).<br>Also works with other proteins, like shrimp, flank steak, or pork tenderloin.</p><p class="source">Source: Dinner at the Zoo, by Sara Welch</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -1246,7 +1350,10 @@
   </div>
 </article>
 <article class="recipe" id="meat-mains-chicken-12" data-title="D.L. Jardine's Fajita Marinade">
-  <h3>D.L. Jardine's Fajita Marinade</h3>
+  <div class="recipe-header-row">
+    <h3>D.L. Jardine's Fajita Marinade</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print D.L. Jardine's Fajita Marinade">🖨 Print</button>
+  </div>
   <p class="meta">Serves 4</p><p class="comments">Works for both chicken and beef; marinate all day or overnight for best results.</p><p class="source">Source: <a href="https://www.food.com/recipe/d-l-jardines-fajita-marinade-336920" target="_blank" rel="noopener">https://www.food.com/recipe/d-l-jardines-fajita-marinade-336920</a></p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -1268,7 +1375,10 @@
   </div>
 </article>
 <article class="recipe" id="meat-mains-chicken-13" data-title="Peruvian Roasted Chicken With Spicy Cilantro Sauce">
-  <h3>Peruvian Roasted Chicken With Spicy Cilantro Sauce</h3>
+  <div class="recipe-header-row">
+    <h3>Peruvian Roasted Chicken With Spicy Cilantro Sauce</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Peruvian Roasted Chicken With Spicy Cilantro Sauce">🖨 Print</button>
+  </div>
   <p class="meta">4   |   Total: 50 minutes, plus marinating</p><p class="comments">If aji amarillo/aji panca pastes aren't available, substitute a red chile paste like sriracha or sambal for the aji amarillo, and pasilla chile powder for the aji panca.</p><p class="source">Source: NYT Cooking, by Melissa Clark</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -1310,7 +1420,10 @@
   </div>
 </article>
 <article class="recipe" id="meat-mains-chicken-14" data-title="Slow-Cooker Chicken Mole">
-  <h3>Slow-Cooker Chicken Mole</h3>
+  <div class="recipe-header-row">
+    <h3>Slow-Cooker Chicken Mole</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Slow-Cooker Chicken Mole">🖨 Print</button>
+  </div>
   <p class="meta">6   |   Prep: 15 minutes   |   Cook: 4 hours   |   Total: 4 hours 15 minutes</p><p class="comments">Makes extra sauce; keeps refrigerated up to 4 days or frozen up to 3 months. Good over rice, with pinto beans, or warm corn tortillas.</p><p class="source">Source: Martha Stewart</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -1345,7 +1458,10 @@
 <div class="cluster-group" id="meat-mains-chicken--italian">
   <h4 class="cluster-heading">Italian</h4>
   <article class="recipe" id="meat-mains-chicken-15" data-title="Chicken Cacciatore">
-  <h3>Chicken Cacciatore</h3>
+  <div class="recipe-header-row">
+    <h3>Chicken Cacciatore</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Chicken Cacciatore">🖨 Print</button>
+  </div>
   <p class="meta">4 to 5   |   Total: 1 hour 45 minutes</p><p class="source">Source: NYT Cooking, by Martha Rose Shulman</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -1383,7 +1499,10 @@
   </div>
 </article>
 <article class="recipe" id="meat-mains-chicken-16" data-title="Chicken Piccata">
-  <h3>Chicken Piccata</h3>
+  <div class="recipe-header-row">
+    <h3>Chicken Piccata</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Chicken Piccata">🖨 Print</button>
+  </div>
   <p class="meta">4   |   Prep: 15 minutes   |   Cook: 25 minutes   |   Total: 40 minutes</p><p class="source">Source: Food Network, by Giada De Laurentiis</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -1409,7 +1528,10 @@
   </div>
 </article>
 <article class="recipe" id="meat-mains-chicken-17" data-title="Marry Me Chicken">
-  <h3>Marry Me Chicken</h3>
+  <div class="recipe-header-row">
+    <h3>Marry Me Chicken</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Marry Me Chicken">🖨 Print</button>
+  </div>
   <p class="meta">4   |   Prep: 10 minutes   |   Cook: 50 minutes   |   Total: 1 hour</p><p class="comments">To make slicing into cutlets easier, freeze the chicken breasts for 20 minutes first.<br>Great served over pasta, rice, or polenta, or with crusty bread and a green salad.</p><p class="source">Source: NYT Cooking, by Naz Deravian</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -1445,7 +1567,10 @@
 <div class="cluster-group" id="meat-mains-chicken--central-eastern-european">
   <h4 class="cluster-heading">Central/Eastern European</h4>
   <article class="recipe" id="meat-mains-chicken-18" data-title="Chicken Kiev">
-  <h3>Chicken Kiev</h3>
+  <div class="recipe-header-row">
+    <h3>Chicken Kiev</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Chicken Kiev">🖨 Print</button>
+  </div>
   <p class="meta">2   |   Prep: 30 minutes   |   Cook: 30 minutes   |   Total: 1 hour, plus 1 hour freezing</p><p class="source">Source: RecipeTin Eats, by Nagi Maehashi</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -1481,7 +1606,10 @@
   </div>
 </article>
 <article class="recipe" id="meat-mains-chicken-19" data-title="Chicken Paprikash">
-  <h3>Chicken Paprikash</h3>
+  <div class="recipe-header-row">
+    <h3>Chicken Paprikash</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Chicken Paprikash">🖨 Print</button>
+  </div>
   <p class="meta">4 to 6   |   Cook: 1 hour   |   Total: 1 hour</p><p class="comments">Use fresh Hungarian paprika if you can find it — it loses flavor quickly (within a few months) and turns dull and bitter with age.</p><p class="source">Source: NYT Cooking, by Sam Sifton</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -1513,7 +1641,10 @@
 <div class="cluster-group" id="meat-mains-chicken--mediterranean-greek">
   <h4 class="cluster-heading">Mediterranean/Greek</h4>
   <article class="recipe" id="meat-mains-chicken-20" data-title="Chicken-Zucchini Meatballs With Feta">
-  <h3>Chicken-Zucchini Meatballs With Feta</h3>
+  <div class="recipe-header-row">
+    <h3>Chicken-Zucchini Meatballs With Feta</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Chicken-Zucchini Meatballs With Feta">🖨 Print</button>
+  </div>
   <p class="meta">4   |   Total: 45 minutes</p><p class="comments">Made here with ground chicken; ground turkey can be substituted.<br>Sauce is Panning the Globe's lemony yogurt-sumac sauce, with the NYT recipe's quick-pickled shallot, feta, and remaining garnishes.</p><p class="source">Source: Meatballs from NYT Cooking (Ali Slagle); sauce adapted from Ottolenghi's Turkey Zucchini Meatballs with Lemony Yogurt</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -1559,7 +1690,10 @@
   </div>
 </article>
 <article class="recipe" id="meat-mains-chicken-21" data-title="Greek Chicken and Orzo Pasta Salad">
-  <h3>Greek Chicken and Orzo Pasta Salad</h3>
+  <div class="recipe-header-row">
+    <h3>Greek Chicken and Orzo Pasta Salad</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Greek Chicken and Orzo Pasta Salad">🖨 Print</button>
+  </div>
   <p class="meta">8   |   Prep: 30 minutes   |   Total: 1 hour 15 minutes (includes marinating and cooling)</p><p class="source">Source: Food Network, by Katie Lee Biegel, from The Kitchen</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -1605,7 +1739,10 @@
   </div>
 </article>
 <article class="recipe" id="meat-mains-chicken-22" data-title="Mediterranean Grilled Chicken Thighs with Dill Yogurt Sauce">
-  <h3>Mediterranean Grilled Chicken Thighs with Dill Yogurt Sauce</h3>
+  <div class="recipe-header-row">
+    <h3>Mediterranean Grilled Chicken Thighs with Dill Yogurt Sauce</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Mediterranean Grilled Chicken Thighs with Dill Yogurt Sauce">🖨 Print</button>
+  </div>
   <p class="meta">8   |   Prep: 10 minutes   |   Cook: 12 minutes   |   Total: 22 minutes, plus marinating</p><p class="source">Source: The Mediterranean Dish, by Suzy Karadsheh</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -1642,7 +1779,10 @@
   </div>
 </article>
 <article class="recipe" id="meat-mains-chicken-23" data-title="One-Pot Chicken and Rice With Caramelized Lemon">
-  <h3>One-Pot Chicken and Rice With Caramelized Lemon</h3>
+  <div class="recipe-header-row">
+    <h3>One-Pot Chicken and Rice With Caramelized Lemon</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print One-Pot Chicken and Rice With Caramelized Lemon">🖨 Print</button>
+  </div>
   <p class="meta">4   |   Prep: 10 minutes   |   Cook: 45 minutes   |   Total: 55 minutes</p><p class="source">Source: NYT Cooking, by Dan Pelosi</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -1672,7 +1812,10 @@
   </div>
 </article>
 <article class="recipe" id="meat-mains-chicken-24" data-title="Roast Lemon-Garlic Chicken with Green Olives">
-  <h3>Roast Lemon-Garlic Chicken with Green Olives</h3>
+  <div class="recipe-header-row">
+    <h3>Roast Lemon-Garlic Chicken with Green Olives</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Roast Lemon-Garlic Chicken with Green Olives">🖨 Print</button>
+  </div>
   <p class="meta">4</p><p class="comments">The lemon-herb mixture can be made up to 4 hours ahead, covered, and kept at room temperature.<br>Can double the recipe; or use half black olives for a contrast of color.</p><p class="source">Source: Seriously Simple (cookbook)</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -1700,7 +1843,10 @@
 <div class="cluster-group" id="meat-mains-chicken--moroccan-north-african">
   <h4 class="cluster-heading">Moroccan/North African</h4>
   <article class="recipe" id="meat-mains-chicken-25" data-title="Chicken Tagine With Olives and Preserved Lemons">
-  <h3>Chicken Tagine With Olives and Preserved Lemons</h3>
+  <div class="recipe-header-row">
+    <h3>Chicken Tagine With Olives and Preserved Lemons</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Chicken Tagine With Olives and Preserved Lemons">🖨 Print</button>
+  </div>
   <p class="meta">4   |   Total: 1 hour, plus marinating</p><p class="source">Source: NYT Cooking, from Shallots New York, adapted by Florence Fabricant</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -1737,7 +1883,10 @@
   </div>
 </article>
 <article class="recipe" id="meat-mains-chicken-26" data-title="Sheet-Pan Chicken With Chickpeas, Cumin and Turmeric">
-  <h3>Sheet-Pan Chicken With Chickpeas, Cumin and Turmeric</h3>
+  <div class="recipe-header-row">
+    <h3>Sheet-Pan Chicken With Chickpeas, Cumin and Turmeric</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Sheet-Pan Chicken With Chickpeas, Cumin and Turmeric">🖨 Print</button>
+  </div>
   <p class="meta">4   |   Total: 1 hour, plus marinating</p><p class="source">Source: NYT Cooking, by Alison Roman</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -1776,7 +1925,10 @@
 <div class="cluster-group" id="meat-mains-chicken--west-african">
   <h4 class="cluster-heading">West African</h4>
   <article class="recipe" id="meat-mains-chicken-27" data-title="Chicken Yassa">
-  <h3>Chicken Yassa</h3>
+  <div class="recipe-header-row">
+    <h3>Chicken Yassa</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Chicken Yassa">🖨 Print</button>
+  </div>
   <p class="meta">4   |   Total: 1 hour, plus marinating</p><p class="source">Source: NYT Cooking, recipe from Pierre Thiam, adapted by Alexa Weibel</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -1818,7 +1970,10 @@
 <div class="cluster-group" id="meat-mains-chicken--middle-eastern-persian">
   <h4 class="cluster-heading">Middle Eastern/Persian</h4>
   <article class="recipe" id="meat-mains-chicken-28" data-title="Grilled Chicken Skewers with Toum (Shish Taouk)">
-  <h3>Grilled Chicken Skewers with Toum (Shish Taouk)</h3>
+  <div class="recipe-header-row">
+    <h3>Grilled Chicken Skewers with Toum (Shish Taouk)</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Grilled Chicken Skewers with Toum (Shish Taouk)">🖨 Print</button>
+  </div>
   <p class="meta">4</p><p class="comments">Toum uses raw egg white in an emulsified sauce, as in the original recipe.</p><p class="source">Source: Bon Appétit, by Kamal Mouzawak</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -1850,7 +2005,10 @@
   </div>
 </article>
 <article class="recipe" id="meat-mains-chicken-29" data-title="Spiced Green Meatballs with Pickle Rice and Salty Yogurt">
-  <h3>Spiced Green Meatballs with Pickle Rice and Salty Yogurt</h3>
+  <div class="recipe-header-row">
+    <h3>Spiced Green Meatballs with Pickle Rice and Salty Yogurt</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Spiced Green Meatballs with Pickle Rice and Salty Yogurt">🖨 Print</button>
+  </div>
   <p class="meta">4   |   Prep: 55 minutes   |   Total: 1 hour 15 minutes</p><p class="comments">Made here with ground chicken; ground turkey, pork, lamb, or beef can be substituted.</p><p class="source">Source: The Club, by Molly Baz</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -1916,7 +2074,10 @@
 <div class="cluster-group" id="meat-mains-chicken--indian">
   <h4 class="cluster-heading">Indian</h4>
   <article class="recipe" id="meat-mains-chicken-30" data-title="Amu's Chicken Korma">
-  <h3>Amu's Chicken Korma</h3>
+  <div class="recipe-header-row">
+    <h3>Amu's Chicken Korma</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Amu's Chicken Korma">🖨 Print</button>
+  </div>
   <p class="meta">4   |   Total: 1 1/2 hours</p><p class="comments">Named by the author for her mother — a Bangladeshi-style korma enriched with yogurt rather than cream or nuts.<br>Great turned into a sandwich: pull the meat off the bone, dress it in the sauce, and pile it between mayo-slathered white bread.</p><p class="source">Source: NYT Cooking, by Sohla El-Waylly</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -1950,7 +2111,10 @@
   </div>
 </article>
 <article class="recipe" id="meat-mains-chicken-31" data-fav="1" data-title="Bhatti da Murgh (Indian Grilled Chicken With Whole Spices)">
-  <h3>★ Bhatti da Murgh (Indian Grilled Chicken With Whole Spices)</h3>
+  <div class="recipe-header-row">
+    <h3>★ Bhatti da Murgh (Indian Grilled Chicken With Whole Spices)</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Bhatti da Murgh (Indian Grilled Chicken With Whole Spices)">🖨 Print</button>
+  </div>
   <p class="meta">6 to 8   |   Total: 1 1/2 hours, plus marinating</p><p class="comments">At the restaurant this is cooked in a tandoor; roasting on a preheated baking sheet in a hot oven approximates that same intense, dry heat.</p><p class="source">Source: NYT Cooking, recipe from Chintan Pandya and Adda Indian Canteen, adapted by Melissa Clark</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -1990,7 +2154,10 @@
   </div>
 </article>
 <article class="recipe" id="meat-mains-chicken-32" data-title="Chicken Tikka Masala">
-  <h3>Chicken Tikka Masala</h3>
+  <div class="recipe-header-row">
+    <h3>Chicken Tikka Masala</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Chicken Tikka Masala">🖨 Print</button>
+  </div>
   <p class="meta">6   |   Prep: 20 minutes, plus 8 hours (up to 48) marinating   |   Cook: 40 minutes</p><p class="comments">Cashew cream can stand in for the heavy cream: blend 1/3 cup raw cashews (soaked, if your blender isn't powerful) with 1/3 cup water until very smooth.<br>Chicken thighs are more forgiving than breast here, which needs the full 8-hour marinade to avoid drying out.</p><p class="source">Source: Swasthi's Recipes, by Swasthi Shreekanth</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -2043,7 +2210,10 @@
 <div class="cluster-group" id="meat-mains-chicken--thai">
   <h4 class="cluster-heading">Thai</h4>
   <article class="recipe" id="meat-mains-chicken-33" data-title="One-Pot Chicken and Rice with Peanut Sauce">
-  <h3>One-Pot Chicken and Rice with Peanut Sauce</h3>
+  <div class="recipe-header-row">
+    <h3>One-Pot Chicken and Rice with Peanut Sauce</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print One-Pot Chicken and Rice with Peanut Sauce">🖨 Print</button>
+  </div>
   <p class="meta">6   |   Prep: 15 minutes   |   Total: about 1 hour</p><p class="comments">The peanut sauce can be made up to 3 days ahead; cover and chill.</p><p class="source">Source: Bon Appétit</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -2077,7 +2247,10 @@
   </div>
 </article>
 <article class="recipe" id="meat-mains-chicken-34" data-title="Pad Krapow Gai (Thai Basil Chicken)">
-  <h3>Pad Krapow Gai (Thai Basil Chicken)</h3>
+  <div class="recipe-header-row">
+    <h3>Pad Krapow Gai (Thai Basil Chicken)</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Pad Krapow Gai (Thai Basil Chicken)">🖨 Print</button>
+  </div>
   <p class="meta">2 to 4   |   Total: 15 minutes</p><p class="comments">Thai seasoning sauce (such as Golden Mountain) is made from fermented soybeans, like soy sauce, and adds sweetness along with savory depth.</p><p class="source">Source: NYT Cooking, recipe from Kris Yenbamroong, adapted by Alexa Weibel</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -2110,7 +2283,10 @@
   </div>
 </article>
 <article class="recipe" id="meat-mains-chicken-35" data-title="Sticky Coconut Chicken and Rice">
-  <h3>Sticky Coconut Chicken and Rice</h3>
+  <div class="recipe-header-row">
+    <h3>Sticky Coconut Chicken and Rice</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Sticky Coconut Chicken and Rice">🖨 Print</button>
+  </div>
   <p class="meta">4   |   Total: 45 minutes</p><p class="source">Source: NYT Cooking, by Kay Chun</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -2144,7 +2320,10 @@
   </div>
 </article>
 <article class="recipe" id="meat-mains-chicken-36" data-title="Thai Chicken Meatballs in Peanut Sauce">
-  <h3>Thai Chicken Meatballs in Peanut Sauce</h3>
+  <div class="recipe-header-row">
+    <h3>Thai Chicken Meatballs in Peanut Sauce</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Thai Chicken Meatballs in Peanut Sauce">🖨 Print</button>
+  </div>
   <p class="meta">4   |   Prep: 10 minutes   |   Cook: 30 minutes   |   Total: 40 minutes</p><p class="comments">Ground turkey, beef, or pork can be substituted for the chicken.<br>Bok choy can be swapped for peas, edamame, bell peppers, or spinach.</p><p class="source">Source: Serving Dumplings, by Anna Chwistek</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -2195,7 +2374,10 @@
   </div>
 </article>
 <article class="recipe" id="meat-mains-chicken-37" data-title="Thai-Inspired Chicken Meatball Soup">
-  <h3>Thai-Inspired Chicken Meatball Soup</h3>
+  <div class="recipe-header-row">
+    <h3>Thai-Inspired Chicken Meatball Soup</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Thai-Inspired Chicken Meatball Soup">🖨 Print</button>
+  </div>
   <p class="meta">4 to 6   |   Total: 30 minutes</p><p class="source">Source: NYT Cooking, by Ali Slagle</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -2234,7 +2416,10 @@
 <div class="cluster-group" id="meat-mains-chicken--vietnamese">
   <h4 class="cluster-heading">Vietnamese</h4>
   <article class="recipe" id="meat-mains-chicken-38" data-title="Vietnamese Caramel Ginger Chicken">
-  <h3>Vietnamese Caramel Ginger Chicken</h3>
+  <div class="recipe-header-row">
+    <h3>Vietnamese Caramel Ginger Chicken</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Vietnamese Caramel Ginger Chicken">🖨 Print</button>
+  </div>
   <p class="meta">5   |   Prep: 7 minutes   |   Cook: 15 minutes</p><p class="comments">Chicken breast can be used instead of thigh, but is more prone to drying out — cook it in the caramel, remove once opaque, and return at the end to warm.</p><p class="source">Source: RecipeTin Eats, by Nagi Maehashi</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -2270,7 +2455,10 @@
 <div class="cluster-group" id="meat-mains-chicken--filipino">
   <h4 class="cluster-heading">Filipino</h4>
   <article class="recipe" id="meat-mains-chicken-39" data-title="Easiest Chicken Adobo">
-  <h3>Easiest Chicken Adobo</h3>
+  <div class="recipe-header-row">
+    <h3>Easiest Chicken Adobo</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Easiest Chicken Adobo">🖨 Print</button>
+  </div>
   <p class="meta">4</p><p class="source">Source: Bon Appétit, by Claire Saffitz</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -2303,7 +2491,10 @@
 <div class="cluster-group" id="meat-mains-chicken--korean-inspired">
   <h4 class="cluster-heading">Korean-inspired</h4>
   <article class="recipe" id="meat-mains-chicken-40" data-title="Coconut-Gochujang Glazed Chicken With Broccoli">
-  <h3>Coconut-Gochujang Glazed Chicken With Broccoli</h3>
+  <div class="recipe-header-row">
+    <h3>Coconut-Gochujang Glazed Chicken With Broccoli</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Coconut-Gochujang Glazed Chicken With Broccoli">🖨 Print</button>
+  </div>
   <p class="meta">4   |   Total: 15 minutes</p><p class="source">Source: NYT Cooking, by Kay Chun</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -2331,7 +2522,10 @@
   </div>
 </article>
 <article class="recipe" id="meat-mains-chicken-41" data-title="Peachy Peanut &amp; Kimchi Chicken">
-  <h3>Peachy Peanut &amp; Kimchi Chicken</h3>
+  <div class="recipe-header-row">
+    <h3>Peachy Peanut &amp; Kimchi Chicken</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Peachy Peanut &amp; Kimchi Chicken">🖨 Print</button>
+  </div>
   <p class="meta">4   |   Prep: 50 minutes   |   Total: 2 hours (including marinating)</p><p class="comments">Chicken needs at least 1 hour to marinate (up to 2 days ahead is fine) — factor that into timing beyond the active cook time.</p><p class="source">Source: The Club, by Molly Baz</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -2374,7 +2568,10 @@
 <div class="cluster-group" id="meat-mains-chicken--chinese">
   <h4 class="cluster-heading">Chinese</h4>
   <article class="recipe" id="meat-mains-chicken-42" data-title="Chile Crisp Chicken n' Peanuts Scoop">
-  <h3>Chile Crisp Chicken n' Peanuts Scoop</h3>
+  <div class="recipe-header-row">
+    <h3>Chile Crisp Chicken n' Peanuts Scoop</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Chile Crisp Chicken n' Peanuts Scoop">🖨 Print</button>
+  </div>
   <p class="meta">Serves 6   |   Active: 15–20 minutes</p><p class="comments">A not-so-classic chicken salad made spicy with chile crisp and nutty with peanut butter — no cooking required. Be gentle when mixing; the acid in the dressing can break down the chicken if you overwork it. A few careful folds are all it takes.<br>Excellent served over pan-fried udon noodles.</p><p class="source">Source: Molly Baz</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -2406,7 +2603,10 @@
   </div>
 </article>
 <article class="recipe" id="meat-mains-chicken-43" data-title="Kung Pao Chicken and Broccoli">
-  <h3>Kung Pao Chicken and Broccoli</h3>
+  <div class="recipe-header-row">
+    <h3>Kung Pao Chicken and Broccoli</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Kung Pao Chicken and Broccoli">🖨 Print</button>
+  </div>
   <p class="meta">2   |   Prep: 30 minutes   |   Cook: 30 minutes   |   Total: 1 hour</p><p class="source">Source: <a href="https://cambodiarecipe.com/kung-pao-chicken-and-broccoli/" target="_blank" rel="noopener">https://cambodiarecipe.com/kung-pao-chicken-and-broccoli/</a></p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -2437,7 +2637,10 @@
   </div>
 </article>
 <article class="recipe" id="meat-mains-chicken-44" data-title="Spicy Orange Sesame Chicken">
-  <h3>Spicy Orange Sesame Chicken</h3>
+  <div class="recipe-header-row">
+    <h3>Spicy Orange Sesame Chicken</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Spicy Orange Sesame Chicken">🖨 Print</button>
+  </div>
   <p class="meta">6   |   Prep: 20 minutes   |   Cook: 20 minutes   |   Total: 40 minutes</p><p class="source">Source: Half Baked Harvest, by Tieghan Gerard</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -2473,7 +2676,10 @@
   </div>
 </article>
 <article class="recipe" id="meat-mains-chicken-45" data-title="Weeknight Sticky Ginger Sesame Chicken Meatballs">
-  <h3>Weeknight Sticky Ginger Sesame Chicken Meatballs</h3>
+  <div class="recipe-header-row">
+    <h3>Weeknight Sticky Ginger Sesame Chicken Meatballs</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Weeknight Sticky Ginger Sesame Chicken Meatballs">🖨 Print</button>
+  </div>
   <p class="meta">4   |   Prep: 10 minutes   |   Cook: 20 minutes   |   Total: 30 minutes</p><p class="comments">Ground turkey or pork can be used in place of chicken.<br>If using winter squash instead of broccoli, roast it alone for 15 minutes before adding the meatballs to the sheet, since squash takes longer.</p><p class="source">Source: Half Baked Harvest, by Tieghan Gerard</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -2510,7 +2716,10 @@
 <div class="cluster-group" id="meat-mains-chicken--japanese">
   <h4 class="cluster-heading">Japanese</h4>
   <article class="recipe" id="meat-mains-chicken-46" data-title="Crispy Chicken Katsu Bowls">
-  <h3>Crispy Chicken Katsu Bowls</h3>
+  <div class="recipe-header-row">
+    <h3>Crispy Chicken Katsu Bowls</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Crispy Chicken Katsu Bowls">🖨 Print</button>
+  </div>
   <p class="meta">4   |   Prep: 30 minutes   |   Cook: 15 minutes   |   Total: 45 minutes</p><p class="source">Source: <a href="https://www.halfbakedharvest.com/chicken-katsu-bowls/" target="_blank" rel="noopener">https://www.halfbakedharvest.com/chicken-katsu-bowls/</a></p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -2550,7 +2759,10 @@
   </div>
 </article>
 <article class="recipe" id="meat-mains-chicken-47" data-title="Japanese Fried Chicken (Shio Koji Karaage)">
-  <h3>Japanese Fried Chicken (Shio Koji Karaage)</h3>
+  <div class="recipe-header-row">
+    <h3>Japanese Fried Chicken (Shio Koji Karaage)</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Japanese Fried Chicken (Shio Koji Karaage)">🖨 Print</button>
+  </div>
   <p class="meta">4   |   Prep: 10 minutes   |   Cook: 15 minutes   |   Total: 25 minutes</p><p class="comments">Shio koji is a fermented rice-malt seasoning, available at Japanese/Asian grocers.</p><p class="source">Source: Hikari Miso, recipe by Namiko Hirasawa Chen (Just One Cookbook)</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -2575,7 +2787,10 @@
   </div>
 </article>
 <article class="recipe" id="meat-mains-chicken-48" data-title="One-Pot Japanese Curry Chicken and Rice">
-  <h3>One-Pot Japanese Curry Chicken and Rice</h3>
+  <div class="recipe-header-row">
+    <h3>One-Pot Japanese Curry Chicken and Rice</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print One-Pot Japanese Curry Chicken and Rice">🖨 Print</button>
+  </div>
   <p class="meta">4   |   Total: 1 hour</p><p class="comments">Sweet potatoes, cauliflower, or peas would be good substitutions or additions to the potato and carrots.<br>Serve with any pickle you have on hand for a vinegary contrast to the rich curry.</p><p class="source">Source: NYT Cooking, by Kay Chun</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -2616,7 +2831,10 @@
   <div class="cluster-group" id="meat-mains-turkey--general">
   <h4 class="cluster-heading">General</h4>
   <article class="recipe" id="meat-mains-turkey-0" data-title="Bristol Farms Turkey Salad (Copycat)">
-  <h3>Bristol Farms Turkey Salad (Copycat)</h3>
+  <div class="recipe-header-row">
+    <h3>Bristol Farms Turkey Salad (Copycat)</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Bristol Farms Turkey Salad (Copycat)">🖨 Print</button>
+  </div>
   <p class="meta">Serves 6–8</p><p class="comments">Quantities reconstructed from the ingredient card — adjust mayo and mustard to taste.<br>Great served in a sandwich, on lettuce cups, or with crackers.</p><p class="source">Source: Grandmother Brenda's ingredient list, inspired by Bristol Farms deli turkey salad</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -2643,7 +2861,10 @@
   </div>
 </article>
 <article class="recipe" id="meat-mains-turkey-1" data-title="Expertly Spiced and Glazed Roast Turkey">
-  <h3>Expertly Spiced and Glazed Roast Turkey</h3>
+  <div class="recipe-header-row">
+    <h3>Expertly Spiced and Glazed Roast Turkey</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Expertly Spiced and Glazed Roast Turkey">🖨 Print</button>
+  </div>
   <p class="meta">Serves 8–10   |   Active: 45 min   |   Total: About 2 hrs (plus 24–48 hrs dry-brining)</p><p class="comments">Turkey is spatchcocked for more even roasting. Begin 24–48 hours ahead for the dry brine.<br>Option: after removing the backbone, also separate the wings and legs for even faster, more even cooking as individual pieces — see Step 1.<br>Requires a spice mill or mortar and pestle.</p><p class="source">Source: <a href="https://www.epicurious.com/recipes/food/views/expertly-spiced-and-glazed-roast-turkey" target="_blank" rel="noopener">https://www.epicurious.com/recipes/food/views/expertly-spiced-and-glazed-roast-turkey</a></p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -2681,7 +2902,10 @@
   </div>
 </article>
 <article class="recipe" id="meat-mains-turkey-2" data-fav="1" data-title="Turkey and Quinoa Meatloaf">
-  <h3>★ Turkey and Quinoa Meatloaf</h3>
+  <div class="recipe-header-row">
+    <h3>★ Turkey and Quinoa Meatloaf</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Turkey and Quinoa Meatloaf">🖨 Print</button>
+  </div>
   <p class="meta">Serves 4   |   Total: 1 hr 10 min</p><p class="comments">Best served with <a href="#joan-chili-aioli">Joan's on Third Chili Aioli</a>.</p><p class="source">Source: <a href="https://www.allrecipes.com/recipe/213211/turkey-and-quinoa-meatloaf/" target="_blank" rel="noopener">https://www.allrecipes.com/recipe/213211/turkey-and-quinoa-meatloaf/</a></p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -2717,7 +2941,10 @@
 <div class="cluster-group" id="meat-mains-turkey--indian">
   <h4 class="cluster-heading">Indian</h4>
   <article class="recipe" id="meat-mains-turkey-3" data-title="Turkey Tikka Masala">
-  <h3>Turkey Tikka Masala</h3>
+  <div class="recipe-header-row">
+    <h3>Turkey Tikka Masala</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Turkey Tikka Masala">🖨 Print</button>
+  </div>
   <p class="meta">Serves 6   |   Total: 1 1/2 hrs, plus 4 hrs marinating</p><p class="comments">A great way to use leftover Thanksgiving turkey.<br>Marinate the turkey for at least 4 hours, or overnight, for best results.</p><p class="source">Source: Samin Nosrat, NYT Cooking (November 22, 2016)</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -2772,7 +2999,10 @@
   <div class="cluster-group" id="meat-mains-pork--general">
   <h4 class="cluster-heading">General</h4>
   <article class="recipe" id="meat-mains-pork-0" data-fav="1" data-title="Sloppy Moes">
-  <h3>★ Sloppy Moes</h3>
+  <div class="recipe-header-row">
+    <h3>★ Sloppy Moes</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Sloppy Moes">🖨 Print</button>
+  </div>
   <p class="meta">Serves 6   |   Active: 20 min   |   Total: 45 min</p><p class="source">Source: Molly Baz, Cook This Book</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -2813,7 +3043,10 @@
 <div class="cluster-group" id="meat-mains-pork--latin-south-american">
   <h4 class="cluster-heading">Latin/South American</h4>
   <article class="recipe" id="meat-mains-pork-1" data-title="Slow Cooker Pork Mole">
-  <h3>Slow Cooker Pork Mole</h3>
+  <div class="recipe-header-row">
+    <h3>Slow Cooker Pork Mole</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Slow Cooker Pork Mole">🖨 Print</button>
+  </div>
   <p class="meta">Serves 8   |   Total: 8–10 hours (plus 30 min prep)</p><p class="source">Source: Adapted from Muy Bueno (Yvette Marquez-Sharpnack) and Food Network Kitchen</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -2852,7 +3085,10 @@
   </div>
 </article>
 <article class="recipe" id="haitian-pork-griot" data-fav="1" data-title="Haitian Pork Griot">
-  <h3>★ Haitian Pork Griot</h3>
+  <div class="recipe-header-row">
+    <h3>★ Haitian Pork Griot</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Haitian Pork Griot">🖨 Print</button>
+  </div>
   <p class="meta">Serves 6   |   Total: 3 hours, plus overnight marinating</p><p class="comments">Best served with <a href='#haitian-pikliz'>Pikliz</a>.</p><p class="source">Source: Patrick Celestin, adapted by Melissa Clark (NYT Cooking)</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -2889,7 +3125,10 @@
   </div>
 </article>
 <article class="recipe" id="meat-mains-pork-3" data-title="Carnitas">
-  <h3>Carnitas</h3>
+  <div class="recipe-header-row">
+    <h3>Carnitas</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Carnitas">🖨 Print</button>
+  </div>
   <p class="meta">Serves 10–12   |   Total: 10 hrs 15 min</p><p class="source">Source: Nagi Maehashi, RecipeTin Eats</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -2922,7 +3161,10 @@
 <div class="cluster-group" id="meat-mains-pork--korean-inspired">
   <h4 class="cluster-heading">Korean-inspired</h4>
   <article class="recipe" id="meat-mains-pork-4" data-title="Crispy Pork Lettuce Wraps With Spicy Cucumbers">
-  <h3>Crispy Pork Lettuce Wraps With Spicy Cucumbers</h3>
+  <div class="recipe-header-row">
+    <h3>Crispy Pork Lettuce Wraps With Spicy Cucumbers</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Crispy Pork Lettuce Wraps With Spicy Cucumbers">🖨 Print</button>
+  </div>
   <p class="meta">Serves 2   |   Total: 3 hours (including marinating and roasting)</p><p class="source">Source: Alison Roman, Bon Appétit (October 2015)</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -2959,7 +3201,10 @@
 <div class="cluster-group" id="meat-mains-pork--chinese">
   <h4 class="cluster-heading">Chinese</h4>
   <article class="recipe" id="meat-mains-pork-5" data-title="Moo Shu Mushrooms">
-  <h3>Moo Shu Mushrooms</h3>
+  <div class="recipe-header-row">
+    <h3>Moo Shu Mushrooms</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Moo Shu Mushrooms">🖨 Print</button>
+  </div>
   <p class="meta">Serves 4   |   Total: 45 min</p><p class="comments">If you can't find dried day lily buds, substitute 4 oz canned sliced bamboo shoots and skip the soaking step.</p><p class="source">Source: J. Kenji López-Alt, NYT Cooking (January 28, 2020)</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -3006,7 +3251,10 @@
   <div class="cluster-group" id="meat-mains-lamb--mediterranean-greek">
   <h4 class="cluster-heading">Mediterranean/Greek</h4>
   <article class="recipe" id="meat-mains-lamb-0" data-fav="1" data-title="Garlic &amp; Rosemary Grilled Lamb Chops">
-  <h3>★ Garlic &amp; Rosemary Grilled Lamb Chops</h3>
+  <div class="recipe-header-row">
+    <h3>★ Garlic &amp; Rosemary Grilled Lamb Chops</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Garlic &amp; Rosemary Grilled Lamb Chops">🖨 Print</button>
+  </div>
   <p class="meta">Serves 4   |   Prep: 15 min   |   Cook: 10 min   |   Total: 25 min (plus 1 hr to overnight marinating)</p><p class="source">Source: Jannese, Delish D'Lites</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -3032,7 +3280,10 @@
 <div class="cluster-group" id="meat-mains-lamb--middle-eastern-persian">
   <h4 class="cluster-heading">Middle Eastern/Persian</h4>
   <article class="recipe" id="meat-mains-lamb-1" data-title="Lula Kebabs">
-  <h3>Lula Kebabs</h3>
+  <div class="recipe-header-row">
+    <h3>Lula Kebabs</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Lula Kebabs">🖨 Print</button>
+  </div>
   <p class="meta">Serves 6   |   Prep: 30 min   |   Cook: 10 min   |   Total: 40 min</p><p class="source">Source: Janelle Leatherwood, The Stuffed Grape Leaf</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -3063,7 +3314,10 @@
 <div class="cluster-group" id="meat-mains-lamb--indian">
   <h4 class="cluster-heading">Indian</h4>
   <article class="recipe" id="meat-mains-lamb-2" data-title="Luscious Tandoori Lamb Chops">
-  <h3>Luscious Tandoori Lamb Chops</h3>
+  <div class="recipe-header-row">
+    <h3>Luscious Tandoori Lamb Chops</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Luscious Tandoori Lamb Chops">🖨 Print</button>
+  </div>
   <p class="meta">Serves 4   |   Active: 30 min   |   Total: ~9 hrs (including overnight marinade)</p><p class="source">Source: Suvir Saran, Food &amp; Wine</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -3102,7 +3356,10 @@
   <div class="cluster-group" id="meat-mains-beef--general">
   <h4 class="cluster-heading">General</h4>
   <article class="recipe" id="rib-roast" data-fav="1" data-title="Four Peppercorn Crusted Rotisserie Rib Roast">
-  <h3>★ Four Peppercorn Crusted Rotisserie Rib Roast</h3>
+  <div class="recipe-header-row">
+    <h3>★ Four Peppercorn Crusted Rotisserie Rib Roast</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Four Peppercorn Crusted Rotisserie Rib Roast">🖨 Print</button>
+  </div>
   <p class="meta">Serves 4–6</p><p class="comments">Best served with <a href='#horseradish-sauce'>Horseradish Sauce</a>.</p><p class="source">Source: Lauren Muhlheim (family recipe, December 2020)</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -3124,7 +3381,10 @@
   </div>
 </article>
 <article class="recipe" id="meat-mains-beef-1" data-title="The Best Passover Brisket">
-  <h3>The Best Passover Brisket</h3>
+  <div class="recipe-header-row">
+    <h3>The Best Passover Brisket</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print The Best Passover Brisket">🖨 Print</button>
+  </div>
   <p class="meta">Serves 12   |   Prep: 15 min   |   Cook: 3 hrs 30 min   |   Total: 3 hrs 45 min</p><p class="source">Source: Phoebe Lapine, Feed Me Phoebe</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -3154,7 +3414,10 @@
   </div>
 </article>
 <article class="recipe" id="sous-vide-beef-ribs" data-fav="1" data-title="Sous Vide Beef Back Ribs">
-  <h3>★ Sous Vide Beef Back Ribs</h3>
+  <div class="recipe-header-row">
+    <h3>★ Sous Vide Beef Back Ribs</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Sous Vide Beef Back Ribs">🖨 Print</button>
+  </div>
   <p class="meta">Serves 6–8   |   Prep: 20 min   |   Sous vide: 24 hrs   |   Finish: 10 min   |   Total: ~24.5 hrs</p><p class="comments">Season with <a href='#steak-seasoning-rub'>Steak Seasoning Rub</a> (3× batch) before the sous vide, and serve alongside <a href='#cherry-bbq-sauce'>Cherry Barbecue Sauce</a>.</p><p class="source">Source: Sip Bite Go, Two Kooks in the Kitchen, Went Here 8 This (Family hybrid)</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -3178,7 +3441,10 @@
   </div>
 </article>
 <article class="recipe" id="meat-mains-beef-3" data-title="Hearty Beef Stew With Red Onions and Ale">
-  <h3>Hearty Beef Stew With Red Onions and Ale</h3>
+  <div class="recipe-header-row">
+    <h3>Hearty Beef Stew With Red Onions and Ale</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Hearty Beef Stew With Red Onions and Ale">🖨 Print</button>
+  </div>
   <p class="meta">Serves 6   |   Total: 3 hours</p><p class="comments">Tastes even better a day or two later; can be frozen for up to two months. Serve over mashed potatoes, noodles, or polenta.</p><p class="source">Source: Melissa Clark, NYT Cooking</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -3220,7 +3486,10 @@
 <div class="cluster-group" id="meat-mains-beef--french">
   <h4 class="cluster-heading">French</h4>
   <article class="recipe" id="meat-mains-beef-4" data-title="Dijon and Cognac Beef Stew">
-  <h3>Dijon and Cognac Beef Stew</h3>
+  <div class="recipe-header-row">
+    <h3>Dijon and Cognac Beef Stew</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Dijon and Cognac Beef Stew">🖨 Print</button>
+  </div>
   <p class="meta">Serves 4–6   |   Total: about 3 hours</p><p class="comments">Slow-cooker variation: render salt pork and sear flour-dusted beef in a sauté pan, then transfer to slow cooker with onions, shallots, carrots, mushrooms, and red wine. Deglaze pan with Cognac, then add 1 cup (not 2) stock, Dijon, and 1 Tbsp Pommery mustard; transfer to slow cooker. Cook on low 6–8 hours. Stir in remaining 3 Tbsp Pommery mustard before serving.</p><p class="source">Source: Regina Schrambling, NYT Cooking</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -3256,7 +3525,10 @@
 <div class="cluster-group" id="meat-mains-beef--chinese">
   <h4 class="cluster-heading">Chinese</h4>
   <article class="recipe" id="meat-mains-beef-5" data-fav="1" data-title="Asian Braised Short Ribs">
-  <h3>★ Asian Braised Short Ribs</h3>
+  <div class="recipe-header-row">
+    <h3>★ Asian Braised Short Ribs</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Asian Braised Short Ribs">🖨 Print</button>
+  </div>
   <p class="meta">Serves 6   |   Prep: 30 min   |   Cook: 6 hrs (slow cooker)   |   Total: ~6.5 hrs</p><p class="source">Source: Williams-Sonoma Kitchen</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -3294,7 +3566,10 @@
   <div class="cluster-group" id="meat-mains-ground-beef--general">
   <h4 class="cluster-heading">General</h4>
   <article class="recipe" id="meat-mains-ground-beef-0" data-title="Taco Night!!">
-  <h3>Taco Night!!</h3>
+  <div class="recipe-header-row">
+    <h3>Taco Night!!</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Taco Night!!">🖨 Print</button>
+  </div>
   <p class="meta">Makes 12 tacos   |   Active: 35 min   |   Total: 3½ hrs</p><p class="source">Source: Molly Baz, The Club</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -3338,7 +3613,10 @@
   </div>
 </article>
 <article class="recipe" id="meat-mains-ground-beef-1" data-title="Sweet Potato Shepherd's Pie">
-  <h3>Sweet Potato Shepherd's Pie</h3>
+  <div class="recipe-header-row">
+    <h3>Sweet Potato Shepherd's Pie</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Sweet Potato Shepherd's Pie">🖨 Print</button>
+  </div>
   <p class="meta">Serves 6   |   Total: ~50 min</p><p class="comments">For a 9&quot;×13&quot; pan, double the recipe.</p><p class="source">Source: Shira Rosenbluth's mother</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -3376,7 +3654,10 @@
 <div class="cluster-group" id="meat-mains-ground-beef--korean-inspired">
   <h4 class="cluster-heading">Korean-inspired</h4>
   <article class="recipe" id="meat-mains-ground-beef-2" data-title="Korean Beef Bowl">
-  <h3>Korean Beef Bowl</h3>
+  <div class="recipe-header-row">
+    <h3>Korean Beef Bowl</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Korean Beef Bowl">🖨 Print</button>
+  </div>
   <p class="meta">Serves 4   |   Active: 20 min   |   Total: 25 min</p><p class="source">Source: Khin's Kitchen, Glebe Kitchen, Chef Savvy (Family hybrid)</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -3420,7 +3701,10 @@
   <div class="cluster-group" id="meat-mains-fish--general">
   <h4 class="cluster-heading">General</h4>
   <article class="recipe" id="meat-mains-fish-0" data-title="Dry-Brined Salmon">
-  <h3>Dry-Brined Salmon</h3>
+  <div class="recipe-header-row">
+    <h3>Dry-Brined Salmon</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Dry-Brined Salmon">🖨 Print</button>
+  </div>
   <p class="meta">Serves 4   |   Prep: 5 min   |   Marinate: 8 hrs – 2 days   |   Cook: 15 min   |   Total: ~8.5 hrs+</p><p class="comments">Marinating with Shio Koji — a fermented rice-and-koji paste — acts as a rich dry brine: it firms the flesh, prevents albumin leakage, and makes the skin virtually nonstick and chip-crisp. Even a short 30–45-minute rest improves the fish.<br>Works with any type of salmon; especially dramatic with leaner coho or sockeye.</p><p class="source">Source: J. Kenji López-Alt, NYT Cooking</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -3443,7 +3727,10 @@
   </div>
 </article>
 <article class="recipe" id="meat-mains-fish-1" data-title="Baked Lemon Salmon with Creamy Dill Sauce">
-  <h3>Baked Lemon Salmon with Creamy Dill Sauce</h3>
+  <div class="recipe-header-row">
+    <h3>Baked Lemon Salmon with Creamy Dill Sauce</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Baked Lemon Salmon with Creamy Dill Sauce">🖨 Print</button>
+  </div>
   <p class="meta">Serves 4   |   Prep: 10 min   |   Rest: 10 min   |   Cook: 15 min   |   Total: 35 min</p><p class="source">Source: Jaclyn, Cooking Classy</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -3470,7 +3757,10 @@
   </div>
 </article>
 <article class="recipe" id="meat-mains-fish-2" data-title="Sriracha Maple Salmon">
-  <h3>Sriracha Maple Salmon</h3>
+  <div class="recipe-header-row">
+    <h3>Sriracha Maple Salmon</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Sriracha Maple Salmon">🖨 Print</button>
+  </div>
   <p class="meta">Serves 4   |   Active: 10 min   |   Total: 16 min</p><p class="source">Source: Ree Drummond, Food Network (The Pioneer Woman)</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -3498,7 +3788,10 @@
   </div>
 </article>
 <article class="recipe" id="meat-mains-fish-3" data-title="Fish and Chips with Malt Vinegar Mayonnaise">
-  <h3>Fish and Chips with Malt Vinegar Mayonnaise</h3>
+  <div class="recipe-header-row">
+    <h3>Fish and Chips with Malt Vinegar Mayonnaise</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Fish and Chips with Malt Vinegar Mayonnaise">🖨 Print</button>
+  </div>
   <p class="meta">Serves 4   |   Special equipment: deep-fry thermometer</p><p class="comments">Key: beer and club soda must be ice-cold. Chill the batter if prepping ahead.<br>Corn flour (more finely ground than cornmeal) is available at Latin markets, natural-foods stores, and bobsredmill.com.</p><p class="source">Source: Adam Evans, Bon Appétit (September 2013)</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -3538,7 +3831,10 @@
 <div class="cluster-group" id="meat-mains-fish--italian">
   <h4 class="cluster-heading">Italian</h4>
   <article class="recipe" id="meat-mains-fish-4" data-title="Sole with Lemon-Caper Sauce">
-  <h3>Sole with Lemon-Caper Sauce</h3>
+  <div class="recipe-header-row">
+    <h3>Sole with Lemon-Caper Sauce</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Sole with Lemon-Caper Sauce">🖨 Print</button>
+  </div>
   <p class="meta">Serves 2–4   |   Total: 20 min (all active)</p><p class="source">Source: Giada De Laurentiis, Food Network (Giada Entertains)</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -3568,7 +3864,10 @@
 <div class="cluster-group" id="meat-mains-fish--french">
   <h4 class="cluster-heading">French</h4>
   <article class="recipe" id="meat-mains-fish-5" data-fav="1" data-title="Smoked Salmon Niçoise Salad">
-  <h3>★ Smoked Salmon Niçoise Salad</h3>
+  <div class="recipe-header-row">
+    <h3>★ Smoked Salmon Niçoise Salad</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Smoked Salmon Niçoise Salad">🖨 Print</button>
+  </div>
   <p class="meta">Serves 2–4   |   Active: 15 min   |   Total: 45 min</p><p class="comments">Can also be made with high-end jarred tuna in oil in place of the smoked salmon.</p><p class="source">Source: Molly Yeh, Food Network (Girl Meets Farm)</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -3605,7 +3904,10 @@
 <div class="cluster-group" id="meat-mains-fish--vietnamese">
   <h4 class="cluster-heading">Vietnamese</h4>
   <article class="recipe" id="meat-mains-fish-6" data-fav="1" data-title="Fast Vietnamese Caramel Bluefish">
-  <h3>★ Fast Vietnamese Caramel Bluefish</h3>
+  <div class="recipe-header-row">
+    <h3>★ Fast Vietnamese Caramel Bluefish</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Fast Vietnamese Caramel Bluefish">🖨 Print</button>
+  </div>
   <p class="meta">Serves 4   |   Total: 20 min</p><p class="comments">Can be made with any rich, flaky fish such as sea bass — not just bluefish.</p><p class="source">Source: Melissa Clark, NYT Cooking</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -3636,7 +3938,10 @@
 <div class="cluster-group" id="meat-mains-fish--japanese">
   <h4 class="cluster-heading">Japanese</h4>
   <article class="recipe" id="meat-mains-fish-7" data-title="Spicy Tuna Salad with Crispy Rice">
-  <h3>Spicy Tuna Salad with Crispy Rice</h3>
+  <div class="recipe-header-row">
+    <h3>Spicy Tuna Salad with Crispy Rice</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Spicy Tuna Salad with Crispy Rice">🖨 Print</button>
+  </div>
   <p class="meta">Serves 4   |   Prep: 5 min   |   Cook: 30 min   |   Total: 35 min</p><p class="source">Source: Ali Slagle, NYT Cooking</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -3674,7 +3979,10 @@
   <div class="cluster-group" id="meat-mains-shellfish--general">
   <h4 class="cluster-heading">General</h4>
   <article class="recipe" id="meat-mains-shellfish-0" data-title="Shrimp with Orzo and Peas">
-  <h3>Shrimp with Orzo and Peas</h3>
+  <div class="recipe-header-row">
+    <h3>Shrimp with Orzo and Peas</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Shrimp with Orzo and Peas">🖨 Print</button>
+  </div>
   <p class="meta">Serves 2–4   |   Total: ~20 min</p><p class="source">Source: Adapted from Pampered Chef, 29 Minutes to Dinner</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -3704,7 +4012,10 @@
   </div>
 </article>
 <article class="recipe" id="meat-mains-shellfish-1" data-title="Spicy Grilled Shrimp">
-  <h3>Spicy Grilled Shrimp</h3>
+  <div class="recipe-header-row">
+    <h3>Spicy Grilled Shrimp</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Spicy Grilled Shrimp">🖨 Print</button>
+  </div>
   <p class="meta">Serves 4   |   Total: 20 min</p><p class="source">Source: Mark Bittman, NYT Cooking (1999)</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -3727,7 +4038,10 @@
   </div>
 </article>
 <article class="recipe" id="meat-mains-shellfish-2" data-title="Bacon-Wrapped Scallops with Chili Butter">
-  <h3>Bacon-Wrapped Scallops with Chili Butter</h3>
+  <div class="recipe-header-row">
+    <h3>Bacon-Wrapped Scallops with Chili Butter</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Bacon-Wrapped Scallops with Chili Butter">🖨 Print</button>
+  </div>
   <p class="meta">Serves 6–8   |   Prep: 15 min   |   Cook: 20 min   |   Total: 35 min</p><p class="source">Source: Ree Drummond, The Pioneer Woman</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -3752,7 +4066,10 @@
 <div class="cluster-group" id="meat-mains-shellfish--italian">
   <h4 class="cluster-heading">Italian</h4>
   <article class="recipe" id="meat-mains-shellfish-3" data-title="Shrimp Scampi with Linguini">
-  <h3>Shrimp Scampi with Linguini</h3>
+  <div class="recipe-header-row">
+    <h3>Shrimp Scampi with Linguini</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Shrimp Scampi with Linguini">🖨 Print</button>
+  </div>
   <p class="meta">Serves 4–6   |   Prep: 15 min   |   Cook: 25 min   |   Total: 40 min</p><p class="source">Source: Tyler Florence, Food Network (Food 911)</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -3784,7 +4101,10 @@
 <div class="cluster-group" id="meat-mains-shellfish--french">
   <h4 class="cluster-heading">French</h4>
   <article class="recipe" id="meat-mains-shellfish-4" data-title="Moules Marinières">
-  <h3>Moules Marinières</h3>
+  <div class="recipe-header-row">
+    <h3>Moules Marinières</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Moules Marinières">🖨 Print</button>
+  </div>
   <p class="meta">Serves 4   |   Prep: 45 min   |   Cook: 15 min   |   Total: 1 hour</p><p class="source">Source: Florence Fabricant, NYT Cooking; garlic and cream option adapted from George Duran, Food Network</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -3816,7 +4136,10 @@
 <div class="cluster-group" id="meat-mains-shellfish--chinese">
   <h4 class="cluster-heading">Chinese</h4>
   <article class="recipe" id="meat-mains-shellfish-5" data-title="Yang Chow Slippery Shrimp">
-  <h3>Yang Chow Slippery Shrimp</h3>
+  <div class="recipe-header-row">
+    <h3>Yang Chow Slippery Shrimp</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Yang Chow Slippery Shrimp">🖨 Print</button>
+  </div>
   <p class="meta">Serves 4   |   Total: 25 min</p><p class="source">Source: Los Angeles Times (Yang Chow Restaurant)</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -3856,7 +4179,10 @@
   <div class="cluster-group" id="meat-mains-other--italian">
   <h4 class="cluster-heading">Italian</h4>
   <article class="recipe" id="meat-mains-other-0" data-title="Sheet-Pan Italian Sub Dinner">
-  <h3>Sheet-Pan Italian Sub Dinner</h3>
+  <div class="recipe-header-row">
+    <h3>Sheet-Pan Italian Sub Dinner</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Sheet-Pan Italian Sub Dinner">🖨 Print</button>
+  </div>
   <p class="meta">Serves 4   |   Total: 25 min</p><p class="comments">All the flavors of an Italian sub — salami, radicchio, tomatoes, pepperoncini, chickpeas — roasted until caramelized and briny. Can swap in cauliflower florets, cubes of squash, or halved red potatoes for the radicchio.</p><p class="source">Source: Ali Slagle, NYT Cooking</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -3888,7 +4214,10 @@
 <div class="cluster-group" id="meat-mains-other--french">
   <h4 class="cluster-heading">French</h4>
   <article class="recipe" id="meat-mains-other-1" data-title="Peppered Duck Breast With Red Wine Sauce">
-  <h3>Peppered Duck Breast With Red Wine Sauce</h3>
+  <div class="recipe-header-row">
+    <h3>Peppered Duck Breast With Red Wine Sauce</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Peppered Duck Breast With Red Wine Sauce">🖨 Print</button>
+  </div>
   <p class="meta">Serves 6   |   Total: ~1½ hours (including 1 hour marinate)</p><p class="comments">A steak au poivre made with duck. Fancy enough for a gathering, relaxed enough for any night you want something special. The sauce can be made ahead and reheated, thinned with a little broth.</p><p class="source">Source: David Tanis, NYT Cooking</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -3927,7 +4256,10 @@
   <div class="cluster-group" id="vegetarian-mains-vegetables--latin-south-american">
   <h4 class="cluster-heading">Latin/South American</h4>
   <article class="recipe" id="vegetarian-mains-vegetables-0" data-title="Slow Cooker Vegan Mole Chili">
-  <h3>Slow Cooker Vegan Mole Chili</h3>
+  <div class="recipe-header-row">
+    <h3>Slow Cooker Vegan Mole Chili</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Slow Cooker Vegan Mole Chili">🖨 Print</button>
+  </div>
   <p class="meta">Serves 6   |   Prep: 25 min   |   Cook: 5 hours   |   Total: ~5 hr 25 min</p><p class="comments">Rich, hearty vegan chili with mole-inspired depth. Greek yogurt is a great topping but omit to keep strictly vegan.<br>Tofu note: Freeze the entire tofu block until firm (overnight works — keep a block or two in the freezer as a habit). Thaw in the refrigerator, then drain as usual. Slice into 4–5 slabs and gently press out extra moisture between two plates. Finely dice per the recipe. Frozen-and-thawed tofu becomes sponge-like and soaks up the slow-cooked flavors.</p><p class="source">Source: Emily Stoffel, The Pig &amp; Quill</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -3967,7 +4299,10 @@
 <div class="cluster-group" id="vegetarian-mains-vegetables--italian">
   <h4 class="cluster-heading">Italian</h4>
   <article class="recipe" id="vegetarian-mains-vegetables-1" data-title="Eggplant Involtini">
-  <h3>Eggplant Involtini</h3>
+  <div class="recipe-header-row">
+    <h3>Eggplant Involtini</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Eggplant Involtini">🖨 Print</button>
+  </div>
   <p class="meta">Serves 4   |   Total: 1 hour</p><p class="comments">A lighter, weeknight-friendly take on eggplant parmesan — no breading, no frying. The eggplant is roasted or grilled into silky planks, rolled around a three-cheese filling, and baked in homemade tomato sauce. If you don't want to make the sauce, 3 cups of good store-bought sauce works fine.</p><p class="source">Source: <a href="https://smittenkitchen.com/2022/09/eggplant-involtini/" target="_blank" rel="noopener">https://smittenkitchen.com/2022/09/eggplant-involtini/</a></p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -4009,7 +4344,10 @@
   </div>
 </article>
 <article class="recipe" id="vegetarian-mains-vegetables-2" data-title="Eggplant Parmesan">
-  <h3>Eggplant Parmesan</h3>
+  <div class="recipe-header-row">
+    <h3>Eggplant Parmesan</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Eggplant Parmesan">🖨 Print</button>
+  </div>
   <p class="meta">Serves 6–8   |   Prep: 20 minutes   |   Cook: 40 minutes   |   Total: 1 hour</p><p class="source">Source: <a href="https://www.loveandlemons.com/eggplant-parmesan/" target="_blank" rel="noopener">https://www.loveandlemons.com/eggplant-parmesan/</a></p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -4055,7 +4393,10 @@
   <div class="cluster-group" id="vegetarian-mains-tofu--general">
   <h4 class="cluster-heading">General</h4>
   <article class="recipe" id="vegetarian-mains-tofu-0" data-title="Tofu Stir Fry">
-  <h3>Tofu Stir Fry</h3>
+  <div class="recipe-header-row">
+    <h3>Tofu Stir Fry</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Tofu Stir Fry">🖨 Print</button>
+  </div>
   <p class="meta">Serves 2   |   Prep: 20 min   |   Cook: 15 min   |   Total: 35 min</p><p class="source">Source: Kahnita Wilkerson, Tasty</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -4090,7 +4431,10 @@
   </div>
 </article>
 <article class="recipe" id="vegetarian-mains-tofu-1" data-title="Sesame Ginger Tofu and Veggie Stir Fry">
-  <h3>Sesame Ginger Tofu and Veggie Stir Fry</h3>
+  <div class="recipe-header-row">
+    <h3>Sesame Ginger Tofu and Veggie Stir Fry</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Sesame Ginger Tofu and Veggie Stir Fry">🖨 Print</button>
+  </div>
   <p class="meta">Serves 3   |   Prep: 25 min   |   Cook: 15 min   |   Total: 40 min</p><p class="source">Source: Marzia, Little Spice Jar</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -4126,7 +4470,10 @@
 <div class="cluster-group" id="vegetarian-mains-tofu--west-african">
   <h4 class="cluster-heading">West African</h4>
   <article class="recipe" id="vegetarian-mains-tofu-2" data-title="Baked Tofu With Peanut Sauce and Coconut-Lime Rice">
-  <h3>Baked Tofu With Peanut Sauce and Coconut-Lime Rice</h3>
+  <div class="recipe-header-row">
+    <h3>Baked Tofu With Peanut Sauce and Coconut-Lime Rice</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Baked Tofu With Peanut Sauce and Coconut-Lime Rice">🖨 Print</button>
+  </div>
   <p class="meta">Serves 4   |   Total: ~45 min</p><p class="comments">The peanut sauce is inspired by West African groundnut stews. Fish sauce adds umami but is optional; omit it to keep the dish vegan. Peanut sauce can be made 2–3 days ahead and refrigerated.</p><p class="source">Source: Yewande Komolafe, NYT Cooking</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -4172,7 +4519,10 @@
 <section id="sub-vegetarian-mains-mushroom" class="subsection">
   <h3 class="subsection-heading">Mushroom</h3>
   <article class="recipe" id="vegetarian-mains-mushroom-0" data-title="Oven Polenta with Roasted Mushrooms and Thyme">
-  <h3>Oven Polenta with Roasted Mushrooms and Thyme</h3>
+  <div class="recipe-header-row">
+    <h3>Oven Polenta with Roasted Mushrooms and Thyme</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Oven Polenta with Roasted Mushrooms and Thyme">🖨 Print</button>
+  </div>
   <p class="meta">Serves 4   |   Total: ~55 min</p><p class="comments">A &quot;no-stir&quot; oven polenta — the oven does the work while the mushrooms roast on the rack above. For an indulgent touch, stir a little heavy cream mixed with a finely grated garlic clove into the finished polenta.</p><p class="source">Source: Claire Saffitz, Bon Appétit</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -4204,7 +4554,10 @@
   </div>
 </article>
 <article class="recipe" id="vegetarian-mains-mushroom-1" data-title="Stuffed Portobello Mushrooms with Crispy Goat Cheese">
-  <h3>Stuffed Portobello Mushrooms with Crispy Goat Cheese</h3>
+  <div class="recipe-header-row">
+    <h3>Stuffed Portobello Mushrooms with Crispy Goat Cheese</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Stuffed Portobello Mushrooms with Crispy Goat Cheese">🖨 Print</button>
+  </div>
   <p class="meta">Serves 4   |   Prep: 15 min   |   Cook: 45 min   |   Total: 1 hour</p><p class="comments">Use large portobello mushrooms roughly 4 inches wide with slightly deeper caps — they're easier to stuff. Two mushrooms per serving makes a hearty main; one per person if serving as a side. For gluten-free, substitute gluten-free breadcrumbs.</p><p class="source">Source: Laura Davidson, A Beautiful Plate</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -4244,7 +4597,10 @@
   </div>
 </article>
 <article class="recipe" id="vegetarian-mains-mushroom-2" data-title="Truffle Mushroom Risotto">
-  <h3>Truffle Mushroom Risotto</h3>
+  <div class="recipe-header-row">
+    <h3>Truffle Mushroom Risotto</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Truffle Mushroom Risotto">🖨 Print</button>
+  </div>
   <p class="meta">Serves 4   |   Prep: 20 min   |   Cook: 20 min   |   Total: 40 min</p><p class="comments">A go-to &quot;fancy&quot; dinner that's actually easy. The risotto should flow like slow-moving lava, not form a stiff ball. Black truffle puree is available at specialty grocery stores and online.</p><p class="source">Source: Jenny Goycochea, So Much Food</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -4276,7 +4632,10 @@
   </div>
 </article>
 <article class="recipe" id="vegetarian-mains-mushroom-3" data-title="Roasted Portobellos With Pesto">
-  <h3>Roasted Portobellos With Pesto</h3>
+  <div class="recipe-header-row">
+    <h3>Roasted Portobellos With Pesto</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Roasted Portobellos With Pesto">🖨 Print</button>
+  </div>
   <p class="meta">Serves 4   |   Total: 30 min</p><p class="comments">Uses Christy's Pesto (Adapted) already in this cookbook (see Noodles section). Homemade or store-bought pesto both work. Serve with rice or noodles tossed with butter for a simple meal. These reheat well a few hours later.</p><p class="source">Source: Martha Rose Shulman, NYT Cooking</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -4297,7 +4656,10 @@
 <section id="sec-vegetable-sides" class="section">
   <h2>Vegetable Sides</h2>
   <article class="recipe" id="vegetable-sides-0" data-title="Butter Lettuce and Citrus Salad">
-  <h3>Butter Lettuce and Citrus Salad</h3>
+  <div class="recipe-header-row">
+    <h3>Butter Lettuce and Citrus Salad</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Butter Lettuce and Citrus Salad">🖨 Print</button>
+  </div>
   <p class="meta">Serves 2–3</p><p class="comments">&quot;Supreming&quot; citrus means cutting away the peel and pith, then slicing between the membranes to release clean segments.</p><p class="source">Source: The Gourmandise School (The Pizza Class)</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -4319,7 +4681,10 @@
   </div>
 </article>
 <article class="recipe" id="vegetable-sides-1" data-title="Charred Broccoli and Cauliflower Salad">
-  <h3>Charred Broccoli and Cauliflower Salad</h3>
+  <div class="recipe-header-row">
+    <h3>Charred Broccoli and Cauliflower Salad</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Charred Broccoli and Cauliflower Salad">🖨 Print</button>
+  </div>
   <p class="meta">6 to 8   |   Total: 30 min   |   Active: 25 min</p><p class="comments">Great as a side at a barbecue with grilled seafood or meat, or to take to a potluck.</p><p class="source">Source: <a href="https://www.foodnetwork.com/recipes/ree-drummond/charred-broccoli-and-cauliflower-salad-19673188" target="_blank" rel="noopener">https://www.foodnetwork.com/recipes/ree-drummond/charred-broccoli-and-cauliflower-salad-19673188</a></p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -4353,7 +4718,10 @@
   </div>
 </article>
 <article class="recipe" id="vegetable-sides-2" data-title="Coleslaw Salad">
-  <h3>Coleslaw Salad</h3>
+  <div class="recipe-header-row">
+    <h3>Coleslaw Salad</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Coleslaw Salad">🖨 Print</button>
+  </div>
   <p class="source">Source: Family recipe card (Grandmother Brenda)</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -4377,7 +4745,10 @@
   </div>
 </article>
 <article class="recipe" id="vegetable-sides-3" data-title="Joan's on Third Butter Lettuce Salad (Copycat)">
-  <h3>Joan's on Third Butter Lettuce Salad (Copycat)</h3>
+  <div class="recipe-header-row">
+    <h3>Joan's on Third Butter Lettuce Salad (Copycat)</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Joan's on Third Butter Lettuce Salad (Copycat)">🖨 Print</button>
+  </div>
   <p class="meta">Serves 4</p><p class="comments">Original recipe uses French feta; family uses goat cheese in oil instead. Shallot is in the original but was skipped. Dressing recipe from CopyKat Recipes.</p><p class="source">Source: Copycat recipe based on Joan's on Third, Los Angeles</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -4406,7 +4777,10 @@
   </div>
 </article>
 <article class="recipe" id="vegetable-sides-4" data-title="Sautéed Mushrooms">
-  <h3>Sautéed Mushrooms</h3>
+  <div class="recipe-header-row">
+    <h3>Sautéed Mushrooms</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Sautéed Mushrooms">🖨 Print</button>
+  </div>
   <p class="meta">Serves 6   |   Prep: 10 min   |   Cook: 20 min   |   Total: 30 min</p><p class="comments">The classic steak topping — also great over chicken, pork chops, or grain bowls. Have patience: let the mushrooms release all their moisture before they begin to brown. Leftovers keep in the fridge up to 10 days; reheat on the stovetop with a little extra butter.</p><p class="source">Source: Sommer Collier, A Spicy Perspective</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -4429,7 +4803,10 @@
   </div>
 </article>
 <article class="recipe" id="vegetable-sides-5" data-title="Summer Salad">
-  <h3>Summer Salad</h3>
+  <div class="recipe-header-row">
+    <h3>Summer Salad</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Summer Salad">🖨 Print</button>
+  </div>
   <p class="comments">The dressing makes more than needed for one salad — leftovers keep refrigerated for 1–2 weeks.</p><p class="source">Source: Family recipe card (Grandmother Brenda)</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -4463,7 +4840,10 @@
 <section id="sec-pickling" class="section">
   <h2>Pickling</h2>
   <article class="recipe" id="pickling-0" data-title="Dill Pickles">
-  <h3>Dill Pickles</h3>
+  <div class="recipe-header-row">
+    <h3>Dill Pickles</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Dill Pickles">🖨 Print</button>
+  </div>
   <p class="meta">Makes 4 (8-oz) or 2 (16-oz) jars   |   Prep: 10 minutes   |   Chilling: 1–5 days</p><p class="comments">Chips are lightly pickled after 1 day; spears take 2 days. The best flavor develops around day 5 or 6 — worth the wait. Keep refrigerated for several weeks.</p><p class="source">Source: <a href="https://www.loveandlemons.com/dill-pickles-recipe/" target="_blank" rel="noopener">https://www.loveandlemons.com/dill-pickles-recipe/</a></p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -4489,7 +4869,10 @@
   </div>
 </article>
 <article class="recipe" id="pickling-1" data-title="Quick Pickled Green Onions">
-  <h3>Quick Pickled Green Onions</h3>
+  <div class="recipe-header-row">
+    <h3>Quick Pickled Green Onions</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Quick Pickled Green Onions">🖨 Print</button>
+  </div>
   <p class="meta">Makes about 8 servings   |   Prep: 15 minutes   |   Pickling: 2 hours minimum (best after 24–48 hours)</p><p class="comments">Ready to eat after 2 hours, but the flavor deepens significantly after 24–48 hours. Keeps refrigerated up to 1 month as long as the onions stay fully submerged in brine.</p><p class="source">Source: <a href="https://www.forkintheroad.co/quick-pickled-green-onions/" target="_blank" rel="noopener">https://www.forkintheroad.co/quick-pickled-green-onions/</a></p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -4516,7 +4899,10 @@
   </div>
 </article>
 <article class="recipe" id="pickling-2" data-title="Quick Pickled Red Onions">
-  <h3>Quick Pickled Red Onions</h3>
+  <div class="recipe-header-row">
+    <h3>Quick Pickled Red Onions</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Quick Pickled Red Onions">🖨 Print</button>
+  </div>
   <p class="meta">Makes about 8 servings   |   Prep: 5 minutes   |   Total: 15 minutes</p><p class="comments">Great on burgers, grain bowls, salads, sandwiches, or a cheese board. Ready to eat in just 15 minutes, and keeps in the fridge for up to 2 weeks.</p><p class="source">Source: <a href="https://www.kitchentreaty.com/quick-pickled-red-onions/" target="_blank" rel="noopener">https://www.kitchentreaty.com/quick-pickled-red-onions/</a></p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -4537,7 +4923,10 @@
   </div>
 </article>
 <article class="recipe" id="haitian-pikliz" data-fav="1" data-title="Pikliz">
-  <h3>★ Pikliz</h3>
+  <div class="recipe-header-row">
+    <h3>★ Pikliz</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Pikliz">🖨 Print</button>
+  </div>
   <p class="meta">Makes 1 quart   |   Prep: 30 min   |   Ready after: 3 days' pickling</p><p class="comments">The traditional Haitian accompaniment to <a href='#haitian-pork-griot'>Pork Griot</a>. Also wonderful with rice and beans, roast chicken, or any dish that needs a spicy, vinegary punch. Keeps refrigerated for at least 3 weeks.</p><p class="source">Source: Patrick Celestin, adapted by Melissa Clark (NYT Cooking)</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -4566,7 +4955,10 @@
 <section id="sec-rice" class="section">
   <h2>Rice</h2>
   <article class="recipe" id="rice-0" data-title="Indian Style Rice">
-  <h3>Indian Style Rice</h3>
+  <div class="recipe-header-row">
+    <h3>Indian Style Rice</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Indian Style Rice">🖨 Print</button>
+  </div>
   <p class="meta">4 to 6   |   Prep: 15 minutes, plus 30 minutes soaking   |   Cook: about 25 minutes (rice cooker)</p><p class="comments">If you don't have whole cardamom pods or a cinnamon stick, use a pinch each of ground cardamom and ground cinnamon added with the turmeric.<br>Adapted for a rice cooker — rather than boiling the rice separately and draining it (the original stovetop method), the sautéed spice mixture is stirred into the rice cooker with the water and rice.</p><p class="source">Source: Simply Recipes, by Elise Bauer, adapted for a rice cooker</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -4602,7 +4994,10 @@
   <div class="cluster-group" id="noodles-italian--general">
   <h4 class="cluster-heading">General</h4>
   <article class="recipe" id="noodles-italian-0" data-title="BIG Noods alla Gin with Sungold Tomatoes">
-  <h3>BIG Noods alla Gin with Sungold Tomatoes</h3>
+  <div class="recipe-header-row">
+    <h3>BIG Noods alla Gin with Sungold Tomatoes</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print BIG Noods alla Gin with Sungold Tomatoes">🖨 Print</button>
+  </div>
   <p class="meta">4 to 6   |   Prep: 40 minutes   |   Total: 50 minutes</p><p class="comments">Fresh lasagna sheets are called for here for their fun, floppy volume on the plate, but any pasta shape — fresh or dried — works well.<br>Vodka can stand in for the gin.</p><p class="source">Source: The Club, by Molly Baz</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -4639,7 +5034,10 @@
   </div>
 </article>
 <article class="recipe" id="noodles-italian-1" data-title="Artichoke Pesto Pasta with Fried Peppercorns">
-  <h3>Artichoke Pesto Pasta with Fried Peppercorns</h3>
+  <div class="recipe-header-row">
+    <h3>Artichoke Pesto Pasta with Fried Peppercorns</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Artichoke Pesto Pasta with Fried Peppercorns">🖨 Print</button>
+  </div>
   <p class="meta">4   |   Total: 30 minutes</p><p class="comments">The fried peppercorns are worth making extra of — Molly Baz notes they're a great crispy, spicy garnish on all sorts of dishes.</p><p class="source">Source: The Club, by Molly Baz</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -4674,7 +5072,10 @@
   </div>
 </article>
 <article class="recipe" id="noodles-italian-2" data-fav="1" data-title="Lemon Fusilli with Arugula">
-  <h3>★ Lemon Fusilli with Arugula</h3>
+  <div class="recipe-header-row">
+    <h3>★ Lemon Fusilli with Arugula</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Lemon Fusilli with Arugula">🖨 Print</button>
+  </div>
   <p class="meta">4 to 5   |   Prep: 10 minutes   |   Cook: 30 minutes   |   Total: 40 minutes</p><p class="source">Source: Food Network, by Ina Garten, from Barefoot Contessa at Home</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -4704,7 +5105,10 @@
   </div>
 </article>
 <article class="recipe" id="noodles-italian-3" data-title="Christy's Pesto (Adapted)">
-  <h3>Christy's Pesto (Adapted)</h3>
+  <div class="recipe-header-row">
+    <h3>Christy's Pesto (Adapted)</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Christy's Pesto (Adapted)">🖨 Print</button>
+  </div>
   <p class="meta">Six 2-person servings</p><p class="comments">Walnuts can be swapped for pine nuts or pecans, or a mix of the two.</p><p class="source">Source: Family recipe card (&quot;Christy's Pesto, Adapted&quot;)</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -4730,7 +5134,10 @@
 <div class="cluster-group" id="noodles-italian--italian">
   <h4 class="cluster-heading">Italian</h4>
   <article class="recipe" id="noodles-italian-4" data-title="Brie Linguine">
-  <h3>Brie Linguine</h3>
+  <div class="recipe-header-row">
+    <h3>Brie Linguine</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Brie Linguine">🖨 Print</button>
+  </div>
   <p class="meta">6   |   Prep: 15 minutes, plus 2–3 hours resting</p><p class="comments">A very intense pasta, best served as a side dish.<br>Flavored fresh pasta — red pepper, basil, or spinach — provides wonderful color and taste.</p><p class="source">Source: More Than a Tea Party (cookbook), Brunch and Luncheon chapter, p. 105</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -4757,7 +5164,10 @@
   </div>
 </article>
 <article class="recipe" id="noodles-italian-5" data-fav="1" data-title="Pasta with Sausage, Basil, and Mustard">
-  <h3>★ Pasta with Sausage, Basil, and Mustard</h3>
+  <div class="recipe-header-row">
+    <h3>★ Pasta with Sausage, Basil, and Mustard</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Pasta with Sausage, Basil, and Mustard">🖨 Print</button>
+  </div>
   <p class="meta">Serves 4   |   Active: 10 min   |   Total: 20 min</p><p class="source">Source: Nigel Slater, Food &amp; Wine (September 2002)</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -4785,7 +5195,10 @@
 <div class="cluster-group" id="noodles-italian--middle-eastern-persian">
   <h4 class="cluster-heading">Middle Eastern/Persian</h4>
   <article class="recipe" id="noodles-italian-6" data-title="Spiced Meatballs with Pappardelle">
-  <h3>Spiced Meatballs with Pappardelle</h3>
+  <div class="recipe-header-row">
+    <h3>Spiced Meatballs with Pappardelle</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Spiced Meatballs with Pappardelle">🖨 Print</button>
+  </div>
   <p class="meta">Serves 4   |   Total: 1 hr 15 min</p><p class="source">Source: Molly Baz, The Club</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -4828,7 +5241,10 @@
 <section id="sub-noodles-asian" class="subsection">
   <h3 class="subsection-heading">Asian</h3>
   <article class="recipe" id="noodles-asian-0" data-title="Stir-Fried Udon Noodles With Pork and Scallions">
-  <h3>Stir-Fried Udon Noodles With Pork and Scallions</h3>
+  <div class="recipe-header-row">
+    <h3>Stir-Fried Udon Noodles With Pork and Scallions</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Stir-Fried Udon Noodles With Pork and Scallions">🖨 Print</button>
+  </div>
   <p class="meta">Serves 4   |   Total: 25 min</p><p class="source">Source: Claire Saffitz, Bon Appétit (April 2019)</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -4861,7 +5277,10 @@
 <section id="sub-baking-savory" class="subsection">
   <h3 class="subsection-heading">Savory</h3>
   <article class="recipe" id="baking-savory-0" data-title="72-Hour Pizza Dough">
-  <h3>72-Hour Pizza Dough</h3>
+  <div class="recipe-header-row">
+    <h3>72-Hour Pizza Dough</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print 72-Hour Pizza Dough">🖨 Print</button>
+  </div>
   <p class="meta">Makes 3 pizzas (~283g each)</p><p class="source">Source: The Gourmandise School (The Pizza Class)</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -4888,7 +5307,10 @@
   <div class="cluster-group" id="baking-sweet--general">
   <h4 class="cluster-heading">General</h4>
   <article class="recipe" id="baking-sweet-0" data-title="Eric's Chocolate Chip Cookies">
-  <h3>Eric's Chocolate Chip Cookies</h3>
+  <div class="recipe-header-row">
+    <h3>Eric's Chocolate Chip Cookies</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Eric's Chocolate Chip Cookies">🖨 Print</button>
+  </div>
   <p class="meta">About 3 dozen cookies</p><p class="comments">Based on the classic Toll House chocolate chip cookie recipe, with a few of Eric's own touches — rolled oats and roughly chopped pecans.</p><p class="source">Source: Base recipe: Nestlé Toll House (https://www.verybestbaking.com/toll-house/recipes/chocolate-chip-cookies/)</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -4920,7 +5342,10 @@
   </div>
 </article>
 <article class="recipe" id="baking-sweet-1" data-title="Chocolate &quot;Birthday Cake&quot;">
-  <h3>Chocolate &quot;Birthday Cake&quot;</h3>
+  <div class="recipe-header-row">
+    <h3>Chocolate &quot;Birthday Cake&quot;</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Chocolate &quot;Birthday Cake&quot;">🖨 Print</button>
+  </div>
   <p class="meta">One large sheet cake or a 2-layer 9-inch cake   |   Cook: 40-45 minutes</p><p class="comments">For a single layer, halve the butter, sugar, chocolate, flour, baking soda, salt, vanilla, and water as noted below. For 1 1/2 eggs: whisk 2 eggs together and use 3/4 of the mixture.<br>Don't halve the frosting, even for a single layer — a full batch is right (a half batch isn't quite enough).</p><p class="source">Source: Family recipe card written by Grandmother Brenda; the single-layer/half-batch margin annotations are from Lauren</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -4954,7 +5379,10 @@
   </div>
 </article>
 <article class="recipe" id="baking-sweet-2" data-title="Jumbo Banana-Nut Muffins">
-  <h3>Jumbo Banana-Nut Muffins</h3>
+  <div class="recipe-header-row">
+    <h3>Jumbo Banana-Nut Muffins</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Jumbo Banana-Nut Muffins">🖨 Print</button>
+  </div>
   <p class="meta">Makes 12 muffins</p><p class="comments">Recipe scaled 1.5x from original (from 9 jumbo muffins to 12). Walnuts made optional.<br>1 cup mashed ripe banana ≈ 2 medium bananas.</p><p class="source">Source: Mostly Muffins (cookbook), p. 14</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -4984,7 +5412,10 @@
   </div>
 </article>
 <article class="recipe" id="baking-sweet-3" data-fav="1" data-title="Nana's Poundcake">
-  <h3>★ Nana's Poundcake</h3>
+  <div class="recipe-header-row">
+    <h3>★ Nana's Poundcake</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Nana's Poundcake">🖨 Print</button>
+  </div>
   <p class="meta">1 loaf or bundt cake   |   Cook: 90 minutes</p><p class="comments">A four-generation family recipe.</p><p class="source">Source: Family recipe, credited to Nana, via Lauren's blog post &quot;Nana's Poundcake, Food, and Cultural Connection&quot;</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -5006,7 +5437,10 @@
   </div>
 </article>
 <article class="recipe" id="baking-sweet-4" data-title="Filled Coffee Cake">
-  <h3>Filled Coffee Cake</h3>
+  <div class="recipe-header-row">
+    <h3>Filled Coffee Cake</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Filled Coffee Cake">🖨 Print</button>
+  </div>
   <p class="meta">Serves 12–16   |   Bake: 350–375°F for 30–40 minutes</p><p class="source">Source: Family recipe card, credited to Nana Regina (card reads &quot;delicious! Mother's&quot;)</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -5038,7 +5472,10 @@
   </div>
 </article>
 <article class="recipe" id="baking-sweet-5" data-title="Nut Butter Balls">
-  <h3>Nut Butter Balls</h3>
+  <div class="recipe-header-row">
+    <h3>Nut Butter Balls</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Nut Butter Balls">🖨 Print</button>
+  </div>
   <p class="meta">About 4 dozen   |   Bake: 325°F for 25 minutes</p><p class="comments">Card notes 'double recipe' — these quantities are the base (single) recipe.</p><p class="source">Source: Family recipe card (Grandmother Brenda's collection)</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -5062,7 +5499,10 @@
   </div>
 </article>
 <article class="recipe" id="baking-sweet-6" data-title="Red Velvet Cake">
-  <h3>Red Velvet Cake</h3>
+  <div class="recipe-header-row">
+    <h3>Red Velvet Cake</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Red Velvet Cake">🖨 Print</button>
+  </div>
   <p class="meta">One 6-layer cake   |   Bake: 350°F for 30 minutes</p><p class="comments">Uses a cooked ermine frosting (flour-and-milk based) rather than the cream cheese frosting common in modern versions.<br>The 2 oz. of red food coloring gives the classic deep red color.</p><p class="source">Source: Family recipe card (Grandmother Brenda; card noted as &quot;original on paper yellow with age&quot;)</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -5103,7 +5543,10 @@
 <div class="cluster-group" id="baking-sweet--central-eastern-european">
   <h4 class="cluster-heading">Central/Eastern European</h4>
   <article class="recipe" id="baking-sweet-7" data-title="Blintz Soufflé">
-  <h3>Blintz Soufflé</h3>
+  <div class="recipe-header-row">
+    <h3>Blintz Soufflé</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Blintz Soufflé">🖨 Print</button>
+  </div>
   <p class="meta">Serves 6–8   |   Bake: 350°F covered 1 hour, then uncovered 10 minutes</p><p class="comments">Marsha Firestone's smaller version — uses 2 packages of blintzes and a smaller casserole dish.<br>Frozen cheese blintzes from the store work perfectly.</p><p class="source">Source: Family recipe, courtesy of Marsha Firestone (noted on card as smaller recipe for small casserole)</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -5127,7 +5570,10 @@
   </div>
 </article>
 <article class="recipe" id="baking-sweet-8" data-fav="1" data-title="Brenda's Noodle Kugel">
-  <h3>★ Brenda's Noodle Kugel</h3>
+  <div class="recipe-header-row">
+    <h3>★ Brenda's Noodle Kugel</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Brenda's Noodle Kugel">🖨 Print</button>
+  </div>
   <p class="comments">Can be assembled up to 2 days ahead and refrigerated — hold the topping until ready to bake.</p><p class="source">Source: Family recipe card, credited to Brenda</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -5155,7 +5601,10 @@
   </div>
 </article>
 <article class="recipe" id="baking-sweet-9" data-title="Min Cohen's Inscrutable Apple Cake">
-  <h3>Min Cohen's Inscrutable Apple Cake</h3>
+  <div class="recipe-header-row">
+    <h3>Min Cohen's Inscrutable Apple Cake</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Min Cohen's Inscrutable Apple Cake">🖨 Print</button>
+  </div>
   <p class="meta">Serves 8–10   |   Bake: 375°F for 40–45 minutes</p><p class="comments">Grandmother Brenda wrote on the card: &quot;I never made this because I do not understand it -- but Perhaps Renee will tell you -- It was a delicious cake!&quot;<br>Steps reconstructed from the ingredient list and standard apple tart method.</p><p class="source">Source: Mrs. Min Cohen's recipe, transcribed by Grandmother Brenda</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -5194,7 +5643,10 @@
   <div class="cluster-group" id="dressings-and-sauces--general">
   <h4 class="cluster-heading">General</h4>
   <article class="recipe" id="joan-chili-aioli" data-fav="1" data-title="Joan's on Third Chili Aioli">
-  <h3>★ Joan's on Third Chili Aioli</h3>
+  <div class="recipe-header-row">
+    <h3>★ Joan's on Third Chili Aioli</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Joan's on Third Chili Aioli">🖨 Print</button>
+  </div>
   <p class="meta">Makes about 2 cups   |   Prep: 10 min</p><p class="source">Source: Los Angeles Times (adapted from Joan's on Third)</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -5215,7 +5667,10 @@
   </div>
 </article>
 <article class="recipe" id="dressings-and-sauces-1" data-title="Lemon Mustard Vinaigrette">
-  <h3>Lemon Mustard Vinaigrette</h3>
+  <div class="recipe-header-row">
+    <h3>Lemon Mustard Vinaigrette</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Lemon Mustard Vinaigrette">🖨 Print</button>
+  </div>
   <p class="meta">6   |   Prep: 5 minutes</p><p class="comments">Garlic doubled from the original recipe, and microplaned rather than minced for a smoother, more evenly distributed flavor.</p><p class="source">Source: <a href="https://www.theharvestkitchen.com/lemon-mustard-vinaigrette/" target="_blank" rel="noopener">https://www.theharvestkitchen.com/lemon-mustard-vinaigrette/</a></p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -5239,7 +5694,10 @@
   </div>
 </article>
 <article class="recipe" id="dressings-and-sauces-2" data-title="Greek Salad Dressing">
-  <h3>Greek Salad Dressing</h3>
+  <div class="recipe-header-row">
+    <h3>Greek Salad Dressing</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Greek Salad Dressing">🖨 Print</button>
+  </div>
   <p class="meta">6   |   Prep: 5 minutes</p><p class="comments">Garlic doubled from the original recipe, and microplaned rather than minced for a smoother, more evenly distributed flavor.</p><p class="source">Source: <a href="https://www.loveandlemons.com/greek-salad-dressing/" target="_blank" rel="noopener">https://www.loveandlemons.com/greek-salad-dressing/</a></p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -5259,7 +5717,10 @@
   </div>
 </article>
 <article class="recipe" id="horseradish-sauce" data-fav="1" data-title="Horseradish Sauce">
-  <h3>★ Horseradish Sauce</h3>
+  <div class="recipe-header-row">
+    <h3>★ Horseradish Sauce</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Horseradish Sauce">🖨 Print</button>
+  </div>
   <p class="meta">Serves 8   |   Total: 5 min</p><p class="comments">A classic accompaniment to <a href='#rib-roast'>Four Peppercorn Crusted Rotisserie Rib Roast</a>. Note: prepared horseradish in the jar already contains vinegar — you may want to reduce or omit the added cider vinegar. Can also be made with nonfat sour cream and low-fat mayo.</p><p class="source">Source: CAROL46, Allrecipes</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -5279,7 +5740,10 @@
   </div>
 </article>
 <article class="recipe" id="steak-seasoning-rub" data-title="Steak Seasoning Rub">
-  <h3>Steak Seasoning Rub</h3>
+  <div class="recipe-header-row">
+    <h3>Steak Seasoning Rub</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Steak Seasoning Rub">🖨 Print</button>
+  </div>
   <p class="meta">Makes enough for 4 large steaks   |   Total: 5 min</p><p class="comments">We use a 3× batch for 2 racks of <a href='#sous-vide-beef-ribs'>Sous Vide Beef Back Ribs</a>.<br>Keeps in an airtight jar in a cool, dry place for up to 3 months.</p><p class="source">Source: Sommer Collier, A Spicy Perspective</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -5303,7 +5767,10 @@
   </div>
 </article>
 <article class="recipe" id="cherry-bbq-sauce" data-fav="1" data-title="Cherry Barbecue Sauce">
-  <h3>★ Cherry Barbecue Sauce</h3>
+  <div class="recipe-header-row">
+    <h3>★ Cherry Barbecue Sauce</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Cherry Barbecue Sauce">🖨 Print</button>
+  </div>
   <p class="meta">Makes about 3½ cups   |   Total: 30 min</p><p class="comments">The go-to sauce for <a href='#sous-vide-beef-ribs'>Sous Vide Beef Back Ribs</a>. Serve warm on the side.</p><p class="source">Source: Ilene Harrington, Taste of Home</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -5331,7 +5798,10 @@
 <div class="cluster-group" id="dressings-and-sauces--latin-south-american">
   <h4 class="cluster-heading">Latin/South American</h4>
   <article class="recipe" id="dressings-and-sauces-6" data-title="Authentic Chimichurri">
-  <h3>Authentic Chimichurri</h3>
+  <div class="recipe-header-row">
+    <h3>Authentic Chimichurri</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Authentic Chimichurri">🖨 Print</button>
+  </div>
   <p class="meta">Serves 8   |   Total: 10 min (ideally rests 2 hrs)</p><p class="source">Source: Karina Carrel, Cafe Delites</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -5357,7 +5827,10 @@
 <div class="cluster-group" id="dressings-and-sauces--french">
   <h4 class="cluster-heading">French</h4>
   <article class="recipe" id="dressings-and-sauces-7" data-title="Béarnaise Sauce">
-  <h3>Béarnaise Sauce</h3>
+  <div class="recipe-header-row">
+    <h3>Béarnaise Sauce</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Béarnaise Sauce">🖨 Print</button>
+  </div>
   <p class="meta">Makes about 3/4 cup</p><p class="comments">A typed clipping from Nana Regina's collection. Serve immediately — Béarnaise does not reheat well.</p><p class="source">Source: Printed clipping, original source unknown (collected by Nana Regina)</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -5388,7 +5861,10 @@
 <section id="sec-desserts" class="section">
   <h2>Desserts</h2>
   <article class="recipe" id="desserts-0" data-fav="1" data-title="Lauren's Banana Pudding">
-  <h3>★ Lauren's Banana Pudding</h3>
+  <div class="recipe-header-row">
+    <h3>★ Lauren's Banana Pudding</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Lauren's Banana Pudding">🖨 Print</button>
+  </div>
   <p class="meta">Serves 10–12   |   Prep: 15 min   |   Rest: 1 hr (pudding) + overnight   |   Total: ~1.25 hrs active</p><p class="comments">Inspired by Magnolia Bakery.</p><p class="source">Source: Lauren Muhlheim</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -5412,7 +5888,10 @@
 <section id="sec-drinks" class="section">
   <h2>Drinks</h2>
   <article class="recipe" id="drinks-0" data-title="Melon Ball">
-  <h3>Melon Ball</h3>
+  <div class="recipe-header-row">
+    <h3>Melon Ball</h3>
+    <button class="print-btn" title="Print this recipe" aria-label="Print Melon Ball">🖨 Print</button>
+  </div>
   <p class="meta">Makes 1 drink</p><p class="source">Source: The Kitchn</p>
   <div class="recipe-body">
     <div class="ingredients-col">
@@ -5732,6 +6211,21 @@
     favOnly = !favOnly;
     favBtn.classList.toggle('active', favOnly);
     applyFilters();
+  });
+
+  // ── Print single recipe ───────────────────────────────────────────────
+  document.querySelectorAll('.print-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      const recipe = btn.closest('.recipe');
+      if (!recipe) return;
+      recipe.classList.add('printing');
+      window.print();
+    });
+  });
+  window.addEventListener('afterprint', function () {
+    document.querySelectorAll('.recipe.printing').forEach(function (r) {
+      r.classList.remove('printing');
+    });
   });
 
   // Collapse all open nav menus
