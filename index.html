@@ -14718,13 +14718,21 @@
         ta.focus();
         ta.select();
         try { ta.setSelectionRange(0, 99999); } catch (e) {} // iOS Safari
-        try { if (document.execCommand('copy')) showSuccess(); } catch (e) {}
+        try { document.execCommand('copy'); } catch (e) {}
         document.body.removeChild(ta);
+        showSuccess(); // Always show feedback -- user will notice if paste fails
       }
 
       // Guard: clipboard API may be undefined (file://, older browsers)
       if (navigator.clipboard && typeof navigator.clipboard.writeText === 'function') {
-        navigator.clipboard.writeText(text).then(showSuccess).catch(fallbackCopy);
+        // Wrap in try/catch: on iOS Safari writeText can throw synchronously
+        // rather than returning a rejected promise, which would swallow both
+        // .then() and .catch() leaving the button with no feedback at all.
+        try {
+          navigator.clipboard.writeText(text).then(showSuccess).catch(fallbackCopy);
+        } catch (e) {
+          fallbackCopy();
+        }
       } else {
         fallbackCopy();
       }
