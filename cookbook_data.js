@@ -204,6 +204,39 @@ const data = {
             "Chop the apple to your preferred texture. If making a fine mixture, chop the nuts finely as well.",
             "Mix together with the honey, cinnamon, orange zest, and wine. Serve immediately or refrigerate until the Seder."
           ]
+        },
+        {
+          title: "Gazpacho",
+          servings: "Serves 6",
+          source: "Restaurant Laurent, 111 East 56th Street, New York (family recipe card)",
+          comments: [
+            "From a recipe card kept by the family, compliments of Restaurant Laurent — a classic New York restaurant. Serve in chilled bowls with condiments passed at the table."
+          ],
+          ingredientGroups: [
+            { label: "Soup base", ingredients: [
+              "3 cloves garlic, mashed",
+              "1 medium onion, peeled and chopped",
+              "5 very ripe tomatoes, peeled and chopped",
+              "Small bunch flat-leaf parsley, chopped fine",
+              "2 T wine vinegar",
+              "3 T olive oil",
+              "1/4 tsp paprika",
+              "1 cup beef stock or consommé",
+              "Salt and pepper to taste"
+            ]},
+            { label: "To serve", ingredients: [
+              "1 cucumber, peeled, seeded, and diced",
+              "1 green pepper, finely diced",
+              "1/2 onion, finely diced",
+              "Croutons"
+            ]}
+          ],
+          steps: [
+            "Put garlic and onion in a blender; blend until liquified.",
+            "Add remaining soup base ingredients; blend 2–3 minutes.",
+            "Season with salt and pepper. Chill thoroughly in refrigerator.",
+            "Serve in chilled bowls. Pass cucumber, green pepper, onion, and croutons separately at the table for guests to add."
+          ]
         }
       ]
     },
@@ -1949,6 +1982,61 @@ const data = {
             ]
           },
           {
+            title: "Brenda's Brisket",
+            source: "Family recipe card, credited to Grandmother Brenda",
+            comments: [
+              "Best made a day ahead — brisket is much easier to slice when cold, and the fat can be skimmed from the surface before reheating."
+            ],
+            ingredientGroups: [
+              { label: "Brisket", ingredients: [
+                "1 brisket, 3–4 lbs (prefer 4 lbs)"
+              ]},
+              { label: "Rub and glaze", ingredients: [
+                "2 packages (1.4 oz each) onion soup mix",
+                "Ketchup, enough to coat both sides generously"
+              ]},
+              { label: "Vegetables", ingredients: [
+                "2–3 onions, sliced",
+                "3–4 carrots, cut into large chunks"
+              ]}
+            ],
+            steps: [
+              "Rub onion soup mix into brisket on both sides. Spread ketchup over both sides.",
+              "Place brisket fat-side-up on a large sheet of heavy-duty foil in a roasting pan. Scatter onions and carrots around the meat.",
+              "Wrap tightly in foil. Cover pan.",
+              "Bake at 300°F for 4–5 hours, until very tender.",
+              "For best results: cool completely, then refrigerate overnight. Slice cold (much easier than slicing warm). Skim any solidified fat from the surface. Return sliced meat to the pan, pour the fat-free pan juices over the top, cover, and reheat at 325°F until warmed through."
+            ]
+          },
+          {
+            title: "Cranberry-Chili Brisket",
+            source: "Family recipe card, credited to Grandmother Brenda",
+            comments: [
+              "A sweeter, saucier brisket — the cranberry and chili sauce make a rich, fruity gravy. As with all brisket, easier to slice cold and best reheated in its juices."
+            ],
+            ingredientGroups: [
+              { label: "Brisket", ingredients: [
+                "1 brisket, about 4 lbs"
+              ]},
+              { label: "Sauce", ingredients: [
+                "1 jar (12 oz) chili sauce",
+                "1 can (14 oz) whole berry cranberry sauce",
+                "1 package (1.4 oz) onion soup mix"
+              ]},
+              { label: "Vegetables", ingredients: [
+                "1 onion, sliced",
+                "1 bag (12 oz) baby carrots"
+              ]}
+            ],
+            steps: [
+              "Mix chili sauce, cranberry sauce, and onion soup mix together in a bowl.",
+              "Place brisket on a large sheet of heavy-duty foil in a roasting pan. Pour sauce mixture over and around brisket.",
+              "Lay onion slices on top; scatter carrots around the meat.",
+              "Wrap tightly in foil. Bake at 350°F for about 4 hours, until very tender.",
+              "Cool, refrigerate, slice cold, skim fat. Reheat covered in juices (see Brenda's Brisket)."
+            ]
+          },
+          {
             id: "sous-vide-beef-ribs",
             title: "Sous Vide Beef Back Ribs",
             favorite: true,
@@ -3088,6 +3176,39 @@ const data = {
         ] },
         { title: "Mushroom", recipes: [
           {
+            title: "Mushrooms Florentine",
+            servings: "Serves 8–10",
+            source: "Family recipe card, credited to Sue Karp",
+            comments: [
+              "Can be assembled a day ahead and refrigerated until ready to bake. To serve 4, halve all ingredients and use a greased 10-inch round or 8×8 casserole."
+            ],
+            ingredientGroups: [
+              { label: "Mushrooms", ingredients: [
+                "2 lbs small fresh mushrooms, stems removed",
+                "Butter, for sautéing"
+              ]},
+              { label: "Spinach base", ingredients: [
+                "4 packages (10 oz each) frozen chopped spinach, defrosted and squeezed very dry",
+                "1 large onion, chopped",
+                "1/2 cup butter, melted",
+                "Garlic salt, to taste"
+              ]},
+              { label: "Cheese", ingredients: [
+                "2 cups grated cheddar, divided"
+              ]}
+            ],
+            steps: [
+              "Sauté mushroom caps in butter over medium-high heat, bottom-side down, until lightly browned. Remove from pan; drain on paper towels.",
+              "Defrost spinach; squeeze out all water thoroughly (very important — spinach should be quite dry).",
+              "Combine spinach, onion, a generous pinch of garlic salt, and melted butter in a bowl; mix well.",
+              "Grease a 9×13 casserole. Spread spinach mixture evenly over the bottom.",
+              "Sprinkle with 1 cup of cheddar.",
+              "Arrange mushroom caps over the spinach, cap-side down.",
+              "Sprinkle with a little more garlic salt. Cover with remaining cup of cheddar.",
+              "Bake at 350°F for about 20 minutes, until cheese is melted and beginning to brown."
+            ]
+          },
+          {
             title: "Oven Polenta with Roasted Mushrooms and Thyme",
             servings: "Serves 4   |   Total: ~55 min",
             source: "Claire Saffitz, Bon Appétit",
@@ -3925,11 +4046,89 @@ const data = {
               "Preheat your oven to 450°F with a baking steel or pizza stone inside. For best results, preheat for at least 45 minutes to 1 hour. Alternatively, if using a pizza oven (e.g. Ooni), preheat according to its instructions until it reaches 700–900°F.",
               "Shape your pizzas most of the way before placing them on a floured peel or baking sheet turned upside-down. Just before baking, place the pizza on the peel, finish stretching it, and add toppings. For a conventional oven: move the pizza to the stone or steel by tilting the peel slightly, shoving the pizza forward and jerking back to release it onto the hot surface. For a pizza oven: launch directly onto the hot stone and bake for 60–90 seconds, rotating once halfway through."
             ]
+          },
+          {
+            title: "Susan's Calzones",
+            servings: "Serves 4",
+            source: "Family recipe card, credited to Susan",
+            ingredientGroups: [
+              { label: "Dough (5 hours ahead)", ingredients: [
+                "12 Rhodes frozen dinner rolls (3 per person), defrosted and risen"
+              ]},
+              { label: "Filling", ingredients: [
+                "1 lb ground beef or ground turkey",
+                "About 1/2 cup spaghetti sauce, or enough to hold filling together"
+              ]},
+              { label: "Cheese", ingredients: [
+                "1 cup shredded mozzarella",
+                "1/2 cup grated parmesan"
+              ]},
+              { label: "Add-ins (optional)", ingredients: [
+                "Sliced olives",
+                "Pepperoni",
+                "Sautéed mushrooms"
+              ]},
+              { label: "Topping (optional)", ingredients: [
+                "Additional spaghetti sauce",
+                "Additional grated parmesan"
+              ]}
+            ],
+            steps: [
+              "Defrost rolls at room temperature and let rise until doubled, about 5 hours (or per package directions).",
+              "Brown ground beef or turkey in a skillet over medium heat; drain fat.",
+              "Mix browned meat with spaghetti sauce (enough to hold the mixture together but not soupy), mozzarella, and parmesan. Stir in any optional add-ins.",
+              "On a lightly floured surface, press each group of 3 risen rolls together and roll into a rough square.",
+              "Spoon filling onto one half of each square. Fold dough over to form a triangle. Press edges firmly with fork tines to seal.",
+              "Place on a baking sheet. Bake at 350°F for 18 minutes.",
+              "Optional: 10 minutes in, spoon additional spaghetti sauce over the top and sprinkle with parmesan; return to oven for remaining 8 minutes."
+            ]
           }
         ]},
         {
           title: "Sweet",
           recipes: [
+            {
+              title: "Butter Pecan Coffee Cake",
+              servings: "Serves 12–16",
+              source: "Family recipe card",
+              comments: [
+                "The key technique: butter and pecans go into the Bundt pan during preheat, so they melt and toast before the batter goes in. Invert immediately after baking so the caramelized pecan layer becomes the topping.",
+                "Vanilla-butter-nut flavoring can substitute for the vanilla and butter flavoring — use 3 tsp. Alternatively, use 2 tsp pure vanilla with no butter flavoring."
+              ],
+              ingredientGroups: [
+                { label: "Pan base", ingredients: [
+                  "1 stick (8 T) butter or margarine",
+                  "1 cup pecans"
+                ]},
+                { label: "Batter", ingredients: [
+                  "1 package Duncan Hines yellow cake mix",
+                  "1 package Jell-O instant vanilla pudding",
+                  "3/4 cup vegetable oil",
+                  "3/4 cup water",
+                  "1 tsp pure vanilla extract",
+                  "1 tsp butter flavoring (or use 2 tsp pure vanilla with no butter flavoring)"
+                ]},
+                { label: "Eggs", ingredients: [
+                  "4 large eggs, beaten"
+                ]},
+                { label: "Cinnamon swirl", ingredients: [
+                  "2 tsp cinnamon",
+                  "1/2 cup sugar",
+                  "1/2 cup pecans"
+                ]}
+              ],
+              steps: [
+                "Grease and flour a Bundt pan. Place butter and 1 cup pecans in the bottom.",
+                "Place pan in oven while it preheats to 350°F; leave for 6 minutes, so the butter melts and pecans toast slightly.",
+                "Meanwhile, in a large mixing bowl, combine cake mix, pudding mix, oil, water, vanilla, and butter flavoring. Beat to combine.",
+                "Beat eggs separately, then add to batter while mixing. Beat until smooth.",
+                "Remove pan from oven after 6 minutes. Pour half the batter over the pecan-butter base.",
+                "Mix together cinnamon, sugar, and 1/2 cup pecans. Sprinkle evenly over batter layer.",
+                "Pour remaining batter on top. Gently swirl the surface with a knife without disturbing the bottom layer.",
+                "Bake at 350°F for 60 minutes.",
+                "Immediately invert onto a serving plate. Remove pan — the caramelized pecan layer will now be on top."
+              ]
+            },
             {
               title: "Eric's Chocolate Chip Cookies",
               servings: "About 3 dozen cookies",

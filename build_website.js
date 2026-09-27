@@ -101,6 +101,8 @@ const CLUSTER_MAP = {
   // Beef — American
   'Four Peppercorn Crusted Rotisserie Rib Roast':        'General',
   'The Best Passover Brisket':                           'General',
+  "Brenda's Brisket":                                    'General',
+  'Cranberry-Chili Brisket':                             'General',
   'Sous Vide Beef Back Ribs':                            'General',
   'Hearty Beef Stew With Red Onions and Ale':            'General',
   // Beef — French
@@ -198,6 +200,14 @@ const CLUSTER_MAP = {
   // Appetizers — Central/Eastern European
   'Chopped Eggplant':                                    'Central/Eastern European',
   'Charoset (Ashkenazic Style)':                         'Central/Eastern European',
+  // Appetizers — Mediterranean/Greek
+  'Gazpacho':                                            'Mediterranean/Greek',
+  // Mushroom — Italian
+  'Mushrooms Florentine':                                'Italian',
+  // Baking Savory — Italian
+  "Susan's Calzones":                                    'Italian',
+  // Baking Sweet — American
+  'Butter Pecan Coffee Cake':                            'General',
 };
 
 // ── Helpers ────────────────────────────────────────────────────────────────
