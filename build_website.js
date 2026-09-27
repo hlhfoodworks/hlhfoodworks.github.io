@@ -1280,30 +1280,35 @@ const html = `<!DOCTYPE html>
       var recipe = COOKBOOK_DATA[title];
       if (!recipe) return;
       var text = formatRecipeForClipboard(recipe);
-      navigator.clipboard.writeText(text).then(function () {
+
+      function showSuccess() {
         btn.textContent = '✓ Copied!';
         btn.classList.add('copied');
         setTimeout(function () {
           btn.textContent = '📋 Copy Recipe';
           btn.classList.remove('copied');
         }, 2000);
-      }).catch(function () {
-        // Fallback for older browsers / non-HTTPS
+      }
+
+      function fallbackCopy() {
         var ta = document.createElement('textarea');
         ta.value = text;
-        ta.style.position = 'fixed';
-        ta.style.opacity = '0';
+        ta.setAttribute('readonly', '');
+        ta.style.cssText = 'position:fixed;top:0;left:0;width:2em;height:2em;opacity:0;';
         document.body.appendChild(ta);
+        ta.focus();
         ta.select();
-        document.execCommand('copy');
+        try { ta.setSelectionRange(0, 99999); } catch (e) {} // iOS Safari
+        try { if (document.execCommand('copy')) showSuccess(); } catch (e) {}
         document.body.removeChild(ta);
-        btn.textContent = '✓ Copied!';
-        btn.classList.add('copied');
-        setTimeout(function () {
-          btn.textContent = '📋 Copy Recipe';
-          btn.classList.remove('copied');
-        }, 2000);
-      });
+      }
+
+      // Guard: clipboard API may be undefined (file://, older browsers)
+      if (navigator.clipboard && typeof navigator.clipboard.writeText === 'function') {
+        navigator.clipboard.writeText(text).then(showSuccess).catch(fallbackCopy);
+      } else {
+        fallbackCopy();
+      }
     });
   });
 
