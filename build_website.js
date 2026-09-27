@@ -254,6 +254,7 @@ const CLUSTER_MAP = {
   "Regina's Coffee Cake":                                'American',
   "Brenda's Chocolate Chip Cookies":                     'American',
   'Apple Pie':                                           'American',
+  'Chinese Tomato Egg Stir-fry':                         'Chinese',
 };
 
 // ── Helpers ────────────────────────────────────────────────────────────────

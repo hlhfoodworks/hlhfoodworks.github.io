@@ -245,6 +245,41 @@ module.exports = {
             "Beat together eggs, milk, mustard, and salt. Pour over bread and cheese. Let stand overnight in the refrigerator.",
             "Bake at 350°F for about 45 minutes."
           ]
+        },
+        {
+          "title": "Chinese Tomato Egg Stir-fry",
+          "servings": "2",
+          "source": "Adapted from The Woks of Life (thewoksoflife.com)",
+          "ingredientGroups": [
+            {
+              "label": "Eggs",
+              "ingredients": [
+                "4 large eggs",
+                "1/4 teaspoon salt",
+                "1/4 teaspoon sesame oil",
+                "1/8 teaspoon white pepper"
+              ]
+            },
+            {
+              "label": "Sauce",
+              "ingredients": [
+                "3 medium tomatoes (about 1 lb), cut into wedges",
+                "2 scallions, white and green parts separated, sliced",
+                "3 tablespoons neutral oil, divided",
+                "1/2 teaspoon salt",
+                "1/2 teaspoon sugar",
+                "2 teaspoons ketchup",
+                "1 1/2 teaspoons soy sauce"
+              ]
+            }
+          ],
+          "steps": [
+            "Beat eggs with 1/4 teaspoon salt, sesame oil, and white pepper until well combined.",
+            "Heat 2 tablespoons oil in a wok or nonstick skillet over medium-high heat. Add eggs and scramble gently, folding rather than stirring, until just set but still slightly wet. Transfer to a plate.",
+            "Add remaining 1 tablespoon oil to wok. Add scallion whites and stir-fry 30 seconds. Add tomatoes, 1/2 teaspoon salt, and sugar. Cook over medium-high heat, stirring occasionally, until tomatoes break down and release their juices, about 3 minutes.",
+            "Stir in ketchup and soy sauce.",
+            "Return eggs and scallion greens to wok. Toss gently to combine. Serve immediately over rice."
+          ]
         }
       ]
     },
