@@ -300,14 +300,22 @@ function renderStep(step) {
   return `<li><strong>${esc(step.lead)}</strong><ul class="sub-steps">${bullets}</ul></li>`;
 }
 
+function renderIngredientGroups(ingredientGroups) {
+  return (ingredientGroups || []).map(g => {
+    const note = g.note ? ` <span class="group-note">(${esc(g.note)})</span>` : '';
+    const items = g.ingredients.map(i => `<li>${esc(i)}</li>`).join('\n');
+    const label = g.label ? `<h4>${esc(g.label)}${note}</h4>` : '';
+    return `<div class="ing-group">${label}<ul class="ingredients">${items}</ul></div>`;
+  }).join('\n');
+}
+
 function renderRecipe(recipe, idPrefix, idx) {
   const id = recipe.id || `${idPrefix}-${idx}`;
   const title = displayTitle(recipe);
   const isFav = recipe.favorite ? ' data-fav="1"' : '';
+  const hasAlt = !!recipe.highAltitude;
 
   const servings = recipe.servings ? `<p class="meta">${esc(recipe.servings)}</p>` : '';
-  const comments = (recipe.comments || []).length
-    ? `<p class="comments">${recipe.comments.map(c => typeof c === 'object' && c.html ? c.html : esc(c)).join('<br>')}</p>` : '';
   const source = recipe.source
     ? `<p class="source">Source: ${
         recipe.source.startsWith('http')
@@ -315,16 +323,38 @@ function renderRecipe(recipe, idPrefix, idx) {
           : esc(recipe.source)
       }</p>` : '';
 
-  const groups = (recipe.ingredientGroups || []).map(g => {
-    const note = g.note ? ` <span class="group-note">(${esc(g.note)})</span>` : '';
-    const items = g.ingredients.map(i => `<li>${esc(i)}</li>`).join('\n');
-    const label = g.label ? `<h4>${esc(g.label)}${note}</h4>` : '';
-    return `<div class="ing-group">${label}<ul class="ingredients">${items}</ul></div>`;
-  }).join('\n');
+  let commentsHtml, groupsHtml, stepsHtml;
 
-  const steps = (recipe.steps || []).map(renderStep).join('\n');
+  if (hasAlt) {
+    const ha = recipe.highAltitude;
+    // Standard comments
+    const stdComments = (recipe.comments || []).length
+      ? `<p class="comments">${recipe.comments.map(c => typeof c === 'object' && c.html ? c.html : esc(c)).join('<br>')}</p>` : '';
+    // High-altitude comments (fall back to standard if not specified)
+    const altComments = (ha.comments || []).length
+      ? `<p class="comments">${ha.comments.map(c => esc(c)).join('<br>')}</p>`
+      : stdComments;
 
-  return `<article class="recipe" id="${esc(id)}"${isFav} data-title="${esc(recipe.title)}">
+    commentsHtml = `<div class="alt-standard">${stdComments}</div><div class="alt-high">${altComments}</div>`;
+
+    groupsHtml = `<div class="alt-standard">${renderIngredientGroups(recipe.ingredientGroups) || '<p class="empty"><em>No ingredients listed.</em></p>'}</div>` +
+      `<div class="alt-high">${renderIngredientGroups(ha.ingredientGroups) || '<p class="empty"><em>No ingredients listed.</em></p>'}</div>`;
+
+    const stdSteps = (recipe.steps || []).map(renderStep).join('\n');
+    const altSteps = (ha.steps || []).map(renderStep).join('\n');
+    stepsHtml = `<div class="alt-standard"><ol class="steps">${stdSteps}</ol></div>` +
+      `<div class="alt-high"><ol class="steps">${altSteps}</ol></div>`;
+  } else {
+    commentsHtml = (recipe.comments || []).length
+      ? `<p class="comments">${recipe.comments.map(c => typeof c === 'object' && c.html ? c.html : esc(c)).join('<br>')}</p>` : '';
+    groupsHtml = renderIngredientGroups(recipe.ingredientGroups) || '<p class="empty"><em>No ingredients listed.</em></p>';
+    stepsHtml = `<ol class="steps">${(recipe.steps || []).map(renderStep).join('\n')}</ol>`;
+  }
+
+  const altBadge = hasAlt ? `<p class="altitude-badge">🏔 High altitude version</p>` : '';
+  const articleClass = hasAlt ? 'recipe has-alt' : 'recipe';
+
+  return `<article class="${articleClass}" id="${esc(id)}"${isFav} data-title="${esc(recipe.title)}">
   <div class="recipe-header-row">
     <h3>${esc(title)}</h3>
     <div class="recipe-btns">
@@ -332,15 +362,15 @@ function renderRecipe(recipe, idPrefix, idx) {
       <button class="print-btn" title="Print this recipe" aria-label="Print ${esc(recipe.title)}">🖨 Print</button>
     </div>
   </div>
-  ${servings}${comments}${source}
+  ${servings}${commentsHtml}${source}${altBadge}
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      ${groups || '<p class="empty"><em>No ingredients listed.</em></p>'}
+      ${groupsHtml}
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
-      <ol class="steps">${steps}</ol>
+      ${stepsHtml}
     </div>
   </div>
 </article>`;
@@ -687,6 +717,37 @@ const html = `<!DOCTYPE html>
   }
   #collapse-all:hover { background: #4e3522; }
   #collapse-all .collapse-icon { font-size: 0.85rem; color: #a8906e; }
+
+  /* ── High Altitude toggle ── */
+  #alt-toggle {
+    display: flex; align-items: center; gap: 8px;
+    padding: 7px 14px;
+    font-size: 0.82rem; cursor: pointer;
+    color: var(--nav-text);
+    background: none; border: none; border-bottom: 1px solid #5a3e28;
+    text-align: left; width: 100%;
+    font-family: inherit;
+  }
+  #alt-toggle:hover { background: #4e3522; }
+  #alt-toggle .alt-icon { font-size: 0.9rem; }
+  #alt-toggle.active {
+    background: #1a3a5c;
+    color: #8ecfff;
+    font-weight: bold;
+  }
+  #alt-toggle.active:hover { background: #1f4878; }
+
+  /* High altitude content visibility */
+  .alt-high { display: none; }
+  .altitude-badge {
+    display: none; font-size: 0.75rem;
+    color: #6bb5e8; margin-bottom: 4px; margin-top: 2px;
+    font-style: italic;
+  }
+  body.high-altitude-mode .alt-standard { display: none; }
+  body.high-altitude-mode .alt-high { display: block; }
+  body.high-altitude-mode .altitude-badge { display: block; }
+
   .nav-recipe.nav-hidden { display: none; }
   .nav-cluster.nav-hidden { display: none; }
   .nav-sub.nav-hidden { display: none; }
@@ -1055,6 +1116,7 @@ const html = `<!DOCTYPE html>
   </div>
   <div id="search-results"></div>
   <button id="fav-toggle"><span class="star">★</span> Favorites only</button>
+  <button id="alt-toggle"><span class="alt-icon">🏔</span> High Altitude</button>
   <button id="collapse-all"><span class="collapse-icon">⊟</span> Collapse all</button>
   <div id="nav-tree">
     ${navHtml}
@@ -1368,6 +1430,12 @@ const html = `<!DOCTYPE html>
     } else {
       cleanup();
     }
+  });
+
+  // High Altitude toggle
+  document.getElementById('alt-toggle').addEventListener('click', function () {
+    this.classList.toggle('active');
+    document.body.classList.toggle('high-altitude-mode');
   });
 
   // Collapse all open nav menus

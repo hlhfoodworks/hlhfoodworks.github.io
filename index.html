@@ -130,6 +130,37 @@
   }
   #collapse-all:hover { background: #4e3522; }
   #collapse-all .collapse-icon { font-size: 0.85rem; color: #a8906e; }
+
+  /* ── High Altitude toggle ── */
+  #alt-toggle {
+    display: flex; align-items: center; gap: 8px;
+    padding: 7px 14px;
+    font-size: 0.82rem; cursor: pointer;
+    color: var(--nav-text);
+    background: none; border: none; border-bottom: 1px solid #5a3e28;
+    text-align: left; width: 100%;
+    font-family: inherit;
+  }
+  #alt-toggle:hover { background: #4e3522; }
+  #alt-toggle .alt-icon { font-size: 0.9rem; }
+  #alt-toggle.active {
+    background: #1a3a5c;
+    color: #8ecfff;
+    font-weight: bold;
+  }
+  #alt-toggle.active:hover { background: #1f4878; }
+
+  /* High altitude content visibility */
+  .alt-high { display: none; }
+  .altitude-badge {
+    display: none; font-size: 0.75rem;
+    color: #6bb5e8; margin-bottom: 4px; margin-top: 2px;
+    font-style: italic;
+  }
+  body.high-altitude-mode .alt-standard { display: none; }
+  body.high-altitude-mode .alt-high { display: block; }
+  body.high-altitude-mode .altitude-badge { display: block; }
+
   .nav-recipe.nav-hidden { display: none; }
   .nav-cluster.nav-hidden { display: none; }
   .nav-sub.nav-hidden { display: none; }
@@ -498,6 +529,7 @@
   </div>
   <div id="search-results"></div>
   <button id="fav-toggle"><span class="star">★</span> Favorites only</button>
+  <button id="alt-toggle"><span class="alt-icon">🏔</span> High Altitude</button>
   <button id="collapse-all"><span class="collapse-icon">⊟</span> Collapse all</button>
   <div id="nav-tree">
     <ul class="nav-l1">
@@ -6296,7 +6328,7 @@
   <h3 class="subsection-heading">Savory</h3>
   <div class="cluster-group" id="baking-savory--general">
   <h4 class="cluster-heading">General</h4>
-  <article class="recipe" id="baking-savory-0" data-title="72-Hour Pizza Dough">
+  <article class="recipe has-alt" id="baking-savory-0" data-title="72-Hour Pizza Dough">
   <div class="recipe-header-row">
     <h3>72-Hour Pizza Dough</h3>
     <div class="recipe-btns">
@@ -6304,23 +6336,31 @@
       <button class="print-btn" title="Print this recipe" aria-label="Print 72-Hour Pizza Dough">🖨 Print</button>
     </div>
   </div>
-  <p class="meta">Makes 3 pizzas (~283g each)</p><p class="source">Source: The Gourmandise School (The Pizza Class)</p>
+  <p class="meta">Makes 3 pizzas (~283g each)</p><div class="alt-standard"></div><div class="alt-high"></div><p class="source">Source: The Gourmandise School (The Pizza Class)</p><p class="altitude-badge">🏔 High altitude version</p>
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><ul class="ingredients"><li>350 ml water</li>
+      <div class="alt-standard"><div class="ing-group"><ul class="ingredients"><li>350 ml water</li>
 <li>½ Tbsp dry yeast</li>
 <li>500g bread flour (or strong all-purpose, like King Arthur)</li>
-<li>3 tsps kosher salt (Diamond Crystal preferred)</li></ul></div>
+<li>3 tsps kosher salt (Diamond Crystal preferred)</li></ul></div></div><div class="alt-high"><div class="ing-group"><ul class="ingredients"><li>350 ml water</li>
+<li>1 teaspoon dry yeast</li>
+<li>500g bread flour (or strong all-purpose, like King Arthur)</li>
+<li>3 tsps kosher salt (Diamond Crystal preferred)</li></ul></div></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
-      <ol class="steps"><li>In a large bowl, combine the water and yeast. Add the flour and salt and mix with one hand until it just forms a smooth dough. Cover and let rise at room temperature for 12–24 hours. It will nearly double in size.</li>
+      <div class="alt-standard"><ol class="steps"><li>In a large bowl, combine the water and yeast. Add the flour and salt and mix with one hand until it just forms a smooth dough. Cover and let rise at room temperature for 12–24 hours. It will nearly double in size.</li>
 <li>After this initial ferment, place the dough in the fridge for another 12–48 hours.</li>
 <li>Remove the dough from the fridge and lightly flour your counter. Divide the dough into 3 portions of about 283 grams each. Gently purse one of your dough balls so that just one seam at the bottom of the dough remains, much like a balloon you'd blow into.</li>
 <li>Move to a part of your counter that is un-floured and give the dough a gentle rub, seam side down, on that area. Place the dough ball on a floured part of the counter to rest for 4 hours (closer to 3½ hours on a warm day). Repeat with the remaining dough balls; once all have been pre-shaped, lightly flour the tops and cover them. Place them a couple of inches apart to give them room to get slack again.</li>
 <li>Preheat your oven to 450°F with a baking steel or pizza stone inside. For best results, preheat for at least 45 minutes to 1 hour. Alternatively, if using a pizza oven (e.g. Ooni), preheat according to its instructions until it reaches 700–900°F.</li>
-<li>Shape your pizzas most of the way before placing them on a floured peel or baking sheet turned upside-down. Just before baking, place the pizza on the peel, finish stretching it, and add toppings. For a conventional oven: move the pizza to the stone or steel by tilting the peel slightly, shoving the pizza forward and jerking back to release it onto the hot surface. For a pizza oven: launch directly onto the hot stone and bake for 60–90 seconds, rotating once halfway through.</li></ol>
+<li>Shape your pizzas most of the way before placing them on a floured peel or baking sheet turned upside-down. Just before baking, place the pizza on the peel, finish stretching it, and add toppings. For a conventional oven: move the pizza to the stone or steel by tilting the peel slightly, shoving the pizza forward and jerking back to release it onto the hot surface. For a pizza oven: launch directly onto the hot stone and bake for 60–90 seconds, rotating once halfway through.</li></ol></div><div class="alt-high"><ol class="steps"><li>In a large bowl, combine the water and yeast. Add the flour and salt and mix with one hand until it just forms a smooth dough. Cover and let rise at room temperature for 8–18 hours. At altitude the dough rises roughly 25–40% faster — start checking at 8 hours; you want it nearly doubled but not over-proofed and collapsing.</li>
+<li>After this initial ferment, place the dough in the fridge for another 12–48 hours.</li>
+<li>Remove the dough from the fridge and lightly flour your counter. Divide the dough into 3 portions of about 283 grams each. Gently purse one of your dough balls so that just one seam at the bottom of the dough remains, much like a balloon you’d blow into.</li>
+<li>Move to a part of your counter that is un-floured and give the dough a gentle rub, seam side down, on that area. Place the dough ball on a floured part of the counter to rest for 3–3.5 hours (closer to 3 hours on a warm day; check at 2.5 hours). Repeat with the remaining dough balls; once all have been pre-shaped, lightly flour the tops and cover them. Place them a couple of inches apart to give them room to get slack again.</li>
+<li>Preheat your oven to 450°F with a baking steel or pizza stone inside. For best results, preheat for at least 45 minutes to 1 hour. Alternatively, if using a pizza oven (e.g. Ooni), preheat according to its instructions until it reaches 700–900°F.</li>
+<li>Shape your pizzas most of the way before placing them on a floured peel or baking sheet turned upside-down. Just before baking, place the pizza on the peel, finish stretching it, and add toppings. For a conventional oven: move the pizza to the stone or steel by tilting the peel slightly, shoving the pizza forward and jerking back to release it onto the hot surface. For a pizza oven: launch directly onto the hot stone and bake for 60–90 seconds, rotating once halfway through.</li></ol></div>
     </div>
   </div>
 </article>
@@ -6369,7 +6409,7 @@
   <h3 class="subsection-heading">Sweet</h3>
   <div class="cluster-group" id="baking-sweet--general">
   <h4 class="cluster-heading">General</h4>
-  <article class="recipe" id="baking-sweet-0" data-title="Butter Pecan Coffee Cake">
+  <article class="recipe has-alt" id="baking-sweet-0" data-title="Butter Pecan Coffee Cake">
   <div class="recipe-header-row">
     <h3>Butter Pecan Coffee Cake</h3>
     <div class="recipe-btns">
@@ -6377,11 +6417,11 @@
       <button class="print-btn" title="Print this recipe" aria-label="Print Butter Pecan Coffee Cake">🖨 Print</button>
     </div>
   </div>
-  <p class="meta">Serves 12–16</p><p class="comments">The key technique: butter and pecans go into the Bundt pan during preheat, so they melt and toast before the batter goes in. Invert immediately after baking so the caramelized pecan layer becomes the topping.<br>Vanilla-butter-nut flavoring can substitute for the vanilla and butter flavoring — use 3 tsp. Alternatively, use 2 tsp pure vanilla with no butter flavoring.</p><p class="source">Source: Family recipe card</p>
+  <p class="meta">Serves 12–16</p><div class="alt-standard"><p class="comments">The key technique: butter and pecans go into the Bundt pan during preheat, so they melt and toast before the batter goes in. Invert immediately after baking so the caramelized pecan layer becomes the topping.<br>Vanilla-butter-nut flavoring can substitute for the vanilla and butter flavoring — use 3 tsp. Alternatively, use 2 tsp pure vanilla with no butter flavoring.</p></div><div class="alt-high"><p class="comments">The key technique: butter and pecans go into the Bundt pan during preheat, so they melt and toast before the batter goes in. Invert immediately after baking so the caramelized pecan layer becomes the topping.<br>Vanilla-butter-nut flavoring can substitute for the vanilla and butter flavoring — use 3 tsp. Alternatively, use 2 tsp pure vanilla with no butter flavoring.</p></div><p class="source">Source: Family recipe card</p><p class="altitude-badge">🏔 High altitude version</p>
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Pan base</h4><ul class="ingredients"><li>1 stick (8 T) butter or margarine</li>
+      <div class="alt-standard"><div class="ing-group"><h4>Pan base</h4><ul class="ingredients"><li>1 stick (8 T) butter or margarine</li>
 <li>1 cup pecans</li></ul></div>
 <div class="ing-group"><h4>Batter</h4><ul class="ingredients"><li>1 package Duncan Hines yellow cake mix</li>
 <li>1 package Jell-O instant vanilla pudding</li>
@@ -6392,11 +6432,22 @@
 <div class="ing-group"><h4>Eggs</h4><ul class="ingredients"><li>4 large eggs, beaten</li></ul></div>
 <div class="ing-group"><h4>Cinnamon swirl</h4><ul class="ingredients"><li>2 tsp cinnamon</li>
 <li>1/2 cup sugar</li>
-<li>1/2 cup pecans</li></ul></div>
+<li>1/2 cup pecans</li></ul></div></div><div class="alt-high"><div class="ing-group"><h4>Pan base</h4><ul class="ingredients"><li>1 stick (8 T) butter or margarine</li>
+<li>1 cup pecans</li></ul></div>
+<div class="ing-group"><h4>Batter</h4><ul class="ingredients"><li>1 package Duncan Hines yellow cake mix</li>
+<li>1 package Jell-O instant vanilla pudding</li>
+<li>3/4 cup vegetable oil</li>
+<li>3/4 cup + 2 tablespoons water</li>
+<li>1 tsp pure vanilla extract</li>
+<li>1 tsp butter flavoring</li></ul></div>
+<div class="ing-group"><h4>Eggs</h4><ul class="ingredients"><li>4 large eggs, beaten</li></ul></div>
+<div class="ing-group"><h4>Cinnamon swirl</h4><ul class="ingredients"><li>2 tsp cinnamon</li>
+<li>7 tablespoons sugar</li>
+<li>1/2 cup pecans</li></ul></div></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
-      <ol class="steps"><li>Grease and flour a Bundt pan. Place butter and 1 cup pecans in the bottom.</li>
+      <div class="alt-standard"><ol class="steps"><li>Grease and flour a Bundt pan. Place butter and 1 cup pecans in the bottom.</li>
 <li>Place pan in oven while it preheats to 350°F; leave for 6 minutes, so the butter melts and pecans toast slightly.</li>
 <li>Meanwhile, in a large mixing bowl, combine cake mix, pudding mix, oil, water, vanilla, and butter flavoring. Beat to combine.</li>
 <li>Beat eggs separately, then add to batter while mixing. Beat until smooth.</li>
@@ -6404,11 +6455,19 @@
 <li>Mix together cinnamon, sugar, and 1/2 cup pecans. Sprinkle evenly over batter layer.</li>
 <li>Pour remaining batter on top. Gently swirl the surface with a knife without disturbing the bottom layer.</li>
 <li>Bake at 350°F for 60 minutes.</li>
-<li>Immediately invert onto a serving plate. Remove pan — the caramelized pecan layer will now be on top.</li></ol>
+<li>Immediately invert onto a serving plate. Remove pan — the caramelized pecan layer will now be on top.</li></ol></div><div class="alt-high"><ol class="steps"><li>Grease and flour a Bundt pan. Place butter and 1 cup pecans in the bottom.</li>
+<li>Place pan in oven while it preheats to 375°F; leave for 6 minutes, so the butter melts and pecans toast slightly.</li>
+<li>Meanwhile, in a large mixing bowl, combine cake mix, pudding mix, oil, water, vanilla, and butter flavoring. Beat to combine.</li>
+<li>Beat eggs separately, then add to batter while mixing. Beat until smooth.</li>
+<li>Remove pan from oven after 6 minutes. Pour half the batter over the pecan-butter base.</li>
+<li>Mix together cinnamon, sugar, and 1/2 cup pecans. Sprinkle evenly over batter layer.</li>
+<li>Pour remaining batter on top. Gently swirl the surface with a knife without disturbing the bottom layer.</li>
+<li>Bake at 375°F for 50–55 minutes (check at 50 minutes with a toothpick).</li>
+<li>Immediately invert onto a serving plate. Remove pan — the caramelized pecan layer will now be on top.</li></ol></div>
     </div>
   </div>
 </article>
-<article class="recipe" id="baking-sweet-1" data-title="Eric's Chocolate Chip Cookies">
+<article class="recipe has-alt" id="baking-sweet-1" data-title="Eric's Chocolate Chip Cookies">
   <div class="recipe-header-row">
     <h3>Eric's Chocolate Chip Cookies</h3>
     <div class="recipe-btns">
@@ -6416,11 +6475,11 @@
       <button class="print-btn" title="Print this recipe" aria-label="Print Eric's Chocolate Chip Cookies">🖨 Print</button>
     </div>
   </div>
-  <p class="meta">About 3 dozen cookies</p><p class="comments">Based on the classic Toll House chocolate chip cookie recipe, with a few of Eric's own touches — rolled oats and roughly chopped pecans.</p><p class="source">Source: Base recipe: Nestlé Toll House (https://www.verybestbaking.com/toll-house/recipes/chocolate-chip-cookies/)</p>
+  <p class="meta">About 3 dozen cookies</p><div class="alt-standard"><p class="comments">Based on the classic Toll House chocolate chip cookie recipe, with a few of Eric's own touches — rolled oats and roughly chopped pecans.</p></div><div class="alt-high"><p class="comments">Based on the classic Toll House chocolate chip cookie recipe, with a few of Eric’s own touches — rolled oats and roughly chopped pecans.</p></div><p class="source">Source: Base recipe: Nestlé Toll House (https://www.verybestbaking.com/toll-house/recipes/chocolate-chip-cookies/)</p><p class="altitude-badge">🏔 High altitude version</p>
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Dry ingredients</h4><ul class="ingredients"><li>2 1/4 cups all-purpose flour</li>
+      <div class="alt-standard"><div class="ing-group"><h4>Dry ingredients</h4><ul class="ingredients"><li>2 1/4 cups all-purpose flour</li>
 <li>1 cup rolled quick oats</li>
 <li>1 teaspoon baking soda</li>
 <li>1 teaspoon salt</li></ul></div>
@@ -6430,11 +6489,21 @@
 <div class="ing-group"><h4>Added to the creamed base</h4><ul class="ingredients"><li>1 teaspoon vanilla extract</li>
 <li>2 large eggs</li></ul></div>
 <div class="ing-group"><h4>Folded in</h4><ul class="ingredients"><li>2 cups (12 ounces) semisweet chocolate chips</li>
-<li>1 cup pecans, very roughly chopped into big pieces</li></ul></div>
+<li>1 cup pecans, very roughly chopped into big pieces</li></ul></div></div><div class="alt-high"><div class="ing-group"><h4>Dry ingredients</h4><ul class="ingredients"><li>2 1/4 cups + 2 tablespoons all-purpose flour</li>
+<li>1 cup rolled quick oats</li>
+<li>3/4 teaspoon baking soda</li>
+<li>1 teaspoon salt</li></ul></div>
+<div class="ing-group"><h4>Creamed base</h4><ul class="ingredients"><li>1 cup (2 sticks) unsalted butter, softened</li>
+<li>11 tablespoons granulated sugar</li>
+<li>11 tablespoons packed brown sugar</li></ul></div>
+<div class="ing-group"><h4>Added to the creamed base</h4><ul class="ingredients"><li>1 teaspoon vanilla extract</li>
+<li>2 large eggs</li></ul></div>
+<div class="ing-group"><h4>Folded in</h4><ul class="ingredients"><li>2 cups (12 ounces) semisweet chocolate chips</li>
+<li>1 cup pecans, very roughly chopped into big pieces</li></ul></div></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
-      <ol class="steps"><li>Whisk together the flour, oats, baking soda, and salt in a medium bowl; set aside.</li>
+      <div class="alt-standard"><ol class="steps"><li>Whisk together the flour, oats, baking soda, and salt in a medium bowl; set aside.</li>
 <li>Cream the butter and sugars: In the bowl of a stand mixer fitted with the paddle attachment, beat the butter, granulated sugar, and brown sugar on medium-high speed until pale and fluffy, about 3 to 4 minutes.</li>
 <li>Add the vanilla and eggs; continue beating on medium speed until fully incorporated and the mixture looks well emulsified.</li>
 <li>With the mixer on low speed (or by hand), add the flour mixture and mix just until no dry streaks remain — the dough should be stiff.</li>
@@ -6442,11 +6511,19 @@
 <li>Cover and refrigerate the dough for at least 1 hour (and up to 2 days) to firm up before baking.</li>
 <li>When ready to bake, preheat the oven to 375°F (190°C) and line baking sheets with parchment.</li>
 <li>Using an ice cream scoop, portion generous mounds of dough onto the prepared sheets, spacing them a few inches apart.</li>
-<li>Bake 11-13 minutes, until the edges are golden brown and the centers still look slightly underbaked. Cool on the baking sheet for 5 minutes before transferring.</li></ol>
+<li>Bake 11-13 minutes, until the edges are golden brown and the centers still look slightly underbaked. Cool on the baking sheet for 5 minutes before transferring.</li></ol></div><div class="alt-high"><ol class="steps"><li>Whisk together the flour, oats, baking soda, and salt in a medium bowl; set aside.</li>
+<li>Cream the butter and sugars: In the bowl of a stand mixer fitted with the paddle attachment, beat the butter, granulated sugar, and brown sugar on medium-high speed until pale and fluffy, about 3 to 4 minutes.</li>
+<li>Add the vanilla and eggs; continue beating on medium speed until fully incorporated and the mixture looks well emulsified.</li>
+<li>With the mixer on low speed (or by hand), add the flour mixture and mix just until no dry streaks remain — the dough should be stiff.</li>
+<li>Fold in the chocolate chips and pecans by hand.</li>
+<li>Cover and refrigerate the dough for at least 1 hour (and up to 2 days) to firm up before baking.</li>
+<li>When ready to bake, preheat the oven to 375°F (190°C) and line baking sheets with parchment.</li>
+<li>Using an ice cream scoop, portion generous mounds of dough onto the prepared sheets, spacing them a few inches apart.</li>
+<li>Bake 10–12 minutes, until the edges are golden brown and the centers still look slightly underbaked. (Check at 10 minutes — at altitude cookies spread faster and finish sooner.) Cool on the baking sheet for 5 minutes before transferring.</li></ol></div>
     </div>
   </div>
 </article>
-<article class="recipe" id="baking-sweet-2" data-title="Chocolate &quot;Birthday Cake&quot;">
+<article class="recipe has-alt" id="baking-sweet-2" data-title="Chocolate &quot;Birthday Cake&quot;">
   <div class="recipe-header-row">
     <h3>Chocolate &quot;Birthday Cake&quot;</h3>
     <div class="recipe-btns">
@@ -6454,11 +6531,11 @@
       <button class="print-btn" title="Print this recipe" aria-label="Print Chocolate &quot;Birthday Cake&quot;">🖨 Print</button>
     </div>
   </div>
-  <p class="meta">One large sheet cake or a 2-layer 9-inch cake   |   Cook: 40-45 minutes</p><p class="comments">For a single layer, halve the butter, sugar, chocolate, flour, baking soda, salt, vanilla, and water as noted below. For 1 1/2 eggs: whisk 2 eggs together and use 3/4 of the mixture.<br>Don't halve the frosting, even for a single layer — a full batch is right (a half batch isn't quite enough).</p><p class="source">Source: Family recipe card written by Grandmother Brenda; the single-layer/half-batch margin annotations are from Lauren</p>
+  <p class="meta">One large sheet cake or a 2-layer 9-inch cake   |   Cook: 40-45 minutes</p><div class="alt-standard"><p class="comments">For a single layer, halve the butter, sugar, chocolate, flour, baking soda, salt, vanilla, and water as noted below. For 1 1/2 eggs: whisk 2 eggs together and use 3/4 of the mixture.<br>Don't halve the frosting, even for a single layer — a full batch is right (a half batch isn't quite enough).</p></div><div class="alt-high"><p class="comments">For a single layer, halve all cake ingredients as noted in the standard recipe. The single-layer proportions given in the original apply — reduce each adjusted amount by half in the same way.<br>Don’t halve the frosting, even for a single layer — a full batch is right (a half batch isn’t quite enough).</p></div><p class="source">Source: Family recipe card written by Grandmother Brenda; the single-layer/half-batch margin annotations are from Lauren</p><p class="altitude-badge">🏔 High altitude version</p>
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Creamed base</h4><ul class="ingredients"><li>1 cup (2 sticks) butter [1 stick]</li>
+      <div class="alt-standard"><div class="ing-group"><h4>Creamed base</h4><ul class="ingredients"><li>1 cup (2 sticks) butter [1 stick]</li>
 <li>2 cups sugar [1 cup]</li>
 <li>3 eggs [1 1/2 eggs]</li>
 <li>2 teaspoons vanilla [1 teaspoon]</li></ul></div>
@@ -6470,11 +6547,23 @@
 <div class="ing-group"><h4>Frosting</h4><ul class="ingredients"><li>2 cups confectioners' sugar (be generous — you may want more)</li>
 <li>3/4 cup butter</li>
 <li>1 teaspoon vanilla</li>
-<li>2-3 oz unsweetened chocolate, melted</li></ul></div>
+<li>2-3 oz unsweetened chocolate, melted</li></ul></div></div><div class="alt-high"><div class="ing-group"><h4>Creamed base</h4><ul class="ingredients"><li>1 cup (2 sticks) butter [1/2 stick for half batch]</li>
+<li>1 3/4 cups sugar [7/8 cup for half batch]</li>
+<li>3 eggs [1 1/2 eggs]</li>
+<li>2 teaspoons vanilla [1 teaspoon]</li></ul></div>
+<div class="ing-group"><h4>Chocolate</h4><ul class="ingredients"><li>4 oz unsweetened chocolate [2 oz]</li></ul></div>
+<div class="ing-group"><h4>Dry ingredients</h4><ul class="ingredients"><li>2 3/4 cups flour [1 3/8 cups]</li>
+<li>1 1/2 teaspoons baking soda [3/4 teaspoon]</li>
+<li>1 teaspoon salt [1/2 teaspoon]</li></ul></div>
+<div class="ing-group"><h4>Liquid</h4><ul class="ingredients"><li>Up to 2 cups water, use the full amount [up to 1 cup for half batch]</li></ul></div>
+<div class="ing-group"><h4>Frosting</h4><ul class="ingredients"><li>2 cups confectioners’ sugar</li>
+<li>3/4 cup butter</li>
+<li>1 teaspoon vanilla</li>
+<li>2–3 oz unsweetened chocolate, melted</li></ul></div></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
-      <ol class="steps"><li>Cream the butter; add the sugar, then the eggs and vanilla, beating well after each addition.</li>
+      <div class="alt-standard"><ol class="steps"><li>Cream the butter; add the sugar, then the eggs and vanilla, beating well after each addition.</li>
 <li>Melt the chocolate in the microwave (20-30 second bursts, stirring between, until smooth) and add to the creamed mixture.</li>
 <li>Sift together the flour, baking soda, and salt.</li>
 <li>Add the flour mixture to the creamed mixture alternately with the water, mixing just until combined. You likely won't need the full 2 cups of water — add enough to make a smooth, pourable batter.</li>
@@ -6482,11 +6571,19 @@
 <li>Frost after the layer(s) are completely cool, on a baking rack.</li>
 <li>Frosting: Cream the confectioners' sugar with the butter until smooth. Add the vanilla and beat well.</li>
 <li>Melt the 2-3 oz chocolate and add to the frosting; mix until smooth. Add a bit more confectioners' sugar if needed to reach a spreadable consistency.</li>
-<li>Spread over the cooled cake.</li></ol>
+<li>Spread over the cooled cake.</li></ol></div><div class="alt-high"><ol class="steps"><li>Cream the butter; add the sugar, then the eggs and vanilla, beating well after each addition.</li>
+<li>Melt the chocolate in the microwave (20–30 second bursts, stirring between, until smooth) and add to the creamed mixture.</li>
+<li>Sift together the flour, baking soda, and salt.</li>
+<li>Add the flour mixture to the creamed mixture alternately with the water, mixing just until combined. At altitude, use the full 2 cups of water (evaporation is faster and the batter needs the moisture).</li>
+<li>Bake in a large buttered pan, or two buttered 9-inch round layer pans, for 35–40 minutes at 375°F. Start checking at 33 minutes.</li>
+<li>Frost after the layer(s) are completely cool, on a baking rack.</li>
+<li>Frosting: Cream the confectioners’ sugar with the butter until smooth. Add the vanilla and beat well.</li>
+<li>Melt the 2–3 oz chocolate and add to the frosting; mix until smooth. Add a bit more confectioners’ sugar if needed to reach a spreadable consistency.</li>
+<li>Spread over the cooled cake.</li></ol></div>
     </div>
   </div>
 </article>
-<article class="recipe" id="baking-sweet-3" data-title="Jumbo Banana-Nut Muffins">
+<article class="recipe has-alt" id="baking-sweet-3" data-title="Jumbo Banana-Nut Muffins">
   <div class="recipe-header-row">
     <h3>Jumbo Banana-Nut Muffins</h3>
     <div class="recipe-btns">
@@ -6494,11 +6591,11 @@
       <button class="print-btn" title="Print this recipe" aria-label="Print Jumbo Banana-Nut Muffins">🖨 Print</button>
     </div>
   </div>
-  <p class="meta">Makes 12 muffins</p><p class="comments">Recipe scaled 1.5x from original (from 9 jumbo muffins to 12). Walnuts made optional.<br>1 cup mashed ripe banana ≈ 2 medium bananas.</p><p class="source">Source: Mostly Muffins (cookbook), p. 14</p>
+  <p class="meta">Makes 12 muffins</p><div class="alt-standard"><p class="comments">Recipe scaled 1.5x from original (from 9 jumbo muffins to 12). Walnuts made optional.<br>1 cup mashed ripe banana ≈ 2 medium bananas.</p></div><div class="alt-high"><p class="comments">Recipe scaled 1.5x from original (from 9 jumbo muffins to 12). Walnuts made optional.<br>1 cup mashed ripe banana = about 2 medium bananas.</p></div><p class="source">Source: Mostly Muffins (cookbook), p. 14</p><p class="altitude-badge">🏔 High altitude version</p>
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Dry ingredients</h4><ul class="ingredients"><li>1 1/2 cups all-purpose flour</li>
+      <div class="alt-standard"><div class="ing-group"><h4>Dry ingredients</h4><ul class="ingredients"><li>1 1/2 cups all-purpose flour</li>
 <li>1 1/2 cups whole-wheat flour</li>
 <li>1 1/2 teaspoons baking powder</li>
 <li>1 1/2 teaspoons baking soda</li>
@@ -6509,20 +6606,36 @@
 <div class="ing-group"><h4>Wet additions</h4><ul class="ingredients"><li>2 cups mashed ripe banana (about 4 medium bananas)</li>
 <li>6 tablespoons (3/8 cup) milk</li>
 <li>1 1/2 teaspoons vanilla</li></ul></div>
-<div class="ing-group"><h4>Walnuts (optional)</h4><ul class="ingredients"><li>3/4 cup broken walnuts (optional)</li></ul></div>
+<div class="ing-group"><h4>Walnuts (optional)</h4><ul class="ingredients"><li>3/4 cup broken walnuts (optional)</li></ul></div></div><div class="alt-high"><div class="ing-group"><h4>Dry ingredients</h4><ul class="ingredients"><li>1 1/2 cups all-purpose flour</li>
+<li>1 1/2 cups whole-wheat flour</li>
+<li>1 1/4 teaspoons baking powder</li>
+<li>1 1/4 teaspoons baking soda</li>
+<li>1/4 teaspoon salt</li></ul></div>
+<div class="ing-group"><h4>Wet base</h4><ul class="ingredients"><li>3/4 cup lightly salted butter or margarine, softened</li>
+<li>10 tablespoons sugar</li></ul></div>
+<div class="ing-group"><h4>Eggs</h4><ul class="ingredients"><li>3 eggs</li></ul></div>
+<div class="ing-group"><h4>Wet additions</h4><ul class="ingredients"><li>2 cups mashed ripe banana (about 4 medium bananas)</li>
+<li>1/2 cup milk</li>
+<li>1 1/2 teaspoons vanilla</li></ul></div>
+<div class="ing-group"><h4>Walnuts (optional)</h4><ul class="ingredients"><li>3/4 cup broken walnuts (optional)</li></ul></div></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
-      <ol class="steps"><li>Preheat oven to 375°F. Grease muffin cups and the edges surrounding the cups.</li>
+      <div class="alt-standard"><ol class="steps"><li>Preheat oven to 375°F. Grease muffin cups and the edges surrounding the cups.</li>
 <li>In a large bowl, stir together the flours, baking powder, baking soda, and salt.</li>
 <li>In another bowl, cream butter and sugar until light and fluffy; beat in eggs. Stir in banana, milk, and vanilla.</li>
 <li>Add dry ingredients to wet mixture and stir just to combine. Fold in walnuts if using.</li>
 <li>Spoon batter into prepared muffin cups; bake 25 to 30 minutes or until a cake tester inserted in the center comes out clean.</li>
-<li>Remove muffin tin(s) to wire rack. Cool 5 minutes before removing muffins from cups; finish cooling on rack. Serve warm or store in an airtight container at room temperature. These muffins freeze well.</li></ol>
+<li>Remove muffin tin(s) to wire rack. Cool 5 minutes before removing muffins from cups; finish cooling on rack. Serve warm or store in an airtight container at room temperature. These muffins freeze well.</li></ol></div><div class="alt-high"><ol class="steps"><li>Preheat oven to 400°F. Grease muffin cups and the edges surrounding the cups.</li>
+<li>In a large bowl, stir together the flours, baking powder, baking soda, and salt.</li>
+<li>In another bowl, cream butter and sugar until light and fluffy; beat in eggs. Stir in banana, milk, and vanilla.</li>
+<li>Add dry ingredients to wet mixture and stir just to combine. Fold in walnuts if using.</li>
+<li>Spoon batter into prepared muffin cups; bake 22–27 minutes or until a cake tester inserted in the center comes out clean. (Check at 22 minutes — the higher temp means they finish faster.)</li>
+<li>Remove muffin tin(s) to wire rack. Cool 5 minutes before removing muffins from cups; finish cooling on rack. Serve warm or store in an airtight container at room temperature. These muffins freeze well.</li></ol></div>
     </div>
   </div>
 </article>
-<article class="recipe" id="baking-sweet-4" data-fav="1" data-title="Nana's Poundcake">
+<article class="recipe has-alt" id="baking-sweet-4" data-fav="1" data-title="Nana's Poundcake">
   <div class="recipe-header-row">
     <h3>★ Nana's Poundcake</h3>
     <div class="recipe-btns">
@@ -6530,27 +6643,35 @@
       <button class="print-btn" title="Print this recipe" aria-label="Print Nana's Poundcake">🖨 Print</button>
     </div>
   </div>
-  <p class="meta">1 loaf or bundt cake   |   Cook: 90 minutes</p><p class="comments">A four-generation family recipe.</p><p class="source">Source: Family recipe, credited to Nana, via Lauren's blog post &quot;Nana's Poundcake, Food, and Cultural Connection&quot;</p>
+  <p class="meta">1 loaf or bundt cake   |   Cook: 90 minutes</p><div class="alt-standard"><p class="comments">A four-generation family recipe.</p></div><div class="alt-high"><p class="comments">A four-generation family recipe.</p></div><p class="source">Source: Family recipe, credited to Nana, via Lauren's blog post &quot;Nana's Poundcake, Food, and Cultural Connection&quot;</p><p class="altitude-badge">🏔 High altitude version</p>
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Cake</h4><ul class="ingredients"><li>1/2 pound salted butter (2 sticks), softened</li>
+      <div class="alt-standard"><div class="ing-group"><h4>Cake</h4><ul class="ingredients"><li>1/2 pound salted butter (2 sticks), softened</li>
 <li>1 3/4 cups sugar</li>
 <li>5 eggs</li>
 <li>2 cups sifted flour</li>
-<li>2 tablespoons vanilla</li></ul></div>
+<li>2 tablespoons vanilla</li></ul></div></div><div class="alt-high"><div class="ing-group"><h4>Cake</h4><ul class="ingredients"><li>1/2 pound salted butter (2 sticks), softened</li>
+<li>1 1/2 cups sugar</li>
+<li>5 eggs</li>
+<li>2 cups + 2 tablespoons sifted flour</li>
+<li>2 tablespoons vanilla</li></ul></div></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
-      <ol class="steps"><li>Cream the butter and sugar.</li>
+      <div class="alt-standard"><ol class="steps"><li>Cream the butter and sugar.</li>
 <li>Add the eggs one at a time, beating constantly.</li>
 <li>Add the flour and vanilla.</li>
 <li>Pour into a well-greased loaf pan or bundt pan.</li>
-<li>Bake at 350°F for 90 minutes.</li></ol>
+<li>Bake at 350°F for 90 minutes.</li></ol></div><div class="alt-high"><ol class="steps"><li>Cream the butter and sugar.</li>
+<li>Add the eggs one at a time, beating constantly.</li>
+<li>Add the flour and vanilla.</li>
+<li>Pour into a well-greased loaf pan or bundt pan.</li>
+<li>Bake at 375°F for 70–80 minutes. Start checking at 70 minutes with a toothpick or cake tester in the center. The cake is done when the tester comes out clean and the top is deep golden.</li></ol></div>
     </div>
   </div>
 </article>
-<article class="recipe" id="baking-sweet-5" data-title="Filled Coffee Cake">
+<article class="recipe has-alt" id="baking-sweet-5" data-title="Filled Coffee Cake">
   <div class="recipe-header-row">
     <h3>Filled Coffee Cake</h3>
     <div class="recipe-btns">
@@ -6558,11 +6679,11 @@
       <button class="print-btn" title="Print this recipe" aria-label="Print Filled Coffee Cake">🖨 Print</button>
     </div>
   </div>
-  <p class="meta">Serves 12–16   |   Bake: 350–375°F for 30–40 minutes</p><p class="source">Source: Family recipe card, credited to Nana Regina (card reads &quot;delicious! Mother's&quot;)</p>
+  <p class="meta">Serves 12–16   |   Bake: 350–375°F for 30–40 minutes</p><div class="alt-standard"></div><div class="alt-high"></div><p class="source">Source: Family recipe card, credited to Nana Regina (card reads &quot;delicious! Mother's&quot;)</p><p class="altitude-badge">🏔 High altitude version</p>
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Cake batter</h4><ul class="ingredients"><li>1/2 cup butter, softened (or margarine)</li>
+      <div class="alt-standard"><div class="ing-group"><h4>Cake batter</h4><ul class="ingredients"><li>1/2 cup butter, softened (or margarine)</li>
 <li>2 cups sugar</li>
 <li>4 eggs, well beaten</li>
 <li>1 teaspoon vanilla</li>
@@ -6574,17 +6695,35 @@
 <li>1 cup nuts, chopped</li>
 <li>2 tablespoons butter</li>
 <li>2 tablespoons flour</li>
-<li>1 teaspoon cinnamon</li></ul></div>
+<li>1 teaspoon cinnamon</li></ul></div></div><div class="alt-high"><div class="ing-group"><h4>Cake batter</h4><ul class="ingredients"><li>1/2 cup butter, softened (or margarine)</li>
+<li>1 3/4 cups sugar</li>
+<li>4 eggs, well beaten</li>
+<li>1 teaspoon vanilla</li>
+<li>3 cups flour</li>
+<li>1 3/4 teaspoons baking powder</li>
+<li>1/2 teaspoon salt</li>
+<li>1 cup + 2 tablespoons milk</li></ul></div>
+<div class="ing-group"><h4>Filling</h4><ul class="ingredients"><li>14 tablespoons (7/8 cup) brown sugar</li>
+<li>1 cup nuts, chopped</li>
+<li>2 tablespoons butter</li>
+<li>2 tablespoons flour</li>
+<li>1 teaspoon cinnamon</li></ul></div></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
-      <ol class="steps"><li>Preheat oven to 350–375°F. Grease a 9x13 pan (or tube pan).</li>
+      <div class="alt-standard"><ol class="steps"><li>Preheat oven to 350–375°F. Grease a 9x13 pan (or tube pan).</li>
 <li>Cream butter and sugar until light and fluffy. Add well-beaten eggs and vanilla; beat well.</li>
 <li>Whisk together flour, baking powder, and salt in a separate bowl.</li>
 <li>Alternately add the flour mixture and the milk to the butter mixture in 3 additions each, beginning and ending with flour. Stir until just combined.</li>
 <li>Make filling: combine brown sugar, nuts, butter, flour, and cinnamon; mix until crumbly.</li>
 <li>Pour half the batter into the prepared pan. Spread the filling evenly over the batter. Pour remaining batter on top.</li>
-<li>Bake 30–40 minutes until a toothpick inserted in the center comes out clean.</li></ol>
+<li>Bake 30–40 minutes until a toothpick inserted in the center comes out clean.</li></ol></div><div class="alt-high"><ol class="steps"><li>Preheat oven to 375°F. Grease a 9×13 pan (or tube pan).</li>
+<li>Cream butter and sugar until light and fluffy. Add well-beaten eggs and vanilla; beat well.</li>
+<li>Whisk together flour, baking powder, and salt in a separate bowl.</li>
+<li>Alternately add the flour mixture and the milk to the butter mixture in 3 additions each, beginning and ending with flour. Stir until just combined.</li>
+<li>Make filling: combine brown sugar, nuts, butter, flour, and cinnamon; mix until crumbly.</li>
+<li>Pour half the batter into the prepared pan. Spread the filling evenly over the batter. Pour remaining batter on top.</li>
+<li>Bake 25–32 minutes until a toothpick inserted in the center comes out clean. Check at 25 minutes.</li></ol></div>
     </div>
   </div>
 </article>
@@ -6618,7 +6757,7 @@
     </div>
   </div>
 </article>
-<article class="recipe" id="baking-sweet-7" data-title="Red Velvet Cake">
+<article class="recipe has-alt" id="baking-sweet-7" data-title="Red Velvet Cake">
   <div class="recipe-header-row">
     <h3>Red Velvet Cake</h3>
     <div class="recipe-btns">
@@ -6626,11 +6765,11 @@
       <button class="print-btn" title="Print this recipe" aria-label="Print Red Velvet Cake">🖨 Print</button>
     </div>
   </div>
-  <p class="meta">One 6-layer cake   |   Bake: 350°F for 30 minutes</p><p class="comments">Uses a cooked ermine frosting (flour-and-milk based) rather than the cream cheese frosting common in modern versions.<br>The 2 oz. of red food coloring gives the classic deep red color.</p><p class="source">Source: Family recipe card (Grandmother Brenda; card noted as &quot;original on paper yellow with age&quot;)</p>
+  <p class="meta">One 6-layer cake   |   Bake: 350°F for 30 minutes</p><div class="alt-standard"><p class="comments">Uses a cooked ermine frosting (flour-and-milk based) rather than the cream cheese frosting common in modern versions.<br>The 2 oz. of red food coloring gives the classic deep red color.</p></div><div class="alt-high"><p class="comments">Uses a cooked ermine frosting (flour-and-milk based) rather than the cream cheese frosting common in modern versions.<br>The 2 oz. of red food coloring gives the classic deep red color.</p></div><p class="source">Source: Family recipe card (Grandmother Brenda; card noted as &quot;original on paper yellow with age&quot;)</p><p class="altitude-badge">🏔 High altitude version</p>
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Cocoa paste</h4><ul class="ingredients"><li>3 tablespoons unsweetened cocoa powder (Dutch-process; e.g. Nestlé Toll House Cocoa or Hershey's Special Dark)</li>
+      <div class="alt-standard"><div class="ing-group"><h4>Cocoa paste</h4><ul class="ingredients"><li>3 tablespoons unsweetened cocoa powder (Dutch-process; e.g. Nestlé Toll House Cocoa or Hershey's Special Dark)</li>
 <li>2 oz. red food coloring</li></ul></div>
 <div class="ing-group"><h4>Cake</h4><ul class="ingredients"><li>1/2 cup vegetable shortening</li>
 <li>1-3/4 cups sugar</li>
@@ -6646,11 +6785,27 @@
 <div class="ing-group"><h4>Frosting — Part 2</h4><ul class="ingredients"><li>1/2 cup butter, softened</li>
 <li>1/2 cup vegetable shortening</li>
 <li>1 cup granulated sugar</li>
-<li>2 tablespoons vanilla</li></ul></div>
+<li>2 tablespoons vanilla</li></ul></div></div><div class="alt-high"><div class="ing-group"><h4>Cocoa paste</h4><ul class="ingredients"><li>3 tablespoons unsweetened cocoa powder (Dutch-process; e.g. Nestle Toll House Cocoa or Hershey’s Special Dark)</li>
+<li>2 oz. red food coloring</li></ul></div>
+<div class="ing-group"><h4>Cake</h4><ul class="ingredients"><li>1/2 cup vegetable shortening</li>
+<li>1 2/3 cups sugar</li>
+<li>2 eggs, beaten</li>
+<li>1 cup + 2 tablespoons buttermilk</li>
+<li>2 1/2 cups + 2 tablespoons cake flour</li>
+<li>1 teaspoon vanilla</li>
+<li>1 teaspoon salt</li>
+<li>3/4 teaspoon baking soda</li>
+<li>1 tablespoon white vinegar</li></ul></div>
+<div class="ing-group"><h4>Frosting — Part 1 (cool completely before using)</h4><ul class="ingredients"><li>5 tablespoons flour</li>
+<li>1 cup milk</li></ul></div>
+<div class="ing-group"><h4>Frosting — Part 2</h4><ul class="ingredients"><li>1/2 cup butter, softened</li>
+<li>1/2 cup vegetable shortening</li>
+<li>14 tablespoons granulated sugar</li>
+<li>2 tablespoons vanilla</li></ul></div></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
-      <ol class="steps"><li>Preheat oven to 350°F. Grease and flour cake pans.</li>
+      <div class="alt-standard"><ol class="steps"><li>Preheat oven to 350°F. Grease and flour cake pans.</li>
 <li>In a small bowl, mix cocoa powder and red food coloring into a paste. Set aside.</li>
 <li>Cream shortening and sugar until light. Add beaten eggs; mix well. Add the cocoa-coloring paste; blend.</li>
 <li>Add salt and vanilla. Alternately add buttermilk and flour in 3 additions each, beginning and ending with flour. Mix well.</li>
@@ -6658,14 +6813,22 @@
 <li>Pour into well-greased pans. Bake at 350°F for 30 minutes. Cool completely. Split each layer horizontally to make 6 thin layers total.</li>
 <li>Frosting Part 1: Cook flour and milk together in a saucepan over low heat, stirring constantly, until very thick (paste consistency). Set aside to cool completely.</li>
 <li>Frosting Part 2: Cream butter, shortening, and granulated sugar until light. Add vanilla. Add the cooled flour-milk paste to the creamed mixture. Beat at high speed until light and fluffy, like whipped cream.</li>
-<li>Frost between layers and on the outside of the cake.</li></ol>
+<li>Frost between layers and on the outside of the cake.</li></ol></div><div class="alt-high"><ol class="steps"><li>Preheat oven to 375°F. Grease and flour cake pans.</li>
+<li>In a small bowl, mix cocoa powder and red food coloring into a paste. Set aside.</li>
+<li>Cream shortening and sugar until light. Add beaten eggs; mix well. Add the cocoa-coloring paste; blend.</li>
+<li>Add salt and vanilla. Alternately add buttermilk and flour in 3 additions each, beginning and ending with flour. Mix well.</li>
+<li>Fold in baking soda and vinegar (the mixture will bubble slightly). Do not overmix.</li>
+<li>Pour into well-greased pans. Bake at 375°F for 25–28 minutes. Cool completely. Split each layer horizontally to make 6 thin layers total.</li>
+<li>Frosting Part 1: Cook flour and milk together in a saucepan over low heat, stirring constantly, until very thick (paste consistency). Set aside to cool completely.</li>
+<li>Frosting Part 2: Cream butter, shortening, and granulated sugar until light. Add vanilla. Add the cooled flour-milk paste to the creamed mixture. Beat at high speed until light and fluffy, like whipped cream.</li>
+<li>Frost between layers and on the outside of the cake.</li></ol></div>
     </div>
   </div>
 </article>
 </div>
 <div class="cluster-group" id="baking-sweet--central-eastern-european">
   <h4 class="cluster-heading">Central/Eastern European</h4>
-  <article class="recipe" id="baking-sweet-8" data-title="Blintz Soufflé">
+  <article class="recipe has-alt" id="baking-sweet-8" data-title="Blintz Soufflé">
   <div class="recipe-header-row">
     <h3>Blintz Soufflé</h3>
     <div class="recipe-btns">
@@ -6673,25 +6836,35 @@
       <button class="print-btn" title="Print this recipe" aria-label="Print Blintz Soufflé">🖨 Print</button>
     </div>
   </div>
-  <p class="meta">Serves 6–8   |   Bake: 350°F covered 1 hour, then uncovered 10 minutes</p><p class="comments">Marsha Firestone's smaller version — uses 2 packages of blintzes and a smaller casserole dish.<br>Frozen cheese blintzes from the store work perfectly.</p><p class="source">Source: Family recipe, courtesy of Marsha Firestone (noted on card as smaller recipe for small casserole)</p>
+  <p class="meta">Serves 6–8   |   Bake: 350°F covered 1 hour, then uncovered 10 minutes</p><div class="alt-standard"><p class="comments">Marsha Firestone's smaller version — uses 2 packages of blintzes and a smaller casserole dish.<br>Frozen cheese blintzes from the store work perfectly.</p></div><div class="alt-high"><p class="comments">Marsha Firestone’s smaller version — uses 2 packages of blintzes and a smaller casserole dish.<br>Frozen cheese blintzes from the store work perfectly.</p></div><p class="source">Source: Family recipe, courtesy of Marsha Firestone (noted on card as smaller recipe for small casserole)</p><p class="altitude-badge">🏔 High altitude version</p>
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Pan and blintzes</h4><ul class="ingredients"><li>1 stick (1/2 cup) butter</li>
+      <div class="alt-standard"><div class="ing-group"><h4>Pan and blintzes</h4><ul class="ingredients"><li>1 stick (1/2 cup) butter</li>
 <li>2 packages (about 12) frozen cheese blintzes</li></ul></div>
 <div class="ing-group"><h4>Custard</h4><ul class="ingredients"><li>6 eggs</li>
 <li>2/3 cup sugar</li>
 <li>1/2 teaspoon vanilla</li>
 <li>1 teaspoon orange juice</li>
-<li>1-1/2 cups sour cream</li></ul></div>
+<li>1-1/2 cups sour cream</li></ul></div></div><div class="alt-high"><div class="ing-group"><h4>Pan and blintzes</h4><ul class="ingredients"><li>1 stick (1/2 cup) butter</li>
+<li>2 packages (about 12) frozen cheese blintzes</li></ul></div>
+<div class="ing-group"><h4>Custard</h4><ul class="ingredients"><li>6 eggs</li>
+<li>9 tablespoons sugar</li>
+<li>1/2 teaspoon vanilla</li>
+<li>1 teaspoon orange juice</li>
+<li>1 1/2 cups sour cream</li></ul></div></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
-      <ol class="steps"><li>Preheat oven to 350°F.</li>
+      <div class="alt-standard"><ol class="steps"><li>Preheat oven to 350°F.</li>
 <li>Melt butter in a casserole dish. Arrange frozen blintzes in a single layer on top.</li>
 <li>Beat eggs with sugar, vanilla, orange juice, and sour cream until smooth. Pour evenly over blintzes.</li>
 <li>Bake covered for 1 hour.</li>
-<li>Uncover and bake an additional 10 minutes until golden and puffed.</li></ol>
+<li>Uncover and bake an additional 10 minutes until golden and puffed.</li></ol></div><div class="alt-high"><ol class="steps"><li>Preheat oven to 375°F.</li>
+<li>Melt butter in a casserole dish. Arrange frozen blintzes in a single layer on top.</li>
+<li>Beat eggs with sugar, vanilla, orange juice, and sour cream until smooth. Pour evenly over blintzes.</li>
+<li>Bake covered at 375°F for 45–50 minutes.</li>
+<li>Uncover and bake an additional 15–20 minutes until golden and firmly set. (At altitude, egg custards need slightly longer uncovered to firm up — check by gently shaking the dish; it should have no liquidy jiggle in the center.)</li></ol></div>
     </div>
   </div>
 </article>
@@ -14523,7 +14696,28 @@
       "Move to a part of your counter that is un-floured and give the dough a gentle rub, seam side down, on that area. Place the dough ball on a floured part of the counter to rest for 4 hours (closer to 3½ hours on a warm day). Repeat with the remaining dough balls; once all have been pre-shaped, lightly flour the tops and cover them. Place them a couple of inches apart to give them room to get slack again.",
       "Preheat your oven to 450°F with a baking steel or pizza stone inside. For best results, preheat for at least 45 minutes to 1 hour. Alternatively, if using a pizza oven (e.g. Ooni), preheat according to its instructions until it reaches 700–900°F.",
       "Shape your pizzas most of the way before placing them on a floured peel or baking sheet turned upside-down. Just before baking, place the pizza on the peel, finish stretching it, and add toppings. For a conventional oven: move the pizza to the stone or steel by tilting the peel slightly, shoving the pizza forward and jerking back to release it onto the hot surface. For a pizza oven: launch directly onto the hot stone and bake for 60–90 seconds, rotating once halfway through."
-    ]
+    ],
+    "highAltitude": {
+      "ingredientGroups": [
+        {
+          "label": null,
+          "ingredients": [
+            "350 ml water",
+            "1 teaspoon dry yeast",
+            "500g bread flour (or strong all-purpose, like King Arthur)",
+            "3 tsps kosher salt (Diamond Crystal preferred)"
+          ]
+        }
+      ],
+      "steps": [
+        "In a large bowl, combine the water and yeast. Add the flour and salt and mix with one hand until it just forms a smooth dough. Cover and let rise at room temperature for 8–18 hours. At altitude the dough rises roughly 25–40% faster — start checking at 8 hours; you want it nearly doubled but not over-proofed and collapsing.",
+        "After this initial ferment, place the dough in the fridge for another 12–48 hours.",
+        "Remove the dough from the fridge and lightly flour your counter. Divide the dough into 3 portions of about 283 grams each. Gently purse one of your dough balls so that just one seam at the bottom of the dough remains, much like a balloon you’d blow into.",
+        "Move to a part of your counter that is un-floured and give the dough a gentle rub, seam side down, on that area. Place the dough ball on a floured part of the counter to rest for 3–3.5 hours (closer to 3 hours on a warm day; check at 2.5 hours). Repeat with the remaining dough balls; once all have been pre-shaped, lightly flour the tops and cover them. Place them a couple of inches apart to give them room to get slack again.",
+        "Preheat your oven to 450°F with a baking steel or pizza stone inside. For best results, preheat for at least 45 minutes to 1 hour. Alternatively, if using a pizza oven (e.g. Ooni), preheat according to its instructions until it reaches 700–900°F.",
+        "Shape your pizzas most of the way before placing them on a floured peel or baking sheet turned upside-down. Just before baking, place the pizza on the peel, finish stretching it, and add toppings. For a conventional oven: move the pizza to the stone or steel by tilting the peel slightly, shoving the pizza forward and jerking back to release it onto the hot surface. For a pizza oven: launch directly onto the hot stone and bake for 60–90 seconds, rotating once halfway through."
+      ]
+    }
   },
   "Susan's Calzones": {
     "title": "Susan's Calzones",
@@ -14628,7 +14822,58 @@
       "Pour remaining batter on top. Gently swirl the surface with a knife without disturbing the bottom layer.",
       "Bake at 350°F for 60 minutes.",
       "Immediately invert onto a serving plate. Remove pan — the caramelized pecan layer will now be on top."
-    ]
+    ],
+    "highAltitude": {
+      "comments": [
+        "The key technique: butter and pecans go into the Bundt pan during preheat, so they melt and toast before the batter goes in. Invert immediately after baking so the caramelized pecan layer becomes the topping.",
+        "Vanilla-butter-nut flavoring can substitute for the vanilla and butter flavoring — use 3 tsp. Alternatively, use 2 tsp pure vanilla with no butter flavoring."
+      ],
+      "ingredientGroups": [
+        {
+          "label": "Pan base",
+          "ingredients": [
+            "1 stick (8 T) butter or margarine",
+            "1 cup pecans"
+          ]
+        },
+        {
+          "label": "Batter",
+          "ingredients": [
+            "1 package Duncan Hines yellow cake mix",
+            "1 package Jell-O instant vanilla pudding",
+            "3/4 cup vegetable oil",
+            "3/4 cup + 2 tablespoons water",
+            "1 tsp pure vanilla extract",
+            "1 tsp butter flavoring"
+          ]
+        },
+        {
+          "label": "Eggs",
+          "ingredients": [
+            "4 large eggs, beaten"
+          ]
+        },
+        {
+          "label": "Cinnamon swirl",
+          "ingredients": [
+            "2 tsp cinnamon",
+            "7 tablespoons sugar",
+            "1/2 cup pecans"
+          ]
+        }
+      ],
+      "steps": [
+        "Grease and flour a Bundt pan. Place butter and 1 cup pecans in the bottom.",
+        "Place pan in oven while it preheats to 375°F; leave for 6 minutes, so the butter melts and pecans toast slightly.",
+        "Meanwhile, in a large mixing bowl, combine cake mix, pudding mix, oil, water, vanilla, and butter flavoring. Beat to combine.",
+        "Beat eggs separately, then add to batter while mixing. Beat until smooth.",
+        "Remove pan from oven after 6 minutes. Pour half the batter over the pecan-butter base.",
+        "Mix together cinnamon, sugar, and 1/2 cup pecans. Sprinkle evenly over batter layer.",
+        "Pour remaining batter on top. Gently swirl the surface with a knife without disturbing the bottom layer.",
+        "Bake at 375°F for 50–55 minutes (check at 50 minutes with a toothpick).",
+        "Immediately invert onto a serving plate. Remove pan — the caramelized pecan layer will now be on top."
+      ]
+    }
   },
   "Eric's Chocolate Chip Cookies": {
     "title": "Eric's Chocolate Chip Cookies",
@@ -14680,7 +14925,56 @@
       "When ready to bake, preheat the oven to 375°F (190°C) and line baking sheets with parchment.",
       "Using an ice cream scoop, portion generous mounds of dough onto the prepared sheets, spacing them a few inches apart.",
       "Bake 11-13 minutes, until the edges are golden brown and the centers still look slightly underbaked. Cool on the baking sheet for 5 minutes before transferring."
-    ]
+    ],
+    "highAltitude": {
+      "comments": [
+        "Based on the classic Toll House chocolate chip cookie recipe, with a few of Eric’s own touches — rolled oats and roughly chopped pecans."
+      ],
+      "ingredientGroups": [
+        {
+          "label": "Dry ingredients",
+          "ingredients": [
+            "2 1/4 cups + 2 tablespoons all-purpose flour",
+            "1 cup rolled quick oats",
+            "3/4 teaspoon baking soda",
+            "1 teaspoon salt"
+          ]
+        },
+        {
+          "label": "Creamed base",
+          "ingredients": [
+            "1 cup (2 sticks) unsalted butter, softened",
+            "11 tablespoons granulated sugar",
+            "11 tablespoons packed brown sugar"
+          ]
+        },
+        {
+          "label": "Added to the creamed base",
+          "ingredients": [
+            "1 teaspoon vanilla extract",
+            "2 large eggs"
+          ]
+        },
+        {
+          "label": "Folded in",
+          "ingredients": [
+            "2 cups (12 ounces) semisweet chocolate chips",
+            "1 cup pecans, very roughly chopped into big pieces"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk together the flour, oats, baking soda, and salt in a medium bowl; set aside.",
+        "Cream the butter and sugars: In the bowl of a stand mixer fitted with the paddle attachment, beat the butter, granulated sugar, and brown sugar on medium-high speed until pale and fluffy, about 3 to 4 minutes.",
+        "Add the vanilla and eggs; continue beating on medium speed until fully incorporated and the mixture looks well emulsified.",
+        "With the mixer on low speed (or by hand), add the flour mixture and mix just until no dry streaks remain — the dough should be stiff.",
+        "Fold in the chocolate chips and pecans by hand.",
+        "Cover and refrigerate the dough for at least 1 hour (and up to 2 days) to firm up before baking.",
+        "When ready to bake, preheat the oven to 375°F (190°C) and line baking sheets with parchment.",
+        "Using an ice cream scoop, portion generous mounds of dough onto the prepared sheets, spacing them a few inches apart.",
+        "Bake 10–12 minutes, until the edges are golden brown and the centers still look slightly underbaked. (Check at 10 minutes — at altitude cookies spread faster and finish sooner.) Cool on the baking sheet for 5 minutes before transferring."
+      ]
+    }
   },
   "Chocolate \"Birthday Cake\"": {
     "title": "Chocolate \"Birthday Cake\"",
@@ -14740,7 +15034,64 @@
       "Frosting: Cream the confectioners' sugar with the butter until smooth. Add the vanilla and beat well.",
       "Melt the 2-3 oz chocolate and add to the frosting; mix until smooth. Add a bit more confectioners' sugar if needed to reach a spreadable consistency.",
       "Spread over the cooled cake."
-    ]
+    ],
+    "highAltitude": {
+      "comments": [
+        "For a single layer, halve all cake ingredients as noted in the standard recipe. The single-layer proportions given in the original apply — reduce each adjusted amount by half in the same way.",
+        "Don’t halve the frosting, even for a single layer — a full batch is right (a half batch isn’t quite enough)."
+      ],
+      "ingredientGroups": [
+        {
+          "label": "Creamed base",
+          "ingredients": [
+            "1 cup (2 sticks) butter [1/2 stick for half batch]",
+            "1 3/4 cups sugar [7/8 cup for half batch]",
+            "3 eggs [1 1/2 eggs]",
+            "2 teaspoons vanilla [1 teaspoon]"
+          ]
+        },
+        {
+          "label": "Chocolate",
+          "ingredients": [
+            "4 oz unsweetened chocolate [2 oz]"
+          ]
+        },
+        {
+          "label": "Dry ingredients",
+          "ingredients": [
+            "2 3/4 cups flour [1 3/8 cups]",
+            "1 1/2 teaspoons baking soda [3/4 teaspoon]",
+            "1 teaspoon salt [1/2 teaspoon]"
+          ]
+        },
+        {
+          "label": "Liquid",
+          "ingredients": [
+            "Up to 2 cups water, use the full amount [up to 1 cup for half batch]"
+          ]
+        },
+        {
+          "label": "Frosting",
+          "ingredients": [
+            "2 cups confectioners’ sugar",
+            "3/4 cup butter",
+            "1 teaspoon vanilla",
+            "2–3 oz unsweetened chocolate, melted"
+          ]
+        }
+      ],
+      "steps": [
+        "Cream the butter; add the sugar, then the eggs and vanilla, beating well after each addition.",
+        "Melt the chocolate in the microwave (20–30 second bursts, stirring between, until smooth) and add to the creamed mixture.",
+        "Sift together the flour, baking soda, and salt.",
+        "Add the flour mixture to the creamed mixture alternately with the water, mixing just until combined. At altitude, use the full 2 cups of water (evaporation is faster and the batter needs the moisture).",
+        "Bake in a large buttered pan, or two buttered 9-inch round layer pans, for 35–40 minutes at 375°F. Start checking at 33 minutes.",
+        "Frost after the layer(s) are completely cool, on a baking rack.",
+        "Frosting: Cream the confectioners’ sugar with the butter until smooth. Add the vanilla and beat well.",
+        "Melt the 2–3 oz chocolate and add to the frosting; mix until smooth. Add a bit more confectioners’ sugar if needed to reach a spreadable consistency.",
+        "Spread over the cooled cake."
+      ]
+    }
   },
   "Jumbo Banana-Nut Muffins": {
     "title": "Jumbo Banana-Nut Muffins",
@@ -14796,7 +15147,60 @@
       "Add dry ingredients to wet mixture and stir just to combine. Fold in walnuts if using.",
       "Spoon batter into prepared muffin cups; bake 25 to 30 minutes or until a cake tester inserted in the center comes out clean.",
       "Remove muffin tin(s) to wire rack. Cool 5 minutes before removing muffins from cups; finish cooling on rack. Serve warm or store in an airtight container at room temperature. These muffins freeze well."
-    ]
+    ],
+    "highAltitude": {
+      "comments": [
+        "Recipe scaled 1.5x from original (from 9 jumbo muffins to 12). Walnuts made optional.",
+        "1 cup mashed ripe banana = about 2 medium bananas."
+      ],
+      "ingredientGroups": [
+        {
+          "label": "Dry ingredients",
+          "ingredients": [
+            "1 1/2 cups all-purpose flour",
+            "1 1/2 cups whole-wheat flour",
+            "1 1/4 teaspoons baking powder",
+            "1 1/4 teaspoons baking soda",
+            "1/4 teaspoon salt"
+          ]
+        },
+        {
+          "label": "Wet base",
+          "ingredients": [
+            "3/4 cup lightly salted butter or margarine, softened",
+            "10 tablespoons sugar"
+          ]
+        },
+        {
+          "label": "Eggs",
+          "ingredients": [
+            "3 eggs"
+          ]
+        },
+        {
+          "label": "Wet additions",
+          "ingredients": [
+            "2 cups mashed ripe banana (about 4 medium bananas)",
+            "1/2 cup milk",
+            "1 1/2 teaspoons vanilla"
+          ]
+        },
+        {
+          "label": "Walnuts (optional)",
+          "ingredients": [
+            "3/4 cup broken walnuts (optional)"
+          ]
+        }
+      ],
+      "steps": [
+        "Preheat oven to 400°F. Grease muffin cups and the edges surrounding the cups.",
+        "In a large bowl, stir together the flours, baking powder, baking soda, and salt.",
+        "In another bowl, cream butter and sugar until light and fluffy; beat in eggs. Stir in banana, milk, and vanilla.",
+        "Add dry ingredients to wet mixture and stir just to combine. Fold in walnuts if using.",
+        "Spoon batter into prepared muffin cups; bake 22–27 minutes or until a cake tester inserted in the center comes out clean. (Check at 22 minutes — the higher temp means they finish faster.)",
+        "Remove muffin tin(s) to wire rack. Cool 5 minutes before removing muffins from cups; finish cooling on rack. Serve warm or store in an airtight container at room temperature. These muffins freeze well."
+      ]
+    }
   },
   "Nana's Poundcake": {
     "title": "Nana's Poundcake",
@@ -14824,7 +15228,31 @@
       "Add the flour and vanilla.",
       "Pour into a well-greased loaf pan or bundt pan.",
       "Bake at 350°F for 90 minutes."
-    ]
+    ],
+    "highAltitude": {
+      "comments": [
+        "A four-generation family recipe."
+      ],
+      "ingredientGroups": [
+        {
+          "label": "Cake",
+          "ingredients": [
+            "1/2 pound salted butter (2 sticks), softened",
+            "1 1/2 cups sugar",
+            "5 eggs",
+            "2 cups + 2 tablespoons sifted flour",
+            "2 tablespoons vanilla"
+          ]
+        }
+      ],
+      "steps": [
+        "Cream the butter and sugar.",
+        "Add the eggs one at a time, beating constantly.",
+        "Add the flour and vanilla.",
+        "Pour into a well-greased loaf pan or bundt pan.",
+        "Bake at 375°F for 70–80 minutes. Start checking at 70 minutes with a toothpick or cake tester in the center. The cake is done when the tester comes out clean and the top is deep golden."
+      ]
+    }
   },
   "Filled Coffee Cake": {
     "title": "Filled Coffee Cake",
@@ -14863,7 +15291,43 @@
       "Make filling: combine brown sugar, nuts, butter, flour, and cinnamon; mix until crumbly.",
       "Pour half the batter into the prepared pan. Spread the filling evenly over the batter. Pour remaining batter on top.",
       "Bake 30–40 minutes until a toothpick inserted in the center comes out clean."
-    ]
+    ],
+    "highAltitude": {
+      "ingredientGroups": [
+        {
+          "label": "Cake batter",
+          "ingredients": [
+            "1/2 cup butter, softened (or margarine)",
+            "1 3/4 cups sugar",
+            "4 eggs, well beaten",
+            "1 teaspoon vanilla",
+            "3 cups flour",
+            "1 3/4 teaspoons baking powder",
+            "1/2 teaspoon salt",
+            "1 cup + 2 tablespoons milk"
+          ]
+        },
+        {
+          "label": "Filling",
+          "ingredients": [
+            "14 tablespoons (7/8 cup) brown sugar",
+            "1 cup nuts, chopped",
+            "2 tablespoons butter",
+            "2 tablespoons flour",
+            "1 teaspoon cinnamon"
+          ]
+        }
+      ],
+      "steps": [
+        "Preheat oven to 375°F. Grease a 9×13 pan (or tube pan).",
+        "Cream butter and sugar until light and fluffy. Add well-beaten eggs and vanilla; beat well.",
+        "Whisk together flour, baking powder, and salt in a separate bowl.",
+        "Alternately add the flour mixture and the milk to the butter mixture in 3 additions each, beginning and ending with flour. Stir until just combined.",
+        "Make filling: combine brown sugar, nuts, butter, flour, and cinnamon; mix until crumbly.",
+        "Pour half the batter into the prepared pan. Spread the filling evenly over the batter. Pour remaining batter on top.",
+        "Bake 25–32 minutes until a toothpick inserted in the center comes out clean. Check at 25 minutes."
+      ]
+    }
   },
   "Nut Butter Balls": {
     "title": "Nut Butter Balls",
@@ -14961,7 +15425,63 @@
       "Frosting Part 1: Cook flour and milk together in a saucepan over low heat, stirring constantly, until very thick (paste consistency). Set aside to cool completely.",
       "Frosting Part 2: Cream butter, shortening, and granulated sugar until light. Add vanilla. Add the cooled flour-milk paste to the creamed mixture. Beat at high speed until light and fluffy, like whipped cream.",
       "Frost between layers and on the outside of the cake."
-    ]
+    ],
+    "highAltitude": {
+      "comments": [
+        "Uses a cooked ermine frosting (flour-and-milk based) rather than the cream cheese frosting common in modern versions.",
+        "The 2 oz. of red food coloring gives the classic deep red color."
+      ],
+      "ingredientGroups": [
+        {
+          "label": "Cocoa paste",
+          "ingredients": [
+            "3 tablespoons unsweetened cocoa powder (Dutch-process; e.g. Nestle Toll House Cocoa or Hershey’s Special Dark)",
+            "2 oz. red food coloring"
+          ]
+        },
+        {
+          "label": "Cake",
+          "ingredients": [
+            "1/2 cup vegetable shortening",
+            "1 2/3 cups sugar",
+            "2 eggs, beaten",
+            "1 cup + 2 tablespoons buttermilk",
+            "2 1/2 cups + 2 tablespoons cake flour",
+            "1 teaspoon vanilla",
+            "1 teaspoon salt",
+            "3/4 teaspoon baking soda",
+            "1 tablespoon white vinegar"
+          ]
+        },
+        {
+          "label": "Frosting — Part 1 (cool completely before using)",
+          "ingredients": [
+            "5 tablespoons flour",
+            "1 cup milk"
+          ]
+        },
+        {
+          "label": "Frosting — Part 2",
+          "ingredients": [
+            "1/2 cup butter, softened",
+            "1/2 cup vegetable shortening",
+            "14 tablespoons granulated sugar",
+            "2 tablespoons vanilla"
+          ]
+        }
+      ],
+      "steps": [
+        "Preheat oven to 375°F. Grease and flour cake pans.",
+        "In a small bowl, mix cocoa powder and red food coloring into a paste. Set aside.",
+        "Cream shortening and sugar until light. Add beaten eggs; mix well. Add the cocoa-coloring paste; blend.",
+        "Add salt and vanilla. Alternately add buttermilk and flour in 3 additions each, beginning and ending with flour. Mix well.",
+        "Fold in baking soda and vinegar (the mixture will bubble slightly). Do not overmix.",
+        "Pour into well-greased pans. Bake at 375°F for 25–28 minutes. Cool completely. Split each layer horizontally to make 6 thin layers total.",
+        "Frosting Part 1: Cook flour and milk together in a saucepan over low heat, stirring constantly, until very thick (paste consistency). Set aside to cool completely.",
+        "Frosting Part 2: Cream butter, shortening, and granulated sugar until light. Add vanilla. Add the cooled flour-milk paste to the creamed mixture. Beat at high speed until light and fluffy, like whipped cream.",
+        "Frost between layers and on the outside of the cake."
+      ]
+    }
   },
   "Blintz Soufflé": {
     "title": "Blintz Soufflé",
@@ -14996,7 +15516,39 @@
       "Beat eggs with sugar, vanilla, orange juice, and sour cream until smooth. Pour evenly over blintzes.",
       "Bake covered for 1 hour.",
       "Uncover and bake an additional 10 minutes until golden and puffed."
-    ]
+    ],
+    "highAltitude": {
+      "comments": [
+        "Marsha Firestone’s smaller version — uses 2 packages of blintzes and a smaller casserole dish.",
+        "Frozen cheese blintzes from the store work perfectly."
+      ],
+      "ingredientGroups": [
+        {
+          "label": "Pan and blintzes",
+          "ingredients": [
+            "1 stick (1/2 cup) butter",
+            "2 packages (about 12) frozen cheese blintzes"
+          ]
+        },
+        {
+          "label": "Custard",
+          "ingredients": [
+            "6 eggs",
+            "9 tablespoons sugar",
+            "1/2 teaspoon vanilla",
+            "1 teaspoon orange juice",
+            "1 1/2 cups sour cream"
+          ]
+        }
+      ],
+      "steps": [
+        "Preheat oven to 375°F.",
+        "Melt butter in a casserole dish. Arrange frozen blintzes in a single layer on top.",
+        "Beat eggs with sugar, vanilla, orange juice, and sour cream until smooth. Pour evenly over blintzes.",
+        "Bake covered at 375°F for 45–50 minutes.",
+        "Uncover and bake an additional 15–20 minutes until golden and firmly set. (At altitude, egg custards need slightly longer uncovered to firm up — check by gently shaking the dish; it should have no liquidy jiggle in the center.)"
+      ]
+    }
   },
   "Brenda's Noodle Kugel": {
     "title": "Brenda's Noodle Kugel",
@@ -15957,6 +16509,12 @@
     } else {
       cleanup();
     }
+  });
+
+  // High Altitude toggle
+  document.getElementById('alt-toggle').addEventListener('click', function () {
+    this.classList.toggle('active');
+    document.body.classList.toggle('high-altitude-mode');
   });
 
   // Collapse all open nav menus
