@@ -218,8 +218,8 @@ const CLUSTER_MAP = {
   'Potato Latkes':                                       'Central/Eastern European',
   // Baking: Sweet — American
   'Jumbo Banana-Nut Muffins':                            'General',
-  'Kitchen Sink Cookies':                                'American',
-  'Marble Brownies':                                     'American',
+  'Kitchen Sink Cookies':                                'General',
+  'Marble Brownies':                                     'General',
   "Eric's Chocolate Chip Cookies":                       'General',
   'Chocolate "Birthday Cake"':                           'General',
   "Nana's Poundcake":                                    'General',
@@ -281,9 +281,9 @@ const CLUSTER_MAP = {
   "Nancy's Flank Steak":                                 'American',
   'Coq au Vin':                                          'French',
   'Chicken Breasts and Garlic Balsamic Vinegar':         'Italian',
-  "Regina's Coffee Cake":                                'American',
-  "Brenda's Chocolate Chip Cookies":                     'American',
-  'Apple Pie':                                           'American',
+  "Regina's Coffee Cake":                                'General',
+  "Brenda's Chocolate Chip Cookies":                     'General',
+  'Apple Pie':                                           'General',
   'Chinese Tomato Egg Stir-fry':                         'Chinese',
 };
 
@@ -710,11 +710,11 @@ function buildPage(section, navHtml, contentHtml, cookbookData) {
   }
   #nav-header h1 {
     font-size: 0.95rem;
-    font-weight: normal;
-    color: var(--nav-hover);
+    font-weight: bold;
+    color: var(--nav-text);
     letter-spacing: 0.03em;
   }
-  #nav-header a { text-decoration: none; }
+  #nav-header a { text-decoration: none; color: inherit; }
   #search-wrap { padding: 9px 12px; border-bottom: 1px solid #5a3e28; }
   #search-box-wrap { position: relative; }
   #search {

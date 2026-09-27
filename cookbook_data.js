@@ -44,6 +44,81 @@ module.exports = {
           ]
         },
         {
+          "title": "Baked German Pancake (or Dutch Babies)",
+          "servings": "One 12-inch pancake, or four 6-inch Dutch babies   |   Cook: 15-25 minutes",
+          "source": "The Breakfast Book, by Marion Cunningham",
+          "ingredientGroups": [
+            {
+              "label": "For the pan",
+              "ingredients": [
+                "Butter, for greasing the pan(s)"
+              ]
+            },
+            {
+              "label": "Batter",
+              "ingredients": [
+                "3 eggs, room temperature",
+                "1/2 cup milk",
+                "1/2 cup all-purpose flour",
+                "1/2 teaspoon salt",
+                "2 tablespoons butter, melted"
+              ]
+            },
+            {
+              "label": "To finish",
+              "ingredients": [
+                "2 tablespoons lemon juice",
+                "Confectioners' sugar, for dusting"
+              ]
+            }
+          ],
+          "steps": [
+            "Preheat the oven to 450°F. Butter one 12-inch ovenproof skillet, or four 6-inch skillets or pans with ovenproof handles.",
+            "Beat the eggs in a mixing bowl until thoroughly combined, then add the milk and blend well.",
+            "Sift the flour and salt over the egg mixture, whisking steadily until smooth. Add the melted butter and mix briskly until combined.",
+            "Pour the batter into the pan(s). Bake for 15 minutes at 450°F for small pancakes; for one large pancake, bake 15 minutes at 450°F then reduce to 350°F and bake 10 minutes more.",
+            "Sprinkle the lemon juice over the pancake(s) and dust with confectioners' sugar. Serve at once, while puffed and hot."
+          ]
+        },
+        {
+          "title": "Egg Strata",
+          "source": "Family recipe card",
+          "comments": [
+            "Assemble the night before — ideal for brunch.",
+            "The amount of cheese is flexible; generous layers of cheddar work best."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Bread base",
+              "ingredients": [
+                "8 slices bread (any kind)",
+                "Butter or margarine, for spreading"
+              ]
+            },
+            {
+              "label": "Custard",
+              "ingredients": [
+                "4 eggs",
+                "2 1/2 cups milk",
+                "1/4 teaspoon dry mustard",
+                "1/4 teaspoon salt"
+              ]
+            },
+            {
+              "label": "Cheese",
+              "ingredients": [
+                "Grated cheddar cheese, to taste (cheddar is best)"
+              ]
+            }
+          ],
+          "steps": [
+            "Butter each slice of bread. Cut off crusts and cut into quarters. Butter a deep 9x13 Pyrex dish.",
+            "Layer alternating bread and cheese in the dish.",
+            "Beat together eggs, milk, mustard, and salt. Pour over bread and cheese. Let stand overnight in the refrigerator.",
+            "Bake at 350°F for about 45 minutes."
+          ]
+        },
+        {
           "title": "Glazed Cinnamon Rolls (Tangzhong Version)",
           "favorite": true,
           "servings": "One dozen round rolls   |   Cook: 15-17 minutes",
@@ -209,81 +284,6 @@ module.exports = {
             "Add the milk, butter, salt, sugar, and flour to the yeast mixture; beat until smooth and blended (a hand-rotary beater works well). Cover tightly and leave overnight at room temperature.",
             "Just before cooking, beat in the eggs and baking soda; stir until well mixed. The batter will be very thin.",
             "Pour about 1/2 to 3/4 cup batter into a very hot waffle iron. Bake until golden and crisp."
-          ]
-        },
-        {
-          "title": "Baked German Pancake (or Dutch Babies)",
-          "servings": "One 12-inch pancake, or four 6-inch Dutch babies   |   Cook: 15-25 minutes",
-          "source": "The Breakfast Book, by Marion Cunningham",
-          "ingredientGroups": [
-            {
-              "label": "For the pan",
-              "ingredients": [
-                "Butter, for greasing the pan(s)"
-              ]
-            },
-            {
-              "label": "Batter",
-              "ingredients": [
-                "3 eggs, room temperature",
-                "1/2 cup milk",
-                "1/2 cup all-purpose flour",
-                "1/2 teaspoon salt",
-                "2 tablespoons butter, melted"
-              ]
-            },
-            {
-              "label": "To finish",
-              "ingredients": [
-                "2 tablespoons lemon juice",
-                "Confectioners' sugar, for dusting"
-              ]
-            }
-          ],
-          "steps": [
-            "Preheat the oven to 450°F. Butter one 12-inch ovenproof skillet, or four 6-inch skillets or pans with ovenproof handles.",
-            "Beat the eggs in a mixing bowl until thoroughly combined, then add the milk and blend well.",
-            "Sift the flour and salt over the egg mixture, whisking steadily until smooth. Add the melted butter and mix briskly until combined.",
-            "Pour the batter into the pan(s). Bake for 15 minutes at 450°F for small pancakes; for one large pancake, bake 15 minutes at 450°F then reduce to 350°F and bake 10 minutes more.",
-            "Sprinkle the lemon juice over the pancake(s) and dust with confectioners' sugar. Serve at once, while puffed and hot."
-          ]
-        },
-        {
-          "title": "Egg Strata",
-          "source": "Family recipe card",
-          "comments": [
-            "Assemble the night before — ideal for brunch.",
-            "The amount of cheese is flexible; generous layers of cheddar work best."
-          ],
-          "ingredientGroups": [
-            {
-              "label": "Bread base",
-              "ingredients": [
-                "8 slices bread (any kind)",
-                "Butter or margarine, for spreading"
-              ]
-            },
-            {
-              "label": "Custard",
-              "ingredients": [
-                "4 eggs",
-                "2 1/2 cups milk",
-                "1/4 teaspoon dry mustard",
-                "1/4 teaspoon salt"
-              ]
-            },
-            {
-              "label": "Cheese",
-              "ingredients": [
-                "Grated cheddar cheese, to taste (cheddar is best)"
-              ]
-            }
-          ],
-          "steps": [
-            "Butter each slice of bread. Cut off crusts and cut into quarters. Butter a deep 9x13 Pyrex dish.",
-            "Layer alternating bread and cheese in the dish.",
-            "Beat together eggs, milk, mustard, and salt. Pour over bread and cheese. Let stand overnight in the refrigerator.",
-            "Bake at 350°F for about 45 minutes."
           ]
         },
         {
@@ -1455,7 +1455,9 @@ module.exports = {
                 "Add remaining garlic and rosemary to skillet; saute until just golden. Squeeze remaining lemon over pan. Add water, scraping up brown bits, and simmer 1 minute.",
                 "Drizzle sauce over chicken and serve."
               ],
-              "comments": ["Can substitute 3 half breasts with ribs for chicken legs."]
+              "comments": [
+                "Can substitute 3 half breasts with ribs for chicken legs."
+              ]
             },
             {
               "title": "Skillet Chicken and Zucchini With Charred Scallion Salsa",
@@ -2177,7 +2179,9 @@ module.exports = {
                 "Turn heat to high and boil sauce rapidly, reducing liquid to about 2 1/2 cups. Add beurre manie in small pieces, whisking; bring to simmer and cook 1-2 minutes until sauce is thick enough to coat a spoon.",
                 "Return chicken to skillet, baste with sauce. Decorate with parsley sprigs and serve."
               ],
-              "comments": ["Grandmother Brenda noted on the card that the red wine \"costs about 29¢ at Muehlebach Grocery\" (in Kansas City)."],
+              "comments": [
+                "Grandmother Brenda noted on the card that the red wine \"costs about 29¢ at Muehlebach Grocery\" (in Kansas City)."
+              ],
               "source": "From Grandmother Brenda's collection"
             },
             {
@@ -5157,7 +5161,9 @@ module.exports = {
                 "Heat 1 cup hearty red wine in a small saucepan. Melt butter into wine. Add parsley.",
                 "Slice steak diagonally and ladle sauce over top."
               ],
-              "comments": ["Steak quantity, thyme amount, and parsley quantity not specified on original card; adjust to taste."],
+              "comments": [
+                "Steak quantity, thyme amount, and parsley quantity not specified on original card; adjust to taste."
+              ],
               "source": "Family recipe, attributed to Grandmother Nancy"
             },
             {
@@ -5817,7 +5823,9 @@ module.exports = {
                 "Place fish in baking dish. Cover with tomatoes, olive oil, remaining parsley, and garlic.",
                 "Bake at 400 degrees for 30-40 minutes until fish flakes easily, basting periodically with the white wine during baking."
               ],
-              "comments": ["Original card called for \"1 or more trout\" with unscaled quantities; scaled here for 2 fish."]
+              "comments": [
+                "Original card called for \"1 or more trout\" with unscaled quantities; scaled here for 2 fish."
+              ]
             },
             {
               "title": "Fast Vietnamese Caramel Bluefish",
@@ -6142,7 +6150,9 @@ module.exports = {
                 "Combine marinade ingredients. Thread shrimp and green onions alternately on 2 (10-inch) skewers. Season with salt and pepper. Marinate 10-15 minutes.",
                 "Grill 1-2 minutes per side. Brush with glaze (chile garlic sauce + honey). Sprinkle with cilantro."
               ],
-              "comments": ["Chile garlic sauce can be found in the Asian aisle of most supermarkets."]
+              "comments": [
+                "Chile garlic sauce can be found in the Asian aisle of most supermarkets."
+              ]
             },
             {
               "title": "Bacon-Wrapped Scallops with Chili Butter",
@@ -6293,7 +6303,9 @@ module.exports = {
                 "Mix coconut milk with 3 teaspoons curry paste.",
                 "Transfer shellfish to 4 bowls. Stir coconut milk mixture into pan, add basil, heat to simmering. Ladle broth into bowls."
               ],
-              "comments": ["If Thai red curry paste is unavailable, substitute: 1 tablespoon minced fresh ginger, 1 teaspoon curry powder, 1 teaspoon chili powder, 1/4 teaspoon cayenne."],
+              "comments": [
+                "If Thai red curry paste is unavailable, substitute: 1 tablespoon minced fresh ginger, 1 teaspoon curry powder, 1 teaspoon chili powder, 1/4 teaspoon cayenne."
+              ],
               "source": "From Marsha Polk-Townsend, RSVP Catering"
             },
             {
@@ -6324,7 +6336,9 @@ module.exports = {
                 "In skillet, saute broccoli in peanut oil with ginger and garlic.",
                 "Add shrimp, red peppers, scallions, teriyaki sauce, and wine, stirring constantly. Cover and cook about 5 minutes until shrimp are pink."
               ],
-              "comments": ["Chicken may be substituted for shrimp (2 boneless, skinless chicken breasts, cut into 1\" pieces; cook until no longer pink, about 7-8 minutes)."]
+              "comments": [
+                "Chicken may be substituted for shrimp (2 boneless, skinless chicken breasts, cut into 1\" pieces; cook until no longer pink, about 7-8 minutes)."
+              ]
             },
             {
               "title": "Yang Chow Slippery Shrimp",
@@ -7473,7 +7487,9 @@ module.exports = {
             "Oven method: Preheat oven to 400 degrees. Melt butter in oven-proof casserole over medium heat. Add onion and water chestnuts; cook and stir until softened, about 3 minutes. Add rice and stir to coat with butter. Add chicken broth and stir to ensure no lumps. Add dill, bay leaf, Tabasco, salt, and pepper. Cover with a close-fitting lid and bring to a boil. Transfer to oven and bake for 17 minutes. Remove cover, discard bay leaf, and serve.",
             "Rice cooker method: Melt butter in skillet over medium heat. Add onion and water chestnuts; cook and stir until softened, about 3 minutes. Add rice and stir to coat with butter, about 1 minute. Transfer rice mixture to rice cooker. Add chicken broth and all seasonings (dill, bay leaf, Tabasco, salt, and pepper). Cook on standard rice setting. When done, remove and discard bay leaf, and serve."
           ],
-          "comments": ["May be reheated."]
+          "comments": [
+            "May be reheated."
+          ]
         },
         {
           "title": "Indian Style Rice",
@@ -8220,107 +8236,6 @@ module.exports = {
       "title": "Baking",
       "subsections": [
         {
-          "title": "Savory",
-          "recipes": [
-            {
-              "title": "72-Hour Pizza Dough",
-              "servings": "Makes 3 pizzas (~283g each)",
-              "source": "The Gourmandise School (The Pizza Class)",
-              "ingredientGroups": [
-                {
-                  "label": null,
-                  "ingredients": [
-                    "350 ml water",
-                    "½ tablespoon dry yeast",
-                    "500g bread flour (or strong all-purpose, like King Arthur)",
-                    "3 teaspoons kosher salt (Diamond Crystal preferred)"
-                  ]
-                }
-              ],
-              "steps": [
-                "In a large bowl, combine the water and yeast. Add the flour and salt and mix with one hand until it just forms a smooth dough. Cover and let rise at room temperature for 12–24 hours. It will nearly double in size.",
-                "After this initial ferment, place the dough in the fridge for another 12–48 hours.",
-                "Remove the dough from the fridge and lightly flour your counter. Divide the dough into 3 portions of about 283 grams each. Gently purse one of your dough balls so that just one seam at the bottom of the dough remains, much like a balloon you'd blow into.",
-                "Move to a part of your counter that is un-floured and give the dough a gentle rub, seam side down, on that area. Place the dough ball on a floured part of the counter to rest for 4 hours (closer to 3½ hours on a warm day). Repeat with the remaining dough balls; once all have been pre-shaped, lightly flour the tops and cover them. Place them a couple of inches apart to give them room to get slack again.",
-                "Preheat your oven to 450°F with a baking steel or pizza stone inside. For best results, preheat for at least 45 minutes to 1 hour. Alternatively, if using a pizza oven (e.g. Ooni), preheat according to its instructions until it reaches 700–900°F.",
-                "Shape your pizzas most of the way before placing them on a floured peel or baking sheet turned upside-down. Just before baking, place the pizza on the peel, finish stretching it, and add toppings. For a conventional oven: move the pizza to the stone or steel by tilting the peel slightly, shoving the pizza forward and jerking back to release it onto the hot surface. For a pizza oven: launch directly onto the hot stone and bake for 60–90 seconds, rotating once halfway through."
-              ],
-              "highAltitude": {
-                "ingredientGroups": [
-                  {
-                    "label": null,
-                    "ingredients": [
-                      "350 ml water",
-                      "1 teaspoon dry yeast",
-                      "500g bread flour (or strong all-purpose, like King Arthur)",
-                      "3 teaspoons kosher salt (Diamond Crystal preferred)"
-                    ]
-                  }
-                ],
-                "steps": [
-                  "In a large bowl, combine the water and yeast. Add the flour and salt and mix with one hand until it just forms a smooth dough. Cover and let rise at room temperature for 8–18 hours. At altitude the dough rises roughly 25–40% faster — start checking at 8 hours; you want it nearly doubled but not over-proofed and collapsing.",
-                  "After this initial ferment, place the dough in the fridge for another 12–48 hours.",
-                  "Remove the dough from the fridge and lightly flour your counter. Divide the dough into 3 portions of about 283 grams each. Gently purse one of your dough balls so that just one seam at the bottom of the dough remains, much like a balloon you’d blow into.",
-                  "Move to a part of your counter that is un-floured and give the dough a gentle rub, seam side down, on that area. Place the dough ball on a floured part of the counter to rest for 3–3.5 hours (closer to 3 hours on a warm day; check at 2.5 hours). Repeat with the remaining dough balls; once all have been pre-shaped, lightly flour the tops and cover them. Place them a couple of inches apart to give them room to get slack again.",
-                  "Preheat your oven to 450°F with a baking steel or pizza stone inside. For best results, preheat for at least 45 minutes to 1 hour. Alternatively, if using a pizza oven (e.g. Ooni), preheat according to its instructions until it reaches 700–900°F.",
-                  "Shape your pizzas most of the way before placing them on a floured peel or baking sheet turned upside-down. Just before baking, place the pizza on the peel, finish stretching it, and add toppings. For a conventional oven: move the pizza to the stone or steel by tilting the peel slightly, shoving the pizza forward and jerking back to release it onto the hot surface. For a pizza oven: launch directly onto the hot stone and bake for 60–90 seconds, rotating once halfway through."
-                ]
-              }
-            },
-            {
-              "title": "Susan's Calzones",
-              "servings": "Serves 4",
-              "source": "Family recipe card, credited to Susan",
-              "ingredientGroups": [
-                {
-                  "label": "Dough (5 hours ahead)",
-                  "ingredients": [
-                    "12 Rhodes frozen dinner rolls (3 per person), defrosted and risen"
-                  ]
-                },
-                {
-                  "label": "Filling",
-                  "ingredients": [
-                    "1 pound ground beef or ground turkey",
-                    "About 1/2 cup spaghetti sauce, or enough to hold filling together"
-                  ]
-                },
-                {
-                  "label": "Cheese",
-                  "ingredients": [
-                    "1 cup shredded mozzarella",
-                    "1/2 cup grated parmesan"
-                  ]
-                },
-                {
-                  "label": "Add-ins (optional)",
-                  "ingredients": [
-                    "Sliced olives",
-                    "Pepperoni",
-                    "Sautéed mushrooms"
-                  ]
-                },
-                {
-                  "label": "Topping (optional)",
-                  "ingredients": [
-                    "Additional spaghetti sauce",
-                    "Additional grated parmesan"
-                  ]
-                }
-              ],
-              "steps": [
-                "Defrost rolls at room temperature and let rise until doubled, about 5 hours (or per package directions).",
-                "Brown ground beef or turkey in a skillet over medium heat; drain fat.",
-                "Mix browned meat with spaghetti sauce (enough to hold the mixture together but not soupy), mozzarella, and parmesan. Stir in any optional add-ins.",
-                "On a lightly floured surface, press each group of 3 risen rolls together and roll into a rough square.",
-                "Spoon filling onto one half of each square. Fold dough over to form a triangle. Press edges firmly with fork tines to seal.",
-                "Place on a baking sheet. Bake at 350°F for 18 minutes.",
-                "Optional: 10 minutes in, spoon additional spaghetti sauce over the top and sprinkle with parmesan; return to oven for remaining 8 minutes."
-              ]
-            }
-          ]
-        },
-        {
           "title": "Bread",
           "recipes": [
             {
@@ -8405,6 +8320,273 @@ module.exports = {
                   "Let rise again until doubled, about 20-25 minutes. Watch carefully -- over-proofing at altitude causes collapse in the oven.",
                   "Brush with glaze (egg beaten with sugar); sprinkle with sesame or poppy seeds.",
                   "Bake at 375° for 30-40 minutes until deep golden brown. Cool on racks."
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "title": "Cookies",
+          "recipes": [
+            {
+              "title": "Brenda's Chocolate Chip Cookies",
+              "servings": "Makes 50-100 cookies",
+              "ingredientGroups": [
+                {
+                  "label": "Dry",
+                  "ingredients": [
+                    "2 2/3 cups sifted all-purpose flour",
+                    "1 teaspoon baking soda",
+                    "1 teaspoon salt"
+                  ]
+                },
+                {
+                  "label": "Wet",
+                  "ingredients": [
+                    "1 cup Crisco (shortening)",
+                    "3/4 cup sugar",
+                    "3/4 cup firmly packed brown sugar",
+                    "1 teaspoon vanilla",
+                    "1 teaspoon water",
+                    "2 eggs"
+                  ]
+                },
+                {
+                  "label": "Add-ins",
+                  "ingredients": [
+                    "1 large package semi-sweet chocolate morsels"
+                  ]
+                }
+              ],
+              "steps": [
+                "Preheat oven to 375 degrees.",
+                "Sift together flour, baking soda, and salt.",
+                "Combine Crisco, sugars, vanilla, and water; beat until creamy. Beat in 2 eggs.",
+                "Add flour mixture and mix well. Stir in chocolate morsels.",
+                "Drop by well-rounded teaspoon onto cookie sheet. Bake at 375 for 10-12 minutes."
+              ],
+              "comments": [
+                "Can be made as an alternative to Eric's superior chocolate chip cookie recipe."
+              ],
+              "source": "Family recipe, attributed to Grandmother Brenda",
+              "highAltitude": {
+                "ingredientGroups": [
+                  {
+                    "label": "Dry",
+                    "ingredients": [
+                      "2 2/3 cups + 2 tablespoons sifted all-purpose flour",
+                      "3/4 teaspoon baking soda",
+                      "1 teaspoon salt"
+                    ]
+                  },
+                  {
+                    "label": "Wet",
+                    "ingredients": [
+                      "1 cup Crisco (shortening)",
+                      "3/4 cup sugar",
+                      "3/4 cup firmly packed brown sugar",
+                      "1 teaspoon vanilla",
+                      "1 teaspoon water",
+                      "2 eggs"
+                    ]
+                  },
+                  {
+                    "label": "Add-ins",
+                    "ingredients": [
+                      "1 large package semi-sweet chocolate morsels"
+                    ]
+                  }
+                ],
+                "steps": [
+                  "Preheat oven to 375 degrees.",
+                  "Sift together flour, baking soda, and salt.",
+                  "Combine Crisco, sugars, vanilla, and water; beat until creamy. Beat in 2 eggs.",
+                  "Add flour mixture and mix well. Stir in chocolate morsels.",
+                  "Drop by well-rounded teaspoon onto cookie sheet. Bake at 375 for 10-12 minutes.",
+                  "Tip: Refrigerating the dough for 30 minutes before baking further reduces spreading at altitude."
+                ]
+              }
+            },
+            {
+              "title": "Eric's Chocolate Chip Cookies",
+              "servings": "About 3 dozen cookies",
+              "comments": [
+                "Based on the classic Toll House chocolate chip cookie recipe, with a few of Eric's own touches — rolled oats and roughly chopped pecans."
+              ],
+              "source": "Base recipe: Nestlé Toll House (https://www.verybestbaking.com/toll-house/recipes/chocolate-chip-cookies/)",
+              "ingredientGroups": [
+                {
+                  "label": "Dry ingredients",
+                  "ingredients": [
+                    "2 1/4 cups all-purpose flour",
+                    "1 cup rolled quick oats",
+                    "1 teaspoon baking soda",
+                    "1 teaspoon salt"
+                  ]
+                },
+                {
+                  "label": "Creamed base",
+                  "ingredients": [
+                    "1 cup (2 sticks) unsalted butter, softened",
+                    "3/4 cup granulated sugar",
+                    "3/4 cup packed brown sugar"
+                  ]
+                },
+                {
+                  "label": "Added to the creamed base",
+                  "ingredients": [
+                    "1 teaspoon vanilla extract",
+                    "2 large eggs"
+                  ]
+                },
+                {
+                  "label": "Folded in",
+                  "ingredients": [
+                    "2 cups (12 ounces) semisweet chocolate chips",
+                    "1 cup pecans, very roughly chopped into big pieces"
+                  ]
+                }
+              ],
+              "steps": [
+                "Whisk together the flour, oats, baking soda, and salt in a medium bowl; set aside.",
+                "Cream the butter and sugars: In the bowl of a stand mixer fitted with the paddle attachment, beat the butter, granulated sugar, and brown sugar on medium-high speed until pale and fluffy, about 3 to 4 minutes.",
+                "Add the vanilla and eggs; continue beating on medium speed until fully incorporated and the mixture looks well emulsified.",
+                "With the mixer on low speed (or by hand), add the flour mixture and mix just until no dry streaks remain — the dough should be stiff.",
+                "Fold in the chocolate chips and pecans by hand.",
+                "Cover and refrigerate the dough for at least 1 hour (and up to 2 days) to firm up before baking.",
+                "When ready to bake, preheat the oven to 375°F (190°C) and line baking sheets with parchment.",
+                "Using an ice cream scoop, portion generous mounds of dough onto the prepared sheets, spacing them a few inches apart.",
+                "Bake 11-13 minutes, until the edges are golden brown and the centers still look slightly underbaked. Cool on the baking sheet for 5 minutes before transferring."
+              ],
+              "highAltitude": {
+                "comments": [
+                  "Based on the classic Toll House chocolate chip cookie recipe, with a few of Eric’s own touches — rolled oats and roughly chopped pecans."
+                ],
+                "ingredientGroups": [
+                  {
+                    "label": "Dry ingredients",
+                    "ingredients": [
+                      "2 1/4 cups + 2 tablespoons all-purpose flour",
+                      "1 cup rolled quick oats",
+                      "3/4 teaspoon baking soda",
+                      "1 teaspoon salt"
+                    ]
+                  },
+                  {
+                    "label": "Creamed base",
+                    "ingredients": [
+                      "1 cup (2 sticks) unsalted butter, softened",
+                      "11 tablespoons granulated sugar",
+                      "11 tablespoons packed brown sugar"
+                    ]
+                  },
+                  {
+                    "label": "Added to the creamed base",
+                    "ingredients": [
+                      "1 teaspoon vanilla extract",
+                      "2 large eggs"
+                    ]
+                  },
+                  {
+                    "label": "Folded in",
+                    "ingredients": [
+                      "2 cups (12 ounces) semisweet chocolate chips",
+                      "1 cup pecans, very roughly chopped into big pieces"
+                    ]
+                  }
+                ],
+                "steps": [
+                  "Whisk together the flour, oats, baking soda, and salt in a medium bowl; set aside.",
+                  "Cream the butter and sugars: In the bowl of a stand mixer fitted with the paddle attachment, beat the butter, granulated sugar, and brown sugar on medium-high speed until pale and fluffy, about 3 to 4 minutes.",
+                  "Add the vanilla and eggs; continue beating on medium speed until fully incorporated and the mixture looks well emulsified.",
+                  "With the mixer on low speed (or by hand), add the flour mixture and mix just until no dry streaks remain — the dough should be stiff.",
+                  "Fold in the chocolate chips and pecans by hand.",
+                  "Cover and refrigerate the dough for at least 1 hour (and up to 2 days) to firm up before baking.",
+                  "When ready to bake, preheat the oven to 375°F (190°C) and line baking sheets with parchment.",
+                  "Using an ice cream scoop, portion generous mounds of dough onto the prepared sheets, spacing them a few inches apart.",
+                  "Bake 10–12 minutes, until the edges are golden brown and the centers still look slightly underbaked. (Check at 10 minutes — at altitude cookies spread faster and finish sooner.) Cool on the baking sheet for 5 minutes before transferring."
+                ]
+              }
+            },
+            {
+              "title": "Kitchen Sink Cookies",
+              "source": "From Lisa Sullivan",
+              "ingredientGroups": [
+                {
+                  "label": "Wet",
+                  "ingredients": [
+                    "1 cup butter",
+                    "1 cup brown sugar",
+                    "1 cup sugar",
+                    "2 large eggs",
+                    "1 teaspoon vanilla"
+                  ]
+                },
+                {
+                  "label": "Dry",
+                  "ingredients": [
+                    "2 cups flour",
+                    "1 teaspoon baking powder",
+                    "1 teaspoon baking soda",
+                    "1/2 teaspoon salt"
+                  ]
+                },
+                {
+                  "label": "Mix-ins",
+                  "ingredients": [
+                    "1 cup oats",
+                    "1 cup cornflakes or Rice Krispies, crushed",
+                    "1 (12 oz) package chocolate chips",
+                    "1 cup nuts (optional)"
+                  ]
+                }
+              ],
+              "steps": [
+                "Preheat oven to 360°.",
+                "Cream butter; beat in both sugars, eggs, and vanilla.",
+                "Add flour, baking powder, baking soda, and salt; mix until combined.",
+                "Stir in oats, cereal, chocolate chips, and nuts if using.",
+                "Drop by rounded tablespoon onto ungreased baking sheets.",
+                "Bake at 360° for 12-15 minutes until golden. Cool on baking sheet 2 minutes before transferring."
+              ],
+              "highAltitude": {
+                "ingredientGroups": [
+                  {
+                    "label": "Wet",
+                    "ingredients": [
+                      "1 cup butter",
+                      "14 tablespoons brown sugar",
+                      "14 tablespoons sugar",
+                      "2 large eggs",
+                      "1 teaspoon vanilla"
+                    ]
+                  },
+                  {
+                    "label": "Dry",
+                    "ingredients": [
+                      "2 cups + 2 tablespoons flour",
+                      "3/4 teaspoon baking powder",
+                      "3/4 teaspoon baking soda",
+                      "1/2 teaspoon salt"
+                    ]
+                  },
+                  {
+                    "label": "Mix-ins",
+                    "ingredients": [
+                      "1 cup oats",
+                      "1 cup cornflakes or Rice Krispies, crushed",
+                      "1 (12 oz) package chocolate chips",
+                      "1 cup nuts (optional)"
+                    ]
+                  }
+                ],
+                "steps": [
+                  "Preheat oven to 350°.",
+                  "Cream butter; beat in both sugars, eggs, and vanilla.",
+                  "Add flour, baking powder, baking soda, and salt; mix until combined.",
+                  "Stir in oats, cereal, chocolate chips, and nuts if using.",
+                  "Drop by rounded tablespoon onto ungreased baking sheets.",
+                  "Bake at 350° for 12-15 minutes until golden. Cool on baking sheet 2 minutes before transferring."
                 ]
               }
             }
@@ -8550,107 +8732,6 @@ module.exports = {
               }
             },
             {
-              "title": "Eric's Chocolate Chip Cookies",
-              "servings": "About 3 dozen cookies",
-              "comments": [
-                "Based on the classic Toll House chocolate chip cookie recipe, with a few of Eric's own touches — rolled oats and roughly chopped pecans."
-              ],
-              "source": "Base recipe: Nestlé Toll House (https://www.verybestbaking.com/toll-house/recipes/chocolate-chip-cookies/)",
-              "ingredientGroups": [
-                {
-                  "label": "Dry ingredients",
-                  "ingredients": [
-                    "2 1/4 cups all-purpose flour",
-                    "1 cup rolled quick oats",
-                    "1 teaspoon baking soda",
-                    "1 teaspoon salt"
-                  ]
-                },
-                {
-                  "label": "Creamed base",
-                  "ingredients": [
-                    "1 cup (2 sticks) unsalted butter, softened",
-                    "3/4 cup granulated sugar",
-                    "3/4 cup packed brown sugar"
-                  ]
-                },
-                {
-                  "label": "Added to the creamed base",
-                  "ingredients": [
-                    "1 teaspoon vanilla extract",
-                    "2 large eggs"
-                  ]
-                },
-                {
-                  "label": "Folded in",
-                  "ingredients": [
-                    "2 cups (12 ounces) semisweet chocolate chips",
-                    "1 cup pecans, very roughly chopped into big pieces"
-                  ]
-                }
-              ],
-              "steps": [
-                "Whisk together the flour, oats, baking soda, and salt in a medium bowl; set aside.",
-                "Cream the butter and sugars: In the bowl of a stand mixer fitted with the paddle attachment, beat the butter, granulated sugar, and brown sugar on medium-high speed until pale and fluffy, about 3 to 4 minutes.",
-                "Add the vanilla and eggs; continue beating on medium speed until fully incorporated and the mixture looks well emulsified.",
-                "With the mixer on low speed (or by hand), add the flour mixture and mix just until no dry streaks remain — the dough should be stiff.",
-                "Fold in the chocolate chips and pecans by hand.",
-                "Cover and refrigerate the dough for at least 1 hour (and up to 2 days) to firm up before baking.",
-                "When ready to bake, preheat the oven to 375°F (190°C) and line baking sheets with parchment.",
-                "Using an ice cream scoop, portion generous mounds of dough onto the prepared sheets, spacing them a few inches apart.",
-                "Bake 11-13 minutes, until the edges are golden brown and the centers still look slightly underbaked. Cool on the baking sheet for 5 minutes before transferring."
-              ],
-              "highAltitude": {
-                "comments": [
-                  "Based on the classic Toll House chocolate chip cookie recipe, with a few of Eric’s own touches — rolled oats and roughly chopped pecans."
-                ],
-                "ingredientGroups": [
-                  {
-                    "label": "Dry ingredients",
-                    "ingredients": [
-                      "2 1/4 cups + 2 tablespoons all-purpose flour",
-                      "1 cup rolled quick oats",
-                      "3/4 teaspoon baking soda",
-                      "1 teaspoon salt"
-                    ]
-                  },
-                  {
-                    "label": "Creamed base",
-                    "ingredients": [
-                      "1 cup (2 sticks) unsalted butter, softened",
-                      "11 tablespoons granulated sugar",
-                      "11 tablespoons packed brown sugar"
-                    ]
-                  },
-                  {
-                    "label": "Added to the creamed base",
-                    "ingredients": [
-                      "1 teaspoon vanilla extract",
-                      "2 large eggs"
-                    ]
-                  },
-                  {
-                    "label": "Folded in",
-                    "ingredients": [
-                      "2 cups (12 ounces) semisweet chocolate chips",
-                      "1 cup pecans, very roughly chopped into big pieces"
-                    ]
-                  }
-                ],
-                "steps": [
-                  "Whisk together the flour, oats, baking soda, and salt in a medium bowl; set aside.",
-                  "Cream the butter and sugars: In the bowl of a stand mixer fitted with the paddle attachment, beat the butter, granulated sugar, and brown sugar on medium-high speed until pale and fluffy, about 3 to 4 minutes.",
-                  "Add the vanilla and eggs; continue beating on medium speed until fully incorporated and the mixture looks well emulsified.",
-                  "With the mixer on low speed (or by hand), add the flour mixture and mix just until no dry streaks remain — the dough should be stiff.",
-                  "Fold in the chocolate chips and pecans by hand.",
-                  "Cover and refrigerate the dough for at least 1 hour (and up to 2 days) to firm up before baking.",
-                  "When ready to bake, preheat the oven to 375°F (190°C) and line baking sheets with parchment.",
-                  "Using an ice cream scoop, portion generous mounds of dough onto the prepared sheets, spacing them a few inches apart.",
-                  "Bake 10–12 minutes, until the edges are golden brown and the centers still look slightly underbaked. (Check at 10 minutes — at altitude cookies spread faster and finish sooner.) Cool on the baking sheet for 5 minutes before transferring."
-                ]
-              }
-            },
-            {
               "title": "Chocolate \"Birthday Cake\"",
               "servings": "One large sheet cake or a 2-layer 9-inch cake   |   Cook: 40-45 minutes",
               "comments": [
@@ -8768,6 +8849,81 @@ module.exports = {
               }
             },
             {
+              "title": "Filled Coffee Cake",
+              "servings": "Serves 12–16   |   Bake: 350–375°F for 30–40 minutes",
+              "source": "Family recipe card, credited to Nana Regina (card reads \"delicious! Mother's\")",
+              "ingredientGroups": [
+                {
+                  "label": "Cake batter",
+                  "ingredients": [
+                    "1/2 cup butter, softened (or margarine)",
+                    "2 cups sugar",
+                    "4 eggs, well beaten",
+                    "1 teaspoon vanilla",
+                    "3 cups flour",
+                    "2 teaspoons baking powder",
+                    "1/2 teaspoon salt",
+                    "1 cup milk"
+                  ]
+                },
+                {
+                  "label": "Filling",
+                  "ingredients": [
+                    "1 cup brown sugar",
+                    "1 cup nuts, chopped",
+                    "2 tablespoons butter",
+                    "2 tablespoons flour",
+                    "1 teaspoon cinnamon"
+                  ]
+                }
+              ],
+              "steps": [
+                "Preheat oven to 350–375°F. Grease a 9x13 pan (or tube pan).",
+                "Cream butter and sugar until light and fluffy. Add well-beaten eggs and vanilla; beat well.",
+                "Whisk together flour, baking powder, and salt in a separate bowl.",
+                "Alternately add the flour mixture and the milk to the butter mixture in 3 additions each, beginning and ending with flour. Stir until just combined.",
+                "Make filling: combine brown sugar, nuts, butter, flour, and cinnamon; mix until crumbly.",
+                "Pour half the batter into the prepared pan. Spread the filling evenly over the batter. Pour remaining batter on top.",
+                "Bake 30–40 minutes until a toothpick inserted in the center comes out clean."
+              ],
+              "highAltitude": {
+                "ingredientGroups": [
+                  {
+                    "label": "Cake batter",
+                    "ingredients": [
+                      "1/2 cup butter, softened (or margarine)",
+                      "1 3/4 cups sugar",
+                      "4 eggs, well beaten",
+                      "1 teaspoon vanilla",
+                      "3 cups flour",
+                      "1 3/4 teaspoons baking powder",
+                      "1/2 teaspoon salt",
+                      "1 cup + 2 tablespoons milk"
+                    ]
+                  },
+                  {
+                    "label": "Filling",
+                    "ingredients": [
+                      "14 tablespoons (7/8 cup) brown sugar",
+                      "1 cup nuts, chopped",
+                      "2 tablespoons butter",
+                      "2 tablespoons flour",
+                      "1 teaspoon cinnamon"
+                    ]
+                  }
+                ],
+                "steps": [
+                  "Preheat oven to 375°F. Grease a 9×13 pan (or tube pan).",
+                  "Cream butter and sugar until light and fluffy. Add well-beaten eggs and vanilla; beat well.",
+                  "Whisk together flour, baking powder, and salt in a separate bowl.",
+                  "Alternately add the flour mixture and the milk to the butter mixture in 3 additions each, beginning and ending with flour. Stir until just combined.",
+                  "Make filling: combine brown sugar, nuts, butter, flour, and cinnamon; mix until crumbly.",
+                  "Pour half the batter into the prepared pan. Spread the filling evenly over the batter. Pour remaining batter on top.",
+                  "Bake 25–32 minutes until a toothpick inserted in the center comes out clean. Check at 25 minutes."
+                ]
+              }
+            },
+            {
               "title": "Jumbo Banana-Nut Muffins",
               "servings": "Makes 12 muffins",
               "comments": [
@@ -8873,88 +9029,6 @@ module.exports = {
                   "Add dry ingredients to wet mixture and stir just to combine. Fold in walnuts if using.",
                   "Spoon batter into prepared muffin cups; bake 22–27 minutes or until a cake tester inserted in the center comes out clean. (Check at 22 minutes — the higher temp means they finish faster.)",
                   "Remove muffin tin(s) to wire rack. Cool 5 minutes before removing muffins from cups; finish cooling on rack. Serve warm or store in an airtight container at room temperature. These muffins freeze well."
-                ]
-              }
-            },
-            {
-              "title": "Kitchen Sink Cookies",
-              "source": "From Lisa Sullivan",
-              "ingredientGroups": [
-                {
-                  "label": "Wet",
-                  "ingredients": [
-                    "1 cup butter",
-                    "1 cup brown sugar",
-                    "1 cup sugar",
-                    "2 large eggs",
-                    "1 teaspoon vanilla"
-                  ]
-                },
-                {
-                  "label": "Dry",
-                  "ingredients": [
-                    "2 cups flour",
-                    "1 teaspoon baking powder",
-                    "1 teaspoon baking soda",
-                    "1/2 teaspoon salt"
-                  ]
-                },
-                {
-                  "label": "Mix-ins",
-                  "ingredients": [
-                    "1 cup oats",
-                    "1 cup cornflakes or Rice Krispies, crushed",
-                    "1 (12 oz) package chocolate chips",
-                    "1 cup nuts (optional)"
-                  ]
-                }
-              ],
-              "steps": [
-                "Preheat oven to 360°.",
-                "Cream butter; beat in both sugars, eggs, and vanilla.",
-                "Add flour, baking powder, baking soda, and salt; mix until combined.",
-                "Stir in oats, cereal, chocolate chips, and nuts if using.",
-                "Drop by rounded tablespoon onto ungreased baking sheets.",
-                "Bake at 360° for 12-15 minutes until golden. Cool on baking sheet 2 minutes before transferring."
-              ],
-              "highAltitude": {
-                "ingredientGroups": [
-                  {
-                    "label": "Wet",
-                    "ingredients": [
-                      "1 cup butter",
-                      "14 tablespoons brown sugar",
-                      "14 tablespoons sugar",
-                      "2 large eggs",
-                      "1 teaspoon vanilla"
-                    ]
-                  },
-                  {
-                    "label": "Dry",
-                    "ingredients": [
-                      "2 cups + 2 tablespoons flour",
-                      "3/4 teaspoon baking powder",
-                      "3/4 teaspoon baking soda",
-                      "1/2 teaspoon salt"
-                    ]
-                  },
-                  {
-                    "label": "Mix-ins",
-                    "ingredients": [
-                      "1 cup oats",
-                      "1 cup cornflakes or Rice Krispies, crushed",
-                      "1 (12 oz) package chocolate chips",
-                      "1 cup nuts (optional)"
-                    ]
-                  }
-                ],
-                "steps": [
-                  "Preheat oven to 350°.",
-                  "Cream butter; beat in both sugars, eggs, and vanilla.",
-                  "Add flour, baking powder, baking soda, and salt; mix until combined.",
-                  "Stir in oats, cereal, chocolate chips, and nuts if using.",
-                  "Drop by rounded tablespoon onto ungreased baking sheets.",
-                  "Bake at 350° for 12-15 minutes until golden. Cool on baking sheet 2 minutes before transferring."
                 ]
               }
             },
@@ -9098,81 +9172,6 @@ module.exports = {
                   "Add the flour and vanilla.",
                   "Pour into a well-greased loaf pan or bundt pan.",
                   "Bake at 375°F for 70–80 minutes. Start checking at 70 minutes with a toothpick or cake tester in the center. The cake is done when the tester comes out clean and the top is deep golden."
-                ]
-              }
-            },
-            {
-              "title": "Filled Coffee Cake",
-              "servings": "Serves 12–16   |   Bake: 350–375°F for 30–40 minutes",
-              "source": "Family recipe card, credited to Nana Regina (card reads \"delicious! Mother's\")",
-              "ingredientGroups": [
-                {
-                  "label": "Cake batter",
-                  "ingredients": [
-                    "1/2 cup butter, softened (or margarine)",
-                    "2 cups sugar",
-                    "4 eggs, well beaten",
-                    "1 teaspoon vanilla",
-                    "3 cups flour",
-                    "2 teaspoons baking powder",
-                    "1/2 teaspoon salt",
-                    "1 cup milk"
-                  ]
-                },
-                {
-                  "label": "Filling",
-                  "ingredients": [
-                    "1 cup brown sugar",
-                    "1 cup nuts, chopped",
-                    "2 tablespoons butter",
-                    "2 tablespoons flour",
-                    "1 teaspoon cinnamon"
-                  ]
-                }
-              ],
-              "steps": [
-                "Preheat oven to 350–375°F. Grease a 9x13 pan (or tube pan).",
-                "Cream butter and sugar until light and fluffy. Add well-beaten eggs and vanilla; beat well.",
-                "Whisk together flour, baking powder, and salt in a separate bowl.",
-                "Alternately add the flour mixture and the milk to the butter mixture in 3 additions each, beginning and ending with flour. Stir until just combined.",
-                "Make filling: combine brown sugar, nuts, butter, flour, and cinnamon; mix until crumbly.",
-                "Pour half the batter into the prepared pan. Spread the filling evenly over the batter. Pour remaining batter on top.",
-                "Bake 30–40 minutes until a toothpick inserted in the center comes out clean."
-              ],
-              "highAltitude": {
-                "ingredientGroups": [
-                  {
-                    "label": "Cake batter",
-                    "ingredients": [
-                      "1/2 cup butter, softened (or margarine)",
-                      "1 3/4 cups sugar",
-                      "4 eggs, well beaten",
-                      "1 teaspoon vanilla",
-                      "3 cups flour",
-                      "1 3/4 teaspoons baking powder",
-                      "1/2 teaspoon salt",
-                      "1 cup + 2 tablespoons milk"
-                    ]
-                  },
-                  {
-                    "label": "Filling",
-                    "ingredients": [
-                      "14 tablespoons (7/8 cup) brown sugar",
-                      "1 cup nuts, chopped",
-                      "2 tablespoons butter",
-                      "2 tablespoons flour",
-                      "1 teaspoon cinnamon"
-                    ]
-                  }
-                ],
-                "steps": [
-                  "Preheat oven to 375°F. Grease a 9×13 pan (or tube pan).",
-                  "Cream butter and sugar until light and fluffy. Add well-beaten eggs and vanilla; beat well.",
-                  "Whisk together flour, baking powder, and salt in a separate bowl.",
-                  "Alternately add the flour mixture and the milk to the butter mixture in 3 additions each, beginning and ending with flour. Stir until just combined.",
-                  "Make filling: combine brown sugar, nuts, butter, flour, and cinnamon; mix until crumbly.",
-                  "Pour half the batter into the prepared pan. Spread the filling evenly over the batter. Pour remaining batter on top.",
-                  "Bake 25–32 minutes until a toothpick inserted in the center comes out clean. Check at 25 minutes."
                 ]
               }
             },
@@ -9433,83 +9432,6 @@ module.exports = {
               }
             },
             {
-              "title": "Brenda's Chocolate Chip Cookies",
-              "servings": "Makes 50-100 cookies",
-              "ingredientGroups": [
-                {
-                  "label": "Dry",
-                  "ingredients": [
-                    "2 2/3 cups sifted all-purpose flour",
-                    "1 teaspoon baking soda",
-                    "1 teaspoon salt"
-                  ]
-                },
-                {
-                  "label": "Wet",
-                  "ingredients": [
-                    "1 cup Crisco (shortening)",
-                    "3/4 cup sugar",
-                    "3/4 cup firmly packed brown sugar",
-                    "1 teaspoon vanilla",
-                    "1 teaspoon water",
-                    "2 eggs"
-                  ]
-                },
-                {
-                  "label": "Add-ins",
-                  "ingredients": [
-                    "1 large package semi-sweet chocolate morsels"
-                  ]
-                }
-              ],
-              "steps": [
-                "Preheat oven to 375 degrees.",
-                "Sift together flour, baking soda, and salt.",
-                "Combine Crisco, sugars, vanilla, and water; beat until creamy. Beat in 2 eggs.",
-                "Add flour mixture and mix well. Stir in chocolate morsels.",
-                "Drop by well-rounded teaspoon onto cookie sheet. Bake at 375 for 10-12 minutes."
-              ],
-              "comments": ["Can be made as an alternative to Eric's chocolate chip cookie recipe."],
-              "source": "Family recipe, attributed to Grandmother Brenda",
-              "highAltitude": {
-                "ingredientGroups": [
-                  {
-                    "label": "Dry",
-                    "ingredients": [
-                      "2 2/3 cups + 2 tablespoons sifted all-purpose flour",
-                      "3/4 teaspoon baking soda",
-                      "1 teaspoon salt"
-                    ]
-                  },
-                  {
-                    "label": "Wet",
-                    "ingredients": [
-                      "1 cup Crisco (shortening)",
-                      "3/4 cup sugar",
-                      "3/4 cup firmly packed brown sugar",
-                      "1 teaspoon vanilla",
-                      "1 teaspoon water",
-                      "2 eggs"
-                    ]
-                  },
-                  {
-                    "label": "Add-ins",
-                    "ingredients": [
-                      "1 large package semi-sweet chocolate morsels"
-                    ]
-                  }
-                ],
-                "steps": [
-                  "Preheat oven to 375 degrees.",
-                  "Sift together flour, baking soda, and salt.",
-                  "Combine Crisco, sugars, vanilla, and water; beat until creamy. Beat in 2 eggs.",
-                  "Add flour mixture and mix well. Stir in chocolate morsels.",
-                  "Drop by well-rounded teaspoon onto cookie sheet. Bake at 375 for 10-12 minutes.",
-                  "Tip: Refrigerating the dough for 30 minutes before baking further reduces spreading at altitude."
-                ]
-              }
-            },
-            {
               "title": "Brenda's Noodle Kugel",
               "favorite": true,
               "source": "Family recipe card, credited to Brenda",
@@ -9713,6 +9635,107 @@ module.exports = {
               }
             }
           ]
+        },
+        {
+          "title": "Savory",
+          "recipes": [
+            {
+              "title": "72-Hour Pizza Dough",
+              "servings": "Makes 3 pizzas (~283g each)",
+              "source": "The Gourmandise School (The Pizza Class)",
+              "ingredientGroups": [
+                {
+                  "label": null,
+                  "ingredients": [
+                    "350 ml water",
+                    "½ tablespoon dry yeast",
+                    "500g bread flour (or strong all-purpose, like King Arthur)",
+                    "3 teaspoons kosher salt (Diamond Crystal preferred)"
+                  ]
+                }
+              ],
+              "steps": [
+                "In a large bowl, combine the water and yeast. Add the flour and salt and mix with one hand until it just forms a smooth dough. Cover and let rise at room temperature for 12–24 hours. It will nearly double in size.",
+                "After this initial ferment, place the dough in the fridge for another 12–48 hours.",
+                "Remove the dough from the fridge and lightly flour your counter. Divide the dough into 3 portions of about 283 grams each. Gently purse one of your dough balls so that just one seam at the bottom of the dough remains, much like a balloon you'd blow into.",
+                "Move to a part of your counter that is un-floured and give the dough a gentle rub, seam side down, on that area. Place the dough ball on a floured part of the counter to rest for 4 hours (closer to 3½ hours on a warm day). Repeat with the remaining dough balls; once all have been pre-shaped, lightly flour the tops and cover them. Place them a couple of inches apart to give them room to get slack again.",
+                "Preheat your oven to 450°F with a baking steel or pizza stone inside. For best results, preheat for at least 45 minutes to 1 hour. Alternatively, if using a pizza oven (e.g. Ooni), preheat according to its instructions until it reaches 700–900°F.",
+                "Shape your pizzas most of the way before placing them on a floured peel or baking sheet turned upside-down. Just before baking, place the pizza on the peel, finish stretching it, and add toppings. For a conventional oven: move the pizza to the stone or steel by tilting the peel slightly, shoving the pizza forward and jerking back to release it onto the hot surface. For a pizza oven: launch directly onto the hot stone and bake for 60–90 seconds, rotating once halfway through."
+              ],
+              "highAltitude": {
+                "ingredientGroups": [
+                  {
+                    "label": null,
+                    "ingredients": [
+                      "350 ml water",
+                      "1 teaspoon dry yeast",
+                      "500g bread flour (or strong all-purpose, like King Arthur)",
+                      "3 teaspoons kosher salt (Diamond Crystal preferred)"
+                    ]
+                  }
+                ],
+                "steps": [
+                  "In a large bowl, combine the water and yeast. Add the flour and salt and mix with one hand until it just forms a smooth dough. Cover and let rise at room temperature for 8–18 hours. At altitude the dough rises roughly 25–40% faster — start checking at 8 hours; you want it nearly doubled but not over-proofed and collapsing.",
+                  "After this initial ferment, place the dough in the fridge for another 12–48 hours.",
+                  "Remove the dough from the fridge and lightly flour your counter. Divide the dough into 3 portions of about 283 grams each. Gently purse one of your dough balls so that just one seam at the bottom of the dough remains, much like a balloon you’d blow into.",
+                  "Move to a part of your counter that is un-floured and give the dough a gentle rub, seam side down, on that area. Place the dough ball on a floured part of the counter to rest for 3–3.5 hours (closer to 3 hours on a warm day; check at 2.5 hours). Repeat with the remaining dough balls; once all have been pre-shaped, lightly flour the tops and cover them. Place them a couple of inches apart to give them room to get slack again.",
+                  "Preheat your oven to 450°F with a baking steel or pizza stone inside. For best results, preheat for at least 45 minutes to 1 hour. Alternatively, if using a pizza oven (e.g. Ooni), preheat according to its instructions until it reaches 700–900°F.",
+                  "Shape your pizzas most of the way before placing them on a floured peel or baking sheet turned upside-down. Just before baking, place the pizza on the peel, finish stretching it, and add toppings. For a conventional oven: move the pizza to the stone or steel by tilting the peel slightly, shoving the pizza forward and jerking back to release it onto the hot surface. For a pizza oven: launch directly onto the hot stone and bake for 60–90 seconds, rotating once halfway through."
+                ]
+              }
+            },
+            {
+              "title": "Susan's Calzones",
+              "servings": "Serves 4",
+              "source": "Family recipe card, credited to Susan",
+              "ingredientGroups": [
+                {
+                  "label": "Dough (5 hours ahead)",
+                  "ingredients": [
+                    "12 Rhodes frozen dinner rolls (3 per person), defrosted and risen"
+                  ]
+                },
+                {
+                  "label": "Filling",
+                  "ingredients": [
+                    "1 pound ground beef or ground turkey",
+                    "About 1/2 cup spaghetti sauce, or enough to hold filling together"
+                  ]
+                },
+                {
+                  "label": "Cheese",
+                  "ingredients": [
+                    "1 cup shredded mozzarella",
+                    "1/2 cup grated parmesan"
+                  ]
+                },
+                {
+                  "label": "Add-ins (optional)",
+                  "ingredients": [
+                    "Sliced olives",
+                    "Pepperoni",
+                    "Sautéed mushrooms"
+                  ]
+                },
+                {
+                  "label": "Topping (optional)",
+                  "ingredients": [
+                    "Additional spaghetti sauce",
+                    "Additional grated parmesan"
+                  ]
+                }
+              ],
+              "steps": [
+                "Defrost rolls at room temperature and let rise until doubled, about 5 hours (or per package directions).",
+                "Brown ground beef or turkey in a skillet over medium heat; drain fat.",
+                "Mix browned meat with spaghetti sauce (enough to hold the mixture together but not soupy), mozzarella, and parmesan. Stir in any optional add-ins.",
+                "On a lightly floured surface, press each group of 3 risen rolls together and roll into a rough square.",
+                "Spoon filling onto one half of each square. Fold dough over to form a triangle. Press edges firmly with fork tines to seal.",
+                "Place on a baking sheet. Bake at 350°F for 18 minutes.",
+                "Optional: 10 minutes in, spoon additional spaghetti sauce over the top and sprinkle with parmesan; return to oven for remaining 8 minutes."
+              ]
+            }
+          ]
         }
       ]
     },
@@ -9902,7 +9925,9 @@ module.exports = {
                 "Mix all ingredients together. Make marinade one day ahead to allow flavors to blend.",
                 "Coat food with marinade, cover, and refrigerate for at least 3 hours (better if overnight)."
               ],
-              "comments": ["Use with fish, seafood, poultry, veal, or vegetables."],
+              "comments": [
+                "Use with fish, seafood, poultry, veal, or vegetables."
+              ],
               "source": "From Cheryl Zando"
             },
             {
