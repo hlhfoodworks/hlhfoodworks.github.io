@@ -3600,7 +3600,7 @@ const data = {
           ingredientGroups: [
             { label: "Rice", ingredients: ["2 cups Jasmine or Basmati rice", "3 cups water", "2 teaspoons salt"] },
             { label: "Whole spices", ingredients: ["2 cloves", "2 green cardamom pods", "One 2-inch piece cinnamon"] },
-            { label: "Sauté", ingredients: ["3 tablespoons vegetable oil (or ghee)", "1/2 teaspoon dark mustard seeds", "1/2 teaspoon cumin seeds", "1/4 teaspoon Aleppo pepper or red pepper flakes", "1 medium onion, chopped", "3 garlic cloves, chopped", "1/4 teaspoon turmeric"] }
+            { label: "Aromatics", ingredients: ["3 tablespoons vegetable oil (or ghee)", "1/2 teaspoon dark mustard seeds", "1/2 teaspoon cumin seeds", "1/4 teaspoon Aleppo pepper or red pepper flakes", "1 medium onion, chopped", "3 garlic cloves, chopped", "1/4 teaspoon turmeric"] }
           ],
           steps: [
             "Rinse the rice in a sieve under cool running water until the water runs clear. Soak in cool water 30 minutes, then drain well.",
@@ -4354,7 +4354,7 @@ const data = {
             {html: "The go-to sauce for <a href='#sous-vide-beef-ribs'>Sous Vide Beef Back Ribs</a>. Serve warm on the side."}
           ],
           ingredientGroups: [
-            { label: "Sauté", ingredients: [
+            { label: "Aromatics", ingredients: [
               "1 medium onion, chopped",
               "2 Tbsp butter",
               "2 garlic cloves, minced"
