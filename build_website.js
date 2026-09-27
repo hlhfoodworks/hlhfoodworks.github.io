@@ -713,7 +713,6 @@ const html = `<!DOCTYPE html>
     color: var(--nav-text);
     background: none; border: none; border-bottom: 1px solid #5a3e28;
     text-align: left; width: 100%;
-    font-family: inherit;
   }
   #collapse-all:hover { background: #4e3522; }
   #collapse-all .collapse-icon { font-size: 0.85rem; color: #a8906e; }
@@ -726,7 +725,6 @@ const html = `<!DOCTYPE html>
     color: var(--nav-text);
     background: none; border: none; border-bottom: 1px solid #5a3e28;
     text-align: left; width: 100%;
-    font-family: inherit;
   }
   #alt-toggle:hover { background: #4e3522; }
   #alt-toggle .alt-icon { font-size: 0.9rem; }
@@ -1116,7 +1114,7 @@ const html = `<!DOCTYPE html>
   </div>
   <div id="search-results"></div>
   <button id="fav-toggle"><span class="star">★</span> Favorites only</button>
-  <button id="alt-toggle"><span class="alt-icon">🏔</span> High Altitude</button>
+  <button id="alt-toggle"><span class="alt-icon">&#9650;</span> High Altitude</button>
   <button id="collapse-all"><span class="collapse-icon">⊟</span> Collapse all</button>
   <div id="nav-tree">
     ${navHtml}
