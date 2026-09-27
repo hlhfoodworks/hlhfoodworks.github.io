@@ -361,6 +361,44 @@ module.exports = {
           ]
         },
         {
+          "title": "Shrimp Mold",
+          "source": "Family recipe card, credited to Grandmother Brenda",
+          "comments": [
+            "To spread on crackers or party rye."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Gelatin",
+              "ingredients": [
+                "1 envelope Knox gelatin"
+              ]
+            },
+            {
+              "label": "Soup base",
+              "ingredients": [
+                "1 can tomato soup, undiluted",
+                "1 package (8 oz) cream cheese, softened"
+              ]
+            },
+            {
+              "label": "Shrimp mixture",
+              "ingredients": [
+                "1 cup mayonnaise",
+                "3 cans small shrimp, drained",
+                "3/4 cup finely chopped onion and celery"
+              ]
+            }
+          ],
+          "steps": [
+            "Soften gelatin in 1/4 cup cold water; let stand 5 minutes.",
+            "In a medium saucepan, heat tomato soup over medium heat until simmering. Add softened gelatin and stir until dissolved.",
+            "Add cream cheese to the hot soup; stir until completely melted and smooth. Remove from heat.",
+            "Stir in mayonnaise, shrimp, and onion-celery mixture until well combined.",
+            "Pour into a mold sprayed with nonstick cooking spray. Refrigerate overnight until firm.",
+            "To unmold: run a knife around the edge and invert onto a serving plate. Serve with crackers or party rye."
+          ]
+        },
+        {
           "title": "Barbara Glabman's Cheese Ball",
           "servings": "1 large cheese ball (12–16 as an appetizer)",
           "source": "Family recipe card, credited to Barbara Glabman",
@@ -515,6 +553,30 @@ module.exports = {
             "Season with salt and pepper. Chill thoroughly in refrigerator.",
             "Serve in chilled bowls. Pass cucumber, green pepper, onion, and croutons separately at the table for guests to add."
           ]
+        },
+        {
+          "title": "Creamy Ginger-Soy Dip",
+          "source": "Family recipe card, credited to Grandmother Brenda",
+          "ingredientGroups": [
+            {
+              "label": "Dip",
+              "ingredients": [
+                "1 cup sour cream",
+                "2 tablespoons mayonnaise",
+                "1/2 cup scallions, finely chopped",
+                "1/3 teaspoon fresh coriander (cilantro)",
+                "1/4 cup parsley, chopped",
+                "2 teaspoons ginger, fresh and minced (or 1/2 teaspoon ground)",
+                "2 tablespoons soy sauce",
+                "2 tablespoons canned water chestnuts, chopped"
+              ]
+            }
+          ],
+          "steps": [
+            "Combine all ingredients and mix well.",
+            "Cover and refrigerate for at least 1 hour before serving.",
+            "Serve with raw vegetables."
+          ]
         }
       ]
     },
@@ -553,6 +615,46 @@ module.exports = {
                 "Sprinkle onion cubes over broccoli.",
                 "Whisk mustard and lemon juice together, then beat in oil; season with salt and stir in parsley.",
                 "Spoon dressing over broccoli. Serve hot, warm, or cold."
+              ]
+            },
+            {
+              "title": "Crunchy Romaine Toss",
+              "servings": "Serves 10-12",
+              "source": "From Christy Ponder",
+              "ingredientGroups": [
+                {
+                  "label": "Sweet & Sour Dressing",
+                  "ingredients": [
+                    "1 cup vegetable oil",
+                    "1 cup sugar",
+                    "1/2 cup white vinegar",
+                    "3 teaspoons soy sauce",
+                    "Salt and pepper to taste"
+                  ]
+                },
+                {
+                  "label": "Toasted noodle mixture",
+                  "ingredients": [
+                    "1 package ramen noodles, uncooked, broken up (discard flavor packet)",
+                    "1 cup walnuts, chopped",
+                    "2 tablespoons unsalted butter",
+                    "2 tablespoons olive oil"
+                  ]
+                },
+                {
+                  "label": "Salad",
+                  "ingredients": [
+                    "1 bunch broccoli, coarsely chopped",
+                    "1 head romaine lettuce, washed and broken into pieces",
+                    "4 green onions, chopped"
+                  ]
+                }
+              ],
+              "steps": [
+                "Whisk together all dressing ingredients until the sugar dissolves. Set aside.",
+                "In a large skillet over medium heat, melt butter with olive oil. Add broken ramen noodles and walnuts; cook, stirring, until golden, about 5 minutes. Spread on paper towels to cool.",
+                "In a large bowl, combine broccoli, romaine, and green onions. Add the cooled noodle mixture and toss to combine.",
+                "Pour dressing over the salad and toss to coat well. Serve immediately."
               ]
             },
             {

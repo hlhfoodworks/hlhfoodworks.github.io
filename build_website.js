@@ -202,6 +202,7 @@ const CLUSTER_MAP = {
   'Moroccan Eggplant with Couscous':                     'Moroccan/North African',
   // Salads > Greens — American
   'Broccoli Salad':                                      'American',
+  'Crunchy Romaine Toss':                                'American',
   // Salads > Pasta Salads — American
   'Chuck Wagon Barbecued Pasta Salad':                   'General',
   // Salads > Pasta Salads — Chinese
@@ -237,6 +238,7 @@ const CLUSTER_MAP = {
   'Béarnaise Sauce':                                     'French',
   // Appetizers — American
   "Artichoke Hors D'oeuvre":                             'American',
+  'Shrimp Mold':                                         'American',
   "Barbara Glabman's Cheese Ball":                       'General',
   'Shrimp Dip':                                          'General',
   // Appetizers — Central/Eastern European
@@ -244,6 +246,8 @@ const CLUSTER_MAP = {
   'Charoset (Ashkenazic Style)':                         'Central/Eastern European',
   // Appetizers — Mediterranean/Greek
   'Gazpacho':                                            'Mediterranean/Greek',
+  // Appetizers — Chinese
+  'Creamy Ginger-Soy Dip':                              'Chinese',
   // Mushroom — Italian
   'Mushrooms Florentine':                                'Italian',
   // Baking Savory — Italian
