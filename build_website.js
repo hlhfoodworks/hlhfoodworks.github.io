@@ -301,7 +301,10 @@ function renderRecipe(recipe, idPrefix, idx) {
   return `<article class="recipe" id="${esc(id)}"${isFav} data-title="${esc(recipe.title)}">
   <div class="recipe-header-row">
     <h3>${esc(title)}</h3>
-    <button class="print-btn" title="Print this recipe" aria-label="Print ${esc(recipe.title)}">🖨 Print</button>
+    <div class="recipe-btns">
+      <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy ${esc(recipe.title)}">📋 Copy Recipe</button>
+      <button class="print-btn" title="Print this recipe" aria-label="Print ${esc(recipe.title)}">🖨 Print</button>
+    </div>
   </div>
   ${servings}${comments}${source}
   <div class="recipe-body">
@@ -502,11 +505,29 @@ function buildRecipeLookup(data) {
   return map;
 }
 
+// ── Cookbook data for clipboard copy ──────────────────────────────────────
+// Builds a flat title → recipe map with only the fields needed for formatting.
+
+function buildCookbookData(data) {
+  const map = {};
+  for (const section of data.sections) {
+    if (section.recipes) {
+      for (const r of section.recipes) map[r.title] = r;
+    } else if (section.subsections) {
+      for (const sub of section.subsections) {
+        for (const r of (sub.recipes || [])) map[r.title] = r;
+      }
+    }
+  }
+  return map;
+}
+
 // ── Assemble ───────────────────────────────────────────────────────────────
 
 const navHtml    = buildNav(data);
 const contentHtml = buildContent(data);
 const recipeLookup = buildRecipeLookup(data);
+const cookbookData = buildCookbookData(data);
 
 const html = `<!DOCTYPE html>
 <html lang="en">
@@ -832,7 +853,7 @@ const html = `<!DOCTYPE html>
   .subsection.all-hidden { display: none; }
   .section.all-hidden { display: none; }
 
-  /* ── Print button ── */
+  /* ── Print & Copy buttons ── */
   .recipe-header-row {
     display: flex;
     align-items: flex-start;
@@ -841,6 +862,8 @@ const html = `<!DOCTYPE html>
     margin-bottom: 4px;
   }
   .recipe-header-row h3 { margin-bottom: 0; flex: 1; }
+  .recipe-btns { display: flex; gap: 6px; flex-shrink: 0; }
+  .copy-btn,
   .print-btn {
     flex-shrink: 0;
     background: none;
@@ -855,7 +878,9 @@ const html = `<!DOCTYPE html>
     margin-top: 2px;
     transition: background 0.12s, color 0.12s;
   }
+  .copy-btn:hover,
   .print-btn:hover { background: var(--border); color: var(--text); }
+  .copy-btn.copied { background: #e6f4ea; border-color: #4caf50; color: #2e7d32; }
 
   /* ── Print media ── */
   @media print {
@@ -863,7 +888,7 @@ const html = `<!DOCTYPE html>
     /* Reset body layout so sidebar isn't part of the flow */
     body { display: block !important; background: white !important; min-height: 0 !important; }
     /* Hide sidebar and chrome */
-    #nav, #mobile-header, #cookbook-title, .print-btn { display: none !important; }
+    #nav, #mobile-header, #cookbook-title, .print-btn, .copy-btn, .recipe-btns { display: none !important; }
     /* Main area: full width, no extra padding */
     #main { padding: 0 !important; max-width: none !important; flex: none !important; }
     /* Collapse section/subsection/cluster containers so they add no whitespace */
@@ -892,7 +917,7 @@ const html = `<!DOCTYPE html>
       display: block !important;
       break-inside: auto;
     }
-    .recipe.printing .print-btn { display: none !important; }
+    .recipe.printing .recipe-btns { display: none !important; }
   }
 
   /* ── Responsive ── */
@@ -1019,6 +1044,9 @@ const html = `<!DOCTYPE html>
 (function () {
   // ── Recipe title → DOM id lookup ──────────────────────────────────────
   const RECIPE_IDS = ${JSON.stringify(recipeLookup, null, 2)};
+
+  // ── Recipe data for clipboard formatting ─────────────────────────────
+  const COOKBOOK_DATA = ${JSON.stringify(cookbookData, null, 2)};
 
   // ── Hamburger toggle (mobile) ─────────────────────────────────────────
   const hamburger = document.getElementById('hamburger');
@@ -1186,6 +1214,99 @@ const html = `<!DOCTYPE html>
       });
     });
   });
+  // ── Copy recipe to clipboard ──────────────────────────────────────────
+  function formatRecipeForClipboard(recipe) {
+    var lines = [];
+
+    // Title + source
+    var heading = recipe.title;
+    if (recipe.favorite) heading = '★ ' + heading;
+    if (recipe.source && !recipe.source.startsWith('http')) heading += ' (' + recipe.source + ')';
+    lines.push(heading);
+    lines.push('');
+
+    if (recipe.servings) { lines.push(recipe.servings); lines.push(''); }
+
+    // Comments / notes
+    if (recipe.comments && recipe.comments.length) {
+      lines.push('NOTES');
+      recipe.comments.forEach(function (c) {
+        var text = (typeof c === 'object' && c.html)
+          ? c.html.replace(/<[^>]+>/g, '') // strip HTML tags
+          : c;
+        lines.push(text);
+      });
+      lines.push('');
+    }
+
+    // Ingredients
+    if (recipe.ingredientGroups && recipe.ingredientGroups.length) {
+      lines.push('INGREDIENTS');
+      lines.push('');
+      recipe.ingredientGroups.forEach(function (g) {
+        if (g.label) {
+          var lbl = g.label;
+          if (g.note) lbl += ' (' + g.note + ')';
+          lines.push(lbl + ':');
+        }
+        (g.ingredients || []).forEach(function (i) { lines.push('  • ' + i); });
+        lines.push('');
+      });
+    }
+
+    // Steps
+    if (recipe.steps && recipe.steps.length) {
+      lines.push('STEPS');
+      lines.push('');
+      recipe.steps.forEach(function (step, idx) {
+        if (typeof step === 'string') {
+          lines.push((idx + 1) + '. ' + step);
+        } else {
+          lines.push((idx + 1) + '. ' + step.lead);
+          (step.bullets || []).forEach(function (b) { lines.push('     • ' + b); });
+        }
+      });
+      lines.push('');
+    }
+
+    return lines.join('\n').trim();
+  }
+
+  document.querySelectorAll('.copy-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var article = btn.closest('.recipe');
+      if (!article) return;
+      var title = article.dataset.title;
+      var recipe = COOKBOOK_DATA[title];
+      if (!recipe) return;
+      var text = formatRecipeForClipboard(recipe);
+      navigator.clipboard.writeText(text).then(function () {
+        btn.textContent = '✓ Copied!';
+        btn.classList.add('copied');
+        setTimeout(function () {
+          btn.textContent = '📋 Copy Recipe';
+          btn.classList.remove('copied');
+        }, 2000);
+      }).catch(function () {
+        // Fallback for older browsers / non-HTTPS
+        var ta = document.createElement('textarea');
+        ta.value = text;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+        btn.textContent = '✓ Copied!';
+        btn.classList.add('copied');
+        setTimeout(function () {
+          btn.textContent = '📋 Copy Recipe';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    });
+  });
+
   window.addEventListener('afterprint', function () {
     // On iOS Safari, afterprint fires while the print dialog is still open and
     // the preview is live — removing .printing immediately blanks the preview.
