@@ -442,202 +442,221 @@ function renderRecipeList(recipes, idPrefix, clusterGroups) {
   return html;
 }
 
-// ── Nav building ───────────────────────────────────────────────────────────
-// Returns the nav <ul> HTML and a flat list of all recipe IDs (for search).
 
-function buildNav(data) {
+// ── Section filename ─────────────────────────────────────────────────────
+function sectionFilename(sectionTitle) {
+  return slug(sectionTitle) + '.html';
+}
+
+// ── Nav building ───────────────────────────────────────────────────────────
+// currentSection: title of the section whose page is being built (pre-expanded).
+// Non-current sections appear as plain links; current section shows full tree.
+
+function buildNav(data, currentSection) {
   let nav = '<ul class="nav-l1">\n';
 
   for (const section of data.sections) {
     const sl = slug(section.title);
     const secId = `sec-${sl}`;
+    const filename = sectionFilename(section.title);
+    const isCurrent = section.title === currentSection;
 
-    if (section.recipes) {
-      // Flat section — Section → Recipes
-      const hasContent = section.recipes.length > 0;
-      const clusterGroups = groupByCluster(section.recipes);
-      const arrow = hasContent ? '<span class="arrow">▶</span>' : '';
+    const hasContent = section.recipes
+      ? section.recipes.length > 0
+      : section.subsections
+        ? section.subsections.some(s => s.recipes && s.recipes.length > 0)
+        : false;
 
-      nav += `<li class="nav-section${hasContent ? '' : ' empty'}" data-sec="${secId}">`;
-      nav += `<span class="nav-hd section-hd" data-toggle="${secId}-children">${arrow}${esc(section.title)}</span>`;
+    nav += `<li class="nav-section${isCurrent ? ' current' : ''}${hasContent ? '' : ' empty'}" data-sec="${secId}">`;
 
-      if (hasContent) {
-        nav += `<ul class="nav-l2 collapsed" id="${secId}-children">`;
+    // Section heading row: expand/collapse arrow + navigation link (or span for current)
+    nav += `<div class="nav-sec-row">`;
+    if (hasContent) {
+      nav += `<button class="nav-sec-arrow" data-toggle="${secId}-children" aria-label="Toggle section">▶</button>`;
+    }
+    if (isCurrent) {
+      nav += `<span class="nav-hd section-hd current-section">${esc(section.title)}</span>`;
+    } else {
+      nav += `<a class="nav-hd section-hd" href="${esc(filename)}">${esc(section.title)}</a>`;
+    }
+    nav += `</div>`;
+
+    // Full collapsible tree for all sections
+    if (hasContent) {
+      nav += `<ul class="nav-l2 collapsed" id="${secId}-children">`;
+
+      if (section.recipes) {
+        const clusterGroups = groupByCluster(section.recipes);
         if (clusterGroups) {
-          // Section → Cluster → Recipe
+          let globalIdx = 0;
           for (const { cluster, recipes: cr } of clusterGroups) {
             const cid = `${sl}--${slug(cluster)}`;
-            nav += navClusterItem(cid, cluster, cr, sl);
+            nav += navClusterItem(cid, cluster, cr, sl, globalIdx, filename);
+            globalIdx += cr.length;
           }
         } else {
-          // Section → Recipe directly
           section.recipes.forEach((r, i) => {
-            const rid = `${sl}-${i}`;
-            nav += navRecipeItem(rid, r);
+            const rid = r.id || `${sl}-${i}`;
+            nav += navRecipeItem(rid, r, filename);
           });
         }
-        nav += '</ul>';
-      }
-      nav += '</li>\n';
+      } else if (section.subsections) {
+        for (const sub of section.subsections) {
+          const subsl = `${sl}-${slug(sub.title)}`;
+          const subSecId = `sub-${subsl}`;
+          const hasRecipes = sub.recipes && sub.recipes.length > 0;
+          const clusterGroups = hasRecipes ? groupByCluster(sub.recipes) : null;
+          const subArrow = hasRecipes ? '<span class="arrow">▶</span>' : '';
 
-    } else if (section.subsections) {
-      // Section with subsections
-      const hasContent = section.subsections.some(s => s.recipes && s.recipes.length > 0);
-      const arrow = hasContent ? '<span class="arrow">▶</span>' : '';
+          nav += `<li class="nav-sub${hasRecipes ? '' : ' empty'}">`;
+          nav += `<a class="nav-hd sub-hd" href="#${subSecId}" data-toggle="${subSecId}-children">${subArrow}${esc(sub.title)}</a>`;
 
-      nav += `<li class="nav-section${hasContent ? '' : ' empty'}" data-sec="${secId}">`;
-      nav += `<span class="nav-hd section-hd" data-toggle="${secId}-children">${arrow}${esc(section.title)}</span>`;
-
-      nav += `<ul class="nav-l2 collapsed" id="${secId}-children">`;
-      for (const sub of section.subsections) {
-        const subsl = `${sl}-${slug(sub.title)}`;
-        const subSecId = `sub-${subsl}`;
-        const hasRecipes = sub.recipes && sub.recipes.length > 0;
-        const clusterGroups = hasRecipes ? groupByCluster(sub.recipes) : null;
-        const subArrow = hasRecipes ? '<span class="arrow">▶</span>' : '';
-
-        nav += `<li class="nav-sub${hasRecipes ? '' : ' empty'}">`;
-        // Subsection heading — navigates AND toggles
-        nav += `<a class="nav-hd sub-hd" href="#${subSecId}" data-toggle="${subSecId}-children">${subArrow}${esc(sub.title)}</a>`;
-
-        if (hasRecipes) {
-          nav += `<ul class="nav-l3 collapsed" id="${subSecId}-children">`;
-          if (clusterGroups) {
-            for (const { cluster, recipes: cr } of clusterGroups) {
-              const cid = `${subsl}--${slug(cluster)}`;
-              nav += navClusterItem(cid, cluster, cr, subsl);
+          if (hasRecipes) {
+            nav += `<ul class="nav-l3 collapsed" id="${subSecId}-children">`;
+            if (clusterGroups) {
+              let globalIdx = 0;
+              for (const { cluster, recipes: cr } of clusterGroups) {
+                const cid = `${subsl}--${slug(cluster)}`;
+                nav += navClusterItem(cid, cluster, cr, subsl, globalIdx, filename);
+                globalIdx += cr.length;
+              }
+            } else {
+              sub.recipes.forEach((r, i) => {
+                const rid = r.id || `${subsl}-${i}`;
+                nav += navRecipeItem(rid, r, filename);
+              });
             }
-          } else {
-            sub.recipes.forEach((r, i) => {
-              const rid = `${subsl}-${i}`;
-              nav += navRecipeItem(rid, r);
-            });
+            nav += '</ul>';
           }
-          nav += '</ul>';
+          nav += '</li>\n';
         }
-        nav += '</li>\n';
       }
+
       nav += '</ul>';
-      nav += '</li>\n';
     }
+    nav += '</li>\n';
   }
   nav += '</ul>';
   return nav;
 }
 
-function navClusterItem(cid, cluster, recipes, idPrefix) {
+function navClusterItem(cid, cluster, recipes, idPrefix, startIdx, pageFile) {
   let html = `<li class="nav-cluster">`;
-  // Cluster heading — navigates to anchor AND toggles
-  html += `<a class="nav-hd cluster-hd" href="#${esc(cid)}" data-toggle="${esc(cid)}-children"><span class="arrow">▶</span>${esc(cluster)}</a>`;
+  html += `<a class="nav-hd cluster-hd" href="${esc(pageFile)}#${esc(cid)}" data-toggle="${esc(cid)}-children"><span class="arrow">▶</span>${esc(cluster)}</a>`;
   html += `<ul class="nav-l4 collapsed" id="${esc(cid)}-children">`;
   recipes.forEach((r, i) => {
-    // Find global index within full subsection (passed as idPrefix)
-    // Note: we pass idPrefix here which is the section/subsection slug.
-    // The recipe id needs a global index; we'll handle with data-ridx.
-    const rid = `${idPrefix}-r-${slug(r.title).slice(0, 40)}`;
-    html += navRecipeItem(rid, r, true);
+    const rid = r.id || `${idPrefix}-${startIdx + i}`;
+    html += navRecipeItem(rid, r, pageFile);
   });
   html += '</ul></li>\n';
   return html;
 }
 
-function navRecipeItem(rid, recipe, useSlugId = false) {
-  // Star occupies a fixed column; non-favorites get an empty placeholder so
-  // all recipe titles align to the same left edge regardless of favorite status.
+function navRecipeItem(domId, recipe, pageFile) {
   const starHtml = recipe.favorite
     ? `<span class="nav-star">★</span>`
     : `<span class="nav-star"></span>`;
-  return `<li class="nav-recipe"><a class="nav-recipe-link" data-recipe-title="${esc(recipe.title)}" href="#">${starHtml}<span class="nav-title">${esc(recipe.title)}</span></a></li>\n`;
+  return `<li class="nav-recipe"><a class="nav-recipe-link" data-recipe-title="${esc(recipe.title)}" href="${esc(pageFile)}#${esc(domId)}">${starHtml}<span class="nav-title">${esc(recipe.title)}</span></a></li>\n`;
 }
 
-// ── Full content HTML ──────────────────────────────────────────────────────
+// ── Single-section content HTML ────────────────────────────────────────────
 
-function buildContent(data) {
+function buildSectionContent(section) {
+  const sl = slug(section.title);
+  const secId = `sec-${sl}`;
   let html = '';
 
-  for (const section of data.sections) {
-    const sl = slug(section.title);
-    const secId = `sec-${sl}`;
-
-    if (section.recipes) {
-      const clusterGroups = groupByCluster(section.recipes);
-      html += `<section id="${secId}" class="section">
+  if (section.recipes) {
+    const clusterGroups = groupByCluster(section.recipes);
+    html += `<section id="${secId}" class="section">
   <h2>${esc(section.title)}</h2>
   ${section.recipes.length
     ? renderRecipeList(section.recipes, sl, clusterGroups)
     : '<p class="empty"><em>No recipes yet.</em></p>'}
 </section>\n`;
 
-    } else if (section.subsections) {
-      html += `<section id="${secId}" class="section"><h2>${esc(section.title)}</h2>\n`;
-      for (const sub of section.subsections) {
-        const subsl = `${sl}-${slug(sub.title)}`;
-        const subSecId = `sub-${subsl}`;
-        const clusterGroups = sub.recipes && sub.recipes.length ? groupByCluster(sub.recipes) : null;
-        html += `<section id="${subSecId}" class="subsection">
+  } else if (section.subsections) {
+    html += `<section id="${secId}" class="section"><h2>${esc(section.title)}</h2>\n`;
+    for (const sub of section.subsections) {
+      const subsl = `${sl}-${slug(sub.title)}`;
+      const subSecId = `sub-${subsl}`;
+      const clusterGroups = sub.recipes && sub.recipes.length ? groupByCluster(sub.recipes) : null;
+      html += `<section id="${subSecId}" class="subsection">
   <h3 class="subsection-heading">${esc(sub.title)}</h3>
   ${sub.recipes && sub.recipes.length
     ? renderRecipeList(sub.recipes, subsl, clusterGroups)
     : '<p class="empty"><em>No recipes yet.</em></p>'}
 </section>\n`;
-      }
-      html += `</section>\n`;
     }
+    html += `</section>\n`;
   }
   return html;
 }
 
-// ── Recipe ID lookup table (title → DOM id) ───────────────────────────────
-// Generated at build time and inlined into the page for the nav to use.
+// ── Search index (all recipes, all sections) ───────────────────────────────
 
-function buildRecipeLookup(data) {
-  const map = {};
-
+function buildSearchIndex(data) {
+  const index = [];
   for (const section of data.sections) {
+    const filename = sectionFilename(section.title);
     const sl = slug(section.title);
 
+    // Must iterate in the same cluster-ordered sequence that renderRecipeList uses
+    const addRecipes = (recipes, idPrefix) => {
+      const clusterGroups = groupByCluster(recipes);
+      if (!clusterGroups) {
+        recipes.forEach((r, i) => {
+          const id = r.id || `${idPrefix}-${i}`;
+          index.push({ title: r.title, page: filename, id, fav: r.favorite ? 1 : 0, section: section.title });
+        });
+      } else {
+        let globalIdx = 0;
+        for (const { recipes: cr } of clusterGroups) {
+          cr.forEach((r, i) => {
+            const id = r.id || `${idPrefix}-${globalIdx + i}`;
+            index.push({ title: r.title, page: filename, id, fav: r.favorite ? 1 : 0, section: section.title });
+          });
+          globalIdx += cr.length;
+        }
+      }
+    };
+
     if (section.recipes) {
-      section.recipes.forEach((r, i) => { map[r.title] = r.id || `${sl}-${i}`; });
+      addRecipes(section.recipes, sl);
     } else if (section.subsections) {
       for (const sub of section.subsections) {
         const subsl = `${sl}-${slug(sub.title)}`;
-        (sub.recipes || []).forEach((r, i) => { map[r.title] = r.id || `${subsl}-${i}`; });
+        addRecipes(sub.recipes || [], subsl);
       }
     }
   }
-  return map;
+  return index;
 }
 
-// ── Cookbook data for clipboard copy ──────────────────────────────────────
-// Builds a flat title → recipe map with only the fields needed for formatting.
+// ── Per-section cookbook data (for clipboard copy) ─────────────────────────
 
-function buildCookbookData(data) {
+function buildSectionCookbookData(section) {
   const map = {};
-  for (const section of data.sections) {
-    if (section.recipes) {
-      for (const r of section.recipes) map[r.title] = r;
-    } else if (section.subsections) {
-      for (const sub of section.subsections) {
-        for (const r of (sub.recipes || [])) map[r.title] = r;
-      }
+  if (section.recipes) {
+    for (const r of section.recipes) map[r.title] = r;
+  } else if (section.subsections) {
+    for (const sub of section.subsections) {
+      for (const r of (sub.recipes || [])) map[r.title] = r;
     }
   }
   return map;
 }
 
-// ── Assemble ───────────────────────────────────────────────────────────────
+// ── Page template ─────────────────────────────────────────────────────────
 
-const navHtml    = buildNav(data);
-const contentHtml = buildContent(data);
-const recipeLookup = buildRecipeLookup(data);
-const cookbookData = buildCookbookData(data);
-
-const html = `<!DOCTYPE html>
+function buildPage(section, navHtml, contentHtml, cookbookData) {
+  const filename = sectionFilename(section.title);
+  return `<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Family Cookbook</title>
+<title>${esc(section.title)} — Family Cookbook</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍴</text></svg>">
 <style>
   :root {
@@ -664,6 +683,7 @@ const html = `<!DOCTYPE html>
     min-height: 100vh;
     font-size: 16px;
     line-height: 1.6;
+    scroll-behavior: smooth;
   }
 
   /* ── Sidebar ── */
@@ -690,6 +710,7 @@ const html = `<!DOCTYPE html>
     color: var(--nav-hover);
     letter-spacing: 0.03em;
   }
+  #nav-header a { text-decoration: none; }
   #search-wrap { padding: 9px 12px; border-bottom: 1px solid #5a3e28; }
   #search-box-wrap { position: relative; }
   #search {
@@ -731,10 +752,15 @@ const html = `<!DOCTYPE html>
     font-size: 0.78rem; color: #a8906e;
     cursor: pointer;
     font-family: inherit;
+    text-decoration: none;
   }
   .sr-item:hover { color: var(--nav-hover); background: #4e3522; }
   .sr-item .sr-star { flex-shrink: 0; width: 1.1em; color: var(--fav); }
   .sr-item .sr-title { flex: 1; padding-left: 0.55em; text-indent: -0.55em; }
+  .sr-item .sr-section {
+    font-size: 0.68rem; color: #7a6040; margin-left: 6px;
+    flex-shrink: 0; padding-top: 0.1em; font-style: italic;
+  }
   .sr-empty { font-size: 0.82rem; color: #9a7a58; font-style: italic; padding: 5px 14px; }
   #fav-toggle {
     display: flex; align-items: center; gap: 8px;
@@ -826,13 +852,34 @@ const html = `<!DOCTYPE html>
   .nav-hd.open .arrow { transform: rotate(90deg); }
 
   /* Level 1 — sections */
-  .nav-section { }
+  .nav-sec-row { display: flex; align-items: center; }
+  .nav-sec-arrow {
+    flex-shrink: 0;
+    background: none;
+    border: none;
+    color: #a8906e;
+    cursor: pointer;
+    font-size: 0.65em;
+    padding: 7px 4px 7px 14px;
+    line-height: 1;
+    transition: transform 0.15s;
+  }
+  .nav-sec-arrow.open { transform: rotate(90deg); }
+  .nav-sec-arrow:hover { color: var(--nav-hover); }
   .section-hd {
-    padding: 7px 14px;
+    padding: 7px 14px 7px 4px;
     color: var(--nav-text);
     font-size: 0.88rem;
     font-weight: bold;
+    flex: 1;
   }
+  .nav-section.empty .nav-sec-row { padding-left: 14px; }
+  .nav-section.empty .section-hd { padding-left: 0; }
+  /* Non-current sections are <a> links */
+  a.section-hd { color: #c4b09a; font-weight: normal; }
+  a.section-hd:hover { color: var(--nav-hover); background: #4e3522; }
+  /* Current section marker */
+  .current-section { color: var(--nav-hover) !important; }
   .nav-section.empty .section-hd { color: #7a5e45; cursor: default; }
 
   /* Level 2 — subsections */
@@ -867,19 +914,19 @@ const html = `<!DOCTYPE html>
     line-height: 1.35;
   }
   .nav-recipe-link:hover { color: var(--nav-hover); }
-  /* Fixed-width star column — always present, empty for non-favorites */
+  /* Fixed-width star column */
   .nav-star {
     flex-shrink: 0;
     width: 1.1em;
     color: var(--fav);
     font-size: 0.85em;
-    padding-top: 0.05em; /* optical alignment with first text line */
+    padding-top: 0.05em;
   }
   /* Title column — hanging indent on wrap */
   .nav-title {
     flex: 1;
     padding-left: 0.55em;
-    text-indent: -0.55em; /* first line flush, subsequent lines indented */
+    text-indent: -0.55em;
   }
 
   /* Level 2 recipe links — direct (flat sections with no cluster headers) */
@@ -893,7 +940,7 @@ const html = `<!DOCTYPE html>
     padding-left: 38px;
     font-size: 0.78rem;
   }
-  /* Cluster children (nav-l4) inside nav-l2: must indent past cluster heading at 32px */
+  /* Cluster children (nav-l4) inside nav-l2: indent past cluster heading at 32px */
   .nav-l2 .nav-l4 .nav-recipe-link {
     padding-left: 46px;
     font-size: 0.78rem;
@@ -1017,34 +1064,20 @@ const html = `<!DOCTYPE html>
   /* ── Print media ── */
   @media print {
     @page { margin: 0.75in; }
-    /* Reset body layout so sidebar isn't part of the flow */
     body { display: block !important; background: white !important; min-height: 0 !important; }
-    /* Hide sidebar and chrome */
     #nav, #mobile-header, #cookbook-title, .print-btn, .copy-btn, .recipe-btns { display: none !important; }
-    /* Main area: full width, no extra padding */
     #main { padding: 0 !important; max-width: none !important; flex: none !important; }
-    /* Collapse section/subsection/cluster containers so they add no whitespace */
     .section, .subsection, .cluster-group {
       margin: 0 !important; padding: 0 !important; border: none !important;
     }
-    /* Hide all structural headings */
     .section > h2, .subsection-heading, .cluster-heading { display: none !important; }
-    /* Hide all recipe cards that are NOT the one being printed */
     .recipe:not(.printing) { display: none !important; }
-    /* The printing recipe — full width, no card chrome */
     .recipe.printing {
       display: block !important;
       border: none !important; box-shadow: none !important;
       padding: 0 !important; margin: 0 !important;
       font-size: 0.88rem;
     }
-    /* Override grid display entirely — Chrome treats any grid container as
-       an unbreakable unit (even single-column), pushing the whole block to
-       page 2 and leaving a blank gap after the recipe header on page 1.
-       display:block lets ingredients-col and steps-col stack as normal divs
-       and break freely across pages.
-       (iOS blank-page issue was the afterprint timing, not this CSS; the
-       touchstart-deferred cleanup handles that independently.) */
     .recipe.printing .recipe-body {
       display: block !important;
       break-inside: auto;
@@ -1061,11 +1094,8 @@ const html = `<!DOCTYPE html>
   }
 
   /* ── Mobile (iPhone) ── */
-  #mobile-header {
-    display: none;
-  }
+  #mobile-header { display: none; }
   @media (max-width: 480px) {
-    /* Sticky top bar with hamburger */
     #mobile-header {
       display: flex;
       align-items: center;
@@ -1094,8 +1124,6 @@ const html = `<!DOCTYPE html>
       line-height: 1;
     }
     #hamburger:hover { color: var(--nav-hover); }
-
-    /* Nav collapsed by default; toggled via JS */
     #nav {
       display: none;
       width: 100%;
@@ -1103,11 +1131,10 @@ const html = `<!DOCTYPE html>
       position: static;
       height: auto;
     }
-    /* When open, fix to viewport so it's visible regardless of scroll position */
     #nav.nav-open {
       display: flex;
       position: fixed;
-      top: 47px; /* sits just below the mobile header bar */
+      top: 47px;
       left: 0;
       right: 0;
       z-index: 99;
@@ -1115,29 +1142,15 @@ const html = `<!DOCTYPE html>
       overflow-y: auto;
       box-shadow: 0 4px 16px rgba(0,0,0,0.4);
     }
-    /* Hide the header inside nav since mobile-header replaces it */
     #nav-header { display: none; }
-
-    #main {
-      padding: 14px 12px;
-    }
-
-    /* Bigger touch targets in nav */
+    #main { padding: 14px 12px; }
     .section-hd { padding: 10px 14px; }
     .sub-hd { padding: 8px 14px 8px 22px; }
     .cluster-hd { padding: 7px 14px 7px 32px; }
     .nav-recipe-link { padding-top: 6px; padding-bottom: 6px; }
-
-    /* Tighter recipe cards */
     .recipe { padding: 14px 16px; }
-
-    /* Offset scroll targets so fixed header doesn't cover them (47px header + 10px buffer) */
     .recipe { scroll-margin-top: 57px; }
-
-    /* Fix iOS zoom on search focus: font-size must be ≥16px */
     #search { font-size: 16px; }
-
-    /* Search results: clear desktop cap so JS inline style can take over */
     #search-results { max-height: none; overflow-y: auto; flex-shrink: 0; }
     #search-results .sr-item { padding-top: 5px; padding-bottom: 5px; }
     #search-results .sr-label { padding-top: 5px; padding-bottom: 3px; }
@@ -1147,12 +1160,12 @@ const html = `<!DOCTYPE html>
 <body>
 
 <div id="mobile-header">
-  <span id="mobile-header-title">Muhlheim Family Cookbook</span>
+  <span id="mobile-header-title"><a href="breakfast.html" style="color:inherit;text-decoration:none;">Muhlheim Family Cookbook</a></span>
   <button id="hamburger" aria-label="Toggle navigation" aria-expanded="false">☰</button>
 </div>
 
 <div id="nav">
-  <div id="nav-header"><h1>Muhlheim Family Cookbook</h1></div>
+  <div id="nav-header"><h1><a href="breakfast.html">Muhlheim Family Cookbook</a></h1></div>
   <div id="search-wrap">
     <div id="search-box-wrap">
       <input id="search" type="text" placeholder="Search recipes…" autocomplete="off">
@@ -1175,11 +1188,9 @@ const html = `<!DOCTYPE html>
 
 <script>
 (function () {
-  // ── Recipe title → DOM id lookup ──────────────────────────────────────
-  const RECIPE_IDS = ${JSON.stringify(recipeLookup, null, 2)};
-
-  // ── Recipe data for clipboard formatting ─────────────────────────────
   const COOKBOOK_DATA = ${JSON.stringify(cookbookData, null, 2)};
+  const CURRENT_PAGE = '${filename}';
+  const SEARCH_INDEX = ${JSON.stringify(searchIndex)};
 
   // ── Hamburger toggle (mobile) ─────────────────────────────────────────
   const hamburger = document.getElementById('hamburger');
@@ -1190,7 +1201,6 @@ const html = `<!DOCTYPE html>
       hamburger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
       hamburger.textContent = isOpen ? '✕' : '☰';
     });
-    // Close nav when a recipe link (nav tree or search result) is tapped on mobile
     nav.addEventListener('click', function (e) {
       if ((e.target.closest('.nav-recipe-link') || e.target.closest('.sr-item')) && window.innerWidth <= 480) {
         nav.classList.remove('nav-open');
@@ -1202,72 +1212,104 @@ const html = `<!DOCTYPE html>
 
   // ── Collapsible nav ───────────────────────────────────────────────────
 
-  // Toggle a list open/closed, updating the arrow on the heading.
+  function saveNavState(listId, isOpen) {
+    try {
+      var state = JSON.parse(localStorage.getItem('navState') || '{}');
+      state[listId] = isOpen;
+      localStorage.setItem('navState', JSON.stringify(state));
+    } catch (e) {}
+  }
+
   function toggleList(listId, headingEl) {
     const list = document.getElementById(listId);
     if (!list) return;
     const isOpen = !list.classList.contains('collapsed');
-    if (isOpen) {
-      list.classList.add('collapsed');
-      headingEl.classList.remove('open');
-    } else {
-      list.classList.remove('collapsed');
-      headingEl.classList.add('open');
-    }
+    list.classList.toggle('collapsed', isOpen);
+    headingEl.classList.toggle('open', !isOpen);
+    saveNavState(listId, !isOpen);
   }
 
-  // Section headings — toggle only, no navigation.
-  document.querySelectorAll('.section-hd[data-toggle]').forEach(function (hd) {
-    hd.addEventListener('click', function (e) {
+  // Section expand/collapse arrow buttons
+  document.querySelectorAll('.nav-sec-arrow[data-toggle]').forEach(function (btn) {
+    btn.addEventListener('click', function (e) {
       e.preventDefault();
-      toggleList(hd.dataset.toggle, hd);
+      toggleList(btn.dataset.toggle, btn);
     });
   });
 
-  // Subsection and cluster headings — navigate AND toggle.
+  // Subsection and cluster headings — toggle only (always preventDefault).
   document.querySelectorAll('.sub-hd[data-toggle], .cluster-hd[data-toggle]').forEach(function (hd) {
     hd.addEventListener('click', function (e) {
       e.preventDefault();
       const href = hd.getAttribute('href');
-      const target = href && href !== '#' ? document.getElementById(href.slice(1)) : null;
-      if (target) {
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      if (href && href.startsWith('#')) {
+        const target = document.getElementById(href.slice(1));
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
       toggleList(hd.dataset.toggle, hd);
     });
   });
 
-  // Recipe links — look up the actual DOM id from the title and navigate.
+  // Recipe links in nav — smooth scroll for same-page anchors (current page or #-only).
   document.querySelectorAll('.nav-recipe-link').forEach(function (link) {
     link.addEventListener('click', function (e) {
-      e.preventDefault();
-      const title = link.dataset.recipeTitle;
-      const id = RECIPE_IDS[title];
-      if (!id) return;
-      const el = document.getElementById(id);
-      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      const href = link.getAttribute('href');
+      if (!href) return;
+      const isSamePage = href.startsWith('#') || href.startsWith(CURRENT_PAGE + '#') || href === CURRENT_PAGE;
+      if (isSamePage) {
+        e.preventDefault();
+        const hashIdx = href.indexOf('#');
+        const id = hashIdx >= 0 ? href.slice(hashIdx + 1) : null;
+        if (id) {
+          const el = document.getElementById(id);
+          if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
+      // Cross-page: let browser navigate normally
     });
   });
 
-  // ── Search & favorites filter ─────────────────────────────────────────
+  // Restore nav expand/collapse state from localStorage
+  (function () {
+    var navState = {};
+    try { navState = JSON.parse(localStorage.getItem('navState') || '{}'); } catch (e) {}
+    // Default: expand current section if not explicitly stored
+    var currentL2Id = 'sec-${slug(section.title)}-children';
+    if (navState[currentL2Id] === undefined) navState[currentL2Id] = true;
+    Object.keys(navState).forEach(function (listId) {
+      if (!navState[listId]) return; // leave collapsed
+      var list = document.getElementById(listId);
+      if (!list) return;
+      list.classList.remove('collapsed');
+      var hd = document.querySelector('[data-toggle="' + listId + '"]');
+      if (hd) hd.classList.add('open');
+    });
+  }());
+
+  // ── Scroll to hash on page load ───────────────────────────────────────
+  if (location.hash) {
+    const el = document.getElementById(location.hash.slice(1));
+    if (el) requestAnimationFrame(function () {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  }
+
+  // ── Search (cross-section via search-index.json) ──────────────────────
   const search = document.getElementById('search');
   const searchClear = document.getElementById('search-clear');
   const searchResults = document.getElementById('search-results');
-  const favBtn = document.getElementById('fav-toggle');
-  const allRecipes = Array.from(document.querySelectorAll('.recipe'));
-  let favOnly = false;
+  function loadSearchIndex() {
+    return Promise.resolve(SEARCH_INDEX);
+  }
 
-  // Show/hide × as user types
   search.addEventListener('input', function () {
     searchClear.style.display = search.value ? 'block' : 'none';
   });
 
-  // Enter key triggers the results panel
   search.addEventListener('keydown', function (e) {
     if (e.key === 'Enter') { e.preventDefault(); runSearch(); }
   });
 
-  // × button — clear search and dismiss results
   searchClear.addEventListener('click', function () {
     search.value = '';
     searchClear.style.display = 'none';
@@ -1278,57 +1320,93 @@ const html = `<!DOCTYPE html>
 
   function runSearch() {
     const q = search.value.trim().toLowerCase();
-    searchResults.style.maxHeight = '';
     searchResults.innerHTML = '';
     if (!q) { searchResults.style.display = 'none'; return; }
 
-    const matches = allRecipes.filter(function (r) {
-      return r.dataset.title.toLowerCase().includes(q);
-    });
+    loadSearchIndex().then(function (index) {
+      const matches = index.filter(function (r) {
+        return r.title.toLowerCase().includes(q);
+      });
 
-    if (matches.length === 0) {
-      searchResults.innerHTML = '<div class="sr-empty">No recipes found.</div>';
-    } else {
-      const label = document.createElement('div');
-      label.className = 'sr-label';
-      label.textContent = matches.length + ' recipe' + (matches.length !== 1 ? 's' : '');
-      searchResults.appendChild(label);
-      matches.forEach(function (r) {
-        const isFav = r.dataset.fav === '1';
-        const btn = document.createElement('button');
-        btn.className = 'sr-item';
-        btn.innerHTML = '<span class="sr-star">' + (isFav ? '★' : '') + '</span>' +
-                        '<span class="sr-title">' + r.dataset.title.replace(/&/g,'&amp;').replace(/</g,'&lt;') + '</span>';
-        btn.addEventListener('click', function () {
-          r.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      if (matches.length === 0) {
+        searchResults.innerHTML = '<div class="sr-empty">No recipes found.</div>';
+      } else {
+        const label = document.createElement('div');
+        label.className = 'sr-label';
+        label.textContent = matches.length + ' recipe' + (matches.length !== 1 ? 's' : '');
+        searchResults.appendChild(label);
+
+        matches.forEach(function (r) {
+          const isSamePage = r.page === CURRENT_PAGE;
+          const a = document.createElement('a');
+          a.className = 'sr-item';
+          a.href = isSamePage ? (r.page + '#' + r.id) : (r.page + '?q=' + encodeURIComponent(search.value.trim()) + '#' + r.id);
+          a.innerHTML = '<span class="sr-star">' + (r.fav ? '★' : '') + '</span>' +
+                        '<span class="sr-title">' + r.title.replace(/&/g,'&amp;').replace(/</g,'&lt;') + '</span>' +
+                        (!isSamePage ? '<span class="sr-section">' + r.section.replace(/&/g,'&amp;') + '</span>' : '');
+          if (isSamePage) {
+            a.addEventListener('click', function (e) {
+              e.preventDefault();
+              const el = document.getElementById(r.id);
+              if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              // Leave search results panel open so query state is preserved
+            });
+          }
+          // Cross-page: let browser navigate (search restored via ?q= param)
+          searchResults.appendChild(a);
         });
-        searchResults.appendChild(btn);
-      });
-    }
-    searchResults.style.display = 'block';
+      }
+      searchResults.style.display = 'block';
 
-    // On narrow screens, cap to show label + up to 4 items (5 lines), scroll beyond.
-    // Use requestAnimationFrame so browser finishes layout before we measure.
-    if (window.innerWidth <= 480) {
-      searchResults.style.maxHeight = ''; // clear any previous inline cap
-      requestAnimationFrame(function () {
-        const children = searchResults.children;
-        if (children.length === 0) return;
-        const maxVisible = Math.min(children.length, 5); // label counts as 1
-        let h = 0;
-        for (let i = 0; i < maxVisible; i++) {
-          h += children[i].offsetHeight;
-        }
-        h += 8; // container's top+bottom padding
-        searchResults.style.maxHeight = h + 'px';
-      });
-    }
+      if (window.innerWidth <= 480) {
+        searchResults.style.maxHeight = '';
+        requestAnimationFrame(function () {
+          const children = searchResults.children;
+          if (children.length === 0) return;
+          const maxVisible = Math.min(children.length, 5);
+          let h = 0;
+          for (let i = 0; i < maxVisible; i++) h += children[i].offsetHeight;
+          h += 8;
+          searchResults.style.maxHeight = h + 'px';
+        });
+      }
+    });
   }
+
+  // ── Restore search from ?q= parameter (cross-page navigation) ───────────
+  var urlQ = new URLSearchParams(location.search).get('q');
+  if (urlQ) {
+    search.value = urlQ;
+    searchClear.style.display = 'block';
+    runSearch();
+  }
+
+  // ── Favorites toggle (localStorage-persisted) ─────────────────────────
+  const favBtn = document.getElementById('fav-toggle');
+  const allRecipes = Array.from(document.querySelectorAll('.recipe'));
+  let favOnly = false;
+  try { favOnly = localStorage.getItem('favOnly') === 'true'; } catch (e) {}
+  if (favOnly) { favBtn.classList.add('active'); applyFilters(); }
 
   favBtn.addEventListener('click', function () {
     favOnly = !favOnly;
+    try { localStorage.setItem('favOnly', favOnly); } catch (e) {}
     favBtn.classList.toggle('active', favOnly);
     applyFilters();
+  });
+
+  // ── High Altitude toggle (localStorage-persisted) ─────────────────────
+  const altBtn = document.getElementById('alt-toggle');
+  try {
+    if (localStorage.getItem('highAlt') === 'true') {
+      altBtn.classList.add('active');
+      document.body.classList.add('high-altitude-mode');
+    }
+  } catch (e) {}
+  altBtn.addEventListener('click', function () {
+    this.classList.toggle('active');
+    const isHA = document.body.classList.toggle('high-altitude-mode');
+    try { localStorage.setItem('highAlt', isHA); } catch (e) {}
   });
 
   // ── Print single recipe ───────────────────────────────────────────────
@@ -1337,9 +1415,6 @@ const html = `<!DOCTYPE html>
       const recipe = btn.closest('.recipe');
       if (!recipe) return;
       recipe.classList.add('printing');
-      // Two nested rAFs guarantee at least 2 paint frames have committed,
-      // then a 150ms buffer for iOS Safari which is especially slow to
-      // capture the updated layout for the print compositor.
       requestAnimationFrame(function () {
         requestAnimationFrame(function () {
           setTimeout(function () { window.print(); }, 150);
@@ -1347,32 +1422,24 @@ const html = `<!DOCTYPE html>
       });
     });
   });
+
   // ── Copy recipe to clipboard ──────────────────────────────────────────
   function formatRecipeForClipboard(recipe) {
     var lines = [];
-
-    // Title + source
     var heading = recipe.title;
     if (recipe.favorite) heading = '★ ' + heading;
     if (recipe.source && !recipe.source.startsWith('http')) heading += ' (' + recipe.source + ')';
     lines.push(heading);
     lines.push('');
-
     if (recipe.servings) { lines.push(recipe.servings); lines.push(''); }
-
-    // Comments / notes
     if (recipe.comments && recipe.comments.length) {
       lines.push('NOTES');
       recipe.comments.forEach(function (c) {
-        var text = (typeof c === 'object' && c.html)
-          ? c.html.replace(/<[^>]+>/g, '') // strip HTML tags
-          : c;
+        var text = (typeof c === 'object' && c.html) ? c.html.replace(/<[^>]+>/g, '') : c;
         lines.push(text);
       });
       lines.push('');
     }
-
-    // Ingredients
     if (recipe.ingredientGroups && recipe.ingredientGroups.length) {
       lines.push('INGREDIENTS');
       lines.push('');
@@ -1386,8 +1453,6 @@ const html = `<!DOCTYPE html>
         lines.push('');
       });
     }
-
-    // Steps
     if (recipe.steps && recipe.steps.length) {
       lines.push('STEPS');
       lines.push('');
@@ -1401,7 +1466,6 @@ const html = `<!DOCTYPE html>
       });
       lines.push('');
     }
-
     return lines.join('\\n').trim();
   }
 
@@ -1417,131 +1481,81 @@ const html = `<!DOCTYPE html>
       function showSuccess() {
         btn.textContent = '✓ Copied!';
         btn.classList.add('copied');
-        setTimeout(function () {
-          btn.textContent = '📋 Copy Recipe';
-          btn.classList.remove('copied');
-        }, 2000);
+        setTimeout(function () { btn.textContent = '📋 Copy Recipe'; btn.classList.remove('copied'); }, 2000);
       }
-
       function fallbackCopy() {
         var ta = document.createElement('textarea');
         ta.value = text;
         ta.setAttribute('readonly', '');
         ta.style.cssText = 'position:fixed;top:0;left:0;width:2em;height:2em;opacity:0;';
         document.body.appendChild(ta);
-        ta.focus();
-        ta.select();
-        try { ta.setSelectionRange(0, 99999); } catch (e) {} // iOS Safari
+        ta.focus(); ta.select();
+        try { ta.setSelectionRange(0, 99999); } catch (e) {}
         try { document.execCommand('copy'); } catch (e) {}
         document.body.removeChild(ta);
-        showSuccess(); // Always show feedback -- user will notice if paste fails
+        showSuccess();
       }
-
-      // Guard: clipboard API may be undefined (file://, older browsers)
       if (navigator.clipboard && typeof navigator.clipboard.writeText === 'function') {
-        // Wrap in try/catch: on iOS Safari writeText can throw synchronously
-        // rather than returning a rejected promise, which would swallow both
-        // .then() and .catch() leaving the button with no feedback at all.
         try {
           navigator.clipboard.writeText(text).then(showSuccess).catch(fallbackCopy);
-        } catch (e) {
-          fallbackCopy();
-        }
-      } else {
-        fallbackCopy();
-      }
+        } catch (e) { fallbackCopy(); }
+      } else { fallbackCopy(); }
     });
   });
 
   window.addEventListener('afterprint', function () {
-    // On iOS Safari, afterprint fires while the print dialog is still open and
-    // the preview is live — removing .printing immediately blanks the preview.
-    // Instead, defer removal until the user's first interaction after returning
-    // to the page (touchstart/click). A 30s timeout is the safety net.
     var isIOS = /iPhone|iPad|iPod/.test(navigator.userAgent);
-
     function cleanup() {
-      document.querySelectorAll('.recipe.printing').forEach(function (r) {
-        r.classList.remove('printing');
-      });
+      document.querySelectorAll('.recipe.printing').forEach(function (r) { r.classList.remove('printing'); });
       document.removeEventListener('touchstart', cleanup, true);
       document.removeEventListener('click', cleanup, true);
     }
-
     if (isIOS) {
       document.addEventListener('touchstart', cleanup, { once: true, capture: true });
-      document.addEventListener('click',      cleanup, { once: true, capture: true });
-      setTimeout(cleanup, 30000); // safety net
-    } else {
-      cleanup();
-    }
+      document.addEventListener('click', cleanup, { once: true, capture: true });
+      setTimeout(cleanup, 30000);
+    } else { cleanup(); }
   });
 
-  // High Altitude toggle
-  document.getElementById('alt-toggle').addEventListener('click', function () {
-    this.classList.toggle('active');
-    document.body.classList.toggle('high-altitude-mode');
-  });
-
-  // Collapse all open nav menus
+  // ── Collapse all open nav menus ───────────────────────────────────────
   document.getElementById('collapse-all').addEventListener('click', function () {
-    document.querySelectorAll('.nav-hd.open').forEach(function (hd) {
-      hd.classList.remove('open');
-    });
-    document.querySelectorAll('.nav-l2, .nav-l3, .nav-l4').forEach(function (list) {
-      list.classList.add('collapsed');
-    });
+    document.querySelectorAll('.nav-hd.open, .nav-sec-arrow.open').forEach(function (el) { el.classList.remove('open'); });
+    document.querySelectorAll('.nav-l2, .nav-l3, .nav-l4').forEach(function (list) { list.classList.add('collapsed'); });
+    try { localStorage.removeItem('navState'); } catch (e) {}
   });
 
+  // ── Apply filters (favorites — current page only) ─────────────────────
   function applyFilters() {
-    // ── Main content panel ────────────────────────────────────────────────
     allRecipes.forEach(function (r) {
-      const favMatch = !favOnly || r.dataset.fav === '1';
+      var favMatch = !favOnly || r.dataset.fav === '1';
       r.classList.toggle('hidden', !favMatch);
     });
     document.querySelectorAll('.cluster-group').forEach(function (g) {
-      const visible = g.querySelectorAll('.recipe:not(.hidden)').length > 0;
+      var visible = g.querySelectorAll('.recipe:not(.hidden)').length > 0;
       g.classList.toggle('all-hidden', !visible && favOnly);
     });
     document.querySelectorAll('.subsection').forEach(function (s) {
-      const visible = s.querySelectorAll('.recipe:not(.hidden)').length > 0;
+      var visible = s.querySelectorAll('.recipe:not(.hidden)').length > 0;
       s.classList.toggle('all-hidden', !visible && favOnly);
     });
     document.querySelectorAll('.section').forEach(function (s) {
-      const visible = s.querySelectorAll('.recipe:not(.hidden)').length > 0;
+      var visible = s.querySelectorAll('.recipe:not(.hidden)').length > 0;
       s.classList.toggle('all-hidden', !visible && favOnly);
     });
-
-    // ── Sidebar nav ───────────────────────────────────────────────────────
-    // Build a set of favorite recipe titles for quick lookup
-    const favTitles = new Set();
-    allRecipes.forEach(function (r) {
-      if (r.dataset.fav === '1') favTitles.add(r.dataset.title);
-    });
-
-    // Show/hide individual recipe nav items
+    var favTitles = new Set();
+    allRecipes.forEach(function (r) { if (r.dataset.fav === '1') favTitles.add(r.dataset.title); });
     document.querySelectorAll('.nav-recipe').forEach(function (li) {
-      const link = li.querySelector('.nav-recipe-link');
-      const title = link ? link.dataset.recipeTitle : '';
-      const show = !favOnly || favTitles.has(title);
+      var link = li.querySelector('.nav-recipe-link');
+      var title = link ? link.dataset.recipeTitle : '';
+      var show = !favOnly || favTitles.has(title);
       li.classList.toggle('nav-hidden', !show);
     });
-
-    // Hide cluster nav items if all their recipes are hidden
     document.querySelectorAll('.nav-cluster').forEach(function (li) {
-      const anyVisible = li.querySelectorAll('.nav-recipe:not(.nav-hidden)').length > 0;
+      var anyVisible = li.querySelectorAll('.nav-recipe:not(.nav-hidden)').length > 0;
       li.classList.toggle('nav-hidden', !anyVisible && favOnly);
     });
-
-    // Hide subsection nav items if all their recipes are hidden
     document.querySelectorAll('.nav-sub').forEach(function (li) {
-      const anyVisible = li.querySelectorAll('.nav-recipe:not(.nav-hidden)').length > 0;
-      li.classList.toggle('nav-hidden', !anyVisible && favOnly);
-    });
-
-    // Hide section nav items if all their recipes are hidden
-    document.querySelectorAll('.nav-section').forEach(function (li) {
-      const anyVisible = li.querySelectorAll('.nav-recipe:not(.nav-hidden)').length > 0;
+      var anyVisible = li.querySelectorAll('.nav-recipe:not(.nav-hidden)').length > 0;
       li.classList.toggle('nav-hidden', !anyVisible && favOnly);
     });
   }
@@ -1550,7 +1564,38 @@ const html = `<!DOCTYPE html>
 
 </body>
 </html>`;
+}
 
-const outPath = path.join(__dirname, 'index.html');
-fs.writeFileSync(outPath, html, 'utf8');
-console.log('Website written to ' + outPath);
+// ── Assemble ───────────────────────────────────────────────────────────────
+
+// Write search-index.json
+const searchIndex = buildSearchIndex(data);
+fs.writeFileSync(path.join(__dirname, 'search-index.json'), JSON.stringify(searchIndex), 'utf8');
+console.log('Written: search-index.json (' + searchIndex.length + ' recipes)');
+
+// Write index.html redirect to breakfast.html
+const redirectHtml = `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="refresh" content="0; url=breakfast.html">
+<title>Family Cookbook</title>
+</head>
+<body>
+<script>location.replace('breakfast.html');<\/script>
+<a href="breakfast.html">Go to Family Cookbook</a>
+</body>
+</html>`;
+fs.writeFileSync(path.join(__dirname, 'index.html'), redirectHtml, 'utf8');
+console.log('Written: index.html (redirect)');
+
+// Write per-section pages
+for (const section of data.sections) {
+  const filename = sectionFilename(section.title);
+  const navHtml    = buildNav(data, section.title);
+  const contentHtml = buildSectionContent(section);
+  const cookbookData = buildSectionCookbookData(section);
+  const html = buildPage(section, navHtml, contentHtml, cookbookData);
+  fs.writeFileSync(path.join(__dirname, filename), html, 'utf8');
+  console.log('Written: ' + filename);
+}
