@@ -1269,7 +1269,7 @@ const html = `<!DOCTYPE html>
       lines.push('');
     }
 
-    return lines.join('\n').trim();
+    return lines.join('\\n').trim();
   }
 
   document.querySelectorAll('.copy-btn').forEach(function (btn) {
