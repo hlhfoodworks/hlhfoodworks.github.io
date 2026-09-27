@@ -207,6 +207,44 @@ module.exports = {
             "Pour the batter into the pan(s). Bake for 15 minutes at 450°F for small pancakes; for one large pancake, bake 15 minutes at 450°F then reduce to 350°F and bake 10 minutes more.",
             "Sprinkle the lemon juice over the pancake(s) and dust with confectioners' sugar. Serve at once, while puffed and hot."
           ]
+        },
+        {
+          "title": "Egg Strata",
+          "source": "Family recipe card",
+          "comments": [
+            "Assemble the night before — ideal for brunch.",
+            "The amount of cheese is flexible; generous layers of cheddar work best."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Bread base",
+              "ingredients": [
+                "8 slices bread (any kind)",
+                "Butter or margarine, for spreading"
+              ]
+            },
+            {
+              "label": "Custard",
+              "ingredients": [
+                "4 eggs",
+                "2 1/2 cups milk",
+                "1/4 teaspoon dry mustard",
+                "1/4 teaspoon salt"
+              ]
+            },
+            {
+              "label": "Cheese",
+              "ingredients": [
+                "Grated cheddar cheese, to taste (cheddar is best)"
+              ]
+            }
+          ],
+          "steps": [
+            "Butter each slice of bread. Cut off crusts and cut into quarters. Butter a deep 9x13 Pyrex dish.",
+            "Layer alternating bread and cheese in the dish.",
+            "Beat together eggs, milk, mustard, and salt. Pour over bread and cheese. Let stand overnight in the refrigerator.",
+            "Bake at 350°F for about 45 minutes."
+          ]
         }
       ]
     },
@@ -571,7 +609,157 @@ module.exports = {
         },
         {
           "title": "Pasta Salads",
-          "recipes": []
+          "recipes": [
+            {
+              "title": "Chuck Wagon Barbecued Pasta Salad",
+              "servings": "Serves 10",
+              "source": "Printed clipping",
+              "ingredientGroups": [
+                {
+                  "label": "Pasta",
+                  "ingredients": [
+                    "4 oz wagon wheel pasta"
+                  ]
+                },
+                {
+                  "label": "Salad",
+                  "ingredients": [
+                    "1 (15-oz) can garbanzo beans, rinsed and drained",
+                    "1/3 cup chopped green sweet pepper",
+                    "1/3 cup chopped red sweet pepper",
+                    "8 oz smoked turkey breast, cubed",
+                    "4 oz mozzarella, cubed",
+                    "4 oz cheddar, cubed",
+                    "1 small red onion, thinly sliced into rings",
+                    "3 tablespoons sliced pitted ripe olives"
+                  ]
+                },
+                {
+                  "label": "Dressing",
+                  "ingredients": [
+                    "1/3 cup bottled barbecue sauce",
+                    "3 tablespoons Dijon-style mustard"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "1 head green and/or red-tip leaf lettuce",
+                    "1/4 cup toasted pine nuts",
+                    "Thin sweet pepper strips (optional)"
+                  ]
+                }
+              ],
+              "steps": [
+                "Cook pasta in boiling water until al dente; rinse and drain.",
+                "Combine garbanzo beans, peppers, turkey, cheeses, onion, and olives in a large bowl. Whisk barbecue sauce and mustard together; add to turkey mixture. Add pasta and toss. Cover and refrigerate 2 to 24 hours.",
+                "To serve: line a platter with lettuce leaves; shred remaining lettuce and mound in center. Spoon pasta mixture over lettuce. Sprinkle with pine nuts and garnish with pepper strips if desired."
+              ]
+            },
+            {
+              "title": "Asian Pasta Salad",
+              "source": "Family recipe card",
+              "comments": [
+                "Dressing must be made the night before.",
+                "The dressing uses a raw egg yolk — if preferred, substitute 1 tablespoon mayonnaise."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Noodles and protein",
+                  "ingredients": [
+                    "1 lb cappellini (thin spaghetti), cooked and drained",
+                    "1 package firm tofu, cubed"
+                  ]
+                },
+                {
+                  "label": "Vegetables",
+                  "ingredients": [
+                    "1 handful fresh snow peas",
+                    "1 can water chestnuts, sliced",
+                    "1 bunch scallions, chopped"
+                  ]
+                },
+                {
+                  "label": "Toppings",
+                  "ingredients": [
+                    "1 small package sesame seeds, slightly toasted",
+                    "1 package pine nuts (pignoli)"
+                  ]
+                },
+                {
+                  "label": "Dressing (overnight)",
+                  "ingredients": [
+                    "4 tablespoons dry sherry",
+                    "1 egg yolk",
+                    "3 tablespoons lemon juice",
+                    "2 tablespoons Dijon mustard",
+                    "2 tablespoons soy sauce (or teriyaki sauce)",
+                    "2 tablespoons sugar",
+                    "1/2 teaspoon ground ginger",
+                    "Basil and Aleppo pepper or red pepper flakes to taste",
+                    "1/2 cup olive oil",
+                    "1/2 cup vegetable oil"
+                  ]
+                }
+              ],
+              "steps": [
+                "Combine all dressing ingredients except oil and hot pepper. Refrigerate overnight.",
+                "Before serving, stir oil and Aleppo pepper (or red pepper flakes) into dressing.",
+                "Toss cappellini with tofu, snow peas, water chestnuts, and scallions.",
+                "Add dressing and toss. Top with toasted sesame seeds and pine nuts."
+              ]
+            },
+            {
+              "title": "Holly's Spicy Noodle Salad with Peanut Dressing",
+              "servings": "Serves 10 as appetizer, 6 as main",
+              "source": "Pacific Flavors by Hugh Carpenter; shared by Holly Arledge",
+              "comments": [
+                "Asparagus, broccoli, or snow peas all work well in place of each other."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Noodles",
+                  "ingredients": [
+                    "1/4 lb dried Chinese spaghetti noodles (or thin spaghetti)",
+                    "2 tablespoons safflower oil (to toss after cooking)"
+                  ]
+                },
+                {
+                  "label": "Vegetables",
+                  "ingredients": [
+                    "1 cup shredded iceberg lettuce",
+                    "1 cup fresh bean sprouts",
+                    "1 cup thinly sliced mushrooms",
+                    "1 lb pencil-thin asparagus (or broccoli or snow peas)",
+                    "1 large red bell pepper, sliced or julienned"
+                  ]
+                },
+                {
+                  "label": "Dressing",
+                  "ingredients": [
+                    "1/4 cup white sesame seeds",
+                    "1/2 cup chicken stock, heated to boiling",
+                    "1/2 cup peanut butter",
+                    "1/4 cup red wine vinegar",
+                    "2 tablespoons dark soy sauce",
+                    "2 tablespoons sesame oil",
+                    "1 tablespoon dry sherry",
+                    "1 tablespoon sugar",
+                    "1 1/2 teaspoons Chinese chili sauce (optional)",
+                    "1/2 teaspoon salt",
+                    "1/2 cup minced green onions",
+                    "2 tablespoons finely minced ginger",
+                    "1 large garlic clove, minced"
+                  ]
+                }
+              ],
+              "steps": [
+                "Combine all dressing ingredients; mix well.",
+                "Cook noodles in lightly salted boiling water about 4 minutes until firm. Drain; toss with safflower oil to prevent sticking.",
+                "Combine noodles and vegetables, add dressing, and toss."
+              ]
+            }
+          ]
         }
       ]
     },
@@ -3373,6 +3561,44 @@ module.exports = {
                 "Cover and bake 20 minutes. Uncover and bake until most of the liquid is absorbed and the chicken is golden and cooked through, about 20 minutes more.",
                 "Divide the chicken and rice among bowls; garnish with scallions. Serve with any combination of pickles, kimchi, and hot sauce."
               ]
+            },
+            {
+              "title": "Yakitori Chicken Kebabs",
+              "servings": "Serves 4 (2 kebabs each)",
+              "source": "Printed clipping",
+              "ingredientGroups": [
+                {
+                  "label": "Marinade",
+                  "ingredients": [
+                    "3/4 cup low-sodium teriyaki marinade and sauce",
+                    "2 tablespoons grated peeled gingerroot",
+                    "2 teaspoons dark sesame oil",
+                    "2 garlic cloves, minced"
+                  ]
+                },
+                {
+                  "label": "Kebabs",
+                  "ingredients": [
+                    "1 lb skinless boneless chicken breasts, cut into 24 pieces",
+                    "8 large green onions (white portions cut into 3 pieces each; green tops reserved)",
+                    "2 medium zucchini, cut into 24 chunks",
+                    "24 (1-inch) squares red bell pepper (about 2 large)",
+                    "24 small mushrooms (about 3/4 lb)"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "3 cups hot cooked soba (buckwheat noodles) or Jasmine or Basmati rice"
+                  ]
+                }
+              ],
+              "steps": [
+                "Combine marinade, gingerroot, sesame oil, garlic, and chicken in a bowl. Marinate in refrigerator 30 minutes, stirring occasionally.",
+                "Drain chicken, reserving marinade. Thread 3 chicken pieces, 3 onion pieces, 3 zucchini chunks, 3 pepper squares, and 3 mushrooms alternately onto each of 8 skewers.",
+                "Place kebabs on a broiler pan coated with cooking spray. Broil 15 minutes, turning occasionally and basting with reserved marinade.",
+                "Serve over soba or rice."
+              ]
             }
           ]
         },
@@ -4611,6 +4837,55 @@ module.exports = {
                 "Add garlic powder, onion powder, paprika, salt, pepper, soy sauce, and teriyaki sauce; mix well to incorporate. Add Marsala wine, tomato paste, water, peas and carrots; mix well and cook 3 minutes.",
                 "Transfer meat mixture to a 9\" round pan. Top with mashed sweet potatoes. Using a fork, make a design on the surface. Lightly brush the top with oil. Bake uncovered at 400°F for 25 minutes."
               ]
+            },
+            {
+              "title": "Taco Soup",
+              "servings": "Serves 4–6",
+              "source": "Family recipe card, credited to Susan Muhlheim",
+              "ingredientGroups": [
+                {
+                  "label": "Chicken",
+                  "ingredients": [
+                    "1 lb ground chicken",
+                    "1/4 cup chopped onion",
+                    "Garlic powder to taste"
+                  ]
+                },
+                {
+                  "label": "Canned goods",
+                  "ingredients": [
+                    "1 (16-oz) can tomatoes with liquid",
+                    "1 (16-oz) can kidney beans with liquid",
+                    "1 (17-oz) can corn with liquid",
+                    "1 (8-oz) can tomato sauce"
+                  ]
+                },
+                {
+                  "label": "Seasoning",
+                  "ingredients": [
+                    "1 package taco seasoning"
+                  ]
+                },
+                {
+                  "label": "To serve (optional)",
+                  "ingredients": [
+                    "Avocados",
+                    "Grated cheese",
+                    "Sour cream",
+                    "Taco chips",
+                    "Jalapeños"
+                  ]
+                }
+              ],
+              "steps": [
+                "Brown ground chicken and onion (and garlic powder if using). Drain.",
+                "Add all remaining canned goods and taco seasoning. Bring to a boil, then reduce heat and simmer 10–15 minutes.",
+                "Garnish with avocados, grated cheese, sour cream, and taco chips if desired."
+              ],
+              "comments": [
+                "Ground beef or turkey also works well.",
+                "Jalapeños and garlic powder can be added with the canned goods for more heat."
+              ]
             }
           ]
         },
@@ -4990,6 +5265,47 @@ module.exports = {
           "title": "Shellfish",
           "recipes": [
             {
+              "title": "Stuffed Eggplant Creole",
+              "servings": "Serves 4",
+              "source": "Family recipe card, credited to Susan Muhlheim",
+              "comments": [
+                "Crawfish, ground beef, or tofu can be substituted for shrimp.",
+                "Lowfat sour cream or plain nonfat yogurt both work well."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Eggplant",
+                  "ingredients": [
+                    "2 small eggplants (1 lb each)"
+                  ]
+                },
+                {
+                  "label": "Filling",
+                  "ingredients": [
+                    "1 tablespoon vegetable oil",
+                    "1 lb shrimp, peeled and deveined",
+                    "1 garlic clove, crushed",
+                    "1/4 cup finely chopped onion",
+                    "1/4 cup finely chopped green pepper",
+                    "1/4 cup finely chopped celery",
+                    "1 (14-oz) can tomatoes, undrained",
+                    "1/4 teaspoon dried thyme",
+                    "Salt and Tabasco to taste",
+                    "1 cup dried bread crumbs, divided",
+                    "1/2 cup lowfat sour cream or plain nonfat yogurt"
+                  ]
+                }
+              ],
+              "steps": [
+                "Preheat oven to 375°F. Cut eggplants in half lengthwise. Place in a large pan, cover with water, bring to a boil, cover, and simmer 15 minutes. Drain and cool.",
+                "Scoop out pulp from eggplant, leaving a 1/4-inch shell intact. Set pulp aside.",
+                "In a skillet, heat vegetable oil. Sauté garlic with shrimp. Add onion, green pepper, and celery; cook 5 minutes over low heat, stirring occasionally.",
+                "Stir in tomatoes, salt, thyme, and Tabasco. Add half the bread crumbs, then the eggplant pulp and sour cream; stir well.",
+                "Stuff mixture into the 4 eggplant shells. Top with remaining bread crumbs.",
+                "Place in a baking dish and bake 30 minutes."
+              ]
+            },
+            {
               "title": "Moules Marinières",
               "servings": "Serves 4   |   Prep: 45 min   |   Cook: 15 min   |   Total: 1 hour",
               "source": "Florence Fabricant, NYT Cooking; garlic and cream option adapted from George Duran, Food Network",
@@ -5347,6 +5663,59 @@ module.exports = {
           "title": "Vegetables",
           "recipes": [
             {
+              "title": "Lentil Chili",
+              "favorite": true,
+              "servings": "Serves 12 (about 1 cup each)",
+              "source": "Low Fat & Loving It (cookbook)",
+              "comments": [
+                "You'll never miss the meat in this super-delicious chili -- it's a great way to serve a crowd."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Aromatics",
+                  "ingredients": [
+                    "1/3 cup olive oil",
+                    "1 medium onion, cut into 1/2-inch chunks",
+                    "2 garlic cloves, minced",
+                    "1 medium carrot, peeled and coarsely chopped"
+                  ]
+                },
+                {
+                  "label": "Chili base",
+                  "ingredients": [
+                    "7 cups water",
+                    "1/3 cup tomato paste",
+                    "2 cups (about 12 oz) brown lentils, rinsed",
+                    "1 green pepper, cut into 1/2-inch chunks",
+                    "1 sweet red pepper, cut into 1/2-inch chunks"
+                  ]
+                },
+                {
+                  "label": "Beans and tomatoes",
+                  "ingredients": [
+                    "1 (19-oz) can red kidney beans, rinsed and drained",
+                    "1 cup canned garbanzo beans, rinsed and drained",
+                    "2 cups canned whole tomatoes in puree"
+                  ]
+                },
+                {
+                  "label": "Seasoning",
+                  "ingredients": [
+                    "1/3 cup chili powder",
+                    "4 teaspoons ground cumin",
+                    "1/4 teaspoon Aleppo pepper or red pepper flakes (or more to taste)",
+                    "Salt and freshly ground black pepper to taste"
+                  ]
+                }
+              ],
+              "steps": [
+                "Heat the olive oil in a large heavy pot. Sauté the onion, garlic, and carrot over medium heat until the carrot is tender, about 5 minutes.",
+                "Add the water, tomato paste, lentils, green and red peppers, and the kidney and garbanzo beans. Add the tomatoes, breaking them up against the side of the pot. Stir in the chili powder, cumin, and Aleppo pepper. Bring to a boil, then reduce heat to moderate.",
+                "Cover and cook 45 minutes, or until lentils are tender but not mushy. Add more water if necessary.",
+                "Adjust seasoning with salt and pepper. Serve alone or over plain white rice."
+              ]
+            },
+            {
               "title": "Eggplant Involtini",
               "servings": "Serves 4   |   Total: 1 hour",
               "comments": [
@@ -5555,6 +5924,51 @@ module.exports = {
                 "Meanwhile, heat the oil in a small saucepan or skillet. Add the chili powder, cacao, oregano, cinnamon, cumin, and paprika; heat until bubbling and very fragrant, about 60 seconds. Remove from heat and set aside. Use this time to dice your veggies and prepare the tofu (see note).",
                 "When the chilies have finished steeping, drain, reserving ¼ cup soaking liquid. Add chilies and reserved liquid to a food processor and blend until nearly smooth.",
                 "Combine all the veggies, tofu, chickpeas, processed chilies, and spice paste in the slow cooker. Add the bay leaves, coconut sugar, salt, chocolate, and stock. Stir well. Cook on High for 5 hours, or until the vegetables have all but dissolved. Adjust salt to taste. Serve with grain and toppings of choice."
+              ]
+            },
+            {
+              "title": "Moroccan Eggplant with Couscous",
+              "servings": "Serves 6 (serving size: 2 cups)",
+              "source": "Printed clipping",
+              "ingredientGroups": [
+                {
+                  "label": "Spice mixture",
+                  "ingredients": [
+                    "2 teaspoons curry powder",
+                    "2 teaspoons ground cumin",
+                    "1 teaspoon ground cinnamon",
+                    "1/2 teaspoon salt",
+                    "1/2 teaspoon pepper"
+                  ]
+                },
+                {
+                  "label": "Vegetables",
+                  "ingredients": [
+                    "1 tablespoon olive oil",
+                    "8 cups (1/2-inch) cubed peeled eggplant (about 1 1/2 lbs)",
+                    "2 1/3 cups chopped tomato",
+                    "1 1/2 cups chopped onion",
+                    "1 cup chopped carrot",
+                    "1 cup chopped green cabbage",
+                    "1 tablespoon minced peeled gingerroot",
+                    "2 garlic cloves, minced"
+                  ]
+                },
+                {
+                  "label": "Liquid and couscous",
+                  "ingredients": [
+                    "2 cups tomato juice",
+                    "1 cup orange juice",
+                    "1 cup water",
+                    "2 cups uncooked couscous"
+                  ]
+                }
+              ],
+              "steps": [
+                "Combine the 5 spices in a small bowl; stir well.",
+                "Heat oil in an ovenproof Dutch oven over medium-high heat. Add spice mixture, then eggplant, tomato, onion, carrot, cabbage, ginger, and garlic. Sauté 3 minutes.",
+                "Add tomato juice, orange juice, and water. Bring to a boil, then reduce heat and simmer 2 minutes.",
+                "Remove from heat; stir in couscous. Cover and bake at 350°F for 20 minutes."
               ]
             }
           ]
@@ -6061,6 +6475,43 @@ module.exports = {
             "Heat enough vegetable oil in a frying pan to cover the latkes amply. Drop the batter from a tablespoon into the hot oil, making pancakes about 3 inches in diameter. Do not allow the oil to smoke; let it come back up to temperature after every few latkes and after replenishing the oil.",
             "Fry until brown on the underside, then turn and brown the other side. Lift out and drain on paper towels. Keep warm in a 250°F oven while frying remaining batches."
           ]
+        },
+        {
+          "title": "Potatoes Gratin (Low Calorie)",
+          "servings": "Serves 6–8   |   Prep: 10 min   |   Cook: 1 to 1 1/4 hours",
+          "source": "Family recipe card",
+          "comments": [
+            "Low-calorie version using skim milk and eggs rather than cream."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Potatoes",
+              "ingredients": [
+                "2 large garlic cloves, halved lengthwise",
+                "3 lbs new potatoes, unpeeled, scrubbed, and very thinly sliced"
+              ]
+            },
+            {
+              "label": "Custard",
+              "ingredients": [
+                "3 1/3 cups skim milk",
+                "2 large eggs, lightly beaten",
+                "Salt and pepper to taste"
+              ]
+            },
+            {
+              "label": "Topping",
+              "ingredients": [
+                "6 tablespoons grated parmesan cheese"
+              ]
+            }
+          ],
+          "steps": [
+            "Preheat oven to 400°F. Rub the inside of a 9x14x2-inch Pyrex dish with the cut side of the garlic. Thinly slice the garlic and toss with the potatoes.",
+            "Layer potatoes in the Pyrex dish. Mix together milk, eggs, salt, and pepper. Pour mixture over potatoes.",
+            "Bake 1 to 1 1/4 hours. Every 15 minutes, remove from oven and, using a knife or wooden spoon, press down the top layer of potatoes that has gotten crusty and fold it into the rest.",
+            "When golden and potatoes are tender, sprinkle with parmesan and return to oven. Bake until a golden crust forms, about 10–15 minutes."
+          ]
         }
       ]
     },
@@ -6463,6 +6914,109 @@ module.exports = {
                 "Add ground beef to the remaining panko mixture and work with your hands until evenly combined. Divide into 8 equal portions and roll into balls.",
                 "Bring a large pot of salted water to a boil. Remove Dutch oven from oven, uncover, and stir in 1/2 cup water. Nestle meatballs in the sauce, turning once to coat. Return lid slightly ajar and bake until meatballs are just cooked through and bouncy, 12–16 minutes. Remove from oven and keep covered.",
                 "Transfer meatballs to a plate. Cook pappardelle per package directions until just al dente. Use tongs to transfer pasta into the sauce, add 1 Tbsp butter, and toss to coat, adding pasta water as needed. Divide pasta and sauce among bowls, top with meatballs, toasted breadcrumbs, and fresh herbs."
+              ]
+            },
+            {
+              "title": "Nuala's Pasta",
+              "servings": "Serves 2–3",
+              "source": "Family recipe card, credited to Nuala O'Connor",
+              "ingredientGroups": [
+                {
+                  "label": "Pasta",
+                  "ingredients": [
+                    "1/2 lb tubular pasta (rigatoni or penne)"
+                  ]
+                },
+                {
+                  "label": "Ricotta sauce",
+                  "ingredients": [
+                    "3/4 cup part-skim ricotta, at room temperature",
+                    "3 scallions, finely chopped",
+                    "1 tablespoon chopped parsley or fresh basil",
+                    "1/3 cup grated parmesan cheese",
+                    "1/2 teaspoon salt",
+                    "1/4 teaspoon nutmeg",
+                    "Pinch cayenne pepper"
+                  ]
+                }
+              ],
+              "steps": [
+                "Bring ricotta to room temperature. Place in a large serving bowl.",
+                "Add scallions, parsley or basil, grated parmesan, salt, nutmeg, and cayenne to ricotta; mix.",
+                "Cook pasta. When ready, stir 1/4 cup pasta cooking water into the ricotta mixture. Drain pasta and toss with ricotta."
+              ]
+            },
+            {
+              "title": "Three Cheese Manicotti",
+              "source": "Family recipe card, credited to Susan Muhlheim",
+              "ingredientGroups": [
+                {
+                  "label": "Shells",
+                  "ingredients": [
+                    "8 manicotti shells"
+                  ]
+                },
+                {
+                  "label": "Filling",
+                  "ingredients": [
+                    "2 eggs, beaten",
+                    "1 cup shredded mozzarella",
+                    "1 1/2 cups ricotta cheese",
+                    "1/2 cup grated parmesan",
+                    "1/4 cup chopped parsley",
+                    "1/2 teaspoon oregano",
+                    "Dash of pepper"
+                  ]
+                },
+                {
+                  "label": "Sauce and topping",
+                  "ingredients": [
+                    "Spaghetti sauce (jarred or homemade)",
+                    "1 cup shredded mozzarella (reserved for topping)"
+                  ]
+                }
+              ],
+              "steps": [
+                "Cook manicotti shells; rinse in cold water.",
+                "Stir together eggs, 1 cup mozzarella, ricotta, parmesan, parsley, oregano, and pepper. Spoon filling into manicotti shells.",
+                "Pour spaghetti sauce into the bottom of a rectangular baking dish (just cover the bottom). Arrange stuffed manicotti in dish. Pour remaining sauce over shells. Sprinkle reserved mozzarella on top.",
+                "Bake, covered, at 350°F for 35–40 minutes."
+              ]
+            },
+            {
+              "title": "Lisa's Pasta",
+              "servings": "Serves 4–6",
+              "source": "Family recipe card, credited to Lisa Sullivan; subtitled \"Angel Hair Tomato Basil Toss\"",
+              "ingredientGroups": [
+                {
+                  "label": "Sauce base",
+                  "ingredients": [
+                    "1/2 cup olive oil",
+                    "2 cloves garlic, minced",
+                    "1/4 cup sliced green onions"
+                  ]
+                },
+                {
+                  "label": "Tomatoes and herbs",
+                  "ingredients": [
+                    "3 large tomatoes, peeled and diced",
+                    "2 tablespoons chopped fresh basil",
+                    "1 teaspoon salt",
+                    "1/4 teaspoon coarse ground black pepper"
+                  ]
+                },
+                {
+                  "label": "Pasta and finish",
+                  "ingredients": [
+                    "1/2 lb angel hair pasta",
+                    "Grated parmesan cheese, for serving"
+                  ]
+                }
+              ],
+              "steps": [
+                "In a large skillet, heat olive oil. Add garlic and green onions; stir-fry 1 minute.",
+                "Stir in tomatoes, basil, salt, and pepper; cook 2 minutes, stirring frequently.",
+                "Cook angel hair pasta; drain. Toss hot pasta with tomato mixture immediately. Serve sprinkled with parmesan."
               ]
             }
           ]
@@ -7406,6 +7960,46 @@ module.exports = {
           ]
         },
         {
+          "title": "Italian",
+          "recipes": [
+            {
+              "title": "Sun-Dried Tomato Cream Sauce",
+              "source": "Family recipe card",
+              "comments": [
+                "Increase garlic to taste.",
+                "Serve over pasta or chicken."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Roux",
+                  "ingredients": [
+                    "1 tablespoon butter",
+                    "1 garlic clove, pushed through a press (increase to taste)",
+                    "2 tablespoons flour"
+                  ]
+                },
+                {
+                  "label": "Sauce",
+                  "ingredients": [
+                    "3/4 cup chicken broth",
+                    "1/2 cup heavy cream",
+                    "2 tablespoons sun-dried tomato slivers in oil",
+                    "1/4 teaspoon dried thyme",
+                    "1/4 teaspoon salt",
+                    "1/4 teaspoon Aleppo pepper or red pepper flakes"
+                  ]
+                }
+              ],
+              "steps": [
+                "In a large skillet, melt butter over medium heat. Add garlic and cook 30 seconds.",
+                "Stir in flour and cook 1 minute.",
+                "Stir in broth, cream, sun-dried tomatoes, thyme, salt, and Aleppo pepper. Bring to a boil and cook 1 minute.",
+                "Pour into a measuring cup and serve over pasta or chicken."
+              ]
+            }
+          ]
+        },
+        {
           "title": "French/Continental",
           "recipes": [
             {
@@ -7650,6 +8244,44 @@ module.exports = {
             "Whisk together cold water, sweetened condensed milk, and pudding powder until smooth. Let sit until congealed, about 1 hour.",
             "In a separate bowl, whip heavy cream until soft peaks form.",
             "Fold pudding mixture into the whipped cream. In a large serving bowl, start with a layer of vanilla wafers, then sliced bananas, then pudding. Repeat layers until ingredients are used up. Refrigerate overnight so wafers soften."
+          ]
+        },
+        {
+          "title": "Fresh Cranberry Mold",
+          "source": "Family recipe card, attributed to Grandmother Brenda",
+          "comments": [
+            "Fills one small mold; triple the recipe for a large mold.",
+            "Using only 1 cup water per Jell-O package (instead of 2) gives a firmer, more concentrated mold."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Jell-O base",
+              "ingredients": [
+                "2 packages red Jell-O, made with only 1 cup boiling water per package (2 cups total); chill until slightly thickened"
+              ]
+            },
+            {
+              "label": "Fruit mixture",
+              "ingredients": [
+                "1/2 lb fresh cranberries",
+                "1 apple, unpeeled",
+                "1 orange, unpeeled",
+                "1 cup sugar",
+                "1 cup crushed pineapple with juice"
+              ]
+            },
+            {
+              "label": "Nuts",
+              "ingredients": [
+                "1 cup pecans"
+              ]
+            }
+          ],
+          "steps": [
+            "Make Jell-O using only 1 cup boiling water per package. Let cool until slightly thickened.",
+            "Put cranberries, apple (with peel), and orange (with peel) through a meat grinder. Mix all — juice included — with sugar and crushed pineapple.",
+            "Fold fruit mixture into the thickened Jell-O. Stir in pecans.",
+            "Pour into mold(s). Refrigerate until fully set."
           ]
         },
         {

@@ -25,6 +25,8 @@ const CLUSTER_MAP = {
   'D.L. Jardine\'s Fajita Marinade':                     'Latin/South American',
   'Peruvian Roasted Chicken With Spicy Cilantro Sauce':  'Latin/South American',
   'Slow-Cooker Chicken Mole':                             'Latin/South American',
+  // Vegetables — American
+  'Lentil Chili':                                        'General',
   // Vegetables — Italian
   'Eggplant Involtini':                                   'Italian',
   'Eggplant Parmesan':                                    'Italian',
@@ -75,6 +77,7 @@ const CLUSTER_MAP = {
   'Crispy Chicken Katsu Bowls':                          'Japanese',
   'Japanese Fried Chicken (Shio Koji Karaage)':          'Japanese',
   'One-Pot Japanese Curry Chicken and Rice':             'Japanese',
+  'Yakitori Chicken Kebabs':                             'Japanese',
   // Pork — American
   'Sloppy Moes':                                         'General',
   // Pork — Latin/South American
@@ -88,6 +91,9 @@ const CLUSTER_MAP = {
   // Noodles: Italian — Italian
   'Brie Linguine':                                       'Italian',
   'Pasta with Sausage, Basil, and Mustard':              'Italian',
+  'Nuala\'s Pasta':                                      'Italian',
+  'Three Cheese Manicotti':                              'Italian',
+  'Lisa\'s Pasta':                                       'Italian',
   // Noodles: Asian — Thai
   'Fried Drunken Noodles with Chicken (Phad Kii Maw Gai)': 'Thai',
   // Noodles: Asian — Japanese
@@ -110,6 +116,7 @@ const CLUSTER_MAP = {
   // Beef — Chinese
   'Asian Braised Short Ribs':                            'Chinese',
   // Shellfish — American
+  'Stuffed Eggplant Creole':                             'General',
   'Shrimp with Orzo and Peas':                           'General',
   'Spicy Grilled Shrimp':                                'General',
   'Bacon-Wrapped Scallops with Chili Butter':            'General',
@@ -135,6 +142,7 @@ const CLUSTER_MAP = {
   // Ground Beef — American
   'Taco Night!!':                                        'General',
   'Sweet Potato Shepherd\'s Pie':                        'General',
+  'Taco Soup':                                           'General',
   // Ground Beef — Korean-inspired
   'Korean Beef Bowl':                                    'Korean-inspired',
   // Noodles: Italian — Middle Eastern/Persian
@@ -143,9 +151,12 @@ const CLUSTER_MAP = {
   'Horseradish Sauce':                                   'General',
   'Steak Seasoning Rub':                                 'General',
   'Cherry Barbecue Sauce':                               'General',
+  // Sauces — Italian
+  'Sun-Dried Tomato Cream Sauce':                        'Italian',
   // Dressings — Latin/South American
   'Authentic Chimichurri':                               'Latin/South American',
   // Desserts — American
+  'Fresh Cranberry Mold':                                'General',
   'Lauren\'s Banana Pudding':                            'General',
   // Desserts — Thai
   'Mango with Sticky Rice (Khao Neow Mamuang)':         'Thai',
@@ -172,10 +183,19 @@ const CLUSTER_MAP = {
   'Roasted Portobellos With Pesto':                      'Italian',
   // Vegetables — Latin/South American
   'Slow Cooker Vegan Mole Chili':                        'Latin/South American',
+  // Vegetables — Moroccan/North African
+  'Moroccan Eggplant with Couscous':                     'Moroccan/North African',
+  // Salads > Pasta Salads — American
+  'Chuck Wagon Barbecued Pasta Salad':                   'General',
+  // Salads > Pasta Salads — Chinese
+  'Asian Pasta Salad':                                   'Chinese',
+  "Holly's Spicy Noodle Salad with Peanut Dressing":    'Chinese',
   // Vegetable Sides — American
   'Sautéed Mushrooms':                                   'General',
   'Coleslaw Salad':                                      'General',
   'Summer Salad':                                        'General',
+  // Vegetable Sides — Mediterranean/Greek
+  'Potatoes Gratin (Low Calorie)':                       'Mediterranean/Greek',
   // Vegetable Sides — Central/Eastern European
   'Potato Latkes':                                       'Central/Eastern European',
   // Baking: Sweet — American
@@ -208,6 +228,12 @@ const CLUSTER_MAP = {
   "Susan's Calzones":                                    'Italian',
   // Baking Sweet — American
   'Butter Pecan Coffee Cake':                            'General',
+  // Breakfast — American
+  'Glazed Cinnamon Rolls (Tangzhong Version)':           'General',
+  'Homemade Biscuits':                                   'General',
+  'Raised Waffles':                                      'General',
+  'Baked German Pancake (or Dutch Babies)':              'General',
+  'Egg Strata':                                          'General',
 };
 
 // ── Helpers ────────────────────────────────────────────────────────────────
