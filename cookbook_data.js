@@ -1112,6 +1112,98 @@ module.exports = {
               ]
             },
             {
+              "title": "Deep Fried BBQ Chicken Stuffed Pizzadilla",
+              "servings": "6   |   Prep: 45 minutes   |   Chill: 1 hour   |   Cook: 20 minutes   |   Total: ~2 hours",
+              "source": "Twisted (U.K.), 2019",
+              "comments": [
+                "Included in the family cookbook solely to see if anyone's paying attention."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "BBQ rub",
+                  "ingredients": [
+                    "1/2 tablespoon paprika",
+                    "1 teaspoon ground cumin",
+                    "1 teaspoon chili powder",
+                    "1 teaspoon garlic powder",
+                    "1/2 teaspoon mustard powder",
+                    "1 tablespoon brown sugar",
+                    "1/2 teaspoon salt",
+                    "1/2 teaspoon pepper",
+                    "2 tablespoons oil"
+                  ]
+                },
+                {
+                  "label": "Chicken",
+                  "ingredients": [
+                    "6 chicken breasts"
+                  ]
+                },
+                {
+                  "label": "Filling",
+                  "ingredients": [
+                    "3/4 cup BBQ sauce",
+                    "12 strips bacon, chopped and cooked crispy",
+                    "1 red onion, sliced",
+                    "Green onions, chopped, to taste",
+                    "1/2 cup grated cheddar",
+                    "1/2 cup grated mozzarella"
+                  ]
+                },
+                {
+                  "label": "Tortillas",
+                  "ingredients": [
+                    "2 large flour tortillas"
+                  ]
+                },
+                {
+                  "label": "Ranch sauce",
+                  "ingredients": [
+                    "1 1/2 cups sour cream",
+                    "1/4 cup mayonnaise",
+                    "1 tablespoon chopped fresh chives",
+                    "1 tablespoon chopped fresh parsley",
+                    "1 tablespoon chopped fresh dill",
+                    "2 teaspoons lemon juice",
+                    "1/2 teaspoon onion powder",
+                    "1/2 teaspoon garlic powder",
+                    "Salt and pepper to taste"
+                  ]
+                },
+                {
+                  "label": "Breading",
+                  "ingredients": [
+                    "6 eggs, whisked",
+                    "2 cups plain flour, seasoned",
+                    "3 cups seasoned breadcrumbs",
+                    "Oil for frying"
+                  ]
+                },
+                {
+                  "label": "Pizza topping",
+                  "ingredients": [
+                    "1/2 cup pizza sauce",
+                    "Sliced pepperoni",
+                    "Grated mozzarella"
+                  ]
+                }
+              ],
+              "steps": [
+                "Preheat oven to 375 degrees F. Mix all BBQ rub ingredients together with the oil. Rub over chicken breasts and arrange on a lined baking tray. Bake 20-30 minutes until cooked through.",
+                "Remove chicken and shred; transfer to a large bowl.",
+                "Add the BBQ sauce, bacon, red onion, green onions, cheddar, and mozzarella to the shredded chicken and stir to combine.",
+                "Place one tortilla in the bottom of a springform tin. Fill with the BBQ chicken mixture and top with the second tortilla. Place a sheet of parchment and a weight on top. Refrigerate 1 hour to set.",
+                "While the quesadilla chills, whisk together all ranch sauce ingredients. Season to taste; refrigerate until serving.",
+                "Remove the chilled quesadilla from the tin and cut into 6 equal triangles.",
+                "Set up a breading station: seasoned flour in one dish, whisked eggs in a second, breadcrumbs in a third. Dip each triangle in flour, then egg, then breadcrumbs, pressing to coat.",
+                "Heat oil to 340 degrees F (170 degrees C). Fry the breaded wedges in batches until deep golden brown, about 3-4 minutes per side. Drain on paper towels.",
+                "Arrange the fried wedges back into a circle on a baking sheet, points inward.",
+                "Spoon pizza sauce over the top, scatter mozzarella generously, and lay on the pepperoni.",
+                "Broil 4-5 minutes until cheese is melted and bubbling. Serve immediately with the ranch sauce alongside.",
+                "Reflect on your choices."
+              ]
+            },
+            {
               "title": "Crispy Chicken With Lime Butter",
               "servings": "4   |   Prep: 5 minutes   |   Cook: 35 minutes   |   Total: 40 minutes",
               "comments": [

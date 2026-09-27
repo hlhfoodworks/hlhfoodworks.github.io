@@ -13,6 +13,7 @@ const CLUSTER_MAP = {
   'Brown Butter Sage Skillet Chicken':                    'General',
   'Company Baked Chicken':                                'General',
   'Creamy Spinach-Artichoke Chicken Stew':                'General',
+  'Deep Fried BBQ Chicken Stuffed Pizzadilla':            'General',
   'Crispy Chicken With Lime Butter':                      'General',
   'Crispy Spice Rubbed Chicken Thighs':                   'General',
   'Grilled Buffalo Wings':                                'General',
