@@ -1096,6 +1096,34 @@ module.exports = {
               ]
             },
             {
+              "title": "Lemon-Rubbed Chicken Legs with Garlic and Rosemary",
+              "servings": "Serves 2",
+              "ingredientGroups": [
+                {
+                  "label": "Chicken",
+                  "ingredients": [
+                    "2 whole chicken legs, about 1 pound total",
+                    "2 lemons, halved",
+                    "Lemon pepper to taste",
+                    "Salt and pepper to taste",
+                    "1 tablespoon minced fresh rosemary or 1 teaspoon dried rosemary, crumbled (divided)",
+                    "4 cloves garlic, minced (divided)",
+                    "1 tablespoon olive oil",
+                    "3 tablespoons water"
+                  ]
+                }
+              ],
+              "steps": [
+                "Pat chicken dry. Rub all over with one lemon half. Season with salt, pepper, lemon pepper, half the rosemary, and half the garlic.",
+                "Heat oil in 10-inch heavy skillet over moderately high heat. Saute chicken skin-sides down for 7 minutes until golden brown.",
+                "Turn chicken. Squeeze another lemon half over chicken. Cook covered over moderately low heat for 30 minutes until cooked through.",
+                "Transfer chicken to plates.",
+                "Add remaining garlic and rosemary to skillet; saute until just golden. Squeeze remaining lemon over pan. Add water, scraping up brown bits, and simmer 1 minute.",
+                "Drizzle sauce over chicken and serve."
+              ],
+              "comments": ["Can substitute 3 half breasts with ribs for chicken legs."]
+            },
+            {
               "title": "Skillet Chicken and Zucchini With Charred Scallion Salsa",
               "servings": "4   |   Total: 40 minutes",
               "comments": [
@@ -1503,6 +1531,49 @@ module.exports = {
               ]
             },
             {
+              "title": "Chicken Breasts and Garlic Balsamic Vinegar",
+              "servings": "Serves 4",
+              "ingredientGroups": [
+                {
+                  "label": "Breading",
+                  "ingredients": [
+                    "1/4 cup shredded wheat cereal",
+                    "1/2 cup ground cashews"
+                  ]
+                },
+                {
+                  "label": "Chicken",
+                  "ingredients": [
+                    "4 skinless, boneless chicken breasts, halved (8 pieces)",
+                    "Garlic powder to taste",
+                    "Pepper to taste"
+                  ]
+                },
+                {
+                  "label": "Sauce",
+                  "ingredients": [
+                    "3 tablespoons olive oil",
+                    "6 cloves garlic, peeled",
+                    "3/4 lb small-medium mushrooms, sliced, drained, and patted dry",
+                    "4 tablespoons balsamic vinegar",
+                    "3/4 cup canned chicken broth (or bouillon cube in water)",
+                    "1 bay leaf",
+                    "1 tablespoon butter"
+                  ]
+                }
+              ],
+              "steps": [
+                "Combine shredded wheat and ground cashews in a shallow dish to make the breading mixture.",
+                "Slice mushrooms, drain, and pat dry. Set aside.",
+                "Season chicken with garlic powder and pepper. Dredge in breading mixture.",
+                "Heat oil in skillet over moderate heat. Cook chicken until browned, about 3 minutes per side.",
+                "Add garlic cloves, turn chicken, and scatter mushrooms over all. Cook about 3 minutes.",
+                "Add balsamic vinegar and broth. Add bay leaf. Cover and cook on low heat about 10 minutes, turning pieces as they cook.",
+                "Transfer chicken to warm serving platter. Let sauce with mushrooms cook another 5 minutes. Stir in butter and remove bay leaf.",
+                "Pour sauce over chicken and serve."
+              ]
+            },
+            {
               "title": "Chicken Cacciatore",
               "servings": "4 to 5   |   Total: 1 hour 45 minutes",
               "source": "NYT Cooking, by Martha Rose Shulman",
@@ -1621,6 +1692,46 @@ module.exports = {
               ]
             },
             {
+              "title": "Chicken with 40 Cloves of Garlic and Garlic Bread",
+              "servings": "Serves 4",
+              "ingredientGroups": [
+                {
+                  "label": "Chicken stuffing",
+                  "ingredients": [
+                    "1 (3 1/2-pound) chicken",
+                    "Kosher salt to taste",
+                    "2 sprigs fresh thyme",
+                    "2 sprigs fresh rosemary",
+                    "2 sprigs fresh sage",
+                    "2 tender stalks celery with their leaves",
+                    "2 sprigs Italian parsley"
+                  ]
+                },
+                {
+                  "label": "Pot",
+                  "ingredients": [
+                    "40 cloves garlic, unpeeled",
+                    "3 tablespoons olive oil",
+                    "Freshly ground pepper to taste"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "Toasted slices of country bread"
+                  ]
+                }
+              ],
+              "steps": [
+                "Preheat oven to 400 degrees. Sprinkle chicken inside and out with kosher salt. Stuff with half the thyme, rosemary, sage, and celery; add the parsley and 4 cloves of garlic.",
+                "Place remaining herbs and celery in an oval earthenware or enameled pot just large enough to hold the chicken. Add oil, salt, pepper, and remaining garlic. Roll chicken in oil to coat.",
+                "Cover pot and bake for 1 3/4 hours.",
+                "Transfer chicken to serving platter and surround with the garlic cloves. Skim fat from cooking juices and pour into a sauceboat.",
+                "Serve with toasted bread; each diner crushes a garlic clove to remove skin and spreads the puree on a slice."
+              ],
+              "source": "Adapted from \"France the Beautiful Cookbook,\" Collins, San Francisco, 1989"
+            },
+            {
               "title": "Marry Me Chicken",
               "servings": "4   |   Prep: 10 minutes   |   Cook: 50 minutes   |   Total: 1 hour",
               "comments": [
@@ -1673,6 +1784,67 @@ module.exports = {
                 "Add 1/2 cup of the cream and warm through, stirring, until slightly thickened, about 3 minutes. Stir in the Parmesan and sun-dried tomatoes. Taste; add more cream if desired.",
                 "Place the chicken back in the pan to warm through, about 4 minutes. Remove from heat and scatter basil on top."
               ]
+            },
+            {
+              "title": "Coq au Vin",
+              "servings": "Serves 6",
+              "ingredientGroups": [
+                {
+                  "label": "Chicken",
+                  "ingredients": [
+                    "3 tablespoons butter or margarine",
+                    "3 tablespoons salad oil",
+                    "3 chicken breasts, halved",
+                    "3 drumsticks and 3 thighs",
+                    "1/2 teaspoon salt",
+                    "1/8 teaspoon pepper",
+                    "1/4 cup cognac"
+                  ]
+                },
+                {
+                  "label": "Braised onions and mushrooms",
+                  "ingredients": [
+                    "12 pearl onions, peeled",
+                    "1/2 lb mushrooms, whole or halved",
+                    "2 tablespoons butter"
+                  ]
+                },
+                {
+                  "label": "Braising liquid",
+                  "ingredients": [
+                    "1 1/2 cups red wine (Burgundy or Bordeaux)",
+                    "2 chicken bouillon cubes dissolved in 2 cups water",
+                    "2 tablespoons tomato paste",
+                    "2 cloves garlic",
+                    "1/4 teaspoon thyme",
+                    "1 bay leaf"
+                  ]
+                },
+                {
+                  "label": "Beurre manie",
+                  "ingredients": [
+                    "1 tablespoon softened butter",
+                    "1 tablespoon flour, kneaded together with the butter"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "Fresh parsley sprigs"
+                  ]
+                }
+              ],
+              "steps": [
+                "Brown chicken in hot oil and butter over medium heat at approximately 350 degrees. Cover and cook slowly 10 minutes, turning chicken once. Season with salt and pepper.",
+                "Meanwhile, in a separate skillet, saute pearl onions and mushrooms in butter until golden. Set aside.",
+                "Pour cognac over browned chicken and ignite.",
+                "Add wine, bouillon, tomato paste, garlic, thyme, and bay leaf to the chicken. Add the braised onions and mushrooms. Cover and simmer at approximately 150 degrees for 25-35 minutes until juices run clear.",
+                "Remove chicken and vegetables to a side dish.",
+                "Turn heat to high and boil sauce rapidly, reducing liquid to about 2 1/2 cups. Add beurre manie in small pieces, whisking; bring to simmer and cook 1-2 minutes until sauce is thick enough to coat a spoon.",
+                "Return chicken to skillet, baste with sauce. Decorate with parsley sprigs and serve."
+              ],
+              "comments": ["Grandmother Brenda noted on the card that the red wine \"costs about 29¢ at Muehlebach Grocery\" (in Kansas City)."],
+              "source": "From Grandmother Brenda's collection"
             },
             {
               "title": "Chicken Kiev",
@@ -3230,6 +3402,49 @@ module.exports = {
               ]
             },
             {
+              "title": "Christy's Stir-Fry (Adapted)",
+              "ingredientGroups": [
+                {
+                  "label": "Chicken and vegetables",
+                  "ingredients": [
+                    "2 chicken breasts, cut into pieces",
+                    "2 bunches broccoli, florets only",
+                    "1/2 red pepper, sliced",
+                    "2 cups snow peas (about 1/4 lb)",
+                    "1/4 lb shiitake mushrooms, sliced"
+                  ]
+                },
+                {
+                  "label": "Canned",
+                  "ingredients": [
+                    "1 can bamboo shoots, drained",
+                    "1 can water chestnuts, drained and sliced"
+                  ]
+                },
+                {
+                  "label": "Sauce",
+                  "ingredients": [
+                    "5 cloves fresh garlic, minced",
+                    "1 teaspoon chopped fresh ginger",
+                    "1 tablespoon hoisin sauce",
+                    "1 tablespoon oyster sauce",
+                    "4 tablespoons soy sauce",
+                    "2 tablespoons sherry cooking wine",
+                    "1 tablespoon vegetable oil",
+                    "1 tablespoon peanut oil",
+                    "1 tablespoon cornstarch",
+                    "Aleppo pepper or red pepper flakes to taste"
+                  ]
+                }
+              ],
+              "steps": [
+                "In wok, saute chicken in oil with garlic.",
+                "Add broccoli, red pepper, snow peas, mushrooms, and sauce ingredients. Stir-fry until chicken is nearly done.",
+                "Add bamboo shoots and water chestnuts; cook until heated through."
+              ],
+              "source": "From Christy"
+            },
+            {
               "title": "Kung Pao Chicken and Broccoli",
               "servings": "2   |   Prep: 30 minutes   |   Cook: 30 minutes   |   Total: 1 hour",
               "source": "https://cambodiarecipe.com/kung-pao-chicken-and-broccoli/",
@@ -4577,6 +4792,41 @@ module.exports = {
               ]
             },
             {
+              "title": "Nancy's Flank Steak",
+              "ingredientGroups": [
+                {
+                  "label": "Marinade",
+                  "ingredients": [
+                    "1-2 lb flank steak",
+                    "Soy sauce (enough to cover and marinate)"
+                  ]
+                },
+                {
+                  "label": "Grill",
+                  "ingredients": [
+                    "Crumbled dried thyme to taste"
+                  ]
+                },
+                {
+                  "label": "Sauce",
+                  "ingredients": [
+                    "1 cup hearty red wine",
+                    "1 cube (1/2 cup) butter",
+                    "Fresh parsley, chopped, to taste"
+                  ]
+                }
+              ],
+              "steps": [
+                "Marinate flank steak for 3 hours in soy sauce.",
+                "Pierce steak liberally and sprinkle with crumbled thyme.",
+                "Grill over hot coals.",
+                "Heat 1 cup hearty red wine in a small saucepan. Melt butter into wine. Add parsley.",
+                "Slice steak diagonally and ladle sauce over top."
+              ],
+              "comments": ["Steak quantity, thyme amount, and parsley quantity not specified on original card; adjust to taste."],
+              "source": "Family recipe, attributed to Grandmother Nancy"
+            },
+            {
               "title": "Dijon and Cognac Beef Stew",
               "servings": "Serves 4–6   |   Total: about 3 hours",
               "source": "Regina Schrambling, NYT Cooking",
@@ -5168,6 +5418,74 @@ module.exports = {
               ]
             },
             {
+              "title": "Soy-Salmon with Cilantro-Coconut Chutney",
+              "servings": "Serves 4",
+              "ingredientGroups": [
+                {
+                  "label": "Marinade",
+                  "ingredients": [
+                    "3/4 cup beer",
+                    "1/2 cup low-sodium soy sauce",
+                    "1 tablespoon vegetable oil",
+                    "1 tablespoon lemon juice",
+                    "1/8 teaspoon salt",
+                    "1/8 teaspoon pepper",
+                    "1 garlic clove, minced",
+                    "4 (6-ounce) salmon fillets"
+                  ]
+                },
+                {
+                  "label": "Cilantro-Coconut Chutney",
+                  "ingredients": [
+                    "1 cup fresh cilantro leaves",
+                    "1/3 cup shredded sweetened coconut",
+                    "1/4 cup water",
+                    "2 tablespoons lime juice",
+                    "1 tablespoon minced seeded jalapeno pepper",
+                    "1 teaspoon minced peeled gingerroot",
+                    "2 teaspoons curry powder",
+                    "1/8 teaspoon salt",
+                    "1 garlic clove, minced"
+                  ]
+                }
+              ],
+              "steps": [
+                "Combine marinade ingredients in 11x7-inch baking dish. Add salmon, turning to coat. Cover and marinate in refrigerator 1 hour, turning occasionally.",
+                "Meanwhile, make chutney: place all chutney ingredients in food processor and process until smooth. Makes about 2/3 cup.",
+                "Remove salmon from marinade, discard marinade. Grill 5 minutes on each side until fish flakes easily.",
+                "Serve with Cilantro-Coconut Chutney (about 2 1/2 tablespoons per serving)."
+              ]
+            },
+            {
+              "title": "Baked Trout St. Helena",
+              "servings": "Serves 2-4",
+              "ingredientGroups": [
+                {
+                  "label": "Fish",
+                  "ingredients": [
+                    "2 whole fresh trout, cleaned",
+                    "Salt and pepper to taste",
+                    "4 tablespoons chopped fresh parsley (divided)"
+                  ]
+                },
+                {
+                  "label": "Sauce and basting",
+                  "ingredients": [
+                    "2 cans (14-16 oz each) solid-pack tomatoes",
+                    "2 tablespoons olive oil",
+                    "4 cloves garlic, minced",
+                    "3/4 cup dry white wine"
+                  ]
+                }
+              ],
+              "steps": [
+                "Season trout inside and out with salt, pepper, and half the parsley.",
+                "Place fish in baking dish. Cover with tomatoes, olive oil, remaining parsley, and garlic.",
+                "Bake at 400 degrees for 30-40 minutes until fish flakes easily, basting periodically with the white wine during baking."
+              ],
+              "comments": ["Original card called for \"1 or more trout\" with unscaled quantities; scaled here for 2 fish."]
+            },
+            {
               "title": "Fast Vietnamese Caramel Bluefish",
               "favorite": true,
               "servings": "Serves 4   |   Total: 20 min",
@@ -5257,6 +5575,30 @@ module.exports = {
                 "Sprinkle cucumbers with a pinch of salt.",
                 "Crisp the rice: make 4–5 small holes in the rice in the skillet, then pour oil down the sides of the pan and into the divots. Increase heat to medium and cook until rice is browned at the edges, 4–7 minutes. (Lift the rice to check.) If you don't see oil bubbling in the holes, add a teaspoon or two more oil.",
                 "Divide rice, crispy-side up, among bowls or plates. Serve with a scoop of spicy tuna and the cucumbers alongside."
+              ]
+            },
+            {
+              "title": "Broiled Cod in Miso Sauce",
+              "ingredientGroups": [
+                {
+                  "label": "Marinade",
+                  "ingredients": [
+                    "6 tablespoons white miso paste",
+                    "1/2 cup sugar",
+                    "1/4 cup mirin (sweet Japanese rice wine)",
+                    "1/4 cup sake"
+                  ]
+                },
+                {
+                  "label": "Fish",
+                  "ingredients": [
+                    "4 (6-oz) black cod or sea bass fillets, about 3/4\" thick"
+                  ]
+                }
+              ],
+              "steps": [
+                "Mix miso paste, sugar, mirin, and sake in a shallow baking dish. Add fish and turn to coat. Marinate 2-4 hours.",
+                "Remove fish from marinade. Broil until opaque in center, approximately 3 minutes per side."
               ]
             }
           ]
@@ -5434,6 +5776,41 @@ module.exports = {
               ]
             },
             {
+              "title": "Grilled Shrimp and Green Onion Skewers",
+              "servings": "Serves 2",
+              "ingredientGroups": [
+                {
+                  "label": "Marinade",
+                  "ingredients": [
+                    "1/2 cup grapefruit juice",
+                    "1/4 cup lime juice",
+                    "2 tablespoons olive oil"
+                  ]
+                },
+                {
+                  "label": "Main",
+                  "ingredients": [
+                    "6 green onions",
+                    "1 dozen medium shrimp, peeled and deveined",
+                    "Salt and pepper to taste"
+                  ]
+                },
+                {
+                  "label": "Glaze",
+                  "ingredients": [
+                    "1 tablespoon chile garlic sauce",
+                    "2 teaspoons honey",
+                    "1 teaspoon minced cilantro"
+                  ]
+                }
+              ],
+              "steps": [
+                "Combine marinade ingredients. Thread shrimp and green onions alternately on 2 (10-inch) skewers. Season with salt and pepper. Marinate 10-15 minutes.",
+                "Grill 1-2 minutes per side. Brush with glaze (chile garlic sauce + honey). Sprinkle with cilantro."
+              ],
+              "comments": ["Chile garlic sauce can be found in the Asian aisle of most supermarkets."]
+            },
+            {
               "title": "Bacon-Wrapped Scallops with Chili Butter",
               "servings": "Serves 6–8   |   Prep: 15 min   |   Cook: 20 min   |   Total: 35 min",
               "source": "Ree Drummond, The Pioneer Woman",
@@ -5507,6 +5884,113 @@ module.exports = {
                 "Meanwhile, melt 2 Tbsp butter with 2 Tbsp olive oil in a large skillet over medium-high heat. Sauté shallots, garlic, and red pepper flakes (if using) until shallots are translucent, 3–4 minutes. Season shrimp with salt and pepper; add to pan and cook until pink, 2–3 minutes. Remove shrimp and set aside.",
                 "Add wine and lemon juice to the pan; bring to a boil. Add remaining 2 Tbsp butter and 2 Tbsp olive oil; when butter has melted, return shrimp to the pan along with parsley and drained pasta. Toss well; season with salt and pepper. Drizzle with olive oil and serve immediately."
               ]
+            },
+            {
+              "title": "Sea Scallops with Red Peppers and Tomatoes",
+              "servings": "Serves 4",
+              "ingredientGroups": [
+                {
+                  "label": "Scallops",
+                  "ingredients": [
+                    "1 1/2 lbs sea scallops, cut crosswise in half",
+                    "1/4 cup milk",
+                    "Salt and pepper to taste",
+                    "Flour for dredging"
+                  ]
+                },
+                {
+                  "label": "Sauce",
+                  "ingredients": [
+                    "4 tablespoons olive oil (divided)",
+                    "1 sweet red pepper, cored, seeded, cut into 2\" julienne pieces",
+                    "1 cup ripe plum tomatoes, seeded, peeled, cut into 1/2\" pieces"
+                  ]
+                },
+                {
+                  "label": "Finish",
+                  "ingredients": [
+                    "2 tablespoons finely chopped shallots",
+                    "1 tablespoon finely chopped garlic",
+                    "1 tablespoon lemon juice",
+                    "4 tablespoons chopped parsley"
+                  ]
+                },
+                {
+                  "label": "For serving",
+                  "ingredients": [
+                    "Cooked rice"
+                  ]
+                }
+              ],
+              "steps": [
+                "Soak scallops in milk with salt and pepper for about 20 minutes.",
+                "Heat 2 tablespoons olive oil in skillet. Add red pepper and tomatoes, season with salt and pepper, cook and stir until soft, 2-3 minutes. Set aside.",
+                "Drain scallops and dredge in flour, shaking off excess.",
+                "Heat remaining 2 tablespoons oil over high heat. Cook scallops in a single layer until golden.",
+                "Add shallots, garlic, and lemon juice, shaking the pan. Cook 30 seconds.",
+                "Add pepper and tomato mixture, stir and toss 2 minutes. Add parsley. Serve immediately over rice."
+              ],
+              "source": "Family recipe, attributed to Grandmother Brenda"
+            },
+            {
+              "title": "Mussels with Thai Broth",
+              "servings": "Serves 4",
+              "ingredientGroups": [
+                {
+                  "label": "Broth",
+                  "ingredients": [
+                    "1 cup dry white wine",
+                    "1/2 cup thinly slivered onion",
+                    "1 teaspoon minced garlic"
+                  ]
+                },
+                {
+                  "label": "Main",
+                  "ingredients": [
+                    "32 mussels (beards pulled off), or clams scrubbed",
+                    "1 can (~14 oz) unsweetened coconut milk",
+                    "3-4 teaspoons Thai red curry paste",
+                    "1/4 cup slivered fresh basil leaves"
+                  ]
+                }
+              ],
+              "steps": [
+                "Bring wine with onion and garlic to a boil. Add shellfish, cover, and cook 5-7 minutes for mussels, 8-10 for clams.",
+                "Mix coconut milk with 3 teaspoons curry paste.",
+                "Transfer shellfish to 4 bowls. Stir coconut milk mixture into pan, add basil, heat to simmering. Ladle broth into bowls."
+              ],
+              "comments": ["If Thai red curry paste is unavailable, substitute: 1 tablespoon minced fresh ginger, 1 teaspoon curry powder, 1 teaspoon chili powder, 1/4 teaspoon cayenne."],
+              "source": "From Marsha Polk-Townsend, RSVP Catering"
+            },
+            {
+              "title": "Stir-Fry Shrimp",
+              "servings": "Serves 4",
+              "ingredientGroups": [
+                {
+                  "label": "Stir-fry",
+                  "ingredients": [
+                    "1 bunch broccoli, florets only",
+                    "2 tablespoons peanut oil",
+                    "1/2 teaspoon minced ginger or ginger powder",
+                    "1 clove garlic, minced",
+                    "2 red peppers, sliced"
+                  ]
+                },
+                {
+                  "label": "Finish",
+                  "ingredients": [
+                    "1 lb shrimp, fresh and cleaned",
+                    "2 bunches scallions, sliced",
+                    "1 tablespoon light teriyaki sauce",
+                    "2 tablespoons dry white wine"
+                  ]
+                }
+              ],
+              "steps": [
+                "In skillet, saute broccoli in peanut oil with ginger and garlic.",
+                "Add shrimp, red peppers, scallions, teriyaki sauce, and wine, stirring constantly. Cover and cook about 5 minutes until shrimp are pink."
+              ],
+              "comments": ["Chicken may be substituted for shrimp (2 boneless, skinless chicken breasts, cut into 1\" pieces; cook until no longer pink, about 7-8 minutes)."]
             },
             {
               "title": "Yang Chow Slippery Shrimp",
@@ -6519,6 +7003,41 @@ module.exports = {
       "title": "Rice",
       "recipes": [
         {
+          "title": "Rice with Dill",
+          "ingredientGroups": [
+            {
+              "label": "Aromatics",
+              "ingredients": [
+                "3 tablespoons butter",
+                "1/2 cup minced onion",
+                "1 can water chestnuts, sliced"
+              ]
+            },
+            {
+              "label": "Rice",
+              "ingredients": [
+                "1 1/2 cups Jasmine or Basmati rice",
+                "2 1/2 cups chicken broth"
+              ]
+            },
+            {
+              "label": "Seasoning",
+              "ingredients": [
+                "Salt to taste",
+                "Pepper to taste",
+                "2 tablespoons chopped fresh dill",
+                "1/2 bay leaf",
+                "Few drops Tabasco sauce to taste"
+              ]
+            }
+          ],
+          "steps": [
+            "Oven method: Preheat oven to 400 degrees. Melt butter in oven-proof casserole over medium heat. Add onion and water chestnuts; cook and stir until softened, about 3 minutes. Add rice and stir to coat with butter. Add chicken broth and stir to ensure no lumps. Add dill, bay leaf, Tabasco, salt, and pepper. Cover with a close-fitting lid and bring to a boil. Transfer to oven and bake for 17 minutes. Remove cover, discard bay leaf, and serve.",
+            "Rice cooker method: Melt butter in skillet over medium heat. Add onion and water chestnuts; cook and stir until softened, about 3 minutes. Add rice and stir to coat with butter, about 1 minute. Transfer rice mixture to rice cooker. Add chicken broth and all seasonings (dill, bay leaf, Tabasco, salt, and pepper). Cook on standard rice setting. When done, remove and discard bay leaf, and serve."
+          ],
+          "comments": ["May be reheated."]
+        },
+        {
           "title": "Indian Style Rice",
           "servings": "4 to 6   |   Prep: 15 minutes, plus 30 minutes soaking   |   Cook: about 25 minutes (rice cooker)",
           "comments": [
@@ -7018,6 +7537,85 @@ module.exports = {
                 "Stir in tomatoes, basil, salt, and pepper; cook 2 minutes, stirring frequently.",
                 "Cook angel hair pasta; drain. Toss hot pasta with tomato mixture immediately. Serve sprinkled with parmesan."
               ]
+            },
+            {
+              "title": "Linguine with Clams and Wild Mushrooms",
+              "servings": "Serves 4",
+              "ingredientGroups": [
+                {
+                  "label": "Mushrooms",
+                  "ingredients": [
+                    "6 tablespoons olive oil (divided)",
+                    "1 lb mixed fresh wild mushrooms (oyster and/or shiitake), stems trimmed, caps sliced"
+                  ]
+                },
+                {
+                  "label": "Clams",
+                  "ingredients": [
+                    "6 large garlic cloves, minced",
+                    "1/4 teaspoon Aleppo pepper or red pepper flakes",
+                    "1 cup dry white wine",
+                    "5 lbs clams (about 24 littlenecks)"
+                  ]
+                },
+                {
+                  "label": "Finish",
+                  "ingredients": [
+                    "1 lb linguine",
+                    "2 bunches fresh chives or 1 bunch green onions, chopped",
+                    "Salt and pepper to taste"
+                  ]
+                }
+              ],
+              "steps": [
+                "Heat 3 tablespoons oil over high heat. Saute mushrooms until beginning to brown, about 5 minutes. Transfer to plate using slotted spoon.",
+                "Add remaining 3 tablespoons oil and garlic to pot. Saute until tender, about 3 minutes.",
+                "Add Aleppo pepper, then wine and clams. Cover and cook until clams open, about 8 minutes.",
+                "Cook linguine in a large pot of boiling salted water until just tender but firm to bite. Drain and transfer to large bowl.",
+                "Spoon mushrooms over pasta, then top with clam mixture, discarding any unopened clams. Season with salt and pepper. Sprinkle with chives."
+              ]
+            },
+            {
+              "title": "Linguine with Mussels",
+              "ingredientGroups": [
+                {
+                  "label": "Aromatics",
+                  "ingredients": [
+                    "2 teaspoons olive oil",
+                    "1/2 cup chopped fennel bulb",
+                    "1/2 cup finely chopped onion",
+                    "2 garlic cloves, minced"
+                  ]
+                },
+                {
+                  "label": "Sauce",
+                  "ingredients": [
+                    "1 cup diced tomato",
+                    "1 cup dry vermouth",
+                    "3 tablespoons chopped fresh parsley",
+                    "1 tablespoon tomato paste",
+                    "1 teaspoon fresh thyme leaves",
+                    "1/4 teaspoon salt",
+                    "1/8 teaspoon Aleppo pepper or red pepper flakes"
+                  ]
+                },
+                {
+                  "label": "Finish",
+                  "ingredients": [
+                    "28 fresh mussels, scrubbed and debearded",
+                    "2 tablespoons water",
+                    "2 teaspoons cornstarch",
+                    "2 cups hot cooked linguine (about 4 oz uncooked)"
+                  ]
+                }
+              ],
+              "steps": [
+                "Heat oil over medium heat. Add fennel, onion, and garlic; saute 5 minutes.",
+                "Add sauce ingredients and bring to boil.",
+                "Add mussels, cover, and cook 3 minutes until shells open. Remove from heat. Discard any unopened shells. Reserve 10 shells with meat intact; remove meat from the rest.",
+                "Combine water and cornstarch; add to tomato mixture and boil 2 minutes, stirring.",
+                "Serve 1 cup pasta per plate topped with 1 cup sauce and 5 mussels in shells."
+              ]
             }
           ]
         },
@@ -7246,6 +7844,37 @@ module.exports = {
         {
           "title": "Sweet",
           "recipes": [
+            {
+              "title": "Apple Pie",
+              "servings": "Makes 1 pie",
+              "ingredientGroups": [
+                {
+                  "label": "Crust",
+                  "ingredients": [
+                    "1 1/4 cups all-purpose flour",
+                    "1/4 teaspoon salt",
+                    "1/3 cup shortening",
+                    "3-4 tablespoons water"
+                  ]
+                },
+                {
+                  "label": "Filling",
+                  "ingredients": [
+                    "5 apples of at least 3 different varieties, peeled and sliced into 8 pieces each",
+                    "3/4 cup brown sugar (divided)",
+                    "1/2 cup flour",
+                    "2 tablespoons margarine or butter"
+                  ]
+                }
+              ],
+              "steps": [
+                "Crust: Stir together flour and salt. Cut in shortening until pieces are the size of peas. Add water gradually, tossing with fork, until all is moistened. Roll out pastry to approximately 12\" diameter on floured surface. Mold edges to pie plate.",
+                "Toss sliced apples with 1/4 cup of the brown sugar. Arrange in pie crust.",
+                "Combine remaining brown sugar and flour; cut in margarine until crumbly. Sprinkle mixture over apples.",
+                "Bake at 375 for 40 minutes."
+              ],
+              "source": "From Susan Muhlheim"
+            },
             {
               "title": "Butter Pecan Coffee Cake",
               "servings": "Serves 12–16",
@@ -7960,6 +8589,41 @@ module.exports = {
               }
             },
             {
+              "title": "Regina's Coffee Cake",
+              "ingredientGroups": [
+                {
+                  "label": "Cake batter",
+                  "ingredients": [
+                    "1 stick butter, room temperature",
+                    "1 cup sugar",
+                    "2 eggs",
+                    "1 teaspoon vanilla",
+                    "2 cups all-purpose flour",
+                    "1 teaspoon baking soda",
+                    "1 teaspoon baking powder",
+                    "1 cup sour cream"
+                  ]
+                },
+                {
+                  "label": "Filling",
+                  "ingredients": [
+                    "1/2 cup brown sugar",
+                    "1/2 cup chopped pecans",
+                    "1 small package milk chocolate chips"
+                  ]
+                }
+              ],
+              "steps": [
+                "Beat butter with sugar until light. Add eggs one at a time. Add vanilla.",
+                "Sift together flour, baking soda, and baking powder. Add alternately to butter mixture with sour cream, starting and ending with flour.",
+                "Grease a springform pan well. Pour half the batter into the pan.",
+                "Combine brown sugar, pecans, and chocolate chips. Sprinkle half the filling over the batter layer.",
+                "Pour remaining batter over filling. Sprinkle remaining filling on top.",
+                "Bake in middle of preheated 350-degree oven for 50-55 minutes."
+              ],
+              "source": "Family recipe, attributed to great-grandmother Regina Pachter"
+            },
+            {
               "title": "Blintz Soufflé",
               "servings": "Serves 6–8   |   Bake: 350°F covered 1 hour, then uncovered 10 minutes",
               "source": "Family recipe, courtesy of Marsha Firestone (noted on card as smaller recipe for small casserole)",
@@ -8025,6 +8689,46 @@ module.exports = {
                   "Uncover and bake an additional 15–20 minutes until golden and firmly set. (At altitude, egg custards need slightly longer uncovered to firm up — check by gently shaking the dish; it should have no liquidy jiggle in the center.)"
                 ]
               }
+            },
+            {
+              "title": "Brenda's Chocolate Chip Cookies",
+              "servings": "Makes 50-100 cookies",
+              "ingredientGroups": [
+                {
+                  "label": "Dry",
+                  "ingredients": [
+                    "2 2/3 cups sifted all-purpose flour",
+                    "1 teaspoon baking soda",
+                    "1 teaspoon salt"
+                  ]
+                },
+                {
+                  "label": "Wet",
+                  "ingredients": [
+                    "1 cup Crisco (shortening)",
+                    "3/4 cup sugar",
+                    "3/4 cup firmly packed brown sugar",
+                    "1 teaspoon vanilla",
+                    "1 teaspoon water",
+                    "2 eggs"
+                  ]
+                },
+                {
+                  "label": "Add-ins",
+                  "ingredients": [
+                    "1 large package semi-sweet chocolate morsels"
+                  ]
+                }
+              ],
+              "steps": [
+                "Preheat oven to 375 degrees.",
+                "Sift together flour, baking soda, and salt.",
+                "Combine Crisco, sugars, vanilla, and water; beat until creamy. Beat in 2 eggs.",
+                "Add flour mixture and mix well. Stir in chocolate morsels.",
+                "Drop by well-rounded teaspoon onto cookie sheet. Bake at 375 for 10-12 minutes."
+              ],
+              "comments": ["Can be made as an alternative to Eric's chocolate chip cookie recipe."],
+              "source": "Family recipe, attributed to Grandmother Brenda"
             },
             {
               "title": "Brenda's Noodle Kugel",
@@ -8222,6 +8926,35 @@ module.exports = {
                 "In a large saucepan, sauté onion in butter until tender, about 5 minutes. Add garlic; cook 1 minute longer.",
                 "Stir in remaining ingredients. Cook uncovered over medium-low heat, stirring occasionally, until cherries are tender and sauce has thickened, about 20 minutes."
               ]
+            },
+            {
+              "title": "Creamy Louisiana Marinade",
+              "servings": "Makes about 7/8 cup; enough to marinate 1 1/2 lbs",
+              "ingredientGroups": [
+                {
+                  "label": "Marinade",
+                  "ingredients": [
+                    "1/2 cup mayo",
+                    "1/2 teaspoon Creole or grainy mustard",
+                    "2 teaspoons fresh lemon juice",
+                    "2 green onions, green and white parts, minced",
+                    "1/2 teaspoon Worcestershire sauce",
+                    "1 teaspoon minced fresh rosemary (or 1/4 teaspoon dried)",
+                    "1 teaspoon minced fresh basil (or 1/4 teaspoon dried)",
+                    "1 teaspoon minced fresh oregano (or 1/4 teaspoon dried)",
+                    "1/2 teaspoon paprika",
+                    "1/2 teaspoon freshly ground black pepper",
+                    "1/4 teaspoon cayenne",
+                    "1/4 teaspoon salt"
+                  ]
+                }
+              ],
+              "steps": [
+                "Mix all ingredients together. Make marinade one day ahead to allow flavors to blend.",
+                "Coat food with marinade, cover, and refrigerate for at least 3 hours (better if overnight)."
+              ],
+              "comments": ["Use with fish, seafood, poultry, veal, or vegetables."],
+              "source": "From Cheryl Zando"
             },
             {
               "id": "horseradish-sauce",
