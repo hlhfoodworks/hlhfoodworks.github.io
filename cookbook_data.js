@@ -4267,7 +4267,7 @@ module.exports = {
               "servings": "Serves 4   |   Total: 1 hr 10 min",
               "comments": [
                 {
-                  "html": "Best served with <a href=\"#joan-chili-aioli\">Joan's on Third Chili Aioli</a>."
+                  "html": "Best served with <a href=\"sauces.html#joan-chili-aioli\">Joan's on Third Chili Aioli</a>."
                 }
               ],
               "source": "https://www.allrecipes.com/recipe/213211/turkey-and-quinoa-meatloaf/",
@@ -4526,7 +4526,7 @@ module.exports = {
               "source": "Patrick Celestin, adapted by Melissa Clark (NYT Cooking)",
               "comments": [
                 {
-                  "html": "Best served with <a href='#haitian-pikliz'>Pikliz</a>."
+                  "html": "Best served with <a href='pickling.html#haitian-pikliz'>Pikliz</a>."
                 }
               ],
               "ingredientGroups": [
@@ -4864,7 +4864,7 @@ module.exports = {
               "source": "Lauren Muhlheim (family recipe, December 2020)",
               "comments": [
                 {
-                  "html": "Best served with <a href='#horseradish-sauce'>Horseradish Sauce</a>."
+                  "html": "Best served with <a href='sauces.html#horseradish-sauce'>Horseradish Sauce</a>."
                 }
               ],
               "ingredientGroups": [
@@ -5015,7 +5015,7 @@ module.exports = {
               "source": "Sip Bite Go, Two Kooks in the Kitchen, Went Here 8 This (Family hybrid)",
               "comments": [
                 {
-                  "html": "Season with <a href='#steak-seasoning-rub'>Steak Seasoning Rub</a> (3× batch) before the sous vide, and serve alongside <a href='#cherry-bbq-sauce'>Cherry Barbecue Sauce</a>."
+                  "html": "Season with <a href='sauces.html#steak-seasoning-rub'>Steak Seasoning Rub</a> (3× batch) before the sous vide, and serve alongside <a href='sauces.html#cherry-bbq-sauce'>Cherry Barbecue Sauce</a>."
                 }
               ],
               "ingredientGroups": [
@@ -8366,7 +8366,9 @@ module.exports = {
                 "Drop by well-rounded teaspoon onto cookie sheet. Bake at 375 for 10-12 minutes."
               ],
               "comments": [
-                "Can be made as an alternative to Eric's superior chocolate chip cookie recipe."
+                {
+                  "html": "Can be made as an alternative to <a href=\"baking.html#erics-chocolate-chip-cookies\">Eric's superior chocolate chip cookie recipe</a>."
+                }
               ],
               "source": "Family recipe, attributed to Grandmother Brenda",
               "highAltitude": {
@@ -8506,7 +8508,8 @@ module.exports = {
                   "Using an ice cream scoop, portion generous mounds of dough onto the prepared sheets, spacing them a few inches apart.",
                   "Bake 10–12 minutes, until the edges are golden brown and the centers still look slightly underbaked. (Check at 10 minutes — at altitude cookies spread faster and finish sooner.) Cool on the baking sheet for 5 minutes before transferring."
                 ]
-              }
+              },
+              "id": "erics-chocolate-chip-cookies"
             },
             {
               "title": "Kitchen Sink Cookies",
@@ -8589,6 +8592,136 @@ module.exports = {
                   "Bake at 350° for 12-15 minutes until golden. Cool on baking sheet 2 minutes before transferring."
                 ]
               }
+            },
+            {
+              "title": "Marble Brownies",
+              "servings": "Makes one 9x13 pan",
+              "source": "From Leslie Levy",
+              "ingredientGroups": [
+                {
+                  "label": "Chocolate base",
+                  "ingredients": [
+                    "8 oz baking chocolate",
+                    "6 tablespoons butter"
+                  ]
+                },
+                {
+                  "label": "Cream cheese layer",
+                  "ingredients": [
+                    "4 tablespoons butter, softened",
+                    "6 oz cream cheese, softened",
+                    "1/2 cup sugar",
+                    "2 eggs",
+                    "2 tablespoons flour",
+                    "1 teaspoon vanilla"
+                  ]
+                },
+                {
+                  "label": "Brownie batter",
+                  "ingredients": [
+                    "4 eggs",
+                    "1 1/2 cups sugar",
+                    "1 teaspoon baking powder",
+                    "1/2 teaspoon salt",
+                    "1 cup flour",
+                    "1 cup walnuts, chopped",
+                    "2 teaspoons vanilla"
+                  ]
+                }
+              ],
+              "steps": [
+                "Preheat oven to 350°. Grease a 9x13 baking pan.",
+                "Melt chocolate and 6 tablespoons butter together; set aside.",
+                "Make cream cheese layer: beat 4 tablespoons softened butter, cream cheese, sugar, eggs, flour, and vanilla until smooth.",
+                "Make brownie batter: beat eggs and sugar until light and fluffy. Fold in baking powder, salt, and flour. Blend in melted chocolate. Stir in walnuts and vanilla.",
+                "Reserve 2 cups brownie batter. Spread remaining batter in prepared pan.",
+                "Pour cream cheese layer evenly over brownie batter.",
+                "Drop reserved brownie batter by spoonfuls over cream cheese layer and swirl gently with a knife.",
+                "Bake at 350° for 35-40 minutes until a toothpick comes out with moist crumbs."
+              ],
+              "highAltitude": {
+                "ingredientGroups": [
+                  {
+                    "label": "Chocolate base",
+                    "ingredients": [
+                      "8 oz baking chocolate",
+                      "6 tablespoons butter"
+                    ]
+                  },
+                  {
+                    "label": "Cream cheese layer",
+                    "ingredients": [
+                      "4 tablespoons butter, softened",
+                      "6 oz cream cheese, softened",
+                      "1/2 cup sugar",
+                      "2 eggs",
+                      "2 tablespoons flour",
+                      "1 teaspoon vanilla"
+                    ]
+                  },
+                  {
+                    "label": "Brownie batter",
+                    "ingredients": [
+                      "4 eggs",
+                      "1 1/3 cups sugar",
+                      "3/4 teaspoon baking powder",
+                      "1/2 teaspoon salt",
+                      "1 cup + 2 tablespoons flour",
+                      "1 cup walnuts, chopped",
+                      "2 teaspoons vanilla"
+                    ]
+                  }
+                ],
+                "steps": [
+                  "Preheat oven to 350°. Grease a 9x13 baking pan.",
+                  "Melt chocolate and 6 tablespoons butter together; set aside.",
+                  "Make cream cheese layer: beat 4 tablespoons softened butter, cream cheese, sugar, eggs, flour, and vanilla until smooth.",
+                  "Make brownie batter: beat eggs and sugar until light and fluffy. Fold in baking powder, salt, and flour. Blend in melted chocolate. Stir in walnuts and vanilla.",
+                  "Reserve 2 cups brownie batter. Spread remaining batter in prepared pan.",
+                  "Pour cream cheese layer evenly over brownie batter.",
+                  "Drop reserved brownie batter by spoonfuls over cream cheese layer and swirl gently with a knife.",
+                  "Bake at 350° for 38-42 minutes until a toothpick comes out with moist crumbs."
+                ]
+              }
+            },
+            {
+              "title": "Nut Butter Balls",
+              "servings": "About 4 dozen   |   Bake: 325°F for 25 minutes",
+              "source": "Family recipe card (Grandmother Brenda's collection)",
+              "comments": [
+                "Card notes 'double recipe' — these quantities are the base (single) recipe."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Dough",
+                  "ingredients": [
+                    "2 cups flour",
+                    "1/4 cup sugar",
+                    "1/2 teaspoon salt",
+                    "1/2 pound (2 sticks) butter, softened",
+                    "2 teaspoons vanilla"
+                  ]
+                },
+                {
+                  "label": "Coating",
+                  "ingredients": [
+                    "1 cup chopped nuts"
+                  ]
+                },
+                {
+                  "label": "Finish",
+                  "ingredients": [
+                    "Powdered sugar, for rolling"
+                  ]
+                }
+              ],
+              "steps": [
+                "Preheat oven to 325°F.",
+                "Sift together flour, sugar, and salt. Add softened butter and vanilla; work together with hands until a dough forms.",
+                "Shape into 1-inch balls, then roll each ball in the chopped nuts to coat.",
+                "Place on an ungreased baking sheet. Bake 25 minutes.",
+                "While still warm, roll in powdered sugar to coat. Let cool completely."
+              ]
             }
           ]
         },
@@ -9033,97 +9166,6 @@ module.exports = {
               }
             },
             {
-              "title": "Marble Brownies",
-              "servings": "Makes one 9x13 pan",
-              "source": "From Leslie Levy",
-              "ingredientGroups": [
-                {
-                  "label": "Chocolate base",
-                  "ingredients": [
-                    "8 oz baking chocolate",
-                    "6 tablespoons butter"
-                  ]
-                },
-                {
-                  "label": "Cream cheese layer",
-                  "ingredients": [
-                    "4 tablespoons butter, softened",
-                    "6 oz cream cheese, softened",
-                    "1/2 cup sugar",
-                    "2 eggs",
-                    "2 tablespoons flour",
-                    "1 teaspoon vanilla"
-                  ]
-                },
-                {
-                  "label": "Brownie batter",
-                  "ingredients": [
-                    "4 eggs",
-                    "1 1/2 cups sugar",
-                    "1 teaspoon baking powder",
-                    "1/2 teaspoon salt",
-                    "1 cup flour",
-                    "1 cup walnuts, chopped",
-                    "2 teaspoons vanilla"
-                  ]
-                }
-              ],
-              "steps": [
-                "Preheat oven to 350°. Grease a 9x13 baking pan.",
-                "Melt chocolate and 6 tablespoons butter together; set aside.",
-                "Make cream cheese layer: beat 4 tablespoons softened butter, cream cheese, sugar, eggs, flour, and vanilla until smooth.",
-                "Make brownie batter: beat eggs and sugar until light and fluffy. Fold in baking powder, salt, and flour. Blend in melted chocolate. Stir in walnuts and vanilla.",
-                "Reserve 2 cups brownie batter. Spread remaining batter in prepared pan.",
-                "Pour cream cheese layer evenly over brownie batter.",
-                "Drop reserved brownie batter by spoonfuls over cream cheese layer and swirl gently with a knife.",
-                "Bake at 350° for 35-40 minutes until a toothpick comes out with moist crumbs."
-              ],
-              "highAltitude": {
-                "ingredientGroups": [
-                  {
-                    "label": "Chocolate base",
-                    "ingredients": [
-                      "8 oz baking chocolate",
-                      "6 tablespoons butter"
-                    ]
-                  },
-                  {
-                    "label": "Cream cheese layer",
-                    "ingredients": [
-                      "4 tablespoons butter, softened",
-                      "6 oz cream cheese, softened",
-                      "1/2 cup sugar",
-                      "2 eggs",
-                      "2 tablespoons flour",
-                      "1 teaspoon vanilla"
-                    ]
-                  },
-                  {
-                    "label": "Brownie batter",
-                    "ingredients": [
-                      "4 eggs",
-                      "1 1/3 cups sugar",
-                      "3/4 teaspoon baking powder",
-                      "1/2 teaspoon salt",
-                      "1 cup + 2 tablespoons flour",
-                      "1 cup walnuts, chopped",
-                      "2 teaspoons vanilla"
-                    ]
-                  }
-                ],
-                "steps": [
-                  "Preheat oven to 350°. Grease a 9x13 baking pan.",
-                  "Melt chocolate and 6 tablespoons butter together; set aside.",
-                  "Make cream cheese layer: beat 4 tablespoons softened butter, cream cheese, sugar, eggs, flour, and vanilla until smooth.",
-                  "Make brownie batter: beat eggs and sugar until light and fluffy. Fold in baking powder, salt, and flour. Blend in melted chocolate. Stir in walnuts and vanilla.",
-                  "Reserve 2 cups brownie batter. Spread remaining batter in prepared pan.",
-                  "Pour cream cheese layer evenly over brownie batter.",
-                  "Drop reserved brownie batter by spoonfuls over cream cheese layer and swirl gently with a knife.",
-                  "Bake at 350° for 38-42 minutes until a toothpick comes out with moist crumbs."
-                ]
-              }
-            },
-            {
               "title": "Nana's Poundcake",
               "favorite": true,
               "servings": "1 loaf or bundt cake   |   Cook: 90 minutes",
@@ -9174,45 +9216,6 @@ module.exports = {
                   "Bake at 375°F for 70–80 minutes. Start checking at 70 minutes with a toothpick or cake tester in the center. The cake is done when the tester comes out clean and the top is deep golden."
                 ]
               }
-            },
-            {
-              "title": "Nut Butter Balls",
-              "servings": "About 4 dozen   |   Bake: 325°F for 25 minutes",
-              "source": "Family recipe card (Grandmother Brenda's collection)",
-              "comments": [
-                "Card notes 'double recipe' — these quantities are the base (single) recipe."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Dough",
-                  "ingredients": [
-                    "2 cups flour",
-                    "1/4 cup sugar",
-                    "1/2 teaspoon salt",
-                    "1/2 pound (2 sticks) butter, softened",
-                    "2 teaspoons vanilla"
-                  ]
-                },
-                {
-                  "label": "Coating",
-                  "ingredients": [
-                    "1 cup chopped nuts"
-                  ]
-                },
-                {
-                  "label": "Finish",
-                  "ingredients": [
-                    "Powdered sugar, for rolling"
-                  ]
-                }
-              ],
-              "steps": [
-                "Preheat oven to 325°F.",
-                "Sift together flour, sugar, and salt. Add softened butter and vanilla; work together with hands until a dough forms.",
-                "Shape into 1-inch balls, then roll each ball in the chopped nuts to coat.",
-                "Place on an ungreased baking sheet. Bake 25 minutes.",
-                "While still warm, roll in powdered sugar to coat. Let cool completely."
-              ]
             },
             {
               "title": "Red Velvet Cake",
@@ -9820,7 +9823,7 @@ module.exports = {
       "title": "Sauces",
       "subsections": [
         {
-          "title": "American",
+          "title": "General",
           "recipes": [
             {
               "title": "Bo's Barbeque Sauce",
@@ -9868,7 +9871,7 @@ module.exports = {
               "source": "Ilene Harrington, Taste of Home",
               "comments": [
                 {
-                  "html": "The go-to sauce for <a href='#sous-vide-beef-ribs'>Sous Vide Beef Back Ribs</a>. Serve warm on the side."
+                  "html": "The go-to sauce for <a href='meat-mains.html#sous-vide-beef-ribs'>Sous Vide Beef Back Ribs</a>. Serve warm on the side."
                 }
               ],
               "ingredientGroups": [
@@ -9938,7 +9941,7 @@ module.exports = {
               "source": "CAROL46, Allrecipes",
               "comments": [
                 {
-                  "html": "A classic accompaniment to <a href='#rib-roast'>Four Peppercorn Crusted Rotisserie Rib Roast</a>. Note: prepared horseradish in the jar already contains vinegar — you may want to reduce or omit the added cider vinegar. Can also be made with nonfat sour cream and low-fat mayo."
+                  "html": "A classic accompaniment to <a href='meat-mains.html#rib-roast'>Four Peppercorn Crusted Rotisserie Rib Roast</a>. Note: prepared horseradish in the jar already contains vinegar — you may want to reduce or omit the added cider vinegar. Can also be made with nonfat sour cream and low-fat mayo."
                 }
               ],
               "ingredientGroups": [
@@ -9989,7 +9992,7 @@ module.exports = {
               "source": "Sommer Collier, A Spicy Perspective",
               "comments": [
                 {
-                  "html": "We use a 3× batch for 2 racks of <a href='#sous-vide-beef-ribs'>Sous Vide Beef Back Ribs</a>."
+                  "html": "We use a 3× batch for 2 racks of <a href='meat-mains.html#sous-vide-beef-ribs'>Sous Vide Beef Back Ribs</a>."
                 },
                 "Keeps in an airtight jar in a cool, dry place for up to 3 months."
               ],
@@ -10258,7 +10261,7 @@ module.exports = {
           "source": "Patrick Celestin, adapted by Melissa Clark (NYT Cooking)",
           "comments": [
             {
-              "html": "The traditional Haitian accompaniment to <a href='#haitian-pork-griot'>Pork Griot</a>. Also wonderful with rice and beans, roast chicken, or any dish that needs a spicy, vinegary punch. Keeps refrigerated for at least 3 weeks."
+              "html": "The traditional Haitian accompaniment to <a href='meat-mains.html#haitian-pork-griot'>Pork Griot</a>. Also wonderful with rice and beans, roast chicken, or any dish that needs a spicy, vinegary punch. Keeps refrigerated for at least 3 weeks."
             }
           ],
           "ingredientGroups": [

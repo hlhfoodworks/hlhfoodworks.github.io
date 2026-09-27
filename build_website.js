@@ -149,37 +149,37 @@ const CLUSTER_MAP = {
   // Noodles: Italian — Middle Eastern/Persian
   'Spiced Meatballs with Pappardelle':                   'Middle Eastern/Persian',
   // Dressings — American
-  'Christy\'s Dressing':                                 'American',
+  'Christy\'s Dressing':                                 'General',
   'Horseradish Sauce':                                   'General',
   'Steak Seasoning Rub':                                 'General',
   // Sauces — American
-  'Bo\'s Barbeque Sauce':                                'American',
+  'Bo\'s Barbeque Sauce':                                'General',
   'Cherry Barbecue Sauce':                               'General',
   // Sauces — Italian
   'Sun-Dried Tomato Cream Sauce':                        'Italian',
   // Dressings — Latin/South American
   'Authentic Chimichurri':                               'Latin/South American',
   // Desserts — American
-  'Christy\'s Easy Lemon Icebox Pie':                    'American',
+  'Christy\'s Easy Lemon Icebox Pie':                    'General',
   'Fresh Cranberry Mold':                                'General',
   'Lauren\'s Banana Pudding':                            'General',
-  'Millie\'s Cobbler':                                   'American',
-  'Summer Pudding':                                      'American',
+  'Millie\'s Cobbler':                                   'General',
+  'Summer Pudding':                                      'General',
   // Desserts — Thai
   'Mango with Sticky Rice (Khao Neow Mamuang)':         'Thai',
   // Drinks — American
-  'Apple Pie a la Mode Shake':                           'American',
-  'Christy\'s Iced Tea':                                 'American',
+  'Apple Pie a la Mode Shake':                           'General',
+  'Christy\'s Iced Tea':                                 'General',
   'Melon Ball':                                          'General',
-  'Peanut Butter-Chocolate Shake':                       'American',
-  'Very Berry Shake':                                    'American',
+  'Peanut Butter-Chocolate Shake':                       'General',
+  'Very Berry Shake':                                    'General',
   // Turkey — American
   'Expertly Spiced and Glazed Roast Turkey':             'General',
   'Turkey and Quinoa Meatloaf':                          'General',
   // Turkey — Indian
   'Turkey Tikka Masala':                                 'Indian',
   // Other (Meat Mains) — American
-  "Christy's Jambalaya":                                 'American',
+  "Christy's Jambalaya":                                 'General',
   // Other (Meat Mains) — French
   'Peppered Duck Breast With Red Wine Sauce':            'French',
   // Other (Meat Mains) — Italian
@@ -201,8 +201,8 @@ const CLUSTER_MAP = {
   // Vegetables — Moroccan/North African
   'Moroccan Eggplant with Couscous':                     'Moroccan/North African',
   // Salads > Greens — American
-  'Broccoli Salad':                                      'American',
-  'Crunchy Romaine Toss':                                'American',
+  'Broccoli Salad':                                      'General',
+  'Crunchy Romaine Toss':                                'General',
   // Salads > Pasta Salads — American
   'Chuck Wagon Barbecued Pasta Salad':                   'General',
   // Salads > Pasta Salads — Chinese
@@ -237,8 +237,8 @@ const CLUSTER_MAP = {
   // Dressings and Sauces — French
   'Béarnaise Sauce':                                     'French',
   // Appetizers — American
-  "Artichoke Hors D'oeuvre":                             'American',
-  'Shrimp Mold':                                         'American',
+  "Artichoke Hors D'oeuvre":                             'General',
+  'Shrimp Mold':                                         'General',
   "Barbara Glabman's Cheese Ball":                       'General',
   'Shrimp Dip':                                          'General',
   // Appetizers — Central/Eastern European
@@ -257,28 +257,28 @@ const CLUSTER_MAP = {
   // Baking Sweet — American
   'Butter Pecan Coffee Cake':                            'General',
   // Breakfast — American
-  'Baked Stuffed French Toast':                          'American',
+  'Baked Stuffed French Toast':                          'General',
   'Glazed Cinnamon Rolls (Tangzhong Version)':           'General',
   'Homemade Biscuits':                                   'General',
   'Raised Waffles':                                      'General',
   'Baked German Pancake (or Dutch Babies)':              'General',
   'Egg Strata':                                          'General',
   'Broiled Cod in Miso Sauce':                            'Japanese',
-  'Grilled Shrimp and Green Onion Skewers':               'American',
+  'Grilled Shrimp and Green Onion Skewers':               'General',
   'Sea Scallops with Red Peppers and Tomatoes':           'Italian',
   'Mussels with Thai Broth':                             'Thai',
   'Linguine with Mussels':                               'Italian',
   'Sage Pesto':                                          'Italian',
   'Linguine with Clams and Wild Mushrooms':               'Italian',
   'Baked Trout St. Helena':                              'Italian',
-  'Soy-Salmon with Cilantro-Coconut Chutney':            'American',
+  'Soy-Salmon with Cilantro-Coconut Chutney':            'General',
   'Chicken with 40 Cloves of Garlic and Garlic Bread':   'Italian',
-  'Lemon-Rubbed Chicken Legs with Garlic and Rosemary':  'American',
+  'Lemon-Rubbed Chicken Legs with Garlic and Rosemary':  'General',
   'Stir-Fry Shrimp':                                     'Chinese',
   "Christy's Stir-Fry (Adapted)":                        'Chinese',
-  'Rice with Dill':                                      'American',
-  'Creamy Louisiana Marinade':                           'American',
-  "Nancy's Flank Steak":                                 'American',
+  'Rice with Dill':                                      'General',
+  'Creamy Louisiana Marinade':                           'General',
+  "Nancy's Flank Steak":                                 'General',
   'Coq au Vin':                                          'French',
   'Chicken Breasts and Garlic Balsamic Vinegar':         'Italian',
   "Regina's Coffee Cake":                                'General',
@@ -411,6 +411,7 @@ function renderRecipe(recipe, idPrefix, idx) {
     <div class="recipe-btns">
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy ${esc(recipe.title)}">📋 Copy Recipe</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print ${esc(recipe.title)}">🖨 Print</button>
+      <a class="link-btn" href="?recipe=${esc(id)}" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open ${esc(recipe.title)} in new tab">🔗 Link</a>
     </div>
   </div>
   ${servings}${commentsHtml}${source}${altBadge}
@@ -1046,6 +1047,7 @@ function buildPage(section, navHtml, contentHtml, cookbookData) {
   }
   .recipe-header-row h3 { margin-bottom: 0; flex: 1; }
   .recipe-btns { display: flex; gap: 6px; flex-shrink: 0; }
+  .link-btn,
   .copy-btn,
   .print-btn {
     flex-shrink: 0;
@@ -1061,6 +1063,8 @@ function buildPage(section, navHtml, contentHtml, cookbookData) {
     margin-top: 2px;
     transition: background 0.12s, color 0.12s;
   }
+  .link-btn { text-decoration: none; }
+  .link-btn:hover,
   .copy-btn:hover,
   .print-btn:hover { background: var(--border); color: var(--text); }
   .copy-btn.copied { background: #e6f4ea; border-color: #4caf50; color: #2e7d32; }
@@ -1069,7 +1073,7 @@ function buildPage(section, navHtml, contentHtml, cookbookData) {
   @media print {
     @page { margin: 0.75in; }
     body { display: block !important; background: white !important; min-height: 0 !important; }
-    #nav, #mobile-header, #cookbook-title, .print-btn, .copy-btn, .recipe-btns { display: none !important; }
+    #nav, #mobile-header, #cookbook-title, .print-btn, .copy-btn, .link-btn, .recipe-btns { display: none !important; }
     #main { padding: 0 !important; max-width: none !important; flex: none !important; }
     .section, .subsection, .cluster-group {
       margin: 0 !important; padding: 0 !important; border: none !important;
@@ -1297,6 +1301,41 @@ function buildPage(section, navHtml, contentHtml, cookbookData) {
       el.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
   }
+
+  // ── Single-recipe focused view (?recipe=ID) ───────────────────────────
+  (function () {
+    var focusId = new URLSearchParams(location.search).get('recipe');
+    if (!focusId) return;
+    var target = document.getElementById(focusId);
+    if (!target) return;
+
+    // Hide nav sidebar
+    var nav = document.getElementById('nav');
+    if (nav) nav.style.display = 'none';
+
+    // Hide all recipe articles except the target
+    document.querySelectorAll('.recipe').forEach(function (el) {
+      if (el.id !== focusId) el.style.display = 'none';
+    });
+
+    // Hide cluster groups, subsections, and sections that became empty
+    ['cluster-group', 'subsection', 'section'].forEach(function (cls) {
+      document.querySelectorAll('.' + cls).forEach(function (el) {
+        if (!el.querySelector('.recipe:not([style*="display: none"])')) {
+          el.style.display = 'none';
+        }
+      });
+    });
+
+    // Add a subtle back link at top
+    var backLink = document.createElement('p');
+    backLink.style.cssText = 'margin-bottom: 16px; font-size: 0.85rem;';
+    backLink.innerHTML = '<a href="' + CURRENT_PAGE + '" style="color: var(--accent);">← Back to cookbook</a>';
+    target.parentNode.insertBefore(backLink, target);
+
+    // Scroll to top
+    requestAnimationFrame(function () { window.scrollTo(0, 0); });
+  }());
 
   // ── Search (cross-section via search-index.json) ──────────────────────
   const search = document.getElementById('search');
