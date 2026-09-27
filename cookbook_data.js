@@ -182,6 +182,28 @@ const data = {
             "Add vinegar and mayonnaise to taste; season with salt, pepper, and a pinch of paprika.",
             "Refrigerate at least 1 hour. Serve as a spread with crackers, matzo, or rye bread."
           ]
+        },
+        {
+          title: "Charoset (Ashkenazic Style)",
+          servings: "Serves 6–8",
+          source: "\"Celebration: The Book of Jewish Festivals,\" ed. Naomi Black (Jonathan David Publishers, 1989)",
+          comments: [
+            "Traditionally served at Passover Seder as a spread on matzah. Texture is a matter of preference — either chunky or finely chopped throughout."
+          ],
+          ingredientGroups: [
+            { label: null, ingredients: [
+              "1 apple, preferably tart",
+              "1/4 cup walnuts, pecans, or almonds, chopped",
+              "1 teaspoon honey",
+              "Dash cinnamon",
+              "Dash orange zest",
+              "1 tablespoon kosher red wine"
+            ]}
+          ],
+          steps: [
+            "Chop the apple to your preferred texture. If making a fine mixture, chop the nuts finely as well.",
+            "Mix together with the honey, cinnamon, orange zest, and wine. Serve immediately or refrigerate until the Seder."
+          ]
         }
       ]
     },
@@ -3404,6 +3426,34 @@ const data = {
             "Top with cashews and sunflower seeds.",
             "Drizzle dressing over salad just before serving and toss."
           ]
+        },
+        {
+          title: "Potato Latkes",
+          servings: "Makes about 12 latkes",
+          source: "\"Celebration: The Book of Jewish Festivals,\" ed. Naomi Black (Jonathan David Publishers, 1989)",
+          comments: [
+            "Keep finished latkes warm in a 250°F oven while frying subsequent batches.",
+            "The original notes you can use more flour or matzo meal as needed to hold the batter together.",
+            "Variation: Pour the same batter into a well-greased muffin pan and bake 45 minutes at 350°F."
+          ],
+          ingredientGroups: [
+            { label: "Batter", ingredients: [
+              "6 medium potatoes, grated",
+              "1 onion, grated",
+              "2 eggs",
+              "2 tablespoons flour or matzo meal (more as needed)",
+              "1 teaspoon salt"
+            ]},
+            { label: "For frying", ingredients: [
+              "Vegetable oil"
+            ]}
+          ],
+          steps: [
+            "Grate the potatoes into a mixing bowl. Squeeze out the liquid or drain in a colander for a few minutes. Grate the onion into the potatoes.",
+            "Add the eggs and mix. Add the flour and mix. Add the salt and stir until you have a smooth batter that drops heavily from the spoon.",
+            "Heat enough vegetable oil in a frying pan to cover the latkes amply. Drop the batter from a tablespoon into the hot oil, making pancakes about 3 inches in diameter. Do not allow the oil to smoke; let it come back up to temperature after every few latkes and after replenishing the oil.",
+            "Fry until brown on the underside, then turn and brown the other side. Lift out and drain on paper towels. Keep warm in a 250°F oven while frying remaining batches."
+          ]
         }
       ]
     },
@@ -3757,6 +3807,64 @@ const data = {
         {
           title: "Asian",
           recipes: [
+            {
+              title: "Fried Drunken Noodles with Chicken (Phad Kii Maw Gai)",
+              servings: "Serves 6",
+              source: "\"A Passion for Thai Cooking\" by Sompon and Elizabeth Nabnian, p. 69",
+              comments: [
+                "Scaled to 6 servings. The book's original recipe listed \"serves 4\" but the full quantities were more consistent with 10–12; this is half of the full recipe.",
+                "Krachai (also called fingerroot or lesser ginger) is a Thai rhizome available at Asian grocery stores. Substitute extra fresh ginger in a pinch.",
+                "Use holy basil (Thai holy basil / bai krapao), which is distinct from Thai sweet basil.",
+                "Adjust chilli quantity to taste — the recipe is designed to be quite spicy."
+              ],
+              ingredientGroups: [
+                { label: "Aromatics", ingredients: [
+                  "90ml (6 tablespoons) vegetable oil, divided",
+                  "5 cloves garlic, roughly chopped",
+                  "2 shallots, roughly chopped",
+                  "1 big green chilli, sliced",
+                  "1 big red chilli, sliced",
+                  "3 medium chillies, roughly chopped"
+                ]},
+                { label: "Chicken and aromatics", ingredients: [
+                  "150g (5 oz) chicken, thinly sliced",
+                  "30g (1 oz) krachai (fingerroot / lesser ginger), shredded",
+                  "10g fresh young green peppercorns",
+                  "15g (1/2 oz) dried shrimps"
+                ]},
+                { label: "Vegetables", ingredients: [
+                  "1 small tomato, cut into wedges",
+                  "3–4 long beans, sliced",
+                  "2 baby corn, each sliced into 3",
+                  "75g (2-1/2 oz) straw mushrooms, quartered",
+                  "50g (1-3/4 oz) carrots, sliced"
+                ]},
+                { label: "Noodles and eggs", ingredients: [
+                  "175g (6 oz) large flat rice noodles",
+                  "1/4 teaspoon sweet soy sauce",
+                  "2 eggs, beaten"
+                ]},
+                { label: "Sauce", ingredients: [
+                  "30ml (2 tablespoons) oyster sauce",
+                  "15ml (1 tablespoon) soy sauce",
+                  "30ml (2 tablespoons) fish sauce",
+                  "1/4 teaspoon sugar"
+                ]},
+                { label: "Finish", ingredients: [
+                  "50g (1-3/4 oz) peanuts, roasted and crushed",
+                  "15g holy basil leaves"
+                ]}
+              ],
+              steps: [
+                "Heat 30ml (2 tablespoons) of the oil in a wok over high heat. Add the garlic, shallots, and all the chillies; fry for 1 minute.",
+                "Add the chicken; stir-fry until the outside turns white, 2–3 minutes.",
+                "Add the krachai, green peppercorns, and dried shrimps; stir-fry for 2 more minutes.",
+                "Turn the heat down. Add the tomato, long beans, baby corn, mushrooms, and carrots; cook 3 minutes. Turn off the heat and set the vegetable mixture aside.",
+                "Heat the remaining oil in the wok over high heat. Add the noodles and sweet soy sauce; stir-fry 1 minute, stirring continuously. Turn the heat down, add the eggs, and stir to cook.",
+                "Add the reserved vegetable-and-chicken mixture; stir over high heat to combine. Add the sauce and stir-fry to combine.",
+                "Add the peanuts and basil leaves, stir once, and serve."
+              ]
+            },
             {
               title: "Stir-Fried Udon Noodles With Pork and Scallions",
               servings: "Serves 4   |   Total: 25 min",
@@ -4350,6 +4458,42 @@ const data = {
             "Whisk together cold water, sweetened condensed milk, and pudding powder until smooth. Let sit until congealed, about 1 hour.",
             "In a separate bowl, whip heavy cream until soft peaks form.",
             "Fold pudding mixture into the whipped cream. In a large serving bowl, start with a layer of vanilla wafers, then sliced bananas, then pudding. Repeat layers until ingredients are used up. Refrigerate overnight so wafers soften."
+          ]
+        },
+        {
+          title: "Mango with Sticky Rice (Khao Neow Mamuang)",
+          servings: "Serves about 8",
+          source: "\"A Passion for Thai Cooking\" by Sompon and Elizabeth Nabnian, p. 136",
+          comments: [
+            "Scaled to 1 mango. The original recipe used 2 mangoes and was labeled \"serves 6\" in the book, but the full-recipe quantities are more consistent with 16–18 dessert portions. This half-batch serves about 8.",
+            "The sweet sticky rice can be made in advance but should be eaten the same day.",
+            "Use glutinous (sticky) rice only — regular rice will not work."
+          ],
+          ingredientGroups: [
+            { label: "Rice", ingredients: [
+              "300g (2 cups) sticky rice (glutinous rice), soaked in water at least 3 hours or overnight"
+            ]},
+            { label: "Thick coconut sauce", ingredients: [
+              "250ml (1 cup) thick coconut milk",
+              "100g (1/2 cup) sugar",
+              "1/4 teaspoon salt"
+            ]},
+            { label: "Thin coconut sauce", ingredients: [
+              "60ml (1/4 cup) thin coconut milk",
+              "1 tablespoon sugar",
+              "Pinch of salt"
+            ]},
+            { label: "To serve", ingredients: [
+              "1 mango",
+              "1-1/2 teaspoons sesame seeds, roasted"
+            ]}
+          ],
+          steps: [
+            "Steam the soaked sticky rice for 15–20 minutes until cooked.",
+            "While the rice steams, mix the thick coconut sauce ingredients together in a bowl.",
+            "Transfer the cooked rice to a bowl while still hot. Add the thick coconut sauce and combine thoroughly. Leave to rest 30–50 minutes so the rice fully absorbs the coconut milk.",
+            "Mix the thin coconut sauce ingredients together and set aside.",
+            "When ready to serve, divide the sticky rice into portions. Peel the mango and slice thinly. Lay mango slices on top of the rice. Pour the thin coconut sauce over the mango and sprinkle with sesame seeds."
           ]
         }
       ]

@@ -88,6 +88,8 @@ const CLUSTER_MAP = {
   // Noodles: Italian — Italian
   'Brie Linguine':                                       'Italian',
   'Pasta with Sausage, Basil, and Mustard':              'Italian',
+  // Noodles: Asian — Thai
+  'Fried Drunken Noodles with Chicken (Phad Kii Maw Gai)': 'Thai',
   // Noodles: Asian — Japanese
   'Stir-Fried Udon Noodles With Pork and Scallions':    'Japanese',
   // Lamb — Mediterranean/Greek
@@ -143,6 +145,8 @@ const CLUSTER_MAP = {
   'Authentic Chimichurri':                               'Latin/South American',
   // Desserts — American
   'Lauren\'s Banana Pudding':                            'General',
+  // Desserts — Thai
+  'Mango with Sticky Rice (Khao Neow Mamuang)':         'Thai',
   // Drinks — American
   'Melon Ball':                                          'General',
   // Turkey — American
@@ -170,6 +174,8 @@ const CLUSTER_MAP = {
   'Sautéed Mushrooms':                                   'General',
   'Coleslaw Salad':                                      'General',
   'Summer Salad':                                        'General',
+  // Vegetable Sides — Central/Eastern European
+  'Potato Latkes':                                       'Central/Eastern European',
   // Baking: Sweet — American
   'Jumbo Banana-Nut Muffins':                            'General',
   "Eric's Chocolate Chip Cookies":                       'General',
@@ -191,6 +197,7 @@ const CLUSTER_MAP = {
   'Shrimp Dip':                                          'General',
   // Appetizers — Central/Eastern European
   'Chopped Eggplant':                                    'Central/Eastern European',
+  'Charoset (Ashkenazic Style)':                         'Central/Eastern European',
 };
 
 // ── Helpers ────────────────────────────────────────────────────────────────
