@@ -1327,12 +1327,6 @@ function buildPage(section, navHtml, contentHtml, cookbookData) {
       });
     });
 
-    // Add a subtle back link at top
-    var backLink = document.createElement('p');
-    backLink.style.cssText = 'margin-bottom: 16px; font-size: 0.85rem;';
-    backLink.innerHTML = '<a href="' + CURRENT_PAGE + '" style="color: var(--accent);">← Back to cookbook</a>';
-    target.parentNode.insertBefore(backLink, target);
-
     // Scroll to top
     requestAnimationFrame(function () { window.scrollTo(0, 0); });
   }());
