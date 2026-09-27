@@ -1,82 +1,170 @@
-const data = {
-  sections: [
+module.exports = {
+  "sections": [
     {
-      title: "Breakfast",
-      recipes: [
+      "title": "Breakfast",
+      "recipes": [
         {
-          title: "Glazed Cinnamon Rolls (Tangzhong Version)",
-          favorite: true,
-          servings: "One dozen round rolls   |   Cook: 15-17 minutes",
-          comments: [
+          "title": "Glazed Cinnamon Rolls (Tangzhong Version)",
+          "favorite": true,
+          "servings": "One dozen round rolls   |   Cook: 15-17 minutes",
+          "comments": [
             "This dough uses a tangzhong (a pre-cooked flour-and-milk paste) for a softer, more tender roll and better keeping quality.",
             "The filling here is doubled from the original for a more generous swirl, the glaze includes optional cinnamon and food coloring."
           ],
-          source: "The Breakfast Book, by Marion Cunningham, adapted to use a tangzhong (see https://www.theperfectloaf.com/how-to-make-tangzhong/)",
-          ingredientGroups: [
-            { label: "Tangzhong", ingredients: ["1/4 cup (30g) all-purpose flour", "2/3 cup (160g) milk"] },
-            { label: "Yeast", ingredients: ["1/4 cup warm water", "1 package active dry yeast", "1 teaspoon sugar"] },
-            { label: "Dough", ingredients: ["3 3/4 cups all-purpose flour", "1/4 cup sugar", "1 teaspoon salt", "1/2 pound (2 sticks) butter, chilled", "3 egg yolks", "1/3 cup plus 2 tablespoons milk (the reserved 1/3 cup from the tangzhong step, plus 2 tablespoons extra)"] },
-            { label: "Filling", ingredients: ["1/2 cup (1 stick) butter, melted", "3/4 cup (12 tablespoons) sugar", "2 teaspoons cinnamon"] },
-            { label: "Glaze", ingredients: ["1 1/2 cups confectioners' sugar", "2 tablespoons butter, room temperature", "2 tablespoons water", "1/4 teaspoon ground cinnamon (optional)", "Food coloring (optional, to taste)"] }
+          "source": "The Breakfast Book, by Marion Cunningham, adapted to use a tangzhong (see https://www.theperfectloaf.com/how-to-make-tangzhong/)",
+          "ingredientGroups": [
+            {
+              "label": "Tangzhong",
+              "ingredients": [
+                "1/4 cup (30g) all-purpose flour",
+                "2/3 cup (160g) milk"
+              ]
+            },
+            {
+              "label": "Yeast",
+              "ingredients": [
+                "1/4 cup warm water",
+                "1 package active dry yeast",
+                "1 teaspoon sugar"
+              ]
+            },
+            {
+              "label": "Dough",
+              "ingredients": [
+                "3 3/4 cups all-purpose flour",
+                "1/4 cup sugar",
+                "1 teaspoon salt",
+                "1/2 pound (2 sticks) butter, chilled",
+                "3 egg yolks",
+                "1/3 cup plus 2 tablespoons milk (the reserved 1/3 cup from the tangzhong step, plus 2 tablespoons extra)"
+              ]
+            },
+            {
+              "label": "Filling",
+              "ingredients": [
+                "1/2 cup (1 stick) butter, melted",
+                "3/4 cup (12 tablespoons) sugar",
+                "2 teaspoons cinnamon"
+              ]
+            },
+            {
+              "label": "Glaze",
+              "ingredients": [
+                "1 1/2 cups confectioners' sugar",
+                "2 tablespoons butter, room temperature",
+                "2 tablespoons water",
+                "1/4 teaspoon ground cinnamon (optional)",
+                "Food coloring (optional, to taste)"
+              ]
+            }
           ],
-          steps: [
+          "steps": [
             "Tangzhong: In a small saucepan, whisk together the 1/4 cup (30g) flour and 2/3 cup (160g) milk until smooth. Cook over medium heat, stirring constantly, until thickened to a paste, about 2 minutes. Scrape into a small bowl; reserve 1/3 cup for the dough and discard the rest (or save for another use).",
             "Yeast: Put the warm water in a small bowl and sprinkle the yeast over. Stir in the 1 teaspoon sugar and let stand until foamy, about 5 minutes.",
             "Dry mix: In the bowl of a food processor, combine the flour, sugar, and salt; pulse briefly to blend. Add the chilled butter and pulse until the mixture resembles coarse crumbs.",
             "Dough: Transfer the flour-butter mixture to the bowl of a stand mixer fitted with the paddle attachment. Add the yeast mixture, the tangzhong, the egg yolks, and the 1/3 cup plus 2 tablespoons milk. Mix on medium speed until a smooth dough forms.",
-            { lead: "Filling:", bullets: [
-              "Combine the melted butter, sugar, and cinnamon in a small bowl to make a spreadable filling.",
-              "On a clean, floured countertop, roll out the whole batch of dough into one large, thin rectangle about 18-20 inches by 24 inches.",
-              "Spread the filling mixture evenly over the rectangle.",
-              "Using a pizza cutter, cut the rectangle lengthwise into 12 long strips. Roll each strip up individually into a spiral and place in a greased pan.",
-            ]},
+            {
+              "lead": "Filling:",
+              "bullets": [
+                "Combine the melted butter, sugar, and cinnamon in a small bowl to make a spreadable filling.",
+                "On a clean, floured countertop, roll out the whole batch of dough into one large, thin rectangle about 18-20 inches by 24 inches.",
+                "Spread the filling mixture evenly over the rectangle.",
+                "Using a pizza cutter, cut the rectangle lengthwise into 12 long strips. Roll each strip up individually into a spiral and place in a greased pan."
+              ]
+            },
             "Cover loosely and let rise for 1 hour. Meanwhile, make the glaze: Sift the confectioners' sugar into a small bowl, then stir in the butter, water, and optional cinnamon until smooth. Tint with food coloring if desired.",
             "Bake in a preheated 400°F oven for 15-17 minutes. Remove the rolls and set them on a rack over a piece of waxed paper.",
             "Spoon the prepared glaze over each roll while still hot."
           ]
         },
         {
-          title: "Homemade Biscuits",
-          favorite: true,
-          servings: "8 large biscuits   |   Prep: 15 minutes   |   Cook: 15 to 20 minutes",
-          comments: [
+          "title": "Homemade Biscuits",
+          "favorite": true,
+          "servings": "8 large biscuits   |   Prep: 15 minutes   |   Cook: 15 to 20 minutes",
+          "comments": [
             "Cut into 8 big squares rather than small rounds, so these come out extra generous.",
             "Whole milk plus a splash of white vinegar stands in for buttermilk here — no need to track down real buttermilk."
           ],
-          source: "Adapted from Inspired Taste (inspiredtaste.net), by Adam and Joanne Gallagher",
-          ingredientGroups: [
-            { label: "Soured milk", ingredients: ["1 3/4 cups whole milk", "1 tablespoon white vinegar"] },
-            { label: "Dry ingredients", ingredients: ["4 cups (520 g) all-purpose flour, spooned and leveled", "10 teaspoons (3 tablespoons plus 1 teaspoon) aluminum-free baking powder, leveled", "1/2 teaspoon baking soda", "2 tablespoons sugar", "2 teaspoons fine sea salt"] },
-            { label: "Butter", ingredients: ["12 tablespoons (1 1/2 sticks; 170 g) cold butter"] }
+          "source": "Adapted from Inspired Taste (inspiredtaste.net), by Adam and Joanne Gallagher",
+          "ingredientGroups": [
+            {
+              "label": "Soured milk",
+              "ingredients": [
+                "1 3/4 cups whole milk",
+                "1 tablespoon white vinegar"
+              ]
+            },
+            {
+              "label": "Dry ingredients",
+              "ingredients": [
+                "4 cups (520 g) all-purpose flour, spooned and leveled",
+                "10 teaspoons (3 tablespoons plus 1 teaspoon) aluminum-free baking powder, leveled",
+                "1/2 teaspoon baking soda",
+                "2 tablespoons sugar",
+                "2 teaspoons fine sea salt"
+              ]
+            },
+            {
+              "label": "Butter",
+              "ingredients": [
+                "12 tablespoons (1 1/2 sticks; 170 g) cold butter"
+              ]
+            }
           ],
-          steps: [
+          "steps": [
             "Make the soured milk: Stir the vinegar into the whole milk. Let stand at least 5 minutes while you prepare the dough (it will look slightly curdled — that's fine).",
             "Heat the oven to 425°F. Set aside an oven-safe 10- to 12-inch skillet, preferably cast iron, or a cookie sheet lined with parchment.",
             "Dry ingredients: In a food processor, combine the flour, baking powder, baking soda, sugar, and salt. Pulse 3 to 4 times to combine.",
             "Cut the cold butter into small cubes or thin slices; scatter over the flour mixture. Pulse 5 to 7 times, just until the butter is broken into pea-sized pieces.",
             "Transfer to a large bowl. Make a well in the middle; pour in the soured milk and stir gently with a fork or spatula just until the dough comes together (some dry bits are fine — don't overmix).",
             "Transfer the dough to a lightly floured work surface. Sprinkle a little flour over the top and gently bring the dough together with your hands.",
-            { lead: "Fold the dough:", bullets: [
-              "Without overworking the dough, gently pat it into a rough rectangle about 3/4 inch thick.",
-              "Fold the dough into thirds, envelope-style — bring one short side over the center, then fold the opposite side over it, like a letter.",
-              "Rotate the dough 90 degrees, then repeat the pat-and-fold two more times to build flaky layers.",
-            ]},
+            {
+              "lead": "Fold the dough:",
+              "bullets": [
+                "Without overworking the dough, gently pat it into a rough rectangle about 3/4 inch thick.",
+                "Fold the dough into thirds, envelope-style — bring one short side over the center, then fold the opposite side over it, like a letter.",
+                "Rotate the dough 90 degrees, then repeat the pat-and-fold two more times to build flaky layers."
+              ]
+            },
             "Pat the dough into a rough 3/4-inch-thick rectangle. Cut into 8 squares — no need to cut rounds or reroll scraps.",
             "Arrange the squares close together on the skillet (or parchment-lined cookie sheet) to help them rise tall.",
             "Bake 15 to 20 minutes, until the tops are deeply golden brown and the biscuits have risen tall."
           ]
         },
         {
-          title: "Raised Waffles",
-          servings: "About 8 waffles",
-          comments: ["The batter keeps well in the refrigerator for several days."],
-          source: "The Breakfast Book, by Marion Cunningham (originally from an early Fannie Farmer cookbook)",
-          ingredientGroups: [
-            { label: "Yeast", ingredients: ["1/2 cup warm water", "1 package dry yeast"] },
-            { label: "Batter (overnight)", ingredients: ["2 cups milk, warmed", "1/2 cup (1 stick) butter, melted", "1 teaspoon salt", "1 teaspoon sugar", "2 cups all-purpose flour"] },
-            { label: "Morning additions", ingredients: ["2 eggs", "1/4 teaspoon baking soda"] }
+          "title": "Raised Waffles",
+          "servings": "About 8 waffles",
+          "comments": [
+            "The batter keeps well in the refrigerator for several days."
           ],
-          steps: [
+          "source": "The Breakfast Book, by Marion Cunningham (originally from an early Fannie Farmer cookbook)",
+          "ingredientGroups": [
+            {
+              "label": "Yeast",
+              "ingredients": [
+                "1/2 cup warm water",
+                "1 package dry yeast"
+              ]
+            },
+            {
+              "label": "Batter (overnight)",
+              "ingredients": [
+                "2 cups milk, warmed",
+                "1/2 cup (1 stick) butter, melted",
+                "1 teaspoon salt",
+                "1 teaspoon sugar",
+                "2 cups all-purpose flour"
+              ]
+            },
+            {
+              "label": "Morning additions",
+              "ingredients": [
+                "2 eggs",
+                "1/4 teaspoon baking soda"
+              ]
+            }
+          ],
+          "steps": [
             "Yeast: In a large mixing bowl (the batter will rise to double its volume), put the warm water and sprinkle the yeast over. Let stand until foamy, about 5 minutes.",
             "Add the milk, butter, salt, sugar, and flour to the yeast mixture; beat until smooth and blended (a hand-rotary beater works well). Cover tightly and leave overnight at room temperature.",
             "Just before cooking, beat in the eggs and baking soda; stir until well mixed. The batter will be very thin.",
@@ -84,15 +172,35 @@ const data = {
           ]
         },
         {
-          title: "Baked German Pancake (or Dutch Babies)",
-          servings: "One 12-inch pancake, or four 6-inch Dutch babies   |   Cook: 15-25 minutes",
-          source: "The Breakfast Book, by Marion Cunningham",
-          ingredientGroups: [
-            { label: "For the pan", ingredients: ["Butter, for greasing the pan(s)"] },
-            { label: "Batter", ingredients: ["3 eggs, room temperature", "1/2 cup milk", "1/2 cup all-purpose flour", "1/2 teaspoon salt", "2 tablespoons butter, melted"] },
-            { label: "To finish", ingredients: ["2 tablespoons lemon juice", "Confectioners' sugar, for dusting"] }
+          "title": "Baked German Pancake (or Dutch Babies)",
+          "servings": "One 12-inch pancake, or four 6-inch Dutch babies   |   Cook: 15-25 minutes",
+          "source": "The Breakfast Book, by Marion Cunningham",
+          "ingredientGroups": [
+            {
+              "label": "For the pan",
+              "ingredients": [
+                "Butter, for greasing the pan(s)"
+              ]
+            },
+            {
+              "label": "Batter",
+              "ingredients": [
+                "3 eggs, room temperature",
+                "1/2 cup milk",
+                "1/2 cup all-purpose flour",
+                "1/2 teaspoon salt",
+                "2 tablespoons butter, melted"
+              ]
+            },
+            {
+              "label": "To finish",
+              "ingredients": [
+                "2 tablespoons lemon juice",
+                "Confectioners' sugar, for dusting"
+              ]
+            }
           ],
-          steps: [
+          "steps": [
             "Preheat the oven to 450°F. Butter one 12-inch ovenproof skillet, or four 6-inch skillets or pans with ovenproof handles.",
             "Beat the eggs in a mixing bowl until thoroughly combined, then add the milk and blend well.",
             "Sift the flour and salt over the egg mixture, whisking steadily until smooth. Add the melted butter and mix briskly until combined.",
@@ -103,30 +211,36 @@ const data = {
       ]
     },
     {
-      title: "Appetizers",
-      recipes: [
+      "title": "Appetizers",
+      "recipes": [
         {
-          title: "Barbara Glabman's Cheese Ball",
-          servings: "1 large cheese ball (12–16 as an appetizer)",
-          source: "Family recipe card, credited to Barbara Glabman",
-          comments: [
+          "title": "Barbara Glabman's Cheese Ball",
+          "servings": "1 large cheese ball (12–16 as an appetizer)",
+          "source": "Family recipe card, credited to Barbara Glabman",
+          "comments": [
             "Old English Sharp Cheddar Spread (Kraft) is still available. Smokelle tube cheese (Kraft) is no longer produced — substitute any smoked cheese spread, such as Kaukauna Smoked Cheddar Spread.",
             "Best if refrigerated overnight before serving."
           ],
-          ingredientGroups: [
-            { label: "Cheese mixture", ingredients: [
-              "2 — 8 oz. packages cream cheese, softened",
-              "1 glass (about 5 oz.) Old English or nippy cheddar cheese spread",
-              "1 tube Smokelle processed cheese (Kraft) or substitute: any smoked cheese spread such as Kaukauna Smoked Cheddar Spread",
-              "1 — 3 oz. package blue cheese, crumbled",
-              "1/8 teaspoon onion salt",
-              "3 small cloves garlic (or 2 medium), minced"
-            ]},
-            { label: "For rolling", ingredients: [
-              "Chopped nuts and/or minced parsley"
-            ]}
+          "ingredientGroups": [
+            {
+              "label": "Cheese mixture",
+              "ingredients": [
+                "2 — 8 oz. packages cream cheese, softened",
+                "1 glass (about 5 oz.) Old English or nippy cheddar cheese spread",
+                "1 tube Smokelle processed cheese (Kraft) or substitute: any smoked cheese spread such as Kaukauna Smoked Cheddar Spread",
+                "1 — 3 oz. package blue cheese, crumbled",
+                "1/8 teaspoon onion salt",
+                "3 small cloves garlic (or 2 medium), minced"
+              ]
+            },
+            {
+              "label": "For rolling",
+              "ingredients": [
+                "Chopped nuts and/or minced parsley"
+              ]
+            }
           ],
-          steps: [
+          "steps": [
             "Let all cheeses soften to room temperature.",
             "Combine cream cheese, cheddar spread, smoked cheese, and blue cheese in a large bowl. Mix until thoroughly blended.",
             "Add onion salt and garlic; mix well.",
@@ -135,20 +249,22 @@ const data = {
           ]
         },
         {
-          title: "Shrimp Dip",
-          servings: "Makes about 2 cups",
-          source: "Family recipe card (Grandmother Brenda)",
-          ingredientGroups: [
-            { ingredients: [
-              "1 — 8 oz. block cream cheese, softened",
-              "1 — 4.5 oz. can small shrimp, drained and mashed",
-              "2 tablespoons mayonnaise",
-              "2 tablespoons chili sauce",
-              "1 tablespoon lemon juice",
-              "1/4 teaspoon curry powder"
-            ]}
+          "title": "Shrimp Dip",
+          "servings": "Makes about 2 cups",
+          "source": "Family recipe card (Grandmother Brenda)",
+          "ingredientGroups": [
+            {
+              "ingredients": [
+                "1 — 8 oz. block cream cheese, softened",
+                "1 — 4.5 oz. can small shrimp, drained and mashed",
+                "2 tablespoons mayonnaise",
+                "2 tablespoons chili sauce",
+                "1 tablespoon lemon juice",
+                "1/4 teaspoon curry powder"
+              ]
+            }
           ],
-          steps: [
+          "steps": [
             "Beat cream cheese until smooth and fluffy.",
             "Drain canned shrimp and mash well with a fork.",
             "Mix in mashed shrimp, mayonnaise, chili sauce, lemon juice, and curry powder until well combined.",
@@ -157,24 +273,30 @@ const data = {
           ]
         },
         {
-          title: "Chopped Eggplant",
-          source: "Family recipe card (Grandmother Brenda; card reads \"Recipe from Mother\")",
-          comments: [
+          "title": "Chopped Eggplant",
+          "source": "Family recipe card (Grandmother Brenda; card reads \"Recipe from Mother\")",
+          "comments": [
             "A classic Jewish-style eggplant spread. The card gives only an ingredient list — steps are reconstructed from traditional method."
           ],
-          ingredientGroups: [
-            { label: "Eggplant", ingredients: [
-              "1 large eggplant"
-            ]},
-            { label: "Mix-ins", ingredients: [
-              "1 medium onion, diced and fried in oil until golden",
-              "3 hard-boiled eggs, finely chopped",
-              "Vinegar to taste (start with 1–2 teaspoons)",
-              "Mayonnaise to taste (start with 2–3 tablespoons)",
-              "Salt, pepper, and paprika to taste"
-            ]}
+          "ingredientGroups": [
+            {
+              "label": "Eggplant",
+              "ingredients": [
+                "1 large eggplant"
+              ]
+            },
+            {
+              "label": "Mix-ins",
+              "ingredients": [
+                "1 medium onion, diced and fried in oil until golden",
+                "3 hard-boiled eggs, finely chopped",
+                "Vinegar to taste (start with 1–2 teaspoons)",
+                "Mayonnaise to taste (start with 2–3 tablespoons)",
+                "Salt, pepper, and paprika to taste"
+              ]
+            }
           ],
-          steps: [
+          "steps": [
             "Preheat oven to 400°F. Pierce eggplant several times with a fork. Roast on a baking sheet until very soft and collapsed, 45–60 minutes. Let cool.",
             "While eggplant roasts, fry diced onion in a little oil over medium heat until golden and sweet, about 15 minutes. Set aside.",
             "Peel roasted eggplant and drain in a colander to remove excess liquid. Chop finely (do not puree).",
@@ -184,54 +306,63 @@ const data = {
           ]
         },
         {
-          title: "Charoset (Ashkenazic Style)",
-          servings: "Serves 6–8",
-          source: "\"Celebration: The Book of Jewish Festivals,\" ed. Naomi Black (Jonathan David Publishers, 1989)",
-          comments: [
+          "title": "Charoset (Ashkenazic Style)",
+          "servings": "Serves 6–8",
+          "source": "\"Celebration: The Book of Jewish Festivals,\" ed. Naomi Black (Jonathan David Publishers, 1989)",
+          "comments": [
             "Traditionally served at Passover Seder as a spread on matzah. Texture is a matter of preference — either chunky or finely chopped throughout."
           ],
-          ingredientGroups: [
-            { label: null, ingredients: [
-              "1 apple, preferably tart",
-              "1/4 cup walnuts, pecans, or almonds, chopped",
-              "1 teaspoon honey",
-              "Dash cinnamon",
-              "Dash orange zest",
-              "1 tablespoon kosher red wine"
-            ]}
+          "ingredientGroups": [
+            {
+              "label": null,
+              "ingredients": [
+                "1 apple, preferably tart",
+                "1/4 cup walnuts, pecans, or almonds, chopped",
+                "1 teaspoon honey",
+                "Dash cinnamon",
+                "Dash orange zest",
+                "1 tablespoon kosher red wine"
+              ]
+            }
           ],
-          steps: [
+          "steps": [
             "Chop the apple to your preferred texture. If making a fine mixture, chop the nuts finely as well.",
             "Mix together with the honey, cinnamon, orange zest, and wine. Serve immediately or refrigerate until the Seder."
           ]
         },
         {
-          title: "Gazpacho",
-          servings: "Serves 6",
-          source: "Restaurant Laurent, 111 East 56th Street, New York (family recipe card)",
-          comments: [
+          "title": "Gazpacho",
+          "servings": "Serves 6",
+          "source": "Restaurant Laurent, 111 East 56th Street, New York (family recipe card)",
+          "comments": [
             "From a recipe card kept by the family, compliments of Restaurant Laurent — a classic New York restaurant. Serve in chilled bowls with condiments passed at the table."
           ],
-          ingredientGroups: [
-            { label: "Soup base", ingredients: [
-              "3 cloves garlic, mashed",
-              "1 medium onion, peeled and chopped",
-              "5 very ripe tomatoes, peeled and chopped",
-              "Small bunch flat-leaf parsley, chopped fine",
-              "2 T wine vinegar",
-              "3 T olive oil",
-              "1/4 tsp paprika",
-              "1 cup beef stock or consommé",
-              "Salt and pepper to taste"
-            ]},
-            { label: "To serve", ingredients: [
-              "1 cucumber, peeled, seeded, and diced",
-              "1 green pepper, finely diced",
-              "1/2 onion, finely diced",
-              "Croutons"
-            ]}
+          "ingredientGroups": [
+            {
+              "label": "Soup base",
+              "ingredients": [
+                "3 cloves garlic, mashed",
+                "1 medium onion, peeled and chopped",
+                "5 very ripe tomatoes, peeled and chopped",
+                "Small bunch flat-leaf parsley, chopped fine",
+                "2 T wine vinegar",
+                "3 T olive oil",
+                "1/4 tsp paprika",
+                "1 cup beef stock or consommé",
+                "Salt and pepper to taste"
+              ]
+            },
+            {
+              "label": "To serve",
+              "ingredients": [
+                "1 cucumber, peeled, seeded, and diced",
+                "1 green pepper, finely diced",
+                "1/2 onion, finely diced",
+                "Croutons"
+              ]
+            }
           ],
-          steps: [
+          "steps": [
             "Put garlic and onion in a blender; blend until liquified.",
             "Add remaining soup base ingredients; blend 2–3 minutes.",
             "Season with salt and pepper. Chill thoroughly in refrigerator.",
@@ -241,23 +372,264 @@ const data = {
       ]
     },
     {
-      title: "Meat Mains",
-      subsections: [
+      "title": "Salads",
+      "subsections": [
         {
-          title: "Chicken",
-          recipes: [
+          "title": "Greens",
+          "recipes": [
             {
-              title: "Baked Crunchy Hot Honey Chicken",
-              servings: "6   |   Prep: 15 minutes   |   Cook: 25 minutes   |   Total: 40 minutes",
-              source: "Half Baked Harvest, by Tieghan Gerard",
-              ingredientGroups: [
-                { label: "Crumb coating", ingredients: ["6 cups cornflakes (gluten-free if needed)", "1/4 cup grated parmesan cheese", "1 teaspoon smoked paprika", "1/2 teaspoon onion powder", "1/2 teaspoon garlic powder"] },
-                { label: "Egg wash", ingredients: ["2 large eggs, beaten", "2 tablespoons hot sauce"] },
-                { label: "Chicken", ingredients: ["2 pounds chicken breast tenderloins", "Extra-virgin olive oil, for drizzling"] },
-                { label: "Hot honey sauce", ingredients: ["1/2 cup honey", "2 to 3 tablespoons hot sauce", "1 to 3 teaspoons cayenne pepper", "3/4 teaspoon chipotle chili powder", "1/2 teaspoon garlic powder", "1/2 teaspoon onion powder", "Sea salt"] },
-                { label: "To finish", ingredients: ["Fresh thyme, cilantro, or parsley"] }
+              "title": "Butter Lettuce and Citrus Salad",
+              "servings": "Serves 2–3",
+              "comments": [
+                "\"Supreming\" citrus means cutting away the peel and pith, then slicing between the membranes to release clean segments."
               ],
-              steps: [
+              "source": "The Gourmandise School (The Pizza Class)",
+              "ingredientGroups": [
+                {
+                  "label": null,
+                  "ingredients": [
+                    "1 head butter lettuce",
+                    "1 shallot",
+                    "Salt & pepper to taste",
+                    "1 grapefruit or orange",
+                    "2 Tbsp lemon juice",
+                    "¼ cup olive oil"
+                  ]
+                }
+              ],
+              "steps": [
+                "Remove any wilted leaves from the butter lettuce. Tear into bite-sized pieces and place in a medium bowl.",
+                "Mince the shallot and place in a small bowl with a pinch of salt and pepper.",
+                "Supreme (segment) your grapefruit right over the small bowl to catch any juices. Set the segmented citrus aside.",
+                "Add lemon juice to the shallot bowl, then whisk in the olive oil. Dress the butter lettuce with the citronette. Plate and tuck the segmented citrus into and on top of the greens."
+              ]
+            },
+            {
+              "title": "Charred Broccoli and Cauliflower Salad",
+              "servings": "6 to 8   |   Total: 30 min   |   Active: 25 min",
+              "source": "https://www.foodnetwork.com/recipes/ree-drummond/charred-broccoli-and-cauliflower-salad-19673188",
+              "comments": [
+                "Great as a side at a barbecue with grilled seafood or meat, or to take to a potluck."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Vegetables",
+                  "ingredients": [
+                    "1 medium crown broccoli, broken into large florets",
+                    "1 medium cauliflower, broken into large florets",
+                    "3 tablespoons olive oil",
+                    "1 teaspoon kosher salt",
+                    "1/2 teaspoon freshly ground black pepper"
+                  ]
+                },
+                {
+                  "label": "Dressing",
+                  "ingredients": [
+                    "2/3 cup mayonnaise",
+                    "1/3 cup Greek yogurt",
+                    "2 tablespoons chopped fresh dill",
+                    "2 tablespoons chopped fresh parsley",
+                    "Zest and juice of 1 lemon",
+                    "Pinch kosher salt",
+                    "Pinch freshly ground black pepper"
+                  ]
+                },
+                {
+                  "label": "Salad",
+                  "ingredients": [
+                    "1 cup arugula",
+                    "1/2 cup dried blueberries, plus extra for garnish",
+                    "1/4 cup pickled red onions, plus extra for garnish",
+                    "2 tablespoons sunflower seeds, plus extra for garnish"
+                  ]
+                }
+              ],
+              "steps": [
+                "Preheat the grill to medium-high heat.",
+                "Toss the broccoli and cauliflower with the olive oil, salt, and pepper. Grill, turning as needed, until tender and well charred, 8–10 minutes. Transfer to a large bowl.",
+                "Make the dressing: whisk together the mayonnaise, Greek yogurt, dill, parsley, lemon zest, and lemon juice. Season with salt and pepper.",
+                "Spread the dressing onto a serving platter, leaving a well in the middle.",
+                "Add the arugula, blueberries, pickled red onions, and sunflower seeds to the bowl with the charred vegetables and toss to combine.",
+                "Mound the vegetable mixture into the well. Garnish with extra blueberries, pickled red onions, and sunflower seeds. Serve."
+              ]
+            },
+            {
+              "title": "Coleslaw Salad",
+              "source": "Family recipe card (Grandmother Brenda)",
+              "ingredientGroups": [
+                {
+                  "label": "Dressing",
+                  "ingredients": [
+                    "1/4 cup vinegar",
+                    "1/2 cup oil",
+                    "1/2 cup sugar",
+                    "3/4 teaspoon pepper",
+                    "2 teaspoons salt"
+                  ]
+                },
+                {
+                  "label": "Salad",
+                  "ingredients": [
+                    "1 package coleslaw mix",
+                    "Dried cranberries, to taste",
+                    "Slivered almonds, toasted, to taste"
+                  ]
+                }
+              ],
+              "steps": [
+                "Toast slivered almonds in a dry skillet over medium heat, stirring frequently, until golden and fragrant, about 3–4 minutes. Let cool.",
+                "Whisk together all dressing ingredients until sugar dissolves.",
+                "Combine coleslaw mix, dried cranberries, and toasted almonds in a large bowl.",
+                "Pour dressing over salad and toss. Let sit at least 15 minutes before serving so the cabbage softens slightly."
+              ]
+            },
+            {
+              "title": "Joan's on Third Butter Lettuce Salad (Copycat)",
+              "servings": "Serves 4",
+              "comments": [
+                "Original recipe uses French feta; family uses goat cheese in oil instead. Shallot is in the original but was skipped. Dressing recipe from CopyKat Recipes."
+              ],
+              "source": "Copycat recipe based on Joan's on Third, Los Angeles",
+              "ingredientGroups": [
+                {
+                  "label": "Dressing",
+                  "ingredients": [
+                    "¼ cup white wine vinegar (or champagne vinegar)",
+                    "1 tbsp Dijon mustard",
+                    "2–3 cloves garlic, minced",
+                    "¼ tsp lemon juice",
+                    "Dried oregano, to taste",
+                    "Dried basil, to taste",
+                    "9 tbsp extra virgin olive oil",
+                    "Salt and freshly ground black pepper, to taste"
+                  ]
+                },
+                {
+                  "label": "Salad",
+                  "ingredients": [
+                    "1–2 large heads butter lettuce, washed, dried, and torn",
+                    "½ cup goat cheese, crumbled",
+                    "⅓ cup dried cranberries"
+                  ]
+                }
+              ],
+              "steps": [
+                {
+                  "lead": "Make the dressing:",
+                  "bullets": [
+                    "Whisk together the white wine vinegar, Dijon mustard, minced garlic, lemon juice, oregano, and basil in a small bowl.",
+                    "Slowly drizzle in the olive oil while whisking constantly until emulsified.",
+                    "Season with salt and pepper to taste."
+                  ]
+                },
+                "Place the torn butter lettuce in a large serving bowl.",
+                "Sprinkle the crumbled goat cheese and dried cranberries evenly over the lettuce.",
+                "Drizzle the vinaigrette lightly over the top just before serving and toss gently to combine."
+              ]
+            },
+            {
+              "title": "Summer Salad",
+              "source": "Family recipe card (Grandmother Brenda)",
+              "comments": [
+                "The dressing makes more than needed for one salad — leftovers keep refrigerated for 1–2 weeks."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Dressing",
+                  "ingredients": [
+                    "1 cup vinegar",
+                    "1/2 cup oil",
+                    "1/2 cup sugar",
+                    "1/2 cup ketchup",
+                    "2 cloves garlic, crushed",
+                    "1/2 teaspoon paprika",
+                    "1/2 teaspoon mustard (dry or prepared)",
+                    "1 teaspoon salt"
+                  ]
+                },
+                {
+                  "label": "Salad",
+                  "ingredients": [
+                    "1 bag romaine lettuce",
+                    "5–6 mushrooms, diced",
+                    "1 container cherry tomatoes",
+                    "1/2 to 1 mango, cubed",
+                    "1/2 avocado, cubed",
+                    "Handful of salted cashews",
+                    "Handful of sunflower seeds"
+                  ]
+                }
+              ],
+              "steps": [
+                "Whisk together all dressing ingredients. Refrigerate until ready to use.",
+                "Tear romaine into a large bowl. Add mushrooms, cherry tomatoes, mango, and avocado.",
+                "Top with cashews and sunflower seeds.",
+                "Drizzle dressing over salad just before serving and toss."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Pasta Salads",
+          "recipes": []
+        }
+      ]
+    },
+    {
+      "title": "Meat Mains",
+      "subsections": [
+        {
+          "title": "Chicken",
+          "recipes": [
+            {
+              "title": "Baked Crunchy Hot Honey Chicken",
+              "servings": "6   |   Prep: 15 minutes   |   Cook: 25 minutes   |   Total: 40 minutes",
+              "source": "Half Baked Harvest, by Tieghan Gerard",
+              "ingredientGroups": [
+                {
+                  "label": "Crumb coating",
+                  "ingredients": [
+                    "6 cups cornflakes (gluten-free if needed)",
+                    "1/4 cup grated parmesan cheese",
+                    "1 teaspoon smoked paprika",
+                    "1/2 teaspoon onion powder",
+                    "1/2 teaspoon garlic powder"
+                  ]
+                },
+                {
+                  "label": "Egg wash",
+                  "ingredients": [
+                    "2 large eggs, beaten",
+                    "2 tablespoons hot sauce"
+                  ]
+                },
+                {
+                  "label": "Chicken",
+                  "ingredients": [
+                    "2 pounds chicken breast tenderloins",
+                    "Extra-virgin olive oil, for drizzling"
+                  ]
+                },
+                {
+                  "label": "Hot honey sauce",
+                  "ingredients": [
+                    "1/2 cup honey",
+                    "2 to 3 tablespoons hot sauce",
+                    "1 to 3 teaspoons cayenne pepper",
+                    "3/4 teaspoon chipotle chili powder",
+                    "1/2 teaspoon garlic powder",
+                    "1/2 teaspoon onion powder",
+                    "Sea salt"
+                  ]
+                },
+                {
+                  "label": "To finish",
+                  "ingredients": [
+                    "Fresh thyme, cilantro, or parsley"
+                  ]
+                }
+              ],
+              "steps": [
                 "Preheat the oven to 425°F. Line a baking sheet with parchment paper.",
                 "Pulse the cornflakes, parmesan, paprika, onion powder, garlic powder, and a pinch of salt in a food processor until fine crumbs form. Transfer to a shallow bowl.",
                 "Beat the eggs with the hot sauce in a bowl; add the chicken and toss well to coat.",
@@ -268,20 +640,46 @@ const data = {
               ]
             },
             {
-              title: "Brown Butter Sage Skillet Chicken",
-              servings: "4   |   Prep: 10 minutes   |   Cook: 20 minutes   |   Total: 30 minutes",
-              comments: [
+              "title": "Brown Butter Sage Skillet Chicken",
+              "servings": "4   |   Prep: 10 minutes   |   Cook: 20 minutes   |   Total: 30 minutes",
+              "comments": [
                 "Thin-sliced chicken breasts cook fastest; if starting with standard breasts, slice horizontally through the middle for thinner cutlets.",
                 "Great served over egg noodles, orzo, or a light pasta."
               ],
-              source: "Nourish and Fete, by Monica",
-              ingredientGroups: [
-                { label: "Chicken", ingredients: ["4 boneless, skinless chicken breasts, sliced or pounded thin", "Kosher salt and black pepper", "1/4 cup all-purpose flour"] },
-                { label: "Oil and butter", ingredients: ["2 tablespoons unsalted butter (of the 6 tablespoons below)", "2 tablespoons extra-virgin olive oil"] },
-                { label: "Brown butter sauce", ingredients: ["4 tablespoons unsalted butter (the remainder of the 6 tablespoons total)", "1/3 cup fresh sage leaves", "Juice of 1/2 lemon (reserve the other half for serving)", "1/2 cup white wine or low-sodium chicken broth"] },
-                { label: "To serve", ingredients: ["Lemon wedges"] }
+              "source": "Nourish and Fete, by Monica",
+              "ingredientGroups": [
+                {
+                  "label": "Chicken",
+                  "ingredients": [
+                    "4 boneless, skinless chicken breasts, sliced or pounded thin",
+                    "Kosher salt and black pepper",
+                    "1/4 cup all-purpose flour"
+                  ]
+                },
+                {
+                  "label": "Oil and butter",
+                  "ingredients": [
+                    "2 tablespoons unsalted butter (of the 6 tablespoons below)",
+                    "2 tablespoons extra-virgin olive oil"
+                  ]
+                },
+                {
+                  "label": "Brown butter sauce",
+                  "ingredients": [
+                    "4 tablespoons unsalted butter (the remainder of the 6 tablespoons total)",
+                    "1/3 cup fresh sage leaves",
+                    "Juice of 1/2 lemon (reserve the other half for serving)",
+                    "1/2 cup white wine or low-sodium chicken broth"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "Lemon wedges"
+                  ]
+                }
               ],
-              steps: [
+              "steps": [
                 "Season both sides of the chicken generously with salt and pepper. Place the flour in a shallow bowl or plate and dredge each cutlet, shaking off the excess.",
                 "Add 2 tablespoons of the butter and the olive oil to a large skillet over medium-high heat. When the butter melts, add the chicken and cook until golden brown, about 3 to 4 minutes per side. Transfer to a plate.",
                 "Add the remaining 4 tablespoons butter to the skillet. When melted, add the sage leaves. Let the butter brown and bubble until it smells nutty and the sage is crispy, about 2 minutes.",
@@ -289,16 +687,37 @@ const data = {
               ]
             },
             {
-              title: "Company Baked Chicken",
-              favorite: true,
-              comments: ["Marked \"v. good!\" on the original card."],
-              source: "Family recipe card, credited to Grandmother Brenda",
-              ingredientGroups: [
-                { label: "Chicken", ingredients: ["2 chickens or equivalent amount of chicken parts", "Black pepper", "Garlic powder"] },
-                { label: "Marinade", ingredients: ["1/2 cup honey", "1/2 cup soy sauce", "3 tablespoons oil"] },
-                { label: "To finish", ingredients: ["Sesame seeds"] }
+              "title": "Company Baked Chicken",
+              "favorite": true,
+              "comments": [
+                "Marked \"v. good!\" on the original card."
               ],
-              steps: [
+              "source": "Family recipe card, credited to Grandmother Brenda",
+              "ingredientGroups": [
+                {
+                  "label": "Chicken",
+                  "ingredients": [
+                    "2 chickens or equivalent amount of chicken parts",
+                    "Black pepper",
+                    "Garlic powder"
+                  ]
+                },
+                {
+                  "label": "Marinade",
+                  "ingredients": [
+                    "1/2 cup honey",
+                    "1/2 cup soy sauce",
+                    "3 tablespoons oil"
+                  ]
+                },
+                {
+                  "label": "To finish",
+                  "ingredients": [
+                    "Sesame seeds"
+                  ]
+                }
+              ],
+              "steps": [
                 "Season the chicken pieces all over with pepper and garlic powder.",
                 "Combine the honey, soy sauce, and oil to make the marinade.",
                 "Add the chicken to the marinade, turning to coat. Cover and marinate in the refrigerator 24 hours, turning frequently.",
@@ -308,20 +727,55 @@ const data = {
               ]
             },
             {
-              title: "Creamy Spinach-Artichoke Chicken Stew",
-              servings: "4 to 6   |   Total: 50 minutes",
-              source: "NYT Cooking, by Sarah DiGregorio",
-              ingredientGroups: [
-                { label: "Aromatics", ingredients: ["2 tablespoons unsalted butter", "1 large yellow or red onion, finely chopped", "Kosher salt and black pepper", "3 celery stalks, chopped", "8 garlic cloves, smashed and chopped"] },
-                { label: "Braise", ingredients: ["2 cups chicken stock", "3/4 cup white wine", "2 to 2 1/4 pounds boneless, skinless chicken thighs", "1/2 lemon, juiced (about 1 1/2 tablespoons)", "1 teaspoon Aleppo pepper or red pepper flakes"] },
-                { label: "Spinach and artichokes", ingredients: ["1 (10-ounce) package frozen cut spinach", "1 (12-ounce) jar marinated artichoke hearts, drained (about 1 heaping cup)"] },
-                { label: "To finish", ingredients: ["1/2 cup cream cheese (about 4 ounces)", "1/2 cup finely chopped fresh dill", "4 to 6 scallions, thinly sliced", "Grated Parmesan cheese"] }
+              "title": "Creamy Spinach-Artichoke Chicken Stew",
+              "servings": "4 to 6   |   Total: 50 minutes",
+              "source": "NYT Cooking, by Sarah DiGregorio",
+              "ingredientGroups": [
+                {
+                  "label": "Aromatics",
+                  "ingredients": [
+                    "2 tablespoons unsalted butter",
+                    "1 large yellow or red onion, finely chopped",
+                    "Kosher salt and black pepper",
+                    "3 celery stalks, chopped",
+                    "8 garlic cloves, smashed and chopped"
+                  ]
+                },
+                {
+                  "label": "Braise",
+                  "ingredients": [
+                    "2 cups chicken stock",
+                    "3/4 cup white wine",
+                    "2 to 2 1/4 pounds boneless, skinless chicken thighs",
+                    "1/2 lemon, juiced (about 1 1/2 tablespoons)",
+                    "1 teaspoon Aleppo pepper or red pepper flakes"
+                  ]
+                },
+                {
+                  "label": "Spinach and artichokes",
+                  "ingredients": [
+                    "1 (10-ounce) package frozen cut spinach",
+                    "1 (12-ounce) jar marinated artichoke hearts, drained (about 1 heaping cup)"
+                  ]
+                },
+                {
+                  "label": "To finish",
+                  "ingredients": [
+                    "1/2 cup cream cheese (about 4 ounces)",
+                    "1/2 cup finely chopped fresh dill",
+                    "4 to 6 scallions, thinly sliced",
+                    "Grated Parmesan cheese"
+                  ]
+                }
               ],
-              steps: [
-                { lead: "Aromatics:", bullets: [
-                  "In a large Dutch oven over medium-high heat, melt the butter. Add the onion, season lightly with salt, and cook, stirring, until softened, about 5 minutes.",
-                  "Add the celery and cook, stirring, until softened, about 5 minutes, adjusting the heat as needed to avoid scorching. Stir in the garlic and cook 1 minute more."
-                ]},
+              "steps": [
+                {
+                  "lead": "Aromatics:",
+                  "bullets": [
+                    "In a large Dutch oven over medium-high heat, melt the butter. Add the onion, season lightly with salt, and cook, stirring, until softened, about 5 minutes.",
+                    "Add the celery and cook, stirring, until softened, about 5 minutes, adjusting the heat as needed to avoid scorching. Stir in the garlic and cook 1 minute more."
+                  ]
+                },
                 "Pour in the stock and wine, and bring to a bubble. Add the chicken thighs, lemon juice, and Aleppo pepper or red pepper flakes.",
                 "Reduce the heat to maintain a low simmer and simmer, uncovered, 20 minutes.",
                 "Add the frozen spinach and artichoke hearts. Increase the heat to medium-high and cook, stirring, to help the spinach defrost and the liquid reduce slightly, about 5 minutes.",
@@ -330,17 +784,44 @@ const data = {
               ]
             },
             {
-              title: "Crispy Chicken With Lime Butter",
-              servings: "4   |   Prep: 5 minutes   |   Cook: 35 minutes   |   Total: 40 minutes",
-              comments: ["The rendered chicken fat (schmaltz) can be saved to pan-fry vegetables, enrich a soup or sauce, or spread on toast."],
-              source: "NYT Cooking, by Eric Kim",
-              ingredientGroups: [
-                { label: "Chicken", ingredients: ["4 large bone-in, skin-on chicken thighs (about 2 pounds)", "Salt and pepper", "1 tablespoon peanut or canola oil"] },
-                { label: "Aromatics", ingredients: ["2 garlic cloves, crushed"] },
-                { label: "Pan sauce", ingredients: ["1/2 cup chicken stock or 1/4 cup water", "2 tablespoons fresh lime juice, plus wedges for serving", "2 teaspoons maple syrup", "3 tablespoons cold unsalted butter, cut into pats"] },
-                { label: "To serve", ingredients: ["Parsley, cilantro, basil, or mint leaves (optional)"] }
+              "title": "Crispy Chicken With Lime Butter",
+              "servings": "4   |   Prep: 5 minutes   |   Cook: 35 minutes   |   Total: 40 minutes",
+              "comments": [
+                "The rendered chicken fat (schmaltz) can be saved to pan-fry vegetables, enrich a soup or sauce, or spread on toast."
               ],
-              steps: [
+              "source": "NYT Cooking, by Eric Kim",
+              "ingredientGroups": [
+                {
+                  "label": "Chicken",
+                  "ingredients": [
+                    "4 large bone-in, skin-on chicken thighs (about 2 pounds)",
+                    "Salt and pepper",
+                    "1 tablespoon peanut or canola oil"
+                  ]
+                },
+                {
+                  "label": "Aromatics",
+                  "ingredients": [
+                    "2 garlic cloves, crushed"
+                  ]
+                },
+                {
+                  "label": "Pan sauce",
+                  "ingredients": [
+                    "1/2 cup chicken stock or 1/4 cup water",
+                    "2 tablespoons fresh lime juice, plus wedges for serving",
+                    "2 teaspoons maple syrup",
+                    "3 tablespoons cold unsalted butter, cut into pats"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "Parsley, cilantro, basil, or mint leaves (optional)"
+                  ]
+                }
+              ],
+              "steps": [
                 "Pat the chicken dry and season with salt and pepper. If you have time, let sit at room temperature 10 to 30 minutes.",
                 "Heat a large skillet over medium heat. Add the oil and swirl to coat the pan. Place the chicken skin side down and cook undisturbed until the skin is deeply golden and crispy, about 20 to 25 minutes.",
                 "Add the garlic to the pan. Flip the chicken and cook until the bottom is lightly browned and the meat is cooked through, about 5 to 8 minutes more. Transfer to a plate.",
@@ -349,15 +830,36 @@ const data = {
               ]
             },
             {
-              title: "Crispy Spice Rubbed Chicken Thighs",
-              favorite: true,
-              servings: "3 to 4   |   Prep: 5 minutes   |   Cook: 30 minutes   |   Total: 35 minutes",
-              source: "Fifteen Spatulas",
-              ingredientGroups: [
-                { label: "Spice rub", ingredients: ["1 teaspoon ground ginger", "1 teaspoon ground chipotle pepper", "2 teaspoons yellow curry powder", "1 teaspoon paprika", "1 teaspoon garlic powder", "1/2 teaspoon ground coriander", "1/4 teaspoon ground cardamom", "1/8 teaspoon ground cloves", "1/4 teaspoon ground cayenne pepper", "1/2 teaspoon ground cumin", "1 1/2 teaspoons sea salt"] },
-                { label: "Chicken", ingredients: ["2 to 3 pounds skin-on, bone-in chicken thighs (about 5 pieces)", "Olive oil"] }
+              "title": "Crispy Spice Rubbed Chicken Thighs",
+              "favorite": true,
+              "servings": "3 to 4   |   Prep: 5 minutes   |   Cook: 30 minutes   |   Total: 35 minutes",
+              "source": "Fifteen Spatulas",
+              "ingredientGroups": [
+                {
+                  "label": "Spice rub",
+                  "ingredients": [
+                    "1 teaspoon ground ginger",
+                    "1 teaspoon ground chipotle pepper",
+                    "2 teaspoons yellow curry powder",
+                    "1 teaspoon paprika",
+                    "1 teaspoon garlic powder",
+                    "1/2 teaspoon ground coriander",
+                    "1/4 teaspoon ground cardamom",
+                    "1/8 teaspoon ground cloves",
+                    "1/4 teaspoon ground cayenne pepper",
+                    "1/2 teaspoon ground cumin",
+                    "1 1/2 teaspoons sea salt"
+                  ]
+                },
+                {
+                  "label": "Chicken",
+                  "ingredients": [
+                    "2 to 3 pounds skin-on, bone-in chicken thighs (about 5 pieces)",
+                    "Olive oil"
+                  ]
+                }
               ],
-              steps: [
+              "steps": [
                 "Preheat the oven to 400°F.",
                 "Combine the ginger, chipotle pepper, curry powder, paprika, garlic powder, coriander, cardamom, cloves, cayenne, cumin, and salt in a small bowl.",
                 "Trim excess fat from the chicken thighs. Rub the thighs all over with the spice mixture.",
@@ -366,16 +868,38 @@ const data = {
               ]
             },
             {
-              title: "Grilled Buffalo Wings",
-              servings: "6 to 8   |   Total: 35 minutes",
-              comments: ["Crowding the wings close together on the grill is intentional — it creates steam that helps render the fat and keep the meat moist before crisping."],
-              source: "Food Network, by Katie Lee Biegel, from The Kitchen",
-              ingredientGroups: [
-                { label: "Dry rub", ingredients: ["1 tablespoon kosher salt", "1 teaspoon freshly ground black pepper", "1 teaspoon garlic powder"] },
-                { label: "Wings", ingredients: ["3 pounds whole chicken wings"] },
-                { label: "Buffalo sauce", ingredients: ["6 tablespoons unsalted butter", "1/3 cup hot sauce", "1 tablespoon apple cider vinegar", "1 tablespoon honey"] }
+              "title": "Grilled Buffalo Wings",
+              "servings": "6 to 8   |   Total: 35 minutes",
+              "comments": [
+                "Crowding the wings close together on the grill is intentional — it creates steam that helps render the fat and keep the meat moist before crisping."
               ],
-              steps: [
+              "source": "Food Network, by Katie Lee Biegel, from The Kitchen",
+              "ingredientGroups": [
+                {
+                  "label": "Dry rub",
+                  "ingredients": [
+                    "1 tablespoon kosher salt",
+                    "1 teaspoon freshly ground black pepper",
+                    "1 teaspoon garlic powder"
+                  ]
+                },
+                {
+                  "label": "Wings",
+                  "ingredients": [
+                    "3 pounds whole chicken wings"
+                  ]
+                },
+                {
+                  "label": "Buffalo sauce",
+                  "ingredients": [
+                    "6 tablespoons unsalted butter",
+                    "1/3 cup hot sauce",
+                    "1 tablespoon apple cider vinegar",
+                    "1 tablespoon honey"
+                  ]
+                }
+              ],
+              "steps": [
                 "Dry rub: In a small bowl, combine the salt, pepper, and garlic powder. In a large bowl, toss the wings with the rub to coat evenly.",
                 "Preheat a gas grill to medium heat (about 350°F).",
                 "Place the wings on the grill, crowding them close together so they're all touching. Grill, covered, 20 minutes, turning every 5 minutes.",
@@ -384,44 +908,118 @@ const data = {
               ]
             },
             {
-              title: "Skillet Chicken and Zucchini With Charred Scallion Salsa",
-              servings: "4   |   Total: 40 minutes",
-              comments: [
+              "title": "Skillet Chicken and Zucchini With Charred Scallion Salsa",
+              "servings": "4   |   Total: 40 minutes",
+              "comments": [
                 "Any seasonal, quick-roasting vegetable can stand in for the zucchini — cherry tomatoes or asparagus both work well.",
                 "If cilantro isn't your thing, basil is a good substitute, or use a mix of the two."
               ],
-              source: "NYT Cooking, by Colu Henry",
-              ingredientGroups: [
-                { label: "Chicken", ingredients: ["4 medium bone-in, skin-on chicken breasts (about 3 to 3 1/2 pounds), at room temperature", "Kosher salt and black pepper", "2 tablespoons canola or grapeseed oil"] },
-                { label: "Zucchini", ingredients: ["1 1/2 pounds zucchini (3 to 4 medium), quartered lengthwise, then halved crosswise"] },
-                { label: "Salsa", ingredients: ["1/4 cup fresh lime juice (about 2 limes)", "1 medium jalapeño, thinly sliced, seeded if you prefer", "1 bunch scallions (about 7 or 8), trimmed and halved crosswise", "1 cup roughly chopped fresh cilantro", "1/4 cup olive oil", "1/2 teaspoon light brown sugar", "Flaky sea salt (optional)"] }
+              "source": "NYT Cooking, by Colu Henry",
+              "ingredientGroups": [
+                {
+                  "label": "Chicken",
+                  "ingredients": [
+                    "4 medium bone-in, skin-on chicken breasts (about 3 to 3 1/2 pounds), at room temperature",
+                    "Kosher salt and black pepper",
+                    "2 tablespoons canola or grapeseed oil"
+                  ]
+                },
+                {
+                  "label": "Zucchini",
+                  "ingredients": [
+                    "1 1/2 pounds zucchini (3 to 4 medium), quartered lengthwise, then halved crosswise"
+                  ]
+                },
+                {
+                  "label": "Salsa",
+                  "ingredients": [
+                    "1/4 cup fresh lime juice (about 2 limes)",
+                    "1 medium jalapeño, thinly sliced, seeded if you prefer",
+                    "1 bunch scallions (about 7 or 8), trimmed and halved crosswise",
+                    "1 cup roughly chopped fresh cilantro",
+                    "1/4 cup olive oil",
+                    "1/2 teaspoon light brown sugar",
+                    "Flaky sea salt (optional)"
+                  ]
+                }
               ],
-              steps: [
+              "steps": [
                 "Heat the oven to 400°F. Pat the chicken very dry and season generously all over with salt and pepper.",
                 "Heat the oil in a 12-inch cast-iron pan or other large, ovenproof skillet over medium-high heat. Once shimmering, add the chicken skin-side down and cook undisturbed until the skin is deeply golden, about 5 minutes. Transfer skin-side up to a plate.",
                 "Remove the pan from the heat. Add the zucchini and toss to coat in the chicken fat; season with salt and pepper and arrange in an even layer. Nestle the chicken, skin-side up, on top of the zucchini. Roast until the chicken is cooked through, 20 to 25 minutes.",
-                { lead: "Salsa:", bullets: [
-                  "In a medium bowl, stir together the lime juice and jalapeño; set aside.",
-                  "Heat a large skillet over medium heat. Add the scallions and cook, tossing frequently, until they begin to brown and char slightly, about 5 minutes.",
-                  "Finely chop the scallions and toss with the lime mixture.",
-                  "Stir in the cilantro, olive oil, and brown sugar until the sugar dissolves. Season to taste with salt."
-                ]},
+                {
+                  "lead": "Salsa:",
+                  "bullets": [
+                    "In a medium bowl, stir together the lime juice and jalapeño; set aside.",
+                    "Heat a large skillet over medium heat. Add the scallions and cook, tossing frequently, until they begin to brown and char slightly, about 5 minutes.",
+                    "Finely chop the scallions and toss with the lime mixture.",
+                    "Stir in the cilantro, olive oil, and brown sugar until the sugar dissolves. Season to taste with salt."
+                  ]
+                },
                 "Remove the chicken from the oven and let rest on a plate or cutting board about 5 minutes (return the zucchini to the oven to keep warm). Spoon the salsa over the chicken and zucchini."
               ]
             },
             {
-              title: "Spring Chicken Paillard",
-              servings: "4   |   Total: 1 hour 25 minutes (includes marinating)",
-              comments: ["Inspired by the chicken paillard at Pastis in New York City."],
-              source: "Food Network, by Katie Lee Biegel",
-              ingredientGroups: [
-                { label: "Chicken", ingredients: ["4 small/medium boneless, skinless chicken breasts"] },
-                { label: "Marinade", ingredients: ["2 tablespoons extra-virgin olive oil", "2 tablespoons balsamic vinegar", "2 teaspoons chopped fresh rosemary", "1 teaspoon garlic powder", "1 teaspoon onion powder", "1 teaspoon kosher salt", "1 teaspoon fresh thyme leaves", "1/2 teaspoon dried oregano", "Freshly ground black pepper"] },
-                { label: "Green olive tapenade", ingredients: ["1 cup fresh parsley leaves", "1/2 cup pitted Castelvetrano olives", "2 tablespoons thinly sliced fresh chives, plus more for garnish", "1 teaspoon capers, drained", "1/2 teaspoon honey", "2 anchovies", "1 small shallot, roughly chopped", "1/2 lemon, zested and juiced", "Kosher salt and freshly cracked black pepper"] },
-                { label: "Sautéed greens", ingredients: ["2 tablespoons extra-virgin olive oil", "1 (8-ounce) bunch Swiss chard, stems trimmed, roughly chopped", "1 (8-ounce) bunch lacinato kale, stems removed, roughly chopped", "1/2 teaspoon kosher salt", "Freshly ground black pepper", "1 tablespoon red wine vinegar"] },
-                { label: "To serve", ingredients: ["Lemon wedges"] }
+              "title": "Spring Chicken Paillard",
+              "servings": "4   |   Total: 1 hour 25 minutes (includes marinating)",
+              "comments": [
+                "Inspired by the chicken paillard at Pastis in New York City."
               ],
-              steps: [
+              "source": "Food Network, by Katie Lee Biegel",
+              "ingredientGroups": [
+                {
+                  "label": "Chicken",
+                  "ingredients": [
+                    "4 small/medium boneless, skinless chicken breasts"
+                  ]
+                },
+                {
+                  "label": "Marinade",
+                  "ingredients": [
+                    "2 tablespoons extra-virgin olive oil",
+                    "2 tablespoons balsamic vinegar",
+                    "2 teaspoons chopped fresh rosemary",
+                    "1 teaspoon garlic powder",
+                    "1 teaspoon onion powder",
+                    "1 teaspoon kosher salt",
+                    "1 teaspoon fresh thyme leaves",
+                    "1/2 teaspoon dried oregano",
+                    "Freshly ground black pepper"
+                  ]
+                },
+                {
+                  "label": "Green olive tapenade",
+                  "ingredients": [
+                    "1 cup fresh parsley leaves",
+                    "1/2 cup pitted Castelvetrano olives",
+                    "2 tablespoons thinly sliced fresh chives, plus more for garnish",
+                    "1 teaspoon capers, drained",
+                    "1/2 teaspoon honey",
+                    "2 anchovies",
+                    "1 small shallot, roughly chopped",
+                    "1/2 lemon, zested and juiced",
+                    "Kosher salt and freshly cracked black pepper"
+                  ]
+                },
+                {
+                  "label": "Sautéed greens",
+                  "ingredients": [
+                    "2 tablespoons extra-virgin olive oil",
+                    "1 (8-ounce) bunch Swiss chard, stems trimmed, roughly chopped",
+                    "1 (8-ounce) bunch lacinato kale, stems removed, roughly chopped",
+                    "1/2 teaspoon kosher salt",
+                    "Freshly ground black pepper",
+                    "1 tablespoon red wine vinegar"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "Lemon wedges"
+                  ]
+                }
+              ],
+              "steps": [
                 "Chicken: Place a chicken breast on a cutting board, cover with plastic wrap, and pound with a meat mallet or rolling pin to an even 1/4-inch thickness. Repeat with remaining breasts.",
                 "Whisk together the olive oil, balsamic vinegar, rosemary, garlic powder, onion powder, salt, thyme, oregano, and pepper in a shallow dish. Add the chicken and turn to coat.",
                 "Cover and marinate in the fridge at least 30 minutes, up to 3 hours.",
@@ -435,94 +1033,232 @@ const data = {
               ]
             },
             {
-              title: "Sweet and Sour Chicken",
-              servings: "Flexible — same sauce works for a few pieces or a large batch",
-              comments: [
+              "title": "Sweet and Sour Chicken",
+              "servings": "Flexible — same sauce works for a few pieces or a large batch",
+              "comments": [
                 "Sauce amounts stay the same whether cooking a few pieces or a large batch — it's very forgiving.",
                 "Russian dressing can be hard to find; regular French dressing (not creamy) works just as well.",
                 "Marcie's note: \"You can't mess-up with this recipe — last night it was in the oven for 2½ hours!\""
               ],
-              source: "Family recipe, credited to Marcie (in a letter to Lauren)",
-              ingredientGroups: [
-                { label: "Sauce", ingredients: ["1 envelope dry onion soup mix", "1 bottle Russian salad dressing (regular French dressing works if Russian isn't available; NOT creamy French)", "1 bottle (about 18 oz) apricot preserves"] },
-                { label: "Main", ingredients: ["Chicken parts (any amount — see Comments)"] }
+              "source": "Family recipe, credited to Marcie (in a letter to Lauren)",
+              "ingredientGroups": [
+                {
+                  "label": "Sauce",
+                  "ingredients": [
+                    "1 envelope dry onion soup mix",
+                    "1 bottle Russian salad dressing (regular French dressing works if Russian isn't available; NOT creamy French)",
+                    "1 bottle (about 18 oz) apricot preserves"
+                  ]
+                },
+                {
+                  "label": "Main",
+                  "ingredients": [
+                    "Chicken parts (any amount — see Comments)"
+                  ]
+                }
               ],
-              steps: [
+              "steps": [
                 "Spread chicken parts out in a baking dish. Cover with the Russian dressing, apricot preserves, and onion soup mix.",
                 "Bake covered at 350°F for 1 hour, then uncover and continue baking for 30 minutes to 1 hour more. Check occasionally — if the chicken starts to look burned from the apricot preserves, re-cover."
               ]
             },
             {
-              title: "Weeknight Fancy Chicken and Rice",
-              servings: "4 to 6   |   Total: 50 minutes",
-              comments: ["Garnish is flexible — dried cranberries, hazelnuts, or pine nuts can stand in for or join the apricots and almonds."],
-              source: "NYT Cooking, from Asha Gomez and Martha Hall Foose, adapted by Sara Bonisteel",
-              ingredientGroups: [
-                { label: "Aromatics", ingredients: ["1/4 cup ghee (or unsalted butter)", "1 large yellow onion, halved and thinly sliced", "6 green cardamom pods, crushed", "3 whole star anise", "1/4 teaspoon kosher salt"] },
-                { label: "Garlic and spice", ingredients: ["6 garlic cloves, finely chopped", "1 1/2 teaspoons turmeric powder"] },
-                { label: "Chicken", ingredients: ["1 pound boneless, skinless chicken breasts, cut into 3/4-inch pieces"] },
-                { label: "Rice", ingredients: ["2 1/4 cups low-sodium chicken stock", "1 teaspoon kosher salt (remaining from the 1 1/4 teaspoons above)", "1 1/2 cups Jasmine or Basmati rice"] },
-                { label: "Garnish", ingredients: ["1/4 cup chopped dried apricots", "1/4 cup sliced raw almonds, toasted", "1/4 cup chopped cilantro leaves"] }
+              "title": "Weeknight Fancy Chicken and Rice",
+              "servings": "4 to 6   |   Total: 50 minutes",
+              "comments": [
+                "Garnish is flexible — dried cranberries, hazelnuts, or pine nuts can stand in for or join the apricots and almonds."
               ],
-              steps: [
-                { lead: "Aromatics and chicken:", bullets: [
-                  "Melt the ghee in a medium saucepan with a lid over medium-high heat.",
-                  "Add the onion, cardamom pods, star anise, and 1/4 teaspoon salt. Cook, stirring frequently, until the onion is soft and golden, about 8 minutes.",
-                  "Add the garlic and turmeric; cook, stirring, 1-2 minutes, until very fragrant.",
-                  "Add the chicken and cook 4 minutes, stirring to coat with the onion mixture."
-                ]},
-                { lead: "Rice:", bullets: [
-                  "Add the stock and remaining 1 teaspoon salt; increase the heat and bring to a boil.",
-                  "Stir in the rice, cover, and reduce the heat to low. Simmer until the rice has absorbed the liquid, about 12 minutes.",
-                  "Remove from the heat and let stand, covered, 12 minutes.",
-                  "Remove the lid and fluff the rice with a fork."
-                ]},
+              "source": "NYT Cooking, from Asha Gomez and Martha Hall Foose, adapted by Sara Bonisteel",
+              "ingredientGroups": [
+                {
+                  "label": "Aromatics",
+                  "ingredients": [
+                    "1/4 cup ghee (or unsalted butter)",
+                    "1 large yellow onion, halved and thinly sliced",
+                    "6 green cardamom pods, crushed",
+                    "3 whole star anise",
+                    "1/4 teaspoon kosher salt"
+                  ]
+                },
+                {
+                  "label": "Garlic and spice",
+                  "ingredients": [
+                    "6 garlic cloves, finely chopped",
+                    "1 1/2 teaspoons turmeric powder"
+                  ]
+                },
+                {
+                  "label": "Chicken",
+                  "ingredients": [
+                    "1 pound boneless, skinless chicken breasts, cut into 3/4-inch pieces"
+                  ]
+                },
+                {
+                  "label": "Rice",
+                  "ingredients": [
+                    "2 1/4 cups low-sodium chicken stock",
+                    "1 teaspoon kosher salt (remaining from the 1 1/4 teaspoons above)",
+                    "1 1/2 cups Jasmine or Basmati rice"
+                  ]
+                },
+                {
+                  "label": "Garnish",
+                  "ingredients": [
+                    "1/4 cup chopped dried apricots",
+                    "1/4 cup sliced raw almonds, toasted",
+                    "1/4 cup chopped cilantro leaves"
+                  ]
+                }
+              ],
+              "steps": [
+                {
+                  "lead": "Aromatics and chicken:",
+                  "bullets": [
+                    "Melt the ghee in a medium saucepan with a lid over medium-high heat.",
+                    "Add the onion, cardamom pods, star anise, and 1/4 teaspoon salt. Cook, stirring frequently, until the onion is soft and golden, about 8 minutes.",
+                    "Add the garlic and turmeric; cook, stirring, 1-2 minutes, until very fragrant.",
+                    "Add the chicken and cook 4 minutes, stirring to coat with the onion mixture."
+                  ]
+                },
+                {
+                  "lead": "Rice:",
+                  "bullets": [
+                    "Add the stock and remaining 1 teaspoon salt; increase the heat and bring to a boil.",
+                    "Stir in the rice, cover, and reduce the heat to low. Simmer until the rice has absorbed the liquid, about 12 minutes.",
+                    "Remove from the heat and let stand, covered, 12 minutes.",
+                    "Remove the lid and fluff the rice with a fork."
+                  ]
+                },
                 "Transfer the chicken and rice to a bowl, removing and discarding the cardamom pods and star anise. Garnish with the apricots, almonds, and cilantro."
               ]
             },
             {
-              title: "Chicken Fajita Marinade",
-              servings: "4   |   Prep: 10 minutes   |   Cook: 1 minute   |   Total: 41 minutes (includes 30 minutes marinating)",
-              comments: [
+              "title": "Chicken Fajita Marinade",
+              "servings": "4   |   Prep: 10 minutes   |   Cook: 1 minute   |   Total: 41 minutes (includes 30 minutes marinating)",
+              "comments": [
                 "This is a marinade rather than a full dish — cook the marinated chicken and vegetables however you like (grill, skillet, or oven).",
                 "Also works with other proteins, like shrimp, flank steak, or pork tenderloin."
               ],
-              source: "Dinner at the Zoo, by Sara Welch",
-              ingredientGroups: [
-                { label: "Marinade", ingredients: ["1/4 cup olive oil", "1/3 cup lime juice", "1/4 cup water", "1 teaspoon sugar", "1 1/4 teaspoons kosher salt", "1/4 teaspoon ground cumin", "2 cloves garlic, minced", "1 1/2 teaspoons smoked paprika", "1 teaspoon onion powder", "1 to 2 tablespoons chili powder, to taste (start with 1 tablespoon if your chili powder has real heat)", "1/4 teaspoon pepper"] },
-                { label: "To marinate", ingredients: ["1 pound chicken, sliced", "1 1/2 cups sliced bell peppers", "1/2 cup sliced onion"] }
+              "source": "Dinner at the Zoo, by Sara Welch",
+              "ingredientGroups": [
+                {
+                  "label": "Marinade",
+                  "ingredients": [
+                    "1/4 cup olive oil",
+                    "1/3 cup lime juice",
+                    "1/4 cup water",
+                    "1 teaspoon sugar",
+                    "1 1/4 teaspoons kosher salt",
+                    "1/4 teaspoon ground cumin",
+                    "2 cloves garlic, minced",
+                    "1 1/2 teaspoons smoked paprika",
+                    "1 teaspoon onion powder",
+                    "1 to 2 tablespoons chili powder, to taste (start with 1 tablespoon if your chili powder has real heat)",
+                    "1/4 teaspoon pepper"
+                  ]
+                },
+                {
+                  "label": "To marinate",
+                  "ingredients": [
+                    "1 pound chicken, sliced",
+                    "1 1/2 cups sliced bell peppers",
+                    "1/2 cup sliced onion"
+                  ]
+                }
               ],
-              steps: [
+              "steps": [
                 "In a bowl, whisk together the olive oil, lime juice, water, sugar, salt, cumin, garlic, smoked paprika, onion powder, chili powder, and pepper.",
                 "Add the sliced chicken, bell peppers, and onion to the bowl and toss to coat.",
                 "Marinate at least 30 minutes and up to 8 hours, then cook as desired — grilled, pan-seared, or baked — for fajitas."
               ]
             },
             {
-              title: "D.L. Jardine's Fajita Marinade",
-              servings: "Serves 4",
-              comments: ["Works for both chicken and beef; marinate all day or overnight for best results."],
-              source: "https://www.food.com/recipe/d-l-jardines-fajita-marinade-336920",
-              ingredientGroups: [
-                { label: "Liquids", ingredients: ["3/4 cup Worcestershire sauce", "1/4 cup light soy sauce", "2 tablespoons water", "1 tablespoon white vinegar", "2 tablespoons lime juice"] },
-                { label: "Spice blend", note: "combine in a small bowl", ingredients: ["1/2 teaspoon garlic powder", "1/2 teaspoon black pepper", "1/2 teaspoon cumin", "1/2 teaspoon oregano"] }
+              "title": "D.L. Jardine's Fajita Marinade",
+              "servings": "Serves 4",
+              "comments": [
+                "Works for both chicken and beef; marinate all day or overnight for best results."
               ],
-              steps: [
+              "source": "https://www.food.com/recipe/d-l-jardines-fajita-marinade-336920",
+              "ingredientGroups": [
+                {
+                  "label": "Liquids",
+                  "ingredients": [
+                    "3/4 cup Worcestershire sauce",
+                    "1/4 cup light soy sauce",
+                    "2 tablespoons water",
+                    "1 tablespoon white vinegar",
+                    "2 tablespoons lime juice"
+                  ]
+                },
+                {
+                  "label": "Spice blend",
+                  "note": "combine in a small bowl",
+                  "ingredients": [
+                    "1/2 teaspoon garlic powder",
+                    "1/2 teaspoon black pepper",
+                    "1/2 teaspoon cumin",
+                    "1/2 teaspoon oregano"
+                  ]
+                }
+              ],
+              "steps": [
                 "Whisk together the liquids and spice blend until fully combined. Use immediately as a marinade, or refrigerate until ready to use."
               ]
             },
             {
-              title: "Peruvian Roasted Chicken With Spicy Cilantro Sauce",
-              servings: "4   |   Total: 50 minutes, plus marinating",
-              comments: ["If aji amarillo/aji panca pastes aren't available, substitute a red chile paste like sriracha or sambal for the aji amarillo, and pasilla chile powder for the aji panca."],
-              source: "NYT Cooking, by Melissa Clark",
-              ingredientGroups: [
-                { label: "Marinade", ingredients: ["6 garlic cloves, finely grated or minced", "3 tablespoons soy sauce", "1 tablespoon aji amarillo paste (or sriracha or sambal)", "1 tablespoon lime juice", "1 teaspoon aji panca paste (or 1 teaspoon ground pasilla chile powder)", "1 teaspoon Dijon mustard", "1 teaspoon ground cumin", "1 teaspoon black pepper", "1/2 teaspoon fine sea salt"] },
-                { label: "Chicken", ingredients: ["1 (3 1/2 to 4 1/2 pound) chicken, halved, or 4 pounds bone-in, skin-on chicken parts", "Extra-virgin olive oil, as needed"] },
-                { label: "Spicy cilantro sauce", ingredients: ["1 cup cilantro leaves and tender stems", "3 to 4 jalapeños, seeded and diced", "1/4 cup (1 ounce) crumbled feta cheese", "1 garlic clove, chopped", "1 1/2 tablespoons lime juice, more to taste", "2 teaspoons chopped fresh oregano or basil", "3/4 teaspoon fine sea salt, more to taste", "1/2 teaspoon Dijon mustard", "1/2 tablespoon aji amarillo or other chile paste", "1/2 teaspoon honey", "1/2 teaspoon ground cumin", "1/2 cup extra-virgin olive oil"] },
-                { label: "To serve", ingredients: ["Lime wedges"] }
+              "title": "Peruvian Roasted Chicken With Spicy Cilantro Sauce",
+              "servings": "4   |   Total: 50 minutes, plus marinating",
+              "comments": [
+                "If aji amarillo/aji panca pastes aren't available, substitute a red chile paste like sriracha or sambal for the aji amarillo, and pasilla chile powder for the aji panca."
               ],
-              steps: [
+              "source": "NYT Cooking, by Melissa Clark",
+              "ingredientGroups": [
+                {
+                  "label": "Marinade",
+                  "ingredients": [
+                    "6 garlic cloves, finely grated or minced",
+                    "3 tablespoons soy sauce",
+                    "1 tablespoon aji amarillo paste (or sriracha or sambal)",
+                    "1 tablespoon lime juice",
+                    "1 teaspoon aji panca paste (or 1 teaspoon ground pasilla chile powder)",
+                    "1 teaspoon Dijon mustard",
+                    "1 teaspoon ground cumin",
+                    "1 teaspoon black pepper",
+                    "1/2 teaspoon fine sea salt"
+                  ]
+                },
+                {
+                  "label": "Chicken",
+                  "ingredients": [
+                    "1 (3 1/2 to 4 1/2 pound) chicken, halved, or 4 pounds bone-in, skin-on chicken parts",
+                    "Extra-virgin olive oil, as needed"
+                  ]
+                },
+                {
+                  "label": "Spicy cilantro sauce",
+                  "ingredients": [
+                    "1 cup cilantro leaves and tender stems",
+                    "3 to 4 jalapeños, seeded and diced",
+                    "1/4 cup (1 ounce) crumbled feta cheese",
+                    "1 garlic clove, chopped",
+                    "1 1/2 tablespoons lime juice, more to taste",
+                    "2 teaspoons chopped fresh oregano or basil",
+                    "3/4 teaspoon fine sea salt, more to taste",
+                    "1/2 teaspoon Dijon mustard",
+                    "1/2 tablespoon aji amarillo or other chile paste",
+                    "1/2 teaspoon honey",
+                    "1/2 teaspoon ground cumin",
+                    "1/2 cup extra-virgin olive oil"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "Lime wedges"
+                  ]
+                }
+              ],
+              "steps": [
                 "Whisk together the garlic, soy sauce, aji amarillo paste, lime juice, aji panca paste, mustard, cumin, pepper, and salt to make the marinade.",
                 "Add the chicken, turning to coat all over. Cover and refrigerate at least 2 hours, up to 12.",
                 "Heat the oven to 450°F. Remove the chicken from the marinade and pat dry. Arrange skin-side up on a rimmed baking sheet; drizzle with olive oil.",
@@ -532,16 +1268,45 @@ const data = {
               ]
             },
             {
-              title: "Slow-Cooker Chicken Mole",
-              servings: "6   |   Prep: 15 minutes   |   Cook: 4 hours   |   Total: 4 hours 15 minutes",
-              comments: ["Makes extra sauce; keeps refrigerated up to 4 days or frozen up to 3 months. Good over rice, with pinto beans, or warm corn tortillas."],
-              source: "Martha Stewart",
-              ingredientGroups: [
-                { label: "Chicken", ingredients: ["4 pounds boneless, skinless chicken thighs (about 12)", "Coarse salt", "2 tablespoons oil, for browning"] },
-                { label: "Mole sauce", ingredients: ["1 can (28 ounces) whole tomatoes", "1 medium yellow onion, roughly chopped", "2 dried ancho chiles, stemmed", "1 large chipotle chile in adobo sauce", "1/2 cup sliced almonds, toasted", "1/4 cup raisins", "3 ounces bittersweet chocolate, finely chopped (1/2 cup)", "3 garlic cloves, smashed and peeled", "3 tablespoons extra-virgin olive oil", "3/4 teaspoon ground cumin", "1/2 teaspoon ground cinnamon"] },
-                { label: "To finish", ingredients: ["Fresh cilantro leaves"] }
+              "title": "Slow-Cooker Chicken Mole",
+              "servings": "6   |   Prep: 15 minutes   |   Cook: 4 hours   |   Total: 4 hours 15 minutes",
+              "comments": [
+                "Makes extra sauce; keeps refrigerated up to 4 days or frozen up to 3 months. Good over rice, with pinto beans, or warm corn tortillas."
               ],
-              steps: [
+              "source": "Martha Stewart",
+              "ingredientGroups": [
+                {
+                  "label": "Chicken",
+                  "ingredients": [
+                    "4 pounds boneless, skinless chicken thighs (about 12)",
+                    "Coarse salt",
+                    "2 tablespoons oil, for browning"
+                  ]
+                },
+                {
+                  "label": "Mole sauce",
+                  "ingredients": [
+                    "1 can (28 ounces) whole tomatoes",
+                    "1 medium yellow onion, roughly chopped",
+                    "2 dried ancho chiles, stemmed",
+                    "1 large chipotle chile in adobo sauce",
+                    "1/2 cup sliced almonds, toasted",
+                    "1/4 cup raisins",
+                    "3 ounces bittersweet chocolate, finely chopped (1/2 cup)",
+                    "3 garlic cloves, smashed and peeled",
+                    "3 tablespoons extra-virgin olive oil",
+                    "3/4 teaspoon ground cumin",
+                    "1/2 teaspoon ground cinnamon"
+                  ]
+                },
+                {
+                  "label": "To finish",
+                  "ingredients": [
+                    "Fresh cilantro leaves"
+                  ]
+                }
+              ],
+              "steps": [
                 "Season the chicken thighs with salt.",
                 "Heat the oil in a large skillet over medium-high heat. Brown the chicken in batches, about 2 to 3 minutes per side, then transfer to the slow cooker.",
                 "In a blender, puree the tomatoes, onion, ancho and chipotle chiles, almonds, raisins, chocolate, garlic, oil, cumin, and cinnamon until smooth.",
@@ -550,28 +1315,68 @@ const data = {
               ]
             },
             {
-              title: "Chicken Cacciatore",
-              servings: "4 to 5   |   Total: 1 hour 45 minutes",
-              source: "NYT Cooking, by Martha Rose Shulman",
-              ingredientGroups: [
-                { label: "Dried mushrooms", ingredients: ["1/2 ounce dried mushrooms, like porcini (about 1/2 cup)"] },
-                { label: "Chicken", ingredients: ["2 tablespoons olive oil, divided", "Salt and freshly ground pepper", "6 to 8 skinless chicken legs and/or thighs (thighs can be boneless)"] },
-                { label: "Aromatics", ingredients: ["1 small onion, minced", "1 small carrot, minced", "3 ribs celery, minced", "2 large garlic cloves, minced", "2 tablespoons fresh minced Italian parsley", "1 heaped teaspoon minced fresh rosemary, or 1/2 teaspoon crumbled dried rosemary", "1/4 teaspoon Aleppo pepper or red pepper flakes"] },
-                { label: "Mushrooms and wine", ingredients: ["1/2 pound mushrooms, trimmed and sliced", "1/2 cup red wine"] },
-                { label: "Tomatoes", ingredients: ["1 28-ounce can chopped tomatoes, pulsed in a food processor"] }
+              "title": "Chicken Cacciatore",
+              "servings": "4 to 5   |   Total: 1 hour 45 minutes",
+              "source": "NYT Cooking, by Martha Rose Shulman",
+              "ingredientGroups": [
+                {
+                  "label": "Dried mushrooms",
+                  "ingredients": [
+                    "1/2 ounce dried mushrooms, like porcini (about 1/2 cup)"
+                  ]
+                },
+                {
+                  "label": "Chicken",
+                  "ingredients": [
+                    "2 tablespoons olive oil, divided",
+                    "Salt and freshly ground pepper",
+                    "6 to 8 skinless chicken legs and/or thighs (thighs can be boneless)"
+                  ]
+                },
+                {
+                  "label": "Aromatics",
+                  "ingredients": [
+                    "1 small onion, minced",
+                    "1 small carrot, minced",
+                    "3 ribs celery, minced",
+                    "2 large garlic cloves, minced",
+                    "2 tablespoons fresh minced Italian parsley",
+                    "1 heaped teaspoon minced fresh rosemary, or 1/2 teaspoon crumbled dried rosemary",
+                    "1/4 teaspoon Aleppo pepper or red pepper flakes"
+                  ]
+                },
+                {
+                  "label": "Mushrooms and wine",
+                  "ingredients": [
+                    "1/2 pound mushrooms, trimmed and sliced",
+                    "1/2 cup red wine"
+                  ]
+                },
+                {
+                  "label": "Tomatoes",
+                  "ingredients": [
+                    "1 28-ounce can chopped tomatoes, pulsed in a food processor"
+                  ]
+                }
               ],
-              steps: [
-                { lead: "Soak the dried mushrooms:", bullets: [
-                  "Place in a bowl or heat-proof measuring cup and pour on 2 cups boiling water. Let sit 15 to 30 minutes, until softened.",
-                  "Drain through a strainer lined with cheesecloth or a paper towel, set over a bowl, reserving the liquid.",
-                  "Rinse the mushrooms in several changes of water, squeeze out excess water, and chop coarsely.",
-                  "Measure out 1 cup of the reserved soaking liquid; set aside."
-                ]},
+              "steps": [
+                {
+                  "lead": "Soak the dried mushrooms:",
+                  "bullets": [
+                    "Place in a bowl or heat-proof measuring cup and pour on 2 cups boiling water. Let sit 15 to 30 minutes, until softened.",
+                    "Drain through a strainer lined with cheesecloth or a paper towel, set over a bowl, reserving the liquid.",
+                    "Rinse the mushrooms in several changes of water, squeeze out excess water, and chop coarsely.",
+                    "Measure out 1 cup of the reserved soaking liquid; set aside."
+                  ]
+                },
                 "Heat 1 tablespoon of the olive oil over medium-high heat in a large, heavy nonstick skillet or Dutch oven. Season the chicken and brown on both sides; remove to a platter.",
-                { lead: "Aromatics:", bullets: [
-                  "Turn the heat to medium. Add the remaining oil, the onion, carrot, and celery, plus a pinch of salt. Cook, stirring, until softened, about 5 minutes.",
-                  "Add the garlic, parsley, rosemary, Aleppo pepper or red pepper flakes, and salt to taste. Cover, reduce the heat to low, and cook 5 minutes."
-                ]},
+                {
+                  "lead": "Aromatics:",
+                  "bullets": [
+                    "Turn the heat to medium. Add the remaining oil, the onion, carrot, and celery, plus a pinch of salt. Cook, stirring, until softened, about 5 minutes.",
+                    "Add the garlic, parsley, rosemary, Aleppo pepper or red pepper flakes, and salt to taste. Cover, reduce the heat to low, and cook 5 minutes."
+                  ]
+                },
                 "Stir in the fresh and dried mushrooms; increase the heat to medium and cook, stirring, until just tender, about 5 minutes.",
                 "Stir in the wine and bring to a boil; cook, stirring, a few minutes until reduced by about half.",
                 "Add the tomatoes and salt and pepper to taste. Cook over medium heat 5 to 10 minutes, stirring often, until the tomatoes have cooked down somewhat.",
@@ -580,40 +1385,98 @@ const data = {
               ]
             },
             {
-              title: "Chicken Piccata",
-              servings: "4   |   Prep: 15 minutes   |   Cook: 25 minutes   |   Total: 40 minutes",
-              source: "Food Network, by Giada De Laurentiis",
-              ingredientGroups: [
-                { label: "Chicken", ingredients: ["2 skinless, boneless chicken breasts, butterflied and cut in half", "Sea salt and freshly ground black pepper", "All-purpose flour, for dredging"] },
-                { label: "For browning", ingredients: ["6 tablespoons unsalted butter, divided", "5 tablespoons extra-virgin olive oil, divided"] },
-                { label: "Sauce", ingredients: ["1/3 cup fresh lemon juice", "1/2 cup chicken stock", "1/4 cup brined capers, rinsed"] },
-                { label: "To finish", ingredients: ["1/3 cup fresh parsley, chopped"] }
+              "title": "Chicken Piccata",
+              "servings": "4   |   Prep: 15 minutes   |   Cook: 25 minutes   |   Total: 40 minutes",
+              "source": "Food Network, by Giada De Laurentiis",
+              "ingredientGroups": [
+                {
+                  "label": "Chicken",
+                  "ingredients": [
+                    "2 skinless, boneless chicken breasts, butterflied and cut in half",
+                    "Sea salt and freshly ground black pepper",
+                    "All-purpose flour, for dredging"
+                  ]
+                },
+                {
+                  "label": "For browning",
+                  "ingredients": [
+                    "6 tablespoons unsalted butter, divided",
+                    "5 tablespoons extra-virgin olive oil, divided"
+                  ]
+                },
+                {
+                  "label": "Sauce",
+                  "ingredients": [
+                    "1/3 cup fresh lemon juice",
+                    "1/2 cup chicken stock",
+                    "1/4 cup brined capers, rinsed"
+                  ]
+                },
+                {
+                  "label": "To finish",
+                  "ingredients": [
+                    "1/3 cup fresh parsley, chopped"
+                  ]
+                }
               ],
-              steps: [
+              "steps": [
                 "Season the chicken with salt and pepper. Dredge in flour and shake off the excess.",
-                { lead: "Brown the chicken:", bullets: [
-                  "In a large skillet over medium-high heat, melt 2 tablespoons butter with 3 tablespoons olive oil. When sizzling, add 2 pieces of chicken and cook until browned, about 3 minutes per side. Remove to a plate.",
-                  "Melt 2 more tablespoons butter with 2 more tablespoons olive oil; brown the remaining 2 pieces of chicken the same way. Remove to the plate."
-                ]},
+                {
+                  "lead": "Brown the chicken:",
+                  "bullets": [
+                    "In a large skillet over medium-high heat, melt 2 tablespoons butter with 3 tablespoons olive oil. When sizzling, add 2 pieces of chicken and cook until browned, about 3 minutes per side. Remove to a plate.",
+                    "Melt 2 more tablespoons butter with 2 more tablespoons olive oil; brown the remaining 2 pieces of chicken the same way. Remove to the plate."
+                  ]
+                },
                 "Add the lemon juice, stock, and capers to the pan. Return to the stove and bring to a boil, scraping up the browned bits from the bottom.",
                 "Remove the chicken to a platter. Add the remaining 2 tablespoons butter to the sauce and whisk vigorously. Pour the sauce over the chicken and garnish with parsley."
               ]
             },
             {
-              title: "Marry Me Chicken",
-              servings: "4   |   Prep: 10 minutes   |   Cook: 50 minutes   |   Total: 1 hour",
-              comments: [
+              "title": "Marry Me Chicken",
+              "servings": "4   |   Prep: 10 minutes   |   Cook: 50 minutes   |   Total: 1 hour",
+              "comments": [
                 "To make slicing into cutlets easier, freeze the chicken breasts for 20 minutes first.",
                 "Great served over pasta, rice, or polenta, or with crusty bread and a green salad."
               ],
-              source: "NYT Cooking, by Naz Deravian",
-              ingredientGroups: [
-                { label: "Chicken", ingredients: ["3 large boneless, skinless chicken breasts, or 6 chicken cutlets (about 2 1/4 pounds total), patted dry", "Kosher salt and black pepper", "1/4 cup all-purpose flour"] },
-                { label: "Oil and butter", ingredients: ["3 tablespoons extra-virgin olive oil, plus more as needed", "3 tablespoons unsalted butter"] },
-                { label: "Sauce", ingredients: ["3 garlic cloves, chopped", "1 tablespoon tomato paste", "1/2 teaspoon dried oregano", "Aleppo pepper or red pepper flakes, to taste", "1 cup low-sodium chicken stock", "1/2 to 3/4 cup heavy cream", "1/2 cup (1 1/2 ounces) grated Parmesan", "1/3 cup sliced sun-dried tomatoes, packed in oil"] },
-                { label: "To finish", ingredients: ["Fresh basil"] }
+              "source": "NYT Cooking, by Naz Deravian",
+              "ingredientGroups": [
+                {
+                  "label": "Chicken",
+                  "ingredients": [
+                    "3 large boneless, skinless chicken breasts, or 6 chicken cutlets (about 2 1/4 pounds total), patted dry",
+                    "Kosher salt and black pepper",
+                    "1/4 cup all-purpose flour"
+                  ]
+                },
+                {
+                  "label": "Oil and butter",
+                  "ingredients": [
+                    "3 tablespoons extra-virgin olive oil, plus more as needed",
+                    "3 tablespoons unsalted butter"
+                  ]
+                },
+                {
+                  "label": "Sauce",
+                  "ingredients": [
+                    "3 garlic cloves, chopped",
+                    "1 tablespoon tomato paste",
+                    "1/2 teaspoon dried oregano",
+                    "Aleppo pepper or red pepper flakes, to taste",
+                    "1 cup low-sodium chicken stock",
+                    "1/2 to 3/4 cup heavy cream",
+                    "1/2 cup (1 1/2 ounces) grated Parmesan",
+                    "1/3 cup sliced sun-dried tomatoes, packed in oil"
+                  ]
+                },
+                {
+                  "label": "To finish",
+                  "ingredients": [
+                    "Fresh basil"
+                  ]
+                }
               ],
-              steps: [
+              "steps": [
                 "If using chicken breasts, slice each in half horizontally starting from the thickest end, to make 6 cutlets total. Season generously with salt and pepper.",
                 "Scatter the flour on a large plate and coat the cutlets, shaking off the excess. Transfer to a sheet pan or large plate and let rest 10 minutes.",
                 "Heat the oil in a large pan over medium-high heat. Once hot, reduce the heat to medium and add the butter. As soon as it melts, add the cutlets and sear until golden, 3 to 4 minutes per side. Transfer to a plate.",
@@ -624,17 +1487,49 @@ const data = {
               ]
             },
             {
-              title: "Chicken Kiev",
-              servings: "2   |   Prep: 30 minutes   |   Cook: 30 minutes   |   Total: 1 hour, plus 1 hour freezing",
-              source: "RecipeTin Eats, by Nagi Maehashi",
-              ingredientGroups: [
-                { label: "Garlic butter", ingredients: ["6 tablespoons (90g) unsalted butter, softened", "2 teaspoons parsley, finely chopped", "2 garlic cloves, very finely minced", "1/4 teaspoon salt (skip if using salted butter)"] },
-                { label: "Chicken", ingredients: ["2 (7 to 8 ounce) chicken breasts, skinless and boneless", "1/2 teaspoon salt", "1/4 teaspoon pepper"] },
-                { label: "Crumbing", ingredients: ["1 egg, lightly whisked", "1/4 cup flour", "1 cup panko breadcrumbs"] },
-                { label: "Frying oil", ingredients: ["Oil for frying (canola or vegetable, about 4 cups)"] },
-                { label: "To finish", ingredients: ["Parsley, finely chopped"] }
+              "title": "Chicken Kiev",
+              "servings": "2   |   Prep: 30 minutes   |   Cook: 30 minutes   |   Total: 1 hour, plus 1 hour freezing",
+              "source": "RecipeTin Eats, by Nagi Maehashi",
+              "ingredientGroups": [
+                {
+                  "label": "Garlic butter",
+                  "ingredients": [
+                    "6 tablespoons (90g) unsalted butter, softened",
+                    "2 teaspoons parsley, finely chopped",
+                    "2 garlic cloves, very finely minced",
+                    "1/4 teaspoon salt (skip if using salted butter)"
+                  ]
+                },
+                {
+                  "label": "Chicken",
+                  "ingredients": [
+                    "2 (7 to 8 ounce) chicken breasts, skinless and boneless",
+                    "1/2 teaspoon salt",
+                    "1/4 teaspoon pepper"
+                  ]
+                },
+                {
+                  "label": "Crumbing",
+                  "ingredients": [
+                    "1 egg, lightly whisked",
+                    "1/4 cup flour",
+                    "1 cup panko breadcrumbs"
+                  ]
+                },
+                {
+                  "label": "Frying oil",
+                  "ingredients": [
+                    "Oil for frying (canola or vegetable, about 4 cups)"
+                  ]
+                },
+                {
+                  "label": "To finish",
+                  "ingredients": [
+                    "Parsley, finely chopped"
+                  ]
+                }
               ],
-              steps: [
+              "steps": [
                 "Make the garlic butter: mix the butter, parsley, garlic, and salt until combined.",
                 "Shape and chill: scrape the butter onto parchment paper and shape into a 4x2.4-inch rectangle. Refrigerate until firm, then cut in half lengthwise to make 2 batons.",
                 "Pound the chicken: place each breast smooth-side down between two sheets of plastic. Pound to an even 1/2-inch thickness.",
@@ -650,18 +1545,52 @@ const data = {
               ]
             },
             {
-              title: "Chicken Paprikash",
-              servings: "4 to 6   |   Cook: 1 hour   |   Total: 1 hour",
-              comments: ["Use fresh Hungarian paprika if you can find it — it loses flavor quickly (within a few months) and turns dull and bitter with age."],
-              source: "NYT Cooking, by Sam Sifton",
-              ingredientGroups: [
-                { label: "Chicken", ingredients: ["3 to 4 pounds chicken thighs and drumsticks, or whole chicken legs", "Kosher salt and black pepper, to taste", "1 tablespoon neutral oil, like canola", "3 tablespoons unsalted butter, divided"] },
-                { label: "Roux", ingredients: ["1 large yellow or Spanish onion, diced", "3 cloves garlic, minced", "3 tablespoons Hungarian paprika, sweet or hot", "3 tablespoons all-purpose flour"] },
-                { label: "Braise", ingredients: ["1 cup canned crushed tomatoes or 1 large ripe tomato, chopped", "1 cup chicken broth"] },
-                { label: "Noodles", ingredients: ["1 pound egg noodles"] },
-                { label: "To finish", ingredients: ["3/4 cup sour cream"] }
+              "title": "Chicken Paprikash",
+              "servings": "4 to 6   |   Cook: 1 hour   |   Total: 1 hour",
+              "comments": [
+                "Use fresh Hungarian paprika if you can find it — it loses flavor quickly (within a few months) and turns dull and bitter with age."
               ],
-              steps: [
+              "source": "NYT Cooking, by Sam Sifton",
+              "ingredientGroups": [
+                {
+                  "label": "Chicken",
+                  "ingredients": [
+                    "3 to 4 pounds chicken thighs and drumsticks, or whole chicken legs",
+                    "Kosher salt and black pepper, to taste",
+                    "1 tablespoon neutral oil, like canola",
+                    "3 tablespoons unsalted butter, divided"
+                  ]
+                },
+                {
+                  "label": "Roux",
+                  "ingredients": [
+                    "1 large yellow or Spanish onion, diced",
+                    "3 cloves garlic, minced",
+                    "3 tablespoons Hungarian paprika, sweet or hot",
+                    "3 tablespoons all-purpose flour"
+                  ]
+                },
+                {
+                  "label": "Braise",
+                  "ingredients": [
+                    "1 cup canned crushed tomatoes or 1 large ripe tomato, chopped",
+                    "1 cup chicken broth"
+                  ]
+                },
+                {
+                  "label": "Noodles",
+                  "ingredients": [
+                    "1 pound egg noodles"
+                  ]
+                },
+                {
+                  "label": "To finish",
+                  "ingredients": [
+                    "3/4 cup sour cream"
+                  ]
+                }
+              ],
+              "steps": [
                 "Heat the oven to 400°F. Season the chicken aggressively with salt and pepper. Heat the oil and 1 tablespoon of the butter in a large Dutch oven over high heat until the butter is melted and foamy. Sear the chicken until golden brown on both sides; remove to a plate.",
                 "Pour off all but 3 tablespoons of the accumulated fat in the pot. Return to medium heat and add the onion. Cook, stirring often, until soft and beginning to brown, about 8 minutes. Add the garlic, paprika, and remaining 2 tablespoons butter; cook, stirring, 1 minute. Add the flour and stir to combine.",
                 "Add the tomatoes and broth, whisking until smooth. Nestle the chicken back into the pan, skin-side up. Slide into the oven and bake, uncovered, 30 minutes.",
@@ -670,20 +1599,62 @@ const data = {
               ]
             },
             {
-              title: "Chicken-Zucchini Meatballs With Feta",
-              servings: "4   |   Total: 45 minutes",
-              comments: [
+              "title": "Chicken-Zucchini Meatballs With Feta",
+              "servings": "4   |   Total: 45 minutes",
+              "comments": [
                 "Made here with ground chicken; ground turkey can be substituted.",
                 "Sauce is Panning the Globe's lemony yogurt-sumac sauce, with the NYT recipe's quick-pickled shallot, feta, and remaining garnishes."
               ],
-              source: "Meatballs from NYT Cooking (Ali Slagle); sauce adapted from Ottolenghi's Turkey Zucchini Meatballs with Lemony Yogurt",
-              ingredientGroups: [
-                { label: "Yogurt-Feta Sauce", ingredients: ["1/2 cup sour cream", "2/3 cup plain Greek yogurt", "1 tablespoon lemon juice", "1 small garlic clove, pressed or finely minced", "1 1/2 tablespoons olive oil", "1 tablespoon sumac", "1/2 teaspoon salt", "1/4 teaspoon black pepper", "4 ounces feta, crumbled", "1/4 cup extra-virgin olive oil", "1/2 teaspoon Aleppo pepper or red pepper flakes"] },
-                { label: "Quick-Pickled Shallot", ingredients: ["Remaining shallot half (see Meatballs), coarsely chopped", "3 tablespoons lemon juice (from 1 large lemon)", "Pinch of kosher salt"] },
-                { label: "Zucchini", ingredients: ["2 of 3 large zucchini (about 1 pound total), cut into 1/2-inch-thick slices", "Kosher salt and black pepper", "About 1 tablespoon olive oil"] },
-                { label: "Meatballs", ingredients: ["1 large shallot, halved (grate one half here; quick-pickle the other half for the sauce)", "1 remaining large zucchini, grated", "1/2 cup panko", "1 1/2 teaspoons ground cumin", "1/2 teaspoon Aleppo pepper or red pepper flakes", "1/2 teaspoon kosher salt", "1 pound ground chicken (turkey can be substituted)", "2 tablespoons chopped fresh mint, basil, parsley, or dill, plus more for serving", "Extra-virgin olive oil, for greasing the pan and drizzling"] }
+              "source": "Meatballs from NYT Cooking (Ali Slagle); sauce adapted from Ottolenghi's Turkey Zucchini Meatballs with Lemony Yogurt",
+              "ingredientGroups": [
+                {
+                  "label": "Yogurt-Feta Sauce",
+                  "ingredients": [
+                    "1/2 cup sour cream",
+                    "2/3 cup plain Greek yogurt",
+                    "1 tablespoon lemon juice",
+                    "1 small garlic clove, pressed or finely minced",
+                    "1 1/2 tablespoons olive oil",
+                    "1 tablespoon sumac",
+                    "1/2 teaspoon salt",
+                    "1/4 teaspoon black pepper",
+                    "4 ounces feta, crumbled",
+                    "1/4 cup extra-virgin olive oil",
+                    "1/2 teaspoon Aleppo pepper or red pepper flakes"
+                  ]
+                },
+                {
+                  "label": "Quick-Pickled Shallot",
+                  "ingredients": [
+                    "Remaining shallot half (see Meatballs), coarsely chopped",
+                    "3 tablespoons lemon juice (from 1 large lemon)",
+                    "Pinch of kosher salt"
+                  ]
+                },
+                {
+                  "label": "Zucchini",
+                  "ingredients": [
+                    "2 of 3 large zucchini (about 1 pound total), cut into 1/2-inch-thick slices",
+                    "Kosher salt and black pepper",
+                    "About 1 tablespoon olive oil"
+                  ]
+                },
+                {
+                  "label": "Meatballs",
+                  "ingredients": [
+                    "1 large shallot, halved (grate one half here; quick-pickle the other half for the sauce)",
+                    "1 remaining large zucchini, grated",
+                    "1/2 cup panko",
+                    "1 1/2 teaspoons ground cumin",
+                    "1/2 teaspoon Aleppo pepper or red pepper flakes",
+                    "1/2 teaspoon kosher salt",
+                    "1 pound ground chicken (turkey can be substituted)",
+                    "2 tablespoons chopped fresh mint, basil, parsley, or dill, plus more for serving",
+                    "Extra-virgin olive oil, for greasing the pan and drizzling"
+                  ]
+                }
               ],
-              steps: [
+              "steps": [
                 "Quick-pickled shallot: Coarsely chop half the shallot (reserve the other half for the meatballs) and combine with the 3 tablespoons lemon juice and a pinch of salt. Let sit while you make the rest.",
                 "Yogurt-feta sauce: Combine the sour cream, yogurt, 1 tablespoon lemon juice, garlic, 1 1/2 tablespoons olive oil, sumac, salt, and pepper in a bowl. Fold in half the feta. Spread on a platter. Top with the remaining feta, 1/4 cup olive oil, and the Aleppo pepper.",
                 "Heat the oven to 425°F. Cut 2 of the zucchini into 1/2-inch-thick slices; transfer to a plate, season with salt, and set aside.",
@@ -695,39 +1666,113 @@ const data = {
               ]
             },
             {
-              title: "Greek Chicken and Orzo Pasta Salad",
-              servings: "8   |   Prep: 30 minutes   |   Total: 1 hour 15 minutes (includes marinating and cooling)",
-              source: "Food Network, by Katie Lee Biegel, from The Kitchen",
-              ingredientGroups: [
-                { label: "Chicken", ingredients: ["3 tablespoons olive oil", "1 teaspoon kosher salt", "1/2 teaspoon dried oregano", "1/2 teaspoon garlic powder", "1/4 teaspoon freshly ground black pepper", "Juice of 1 lemon", "1 pound boneless, skinless chicken tenderloins"] },
-                { label: "Breadcrumbs", ingredients: ["2 tablespoons unsalted butter", "1 tablespoon extra-virgin olive oil", "1 clove garlic, minced", "1/2 cup panko breadcrumbs", "Pinch of kosher salt"] },
-                { label: "Dressing", ingredients: ["1/2 cup extra-virgin olive oil", "1/4 cup red wine vinegar", "1 teaspoon kosher salt", "1/2 teaspoon dried oregano", "1/2 teaspoon freshly ground black pepper", "1 clove garlic, grated", "Juice of 1/2 lemon"] },
-                { label: "Salad", ingredients: ["Kosher salt, for the pasta water", "1 pound orzo", "10 ounces grape tomatoes, halved", "1 English cucumber, diced", "1/4 cup minced fresh flat-leaf parsley", "1 1/2 cups crumbled feta cheese (from a block, not packaged crumbled cheese)"] }
+              "title": "Greek Chicken and Orzo Pasta Salad",
+              "servings": "8   |   Prep: 30 minutes   |   Total: 1 hour 15 minutes (includes marinating and cooling)",
+              "source": "Food Network, by Katie Lee Biegel, from The Kitchen",
+              "ingredientGroups": [
+                {
+                  "label": "Chicken",
+                  "ingredients": [
+                    "3 tablespoons olive oil",
+                    "1 teaspoon kosher salt",
+                    "1/2 teaspoon dried oregano",
+                    "1/2 teaspoon garlic powder",
+                    "1/4 teaspoon freshly ground black pepper",
+                    "Juice of 1 lemon",
+                    "1 pound boneless, skinless chicken tenderloins"
+                  ]
+                },
+                {
+                  "label": "Breadcrumbs",
+                  "ingredients": [
+                    "2 tablespoons unsalted butter",
+                    "1 tablespoon extra-virgin olive oil",
+                    "1 clove garlic, minced",
+                    "1/2 cup panko breadcrumbs",
+                    "Pinch of kosher salt"
+                  ]
+                },
+                {
+                  "label": "Dressing",
+                  "ingredients": [
+                    "1/2 cup extra-virgin olive oil",
+                    "1/4 cup red wine vinegar",
+                    "1 teaspoon kosher salt",
+                    "1/2 teaspoon dried oregano",
+                    "1/2 teaspoon freshly ground black pepper",
+                    "1 clove garlic, grated",
+                    "Juice of 1/2 lemon"
+                  ]
+                },
+                {
+                  "label": "Salad",
+                  "ingredients": [
+                    "Kosher salt, for the pasta water",
+                    "1 pound orzo",
+                    "10 ounces grape tomatoes, halved",
+                    "1 English cucumber, diced",
+                    "1/4 cup minced fresh flat-leaf parsley",
+                    "1 1/2 cups crumbled feta cheese (from a block, not packaged crumbled cheese)"
+                  ]
+                }
               ],
-              steps: [
+              "steps": [
                 "Chicken marinade: In a medium bowl, whisk together the olive oil, salt, oregano, garlic powder, pepper, and lemon juice. Add the chicken tenderloins and toss to coat. Marinate at room temperature 30 minutes.",
                 "Preheat a grill or grill pan to medium-high.",
                 "Remove the chicken from the marinade and grill until cooked through, about 5 minutes per side. Slice into 1-inch-wide pieces.",
-                { lead: "Breadcrumbs:", bullets: [
-                  "Preheat the oven to 400°F.",
-                  "In a medium ovenproof skillet, heat the butter, olive oil, and garlic over low heat until the garlic begins to sizzle. Add the panko and salt; stir to coat.",
-                  "Transfer to the oven and toast until golden brown, 3 to 4 minutes."
-                ]},
+                {
+                  "lead": "Breadcrumbs:",
+                  "bullets": [
+                    "Preheat the oven to 400°F.",
+                    "In a medium ovenproof skillet, heat the butter, olive oil, and garlic over low heat until the garlic begins to sizzle. Add the panko and salt; stir to coat.",
+                    "Transfer to the oven and toast until golden brown, 3 to 4 minutes."
+                  ]
+                },
                 "Dressing: Whisk together the olive oil, vinegar, salt, oregano, pepper, garlic, and lemon juice in a small bowl until combined.",
                 "Cook the orzo: Bring a large pot of salted water to a boil. Add the orzo and cook until al dente, 7 to 8 minutes. Drain and transfer to a large bowl; toss immediately with the dressing. Let cool.",
                 "When cool, stir in the tomatoes, cucumber, and parsley. Top with the feta, sliced chicken, and breadcrumbs."
               ]
             },
             {
-              title: "Mediterranean Grilled Chicken Thighs with Dill Yogurt Sauce",
-              servings: "8   |   Prep: 10 minutes   |   Cook: 12 minutes   |   Total: 22 minutes, plus marinating",
-              source: "The Mediterranean Dish, by Suzy Karadsheh",
-              ingredientGroups: [
-                { label: "Dill yogurt sauce", ingredients: ["1 garlic clove, minced", "1 cup fresh dill, stems removed, chopped", "1 1/4 cups Greek yogurt", "1 tablespoon olive oil", "1/2 lemon or lime, juiced", "Pinch cayenne pepper, optional", "Kosher salt, if needed"] },
-                { label: "Seasoning", ingredients: ["10 garlic cloves, minced", "1/2 teaspoon paprika", "1/2 teaspoon allspice", "1/2 teaspoon ground nutmeg", "1/4 teaspoon ground green cardamom", "Salt and pepper", "3 tablespoons olive oil"] },
-                { label: "Chicken and marinade", ingredients: ["8 boneless, skinless chicken thighs", "1 red onion, halved and thinly sliced", "2 lemons, juiced", "2 tablespoons olive oil"] }
+              "title": "Mediterranean Grilled Chicken Thighs with Dill Yogurt Sauce",
+              "servings": "8   |   Prep: 10 minutes   |   Cook: 12 minutes   |   Total: 22 minutes, plus marinating",
+              "source": "The Mediterranean Dish, by Suzy Karadsheh",
+              "ingredientGroups": [
+                {
+                  "label": "Dill yogurt sauce",
+                  "ingredients": [
+                    "1 garlic clove, minced",
+                    "1 cup fresh dill, stems removed, chopped",
+                    "1 1/4 cups Greek yogurt",
+                    "1 tablespoon olive oil",
+                    "1/2 lemon or lime, juiced",
+                    "Pinch cayenne pepper, optional",
+                    "Kosher salt, if needed"
+                  ]
+                },
+                {
+                  "label": "Seasoning",
+                  "ingredients": [
+                    "10 garlic cloves, minced",
+                    "1/2 teaspoon paprika",
+                    "1/2 teaspoon allspice",
+                    "1/2 teaspoon ground nutmeg",
+                    "1/4 teaspoon ground green cardamom",
+                    "Salt and pepper",
+                    "3 tablespoons olive oil"
+                  ]
+                },
+                {
+                  "label": "Chicken and marinade",
+                  "ingredients": [
+                    "8 boneless, skinless chicken thighs",
+                    "1 red onion, halved and thinly sliced",
+                    "2 lemons, juiced",
+                    "2 tablespoons olive oil"
+                  ]
+                }
               ],
-              steps: [
+              "steps": [
                 "Make the dill yogurt sauce: combine the garlic, dill, yogurt, olive oil, lemon juice, and cayenne in a food processor; blend until smooth. Season with salt if needed. Refrigerate until ready to serve.",
                 "Make the seasoning: mix the garlic, paprika, allspice, nutmeg, cardamom, and 3 tablespoons olive oil. Pat the chicken dry and rub with the seasoning on all sides.",
                 "Make the marinade: in a large dish, add the onion, lemon juice, and remaining 2 tablespoons olive oil. Place the chicken in the marinade and turn to coat.",
@@ -738,17 +1783,49 @@ const data = {
               ]
             },
             {
-              title: "One-Pot Chicken and Rice With Caramelized Lemon",
-              servings: "4   |   Prep: 10 minutes   |   Cook: 45 minutes   |   Total: 55 minutes",
-              source: "NYT Cooking, by Dan Pelosi",
-              ingredientGroups: [
-                { label: "Chicken", ingredients: ["4 bone-in, skin-on chicken thighs (about 1 1/2 pounds)", "Salt and black pepper", "2 teaspoons dried oregano, divided", "Aleppo pepper or red pepper flakes, to taste"] },
-                { label: "For browning", ingredients: ["2 tablespoons extra-virgin olive oil"] },
-                { label: "Lemon", ingredients: ["2 lemons"] },
-                { label: "Rice", ingredients: ["1 cup pitted Castelvetrano or kalamata olives, smashed and roughly chopped", "6 garlic cloves, minced", "1 medium shallot or 1/2 medium onion, minced", "2 cups Jasmine or Basmati rice, rinsed", "4 cups (32 ounces) chicken broth"] },
-                { label: "To serve", ingredients: ["1/4 cup roughly chopped fresh parsley"] }
+              "title": "One-Pot Chicken and Rice With Caramelized Lemon",
+              "servings": "4   |   Prep: 10 minutes   |   Cook: 45 minutes   |   Total: 55 minutes",
+              "source": "NYT Cooking, by Dan Pelosi",
+              "ingredientGroups": [
+                {
+                  "label": "Chicken",
+                  "ingredients": [
+                    "4 bone-in, skin-on chicken thighs (about 1 1/2 pounds)",
+                    "Salt and black pepper",
+                    "2 teaspoons dried oregano, divided",
+                    "Aleppo pepper or red pepper flakes, to taste"
+                  ]
+                },
+                {
+                  "label": "For browning",
+                  "ingredients": [
+                    "2 tablespoons extra-virgin olive oil"
+                  ]
+                },
+                {
+                  "label": "Lemon",
+                  "ingredients": [
+                    "2 lemons"
+                  ]
+                },
+                {
+                  "label": "Rice",
+                  "ingredients": [
+                    "1 cup pitted Castelvetrano or kalamata olives, smashed and roughly chopped",
+                    "6 garlic cloves, minced",
+                    "1 medium shallot or 1/2 medium onion, minced",
+                    "2 cups Jasmine or Basmati rice, rinsed",
+                    "4 cups (32 ounces) chicken broth"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "1/4 cup roughly chopped fresh parsley"
+                  ]
+                }
               ],
-              steps: [
+              "steps": [
                 "Heat the oven to 400°F. Pat the chicken thighs dry. Season with 1 teaspoon each salt, pepper, and dried oregano, plus a pinch of Aleppo pepper.",
                 "Heat the oil in a large Dutch oven or other heavy-bottomed pot over medium-high heat. Add the chicken skin side down and cook until deeply golden, about 5 minutes. Flip and cook 2 minutes more. Transfer to a plate.",
                 "Cut 1 lemon into 1/4-inch-thick slices. Add to the pot and cook until caramelized and softened, about 2 minutes. Remove and set aside.",
@@ -758,62 +1835,163 @@ const data = {
               ]
             },
             {
-              title: "Roast Lemon-Garlic Chicken with Green Olives",
-              servings: "4",
-              comments: [
+              "title": "Roast Lemon-Garlic Chicken with Green Olives",
+              "servings": "4",
+              "comments": [
                 "The lemon-herb mixture can be made up to 4 hours ahead, covered, and kept at room temperature.",
                 "Can double the recipe; or use half black olives for a contrast of color."
               ],
-              source: "Seriously Simple (cookbook)",
-              ingredientGroups: [
-                { label: "Lemon-herb mixture", ingredients: ["1 tablespoon finely chopped lemon zest", "1/3 cup fresh lemon juice", "2 tablespoons olive oil", "1/4 cup finely chopped mixed fresh herbs (such as rosemary, thyme, parsley, basil, and/or oregano)", "Salt and freshly ground black pepper to taste"] },
-                { label: "For roasting", ingredients: ["1 (3 1/2-pound) fryer chicken, cut up", "25 garlic cloves, peeled"] },
-                { label: "For the pan sauce", ingredients: ["3/4 cup chicken broth", "1/3 cup pitted French green olives, rinsed", "2 tablespoons finely chopped mixed fresh herbs (for garnish)"] }
+              "source": "Seriously Simple (cookbook)",
+              "ingredientGroups": [
+                {
+                  "label": "Lemon-herb mixture",
+                  "ingredients": [
+                    "1 tablespoon finely chopped lemon zest",
+                    "1/3 cup fresh lemon juice",
+                    "2 tablespoons olive oil",
+                    "1/4 cup finely chopped mixed fresh herbs (such as rosemary, thyme, parsley, basil, and/or oregano)",
+                    "Salt and freshly ground black pepper to taste"
+                  ]
+                },
+                {
+                  "label": "For roasting",
+                  "ingredients": [
+                    "1 (3 1/2-pound) fryer chicken, cut up",
+                    "25 garlic cloves, peeled"
+                  ]
+                },
+                {
+                  "label": "For the pan sauce",
+                  "ingredients": [
+                    "3/4 cup chicken broth",
+                    "1/3 cup pitted French green olives, rinsed",
+                    "2 tablespoons finely chopped mixed fresh herbs (for garnish)"
+                  ]
+                }
               ],
-              steps: [
+              "steps": [
                 "Lemon-herb mixture: In a small bowl, combine the lemon zest and juice, olive oil, 1/4 cup of the herbs, and salt and pepper. Stir to combine.",
                 "Preheat oven to 425°F. Arrange chicken pieces in a roasting pan and pour the lemon-herb mixture over. Arrange the garlic cloves all around the chicken, stirring them to coat with the mixture. Roast about 40 minutes, or until chicken is nicely browned and opaque throughout.",
                 "Remove chicken from oven. Add broth to the pan and place over medium-high heat on the stovetop. Stir to scrape up browned bits from the bottom. Add olives and stir; cook a few minutes to heat through. Garnish with the remaining 2 tablespoons herbs and serve from the pan, or transfer to a platter. Serve immediately."
               ]
             },
             {
-              title: "Chicken Tagine With Olives and Preserved Lemons",
-              servings: "4   |   Total: 1 hour, plus marinating",
-              source: "NYT Cooking, from Shallots New York, adapted by Florence Fabricant",
-              ingredientGroups: [
-                { label: "Spice rub", ingredients: ["5 cloves garlic, finely chopped", "1/4 teaspoon saffron threads, pulverized", "1/2 teaspoon ground ginger", "1 teaspoon sweet paprika", "1/2 teaspoon ground cumin", "1/2 teaspoon turmeric", "Salt and freshly ground black pepper"] },
-                { label: "Chicken", ingredients: ["1 chicken, cut in 8 to 10 pieces"] },
-                { label: "Braise", ingredients: ["2 tablespoons extra virgin olive oil", "3 medium onions, sliced thin", "1 cinnamon stick"] },
-                { label: "To finish", ingredients: ["8 kalamata olives, pitted and halved", "8 cracked green olives, pitted and halved", "1 large or 3 small preserved lemons", "1 cup chicken stock", "Juice of 1/2 lemon", "1 tablespoon chopped flat-leaf parsley"] }
+              "title": "Chicken Tagine With Olives and Preserved Lemons",
+              "servings": "4   |   Total: 1 hour, plus marinating",
+              "source": "NYT Cooking, from Shallots New York, adapted by Florence Fabricant",
+              "ingredientGroups": [
+                {
+                  "label": "Spice rub",
+                  "ingredients": [
+                    "5 cloves garlic, finely chopped",
+                    "1/4 teaspoon saffron threads, pulverized",
+                    "1/2 teaspoon ground ginger",
+                    "1 teaspoon sweet paprika",
+                    "1/2 teaspoon ground cumin",
+                    "1/2 teaspoon turmeric",
+                    "Salt and freshly ground black pepper"
+                  ]
+                },
+                {
+                  "label": "Chicken",
+                  "ingredients": [
+                    "1 chicken, cut in 8 to 10 pieces"
+                  ]
+                },
+                {
+                  "label": "Braise",
+                  "ingredients": [
+                    "2 tablespoons extra virgin olive oil",
+                    "3 medium onions, sliced thin",
+                    "1 cinnamon stick"
+                  ]
+                },
+                {
+                  "label": "To finish",
+                  "ingredients": [
+                    "8 kalamata olives, pitted and halved",
+                    "8 cracked green olives, pitted and halved",
+                    "1 large or 3 small preserved lemons",
+                    "1 cup chicken stock",
+                    "Juice of 1/2 lemon",
+                    "1 tablespoon chopped flat-leaf parsley"
+                  ]
+                }
               ],
-              steps: [
-                { lead: "Spice rub:", bullets: [
-                  "Mix the garlic, saffron, ginger, paprika, cumin, and turmeric together.",
-                  "If not using kosher chicken, add 1/2 teaspoon salt; add pepper to taste.",
-                  "Rub the chicken with the mixture, cover, refrigerate, and marinate 3 to 4 hours."
-                ]},
+              "steps": [
+                {
+                  "lead": "Spice rub:",
+                  "bullets": [
+                    "Mix the garlic, saffron, ginger, paprika, cumin, and turmeric together.",
+                    "If not using kosher chicken, add 1/2 teaspoon salt; add pepper to taste.",
+                    "Rub the chicken with the mixture, cover, refrigerate, and marinate 3 to 4 hours."
+                  ]
+                },
                 "Heat the oil in a heavy skillet. Add the chicken and brown on all sides; remove to a platter. Add the onions to the skillet and cook until soft. Add the cinnamon stick.",
-                { lead: "To finish:", bullets: [
-                  "Put the chicken on top of the onions and scatter with the olives.",
-                  "Quarter the preserved lemons, remove the pulp, and cut the skin into strips; scatter over the chicken.",
-                  "Mix the stock and lemon juice and pour over the chicken.",
-                  "Cover the tagine or skillet, place over low heat, and cook about 30 minutes, until the chicken is done. Scatter the parsley on top and serve."
-                ]}
+                {
+                  "lead": "To finish:",
+                  "bullets": [
+                    "Put the chicken on top of the onions and scatter with the olives.",
+                    "Quarter the preserved lemons, remove the pulp, and cut the skin into strips; scatter over the chicken.",
+                    "Mix the stock and lemon juice and pour over the chicken.",
+                    "Cover the tagine or skillet, place over low heat, and cook about 30 minutes, until the chicken is done. Scatter the parsley on top and serve."
+                  ]
+                }
               ]
             },
             {
-              title: "Sheet-Pan Chicken With Chickpeas, Cumin and Turmeric",
-              servings: "4   |   Total: 1 hour, plus marinating",
-              source: "NYT Cooking, by Alison Roman",
-              ingredientGroups: [
-                { label: "Chicken", ingredients: ["1 (3 1/2 to 4 pound) chicken, cut into parts (or 3 to 3 1/2 pounds bone-in, skin-on chicken parts)", "Kosher salt and freshly ground pepper"] },
-                { label: "Yogurt marinade", ingredients: ["3/4 cup full-fat Greek yogurt", "2 tablespoons fresh lemon juice", "1 teaspoon ground turmeric", "2 tablespoons water"] },
-                { label: "Chickpeas", ingredients: ["2 (15-ounce) cans chickpeas, drained and rinsed", "1 tablespoon fennel seed", "1 teaspoon ground cumin", "1 teaspoon ground turmeric", "1 large red onion, thinly sliced, divided", "2 tablespoons olive oil"] },
-                { label: "Lemony onions", ingredients: ["2 tablespoons fresh lemon juice"] },
-                { label: "Yogurt sauce", ingredients: ["3/4 cup full-fat Greek yogurt", "1 tablespoon fresh lemon juice"] },
-                { label: "To finish", ingredients: ["1/2 cup mint or cilantro leaves, torn"] }
+              "title": "Sheet-Pan Chicken With Chickpeas, Cumin and Turmeric",
+              "servings": "4   |   Total: 1 hour, plus marinating",
+              "source": "NYT Cooking, by Alison Roman",
+              "ingredientGroups": [
+                {
+                  "label": "Chicken",
+                  "ingredients": [
+                    "1 (3 1/2 to 4 pound) chicken, cut into parts (or 3 to 3 1/2 pounds bone-in, skin-on chicken parts)",
+                    "Kosher salt and freshly ground pepper"
+                  ]
+                },
+                {
+                  "label": "Yogurt marinade",
+                  "ingredients": [
+                    "3/4 cup full-fat Greek yogurt",
+                    "2 tablespoons fresh lemon juice",
+                    "1 teaspoon ground turmeric",
+                    "2 tablespoons water"
+                  ]
+                },
+                {
+                  "label": "Chickpeas",
+                  "ingredients": [
+                    "2 (15-ounce) cans chickpeas, drained and rinsed",
+                    "1 tablespoon fennel seed",
+                    "1 teaspoon ground cumin",
+                    "1 teaspoon ground turmeric",
+                    "1 large red onion, thinly sliced, divided",
+                    "2 tablespoons olive oil"
+                  ]
+                },
+                {
+                  "label": "Lemony onions",
+                  "ingredients": [
+                    "2 tablespoons fresh lemon juice"
+                  ]
+                },
+                {
+                  "label": "Yogurt sauce",
+                  "ingredients": [
+                    "3/4 cup full-fat Greek yogurt",
+                    "1 tablespoon fresh lemon juice"
+                  ]
+                },
+                {
+                  "label": "To finish",
+                  "ingredients": [
+                    "1/2 cup mint or cilantro leaves, torn"
+                  ]
+                }
               ],
-              steps: [
+              "steps": [
                 "Season the chicken with salt and pepper.",
                 "Make the marinade: combine the yogurt, lemon juice, turmeric, and water in a bowl; season well with salt and pepper. Add the chicken, turning to coat. Marinate at least 1 hour (up to overnight) in the fridge.",
                 "Heat the oven to 425°F, rack in the top third.",
@@ -825,17 +2003,58 @@ const data = {
               ]
             },
             {
-              title: "Chicken Yassa",
-              servings: "4   |   Total: 1 hour, plus marinating",
-              source: "NYT Cooking, recipe from Pierre Thiam, adapted by Alexa Weibel",
-              ingredientGroups: [
-                { label: "Marinade", ingredients: ["4 bone-in, skin-on chicken legs (2 1/2 to 3 pounds)", "4 scallions, trimmed, whites and greens finely chopped", "2 tablespoons fresh thyme, finely chopped (or 2 teaspoons dried)", "1 tablespoon white vinegar or apple cider vinegar", "1/4 cup lime juice", "1 tablespoon peanut, vegetable, or canola oil"] },
-                { label: "Oil and seasoning", ingredients: ["Kosher salt and black pepper", "1 tablespoon oil"] },
-                { label: "Onions", ingredients: ["3 tablespoons oil", "2 pounds yellow onions, halved and sliced 1/2-inch thick", "Kosher salt and black pepper"] },
-                { label: "Aromatics", ingredients: ["1 green bell pepper, halved, seeded, and cut into thin matchsticks", "1 whole Scotch bonnet chile, poked with a fork (or 1 whole habanero, 1 to 2 minced jalapeños, or 1/2 to 1 teaspoon red pepper flakes)", "4 garlic cloves, finely chopped", "4 teaspoons finely chopped fresh ginger", "3 fresh or dried bay leaves", "2 teaspoons Dijon mustard, optional", "1/4 cup lime juice", "Kosher salt and black pepper"] },
-                { label: "To finish", ingredients: ["1 cup water", "Cooked rice or fonio, for serving"] }
+              "title": "Chicken Yassa",
+              "servings": "4   |   Total: 1 hour, plus marinating",
+              "source": "NYT Cooking, recipe from Pierre Thiam, adapted by Alexa Weibel",
+              "ingredientGroups": [
+                {
+                  "label": "Marinade",
+                  "ingredients": [
+                    "4 bone-in, skin-on chicken legs (2 1/2 to 3 pounds)",
+                    "4 scallions, trimmed, whites and greens finely chopped",
+                    "2 tablespoons fresh thyme, finely chopped (or 2 teaspoons dried)",
+                    "1 tablespoon white vinegar or apple cider vinegar",
+                    "1/4 cup lime juice",
+                    "1 tablespoon peanut, vegetable, or canola oil"
+                  ]
+                },
+                {
+                  "label": "Oil and seasoning",
+                  "ingredients": [
+                    "Kosher salt and black pepper",
+                    "1 tablespoon oil"
+                  ]
+                },
+                {
+                  "label": "Onions",
+                  "ingredients": [
+                    "3 tablespoons oil",
+                    "2 pounds yellow onions, halved and sliced 1/2-inch thick",
+                    "Kosher salt and black pepper"
+                  ]
+                },
+                {
+                  "label": "Aromatics",
+                  "ingredients": [
+                    "1 green bell pepper, halved, seeded, and cut into thin matchsticks",
+                    "1 whole Scotch bonnet chile, poked with a fork (or 1 whole habanero, 1 to 2 minced jalapeños, or 1/2 to 1 teaspoon red pepper flakes)",
+                    "4 garlic cloves, finely chopped",
+                    "4 teaspoons finely chopped fresh ginger",
+                    "3 fresh or dried bay leaves",
+                    "2 teaspoons Dijon mustard, optional",
+                    "1/4 cup lime juice",
+                    "Kosher salt and black pepper"
+                  ]
+                },
+                {
+                  "label": "To finish",
+                  "ingredients": [
+                    "1 cup water",
+                    "Cooked rice or fonio, for serving"
+                  ]
+                }
               ],
-              steps: [
+              "steps": [
                 "Combine the chicken legs with the scallions, thyme, vinegar, 1/4 cup lime juice, and 1 tablespoon oil in a large bowl. Marinate at least 1 hour (up to overnight) in the fridge. Remove the chicken; reserve the marinade.",
                 "Heat a grill, grill pan, or cast-iron skillet with 1 tablespoon oil over medium-high (if cooking indoors, pat the chicken dry first). Season with salt and pepper and grill until charred, 3 to 5 minutes per side. Transfer to a plate.",
                 "Meanwhile, heat the remaining 3 tablespoons oil in a large pot over medium-high. Add the onions in an even layer, season with salt and pepper, and cook, stirring occasionally, until softened and starting to brown, 15 to 20 minutes.",
@@ -845,17 +2064,49 @@ const data = {
               ]
             },
             {
-              title: "Grilled Chicken Skewers with Toum (Shish Taouk)",
-              servings: "4",
-              comments: ["Toum uses raw egg white in an emulsified sauce, as in the original recipe."],
-              source: "Bon Appétit, by Kamal Mouzawak",
-              ingredientGroups: [
-                { label: "Toum", ingredients: ["6 garlic cloves", "2 large egg whites", "2 tablespoons fresh lemon juice", "1 1/2 cups vegetable oil", "Salt"] },
-                { label: "Marinade", ingredients: ["3 tablespoons fresh lemon juice", "2 tablespoons tomato paste", "1 tablespoon ground coriander", "1/4 cup toum (reserved from above)", "3 tablespoons vegetable oil, plus more for the grill"] },
-                { label: "Chicken", ingredients: ["1 1/4 pounds skinless, boneless chicken thighs", "Salt"] },
-                { label: "To serve", ingredients: ["4 pitas, warmed", "Pickles"] }
+              "title": "Grilled Chicken Skewers with Toum (Shish Taouk)",
+              "servings": "4",
+              "comments": [
+                "Toum uses raw egg white in an emulsified sauce, as in the original recipe."
               ],
-              steps: [
+              "source": "Bon Appétit, by Kamal Mouzawak",
+              "ingredientGroups": [
+                {
+                  "label": "Toum",
+                  "ingredients": [
+                    "6 garlic cloves",
+                    "2 large egg whites",
+                    "2 tablespoons fresh lemon juice",
+                    "1 1/2 cups vegetable oil",
+                    "Salt"
+                  ]
+                },
+                {
+                  "label": "Marinade",
+                  "ingredients": [
+                    "3 tablespoons fresh lemon juice",
+                    "2 tablespoons tomato paste",
+                    "1 tablespoon ground coriander",
+                    "1/4 cup toum (reserved from above)",
+                    "3 tablespoons vegetable oil, plus more for the grill"
+                  ]
+                },
+                {
+                  "label": "Chicken",
+                  "ingredients": [
+                    "1 1/4 pounds skinless, boneless chicken thighs",
+                    "Salt"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "4 pitas, warmed",
+                    "Pickles"
+                  ]
+                }
+              ],
+              "steps": [
                 "Make the toum: pulse the garlic, egg whites, and lemon juice in a food processor until smooth. With the motor running, very slowly drizzle in the oil until fully emulsified. Season with salt. Reserve 1/4 cup for the marinade; refrigerate the rest.",
                 "Make the marinade: mix the lemon juice, tomato paste, coriander, 1/4 cup of the toum, and the oil in a large bowl. Transfer to a zip-lock bag.",
                 "Slice the chicken thighs in half lengthwise and season generously with salt. Add to the bag with the marinade, seal, and massage to coat. Marinate overnight in the fridge.",
@@ -865,67 +2116,159 @@ const data = {
               ]
             },
             {
-              title: "Spiced Green Meatballs with Pickle Rice and Salty Yogurt",
-              servings: "4   |   Prep: 55 minutes   |   Total: 1 hour 15 minutes",
-              comments: ["Made here with ground chicken; ground turkey, pork, lamb, or beef can be substituted."],
-              source: "The Club, by Molly Baz",
-              ingredientGroups: [
-                { label: "Cucumber Pickle Salsa", ingredients: ["1/2 cup finely chopped mixed tender herbs (cilantro, dill, parsley, and/or mint) — from 1 1/2 cups total chopped; reserve the other 1 cup for the meatballs", "1 English cucumber, diced into 1/2-inch cubes", "8 baby dill pickles, diced into 1/2-inch cubes", "2 scallions, thinly sliced (from 4 total; reserve the other 2 for the meatballs)", "1 garlic clove, grated", "1/2 cup olive oil", "3 tablespoons pickle brine", "3/4 teaspoon Aleppo pepper or red pepper flakes", "1/2 teaspoon kosher salt, plus more to taste"] },
-                { label: "Rice", ingredients: ["2 cups Jasmine or Basmati rice", "2 1/2 cups cold water", "2 teaspoons kosher salt"] },
-                { label: "Meatballs", ingredients: ["1 tablespoon coriander seeds (or 2 teaspoons ground coriander), coarsely chopped", "1 tablespoon fennel seeds, coarsely chopped", "2 large eggs", "1 tablespoon olive oil", "1 cup panko", "3/4 teaspoon ground cinnamon", "2 1/4 teaspoons kosher salt", "3/4 teaspoon freshly ground black pepper", "1 1/2 pounds ground chicken", "1 cup reserved chopped herbs (from the salsa prep above)", "2 reserved chopped scallions (from the salsa prep above)", "Oil, for greasing the baking sheet"] },
-                { label: "To serve", ingredients: ["1 cup whole milk yogurt", "Kosher salt, to season the yogurt", "Olive oil, for drizzling"] }
+              "title": "Spiced Green Meatballs with Pickle Rice and Salty Yogurt",
+              "servings": "4   |   Prep: 55 minutes   |   Total: 1 hour 15 minutes",
+              "comments": [
+                "Made here with ground chicken; ground turkey, pork, lamb, or beef can be substituted."
               ],
-              steps: [
+              "source": "The Club, by Molly Baz",
+              "ingredientGroups": [
+                {
+                  "label": "Cucumber Pickle Salsa",
+                  "ingredients": [
+                    "1/2 cup finely chopped mixed tender herbs (cilantro, dill, parsley, and/or mint) — from 1 1/2 cups total chopped; reserve the other 1 cup for the meatballs",
+                    "1 English cucumber, diced into 1/2-inch cubes",
+                    "8 baby dill pickles, diced into 1/2-inch cubes",
+                    "2 scallions, thinly sliced (from 4 total; reserve the other 2 for the meatballs)",
+                    "1 garlic clove, grated",
+                    "1/2 cup olive oil",
+                    "3 tablespoons pickle brine",
+                    "3/4 teaspoon Aleppo pepper or red pepper flakes",
+                    "1/2 teaspoon kosher salt, plus more to taste"
+                  ]
+                },
+                {
+                  "label": "Rice",
+                  "ingredients": [
+                    "2 cups Jasmine or Basmati rice",
+                    "2 1/2 cups cold water",
+                    "2 teaspoons kosher salt"
+                  ]
+                },
+                {
+                  "label": "Meatballs",
+                  "ingredients": [
+                    "1 tablespoon coriander seeds (or 2 teaspoons ground coriander), coarsely chopped",
+                    "1 tablespoon fennel seeds, coarsely chopped",
+                    "2 large eggs",
+                    "1 tablespoon olive oil",
+                    "1 cup panko",
+                    "3/4 teaspoon ground cinnamon",
+                    "2 1/4 teaspoons kosher salt",
+                    "3/4 teaspoon freshly ground black pepper",
+                    "1 1/2 pounds ground chicken",
+                    "1 cup reserved chopped herbs (from the salsa prep above)",
+                    "2 reserved chopped scallions (from the salsa prep above)",
+                    "Oil, for greasing the baking sheet"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "1 cup whole milk yogurt",
+                    "Kosher salt, to season the yogurt",
+                    "Olive oil, for drizzling"
+                  ]
+                }
+              ],
+              "steps": [
                 "Preheat the oven to 450°F.",
-                { lead: "Cucumber Pickle Salsa:", bullets: [
-                  "Finely chop enough herbs to yield about 1 1/2 cups chopped (lightly packed); measure out 1/2 cup for the salsa and set the other 1 cup aside for the meatballs.",
-                  "Dice the cucumber and pickles into 1/2-inch cubes.",
-                  "Thinly slice the scallions, setting aside 2 for the meatballs.",
-                  "In a medium bowl, combine the 1/2 cup chopped herbs, diced cucumber and pickles, 2 sliced scallions, grated garlic, olive oil, pickle brine, Aleppo pepper, and salt.",
-                  "Stir, taste, and adjust with more salt or pickle brine as needed.",
-                  "Refrigerate until ready to serve."
-                ]},
-                { lead: "Rice:", bullets: [
-                  "Rinse the rice in a fine-mesh strainer under cold running water until the water runs clear; drain well.",
-                  "Combine the rice, cold water, and salt in a medium saucepan with a tight-fitting lid.",
-                  "Bring to a boil over medium-high heat, then cover, reduce the heat to very low, and cook 16 minutes.",
-                  "Turn off the heat and let steam, covered, at least 10 minutes.",
-                  "Fluff with a fork and keep covered until ready to serve."
-                ]},
-                { lead: "Meatballs:", bullets: [
-                  "Coarsely chop the coriander and fennel seeds (or use a mortar and pestle).",
-                  "In a large bowl, lightly beat the eggs with the olive oil.",
-                  "Add the panko, chopped coriander and fennel, cinnamon, salt, and pepper; mix.",
-                  "Add about one-third of the ground chicken along with the reserved 1 cup chopped herbs and 2 reserved scallions; mix gently.",
-                  "Mix in the remaining two-thirds of the meat until just combined.",
-                  "Roll the mixture into 8 equal balls (about a heaping 1/3 cup each) and arrange, evenly spaced, on a lightly greased baking sheet.",
-                  "Transfer the sheet directly to the oven floor and roast, turning once halfway through, until deeply golden on the sides and cooked through, about 20 minutes."
-                ]},
+                {
+                  "lead": "Cucumber Pickle Salsa:",
+                  "bullets": [
+                    "Finely chop enough herbs to yield about 1 1/2 cups chopped (lightly packed); measure out 1/2 cup for the salsa and set the other 1 cup aside for the meatballs.",
+                    "Dice the cucumber and pickles into 1/2-inch cubes.",
+                    "Thinly slice the scallions, setting aside 2 for the meatballs.",
+                    "In a medium bowl, combine the 1/2 cup chopped herbs, diced cucumber and pickles, 2 sliced scallions, grated garlic, olive oil, pickle brine, Aleppo pepper, and salt.",
+                    "Stir, taste, and adjust with more salt or pickle brine as needed.",
+                    "Refrigerate until ready to serve."
+                  ]
+                },
+                {
+                  "lead": "Rice:",
+                  "bullets": [
+                    "Rinse the rice in a fine-mesh strainer under cold running water until the water runs clear; drain well.",
+                    "Combine the rice, cold water, and salt in a medium saucepan with a tight-fitting lid.",
+                    "Bring to a boil over medium-high heat, then cover, reduce the heat to very low, and cook 16 minutes.",
+                    "Turn off the heat and let steam, covered, at least 10 minutes.",
+                    "Fluff with a fork and keep covered until ready to serve."
+                  ]
+                },
+                {
+                  "lead": "Meatballs:",
+                  "bullets": [
+                    "Coarsely chop the coriander and fennel seeds (or use a mortar and pestle).",
+                    "In a large bowl, lightly beat the eggs with the olive oil.",
+                    "Add the panko, chopped coriander and fennel, cinnamon, salt, and pepper; mix.",
+                    "Add about one-third of the ground chicken along with the reserved 1 cup chopped herbs and 2 reserved scallions; mix gently.",
+                    "Mix in the remaining two-thirds of the meat until just combined.",
+                    "Roll the mixture into 8 equal balls (about a heaping 1/3 cup each) and arrange, evenly spaced, on a lightly greased baking sheet.",
+                    "Transfer the sheet directly to the oven floor and roast, turning once halfway through, until deeply golden on the sides and cooked through, about 20 minutes."
+                  ]
+                },
                 "Season the yogurt with salt.",
-                { lead: "Assemble:", bullets: [
-                  "Stir about 2 cups of the salsa into the fluffed rice; season to taste with salt.",
-                  "Divide the rice among bowls.",
-                  "Top with the meatballs, a drizzle of the salty yogurt, and more salsa.",
-                  "Finish with a drizzle of olive oil, if desired."
-                ]}
+                {
+                  "lead": "Assemble:",
+                  "bullets": [
+                    "Stir about 2 cups of the salsa into the fluffed rice; season to taste with salt.",
+                    "Divide the rice among bowls.",
+                    "Top with the meatballs, a drizzle of the salty yogurt, and more salsa.",
+                    "Finish with a drizzle of olive oil, if desired."
+                  ]
+                }
               ]
             },
             {
-              title: "Amu's Chicken Korma",
-              servings: "4   |   Total: 1 1/2 hours",
-              comments: [
+              "title": "Amu's Chicken Korma",
+              "servings": "4   |   Total: 1 1/2 hours",
+              "comments": [
                 "Named by the author for her mother — a Bangladeshi-style korma enriched with yogurt rather than cream or nuts.",
                 "Great turned into a sandwich: pull the meat off the bone, dress it in the sauce, and pile it between mayo-slathered white bread."
               ],
-              source: "NYT Cooking, by Sohla El-Waylly",
-              ingredientGroups: [
-                { label: "Onion", ingredients: ["1 large onion, halved: one half thinly sliced from root to stem, the other half roughly chopped and pureed (add a splash of water if needed)"] },
-                { label: "Marinade", ingredients: ["1 (2-inch) piece ginger, peeled and thinly sliced", "4 garlic cloves, smashed and peeled", "1/3 cup whole-milk plain or Greek-style yogurt, plus more for serving", "2 teaspoons kosher salt, plus more to taste", "1 (4-pound) chicken, cut into 10 pieces, skin removed, or 3 pounds bone-in chicken parts, skin removed"] },
-                { label: "Base and spices", ingredients: ["1/4 cup ghee or neutral oil", "1 tablespoon ground coriander", "1 bay leaf", "1 (3-inch) cinnamon stick, snapped in half", "3 green cardamom pods, cracked"] },
-                { label: "To finish", ingredients: ["3 small green chiles, stemmed"] },
-                { label: "To serve", ingredients: ["More onion, green chile, and yogurt", "White bread and mayonnaise, paratha, or steamed rice", "Cucumber-Tomato Salad (optional)"] }
+              "source": "NYT Cooking, by Sohla El-Waylly",
+              "ingredientGroups": [
+                {
+                  "label": "Onion",
+                  "ingredients": [
+                    "1 large onion, halved: one half thinly sliced from root to stem, the other half roughly chopped and pureed (add a splash of water if needed)"
+                  ]
+                },
+                {
+                  "label": "Marinade",
+                  "ingredients": [
+                    "1 (2-inch) piece ginger, peeled and thinly sliced",
+                    "4 garlic cloves, smashed and peeled",
+                    "1/3 cup whole-milk plain or Greek-style yogurt, plus more for serving",
+                    "2 teaspoons kosher salt, plus more to taste",
+                    "1 (4-pound) chicken, cut into 10 pieces, skin removed, or 3 pounds bone-in chicken parts, skin removed"
+                  ]
+                },
+                {
+                  "label": "Base and spices",
+                  "ingredients": [
+                    "1/4 cup ghee or neutral oil",
+                    "1 tablespoon ground coriander",
+                    "1 bay leaf",
+                    "1 (3-inch) cinnamon stick, snapped in half",
+                    "3 green cardamom pods, cracked"
+                  ]
+                },
+                {
+                  "label": "To finish",
+                  "ingredients": [
+                    "3 small green chiles, stemmed"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "More onion, green chile, and yogurt",
+                    "White bread and mayonnaise, paratha, or steamed rice",
+                    "Cucumber-Tomato Salad (optional)"
+                  ]
+                }
               ],
-              steps: [
+              "steps": [
                 "Prep the onion: Cut the onion in half; trim off the root. Thinly slice one half from root to stem; set aside. Roughly chop the other half, blend until smooth with a little water, and set aside separately.",
                 "Marinade: In the same blender, puree the ginger, garlic, yogurt, and salt. Pat the chicken dry, rub with the marinade, and set aside.",
                 "In a Dutch oven, pot, or karahi over medium-high heat, add the ghee and the reserved sliced onion. Cook, stirring often, until deeply caramelized and crispy, about 20 minutes. Remove about 3/4 of the fried onion; set aside for garnish.",
@@ -936,24 +2279,72 @@ const data = {
               ]
             },
             {
-              title: "Bhatti da Murgh (Indian Grilled Chicken With Whole Spices)",
-              favorite: true,
-              servings: "6 to 8   |   Total: 1 1/2 hours, plus marinating",
-              comments: ["At the restaurant this is cooked in a tandoor; roasting on a preheated baking sheet in a hot oven approximates that same intense, dry heat."],
-              source: "NYT Cooking, recipe from Chintan Pandya and Adda Indian Canteen, adapted by Melissa Clark",
-              ingredientGroups: [
-                { label: "Chicken", ingredients: ["6 whole, bone-in chicken legs (drumsticks with thighs attached, about 4 1/2 pounds)"] },
-                { label: "Spice rub", ingredients: ["2 tablespoons garlic, microplaned (about 6 large cloves)", "2 tablespoons fresh ginger, microplaned", "1 tablespoon white vinegar", "1 1/2 teaspoons ground cayenne, or to taste", "1 1/2 teaspoons garam masala", "2 teaspoons fine sea salt"] },
-                { label: "Yogurt marinade", ingredients: ["1/2 cup plain whole milk yogurt", "1/2 teaspoon freshly ground black pepper", "1/2 teaspoon ground clove", "1/2 teaspoon ground mace", "1/2 teaspoon ground anise or fennel seeds", "1/2 teaspoon ground black cardamom (optional)", "1/2 teaspoon ground green cardamom"] },
-                { label: "Whole spice coating", ingredients: ["2 teaspoons cumin seeds", "2 teaspoons coriander seeds", "1 1/2 teaspoons Aleppo pepper or red pepper flakes"] },
-                { label: "For basting", ingredients: ["3 to 4 tablespoons melted ghee"] },
-                { label: "To serve", ingredients: ["Lime wedges"] }
+              "title": "Bhatti da Murgh (Indian Grilled Chicken With Whole Spices)",
+              "favorite": true,
+              "servings": "6 to 8   |   Total: 1 1/2 hours, plus marinating",
+              "comments": [
+                "At the restaurant this is cooked in a tandoor; roasting on a preheated baking sheet in a hot oven approximates that same intense, dry heat."
               ],
-              steps: [
-                { lead: "Prep the chicken:", bullets: [
-                  "Pop the joint on each leg: grasp the drumstick in one hand and the thigh in the other, and bend the joint back until it pops.",
-                  "Using a small knife, slash the meaty part of each drumstick and thigh two or three times, going all the way to the bone."
-                ]},
+              "source": "NYT Cooking, recipe from Chintan Pandya and Adda Indian Canteen, adapted by Melissa Clark",
+              "ingredientGroups": [
+                {
+                  "label": "Chicken",
+                  "ingredients": [
+                    "6 whole, bone-in chicken legs (drumsticks with thighs attached, about 4 1/2 pounds)"
+                  ]
+                },
+                {
+                  "label": "Spice rub",
+                  "ingredients": [
+                    "2 tablespoons garlic, microplaned (about 6 large cloves)",
+                    "2 tablespoons fresh ginger, microplaned",
+                    "1 tablespoon white vinegar",
+                    "1 1/2 teaspoons ground cayenne, or to taste",
+                    "1 1/2 teaspoons garam masala",
+                    "2 teaspoons fine sea salt"
+                  ]
+                },
+                {
+                  "label": "Yogurt marinade",
+                  "ingredients": [
+                    "1/2 cup plain whole milk yogurt",
+                    "1/2 teaspoon freshly ground black pepper",
+                    "1/2 teaspoon ground clove",
+                    "1/2 teaspoon ground mace",
+                    "1/2 teaspoon ground anise or fennel seeds",
+                    "1/2 teaspoon ground black cardamom (optional)",
+                    "1/2 teaspoon ground green cardamom"
+                  ]
+                },
+                {
+                  "label": "Whole spice coating",
+                  "ingredients": [
+                    "2 teaspoons cumin seeds",
+                    "2 teaspoons coriander seeds",
+                    "1 1/2 teaspoons Aleppo pepper or red pepper flakes"
+                  ]
+                },
+                {
+                  "label": "For basting",
+                  "ingredients": [
+                    "3 to 4 tablespoons melted ghee"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "Lime wedges"
+                  ]
+                }
+              ],
+              "steps": [
+                {
+                  "lead": "Prep the chicken:",
+                  "bullets": [
+                    "Pop the joint on each leg: grasp the drumstick in one hand and the thigh in the other, and bend the joint back until it pops.",
+                    "Using a small knife, slash the meaty part of each drumstick and thigh two or three times, going all the way to the bone."
+                  ]
+                },
                 "Spice rub: In a large bowl, stir together the garlic, ginger, vinegar, cayenne, garam masala, and salt. Set aside half the rub in a small bowl; rub the remainder into the slashed chicken, working it into the cuts.",
                 "Yogurt marinade: Stir the yogurt into the reserved ginger-garlic mixture, then stir in the black pepper, clove, mace, anise or fennel seeds, black cardamom (if using), and green cardamom. Coat the chicken all over with this yogurt marinade.",
                 "Cover and refrigerate at least 6 hours, preferably overnight.",
@@ -964,28 +2355,75 @@ const data = {
               ]
             },
             {
-              title: "Chicken Tikka Masala",
-              servings: "6   |   Prep: 20 minutes, plus 8 hours (up to 48) marinating   |   Cook: 40 minutes",
-              comments: [
+              "title": "Chicken Tikka Masala",
+              "servings": "6   |   Prep: 20 minutes, plus 8 hours (up to 48) marinating   |   Cook: 40 minutes",
+              "comments": [
                 "Cashew cream can stand in for the heavy cream: blend 1/3 cup raw cashews (soaked, if your blender isn't powerful) with 1/3 cup water until very smooth.",
                 "Chicken thighs are more forgiving than breast here, which needs the full 8-hour marinade to avoid drying out."
               ],
-              source: "Swasthi's Recipes, by Swasthi Shreekanth",
-              ingredientGroups: [
-                { label: "Chicken marinade", ingredients: ["1 1/2 pounds (700g) boneless chicken thighs or breasts, cut into 1 to 1 1/2-inch pieces", "1/2 to 1 teaspoon Kashmiri red chili powder (or paprika)", "1 teaspoon garam masala", "1/2 teaspoon cumin powder", "1 teaspoon coriander powder", "1/4 teaspoon turmeric", "1/2 teaspoon salt", "1 tablespoon lemon juice", "1 tablespoon oil (mustard oil if available)", "1 tablespoon ginger garlic paste (or 3/4 tablespoon each grated ginger and garlic)", "1 tablespoon kasuri methi (dried fenugreek leaves)", "1/2 cup Greek yogurt (or hung curd)"] },
-                { label: "Tikka masala sauce", ingredients: ["3 tablespoons oil or ghee", "1 1/2 cups chopped onions", "1 green chile, chopped (optional)", "1 teaspoon salt", "1 tablespoon ginger garlic paste", "1/2 to 1 teaspoon Kashmiri red chili powder", "2 teaspoons garam masala", "1 tablespoon coriander powder", "1 to 1 1/2 teaspoons cumin powder", "1 pound tomatoes, pureed (or 10 oz tomato puree/passata)", "1 cup hot water"] },
-                { label: "To finish", ingredients: ["1 to 2 teaspoons sugar", "1/2 cup heavy cream (or cashew cream — see comments)", "1 tablespoon kasuri methi"] },
-                { label: "Garnish", ingredients: ["3 tablespoons heavy cream", "3 tablespoons chopped cilantro"] }
+              "source": "Swasthi's Recipes, by Swasthi Shreekanth",
+              "ingredientGroups": [
+                {
+                  "label": "Chicken marinade",
+                  "ingredients": [
+                    "1 1/2 pounds (700g) boneless chicken thighs or breasts, cut into 1 to 1 1/2-inch pieces",
+                    "1/2 to 1 teaspoon Kashmiri red chili powder (or paprika)",
+                    "1 teaspoon garam masala",
+                    "1/2 teaspoon cumin powder",
+                    "1 teaspoon coriander powder",
+                    "1/4 teaspoon turmeric",
+                    "1/2 teaspoon salt",
+                    "1 tablespoon lemon juice",
+                    "1 tablespoon oil (mustard oil if available)",
+                    "1 tablespoon ginger garlic paste (or 3/4 tablespoon each grated ginger and garlic)",
+                    "1 tablespoon kasuri methi (dried fenugreek leaves)",
+                    "1/2 cup Greek yogurt (or hung curd)"
+                  ]
+                },
+                {
+                  "label": "Tikka masala sauce",
+                  "ingredients": [
+                    "3 tablespoons oil or ghee",
+                    "1 1/2 cups chopped onions",
+                    "1 green chile, chopped (optional)",
+                    "1 teaspoon salt",
+                    "1 tablespoon ginger garlic paste",
+                    "1/2 to 1 teaspoon Kashmiri red chili powder",
+                    "2 teaspoons garam masala",
+                    "1 tablespoon coriander powder",
+                    "1 to 1 1/2 teaspoons cumin powder",
+                    "1 pound tomatoes, pureed (or 10 oz tomato puree/passata)",
+                    "1 cup hot water"
+                  ]
+                },
+                {
+                  "label": "To finish",
+                  "ingredients": [
+                    "1 to 2 teaspoons sugar",
+                    "1/2 cup heavy cream (or cashew cream — see comments)",
+                    "1 tablespoon kasuri methi"
+                  ]
+                },
+                {
+                  "label": "Garnish",
+                  "ingredients": [
+                    "3 tablespoons heavy cream",
+                    "3 tablespoons chopped cilantro"
+                  ]
+                }
               ],
-              steps: [
+              "steps": [
                 "Chicken marinade: Cut the chicken into 1 to 1 1/2-inch pieces; pat dry. In a large bowl, combine the chicken with the chili powder, garam masala, cumin, coriander, turmeric, salt, lemon juice, oil, ginger garlic paste, kasuri methi, and yogurt. Cover and refrigerate 8 hours (up to 48).",
-                { lead: "Tikka masala sauce:", bullets: [
-                  "Heat the oil or ghee in a pot over medium heat. Add the onions and 1 teaspoon salt; cook, stirring, until deep golden, 15 to 20 minutes.",
-                  "Add the ginger garlic paste and green chile (if using); cook until fragrant, 40 to 60 seconds.",
-                  "Reduce the heat to low. Add the chili powder, coriander, garam masala, and cumin; stir well and quickly to avoid burning, about 30 seconds.",
-                  "Add the tomatoes and cook over medium-high heat, stirring, until thick, 2 to 8 minutes.",
-                  "Add the hot water, bring to a boil, then cover and simmer over low heat until thick and fragrant, 10 to 12 minutes."
-                ]},
+                {
+                  "lead": "Tikka masala sauce:",
+                  "bullets": [
+                    "Heat the oil or ghee in a pot over medium heat. Add the onions and 1 teaspoon salt; cook, stirring, until deep golden, 15 to 20 minutes.",
+                    "Add the ginger garlic paste and green chile (if using); cook until fragrant, 40 to 60 seconds.",
+                    "Reduce the heat to low. Add the chili powder, coriander, garam masala, and cumin; stir well and quickly to avoid burning, about 30 seconds.",
+                    "Add the tomatoes and cook over medium-high heat, stirring, until thick, 2 to 8 minutes.",
+                    "Add the hot water, bring to a boil, then cover and simmer over low heat until thick and fragrant, 10 to 12 minutes."
+                  ]
+                },
                 "Grill the chicken tikka: Thread the marinated chicken onto skewers. Oven: Bake in a preheated 460°F oven for 9 to 10 minutes, then flip and bake 9 to 10 minutes more; broil 2 to 3 minutes if desired. Air fryer: Air fry at 400°F for 6 minutes per side. Skillet: Cook in an oiled skillet over medium-high heat, 3 to 4 minutes per side.",
                 "Add the sugar and the cream (or cashew cream) to the simmered sauce. Stir well and cook a few minutes, until thick, creamy, and fragrant. Taste and adjust.",
                 "Add the grilled chicken tikka and the remaining kasuri methi to the sauce. Stir and cook, covered, until the chicken is warmed through, about 5 minutes.",
@@ -993,17 +2431,53 @@ const data = {
               ]
             },
             {
-              title: "One-Pot Chicken and Rice with Peanut Sauce",
-              servings: "6   |   Prep: 15 minutes   |   Total: about 1 hour",
-              comments: ["The peanut sauce can be made up to 3 days ahead; cover and chill."],
-              source: "Bon Appétit",
-              ingredientGroups: [
-                { label: "Chicken", ingredients: ["6 small skin-on, bone-in chicken thighs (about 3 pounds)", "3/4 teaspoon kosher salt, plus more"] },
-                { label: "Aromatics and rice", ingredients: ["2 large shallots, finely chopped", "8 garlic cloves, finely chopped", "1 (2-inch) piece ginger, peeled and finely chopped", "2 cups Jasmine or Basmati rice (preferably a good-quality basmati), rinsed", "2 whole star anise", "1 tablespoon soy sauce", "3 cups water"] },
-                { label: "Peanut sauce", ingredients: ["1/2 cup creamy peanut butter", "2 tablespoons soy sauce", "2 tablespoons unseasoned rice vinegar", "5 teaspoons Sriracha", "1 (1-inch) piece ginger, peeled and finely chopped", "1 1/2 teaspoons honey", "1/4 cup warm water, plus more as needed"] },
-                { label: "To serve", ingredients: ["1 English hothouse cucumber, halved lengthwise and thinly sliced on a diagonal", "1 cup cilantro leaves with tender stems"] }
+              "title": "One-Pot Chicken and Rice with Peanut Sauce",
+              "servings": "6   |   Prep: 15 minutes   |   Total: about 1 hour",
+              "comments": [
+                "The peanut sauce can be made up to 3 days ahead; cover and chill."
               ],
-              steps: [
+              "source": "Bon Appétit",
+              "ingredientGroups": [
+                {
+                  "label": "Chicken",
+                  "ingredients": [
+                    "6 small skin-on, bone-in chicken thighs (about 3 pounds)",
+                    "3/4 teaspoon kosher salt, plus more"
+                  ]
+                },
+                {
+                  "label": "Aromatics and rice",
+                  "ingredients": [
+                    "2 large shallots, finely chopped",
+                    "8 garlic cloves, finely chopped",
+                    "1 (2-inch) piece ginger, peeled and finely chopped",
+                    "2 cups Jasmine or Basmati rice (preferably a good-quality basmati), rinsed",
+                    "2 whole star anise",
+                    "1 tablespoon soy sauce",
+                    "3 cups water"
+                  ]
+                },
+                {
+                  "label": "Peanut sauce",
+                  "ingredients": [
+                    "1/2 cup creamy peanut butter",
+                    "2 tablespoons soy sauce",
+                    "2 tablespoons unseasoned rice vinegar",
+                    "5 teaspoons Sriracha",
+                    "1 (1-inch) piece ginger, peeled and finely chopped",
+                    "1 1/2 teaspoons honey",
+                    "1/4 cup warm water, plus more as needed"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "1 English hothouse cucumber, halved lengthwise and thinly sliced on a diagonal",
+                    "1 cup cilantro leaves with tender stems"
+                  ]
+                }
+              ],
+              "steps": [
                 "Pat the chicken dry and season all over with the 3/4 teaspoon salt. Arrange, skin side down, in a cold, dry medium Dutch oven. Set over medium-low heat and cook undisturbed until the skin is golden brown and the chicken has rendered much of its fat, about 15 minutes. Transfer to a plate, leaving the fat behind.",
                 "Set the pot over medium-low heat; add the shallots, garlic, and ginger and cook, stirring constantly, until very fragrant but not browned, about 3 minutes. Add the rice and stir to coat. Add the star anise, soy sauce, and 3 cups water; bring to a simmer. Nestle the chicken skin side up on top of the rice. Cover and cook over low heat until the rice has absorbed the liquid and the chicken is cooked through, about 25 minutes.",
                 "Meanwhile, make the peanut sauce: Whisk the peanut butter, soy sauce, vinegar, Sriracha, ginger, honey, and warm water in a bowl until smooth. Thin with more water as needed.",
@@ -1011,19 +2485,61 @@ const data = {
               ]
             },
             {
-              title: "Pad Krapow Gai (Thai Basil Chicken)",
-              servings: "2 to 4   |   Total: 15 minutes",
-              comments: ["Thai seasoning sauce (such as Golden Mountain) is made from fermented soybeans, like soy sauce, and adds sweetness along with savory depth."],
-              source: "NYT Cooking, recipe from Kris Yenbamroong, adapted by Alexa Weibel",
-              ingredientGroups: [
-                { label: "Chicken", ingredients: ["1/4 cup vegetable oil", "1 pound ground chicken (preferably dark meat)"] },
-                { label: "Aromatics", ingredients: ["2 teaspoons minced garlic (from 2 cloves)", "2 teaspoons granulated sugar", "1 teaspoon minced fresh bird's-eye chile or other fresh chile"] },
-                { label: "Vegetables and sauce", ingredients: ["8 ounces green beans, trimmed and cut into 1/2-inch pieces (about 1 1/2 cups)", "3 tablespoons oyster sauce", "2 tablespoons fish sauce", "1 tablespoon Thai seasoning sauce (such as Golden Mountain)"] },
-                { label: "To finish", ingredients: ["1 cup loosely packed basil leaves (preferably Thai basil or holy basil)", "Ground white pepper, to taste", "Water, if needed to loosen the sauce"] },
-                { label: "Fried eggs", ingredients: ["Vegetable oil, for frying", "4 eggs"] },
-                { label: "To serve", ingredients: ["Steamed jasmine rice", "Additional Thai seasoning sauce, to taste"] }
+              "title": "Pad Krapow Gai (Thai Basil Chicken)",
+              "servings": "2 to 4   |   Total: 15 minutes",
+              "comments": [
+                "Thai seasoning sauce (such as Golden Mountain) is made from fermented soybeans, like soy sauce, and adds sweetness along with savory depth."
               ],
-              steps: [
+              "source": "NYT Cooking, recipe from Kris Yenbamroong, adapted by Alexa Weibel",
+              "ingredientGroups": [
+                {
+                  "label": "Chicken",
+                  "ingredients": [
+                    "1/4 cup vegetable oil",
+                    "1 pound ground chicken (preferably dark meat)"
+                  ]
+                },
+                {
+                  "label": "Aromatics",
+                  "ingredients": [
+                    "2 teaspoons minced garlic (from 2 cloves)",
+                    "2 teaspoons granulated sugar",
+                    "1 teaspoon minced fresh bird's-eye chile or other fresh chile"
+                  ]
+                },
+                {
+                  "label": "Vegetables and sauce",
+                  "ingredients": [
+                    "8 ounces green beans, trimmed and cut into 1/2-inch pieces (about 1 1/2 cups)",
+                    "3 tablespoons oyster sauce",
+                    "2 tablespoons fish sauce",
+                    "1 tablespoon Thai seasoning sauce (such as Golden Mountain)"
+                  ]
+                },
+                {
+                  "label": "To finish",
+                  "ingredients": [
+                    "1 cup loosely packed basil leaves (preferably Thai basil or holy basil)",
+                    "Ground white pepper, to taste",
+                    "Water, if needed to loosen the sauce"
+                  ]
+                },
+                {
+                  "label": "Fried eggs",
+                  "ingredients": [
+                    "Vegetable oil, for frying",
+                    "4 eggs"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "Steamed jasmine rice",
+                    "Additional Thai seasoning sauce, to taste"
+                  ]
+                }
+              ],
+              "steps": [
                 "Heat a wok or large nonstick skillet over medium-high heat; swirl in the oil. Once shimmering, add the ground chicken and cook, undisturbed, until the bottom is browned, about 2 minutes. Break apart and stir, cooking until just cooked through, about 1 minute.",
                 "Stir in the garlic, sugar, and chile; cook until fragrant and evenly distributed, about 2 minutes. Add the green beans, oyster sauce, fish sauce, and Thai seasoning sauce; stir-fry until the green beans are tender, about 3 minutes.",
                 "Remove from the heat, add the basil and a dash of white pepper, and toss to combine. If the sauce clings too tightly, add a splash of water.",
@@ -1032,17 +2548,55 @@ const data = {
               ]
             },
             {
-              title: "Sticky Coconut Chicken and Rice",
-              servings: "4   |   Total: 45 minutes",
-              source: "NYT Cooking, by Kay Chun",
-              ingredientGroups: [
-                { label: "Chicken", ingredients: ["1 1/2 pounds boneless, skinless chicken thighs, each cut into 2 equal pieces", "1 tablespoon neutral oil (of the 1/4 cup below), such as safflower or canola", "1 teaspoon kosher salt (of the 2 teaspoons below)", "1/4 teaspoon black pepper (of the 1/2 teaspoon below)"] },
-                { label: "Searing oil", ingredients: ["2 tablespoons neutral oil (of the 1/4 cup total)"] },
-                { label: "Aromatics", ingredients: ["1 tablespoon neutral oil (the remainder of the 1/4 cup total)", "2 tablespoons minced fresh ginger", "1 tablespoon minced garlic"] },
-                { label: "Rice and braise", ingredients: ["1 1/2 cups short-grain white rice, rinsed until the water runs clear", "1 3/4 cups low-sodium chicken broth", "1 (13.5-ounce) can full-fat coconut milk", "1 yellow bell pepper, cored, seeded, and chopped (1/2-inch pieces)", "1/2 cup roasted cashews, coarsely chopped", "3 scallions, thinly sliced", "1 teaspoon kosher salt (the remainder of the 2 teaspoons total)", "1/4 teaspoon black pepper (the remainder of the 1/2 teaspoon total)"] },
-                { label: "To finish", ingredients: ["2 tablespoons coarsely chopped cilantro", "Hot sauce, for serving"] }
+              "title": "Sticky Coconut Chicken and Rice",
+              "servings": "4   |   Total: 45 minutes",
+              "source": "NYT Cooking, by Kay Chun",
+              "ingredientGroups": [
+                {
+                  "label": "Chicken",
+                  "ingredients": [
+                    "1 1/2 pounds boneless, skinless chicken thighs, each cut into 2 equal pieces",
+                    "1 tablespoon neutral oil (of the 1/4 cup below), such as safflower or canola",
+                    "1 teaspoon kosher salt (of the 2 teaspoons below)",
+                    "1/4 teaspoon black pepper (of the 1/2 teaspoon below)"
+                  ]
+                },
+                {
+                  "label": "Searing oil",
+                  "ingredients": [
+                    "2 tablespoons neutral oil (of the 1/4 cup total)"
+                  ]
+                },
+                {
+                  "label": "Aromatics",
+                  "ingredients": [
+                    "1 tablespoon neutral oil (the remainder of the 1/4 cup total)",
+                    "2 tablespoons minced fresh ginger",
+                    "1 tablespoon minced garlic"
+                  ]
+                },
+                {
+                  "label": "Rice and braise",
+                  "ingredients": [
+                    "1 1/2 cups short-grain white rice, rinsed until the water runs clear",
+                    "1 3/4 cups low-sodium chicken broth",
+                    "1 (13.5-ounce) can full-fat coconut milk",
+                    "1 yellow bell pepper, cored, seeded, and chopped (1/2-inch pieces)",
+                    "1/2 cup roasted cashews, coarsely chopped",
+                    "3 scallions, thinly sliced",
+                    "1 teaspoon kosher salt (the remainder of the 2 teaspoons total)",
+                    "1/4 teaspoon black pepper (the remainder of the 1/2 teaspoon total)"
+                  ]
+                },
+                {
+                  "label": "To finish",
+                  "ingredients": [
+                    "2 tablespoons coarsely chopped cilantro",
+                    "Hot sauce, for serving"
+                  ]
+                }
               ],
-              steps: [
+              "steps": [
                 "Heat the oven to 375°F. Rub the chicken with 1 tablespoon of the oil and season with 1 teaspoon salt and 1/4 teaspoon pepper.",
                 "In a large Dutch oven, heat 2 tablespoons of the oil over medium heat. Working in two batches, brown the chicken, turning once, about 2 minutes per side. Transfer to a plate.",
                 "Add the remaining 1 tablespoon oil, the ginger, and the garlic to the empty pot; stir until fragrant, 30 seconds. Add the rice, broth, coconut milk, bell pepper, cashews, scallions, remaining salt and pepper; stir to combine. Nestle the chicken in the rice.",
@@ -1050,46 +2604,136 @@ const data = {
               ]
             },
             {
-              title: "Thai Chicken Meatballs in Peanut Sauce",
-              servings: "4   |   Prep: 10 minutes   |   Cook: 30 minutes   |   Total: 40 minutes",
-              comments: [
+              "title": "Thai Chicken Meatballs in Peanut Sauce",
+              "servings": "4   |   Prep: 10 minutes   |   Cook: 30 minutes   |   Total: 40 minutes",
+              "comments": [
                 "Ground turkey, beef, or pork can be substituted for the chicken.",
                 "Bok choy can be swapped for peas, edamame, bell peppers, or spinach."
               ],
-              source: "Serving Dumplings, by Anna Chwistek",
-              ingredientGroups: [
-                { label: "Meatballs", ingredients: ["1.1 pounds ground chicken", "1 teaspoon grated ginger", "1 teaspoon grated garlic", "1 teaspoon low-sodium soy sauce", "1/2 teaspoon sambal oelek or chili paste", "1 egg yolk", "2 tablespoons corn starch", "1 tablespoon chopped cilantro"] },
-                { label: "Sauce", ingredients: ["2 tablespoons vegetable oil", "1 tablespoon unsalted butter", "5 garlic cloves, grated", "2 tablespoons grated ginger", "1 bok choy, chopped", "1 tablespoon Thai red curry paste", "1 teaspoon sambal oelek or chili paste", "1/2 cup chicken broth", "1 can (14 oz) unsweetened full-fat coconut milk", "1/2 cup peanut butter", "1 teaspoon honey", "2 tablespoons low-sodium soy sauce", "1 tablespoon fish sauce", "Juice of 1/2 lime"] },
-                { label: "Coconut rice", ingredients: ["1 cup unsweetened coconut milk", "1 cup chicken broth", "1 cup Jasmine rice"] },
-                { label: "Toppings", ingredients: ["Toasted peanuts", "Fried onions", "Chives", "Cilantro", "Chili pepper"] }
+              "source": "Serving Dumplings, by Anna Chwistek",
+              "ingredientGroups": [
+                {
+                  "label": "Meatballs",
+                  "ingredients": [
+                    "1.1 pounds ground chicken",
+                    "1 teaspoon grated ginger",
+                    "1 teaspoon grated garlic",
+                    "1 teaspoon low-sodium soy sauce",
+                    "1/2 teaspoon sambal oelek or chili paste",
+                    "1 egg yolk",
+                    "2 tablespoons corn starch",
+                    "1 tablespoon chopped cilantro"
+                  ]
+                },
+                {
+                  "label": "Sauce",
+                  "ingredients": [
+                    "2 tablespoons vegetable oil",
+                    "1 tablespoon unsalted butter",
+                    "5 garlic cloves, grated",
+                    "2 tablespoons grated ginger",
+                    "1 bok choy, chopped",
+                    "1 tablespoon Thai red curry paste",
+                    "1 teaspoon sambal oelek or chili paste",
+                    "1/2 cup chicken broth",
+                    "1 can (14 oz) unsweetened full-fat coconut milk",
+                    "1/2 cup peanut butter",
+                    "1 teaspoon honey",
+                    "2 tablespoons low-sodium soy sauce",
+                    "1 tablespoon fish sauce",
+                    "Juice of 1/2 lime"
+                  ]
+                },
+                {
+                  "label": "Coconut rice",
+                  "ingredients": [
+                    "1 cup unsweetened coconut milk",
+                    "1 cup chicken broth",
+                    "1 cup Jasmine rice"
+                  ]
+                },
+                {
+                  "label": "Toppings",
+                  "ingredients": [
+                    "Toasted peanuts",
+                    "Fried onions",
+                    "Chives",
+                    "Cilantro",
+                    "Chili pepper"
+                  ]
+                }
               ],
-              steps: [
+              "steps": [
                 "Prep: Chop the cilantro and bok choy; grate the garlic and ginger for both the meatballs and the sauce.",
                 "Meatballs: Combine the ground chicken with the ginger, garlic, soy sauce, sambal oelek, egg yolk, corn starch, and cilantro. Roll into 1-inch meatballs.",
                 "Heat the vegetable oil and butter in a nonstick skillet over medium heat. Add the meatballs and brown all over, about 3 minutes; remove to a plate.",
-                { lead: "Sauce:", bullets: [
-                  "Add the garlic and ginger to the skillet; cook 1 minute. Add the bok choy; cook 1 minute more.",
-                  "Stir in the red curry paste and sambal oelek.",
-                  "Deglaze with the chicken broth and simmer 2 minutes, scraping up the browned bits from the bottom of the pan.",
-                  "Add the coconut milk and stir in the peanut butter. Add the honey, lime juice, soy sauce, and fish sauce. Return the meatballs to the sauce and simmer until cooked through, about 10 minutes."
-                ]},
+                {
+                  "lead": "Sauce:",
+                  "bullets": [
+                    "Add the garlic and ginger to the skillet; cook 1 minute. Add the bok choy; cook 1 minute more.",
+                    "Stir in the red curry paste and sambal oelek.",
+                    "Deglaze with the chicken broth and simmer 2 minutes, scraping up the browned bits from the bottom of the pan.",
+                    "Add the coconut milk and stir in the peanut butter. Add the honey, lime juice, soy sauce, and fish sauce. Return the meatballs to the sauce and simmer until cooked through, about 10 minutes."
+                  ]
+                },
                 "Coconut rice: Meanwhile, bring the coconut milk and chicken broth to a simmer in a saucepan. Add the rice, cover, and cook over low heat until absorbed, about 18 minutes.",
                 "Serve the meatballs and sauce over the rice. Top with toasted peanuts, fried onions, chives, cilantro, and chili pepper as desired."
               ]
             },
             {
-              title: "Thai-Inspired Chicken Meatball Soup",
-              servings: "4 to 6   |   Total: 30 minutes",
-              source: "NYT Cooking, by Ali Slagle",
-              ingredientGroups: [
-                { label: "Aromatics", ingredients: ["1 (4-inch) piece fresh ginger, peeled", "6 garlic cloves, peeled", "1 jalapeño"] },
-                { label: "Meatball mix", ingredients: ["2 pounds ground chicken", "1 large bunch cilantro, leaves and stems finely chopped (reserve a few whole leaves for serving)", "2 tablespoons fish sauce", "1 teaspoon kosher salt"] },
-                { label: "For browning", ingredients: ["2 tablespoons vegetable or coconut oil, plus more as needed"] },
-                { label: "Broth", ingredients: ["2 cups chicken broth", "1 (14-ounce) can full-fat coconut milk", "1/2 teaspoon granulated sugar", "1 tablespoon fish sauce (remaining from the 3 tablespoons above)"] },
-                { label: "To finish", ingredients: ["5 ounces baby spinach", "1 tablespoon lime juice"] },
-                { label: "To serve", ingredients: ["Steamed white or brown rice", "Reserved cilantro leaves", "Lime wedges"] }
+              "title": "Thai-Inspired Chicken Meatball Soup",
+              "servings": "4 to 6   |   Total: 30 minutes",
+              "source": "NYT Cooking, by Ali Slagle",
+              "ingredientGroups": [
+                {
+                  "label": "Aromatics",
+                  "ingredients": [
+                    "1 (4-inch) piece fresh ginger, peeled",
+                    "6 garlic cloves, peeled",
+                    "1 jalapeño"
+                  ]
+                },
+                {
+                  "label": "Meatball mix",
+                  "ingredients": [
+                    "2 pounds ground chicken",
+                    "1 large bunch cilantro, leaves and stems finely chopped (reserve a few whole leaves for serving)",
+                    "2 tablespoons fish sauce",
+                    "1 teaspoon kosher salt"
+                  ]
+                },
+                {
+                  "label": "For browning",
+                  "ingredients": [
+                    "2 tablespoons vegetable or coconut oil, plus more as needed"
+                  ]
+                },
+                {
+                  "label": "Broth",
+                  "ingredients": [
+                    "2 cups chicken broth",
+                    "1 (14-ounce) can full-fat coconut milk",
+                    "1/2 teaspoon granulated sugar",
+                    "1 tablespoon fish sauce (remaining from the 3 tablespoons above)"
+                  ]
+                },
+                {
+                  "label": "To finish",
+                  "ingredients": [
+                    "5 ounces baby spinach",
+                    "1 tablespoon lime juice"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "Steamed white or brown rice",
+                    "Reserved cilantro leaves",
+                    "Lime wedges"
+                  ]
+                }
               ],
-              steps: [
+              "steps": [
                 "Aromatics: Grate (or finely chop) the ginger, garlic, and jalapeño together. Divide in half; set one half aside for the broth.",
                 "Meatball mix: In a large bowl, combine the ground chicken, chopped cilantro, 2 tablespoons fish sauce, 1 teaspoon salt, and half the aromatics. Mix until just combined. Form into 2-inch meatballs (about 2 ounces each).",
                 "Heat the oil in a large Dutch oven or pot over medium-high heat. Brown the meatballs in batches until golden on two sides, about 4 minutes total. Transfer to a plate.",
@@ -1100,45 +2744,110 @@ const data = {
               ]
             },
             {
-              title: "Vietnamese Caramel Ginger Chicken",
-              servings: "5   |   Prep: 7 minutes   |   Cook: 15 minutes",
-              comments: ["Chicken breast can be used instead of thigh, but is more prone to drying out — cook it in the caramel, remove once opaque, and return at the end to warm."],
-              source: "RecipeTin Eats, by Nagi Maehashi",
-              ingredientGroups: [
-                { label: "Chicken", ingredients: ["1 kg / 2 lb skinless chicken thigh fillets, cut into large 2-inch pieces", "3 tablespoons fish sauce", "1 bird's eye or Thai chili, deseeded and finely minced (optional)"] },
-                { label: "Caramel", ingredients: ["3 tablespoons vegetable oil", "1/4 cup brown sugar, tightly packed"] },
-                { label: "Aromatics", ingredients: ["1/3 cup finely julienned ginger", "2 shallots, halved and finely sliced (or substitute half a red onion)"] },
-                { label: "Simmering liquid", ingredients: ["1/2 cup boiling water"] },
-                { label: "To serve", ingredients: ["Fresh cilantro or sliced green onions", "Red chili, finely sliced (optional)", "Jasmine or Basmati rice, for serving"] }
+              "title": "Vietnamese Caramel Ginger Chicken",
+              "servings": "5   |   Prep: 7 minutes   |   Cook: 15 minutes",
+              "comments": [
+                "Chicken breast can be used instead of thigh, but is more prone to drying out — cook it in the caramel, remove once opaque, and return at the end to warm."
               ],
-              steps: [
+              "source": "RecipeTin Eats, by Nagi Maehashi",
+              "ingredientGroups": [
+                {
+                  "label": "Chicken",
+                  "ingredients": [
+                    "1 kg / 2 lb skinless chicken thigh fillets, cut into large 2-inch pieces",
+                    "3 tablespoons fish sauce",
+                    "1 bird's eye or Thai chili, deseeded and finely minced (optional)"
+                  ]
+                },
+                {
+                  "label": "Caramel",
+                  "ingredients": [
+                    "3 tablespoons vegetable oil",
+                    "1/4 cup brown sugar, tightly packed"
+                  ]
+                },
+                {
+                  "label": "Aromatics",
+                  "ingredients": [
+                    "1/3 cup finely julienned ginger",
+                    "2 shallots, halved and finely sliced (or substitute half a red onion)"
+                  ]
+                },
+                {
+                  "label": "Simmering liquid",
+                  "ingredients": [
+                    "1/2 cup boiling water"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "Fresh cilantro or sliced green onions",
+                    "Red chili, finely sliced (optional)",
+                    "Jasmine or Basmati rice, for serving"
+                  ]
+                }
+              ],
+              "steps": [
                 "Toss the chicken with the fish sauce and chili; set aside while you prepare the rest.",
-                { lead: "Caramel:", bullets: [
-                  "Use a large (12-inch/30cm or bigger) non-stick pan so the sauce reduces quickly — a smaller pan will take much longer to reduce.",
-                  "Combine the oil and brown sugar in the cold pan, then set over medium-high heat.",
-                  "As soon as the sugar melts, remove the pan from the heat.",
-                  "Carefully add the chicken (it will sizzle — don't drop it in), along with the ginger and shallots; toss briefly to coat.",
-                  "Return the pan to the stove and stir just until the chicken turns from pink to white all over — not browned, and not yet cooked through."
-                ]},
-                { lead: "Simmer:", bullets: [
-                  "Add the boiling water, stir, and bring to a simmer.",
-                  "Cook rapidly over medium-high to high heat, 10-12 minutes, until the liquid reduces to a glaze that coats the chicken.",
-                  "Stir occasionally while the liquid is still watery, then more frequently once it thickens, to prevent scorching."
-                ]},
+                {
+                  "lead": "Caramel:",
+                  "bullets": [
+                    "Use a large (12-inch/30cm or bigger) non-stick pan so the sauce reduces quickly — a smaller pan will take much longer to reduce.",
+                    "Combine the oil and brown sugar in the cold pan, then set over medium-high heat.",
+                    "As soon as the sugar melts, remove the pan from the heat.",
+                    "Carefully add the chicken (it will sizzle — don't drop it in), along with the ginger and shallots; toss briefly to coat.",
+                    "Return the pan to the stove and stir just until the chicken turns from pink to white all over — not browned, and not yet cooked through."
+                  ]
+                },
+                {
+                  "lead": "Simmer:",
+                  "bullets": [
+                    "Add the boiling water, stir, and bring to a simmer.",
+                    "Cook rapidly over medium-high to high heat, 10-12 minutes, until the liquid reduces to a glaze that coats the chicken.",
+                    "Stir occasionally while the liquid is still watery, then more frequently once it thickens, to prevent scorching."
+                  ]
+                },
                 "Serve over rice, garnished with the cilantro (or green onion) and sliced red chili, if using."
               ]
             },
             {
-              title: "Easiest Chicken Adobo",
-              servings: "4",
-              source: "Bon Appétit, by Claire Saffitz",
-              ingredientGroups: [
-                { label: "Aromatics prep", ingredients: ["1 head of garlic", "2 green chiles (such as serrano or jalapeño), divided"] },
-                { label: "Chicken", ingredients: ["4 bone-in, skin-on chicken thighs and 4 drumsticks (or 4 whole chicken legs)", "1 tablespoon vegetable oil"] },
-                { label: "Braising liquid", ingredients: ["3/4 cup distilled white vinegar", "3/4 cup soy sauce (not low-sodium)", "1 tablespoon light or dark brown sugar", "5 dried bay leaves", "Freshly ground black pepper"] },
-                { label: "To serve", ingredients: ["1 cup uncooked white rice, short grain"] }
+              "title": "Easiest Chicken Adobo",
+              "servings": "4",
+              "source": "Bon Appétit, by Claire Saffitz",
+              "ingredientGroups": [
+                {
+                  "label": "Aromatics prep",
+                  "ingredients": [
+                    "1 head of garlic",
+                    "2 green chiles (such as serrano or jalapeño), divided"
+                  ]
+                },
+                {
+                  "label": "Chicken",
+                  "ingredients": [
+                    "4 bone-in, skin-on chicken thighs and 4 drumsticks (or 4 whole chicken legs)",
+                    "1 tablespoon vegetable oil"
+                  ]
+                },
+                {
+                  "label": "Braising liquid",
+                  "ingredients": [
+                    "3/4 cup distilled white vinegar",
+                    "3/4 cup soy sauce (not low-sodium)",
+                    "1 tablespoon light or dark brown sugar",
+                    "5 dried bay leaves",
+                    "Freshly ground black pepper"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "1 cup uncooked white rice, short grain"
+                  ]
+                }
               ],
-              steps: [
+              "steps": [
                 "Cut the garlic head in half through the \"equator\" (it's fine if some cloves detach). Thinly slice one green chile, removing the seeds; set aside for serving. Reserve the other chile whole.",
                 "If using whole chicken legs, split into thighs and drumsticks.",
                 "Heat the oil in a large Dutch oven over medium. Add the chicken skin-side down; cook, lifting pieces occasionally to let fat render, until skin is golden, 8 to 10 minutes. Transfer to a plate.",
@@ -1150,17 +2859,48 @@ const data = {
               ]
             },
             {
-              title: "Coconut-Gochujang Glazed Chicken With Broccoli",
-              servings: "4   |   Total: 15 minutes",
-              source: "NYT Cooking, by Kay Chun",
-              ingredientGroups: [
-                { label: "Chicken", ingredients: ["2 tablespoons canola oil", "1 1/2 pounds boneless, skinless chicken breasts, cut into 1 1/2-inch pieces", "Kosher salt and black pepper"] },
-                { label: "Aromatics", ingredients: ["1 (2-inch) piece fresh ginger, cut into matchsticks (about 1/3 cup)"] },
-                { label: "Sauce", ingredients: ["1/2 cup unsweetened coconut milk", "3 tablespoons turbinado sugar (or 2 tablespoons light brown sugar)", "2 tablespoons gochujang paste", "2 tablespoons low-sodium soy sauce"] },
-                { label: "Broccoli", ingredients: ["1 pound broccoli florets, cut into 2-inch pieces"] },
-                { label: "To serve", ingredients: ["Cooked rice", "Sliced scallions or chopped cilantro"] }
+              "title": "Coconut-Gochujang Glazed Chicken With Broccoli",
+              "servings": "4   |   Total: 15 minutes",
+              "source": "NYT Cooking, by Kay Chun",
+              "ingredientGroups": [
+                {
+                  "label": "Chicken",
+                  "ingredients": [
+                    "2 tablespoons canola oil",
+                    "1 1/2 pounds boneless, skinless chicken breasts, cut into 1 1/2-inch pieces",
+                    "Kosher salt and black pepper"
+                  ]
+                },
+                {
+                  "label": "Aromatics",
+                  "ingredients": [
+                    "1 (2-inch) piece fresh ginger, cut into matchsticks (about 1/3 cup)"
+                  ]
+                },
+                {
+                  "label": "Sauce",
+                  "ingredients": [
+                    "1/2 cup unsweetened coconut milk",
+                    "3 tablespoons turbinado sugar (or 2 tablespoons light brown sugar)",
+                    "2 tablespoons gochujang paste",
+                    "2 tablespoons low-sodium soy sauce"
+                  ]
+                },
+                {
+                  "label": "Broccoli",
+                  "ingredients": [
+                    "1 pound broccoli florets, cut into 2-inch pieces"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "Cooked rice",
+                    "Sliced scallions or chopped cilantro"
+                  ]
+                }
               ],
-              steps: [
+              "steps": [
                 "Heat the oil in a large nonstick skillet over medium-high. Season the chicken with salt and pepper; cook, stirring occasionally, until golden, about 5 minutes.",
                 "Add the ginger; cook, stirring, until softened, about 2 minutes.",
                 "Add the coconut milk, sugar, gochujang, and soy sauce; bring to a simmer, stirring until the gochujang dissolves. Simmer until the sauce thickens and coats the chicken, about 3 minutes.",
@@ -1169,43 +2909,92 @@ const data = {
               ]
             },
             {
-              title: "Peachy Peanut & Kimchi Chicken",
-              servings: "4   |   Prep: 50 minutes   |   Total: 2 hours (including marinating)",
-              comments: ["Chicken needs at least 1 hour to marinate (up to 2 days ahead is fine) — factor that into timing beyond the active cook time."],
-              source: "The Club, by Molly Baz",
-              ingredientGroups: [
-                { label: "Marinade", ingredients: ["2 peaches, roughly chopped", "1 1/2 cups kimchi, plus a good amount of its brine", "Heaping 1/3 cup smooth peanut butter", "1 tablespoon honey", "2 tablespoons olive oil", "1 tablespoon plus 1 teaspoon kosher salt"] },
-                { label: "Chicken", ingredients: ["8 large boneless, skinless chicken thighs (about 2 1/2 to 3 pounds)", "2 teaspoons kosher salt"] },
-                { label: "Peach dressing", ingredients: ["2 peaches, halved and pitted", "1/2 teaspoon finely grated ginger", "3 tablespoons olive oil", "2 tablespoons white wine vinegar, plus more to taste", "Kosher salt and freshly ground black pepper, to taste"] },
-                { label: "Salad", ingredients: ["3 stalks celery, thinly sliced", "1/4 cup kimchi", "Large handful celery leaves", "Kosher salt, freshly ground black pepper, and more vinegar, to taste"] },
-                { label: "Oil for the grill", ingredients: ["Vegetable oil, for greasing the grates"] },
-                { label: "To serve", ingredients: ["Large handful roasted salted peanuts, chopped", "Flaky salt"] }
+              "title": "Peachy Peanut & Kimchi Chicken",
+              "servings": "4   |   Prep: 50 minutes   |   Total: 2 hours (including marinating)",
+              "comments": [
+                "Chicken needs at least 1 hour to marinate (up to 2 days ahead is fine) — factor that into timing beyond the active cook time."
               ],
-              steps: [
+              "source": "The Club, by Molly Baz",
+              "ingredientGroups": [
+                {
+                  "label": "Marinade",
+                  "ingredients": [
+                    "2 peaches, roughly chopped",
+                    "1 1/2 cups kimchi, plus a good amount of its brine",
+                    "Heaping 1/3 cup smooth peanut butter",
+                    "1 tablespoon honey",
+                    "2 tablespoons olive oil",
+                    "1 tablespoon plus 1 teaspoon kosher salt"
+                  ]
+                },
+                {
+                  "label": "Chicken",
+                  "ingredients": [
+                    "8 large boneless, skinless chicken thighs (about 2 1/2 to 3 pounds)",
+                    "2 teaspoons kosher salt"
+                  ]
+                },
+                {
+                  "label": "Peach dressing",
+                  "ingredients": [
+                    "2 peaches, halved and pitted",
+                    "1/2 teaspoon finely grated ginger",
+                    "3 tablespoons olive oil",
+                    "2 tablespoons white wine vinegar, plus more to taste",
+                    "Kosher salt and freshly ground black pepper, to taste"
+                  ]
+                },
+                {
+                  "label": "Salad",
+                  "ingredients": [
+                    "3 stalks celery, thinly sliced",
+                    "1/4 cup kimchi",
+                    "Large handful celery leaves",
+                    "Kosher salt, freshly ground black pepper, and more vinegar, to taste"
+                  ]
+                },
+                {
+                  "label": "Oil for the grill",
+                  "ingredients": [
+                    "Vegetable oil, for greasing the grates"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "Large handful roasted salted peanuts, chopped",
+                    "Flaky salt"
+                  ]
+                }
+              ],
+              "steps": [
                 "Marinade: Roughly chop 2 of the peaches and add to a blender with the kimchi (and a good amount of its brine), peanut butter, honey, olive oil, and salt. Blend until smooth.",
                 "Chicken: Transfer the remaining marinade to a bowl and stir in the 2 teaspoons salt. Add the chicken thighs, turn to coat, and marinate at least 1 hour (up to 2 days) in the fridge.",
                 "Peach dressing: Halve and pit the remaining 2 peaches. Squeeze one half over a large salad bowl to release its juice, then mix in the ginger, olive oil, and vinegar. Season with salt and pepper.",
                 "Salad: Thinly slice the celery and the remaining peach halves (1 1/2 peaches) and add to the bowl along with the 1/4 cup kimchi and celery leaves. Toss with the dressing; season to taste.",
-                { lead: "Grill:", bullets: [
-                  "Preheat a grill to medium-high (500°F).",
-                  "Clean the grates, then very generously grease them with vegetable oil.",
-                  "Pull the chicken from the marinade (don't wipe it off), reserving any marinade left in the bowl for brushing. Grill, covered, brushing with reserved marinade, until cooked through, about 5 minutes per side."
-                ]},
+                {
+                  "lead": "Grill:",
+                  "bullets": [
+                    "Preheat a grill to medium-high (500°F).",
+                    "Clean the grates, then very generously grease them with vegetable oil.",
+                    "Pull the chicken from the marinade (don't wipe it off), reserving any marinade left in the bowl for brushing. Grill, covered, brushing with reserved marinade, until cooked through, about 5 minutes per side."
+                  ]
+                },
                 "Serve: Chop the roasted peanuts and stir into the peach-celery salad. Serve alongside the chicken with a sprinkle of flaky salt."
               ]
             },
             {
-              title: "Chile Crisp Chicken n' Peanuts Scoop",
-              servings: "Serves 6   |   Active: 15–20 minutes",
-              comments: [
+              "title": "Chile Crisp Chicken n' Peanuts Scoop",
+              "servings": "Serves 6   |   Active: 15–20 minutes",
+              "comments": [
                 "A not-so-classic chicken salad made spicy with chile crisp and nutty with peanut butter — no cooking required. Be gentle when mixing; the acid in the dressing can break down the chicken if you overwork it. A few careful folds are all it takes.",
                 "Excellent served over pan-fried udon noodles."
               ],
-              source: "Molly Baz",
-              ingredientGroups: [
+              "source": "Molly Baz",
+              "ingredientGroups": [
                 {
-                  label: "Prep",
-                  ingredients: [
+                  "label": "Prep",
+                  "ingredients": [
                     "1 pound rotisserie chicken, pulled into large but bite-sized pieces (about 2 heaping cups)",
                     "2 small Persian cucumbers (about 5–6 oz), finely chopped",
                     "1½ tsp fresh ginger, finely grated (no need to peel)",
@@ -1213,8 +3002,8 @@ const data = {
                   ]
                 },
                 {
-                  label: "Peanut dressing",
-                  ingredients: [
+                  "label": "Peanut dressing",
+                  "ingredients": [
                     "Heaping ⅓ cup crunchy peanut butter",
                     "2 tablespoons rice vinegar, plus more to taste",
                     "1 teaspoon kosher salt, plus more to taste",
@@ -1224,25 +3013,25 @@ const data = {
                   ]
                 },
                 {
-                  label: "To serve",
-                  ingredients: [
+                  "label": "To serve",
+                  "ingredients": [
                     "Fresh mint",
                     "Toasted sesame seeds",
                     "Additional grated ginger and chile crisp, if desired"
                   ]
                 }
               ],
-              steps: [
+              "steps": [
                 {
-                  lead: "Prep the components:",
-                  bullets: [
+                  "lead": "Prep the components:",
+                  "bullets": [
                     "Pull 1 pound rotisserie chicken into large but bite-sized pieces (about 2 heaping cups).",
                     "Finely chop the cucumbers. Finely grate the ginger (no need to peel). Thinly slice the scallion whites and greens."
                   ]
                 },
                 {
-                  lead: "Make the peanut dressing:",
-                  bullets: [
+                  "lead": "Make the peanut dressing:",
+                  "bullets": [
                     "In a large bowl, whisk together the peanut butter, 2 tablespoons rice vinegar, grated ginger, and 1 teaspoon salt.",
                     "Add chile crisp a tablespoon at a time, stirring, until the desired spice level is reached (you'll likely use 2–4 tablespoons). Add honey to taste, if desired.",
                     "Stir in water a teaspoon at a time until the dressing is thick but pourable.",
@@ -1253,16 +3042,47 @@ const data = {
               ]
             },
             {
-              title: "Kung Pao Chicken and Broccoli",
-              servings: "2   |   Prep: 30 minutes   |   Cook: 30 minutes   |   Total: 1 hour",
-              source: "https://cambodiarecipe.com/kung-pao-chicken-and-broccoli/",
-              ingredientGroups: [
-                { label: "Broccoli", ingredients: ["1 teaspoon canola oil", "4 cups broccoli florets", "2 teaspoons ground fresh ginger", "2 tablespoons water"] },
-                { label: "Chicken", ingredients: ["2 teaspoons canola oil", "1 teaspoon ground fresh ginger", "1/2 teaspoon crushed red pepper", "1 pound boneless, skinless chicken breasts, cut into 1/4-inch strips"] },
-                { label: "Sauce", ingredients: ["1/2 cup low-sodium chicken broth", "2 tablespoons hoisin sauce", "2 tablespoons rice wine vinegar", "2 tablespoons low-sodium soy sauce", "1 teaspoon cornstarch", "4 cloves garlic, minced"] },
-                { label: "To finish", ingredients: ["2 tablespoons coarsely chopped salted peanuts"] }
+              "title": "Kung Pao Chicken and Broccoli",
+              "servings": "2   |   Prep: 30 minutes   |   Cook: 30 minutes   |   Total: 1 hour",
+              "source": "https://cambodiarecipe.com/kung-pao-chicken-and-broccoli/",
+              "ingredientGroups": [
+                {
+                  "label": "Broccoli",
+                  "ingredients": [
+                    "1 teaspoon canola oil",
+                    "4 cups broccoli florets",
+                    "2 teaspoons ground fresh ginger",
+                    "2 tablespoons water"
+                  ]
+                },
+                {
+                  "label": "Chicken",
+                  "ingredients": [
+                    "2 teaspoons canola oil",
+                    "1 teaspoon ground fresh ginger",
+                    "1/2 teaspoon crushed red pepper",
+                    "1 pound boneless, skinless chicken breasts, cut into 1/4-inch strips"
+                  ]
+                },
+                {
+                  "label": "Sauce",
+                  "ingredients": [
+                    "1/2 cup low-sodium chicken broth",
+                    "2 tablespoons hoisin sauce",
+                    "2 tablespoons rice wine vinegar",
+                    "2 tablespoons low-sodium soy sauce",
+                    "1 teaspoon cornstarch",
+                    "4 cloves garlic, minced"
+                  ]
+                },
+                {
+                  "label": "To finish",
+                  "ingredients": [
+                    "2 tablespoons coarsely chopped salted peanuts"
+                  ]
+                }
               ],
-              steps: [
+              "steps": [
                 "Broccoli: Heat 1 teaspoon of the oil in a large nonstick skillet over medium-high heat. Add the broccoli and 2 teaspoons ginger; stir-fry 1 minute. Add the water and cook until the broccoli is tender-crisp, about 2 minutes. Transfer to a bowl.",
                 "Chicken: Heat the remaining 2 teaspoons oil in the same pan. Add the remaining 1 teaspoon ginger, the crushed red pepper, and the chicken; cook, stirring, until the chicken is cooked through, about 4 minutes. Transfer to the bowl with the broccoli.",
                 "Sauce: Whisk together the chicken broth, hoisin sauce, rice wine vinegar, soy sauce, cornstarch, and garlic in a small bowl. Pour into the skillet and cook over medium heat, stirring, until thickened, about 1 minute.",
@@ -1270,17 +3090,55 @@ const data = {
               ]
             },
             {
-              title: "Spicy Orange Sesame Chicken",
-              servings: "6   |   Prep: 20 minutes   |   Cook: 20 minutes   |   Total: 40 minutes",
-              source: "Half Baked Harvest, by Tieghan Gerard",
-              ingredientGroups: [
-                { label: "Chicken", ingredients: ["1 1/2 pounds boneless chicken breasts, cut into cubes", "1 egg white", "1 tablespoon tamari or soy sauce", "1 tablespoon orange zest", "Black pepper"] },
-                { label: "Dredging", ingredients: ["1/3 cup cornstarch"] },
-                { label: "Orange sauce", ingredients: ["1/3 cup low-sodium chicken broth", "1 cup fresh orange juice, plus 2 tablespoons zest", "1/3 cup tamari or soy sauce", "2 tablespoons rice vinegar", "3 tablespoons honey"] },
-                { label: "Cooking", ingredients: ["1/3 cup avocado oil", "4 cloves garlic, grated", "1 tablespoon fresh grated ginger", "1/2 to 1 teaspoon Aleppo pepper or red pepper flakes"] },
-                { label: "To serve", ingredients: ["2 tablespoons toasted sesame seeds", "Green onions and sesame seeds", "Steamed rice"] }
+              "title": "Spicy Orange Sesame Chicken",
+              "servings": "6   |   Prep: 20 minutes   |   Cook: 20 minutes   |   Total: 40 minutes",
+              "source": "Half Baked Harvest, by Tieghan Gerard",
+              "ingredientGroups": [
+                {
+                  "label": "Chicken",
+                  "ingredients": [
+                    "1 1/2 pounds boneless chicken breasts, cut into cubes",
+                    "1 egg white",
+                    "1 tablespoon tamari or soy sauce",
+                    "1 tablespoon orange zest",
+                    "Black pepper"
+                  ]
+                },
+                {
+                  "label": "Dredging",
+                  "ingredients": [
+                    "1/3 cup cornstarch"
+                  ]
+                },
+                {
+                  "label": "Orange sauce",
+                  "ingredients": [
+                    "1/3 cup low-sodium chicken broth",
+                    "1 cup fresh orange juice, plus 2 tablespoons zest",
+                    "1/3 cup tamari or soy sauce",
+                    "2 tablespoons rice vinegar",
+                    "3 tablespoons honey"
+                  ]
+                },
+                {
+                  "label": "Cooking",
+                  "ingredients": [
+                    "1/3 cup avocado oil",
+                    "4 cloves garlic, grated",
+                    "1 tablespoon fresh grated ginger",
+                    "1/2 to 1 teaspoon Aleppo pepper or red pepper flakes"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "2 tablespoons toasted sesame seeds",
+                    "Green onions and sesame seeds",
+                    "Steamed rice"
+                  ]
+                }
               ],
-              steps: [
+              "steps": [
                 "Combine the chicken, egg white, tamari/soy sauce, orange zest, and pepper in a bowl; toss well to coat.",
                 "Put the cornstarch in a separate bowl; dredge the chicken through to coat.",
                 "Whisk together the broth, orange juice, tamari/soy sauce, rice vinegar, and honey in a jar for the sauce.",
@@ -1290,20 +3148,53 @@ const data = {
               ]
             },
             {
-              title: "Weeknight Sticky Ginger Sesame Chicken Meatballs",
-              servings: "4   |   Prep: 10 minutes   |   Cook: 20 minutes   |   Total: 30 minutes",
-              comments: [
+              "title": "Weeknight Sticky Ginger Sesame Chicken Meatballs",
+              "servings": "4   |   Prep: 10 minutes   |   Cook: 20 minutes   |   Total: 30 minutes",
+              "comments": [
                 "Ground turkey or pork can be used in place of chicken.",
                 "If using winter squash instead of broccoli, roast it alone for 15 minutes before adding the meatballs to the sheet, since squash takes longer."
               ],
-              source: "Half Baked Harvest, by Tieghan Gerard",
-              ingredientGroups: [
-                { label: "Meatballs", ingredients: ["1 pound ground chicken", "2 green onions, finely chopped, plus more for serving", "1 inch fresh ginger, grated", "1 clove garlic, minced or grated", "Black pepper", "Oil, for your hands"] },
-                { label: "Broccoli", ingredients: ["1 head broccoli, cut into florets (or 1 winter squash, seeded and sliced into 1/4-inch wedges)", "1 tablespoon sesame oil or extra-virgin olive oil (of the 2 tablespoons below)", "Salt and pepper"] },
-                { label: "Sticky sauce", ingredients: ["1 tablespoon sesame oil or extra-virgin olive oil (the remainder of the 2 tablespoons total)", "1/3 cup low-sodium soy sauce", "1/3 cup pomegranate juice (or apple cider or orange juice)", "3 tablespoons hoisin sauce", "3 tablespoons honey", "2 tablespoons rice vinegar or apple cider vinegar", "1 teaspoon Aleppo pepper or red pepper flakes"] },
-                { label: "To serve", ingredients: ["Steamed rice, sesame seeds, and pomegranate arils"] }
+              "source": "Half Baked Harvest, by Tieghan Gerard",
+              "ingredientGroups": [
+                {
+                  "label": "Meatballs",
+                  "ingredients": [
+                    "1 pound ground chicken",
+                    "2 green onions, finely chopped, plus more for serving",
+                    "1 inch fresh ginger, grated",
+                    "1 clove garlic, minced or grated",
+                    "Black pepper",
+                    "Oil, for your hands"
+                  ]
+                },
+                {
+                  "label": "Broccoli",
+                  "ingredients": [
+                    "1 head broccoli, cut into florets (or 1 winter squash, seeded and sliced into 1/4-inch wedges)",
+                    "1 tablespoon sesame oil or extra-virgin olive oil (of the 2 tablespoons below)",
+                    "Salt and pepper"
+                  ]
+                },
+                {
+                  "label": "Sticky sauce",
+                  "ingredients": [
+                    "1 tablespoon sesame oil or extra-virgin olive oil (the remainder of the 2 tablespoons total)",
+                    "1/3 cup low-sodium soy sauce",
+                    "1/3 cup pomegranate juice (or apple cider or orange juice)",
+                    "3 tablespoons hoisin sauce",
+                    "3 tablespoons honey",
+                    "2 tablespoons rice vinegar or apple cider vinegar",
+                    "1 teaspoon Aleppo pepper or red pepper flakes"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "Steamed rice, sesame seeds, and pomegranate arils"
+                  ]
+                }
               ],
-              steps: [
+              "steps": [
                 "Preheat the oven to 450°F. Line a baking sheet with parchment.",
                 "Meatballs and broccoli: Combine the ground chicken, green onions, ginger, garlic, and a pinch of pepper in a bowl; mix until just combined. With oiled hands, roll into 16 meatballs. Toss the broccoli with 1 tablespoon oil, season with salt and pepper, and arrange on one half of the baking sheet. Add the meatballs to the other half. Roast 15 minutes.",
                 "Meanwhile, combine the remaining 1 tablespoon oil, the soy sauce, pomegranate juice, hoisin sauce, honey, vinegar, and Aleppo pepper in a small saucepan; simmer over medium heat until slightly thickened, about 5 minutes.",
@@ -1312,18 +3203,63 @@ const data = {
               ]
             },
             {
-              title: "Crispy Chicken Katsu Bowls",
-              servings: "4   |   Prep: 30 minutes   |   Cook: 15 minutes   |   Total: 45 minutes",
-              source: "https://www.halfbakedharvest.com/chicken-katsu-bowls/",
-              ingredientGroups: [
-                { label: "Marinade", ingredients: ["2/3 cup tamari or soy sauce", "1 tablespoon toasted sesame oil", "1 tablespoon honey", "2 teaspoons grated ginger", "2 tablespoons chopped green onions", "1 teaspoon sesame seeds", "Chili flakes, to taste"] },
-                { label: "Chicken", ingredients: ["4 chicken cutlets (or 2 boneless chicken breasts, sliced in half horizontally)"] },
-                { label: "Breading", ingredients: ["2 large eggs, beaten", "1 cup panko bread crumbs", "3 tablespoons sesame seeds"] },
-                { label: "For the skillet", ingredients: ["Oil, for frying (a few tablespoons, neutral)", "1 bag frozen shelled edamame", "2 tablespoons tamari or soy sauce (reserved from marinade quantity above)"] },
-                { label: "Spicy Mayo", ingredients: ["1/3 cup olive oil mayo", "1-2 tablespoons sriracha", "2 teaspoons soy sauce or tamari", "1 teaspoon honey"] },
-                { label: "To serve", ingredients: ["3-4 cups cooked rice", "Cucumber, avocado, pickled ginger, and nori sheets", "Green onions, for garnish"] }
+              "title": "Crispy Chicken Katsu Bowls",
+              "servings": "4   |   Prep: 30 minutes   |   Cook: 15 minutes   |   Total: 45 minutes",
+              "source": "https://www.halfbakedharvest.com/chicken-katsu-bowls/",
+              "ingredientGroups": [
+                {
+                  "label": "Marinade",
+                  "ingredients": [
+                    "2/3 cup tamari or soy sauce",
+                    "1 tablespoon toasted sesame oil",
+                    "1 tablespoon honey",
+                    "2 teaspoons grated ginger",
+                    "2 tablespoons chopped green onions",
+                    "1 teaspoon sesame seeds",
+                    "Chili flakes, to taste"
+                  ]
+                },
+                {
+                  "label": "Chicken",
+                  "ingredients": [
+                    "4 chicken cutlets (or 2 boneless chicken breasts, sliced in half horizontally)"
+                  ]
+                },
+                {
+                  "label": "Breading",
+                  "ingredients": [
+                    "2 large eggs, beaten",
+                    "1 cup panko bread crumbs",
+                    "3 tablespoons sesame seeds"
+                  ]
+                },
+                {
+                  "label": "For the skillet",
+                  "ingredients": [
+                    "Oil, for frying (a few tablespoons, neutral)",
+                    "1 bag frozen shelled edamame",
+                    "2 tablespoons tamari or soy sauce (reserved from marinade quantity above)"
+                  ]
+                },
+                {
+                  "label": "Spicy Mayo",
+                  "ingredients": [
+                    "1/3 cup olive oil mayo",
+                    "1-2 tablespoons sriracha",
+                    "2 teaspoons soy sauce or tamari",
+                    "1 teaspoon honey"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "3-4 cups cooked rice",
+                    "Cucumber, avocado, pickled ginger, and nori sheets",
+                    "Green onions, for garnish"
+                  ]
+                }
               ],
-              steps: [
+              "steps": [
                 "Marinade: In a medium bowl, whisk together the 2/3 cup tamari, sesame oil, honey, ginger, 2 tablespoons green onions, 1 teaspoon sesame seeds, and chili flakes.",
                 "Pour 3-4 tablespoons of the marinade over the chicken in a separate bowl; reserve the rest for serving. Let the chicken marinate at room temperature 15 minutes.",
                 "Breading: Set up two shallow bowls — one with the beaten eggs, one with the panko and 3 tablespoons sesame seeds combined. Dip each piece of chicken in egg, then coat in the panko mixture.",
@@ -1334,17 +3270,43 @@ const data = {
               ]
             },
             {
-              title: "Japanese Fried Chicken (Shio Koji Karaage)",
-              servings: "4   |   Prep: 10 minutes   |   Cook: 15 minutes   |   Total: 25 minutes",
-              comments: ["Shio koji is a fermented rice-malt seasoning, available at Japanese/Asian grocers."],
-              source: "Hikari Miso, recipe by Namiko Hirasawa Chen (Just One Cookbook)",
-              ingredientGroups: [
-                { label: "Marinade", ingredients: ["1 pound (450g) boneless chicken thigh with skin, cut into 1-inch pieces", "4 tablespoons shio koji", "1 teaspoon grated ginger", "1 teaspoon grated garlic", "1 teaspoon soy sauce"] },
-                { label: "Coating", ingredients: ["1/2 cup potato starch or cornstarch"] },
-                { label: "Frying oil", ingredients: ["Vegetable or canola oil, for deep frying"] },
-                { label: "To serve", ingredients: ["Lemon wedges"] }
+              "title": "Japanese Fried Chicken (Shio Koji Karaage)",
+              "servings": "4   |   Prep: 10 minutes   |   Cook: 15 minutes   |   Total: 25 minutes",
+              "comments": [
+                "Shio koji is a fermented rice-malt seasoning, available at Japanese/Asian grocers."
               ],
-              steps: [
+              "source": "Hikari Miso, recipe by Namiko Hirasawa Chen (Just One Cookbook)",
+              "ingredientGroups": [
+                {
+                  "label": "Marinade",
+                  "ingredients": [
+                    "1 pound (450g) boneless chicken thigh with skin, cut into 1-inch pieces",
+                    "4 tablespoons shio koji",
+                    "1 teaspoon grated ginger",
+                    "1 teaspoon grated garlic",
+                    "1 teaspoon soy sauce"
+                  ]
+                },
+                {
+                  "label": "Coating",
+                  "ingredients": [
+                    "1/2 cup potato starch or cornstarch"
+                  ]
+                },
+                {
+                  "label": "Frying oil",
+                  "ingredients": [
+                    "Vegetable or canola oil, for deep frying"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "Lemon wedges"
+                  ]
+                }
+              ],
+              "steps": [
                 "Combine the chicken with the shio koji, ginger, garlic, and soy sauce in a bowl or large bag. Marinate at least 30 minutes (up to overnight in the fridge).",
                 "Heat oil for deep-frying to about 320 to 335°F.",
                 "Just before frying, add the potato starch to the bowl/bag with the chicken; mix to coat.",
@@ -1353,21 +3315,57 @@ const data = {
               ]
             },
             {
-              title: "One-Pot Japanese Curry Chicken and Rice",
-              servings: "4   |   Total: 1 hour",
-              comments: [
+              "title": "One-Pot Japanese Curry Chicken and Rice",
+              "servings": "4   |   Total: 1 hour",
+              "comments": [
                 "Sweet potatoes, cauliflower, or peas would be good substitutions or additions to the potato and carrots.",
                 "Serve with any pickle you have on hand for a vinegary contrast to the rich curry."
               ],
-              source: "NYT Cooking, by Kay Chun",
-              ingredientGroups: [
-                { label: "Chicken", ingredients: ["2 pounds bone-in, skin-on chicken thighs (about 4 to 6 thighs)", "2 tablespoons canola oil, divided", "Salt and black pepper"] },
-                { label: "Searing butter", ingredients: ["1 tablespoon unsalted butter (of the 3 tablespoons below)"] },
-                { label: "Aromatics and spices", ingredients: ["1/2 cup finely chopped white or yellow onion", "3 tablespoons Madras curry powder", "1 tablespoon minced garlic", "1 tablespoon minced fresh ginger", "3/4 teaspoon ground nutmeg", "2 tablespoons unsalted butter (the remainder of the 3 tablespoons)"] },
-                { label: "Rice and vegetables", ingredients: ["1 1/2 cups short-grain white rice, rinsed until the water runs clear", "1 large baking potato (about 1 pound), peeled and cut into 1/2-inch cubes", "3 medium carrots, sliced 1/2-inch thick", "3 1/2 cups low-sodium chicken broth", "2 tablespoons Worcestershire sauce"] },
-                { label: "To serve", ingredients: ["Chopped scallions, pickles, kimchi, and/or hot sauce"] }
+              "source": "NYT Cooking, by Kay Chun",
+              "ingredientGroups": [
+                {
+                  "label": "Chicken",
+                  "ingredients": [
+                    "2 pounds bone-in, skin-on chicken thighs (about 4 to 6 thighs)",
+                    "2 tablespoons canola oil, divided",
+                    "Salt and black pepper"
+                  ]
+                },
+                {
+                  "label": "Searing butter",
+                  "ingredients": [
+                    "1 tablespoon unsalted butter (of the 3 tablespoons below)"
+                  ]
+                },
+                {
+                  "label": "Aromatics and spices",
+                  "ingredients": [
+                    "1/2 cup finely chopped white or yellow onion",
+                    "3 tablespoons Madras curry powder",
+                    "1 tablespoon minced garlic",
+                    "1 tablespoon minced fresh ginger",
+                    "3/4 teaspoon ground nutmeg",
+                    "2 tablespoons unsalted butter (the remainder of the 3 tablespoons)"
+                  ]
+                },
+                {
+                  "label": "Rice and vegetables",
+                  "ingredients": [
+                    "1 1/2 cups short-grain white rice, rinsed until the water runs clear",
+                    "1 large baking potato (about 1 pound), peeled and cut into 1/2-inch cubes",
+                    "3 medium carrots, sliced 1/2-inch thick",
+                    "3 1/2 cups low-sodium chicken broth",
+                    "2 tablespoons Worcestershire sauce"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "Chopped scallions, pickles, kimchi, and/or hot sauce"
+                  ]
+                }
               ],
-              steps: [
+              "steps": [
                 "Heat the oven to 375°F. Rub the chicken with 1 tablespoon of the oil and season with salt and pepper.",
                 "In a large Dutch oven or heavy pot, heat the remaining 1 tablespoon oil with 1 tablespoon of the butter over medium heat until hot. Add the chicken skin side down and sear until golden, about 4 minutes. Transfer to a plate.",
                 "Add the onion to the pot, season with salt and pepper, and cook, stirring, until softened, 2 minutes. Add the curry powder, garlic, ginger, nutmeg, and remaining 2 tablespoons butter; stir until fragrant, about 1 minute.",
@@ -1378,2136 +3376,2652 @@ const data = {
             }
           ]
         },
-        { title: "Turkey", recipes: [
-          {
-            title: "Bristol Farms Turkey Salad (Copycat)",
-            servings: "Serves 6–8",
-            source: "Grandmother Brenda's ingredient list, inspired by Bristol Farms deli turkey salad",
-            comments: [
-              "Quantities reconstructed from the ingredient card — adjust mayo and mustard to taste.",
-              "Great served in a sandwich, on lettuce cups, or with crackers."
-            ],
-            ingredientGroups: [
-              { label: "Dressing", ingredients: [
-                "1/2 cup mayonnaise",
-                "1 tablespoon Dijon mustard",
-                "1 tablespoon honey",
-                "1/2 teaspoon dried tarragon",
-                "1/2 teaspoon dried dill weed",
-                "Salt and pepper to taste"
-              ]},
-              { label: "Salad", ingredients: [
-                "2 lbs. cooked turkey breast, diced",
-                "1/2 cup walnuts, roughly chopped",
-                "1/3 cup dried cranberries",
-                "3 green onions, thinly sliced",
-                "2 stalks celery, finely diced"
-              ]}
-            ],
-            steps: [
-              "Whisk together all dressing ingredients in a small bowl.",
-              "Combine turkey, walnuts, dried cranberries, green onions, and celery in a large bowl.",
-              "Pour dressing over turkey mixture and toss to coat. Taste and adjust seasoning.",
-              "Refrigerate at least 30 minutes before serving."
-            ]
-          },
-          {
-            title: "Expertly Spiced and Glazed Roast Turkey",
-            servings: "Serves 8–10   |   Active: 45 min   |   Total: About 2 hrs (plus 24–48 hrs dry-brining)",
-            comments: [
-              "Turkey is spatchcocked for more even roasting. Begin 24–48 hours ahead for the dry brine.",
-              "Option: after removing the backbone, also separate the wings and legs for even faster, more even cooking as individual pieces — see Step 1.",
-              "Requires a spice mill or mortar and pestle."
-            ],
-            source: "https://www.epicurious.com/recipes/food/views/expertly-spiced-and-glazed-roast-turkey",
-            ingredientGroups: [
-              { label: "Spice rub", ingredients: [
-                "2 Tbsp whole black peppercorns",
-                "2 Tbsp whole pink or black peppercorns",
-                "1/2 cup Diamond Crystal or 1/4 cup plus 1 1/2 tsp Morton kosher salt",
-                "2 Tbsp garlic powder",
-                "2 Tbsp onion powder",
-                "1 Tbsp smoked paprika",
-                "1 Tbsp light brown sugar"
-              ]},
-              { label: "Turkey", ingredients: [
-                "1 (12-14 lb.) turkey, neck and giblets removed"
-              ]},
-              { label: "Glaze", ingredients: [
-                "Small handful hardy herbs (sage, rosemary, bay leaves, and/or thyme)",
-                "4 garlic cloves, crushed",
-                "2 (2x1\") strips orange zest",
-                "1/3 cup low-sodium soy sauce",
-                "1/3 cup sherry vinegar or red wine vinegar",
-                "1/3 cup (packed) light brown sugar"
-              ]},
-              { label: "For roasting", ingredients: [
-                "6 Tbsp neutral oil (vegetable, peanut, or canola)",
-                "1 cup water, plus more as needed"
-              ]}
-            ],
-            steps: [
-              { lead: "Spatchcock the turkey (preferred method):",
-                bullets: [
-                  "Place turkey breast side down. Using kitchen shears, cut along one side of the backbone all the way through, then cut along the other side to remove the backbone entirely. Save for stock.",
-                  "Flip turkey breast side up. Press firmly on the breastbone with the heel of your hand until it cracks and the bird lies flat.",
-                  "Option — full breakdown: after removing the backbone, also separate the wings (grip each wing, pull outward, cut through the joint) and the legs (cut through skin, pull back until ball joint pops out, cut through joint). You'll have 5 separate pieces: 2 wings, 2 legs, 1 breast."
-                ]
-              },
-              "Make the spice rub: Finely grind both peppercorns in a spice mill or mortar and pestle. Transfer to a bowl and mix in kosher salt, garlic powder, onion powder, paprika, and 1 Tbsp brown sugar.",
-              "Place turkey on a wire rack set inside a rimmed baking sheet. Sprinkle spice rub liberally all over, patting to adhere (you may not use all of it). Refrigerate uncovered at least 24 hours and up to 2 days.",
-              "Remove turkey from rack; rinse baking sheet and rack if needed. Line baking sheet with 3 layers of foil, set rack back inside, and return turkey skin side up. Let sit at room temperature 2–3 hours.",
-              "Meanwhile, make the glaze: Cook herbs, garlic, orange zest, soy sauce, vinegar, and 1/3 cup brown sugar in a small saucepan over medium heat, stirring occasionally, until sugar dissolves and glaze thickens slightly (barely coats a spoon), 10–12 minutes. Remove from heat.",
-              "Place a rack in the middle of the oven; preheat to 425°F. Rub turkey all over with oil and pour 1 cup water into the baking sheet. Roast, rotating baking sheet halfway through, until skin is mostly golden brown, 20–25 minutes.",
-              "Reduce oven to 300°F. Continue roasting, brushing with glaze every 20 minutes and adding more water by 1/2-cupfuls as needed to keep some liquid in the pan, until an instant-read thermometer reads 150°F in the thickest part of the breast and 170°F in the thickest part of the thigh, 50–70 minutes more (total time 1–1 1/2 hours; fully broken-down pieces may finish faster). Skin should be deep golden brown and shiny.",
-              "Transfer to a cutting board, tent loosely with foil, and rest 30–60 minutes before carving."
-            ]
-          },
-          {
-            title: "Turkey and Quinoa Meatloaf",
-            favorite: true,
-            servings: "Serves 4   |   Total: 1 hr 10 min",
-            comments: [
-              { html: 'Best served with <a href="#joan-chili-aioli">Joan\'s on Third Chili Aioli</a>.' }
-            ],
-            source: "https://www.allrecipes.com/recipe/213211/turkey-and-quinoa-meatloaf/",
-            ingredientGroups: [
-              { label: "Quinoa", ingredients: [
-                "1/4 cup quinoa",
-                "1/2 cup water"
-              ]},
-              { label: "Aromatics", ingredients: [
-                "1 tsp olive oil",
-                "1 small onion, chopped",
-                "1 clove garlic, chopped"
-              ]},
-              { label: "Meatloaf", ingredients: [
-                "1 (20 oz) package ground turkey",
-                "1 Tbsp tomato paste",
-                "1 Tbsp hot pepper sauce",
-                "2 Tbsp Worcestershire sauce",
-                "1 egg",
-                "1 1/2 tsp salt",
-                "1 tsp black pepper"
-              ]},
-              { label: "Glaze", ingredients: [
-                "2 Tbsp brown sugar",
-                "2 tsp Worcestershire sauce",
-                "1 tsp water"
-              ]}
-            ],
-            steps: [
-              "Bring quinoa and 1/2 cup water to a boil in a small saucepan. Reduce heat to medium-low, cover, and simmer until quinoa is tender and water is absorbed, 15–20 minutes. Set aside to cool.",
-              "Preheat oven to 350°F.",
-              "Heat olive oil in a skillet over medium heat. Add onion; cook, stirring, until softened and translucent, about 5 minutes. Add garlic and cook 1 minute more. Remove from heat and let cool.",
-              "In a large bowl, mix together ground turkey, cooled quinoa, sautéed onion and garlic, tomato paste, hot pepper sauce, Worcestershire sauce, egg, salt, and pepper until well combined. Transfer to a loaf pan.",
-              "Spread the glaze evenly over the top of the meatloaf.",
-              "Bake until no longer pink in the center and an instant-read thermometer reads at least 160°F, about 50 minutes. Let cool 10 minutes before slicing."
-            ]
-          },
-          {
-            title: "Turkey Tikka Masala",
-            servings: "Serves 6   |   Total: 1 1/2 hrs, plus 4 hrs marinating",
-            comments: [
-              "A great way to use leftover Thanksgiving turkey.",
-              "Marinate the turkey for at least 4 hours, or overnight, for best results."
-            ],
-            source: "Samin Nosrat, NYT Cooking (November 22, 2016)",
-            ingredientGroups: [
-              { label: "Marinade", ingredients: [
-                "2 tsp garam masala",
-                "2 tsp ground coriander",
-                "2 tsp ground cumin",
-                "1 Tbsp paprika",
-                "4 tsp ground turmeric",
-                "1 tsp kosher salt",
-                "6 cloves garlic, finely grated",
-                "4 tsp finely grated fresh ginger",
-                "1 cup whole-milk yogurt",
-                "4 cups cooked turkey (about 1 lb), cut into 1 1/2-inch pieces"
-              ]},
-              { label: "Masala — first addition", ingredients: [
-                "3 Tbsp ghee or neutral-tasting oil",
-                "1 large onion, thinly sliced",
-                "6 cardamom pods, crushed",
-                "1 bay leaf",
-                "1 tsp paprika",
-                "1/2 tsp Aleppo pepper or red pepper flakes",
-                "1 tsp garam masala",
-                "Pinch kosher salt"
-              ]},
-              { label: "Masala — second addition", ingredients: [
-                "1 Tbsp ghee or neutral-tasting oil",
-                "2 Tbsp finely grated fresh ginger",
-                "4 cloves garlic, finely grated",
-                "2 serrano peppers, finely chopped"
-              ]},
-              { label: "Tomatoes", ingredients: [
-                "2 Tbsp tomato paste",
-                "1 (28-oz) can whole peeled tomatoes"
-              ]},
-              { label: "Cream and seasoning", ingredients: [
-                "2 cups heavy cream",
-                "3/4 cup coarsely chopped fresh cilantro, plus sprigs for garnish",
-                "1 1/2 tsp kosher salt, plus more to taste"
-              ]},
-              { label: "Finish", ingredients: [
-                "Juice of 1 small lemon",
-                "Jasmine or Basmati rice, for serving"
-              ]}
-            ],
-            steps: [
-              "Make the marinade: Stir together garam masala, coriander, cumin, paprika, turmeric, salt, garlic, ginger, and yogurt in a medium bowl. Fold in turkey. Cover and refrigerate 4 hours or overnight.",
-              "Make the masala: Heat a Dutch oven over medium-high heat. Add 3 Tbsp ghee or oil, then add onion, cardamom, bay leaf, paprika, Aleppo pepper or red pepper flakes, garam masala, and a pinch of salt. Reduce heat to medium and cook, stirring occasionally, until onions are brown and tender, 10–15 minutes.",
-              "Make space in the center of the pot; add 1 Tbsp ghee or oil. When shimmering, add ginger, garlic, and serrano peppers and sizzle about 10 seconds. Stir into the spiced onions. Stir in tomato paste. Add whole peeled tomatoes with their juices, crushing them with your hands as you add them. Bring to a boil, then reduce heat and simmer, stirring often, until liquid is almost gone, 8–10 minutes.",
-              "Add heavy cream and cilantro. Season with 1 1/2 tsp kosher salt; taste and adjust. Simmer over low heat, stirring occasionally, until sauce thickens, about 40 minutes. Discard bay leaf.",
-              "Line a baking sheet with foil; position an oven rack about 6 inches from the broiler; turn on broiler. Lay marinated turkey in a single layer on the foil. Stir any remaining marinade into the sauce. Broil until turkey begins to blacken in spots, 6–8 minutes.",
-              "Using a hand blender (or blender), purée the sauce. Add broiled turkey and return to a simmer for 5–10 minutes, stirring occasionally, until just warmed through. Just before serving, stir in lemon juice. Taste and adjust salt.",
-              "Serve hot, garnished with cilantro sprigs, alongside Jasmine or Basmati rice. Refrigerate leftovers up to 3 days or freeze up to 2 months."
-            ]
-          }
-        ]},
-        { title: "Pork", recipes: [
-          {
-            title: "Sloppy Moes",
-            favorite: true,
-            servings: "Serves 6   |   Active: 20 min   |   Total: 45 min",
-            source: "Molly Baz, Cook This Book",
-            ingredientGroups: [
-              { label: "Prep", ingredients: [
-                "2 ears fresh corn",
-                "1 lb cherry tomatoes, halved"
-              ]},
-              { label: "Ragu", ingredients: [
-                "1 lb spicy Italian sausage, casings removed",
-                "1 medium yellow onion, chopped",
-                "3 cloves garlic, chopped",
-                "1/4 cup tomato paste",
-                "3 Tbsp red wine vinegar",
-                "1 Tbsp honey",
-                "2 Tbsp sambal oelek",
-                "2 sprigs fresh basil",
-                "1/3 cup water"
-              ]},
-              { label: "Herb salad", ingredients: [
-                "2 scallions, thinly sliced",
-                "1 cup fresh basil leaves",
-                "Splash red wine vinegar",
-                "Drizzle olive oil"
-              ]},
-              { label: "For serving", ingredients: [
-                "6 brioche hot dog buns",
-                "2 Tbsp unsalted butter",
-                "Parmigiano-Reggiano, for grating"
-              ]}
-            ],
-            steps: [
-              "Using the large holes of a box grater, grate the corn kernels from the cobs into a bowl.",
-              "Heat a large skillet over medium-high. Add sausage and cook, breaking into pieces, until browned, 4–5 min.",
-              "Reduce heat to medium. Add onion and cook, stirring, until softened, about 3 min. Add garlic and cook until fragrant, 1 min.",
-              "Add tomato paste and stir to coat. Cook, stirring, until it begins to stick to the pan, 1–2 min.",
-              "Add red wine vinegar, honey, sambal, basil sprigs, water, grated corn, and halved cherry tomatoes. Stir to combine. Bring to a boil, then cover, reduce heat to low, and simmer until thickened, about 15 min. Remove basil sprigs.",
-              "Meanwhile, toss scallions and basil leaves in a small bowl. Dress with a splash of red wine vinegar and a drizzle of olive oil.",
-              "Toast brioche buns in a skillet with butter until golden.",
-              "Serve sausage ragu in toasted buns, topped with herb salad. Grate Parmigiano-Reggiano generously over the top."
-            ]
-          },
-          {
-            title: "Slow Cooker Pork Mole",
-            servings: "Serves 8   |   Total: 8–10 hours (plus 30 min prep)",
-            source: "Adapted from Muy Bueno (Yvette Marquez-Sharpnack) and Food Network Kitchen",
-            ingredientGroups: [
-              { label: "Pork", ingredients: [
-                "1 bone-in pork butt (5–6 lbs)",
-                "Salt and pepper"
-              ]},
-              { label: "Dried chiles", ingredients: [
-                "4 dried ancho chiles, stems and seeds removed",
-                "3 dried California or New Mexico red chiles, stems and seeds removed"
-              ]},
-              { label: "Sauce aromatics", ingredients: [
-                "2 corn tortillas, torn into pieces",
-                "1/3 cup sesame seeds",
-                "1/4 cup raisins",
-                "1 medium yellow onion, roughly chopped",
-                "4 cloves garlic, smashed",
-                "1 tsp ground cinnamon",
-                "1 tsp ground cumin"
-              ]},
-              { label: "Sauce", ingredients: [
-                "3 chipotle chiles in adobo",
-                "1 Tbsp adobo sauce",
-                "1 28-oz can crushed fire-roasted tomatoes",
-                "1 cup fresh cilantro",
-                "1 cup chicken broth",
-                "2 oz Guittard bittersweet chocolate (or other good-quality bittersweet), roughly chopped",
-                "Salt"
-              ]},
-              { label: "For serving", ingredients: [
-                "Warm corn tortillas",
-                "Sliced radishes, chopped white onion, fresh cilantro, lime wedges, crumbled queso fresco (optional)"
-              ]}
-            ],
-            steps: [
-              "Season pork butt all over with salt and pepper and place in a slow cooker.",
-              "Toast dried ancho and California/NM chiles in a dry cast-iron skillet over medium heat, pressing with a spatula, until fragrant and slightly darkened, about 1 minute per side. Transfer to a bowl, cover with boiling water, and soak 20 minutes. Drain, reserving 1/2 cup soaking liquid.",
-              "In the same cast-iron skillet over medium heat, add tortilla pieces, sesame seeds, raisins, onion, and garlic. Toast, stirring frequently, until sesame seeds are golden, raisins are plump, and tortillas are crisp, 4–5 min. Add cinnamon and cumin and stir 30 seconds.",
-              "Transfer toasted mixture to a blender. Add soaked chiles, chipotle chiles, adobo sauce, fire-roasted tomatoes, cilantro, chicken broth, chocolate, and reserved chile soaking liquid. Blend until very smooth. Taste and season generously with salt.",
-              "Pour sauce over pork in slow cooker. Cook on Low 8–10 hours, until pork is very tender and pulls apart easily.",
-              "Using two forks, shred the pork directly in the slow cooker, pulling the meat apart into pieces. Remove and discard the bone. Skim any excess fat from the surface if desired, and stir the shredded pork into the sauce.",
-              "Serve with warm tortillas and toppings."
-            ]
-          },
-          {
-            id: "haitian-pork-griot",
-            title: "Haitian Pork Griot",
-            favorite: true,
-            servings: "Serves 6   |   Total: 3 hours, plus overnight marinating",
-            source: "Patrick Celestin, adapted by Melissa Clark (NYT Cooking)",
-            comments: [
-              {html: "Best served with <a href='#haitian-pikliz'>Pikliz</a>."}
-            ],
-            ingredientGroups: [
-              { label: "Marinade + pork", ingredients: [
-                "1 small Scotch bonnet or habanero chile",
-                "1 medium onion, diced",
-                "1 small green bell pepper, diced",
-                "1 small red bell pepper, diced",
-                "1/4 cup fresh Italian parsley, chopped, plus more for serving",
-                "1 Tbsp kosher salt, plus more to taste",
-                "1 Tbsp coarsely ground black pepper",
-                "6 sprigs fresh thyme, plus more leaves for serving",
-                "2 garlic cloves, finely chopped",
-                "1/4 cup cane vinegar or cider vinegar",
-                "Juice of 1 orange",
-                "Juice of 1 lemon",
-                "Juice of 1/2 lime",
-                "1 Tbsp Worcestershire sauce",
-                "3 lbs pork shoulder, not too lean, cut into 1 1/2-inch chunks"
-              ]},
-              { label: "Finish", ingredients: [
-                "2 Tbsp coconut oil (melted) or olive oil, plus more as needed"
-              ]},
-              { label: "For serving", ingredients: [
-                "Cooked rice",
-                "Pikliz (see recipe)"
-              ]}
-            ],
-            steps: [
-              "Quarter chile and remove seeds and membranes. Finely chop one quarter; leave the rest in whole pieces. Handle carefully, preferably wearing gloves — they are extremely hot.",
-              "Combine all marinade ingredients (chiles, onion, bell peppers, parsley, salt, pepper, thyme, garlic, vinegar, citrus juices, Worcestershire) with pork in a large Dutch oven. Toss well. Cover and refrigerate overnight.",
-              "The next day, remove from refrigerator 1–3 hours before cooking. Heat oven to 325°F. Place pot over high heat and bring to a simmer; cover and transfer to oven. Cook, stirring occasionally, until meat is very tender, 1 1/2–2 hours.",
-              "Using a slotted spoon, remove meat, letting all excess liquid drip back into the pot and removing any vegetable or herb bits. Transfer to a rimmed baking sheet. Drizzle with 2 Tbsp oil and salt to taste; toss gently.",
-              "Strain braising liquid, discarding solids. Return sauce to pot and simmer over high heat until reduced by half, 25–30 min.",
-              "Meanwhile, heat the broiler. Broil meat, tossing occasionally, until evenly browned, 5–10 min — nicely browned in spots but not dried out.",
-              "Drizzle meat with additional oil and top with sauce, parsley, and thyme leaves. Serve on rice with pikliz."
-            ]
-          },
-          {
-            title: "Carnitas",
-            servings: "Serves 10–12   |   Total: 10 hrs 15 min",
-            source: "Nagi Maehashi, RecipeTin Eats",
-            ingredientGroups: [
-              { label: "Pork + rub", ingredients: [
-                "4 lbs boneless pork shoulder (pork butt), skinless",
-                "2 1/2 tsp salt",
-                "1 tsp black pepper",
-                "1 Tbsp dried oregano",
-                "2 tsp ground cumin",
-                "1 Tbsp olive oil"
-              ]},
-              { label: "Slow cooker aromatics", ingredients: [
-                "1 medium onion, chopped",
-                "1 jalapeño, deseeded and chopped",
-                "4 cloves garlic, minced",
-                "3/4 cup fresh orange juice (from 2 oranges)"
-              ]},
-              { label: "To crisp", ingredients: [
-                "1 Tbsp vegetable oil"
-              ]},
-              { label: "For serving", ingredients: [
-                "Warm corn or flour tortillas",
-                "Diced avocado, pico de gallo, grated cheese, sour cream (optional toppings)"
-              ]}
-            ],
-            steps: [
-              "Combine salt, pepper, oregano, cumin, and olive oil to form the rub. Pat pork dry and rub all over. Place fat-side up in slow cooker; top with onion, jalapeño, and garlic. Pour orange juice over.",
-              "Cook on Low 10 hours or High 7 hours, until pork is fall-apart tender.",
-              "Transfer pork to a cutting board; let cool slightly and shred with two forks. Skim fat from juices. If you have more than 2 cups of juice, simmer on the stove to reduce. Reserve.",
-              "Heat 1 Tbsp vegetable oil in a large non-stick skillet over high heat. Working in batches, spread pork in a single layer and drizzle with some juices. Let the juices evaporate and the bottom brown and crisp, then briefly sear the other side. Repeat for remaining batches.",
-              "Serve immediately in warm tortillas with toppings, drizzled with more juices."
-            ]
-          },
-          {
-            title: "Crispy Pork Lettuce Wraps With Spicy Cucumbers",
-            servings: "Serves 2   |   Total: 3 hours (including marinating and roasting)",
-            source: "Alison Roman, Bon Appétit (October 2015)",
-            ingredientGroups: [
-              { label: "Pork + rub", ingredients: [
-                "1 12-oz piece skin-on pork belly (about 4x3 1/2x1 1/4 inches)",
-                "Kosher salt and freshly ground pepper",
-                "2 Tbsp light brown sugar, divided"
-              ]},
-              { label: "Braise", ingredients: [
-                "4 chiles de árbol",
-                "2 star anise pods",
-                "2 Tbsp soy sauce",
-                "1 1/4 cups water"
-              ]},
-              { label: "Spicy cucumber salad", ingredients: [
-                "2 Persian or kirby cucumbers, thinly sliced",
-                "2 scallions, thinly sliced",
-                "1/2 red chile (Fresno or jalapeño), thinly sliced",
-                "2 Tbsp unseasoned rice wine vinegar"
-              ]},
-              { label: "Gochujang-miso sauce", ingredients: [
-                "3 Tbsp gochujang",
-                "3 Tbsp white miso"
-              ]},
-              { label: "For serving", ingredients: [
-                "1 small head lettuce (Little Gem or romaine hearts), torn",
-                "1/2 bunch mint",
-                "1/2 cup kimchi (optional)"
-              ]}
-            ],
-            steps: [
-              "Diagonally score the fat side of the pork belly, cutting through the fat but stopping at the flesh, about 1/4 inch apart. Season with salt, pepper, and 1 Tbsp brown sugar. Wrap tightly in plastic wrap and refrigerate at least 2 hours or up to 2 days.",
-              "Preheat oven to 400°F. Unwrap pork and nestle into the smallest baking dish you have. Add chiles de árbol, star anise, soy sauce, remaining 1 Tbsp brown sugar, and 1 1/4 cups water. Roast until most fat has rendered, meat is tender, and top is browned and crisp, 2–2 1/2 hours.",
-              "Meanwhile, toss cucumbers, scallions, red chile, and vinegar in a small bowl. In a separate small bowl, mix gochujang and miso.",
-              "Transfer pork to a cutting board and rest 10 min. Pour off pan juices into a measuring glass; skim fat from surface.",
-              "Slice pork into 1/2-inch slices and arrange on a platter. Pour pan juices over. Serve with lettuce, cucumber salad, mint, kimchi (if using), and gochujang-miso sauce.",
-              "Do ahead: Pork can be cooked 2 days ahead. Cool, cover, and chill. Reheat before serving."
-            ]
-          },
-          {
-            title: "Moo Shu Mushrooms",
-            servings: "Serves 4   |   Total: 45 min",
-            source: "J. Kenji López-Alt, NYT Cooking (January 28, 2020)",
-            comments: [
-              "If you can't find dried day lily buds, substitute 4 oz canned sliced bamboo shoots and skip the soaking step."
-            ],
-            ingredientGroups: [
-              { label: "Dried mushrooms and lily buds", ingredients: [
-                "1/3 cup dried Chinese wood ear mushrooms (about 10 grams)",
-                "1/4 packed cup dried day lily buds (about 15 grams)"
-              ]},
-              { label: "Pork marinade", ingredients: [
-                "2 oz pork loin or pork sirloin, cut into 1 1/2- to 2-inch slivers",
-                "1/2 tsp Shaoxing wine or dry sherry",
-                "1/2 tsp light soy sauce or shoyu",
-                "1/2 tsp cornstarch",
-                "1/4 tsp white pepper",
-                "Pinch kosher salt"
-              ]},
-              { label: "Stir-fry sauce", ingredients: [
-                "2 1/2 tsp Shaoxing wine or dry sherry",
-                "2 1/2 tsp light soy sauce or shoyu",
-                "1/2 tsp cornstarch",
-                "1/4 tsp white pepper"
-              ]},
-              { label: "Stir-fry", ingredients: [
-                "4 Tbsp roasted sesame oil, divided",
-                "3 eggs, beaten with a pinch of salt",
-                "2 slices fresh ginger",
-                "1/2 lb mixed sliced fresh mushrooms (shimeji, shiitake, enoki, oyster or maitake)",
-                "2 scallions, thinly sliced on a sharp bias",
-                "1/4 tsp MSG (optional)",
-                "Kosher salt and white pepper, to taste"
-              ]},
-              { label: "For serving", ingredients: [
-                "Mandarin pancakes or warm flour tortillas",
-                "Hoisin sauce or sweet bean sauce"
-              ]}
-            ],
-            steps: [
-              "Rehydrate dried ingredients: Place wood ear mushrooms and day lily buds in separate bowls. Cover with very hot water and soak until rehydrated, about 15 min. Drain well. Remove tough centers from wood ears, then thinly slice. Cut day lilies into 2-inch pieces.",
-              "Prepare pork marinade: Whisk together Shaoxing wine, soy sauce, cornstarch, white pepper, and a pinch of salt. Add pork and stir vigorously for 10 seconds. Set aside 15 min at room temperature.",
-              "Make stir-fry sauce: Whisk together remaining Shaoxing wine, soy sauce, cornstarch, and white pepper in a small bowl until no lumps remain.",
-              "Cook eggs: Heat wok over high until lightly smoking. Add 2 Tbsp sesame oil, swirl to coat. Pour in beaten eggs and cook without moving 10 seconds. Break up eggs with a spatula until barely set, 30–45 seconds. Transfer to a large bowl.",
-              "Wipe out wok, return to high heat until smoking. Add 1 Tbsp oil, swirl. Add 1 ginger slice, let sizzle 5 seconds. Add pork and stir-fry until just cooked through, about 1 min. Discard ginger; transfer pork to bowl with eggs.",
-              "Wipe out wok, return to high heat. Add remaining 1 Tbsp oil, swirl. Add remaining ginger slice, sizzle 5 seconds. Add fresh mushrooms and stir-fry until lightly browned, 2–3 min. Add scallions, sliced wood ears, and day lilies; stir-fry until softened, about 30 seconds.",
-              "Return pork and eggs to wok. Stir sauce and add to wok with MSG (if using). Stir-fry to combine; season with salt and white pepper. Discard ginger. Serve immediately with Mandarin pancakes and hoisin sauce."
-            ]
-          }
-        ]},
-        { title: "Lamb", recipes: [
-          {
-            title: "Garlic & Rosemary Grilled Lamb Chops",
-            favorite: true,
-            servings: "Serves 4   |   Prep: 15 min   |   Cook: 10 min   |   Total: 25 min (plus 1 hr to overnight marinating)",
-            source: "Jannese, Delish D'Lites",
-            ingredientGroups: [
-              { label: "Marinade", ingredients: [
-                "4 cloves garlic, minced",
-                "1 Tbsp fresh rosemary, chopped",
-                "1 1/4 tsp kosher salt",
-                "1/2 tsp ground black pepper",
-                "Zest of 1 lemon",
-                "1/4 cup olive oil"
-              ]},
-              { label: "Chops", ingredients: [
-                "2 lbs lamb loin or rib chops, thick cut"
-              ]}
-            ],
-            steps: [
-              "Combine garlic, rosemary, salt, pepper, lemon zest, and olive oil in a measuring cup.",
-              "Pour marinade over lamb chops, flipping to coat completely. Cover and marinate in the fridge for at least 1 hour, or overnight.",
-              "Grill on medium-high heat for 7–10 minutes, until internal temperature reads 135°F.",
-              "Transfer to a plate, cover loosely with foil, and rest 5 minutes before serving."
-            ]
-          },
-          {
-            title: "Lula Kebabs",
-            servings: "Serves 6   |   Prep: 30 min   |   Cook: 10 min   |   Total: 40 min",
-            source: "Janelle Leatherwood, The Stuffed Grape Leaf",
-            ingredientGroups: [
-              { ingredients: [
-                "1 lb ground lamb",
-                "1 lb ground beef",
-                "1/2 cup fresh parsley, finely chopped",
-                "1/4 cup fresh mint, finely chopped",
-                "1/2 yellow onion, grated or very finely minced",
-                "1/2 Tbsp ground cumin",
-                "2 tsp allspice",
-                "1/2 tsp ground coriander",
-                "1/2 tsp garlic powder",
-                "2 tsp fresh lemon juice",
-                "1 Tbsp extra-virgin olive oil",
-                "2 Tbsp tomato paste",
-                "Kosher salt and black pepper, to taste"
-              ]}
-            ],
-            steps: [
-              "Combine both ground meats, parsley, mint, onion, cumin, allspice, coriander, garlic powder, lemon juice, olive oil, and tomato paste in a large bowl. Season with salt and pepper and mix until evenly combined.",
-              "Shape mixture into long, flattened patties and thread onto skewers if desired.",
-              "Grill over medium-high heat until cooked through but not dried out, about 10 minutes total, turning once."
-            ]
-          },
-          {
-            title: "Luscious Tandoori Lamb Chops",
-            servings: "Serves 4   |   Active: 30 min   |   Total: ~9 hrs (including overnight marinade)",
-            source: "Suvir Saran, Food & Wine",
-            ingredientGroups: [
-              { label: "Chops + marinade (overnight)", ingredients: [
-                "8 lamb rib chops (about 2 1/2 lbs)",
-                "3/4 cup whole-milk Greek yogurt",
-                "1/4 cup heavy cream",
-                "3 Tbsp fresh lemon juice",
-                "1 (3-inch) piece fresh ginger, peeled and minced",
-                "4 large garlic cloves, minced",
-                "1 Tbsp malt vinegar",
-                "1 Tbsp garam masala",
-                "1 Tbsp ground cumin",
-                "1 Tbsp paprika",
-                "1/2 tsp cayenne pepper",
-                "1/4 tsp ground mace (optional)",
-                "1/4 tsp freshly grated nutmeg",
-                "1 tsp kosher salt, plus more to season"
-              ]},
-              { label: "Basting oil", ingredients: [
-                "2 Tbsp vegetable oil"
-              ]},
-              { label: "Finish", ingredients: [
-                "3 Tbsp unsalted butter, melted"
-              ]}
-            ],
-            steps: [
-              "Score one side of each chop with three diagonal slashes, about 1/4 inch deep.",
-              "Whisk together yogurt, cream, lemon juice, ginger, garlic, malt vinegar, garam masala, cumin, paprika, cayenne, mace (if using), nutmeg, and salt. Add chops, turn to coat, cover, and refrigerate overnight.",
-              "Remove chops from refrigerator. Add oil to marinade, toss with chops, and let stand at room temperature 30 minutes.",
-              "Grill over moderately high heat for 8 minutes, turning once. Brush with melted butter and grill 2 more minutes per side for medium-rare. Season with salt and serve."
-            ]
-          }
-        ]},
-        { title: "Beef", recipes: [
-          {
-            id: "rib-roast",
-            title: "Four Peppercorn Crusted Rotisserie Rib Roast",
-            favorite: true,
-            servings: "Serves 4–6",
-            source: "Lauren Muhlheim (family recipe, December 2020)",
-            comments: [
-              {html: "Best served with <a href='#horseradish-sauce'>Horseradish Sauce</a>."}
-            ],
-            ingredientGroups: [
-              { label: "Peppercorn crust", ingredients: [
-                "2 tsp black peppercorns",
-                "2 tsp white peppercorns",
-                "2 tsp green peppercorns",
-                "1 tsp pink peppercorns",
-                "1 tsp salt"
-              ]},
-              { label: "Roast", ingredients: [
-                "1 boneless beef rib roast (3 1/2 to 4 lbs)"
-              ]}
-            ],
-            steps: [
-              "Place peppercorns in a zip-lock bag and crush with a rolling pin until coarsely ground. Stir in salt.",
-              "Coat the roast all over with the peppercorn-salt mixture.",
-              "Cook on rotisserie: 18–20 min per lb for rare (140°F internal), 25–30 min per lb for medium (160°F), or 35–40 min per lb for well done (170°F).",
-              "Remove from rotisserie and slice 1/4 inch thick. Serve with Horseradish Sauce."
-            ]
-          },
-          {
-            title: "The Best Passover Brisket",
-            servings: "Serves 12   |   Prep: 15 min   |   Cook: 3 hrs 30 min   |   Total: 3 hrs 45 min",
-            source: "Phoebe Lapine, Feed Me Phoebe",
-            ingredientGroups: [
-              { label: "Brisket", ingredients: [
-                "One 5-lb brisket",
-                "8 garlic cloves, each cut lengthwise into 4 pieces",
-                "Sea salt and black pepper",
-                "1 Tbsp olive oil",
-                "1 qt beef stock"
-              ]},
-              { label: "Caramelized onions", ingredients: [
-                "2 Vidalia or sweet onions, thinly sliced"
-              ]},
-              { label: "Sauce", ingredients: [
-                "1 cup ketchup",
-                "1/4 cup coconut sugar or brown sugar",
-                "1 tsp paprika",
-                "1 tsp smoked paprika",
-                "1/4 tsp cayenne",
-                "1/2 tsp dried thyme or rosemary",
-                "2 bay leaves"
-              ]}
-            ],
-            steps: [
-              "Preheat oven to 500°F. Trim fat cap to an even 1/4-inch layer. Using a paring knife, make vertical incisions all over the meat and insert a piece of garlic into each. Season both sides generously with salt and pepper. Place in a large braiser, Dutch oven, or rimmed metal baking dish fat-side up and brown in the oven, about 10 minutes per side.",
-              "Remove pan from oven and pour in beef stock. (If using Pyrex, let the pan cool a few minutes first to prevent shattering.) Turn oven down to 350°F, cover tightly with a lid or foil, and braise for 1 hour.",
-              "While the brisket braises, heat olive oil in a large skillet over medium-low. Add onions and sauté, stirring occasionally, until soft and caramelized, about 30 minutes.",
-              "Remove brisket from oven. Whisk ketchup, sugar, paprika, smoked paprika, cayenne, thyme or rosemary, and bay leaves into the pan juices. Arrange caramelized onions on top of the meat. Cover and return to oven for 2–3 more hours. (2 hours for sliceable brisket; 3 hours for falling-apart, pulled-style.)",
-              "Transfer brisket to a cutting board and slice against the grain. Return slices to the sauce and serve. Can be made 1–2 days ahead and reheated gently."
-            ]
-          },
-          {
-            title: "Brenda's Brisket",
-            source: "Family recipe card, credited to Grandmother Brenda",
-            comments: [
-              "Best made a day ahead — brisket is much easier to slice when cold, and the fat can be skimmed from the surface before reheating."
-            ],
-            ingredientGroups: [
-              { label: "Brisket", ingredients: [
-                "1 brisket, 3–4 lbs (prefer 4 lbs)"
-              ]},
-              { label: "Rub and glaze", ingredients: [
-                "2 packages (1.4 oz each) onion soup mix",
-                "Ketchup, enough to coat both sides generously"
-              ]},
-              { label: "Vegetables", ingredients: [
-                "2–3 onions, sliced",
-                "3–4 carrots, cut into large chunks"
-              ]}
-            ],
-            steps: [
-              "Rub onion soup mix into brisket on both sides. Spread ketchup over both sides.",
-              "Place brisket fat-side-up on a large sheet of heavy-duty foil in a roasting pan. Scatter onions and carrots around the meat.",
-              "Wrap tightly in foil. Cover pan.",
-              "Bake at 300°F for 4–5 hours, until very tender.",
-              "For best results: cool completely, then refrigerate overnight. Slice cold (much easier than slicing warm). Skim any solidified fat from the surface. Return sliced meat to the pan, pour the fat-free pan juices over the top, cover, and reheat at 325°F until warmed through."
-            ]
-          },
-          {
-            title: "Cranberry-Chili Brisket",
-            source: "Family recipe card, credited to Grandmother Brenda",
-            comments: [
-              "A sweeter, saucier brisket — the cranberry and chili sauce make a rich, fruity gravy. As with all brisket, easier to slice cold and best reheated in its juices."
-            ],
-            ingredientGroups: [
-              { label: "Brisket", ingredients: [
-                "1 brisket, about 4 lbs"
-              ]},
-              { label: "Sauce", ingredients: [
-                "1 jar (12 oz) chili sauce",
-                "1 can (14 oz) whole berry cranberry sauce",
-                "1 package (1.4 oz) onion soup mix"
-              ]},
-              { label: "Vegetables", ingredients: [
-                "1 onion, sliced",
-                "1 bag (12 oz) baby carrots"
-              ]}
-            ],
-            steps: [
-              "Mix chili sauce, cranberry sauce, and onion soup mix together in a bowl.",
-              "Place brisket on a large sheet of heavy-duty foil in a roasting pan. Pour sauce mixture over and around brisket.",
-              "Lay onion slices on top; scatter carrots around the meat.",
-              "Wrap tightly in foil. Bake at 350°F for about 4 hours, until very tender.",
-              "Cool, refrigerate, slice cold, skim fat. Reheat covered in juices (see Brenda's Brisket)."
-            ]
-          },
-          {
-            id: "sous-vide-beef-ribs",
-            title: "Sous Vide Beef Back Ribs",
-            favorite: true,
-            servings: "Serves 6–8   |   Prep: 20 min   |   Sous vide: 24 hrs   |   Finish: 10 min   |   Total: ~24.5 hrs",
-            source: "Sip Bite Go, Two Kooks in the Kitchen, Went Here 8 This (Family hybrid)",
-            comments: [
-              {html: "Season with <a href='#steak-seasoning-rub'>Steak Seasoning Rub</a> (3× batch) before the sous vide, and serve alongside <a href='#cherry-bbq-sauce'>Cherry Barbecue Sauce</a>."}
-            ],
-            ingredientGroups: [
-              { label: "Rub", ingredients: [
-                "Steak Seasoning Rub — 3× batch for 2 racks (see recipe)"
-              ]},
-              { label: "Ribs", ingredients: [
-                "2 racks beef back ribs (~7–8 lbs total; also sold as beef spare ribs)"
-              ]},
-              { label: "Optional dripping glaze", ingredients: [
-                "½ cup drippings from the sous vide bags, strained",
-                "1 tsp Dijon mustard",
-                "2 Tbsp maple syrup or brown sugar",
-                "1 tsp cornstarch"
-              ]},
-              { label: "To serve", ingredients: [
-                "Cherry Barbecue Sauce (see recipe), warmed"
-              ]}
-            ],
-            steps: [
-              "Make a 3× batch of the Steak Seasoning Rub. Remove the silver skin membrane from the underside of each rack: slide a knife tip under the tissue at one end of a bone, grab it firmly with a paper towel, and peel the membrane off in one sheet. Pat ribs dry and rub generously all over. Vacuum seal each rack flat in its own bag.",
-              "Fill your sous vide container and set the circulator to 150°F. Submerge the sealed bags and cook for 24 hours.",
-              "Remove ribs from bags. To make the glaze, reserve ½ cup drippings; otherwise discard. Pat ribs very dry with paper towels — the drier they are, the better the char.",
-              "Optional glaze: Strain reserved drippings into a small saucepan. Refrigerate or freeze for 20–30 minutes until fat starts to congeal; skim and discard fat. Add Dijon, maple syrup, and cornstarch; whisk to combine. Bring to a boil, then reduce heat and simmer about 5 minutes until thickened and glossy.",
-              "Heat grill to high. Grill ribs 2–3 minutes per side until nicely charred. (If using the glaze, brush on both sides before and during grilling.) Slice between the bones and serve with Cherry Barbecue Sauce on the side."
-            ]
-          },
-          {
-            title: "Hearty Beef Stew With Red Onions and Ale",
-            servings: "Serves 6   |   Total: 3 hours",
-            source: "Melissa Clark, NYT Cooking",
-            comments: [
-              "Tastes even better a day or two later; can be frozen for up to two months. Serve over mashed potatoes, noodles, or polenta."
-            ],
-            ingredientGroups: [
-              { label: "Beef", ingredients: [
-                "2 lbs boneless beef stew meat, cut into 1-inch chunks",
-                "Kosher salt and black pepper",
-                "1–2 Tbsp all-purpose flour",
-                "2 Tbsp unsalted butter",
-                "1 Tbsp olive oil, plus more as needed"
-              ]},
-              { label: "Onions", ingredients: [
-                "3 medium red onions (2 sliced into half-moons; 1 cut into ½-inch wedges for Step 6)"
-              ]},
-              { label: "Aromatics", ingredients: [
-                "4 garlic cloves, thinly sliced",
-                "1 Tbsp tomato paste",
-                "1 tsp ground coriander",
-                "¼ tsp ground allspice"
-              ]},
-              { label: "Liquid", ingredients: [
-                "2 cups beef or chicken stock (preferably homemade)",
-                "1 cup ale or beer (nonalcoholic is fine)",
-                "1 cup water",
-                "1 rosemary sprig"
-              ]},
-              { label: "Vegetables", ingredients: [
-                "3 carrots, sliced",
-                "Red onion wedges (from Step 2 prep)"
-              ]},
-              { label: "Finish", ingredients: [
-                "1 Tbsp cider vinegar or sherry vinegar, plus more to taste"
-              ]},
-              { label: "Garnish", ingredients: [
-                "Chopped fresh chives",
-                "Flaky sea salt",
-                "Freshly ground black pepper"
-              ]}
-            ],
-            steps: [
-              "Season beef all over with salt and pepper. Set aside while you prepare the onions.",
-              "Peel onions. Cut 2 of them in half root to stem, then thinly slice crosswise into half-moons. Cut the third onion root to stem into ½-inch wedges; set wedges aside for Step 6.",
-              "Dust beef cubes lightly with flour. Heat butter and 1 Tbsp oil in a large Dutch oven over medium-high. Working in batches (do not crowd the pan), sear beef until dark all over, 5–6 minutes per batch. Transfer to a bowl as they brown. Add more oil and adjust heat as needed to prevent burning.",
-              "Stir in sliced onions; raise heat to medium-high if you lowered it. Cook, stirring occasionally, until pale golden and soft, 10–15 minutes. Add garlic and sauté until fragrant and lightly golden at the edges, 2–3 minutes more.",
-              "Make a well in the center of the onions. Stir in tomato paste, coriander, and allspice; cook, stirring, until paste is darkened, about 1 minute. Stir in stock, ale, 1 cup water, and rosemary sprig. Return beef and any accumulated juices to the pot; bring to a simmer. Partly cover and simmer gently for 45 minutes.",
-              "Give the beef a stir, then add reserved onion wedges. Simmer 15 minutes, then add carrots. Continue simmering until meat, onions, and carrots are tender, 30–45 minutes more.",
-              "If sauce seems thin, use a slotted spoon to transfer meat and vegetables to a platter; cover with foil to keep warm. Discard rosemary. Return pot to stove and simmer until thickened, 5–10 minutes. Stir in vinegar. Taste and adjust salt and vinegar. Spoon sauce over meat; garnish with chives, flaky sea salt, and more black pepper."
-            ]
-          },
-          {
-            title: "Dijon and Cognac Beef Stew",
-            servings: "Serves 4–6   |   Total: about 3 hours",
-            source: "Regina Schrambling, NYT Cooking",
-            comments: [
-              "Slow-cooker variation: render salt pork and sear flour-dusted beef in a sauté pan, then transfer to slow cooker with onions, shallots, carrots, mushrooms, and red wine. Deglaze pan with Cognac, then add 1 cup (not 2) stock, Dijon, and 1 Tbsp Pommery mustard; transfer to slow cooker. Cook on low 6–8 hours. Stir in remaining 3 Tbsp Pommery mustard before serving."
-            ],
-            ingredientGroups: [
-              { label: "Aromatics", ingredients: [
-                "1/4 lb salt pork, diced",
-                "1 large onion, finely diced",
-                "3 shallots, chopped",
-                "2 Tbsp unsalted butter, plus more as needed"
-              ]},
-              { label: "Beef", ingredients: [
-                "2 lbs beef chuck, cut into 1-inch cubes",
-                "2 Tbsp all-purpose flour",
-                "Kosher salt and black pepper"
-              ]},
-              { label: "Braising liquid", ingredients: [
-                "1/2 cup Cognac",
-                "2 cups beef stock",
-                "1/2 cup Dijon mustard",
-                "1 Tbsp Pommery mustard (or other whole-grain Dijon)"
-              ]},
-              { label: "Add-ins", ingredients: [
-                "4 large carrots, peeled and cut into half-moon slices",
-                "2 Tbsp unsalted butter",
-                "1/2 lb mushrooms, stemmed, cleaned, and quartered",
-                "3 Tbsp Pommery mustard (remaining)",
-                "1/4 cup red wine"
-              ]}
-            ],
-            steps: [
-              "Place salt pork in a Dutch oven over low heat and cook until fat is rendered. Remove and discard solids. Raise heat, add onion and shallots, and cook until softened but not browned, 10–15 minutes. Transfer to a bowl with a slotted spoon.",
-              "Add 2 Tbsp butter to the pot if needed to augment fat. Dust beef cubes with flour, season with salt and pepper, and shake off excess. Working in batches, brown beef over medium-high until well browned and almost crusty on all sides; transfer to the bowl with onions. Repeat.",
-              "Add Cognac to the empty pot and cook, stirring, until the bottom is deglazed. Add stock, Dijon mustard, and 1 Tbsp Pommery mustard; whisk to blend. Return meat and onions to pot. Reduce heat, partly cover, and simmer gently until meat is very tender, about 1 1/2 hours.",
-              "Add carrots and continue simmering until tender, about 30 minutes. Meanwhile, heat 2 Tbsp butter in a medium skillet over medium-high and sauté mushrooms until browned.",
-              "Stir mushrooms into the stew along with the remaining 3 Tbsp Pommery mustard and red wine. Simmer 5 minutes, taste, and adjust seasoning. Serve hot."
-            ]
-          },
-          {
-            title: "Asian Braised Short Ribs",
-            favorite: true,
-            servings: "Serves 6   |   Prep: 30 min   |   Cook: 6 hrs (slow cooker)   |   Total: ~6.5 hrs",
-            source: "Williams-Sonoma Kitchen",
-            ingredientGroups: [
-              { label: "Short ribs", ingredients: [
-                "2 Tbsp whole Chinese five spice (ground in spice grinder)",
-                "4 lbs bone-in beef short ribs",
-                "2–3 Tbsp olive oil"
-              ]},
-              { label: "Aromatics and braising liquid", ingredients: [
-                "1 large yellow onion, cut into 1/4-inch slices",
-                "4 garlic cloves, thinly sliced",
-                "1/3 cup plum wine",
-                "1/3 cup soy sauce",
-                "1/3 cup rice vinegar",
-                "1/4 cup sesame oil",
-                "1 Tbsp chili garlic paste",
-                "2 Tbsp fresh ginger, grated",
-                "Zest of 1 orange, peeled into 1/2-inch strips",
-                "Juice of 1 orange",
-                "1/4 cup sugar dissolved in 3/4 cup boiling water"
-              ]},
-              { label: "To serve", ingredients: [
-                "Steamed rice"
-              ]}
-            ],
-            steps: [
-              "Grind Chinese five spice in a spice grinder. Season short ribs all over with ground five spice; shake off excess.",
-              "In a heavy sauté pan over medium-high heat, warm 1 Tbsp olive oil. Working in batches, brown ribs on all sides, 10–12 minutes total, adding more oil as needed. Transfer to a slow cooker.",
-              "Add more oil to pan if needed. Reduce heat to medium, add onion and garlic, and cook, stirring occasionally, until soft, about 5 minutes. Add plum wine and stir to deglaze, scraping up browned bits. Increase heat to medium-high and cook until wine is reduced by half, 2–3 minutes. Transfer to slow cooker along with soy sauce, rice vinegar, sesame oil, chili garlic paste, ginger, orange zest, orange juice, and sugar mixture. Cover and cook on high for 6 hours.",
-              "Skim fat from the surface. Serve ribs and sauce over steamed rice."
-            ]
-          }
-        ]},
-        { title: "Ground Beef", recipes: [
-          {
-            title: "Taco Night!!",
-            servings: "Makes 12 tacos   |   Active: 35 min   |   Total: 3½ hrs",
-            source: "Molly Baz, The Club",
-            ingredientGroups: [
-              { label: "Aromatics and spice mix", ingredients: [
-                "1 large onion, roughly chopped",
-                "6 cloves garlic, roughly chopped",
-                "1/4 cup fresh ginger, roughly chopped (from a 3- to 4-inch piece; no need to peel)",
-                "1 large bunch cilantro, stems thinly sliced, leaves reserved for serving",
-                "1 Tbsp ground cinnamon",
-                "2 1/2 tsp ground turmeric",
-                "2 tsp ground cardamom",
-                "1 1/2 tsp Aleppo pepper or red pepper flakes, plus more to taste",
-                "1/2 tsp ground cloves",
-                "Kosher salt and freshly ground black pepper"
-              ]},
-              { label: "Ragù", ingredients: [
-                "2 lbs (80% lean) ground beef",
-                "2 Tbsp olive oil, plus more as needed",
-                "1 1/2 cups whole milk",
-                "2 cups low-sodium chicken broth, plus more as needed",
-                "One (28-oz) can crushed or chopped tomatoes",
-                "1 Tbsp honey",
-                "Apple cider vinegar, to taste"
-              ]},
-              { label: "Fennel-apple slaw", ingredients: [
-                "2 Granny Smith apples, thinly sliced into half moons",
-                "1 large bulb fennel, preferably with fronds, halved and thinly sliced crosswise",
-                "1/3 cup apple cider vinegar",
-                "1 Tbsp honey"
-              ]},
-              { label: "To serve", ingredients: [
-                "One (12-count) package hard taco shells",
-                "Sour cream, for serving"
-              ]}
-            ],
-            steps: [
-              "Roughly chop onion, garlic, and ginger. Thinly slice cilantro stems; reserve leaves for serving. In a small bowl, mix cinnamon, turmeric, cardamom, Aleppo pepper, cloves, and 1 Tbsp salt.",
-              "Break ground beef into 4 pieces and shape into rough balls. Season all over with 1 Tbsp plus 1 tsp salt.",
-              "Heat a large Dutch oven over high heat for 2 full minutes. Add olive oil, swirl to coat, and add beef. Sear without moving until deeply browned and crusty on the underside, 6–10 minutes. Flip and cook until the second sides are deeply golden and a fond has formed on the bottom, 4–6 minutes more. (Meat will not be cooked through at this point.)",
-              "Remove meat to a plate. Add more olive oil if the pot is dry. Reduce heat to medium-high and add onions, garlic, ginger, and cilantro stems. Sauté, stirring occasionally, until translucent and just starting to turn golden, 5–8 minutes.",
-              "Return meat and any accumulated juices to the pot. Sprinkle the spice mix over everything and stir, breaking meat into roughly ping-pong–sized balls, until fragrant, 2–3 minutes.",
-              "Add milk, chicken broth, tomatoes, and 1 Tbsp honey. Stir, scraping the bottom to release the fond. Bring to a low boil, then partially cover and reduce to a gentle simmer. Cook, stirring occasionally and adding splashes of broth as needed to maintain a saucy, chili-like consistency, until meat is tender and sauce is reduced, 1 hour 45 minutes to 2 hours 15 minutes. (Going 2½–3 hours makes the meat even more tender — add more broth as needed.) Remove from heat and season to taste with salt, Aleppo pepper, and a big splash of apple cider vinegar. Keep warm. Do ahead: can be made up to 2 days ahead; rewarm gently on the stovetop.",
-              "While the ragù braises, make the slaw: combine sliced apples, fennel, half the reserved cilantro leaves, and fennel fronds (roughly chopped, if you have them) in a large bowl. Dress with 1/3 cup apple cider vinegar and 1 Tbsp honey; toss to coat. Season with salt and pepper. Keep chilled until serving.",
-              "Preheat oven to 375°F. Place taco shells on a baking sheet and bake until just warm, 4 minutes.",
-              "Fill shells with ragù and a dollop of sour cream. Top with cilantro leaves and fennel-apple slaw. Serve immediately."
-            ]
-          },
-          {
-            title: "Korean Beef Bowl",
-            servings: "Serves 4   |   Active: 20 min   |   Total: 25 min",
-            source: "Khin's Kitchen, Glebe Kitchen, Chef Savvy (Family hybrid)",
-            ingredientGroups: [
-              { label: "Sauce", ingredients: [
-                "3 Tbsp low-sodium soy sauce",
-                "2 Tbsp brown sugar",
-                "1 1/2 Tbsp mirin",
-                "1 1/2 Tbsp gochujang",
-                "2 tsp sesame oil",
-                "1/4 tsp black pepper"
-              ]},
-              { label: "Creamy gochujang drizzle", ingredients: [
-                "3 Tbsp mayonnaise",
-                "1 Tbsp sour cream",
-                "1–2 tsp gochujang, to taste",
-                "1 tsp rice wine vinegar"
-              ]},
-              { label: "Beef and aromatics", ingredients: [
-                "1 Tbsp vegetable oil",
-                "1/2 large sweet onion, finely diced",
-                "4 cloves garlic, minced",
-                "1 tsp fresh ginger, grated",
-                "1 1/2 lbs lean ground beef"
-              ]},
-              { label: "To serve", ingredients: [
-                "Steamed white rice",
-                "3 green onions, thinly sliced",
-                "1 Tbsp toasted sesame seeds",
-                "Kimchi"
-              ]}
-            ],
-            steps: [
-              "Whisk all sauce ingredients together in a small bowl. Set aside.",
-              "Stir together mayo, sour cream, gochujang, and rice wine vinegar until smooth. Refrigerate until serving.",
-              "Heat oil in a large skillet or wok over medium-high. Add onion and cook, stirring, until softened and lightly golden, 3–4 minutes. Add garlic and ginger; cook 1 minute more.",
-              "Add ground beef, breaking into small pieces, and cook until browned and cooked through, 4–5 minutes. Drain excess fat if needed.",
-              "Pour sauce over beef and stir to combine. Simmer 2–3 minutes until slightly thickened.",
-              "Spoon over rice. Garnish with green onions and sesame seeds. Drizzle with creamy gochujang sauce. Serve with kimchi on the side."
-            ]
-          },
-          {
-            title: "Sweet Potato Shepherd's Pie",
-            servings: "Serves 6   |   Total: ~50 min",
-            source: "Shira Rosenbluth's mother",
-            comments: [
-              "For a 9\"×13\" pan, double the recipe."
-            ],
-            ingredientGroups: [
-              { label: "Sweet potato topping", ingredients: [
-                "5–6 sweet potatoes, peeled",
-                "1½ tsp salt",
-                "2–3 Tbsp mayonnaise",
-                "Oil, for brushing"
-              ]},
-              { label: "Meat filling", ingredients: [
-                "1 Tbsp oil",
-                "1 large onion, chopped",
-                "1 lb ground beef",
-                "½ tsp garlic powder",
-                "½ tsp onion powder",
-                "½ tsp paprika",
-                "¼ tsp salt",
-                "¼ tsp pepper",
-                "1 Tbsp soy sauce",
-                "1 Tbsp teriyaki sauce",
-                "2 Tbsp Marsala wine",
-                "2 Tbsp tomato paste",
-                "½ cup water",
-                "1 cup frozen peas and carrots"
-              ]}
-            ],
-            steps: [
-              "Place sweet potatoes in a pot with water and bring to a boil. Cover and simmer until fork tender. Drain, reserving ½ cup of the cooking water. Season with salt, mayonnaise, and 2 Tbsp of the reserved water; mash until smooth. Add more water and salt to taste.",
-              "Preheat oven to 400°F.",
-              "Heat oil in a large frying pan over medium flame. Add onion and sauté until translucent, about 3 minutes. Add ground beef and sauté until no longer pink.",
-              "Add garlic powder, onion powder, paprika, salt, pepper, soy sauce, and teriyaki sauce; mix well to incorporate. Add Marsala wine, tomato paste, water, peas and carrots; mix well and cook 3 minutes.",
-              "Transfer meat mixture to a 9\" round pan. Top with mashed sweet potatoes. Using a fork, make a design on the surface. Lightly brush the top with oil. Bake uncovered at 400°F for 25 minutes."
-            ]
-          }
-        ]},
-        { title: "Fish", recipes: [
-          {
-            title: "Dry-Brined Salmon",
-            servings: "Serves 4   |   Prep: 5 min   |   Marinate: 8 hrs – 2 days   |   Cook: 15 min   |   Total: ~8.5 hrs+",
-            source: "J. Kenji López-Alt, NYT Cooking",
-            comments: [
-              "Marinating with Shio Koji — a fermented rice-and-koji paste — acts as a rich dry brine: it firms the flesh, prevents albumin leakage, and makes the skin virtually nonstick and chip-crisp. Even a short 30–45-minute rest improves the fish.",
-              "Works with any type of salmon; especially dramatic with leaner coho or sockeye."
-            ],
-            ingredientGroups: [
-              { label: "Salmon and marinade", ingredients: [
-                "4 (5- to 7-oz) skin-on salmon fillets",
-                "¼ cup Shio Koji paste (about 1 Tbsp per fillet)"
-              ]},
-              { label: "Cooking oil", ingredients: [
-                "Neutral oil for cooking"
-              ]},
-              { label: "Broiling oil", ingredients: [
-                "Small amount of neutral oil"
-              ]},
-              { label: "To serve", ingredients: [
-                "Extra-virgin olive oil",
-                "Lemon wedges"
-              ]}
-            ],
-            steps: [
-              "Smear Shio Koji paste over the flesh side of each fillet. Place fillets flesh-side down in a Pyrex dish. Transfer to the refrigerator (uncovered or loosely covered with foil) and marinate at least 8 hours and up to 2 days. Before cooking, scrape off the Shio Koji and pat fillets very dry with paper towels.",
-              "To cook under the broiler, skip to Step 4. To cook on the stovetop, coat each fillet with a thin film of oil on all sides. Heat a skillet large enough to hold the fillets over medium-low for 2 minutes.",
-              "Add fillets skin-side down; press down for the first few minutes to keep skin flat and in contact with the pan. Cook, moving fillets occasionally, until skin is brown and crisp, 4–5 minutes total. (If the fillet doesn't release, give it another 15–30 seconds.) Flip and cook until as done as you like: 100–105°F for medium-rare, 130–135°F for well done. Remove from pan and rest 5 minutes, skin-side up. Serve with a drizzle of olive oil and a lemon wedge.",
-              "To cook under the broiler: adjust a rack 6 inches below the broiler element. Heat broiler to high. Rub a small amount of oil all over each fillet and arrange skin-side up on a rimmed baking sheet.",
-              "For medium-rare, broil until skin is brown, crisp, and charred in spots, 4–5 minutes. (For more well done, increase distance to 8 inches and cook 7–8 minutes total.) Rest 5 minutes, skin-side up. Serve with a drizzle of olive oil and a lemon wedge."
-            ]
-          },
-          {
-            title: "Baked Lemon Salmon with Creamy Dill Sauce",
-            servings: "Serves 4   |   Prep: 10 min   |   Rest: 10 min   |   Cook: 15 min   |   Total: 35 min",
-            source: "Jaclyn, Cooking Classy",
-            ingredientGroups: [
-              { label: "Salmon", ingredients: [
-                "4 (6-oz) salmon fillets",
-                "2 Tbsp extra-virgin olive oil",
-                "1½ tsp lemon zest",
-                "2 Tbsp fresh lemon juice",
-                "Salt and freshly ground black pepper"
-              ]},
-              { label: "Creamy dill sauce (make ahead)", ingredients: [
-                "⅓ cup fat-free plain Greek yogurt",
-                "3 Tbsp full-fat mayonnaise",
-                "1 clove garlic, finely minced",
-                "1 Tbsp chopped fresh dill",
-                "2–3 tsp milk (to reach desired consistency)",
-                "½ tsp honey",
-                "Salt and freshly ground black pepper"
-              ]}
-            ],
-            steps: [
-              "Preheat oven to 400°F. Whisk together olive oil, lemon zest, and lemon juice in a small bowl. Grease a 13×9-inch baking dish. Place salmon fillets in the dish, season one side with salt and pepper, flip, drizzle with lemon mixture, and gently rub over the fillets. Season tops with salt and pepper. Let rest at room temperature 10 minutes.",
-              "Bake 12–16 minutes, until cooked through (cook time varies with fillet thickness and desired doneness). Serve warm topped with Creamy Dill Sauce.",
-              "Make the sauce: In a bowl, mix together Greek yogurt, mayonnaise, garlic, dill, honey, and enough milk to reach desired consistency. Season with salt and pepper. Refrigerate until ready to serve; let come to room temperature about 20 minutes before serving so it's not ice-cold over warm salmon. Keeps refrigerated for a few days — also makes an excellent vegetable dip."
-            ]
-          },
-          {
-            title: "Sriracha Maple Salmon",
-            servings: "Serves 4   |   Active: 10 min   |   Total: 16 min",
-            source: "Ree Drummond, Food Network (The Pioneer Woman)",
-            ingredientGroups: [
-              { label: "Fish and vegetables", ingredients: [
-                "4 (6-oz) skinless salmon fillets",
-                "3 medium zucchinis, cut into 1-inch rounds",
-                "3 Tbsp olive oil"
-              ]},
-              { label: "Sauce", ingredients: [
-                "¼ cup low-sodium soy sauce",
-                "¼ cup maple syrup",
-                "3 Tbsp grated fresh ginger",
-                "3 Tbsp rice wine vinegar",
-                "2 Tbsp Sriracha",
-                "1 tsp cornstarch",
-                "4 cloves garlic, grated",
-                "3 green onions, sliced — whites and greens separated"
-              ]},
-              { label: "To serve", ingredients: [
-                "Cooked rice"
-              ]}
-            ],
-            steps: [
-              "Turn oven to broil. Position rack in the upper third of the oven.",
-              "Arrange salmon fillets flesh-side up on one side of a large baking dish; place zucchini on the other side. Drizzle both with olive oil.",
-              "Whisk together soy sauce, maple syrup, ginger, rice wine vinegar, Sriracha, cornstarch, garlic, and the white parts of the green onions in a small bowl. Pour sauce over salmon and zucchini. Broil 7 minutes. Remove from oven, spoon sauce over salmon, and flip zucchini. Return to broiler and cook until salmon is cooked through and sauce has thickened, 6–7 minutes more.",
-              "Spread cooked rice on a large platter. Arrange salmon on top and zucchini alongside. Spoon over remaining sauce from the baking dish. Garnish with the reserved green onion tops. Serve."
-            ]
-          },
-          {
-            title: "Fish and Chips with Malt Vinegar Mayonnaise",
-            servings: "Serves 4   |   Special equipment: deep-fry thermometer",
-            source: "Adam Evans, Bon Appétit (September 2013)",
-            comments: [
-              "Key: beer and club soda must be ice-cold. Chill the batter if prepping ahead.",
-              "Corn flour (more finely ground than cornmeal) is available at Latin markets, natural-foods stores, and bobsredmill.com."
-            ],
-            ingredientGroups: [
-              { label: "Malt Vinegar Mayonnaise (up to 1 day ahead)", ingredients: [
-                "1 large egg yolk",
-                "2 Tbsp malt vinegar, divided",
-                "1 cup vegetable oil",
-                "Kosher salt and freshly ground black pepper"
-              ]},
-              { label: "Frying oil", ingredients: [
-                "Vegetable oil for frying (about 4 cups)"
-              ]},
-              { label: "Batter", ingredients: [
-                "2 cups all-purpose flour",
-                "2 tsp baking powder",
-                "1 tsp baking soda",
-                "1 tsp kosher salt, plus more for seasoning",
-                "½ tsp freshly ground black pepper, plus more",
-                "12 oz (or more) chilled light lager",
-                "1 cup chilled club soda",
-                "1 Tbsp malt vinegar"
-              ]},
-              { label: "Fish and dredging flour", ingredients: [
-                "1 cup corn flour or all-purpose flour",
-                "1½ lb cod, haddock, or pollack, cut into long 1½\"-wide strips"
-              ]},
-              { label: "To serve", ingredients: [
-                "French fries",
-                "Old Bay seasoning",
-                "Flaky sea salt (such as Maldon)",
-                "Chopped fresh dill",
-                "Lemon wedges"
-              ]}
-            ],
-            steps: [
-              "Make the mayonnaise: Whisk egg yolk and 1 Tbsp malt vinegar in a small bowl. Whisking constantly, very slowly drizzle in vegetable oil — drop by drop at first — until mayonnaise is thickened and smooth. Whisk in remaining 1 Tbsp vinegar. Season with salt and pepper. Cover and chill. (Can be made 1 day ahead.)",
-              "When ready to fry, fit a large pot with a deep-fry thermometer; pour in oil to measure 3 inches. Heat over medium-high until thermometer registers 375°F.",
-              "Meanwhile, whisk flour, baking powder, baking soda, 1 tsp salt, and ½ tsp pepper in a large bowl. Whisking constantly, slowly add beer, club soda, and 1 Tbsp vinegar, adding more beer if batter is too thick (it should be the consistency of thin pancake batter).",
-              "Place corn flour in a shallow bowl. Season fish with salt and pepper. Working in batches (returning oil to 375°F between batches), dredge fish in corn flour, shaking off excess; dip in batter, letting excess drip back into bowl; and fry until golden brown and crisp, about 2 minutes per side. Transfer to a paper towel–lined baking sheet.",
-              "Season fish and fries with Old Bay, flaky sea salt, and dill. Serve with malt vinegar mayonnaise and lemon wedges."
-            ]
-          },
-          {
-            title: "Smoked Salmon Niçoise Salad",
-            favorite: true,
-            servings: "Serves 2–4   |   Active: 15 min   |   Total: 45 min",
-            source: "Molly Yeh, Food Network (Girl Meets Farm)",
-            comments: [
-              "Can also be made with high-end jarred tuna in oil in place of the smoked salmon."
-            ],
-            ingredientGroups: [
-              { label: "Roasted potatoes", ingredients: [
-                "1 lb rainbow fingerling potatoes, quartered",
-                "1 Tbsp olive oil",
-                "½ tsp kosher salt + freshly ground black pepper"
-              ]},
-              { label: "Haricot verts and eggs", ingredients: [
-                "8 oz haricot verts, trimmed",
-                "1 Tbsp olive oil",
-                "¼ tsp kosher salt + freshly ground black pepper",
-                "4 large eggs"
-              ]},
-              { label: "Dressing", ingredients: [
-                "½ cup white wine vinegar",
-                "¼ cup Dijon mustard",
-                "2 tsp fresh thyme leaves, chopped",
-                "½ small red onion, finely chopped",
-                "¼ cup olive oil"
-              ]},
-              { label: "Salad", ingredients: [
-                "1 head Boston, Bibb, or butter lettuce, leaves separated",
-                "One 4- to 6-oz smoked salmon fillet, broken into large chunks (or high-end jarred tuna in oil)",
-                "16 cherry tomatoes, halved",
-                "1 cup niçoise or kalamata olives"
-              ]}
-            ],
-            steps: [
-              "Preheat oven to 425°F.",
-              "Toss quartered potatoes with 1 Tbsp olive oil, ½ tsp salt, and a few grinds of pepper on a baking sheet. Roast 15 minutes.",
-              "Meanwhile, toss haricot verts with 1 Tbsp olive oil, ¼ tsp salt, and pepper on one side of a second baking sheet. Place eggs on the other side. After potatoes have roasted 15 minutes, add the second baking sheet to the oven. Continue roasting until potatoes are golden and easily pierced with a fork and green beans are tender-crisp, about 15 minutes more.",
-              "Immediately transfer eggs to a bowl of ice water and let sit 10 minutes. Peel and quarter.",
-              "Whisk vinegar, Dijon, thyme, and red onion in a medium bowl. Whisking constantly, slowly drizzle in ¼ cup olive oil until emulsified.",
-              "Divide lettuce among serving plates. Arrange potatoes, haricot verts, salmon (or tuna), eggs, cherry tomatoes, and olives on top. Drizzle with dressing, sprinkle with salt and a few grinds of pepper."
-            ]
-          },
-          {
-            title: "Sole with Lemon-Caper Sauce",
-            servings: "Serves 2–4   |   Total: 20 min (all active)",
-            source: "Giada De Laurentiis, Food Network (Giada Entertains)",
-            ingredientGroups: [
-              { label: "Fish", ingredients: [
-                "4 fillets of lemon sole",
-                "1¼ tsp kosher salt",
-                "⅓ cup all-purpose flour, for dredging",
-                "2 Tbsp extra-virgin olive oil",
-                "2 Tbsp unsalted butter"
-              ]},
-              { label: "Sauce", ingredients: [
-                "¼ cup capers, drained and rinsed",
-                "1 clove garlic, minced",
-                "½ cup chicken stock",
-                "¼ cup freshly squeezed lemon juice (from about 1½ lemons)",
-                "½ tsp Calabrian chili paste",
-                "½ tsp chopped fresh oregano",
-                "2 Tbsp unsalted butter (remaining)"
-              ]},
-              { label: "Finish", ingredients: [
-                "2 Tbsp chopped fresh Italian parsley"
-              ]}
-            ],
-            steps: [
-              "Pat sole fillets dry with paper towels. Season evenly with 1 tsp salt. Heat a medium skillet over high heat; add 1 Tbsp olive oil and 1 Tbsp butter. When butter is fully melted and bubbles have subsided, dredge 2 fillets in flour, shaking off excess. Add to skillet; reduce heat to medium-high. Cook until beginning to brown around the edges, 2–3 minutes. Flip gently and cook 30 seconds more. Transfer to a plate. Repeat with remaining 1 Tbsp olive oil, 1 Tbsp butter, and fish.",
-              "With all 4 fillets out of the skillet, add capers and garlic and cook over medium heat, stirring, until fragrant, about 15 seconds. Add chicken stock and lemon juice; stir, scraping up any browned bits. Season with remaining ¼ tsp salt. Simmer about 2 minutes to reduce slightly. Finish by stirring in the remaining 2 Tbsp butter, Calabrian chili paste, and oregano. Spoon sauce over fish, sprinkle with parsley, and serve."
-            ]
-          },
-          {
-            title: "Fast Vietnamese Caramel Bluefish",
-            favorite: true,
-            servings: "Serves 4   |   Total: 20 min",
-            source: "Melissa Clark, NYT Cooking",
-            comments: [
-              "Can be made with any rich, flaky fish such as sea bass — not just bluefish."
-            ],
-            ingredientGroups: [
-              { label: "Fish", ingredients: [
-                "4 (6-oz) skin-on bluefish fillets (or any rich, flaky fish such as sea bass)",
-                "1 Tbsp peanut, grapeseed, or safflower oil"
-              ]},
-              { label: "Sauce", ingredients: [
-                "1 stalk lemongrass (or substitute a 2-inch strip of lemon or lime zest, peeled with a peeler — no bruising needed)",
-                "⅓ cup light brown sugar",
-                "2 Tbsp Asian fish sauce",
-                "1½ Tbsp soy sauce",
-                "1 tsp grated fresh ginger",
-                "½ tsp black pepper"
-              ]},
-              { label: "Garnish", ingredients: [
-                "Sliced scallions",
-                "Thinly sliced jalapeño",
-                "Fresh cilantro",
-                "Cooked rice (optional)"
-              ]}
-            ],
-            steps: [
-              "Brush fish all over with oil. Remove outer layer of lemongrass stalk and cut stalk into 2-inch lengths; using the butt of a kitchen knife, pound and bruise stalks all over.",
-              "Place lemongrass pieces, sugar, fish sauce, soy sauce, ginger, and black pepper in a large skillet. Bring to a simmer over medium-high heat; reduce sauce 1–2 minutes until syrupy.",
-              "Add fish skin-side down. Simmer, basting frequently with pan sauce, for 2 minutes. Carefully turn fish and continue cooking until just cooked through, 2–3 minutes more.",
-              "Transfer to a serving plate. Garnish with scallions, jalapeño, and cilantro. Drizzle with additional sauce. Serve over rice if desired."
-            ]
-          },
-          {
-            title: "Spicy Tuna Salad with Crispy Rice",
-            servings: "Serves 4   |   Prep: 5 min   |   Cook: 30 min   |   Total: 35 min",
-            source: "Ali Slagle, NYT Cooking",
-            ingredientGroups: [
-              { label: "Rice", ingredients: [
-                "1½ cups sushi rice, rinsed well",
-                "2 cups water",
-                "1 Tbsp unseasoned rice vinegar",
-                "2 tsp granulated sugar",
-                "1 tsp kosher salt (Diamond Crystal)"
-              ]},
-              { label: "Tuna salad", ingredients: [
-                "3 scallions, trimmed and thinly sliced",
-                "2 Persian or mini seedless cucumbers, thinly sliced",
-                "4 (5-oz) cans water-packed tuna, drained",
-                "⅓ cup mayonnaise",
-                "1½ Tbsp Sriracha, plus more to taste",
-                "2 tsp soy sauce",
-                "2 tsp unseasoned rice vinegar"
-              ]},
-              { label: "Cucumber salt", ingredients: [
-                "Pinch of kosher salt"
-              ]},
-              { label: "Oil for crisping", ingredients: [
-                "3 Tbsp neutral oil (such as grapeseed), plus more as needed"
-              ]}
-            ],
-            steps: [
-              "In a large nonstick skillet with a lid, stir together 2 cups water, rice, 1 Tbsp rice vinegar, sugar, and 1 tsp salt. Bring to a boil over high heat, then cover, reduce heat to low, and cook until rice is tender, 18–20 minutes.",
-              "Meanwhile, thinly slice scallions and cucumbers. In a large bowl, stir together scallions, tuna, mayonnaise, Sriracha, soy sauce, and remaining 2 tsp rice vinegar. Taste and add more Sriracha for heat. Refrigerate until rice is ready (or up to 5 days).",
-              "Sprinkle cucumbers with a pinch of salt.",
-              "Crisp the rice: make 4–5 small holes in the rice in the skillet, then pour oil down the sides of the pan and into the divots. Increase heat to medium and cook until rice is browned at the edges, 4–7 minutes. (Lift the rice to check.) If you don't see oil bubbling in the holes, add a teaspoon or two more oil.",
-              "Divide rice, crispy-side up, among bowls or plates. Serve with a scoop of spicy tuna and the cucumbers alongside."
-            ]
-          }
-        ] },
-        { title: "Shellfish", recipes: [
-          {
-            title: "Moules Marinières",
-            servings: "Serves 4   |   Prep: 45 min   |   Cook: 15 min   |   Total: 1 hour",
-            source: "Florence Fabricant, NYT Cooking; garlic and cream option adapted from George Duran, Food Network",
-            ingredientGroups: [
-              { label: "Mussels", ingredients: [
-                "6 lbs mussels"
-              ]},
-              { label: "Aromatics", ingredients: [
-                "4 Tbsp unsalted butter, divided",
-                "4 Tbsp finely minced shallots (about 2 medium shallots)",
-                "OPTIONAL: 2–4 garlic cloves, finely minced"
-              ]},
-              { label: "Wine", ingredients: [
-                "4 cups dry white wine"
-              ]},
-              { label: "Cream (optional)", ingredients: [
-                "½ cup heavy cream"
-              ]},
-              { label: "To serve", ingredients: [
-                "Freshly ground black pepper",
-                "2 Tbsp minced fresh parsley",
-                "Crusty bread"
-              ]}
-            ],
-            steps: [
-              "Scrub the mussels under cold water. Pull off any beards (the fibrous tufts near the hinge). Discard any that are cracked or don't close when tapped.",
-              "In a large pot (at least 8 quarts), melt 2 Tbsp of the butter over low heat. Add shallots (and garlic, if using) and sauté until soft but not browned, about 3–5 minutes.",
-              "Add the wine; raise heat to medium. Add mussels, cover, and steam until they open, about 10–15 minutes.",
-              "Using a slotted spoon, remove mussels from the pot; divide among warmed bowls. Discard any that did not open.",
-              "FOR MOULES À LA CRÈME: Stir the cream into the remaining broth and simmer 2–3 minutes until slightly thickened.",
-              "Taste the broth. If too salty, dilute with a little water. Add the remaining 2 Tbsp butter and swirl until melted. Season with pepper. Ladle broth over mussels, taking care not to disturb any sediment at the bottom of the pot.",
-              "Sprinkle with parsley and serve immediately with crusty bread.",
-              "TIP: After the meal, shuck and refrigerate any leftover mussels."
-            ]
-          },
-          {
-            title: "Shrimp with Orzo and Peas",
-            servings: "Serves 2–4   |   Total: ~20 min",
-            source: "Adapted from Pampered Chef, 29 Minutes to Dinner",
-            ingredientGroups: [
-              { label: "Shrimp", ingredients: [
-                "½ lb shrimp, peeled and deveined",
-                "1 Tbsp vegetable oil",
-                "¼ tsp salt",
-                "¼ tsp pepper",
-                "⅛ tsp sugar"
-              ]},
-              { label: "Orzo", ingredients: [
-                "2 cups chicken broth",
-                "1 cup white wine",
-                "1 clove garlic, minced",
-                "8 oz orzo"
-              ]},
-              { label: "Finish", ingredients: [
-                "1 cup frozen peas",
-                "1 Tbsp fresh lemon juice",
-                "1 Tbsp unsalted butter"
-              ]},
-              { label: "To serve", ingredients: [
-                "1 Tbsp lemon zest, grated",
-                "1 Tbsp fresh parsley, finely chopped",
-                "Freshly grated Parmesan (optional)"
-              ]}
-            ],
-            steps: [
-              "In a large bowl, toss shrimp with salt, pepper, and sugar. Heat oil in a large skillet over medium-high. Cook shrimp 3 minutes. Turn and remove from heat; let stand 1 minute until pink and opaque. Remove shrimp from skillet.",
-              "Add broth, wine, garlic, and orzo to the skillet. Bring to a boil. Cover and cook on medium-low until orzo is tender, 10–12 minutes.",
-              "Return shrimp to skillet; add peas, butter, and lemon juice. Cover and let stand 3–5 minutes until heated through. Remove from heat and top with lemon zest and parsley. Serve with freshly grated Parmesan if desired."
-            ]
-          },
-          {
-            title: "Spicy Grilled Shrimp",
-            servings: "Serves 4   |   Total: 20 min",
-            source: "Mark Bittman, NYT Cooking (1999)",
-            ingredientGroups: [
-              { label: "Paste and shrimp", ingredients: [
-                "1 large clove garlic",
-                "1 Tbsp coarse salt",
-                "½ tsp cayenne",
-                "1 tsp paprika",
-                "2 Tbsp olive oil",
-                "2 tsp fresh-squeezed lemon juice",
-                "1½–2 lbs large shrimp (15–18 per pound), peeled, rinsed, and dried"
-              ]},
-              { label: "To serve", ingredients: [
-                "Lemon wedges"
-              ]}
-            ],
-            steps: [
-              "Start a charcoal or gas grill, or heat the broiler. Make the fire as hot as it will get and put the rack close to the heat source.",
-              "Mince garlic with salt; mix with cayenne and paprika, then make into a paste with olive oil and lemon juice. Smear paste all over shrimp. Grill or broil 2–3 minutes per side, turning once. Serve immediately or at room temperature with lemon wedges.",
-              "NOTE: For best results, make sure your paprika is fresh — if it doesn't taste vibrant and smoky, it's time to buy more."
-            ]
-          },
-          {
-            title: "Bacon-Wrapped Scallops with Chili Butter",
-            servings: "Serves 6–8   |   Prep: 15 min   |   Cook: 20 min   |   Total: 35 min",
-            source: "Ree Drummond, The Pioneer Woman",
-            ingredientGroups: [
-              { label: "Scallops and bacon", ingredients: [
-                "2 lbs large scallops",
-                "½ lb bacon, cut into thirds or halves",
-                "Wooden skewers"
-              ]},
-              { label: "Chili butter", ingredients: [
-                "1 stick (8 Tbsp) unsalted butter",
-                "2 tsp chili powder",
-                "Dash of cayenne"
-              ]}
-            ],
-            steps: [
-              "Preheat oven to 425°F. Wrap a piece of bacon around each scallop and secure with a wooden skewer.",
-              "Cook on a drip pan for 20 minutes, until bacon is sizzling and brown. (Alternatively: broil for 15 minutes, until bacon is sizzling and brown.)",
-              "Melt butter; stir in chili powder and cayenne. Drizzle over scallops before serving.",
-              "NOTE: Can also be cooked on the grill."
-            ]
-          },
-          {
-            title: "Shrimp Scampi with Linguini",
-            servings: "Serves 4–6   |   Prep: 15 min   |   Cook: 25 min   |   Total: 40 min",
-            source: "Tyler Florence, Food Network (Food 911)",
-            ingredientGroups: [
-              { label: "Pasta", ingredients: [
-                "1 lb linguini"
-              ]},
-              { label: "Shrimp and aromatics", ingredients: [
-                "2 Tbsp unsalted butter",
-                "2 Tbsp extra-virgin olive oil",
-                "2 shallots, finely diced",
-                "2 cloves garlic, minced",
-                "Pinch Aleppo pepper or red pepper flakes (optional)",
-                "1 lb shrimp, peeled and deveined",
-                "Kosher salt and freshly ground black pepper"
-              ]},
-              { label: "Sauce", ingredients: [
-                "½ cup dry white wine",
-                "Juice of 1 lemon",
-                "2 Tbsp unsalted butter",
-                "2 Tbsp extra-virgin olive oil"
-              ]},
-              { label: "To serve", ingredients: [
-                "¼ cup finely chopped fresh parsley",
-                "Extra-virgin olive oil, for drizzling"
-              ]}
-            ],
-            steps: [
-              "Bring a large pot of salted water to a boil. Add linguini and cook 6–8 minutes until not quite done (it will finish in the sauce). Drain.",
-              "Meanwhile, melt 2 Tbsp butter with 2 Tbsp olive oil in a large skillet over medium-high heat. Sauté shallots, garlic, and red pepper flakes (if using) until shallots are translucent, 3–4 minutes. Season shrimp with salt and pepper; add to pan and cook until pink, 2–3 minutes. Remove shrimp and set aside.",
-              "Add wine and lemon juice to the pan; bring to a boil. Add remaining 2 Tbsp butter and 2 Tbsp olive oil; when butter has melted, return shrimp to the pan along with parsley and drained pasta. Toss well; season with salt and pepper. Drizzle with olive oil and serve immediately."
-            ]
-          },
-          {
-            title: "Yang Chow Slippery Shrimp",
-            servings: "Serves 4   |   Total: 25 min",
-            source: "Los Angeles Times (Yang Chow Restaurant)",
-            ingredientGroups: [
-              { label: "Shrimp and coating", ingredients: [
-                "1 lb large shrimp, peeled, deveined, and butterflied",
-                "¼ cup cornstarch"
-              ]},
-              { label: "Cornstarch slurry", ingredients: [
-                "2 tsp cornstarch",
-                "2 tsp water"
-              ]},
-              { label: "Frying oil", ingredients: [
-                "2 cups oil"
-              ]},
-              { label: "Sauce", ingredients: [
-                "2 large cloves garlic, minced",
-                "½ tsp minced fresh ginger",
-                "½ tsp cayenne",
-                "1 Tbsp tomato sauce or ketchup",
-                "1 Tbsp white vinegar",
-                "1 Tbsp white wine",
-                "1½ Tbsp sugar",
-                "½ tsp salt",
-                "¼ cup water"
-              ]},
-              { label: "Finish", ingredients: [
-                "4 green onions, sliced"
-              ]}
-            ],
-            steps: [
-              "Peel, devein, and butterfly the shrimp.",
-              "Toss shrimp with ¼ cup cornstarch until completely coated.",
-              "Combine 2 tsp cornstarch with 2 tsp water in a small bowl; set aside.",
-              "Heat oil in a skillet or wok over medium heat until hot. Deep-fry shrimp until golden, about 45 seconds. Remove shrimp and drain the oil from the wok, leaving 1 Tbsp.",
-              "Reheat wok. Add garlic, ginger, and cayenne; stir a few seconds. Add tomato sauce, vinegar, wine, sugar, salt, ¼ cup water, and the cornstarch slurry. Cook and stir until sauce thickens.",
-              "Add shrimp and toss until coated. Add green onions, stir, turn out onto a platter, and serve."
-            ]
-          }
-        ] },
-        { title: "Other", recipes: [
-          {
-            title: "Peppered Duck Breast With Red Wine Sauce",
-            servings: "Serves 6   |   Total: ~1½ hours (including 1 hour marinate)",
-            source: "David Tanis, NYT Cooking",
-            comments: [
-              "A steak au poivre made with duck. Fancy enough for a gathering, relaxed enough for any night you want something special. The sauce can be made ahead and reheated, thinned with a little broth."
-            ],
-            ingredientGroups: [
-              { label: "Duck and marinade (up to 1 day ahead)", ingredients: [
-                "3 Muscovy duck breasts (about 1 lb each)",
-                "Salt",
-                "1 Tbsp freshly crushed black peppercorns (about 1 tsp per breast)",
-                "4 garlic cloves, sliced",
-                "Fresh thyme sprigs"
-              ]},
-              { label: "Sauce", ingredients: [
-                "2 Tbsp unsalted butter, divided",
-                "Reserved duck tenderloins (from Step 1)",
-                "1 large shallot, sliced",
-                "1 Tbsp tomato paste",
-                "1 small thyme sprig",
-                "2 cups unsalted chicken broth",
-                "¼ cup + 2 Tbsp medium-bodied red wine",
-                "1 Tbsp Cognac or brandy",
-                "2 tsp potato starch"
-              ]}
-            ],
-            steps: [
-              "Remove the tenderloins (the thin strips on the undersides of the duck breasts) and reserve for the sauce. With a sharp knife, trim away any gristle from the undersides and any excess fat. Score the skin in a diamond pattern, cutting through the fat but not into the meat. Lightly sprinkle salt on both sides, then rub 1 tsp crushed black peppercorns all over each breast. Sprinkle with the garlic and a few thyme sprigs, cover, and leave at room temperature for 1 hour. (For deeper flavor, refrigerate for several hours or overnight, then return to room temperature before cooking.)",
-              "Heat 1 Tbsp butter in a saucepan over medium heat. Add the shallot and reserved duck tenderloins and let them brown well, stirring occasionally, 5–8 minutes. Stir in the tomato paste and thyme sprig and let fry for 1 minute.",
-              "Add the broth and ¼ cup wine, raise heat to a brisk simmer, and reduce to about 1¼ cups, about 10 minutes. Strain the sauce and return to heat. Add the remaining 2 Tbsp red wine and the Cognac or brandy and cook 1 minute more. Dissolve the potato starch in 2 Tbsp cold water, then stir into the sauce. Whisk in the remaining 1 Tbsp butter. Season with salt.",
-              "Remove and discard the garlic and thyme from the breasts. Heat a large, heavy skillet over medium-high. When hot, lay in the duck breasts skin-side down and let sizzle. Lower heat to medium and cook for a total of 7 minutes, checking to ensure the skin isn't browning too quickly. Turn over and cook another 3 minutes for rare, 4–5 minutes for medium-rare. Transfer to a warm platter and rest 10 minutes. Slice crosswise at a slight angle and serve with the sauce."
-            ]
-          },
-          {
-            title: "Sheet-Pan Italian Sub Dinner",
-            servings: "Serves 4   |   Total: 25 min",
-            source: "Ali Slagle, NYT Cooking",
-            comments: [
-              "All the flavors of an Italian sub — salami, radicchio, tomatoes, pepperoncini, chickpeas — roasted until caramelized and briny. Can swap in cauliflower florets, cubes of squash, or halved red potatoes for the radicchio."
-            ],
-            ingredientGroups: [
-              { label: "Vinaigrette", ingredients: [
-                "4 garlic cloves",
-                "2 Tbsp dried oregano",
-                "2 tsp kosher salt",
-                "¼ cup red wine vinegar",
-                "¼ cup extra-virgin olive oil"
-              ]},
-              { label: "Roasting ingredients", ingredients: [
-                "1 (14-oz) can chickpeas, drained and patted dry",
-                "5 oz salami (casing removed if present), cut into ½-inch pieces",
-                "1 red onion, peeled, halved lengthwise, cut into ½-inch wedges",
-                "1 medium head radicchio (about ¾ lb), quartered lengthwise",
-                "1 cup cherry or grape tomatoes, halved",
-                "8 pepperoncini peppers"
-              ]},
-              { label: "To serve", ingredients: [
-                "½ cup ricotta",
-                "Kosher salt and black pepper",
-                "Crusty bread"
-              ]}
-            ],
-            steps: [
-              "Heat oven to 450°F. Coarsely chop the garlic, then add the dried oregano and 2 tsp salt on top and chop together until it forms a paste. Transfer to a bowl and stir in the vinegar and olive oil.",
-              "Pour half the dressing into a large bowl. Add the chickpeas, salami, red onion, radicchio, tomatoes, and pepperoncini. Mix gently to coat, trying not to break up the radicchio and onion. Spread evenly on a baking sheet. Roast, tossing halfway through, until the red onions and chickpeas are golden, 15–20 minutes.",
-              "Season the ricotta with salt and pepper. Serve the roasted mixture with crusty bread and a dollop of ricotta and extra vinaigrette, or assemble into sandwiches."
-            ]
-          }
-        ] }
-      ]
-    },
-    {
-      title: "Vegetarian Mains",
-      subsections: [
-        { title: "Vegetables", recipes: [
-          {
-            title: "Eggplant Involtini",
-            servings: "Serves 4   |   Total: 1 hour",
-            comments: [
-              "A lighter, weeknight-friendly take on eggplant parmesan — no breading, no frying. The eggplant is roasted or grilled into silky planks, rolled around a three-cheese filling, and baked in homemade tomato sauce. If you don't want to make the sauce, 3 cups of good store-bought sauce works fine."
-            ],
-            source: "https://smittenkitchen.com/2022/09/eggplant-involtini/",
-            ingredientGroups: [
-              { label: "Eggplant", ingredients: [
-                "2 medium eggplants (about 1 pound each), tops trimmed",
-                "Olive oil, for brushing",
-                "Kosher salt and freshly ground black pepper"
-              ]},
-              { label: "Tomato sauce", ingredients: [
-                "2 tablespoons olive oil",
-                "3 garlic cloves, minced",
-                "1 teaspoon kosher salt",
-                "Aleppo pepper or red pepper flakes, to taste",
-                "½ teaspoon dried oregano",
-                "1 (28-ounce) can whole or crushed tomatoes"
-              ]},
-              { label: "Filling", ingredients: [
-                "1 cup ricotta",
-                "4 ounces mozzarella, coarsely grated",
-                "¼ cup grated Parmesan (of the ½ cup total)",
-                "Finely grated zest from half a lemon",
-                "½ teaspoon kosher salt",
-                "Freshly ground black pepper"
-              ]},
-              { label: "To finish", ingredients: [
-                "¼ cup grated Parmesan (remaining)",
-                "Juice from half a lemon",
-                "Fresh basil leaves"
-              ]}
-            ],
-            steps: [
-              { lead: "Prep and cook the eggplant:", bullets: [
-                "Heat the oven to 425°F. Cut the eggplants into generous ¼-inch-thick lengthwise planks. Arrange on parchment-lined baking sheets, brush both sides with olive oil, and season well with salt and pepper.",
-                "To roast: Bake 10–12 minutes on the first side, flip, and roast another 8–10 minutes, until browned on each side.",
-                "To grill: Grill over high heat until dark marks appear, about 8 minutes on the first side and 5 on the second.",
-                "Set aside to cool."
-              ]},
-              { lead: "Make the sauce:", bullets: [
-                "Heat 2 tablespoons olive oil in an 11- to 12-inch ovenproof pot over medium. Add the garlic, salt, Aleppo pepper, and oregano; cook 1 minute.",
-                "Add the tomatoes (it will splatter — be careful) and stir. Simmer 10 minutes, stirring occasionally. Taste and adjust seasoning; blend if you prefer a smoother texture.",
-                "Ladle out 1 cup sauce and set aside for serving. If your pot isn't ovenproof, transfer the remaining sauce to a 2-quart baking dish."
-              ]},
-              "Make the filling: In a bowl, combine the ricotta, mozzarella, ¼ cup Parmesan, lemon zest, ½ teaspoon salt, and a few grinds of pepper.",
-              { lead: "Assemble the rolls:", bullets: [
-                "Place about 1 tablespoon of filling at the end of each eggplant plank (a little less on smaller ones), using all the filling.",
-                "Roll into a cigar and place seam-side down in the sauce."
-              ]},
-              "Bake: Brush the tops lightly with olive oil. Bake uncovered about 30 minutes, until bubbly at the edges and browned on top.",
-              "Squeeze the lemon juice over the top and scatter with fresh basil. Serve with the reserved sauce and extra Parmesan on the side."
-            ]
-          },
-          {
-            title: "Eggplant Parmesan",
-            servings: "Serves 6–8   |   Prep: 20 minutes   |   Cook: 40 minutes   |   Total: 1 hour",
-            source: "https://www.loveandlemons.com/eggplant-parmesan/",
-            ingredientGroups: [
-              { label: "Eggplant", ingredients: [
-                "2 large eggplants, cut into ¼-inch-thick rounds"
-              ]},
-              { label: "Egg wash", ingredients: [
-                "3 large eggs, beaten"
-              ]},
-              { label: "Panko coating", ingredients: [
-                "1½ cups panko breadcrumbs",
-                "1 cup grated Parmesan cheese (of the 1¼ cups total)",
-                "2 teaspoons dried oregano",
-                "2 tablespoons fresh thyme leaves",
-                "½ teaspoon Aleppo pepper or red pepper flakes",
-                "½ teaspoon sea salt",
-                "Freshly ground black pepper",
-                "Extra-virgin olive oil, for drizzling"
-              ]},
-              { label: "Assembly", ingredients: [
-                "28 ounces marinara sauce",
-                "2 large fresh mozzarella balls, thinly sliced (or one package shredded mozzarella)",
-                "¼ cup grated Parmesan cheese (remaining from the 1¼ cups total)",
-                "Extra-virgin olive oil, for drizzling",
-                "Sea salt, for sprinkling"
-              ]},
-              { label: "To serve", ingredients: [
-                "⅓ cup fresh basil leaves"
-              ]}
-            ],
-            steps: [
-              "Preheat the oven to 400°F and line 2 baking sheets with parchment paper.",
-              { lead: "Set up the breading stations:", bullets: [
-                "Beat the eggs in a shallow bowl.",
-                "In a second shallow bowl, combine the panko, 1 cup Parmesan, oregano, thyme, Aleppo pepper, salt, and several grinds of black pepper."
-              ]},
-              { lead: "Bread and bake the eggplant:", bullets: [
-                "Dip each eggplant slice in the egg wash, then press into the panko mixture to coat on all sides.",
-                "Arrange in a single layer on the baking sheets. Drizzle with olive oil.",
-                "Bake 18–25 minutes, until tender and golden brown. (Use convection setting if available for extra crispness.)"
-              ]},
-              { lead: "Assemble and bake:", bullets: [
-                "Spread ½ cup marinara in the bottom of a 9×13-inch baking dish.",
-                "Layer half the eggplant, then 1 cup marinara, then half the mozzarella. Repeat with the remaining eggplant, remaining marinara, and remaining mozzarella.",
-                "Top with the remaining ¼ cup Parmesan, a drizzle of olive oil, and a few pinches of sea salt.",
-                "Bake at 400°F for 20 minutes, until the cheese is melted and bubbling."
-              ]},
-              "Turn the oven to broil and broil for 2–4 minutes, until the cheese is browned in spots. Remove from the oven, top with fresh basil, and serve."
-            ]
-          },
-          {
-            title: "Slow Cooker Vegan Mole Chili",
-            servings: "Serves 6   |   Prep: 25 min   |   Cook: 5 hours   |   Total: ~5 hr 25 min",
-            source: "Emily Stoffel, The Pig & Quill",
-            comments: [
-              "Rich, hearty vegan chili with mole-inspired depth. Greek yogurt is a great topping but omit to keep strictly vegan.",
-              "Tofu note: Freeze the entire tofu block until firm (overnight works — keep a block or two in the freezer as a habit). Thaw in the refrigerator, then drain as usual. Slice into 4–5 slabs and gently press out extra moisture between two plates. Finely dice per the recipe. Frozen-and-thawed tofu becomes sponge-like and soaks up the slow-cooked flavors."
-            ],
-            ingredientGroups: [
-              { label: "Dried chilies", ingredients: [
-                "3 oz dried ancho chilies"
-              ]},
-              { label: "Spice paste", ingredients: [
-                "¼ cup light cooking oil (such as avocado)",
-                "3 Tbsp chili powder",
-                "1 Tbsp cacao powder",
-                "1½ tsp Mexican oregano",
-                "1 tsp cinnamon",
-                "1 tsp cumin",
-                "1 tsp paprika"
-              ]},
-              { label: "Chili base", ingredients: [
-                "1 medium red onion, finely diced",
-                "1 medium sweet potato, peeled and finely diced",
-                "4 garlic cloves, minced",
-                "14 oz block tofu, frozen, thawed, drained, and finely diced (see note)",
-                "1 can chickpeas, rinsed and drained",
-                "3 bay leaves",
-                "¼ cup coconut sugar",
-                "1 tsp sea salt",
-                "1½ oz good dark chocolate (at least 70%)",
-                "3 cups mushroom stock (or vegetable stock)"
-              ]},
-              { label: "To serve", ingredients: [
-                "Cilantro (optional)",
-                "Greek yogurt (optional; omit if strictly vegan)",
-                "Quinoa, rice, or other grain"
-              ]}
-            ],
-            steps: [
-              "Remove stems and seeds from the ancho chilies. Place in a bowl, cover with very hot tap water, and steep covered for 20 minutes.",
-              "Meanwhile, heat the oil in a small saucepan or skillet. Add the chili powder, cacao, oregano, cinnamon, cumin, and paprika; heat until bubbling and very fragrant, about 60 seconds. Remove from heat and set aside. Use this time to dice your veggies and prepare the tofu (see note).",
-              "When the chilies have finished steeping, drain, reserving ¼ cup soaking liquid. Add chilies and reserved liquid to a food processor and blend until nearly smooth.",
-              "Combine all the veggies, tofu, chickpeas, processed chilies, and spice paste in the slow cooker. Add the bay leaves, coconut sugar, salt, chocolate, and stock. Stir well. Cook on High for 5 hours, or until the vegetables have all but dissolved. Adjust salt to taste. Serve with grain and toppings of choice."
-            ]
-          }
-        ]},
-        { title: "Tofu", recipes: [
-          {
-            title: "Tofu Stir Fry",
-            servings: "Serves 2   |   Prep: 20 min   |   Cook: 15 min   |   Total: 35 min",
-            source: "Kahnita Wilkerson, Tasty",
-            ingredientGroups: [
-              { label: "Sauce", ingredients: [
-                "2 garlic cloves, minced (of 4 total)",
-                "2 tsp fresh ginger, grated",
-                "1 Tbsp honey",
-                "1 tsp sriracha",
-                "¼ cup lime juice",
-                "¼ cup reduced-sodium soy sauce"
-              ]},
-              { label: "Tofu", ingredients: [
-                "1 block extra-firm tofu"
-              ]},
-              { label: "Stir fry", ingredients: [
-                "2 Tbsp sesame oil",
-                "2 garlic cloves, minced (remaining)",
-                "1 cup white onion, sliced",
-                "1 cup carrot, sliced",
-                "1 cup red bell pepper, sliced",
-                "½ cup edamame, frozen, thawed",
-                "3 cups soba noodles, cooked",
-                "1 Tbsp sesame seeds"
-              ]},
-              { label: "Garnish", ingredients: [
-                "Green onion, chopped"
-              ]}
-            ],
-            steps: [
-              "In a medium bowl, mix together 2 cloves of garlic, the ginger, honey, sriracha, lime juice, and soy sauce. Set aside.",
-              "Wrap the tofu in a dish towel, then place a plate on top. Let drain for 10–15 minutes, then remove the plate, unwrap the tofu, and slice into cubes.",
-              "In a wok or large frying pan, heat the sesame oil over medium heat. Add the tofu and pan-fry for 5–7 minutes, stirring occasionally.",
-              "Add the remaining 2 cloves of minced garlic and the onion and stir until softened, about 1 minute.",
-              "Add the carrot, bell pepper, and edamame and cook, stirring occasionally, until tender, 2–3 minutes.",
-              "Add the soba noodles, reserved sauce, and sesame seeds. Cook for 1–2 minutes, stirring occasionally, until warmed through. Remove from heat.",
-              "Garnish with green onions and serve."
-            ]
-          },
-          {
-            title: "Sesame Ginger Tofu and Veggie Stir Fry",
-            servings: "Serves 3   |   Prep: 25 min   |   Cook: 15 min   |   Total: 40 min",
-            source: "Marzia, Little Spice Jar",
-            ingredientGroups: [
-              { label: "Tofu and coating", ingredients: [
-                "14 oz extra-firm tofu",
-                "1 Tbsp cornstarch",
-                "½ tsp kosher salt"
-              ]},
-              { label: "Sauce", ingredients: [
-                "1 Tbsp sesame oil",
-                "1½ Tbsp grated ginger",
-                "1½ Tbsp minced garlic",
-                "1 Tbsp rice vinegar",
-                "3 Tbsp soy sauce (or GF tamari)",
-                "¼ tsp Aleppo pepper or red pepper flakes",
-                "3 Tbsp brown sugar",
-                "1 Tbsp cornstarch",
-                "2 Tbsp water"
-              ]},
-              { label: "Stir fry", ingredients: [
-                "3 Tbsp avocado oil",
-                "2½ cups green beans, cut into 1-inch pieces",
-                "1 cup baby carrots, cut lengthwise"
-              ]},
-              { label: "To serve (optional)", ingredients: [
-                "Rice, quinoa, noodles, or cauliflower rice"
-              ]}
-            ],
-            steps: [
-              "TOFU: Drain tofu. Place on a plate with a folded tea towel, then top with another tea towel, another plate, and a heavy cast iron skillet or metal cans (or use a tofu press). Let drain 15–20 minutes or up to 1 hour. Cut into ¾–1 inch cubes and toss in 1 Tbsp cornstarch and ½ tsp salt in a zip-top bag until coated.",
-              "SAUCE: While the tofu is pressing, combine all sauce ingredients in a blender until completely smooth. (Shortcut: if using garlic paste and ginger paste, simply whisk together in a bowl.) Set aside.",
-              "CRISPY TOFU: In a wok or large nonstick skillet over medium-high heat, add 2 Tbsp avocado oil. Add tofu and fry for 3–7 minutes, flipping as needed to brown on all sides. Add 2 Tbsp of the prepared sauce and cook until the sauce coats and caramelizes on the tofu, about 2–3 minutes. Remove to a plate.",
-              "STIR FRY: Add the remaining 1 Tbsp avocado oil to the pan if needed. Add the veggies and cook for 3–4 minutes, tossing to desired doneness. Add the tofu back to the skillet. Stir the sauce to recombine, then pour it in. Stir to coat. Cook 1–2 minutes more until the tofu soaks up the sauce.",
-              "Serve warm with rice, quinoa, noodles, cauliflower rice, or on its own. Best eaten fresh; the tofu loses crispness as it sits."
-            ]
-          },
-          {
-            title: "Baked Tofu With Peanut Sauce and Coconut-Lime Rice",
-            servings: "Serves 4   |   Total: ~45 min",
-            source: "Yewande Komolafe, NYT Cooking",
-            comments: [
-              "The peanut sauce is inspired by West African groundnut stews. Fish sauce adds umami but is optional; omit it to keep the dish vegan. Peanut sauce can be made 2–3 days ahead and refrigerated."
-            ],
-            ingredientGroups: [
-              { label: "Pickled peppers", ingredients: [
-                "4 Tbsp lime juice (of ⅔ cup total)",
-                "½ tsp kosher salt",
-                "8 baby bell peppers or 1 medium bell pepper (any color), stemmed and thinly sliced lengthwise",
-                "Freshly ground black pepper"
-              ]},
-              { label: "Coconut-lime rice", ingredients: [
-                "1 cup long-grain rice (jasmine or basmati)",
-                "½ cup full-fat coconut milk",
-                "1 cup water",
-                "Salt"
-              ]},
-              { label: "Peanut sauce", ingredients: [
-                "4 Tbsp lime juice (remaining from the ⅔ cup)",
-                "1 cup smooth, natural peanut butter",
-                "1 Tbsp red miso",
-                "1 Tbsp grated ginger",
-                "1 Tbsp fish sauce (optional)",
-                "2 tsp chopped habanero pepper (stem and seeds removed) or 1 Tbsp sambal",
-                "2 Tbsp peanut or vegetable oil",
-                "1 Tbsp buckwheat honey or molasses (+ 1 Tbsp more for dressing in Step 5)",
-                "¾ cup water"
-              ]},
-              { label: "Tofu", ingredients: [
-                "2 (14-oz) packages extra-firm tofu, drained and sliced crosswise ¼-inch thick",
-                "Peanut or vegetable oil, for brushing pan and drizzling",
-                "Salt"
-              ]},
-              { label: "To serve", ingredients: [
-                "Zest of 1 lime",
-                "3 cups peppery greens (arugula, mizuna, or baby mustard greens)",
-                "2 scallions, trimmed and thinly sliced"
-              ]}
-            ],
-            steps: [
-              "Heat oven to 450°F and lightly brush a large rimmed sheet pan with oil.",
-              "In a small bowl, stir 4 Tbsp lime juice with ½ tsp salt until dissolved. Add the sliced peppers and a few cracks of black pepper. Set aside to quick-pickle.",
-              "In a small pot, combine the rice with 1 cup water and the coconut milk. Season with salt and bring to a simmer. Cover and cook over medium-low until just tender, 12–15 minutes. Remove from heat; keep covered until serving.",
-              "In a medium bowl, whisk together the remaining 4 Tbsp lime juice, peanut butter, miso, ginger, fish sauce (if using), habanero (or sambal), 2 Tbsp oil, 1 Tbsp honey, and ¾ cup water until smooth. Season to taste with salt.",
-              "Arrange tofu in a single layer on the oiled baking sheet; season with salt. Spoon about 2 Tbsp peanut sauce over each piece, coating the top and letting it run down the sides. Drizzle with a little oil and roast until the glaze is set, deep brown, and caramelized along the edges, 18–20 minutes. Add the remaining lime juice and 1 Tbsp honey to the leftover sauce in the bowl to make the dressing; set aside.",
-              "Divide the greens among bowls. Stir the lime zest and half the scallions into the rice, then fluff with a fork. Top greens with rice, then the tofu. Spoon the peanut dressing over everything and garnish with the drained pickled peppers and remaining scallions."
-            ]
-          }
-        ] },
-        { title: "Mushroom", recipes: [
-          {
-            title: "Mushrooms Florentine",
-            servings: "Serves 8–10",
-            source: "Family recipe card, credited to Sue Karp",
-            comments: [
-              "Can be assembled a day ahead and refrigerated until ready to bake. To serve 4, halve all ingredients and use a greased 10-inch round or 8×8 casserole."
-            ],
-            ingredientGroups: [
-              { label: "Mushrooms", ingredients: [
-                "2 lbs small fresh mushrooms, stems removed",
-                "Butter, for sautéing"
-              ]},
-              { label: "Spinach base", ingredients: [
-                "4 packages (10 oz each) frozen chopped spinach, defrosted and squeezed very dry",
-                "1 large onion, chopped",
-                "1/2 cup butter, melted",
-                "Garlic salt, to taste"
-              ]},
-              { label: "Cheese", ingredients: [
-                "2 cups grated cheddar, divided"
-              ]}
-            ],
-            steps: [
-              "Sauté mushroom caps in butter over medium-high heat, bottom-side down, until lightly browned. Remove from pan; drain on paper towels.",
-              "Defrost spinach; squeeze out all water thoroughly (very important — spinach should be quite dry).",
-              "Combine spinach, onion, a generous pinch of garlic salt, and melted butter in a bowl; mix well.",
-              "Grease a 9×13 casserole. Spread spinach mixture evenly over the bottom.",
-              "Sprinkle with 1 cup of cheddar.",
-              "Arrange mushroom caps over the spinach, cap-side down.",
-              "Sprinkle with a little more garlic salt. Cover with remaining cup of cheddar.",
-              "Bake at 350°F for about 20 minutes, until cheese is melted and beginning to brown."
-            ]
-          },
-          {
-            title: "Oven Polenta with Roasted Mushrooms and Thyme",
-            servings: "Serves 4   |   Total: ~55 min",
-            source: "Claire Saffitz, Bon Appétit",
-            comments: [
-              "A \"no-stir\" oven polenta — the oven does the work while the mushrooms roast on the rack above. For an indulgent touch, stir a little heavy cream mixed with a finely grated garlic clove into the finished polenta."
-            ],
-            ingredientGroups: [
-              { label: "Mushrooms", ingredients: [
-                "1½ lbs mixed mushrooms (crimini, shiitake, oyster, and/or maitake), torn into 1-inch pieces",
-                "4 thyme sprigs, plus thyme leaves for serving",
-                "6 garlic cloves, smashed",
-                "Kosher salt and freshly ground pepper",
-                "¼ cup extra-virgin olive oil"
-              ]},
-              { label: "Polenta", ingredients: [
-                "4½ cups water",
-                "2 Tbsp unsalted butter",
-                "Kosher salt",
-                "1 cup polenta"
-              ]},
-              { label: "Polenta — finish", ingredients: [
-                "4 oz Parmesan, finely grated, plus more for serving"
-              ]},
-              { label: "Mushrooms — finish", ingredients: [
-                "1 Tbsp red wine vinegar"
-              ]},
-              { label: "To serve", ingredients: [
-                "Flaky sea salt",
-                "Thyme leaves",
-                "More Parmesan"
-              ]}
-            ],
-            steps: [
-              "Place racks in upper and lower thirds of oven; preheat to 325°F. Combine mushrooms, thyme sprigs, and garlic on a large rimmed baking sheet. Season generously with kosher salt and pepper; drizzle with olive oil. Toss to coat, then spread in an even layer. (Don't crowd the mushrooms or they'll steam instead of crisping.) Transfer to the upper rack.",
-              "Bring 4½ cups water to a simmer in a large ovenproof saucepan over medium-high heat. Add butter and a generous pinch of kosher salt; whisk to melt. Gradually whisk in the polenta (adding slowly prevents clumps). Return to a boil, immediately cover the pot, and transfer to the lower rack. Bake, shaking the mushroom pan occasionally, until polenta is tender, 25–30 minutes.",
-              "Remove polenta from oven. Raise oven temperature as high as it will go (but don't broil). Continue roasting mushrooms until crispy around the edges, 5–10 more minutes.",
-              "Uncover the polenta and whisk vigorously, scraping the bottom, until smooth and thick. Gradually whisk in the Parmesan until melted and incorporated. Season with kosher salt and pepper. Cover and keep warm over low heat.",
-              "Remove mushrooms from oven; drizzle with red wine vinegar. Toss to coat and let cool slightly.",
-              "Divide polenta among bowls and top with mushrooms, thyme leaves, flaky sea salt, and more Parmesan."
-            ]
-          },
-          {
-            title: "Stuffed Portobello Mushrooms with Crispy Goat Cheese",
-            servings: "Serves 4   |   Prep: 15 min   |   Cook: 45 min   |   Total: 1 hour",
-            source: "Laura Davidson, A Beautiful Plate",
-            comments: [
-              "Use large portobello mushrooms roughly 4 inches wide with slightly deeper caps — they're easier to stuff. Two mushrooms per serving makes a hearty main; one per person if serving as a side. For gluten-free, substitute gluten-free breadcrumbs."
-            ],
-            ingredientGroups: [
-              { label: "Marinara", ingredients: [
-                "1 Tbsp olive oil",
-                "4 garlic cloves, roughly chopped",
-                "2 Tbsp tomato paste",
-                "2 dried bay leaves",
-                "1 Tbsp dried oregano",
-                "1 (28-oz) can Italian crushed tomatoes",
-                "Salt and freshly ground black pepper"
-              ]},
-              { label: "Mushrooms", ingredients: [
-                "8 large (4-inch wide) portobello mushrooms, stems trimmed",
-                "Extra-virgin olive oil",
-                "Kosher salt and freshly ground black pepper"
-              ]},
-              { label: "Spinach", ingredients: [
-                "1 Tbsp extra-virgin olive oil",
-                "1 shallot, finely sliced",
-                "6 oz baby spinach",
-                "Kosher salt and freshly ground black pepper"
-              ]},
-              { label: "Breadcrumb topping", ingredients: [
-                "2 Tbsp unsalted butter",
-                "1 shallot, finely diced",
-                "½ cup panko breadcrumbs",
-                "1 garlic clove, finely minced",
-                "Kosher salt and freshly ground black pepper"
-              ]},
-              { label: "Assembly", ingredients: [
-                "4 oz goat cheese, cold from the fridge"
-              ]}
-            ],
-            steps: [
-              "MARINARA: Warm 1 Tbsp olive oil in a medium saucepan over medium heat. Add the garlic and stir continuously for 30 seconds — do not let it brown. Add the tomato paste; stir over low heat for 1 minute. Add the bay leaves, oregano, and crushed tomatoes. Stir, bring to a low simmer, cover, and cook 30 minutes. Season with salt and pepper. (Can be made well ahead; reheat before using.)",
-              "MUSHROOMS: Preheat oven to 450°F with rack in center. Lightly brush a sheet pan with olive oil. Place portobellos stem-side up, brush lightly with olive oil, and season with salt and pepper. Roast 15–25 minutes (check after 10 minutes), until tender. Drain any moisture that collects in the caps. Transfer to a large plate.",
-              "SPINACH: Heat olive oil in a sauté pan over medium-low heat. Add the sliced shallots and sauté 3–4 minutes until soft and translucent. Add the spinach, raise heat to medium-high, and sauté until just wilted, stirring continuously. Season with salt and pepper; set aside.",
-              "BREADCRUMBS: Melt the butter in a small sauté pan over medium heat. Once sizzling, add the diced shallots and a pinch of salt; cook 1–2 minutes. Add the panko and minced garlic; toast 3–4 minutes, stirring constantly, until very light golden. Transfer to a shallow bowl and season with salt and pepper.",
-              "Reduce oven to 425°F. Line the same sheet pan with parchment paper (or set a baking rack inside the pan so mushrooms don't sit in released juice).",
-              "Arrange mushrooms stem-side up on the pan, touching each other. Fill each with a large spoonful of marinara. Top with the sautéed spinach.",
-              "Slice the goat cheese into ½-inch thick slices (roughly ½ oz each — it may crumble a bit). Press both sides of each slice into the panko topping and place on top of a mushroom. Sprinkle remaining breadcrumbs over.",
-              "Bake at 425°F for 10–15 minutes until heated through, breadcrumbs are golden brown, and the goat cheese just begins to soften. Watch closely so the breadcrumbs don't burn. Serve immediately."
-            ]
-          },
-          {
-            title: "Truffle Mushroom Risotto",
-            servings: "Serves 4   |   Prep: 20 min   |   Cook: 20 min   |   Total: 40 min",
-            source: "Jenny Goycochea, So Much Food",
-            comments: [
-              "A go-to \"fancy\" dinner that's actually easy. The risotto should flow like slow-moving lava, not form a stiff ball. Black truffle puree is available at specialty grocery stores and online."
-            ],
-            ingredientGroups: [
-              { label: "Risotto base", ingredients: [
-                "2 Tbsp unsalted butter (of 4 oz / 1 stick total, divided)",
-                "2 small shallots, finely minced",
-                "1½ cups arborio rice",
-                "½ cup dry white wine"
-              ]},
-              { label: "Broth", ingredients: [
-                "6 cups chicken or vegetable broth, warmed"
-              ]},
-              { label: "Mushrooms", ingredients: [
-                "1 Tbsp unsalted butter + 1 Tbsp neutral oil",
-                "12 oz cremini mushrooms, quartered",
-                "Salt and freshly cracked pepper"
-              ]},
-              { label: "Finish", ingredients: [
-                "Remaining 5 Tbsp unsalted butter",
-                "2 Tbsp black truffle puree",
-                "½ cup mascarpone",
-                "⅔ cup freshly grated Parmesan, plus more for garnish",
-                "Salt and freshly cracked pepper"
-              ]},
-              { label: "Garnish", ingredients: [
-                "Chopped chives",
-                "Extra Parmesan"
-              ]}
-            ],
-            steps: [
-              "Heat 2 Tbsp butter over medium heat in a wide-bottomed skillet or pan with at least 3-inch sides. Add shallots and cook 2–3 minutes until softened. Add rice and stir to coat all grains in butter. Toast about 1 minute. Add wine and stir continuously.",
-              "Once the wine is absorbed, add 1 cup warm broth, stirring constantly. Once absorbed, add another cup. Continue adding broth 1 cup at a time, stirring and waiting for each addition to absorb, until the rice is just slightly al dente. (The pan bottom exposed when you drag your spoon across it tells you it's time to add more broth.)",
-              "While the rice cooks, heat 1 Tbsp butter and 1 Tbsp neutral oil in a cast iron skillet over medium-high. Add mushrooms and let sear without stirring until golden brown on one side. Stir and cook 2–3 minutes more. Season lightly with salt and pepper.",
-              "When the rice is done, turn off the heat. Stir in ⅔ of the cooked mushrooms, the truffle puree, remaining 5 Tbsp butter, mascarpone, and Parmesan. Stir until all the cheese and butter has melted. Season to taste with salt and pepper.",
-              "Ladle risotto into bowls. Top with the remaining mushrooms, extra Parmesan, and chopped chives."
-            ]
-          },
-          {
-            title: "Roasted Portobellos With Pesto",
-            servings: "Serves 4   |   Total: 30 min",
-            source: "Martha Rose Shulman, NYT Cooking",
-            comments: [
-              "Uses Christy's Pesto (Adapted) already in this cookbook (see Noodles section). Homemade or store-bought pesto both work. Serve with rice or noodles tossed with butter for a simple meal. These reheat well a few hours later."
-            ],
-            ingredientGroups: [
-              { label: "Mushrooms", ingredients: [
-                "8 medium (roasting size) portobello mushrooms",
-                "1 Tbsp extra-virgin olive oil",
-                "Salt and freshly ground pepper"
-              ]},
-              { label: "Fill", ingredients: [
-                "¼ cup pesto (see Christy's Pesto (Adapted) in this cookbook)"
-              ]}
-            ],
-            steps: [
-              "Preheat oven to 400°F. Remove the stems from the mushrooms and carefully scrape away the gills using a spoon. Toss with the olive oil and season with salt and pepper. Place rounded-side down on a lightly oiled baking sheet. Roast 8–10 minutes, until beginning to soften and release liquid. Remove from oven and fill each cap with pesto. Return to the oven and roast until thoroughly softened, about 10 more minutes. Serve immediately."
-            ]
-          }
-        ] }
-      ]
-    },
-    {
-      title: "Vegetable Sides",
-      recipes: [
         {
-          title: "Butter Lettuce and Citrus Salad",
-          servings: "Serves 2–3",
-          comments: ["\"Supreming\" citrus means cutting away the peel and pith, then slicing between the membranes to release clean segments."],
-          source: "The Gourmandise School (The Pizza Class)",
-          ingredientGroups: [
+          "title": "Turkey",
+          "recipes": [
             {
-              label: null,
-              ingredients: [
-                "1 head butter lettuce",
-                "1 shallot",
-                "Salt & pepper to taste",
-                "1 grapefruit or orange",
-                "2 Tbsp lemon juice",
-                "¼ cup olive oil"
-              ]
-            }
-          ],
-          steps: [
-            "Remove any wilted leaves from the butter lettuce. Tear into bite-sized pieces and place in a medium bowl.",
-            "Mince the shallot and place in a small bowl with a pinch of salt and pepper.",
-            "Supreme (segment) your grapefruit right over the small bowl to catch any juices. Set the segmented citrus aside.",
-            "Add lemon juice to the shallot bowl, then whisk in the olive oil. Dress the butter lettuce with the citronette. Plate and tuck the segmented citrus into and on top of the greens."
-          ]
-        },
-        {
-          title: "Charred Broccoli and Cauliflower Salad",
-          servings: "6 to 8   |   Total: 30 min   |   Active: 25 min",
-          source: "https://www.foodnetwork.com/recipes/ree-drummond/charred-broccoli-and-cauliflower-salad-19673188",
-          comments: ["Great as a side at a barbecue with grilled seafood or meat, or to take to a potluck."],
-          ingredientGroups: [
-            {
-              label: "Vegetables",
-              ingredients: [
-                "1 medium crown broccoli, broken into large florets",
-                "1 medium cauliflower, broken into large florets",
-                "3 tablespoons olive oil",
-                "1 teaspoon kosher salt",
-                "1/2 teaspoon freshly ground black pepper"
+              "title": "Bristol Farms Turkey Salad (Copycat)",
+              "servings": "Serves 6–8",
+              "source": "Grandmother Brenda's ingredient list, inspired by Bristol Farms deli turkey salad",
+              "comments": [
+                "Quantities reconstructed from the ingredient card — adjust mayo and mustard to taste.",
+                "Great served in a sandwich, on lettuce cups, or with crackers."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Dressing",
+                  "ingredients": [
+                    "1/2 cup mayonnaise",
+                    "1 tablespoon Dijon mustard",
+                    "1 tablespoon honey",
+                    "1/2 teaspoon dried tarragon",
+                    "1/2 teaspoon dried dill weed",
+                    "Salt and pepper to taste"
+                  ]
+                },
+                {
+                  "label": "Salad",
+                  "ingredients": [
+                    "2 lbs. cooked turkey breast, diced",
+                    "1/2 cup walnuts, roughly chopped",
+                    "1/3 cup dried cranberries",
+                    "3 green onions, thinly sliced",
+                    "2 stalks celery, finely diced"
+                  ]
+                }
+              ],
+              "steps": [
+                "Whisk together all dressing ingredients in a small bowl.",
+                "Combine turkey, walnuts, dried cranberries, green onions, and celery in a large bowl.",
+                "Pour dressing over turkey mixture and toss to coat. Taste and adjust seasoning.",
+                "Refrigerate at least 30 minutes before serving."
               ]
             },
             {
-              label: "Dressing",
-              ingredients: [
-                "2/3 cup mayonnaise",
-                "1/3 cup Greek yogurt",
-                "2 tablespoons chopped fresh dill",
-                "2 tablespoons chopped fresh parsley",
-                "Zest and juice of 1 lemon",
-                "Pinch kosher salt",
-                "Pinch freshly ground black pepper"
+              "title": "Expertly Spiced and Glazed Roast Turkey",
+              "servings": "Serves 8–10   |   Active: 45 min   |   Total: About 2 hrs (plus 24–48 hrs dry-brining)",
+              "comments": [
+                "Turkey is spatchcocked for more even roasting. Begin 24–48 hours ahead for the dry brine.",
+                "Option: after removing the backbone, also separate the wings and legs for even faster, more even cooking as individual pieces — see Step 1.",
+                "Requires a spice mill or mortar and pestle."
+              ],
+              "source": "https://www.epicurious.com/recipes/food/views/expertly-spiced-and-glazed-roast-turkey",
+              "ingredientGroups": [
+                {
+                  "label": "Spice rub",
+                  "ingredients": [
+                    "2 Tbsp whole black peppercorns",
+                    "2 Tbsp whole pink or black peppercorns",
+                    "1/2 cup Diamond Crystal or 1/4 cup plus 1 1/2 tsp Morton kosher salt",
+                    "2 Tbsp garlic powder",
+                    "2 Tbsp onion powder",
+                    "1 Tbsp smoked paprika",
+                    "1 Tbsp light brown sugar"
+                  ]
+                },
+                {
+                  "label": "Turkey",
+                  "ingredients": [
+                    "1 (12-14 lb.) turkey, neck and giblets removed"
+                  ]
+                },
+                {
+                  "label": "Glaze",
+                  "ingredients": [
+                    "Small handful hardy herbs (sage, rosemary, bay leaves, and/or thyme)",
+                    "4 garlic cloves, crushed",
+                    "2 (2x1\") strips orange zest",
+                    "1/3 cup low-sodium soy sauce",
+                    "1/3 cup sherry vinegar or red wine vinegar",
+                    "1/3 cup (packed) light brown sugar"
+                  ]
+                },
+                {
+                  "label": "For roasting",
+                  "ingredients": [
+                    "6 Tbsp neutral oil (vegetable, peanut, or canola)",
+                    "1 cup water, plus more as needed"
+                  ]
+                }
+              ],
+              "steps": [
+                {
+                  "lead": "Spatchcock the turkey (preferred method):",
+                  "bullets": [
+                    "Place turkey breast side down. Using kitchen shears, cut along one side of the backbone all the way through, then cut along the other side to remove the backbone entirely. Save for stock.",
+                    "Flip turkey breast side up. Press firmly on the breastbone with the heel of your hand until it cracks and the bird lies flat.",
+                    "Option — full breakdown: after removing the backbone, also separate the wings (grip each wing, pull outward, cut through the joint) and the legs (cut through skin, pull back until ball joint pops out, cut through joint). You'll have 5 separate pieces: 2 wings, 2 legs, 1 breast."
+                  ]
+                },
+                "Make the spice rub: Finely grind both peppercorns in a spice mill or mortar and pestle. Transfer to a bowl and mix in kosher salt, garlic powder, onion powder, paprika, and 1 Tbsp brown sugar.",
+                "Place turkey on a wire rack set inside a rimmed baking sheet. Sprinkle spice rub liberally all over, patting to adhere (you may not use all of it). Refrigerate uncovered at least 24 hours and up to 2 days.",
+                "Remove turkey from rack; rinse baking sheet and rack if needed. Line baking sheet with 3 layers of foil, set rack back inside, and return turkey skin side up. Let sit at room temperature 2–3 hours.",
+                "Meanwhile, make the glaze: Cook herbs, garlic, orange zest, soy sauce, vinegar, and 1/3 cup brown sugar in a small saucepan over medium heat, stirring occasionally, until sugar dissolves and glaze thickens slightly (barely coats a spoon), 10–12 minutes. Remove from heat.",
+                "Place a rack in the middle of the oven; preheat to 425°F. Rub turkey all over with oil and pour 1 cup water into the baking sheet. Roast, rotating baking sheet halfway through, until skin is mostly golden brown, 20–25 minutes.",
+                "Reduce oven to 300°F. Continue roasting, brushing with glaze every 20 minutes and adding more water by 1/2-cupfuls as needed to keep some liquid in the pan, until an instant-read thermometer reads 150°F in the thickest part of the breast and 170°F in the thickest part of the thigh, 50–70 minutes more (total time 1–1 1/2 hours; fully broken-down pieces may finish faster). Skin should be deep golden brown and shiny.",
+                "Transfer to a cutting board, tent loosely with foil, and rest 30–60 minutes before carving."
               ]
             },
             {
-              label: "Salad",
-              ingredients: [
-                "1 cup arugula",
-                "1/2 cup dried blueberries, plus extra for garnish",
-                "1/4 cup pickled red onions, plus extra for garnish",
-                "2 tablespoons sunflower seeds, plus extra for garnish"
+              "title": "Turkey and Quinoa Meatloaf",
+              "favorite": true,
+              "servings": "Serves 4   |   Total: 1 hr 10 min",
+              "comments": [
+                {
+                  "html": "Best served with <a href=\"#joan-chili-aioli\">Joan's on Third Chili Aioli</a>."
+                }
+              ],
+              "source": "https://www.allrecipes.com/recipe/213211/turkey-and-quinoa-meatloaf/",
+              "ingredientGroups": [
+                {
+                  "label": "Quinoa",
+                  "ingredients": [
+                    "1/4 cup quinoa",
+                    "1/2 cup water"
+                  ]
+                },
+                {
+                  "label": "Aromatics",
+                  "ingredients": [
+                    "1 tsp olive oil",
+                    "1 small onion, chopped",
+                    "1 clove garlic, chopped"
+                  ]
+                },
+                {
+                  "label": "Meatloaf",
+                  "ingredients": [
+                    "1 (20 oz) package ground turkey",
+                    "1 Tbsp tomato paste",
+                    "1 Tbsp hot pepper sauce",
+                    "2 Tbsp Worcestershire sauce",
+                    "1 egg",
+                    "1 1/2 tsp salt",
+                    "1 tsp black pepper"
+                  ]
+                },
+                {
+                  "label": "Glaze",
+                  "ingredients": [
+                    "2 Tbsp brown sugar",
+                    "2 tsp Worcestershire sauce",
+                    "1 tsp water"
+                  ]
+                }
+              ],
+              "steps": [
+                "Bring quinoa and 1/2 cup water to a boil in a small saucepan. Reduce heat to medium-low, cover, and simmer until quinoa is tender and water is absorbed, 15–20 minutes. Set aside to cool.",
+                "Preheat oven to 350°F.",
+                "Heat olive oil in a skillet over medium heat. Add onion; cook, stirring, until softened and translucent, about 5 minutes. Add garlic and cook 1 minute more. Remove from heat and let cool.",
+                "In a large bowl, mix together ground turkey, cooled quinoa, sautéed onion and garlic, tomato paste, hot pepper sauce, Worcestershire sauce, egg, salt, and pepper until well combined. Transfer to a loaf pan.",
+                "Spread the glaze evenly over the top of the meatloaf.",
+                "Bake until no longer pink in the center and an instant-read thermometer reads at least 160°F, about 50 minutes. Let cool 10 minutes before slicing."
+              ]
+            },
+            {
+              "title": "Turkey Tikka Masala",
+              "servings": "Serves 6   |   Total: 1 1/2 hrs, plus 4 hrs marinating",
+              "comments": [
+                "A great way to use leftover Thanksgiving turkey.",
+                "Marinate the turkey for at least 4 hours, or overnight, for best results."
+              ],
+              "source": "Samin Nosrat, NYT Cooking (November 22, 2016)",
+              "ingredientGroups": [
+                {
+                  "label": "Marinade",
+                  "ingredients": [
+                    "2 tsp garam masala",
+                    "2 tsp ground coriander",
+                    "2 tsp ground cumin",
+                    "1 Tbsp paprika",
+                    "4 tsp ground turmeric",
+                    "1 tsp kosher salt",
+                    "6 cloves garlic, finely grated",
+                    "4 tsp finely grated fresh ginger",
+                    "1 cup whole-milk yogurt",
+                    "4 cups cooked turkey (about 1 lb), cut into 1 1/2-inch pieces"
+                  ]
+                },
+                {
+                  "label": "Masala — first addition",
+                  "ingredients": [
+                    "3 Tbsp ghee or neutral-tasting oil",
+                    "1 large onion, thinly sliced",
+                    "6 cardamom pods, crushed",
+                    "1 bay leaf",
+                    "1 tsp paprika",
+                    "1/2 tsp Aleppo pepper or red pepper flakes",
+                    "1 tsp garam masala",
+                    "Pinch kosher salt"
+                  ]
+                },
+                {
+                  "label": "Masala — second addition",
+                  "ingredients": [
+                    "1 Tbsp ghee or neutral-tasting oil",
+                    "2 Tbsp finely grated fresh ginger",
+                    "4 cloves garlic, finely grated",
+                    "2 serrano peppers, finely chopped"
+                  ]
+                },
+                {
+                  "label": "Tomatoes",
+                  "ingredients": [
+                    "2 Tbsp tomato paste",
+                    "1 (28-oz) can whole peeled tomatoes"
+                  ]
+                },
+                {
+                  "label": "Cream and seasoning",
+                  "ingredients": [
+                    "2 cups heavy cream",
+                    "3/4 cup coarsely chopped fresh cilantro, plus sprigs for garnish",
+                    "1 1/2 tsp kosher salt, plus more to taste"
+                  ]
+                },
+                {
+                  "label": "Finish",
+                  "ingredients": [
+                    "Juice of 1 small lemon",
+                    "Jasmine or Basmati rice, for serving"
+                  ]
+                }
+              ],
+              "steps": [
+                "Make the marinade: Stir together garam masala, coriander, cumin, paprika, turmeric, salt, garlic, ginger, and yogurt in a medium bowl. Fold in turkey. Cover and refrigerate 4 hours or overnight.",
+                "Make the masala: Heat a Dutch oven over medium-high heat. Add 3 Tbsp ghee or oil, then add onion, cardamom, bay leaf, paprika, Aleppo pepper or red pepper flakes, garam masala, and a pinch of salt. Reduce heat to medium and cook, stirring occasionally, until onions are brown and tender, 10–15 minutes.",
+                "Make space in the center of the pot; add 1 Tbsp ghee or oil. When shimmering, add ginger, garlic, and serrano peppers and sizzle about 10 seconds. Stir into the spiced onions. Stir in tomato paste. Add whole peeled tomatoes with their juices, crushing them with your hands as you add them. Bring to a boil, then reduce heat and simmer, stirring often, until liquid is almost gone, 8–10 minutes.",
+                "Add heavy cream and cilantro. Season with 1 1/2 tsp kosher salt; taste and adjust. Simmer over low heat, stirring occasionally, until sauce thickens, about 40 minutes. Discard bay leaf.",
+                "Line a baking sheet with foil; position an oven rack about 6 inches from the broiler; turn on broiler. Lay marinated turkey in a single layer on the foil. Stir any remaining marinade into the sauce. Broil until turkey begins to blacken in spots, 6–8 minutes.",
+                "Using a hand blender (or blender), purée the sauce. Add broiled turkey and return to a simmer for 5–10 minutes, stirring occasionally, until just warmed through. Just before serving, stir in lemon juice. Taste and adjust salt.",
+                "Serve hot, garnished with cilantro sprigs, alongside Jasmine or Basmati rice. Refrigerate leftovers up to 3 days or freeze up to 2 months."
               ]
             }
-          ],
-          steps: [
-            "Preheat the grill to medium-high heat.",
-            "Toss the broccoli and cauliflower with the olive oil, salt, and pepper. Grill, turning as needed, until tender and well charred, 8–10 minutes. Transfer to a large bowl.",
-            "Make the dressing: whisk together the mayonnaise, Greek yogurt, dill, parsley, lemon zest, and lemon juice. Season with salt and pepper.",
-            "Spread the dressing onto a serving platter, leaving a well in the middle.",
-            "Add the arugula, blueberries, pickled red onions, and sunflower seeds to the bowl with the charred vegetables and toss to combine.",
-            "Mound the vegetable mixture into the well. Garnish with extra blueberries, pickled red onions, and sunflower seeds. Serve."
           ]
         },
         {
-          title: "Coleslaw Salad",
-          source: "Family recipe card (Grandmother Brenda)",
-          ingredientGroups: [
-            { label: "Dressing", ingredients: [
-              "1/4 cup vinegar",
-              "1/2 cup oil",
-              "1/2 cup sugar",
-              "3/4 teaspoon pepper",
-              "2 teaspoons salt"
-            ]},
-            { label: "Salad", ingredients: [
-              "1 package coleslaw mix",
-              "Dried cranberries, to taste",
-              "Slivered almonds, toasted, to taste"
-            ]}
-          ],
-          steps: [
-            "Toast slivered almonds in a dry skillet over medium heat, stirring frequently, until golden and fragrant, about 3–4 minutes. Let cool.",
-            "Whisk together all dressing ingredients until sugar dissolves.",
-            "Combine coleslaw mix, dried cranberries, and toasted almonds in a large bowl.",
-            "Pour dressing over salad and toss. Let sit at least 15 minutes before serving so the cabbage softens slightly."
+          "title": "Pork",
+          "recipes": [
+            {
+              "title": "Sloppy Moes",
+              "favorite": true,
+              "servings": "Serves 6   |   Active: 20 min   |   Total: 45 min",
+              "source": "Molly Baz, Cook This Book",
+              "ingredientGroups": [
+                {
+                  "label": "Prep",
+                  "ingredients": [
+                    "2 ears fresh corn",
+                    "1 lb cherry tomatoes, halved"
+                  ]
+                },
+                {
+                  "label": "Ragu",
+                  "ingredients": [
+                    "1 lb spicy Italian sausage, casings removed",
+                    "1 medium yellow onion, chopped",
+                    "3 cloves garlic, chopped",
+                    "1/4 cup tomato paste",
+                    "3 Tbsp red wine vinegar",
+                    "1 Tbsp honey",
+                    "2 Tbsp sambal oelek",
+                    "2 sprigs fresh basil",
+                    "1/3 cup water"
+                  ]
+                },
+                {
+                  "label": "Herb salad",
+                  "ingredients": [
+                    "2 scallions, thinly sliced",
+                    "1 cup fresh basil leaves",
+                    "Splash red wine vinegar",
+                    "Drizzle olive oil"
+                  ]
+                },
+                {
+                  "label": "For serving",
+                  "ingredients": [
+                    "6 brioche hot dog buns",
+                    "2 Tbsp unsalted butter",
+                    "Parmigiano-Reggiano, for grating"
+                  ]
+                }
+              ],
+              "steps": [
+                "Using the large holes of a box grater, grate the corn kernels from the cobs into a bowl.",
+                "Heat a large skillet over medium-high. Add sausage and cook, breaking into pieces, until browned, 4–5 min.",
+                "Reduce heat to medium. Add onion and cook, stirring, until softened, about 3 min. Add garlic and cook until fragrant, 1 min.",
+                "Add tomato paste and stir to coat. Cook, stirring, until it begins to stick to the pan, 1–2 min.",
+                "Add red wine vinegar, honey, sambal, basil sprigs, water, grated corn, and halved cherry tomatoes. Stir to combine. Bring to a boil, then cover, reduce heat to low, and simmer until thickened, about 15 min. Remove basil sprigs.",
+                "Meanwhile, toss scallions and basil leaves in a small bowl. Dress with a splash of red wine vinegar and a drizzle of olive oil.",
+                "Toast brioche buns in a skillet with butter until golden.",
+                "Serve sausage ragu in toasted buns, topped with herb salad. Grate Parmigiano-Reggiano generously over the top."
+              ]
+            },
+            {
+              "title": "Slow Cooker Pork Mole",
+              "servings": "Serves 8   |   Total: 8–10 hours (plus 30 min prep)",
+              "source": "Adapted from Muy Bueno (Yvette Marquez-Sharpnack) and Food Network Kitchen",
+              "ingredientGroups": [
+                {
+                  "label": "Pork",
+                  "ingredients": [
+                    "1 bone-in pork butt (5–6 lbs)",
+                    "Salt and pepper"
+                  ]
+                },
+                {
+                  "label": "Dried chiles",
+                  "ingredients": [
+                    "4 dried ancho chiles, stems and seeds removed",
+                    "3 dried California or New Mexico red chiles, stems and seeds removed"
+                  ]
+                },
+                {
+                  "label": "Sauce aromatics",
+                  "ingredients": [
+                    "2 corn tortillas, torn into pieces",
+                    "1/3 cup sesame seeds",
+                    "1/4 cup raisins",
+                    "1 medium yellow onion, roughly chopped",
+                    "4 cloves garlic, smashed",
+                    "1 tsp ground cinnamon",
+                    "1 tsp ground cumin"
+                  ]
+                },
+                {
+                  "label": "Sauce",
+                  "ingredients": [
+                    "3 chipotle chiles in adobo",
+                    "1 Tbsp adobo sauce",
+                    "1 28-oz can crushed fire-roasted tomatoes",
+                    "1 cup fresh cilantro",
+                    "1 cup chicken broth",
+                    "2 oz Guittard bittersweet chocolate (or other good-quality bittersweet), roughly chopped",
+                    "Salt"
+                  ]
+                },
+                {
+                  "label": "For serving",
+                  "ingredients": [
+                    "Warm corn tortillas",
+                    "Sliced radishes, chopped white onion, fresh cilantro, lime wedges, crumbled queso fresco (optional)"
+                  ]
+                }
+              ],
+              "steps": [
+                "Season pork butt all over with salt and pepper and place in a slow cooker.",
+                "Toast dried ancho and California/NM chiles in a dry cast-iron skillet over medium heat, pressing with a spatula, until fragrant and slightly darkened, about 1 minute per side. Transfer to a bowl, cover with boiling water, and soak 20 minutes. Drain, reserving 1/2 cup soaking liquid.",
+                "In the same cast-iron skillet over medium heat, add tortilla pieces, sesame seeds, raisins, onion, and garlic. Toast, stirring frequently, until sesame seeds are golden, raisins are plump, and tortillas are crisp, 4–5 min. Add cinnamon and cumin and stir 30 seconds.",
+                "Transfer toasted mixture to a blender. Add soaked chiles, chipotle chiles, adobo sauce, fire-roasted tomatoes, cilantro, chicken broth, chocolate, and reserved chile soaking liquid. Blend until very smooth. Taste and season generously with salt.",
+                "Pour sauce over pork in slow cooker. Cook on Low 8–10 hours, until pork is very tender and pulls apart easily.",
+                "Using two forks, shred the pork directly in the slow cooker, pulling the meat apart into pieces. Remove and discard the bone. Skim any excess fat from the surface if desired, and stir the shredded pork into the sauce.",
+                "Serve with warm tortillas and toppings."
+              ]
+            },
+            {
+              "id": "haitian-pork-griot",
+              "title": "Haitian Pork Griot",
+              "favorite": true,
+              "servings": "Serves 6   |   Total: 3 hours, plus overnight marinating",
+              "source": "Patrick Celestin, adapted by Melissa Clark (NYT Cooking)",
+              "comments": [
+                {
+                  "html": "Best served with <a href='#haitian-pikliz'>Pikliz</a>."
+                }
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Marinade + pork",
+                  "ingredients": [
+                    "1 small Scotch bonnet or habanero chile",
+                    "1 medium onion, diced",
+                    "1 small green bell pepper, diced",
+                    "1 small red bell pepper, diced",
+                    "1/4 cup fresh Italian parsley, chopped, plus more for serving",
+                    "1 Tbsp kosher salt, plus more to taste",
+                    "1 Tbsp coarsely ground black pepper",
+                    "6 sprigs fresh thyme, plus more leaves for serving",
+                    "2 garlic cloves, finely chopped",
+                    "1/4 cup cane vinegar or cider vinegar",
+                    "Juice of 1 orange",
+                    "Juice of 1 lemon",
+                    "Juice of 1/2 lime",
+                    "1 Tbsp Worcestershire sauce",
+                    "3 lbs pork shoulder, not too lean, cut into 1 1/2-inch chunks"
+                  ]
+                },
+                {
+                  "label": "Finish",
+                  "ingredients": [
+                    "2 Tbsp coconut oil (melted) or olive oil, plus more as needed"
+                  ]
+                },
+                {
+                  "label": "For serving",
+                  "ingredients": [
+                    "Cooked rice",
+                    "Pikliz (see recipe)"
+                  ]
+                }
+              ],
+              "steps": [
+                "Quarter chile and remove seeds and membranes. Finely chop one quarter; leave the rest in whole pieces. Handle carefully, preferably wearing gloves — they are extremely hot.",
+                "Combine all marinade ingredients (chiles, onion, bell peppers, parsley, salt, pepper, thyme, garlic, vinegar, citrus juices, Worcestershire) with pork in a large Dutch oven. Toss well. Cover and refrigerate overnight.",
+                "The next day, remove from refrigerator 1–3 hours before cooking. Heat oven to 325°F. Place pot over high heat and bring to a simmer; cover and transfer to oven. Cook, stirring occasionally, until meat is very tender, 1 1/2–2 hours.",
+                "Using a slotted spoon, remove meat, letting all excess liquid drip back into the pot and removing any vegetable or herb bits. Transfer to a rimmed baking sheet. Drizzle with 2 Tbsp oil and salt to taste; toss gently.",
+                "Strain braising liquid, discarding solids. Return sauce to pot and simmer over high heat until reduced by half, 25–30 min.",
+                "Meanwhile, heat the broiler. Broil meat, tossing occasionally, until evenly browned, 5–10 min — nicely browned in spots but not dried out.",
+                "Drizzle meat with additional oil and top with sauce, parsley, and thyme leaves. Serve on rice with pikliz."
+              ]
+            },
+            {
+              "title": "Carnitas",
+              "servings": "Serves 10–12   |   Total: 10 hrs 15 min",
+              "source": "Nagi Maehashi, RecipeTin Eats",
+              "ingredientGroups": [
+                {
+                  "label": "Pork + rub",
+                  "ingredients": [
+                    "4 lbs boneless pork shoulder (pork butt), skinless",
+                    "2 1/2 tsp salt",
+                    "1 tsp black pepper",
+                    "1 Tbsp dried oregano",
+                    "2 tsp ground cumin",
+                    "1 Tbsp olive oil"
+                  ]
+                },
+                {
+                  "label": "Slow cooker aromatics",
+                  "ingredients": [
+                    "1 medium onion, chopped",
+                    "1 jalapeño, deseeded and chopped",
+                    "4 cloves garlic, minced",
+                    "3/4 cup fresh orange juice (from 2 oranges)"
+                  ]
+                },
+                {
+                  "label": "To crisp",
+                  "ingredients": [
+                    "1 Tbsp vegetable oil"
+                  ]
+                },
+                {
+                  "label": "For serving",
+                  "ingredients": [
+                    "Warm corn or flour tortillas",
+                    "Diced avocado, pico de gallo, grated cheese, sour cream (optional toppings)"
+                  ]
+                }
+              ],
+              "steps": [
+                "Combine salt, pepper, oregano, cumin, and olive oil to form the rub. Pat pork dry and rub all over. Place fat-side up in slow cooker; top with onion, jalapeño, and garlic. Pour orange juice over.",
+                "Cook on Low 10 hours or High 7 hours, until pork is fall-apart tender.",
+                "Transfer pork to a cutting board; let cool slightly and shred with two forks. Skim fat from juices. If you have more than 2 cups of juice, simmer on the stove to reduce. Reserve.",
+                "Heat 1 Tbsp vegetable oil in a large non-stick skillet over high heat. Working in batches, spread pork in a single layer and drizzle with some juices. Let the juices evaporate and the bottom brown and crisp, then briefly sear the other side. Repeat for remaining batches.",
+                "Serve immediately in warm tortillas with toppings, drizzled with more juices."
+              ]
+            },
+            {
+              "title": "Crispy Pork Lettuce Wraps With Spicy Cucumbers",
+              "servings": "Serves 2   |   Total: 3 hours (including marinating and roasting)",
+              "source": "Alison Roman, Bon Appétit (October 2015)",
+              "ingredientGroups": [
+                {
+                  "label": "Pork + rub",
+                  "ingredients": [
+                    "1 12-oz piece skin-on pork belly (about 4x3 1/2x1 1/4 inches)",
+                    "Kosher salt and freshly ground pepper",
+                    "2 Tbsp light brown sugar, divided"
+                  ]
+                },
+                {
+                  "label": "Braise",
+                  "ingredients": [
+                    "4 chiles de árbol",
+                    "2 star anise pods",
+                    "2 Tbsp soy sauce",
+                    "1 1/4 cups water"
+                  ]
+                },
+                {
+                  "label": "Spicy cucumber salad",
+                  "ingredients": [
+                    "2 Persian or kirby cucumbers, thinly sliced",
+                    "2 scallions, thinly sliced",
+                    "1/2 red chile (Fresno or jalapeño), thinly sliced",
+                    "2 Tbsp unseasoned rice wine vinegar"
+                  ]
+                },
+                {
+                  "label": "Gochujang-miso sauce",
+                  "ingredients": [
+                    "3 Tbsp gochujang",
+                    "3 Tbsp white miso"
+                  ]
+                },
+                {
+                  "label": "For serving",
+                  "ingredients": [
+                    "1 small head lettuce (Little Gem or romaine hearts), torn",
+                    "1/2 bunch mint",
+                    "1/2 cup kimchi (optional)"
+                  ]
+                }
+              ],
+              "steps": [
+                "Diagonally score the fat side of the pork belly, cutting through the fat but stopping at the flesh, about 1/4 inch apart. Season with salt, pepper, and 1 Tbsp brown sugar. Wrap tightly in plastic wrap and refrigerate at least 2 hours or up to 2 days.",
+                "Preheat oven to 400°F. Unwrap pork and nestle into the smallest baking dish you have. Add chiles de árbol, star anise, soy sauce, remaining 1 Tbsp brown sugar, and 1 1/4 cups water. Roast until most fat has rendered, meat is tender, and top is browned and crisp, 2–2 1/2 hours.",
+                "Meanwhile, toss cucumbers, scallions, red chile, and vinegar in a small bowl. In a separate small bowl, mix gochujang and miso.",
+                "Transfer pork to a cutting board and rest 10 min. Pour off pan juices into a measuring glass; skim fat from surface.",
+                "Slice pork into 1/2-inch slices and arrange on a platter. Pour pan juices over. Serve with lettuce, cucumber salad, mint, kimchi (if using), and gochujang-miso sauce.",
+                "Do ahead: Pork can be cooked 2 days ahead. Cool, cover, and chill. Reheat before serving."
+              ]
+            },
+            {
+              "title": "Moo Shu Mushrooms",
+              "servings": "Serves 4   |   Total: 45 min",
+              "source": "J. Kenji López-Alt, NYT Cooking (January 28, 2020)",
+              "comments": [
+                "If you can't find dried day lily buds, substitute 4 oz canned sliced bamboo shoots and skip the soaking step."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Dried mushrooms and lily buds",
+                  "ingredients": [
+                    "1/3 cup dried Chinese wood ear mushrooms (about 10 grams)",
+                    "1/4 packed cup dried day lily buds (about 15 grams)"
+                  ]
+                },
+                {
+                  "label": "Pork marinade",
+                  "ingredients": [
+                    "2 oz pork loin or pork sirloin, cut into 1 1/2- to 2-inch slivers",
+                    "1/2 tsp Shaoxing wine or dry sherry",
+                    "1/2 tsp light soy sauce or shoyu",
+                    "1/2 tsp cornstarch",
+                    "1/4 tsp white pepper",
+                    "Pinch kosher salt"
+                  ]
+                },
+                {
+                  "label": "Stir-fry sauce",
+                  "ingredients": [
+                    "2 1/2 tsp Shaoxing wine or dry sherry",
+                    "2 1/2 tsp light soy sauce or shoyu",
+                    "1/2 tsp cornstarch",
+                    "1/4 tsp white pepper"
+                  ]
+                },
+                {
+                  "label": "Stir-fry",
+                  "ingredients": [
+                    "4 Tbsp roasted sesame oil, divided",
+                    "3 eggs, beaten with a pinch of salt",
+                    "2 slices fresh ginger",
+                    "1/2 lb mixed sliced fresh mushrooms (shimeji, shiitake, enoki, oyster or maitake)",
+                    "2 scallions, thinly sliced on a sharp bias",
+                    "1/4 tsp MSG (optional)",
+                    "Kosher salt and white pepper, to taste"
+                  ]
+                },
+                {
+                  "label": "For serving",
+                  "ingredients": [
+                    "Mandarin pancakes or warm flour tortillas",
+                    "Hoisin sauce or sweet bean sauce"
+                  ]
+                }
+              ],
+              "steps": [
+                "Rehydrate dried ingredients: Place wood ear mushrooms and day lily buds in separate bowls. Cover with very hot water and soak until rehydrated, about 15 min. Drain well. Remove tough centers from wood ears, then thinly slice. Cut day lilies into 2-inch pieces.",
+                "Prepare pork marinade: Whisk together Shaoxing wine, soy sauce, cornstarch, white pepper, and a pinch of salt. Add pork and stir vigorously for 10 seconds. Set aside 15 min at room temperature.",
+                "Make stir-fry sauce: Whisk together remaining Shaoxing wine, soy sauce, cornstarch, and white pepper in a small bowl until no lumps remain.",
+                "Cook eggs: Heat wok over high until lightly smoking. Add 2 Tbsp sesame oil, swirl to coat. Pour in beaten eggs and cook without moving 10 seconds. Break up eggs with a spatula until barely set, 30–45 seconds. Transfer to a large bowl.",
+                "Wipe out wok, return to high heat until smoking. Add 1 Tbsp oil, swirl. Add 1 ginger slice, let sizzle 5 seconds. Add pork and stir-fry until just cooked through, about 1 min. Discard ginger; transfer pork to bowl with eggs.",
+                "Wipe out wok, return to high heat. Add remaining 1 Tbsp oil, swirl. Add remaining ginger slice, sizzle 5 seconds. Add fresh mushrooms and stir-fry until lightly browned, 2–3 min. Add scallions, sliced wood ears, and day lilies; stir-fry until softened, about 30 seconds.",
+                "Return pork and eggs to wok. Stir sauce and add to wok with MSG (if using). Stir-fry to combine; season with salt and white pepper. Discard ginger. Serve immediately with Mandarin pancakes and hoisin sauce."
+              ]
+            }
           ]
         },
         {
-          title: "Joan's on Third Butter Lettuce Salad (Copycat)",
-          servings: "Serves 4",
-          comments: ["Original recipe uses French feta; family uses goat cheese in oil instead. Shallot is in the original but was skipped. Dressing recipe from CopyKat Recipes."],
-          source: "Copycat recipe based on Joan's on Third, Los Angeles",
-          ingredientGroups: [
-            { label: "Dressing", ingredients: ["¼ cup white wine vinegar (or champagne vinegar)", "1 tbsp Dijon mustard", "2–3 cloves garlic, minced", "¼ tsp lemon juice", "Dried oregano, to taste", "Dried basil, to taste", "9 tbsp extra virgin olive oil", "Salt and freshly ground black pepper, to taste"] },
-            { label: "Salad", ingredients: ["1–2 large heads butter lettuce, washed, dried, and torn", "½ cup goat cheese, crumbled", "⅓ cup dried cranberries"] }
-          ],
-          steps: [
-            { lead: "Make the dressing:", bullets: [
-              "Whisk together the white wine vinegar, Dijon mustard, minced garlic, lemon juice, oregano, and basil in a small bowl.",
-              "Slowly drizzle in the olive oil while whisking constantly until emulsified.",
-              "Season with salt and pepper to taste."
-            ]},
-            "Place the torn butter lettuce in a large serving bowl.",
-            "Sprinkle the crumbled goat cheese and dried cranberries evenly over the lettuce.",
-            "Drizzle the vinaigrette lightly over the top just before serving and toss gently to combine."
+          "title": "Lamb",
+          "recipes": [
+            {
+              "title": "Garlic & Rosemary Grilled Lamb Chops",
+              "favorite": true,
+              "servings": "Serves 4   |   Prep: 15 min   |   Cook: 10 min   |   Total: 25 min (plus 1 hr to overnight marinating)",
+              "source": "Jannese, Delish D'Lites",
+              "ingredientGroups": [
+                {
+                  "label": "Marinade",
+                  "ingredients": [
+                    "4 cloves garlic, minced",
+                    "1 Tbsp fresh rosemary, chopped",
+                    "1 1/4 tsp kosher salt",
+                    "1/2 tsp ground black pepper",
+                    "Zest of 1 lemon",
+                    "1/4 cup olive oil"
+                  ]
+                },
+                {
+                  "label": "Chops",
+                  "ingredients": [
+                    "2 lbs lamb loin or rib chops, thick cut"
+                  ]
+                }
+              ],
+              "steps": [
+                "Combine garlic, rosemary, salt, pepper, lemon zest, and olive oil in a measuring cup.",
+                "Pour marinade over lamb chops, flipping to coat completely. Cover and marinate in the fridge for at least 1 hour, or overnight.",
+                "Grill on medium-high heat for 7–10 minutes, until internal temperature reads 135°F.",
+                "Transfer to a plate, cover loosely with foil, and rest 5 minutes before serving."
+              ]
+            },
+            {
+              "title": "Lula Kebabs",
+              "servings": "Serves 6   |   Prep: 30 min   |   Cook: 10 min   |   Total: 40 min",
+              "source": "Janelle Leatherwood, The Stuffed Grape Leaf",
+              "ingredientGroups": [
+                {
+                  "ingredients": [
+                    "1 lb ground lamb",
+                    "1 lb ground beef",
+                    "1/2 cup fresh parsley, finely chopped",
+                    "1/4 cup fresh mint, finely chopped",
+                    "1/2 yellow onion, grated or very finely minced",
+                    "1/2 Tbsp ground cumin",
+                    "2 tsp allspice",
+                    "1/2 tsp ground coriander",
+                    "1/2 tsp garlic powder",
+                    "2 tsp fresh lemon juice",
+                    "1 Tbsp extra-virgin olive oil",
+                    "2 Tbsp tomato paste",
+                    "Kosher salt and black pepper, to taste"
+                  ]
+                }
+              ],
+              "steps": [
+                "Combine both ground meats, parsley, mint, onion, cumin, allspice, coriander, garlic powder, lemon juice, olive oil, and tomato paste in a large bowl. Season with salt and pepper and mix until evenly combined.",
+                "Shape mixture into long, flattened patties and thread onto skewers if desired.",
+                "Grill over medium-high heat until cooked through but not dried out, about 10 minutes total, turning once."
+              ]
+            },
+            {
+              "title": "Luscious Tandoori Lamb Chops",
+              "servings": "Serves 4   |   Active: 30 min   |   Total: ~9 hrs (including overnight marinade)",
+              "source": "Suvir Saran, Food & Wine",
+              "ingredientGroups": [
+                {
+                  "label": "Chops + marinade (overnight)",
+                  "ingredients": [
+                    "8 lamb rib chops (about 2 1/2 lbs)",
+                    "3/4 cup whole-milk Greek yogurt",
+                    "1/4 cup heavy cream",
+                    "3 Tbsp fresh lemon juice",
+                    "1 (3-inch) piece fresh ginger, peeled and minced",
+                    "4 large garlic cloves, minced",
+                    "1 Tbsp malt vinegar",
+                    "1 Tbsp garam masala",
+                    "1 Tbsp ground cumin",
+                    "1 Tbsp paprika",
+                    "1/2 tsp cayenne pepper",
+                    "1/4 tsp ground mace (optional)",
+                    "1/4 tsp freshly grated nutmeg",
+                    "1 tsp kosher salt, plus more to season"
+                  ]
+                },
+                {
+                  "label": "Basting oil",
+                  "ingredients": [
+                    "2 Tbsp vegetable oil"
+                  ]
+                },
+                {
+                  "label": "Finish",
+                  "ingredients": [
+                    "3 Tbsp unsalted butter, melted"
+                  ]
+                }
+              ],
+              "steps": [
+                "Score one side of each chop with three diagonal slashes, about 1/4 inch deep.",
+                "Whisk together yogurt, cream, lemon juice, ginger, garlic, malt vinegar, garam masala, cumin, paprika, cayenne, mace (if using), nutmeg, and salt. Add chops, turn to coat, cover, and refrigerate overnight.",
+                "Remove chops from refrigerator. Add oil to marinade, toss with chops, and let stand at room temperature 30 minutes.",
+                "Grill over moderately high heat for 8 minutes, turning once. Brush with melted butter and grill 2 more minutes per side for medium-rare. Season with salt and serve."
+              ]
+            }
           ]
         },
         {
-          title: "Sautéed Mushrooms",
-          servings: "Serves 6   |   Prep: 10 min   |   Cook: 20 min   |   Total: 30 min",
-          source: "Sommer Collier, A Spicy Perspective",
-          comments: [
+          "title": "Beef",
+          "recipes": [
+            {
+              "id": "rib-roast",
+              "title": "Four Peppercorn Crusted Rotisserie Rib Roast",
+              "favorite": true,
+              "servings": "Serves 4–6",
+              "source": "Lauren Muhlheim (family recipe, December 2020)",
+              "comments": [
+                {
+                  "html": "Best served with <a href='#horseradish-sauce'>Horseradish Sauce</a>."
+                }
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Peppercorn crust",
+                  "ingredients": [
+                    "2 tsp black peppercorns",
+                    "2 tsp white peppercorns",
+                    "2 tsp green peppercorns",
+                    "1 tsp pink peppercorns",
+                    "1 tsp salt"
+                  ]
+                },
+                {
+                  "label": "Roast",
+                  "ingredients": [
+                    "1 boneless beef rib roast (3 1/2 to 4 lbs)"
+                  ]
+                }
+              ],
+              "steps": [
+                "Place peppercorns in a zip-lock bag and crush with a rolling pin until coarsely ground. Stir in salt.",
+                "Coat the roast all over with the peppercorn-salt mixture.",
+                "Cook on rotisserie: 18–20 min per lb for rare (140°F internal), 25–30 min per lb for medium (160°F), or 35–40 min per lb for well done (170°F).",
+                "Remove from rotisserie and slice 1/4 inch thick. Serve with Horseradish Sauce."
+              ]
+            },
+            {
+              "title": "The Best Passover Brisket",
+              "servings": "Serves 12   |   Prep: 15 min   |   Cook: 3 hrs 30 min   |   Total: 3 hrs 45 min",
+              "source": "Phoebe Lapine, Feed Me Phoebe",
+              "ingredientGroups": [
+                {
+                  "label": "Brisket",
+                  "ingredients": [
+                    "One 5-lb brisket",
+                    "8 garlic cloves, each cut lengthwise into 4 pieces",
+                    "Sea salt and black pepper",
+                    "1 Tbsp olive oil",
+                    "1 qt beef stock"
+                  ]
+                },
+                {
+                  "label": "Caramelized onions",
+                  "ingredients": [
+                    "2 Vidalia or sweet onions, thinly sliced"
+                  ]
+                },
+                {
+                  "label": "Sauce",
+                  "ingredients": [
+                    "1 cup ketchup",
+                    "1/4 cup coconut sugar or brown sugar",
+                    "1 tsp paprika",
+                    "1 tsp smoked paprika",
+                    "1/4 tsp cayenne",
+                    "1/2 tsp dried thyme or rosemary",
+                    "2 bay leaves"
+                  ]
+                }
+              ],
+              "steps": [
+                "Preheat oven to 500°F. Trim fat cap to an even 1/4-inch layer. Using a paring knife, make vertical incisions all over the meat and insert a piece of garlic into each. Season both sides generously with salt and pepper. Place in a large braiser, Dutch oven, or rimmed metal baking dish fat-side up and brown in the oven, about 10 minutes per side.",
+                "Remove pan from oven and pour in beef stock. (If using Pyrex, let the pan cool a few minutes first to prevent shattering.) Turn oven down to 350°F, cover tightly with a lid or foil, and braise for 1 hour.",
+                "While the brisket braises, heat olive oil in a large skillet over medium-low. Add onions and sauté, stirring occasionally, until soft and caramelized, about 30 minutes.",
+                "Remove brisket from oven. Whisk ketchup, sugar, paprika, smoked paprika, cayenne, thyme or rosemary, and bay leaves into the pan juices. Arrange caramelized onions on top of the meat. Cover and return to oven for 2–3 more hours. (2 hours for sliceable brisket; 3 hours for falling-apart, pulled-style.)",
+                "Transfer brisket to a cutting board and slice against the grain. Return slices to the sauce and serve. Can be made 1–2 days ahead and reheated gently."
+              ]
+            },
+            {
+              "title": "Brenda's Brisket",
+              "source": "Family recipe card, credited to Grandmother Brenda",
+              "comments": [
+                "Best made a day ahead — brisket is much easier to slice when cold, and the fat can be skimmed from the surface before reheating."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Brisket",
+                  "ingredients": [
+                    "1 brisket, 3–4 lbs (prefer 4 lbs)"
+                  ]
+                },
+                {
+                  "label": "Rub and glaze",
+                  "ingredients": [
+                    "2 packages (1.4 oz each) onion soup mix",
+                    "Ketchup, enough to coat both sides generously"
+                  ]
+                },
+                {
+                  "label": "Vegetables",
+                  "ingredients": [
+                    "2–3 onions, sliced",
+                    "3–4 carrots, cut into large chunks"
+                  ]
+                }
+              ],
+              "steps": [
+                "Rub onion soup mix into brisket on both sides. Spread ketchup over both sides.",
+                "Place brisket fat-side-up on a large sheet of heavy-duty foil in a roasting pan. Scatter onions and carrots around the meat.",
+                "Wrap tightly in foil. Cover pan.",
+                "Bake at 300°F for 4–5 hours, until very tender.",
+                "For best results: cool completely, then refrigerate overnight. Slice cold (much easier than slicing warm). Skim any solidified fat from the surface. Return sliced meat to the pan, pour the fat-free pan juices over the top, cover, and reheat at 325°F until warmed through."
+              ]
+            },
+            {
+              "title": "Cranberry-Chili Brisket",
+              "source": "Family recipe card, credited to Grandmother Brenda",
+              "comments": [
+                "A sweeter, saucier brisket — the cranberry and chili sauce make a rich, fruity gravy. As with all brisket, easier to slice cold and best reheated in its juices."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Brisket",
+                  "ingredients": [
+                    "1 brisket, about 4 lbs"
+                  ]
+                },
+                {
+                  "label": "Sauce",
+                  "ingredients": [
+                    "1 jar (12 oz) chili sauce",
+                    "1 can (14 oz) whole berry cranberry sauce",
+                    "1 package (1.4 oz) onion soup mix"
+                  ]
+                },
+                {
+                  "label": "Vegetables",
+                  "ingredients": [
+                    "1 onion, sliced",
+                    "1 bag (12 oz) baby carrots"
+                  ]
+                }
+              ],
+              "steps": [
+                "Mix chili sauce, cranberry sauce, and onion soup mix together in a bowl.",
+                "Place brisket on a large sheet of heavy-duty foil in a roasting pan. Pour sauce mixture over and around brisket.",
+                "Lay onion slices on top; scatter carrots around the meat.",
+                "Wrap tightly in foil. Bake at 350°F for about 4 hours, until very tender.",
+                "Cool, refrigerate, slice cold, skim fat. Reheat covered in juices (see Brenda's Brisket)."
+              ]
+            },
+            {
+              "id": "sous-vide-beef-ribs",
+              "title": "Sous Vide Beef Back Ribs",
+              "favorite": true,
+              "servings": "Serves 6–8   |   Prep: 20 min   |   Sous vide: 24 hrs   |   Finish: 10 min   |   Total: ~24.5 hrs",
+              "source": "Sip Bite Go, Two Kooks in the Kitchen, Went Here 8 This (Family hybrid)",
+              "comments": [
+                {
+                  "html": "Season with <a href='#steak-seasoning-rub'>Steak Seasoning Rub</a> (3× batch) before the sous vide, and serve alongside <a href='#cherry-bbq-sauce'>Cherry Barbecue Sauce</a>."
+                }
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Rub",
+                  "ingredients": [
+                    "Steak Seasoning Rub — 3× batch for 2 racks (see recipe)"
+                  ]
+                },
+                {
+                  "label": "Ribs",
+                  "ingredients": [
+                    "2 racks beef back ribs (~7–8 lbs total; also sold as beef spare ribs)"
+                  ]
+                },
+                {
+                  "label": "Optional dripping glaze",
+                  "ingredients": [
+                    "½ cup drippings from the sous vide bags, strained",
+                    "1 tsp Dijon mustard",
+                    "2 Tbsp maple syrup or brown sugar",
+                    "1 tsp cornstarch"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "Cherry Barbecue Sauce (see recipe), warmed"
+                  ]
+                }
+              ],
+              "steps": [
+                "Make a 3× batch of the Steak Seasoning Rub. Remove the silver skin membrane from the underside of each rack: slide a knife tip under the tissue at one end of a bone, grab it firmly with a paper towel, and peel the membrane off in one sheet. Pat ribs dry and rub generously all over. Vacuum seal each rack flat in its own bag.",
+                "Fill your sous vide container and set the circulator to 150°F. Submerge the sealed bags and cook for 24 hours.",
+                "Remove ribs from bags. To make the glaze, reserve ½ cup drippings; otherwise discard. Pat ribs very dry with paper towels — the drier they are, the better the char.",
+                "Optional glaze: Strain reserved drippings into a small saucepan. Refrigerate or freeze for 20–30 minutes until fat starts to congeal; skim and discard fat. Add Dijon, maple syrup, and cornstarch; whisk to combine. Bring to a boil, then reduce heat and simmer about 5 minutes until thickened and glossy.",
+                "Heat grill to high. Grill ribs 2–3 minutes per side until nicely charred. (If using the glaze, brush on both sides before and during grilling.) Slice between the bones and serve with Cherry Barbecue Sauce on the side."
+              ]
+            },
+            {
+              "title": "Hearty Beef Stew With Red Onions and Ale",
+              "servings": "Serves 6   |   Total: 3 hours",
+              "source": "Melissa Clark, NYT Cooking",
+              "comments": [
+                "Tastes even better a day or two later; can be frozen for up to two months. Serve over mashed potatoes, noodles, or polenta."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Beef",
+                  "ingredients": [
+                    "2 lbs boneless beef stew meat, cut into 1-inch chunks",
+                    "Kosher salt and black pepper",
+                    "1–2 Tbsp all-purpose flour",
+                    "2 Tbsp unsalted butter",
+                    "1 Tbsp olive oil, plus more as needed"
+                  ]
+                },
+                {
+                  "label": "Onions",
+                  "ingredients": [
+                    "3 medium red onions (2 sliced into half-moons; 1 cut into ½-inch wedges for Step 6)"
+                  ]
+                },
+                {
+                  "label": "Aromatics",
+                  "ingredients": [
+                    "4 garlic cloves, thinly sliced",
+                    "1 Tbsp tomato paste",
+                    "1 tsp ground coriander",
+                    "¼ tsp ground allspice"
+                  ]
+                },
+                {
+                  "label": "Liquid",
+                  "ingredients": [
+                    "2 cups beef or chicken stock (preferably homemade)",
+                    "1 cup ale or beer (nonalcoholic is fine)",
+                    "1 cup water",
+                    "1 rosemary sprig"
+                  ]
+                },
+                {
+                  "label": "Vegetables",
+                  "ingredients": [
+                    "3 carrots, sliced",
+                    "Red onion wedges (from Step 2 prep)"
+                  ]
+                },
+                {
+                  "label": "Finish",
+                  "ingredients": [
+                    "1 Tbsp cider vinegar or sherry vinegar, plus more to taste"
+                  ]
+                },
+                {
+                  "label": "Garnish",
+                  "ingredients": [
+                    "Chopped fresh chives",
+                    "Flaky sea salt",
+                    "Freshly ground black pepper"
+                  ]
+                }
+              ],
+              "steps": [
+                "Season beef all over with salt and pepper. Set aside while you prepare the onions.",
+                "Peel onions. Cut 2 of them in half root to stem, then thinly slice crosswise into half-moons. Cut the third onion root to stem into ½-inch wedges; set wedges aside for Step 6.",
+                "Dust beef cubes lightly with flour. Heat butter and 1 Tbsp oil in a large Dutch oven over medium-high. Working in batches (do not crowd the pan), sear beef until dark all over, 5–6 minutes per batch. Transfer to a bowl as they brown. Add more oil and adjust heat as needed to prevent burning.",
+                "Stir in sliced onions; raise heat to medium-high if you lowered it. Cook, stirring occasionally, until pale golden and soft, 10–15 minutes. Add garlic and sauté until fragrant and lightly golden at the edges, 2–3 minutes more.",
+                "Make a well in the center of the onions. Stir in tomato paste, coriander, and allspice; cook, stirring, until paste is darkened, about 1 minute. Stir in stock, ale, 1 cup water, and rosemary sprig. Return beef and any accumulated juices to the pot; bring to a simmer. Partly cover and simmer gently for 45 minutes.",
+                "Give the beef a stir, then add reserved onion wedges. Simmer 15 minutes, then add carrots. Continue simmering until meat, onions, and carrots are tender, 30–45 minutes more.",
+                "If sauce seems thin, use a slotted spoon to transfer meat and vegetables to a platter; cover with foil to keep warm. Discard rosemary. Return pot to stove and simmer until thickened, 5–10 minutes. Stir in vinegar. Taste and adjust salt and vinegar. Spoon sauce over meat; garnish with chives, flaky sea salt, and more black pepper."
+              ]
+            },
+            {
+              "title": "Dijon and Cognac Beef Stew",
+              "servings": "Serves 4–6   |   Total: about 3 hours",
+              "source": "Regina Schrambling, NYT Cooking",
+              "comments": [
+                "Slow-cooker variation: render salt pork and sear flour-dusted beef in a sauté pan, then transfer to slow cooker with onions, shallots, carrots, mushrooms, and red wine. Deglaze pan with Cognac, then add 1 cup (not 2) stock, Dijon, and 1 Tbsp Pommery mustard; transfer to slow cooker. Cook on low 6–8 hours. Stir in remaining 3 Tbsp Pommery mustard before serving."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Aromatics",
+                  "ingredients": [
+                    "1/4 lb salt pork, diced",
+                    "1 large onion, finely diced",
+                    "3 shallots, chopped",
+                    "2 Tbsp unsalted butter, plus more as needed"
+                  ]
+                },
+                {
+                  "label": "Beef",
+                  "ingredients": [
+                    "2 lbs beef chuck, cut into 1-inch cubes",
+                    "2 Tbsp all-purpose flour",
+                    "Kosher salt and black pepper"
+                  ]
+                },
+                {
+                  "label": "Braising liquid",
+                  "ingredients": [
+                    "1/2 cup Cognac",
+                    "2 cups beef stock",
+                    "1/2 cup Dijon mustard",
+                    "1 Tbsp Pommery mustard (or other whole-grain Dijon)"
+                  ]
+                },
+                {
+                  "label": "Add-ins",
+                  "ingredients": [
+                    "4 large carrots, peeled and cut into half-moon slices",
+                    "2 Tbsp unsalted butter",
+                    "1/2 lb mushrooms, stemmed, cleaned, and quartered",
+                    "3 Tbsp Pommery mustard (remaining)",
+                    "1/4 cup red wine"
+                  ]
+                }
+              ],
+              "steps": [
+                "Place salt pork in a Dutch oven over low heat and cook until fat is rendered. Remove and discard solids. Raise heat, add onion and shallots, and cook until softened but not browned, 10–15 minutes. Transfer to a bowl with a slotted spoon.",
+                "Add 2 Tbsp butter to the pot if needed to augment fat. Dust beef cubes with flour, season with salt and pepper, and shake off excess. Working in batches, brown beef over medium-high until well browned and almost crusty on all sides; transfer to the bowl with onions. Repeat.",
+                "Add Cognac to the empty pot and cook, stirring, until the bottom is deglazed. Add stock, Dijon mustard, and 1 Tbsp Pommery mustard; whisk to blend. Return meat and onions to pot. Reduce heat, partly cover, and simmer gently until meat is very tender, about 1 1/2 hours.",
+                "Add carrots and continue simmering until tender, about 30 minutes. Meanwhile, heat 2 Tbsp butter in a medium skillet over medium-high and sauté mushrooms until browned.",
+                "Stir mushrooms into the stew along with the remaining 3 Tbsp Pommery mustard and red wine. Simmer 5 minutes, taste, and adjust seasoning. Serve hot."
+              ]
+            },
+            {
+              "title": "Asian Braised Short Ribs",
+              "favorite": true,
+              "servings": "Serves 6   |   Prep: 30 min   |   Cook: 6 hrs (slow cooker)   |   Total: ~6.5 hrs",
+              "source": "Williams-Sonoma Kitchen",
+              "ingredientGroups": [
+                {
+                  "label": "Short ribs",
+                  "ingredients": [
+                    "2 Tbsp whole Chinese five spice (ground in spice grinder)",
+                    "4 lbs bone-in beef short ribs",
+                    "2–3 Tbsp olive oil"
+                  ]
+                },
+                {
+                  "label": "Aromatics and braising liquid",
+                  "ingredients": [
+                    "1 large yellow onion, cut into 1/4-inch slices",
+                    "4 garlic cloves, thinly sliced",
+                    "1/3 cup plum wine",
+                    "1/3 cup soy sauce",
+                    "1/3 cup rice vinegar",
+                    "1/4 cup sesame oil",
+                    "1 Tbsp chili garlic paste",
+                    "2 Tbsp fresh ginger, grated",
+                    "Zest of 1 orange, peeled into 1/2-inch strips",
+                    "Juice of 1 orange",
+                    "1/4 cup sugar dissolved in 3/4 cup boiling water"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "Steamed rice"
+                  ]
+                }
+              ],
+              "steps": [
+                "Grind Chinese five spice in a spice grinder. Season short ribs all over with ground five spice; shake off excess.",
+                "In a heavy sauté pan over medium-high heat, warm 1 Tbsp olive oil. Working in batches, brown ribs on all sides, 10–12 minutes total, adding more oil as needed. Transfer to a slow cooker.",
+                "Add more oil to pan if needed. Reduce heat to medium, add onion and garlic, and cook, stirring occasionally, until soft, about 5 minutes. Add plum wine and stir to deglaze, scraping up browned bits. Increase heat to medium-high and cook until wine is reduced by half, 2–3 minutes. Transfer to slow cooker along with soy sauce, rice vinegar, sesame oil, chili garlic paste, ginger, orange zest, orange juice, and sugar mixture. Cover and cook on high for 6 hours.",
+                "Skim fat from the surface. Serve ribs and sauce over steamed rice."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Ground Beef",
+          "recipes": [
+            {
+              "title": "Taco Night!!",
+              "servings": "Makes 12 tacos   |   Active: 35 min   |   Total: 3½ hrs",
+              "source": "Molly Baz, The Club",
+              "ingredientGroups": [
+                {
+                  "label": "Aromatics and spice mix",
+                  "ingredients": [
+                    "1 large onion, roughly chopped",
+                    "6 cloves garlic, roughly chopped",
+                    "1/4 cup fresh ginger, roughly chopped (from a 3- to 4-inch piece; no need to peel)",
+                    "1 large bunch cilantro, stems thinly sliced, leaves reserved for serving",
+                    "1 Tbsp ground cinnamon",
+                    "2 1/2 tsp ground turmeric",
+                    "2 tsp ground cardamom",
+                    "1 1/2 tsp Aleppo pepper or red pepper flakes, plus more to taste",
+                    "1/2 tsp ground cloves",
+                    "Kosher salt and freshly ground black pepper"
+                  ]
+                },
+                {
+                  "label": "Ragù",
+                  "ingredients": [
+                    "2 lbs (80% lean) ground beef",
+                    "2 Tbsp olive oil, plus more as needed",
+                    "1 1/2 cups whole milk",
+                    "2 cups low-sodium chicken broth, plus more as needed",
+                    "One (28-oz) can crushed or chopped tomatoes",
+                    "1 Tbsp honey",
+                    "Apple cider vinegar, to taste"
+                  ]
+                },
+                {
+                  "label": "Fennel-apple slaw",
+                  "ingredients": [
+                    "2 Granny Smith apples, thinly sliced into half moons",
+                    "1 large bulb fennel, preferably with fronds, halved and thinly sliced crosswise",
+                    "1/3 cup apple cider vinegar",
+                    "1 Tbsp honey"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "One (12-count) package hard taco shells",
+                    "Sour cream, for serving"
+                  ]
+                }
+              ],
+              "steps": [
+                "Roughly chop onion, garlic, and ginger. Thinly slice cilantro stems; reserve leaves for serving. In a small bowl, mix cinnamon, turmeric, cardamom, Aleppo pepper, cloves, and 1 Tbsp salt.",
+                "Break ground beef into 4 pieces and shape into rough balls. Season all over with 1 Tbsp plus 1 tsp salt.",
+                "Heat a large Dutch oven over high heat for 2 full minutes. Add olive oil, swirl to coat, and add beef. Sear without moving until deeply browned and crusty on the underside, 6–10 minutes. Flip and cook until the second sides are deeply golden and a fond has formed on the bottom, 4–6 minutes more. (Meat will not be cooked through at this point.)",
+                "Remove meat to a plate. Add more olive oil if the pot is dry. Reduce heat to medium-high and add onions, garlic, ginger, and cilantro stems. Sauté, stirring occasionally, until translucent and just starting to turn golden, 5–8 minutes.",
+                "Return meat and any accumulated juices to the pot. Sprinkle the spice mix over everything and stir, breaking meat into roughly ping-pong–sized balls, until fragrant, 2–3 minutes.",
+                "Add milk, chicken broth, tomatoes, and 1 Tbsp honey. Stir, scraping the bottom to release the fond. Bring to a low boil, then partially cover and reduce to a gentle simmer. Cook, stirring occasionally and adding splashes of broth as needed to maintain a saucy, chili-like consistency, until meat is tender and sauce is reduced, 1 hour 45 minutes to 2 hours 15 minutes. (Going 2½–3 hours makes the meat even more tender — add more broth as needed.) Remove from heat and season to taste with salt, Aleppo pepper, and a big splash of apple cider vinegar. Keep warm. Do ahead: can be made up to 2 days ahead; rewarm gently on the stovetop.",
+                "While the ragù braises, make the slaw: combine sliced apples, fennel, half the reserved cilantro leaves, and fennel fronds (roughly chopped, if you have them) in a large bowl. Dress with 1/3 cup apple cider vinegar and 1 Tbsp honey; toss to coat. Season with salt and pepper. Keep chilled until serving.",
+                "Preheat oven to 375°F. Place taco shells on a baking sheet and bake until just warm, 4 minutes.",
+                "Fill shells with ragù and a dollop of sour cream. Top with cilantro leaves and fennel-apple slaw. Serve immediately."
+              ]
+            },
+            {
+              "title": "Korean Beef Bowl",
+              "servings": "Serves 4   |   Active: 20 min   |   Total: 25 min",
+              "source": "Khin's Kitchen, Glebe Kitchen, Chef Savvy (Family hybrid)",
+              "ingredientGroups": [
+                {
+                  "label": "Sauce",
+                  "ingredients": [
+                    "3 Tbsp low-sodium soy sauce",
+                    "2 Tbsp brown sugar",
+                    "1 1/2 Tbsp mirin",
+                    "1 1/2 Tbsp gochujang",
+                    "2 tsp sesame oil",
+                    "1/4 tsp black pepper"
+                  ]
+                },
+                {
+                  "label": "Creamy gochujang drizzle",
+                  "ingredients": [
+                    "3 Tbsp mayonnaise",
+                    "1 Tbsp sour cream",
+                    "1–2 tsp gochujang, to taste",
+                    "1 tsp rice wine vinegar"
+                  ]
+                },
+                {
+                  "label": "Beef and aromatics",
+                  "ingredients": [
+                    "1 Tbsp vegetable oil",
+                    "1/2 large sweet onion, finely diced",
+                    "4 cloves garlic, minced",
+                    "1 tsp fresh ginger, grated",
+                    "1 1/2 lbs lean ground beef"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "Steamed white rice",
+                    "3 green onions, thinly sliced",
+                    "1 Tbsp toasted sesame seeds",
+                    "Kimchi"
+                  ]
+                }
+              ],
+              "steps": [
+                "Whisk all sauce ingredients together in a small bowl. Set aside.",
+                "Stir together mayo, sour cream, gochujang, and rice wine vinegar until smooth. Refrigerate until serving.",
+                "Heat oil in a large skillet or wok over medium-high. Add onion and cook, stirring, until softened and lightly golden, 3–4 minutes. Add garlic and ginger; cook 1 minute more.",
+                "Add ground beef, breaking into small pieces, and cook until browned and cooked through, 4–5 minutes. Drain excess fat if needed.",
+                "Pour sauce over beef and stir to combine. Simmer 2–3 minutes until slightly thickened.",
+                "Spoon over rice. Garnish with green onions and sesame seeds. Drizzle with creamy gochujang sauce. Serve with kimchi on the side."
+              ]
+            },
+            {
+              "title": "Sweet Potato Shepherd's Pie",
+              "servings": "Serves 6   |   Total: ~50 min",
+              "source": "Shira Rosenbluth's mother",
+              "comments": [
+                "For a 9\"×13\" pan, double the recipe."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Sweet potato topping",
+                  "ingredients": [
+                    "5–6 sweet potatoes, peeled",
+                    "1½ tsp salt",
+                    "2–3 Tbsp mayonnaise",
+                    "Oil, for brushing"
+                  ]
+                },
+                {
+                  "label": "Meat filling",
+                  "ingredients": [
+                    "1 Tbsp oil",
+                    "1 large onion, chopped",
+                    "1 lb ground beef",
+                    "½ tsp garlic powder",
+                    "½ tsp onion powder",
+                    "½ tsp paprika",
+                    "¼ tsp salt",
+                    "¼ tsp pepper",
+                    "1 Tbsp soy sauce",
+                    "1 Tbsp teriyaki sauce",
+                    "2 Tbsp Marsala wine",
+                    "2 Tbsp tomato paste",
+                    "½ cup water",
+                    "1 cup frozen peas and carrots"
+                  ]
+                }
+              ],
+              "steps": [
+                "Place sweet potatoes in a pot with water and bring to a boil. Cover and simmer until fork tender. Drain, reserving ½ cup of the cooking water. Season with salt, mayonnaise, and 2 Tbsp of the reserved water; mash until smooth. Add more water and salt to taste.",
+                "Preheat oven to 400°F.",
+                "Heat oil in a large frying pan over medium flame. Add onion and sauté until translucent, about 3 minutes. Add ground beef and sauté until no longer pink.",
+                "Add garlic powder, onion powder, paprika, salt, pepper, soy sauce, and teriyaki sauce; mix well to incorporate. Add Marsala wine, tomato paste, water, peas and carrots; mix well and cook 3 minutes.",
+                "Transfer meat mixture to a 9\" round pan. Top with mashed sweet potatoes. Using a fork, make a design on the surface. Lightly brush the top with oil. Bake uncovered at 400°F for 25 minutes."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Fish",
+          "recipes": [
+            {
+              "title": "Dry-Brined Salmon",
+              "servings": "Serves 4   |   Prep: 5 min   |   Marinate: 8 hrs – 2 days   |   Cook: 15 min   |   Total: ~8.5 hrs+",
+              "source": "J. Kenji López-Alt, NYT Cooking",
+              "comments": [
+                "Marinating with Shio Koji — a fermented rice-and-koji paste — acts as a rich dry brine: it firms the flesh, prevents albumin leakage, and makes the skin virtually nonstick and chip-crisp. Even a short 30–45-minute rest improves the fish.",
+                "Works with any type of salmon; especially dramatic with leaner coho or sockeye."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Salmon and marinade",
+                  "ingredients": [
+                    "4 (5- to 7-oz) skin-on salmon fillets",
+                    "¼ cup Shio Koji paste (about 1 Tbsp per fillet)"
+                  ]
+                },
+                {
+                  "label": "Cooking oil",
+                  "ingredients": [
+                    "Neutral oil for cooking"
+                  ]
+                },
+                {
+                  "label": "Broiling oil",
+                  "ingredients": [
+                    "Small amount of neutral oil"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "Extra-virgin olive oil",
+                    "Lemon wedges"
+                  ]
+                }
+              ],
+              "steps": [
+                "Smear Shio Koji paste over the flesh side of each fillet. Place fillets flesh-side down in a Pyrex dish. Transfer to the refrigerator (uncovered or loosely covered with foil) and marinate at least 8 hours and up to 2 days. Before cooking, scrape off the Shio Koji and pat fillets very dry with paper towels.",
+                "To cook under the broiler, skip to Step 4. To cook on the stovetop, coat each fillet with a thin film of oil on all sides. Heat a skillet large enough to hold the fillets over medium-low for 2 minutes.",
+                "Add fillets skin-side down; press down for the first few minutes to keep skin flat and in contact with the pan. Cook, moving fillets occasionally, until skin is brown and crisp, 4–5 minutes total. (If the fillet doesn't release, give it another 15–30 seconds.) Flip and cook until as done as you like: 100–105°F for medium-rare, 130–135°F for well done. Remove from pan and rest 5 minutes, skin-side up. Serve with a drizzle of olive oil and a lemon wedge.",
+                "To cook under the broiler: adjust a rack 6 inches below the broiler element. Heat broiler to high. Rub a small amount of oil all over each fillet and arrange skin-side up on a rimmed baking sheet.",
+                "For medium-rare, broil until skin is brown, crisp, and charred in spots, 4–5 minutes. (For more well done, increase distance to 8 inches and cook 7–8 minutes total.) Rest 5 minutes, skin-side up. Serve with a drizzle of olive oil and a lemon wedge."
+              ]
+            },
+            {
+              "title": "Baked Lemon Salmon with Creamy Dill Sauce",
+              "servings": "Serves 4   |   Prep: 10 min   |   Rest: 10 min   |   Cook: 15 min   |   Total: 35 min",
+              "source": "Jaclyn, Cooking Classy",
+              "ingredientGroups": [
+                {
+                  "label": "Salmon",
+                  "ingredients": [
+                    "4 (6-oz) salmon fillets",
+                    "2 Tbsp extra-virgin olive oil",
+                    "1½ tsp lemon zest",
+                    "2 Tbsp fresh lemon juice",
+                    "Salt and freshly ground black pepper"
+                  ]
+                },
+                {
+                  "label": "Creamy dill sauce (make ahead)",
+                  "ingredients": [
+                    "⅓ cup fat-free plain Greek yogurt",
+                    "3 Tbsp full-fat mayonnaise",
+                    "1 clove garlic, finely minced",
+                    "1 Tbsp chopped fresh dill",
+                    "2–3 tsp milk (to reach desired consistency)",
+                    "½ tsp honey",
+                    "Salt and freshly ground black pepper"
+                  ]
+                }
+              ],
+              "steps": [
+                "Preheat oven to 400°F. Whisk together olive oil, lemon zest, and lemon juice in a small bowl. Grease a 13×9-inch baking dish. Place salmon fillets in the dish, season one side with salt and pepper, flip, drizzle with lemon mixture, and gently rub over the fillets. Season tops with salt and pepper. Let rest at room temperature 10 minutes.",
+                "Bake 12–16 minutes, until cooked through (cook time varies with fillet thickness and desired doneness). Serve warm topped with Creamy Dill Sauce.",
+                "Make the sauce: In a bowl, mix together Greek yogurt, mayonnaise, garlic, dill, honey, and enough milk to reach desired consistency. Season with salt and pepper. Refrigerate until ready to serve; let come to room temperature about 20 minutes before serving so it's not ice-cold over warm salmon. Keeps refrigerated for a few days — also makes an excellent vegetable dip."
+              ]
+            },
+            {
+              "title": "Sriracha Maple Salmon",
+              "servings": "Serves 4   |   Active: 10 min   |   Total: 16 min",
+              "source": "Ree Drummond, Food Network (The Pioneer Woman)",
+              "ingredientGroups": [
+                {
+                  "label": "Fish and vegetables",
+                  "ingredients": [
+                    "4 (6-oz) skinless salmon fillets",
+                    "3 medium zucchinis, cut into 1-inch rounds",
+                    "3 Tbsp olive oil"
+                  ]
+                },
+                {
+                  "label": "Sauce",
+                  "ingredients": [
+                    "¼ cup low-sodium soy sauce",
+                    "¼ cup maple syrup",
+                    "3 Tbsp grated fresh ginger",
+                    "3 Tbsp rice wine vinegar",
+                    "2 Tbsp Sriracha",
+                    "1 tsp cornstarch",
+                    "4 cloves garlic, grated",
+                    "3 green onions, sliced — whites and greens separated"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "Cooked rice"
+                  ]
+                }
+              ],
+              "steps": [
+                "Turn oven to broil. Position rack in the upper third of the oven.",
+                "Arrange salmon fillets flesh-side up on one side of a large baking dish; place zucchini on the other side. Drizzle both with olive oil.",
+                "Whisk together soy sauce, maple syrup, ginger, rice wine vinegar, Sriracha, cornstarch, garlic, and the white parts of the green onions in a small bowl. Pour sauce over salmon and zucchini. Broil 7 minutes. Remove from oven, spoon sauce over salmon, and flip zucchini. Return to broiler and cook until salmon is cooked through and sauce has thickened, 6–7 minutes more.",
+                "Spread cooked rice on a large platter. Arrange salmon on top and zucchini alongside. Spoon over remaining sauce from the baking dish. Garnish with the reserved green onion tops. Serve."
+              ]
+            },
+            {
+              "title": "Fish and Chips with Malt Vinegar Mayonnaise",
+              "servings": "Serves 4   |   Special equipment: deep-fry thermometer",
+              "source": "Adam Evans, Bon Appétit (September 2013)",
+              "comments": [
+                "Key: beer and club soda must be ice-cold. Chill the batter if prepping ahead.",
+                "Corn flour (more finely ground than cornmeal) is available at Latin markets, natural-foods stores, and bobsredmill.com."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Malt Vinegar Mayonnaise (up to 1 day ahead)",
+                  "ingredients": [
+                    "1 large egg yolk",
+                    "2 Tbsp malt vinegar, divided",
+                    "1 cup vegetable oil",
+                    "Kosher salt and freshly ground black pepper"
+                  ]
+                },
+                {
+                  "label": "Frying oil",
+                  "ingredients": [
+                    "Vegetable oil for frying (about 4 cups)"
+                  ]
+                },
+                {
+                  "label": "Batter",
+                  "ingredients": [
+                    "2 cups all-purpose flour",
+                    "2 tsp baking powder",
+                    "1 tsp baking soda",
+                    "1 tsp kosher salt, plus more for seasoning",
+                    "½ tsp freshly ground black pepper, plus more",
+                    "12 oz (or more) chilled light lager",
+                    "1 cup chilled club soda",
+                    "1 Tbsp malt vinegar"
+                  ]
+                },
+                {
+                  "label": "Fish and dredging flour",
+                  "ingredients": [
+                    "1 cup corn flour or all-purpose flour",
+                    "1½ lb cod, haddock, or pollack, cut into long 1½\"-wide strips"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "French fries",
+                    "Old Bay seasoning",
+                    "Flaky sea salt (such as Maldon)",
+                    "Chopped fresh dill",
+                    "Lemon wedges"
+                  ]
+                }
+              ],
+              "steps": [
+                "Make the mayonnaise: Whisk egg yolk and 1 Tbsp malt vinegar in a small bowl. Whisking constantly, very slowly drizzle in vegetable oil — drop by drop at first — until mayonnaise is thickened and smooth. Whisk in remaining 1 Tbsp vinegar. Season with salt and pepper. Cover and chill. (Can be made 1 day ahead.)",
+                "When ready to fry, fit a large pot with a deep-fry thermometer; pour in oil to measure 3 inches. Heat over medium-high until thermometer registers 375°F.",
+                "Meanwhile, whisk flour, baking powder, baking soda, 1 tsp salt, and ½ tsp pepper in a large bowl. Whisking constantly, slowly add beer, club soda, and 1 Tbsp vinegar, adding more beer if batter is too thick (it should be the consistency of thin pancake batter).",
+                "Place corn flour in a shallow bowl. Season fish with salt and pepper. Working in batches (returning oil to 375°F between batches), dredge fish in corn flour, shaking off excess; dip in batter, letting excess drip back into bowl; and fry until golden brown and crisp, about 2 minutes per side. Transfer to a paper towel–lined baking sheet.",
+                "Season fish and fries with Old Bay, flaky sea salt, and dill. Serve with malt vinegar mayonnaise and lemon wedges."
+              ]
+            },
+            {
+              "title": "Smoked Salmon Niçoise Salad",
+              "favorite": true,
+              "servings": "Serves 2–4   |   Active: 15 min   |   Total: 45 min",
+              "source": "Molly Yeh, Food Network (Girl Meets Farm)",
+              "comments": [
+                "Can also be made with high-end jarred tuna in oil in place of the smoked salmon."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Roasted potatoes",
+                  "ingredients": [
+                    "1 lb rainbow fingerling potatoes, quartered",
+                    "1 Tbsp olive oil",
+                    "½ tsp kosher salt + freshly ground black pepper"
+                  ]
+                },
+                {
+                  "label": "Haricot verts and eggs",
+                  "ingredients": [
+                    "8 oz haricot verts, trimmed",
+                    "1 Tbsp olive oil",
+                    "¼ tsp kosher salt + freshly ground black pepper",
+                    "4 large eggs"
+                  ]
+                },
+                {
+                  "label": "Dressing",
+                  "ingredients": [
+                    "½ cup white wine vinegar",
+                    "¼ cup Dijon mustard",
+                    "2 tsp fresh thyme leaves, chopped",
+                    "½ small red onion, finely chopped",
+                    "¼ cup olive oil"
+                  ]
+                },
+                {
+                  "label": "Salad",
+                  "ingredients": [
+                    "1 head Boston, Bibb, or butter lettuce, leaves separated",
+                    "One 4- to 6-oz smoked salmon fillet, broken into large chunks (or high-end jarred tuna in oil)",
+                    "16 cherry tomatoes, halved",
+                    "1 cup niçoise or kalamata olives"
+                  ]
+                }
+              ],
+              "steps": [
+                "Preheat oven to 425°F.",
+                "Toss quartered potatoes with 1 Tbsp olive oil, ½ tsp salt, and a few grinds of pepper on a baking sheet. Roast 15 minutes.",
+                "Meanwhile, toss haricot verts with 1 Tbsp olive oil, ¼ tsp salt, and pepper on one side of a second baking sheet. Place eggs on the other side. After potatoes have roasted 15 minutes, add the second baking sheet to the oven. Continue roasting until potatoes are golden and easily pierced with a fork and green beans are tender-crisp, about 15 minutes more.",
+                "Immediately transfer eggs to a bowl of ice water and let sit 10 minutes. Peel and quarter.",
+                "Whisk vinegar, Dijon, thyme, and red onion in a medium bowl. Whisking constantly, slowly drizzle in ¼ cup olive oil until emulsified.",
+                "Divide lettuce among serving plates. Arrange potatoes, haricot verts, salmon (or tuna), eggs, cherry tomatoes, and olives on top. Drizzle with dressing, sprinkle with salt and a few grinds of pepper."
+              ]
+            },
+            {
+              "title": "Sole with Lemon-Caper Sauce",
+              "servings": "Serves 2–4   |   Total: 20 min (all active)",
+              "source": "Giada De Laurentiis, Food Network (Giada Entertains)",
+              "ingredientGroups": [
+                {
+                  "label": "Fish",
+                  "ingredients": [
+                    "4 fillets of lemon sole",
+                    "1¼ tsp kosher salt",
+                    "⅓ cup all-purpose flour, for dredging",
+                    "2 Tbsp extra-virgin olive oil",
+                    "2 Tbsp unsalted butter"
+                  ]
+                },
+                {
+                  "label": "Sauce",
+                  "ingredients": [
+                    "¼ cup capers, drained and rinsed",
+                    "1 clove garlic, minced",
+                    "½ cup chicken stock",
+                    "¼ cup freshly squeezed lemon juice (from about 1½ lemons)",
+                    "½ tsp Calabrian chili paste",
+                    "½ tsp chopped fresh oregano",
+                    "2 Tbsp unsalted butter (remaining)"
+                  ]
+                },
+                {
+                  "label": "Finish",
+                  "ingredients": [
+                    "2 Tbsp chopped fresh Italian parsley"
+                  ]
+                }
+              ],
+              "steps": [
+                "Pat sole fillets dry with paper towels. Season evenly with 1 tsp salt. Heat a medium skillet over high heat; add 1 Tbsp olive oil and 1 Tbsp butter. When butter is fully melted and bubbles have subsided, dredge 2 fillets in flour, shaking off excess. Add to skillet; reduce heat to medium-high. Cook until beginning to brown around the edges, 2–3 minutes. Flip gently and cook 30 seconds more. Transfer to a plate. Repeat with remaining 1 Tbsp olive oil, 1 Tbsp butter, and fish.",
+                "With all 4 fillets out of the skillet, add capers and garlic and cook over medium heat, stirring, until fragrant, about 15 seconds. Add chicken stock and lemon juice; stir, scraping up any browned bits. Season with remaining ¼ tsp salt. Simmer about 2 minutes to reduce slightly. Finish by stirring in the remaining 2 Tbsp butter, Calabrian chili paste, and oregano. Spoon sauce over fish, sprinkle with parsley, and serve."
+              ]
+            },
+            {
+              "title": "Fast Vietnamese Caramel Bluefish",
+              "favorite": true,
+              "servings": "Serves 4   |   Total: 20 min",
+              "source": "Melissa Clark, NYT Cooking",
+              "comments": [
+                "Can be made with any rich, flaky fish such as sea bass — not just bluefish."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Fish",
+                  "ingredients": [
+                    "4 (6-oz) skin-on bluefish fillets (or any rich, flaky fish such as sea bass)",
+                    "1 Tbsp peanut, grapeseed, or safflower oil"
+                  ]
+                },
+                {
+                  "label": "Sauce",
+                  "ingredients": [
+                    "1 stalk lemongrass (or substitute a 2-inch strip of lemon or lime zest, peeled with a peeler — no bruising needed)",
+                    "⅓ cup light brown sugar",
+                    "2 Tbsp Asian fish sauce",
+                    "1½ Tbsp soy sauce",
+                    "1 tsp grated fresh ginger",
+                    "½ tsp black pepper"
+                  ]
+                },
+                {
+                  "label": "Garnish",
+                  "ingredients": [
+                    "Sliced scallions",
+                    "Thinly sliced jalapeño",
+                    "Fresh cilantro",
+                    "Cooked rice (optional)"
+                  ]
+                }
+              ],
+              "steps": [
+                "Brush fish all over with oil. Remove outer layer of lemongrass stalk and cut stalk into 2-inch lengths; using the butt of a kitchen knife, pound and bruise stalks all over.",
+                "Place lemongrass pieces, sugar, fish sauce, soy sauce, ginger, and black pepper in a large skillet. Bring to a simmer over medium-high heat; reduce sauce 1–2 minutes until syrupy.",
+                "Add fish skin-side down. Simmer, basting frequently with pan sauce, for 2 minutes. Carefully turn fish and continue cooking until just cooked through, 2–3 minutes more.",
+                "Transfer to a serving plate. Garnish with scallions, jalapeño, and cilantro. Drizzle with additional sauce. Serve over rice if desired."
+              ]
+            },
+            {
+              "title": "Spicy Tuna Salad with Crispy Rice",
+              "servings": "Serves 4   |   Prep: 5 min   |   Cook: 30 min   |   Total: 35 min",
+              "source": "Ali Slagle, NYT Cooking",
+              "ingredientGroups": [
+                {
+                  "label": "Rice",
+                  "ingredients": [
+                    "1½ cups sushi rice, rinsed well",
+                    "2 cups water",
+                    "1 Tbsp unseasoned rice vinegar",
+                    "2 tsp granulated sugar",
+                    "1 tsp kosher salt (Diamond Crystal)"
+                  ]
+                },
+                {
+                  "label": "Tuna salad",
+                  "ingredients": [
+                    "3 scallions, trimmed and thinly sliced",
+                    "2 Persian or mini seedless cucumbers, thinly sliced",
+                    "4 (5-oz) cans water-packed tuna, drained",
+                    "⅓ cup mayonnaise",
+                    "1½ Tbsp Sriracha, plus more to taste",
+                    "2 tsp soy sauce",
+                    "2 tsp unseasoned rice vinegar"
+                  ]
+                },
+                {
+                  "label": "Cucumber salt",
+                  "ingredients": [
+                    "Pinch of kosher salt"
+                  ]
+                },
+                {
+                  "label": "Oil for crisping",
+                  "ingredients": [
+                    "3 Tbsp neutral oil (such as grapeseed), plus more as needed"
+                  ]
+                }
+              ],
+              "steps": [
+                "In a large nonstick skillet with a lid, stir together 2 cups water, rice, 1 Tbsp rice vinegar, sugar, and 1 tsp salt. Bring to a boil over high heat, then cover, reduce heat to low, and cook until rice is tender, 18–20 minutes.",
+                "Meanwhile, thinly slice scallions and cucumbers. In a large bowl, stir together scallions, tuna, mayonnaise, Sriracha, soy sauce, and remaining 2 tsp rice vinegar. Taste and add more Sriracha for heat. Refrigerate until rice is ready (or up to 5 days).",
+                "Sprinkle cucumbers with a pinch of salt.",
+                "Crisp the rice: make 4–5 small holes in the rice in the skillet, then pour oil down the sides of the pan and into the divots. Increase heat to medium and cook until rice is browned at the edges, 4–7 minutes. (Lift the rice to check.) If you don't see oil bubbling in the holes, add a teaspoon or two more oil.",
+                "Divide rice, crispy-side up, among bowls or plates. Serve with a scoop of spicy tuna and the cucumbers alongside."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Shellfish",
+          "recipes": [
+            {
+              "title": "Moules Marinières",
+              "servings": "Serves 4   |   Prep: 45 min   |   Cook: 15 min   |   Total: 1 hour",
+              "source": "Florence Fabricant, NYT Cooking; garlic and cream option adapted from George Duran, Food Network",
+              "ingredientGroups": [
+                {
+                  "label": "Mussels",
+                  "ingredients": [
+                    "6 lbs mussels"
+                  ]
+                },
+                {
+                  "label": "Aromatics",
+                  "ingredients": [
+                    "4 Tbsp unsalted butter, divided",
+                    "4 Tbsp finely minced shallots (about 2 medium shallots)",
+                    "OPTIONAL: 2–4 garlic cloves, finely minced"
+                  ]
+                },
+                {
+                  "label": "Wine",
+                  "ingredients": [
+                    "4 cups dry white wine"
+                  ]
+                },
+                {
+                  "label": "Cream (optional)",
+                  "ingredients": [
+                    "½ cup heavy cream"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "Freshly ground black pepper",
+                    "2 Tbsp minced fresh parsley",
+                    "Crusty bread"
+                  ]
+                }
+              ],
+              "steps": [
+                "Scrub the mussels under cold water. Pull off any beards (the fibrous tufts near the hinge). Discard any that are cracked or don't close when tapped.",
+                "In a large pot (at least 8 quarts), melt 2 Tbsp of the butter over low heat. Add shallots (and garlic, if using) and sauté until soft but not browned, about 3–5 minutes.",
+                "Add the wine; raise heat to medium. Add mussels, cover, and steam until they open, about 10–15 minutes.",
+                "Using a slotted spoon, remove mussels from the pot; divide among warmed bowls. Discard any that did not open.",
+                "FOR MOULES À LA CRÈME: Stir the cream into the remaining broth and simmer 2–3 minutes until slightly thickened.",
+                "Taste the broth. If too salty, dilute with a little water. Add the remaining 2 Tbsp butter and swirl until melted. Season with pepper. Ladle broth over mussels, taking care not to disturb any sediment at the bottom of the pot.",
+                "Sprinkle with parsley and serve immediately with crusty bread.",
+                "TIP: After the meal, shuck and refrigerate any leftover mussels."
+              ]
+            },
+            {
+              "title": "Shrimp with Orzo and Peas",
+              "servings": "Serves 2–4   |   Total: ~20 min",
+              "source": "Adapted from Pampered Chef, 29 Minutes to Dinner",
+              "ingredientGroups": [
+                {
+                  "label": "Shrimp",
+                  "ingredients": [
+                    "½ lb shrimp, peeled and deveined",
+                    "1 Tbsp vegetable oil",
+                    "¼ tsp salt",
+                    "¼ tsp pepper",
+                    "⅛ tsp sugar"
+                  ]
+                },
+                {
+                  "label": "Orzo",
+                  "ingredients": [
+                    "2 cups chicken broth",
+                    "1 cup white wine",
+                    "1 clove garlic, minced",
+                    "8 oz orzo"
+                  ]
+                },
+                {
+                  "label": "Finish",
+                  "ingredients": [
+                    "1 cup frozen peas",
+                    "1 Tbsp fresh lemon juice",
+                    "1 Tbsp unsalted butter"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "1 Tbsp lemon zest, grated",
+                    "1 Tbsp fresh parsley, finely chopped",
+                    "Freshly grated Parmesan (optional)"
+                  ]
+                }
+              ],
+              "steps": [
+                "In a large bowl, toss shrimp with salt, pepper, and sugar. Heat oil in a large skillet over medium-high. Cook shrimp 3 minutes. Turn and remove from heat; let stand 1 minute until pink and opaque. Remove shrimp from skillet.",
+                "Add broth, wine, garlic, and orzo to the skillet. Bring to a boil. Cover and cook on medium-low until orzo is tender, 10–12 minutes.",
+                "Return shrimp to skillet; add peas, butter, and lemon juice. Cover and let stand 3–5 minutes until heated through. Remove from heat and top with lemon zest and parsley. Serve with freshly grated Parmesan if desired."
+              ]
+            },
+            {
+              "title": "Spicy Grilled Shrimp",
+              "servings": "Serves 4   |   Total: 20 min",
+              "source": "Mark Bittman, NYT Cooking (1999)",
+              "ingredientGroups": [
+                {
+                  "label": "Paste and shrimp",
+                  "ingredients": [
+                    "1 large clove garlic",
+                    "1 Tbsp coarse salt",
+                    "½ tsp cayenne",
+                    "1 tsp paprika",
+                    "2 Tbsp olive oil",
+                    "2 tsp fresh-squeezed lemon juice",
+                    "1½–2 lbs large shrimp (15–18 per pound), peeled, rinsed, and dried"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "Lemon wedges"
+                  ]
+                }
+              ],
+              "steps": [
+                "Start a charcoal or gas grill, or heat the broiler. Make the fire as hot as it will get and put the rack close to the heat source.",
+                "Mince garlic with salt; mix with cayenne and paprika, then make into a paste with olive oil and lemon juice. Smear paste all over shrimp. Grill or broil 2–3 minutes per side, turning once. Serve immediately or at room temperature with lemon wedges.",
+                "NOTE: For best results, make sure your paprika is fresh — if it doesn't taste vibrant and smoky, it's time to buy more."
+              ]
+            },
+            {
+              "title": "Bacon-Wrapped Scallops with Chili Butter",
+              "servings": "Serves 6–8   |   Prep: 15 min   |   Cook: 20 min   |   Total: 35 min",
+              "source": "Ree Drummond, The Pioneer Woman",
+              "ingredientGroups": [
+                {
+                  "label": "Scallops and bacon",
+                  "ingredients": [
+                    "2 lbs large scallops",
+                    "½ lb bacon, cut into thirds or halves",
+                    "Wooden skewers"
+                  ]
+                },
+                {
+                  "label": "Chili butter",
+                  "ingredients": [
+                    "1 stick (8 Tbsp) unsalted butter",
+                    "2 tsp chili powder",
+                    "Dash of cayenne"
+                  ]
+                }
+              ],
+              "steps": [
+                "Preheat oven to 425°F. Wrap a piece of bacon around each scallop and secure with a wooden skewer.",
+                "Cook on a drip pan for 20 minutes, until bacon is sizzling and brown. (Alternatively: broil for 15 minutes, until bacon is sizzling and brown.)",
+                "Melt butter; stir in chili powder and cayenne. Drizzle over scallops before serving.",
+                "NOTE: Can also be cooked on the grill."
+              ]
+            },
+            {
+              "title": "Shrimp Scampi with Linguini",
+              "servings": "Serves 4–6   |   Prep: 15 min   |   Cook: 25 min   |   Total: 40 min",
+              "source": "Tyler Florence, Food Network (Food 911)",
+              "ingredientGroups": [
+                {
+                  "label": "Pasta",
+                  "ingredients": [
+                    "1 lb linguini"
+                  ]
+                },
+                {
+                  "label": "Shrimp and aromatics",
+                  "ingredients": [
+                    "2 Tbsp unsalted butter",
+                    "2 Tbsp extra-virgin olive oil",
+                    "2 shallots, finely diced",
+                    "2 cloves garlic, minced",
+                    "Pinch Aleppo pepper or red pepper flakes (optional)",
+                    "1 lb shrimp, peeled and deveined",
+                    "Kosher salt and freshly ground black pepper"
+                  ]
+                },
+                {
+                  "label": "Sauce",
+                  "ingredients": [
+                    "½ cup dry white wine",
+                    "Juice of 1 lemon",
+                    "2 Tbsp unsalted butter",
+                    "2 Tbsp extra-virgin olive oil"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "¼ cup finely chopped fresh parsley",
+                    "Extra-virgin olive oil, for drizzling"
+                  ]
+                }
+              ],
+              "steps": [
+                "Bring a large pot of salted water to a boil. Add linguini and cook 6–8 minutes until not quite done (it will finish in the sauce). Drain.",
+                "Meanwhile, melt 2 Tbsp butter with 2 Tbsp olive oil in a large skillet over medium-high heat. Sauté shallots, garlic, and red pepper flakes (if using) until shallots are translucent, 3–4 minutes. Season shrimp with salt and pepper; add to pan and cook until pink, 2–3 minutes. Remove shrimp and set aside.",
+                "Add wine and lemon juice to the pan; bring to a boil. Add remaining 2 Tbsp butter and 2 Tbsp olive oil; when butter has melted, return shrimp to the pan along with parsley and drained pasta. Toss well; season with salt and pepper. Drizzle with olive oil and serve immediately."
+              ]
+            },
+            {
+              "title": "Yang Chow Slippery Shrimp",
+              "servings": "Serves 4   |   Total: 25 min",
+              "source": "Los Angeles Times (Yang Chow Restaurant)",
+              "ingredientGroups": [
+                {
+                  "label": "Shrimp and coating",
+                  "ingredients": [
+                    "1 lb large shrimp, peeled, deveined, and butterflied",
+                    "¼ cup cornstarch"
+                  ]
+                },
+                {
+                  "label": "Cornstarch slurry",
+                  "ingredients": [
+                    "2 tsp cornstarch",
+                    "2 tsp water"
+                  ]
+                },
+                {
+                  "label": "Frying oil",
+                  "ingredients": [
+                    "2 cups oil"
+                  ]
+                },
+                {
+                  "label": "Sauce",
+                  "ingredients": [
+                    "2 large cloves garlic, minced",
+                    "½ tsp minced fresh ginger",
+                    "½ tsp cayenne",
+                    "1 Tbsp tomato sauce or ketchup",
+                    "1 Tbsp white vinegar",
+                    "1 Tbsp white wine",
+                    "1½ Tbsp sugar",
+                    "½ tsp salt",
+                    "¼ cup water"
+                  ]
+                },
+                {
+                  "label": "Finish",
+                  "ingredients": [
+                    "4 green onions, sliced"
+                  ]
+                }
+              ],
+              "steps": [
+                "Peel, devein, and butterfly the shrimp.",
+                "Toss shrimp with ¼ cup cornstarch until completely coated.",
+                "Combine 2 tsp cornstarch with 2 tsp water in a small bowl; set aside.",
+                "Heat oil in a skillet or wok over medium heat until hot. Deep-fry shrimp until golden, about 45 seconds. Remove shrimp and drain the oil from the wok, leaving 1 Tbsp.",
+                "Reheat wok. Add garlic, ginger, and cayenne; stir a few seconds. Add tomato sauce, vinegar, wine, sugar, salt, ¼ cup water, and the cornstarch slurry. Cook and stir until sauce thickens.",
+                "Add shrimp and toss until coated. Add green onions, stir, turn out onto a platter, and serve."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Other",
+          "recipes": [
+            {
+              "title": "Peppered Duck Breast With Red Wine Sauce",
+              "servings": "Serves 6   |   Total: ~1½ hours (including 1 hour marinate)",
+              "source": "David Tanis, NYT Cooking",
+              "comments": [
+                "A steak au poivre made with duck. Fancy enough for a gathering, relaxed enough for any night you want something special. The sauce can be made ahead and reheated, thinned with a little broth."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Duck and marinade (up to 1 day ahead)",
+                  "ingredients": [
+                    "3 Muscovy duck breasts (about 1 lb each)",
+                    "Salt",
+                    "1 Tbsp freshly crushed black peppercorns (about 1 tsp per breast)",
+                    "4 garlic cloves, sliced",
+                    "Fresh thyme sprigs"
+                  ]
+                },
+                {
+                  "label": "Sauce",
+                  "ingredients": [
+                    "2 Tbsp unsalted butter, divided",
+                    "Reserved duck tenderloins (from Step 1)",
+                    "1 large shallot, sliced",
+                    "1 Tbsp tomato paste",
+                    "1 small thyme sprig",
+                    "2 cups unsalted chicken broth",
+                    "¼ cup + 2 Tbsp medium-bodied red wine",
+                    "1 Tbsp Cognac or brandy",
+                    "2 tsp potato starch"
+                  ]
+                }
+              ],
+              "steps": [
+                "Remove the tenderloins (the thin strips on the undersides of the duck breasts) and reserve for the sauce. With a sharp knife, trim away any gristle from the undersides and any excess fat. Score the skin in a diamond pattern, cutting through the fat but not into the meat. Lightly sprinkle salt on both sides, then rub 1 tsp crushed black peppercorns all over each breast. Sprinkle with the garlic and a few thyme sprigs, cover, and leave at room temperature for 1 hour. (For deeper flavor, refrigerate for several hours or overnight, then return to room temperature before cooking.)",
+                "Heat 1 Tbsp butter in a saucepan over medium heat. Add the shallot and reserved duck tenderloins and let them brown well, stirring occasionally, 5–8 minutes. Stir in the tomato paste and thyme sprig and let fry for 1 minute.",
+                "Add the broth and ¼ cup wine, raise heat to a brisk simmer, and reduce to about 1¼ cups, about 10 minutes. Strain the sauce and return to heat. Add the remaining 2 Tbsp red wine and the Cognac or brandy and cook 1 minute more. Dissolve the potato starch in 2 Tbsp cold water, then stir into the sauce. Whisk in the remaining 1 Tbsp butter. Season with salt.",
+                "Remove and discard the garlic and thyme from the breasts. Heat a large, heavy skillet over medium-high. When hot, lay in the duck breasts skin-side down and let sizzle. Lower heat to medium and cook for a total of 7 minutes, checking to ensure the skin isn't browning too quickly. Turn over and cook another 3 minutes for rare, 4–5 minutes for medium-rare. Transfer to a warm platter and rest 10 minutes. Slice crosswise at a slight angle and serve with the sauce."
+              ]
+            },
+            {
+              "title": "Sheet-Pan Italian Sub Dinner",
+              "servings": "Serves 4   |   Total: 25 min",
+              "source": "Ali Slagle, NYT Cooking",
+              "comments": [
+                "All the flavors of an Italian sub — salami, radicchio, tomatoes, pepperoncini, chickpeas — roasted until caramelized and briny. Can swap in cauliflower florets, cubes of squash, or halved red potatoes for the radicchio."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Vinaigrette",
+                  "ingredients": [
+                    "4 garlic cloves",
+                    "2 Tbsp dried oregano",
+                    "2 tsp kosher salt",
+                    "¼ cup red wine vinegar",
+                    "¼ cup extra-virgin olive oil"
+                  ]
+                },
+                {
+                  "label": "Roasting ingredients",
+                  "ingredients": [
+                    "1 (14-oz) can chickpeas, drained and patted dry",
+                    "5 oz salami (casing removed if present), cut into ½-inch pieces",
+                    "1 red onion, peeled, halved lengthwise, cut into ½-inch wedges",
+                    "1 medium head radicchio (about ¾ lb), quartered lengthwise",
+                    "1 cup cherry or grape tomatoes, halved",
+                    "8 pepperoncini peppers"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "½ cup ricotta",
+                    "Kosher salt and black pepper",
+                    "Crusty bread"
+                  ]
+                }
+              ],
+              "steps": [
+                "Heat oven to 450°F. Coarsely chop the garlic, then add the dried oregano and 2 tsp salt on top and chop together until it forms a paste. Transfer to a bowl and stir in the vinegar and olive oil.",
+                "Pour half the dressing into a large bowl. Add the chickpeas, salami, red onion, radicchio, tomatoes, and pepperoncini. Mix gently to coat, trying not to break up the radicchio and onion. Spread evenly on a baking sheet. Roast, tossing halfway through, until the red onions and chickpeas are golden, 15–20 minutes.",
+                "Season the ricotta with salt and pepper. Serve the roasted mixture with crusty bread and a dollop of ricotta and extra vinaigrette, or assemble into sandwiches."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Vegetarian Mains",
+      "subsections": [
+        {
+          "title": "Vegetables",
+          "recipes": [
+            {
+              "title": "Eggplant Involtini",
+              "servings": "Serves 4   |   Total: 1 hour",
+              "comments": [
+                "A lighter, weeknight-friendly take on eggplant parmesan — no breading, no frying. The eggplant is roasted or grilled into silky planks, rolled around a three-cheese filling, and baked in homemade tomato sauce. If you don't want to make the sauce, 3 cups of good store-bought sauce works fine."
+              ],
+              "source": "https://smittenkitchen.com/2022/09/eggplant-involtini/",
+              "ingredientGroups": [
+                {
+                  "label": "Eggplant",
+                  "ingredients": [
+                    "2 medium eggplants (about 1 pound each), tops trimmed",
+                    "Olive oil, for brushing",
+                    "Kosher salt and freshly ground black pepper"
+                  ]
+                },
+                {
+                  "label": "Tomato sauce",
+                  "ingredients": [
+                    "2 tablespoons olive oil",
+                    "3 garlic cloves, minced",
+                    "1 teaspoon kosher salt",
+                    "Aleppo pepper or red pepper flakes, to taste",
+                    "½ teaspoon dried oregano",
+                    "1 (28-ounce) can whole or crushed tomatoes"
+                  ]
+                },
+                {
+                  "label": "Filling",
+                  "ingredients": [
+                    "1 cup ricotta",
+                    "4 ounces mozzarella, coarsely grated",
+                    "¼ cup grated Parmesan (of the ½ cup total)",
+                    "Finely grated zest from half a lemon",
+                    "½ teaspoon kosher salt",
+                    "Freshly ground black pepper"
+                  ]
+                },
+                {
+                  "label": "To finish",
+                  "ingredients": [
+                    "¼ cup grated Parmesan (remaining)",
+                    "Juice from half a lemon",
+                    "Fresh basil leaves"
+                  ]
+                }
+              ],
+              "steps": [
+                {
+                  "lead": "Prep and cook the eggplant:",
+                  "bullets": [
+                    "Heat the oven to 425°F. Cut the eggplants into generous ¼-inch-thick lengthwise planks. Arrange on parchment-lined baking sheets, brush both sides with olive oil, and season well with salt and pepper.",
+                    "To roast: Bake 10–12 minutes on the first side, flip, and roast another 8–10 minutes, until browned on each side.",
+                    "To grill: Grill over high heat until dark marks appear, about 8 minutes on the first side and 5 on the second.",
+                    "Set aside to cool."
+                  ]
+                },
+                {
+                  "lead": "Make the sauce:",
+                  "bullets": [
+                    "Heat 2 tablespoons olive oil in an 11- to 12-inch ovenproof pot over medium. Add the garlic, salt, Aleppo pepper, and oregano; cook 1 minute.",
+                    "Add the tomatoes (it will splatter — be careful) and stir. Simmer 10 minutes, stirring occasionally. Taste and adjust seasoning; blend if you prefer a smoother texture.",
+                    "Ladle out 1 cup sauce and set aside for serving. If your pot isn't ovenproof, transfer the remaining sauce to a 2-quart baking dish."
+                  ]
+                },
+                "Make the filling: In a bowl, combine the ricotta, mozzarella, ¼ cup Parmesan, lemon zest, ½ teaspoon salt, and a few grinds of pepper.",
+                {
+                  "lead": "Assemble the rolls:",
+                  "bullets": [
+                    "Place about 1 tablespoon of filling at the end of each eggplant plank (a little less on smaller ones), using all the filling.",
+                    "Roll into a cigar and place seam-side down in the sauce."
+                  ]
+                },
+                "Bake: Brush the tops lightly with olive oil. Bake uncovered about 30 minutes, until bubbly at the edges and browned on top.",
+                "Squeeze the lemon juice over the top and scatter with fresh basil. Serve with the reserved sauce and extra Parmesan on the side."
+              ]
+            },
+            {
+              "title": "Eggplant Parmesan",
+              "servings": "Serves 6–8   |   Prep: 20 minutes   |   Cook: 40 minutes   |   Total: 1 hour",
+              "source": "https://www.loveandlemons.com/eggplant-parmesan/",
+              "ingredientGroups": [
+                {
+                  "label": "Eggplant",
+                  "ingredients": [
+                    "2 large eggplants, cut into ¼-inch-thick rounds"
+                  ]
+                },
+                {
+                  "label": "Egg wash",
+                  "ingredients": [
+                    "3 large eggs, beaten"
+                  ]
+                },
+                {
+                  "label": "Panko coating",
+                  "ingredients": [
+                    "1½ cups panko breadcrumbs",
+                    "1 cup grated Parmesan cheese (of the 1¼ cups total)",
+                    "2 teaspoons dried oregano",
+                    "2 tablespoons fresh thyme leaves",
+                    "½ teaspoon Aleppo pepper or red pepper flakes",
+                    "½ teaspoon sea salt",
+                    "Freshly ground black pepper",
+                    "Extra-virgin olive oil, for drizzling"
+                  ]
+                },
+                {
+                  "label": "Assembly",
+                  "ingredients": [
+                    "28 ounces marinara sauce",
+                    "2 large fresh mozzarella balls, thinly sliced (or one package shredded mozzarella)",
+                    "¼ cup grated Parmesan cheese (remaining from the 1¼ cups total)",
+                    "Extra-virgin olive oil, for drizzling",
+                    "Sea salt, for sprinkling"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "⅓ cup fresh basil leaves"
+                  ]
+                }
+              ],
+              "steps": [
+                "Preheat the oven to 400°F and line 2 baking sheets with parchment paper.",
+                {
+                  "lead": "Set up the breading stations:",
+                  "bullets": [
+                    "Beat the eggs in a shallow bowl.",
+                    "In a second shallow bowl, combine the panko, 1 cup Parmesan, oregano, thyme, Aleppo pepper, salt, and several grinds of black pepper."
+                  ]
+                },
+                {
+                  "lead": "Bread and bake the eggplant:",
+                  "bullets": [
+                    "Dip each eggplant slice in the egg wash, then press into the panko mixture to coat on all sides.",
+                    "Arrange in a single layer on the baking sheets. Drizzle with olive oil.",
+                    "Bake 18–25 minutes, until tender and golden brown. (Use convection setting if available for extra crispness.)"
+                  ]
+                },
+                {
+                  "lead": "Assemble and bake:",
+                  "bullets": [
+                    "Spread ½ cup marinara in the bottom of a 9×13-inch baking dish.",
+                    "Layer half the eggplant, then 1 cup marinara, then half the mozzarella. Repeat with the remaining eggplant, remaining marinara, and remaining mozzarella.",
+                    "Top with the remaining ¼ cup Parmesan, a drizzle of olive oil, and a few pinches of sea salt.",
+                    "Bake at 400°F for 20 minutes, until the cheese is melted and bubbling."
+                  ]
+                },
+                "Turn the oven to broil and broil for 2–4 minutes, until the cheese is browned in spots. Remove from the oven, top with fresh basil, and serve."
+              ]
+            },
+            {
+              "title": "Slow Cooker Vegan Mole Chili",
+              "servings": "Serves 6   |   Prep: 25 min   |   Cook: 5 hours   |   Total: ~5 hr 25 min",
+              "source": "Emily Stoffel, The Pig & Quill",
+              "comments": [
+                "Rich, hearty vegan chili with mole-inspired depth. Greek yogurt is a great topping but omit to keep strictly vegan.",
+                "Tofu note: Freeze the entire tofu block until firm (overnight works — keep a block or two in the freezer as a habit). Thaw in the refrigerator, then drain as usual. Slice into 4–5 slabs and gently press out extra moisture between two plates. Finely dice per the recipe. Frozen-and-thawed tofu becomes sponge-like and soaks up the slow-cooked flavors."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Dried chilies",
+                  "ingredients": [
+                    "3 oz dried ancho chilies"
+                  ]
+                },
+                {
+                  "label": "Spice paste",
+                  "ingredients": [
+                    "¼ cup light cooking oil (such as avocado)",
+                    "3 Tbsp chili powder",
+                    "1 Tbsp cacao powder",
+                    "1½ tsp Mexican oregano",
+                    "1 tsp cinnamon",
+                    "1 tsp cumin",
+                    "1 tsp paprika"
+                  ]
+                },
+                {
+                  "label": "Chili base",
+                  "ingredients": [
+                    "1 medium red onion, finely diced",
+                    "1 medium sweet potato, peeled and finely diced",
+                    "4 garlic cloves, minced",
+                    "14 oz block tofu, frozen, thawed, drained, and finely diced (see note)",
+                    "1 can chickpeas, rinsed and drained",
+                    "3 bay leaves",
+                    "¼ cup coconut sugar",
+                    "1 tsp sea salt",
+                    "1½ oz good dark chocolate (at least 70%)",
+                    "3 cups mushroom stock (or vegetable stock)"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "Cilantro (optional)",
+                    "Greek yogurt (optional; omit if strictly vegan)",
+                    "Quinoa, rice, or other grain"
+                  ]
+                }
+              ],
+              "steps": [
+                "Remove stems and seeds from the ancho chilies. Place in a bowl, cover with very hot tap water, and steep covered for 20 minutes.",
+                "Meanwhile, heat the oil in a small saucepan or skillet. Add the chili powder, cacao, oregano, cinnamon, cumin, and paprika; heat until bubbling and very fragrant, about 60 seconds. Remove from heat and set aside. Use this time to dice your veggies and prepare the tofu (see note).",
+                "When the chilies have finished steeping, drain, reserving ¼ cup soaking liquid. Add chilies and reserved liquid to a food processor and blend until nearly smooth.",
+                "Combine all the veggies, tofu, chickpeas, processed chilies, and spice paste in the slow cooker. Add the bay leaves, coconut sugar, salt, chocolate, and stock. Stir well. Cook on High for 5 hours, or until the vegetables have all but dissolved. Adjust salt to taste. Serve with grain and toppings of choice."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Tofu",
+          "recipes": [
+            {
+              "title": "Tofu Stir Fry",
+              "servings": "Serves 2   |   Prep: 20 min   |   Cook: 15 min   |   Total: 35 min",
+              "source": "Kahnita Wilkerson, Tasty",
+              "ingredientGroups": [
+                {
+                  "label": "Sauce",
+                  "ingredients": [
+                    "2 garlic cloves, minced (of 4 total)",
+                    "2 tsp fresh ginger, grated",
+                    "1 Tbsp honey",
+                    "1 tsp sriracha",
+                    "¼ cup lime juice",
+                    "¼ cup reduced-sodium soy sauce"
+                  ]
+                },
+                {
+                  "label": "Tofu",
+                  "ingredients": [
+                    "1 block extra-firm tofu"
+                  ]
+                },
+                {
+                  "label": "Stir fry",
+                  "ingredients": [
+                    "2 Tbsp sesame oil",
+                    "2 garlic cloves, minced (remaining)",
+                    "1 cup white onion, sliced",
+                    "1 cup carrot, sliced",
+                    "1 cup red bell pepper, sliced",
+                    "½ cup edamame, frozen, thawed",
+                    "3 cups soba noodles, cooked",
+                    "1 Tbsp sesame seeds"
+                  ]
+                },
+                {
+                  "label": "Garnish",
+                  "ingredients": [
+                    "Green onion, chopped"
+                  ]
+                }
+              ],
+              "steps": [
+                "In a medium bowl, mix together 2 cloves of garlic, the ginger, honey, sriracha, lime juice, and soy sauce. Set aside.",
+                "Wrap the tofu in a dish towel, then place a plate on top. Let drain for 10–15 minutes, then remove the plate, unwrap the tofu, and slice into cubes.",
+                "In a wok or large frying pan, heat the sesame oil over medium heat. Add the tofu and pan-fry for 5–7 minutes, stirring occasionally.",
+                "Add the remaining 2 cloves of minced garlic and the onion and stir until softened, about 1 minute.",
+                "Add the carrot, bell pepper, and edamame and cook, stirring occasionally, until tender, 2–3 minutes.",
+                "Add the soba noodles, reserved sauce, and sesame seeds. Cook for 1–2 minutes, stirring occasionally, until warmed through. Remove from heat.",
+                "Garnish with green onions and serve."
+              ]
+            },
+            {
+              "title": "Sesame Ginger Tofu and Veggie Stir Fry",
+              "servings": "Serves 3   |   Prep: 25 min   |   Cook: 15 min   |   Total: 40 min",
+              "source": "Marzia, Little Spice Jar",
+              "ingredientGroups": [
+                {
+                  "label": "Tofu and coating",
+                  "ingredients": [
+                    "14 oz extra-firm tofu",
+                    "1 Tbsp cornstarch",
+                    "½ tsp kosher salt"
+                  ]
+                },
+                {
+                  "label": "Sauce",
+                  "ingredients": [
+                    "1 Tbsp sesame oil",
+                    "1½ Tbsp grated ginger",
+                    "1½ Tbsp minced garlic",
+                    "1 Tbsp rice vinegar",
+                    "3 Tbsp soy sauce (or GF tamari)",
+                    "¼ tsp Aleppo pepper or red pepper flakes",
+                    "3 Tbsp brown sugar",
+                    "1 Tbsp cornstarch",
+                    "2 Tbsp water"
+                  ]
+                },
+                {
+                  "label": "Stir fry",
+                  "ingredients": [
+                    "3 Tbsp avocado oil",
+                    "2½ cups green beans, cut into 1-inch pieces",
+                    "1 cup baby carrots, cut lengthwise"
+                  ]
+                },
+                {
+                  "label": "To serve (optional)",
+                  "ingredients": [
+                    "Rice, quinoa, noodles, or cauliflower rice"
+                  ]
+                }
+              ],
+              "steps": [
+                "TOFU: Drain tofu. Place on a plate with a folded tea towel, then top with another tea towel, another plate, and a heavy cast iron skillet or metal cans (or use a tofu press). Let drain 15–20 minutes or up to 1 hour. Cut into ¾–1 inch cubes and toss in 1 Tbsp cornstarch and ½ tsp salt in a zip-top bag until coated.",
+                "SAUCE: While the tofu is pressing, combine all sauce ingredients in a blender until completely smooth. (Shortcut: if using garlic paste and ginger paste, simply whisk together in a bowl.) Set aside.",
+                "CRISPY TOFU: In a wok or large nonstick skillet over medium-high heat, add 2 Tbsp avocado oil. Add tofu and fry for 3–7 minutes, flipping as needed to brown on all sides. Add 2 Tbsp of the prepared sauce and cook until the sauce coats and caramelizes on the tofu, about 2–3 minutes. Remove to a plate.",
+                "STIR FRY: Add the remaining 1 Tbsp avocado oil to the pan if needed. Add the veggies and cook for 3–4 minutes, tossing to desired doneness. Add the tofu back to the skillet. Stir the sauce to recombine, then pour it in. Stir to coat. Cook 1–2 minutes more until the tofu soaks up the sauce.",
+                "Serve warm with rice, quinoa, noodles, cauliflower rice, or on its own. Best eaten fresh; the tofu loses crispness as it sits."
+              ]
+            },
+            {
+              "title": "Baked Tofu With Peanut Sauce and Coconut-Lime Rice",
+              "servings": "Serves 4   |   Total: ~45 min",
+              "source": "Yewande Komolafe, NYT Cooking",
+              "comments": [
+                "The peanut sauce is inspired by West African groundnut stews. Fish sauce adds umami but is optional; omit it to keep the dish vegan. Peanut sauce can be made 2–3 days ahead and refrigerated."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Pickled peppers",
+                  "ingredients": [
+                    "4 Tbsp lime juice (of ⅔ cup total)",
+                    "½ tsp kosher salt",
+                    "8 baby bell peppers or 1 medium bell pepper (any color), stemmed and thinly sliced lengthwise",
+                    "Freshly ground black pepper"
+                  ]
+                },
+                {
+                  "label": "Coconut-lime rice",
+                  "ingredients": [
+                    "1 cup long-grain rice (jasmine or basmati)",
+                    "½ cup full-fat coconut milk",
+                    "1 cup water",
+                    "Salt"
+                  ]
+                },
+                {
+                  "label": "Peanut sauce",
+                  "ingredients": [
+                    "4 Tbsp lime juice (remaining from the ⅔ cup)",
+                    "1 cup smooth, natural peanut butter",
+                    "1 Tbsp red miso",
+                    "1 Tbsp grated ginger",
+                    "1 Tbsp fish sauce (optional)",
+                    "2 tsp chopped habanero pepper (stem and seeds removed) or 1 Tbsp sambal",
+                    "2 Tbsp peanut or vegetable oil",
+                    "1 Tbsp buckwheat honey or molasses (+ 1 Tbsp more for dressing in Step 5)",
+                    "¾ cup water"
+                  ]
+                },
+                {
+                  "label": "Tofu",
+                  "ingredients": [
+                    "2 (14-oz) packages extra-firm tofu, drained and sliced crosswise ¼-inch thick",
+                    "Peanut or vegetable oil, for brushing pan and drizzling",
+                    "Salt"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "Zest of 1 lime",
+                    "3 cups peppery greens (arugula, mizuna, or baby mustard greens)",
+                    "2 scallions, trimmed and thinly sliced"
+                  ]
+                }
+              ],
+              "steps": [
+                "Heat oven to 450°F and lightly brush a large rimmed sheet pan with oil.",
+                "In a small bowl, stir 4 Tbsp lime juice with ½ tsp salt until dissolved. Add the sliced peppers and a few cracks of black pepper. Set aside to quick-pickle.",
+                "In a small pot, combine the rice with 1 cup water and the coconut milk. Season with salt and bring to a simmer. Cover and cook over medium-low until just tender, 12–15 minutes. Remove from heat; keep covered until serving.",
+                "In a medium bowl, whisk together the remaining 4 Tbsp lime juice, peanut butter, miso, ginger, fish sauce (if using), habanero (or sambal), 2 Tbsp oil, 1 Tbsp honey, and ¾ cup water until smooth. Season to taste with salt.",
+                "Arrange tofu in a single layer on the oiled baking sheet; season with salt. Spoon about 2 Tbsp peanut sauce over each piece, coating the top and letting it run down the sides. Drizzle with a little oil and roast until the glaze is set, deep brown, and caramelized along the edges, 18–20 minutes. Add the remaining lime juice and 1 Tbsp honey to the leftover sauce in the bowl to make the dressing; set aside.",
+                "Divide the greens among bowls. Stir the lime zest and half the scallions into the rice, then fluff with a fork. Top greens with rice, then the tofu. Spoon the peanut dressing over everything and garnish with the drained pickled peppers and remaining scallions."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Mushroom",
+          "recipes": [
+            {
+              "title": "Mushrooms Florentine",
+              "servings": "Serves 8–10",
+              "source": "Family recipe card, credited to Sue Karp",
+              "comments": [
+                "Can be assembled a day ahead and refrigerated until ready to bake. To serve 4, halve all ingredients and use a greased 10-inch round or 8×8 casserole."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Mushrooms",
+                  "ingredients": [
+                    "2 lbs small fresh mushrooms, stems removed",
+                    "Butter, for sautéing"
+                  ]
+                },
+                {
+                  "label": "Spinach base",
+                  "ingredients": [
+                    "4 packages (10 oz each) frozen chopped spinach, defrosted and squeezed very dry",
+                    "1 large onion, chopped",
+                    "1/2 cup butter, melted",
+                    "Garlic salt, to taste"
+                  ]
+                },
+                {
+                  "label": "Cheese",
+                  "ingredients": [
+                    "2 cups grated cheddar, divided"
+                  ]
+                }
+              ],
+              "steps": [
+                "Sauté mushroom caps in butter over medium-high heat, bottom-side down, until lightly browned. Remove from pan; drain on paper towels.",
+                "Defrost spinach; squeeze out all water thoroughly (very important — spinach should be quite dry).",
+                "Combine spinach, onion, a generous pinch of garlic salt, and melted butter in a bowl; mix well.",
+                "Grease a 9×13 casserole. Spread spinach mixture evenly over the bottom.",
+                "Sprinkle with 1 cup of cheddar.",
+                "Arrange mushroom caps over the spinach, cap-side down.",
+                "Sprinkle with a little more garlic salt. Cover with remaining cup of cheddar.",
+                "Bake at 350°F for about 20 minutes, until cheese is melted and beginning to brown."
+              ]
+            },
+            {
+              "title": "Oven Polenta with Roasted Mushrooms and Thyme",
+              "servings": "Serves 4   |   Total: ~55 min",
+              "source": "Claire Saffitz, Bon Appétit",
+              "comments": [
+                "A \"no-stir\" oven polenta — the oven does the work while the mushrooms roast on the rack above. For an indulgent touch, stir a little heavy cream mixed with a finely grated garlic clove into the finished polenta."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Mushrooms",
+                  "ingredients": [
+                    "1½ lbs mixed mushrooms (crimini, shiitake, oyster, and/or maitake), torn into 1-inch pieces",
+                    "4 thyme sprigs, plus thyme leaves for serving",
+                    "6 garlic cloves, smashed",
+                    "Kosher salt and freshly ground pepper",
+                    "¼ cup extra-virgin olive oil"
+                  ]
+                },
+                {
+                  "label": "Polenta",
+                  "ingredients": [
+                    "4½ cups water",
+                    "2 Tbsp unsalted butter",
+                    "Kosher salt",
+                    "1 cup polenta"
+                  ]
+                },
+                {
+                  "label": "Polenta — finish",
+                  "ingredients": [
+                    "4 oz Parmesan, finely grated, plus more for serving"
+                  ]
+                },
+                {
+                  "label": "Mushrooms — finish",
+                  "ingredients": [
+                    "1 Tbsp red wine vinegar"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "Flaky sea salt",
+                    "Thyme leaves",
+                    "More Parmesan"
+                  ]
+                }
+              ],
+              "steps": [
+                "Place racks in upper and lower thirds of oven; preheat to 325°F. Combine mushrooms, thyme sprigs, and garlic on a large rimmed baking sheet. Season generously with kosher salt and pepper; drizzle with olive oil. Toss to coat, then spread in an even layer. (Don't crowd the mushrooms or they'll steam instead of crisping.) Transfer to the upper rack.",
+                "Bring 4½ cups water to a simmer in a large ovenproof saucepan over medium-high heat. Add butter and a generous pinch of kosher salt; whisk to melt. Gradually whisk in the polenta (adding slowly prevents clumps). Return to a boil, immediately cover the pot, and transfer to the lower rack. Bake, shaking the mushroom pan occasionally, until polenta is tender, 25–30 minutes.",
+                "Remove polenta from oven. Raise oven temperature as high as it will go (but don't broil). Continue roasting mushrooms until crispy around the edges, 5–10 more minutes.",
+                "Uncover the polenta and whisk vigorously, scraping the bottom, until smooth and thick. Gradually whisk in the Parmesan until melted and incorporated. Season with kosher salt and pepper. Cover and keep warm over low heat.",
+                "Remove mushrooms from oven; drizzle with red wine vinegar. Toss to coat and let cool slightly.",
+                "Divide polenta among bowls and top with mushrooms, thyme leaves, flaky sea salt, and more Parmesan."
+              ]
+            },
+            {
+              "title": "Stuffed Portobello Mushrooms with Crispy Goat Cheese",
+              "servings": "Serves 4   |   Prep: 15 min   |   Cook: 45 min   |   Total: 1 hour",
+              "source": "Laura Davidson, A Beautiful Plate",
+              "comments": [
+                "Use large portobello mushrooms roughly 4 inches wide with slightly deeper caps — they're easier to stuff. Two mushrooms per serving makes a hearty main; one per person if serving as a side. For gluten-free, substitute gluten-free breadcrumbs."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Marinara",
+                  "ingredients": [
+                    "1 Tbsp olive oil",
+                    "4 garlic cloves, roughly chopped",
+                    "2 Tbsp tomato paste",
+                    "2 dried bay leaves",
+                    "1 Tbsp dried oregano",
+                    "1 (28-oz) can Italian crushed tomatoes",
+                    "Salt and freshly ground black pepper"
+                  ]
+                },
+                {
+                  "label": "Mushrooms",
+                  "ingredients": [
+                    "8 large (4-inch wide) portobello mushrooms, stems trimmed",
+                    "Extra-virgin olive oil",
+                    "Kosher salt and freshly ground black pepper"
+                  ]
+                },
+                {
+                  "label": "Spinach",
+                  "ingredients": [
+                    "1 Tbsp extra-virgin olive oil",
+                    "1 shallot, finely sliced",
+                    "6 oz baby spinach",
+                    "Kosher salt and freshly ground black pepper"
+                  ]
+                },
+                {
+                  "label": "Breadcrumb topping",
+                  "ingredients": [
+                    "2 Tbsp unsalted butter",
+                    "1 shallot, finely diced",
+                    "½ cup panko breadcrumbs",
+                    "1 garlic clove, finely minced",
+                    "Kosher salt and freshly ground black pepper"
+                  ]
+                },
+                {
+                  "label": "Assembly",
+                  "ingredients": [
+                    "4 oz goat cheese, cold from the fridge"
+                  ]
+                }
+              ],
+              "steps": [
+                "MARINARA: Warm 1 Tbsp olive oil in a medium saucepan over medium heat. Add the garlic and stir continuously for 30 seconds — do not let it brown. Add the tomato paste; stir over low heat for 1 minute. Add the bay leaves, oregano, and crushed tomatoes. Stir, bring to a low simmer, cover, and cook 30 minutes. Season with salt and pepper. (Can be made well ahead; reheat before using.)",
+                "MUSHROOMS: Preheat oven to 450°F with rack in center. Lightly brush a sheet pan with olive oil. Place portobellos stem-side up, brush lightly with olive oil, and season with salt and pepper. Roast 15–25 minutes (check after 10 minutes), until tender. Drain any moisture that collects in the caps. Transfer to a large plate.",
+                "SPINACH: Heat olive oil in a sauté pan over medium-low heat. Add the sliced shallots and sauté 3–4 minutes until soft and translucent. Add the spinach, raise heat to medium-high, and sauté until just wilted, stirring continuously. Season with salt and pepper; set aside.",
+                "BREADCRUMBS: Melt the butter in a small sauté pan over medium heat. Once sizzling, add the diced shallots and a pinch of salt; cook 1–2 minutes. Add the panko and minced garlic; toast 3–4 minutes, stirring constantly, until very light golden. Transfer to a shallow bowl and season with salt and pepper.",
+                "Reduce oven to 425°F. Line the same sheet pan with parchment paper (or set a baking rack inside the pan so mushrooms don't sit in released juice).",
+                "Arrange mushrooms stem-side up on the pan, touching each other. Fill each with a large spoonful of marinara. Top with the sautéed spinach.",
+                "Slice the goat cheese into ½-inch thick slices (roughly ½ oz each — it may crumble a bit). Press both sides of each slice into the panko topping and place on top of a mushroom. Sprinkle remaining breadcrumbs over.",
+                "Bake at 425°F for 10–15 minutes until heated through, breadcrumbs are golden brown, and the goat cheese just begins to soften. Watch closely so the breadcrumbs don't burn. Serve immediately."
+              ]
+            },
+            {
+              "title": "Truffle Mushroom Risotto",
+              "servings": "Serves 4   |   Prep: 20 min   |   Cook: 20 min   |   Total: 40 min",
+              "source": "Jenny Goycochea, So Much Food",
+              "comments": [
+                "A go-to \"fancy\" dinner that's actually easy. The risotto should flow like slow-moving lava, not form a stiff ball. Black truffle puree is available at specialty grocery stores and online."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Risotto base",
+                  "ingredients": [
+                    "2 Tbsp unsalted butter (of 4 oz / 1 stick total, divided)",
+                    "2 small shallots, finely minced",
+                    "1½ cups arborio rice",
+                    "½ cup dry white wine"
+                  ]
+                },
+                {
+                  "label": "Broth",
+                  "ingredients": [
+                    "6 cups chicken or vegetable broth, warmed"
+                  ]
+                },
+                {
+                  "label": "Mushrooms",
+                  "ingredients": [
+                    "1 Tbsp unsalted butter + 1 Tbsp neutral oil",
+                    "12 oz cremini mushrooms, quartered",
+                    "Salt and freshly cracked pepper"
+                  ]
+                },
+                {
+                  "label": "Finish",
+                  "ingredients": [
+                    "Remaining 5 Tbsp unsalted butter",
+                    "2 Tbsp black truffle puree",
+                    "½ cup mascarpone",
+                    "⅔ cup freshly grated Parmesan, plus more for garnish",
+                    "Salt and freshly cracked pepper"
+                  ]
+                },
+                {
+                  "label": "Garnish",
+                  "ingredients": [
+                    "Chopped chives",
+                    "Extra Parmesan"
+                  ]
+                }
+              ],
+              "steps": [
+                "Heat 2 Tbsp butter over medium heat in a wide-bottomed skillet or pan with at least 3-inch sides. Add shallots and cook 2–3 minutes until softened. Add rice and stir to coat all grains in butter. Toast about 1 minute. Add wine and stir continuously.",
+                "Once the wine is absorbed, add 1 cup warm broth, stirring constantly. Once absorbed, add another cup. Continue adding broth 1 cup at a time, stirring and waiting for each addition to absorb, until the rice is just slightly al dente. (The pan bottom exposed when you drag your spoon across it tells you it's time to add more broth.)",
+                "While the rice cooks, heat 1 Tbsp butter and 1 Tbsp neutral oil in a cast iron skillet over medium-high. Add mushrooms and let sear without stirring until golden brown on one side. Stir and cook 2–3 minutes more. Season lightly with salt and pepper.",
+                "When the rice is done, turn off the heat. Stir in ⅔ of the cooked mushrooms, the truffle puree, remaining 5 Tbsp butter, mascarpone, and Parmesan. Stir until all the cheese and butter has melted. Season to taste with salt and pepper.",
+                "Ladle risotto into bowls. Top with the remaining mushrooms, extra Parmesan, and chopped chives."
+              ]
+            },
+            {
+              "title": "Roasted Portobellos With Pesto",
+              "servings": "Serves 4   |   Total: 30 min",
+              "source": "Martha Rose Shulman, NYT Cooking",
+              "comments": [
+                "Uses Christy's Pesto (Adapted) already in this cookbook (see Noodles section). Homemade or store-bought pesto both work. Serve with rice or noodles tossed with butter for a simple meal. These reheat well a few hours later."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Mushrooms",
+                  "ingredients": [
+                    "8 medium (roasting size) portobello mushrooms",
+                    "1 Tbsp extra-virgin olive oil",
+                    "Salt and freshly ground pepper"
+                  ]
+                },
+                {
+                  "label": "Fill",
+                  "ingredients": [
+                    "¼ cup pesto (see Christy's Pesto (Adapted) in this cookbook)"
+                  ]
+                }
+              ],
+              "steps": [
+                "Preheat oven to 400°F. Remove the stems from the mushrooms and carefully scrape away the gills using a spoon. Toss with the olive oil and season with salt and pepper. Place rounded-side down on a lightly oiled baking sheet. Roast 8–10 minutes, until beginning to soften and release liquid. Remove from oven and fill each cap with pesto. Return to the oven and roast until thoroughly softened, about 10 more minutes. Serve immediately."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Vegetable Sides",
+      "recipes": [
+        {
+          "title": "Sautéed Mushrooms",
+          "servings": "Serves 6   |   Prep: 10 min   |   Cook: 20 min   |   Total: 30 min",
+          "source": "Sommer Collier, A Spicy Perspective",
+          "comments": [
             "The classic steak topping — also great over chicken, pork chops, or grain bowls. Have patience: let the mushrooms release all their moisture before they begin to brown. Leftovers keep in the fridge up to 10 days; reheat on the stovetop with a little extra butter."
           ],
-          ingredientGroups: [
-            { label: "Mushrooms and fat", ingredients: [
-              "2 lbs button mushrooms, halved",
-              "2 Tbsp unsalted butter",
-              "2 Tbsp olive oil"
-            ]},
-            { label: "Aromatics", ingredients: [
-              "3 garlic cloves, minced",
-              "Salt and pepper to taste"
-            ]},
-            { label: "Glaze", ingredients: [
-              "1½ Tbsp fresh thyme leaves",
-              "¾ cup dry sherry"
-            ]}
+          "ingredientGroups": [
+            {
+              "label": "Mushrooms and fat",
+              "ingredients": [
+                "2 lbs button mushrooms, halved",
+                "2 Tbsp unsalted butter",
+                "2 Tbsp olive oil"
+              ]
+            },
+            {
+              "label": "Aromatics",
+              "ingredients": [
+                "3 garlic cloves, minced",
+                "Salt and pepper to taste"
+              ]
+            },
+            {
+              "label": "Glaze",
+              "ingredients": [
+                "1½ Tbsp fresh thyme leaves",
+                "¾ cup dry sherry"
+              ]
+            }
           ],
-          steps: [
+          "steps": [
             "Place a large sauté pan over medium heat. Add the butter and olive oil. Once the butter has melted, add the mushrooms.",
             "Let the mushrooms sear for 5 minutes, stirring to flip them. Add the garlic and salt and pepper to taste. Sear another 5 minutes to develop a rich caramelized color.",
             "Stir in the thyme leaves and sherry. Lower heat to medium-low and simmer about 10 minutes, stirring occasionally, until the mushrooms have absorbed the sherry and only a small amount of moisture remains in the pan.",
@@ -3515,61 +6029,33 @@ const data = {
           ]
         },
         {
-          title: "Summer Salad",
-          source: "Family recipe card (Grandmother Brenda)",
-          comments: [
-            "The dressing makes more than needed for one salad — leftovers keep refrigerated for 1–2 weeks."
-          ],
-          ingredientGroups: [
-            { label: "Dressing", ingredients: [
-              "1 cup vinegar",
-              "1/2 cup oil",
-              "1/2 cup sugar",
-              "1/2 cup ketchup",
-              "2 cloves garlic, crushed",
-              "1/2 teaspoon paprika",
-              "1/2 teaspoon mustard (dry or prepared)",
-              "1 teaspoon salt"
-            ]},
-            { label: "Salad", ingredients: [
-              "1 bag romaine lettuce",
-              "5–6 mushrooms, diced",
-              "1 container cherry tomatoes",
-              "1/2 to 1 mango, cubed",
-              "1/2 avocado, cubed",
-              "Handful of salted cashews",
-              "Handful of sunflower seeds"
-            ]}
-          ],
-          steps: [
-            "Whisk together all dressing ingredients. Refrigerate until ready to use.",
-            "Tear romaine into a large bowl. Add mushrooms, cherry tomatoes, mango, and avocado.",
-            "Top with cashews and sunflower seeds.",
-            "Drizzle dressing over salad just before serving and toss."
-          ]
-        },
-        {
-          title: "Potato Latkes",
-          servings: "Makes about 12 latkes",
-          source: "\"Celebration: The Book of Jewish Festivals,\" ed. Naomi Black (Jonathan David Publishers, 1989)",
-          comments: [
+          "title": "Potato Latkes",
+          "servings": "Makes about 12 latkes",
+          "source": "\"Celebration: The Book of Jewish Festivals,\" ed. Naomi Black (Jonathan David Publishers, 1989)",
+          "comments": [
             "Keep finished latkes warm in a 250°F oven while frying subsequent batches.",
             "The original notes you can use more flour or matzo meal as needed to hold the batter together.",
             "Variation: Pour the same batter into a well-greased muffin pan and bake 45 minutes at 350°F."
           ],
-          ingredientGroups: [
-            { label: "Batter", ingredients: [
-              "6 medium potatoes, grated",
-              "1 onion, grated",
-              "2 eggs",
-              "2 tablespoons flour or matzo meal (more as needed)",
-              "1 teaspoon salt"
-            ]},
-            { label: "For frying", ingredients: [
-              "Vegetable oil"
-            ]}
+          "ingredientGroups": [
+            {
+              "label": "Batter",
+              "ingredients": [
+                "6 medium potatoes, grated",
+                "1 onion, grated",
+                "2 eggs",
+                "2 tablespoons flour or matzo meal (more as needed)",
+                "1 teaspoon salt"
+              ]
+            },
+            {
+              "label": "For frying",
+              "ingredients": [
+                "Vegetable oil"
+              ]
+            }
           ],
-          steps: [
+          "steps": [
             "Grate the potatoes into a mixing bowl. Squeeze out the liquid or drain in a colander for a few minutes. Grate the onion into the potatoes.",
             "Add the eggs and mix. Add the flour and mix. Add the salt and stir until you have a smooth batter that drops heavily from the spoon.",
             "Heat enough vegetable oil in a frying pan to cover the latkes amply. Drop the batter from a tablespoon into the hot oil, making pancakes about 3 inches in diameter. Do not allow the oil to smoke; let it come back up to temperature after every few latkes and after replenishing the oil.",
@@ -3579,151 +6065,47 @@ const data = {
       ]
     },
     {
-      title: "Pickling",
-      recipes: [
+      "title": "Rice",
+      "recipes": [
         {
-          title: "Dill Pickles",
-          servings: "Makes 4 (8-oz) or 2 (16-oz) jars   |   Prep: 10 minutes   |   Chilling: 1–5 days",
-          comments: [
-            "Chips are lightly pickled after 1 day; spears take 2 days. The best flavor develops around day 5 or 6 — worth the wait. Keep refrigerated for several weeks."
-          ],
-          source: "https://www.loveandlemons.com/dill-pickles-recipe/",
-          ingredientGroups: [
-            { label: "Cucumbers and aromatics", ingredients: [
-              "12–14 Persian cucumbers, or 8–10 small pickling cucumbers",
-              "4 garlic cloves, halved",
-              "2 teaspoons mustard seeds",
-              "2 teaspoons peppercorns",
-              "Fresh dill sprigs, a few per jar"
-            ]},
-            { label: "Brine", ingredients: [
-              "2 cups water",
-              "2 cups distilled white vinegar",
-              "¼ cup cane sugar",
-              "2 tablespoons sea salt"
-            ]}
-          ],
-          steps: [
-            "Prep the cucumbers: For spears, slice lengthwise into quarters. For chips, thinly slice crosswise.",
-            "Pack the jars: Divide the cucumbers among 4 (8-oz) or 2 (16-oz) jars. Divide the garlic, mustard seeds, peppercorns, and dill sprigs evenly among the jars.",
-            { lead: "Make the brine and fill:", bullets: [
-              "Combine the water, vinegar, sugar, and salt in a medium saucepan over medium heat. Stir until the sugar and salt dissolve, about 1 minute.",
-              "Let cool slightly, then pour over the cucumbers. Set aside to cool to room temperature."
-            ]},
-            "Refrigerate: Chips are lightly pickled after 1 day and grow more flavorful from there. Spears are lightly pickled after 2 days; best flavor develops around day 5 or 6. Keeps in the fridge for several weeks."
-          ]
-        },
-        {
-          title: "Quick Pickled Green Onions",
-          servings: "Makes about 8 servings   |   Prep: 15 minutes   |   Pickling: 2 hours minimum (best after 24–48 hours)",
-          source: "https://www.forkintheroad.co/quick-pickled-green-onions/",
-          comments: [
-            "Ready to eat after 2 hours, but the flavor deepens significantly after 24–48 hours. Keeps refrigerated up to 1 month as long as the onions stay fully submerged in brine."
-          ],
-          ingredientGroups: [
-            { label: "Green onions and aromatics", ingredients: [
-              "1 bunch green onions (about 10), roots trimmed",
-              "1-inch piece fresh ginger",
-              "2 whole garlic cloves",
-              "2 teaspoons ground mustard",
-              "1 teaspoon Aleppo pepper or red pepper flakes (optional)"
-            ]},
-            { label: "Brine", ingredients: [
-              "2 cups water",
-              "1 cup rice vinegar (or white wine vinegar, apple cider vinegar, or plain white vinegar)",
-              "1 tablespoon salt",
-              "1 tablespoon sugar"
-            ]}
-          ],
-          steps: [
-            { lead: "Prep the green onions:", bullets: [
-              "Cut off the roots.",
-              "Either slice into thin rounds for sprinkling, or cut each green onion in half lengthwise and then into 2–4-inch spears for layering on salads, burgers, and sandwiches."
-            ]},
-            "Pack the jar: Add the green onions to a large jar. Add the ginger, garlic, ground mustard, and Aleppo pepper (if using).",
-            { lead: "Make the brine:", bullets: [
-              "Combine the water, vinegar, salt, and sugar in a small saucepan. Bring to a boil, stirring to dissolve.",
-              "Pour the hot brine over the green onions until completely submerged. Close the lid tightly."
-            ]},
-            "Let the jar cool to room temperature on the counter, then refrigerate. Ready after 2 hours, best after 24–48 hours. Keeps up to 1 month refrigerated."
-          ]
-        },
-        {
-          title: "Quick Pickled Red Onions",
-          servings: "Makes about 8 servings   |   Prep: 5 minutes   |   Total: 15 minutes",
-          comments: [
-            "Great on burgers, grain bowls, salads, sandwiches, or a cheese board. Ready to eat in just 15 minutes, and keeps in the fridge for up to 2 weeks."
-          ],
-          source: "https://www.kitchentreaty.com/quick-pickled-red-onions/",
-          ingredientGroups: [
-            { label: "Red onion", ingredients: [
-              "1 medium red onion, peeled, halved, and sliced as thinly as possible"
-            ]},
-            { label: "Brine", ingredients: [
-              "3/4 cup apple cider vinegar (or white vinegar)",
-              "1/2 cup water",
-              "2 teaspoons granulated sugar",
-              "1 teaspoon kosher salt"
-            ]}
-          ],
-          steps: [
-            "Slice the onion as thinly as possible and pack into a quart-size mason jar.",
-            "Make the brine: Add the vinegar, water, sugar, and salt to a small saucepan. Bring just to a boil over high heat, stirring to dissolve.",
-            "Carefully pour the hot brine over the onions. Press the onions down with a spoon to make sure they are fully submerged.",
-            "Let sit at room temperature for 15 minutes, then serve. Store covered in the fridge for up to 2 weeks, keeping the onions submerged in liquid."
-          ]
-        },
-        {
-          id: "haitian-pikliz",
-          title: "Pikliz",
-          favorite: true,
-          servings: "Makes 1 quart   |   Prep: 30 min   |   Ready after: 3 days' pickling",
-          source: "Patrick Celestin, adapted by Melissa Clark (NYT Cooking)",
-          comments: [
-            {html: "The traditional Haitian accompaniment to <a href='#haitian-pork-griot'>Pork Griot</a>. Also wonderful with rice and beans, roast chicken, or any dish that needs a spicy, vinegary punch. Keeps refrigerated for at least 3 weeks."}
-          ],
-          ingredientGroups: [
-            { label: "Pickle", ingredients: [
-              "2 cups thinly sliced green cabbage",
-              "1 medium onion, halved and thinly sliced",
-              "1 large carrot, peeled and coarsely grated (1 cup)",
-              "1/2 medium bell pepper (green, red or yellow), seeded and thinly sliced (1 cup)",
-              "2 scallions, thinly sliced",
-              "4 Scotch bonnet or habanero chiles, seeded and very thinly sliced",
-              "4 garlic cloves, finely chopped",
-              "1 1/4 tsp kosher salt",
-              "12 black peppercorns",
-              "4 whole cloves"
-            ]},
-            { label: "Brine", ingredients: [
-              "1 1/2 cups cane vinegar, cider vinegar or white vinegar",
-              "Juice of 1/2 lime"
-            ]}
-          ],
-          steps: [
-            "Combine cabbage, onion, carrot, bell pepper, scallions, chiles, garlic, salt, peppercorns, and cloves in a large bowl. Toss well.",
-            "Pack tightly into a 1-quart jar with a tightfitting lid. Pour vinegar and lime juice over vegetables, pressing down until completely submerged. Cover and refrigerate for at least 3 days before opening. Keeps for at least 3 weeks refrigerated."
-          ]
-        }
-      ]
-    },
-    {
-      title: "Rice",
-      recipes: [
-        {
-          title: "Indian Style Rice",
-          servings: "4 to 6   |   Prep: 15 minutes, plus 30 minutes soaking   |   Cook: about 25 minutes (rice cooker)",
-          comments: [
+          "title": "Indian Style Rice",
+          "servings": "4 to 6   |   Prep: 15 minutes, plus 30 minutes soaking   |   Cook: about 25 minutes (rice cooker)",
+          "comments": [
             "If you don't have whole cardamom pods or a cinnamon stick, use a pinch each of ground cardamom and ground cinnamon added with the turmeric.",
             "Adapted for a rice cooker — rather than boiling the rice separately and draining it (the original stovetop method), the sautéed spice mixture is stirred into the rice cooker with the water and rice."
           ],
-          source: "Simply Recipes, by Elise Bauer, adapted for a rice cooker",
-          ingredientGroups: [
-            { label: "Rice", ingredients: ["2 cups Jasmine or Basmati rice", "3 cups water", "2 teaspoons salt"] },
-            { label: "Whole spices", ingredients: ["2 cloves", "2 green cardamom pods", "One 2-inch piece cinnamon"] },
-            { label: "Aromatics", ingredients: ["3 tablespoons vegetable oil (or ghee)", "1/2 teaspoon dark mustard seeds", "1/2 teaspoon cumin seeds", "1/4 teaspoon Aleppo pepper or red pepper flakes", "1 medium onion, chopped", "3 garlic cloves, chopped", "1/4 teaspoon turmeric"] }
+          "source": "Simply Recipes, by Elise Bauer, adapted for a rice cooker",
+          "ingredientGroups": [
+            {
+              "label": "Rice",
+              "ingredients": [
+                "2 cups Jasmine or Basmati rice",
+                "3 cups water",
+                "2 teaspoons salt"
+              ]
+            },
+            {
+              "label": "Whole spices",
+              "ingredients": [
+                "2 cloves",
+                "2 green cardamom pods",
+                "One 2-inch piece cinnamon"
+              ]
+            },
+            {
+              "label": "Aromatics",
+              "ingredients": [
+                "3 tablespoons vegetable oil (or ghee)",
+                "1/2 teaspoon dark mustard seeds",
+                "1/2 teaspoon cumin seeds",
+                "1/4 teaspoon Aleppo pepper or red pepper flakes",
+                "1 medium onion, chopped",
+                "3 garlic cloves, chopped",
+                "1/4 teaspoon turmeric"
+              ]
+            }
           ],
-          steps: [
+          "steps": [
             "Rinse the rice in a sieve under cool running water until the water runs clear. Soak in cool water 30 minutes, then drain well.",
             "Sauté: Heat the oil in a large skillet over medium heat. Add the mustard seeds, cumin seeds, and Aleppo pepper or red pepper flakes; cook until the seeds begin to pop, about 30 seconds.",
             "Add the onion and cook until it begins to brown, 5 to 7 minutes. Add the garlic and cook 2 to 3 minutes more. Stir in the turmeric.",
@@ -3734,117 +6116,256 @@ const data = {
       ]
     },
     {
-      title: "Noodles",
-      subsections: [
+      "title": "Noodles",
+      "subsections": [
         {
-          title: "Italian",
-          recipes: [
+          "title": "Italian",
+          "recipes": [
             {
-              title: "BIG Noods alla Gin with Sungold Tomatoes",
-              servings: "4 to 6   |   Prep: 40 minutes   |   Total: 50 minutes",
-              comments: [
+              "title": "BIG Noods alla Gin with Sungold Tomatoes",
+              "servings": "4 to 6   |   Prep: 40 minutes   |   Total: 50 minutes",
+              "comments": [
                 "Fresh lasagna sheets are called for here for their fun, floppy volume on the plate, but any pasta shape — fresh or dried — works well.",
                 "Vodka can stand in for the gin."
               ],
-              source: "The Club, by Molly Baz",
-              ingredientGroups: [
-                { label: "Prep", ingredients: ["2 pints Sungold or cherry tomatoes, halved", "1 yellow onion, finely chopped", "6 garlic cloves, sliced"] },
-                { label: "Sauce", ingredients: ["3 tablespoons unsalted butter", "Kosher salt", "3 ounces double concentrated tomato paste (about 3/4 of a tube)", "1 tablespoon chopped Calabrian chilies", "1/4 cup gin or vodka", "1/4 cup heavy cream", "1 1/2 ounces (about 3/4 cup) finely grated Parmigiano-Reggiano"] },
-                { label: "Pasta", ingredients: ["12 ounces fresh lasagna sheets (or any pasta shape, fresh or dried)"] },
-                { label: "To finish", ingredients: ["Handful of basil", "Olive oil, for drizzling", "More grated Parmigiano-Reggiano"] }
+              "source": "The Club, by Molly Baz",
+              "ingredientGroups": [
+                {
+                  "label": "Prep",
+                  "ingredients": [
+                    "2 pints Sungold or cherry tomatoes, halved",
+                    "1 yellow onion, finely chopped",
+                    "6 garlic cloves, sliced"
+                  ]
+                },
+                {
+                  "label": "Sauce",
+                  "ingredients": [
+                    "3 tablespoons unsalted butter",
+                    "Kosher salt",
+                    "3 ounces double concentrated tomato paste (about 3/4 of a tube)",
+                    "1 tablespoon chopped Calabrian chilies",
+                    "1/4 cup gin or vodka",
+                    "1/4 cup heavy cream",
+                    "1 1/2 ounces (about 3/4 cup) finely grated Parmigiano-Reggiano"
+                  ]
+                },
+                {
+                  "label": "Pasta",
+                  "ingredients": [
+                    "12 ounces fresh lasagna sheets (or any pasta shape, fresh or dried)"
+                  ]
+                },
+                {
+                  "label": "To finish",
+                  "ingredients": [
+                    "Handful of basil",
+                    "Olive oil, for drizzling",
+                    "More grated Parmigiano-Reggiano"
+                  ]
+                }
               ],
-              steps: [
+              "steps": [
                 "Bring a large pot of salted water to a boil.",
                 "Prep: Cut the tomatoes in half. Finely chop the onion and slice the garlic.",
-                { lead: "Sungold sauce:", bullets: [
-                  "Heat the butter in a large Dutch oven over medium heat. Add the onion and a big pinch of salt; cook, stirring occasionally, until soft and golden, about 10 minutes.",
-                  "Add the garlic and cook 2 minutes more.",
-                  "Stir in the tomato paste and Calabrian chilies. Cook, stirring occasionally, until the tomato paste starts to caramelize and turn a deeper red, about 5 minutes.",
-                  "Stir in the gin and cook until fully evaporated, about 1 minute.",
-                  "In a small measuring cup, stir 1/4 cup of the hot pasta water into the cream to temper it (this warms the cream so it doesn't break the sauce). Stir the tempered cream into the sauce.",
-                  "Stir in the Parmesan. Remove from heat and cover to keep warm."
-                ]},
+                {
+                  "lead": "Sungold sauce:",
+                  "bullets": [
+                    "Heat the butter in a large Dutch oven over medium heat. Add the onion and a big pinch of salt; cook, stirring occasionally, until soft and golden, about 10 minutes.",
+                    "Add the garlic and cook 2 minutes more.",
+                    "Stir in the tomato paste and Calabrian chilies. Cook, stirring occasionally, until the tomato paste starts to caramelize and turn a deeper red, about 5 minutes.",
+                    "Stir in the gin and cook until fully evaporated, about 1 minute.",
+                    "In a small measuring cup, stir 1/4 cup of the hot pasta water into the cream to temper it (this warms the cream so it doesn't break the sauce). Stir the tempered cream into the sauce.",
+                    "Stir in the Parmesan. Remove from heat and cover to keep warm."
+                  ]
+                },
                 "Cook the pasta: Add the lasagna sheets to the boiling water, tearing them in half and separating them as you add them; stir to keep them from sticking. Cook about 1 minute less than the package directions. Reserve 1/2 cup pasta water, then drain.",
                 "Add the noodles and the remaining tomatoes to the pot of sauce. Return to medium heat and cook, stirring gently so as not to break up the noodles, until the tomatoes just begin to wilt, 1 to 2 minutes. Loosen with pasta water as needed.",
                 "Divide among bowls; top with basil, a drizzle of olive oil, and more Parmesan."
               ]
             },
             {
-              title: "Artichoke Pesto Pasta with Fried Peppercorns",
-              servings: "4   |   Total: 30 minutes",
-              comments: ["The fried peppercorns are worth making extra of — Molly Baz notes they're a great crispy, spicy garnish on all sorts of dishes."],
-              source: "The Club, by Molly Baz",
-              ingredientGroups: [
-                { label: "Prep", ingredients: ["2 to 3 lemons (1 1/2 for peel and juice; remaining 1/2 to 1 lemon reserved for finishing)", "1 large bunch flat-leaf parsley, leaves and tender stems picked (about 2 cups packed)", "1 large or 2 small garlic cloves", "2 ounces Parmigiano-Reggiano, finely grated (about 3/4 cup), divided", "One 14.5- to 16-ounce jar marinated artichokes (preferably Mezzetta), drained, brine reserved"] },
-                { label: "Pesto", ingredients: ["1/3 cup olive oil", "3/4 cup (2 ounces) blanched almonds", "2 teaspoons kosher salt"] },
-                { label: "Pasta", ingredients: ["1 pound mezzi rigatoni", "Kosher salt, for the pasta water"] },
-                { label: "Fried peppercorns", ingredients: ["2 tablespoons olive oil", "2 tablespoons black peppercorns", "Kosher salt, to taste"] },
-                { label: "To finish", ingredients: ["One 8-ounce ball burrata", "More grated Parmigiano-Reggiano"] }
+              "title": "Artichoke Pesto Pasta with Fried Peppercorns",
+              "servings": "4   |   Total: 30 minutes",
+              "comments": [
+                "The fried peppercorns are worth making extra of — Molly Baz notes they're a great crispy, spicy garnish on all sorts of dishes."
               ],
-              steps: [
+              "source": "The Club, by Molly Baz",
+              "ingredientGroups": [
+                {
+                  "label": "Prep",
+                  "ingredients": [
+                    "2 to 3 lemons (1 1/2 for peel and juice; remaining 1/2 to 1 lemon reserved for finishing)",
+                    "1 large bunch flat-leaf parsley, leaves and tender stems picked (about 2 cups packed)",
+                    "1 large or 2 small garlic cloves",
+                    "2 ounces Parmigiano-Reggiano, finely grated (about 3/4 cup), divided",
+                    "One 14.5- to 16-ounce jar marinated artichokes (preferably Mezzetta), drained, brine reserved"
+                  ]
+                },
+                {
+                  "label": "Pesto",
+                  "ingredients": [
+                    "1/3 cup olive oil",
+                    "3/4 cup (2 ounces) blanched almonds",
+                    "2 teaspoons kosher salt"
+                  ]
+                },
+                {
+                  "label": "Pasta",
+                  "ingredients": [
+                    "1 pound mezzi rigatoni",
+                    "Kosher salt, for the pasta water"
+                  ]
+                },
+                {
+                  "label": "Fried peppercorns",
+                  "ingredients": [
+                    "2 tablespoons olive oil",
+                    "2 tablespoons black peppercorns",
+                    "Kosher salt, to taste"
+                  ]
+                },
+                {
+                  "label": "To finish",
+                  "ingredients": [
+                    "One 8-ounce ball burrata",
+                    "More grated Parmigiano-Reggiano"
+                  ]
+                }
+              ],
+              "steps": [
                 "Prep: Remove the peel from 1 1/2 lemons in long strips with a vegetable peeler; squeeze 1/4 cup juice from the lemons (reserve more lemon for finishing).",
                 "Pesto: In a food processor, process the lemon peels until finely chopped. Add the parsley and process until roughly chopped. Add the garlic, artichokes, artichoke brine, olive oil, almonds, half the Parmesan, and the salt; process until a coarse pesto forms. Taste; add lemon juice if needed.",
                 "Cook the pasta: Bring a large pot of heavily salted water to a boil. Add the rigatoni and cook to al dente, 1 to 2 minutes less than the package directions. Reserve 1 cup pasta water, then drain.",
-                { lead: "Fried peppercorns (meanwhile, as the pasta boils):", bullets: [
-                  "Add the remaining 2 tablespoons olive oil to your smallest skillet. When shimmering, add the peppercorns. Toast, swirling the pan, until fragrant and slightly darkened, about 2 minutes.",
-                  "Remove from heat and let rest in the oil until they stop popping. Transfer to a paper-towel-lined plate with a slotted spoon.",
-                  "Let cool, then roughly chop. Season generously with salt."
-                ]},
+                {
+                  "lead": "Fried peppercorns (meanwhile, as the pasta boils):",
+                  "bullets": [
+                    "Add the remaining 2 tablespoons olive oil to your smallest skillet. When shimmering, add the peppercorns. Toast, swirling the pan, until fragrant and slightly darkened, about 2 minutes.",
+                    "Remove from heat and let rest in the oil until they stop popping. Transfer to a paper-towel-lined plate with a slotted spoon.",
+                    "Let cool, then roughly chop. Season generously with salt."
+                  ]
+                },
                 "Plate it up: Return the pasta to the pot and add the pesto. Set over medium-low heat. Add 1/2 cup of the reserved pasta water and the remaining Parmesan; toss vigorously until the sauce emulsifies and coats the pasta. Add more pasta water or lemon juice to loosen if needed.",
                 "Divide among plates and top with torn burrata, a final grating of Parmesan, and the fried peppercorns."
               ]
             },
             {
-              title: "Brie Linguine",
-              servings: "6   |   Prep: 15 minutes, plus 2–3 hours resting",
-              comments: [
+              "title": "Brie Linguine",
+              "servings": "6   |   Prep: 15 minutes, plus 2–3 hours resting",
+              "comments": [
                 "A very intense pasta, best served as a side dish.",
                 "Flavored fresh pasta — red pepper, basil, or spinach — provides wonderful color and taste."
               ],
-              source: "More Than a Tea Party (cookbook), Brunch and Luncheon chapter, p. 105",
-              ingredientGroups: [
-                { label: "Sauce (2–3 hours ahead)", ingredients: ["4 large, ripe tomatoes, peeled and coarsely chopped", "1 small red onion, coarsely chopped", "3 garlic cloves, finely minced", "1/2–3/4 cup fresh basil leaves, well washed and dried", "1/2 cup olive oil", "3/4 pound Brie cheese, rind removed and broken into chunks", "2 ounces Prosciutto, cut into thin strips", "1–2 teaspoons salt", "1–2 teaspoons freshly ground black pepper", "4 sun-dried tomatoes, well-chopped (optional)"] },
-                { label: "Pasta", ingredients: ["1 pound linguine"] },
-                { label: "Garnish", ingredients: ["Freshly grated Parmesan cheese"] }
+              "source": "More Than a Tea Party (cookbook), Brunch and Luncheon chapter, p. 105",
+              "ingredientGroups": [
+                {
+                  "label": "Sauce (2–3 hours ahead)",
+                  "ingredients": [
+                    "4 large, ripe tomatoes, peeled and coarsely chopped",
+                    "1 small red onion, coarsely chopped",
+                    "3 garlic cloves, finely minced",
+                    "1/2–3/4 cup fresh basil leaves, well washed and dried",
+                    "1/2 cup olive oil",
+                    "3/4 pound Brie cheese, rind removed and broken into chunks",
+                    "2 ounces Prosciutto, cut into thin strips",
+                    "1–2 teaspoons salt",
+                    "1–2 teaspoons freshly ground black pepper",
+                    "4 sun-dried tomatoes, well-chopped (optional)"
+                  ]
+                },
+                {
+                  "label": "Pasta",
+                  "ingredients": [
+                    "1 pound linguine"
+                  ]
+                },
+                {
+                  "label": "Garnish",
+                  "ingredients": [
+                    "Freshly grated Parmesan cheese"
+                  ]
+                }
               ],
-              steps: [
+              "steps": [
                 "Sauce: In a large bowl, mix together the tomatoes, onion, garlic, basil, olive oil, Brie, Prosciutto, salt, pepper, and sun-dried tomatoes (if using). Cover and let sit at room temperature for at least 2–3 hours before serving.",
                 "Cook linguine in boiling salted water until al dente. Drain.",
                 "Toss pasta with tomato-Brie mixture, correct seasoning, and garnish generously with Parmesan. Serve immediately."
               ]
             },
             {
-              title: "Lemon Fusilli with Arugula",
-              favorite: true,
-              servings: "4 to 5   |   Prep: 10 minutes   |   Cook: 30 minutes   |   Total: 40 minutes",
-              source: "Food Network, by Ina Garten, from Barefoot Contessa at Home",
-              ingredientGroups: [
-                { label: "Lemon cream sauce", ingredients: ["1 tablespoon good olive oil", "1 tablespoon minced garlic (2 cloves)", "2 cups heavy cream", "Zest and juice of 2 lemons", "Kosher salt and freshly ground black pepper"] },
-                { label: "Broccoli", ingredients: ["1 bunch broccoli, cut into florets"] },
-                { label: "Pasta", ingredients: ["1 pound dried fusilli pasta"] },
-                { label: "To finish", ingredients: ["1/2 pound baby arugula (or 2 bunches common arugula, leaves cut in thirds)", "1/2 cup freshly grated Parmesan", "1 pint grape or cherry tomatoes, halved", "1 remaining lemon, sliced 1/4-inch thick"] }
+              "title": "Lemon Fusilli with Arugula",
+              "favorite": true,
+              "servings": "4 to 5   |   Prep: 10 minutes   |   Cook: 30 minutes   |   Total: 40 minutes",
+              "source": "Food Network, by Ina Garten, from Barefoot Contessa at Home",
+              "ingredientGroups": [
+                {
+                  "label": "Lemon cream sauce",
+                  "ingredients": [
+                    "1 tablespoon good olive oil",
+                    "1 tablespoon minced garlic (2 cloves)",
+                    "2 cups heavy cream",
+                    "Zest and juice of 2 lemons",
+                    "Kosher salt and freshly ground black pepper"
+                  ]
+                },
+                {
+                  "label": "Broccoli",
+                  "ingredients": [
+                    "1 bunch broccoli, cut into florets"
+                  ]
+                },
+                {
+                  "label": "Pasta",
+                  "ingredients": [
+                    "1 pound dried fusilli pasta"
+                  ]
+                },
+                {
+                  "label": "To finish",
+                  "ingredients": [
+                    "1/2 pound baby arugula (or 2 bunches common arugula, leaves cut in thirds)",
+                    "1/2 cup freshly grated Parmesan",
+                    "1 pint grape or cherry tomatoes, halved",
+                    "1 remaining lemon, sliced 1/4-inch thick"
+                  ]
+                }
               ],
-              steps: [
+              "steps": [
                 "Lemon cream sauce: Heat the olive oil in a medium saucepan over medium heat; add the garlic and cook 60 seconds. Add the cream and bring to a boil. Add the lemon zest and juice; simmer over low heat until thickened, about 20 minutes. Season with salt and pepper.",
                 "Meanwhile, cook the broccoli florets in a pot of boiling salted water 3 to 5 minutes, until tender but still firm. Drain and set aside.",
-                { lead: "Pasta:", bullets: [
-                  "Bring a large pot of water to a boil; add 1 tablespoon salt and the pasta. Cook according to the package directions, about 12 minutes. Drain.",
-                  "Return the pasta to the pot. Immediately add the cream mixture and cook over medium-low heat 3 minutes, until most of the sauce is absorbed."
-                ]},
+                {
+                  "lead": "Pasta:",
+                  "bullets": [
+                    "Bring a large pot of water to a boil; add 1 tablespoon salt and the pasta. Cook according to the package directions, about 12 minutes. Drain.",
+                    "Return the pasta to the pot. Immediately add the cream mixture and cook over medium-low heat 3 minutes, until most of the sauce is absorbed."
+                  ]
+                },
                 "Pour the hot pasta into a large bowl; add the arugula, Parmesan, tomatoes, and cooked broccoli.",
                 "Cut the remaining lemon in half lengthwise, slice 1/4-inch thick crosswise, and add to the pasta.",
                 "Toss well, season to taste, and serve hot."
               ]
             },
             {
-              title: "Christy's Pesto (Adapted)",
-              servings: "Six 2-person servings",
-              comments: ["Walnuts can be swapped for pine nuts or pecans, or a mix of the two."],
-              source: "Family recipe card (\"Christy's Pesto, Adapted\")",
-              ingredientGroups: [
-                { ingredients: ["6 cloves garlic", "4 cups fresh basil leaves (about 2 bunches, stemmed)", "3/4 cup olive oil", "1 cup chopped walnuts", "1 teaspoon salt", "1 cup grated Parmesan cheese", "1 tablespoon warm water"] }
+              "title": "Christy's Pesto (Adapted)",
+              "servings": "Six 2-person servings",
+              "comments": [
+                "Walnuts can be swapped for pine nuts or pecans, or a mix of the two."
               ],
-              steps: [
+              "source": "Family recipe card (\"Christy's Pesto, Adapted\")",
+              "ingredientGroups": [
+                {
+                  "ingredients": [
+                    "6 cloves garlic",
+                    "4 cups fresh basil leaves (about 2 bunches, stemmed)",
+                    "3/4 cup olive oil",
+                    "1 cup chopped walnuts",
+                    "1 teaspoon salt",
+                    "1 cup grated Parmesan cheese",
+                    "1 tablespoon warm water"
+                  ]
+                }
+              ],
+              "steps": [
                 "Mince the garlic in a food processor.",
                 "Add the basil and pulse until finely chopped.",
                 "With the processor running, add the olive oil, walnuts, salt, Parmesan, and warm water; process until smooth.",
@@ -3852,27 +6373,36 @@ const data = {
               ]
             },
             {
-              title: "Pasta with Sausage, Basil, and Mustard",
-              favorite: true,
-              servings: "Serves 4   |   Active: 10 min   |   Total: 20 min",
-              source: "Nigel Slater, Food & Wine (September 2002)",
-              ingredientGroups: [
-                { label: "Pasta", ingredients: [
-                  "1 lb penne, rigatoni, or medium shells"
-                ]},
-                { label: "Sausage + sauce", ingredients: [
-                  "1 Tbsp extra-virgin olive oil",
-                  "8 hot Italian sausage links, casings removed, meat crumbled (about 1 1/2 lbs); or substitute one 1-lb roll sweet Italian or sage sausage (such as Jimmy Dean)",
-                  "3/4 cup dry white wine",
-                  "3/4 cup heavy cream",
-                  "3 Tbsp grainy mustard",
-                  "Pinch of Aleppo pepper or red pepper flakes"
-                ]},
-                { label: "Finish", ingredients: [
-                  "1 cup fresh basil, thinly sliced"
-                ]}
+              "title": "Pasta with Sausage, Basil, and Mustard",
+              "favorite": true,
+              "servings": "Serves 4   |   Active: 10 min   |   Total: 20 min",
+              "source": "Nigel Slater, Food & Wine (September 2002)",
+              "ingredientGroups": [
+                {
+                  "label": "Pasta",
+                  "ingredients": [
+                    "1 lb penne, rigatoni, or medium shells"
+                  ]
+                },
+                {
+                  "label": "Sausage + sauce",
+                  "ingredients": [
+                    "1 Tbsp extra-virgin olive oil",
+                    "8 hot Italian sausage links, casings removed, meat crumbled (about 1 1/2 lbs); or substitute one 1-lb roll sweet Italian or sage sausage (such as Jimmy Dean)",
+                    "3/4 cup dry white wine",
+                    "3/4 cup heavy cream",
+                    "3 Tbsp grainy mustard",
+                    "Pinch of Aleppo pepper or red pepper flakes"
+                  ]
+                },
+                {
+                  "label": "Finish",
+                  "ingredients": [
+                    "1 cup fresh basil, thinly sliced"
+                  ]
+                }
               ],
-              steps: [
+              "steps": [
                 "Cook pasta in a large pot of boiling salted water until al dente. Drain.",
                 "Meanwhile, heat olive oil in a large, deep skillet over moderately high heat. Add sausage meat and brown, breaking up as it cooks, about 5 min.",
                 "Add wine and simmer, scraping up any browned bits from the bottom, until reduced by half, about 5 min.",
@@ -3881,41 +6411,53 @@ const data = {
               ]
             },
             {
-              title: "Spiced Meatballs with Pappardelle",
-              servings: "Serves 4   |   Total: 1 hr 15 min",
-              source: "Molly Baz, The Club",
-              ingredientGroups: [
-                { label: "Sauce", ingredients: [
-                  "3 Tbsp unsalted butter",
-                  "1 large yellow onion, finely chopped",
-                  "1 cinnamon stick",
-                  "1 tsp Aleppo pepper or red pepper flakes",
-                  "1 (28-oz) can crushed tomatoes",
-                  "2 Tbsp red wine vinegar",
-                  "Kosher salt"
-                ]},
-                { label: "Meatball mixture", ingredients: [
-                  "1 large egg",
-                  "2 Tbsp extra-virgin olive oil",
-                  "1 cup panko breadcrumbs",
-                  "1 1/2 tsp garam masala (or baharat or hawaij)",
-                  "1 1/2 tsp ground turmeric",
-                  "1 Tbsp kosher salt, plus more",
-                  "1/3 cup golden raisins or currants",
-                  "3 garlic cloves, finely grated",
-                  "1 bunch dill, coarsely chopped (reserve a handful for garnish)",
-                  "1 bunch cilantro, coarsely chopped (reserve a handful for garnish)"
-                ]},
-                { label: "Beef", ingredients: [
-                  "1 lb ground beef (80/20)"
-                ]},
-                { label: "Finish", ingredients: [
-                  "1/2 cup water",
-                  "1 Tbsp unsalted butter",
-                  "1 lb fresh pappardelle or other fresh long pasta"
-                ]}
+              "title": "Spiced Meatballs with Pappardelle",
+              "servings": "Serves 4   |   Total: 1 hr 15 min",
+              "source": "Molly Baz, The Club",
+              "ingredientGroups": [
+                {
+                  "label": "Sauce",
+                  "ingredients": [
+                    "3 Tbsp unsalted butter",
+                    "1 large yellow onion, finely chopped",
+                    "1 cinnamon stick",
+                    "1 tsp Aleppo pepper or red pepper flakes",
+                    "1 (28-oz) can crushed tomatoes",
+                    "2 Tbsp red wine vinegar",
+                    "Kosher salt"
+                  ]
+                },
+                {
+                  "label": "Meatball mixture",
+                  "ingredients": [
+                    "1 large egg",
+                    "2 Tbsp extra-virgin olive oil",
+                    "1 cup panko breadcrumbs",
+                    "1 1/2 tsp garam masala (or baharat or hawaij)",
+                    "1 1/2 tsp ground turmeric",
+                    "1 Tbsp kosher salt, plus more",
+                    "1/3 cup golden raisins or currants",
+                    "3 garlic cloves, finely grated",
+                    "1 bunch dill, coarsely chopped (reserve a handful for garnish)",
+                    "1 bunch cilantro, coarsely chopped (reserve a handful for garnish)"
+                  ]
+                },
+                {
+                  "label": "Beef",
+                  "ingredients": [
+                    "1 lb ground beef (80/20)"
+                  ]
+                },
+                {
+                  "label": "Finish",
+                  "ingredients": [
+                    "1/2 cup water",
+                    "1 Tbsp unsalted butter",
+                    "1 lb fresh pappardelle or other fresh long pasta"
+                  ]
+                }
               ],
-              steps: [
+              "steps": [
                 "Preheat oven to 400°F. In a large Dutch oven over medium heat, melt 3 Tbsp butter. Add onion, cinnamon stick, Aleppo pepper or red pepper flakes, and a big pinch of salt. Cook, stirring, until onions begin to soften, 5–6 minutes. Add crushed tomatoes and red wine vinegar. Cover with a tight-fitting lid and transfer to oven for 20 minutes.",
                 "Meanwhile, in a large bowl, whisk together egg and olive oil. Add panko, garam masala, turmeric, salt, raisins, and grated garlic; mix well. Coarsely chop dill and cilantro (reserving a handful of each for garnish) and stir into the panko mixture. Scoop out 3/4 cup of this mixture and spread on a small rimmed baking sheet; toast in the oven until golden and crisp, stirring once, 9–14 minutes. Let cool. (These are your breadcrumbs.)",
                 "Add ground beef to the remaining panko mixture and work with your hands until evenly combined. Divide into 8 equal portions and roll into balls.",
@@ -3926,57 +6468,75 @@ const data = {
           ]
         },
         {
-          title: "Asian",
-          recipes: [
+          "title": "Asian",
+          "recipes": [
             {
-              title: "Fried Drunken Noodles with Chicken (Phad Kii Maw Gai)",
-              servings: "Serves 6",
-              source: "\"A Passion for Thai Cooking\" by Sompon and Elizabeth Nabnian, p. 69",
-              comments: [
+              "title": "Fried Drunken Noodles with Chicken (Phad Kii Maw Gai)",
+              "servings": "Serves 6",
+              "source": "\"A Passion for Thai Cooking\" by Sompon and Elizabeth Nabnian, p. 69",
+              "comments": [
                 "Scaled to 6 servings. The book's original recipe listed \"serves 4\" but the full quantities were more consistent with 10–12; this is half of the full recipe.",
                 "Krachai (also called fingerroot or lesser ginger) is a Thai rhizome available at Asian grocery stores. Substitute extra fresh ginger in a pinch.",
                 "Use holy basil (Thai holy basil / bai krapao), which is distinct from Thai sweet basil.",
                 "Adjust chilli quantity to taste — the recipe is designed to be quite spicy."
               ],
-              ingredientGroups: [
-                { label: "Aromatics", ingredients: [
-                  "90ml (6 tablespoons) vegetable oil, divided",
-                  "5 cloves garlic, roughly chopped",
-                  "2 shallots, roughly chopped",
-                  "1 big green chilli, sliced",
-                  "1 big red chilli, sliced",
-                  "3 medium chillies, roughly chopped"
-                ]},
-                { label: "Chicken and aromatics", ingredients: [
-                  "150g (5 oz) chicken, thinly sliced",
-                  "30g (1 oz) krachai (fingerroot / lesser ginger), shredded",
-                  "10g fresh young green peppercorns",
-                  "15g (1/2 oz) dried shrimps"
-                ]},
-                { label: "Vegetables", ingredients: [
-                  "1 small tomato, cut into wedges",
-                  "3–4 long beans, sliced",
-                  "2 baby corn, each sliced into 3",
-                  "75g (2-1/2 oz) straw mushrooms, quartered",
-                  "50g (1-3/4 oz) carrots, sliced"
-                ]},
-                { label: "Noodles and eggs", ingredients: [
-                  "175g (6 oz) large flat rice noodles",
-                  "1/4 teaspoon sweet soy sauce",
-                  "2 eggs, beaten"
-                ]},
-                { label: "Sauce", ingredients: [
-                  "30ml (2 tablespoons) oyster sauce",
-                  "15ml (1 tablespoon) soy sauce",
-                  "30ml (2 tablespoons) fish sauce",
-                  "1/4 teaspoon sugar"
-                ]},
-                { label: "Finish", ingredients: [
-                  "50g (1-3/4 oz) peanuts, roasted and crushed",
-                  "15g holy basil leaves"
-                ]}
+              "ingredientGroups": [
+                {
+                  "label": "Aromatics",
+                  "ingredients": [
+                    "90ml (6 tablespoons) vegetable oil, divided",
+                    "5 cloves garlic, roughly chopped",
+                    "2 shallots, roughly chopped",
+                    "1 big green chilli, sliced",
+                    "1 big red chilli, sliced",
+                    "3 medium chillies, roughly chopped"
+                  ]
+                },
+                {
+                  "label": "Chicken and aromatics",
+                  "ingredients": [
+                    "150g (5 oz) chicken, thinly sliced",
+                    "30g (1 oz) krachai (fingerroot / lesser ginger), shredded",
+                    "10g fresh young green peppercorns",
+                    "15g (1/2 oz) dried shrimps"
+                  ]
+                },
+                {
+                  "label": "Vegetables",
+                  "ingredients": [
+                    "1 small tomato, cut into wedges",
+                    "3–4 long beans, sliced",
+                    "2 baby corn, each sliced into 3",
+                    "75g (2-1/2 oz) straw mushrooms, quartered",
+                    "50g (1-3/4 oz) carrots, sliced"
+                  ]
+                },
+                {
+                  "label": "Noodles and eggs",
+                  "ingredients": [
+                    "175g (6 oz) large flat rice noodles",
+                    "1/4 teaspoon sweet soy sauce",
+                    "2 eggs, beaten"
+                  ]
+                },
+                {
+                  "label": "Sauce",
+                  "ingredients": [
+                    "30ml (2 tablespoons) oyster sauce",
+                    "15ml (1 tablespoon) soy sauce",
+                    "30ml (2 tablespoons) fish sauce",
+                    "1/4 teaspoon sugar"
+                  ]
+                },
+                {
+                  "label": "Finish",
+                  "ingredients": [
+                    "50g (1-3/4 oz) peanuts, roasted and crushed",
+                    "15g holy basil leaves"
+                  ]
+                }
               ],
-              steps: [
+              "steps": [
                 "Heat 30ml (2 tablespoons) of the oil in a wok over high heat. Add the garlic, shallots, and all the chillies; fry for 1 minute.",
                 "Add the chicken; stir-fry until the outside turns white, 2–3 minutes.",
                 "Add the krachai, green peppercorns, and dried shrimps; stir-fry for 2 more minutes.",
@@ -3987,27 +6547,33 @@ const data = {
               ]
             },
             {
-              title: "Stir-Fried Udon Noodles With Pork and Scallions",
-              servings: "Serves 4   |   Total: 25 min",
-              source: "Claire Saffitz, Bon Appétit (April 2019)",
-              ingredientGroups: [
-                { label: "Noodles + cabbage", ingredients: [
-                  "4 cups very coarsely chopped green cabbage (about 1/4 medium head)",
-                  "2 (7-oz.) packages instant udon noodles, flavor packets discarded"
-                ]},
-                { label: "Stir-fry", ingredients: [
-                  "2 Tbsp vegetable oil, divided",
-                  "2 tsp toasted sesame oil",
-                  "8 oz ground pork",
-                  "5 scallions, white and pale green parts coarsely chopped, dark green parts thinly sliced (kept separate)",
-                  "2 tsp finely grated peeled ginger",
-                  "1 tsp Aleppo pepper or red pepper flakes",
-                  "1/3 cup mirin (sweet Japanese rice wine)",
-                  "1/3 cup soy sauce",
-                  "1 Tbsp toasted sesame seeds, plus more for serving"
-                ]}
+              "title": "Stir-Fried Udon Noodles With Pork and Scallions",
+              "servings": "Serves 4   |   Total: 25 min",
+              "source": "Claire Saffitz, Bon Appétit (April 2019)",
+              "ingredientGroups": [
+                {
+                  "label": "Noodles + cabbage",
+                  "ingredients": [
+                    "4 cups very coarsely chopped green cabbage (about 1/4 medium head)",
+                    "2 (7-oz.) packages instant udon noodles, flavor packets discarded"
+                  ]
+                },
+                {
+                  "label": "Stir-fry",
+                  "ingredients": [
+                    "2 Tbsp vegetable oil, divided",
+                    "2 tsp toasted sesame oil",
+                    "8 oz ground pork",
+                    "5 scallions, white and pale green parts coarsely chopped, dark green parts thinly sliced (kept separate)",
+                    "2 tsp finely grated peeled ginger",
+                    "1 tsp Aleppo pepper or red pepper flakes",
+                    "1/3 cup mirin (sweet Japanese rice wine)",
+                    "1/3 cup soy sauce",
+                    "1 Tbsp toasted sesame seeds, plus more for serving"
+                  ]
+                }
               ],
-              steps: [
+              "steps": [
                 "Heat 1 Tbsp vegetable oil in a large skillet over medium-high. Cook cabbage, tossing often, until edges are browned, about 4 min. Reduce heat to low and continue cooking until thickest parts are tender, about 4 min more. Remove from heat.",
                 "Place udon noodles in a large heatproof bowl; cover with 6 cups boiling water. Let sit 1 minute, stirring to separate, then drain. Toss noodles with sesame oil. Add reserved cabbage to bowl.",
                 "Wipe out skillet. Heat remaining 1 Tbsp vegetable oil over medium-high. Add pork, spreading across the pan; cook undisturbed until underside is browned, about 3 min. Break up meat and continue cooking until no longer pink, about 1 min. Add scallion whites and pale greens, ginger, and Aleppo pepper; cook, tossing, until scallions soften and skillet starts to brown, about 1 min.",
@@ -4020,104 +6586,134 @@ const data = {
       ]
     },
     {
-      title: "Baking",
-      subsections: [
-        { title: "Savory", recipes: [
-          {
-            title: "72-Hour Pizza Dough",
-            servings: "Makes 3 pizzas (~283g each)",
-            source: "The Gourmandise School (The Pizza Class)",
-            ingredientGroups: [
-              {
-                label: null,
-                ingredients: [
-                  "350 ml water",
-                  "½ Tbsp dry yeast",
-                  "500g bread flour (or strong all-purpose, like King Arthur)",
-                  "3 tsps kosher salt (Diamond Crystal preferred)"
-                ]
-              }
-            ],
-            steps: [
-              "In a large bowl, combine the water and yeast. Add the flour and salt and mix with one hand until it just forms a smooth dough. Cover and let rise at room temperature for 12–24 hours. It will nearly double in size.",
-              "After this initial ferment, place the dough in the fridge for another 12–48 hours.",
-              "Remove the dough from the fridge and lightly flour your counter. Divide the dough into 3 portions of about 283 grams each. Gently purse one of your dough balls so that just one seam at the bottom of the dough remains, much like a balloon you'd blow into.",
-              "Move to a part of your counter that is un-floured and give the dough a gentle rub, seam side down, on that area. Place the dough ball on a floured part of the counter to rest for 4 hours (closer to 3½ hours on a warm day). Repeat with the remaining dough balls; once all have been pre-shaped, lightly flour the tops and cover them. Place them a couple of inches apart to give them room to get slack again.",
-              "Preheat your oven to 450°F with a baking steel or pizza stone inside. For best results, preheat for at least 45 minutes to 1 hour. Alternatively, if using a pizza oven (e.g. Ooni), preheat according to its instructions until it reaches 700–900°F.",
-              "Shape your pizzas most of the way before placing them on a floured peel or baking sheet turned upside-down. Just before baking, place the pizza on the peel, finish stretching it, and add toppings. For a conventional oven: move the pizza to the stone or steel by tilting the peel slightly, shoving the pizza forward and jerking back to release it onto the hot surface. For a pizza oven: launch directly onto the hot stone and bake for 60–90 seconds, rotating once halfway through."
-            ]
-          },
-          {
-            title: "Susan's Calzones",
-            servings: "Serves 4",
-            source: "Family recipe card, credited to Susan",
-            ingredientGroups: [
-              { label: "Dough (5 hours ahead)", ingredients: [
-                "12 Rhodes frozen dinner rolls (3 per person), defrosted and risen"
-              ]},
-              { label: "Filling", ingredients: [
-                "1 lb ground beef or ground turkey",
-                "About 1/2 cup spaghetti sauce, or enough to hold filling together"
-              ]},
-              { label: "Cheese", ingredients: [
-                "1 cup shredded mozzarella",
-                "1/2 cup grated parmesan"
-              ]},
-              { label: "Add-ins (optional)", ingredients: [
-                "Sliced olives",
-                "Pepperoni",
-                "Sautéed mushrooms"
-              ]},
-              { label: "Topping (optional)", ingredients: [
-                "Additional spaghetti sauce",
-                "Additional grated parmesan"
-              ]}
-            ],
-            steps: [
-              "Defrost rolls at room temperature and let rise until doubled, about 5 hours (or per package directions).",
-              "Brown ground beef or turkey in a skillet over medium heat; drain fat.",
-              "Mix browned meat with spaghetti sauce (enough to hold the mixture together but not soupy), mozzarella, and parmesan. Stir in any optional add-ins.",
-              "On a lightly floured surface, press each group of 3 risen rolls together and roll into a rough square.",
-              "Spoon filling onto one half of each square. Fold dough over to form a triangle. Press edges firmly with fork tines to seal.",
-              "Place on a baking sheet. Bake at 350°F for 18 minutes.",
-              "Optional: 10 minutes in, spoon additional spaghetti sauce over the top and sprinkle with parmesan; return to oven for remaining 8 minutes."
-            ]
-          }
-        ]},
+      "title": "Baking",
+      "subsections": [
         {
-          title: "Sweet",
-          recipes: [
+          "title": "Savory",
+          "recipes": [
             {
-              title: "Butter Pecan Coffee Cake",
-              servings: "Serves 12–16",
-              source: "Family recipe card",
-              comments: [
+              "title": "72-Hour Pizza Dough",
+              "servings": "Makes 3 pizzas (~283g each)",
+              "source": "The Gourmandise School (The Pizza Class)",
+              "ingredientGroups": [
+                {
+                  "label": null,
+                  "ingredients": [
+                    "350 ml water",
+                    "½ Tbsp dry yeast",
+                    "500g bread flour (or strong all-purpose, like King Arthur)",
+                    "3 tsps kosher salt (Diamond Crystal preferred)"
+                  ]
+                }
+              ],
+              "steps": [
+                "In a large bowl, combine the water and yeast. Add the flour and salt and mix with one hand until it just forms a smooth dough. Cover and let rise at room temperature for 12–24 hours. It will nearly double in size.",
+                "After this initial ferment, place the dough in the fridge for another 12–48 hours.",
+                "Remove the dough from the fridge and lightly flour your counter. Divide the dough into 3 portions of about 283 grams each. Gently purse one of your dough balls so that just one seam at the bottom of the dough remains, much like a balloon you'd blow into.",
+                "Move to a part of your counter that is un-floured and give the dough a gentle rub, seam side down, on that area. Place the dough ball on a floured part of the counter to rest for 4 hours (closer to 3½ hours on a warm day). Repeat with the remaining dough balls; once all have been pre-shaped, lightly flour the tops and cover them. Place them a couple of inches apart to give them room to get slack again.",
+                "Preheat your oven to 450°F with a baking steel or pizza stone inside. For best results, preheat for at least 45 minutes to 1 hour. Alternatively, if using a pizza oven (e.g. Ooni), preheat according to its instructions until it reaches 700–900°F.",
+                "Shape your pizzas most of the way before placing them on a floured peel or baking sheet turned upside-down. Just before baking, place the pizza on the peel, finish stretching it, and add toppings. For a conventional oven: move the pizza to the stone or steel by tilting the peel slightly, shoving the pizza forward and jerking back to release it onto the hot surface. For a pizza oven: launch directly onto the hot stone and bake for 60–90 seconds, rotating once halfway through."
+              ]
+            },
+            {
+              "title": "Susan's Calzones",
+              "servings": "Serves 4",
+              "source": "Family recipe card, credited to Susan",
+              "ingredientGroups": [
+                {
+                  "label": "Dough (5 hours ahead)",
+                  "ingredients": [
+                    "12 Rhodes frozen dinner rolls (3 per person), defrosted and risen"
+                  ]
+                },
+                {
+                  "label": "Filling",
+                  "ingredients": [
+                    "1 lb ground beef or ground turkey",
+                    "About 1/2 cup spaghetti sauce, or enough to hold filling together"
+                  ]
+                },
+                {
+                  "label": "Cheese",
+                  "ingredients": [
+                    "1 cup shredded mozzarella",
+                    "1/2 cup grated parmesan"
+                  ]
+                },
+                {
+                  "label": "Add-ins (optional)",
+                  "ingredients": [
+                    "Sliced olives",
+                    "Pepperoni",
+                    "Sautéed mushrooms"
+                  ]
+                },
+                {
+                  "label": "Topping (optional)",
+                  "ingredients": [
+                    "Additional spaghetti sauce",
+                    "Additional grated parmesan"
+                  ]
+                }
+              ],
+              "steps": [
+                "Defrost rolls at room temperature and let rise until doubled, about 5 hours (or per package directions).",
+                "Brown ground beef or turkey in a skillet over medium heat; drain fat.",
+                "Mix browned meat with spaghetti sauce (enough to hold the mixture together but not soupy), mozzarella, and parmesan. Stir in any optional add-ins.",
+                "On a lightly floured surface, press each group of 3 risen rolls together and roll into a rough square.",
+                "Spoon filling onto one half of each square. Fold dough over to form a triangle. Press edges firmly with fork tines to seal.",
+                "Place on a baking sheet. Bake at 350°F for 18 minutes.",
+                "Optional: 10 minutes in, spoon additional spaghetti sauce over the top and sprinkle with parmesan; return to oven for remaining 8 minutes."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Sweet",
+          "recipes": [
+            {
+              "title": "Butter Pecan Coffee Cake",
+              "servings": "Serves 12–16",
+              "source": "Family recipe card",
+              "comments": [
                 "The key technique: butter and pecans go into the Bundt pan during preheat, so they melt and toast before the batter goes in. Invert immediately after baking so the caramelized pecan layer becomes the topping.",
                 "Vanilla-butter-nut flavoring can substitute for the vanilla and butter flavoring — use 3 tsp. Alternatively, use 2 tsp pure vanilla with no butter flavoring."
               ],
-              ingredientGroups: [
-                { label: "Pan base", ingredients: [
-                  "1 stick (8 T) butter or margarine",
-                  "1 cup pecans"
-                ]},
-                { label: "Batter", ingredients: [
-                  "1 package Duncan Hines yellow cake mix",
-                  "1 package Jell-O instant vanilla pudding",
-                  "3/4 cup vegetable oil",
-                  "3/4 cup water",
-                  "1 tsp pure vanilla extract",
-                  "1 tsp butter flavoring (or use 2 tsp pure vanilla with no butter flavoring)"
-                ]},
-                { label: "Eggs", ingredients: [
-                  "4 large eggs, beaten"
-                ]},
-                { label: "Cinnamon swirl", ingredients: [
-                  "2 tsp cinnamon",
-                  "1/2 cup sugar",
-                  "1/2 cup pecans"
-                ]}
+              "ingredientGroups": [
+                {
+                  "label": "Pan base",
+                  "ingredients": [
+                    "1 stick (8 T) butter or margarine",
+                    "1 cup pecans"
+                  ]
+                },
+                {
+                  "label": "Batter",
+                  "ingredients": [
+                    "1 package Duncan Hines yellow cake mix",
+                    "1 package Jell-O instant vanilla pudding",
+                    "3/4 cup vegetable oil",
+                    "3/4 cup water",
+                    "1 tsp pure vanilla extract",
+                    "1 tsp butter flavoring (or use 2 tsp pure vanilla with no butter flavoring)"
+                  ]
+                },
+                {
+                  "label": "Eggs",
+                  "ingredients": [
+                    "4 large eggs, beaten"
+                  ]
+                },
+                {
+                  "label": "Cinnamon swirl",
+                  "ingredients": [
+                    "2 tsp cinnamon",
+                    "1/2 cup sugar",
+                    "1/2 cup pecans"
+                  ]
+                }
               ],
-              steps: [
+              "steps": [
                 "Grease and flour a Bundt pan. Place butter and 1 cup pecans in the bottom.",
                 "Place pan in oven while it preheats to 350°F; leave for 6 minutes, so the butter melts and pecans toast slightly.",
                 "Meanwhile, in a large mixing bowl, combine cake mix, pudding mix, oil, water, vanilla, and butter flavoring. Beat to combine.",
@@ -4130,17 +6726,46 @@ const data = {
               ]
             },
             {
-              title: "Eric's Chocolate Chip Cookies",
-              servings: "About 3 dozen cookies",
-              comments: ["Based on the classic Toll House chocolate chip cookie recipe, with a few of Eric's own touches — rolled oats and roughly chopped pecans."],
-              source: "Base recipe: Nestlé Toll House (https://www.verybestbaking.com/toll-house/recipes/chocolate-chip-cookies/)",
-              ingredientGroups: [
-                { label: "Dry ingredients", ingredients: ["2 1/4 cups all-purpose flour", "1 cup rolled quick oats", "1 teaspoon baking soda", "1 teaspoon salt"] },
-                { label: "Creamed base", ingredients: ["1 cup (2 sticks) unsalted butter, softened", "3/4 cup granulated sugar", "3/4 cup packed brown sugar"] },
-                { label: "Added to the creamed base", ingredients: ["1 teaspoon vanilla extract", "2 large eggs"] },
-                { label: "Folded in", ingredients: ["2 cups (12 ounces) semisweet chocolate chips", "1 cup pecans, very roughly chopped into big pieces"] }
+              "title": "Eric's Chocolate Chip Cookies",
+              "servings": "About 3 dozen cookies",
+              "comments": [
+                "Based on the classic Toll House chocolate chip cookie recipe, with a few of Eric's own touches — rolled oats and roughly chopped pecans."
               ],
-              steps: [
+              "source": "Base recipe: Nestlé Toll House (https://www.verybestbaking.com/toll-house/recipes/chocolate-chip-cookies/)",
+              "ingredientGroups": [
+                {
+                  "label": "Dry ingredients",
+                  "ingredients": [
+                    "2 1/4 cups all-purpose flour",
+                    "1 cup rolled quick oats",
+                    "1 teaspoon baking soda",
+                    "1 teaspoon salt"
+                  ]
+                },
+                {
+                  "label": "Creamed base",
+                  "ingredients": [
+                    "1 cup (2 sticks) unsalted butter, softened",
+                    "3/4 cup granulated sugar",
+                    "3/4 cup packed brown sugar"
+                  ]
+                },
+                {
+                  "label": "Added to the creamed base",
+                  "ingredients": [
+                    "1 teaspoon vanilla extract",
+                    "2 large eggs"
+                  ]
+                },
+                {
+                  "label": "Folded in",
+                  "ingredients": [
+                    "2 cups (12 ounces) semisweet chocolate chips",
+                    "1 cup pecans, very roughly chopped into big pieces"
+                  ]
+                }
+              ],
+              "steps": [
                 "Whisk together the flour, oats, baking soda, and salt in a medium bowl; set aside.",
                 "Cream the butter and sugars: In the bowl of a stand mixer fitted with the paddle attachment, beat the butter, granulated sugar, and brown sugar on medium-high speed until pale and fluffy, about 3 to 4 minutes.",
                 "Add the vanilla and eggs; continue beating on medium speed until fully incorporated and the mixture looks well emulsified.",
@@ -4153,21 +6778,54 @@ const data = {
               ]
             },
             {
-              title: "Chocolate \"Birthday Cake\"",
-              servings: "One large sheet cake or a 2-layer 9-inch cake   |   Cook: 40-45 minutes",
-              comments: [
+              "title": "Chocolate \"Birthday Cake\"",
+              "servings": "One large sheet cake or a 2-layer 9-inch cake   |   Cook: 40-45 minutes",
+              "comments": [
                 "For a single layer, halve the butter, sugar, chocolate, flour, baking soda, salt, vanilla, and water as noted below. For 1 1/2 eggs: whisk 2 eggs together and use 3/4 of the mixture.",
                 "Don't halve the frosting, even for a single layer — a full batch is right (a half batch isn't quite enough)."
               ],
-              source: "Family recipe card written by Grandmother Brenda; the single-layer/half-batch margin annotations are from Lauren",
-              ingredientGroups: [
-                { label: "Creamed base", ingredients: ["1 cup (2 sticks) butter [1 stick]", "2 cups sugar [1 cup]", "3 eggs [1 1/2 eggs]", "2 teaspoons vanilla [1 teaspoon]"] },
-                { label: "Chocolate", ingredients: ["4 oz unsweetened chocolate [2 oz]"] },
-                { label: "Dry ingredients", ingredients: ["2 2/3 cups flour [1 1/3 cups]", "2 teaspoons baking soda [1 teaspoon]", "1 teaspoon salt [1/2 teaspoon]"] },
-                { label: "Liquid", ingredients: ["Up to 2 cups water, added gradually as needed [up to 1 cup]"] },
-                { label: "Frosting", ingredients: ["2 cups confectioners' sugar (be generous — you may want more)", "3/4 cup butter", "1 teaspoon vanilla", "2-3 oz unsweetened chocolate, melted"] }
+              "source": "Family recipe card written by Grandmother Brenda; the single-layer/half-batch margin annotations are from Lauren",
+              "ingredientGroups": [
+                {
+                  "label": "Creamed base",
+                  "ingredients": [
+                    "1 cup (2 sticks) butter [1 stick]",
+                    "2 cups sugar [1 cup]",
+                    "3 eggs [1 1/2 eggs]",
+                    "2 teaspoons vanilla [1 teaspoon]"
+                  ]
+                },
+                {
+                  "label": "Chocolate",
+                  "ingredients": [
+                    "4 oz unsweetened chocolate [2 oz]"
+                  ]
+                },
+                {
+                  "label": "Dry ingredients",
+                  "ingredients": [
+                    "2 2/3 cups flour [1 1/3 cups]",
+                    "2 teaspoons baking soda [1 teaspoon]",
+                    "1 teaspoon salt [1/2 teaspoon]"
+                  ]
+                },
+                {
+                  "label": "Liquid",
+                  "ingredients": [
+                    "Up to 2 cups water, added gradually as needed [up to 1 cup]"
+                  ]
+                },
+                {
+                  "label": "Frosting",
+                  "ingredients": [
+                    "2 cups confectioners' sugar (be generous — you may want more)",
+                    "3/4 cup butter",
+                    "1 teaspoon vanilla",
+                    "2-3 oz unsweetened chocolate, melted"
+                  ]
+                }
               ],
-              steps: [
+              "steps": [
                 "Cream the butter; add the sugar, then the eggs and vanilla, beating well after each addition.",
                 "Melt the chocolate in the microwave (20-30 second bursts, stirring between, until smooth) and add to the creamed mixture.",
                 "Sift together the flour, baking soda, and salt.",
@@ -4180,21 +6838,53 @@ const data = {
               ]
             },
             {
-              title: "Jumbo Banana-Nut Muffins",
-              servings: "Makes 12 muffins",
-              comments: [
+              "title": "Jumbo Banana-Nut Muffins",
+              "servings": "Makes 12 muffins",
+              "comments": [
                 "Recipe scaled 1.5x from original (from 9 jumbo muffins to 12). Walnuts made optional.",
                 "1 cup mashed ripe banana ≈ 2 medium bananas."
               ],
-              source: "Mostly Muffins (cookbook), p. 14",
-              ingredientGroups: [
-                { label: "Dry ingredients", ingredients: ["1 1/2 cups all-purpose flour", "1 1/2 cups whole-wheat flour", "1 1/2 teaspoons baking powder", "1 1/2 teaspoons baking soda", "1/4 teaspoon salt"] },
-                { label: "Wet base", ingredients: ["3/4 cup lightly salted butter or margarine, softened", "3/4 cup sugar"] },
-                { label: "Eggs", ingredients: ["3 eggs"] },
-                { label: "Wet additions", ingredients: ["2 cups mashed ripe banana (about 4 medium bananas)", "6 tablespoons (3/8 cup) milk", "1 1/2 teaspoons vanilla"] },
-                { label: "Walnuts (optional)", ingredients: ["3/4 cup broken walnuts (optional)"] }
+              "source": "Mostly Muffins (cookbook), p. 14",
+              "ingredientGroups": [
+                {
+                  "label": "Dry ingredients",
+                  "ingredients": [
+                    "1 1/2 cups all-purpose flour",
+                    "1 1/2 cups whole-wheat flour",
+                    "1 1/2 teaspoons baking powder",
+                    "1 1/2 teaspoons baking soda",
+                    "1/4 teaspoon salt"
+                  ]
+                },
+                {
+                  "label": "Wet base",
+                  "ingredients": [
+                    "3/4 cup lightly salted butter or margarine, softened",
+                    "3/4 cup sugar"
+                  ]
+                },
+                {
+                  "label": "Eggs",
+                  "ingredients": [
+                    "3 eggs"
+                  ]
+                },
+                {
+                  "label": "Wet additions",
+                  "ingredients": [
+                    "2 cups mashed ripe banana (about 4 medium bananas)",
+                    "6 tablespoons (3/8 cup) milk",
+                    "1 1/2 teaspoons vanilla"
+                  ]
+                },
+                {
+                  "label": "Walnuts (optional)",
+                  "ingredients": [
+                    "3/4 cup broken walnuts (optional)"
+                  ]
+                }
               ],
-              steps: [
+              "steps": [
                 "Preheat oven to 375°F. Grease muffin cups and the edges surrounding the cups.",
                 "In a large bowl, stir together the flours, baking powder, baking soda, and salt.",
                 "In another bowl, cream butter and sugar until light and fluffy; beat in eggs. Stir in banana, milk, and vanilla.",
@@ -4204,15 +6894,26 @@ const data = {
               ]
             },
             {
-              title: "Nana's Poundcake",
-              favorite: true,
-              servings: "1 loaf or bundt cake   |   Cook: 90 minutes",
-              comments: ["A four-generation family recipe."],
-              source: "Family recipe, credited to Nana, via Lauren's blog post \"Nana's Poundcake, Food, and Cultural Connection\"",
-              ingredientGroups: [
-                { label: "Cake", ingredients: ["1/2 pound salted butter (2 sticks), softened", "1 3/4 cups sugar", "5 eggs", "2 cups sifted flour", "2 tablespoons vanilla"] }
+              "title": "Nana's Poundcake",
+              "favorite": true,
+              "servings": "1 loaf or bundt cake   |   Cook: 90 minutes",
+              "comments": [
+                "A four-generation family recipe."
               ],
-              steps: [
+              "source": "Family recipe, credited to Nana, via Lauren's blog post \"Nana's Poundcake, Food, and Cultural Connection\"",
+              "ingredientGroups": [
+                {
+                  "label": "Cake",
+                  "ingredients": [
+                    "1/2 pound salted butter (2 sticks), softened",
+                    "1 3/4 cups sugar",
+                    "5 eggs",
+                    "2 cups sifted flour",
+                    "2 tablespoons vanilla"
+                  ]
+                }
+              ],
+              "steps": [
                 "Cream the butter and sugar.",
                 "Add the eggs one at a time, beating constantly.",
                 "Add the flour and vanilla.",
@@ -4221,29 +6922,35 @@ const data = {
               ]
             },
             {
-              title: "Filled Coffee Cake",
-              servings: "Serves 12–16   |   Bake: 350–375°F for 30–40 minutes",
-              source: "Family recipe card, credited to Nana Regina (card reads \"delicious! Mother's\")",
-              ingredientGroups: [
-                { label: "Cake batter", ingredients: [
-                  "1/2 cup butter, softened (or margarine)",
-                  "2 cups sugar",
-                  "4 eggs, well beaten",
-                  "1 teaspoon vanilla",
-                  "3 cups flour",
-                  "2 teaspoons baking powder",
-                  "1/2 teaspoon salt",
-                  "1 cup milk"
-                ]},
-                { label: "Filling", ingredients: [
-                  "1 cup brown sugar",
-                  "1 cup nuts, chopped",
-                  "2 tablespoons butter",
-                  "2 tablespoons flour",
-                  "1 teaspoon cinnamon"
-                ]}
+              "title": "Filled Coffee Cake",
+              "servings": "Serves 12–16   |   Bake: 350–375°F for 30–40 minutes",
+              "source": "Family recipe card, credited to Nana Regina (card reads \"delicious! Mother's\")",
+              "ingredientGroups": [
+                {
+                  "label": "Cake batter",
+                  "ingredients": [
+                    "1/2 cup butter, softened (or margarine)",
+                    "2 cups sugar",
+                    "4 eggs, well beaten",
+                    "1 teaspoon vanilla",
+                    "3 cups flour",
+                    "2 teaspoons baking powder",
+                    "1/2 teaspoon salt",
+                    "1 cup milk"
+                  ]
+                },
+                {
+                  "label": "Filling",
+                  "ingredients": [
+                    "1 cup brown sugar",
+                    "1 cup nuts, chopped",
+                    "2 tablespoons butter",
+                    "2 tablespoons flour",
+                    "1 teaspoon cinnamon"
+                  ]
+                }
               ],
-              steps: [
+              "steps": [
                 "Preheat oven to 350–375°F. Grease a 9x13 pan (or tube pan).",
                 "Cream butter and sugar until light and fluffy. Add well-beaten eggs and vanilla; beat well.",
                 "Whisk together flour, baking powder, and salt in a separate bowl.",
@@ -4254,28 +6961,37 @@ const data = {
               ]
             },
             {
-              title: "Nut Butter Balls",
-              servings: "About 4 dozen   |   Bake: 325°F for 25 minutes",
-              source: "Family recipe card (Grandmother Brenda's collection)",
-              comments: [
+              "title": "Nut Butter Balls",
+              "servings": "About 4 dozen   |   Bake: 325°F for 25 minutes",
+              "source": "Family recipe card (Grandmother Brenda's collection)",
+              "comments": [
                 "Card notes 'double recipe' — these quantities are the base (single) recipe."
               ],
-              ingredientGroups: [
-                { label: "Dough", ingredients: [
-                  "2 cups flour",
-                  "1/4 cup sugar",
-                  "1/2 teaspoon salt",
-                  "1/2 lb. (2 sticks) butter, softened",
-                  "2 teaspoons vanilla"
-                ]},
-                { label: "Coating", ingredients: [
-                  "1 cup chopped nuts"
-                ]},
-                { label: "Finish", ingredients: [
-                  "Powdered sugar, for rolling"
-                ]}
+              "ingredientGroups": [
+                {
+                  "label": "Dough",
+                  "ingredients": [
+                    "2 cups flour",
+                    "1/4 cup sugar",
+                    "1/2 teaspoon salt",
+                    "1/2 lb. (2 sticks) butter, softened",
+                    "2 teaspoons vanilla"
+                  ]
+                },
+                {
+                  "label": "Coating",
+                  "ingredients": [
+                    "1 cup chopped nuts"
+                  ]
+                },
+                {
+                  "label": "Finish",
+                  "ingredients": [
+                    "Powdered sugar, for rolling"
+                  ]
+                }
               ],
-              steps: [
+              "steps": [
                 "Preheat oven to 325°F.",
                 "Sift together flour, sugar, and salt. Add softened butter and vanilla; work together with hands until a dough forms.",
                 "Shape into 1-inch balls, then roll each ball in the chopped nuts to coat.",
@@ -4284,41 +7000,53 @@ const data = {
               ]
             },
             {
-              title: "Red Velvet Cake",
-              servings: "One 6-layer cake   |   Bake: 350°F for 30 minutes",
-              source: "Family recipe card (Grandmother Brenda; card noted as \"original on paper yellow with age\")",
-              comments: [
+              "title": "Red Velvet Cake",
+              "servings": "One 6-layer cake   |   Bake: 350°F for 30 minutes",
+              "source": "Family recipe card (Grandmother Brenda; card noted as \"original on paper yellow with age\")",
+              "comments": [
                 "Uses a cooked ermine frosting (flour-and-milk based) rather than the cream cheese frosting common in modern versions.",
                 "The 2 oz. of red food coloring gives the classic deep red color."
               ],
-              ingredientGroups: [
-                { label: "Cocoa paste", ingredients: [
-                  "3 tablespoons unsweetened cocoa powder (Dutch-process; e.g. Nestlé Toll House Cocoa or Hershey's Special Dark)",
-                  "2 oz. red food coloring"
-                ]},
-                { label: "Cake", ingredients: [
-                  "1/2 cup vegetable shortening",
-                  "1-3/4 cups sugar",
-                  "2 eggs, beaten",
-                  "1 cup buttermilk",
-                  "2-1/2 cups cake flour",
-                  "1 teaspoon vanilla",
-                  "1 teaspoon salt",
-                  "1 teaspoon baking soda",
-                  "1 tablespoon white vinegar"
-                ]},
-                { label: "Frosting — Part 1 (cool completely before using)", ingredients: [
-                  "5 tablespoons flour",
-                  "1 cup milk"
-                ]},
-                { label: "Frosting — Part 2", ingredients: [
-                  "1/2 cup butter, softened",
-                  "1/2 cup vegetable shortening",
-                  "1 cup granulated sugar",
-                  "2 tablespoons vanilla"
-                ]}
+              "ingredientGroups": [
+                {
+                  "label": "Cocoa paste",
+                  "ingredients": [
+                    "3 tablespoons unsweetened cocoa powder (Dutch-process; e.g. Nestlé Toll House Cocoa or Hershey's Special Dark)",
+                    "2 oz. red food coloring"
+                  ]
+                },
+                {
+                  "label": "Cake",
+                  "ingredients": [
+                    "1/2 cup vegetable shortening",
+                    "1-3/4 cups sugar",
+                    "2 eggs, beaten",
+                    "1 cup buttermilk",
+                    "2-1/2 cups cake flour",
+                    "1 teaspoon vanilla",
+                    "1 teaspoon salt",
+                    "1 teaspoon baking soda",
+                    "1 tablespoon white vinegar"
+                  ]
+                },
+                {
+                  "label": "Frosting — Part 1 (cool completely before using)",
+                  "ingredients": [
+                    "5 tablespoons flour",
+                    "1 cup milk"
+                  ]
+                },
+                {
+                  "label": "Frosting — Part 2",
+                  "ingredients": [
+                    "1/2 cup butter, softened",
+                    "1/2 cup vegetable shortening",
+                    "1 cup granulated sugar",
+                    "2 tablespoons vanilla"
+                  ]
+                }
               ],
-              steps: [
+              "steps": [
                 "Preheat oven to 350°F. Grease and flour cake pans.",
                 "In a small bowl, mix cocoa powder and red food coloring into a paste. Set aside.",
                 "Cream shortening and sugar until light. Add beaten eggs; mix well. Add the cocoa-coloring paste; blend.",
@@ -4331,27 +7059,33 @@ const data = {
               ]
             },
             {
-              title: "Blintz Soufflé",
-              servings: "Serves 6–8   |   Bake: 350°F covered 1 hour, then uncovered 10 minutes",
-              source: "Family recipe, courtesy of Marsha Firestone (noted on card as smaller recipe for small casserole)",
-              comments: [
+              "title": "Blintz Soufflé",
+              "servings": "Serves 6–8   |   Bake: 350°F covered 1 hour, then uncovered 10 minutes",
+              "source": "Family recipe, courtesy of Marsha Firestone (noted on card as smaller recipe for small casserole)",
+              "comments": [
                 "Marsha Firestone's smaller version — uses 2 packages of blintzes and a smaller casserole dish.",
                 "Frozen cheese blintzes from the store work perfectly."
               ],
-              ingredientGroups: [
-                { label: "Pan and blintzes", ingredients: [
-                  "1 stick (1/2 cup) butter",
-                  "2 packages (about 12) frozen cheese blintzes"
-                ]},
-                { label: "Custard", ingredients: [
-                  "6 eggs",
-                  "2/3 cup sugar",
-                  "1/2 teaspoon vanilla",
-                  "1 teaspoon orange juice",
-                  "1-1/2 cups sour cream"
-                ]}
+              "ingredientGroups": [
+                {
+                  "label": "Pan and blintzes",
+                  "ingredients": [
+                    "1 stick (1/2 cup) butter",
+                    "2 packages (about 12) frozen cheese blintzes"
+                  ]
+                },
+                {
+                  "label": "Custard",
+                  "ingredients": [
+                    "6 eggs",
+                    "2/3 cup sugar",
+                    "1/2 teaspoon vanilla",
+                    "1 teaspoon orange juice",
+                    "1-1/2 cups sour cream"
+                  ]
+                }
               ],
-              steps: [
+              "steps": [
                 "Preheat oven to 350°F.",
                 "Melt butter in a casserole dish. Arrange frozen blintzes in a single layer on top.",
                 "Beat eggs with sugar, vanilla, orange juice, and sour cream until smooth. Pour evenly over blintzes.",
@@ -4360,19 +7094,23 @@ const data = {
               ]
             },
             {
-              title: "Brenda's Noodle Kugel",
-              favorite: true,
-              source: "Family recipe card, credited to Brenda",
-              comments: ["Can be assembled up to 2 days ahead and refrigerated — hold the topping until ready to bake."],
-              ingredientGroups: [
+              "title": "Brenda's Noodle Kugel",
+              "favorite": true,
+              "source": "Family recipe card, credited to Brenda",
+              "comments": [
+                "Can be assembled up to 2 days ahead and refrigerated — hold the topping until ready to bake."
+              ],
+              "ingredientGroups": [
                 {
-                  label: "Noodles",
-                  ingredients: ["1 lb. extra-wide egg noodles"]
+                  "label": "Noodles",
+                  "ingredients": [
+                    "1 lb. extra-wide egg noodles"
+                  ]
                 },
                 {
-                  label: "Filling",
-                  note: "mix together",
-                  ingredients: [
+                  "label": "Filling",
+                  "note": "mix together",
+                  "ingredients": [
                     "8 oz. cream cheese, softened",
                     "1 cup sour cream",
                     "1 stick (1/2 cup) butter, softened",
@@ -4383,14 +7121,14 @@ const data = {
                   ]
                 },
                 {
-                  label: "Topping",
-                  ingredients: [
+                  "label": "Topping",
+                  "ingredients": [
                     "1/2 stick (1/4 cup) butter, melted",
                     "1 1/2 cups corn flakes"
                   ]
                 }
               ],
-              steps: [
+              "steps": [
                 "Preheat oven to 350°F. Grease a large Pyrex casserole dish.",
                 "Cook noodles according to package instructions. Drain thoroughly.",
                 "Mix the filling ingredients together until combined, then fold in the drained noodles. Transfer to the prepared casserole.",
@@ -4400,35 +7138,44 @@ const data = {
               ]
             },
             {
-              title: "Min Cohen's Inscrutable Apple Cake",
-              servings: "Serves 8–10   |   Bake: 375°F for 40–45 minutes",
-              source: "Mrs. Min Cohen's recipe, transcribed by Grandmother Brenda",
-              comments: [
+              "title": "Min Cohen's Inscrutable Apple Cake",
+              "servings": "Serves 8–10   |   Bake: 375°F for 40–45 minutes",
+              "source": "Mrs. Min Cohen's recipe, transcribed by Grandmother Brenda",
+              "comments": [
                 "Grandmother Brenda wrote on the card: \"I never made this because I do not understand it -- but Perhaps Renee will tell you -- It was a delicious cake!\"",
                 "Steps reconstructed from the ingredient list and standard apple tart method."
               ],
-              ingredientGroups: [
-                { label: "Pastry (30–60 minutes ahead)", ingredients: [
-                  "2 cups flour",
-                  "3/4 cup vegetable shortening",
-                  "2 egg yolks",
-                  "1/4 teaspoon salt",
-                  "7 tablespoons cold water"
-                ]},
-                { label: "Filling", ingredients: [
-                  "7–8 apples, sliced thin",
-                  "1 cup sugar",
-                  "Lemon juice to taste",
-                  "1 teaspoon cinnamon"
-                ]},
-                { label: "Glaze", ingredients: [
-                  "1 cup powdered sugar",
-                  "1 tablespoon flour",
-                  "1 teaspoon vanilla",
-                  "2 tablespoons milk"
-                ]}
+              "ingredientGroups": [
+                {
+                  "label": "Pastry (30–60 minutes ahead)",
+                  "ingredients": [
+                    "2 cups flour",
+                    "3/4 cup vegetable shortening",
+                    "2 egg yolks",
+                    "1/4 teaspoon salt",
+                    "7 tablespoons cold water"
+                  ]
+                },
+                {
+                  "label": "Filling",
+                  "ingredients": [
+                    "7–8 apples, sliced thin",
+                    "1 cup sugar",
+                    "Lemon juice to taste",
+                    "1 teaspoon cinnamon"
+                  ]
+                },
+                {
+                  "label": "Glaze",
+                  "ingredients": [
+                    "1 cup powdered sugar",
+                    "1 tablespoon flour",
+                    "1 teaspoon vanilla",
+                    "2 tablespoons milk"
+                  ]
+                }
               ],
-              steps: [
+              "steps": [
                 "Make pastry: combine flour and shortening; add egg yolks, salt, and cold water. Mix until just combined. Knead briefly, then refrigerate 30–60 minutes.",
                 "Preheat oven to 375°F. Roll pastry out very thin. Use about 2/3 to line a baking pan; reserve the rest for the top.",
                 "Make filling: toss sliced apples with sugar, a squeeze of lemon juice, and cinnamon.",
@@ -4442,252 +7189,510 @@ const data = {
       ]
     },
     {
-      title: "Dressings and Sauces",
-      recipes: [
+      "title": "Dressings",
+      "recipes": [
         {
-          id: "joan-chili-aioli",
-          title: "Joan's on Third Chili Aioli",
-          favorite: true,
-          servings: "Makes about 2 cups   |   Prep: 10 min",
-          source: "Los Angeles Times (adapted from Joan's on Third)",
-          ingredientGroups: [
-            { ingredients: [
-              "2 cups mayonnaise",
-              "3 cloves garlic, peeled and minced",
-              "1/4 cup plus 3 Tbsp canola oil blend",
-              "1 tsp ground cumin",
-              "1 1/2 tsp lemon juice",
-              "3 Tbsp dark chili powder",
-              "1 Tbsp plus 1/2 tsp paprika",
-              "Salt and pepper"
-            ]}
+          "title": "Greek Salad Dressing",
+          "servings": "6   |   Prep: 5 minutes",
+          "comments": [
+            "Garlic doubled from the original recipe, and microplaned rather than minced for a smoother, more evenly distributed flavor."
           ],
-          steps: [
-            "Whisk together all ingredients in a small bowl until smooth. Taste and season with salt and pepper."
-          ]
-        },
-        {
-          title: "Lemon Mustard Vinaigrette",
-          servings: "6   |   Prep: 5 minutes",
-          comments: ["Garlic doubled from the original recipe, and microplaned rather than minced for a smoother, more evenly distributed flavor."],
-          source: "https://www.theharvestkitchen.com/lemon-mustard-vinaigrette/",
-          ingredientGroups: [
-            { ingredients: ["1 1/2 tablespoons Dijon mustard", "1/4 cup freshly squeezed lemon juice", "1 teaspoon apple cider vinegar", "2 teaspoons honey or pure maple syrup", "4 small cloves garlic, microplaned", "1/2 teaspoon dried oregano", "1/4 teaspoon dried basil", "3/4 cup extra virgin olive oil", "1/2 teaspoon kosher salt", "1/4 teaspoon freshly ground black pepper"] }
+          "source": "https://www.loveandlemons.com/greek-salad-dressing/",
+          "ingredientGroups": [
+            {
+              "ingredients": [
+                "1/4 cup extra-virgin olive oil",
+                "3 tablespoons red wine vinegar",
+                "2 garlic cloves, microplaned",
+                "1/2 teaspoon dried oregano, plus more for sprinkling",
+                "1/4 teaspoon Dijon mustard",
+                "1/4 teaspoon sea salt",
+                "Freshly ground black pepper, to taste"
+              ]
+            }
           ],
-          steps: [
-            "Add all ingredients except the salt and pepper to a mason jar. Seal tightly and shake well (or whisk together in a bowl, adding the oil in a steady stream).",
-            "Season with the salt and pepper to taste."
-          ]
-        },
-        {
-          title: "Greek Salad Dressing",
-          servings: "6   |   Prep: 5 minutes",
-          comments: ["Garlic doubled from the original recipe, and microplaned rather than minced for a smoother, more evenly distributed flavor."],
-          source: "https://www.loveandlemons.com/greek-salad-dressing/",
-          ingredientGroups: [
-            { ingredients: ["1/4 cup extra-virgin olive oil", "3 tablespoons red wine vinegar", "2 garlic cloves, microplaned", "1/2 teaspoon dried oregano, plus more for sprinkling", "1/4 teaspoon Dijon mustard", "1/4 teaspoon sea salt", "Freshly ground black pepper, to taste"] }
-          ],
-          steps: [
+          "steps": [
             "In a small bowl, whisk together the olive oil, vinegar, garlic, oregano, mustard, salt, and several grinds of pepper."
           ]
         },
         {
-          id: "horseradish-sauce",
-          title: "Horseradish Sauce",
-          favorite: true,
-          servings: "Serves 8   |   Total: 5 min",
-          source: "CAROL46, Allrecipes",
-          comments: [
-            {html: "A classic accompaniment to <a href='#rib-roast'>Four Peppercorn Crusted Rotisserie Rib Roast</a>. Note: prepared horseradish in the jar already contains vinegar — you may want to reduce or omit the added cider vinegar. Can also be made with nonfat sour cream and low-fat mayo."}
+          "title": "Lemon Mustard Vinaigrette",
+          "servings": "6   |   Prep: 5 minutes",
+          "comments": [
+            "Garlic doubled from the original recipe, and microplaned rather than minced for a smoother, more evenly distributed flavor."
           ],
-          ingredientGroups: [
-            { ingredients: [
-              "1/2 cup sour cream",
-              "3 Tbsp mayonnaise",
-              "2 Tbsp prepared horseradish",
-              "1 Tbsp cider vinegar",
-              "1/8 tsp mustard powder",
-              "1/8 tsp cayenne pepper",
-              "Salt and freshly ground black pepper, to taste"
-            ]}
+          "source": "https://www.theharvestkitchen.com/lemon-mustard-vinaigrette/",
+          "ingredientGroups": [
+            {
+              "ingredients": [
+                "1 1/2 tablespoons Dijon mustard",
+                "1/4 cup freshly squeezed lemon juice",
+                "1 teaspoon apple cider vinegar",
+                "2 teaspoons honey or pure maple syrup",
+                "4 small cloves garlic, microplaned",
+                "1/2 teaspoon dried oregano",
+                "1/4 teaspoon dried basil",
+                "3/4 cup extra virgin olive oil",
+                "1/2 teaspoon kosher salt",
+                "1/4 teaspoon freshly ground black pepper"
+              ]
+            }
           ],
-          steps: [
-            "Whisk all ingredients together in a small bowl until smooth and creamy. Season to taste with salt and pepper. Store covered in the refrigerator for up to 3 days."
-          ]
-        },
-        {
-          id: "steak-seasoning-rub",
-          title: "Steak Seasoning Rub",
-          servings: "Makes enough for 4 large steaks   |   Total: 5 min",
-          source: "Sommer Collier, A Spicy Perspective",
-          comments: [
-            {html: "We use a 3× batch for 2 racks of <a href='#sous-vide-beef-ribs'>Sous Vide Beef Back Ribs</a>."},
-            "Keeps in an airtight jar in a cool, dry place for up to 3 months."
-          ],
-          ingredientGroups: [
-            { ingredients: [
-              "1 Tbsp kosher salt",
-              "1 Tbsp brown sugar, packed",
-              "2 tsp smoked paprika",
-              "2 tsp ground ancho chile pepper (or chili powder)",
-              "1 tsp dried thyme",
-              "1 tsp black pepper",
-              "½ tsp garlic powder",
-              "½ tsp onion powder",
-              "½ tsp ground mustard",
-              "½ tsp ground cumin"
-            ]}
-          ],
-          steps: [
-            "Mix all ingredients together in a small bowl until combined.",
-            "Use immediately, or store in an airtight jar in a cool, dry place for up to 3 months. Rub generously over all sides of the meat before cooking; let rest at least 20 minutes before grilling or searing."
-          ]
-        },
-        {
-          id: "cherry-bbq-sauce",
-          title: "Cherry Barbecue Sauce",
-          favorite: true,
-          servings: "Makes about 3½ cups   |   Total: 30 min",
-          source: "Ilene Harrington, Taste of Home",
-          comments: [
-            {html: "The go-to sauce for <a href='#sous-vide-beef-ribs'>Sous Vide Beef Back Ribs</a>. Serve warm on the side."}
-          ],
-          ingredientGroups: [
-            { label: "Aromatics", ingredients: [
-              "1 medium onion, chopped",
-              "2 Tbsp butter",
-              "2 garlic cloves, minced"
-            ]},
-            { label: "Sauce", ingredients: [
-              "2 cups fresh or frozen dark sweet cherries, pitted and coarsely chopped",
-              "1 cup ketchup",
-              "2/3 cup packed brown sugar",
-              "1/4 cup cider vinegar",
-              "1 Tbsp Worcestershire sauce",
-              "2 tsp ground mustard",
-              "1/2 tsp pepper",
-              "1/8 tsp Liquid Smoke (optional)"
-            ]}
-          ],
-          steps: [
-            "In a large saucepan, sauté onion in butter until tender, about 5 minutes. Add garlic; cook 1 minute longer.",
-            "Stir in remaining ingredients. Cook uncovered over medium-low heat, stirring occasionally, until cherries are tender and sauce has thickened, about 20 minutes."
-          ]
-        },
-        {
-          title: "Authentic Chimichurri",
-          servings: "Serves 8   |   Total: 10 min (ideally rests 2 hrs)",
-          source: "Karina Carrel, Cafe Delites",
-          ingredientGroups: [
-            { ingredients: [
-              "1/2 cup olive oil",
-              "2 Tbsp red wine vinegar",
-              "1/2 cup fresh parsley, finely chopped",
-              "3–4 cloves garlic, finely chopped or minced",
-              "2 small red chilies (or 1), deseeded and finely chopped (about 1 Tbsp)",
-              "3/4 tsp dried oregano",
-              "1 tsp coarse salt",
-              "1/2 tsp pepper"
-            ]}
-          ],
-          steps: [
-            "Finely chop garlic and chili.",
-            "Mix all ingredients together in a bowl until well combined.",
-            "Let sit at least 5–10 minutes before serving (ideally 2 hours for fuller flavor). Use to baste meats while grilling, or serve as a condiment."
-          ]
-        },
-        {
-          title: "Béarnaise Sauce",
-          servings: "Makes about 3/4 cup",
-          source: "Printed clipping, original source unknown (collected by Nana Regina)",
-          comments: [
-            "A typed clipping from Nana Regina's collection. Serve immediately — Béarnaise does not reheat well."
-          ],
-          ingredientGroups: [
-            { label: "Reduction", ingredients: [
-              "1/4 cup dry white wine",
-              "2 tablespoons white wine vinegar or sherry vinegar",
-              "1 tablespoon minced shallot",
-              "1/4 teaspoon kosher salt"
-            ]},
-            { label: "Sauce", ingredients: [
-              "4 teaspoons chopped fresh tarragon, divided",
-              "3 egg yolks",
-              "3/4 cup (1-1/2 sticks) unsalted butter, melted and kept warm",
-              "1/8 teaspoon freshly ground black pepper"
-            ]}
-          ],
-          steps: [
-            "Make the reduction: combine wine, vinegar, shallot, and salt in a small saucepan. Bring to a simmer; cook until reduced to about 1 tablespoon of liquid, 4–5 minutes. Cool slightly and strain through a fine-mesh strainer, pressing on the solids.",
-            "Set up a double boiler: fill a medium pot with 2 inches of water and bring to a simmer. Rest a heatproof bowl over the pot. Add the strained reduction and egg yolks to the bowl.",
-            "Whisk constantly until the mixture becomes pale, thick, and ribbony, about 2–3 minutes.",
-            "Remove from heat. Whisking constantly, drizzle in warm melted butter in a very thin, slow stream until fully emulsified.",
-            "Stir in 3 teaspoons of the chopped tarragon and the black pepper. Taste and adjust salt. Garnish with remaining 1 teaspoon tarragon.",
-            "Serve immediately, or keep warm by setting the bowl over warm (not simmering) water."
+          "steps": [
+            "Add all ingredients except the salt and pepper to a mason jar. Seal tightly and shake well (or whisk together in a bowl, adding the oil in a steady stream).",
+            "Season with the salt and pepper to taste."
           ]
         }
       ]
     },
     {
-      title: "Desserts",
-      recipes: [
+      "title": "Sauces",
+      "subsections": [
         {
-          title: "Lauren's Banana Pudding",
-          favorite: true,
-          servings: "Serves 10–12   |   Prep: 15 min   |   Rest: 1 hr (pudding) + overnight   |   Total: ~1.25 hrs active",
-          source: "Lauren Muhlheim",
-          comments: [
+          "title": "American",
+          "recipes": [
+            {
+              "id": "cherry-bbq-sauce",
+              "title": "Cherry Barbecue Sauce",
+              "favorite": true,
+              "servings": "Makes about 3½ cups   |   Total: 30 min",
+              "source": "Ilene Harrington, Taste of Home",
+              "comments": [
+                {
+                  "html": "The go-to sauce for <a href='#sous-vide-beef-ribs'>Sous Vide Beef Back Ribs</a>. Serve warm on the side."
+                }
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Aromatics",
+                  "ingredients": [
+                    "1 medium onion, chopped",
+                    "2 Tbsp butter",
+                    "2 garlic cloves, minced"
+                  ]
+                },
+                {
+                  "label": "Sauce",
+                  "ingredients": [
+                    "2 cups fresh or frozen dark sweet cherries, pitted and coarsely chopped",
+                    "1 cup ketchup",
+                    "2/3 cup packed brown sugar",
+                    "1/4 cup cider vinegar",
+                    "1 Tbsp Worcestershire sauce",
+                    "2 tsp ground mustard",
+                    "1/2 tsp pepper",
+                    "1/8 tsp Liquid Smoke (optional)"
+                  ]
+                }
+              ],
+              "steps": [
+                "In a large saucepan, sauté onion in butter until tender, about 5 minutes. Add garlic; cook 1 minute longer.",
+                "Stir in remaining ingredients. Cook uncovered over medium-low heat, stirring occasionally, until cherries are tender and sauce has thickened, about 20 minutes."
+              ]
+            },
+            {
+              "id": "horseradish-sauce",
+              "title": "Horseradish Sauce",
+              "favorite": true,
+              "servings": "Serves 8   |   Total: 5 min",
+              "source": "CAROL46, Allrecipes",
+              "comments": [
+                {
+                  "html": "A classic accompaniment to <a href='#rib-roast'>Four Peppercorn Crusted Rotisserie Rib Roast</a>. Note: prepared horseradish in the jar already contains vinegar — you may want to reduce or omit the added cider vinegar. Can also be made with nonfat sour cream and low-fat mayo."
+                }
+              ],
+              "ingredientGroups": [
+                {
+                  "ingredients": [
+                    "1/2 cup sour cream",
+                    "3 Tbsp mayonnaise",
+                    "2 Tbsp prepared horseradish",
+                    "1 Tbsp cider vinegar",
+                    "1/8 tsp mustard powder",
+                    "1/8 tsp cayenne pepper",
+                    "Salt and freshly ground black pepper, to taste"
+                  ]
+                }
+              ],
+              "steps": [
+                "Whisk all ingredients together in a small bowl until smooth and creamy. Season to taste with salt and pepper. Store covered in the refrigerator for up to 3 days."
+              ]
+            },
+            {
+              "id": "joan-chili-aioli",
+              "title": "Joan's on Third Chili Aioli",
+              "favorite": true,
+              "servings": "Makes about 2 cups   |   Prep: 10 min",
+              "source": "Los Angeles Times (adapted from Joan's on Third)",
+              "ingredientGroups": [
+                {
+                  "ingredients": [
+                    "2 cups mayonnaise",
+                    "3 cloves garlic, peeled and minced",
+                    "1/4 cup plus 3 Tbsp canola oil blend",
+                    "1 tsp ground cumin",
+                    "1 1/2 tsp lemon juice",
+                    "3 Tbsp dark chili powder",
+                    "1 Tbsp plus 1/2 tsp paprika",
+                    "Salt and pepper"
+                  ]
+                }
+              ],
+              "steps": [
+                "Whisk together all ingredients in a small bowl until smooth. Taste and season with salt and pepper."
+              ]
+            },
+            {
+              "id": "steak-seasoning-rub",
+              "title": "Steak Seasoning Rub",
+              "servings": "Makes enough for 4 large steaks   |   Total: 5 min",
+              "source": "Sommer Collier, A Spicy Perspective",
+              "comments": [
+                {
+                  "html": "We use a 3× batch for 2 racks of <a href='#sous-vide-beef-ribs'>Sous Vide Beef Back Ribs</a>."
+                },
+                "Keeps in an airtight jar in a cool, dry place for up to 3 months."
+              ],
+              "ingredientGroups": [
+                {
+                  "ingredients": [
+                    "1 Tbsp kosher salt",
+                    "1 Tbsp brown sugar, packed",
+                    "2 tsp smoked paprika",
+                    "2 tsp ground ancho chile pepper (or chili powder)",
+                    "1 tsp dried thyme",
+                    "1 tsp black pepper",
+                    "½ tsp garlic powder",
+                    "½ tsp onion powder",
+                    "½ tsp ground mustard",
+                    "½ tsp ground cumin"
+                  ]
+                }
+              ],
+              "steps": [
+                "Mix all ingredients together in a small bowl until combined.",
+                "Use immediately, or store in an airtight jar in a cool, dry place for up to 3 months. Rub generously over all sides of the meat before cooking; let rest at least 20 minutes before grilling or searing."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Latin/South American",
+          "recipes": [
+            {
+              "title": "Authentic Chimichurri",
+              "servings": "Serves 8   |   Total: 10 min (ideally rests 2 hrs)",
+              "source": "Karina Carrel, Cafe Delites",
+              "ingredientGroups": [
+                {
+                  "ingredients": [
+                    "1/2 cup olive oil",
+                    "2 Tbsp red wine vinegar",
+                    "1/2 cup fresh parsley, finely chopped",
+                    "3–4 cloves garlic, finely chopped or minced",
+                    "2 small red chilies (or 1), deseeded and finely chopped (about 1 Tbsp)",
+                    "3/4 tsp dried oregano",
+                    "1 tsp coarse salt",
+                    "1/2 tsp pepper"
+                  ]
+                }
+              ],
+              "steps": [
+                "Finely chop garlic and chili.",
+                "Mix all ingredients together in a bowl until well combined.",
+                "Let sit at least 5–10 minutes before serving (ideally 2 hours for fuller flavor). Use to baste meats while grilling, or serve as a condiment."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "French/Continental",
+          "recipes": [
+            {
+              "title": "Béarnaise Sauce",
+              "servings": "Makes about 3/4 cup",
+              "source": "Printed clipping, original source unknown (collected by Nana Regina)",
+              "comments": [
+                "A typed clipping from Nana Regina's collection. Serve immediately — Béarnaise does not reheat well."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Reduction",
+                  "ingredients": [
+                    "1/4 cup dry white wine",
+                    "2 tablespoons white wine vinegar or sherry vinegar",
+                    "1 tablespoon minced shallot",
+                    "1/4 teaspoon kosher salt"
+                  ]
+                },
+                {
+                  "label": "Sauce",
+                  "ingredients": [
+                    "4 teaspoons chopped fresh tarragon, divided",
+                    "3 egg yolks",
+                    "3/4 cup (1-1/2 sticks) unsalted butter, melted and kept warm",
+                    "1/8 teaspoon freshly ground black pepper"
+                  ]
+                }
+              ],
+              "steps": [
+                "Make the reduction: combine wine, vinegar, shallot, and salt in a small saucepan. Bring to a simmer; cook until reduced to about 1 tablespoon of liquid, 4–5 minutes. Cool slightly and strain through a fine-mesh strainer, pressing on the solids.",
+                "Set up a double boiler: fill a medium pot with 2 inches of water and bring to a simmer. Rest a heatproof bowl over the pot. Add the strained reduction and egg yolks to the bowl.",
+                "Whisk constantly until the mixture becomes pale, thick, and ribbony, about 2–3 minutes.",
+                "Remove from heat. Whisking constantly, drizzle in warm melted butter in a very thin, slow stream until fully emulsified.",
+                "Stir in 3 teaspoons of the chopped tarragon and the black pepper. Taste and adjust salt. Garnish with remaining 1 teaspoon tarragon.",
+                "Serve immediately, or keep warm by setting the bowl over warm (not simmering) water."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pickling",
+      "recipes": [
+        {
+          "title": "Dill Pickles",
+          "servings": "Makes 4 (8-oz) or 2 (16-oz) jars   |   Prep: 10 minutes   |   Chilling: 1–5 days",
+          "comments": [
+            "Chips are lightly pickled after 1 day; spears take 2 days. The best flavor develops around day 5 or 6 — worth the wait. Keep refrigerated for several weeks."
+          ],
+          "source": "https://www.loveandlemons.com/dill-pickles-recipe/",
+          "ingredientGroups": [
+            {
+              "label": "Cucumbers and aromatics",
+              "ingredients": [
+                "12–14 Persian cucumbers, or 8–10 small pickling cucumbers",
+                "4 garlic cloves, halved",
+                "2 teaspoons mustard seeds",
+                "2 teaspoons peppercorns",
+                "Fresh dill sprigs, a few per jar"
+              ]
+            },
+            {
+              "label": "Brine",
+              "ingredients": [
+                "2 cups water",
+                "2 cups distilled white vinegar",
+                "¼ cup cane sugar",
+                "2 tablespoons sea salt"
+              ]
+            }
+          ],
+          "steps": [
+            "Prep the cucumbers: For spears, slice lengthwise into quarters. For chips, thinly slice crosswise.",
+            "Pack the jars: Divide the cucumbers among 4 (8-oz) or 2 (16-oz) jars. Divide the garlic, mustard seeds, peppercorns, and dill sprigs evenly among the jars.",
+            {
+              "lead": "Make the brine and fill:",
+              "bullets": [
+                "Combine the water, vinegar, sugar, and salt in a medium saucepan over medium heat. Stir until the sugar and salt dissolve, about 1 minute.",
+                "Let cool slightly, then pour over the cucumbers. Set aside to cool to room temperature."
+              ]
+            },
+            "Refrigerate: Chips are lightly pickled after 1 day and grow more flavorful from there. Spears are lightly pickled after 2 days; best flavor develops around day 5 or 6. Keeps in the fridge for several weeks."
+          ]
+        },
+        {
+          "title": "Quick Pickled Green Onions",
+          "servings": "Makes about 8 servings   |   Prep: 15 minutes   |   Pickling: 2 hours minimum (best after 24–48 hours)",
+          "source": "https://www.forkintheroad.co/quick-pickled-green-onions/",
+          "comments": [
+            "Ready to eat after 2 hours, but the flavor deepens significantly after 24–48 hours. Keeps refrigerated up to 1 month as long as the onions stay fully submerged in brine."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Green onions and aromatics",
+              "ingredients": [
+                "1 bunch green onions (about 10), roots trimmed",
+                "1-inch piece fresh ginger",
+                "2 whole garlic cloves",
+                "2 teaspoons ground mustard",
+                "1 teaspoon Aleppo pepper or red pepper flakes (optional)"
+              ]
+            },
+            {
+              "label": "Brine",
+              "ingredients": [
+                "2 cups water",
+                "1 cup rice vinegar (or white wine vinegar, apple cider vinegar, or plain white vinegar)",
+                "1 tablespoon salt",
+                "1 tablespoon sugar"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "lead": "Prep the green onions:",
+              "bullets": [
+                "Cut off the roots.",
+                "Either slice into thin rounds for sprinkling, or cut each green onion in half lengthwise and then into 2–4-inch spears for layering on salads, burgers, and sandwiches."
+              ]
+            },
+            "Pack the jar: Add the green onions to a large jar. Add the ginger, garlic, ground mustard, and Aleppo pepper (if using).",
+            {
+              "lead": "Make the brine:",
+              "bullets": [
+                "Combine the water, vinegar, salt, and sugar in a small saucepan. Bring to a boil, stirring to dissolve.",
+                "Pour the hot brine over the green onions until completely submerged. Close the lid tightly."
+              ]
+            },
+            "Let the jar cool to room temperature on the counter, then refrigerate. Ready after 2 hours, best after 24–48 hours. Keeps up to 1 month refrigerated."
+          ]
+        },
+        {
+          "title": "Quick Pickled Red Onions",
+          "servings": "Makes about 8 servings   |   Prep: 5 minutes   |   Total: 15 minutes",
+          "comments": [
+            "Great on burgers, grain bowls, salads, sandwiches, or a cheese board. Ready to eat in just 15 minutes, and keeps in the fridge for up to 2 weeks."
+          ],
+          "source": "https://www.kitchentreaty.com/quick-pickled-red-onions/",
+          "ingredientGroups": [
+            {
+              "label": "Red onion",
+              "ingredients": [
+                "1 medium red onion, peeled, halved, and sliced as thinly as possible"
+              ]
+            },
+            {
+              "label": "Brine",
+              "ingredients": [
+                "3/4 cup apple cider vinegar (or white vinegar)",
+                "1/2 cup water",
+                "2 teaspoons granulated sugar",
+                "1 teaspoon kosher salt"
+              ]
+            }
+          ],
+          "steps": [
+            "Slice the onion as thinly as possible and pack into a quart-size mason jar.",
+            "Make the brine: Add the vinegar, water, sugar, and salt to a small saucepan. Bring just to a boil over high heat, stirring to dissolve.",
+            "Carefully pour the hot brine over the onions. Press the onions down with a spoon to make sure they are fully submerged.",
+            "Let sit at room temperature for 15 minutes, then serve. Store covered in the fridge for up to 2 weeks, keeping the onions submerged in liquid."
+          ]
+        },
+        {
+          "id": "haitian-pikliz",
+          "title": "Pikliz",
+          "favorite": true,
+          "servings": "Makes 1 quart   |   Prep: 30 min   |   Ready after: 3 days' pickling",
+          "source": "Patrick Celestin, adapted by Melissa Clark (NYT Cooking)",
+          "comments": [
+            {
+              "html": "The traditional Haitian accompaniment to <a href='#haitian-pork-griot'>Pork Griot</a>. Also wonderful with rice and beans, roast chicken, or any dish that needs a spicy, vinegary punch. Keeps refrigerated for at least 3 weeks."
+            }
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Pickle",
+              "ingredients": [
+                "2 cups thinly sliced green cabbage",
+                "1 medium onion, halved and thinly sliced",
+                "1 large carrot, peeled and coarsely grated (1 cup)",
+                "1/2 medium bell pepper (green, red or yellow), seeded and thinly sliced (1 cup)",
+                "2 scallions, thinly sliced",
+                "4 Scotch bonnet or habanero chiles, seeded and very thinly sliced",
+                "4 garlic cloves, finely chopped",
+                "1 1/4 tsp kosher salt",
+                "12 black peppercorns",
+                "4 whole cloves"
+              ]
+            },
+            {
+              "label": "Brine",
+              "ingredients": [
+                "1 1/2 cups cane vinegar, cider vinegar or white vinegar",
+                "Juice of 1/2 lime"
+              ]
+            }
+          ],
+          "steps": [
+            "Combine cabbage, onion, carrot, bell pepper, scallions, chiles, garlic, salt, peppercorns, and cloves in a large bowl. Toss well.",
+            "Pack tightly into a 1-quart jar with a tightfitting lid. Pour vinegar and lime juice over vegetables, pressing down until completely submerged. Cover and refrigerate for at least 3 days before opening. Keeps for at least 3 weeks refrigerated."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Desserts",
+      "recipes": [
+        {
+          "title": "Lauren's Banana Pudding",
+          "favorite": true,
+          "servings": "Serves 10–12   |   Prep: 15 min   |   Rest: 1 hr (pudding) + overnight   |   Total: ~1.25 hrs active",
+          "source": "Lauren Muhlheim",
+          "comments": [
             "Inspired by Magnolia Bakery."
           ],
-          ingredientGroups: [
-            { label: "Pudding base (1 hour ahead)", ingredients: [
-              "1½ cups cold water",
-              "1 (14 oz) can sweetened condensed milk",
-              "⅔ cup instant vanilla pudding powder (or 1 whole box)"
-            ]},
-            { label: "Whipped cream", ingredients: [
-              "3 cups heavy cream"
-            ]},
-            { label: "Assembly", ingredients: [
-              "1 box vanilla wafers",
-              "3–4 bananas, sliced"
-            ]}
+          "ingredientGroups": [
+            {
+              "label": "Pudding base (1 hour ahead)",
+              "ingredients": [
+                "1½ cups cold water",
+                "1 (14 oz) can sweetened condensed milk",
+                "⅔ cup instant vanilla pudding powder (or 1 whole box)"
+              ]
+            },
+            {
+              "label": "Whipped cream",
+              "ingredients": [
+                "3 cups heavy cream"
+              ]
+            },
+            {
+              "label": "Assembly",
+              "ingredients": [
+                "1 box vanilla wafers",
+                "3–4 bananas, sliced"
+              ]
+            }
           ],
-          steps: [
+          "steps": [
             "Whisk together cold water, sweetened condensed milk, and pudding powder until smooth. Let sit until congealed, about 1 hour.",
             "In a separate bowl, whip heavy cream until soft peaks form.",
             "Fold pudding mixture into the whipped cream. In a large serving bowl, start with a layer of vanilla wafers, then sliced bananas, then pudding. Repeat layers until ingredients are used up. Refrigerate overnight so wafers soften."
           ]
         },
         {
-          title: "Mango with Sticky Rice (Khao Neow Mamuang)",
-          servings: "Serves about 8",
-          source: "\"A Passion for Thai Cooking\" by Sompon and Elizabeth Nabnian, p. 136",
-          comments: [
+          "title": "Mango with Sticky Rice (Khao Neow Mamuang)",
+          "servings": "Serves about 8",
+          "source": "\"A Passion for Thai Cooking\" by Sompon and Elizabeth Nabnian, p. 136",
+          "comments": [
             "Scaled to 1 mango. The original recipe used 2 mangoes and was labeled \"serves 6\" in the book, but the full-recipe quantities are more consistent with 16–18 dessert portions. This half-batch serves about 8.",
             "The sweet sticky rice can be made in advance but should be eaten the same day.",
             "Use glutinous (sticky) rice only — regular rice will not work."
           ],
-          ingredientGroups: [
-            { label: "Rice", ingredients: [
-              "300g (2 cups) sticky rice (glutinous rice), soaked in water at least 3 hours or overnight"
-            ]},
-            { label: "Thick coconut sauce", ingredients: [
-              "250ml (1 cup) thick coconut milk",
-              "100g (1/2 cup) sugar",
-              "1/4 teaspoon salt"
-            ]},
-            { label: "Thin coconut sauce", ingredients: [
-              "60ml (1/4 cup) thin coconut milk",
-              "1 tablespoon sugar",
-              "Pinch of salt"
-            ]},
-            { label: "To serve", ingredients: [
-              "1 mango",
-              "1-1/2 teaspoons sesame seeds, roasted"
-            ]}
+          "ingredientGroups": [
+            {
+              "label": "Rice",
+              "ingredients": [
+                "300g (2 cups) sticky rice (glutinous rice), soaked in water at least 3 hours or overnight"
+              ]
+            },
+            {
+              "label": "Thick coconut sauce",
+              "ingredients": [
+                "250ml (1 cup) thick coconut milk",
+                "100g (1/2 cup) sugar",
+                "1/4 teaspoon salt"
+              ]
+            },
+            {
+              "label": "Thin coconut sauce",
+              "ingredients": [
+                "60ml (1/4 cup) thin coconut milk",
+                "1 tablespoon sugar",
+                "Pinch of salt"
+              ]
+            },
+            {
+              "label": "To serve",
+              "ingredients": [
+                "1 mango",
+                "1-1/2 teaspoons sesame seeds, roasted"
+              ]
+            }
           ],
-          steps: [
+          "steps": [
             "Steam the soaked sticky rice for 15–20 minutes until cooked.",
             "While the rice steams, mix the thick coconut sauce ingredients together in a bowl.",
             "Transfer the cooked rice to a bowl while still hot. Add the thick coconut sauce and combine thoroughly. Leave to rest 30–50 minutes so the rice fully absorbs the coconut milk.",
@@ -4698,21 +7703,23 @@ const data = {
       ]
     },
     {
-      title: "Drinks",
-      recipes: [
+      "title": "Drinks",
+      "recipes": [
         {
-          title: "Melon Ball",
-          servings: "Makes 1 drink",
-          source: "The Kitchn",
-          ingredientGroups: [
-            { ingredients: [
-              "2 oz Midori",
-              "1 oz vodka",
-              "Fresh-squeezed orange juice, to top",
-              "Fresh melon balls, for garnish (optional)"
-            ]}
+          "title": "Melon Ball",
+          "servings": "Makes 1 drink",
+          "source": "The Kitchn",
+          "ingredientGroups": [
+            {
+              "ingredients": [
+                "2 oz Midori",
+                "1 oz vodka",
+                "Fresh-squeezed orange juice, to top",
+                "Fresh melon balls, for garnish (optional)"
+              ]
+            }
           ],
-          steps: [
+          "steps": [
             "Fill a glass with ice. Add Midori and vodka.",
             "Top off with orange juice.",
             "Garnish with melon balls, if desired."
@@ -4722,5 +7729,3 @@ const data = {
     }
   ]
 };
-
-module.exports = data;
