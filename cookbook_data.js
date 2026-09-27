@@ -13,10 +13,10 @@ const data = {
           ],
           source: "The Breakfast Book, by Marion Cunningham, adapted to use a tangzhong (see https://www.theperfectloaf.com/how-to-make-tangzhong/)",
           ingredientGroups: [
-            { label: "Tangzhong (make first)", ingredients: ["1/4 cup (30g) all-purpose flour", "2/3 cup (160g) milk"] },
+            { label: "Tangzhong", ingredients: ["1/4 cup (30g) all-purpose flour", "2/3 cup (160g) milk"] },
             { label: "Yeast", ingredients: ["1/4 cup warm water", "1 package active dry yeast", "1 teaspoon sugar"] },
             { label: "Dough", ingredients: ["3 3/4 cups all-purpose flour", "1/4 cup sugar", "1 teaspoon salt", "1/2 pound (2 sticks) butter, chilled", "3 egg yolks", "1/3 cup plus 2 tablespoons milk (the reserved 1/3 cup from the tangzhong step, plus 2 tablespoons extra)"] },
-            { label: "Filling (doubled)", ingredients: ["1/2 cup (1 stick) butter, melted", "3/4 cup (12 tablespoons) sugar", "2 teaspoons cinnamon"] },
+            { label: "Filling", ingredients: ["1/2 cup (1 stick) butter, melted", "3/4 cup (12 tablespoons) sugar", "2 teaspoons cinnamon"] },
             { label: "Glaze", ingredients: ["1 1/2 cups confectioners' sugar", "2 tablespoons butter, room temperature", "2 tablespoons water", "1/4 teaspoon ground cinnamon (optional)", "Food coloring (optional, to taste)"] }
           ],
           steps: [
@@ -45,7 +45,7 @@ const data = {
           ],
           source: "Adapted from Inspired Taste (inspiredtaste.net), by Adam and Joanne Gallagher",
           ingredientGroups: [
-            { label: "Soured milk (start this first)", ingredients: ["1 3/4 cups whole milk", "1 tablespoon white vinegar"] },
+            { label: "Soured milk", ingredients: ["1 3/4 cups whole milk", "1 tablespoon white vinegar"] },
             { label: "Dry ingredients", ingredients: ["4 cups (520 g) all-purpose flour, spooned and leveled", "10 teaspoons (3 tablespoons plus 1 teaspoon) aluminum-free baking powder, leveled", "1/2 teaspoon baking soda", "2 tablespoons sugar", "2 teaspoons fine sea salt"] },
             { label: "Butter", ingredients: ["12 tablespoons (1 1/2 sticks; 170 g) cold butter"] }
           ],
@@ -73,8 +73,8 @@ const data = {
           source: "The Breakfast Book, by Marion Cunningham (originally from an early Fannie Farmer cookbook)",
           ingredientGroups: [
             { label: "Yeast", ingredients: ["1/2 cup warm water", "1 package dry yeast"] },
-            { label: "Batter (mixed and left overnight)", ingredients: ["2 cups milk, warmed", "1/2 cup (1 stick) butter, melted", "1 teaspoon salt", "1 teaspoon sugar", "2 cups all-purpose flour"] },
-            { label: "Added before cooking", ingredients: ["2 eggs", "1/4 teaspoon baking soda"] }
+            { label: "Batter (overnight)", ingredients: ["2 cups milk, warmed", "1/2 cup (1 stick) butter, melted", "1 teaspoon salt", "1 teaspoon sugar", "2 cups all-purpose flour"] },
+            { label: "Morning additions", ingredients: ["2 eggs", "1/4 teaspoon baking soda"] }
           ],
           steps: [
             "Yeast: In a large mixing bowl (the batter will rise to double its volume), put the warm water and sprinkle the yeast over. Let stand until foamy, about 5 minutes.",
@@ -163,10 +163,10 @@ const data = {
             "A classic Jewish-style eggplant spread. The card gives only an ingredient list — steps are reconstructed from traditional method."
           ],
           ingredientGroups: [
-            { label: "Roast first", ingredients: [
+            { label: "Eggplant", ingredients: [
               "1 large eggplant"
             ]},
-            { label: "Add to chopped eggplant", ingredients: [
+            { label: "Mix-ins", ingredients: [
               "1 medium onion, diced and fried in oil until golden",
               "3 hard-boiled eggs, finely chopped",
               "Vinegar to taste (start with 1–2 teaspoons)",
@@ -244,7 +244,7 @@ const data = {
               source: "Nourish and Fete, by Monica",
               ingredientGroups: [
                 { label: "Chicken", ingredients: ["4 boneless, skinless chicken breasts, sliced or pounded thin", "Kosher salt and black pepper", "1/4 cup all-purpose flour"] },
-                { label: "Sear", ingredients: ["2 tablespoons unsalted butter (of the 6 tablespoons below)", "2 tablespoons extra-virgin olive oil"] },
+                { label: "Oil and butter", ingredients: ["2 tablespoons unsalted butter (of the 6 tablespoons below)", "2 tablespoons extra-virgin olive oil"] },
                 { label: "Brown butter sauce", ingredients: ["4 tablespoons unsalted butter (the remainder of the 6 tablespoons total)", "1/3 cup fresh sage leaves", "Juice of 1/2 lemon (reserve the other half for serving)", "1/2 cup white wine or low-sodium chicken broth"] },
                 { label: "To serve", ingredients: ["Lemon wedges"] }
               ],
@@ -411,7 +411,7 @@ const data = {
               ],
               source: "Family recipe, credited to Marcie (in a letter to Lauren)",
               ingredientGroups: [
-                { label: "Sauce (combine and pour over chicken)", ingredients: ["1 envelope dry onion soup mix", "1 bottle Russian salad dressing (regular French dressing works if Russian isn't available; NOT creamy French)", "1 bottle (about 18 oz) apricot preserves"] },
+                { label: "Sauce", ingredients: ["1 envelope dry onion soup mix", "1 bottle Russian salad dressing (regular French dressing works if Russian isn't available; NOT creamy French)", "1 bottle (about 18 oz) apricot preserves"] },
                 { label: "Main", ingredients: ["Chicken parts (any amount — see Comments)"] }
               ],
               steps: [
@@ -505,7 +505,7 @@ const data = {
               source: "Martha Stewart",
               ingredientGroups: [
                 { label: "Chicken", ingredients: ["4 pounds boneless, skinless chicken thighs (about 12)", "Coarse salt", "2 tablespoons oil, for browning"] },
-                { label: "Mole sauce (blended)", ingredients: ["1 can (28 ounces) whole tomatoes", "1 medium yellow onion, roughly chopped", "2 dried ancho chiles, stemmed", "1 large chipotle chile in adobo sauce", "1/2 cup sliced almonds, toasted", "1/4 cup raisins", "3 ounces bittersweet chocolate, finely chopped (1/2 cup)", "3 garlic cloves, smashed and peeled", "3 tablespoons extra-virgin olive oil", "3/4 teaspoon ground cumin", "1/2 teaspoon ground cinnamon"] },
+                { label: "Mole sauce", ingredients: ["1 can (28 ounces) whole tomatoes", "1 medium yellow onion, roughly chopped", "2 dried ancho chiles, stemmed", "1 large chipotle chile in adobo sauce", "1/2 cup sliced almonds, toasted", "1/4 cup raisins", "3 ounces bittersweet chocolate, finely chopped (1/2 cup)", "3 garlic cloves, smashed and peeled", "3 tablespoons extra-virgin olive oil", "3/4 teaspoon ground cumin", "1/2 teaspoon ground cinnamon"] },
                 { label: "To finish", ingredients: ["Fresh cilantro leaves"] }
               ],
               steps: [
@@ -576,7 +576,7 @@ const data = {
               source: "NYT Cooking, by Naz Deravian",
               ingredientGroups: [
                 { label: "Chicken", ingredients: ["3 large boneless, skinless chicken breasts, or 6 chicken cutlets (about 2 1/4 pounds total), patted dry", "Kosher salt and black pepper", "1/4 cup all-purpose flour"] },
-                { label: "Sear", ingredients: ["3 tablespoons extra-virgin olive oil, plus more as needed", "3 tablespoons unsalted butter"] },
+                { label: "Oil and butter", ingredients: ["3 tablespoons extra-virgin olive oil, plus more as needed", "3 tablespoons unsalted butter"] },
                 { label: "Sauce", ingredients: ["3 garlic cloves, chopped", "1 tablespoon tomato paste", "1/2 teaspoon dried oregano", "Aleppo pepper or red pepper flakes, to taste", "1 cup low-sodium chicken stock", "1/2 to 3/4 cup heavy cream", "1/2 cup (1 1/2 ounces) grated Parmesan", "1/3 cup sliced sun-dried tomatoes, packed in oil"] },
                 { label: "To finish", ingredients: ["Fresh basil"] }
               ],
@@ -598,7 +598,7 @@ const data = {
                 { label: "Garlic butter", ingredients: ["6 tablespoons (90g) unsalted butter, softened", "2 teaspoons parsley, finely chopped", "2 garlic cloves, very finely minced", "1/4 teaspoon salt (skip if using salted butter)"] },
                 { label: "Chicken", ingredients: ["2 (7 to 8 ounce) chicken breasts, skinless and boneless", "1/2 teaspoon salt", "1/4 teaspoon pepper"] },
                 { label: "Crumbing", ingredients: ["1 egg, lightly whisked", "1/4 cup flour", "1 cup panko breadcrumbs"] },
-                { label: "Frying", ingredients: ["Oil for frying (canola or vegetable, about 4 cups)"] },
+                { label: "Frying oil", ingredients: ["Oil for frying (canola or vegetable, about 4 cups)"] },
                 { label: "To finish", ingredients: ["Parsley, finely chopped"] }
               ],
               steps: [
@@ -733,7 +733,7 @@ const data = {
               ],
               source: "Seriously Simple (cookbook)",
               ingredientGroups: [
-                { label: "Lemon-herb mixture (combine in a small bowl)", ingredients: ["1 tablespoon finely chopped lemon zest", "1/3 cup fresh lemon juice", "2 tablespoons olive oil", "1/4 cup finely chopped mixed fresh herbs (such as rosemary, thyme, parsley, basil, and/or oregano)", "Salt and freshly ground black pepper to taste"] },
+                { label: "Lemon-herb mixture", ingredients: ["1 tablespoon finely chopped lemon zest", "1/3 cup fresh lemon juice", "2 tablespoons olive oil", "1/4 cup finely chopped mixed fresh herbs (such as rosemary, thyme, parsley, basil, and/or oregano)", "Salt and freshly ground black pepper to taste"] },
                 { label: "For roasting", ingredients: ["1 (3 1/2-pound) fryer chicken, cut up", "25 garlic cloves, peeled"] },
                 { label: "For the pan sauce", ingredients: ["3/4 cup chicken broth", "1/3 cup pitted French green olives, rinsed", "2 tablespoons finely chopped mixed fresh herbs (for garnish)"] }
               ],
@@ -797,7 +797,7 @@ const data = {
               source: "NYT Cooking, recipe from Pierre Thiam, adapted by Alexa Weibel",
               ingredientGroups: [
                 { label: "Marinade", ingredients: ["4 bone-in, skin-on chicken legs (2 1/2 to 3 pounds)", "4 scallions, trimmed, whites and greens finely chopped", "2 tablespoons fresh thyme, finely chopped (or 2 teaspoons dried)", "1 tablespoon white vinegar or apple cider vinegar", "1/4 cup lime juice", "1 tablespoon peanut, vegetable, or canola oil"] },
-                { label: "Searing the chicken", ingredients: ["Kosher salt and black pepper", "1 tablespoon oil"] },
+                { label: "Oil and seasoning", ingredients: ["Kosher salt and black pepper", "1 tablespoon oil"] },
                 { label: "Onions", ingredients: ["3 tablespoons oil", "2 pounds yellow onions, halved and sliced 1/2-inch thick", "Kosher salt and black pepper"] },
                 { label: "Aromatics", ingredients: ["1 green bell pepper, halved, seeded, and cut into thin matchsticks", "1 whole Scotch bonnet chile, poked with a fork (or 1 whole habanero, 1 to 2 minced jalapeños, or 1/2 to 1 teaspoon red pepper flakes)", "4 garlic cloves, finely chopped", "4 teaspoons finely chopped fresh ginger", "3 fresh or dried bay leaves", "2 teaspoons Dijon mustard, optional", "1/4 cup lime juice", "Kosher salt and black pepper"] },
                 { label: "To finish", ingredients: ["1 cup water", "Cooked rice or fonio, for serving"] }
@@ -910,7 +910,7 @@ const data = {
               source: "NYT Cooking, recipe from Chintan Pandya and Adda Indian Canteen, adapted by Melissa Clark",
               ingredientGroups: [
                 { label: "Chicken", ingredients: ["6 whole, bone-in chicken legs (drumsticks with thighs attached, about 4 1/2 pounds)"] },
-                { label: "Spice rub (divided)", ingredients: ["2 tablespoons garlic, microplaned (about 6 large cloves)", "2 tablespoons fresh ginger, microplaned", "1 tablespoon white vinegar", "1 1/2 teaspoons ground cayenne, or to taste", "1 1/2 teaspoons garam masala", "2 teaspoons fine sea salt"] },
+                { label: "Spice rub", ingredients: ["2 tablespoons garlic, microplaned (about 6 large cloves)", "2 tablespoons fresh ginger, microplaned", "1 tablespoon white vinegar", "1 1/2 teaspoons ground cayenne, or to taste", "1 1/2 teaspoons garam masala", "2 teaspoons fine sea salt"] },
                 { label: "Yogurt marinade", ingredients: ["1/2 cup plain whole milk yogurt", "1/2 teaspoon freshly ground black pepper", "1/2 teaspoon ground clove", "1/2 teaspoon ground mace", "1/2 teaspoon ground anise or fennel seeds", "1/2 teaspoon ground black cardamom (optional)", "1/2 teaspoon ground green cardamom"] },
                 { label: "Whole spice coating", ingredients: ["2 teaspoons cumin seeds", "2 teaspoons coriander seeds", "1 1/2 teaspoons Aleppo pepper or red pepper flakes"] },
                 { label: "For basting", ingredients: ["3 to 4 tablespoons melted ghee"] },
@@ -967,7 +967,7 @@ const data = {
               ingredientGroups: [
                 { label: "Chicken", ingredients: ["6 small skin-on, bone-in chicken thighs (about 3 pounds)", "3/4 teaspoon kosher salt, plus more"] },
                 { label: "Aromatics and rice", ingredients: ["2 large shallots, finely chopped", "8 garlic cloves, finely chopped", "1 (2-inch) piece ginger, peeled and finely chopped", "2 cups Jasmine or Basmati rice (preferably a good-quality basmati), rinsed", "2 whole star anise", "1 tablespoon soy sauce", "3 cups water"] },
-                { label: "Peanut sauce (start this while the chicken and rice cook)", ingredients: ["1/2 cup creamy peanut butter", "2 tablespoons soy sauce", "2 tablespoons unseasoned rice vinegar", "5 teaspoons Sriracha", "1 (1-inch) piece ginger, peeled and finely chopped", "1 1/2 teaspoons honey", "1/4 cup warm water, plus more as needed"] },
+                { label: "Peanut sauce", ingredients: ["1/2 cup creamy peanut butter", "2 tablespoons soy sauce", "2 tablespoons unseasoned rice vinegar", "5 teaspoons Sriracha", "1 (1-inch) piece ginger, peeled and finely chopped", "1 1/2 teaspoons honey", "1/4 cup warm water, plus more as needed"] },
                 { label: "To serve", ingredients: ["1 English hothouse cucumber, halved lengthwise and thinly sliced on a diagonal", "1 cup cilantro leaves with tender stems"] }
               ],
               steps: [
@@ -1004,7 +1004,7 @@ const data = {
               source: "NYT Cooking, by Kay Chun",
               ingredientGroups: [
                 { label: "Chicken", ingredients: ["1 1/2 pounds boneless, skinless chicken thighs, each cut into 2 equal pieces", "1 tablespoon neutral oil (of the 1/4 cup below), such as safflower or canola", "1 teaspoon kosher salt (of the 2 teaspoons below)", "1/4 teaspoon black pepper (of the 1/2 teaspoon below)"] },
-                { label: "Sear", ingredients: ["2 tablespoons neutral oil (of the 1/4 cup total)"] },
+                { label: "Searing oil", ingredients: ["2 tablespoons neutral oil (of the 1/4 cup total)"] },
                 { label: "Aromatics", ingredients: ["1 tablespoon neutral oil (the remainder of the 1/4 cup total)", "2 tablespoons minced fresh ginger", "1 tablespoon minced garlic"] },
                 { label: "Rice and braise", ingredients: ["1 1/2 cups short-grain white rice, rinsed until the water runs clear", "1 3/4 cups low-sodium chicken broth", "1 (13.5-ounce) can full-fat coconut milk", "1 yellow bell pepper, cored, seeded, and chopped (1/2-inch pieces)", "1/2 cup roasted cashews, coarsely chopped", "3 scallions, thinly sliced", "1 teaspoon kosher salt (the remainder of the 2 teaspoons total)", "1/4 teaspoon black pepper (the remainder of the 1/2 teaspoon total)"] },
                 { label: "To finish", ingredients: ["2 tablespoons coarsely chopped cilantro", "Hot sauce, for serving"] }
@@ -1049,7 +1049,7 @@ const data = {
               servings: "4 to 6   |   Total: 30 minutes",
               source: "NYT Cooking, by Ali Slagle",
               ingredientGroups: [
-                { label: "Aromatics (grate together, then divide in half)", ingredients: ["1 (4-inch) piece fresh ginger, peeled", "6 garlic cloves, peeled", "1 jalapeño"] },
+                { label: "Aromatics", ingredients: ["1 (4-inch) piece fresh ginger, peeled", "6 garlic cloves, peeled", "1 jalapeño"] },
                 { label: "Meatball mix", ingredients: ["2 pounds ground chicken", "1 large bunch cilantro, leaves and stems finely chopped (reserve a few whole leaves for serving)", "2 tablespoons fish sauce", "1 teaspoon kosher salt"] },
                 { label: "For browning", ingredients: ["2 tablespoons vegetable or coconut oil, plus more as needed"] },
                 { label: "Broth", ingredients: ["2 cups chicken broth", "1 (14-ounce) can full-fat coconut milk", "1/2 teaspoon granulated sugar", "1 tablespoon fish sauce (remaining from the 3 tablespoons above)"] },
@@ -1072,10 +1072,10 @@ const data = {
               comments: ["Chicken breast can be used instead of thigh, but is more prone to drying out — cook it in the caramel, remove once opaque, and return at the end to warm."],
               source: "RecipeTin Eats, by Nagi Maehashi",
               ingredientGroups: [
-                { label: "Chicken (toss and set aside)", ingredients: ["1 kg / 2 lb skinless chicken thigh fillets, cut into large 2-inch pieces", "3 tablespoons fish sauce", "1 bird's eye or Thai chili, deseeded and finely minced (optional)"] },
+                { label: "Chicken", ingredients: ["1 kg / 2 lb skinless chicken thigh fillets, cut into large 2-inch pieces", "3 tablespoons fish sauce", "1 bird's eye or Thai chili, deseeded and finely minced (optional)"] },
                 { label: "Caramel", ingredients: ["3 tablespoons vegetable oil", "1/4 cup brown sugar, tightly packed"] },
-                { label: "Added to the caramel with the chicken", ingredients: ["1/3 cup finely julienned ginger", "2 shallots, halved and finely sliced (or substitute half a red onion)"] },
-                { label: "Simmer", ingredients: ["1/2 cup boiling water"] },
+                { label: "Aromatics", ingredients: ["1/3 cup finely julienned ginger", "2 shallots, halved and finely sliced (or substitute half a red onion)"] },
+                { label: "Simmering liquid", ingredients: ["1/2 cup boiling water"] },
                 { label: "To serve", ingredients: ["Fresh cilantro or sliced green onions", "Red chili, finely sliced (optional)", "Jasmine or Basmati rice, for serving"] }
               ],
               steps: [
@@ -1141,11 +1141,11 @@ const data = {
               comments: ["Chicken needs at least 1 hour to marinate (up to 2 days ahead is fine) — factor that into timing beyond the active cook time."],
               source: "The Club, by Molly Baz",
               ingredientGroups: [
-                { label: "Marinade (blended)", ingredients: ["2 peaches, roughly chopped", "1 1/2 cups kimchi, plus a good amount of its brine", "Heaping 1/3 cup smooth peanut butter", "1 tablespoon honey", "2 tablespoons olive oil", "1 tablespoon plus 1 teaspoon kosher salt"] },
+                { label: "Marinade", ingredients: ["2 peaches, roughly chopped", "1 1/2 cups kimchi, plus a good amount of its brine", "Heaping 1/3 cup smooth peanut butter", "1 tablespoon honey", "2 tablespoons olive oil", "1 tablespoon plus 1 teaspoon kosher salt"] },
                 { label: "Chicken", ingredients: ["8 large boneless, skinless chicken thighs (about 2 1/2 to 3 pounds)", "2 teaspoons kosher salt"] },
                 { label: "Peach dressing", ingredients: ["2 peaches, halved and pitted", "1/2 teaspoon finely grated ginger", "3 tablespoons olive oil", "2 tablespoons white wine vinegar, plus more to taste", "Kosher salt and freshly ground black pepper, to taste"] },
                 { label: "Salad", ingredients: ["3 stalks celery, thinly sliced", "1/4 cup kimchi", "Large handful celery leaves", "Kosher salt, freshly ground black pepper, and more vinegar, to taste"] },
-                { label: "Grill", ingredients: ["Vegetable oil, for greasing the grates"] },
+                { label: "Oil for the grill", ingredients: ["Vegetable oil, for greasing the grates"] },
                 { label: "To serve", ingredients: ["Large handful roasted salted peanuts, chopped", "Flaky salt"] }
               ],
               steps: [
@@ -1308,7 +1308,7 @@ const data = {
               ingredientGroups: [
                 { label: "Marinade", ingredients: ["1 pound (450g) boneless chicken thigh with skin, cut into 1-inch pieces", "4 tablespoons shio koji", "1 teaspoon grated ginger", "1 teaspoon grated garlic", "1 teaspoon soy sauce"] },
                 { label: "Coating", ingredients: ["1/2 cup potato starch or cornstarch"] },
-                { label: "Frying", ingredients: ["Vegetable or canola oil, for deep frying"] },
+                { label: "Frying oil", ingredients: ["Vegetable or canola oil, for deep frying"] },
                 { label: "To serve", ingredients: ["Lemon wedges"] }
               ],
               steps: [
@@ -1329,7 +1329,7 @@ const data = {
               source: "NYT Cooking, by Kay Chun",
               ingredientGroups: [
                 { label: "Chicken", ingredients: ["2 pounds bone-in, skin-on chicken thighs (about 4 to 6 thighs)", "2 tablespoons canola oil, divided", "Salt and black pepper"] },
-                { label: "Sear", ingredients: ["1 tablespoon unsalted butter (of the 3 tablespoons below)"] },
+                { label: "Searing butter", ingredients: ["1 tablespoon unsalted butter (of the 3 tablespoons below)"] },
                 { label: "Aromatics and spices", ingredients: ["1/2 cup finely chopped white or yellow onion", "3 tablespoons Madras curry powder", "1 tablespoon minced garlic", "1 tablespoon minced fresh ginger", "3/4 teaspoon ground nutmeg", "2 tablespoons unsalted butter (the remainder of the 3 tablespoons)"] },
                 { label: "Rice and vegetables", ingredients: ["1 1/2 cups short-grain white rice, rinsed until the water runs clear", "1 large baking potato (about 1 pound), peeled and cut into 1/2-inch cubes", "3 medium carrots, sliced 1/2-inch thick", "3 1/2 cups low-sodium chicken broth", "2 tablespoons Worcestershire sauce"] },
                 { label: "To serve", ingredients: ["Chopped scallions, pickles, kimchi, and/or hot sauce"] }
@@ -1355,7 +1355,7 @@ const data = {
               "Great served in a sandwich, on lettuce cups, or with crackers."
             ],
             ingredientGroups: [
-              { label: "Dressing (whisk together)", ingredients: [
+              { label: "Dressing", ingredients: [
                 "1/2 cup mayonnaise",
                 "1 tablespoon Dijon mustard",
                 "1 tablespoon honey",
@@ -1388,7 +1388,7 @@ const data = {
             ],
             source: "https://www.epicurious.com/recipes/food/views/expertly-spiced-and-glazed-roast-turkey",
             ingredientGroups: [
-              { label: "Spice rub (combine in a small bowl)", ingredients: [
+              { label: "Spice rub", ingredients: [
                 "2 Tbsp whole black peppercorns",
                 "2 Tbsp whole pink or black peppercorns",
                 "1/2 cup Diamond Crystal or 1/4 cup plus 1 1/2 tsp Morton kosher salt",
@@ -1443,7 +1443,7 @@ const data = {
                 "1/4 cup quinoa",
                 "1/2 cup water"
               ]},
-              { label: "Sauté", ingredients: [
+              { label: "Aromatics", ingredients: [
                 "1 tsp olive oil",
                 "1 small onion, chopped",
                 "1 clove garlic, chopped"
@@ -1457,7 +1457,7 @@ const data = {
                 "1 1/2 tsp salt",
                 "1 tsp black pepper"
               ]},
-              { label: "Glaze (combine in small bowl)", ingredients: [
+              { label: "Glaze", ingredients: [
                 "2 Tbsp brown sugar",
                 "2 tsp Worcestershire sauce",
                 "1 tsp water"
@@ -1481,7 +1481,7 @@ const data = {
             ],
             source: "Samin Nosrat, NYT Cooking (November 22, 2016)",
             ingredientGroups: [
-              { label: "Marinade (combine in bowl; fold in turkey; cover and refrigerate)", ingredients: [
+              { label: "Marinade", ingredients: [
                 "2 tsp garam masala",
                 "2 tsp ground coriander",
                 "2 tsp ground cumin",
@@ -1493,7 +1493,7 @@ const data = {
                 "1 cup whole-milk yogurt",
                 "4 cups cooked turkey (about 1 lb), cut into 1 1/2-inch pieces"
               ]},
-              { label: "Masala — first addition (all go in together)", ingredients: [
+              { label: "Masala — first addition", ingredients: [
                 "3 Tbsp ghee or neutral-tasting oil",
                 "1 large onion, thinly sliced",
                 "6 cardamom pods, crushed",
@@ -1509,11 +1509,11 @@ const data = {
                 "4 cloves garlic, finely grated",
                 "2 serrano peppers, finely chopped"
               ]},
-              { label: "Add after onions are browned", ingredients: [
+              { label: "Tomatoes", ingredients: [
                 "2 Tbsp tomato paste",
                 "1 (28-oz) can whole peeled tomatoes"
               ]},
-              { label: "Cream and season", ingredients: [
+              { label: "Cream and seasoning", ingredients: [
                 "2 cups heavy cream",
                 "3/4 cup coarsely chopped fresh cilantro, plus sprigs for garnish",
                 "1 1/2 tsp kosher salt, plus more to taste"
@@ -1588,11 +1588,11 @@ const data = {
                 "1 bone-in pork butt (5–6 lbs)",
                 "Salt and pepper"
               ]},
-              { label: "Dried chiles — rehydrate (Step 2)", ingredients: [
+              { label: "Dried chiles", ingredients: [
                 "4 dried ancho chiles, stems and seeds removed",
                 "3 dried California or New Mexico red chiles, stems and seeds removed"
               ]},
-              { label: "Toast in cast iron (Step 3)", ingredients: [
+              { label: "Sauce aromatics", ingredients: [
                 "2 corn tortillas, torn into pieces",
                 "1/3 cup sesame seeds",
                 "1/4 cup raisins",
@@ -1601,7 +1601,7 @@ const data = {
                 "1 tsp ground cinnamon",
                 "1 tsp ground cumin"
               ]},
-              { label: "Blend into sauce (Step 4)", ingredients: [
+              { label: "Sauce", ingredients: [
                 "3 chipotle chiles in adobo",
                 "1 Tbsp adobo sauce",
                 "1 28-oz can crushed fire-roasted tomatoes",
@@ -1754,11 +1754,11 @@ const data = {
               "If you can't find dried day lily buds, substitute 4 oz canned sliced bamboo shoots and skip the soaking step."
             ],
             ingredientGroups: [
-              { label: "Dried ingredients — rehydrate (Step 1)", ingredients: [
+              { label: "Dried mushrooms and lily buds", ingredients: [
                 "1/3 cup dried Chinese wood ear mushrooms (about 10 grams)",
                 "1/4 packed cup dried day lily buds (about 15 grams)"
               ]},
-              { label: "Pork marinade (Step 2)", ingredients: [
+              { label: "Pork marinade", ingredients: [
                 "2 oz pork loin or pork sirloin, cut into 1 1/2- to 2-inch slivers",
                 "1/2 tsp Shaoxing wine or dry sherry",
                 "1/2 tsp light soy sauce or shoyu",
@@ -1766,13 +1766,13 @@ const data = {
                 "1/4 tsp white pepper",
                 "Pinch kosher salt"
               ]},
-              { label: "Stir-fry sauce (Step 3)", ingredients: [
+              { label: "Stir-fry sauce", ingredients: [
                 "2 1/2 tsp Shaoxing wine or dry sherry",
                 "2 1/2 tsp light soy sauce or shoyu",
                 "1/2 tsp cornstarch",
                 "1/4 tsp white pepper"
               ]},
-              { label: "Stir-fry (Steps 4–7)", ingredients: [
+              { label: "Stir-fry", ingredients: [
                 "4 Tbsp roasted sesame oil, divided",
                 "3 eggs, beaten with a pinch of salt",
                 "2 slices fresh ginger",
@@ -1871,10 +1871,10 @@ const data = {
                 "1/4 tsp freshly grated nutmeg",
                 "1 tsp kosher salt, plus more to season"
               ]},
-              { label: "Before grilling (Step 3)", ingredients: [
+              { label: "Basting oil", ingredients: [
                 "2 Tbsp vegetable oil"
               ]},
-              { label: "Finish (Step 4)", ingredients: [
+              { label: "Finish", ingredients: [
                 "3 Tbsp unsalted butter, melted"
               ]}
             ],
@@ -1920,17 +1920,17 @@ const data = {
             servings: "Serves 12   |   Prep: 15 min   |   Cook: 3 hrs 30 min   |   Total: 3 hrs 45 min",
             source: "Phoebe Lapine, Feed Me Phoebe",
             ingredientGroups: [
-              { label: "Brisket (Steps 1–2)", ingredients: [
+              { label: "Brisket", ingredients: [
                 "One 5-lb brisket",
                 "8 garlic cloves, each cut lengthwise into 4 pieces",
                 "Sea salt and black pepper",
                 "1 Tbsp olive oil",
                 "1 qt beef stock"
               ]},
-              { label: "Caramelized onions (Step 3 — while brisket braises)", ingredients: [
+              { label: "Caramelized onions", ingredients: [
                 "2 Vidalia or sweet onions, thinly sliced"
               ]},
-              { label: "Sauce (Step 4)", ingredients: [
+              { label: "Sauce", ingredients: [
                 "1 cup ketchup",
                 "1/4 cup coconut sugar or brown sugar",
                 "1 tsp paprika",
@@ -1958,19 +1958,19 @@ const data = {
               {html: "Season with <a href='#steak-seasoning-rub'>Steak Seasoning Rub</a> (3× batch) before the sous vide, and serve alongside <a href='#cherry-bbq-sauce'>Cherry Barbecue Sauce</a>."}
             ],
             ingredientGroups: [
-              { label: "Rub (Step 1)", ingredients: [
+              { label: "Rub", ingredients: [
                 "Steak Seasoning Rub — 3× batch for 2 racks (see recipe)"
               ]},
-              { label: "Ribs (Steps 1–3)", ingredients: [
+              { label: "Ribs", ingredients: [
                 "2 racks beef back ribs (~7–8 lbs total; also sold as beef spare ribs)"
               ]},
-              { label: "Optional dripping glaze (Step 4)", ingredients: [
+              { label: "Optional dripping glaze", ingredients: [
                 "½ cup drippings from the sous vide bags, strained",
                 "1 tsp Dijon mustard",
                 "2 Tbsp maple syrup or brown sugar",
                 "1 tsp cornstarch"
               ]},
-              { label: "Serve (Step 5)", ingredients: [
+              { label: "To serve", ingredients: [
                 "Cherry Barbecue Sauce (see recipe), warmed"
               ]}
             ],
@@ -1990,33 +1990,33 @@ const data = {
               "Tastes even better a day or two later; can be frozen for up to two months. Serve over mashed potatoes, noodles, or polenta."
             ],
             ingredientGroups: [
-              { label: "Beef (Steps 1 & 3)", ingredients: [
+              { label: "Beef", ingredients: [
                 "2 lbs boneless beef stew meat, cut into 1-inch chunks",
                 "Kosher salt and black pepper",
                 "1–2 Tbsp all-purpose flour",
                 "2 Tbsp unsalted butter",
                 "1 Tbsp olive oil, plus more as needed"
               ]},
-              { label: "Onions (Step 2 — prep while beef rests)", ingredients: [
+              { label: "Onions", ingredients: [
                 "3 medium red onions (2 sliced into half-moons; 1 cut into ½-inch wedges for Step 6)"
               ]},
-              { label: "Aromatics (Steps 4–5)", ingredients: [
+              { label: "Aromatics", ingredients: [
                 "4 garlic cloves, thinly sliced",
                 "1 Tbsp tomato paste",
                 "1 tsp ground coriander",
                 "¼ tsp ground allspice"
               ]},
-              { label: "Liquid (Step 5)", ingredients: [
+              { label: "Liquid", ingredients: [
                 "2 cups beef or chicken stock (preferably homemade)",
                 "1 cup ale or beer (nonalcoholic is fine)",
                 "1 cup water",
                 "1 rosemary sprig"
               ]},
-              { label: "Vegetables (Step 6)", ingredients: [
+              { label: "Vegetables", ingredients: [
                 "3 carrots, sliced",
                 "Red onion wedges (from Step 2 prep)"
               ]},
-              { label: "Finish (Step 7)", ingredients: [
+              { label: "Finish", ingredients: [
                 "1 Tbsp cider vinegar or sherry vinegar, plus more to taste"
               ]},
               { label: "Garnish", ingredients: [
@@ -2043,24 +2043,24 @@ const data = {
               "Slow-cooker variation: render salt pork and sear flour-dusted beef in a sauté pan, then transfer to slow cooker with onions, shallots, carrots, mushrooms, and red wine. Deglaze pan with Cognac, then add 1 cup (not 2) stock, Dijon, and 1 Tbsp Pommery mustard; transfer to slow cooker. Cook on low 6–8 hours. Stir in remaining 3 Tbsp Pommery mustard before serving."
             ],
             ingredientGroups: [
-              { label: "Aromatics (Step 1)", ingredients: [
+              { label: "Aromatics", ingredients: [
                 "1/4 lb salt pork, diced",
                 "1 large onion, finely diced",
                 "3 shallots, chopped",
                 "2 Tbsp unsalted butter, plus more as needed"
               ]},
-              { label: "Beef (Step 2)", ingredients: [
+              { label: "Beef", ingredients: [
                 "2 lbs beef chuck, cut into 1-inch cubes",
                 "2 Tbsp all-purpose flour",
                 "Kosher salt and black pepper"
               ]},
-              { label: "Braise (Step 3)", ingredients: [
+              { label: "Braising liquid", ingredients: [
                 "1/2 cup Cognac",
                 "2 cups beef stock",
                 "1/2 cup Dijon mustard",
                 "1 Tbsp Pommery mustard (or other whole-grain Dijon)"
               ]},
-              { label: "Add-ins (Steps 4–5)", ingredients: [
+              { label: "Add-ins", ingredients: [
                 "4 large carrots, peeled and cut into half-moon slices",
                 "2 Tbsp unsalted butter",
                 "1/2 lb mushrooms, stemmed, cleaned, and quartered",
@@ -2082,12 +2082,12 @@ const data = {
             servings: "Serves 6   |   Prep: 30 min   |   Cook: 6 hrs (slow cooker)   |   Total: ~6.5 hrs",
             source: "Williams-Sonoma Kitchen",
             ingredientGroups: [
-              { label: "Short ribs (Steps 1–2)", ingredients: [
+              { label: "Short ribs", ingredients: [
                 "2 Tbsp whole Chinese five spice (ground in spice grinder)",
                 "4 lbs bone-in beef short ribs",
                 "2–3 Tbsp olive oil"
               ]},
-              { label: "Aromatics + braising liquid (Step 3)", ingredients: [
+              { label: "Aromatics and braising liquid", ingredients: [
                 "1 large yellow onion, cut into 1/4-inch slices",
                 "4 garlic cloves, thinly sliced",
                 "1/3 cup plum wine",
@@ -2100,7 +2100,7 @@ const data = {
                 "Juice of 1 orange",
                 "1/4 cup sugar dissolved in 3/4 cup boiling water"
               ]},
-              { label: "Serve", ingredients: [
+              { label: "To serve", ingredients: [
                 "Steamed rice"
               ]}
             ],
@@ -2118,7 +2118,7 @@ const data = {
             servings: "Makes 12 tacos   |   Active: 35 min   |   Total: 3½ hrs",
             source: "Molly Baz, The Club",
             ingredientGroups: [
-              { label: "Prep — aromatics + spice mix (Step 1)", ingredients: [
+              { label: "Aromatics and spice mix", ingredients: [
                 "1 large onion, roughly chopped",
                 "6 cloves garlic, roughly chopped",
                 "1/4 cup fresh ginger, roughly chopped (from a 3- to 4-inch piece; no need to peel)",
@@ -2130,7 +2130,7 @@ const data = {
                 "1/2 tsp ground cloves",
                 "Kosher salt and freshly ground black pepper"
               ]},
-              { label: "Ragù (Step 2)", ingredients: [
+              { label: "Ragù", ingredients: [
                 "2 lbs (80% lean) ground beef",
                 "2 Tbsp olive oil, plus more as needed",
                 "1 1/2 cups whole milk",
@@ -2139,13 +2139,13 @@ const data = {
                 "1 Tbsp honey",
                 "Apple cider vinegar, to taste"
               ]},
-              { label: "Fennel-apple slaw (Step 3)", ingredients: [
+              { label: "Fennel-apple slaw", ingredients: [
                 "2 Granny Smith apples, thinly sliced into half moons",
                 "1 large bulb fennel, preferably with fronds, halved and thinly sliced crosswise",
                 "1/3 cup apple cider vinegar",
                 "1 Tbsp honey"
               ]},
-              { label: "Serve (Step 4)", ingredients: [
+              { label: "To serve", ingredients: [
                 "One (12-count) package hard taco shells",
                 "Sour cream, for serving"
               ]}
@@ -2167,7 +2167,7 @@ const data = {
             servings: "Serves 4   |   Active: 20 min   |   Total: 25 min",
             source: "Khin's Kitchen, Glebe Kitchen, Chef Savvy (Family hybrid)",
             ingredientGroups: [
-              { label: "Sauce (mix ahead, Step 1)", ingredients: [
+              { label: "Sauce", ingredients: [
                 "3 Tbsp low-sodium soy sauce",
                 "2 Tbsp brown sugar",
                 "1 1/2 Tbsp mirin",
@@ -2175,20 +2175,20 @@ const data = {
                 "2 tsp sesame oil",
                 "1/4 tsp black pepper"
               ]},
-              { label: "Creamy gochujang drizzle (Step 2)", ingredients: [
+              { label: "Creamy gochujang drizzle", ingredients: [
                 "3 Tbsp mayonnaise",
                 "1 Tbsp sour cream",
                 "1–2 tsp gochujang, to taste",
                 "1 tsp rice wine vinegar"
               ]},
-              { label: "Beef and aromatics (Steps 3–4)", ingredients: [
+              { label: "Beef and aromatics", ingredients: [
                 "1 Tbsp vegetable oil",
                 "1/2 large sweet onion, finely diced",
                 "4 cloves garlic, minced",
                 "1 tsp fresh ginger, grated",
                 "1 1/2 lbs lean ground beef"
               ]},
-              { label: "Serve (Step 6)", ingredients: [
+              { label: "To serve", ingredients: [
                 "Steamed white rice",
                 "3 green onions, thinly sliced",
                 "1 Tbsp toasted sesame seeds",
@@ -2212,13 +2212,13 @@ const data = {
               "For a 9\"×13\" pan, double the recipe."
             ],
             ingredientGroups: [
-              { label: "Sweet potato topping (Steps 1–2)", ingredients: [
+              { label: "Sweet potato topping", ingredients: [
                 "5–6 sweet potatoes, peeled",
                 "1½ tsp salt",
                 "2–3 Tbsp mayonnaise",
                 "Oil, for brushing"
               ]},
-              { label: "Meat filling (Steps 3–4)", ingredients: [
+              { label: "Meat filling", ingredients: [
                 "1 Tbsp oil",
                 "1 large onion, chopped",
                 "1 lb ground beef",
@@ -2254,17 +2254,17 @@ const data = {
               "Works with any type of salmon; especially dramatic with leaner coho or sockeye."
             ],
             ingredientGroups: [
-              { label: "Marinate (Step 1)", ingredients: [
+              { label: "Salmon and marinade", ingredients: [
                 "4 (5- to 7-oz) skin-on salmon fillets",
                 "¼ cup Shio Koji paste (about 1 Tbsp per fillet)"
               ]},
-              { label: "Stovetop (Steps 2–3)", ingredients: [
+              { label: "Cooking oil", ingredients: [
                 "Neutral oil for cooking"
               ]},
-              { label: "Broiler (Steps 4–5)", ingredients: [
+              { label: "Broiling oil", ingredients: [
                 "Small amount of neutral oil"
               ]},
-              { label: "Serve", ingredients: [
+              { label: "To serve", ingredients: [
                 "Extra-virgin olive oil",
                 "Lemon wedges"
               ]}
@@ -2282,14 +2282,14 @@ const data = {
             servings: "Serves 4   |   Prep: 10 min   |   Rest: 10 min   |   Cook: 15 min   |   Total: 35 min",
             source: "Jaclyn, Cooking Classy",
             ingredientGroups: [
-              { label: "Salmon (Steps 1–2)", ingredients: [
+              { label: "Salmon", ingredients: [
                 "4 (6-oz) salmon fillets",
                 "2 Tbsp extra-virgin olive oil",
                 "1½ tsp lemon zest",
                 "2 Tbsp fresh lemon juice",
                 "Salt and freshly ground black pepper"
               ]},
-              { label: "Creamy Dill Sauce (Step 3 — make ahead)", ingredients: [
+              { label: "Creamy dill sauce (make ahead)", ingredients: [
                 "⅓ cup fat-free plain Greek yogurt",
                 "3 Tbsp full-fat mayonnaise",
                 "1 clove garlic, finely minced",
@@ -2310,12 +2310,12 @@ const data = {
             servings: "Serves 4   |   Active: 10 min   |   Total: 16 min",
             source: "Ree Drummond, Food Network (The Pioneer Woman)",
             ingredientGroups: [
-              { label: "Fish & veg (Step 2)", ingredients: [
+              { label: "Fish and vegetables", ingredients: [
                 "4 (6-oz) skinless salmon fillets",
                 "3 medium zucchinis, cut into 1-inch rounds",
                 "3 Tbsp olive oil"
               ]},
-              { label: "Sauce (Step 3)", ingredients: [
+              { label: "Sauce", ingredients: [
                 "¼ cup low-sodium soy sauce",
                 "¼ cup maple syrup",
                 "3 Tbsp grated fresh ginger",
@@ -2325,7 +2325,7 @@ const data = {
                 "4 cloves garlic, grated",
                 "3 green onions, sliced — whites and greens separated"
               ]},
-              { label: "Serve (Step 4)", ingredients: [
+              { label: "To serve", ingredients: [
                 "Cooked rice"
               ]}
             ],
@@ -2345,16 +2345,16 @@ const data = {
               "Corn flour (more finely ground than cornmeal) is available at Latin markets, natural-foods stores, and bobsredmill.com."
             ],
             ingredientGroups: [
-              { label: "Malt Vinegar Mayonnaise (Steps 1–2 — make first, up to 1 day ahead)", ingredients: [
+              { label: "Malt Vinegar Mayonnaise (up to 1 day ahead)", ingredients: [
                 "1 large egg yolk",
                 "2 Tbsp malt vinegar, divided",
                 "1 cup vegetable oil",
                 "Kosher salt and freshly ground black pepper"
               ]},
-              { label: "Frying oil (Step 3)", ingredients: [
+              { label: "Frying oil", ingredients: [
                 "Vegetable oil for frying (about 4 cups)"
               ]},
-              { label: "Batter (Step 4)", ingredients: [
+              { label: "Batter", ingredients: [
                 "2 cups all-purpose flour",
                 "2 tsp baking powder",
                 "1 tsp baking soda",
@@ -2364,11 +2364,11 @@ const data = {
                 "1 cup chilled club soda",
                 "1 Tbsp malt vinegar"
               ]},
-              { label: "Dredge & fish (Step 5)", ingredients: [
+              { label: "Fish and dredging flour", ingredients: [
                 "1 cup corn flour or all-purpose flour",
                 "1½ lb cod, haddock, or pollack, cut into long 1½\"-wide strips"
               ]},
-              { label: "Serve (Step 6)", ingredients: [
+              { label: "To serve", ingredients: [
                 "French fries",
                 "Old Bay seasoning",
                 "Flaky sea salt (such as Maldon)",
@@ -2393,25 +2393,25 @@ const data = {
               "Can also be made with high-end jarred tuna in oil in place of the smoked salmon."
             ],
             ingredientGroups: [
-              { label: "Roasted potatoes (Step 2)", ingredients: [
+              { label: "Roasted potatoes", ingredients: [
                 "1 lb rainbow fingerling potatoes, quartered",
                 "1 Tbsp olive oil",
                 "½ tsp kosher salt + freshly ground black pepper"
               ]},
-              { label: "Haricot verts & eggs (Step 3)", ingredients: [
+              { label: "Haricot verts and eggs", ingredients: [
                 "8 oz haricot verts, trimmed",
                 "1 Tbsp olive oil",
                 "¼ tsp kosher salt + freshly ground black pepper",
                 "4 large eggs"
               ]},
-              { label: "Dressing (Step 5)", ingredients: [
+              { label: "Dressing", ingredients: [
                 "½ cup white wine vinegar",
                 "¼ cup Dijon mustard",
                 "2 tsp fresh thyme leaves, chopped",
                 "½ small red onion, finely chopped",
                 "¼ cup olive oil"
               ]},
-              { label: "Salad (Step 6)", ingredients: [
+              { label: "Salad", ingredients: [
                 "1 head Boston, Bibb, or butter lettuce, leaves separated",
                 "One 4- to 6-oz smoked salmon fillet, broken into large chunks (or high-end jarred tuna in oil)",
                 "16 cherry tomatoes, halved",
@@ -2432,14 +2432,14 @@ const data = {
             servings: "Serves 2–4   |   Total: 20 min (all active)",
             source: "Giada De Laurentiis, Food Network (Giada Entertains)",
             ingredientGroups: [
-              { label: "Fish (Step 1)", ingredients: [
+              { label: "Fish", ingredients: [
                 "4 fillets of lemon sole",
                 "1¼ tsp kosher salt",
                 "⅓ cup all-purpose flour, for dredging",
                 "2 Tbsp extra-virgin olive oil",
                 "2 Tbsp unsalted butter"
               ]},
-              { label: "Sauce (Step 2)", ingredients: [
+              { label: "Sauce", ingredients: [
                 "¼ cup capers, drained and rinsed",
                 "1 clove garlic, minced",
                 "½ cup chicken stock",
@@ -2466,11 +2466,11 @@ const data = {
               "Can be made with any rich, flaky fish such as sea bass — not just bluefish."
             ],
             ingredientGroups: [
-              { label: "Fish (Step 1)", ingredients: [
+              { label: "Fish", ingredients: [
                 "4 (6-oz) skin-on bluefish fillets (or any rich, flaky fish such as sea bass)",
                 "1 Tbsp peanut, grapeseed, or safflower oil"
               ]},
-              { label: "Sauce (Steps 1–2)", ingredients: [
+              { label: "Sauce", ingredients: [
                 "1 stalk lemongrass (or substitute a 2-inch strip of lemon or lime zest, peeled with a peeler — no bruising needed)",
                 "⅓ cup light brown sugar",
                 "2 Tbsp Asian fish sauce",
@@ -2478,7 +2478,7 @@ const data = {
                 "1 tsp grated fresh ginger",
                 "½ tsp black pepper"
               ]},
-              { label: "Garnish & serve (Step 4)", ingredients: [
+              { label: "Garnish", ingredients: [
                 "Sliced scallions",
                 "Thinly sliced jalapeño",
                 "Fresh cilantro",
@@ -2497,14 +2497,14 @@ const data = {
             servings: "Serves 4   |   Prep: 5 min   |   Cook: 30 min   |   Total: 35 min",
             source: "Ali Slagle, NYT Cooking",
             ingredientGroups: [
-              { label: "Rice (Step 1)", ingredients: [
+              { label: "Rice", ingredients: [
                 "1½ cups sushi rice, rinsed well",
                 "2 cups water",
                 "1 Tbsp unseasoned rice vinegar",
                 "2 tsp granulated sugar",
                 "1 tsp kosher salt (Diamond Crystal)"
               ]},
-              { label: "Tuna salad (Step 2 — make while rice cooks)", ingredients: [
+              { label: "Tuna salad", ingredients: [
                 "3 scallions, trimmed and thinly sliced",
                 "2 Persian or mini seedless cucumbers, thinly sliced",
                 "4 (5-oz) cans water-packed tuna, drained",
@@ -2513,10 +2513,10 @@ const data = {
                 "2 tsp soy sauce",
                 "2 tsp unseasoned rice vinegar"
               ]},
-              { label: "Salt cucumbers (Step 3)", ingredients: [
+              { label: "Cucumber salt", ingredients: [
                 "Pinch of kosher salt"
               ]},
-              { label: "Crisp rice (Step 4)", ingredients: [
+              { label: "Oil for crisping", ingredients: [
                 "3 Tbsp neutral oil (such as grapeseed), plus more as needed"
               ]}
             ],
@@ -2535,21 +2535,21 @@ const data = {
             servings: "Serves 4   |   Prep: 45 min   |   Cook: 15 min   |   Total: 1 hour",
             source: "Florence Fabricant, NYT Cooking; garlic and cream option adapted from George Duran, Food Network",
             ingredientGroups: [
-              { label: "Clean (Step 1)", ingredients: [
+              { label: "Mussels", ingredients: [
                 "6 lbs mussels"
               ]},
-              { label: "Sauté (Step 2)", ingredients: [
+              { label: "Aromatics", ingredients: [
                 "4 Tbsp unsalted butter, divided",
                 "4 Tbsp finely minced shallots (about 2 medium shallots)",
                 "OPTIONAL: 2–4 garlic cloves, finely minced"
               ]},
-              { label: "Steam (Step 3)", ingredients: [
+              { label: "Wine", ingredients: [
                 "4 cups dry white wine"
               ]},
-              { label: "Optional — makes moules à la crème (Step 5)", ingredients: [
+              { label: "Cream (optional)", ingredients: [
                 "½ cup heavy cream"
               ]},
-              { label: "Serve", ingredients: [
+              { label: "To serve", ingredients: [
                 "Freshly ground black pepper",
                 "2 Tbsp minced fresh parsley",
                 "Crusty bread"
@@ -2571,25 +2571,25 @@ const data = {
             servings: "Serves 2–4   |   Total: ~20 min",
             source: "Adapted from Pampered Chef, 29 Minutes to Dinner",
             ingredientGroups: [
-              { label: "Season shrimp (Step 1)", ingredients: [
+              { label: "Shrimp", ingredients: [
                 "½ lb shrimp, peeled and deveined",
                 "1 Tbsp vegetable oil",
                 "¼ tsp salt",
                 "¼ tsp pepper",
                 "⅛ tsp sugar"
               ]},
-              { label: "Orzo (Step 2)", ingredients: [
+              { label: "Orzo", ingredients: [
                 "2 cups chicken broth",
                 "1 cup white wine",
                 "1 clove garlic, minced",
                 "8 oz orzo"
               ]},
-              { label: "Finish (Step 3)", ingredients: [
+              { label: "Finish", ingredients: [
                 "1 cup frozen peas",
                 "1 Tbsp fresh lemon juice",
                 "1 Tbsp unsalted butter"
               ]},
-              { label: "Serve", ingredients: [
+              { label: "To serve", ingredients: [
                 "1 Tbsp lemon zest, grated",
                 "1 Tbsp fresh parsley, finely chopped",
                 "Freshly grated Parmesan (optional)"
@@ -2606,7 +2606,7 @@ const data = {
             servings: "Serves 4   |   Total: 20 min",
             source: "Mark Bittman, NYT Cooking (1999)",
             ingredientGroups: [
-              { label: "Paste & shrimp (Steps 1–2)", ingredients: [
+              { label: "Paste and shrimp", ingredients: [
                 "1 large clove garlic",
                 "1 Tbsp coarse salt",
                 "½ tsp cayenne",
@@ -2615,7 +2615,7 @@ const data = {
                 "2 tsp fresh-squeezed lemon juice",
                 "1½–2 lbs large shrimp (15–18 per pound), peeled, rinsed, and dried"
               ]},
-              { label: "Serve", ingredients: [
+              { label: "To serve", ingredients: [
                 "Lemon wedges"
               ]}
             ],
@@ -2630,12 +2630,12 @@ const data = {
             servings: "Serves 6–8   |   Prep: 15 min   |   Cook: 20 min   |   Total: 35 min",
             source: "Ree Drummond, The Pioneer Woman",
             ingredientGroups: [
-              { label: "Assemble (Step 1)", ingredients: [
+              { label: "Scallops and bacon", ingredients: [
                 "2 lbs large scallops",
                 "½ lb bacon, cut into thirds or halves",
                 "Wooden skewers"
               ]},
-              { label: "Chili butter (Step 3)", ingredients: [
+              { label: "Chili butter", ingredients: [
                 "1 stick (8 Tbsp) unsalted butter",
                 "2 tsp chili powder",
                 "Dash of cayenne"
@@ -2653,10 +2653,10 @@ const data = {
             servings: "Serves 4–6   |   Prep: 15 min   |   Cook: 25 min   |   Total: 40 min",
             source: "Tyler Florence, Food Network (Food 911)",
             ingredientGroups: [
-              { label: "Pasta (Step 1)", ingredients: [
+              { label: "Pasta", ingredients: [
                 "1 lb linguini"
               ]},
-              { label: "Shrimp (Step 2)", ingredients: [
+              { label: "Shrimp and aromatics", ingredients: [
                 "2 Tbsp unsalted butter",
                 "2 Tbsp extra-virgin olive oil",
                 "2 shallots, finely diced",
@@ -2665,13 +2665,13 @@ const data = {
                 "1 lb shrimp, peeled and deveined",
                 "Kosher salt and freshly ground black pepper"
               ]},
-              { label: "Sauce & finish (Step 3)", ingredients: [
+              { label: "Sauce", ingredients: [
                 "½ cup dry white wine",
                 "Juice of 1 lemon",
                 "2 Tbsp unsalted butter",
                 "2 Tbsp extra-virgin olive oil"
               ]},
-              { label: "Serve", ingredients: [
+              { label: "To serve", ingredients: [
                 "¼ cup finely chopped fresh parsley",
                 "Extra-virgin olive oil, for drizzling"
               ]}
@@ -2687,18 +2687,18 @@ const data = {
             servings: "Serves 4   |   Total: 25 min",
             source: "Los Angeles Times (Yang Chow Restaurant)",
             ingredientGroups: [
-              { label: "Coat shrimp (Step 2)", ingredients: [
+              { label: "Shrimp and coating", ingredients: [
                 "1 lb large shrimp, peeled, deveined, and butterflied",
                 "¼ cup cornstarch"
               ]},
-              { label: "Cornstarch slurry (Step 3 — mix ahead)", ingredients: [
+              { label: "Cornstarch slurry", ingredients: [
                 "2 tsp cornstarch",
                 "2 tsp water"
               ]},
-              { label: "Fry (Step 4)", ingredients: [
+              { label: "Frying oil", ingredients: [
                 "2 cups oil"
               ]},
-              { label: "Sauce (Step 5)", ingredients: [
+              { label: "Sauce", ingredients: [
                 "2 large cloves garlic, minced",
                 "½ tsp minced fresh ginger",
                 "½ tsp cayenne",
@@ -2709,7 +2709,7 @@ const data = {
                 "½ tsp salt",
                 "¼ cup water"
               ]},
-              { label: "Finish (Step 6)", ingredients: [
+              { label: "Finish", ingredients: [
                 "4 green onions, sliced"
               ]}
             ],
@@ -2732,14 +2732,14 @@ const data = {
               "A steak au poivre made with duck. Fancy enough for a gathering, relaxed enough for any night you want something special. The sauce can be made ahead and reheated, thinned with a little broth."
             ],
             ingredientGroups: [
-              { label: "Prep / Marinate (Step 1 — start up to 1 day ahead)", ingredients: [
+              { label: "Duck and marinade (up to 1 day ahead)", ingredients: [
                 "3 Muscovy duck breasts (about 1 lb each)",
                 "Salt",
                 "1 Tbsp freshly crushed black peppercorns (about 1 tsp per breast)",
                 "4 garlic cloves, sliced",
                 "Fresh thyme sprigs"
               ]},
-              { label: "Sauce (Steps 2–3 — make while duck marinates)", ingredients: [
+              { label: "Sauce", ingredients: [
                 "2 Tbsp unsalted butter, divided",
                 "Reserved duck tenderloins (from Step 1)",
                 "1 large shallot, sliced",
@@ -2766,14 +2766,14 @@ const data = {
               "All the flavors of an Italian sub — salami, radicchio, tomatoes, pepperoncini, chickpeas — roasted until caramelized and briny. Can swap in cauliflower florets, cubes of squash, or halved red potatoes for the radicchio."
             ],
             ingredientGroups: [
-              { label: "Vinaigrette (Step 1)", ingredients: [
+              { label: "Vinaigrette", ingredients: [
                 "4 garlic cloves",
                 "2 Tbsp dried oregano",
                 "2 tsp kosher salt",
                 "¼ cup red wine vinegar",
                 "¼ cup extra-virgin olive oil"
               ]},
-              { label: "Roast (Step 2)", ingredients: [
+              { label: "Roasting ingredients", ingredients: [
                 "1 (14-oz) can chickpeas, drained and patted dry",
                 "5 oz salami (casing removed if present), cut into ½-inch pieces",
                 "1 red onion, peeled, halved lengthwise, cut into ½-inch wedges",
@@ -2781,7 +2781,7 @@ const data = {
                 "1 cup cherry or grape tomatoes, halved",
                 "8 pepperoncini peppers"
               ]},
-              { label: "Serve (Step 3)", ingredients: [
+              { label: "To serve", ingredients: [
                 "½ cup ricotta",
                 "Kosher salt and black pepper",
                 "Crusty bread"
@@ -2917,10 +2917,10 @@ const data = {
               "Tofu note: Freeze the entire tofu block until firm (overnight works — keep a block or two in the freezer as a habit). Thaw in the refrigerator, then drain as usual. Slice into 4–5 slabs and gently press out extra moisture between two plates. Finely dice per the recipe. Frozen-and-thawed tofu becomes sponge-like and soaks up the slow-cooked flavors."
             ],
             ingredientGroups: [
-              { label: "Steep chilies (Step 1 — start first)", ingredients: [
+              { label: "Dried chilies", ingredients: [
                 "3 oz dried ancho chilies"
               ]},
-              { label: "Spice paste (Step 2 — toast while chilies steep)", ingredients: [
+              { label: "Spice paste", ingredients: [
                 "¼ cup light cooking oil (such as avocado)",
                 "3 Tbsp chili powder",
                 "1 Tbsp cacao powder",
@@ -2929,7 +2929,7 @@ const data = {
                 "1 tsp cumin",
                 "1 tsp paprika"
               ]},
-              { label: "Slow cooker (Step 4)", ingredients: [
+              { label: "Chili base", ingredients: [
                 "1 medium red onion, finely diced",
                 "1 medium sweet potato, peeled and finely diced",
                 "4 garlic cloves, minced",
@@ -2941,7 +2941,7 @@ const data = {
                 "1½ oz good dark chocolate (at least 70%)",
                 "3 cups mushroom stock (or vegetable stock)"
               ]},
-              { label: "Serve", ingredients: [
+              { label: "To serve", ingredients: [
                 "Cilantro (optional)",
                 "Greek yogurt (optional; omit if strictly vegan)",
                 "Quinoa, rice, or other grain"
@@ -2961,7 +2961,7 @@ const data = {
             servings: "Serves 2   |   Prep: 20 min   |   Cook: 15 min   |   Total: 35 min",
             source: "Kahnita Wilkerson, Tasty",
             ingredientGroups: [
-              { label: "Sauce (Step 1 — make first)", ingredients: [
+              { label: "Sauce", ingredients: [
                 "2 garlic cloves, minced (of 4 total)",
                 "2 tsp fresh ginger, grated",
                 "1 Tbsp honey",
@@ -2969,10 +2969,10 @@ const data = {
                 "¼ cup lime juice",
                 "¼ cup reduced-sodium soy sauce"
               ]},
-              { label: "Tofu (Step 2 — press while making sauce)", ingredients: [
+              { label: "Tofu", ingredients: [
                 "1 block extra-firm tofu"
               ]},
-              { label: "Stir Fry (Steps 3–6)", ingredients: [
+              { label: "Stir fry", ingredients: [
                 "2 Tbsp sesame oil",
                 "2 garlic cloves, minced (remaining)",
                 "1 cup white onion, sliced",
@@ -3001,12 +3001,12 @@ const data = {
             servings: "Serves 3   |   Prep: 25 min   |   Cook: 15 min   |   Total: 40 min",
             source: "Marzia, Little Spice Jar",
             ingredientGroups: [
-              { label: "Press tofu (Step 1 — start first)", ingredients: [
+              { label: "Tofu and coating", ingredients: [
                 "14 oz extra-firm tofu",
                 "1 Tbsp cornstarch",
                 "½ tsp kosher salt"
               ]},
-              { label: "Sauce (Step 2 — blend while tofu presses)", ingredients: [
+              { label: "Sauce", ingredients: [
                 "1 Tbsp sesame oil",
                 "1½ Tbsp grated ginger",
                 "1½ Tbsp minced garlic",
@@ -3017,12 +3017,12 @@ const data = {
                 "1 Tbsp cornstarch",
                 "2 Tbsp water"
               ]},
-              { label: "Stir Fry (Steps 3–4)", ingredients: [
+              { label: "Stir fry", ingredients: [
                 "3 Tbsp avocado oil",
                 "2½ cups green beans, cut into 1-inch pieces",
                 "1 cup baby carrots, cut lengthwise"
               ]},
-              { label: "Serve (optional)", ingredients: [
+              { label: "To serve (optional)", ingredients: [
                 "Rice, quinoa, noodles, or cauliflower rice"
               ]}
             ],
@@ -3042,19 +3042,19 @@ const data = {
               "The peanut sauce is inspired by West African groundnut stews. Fish sauce adds umami but is optional; omit it to keep the dish vegan. Peanut sauce can be made 2–3 days ahead and refrigerated."
             ],
             ingredientGroups: [
-              { label: "Pickled peppers (Step 2 — start first)", ingredients: [
+              { label: "Pickled peppers", ingredients: [
                 "4 Tbsp lime juice (of ⅔ cup total)",
                 "½ tsp kosher salt",
                 "8 baby bell peppers or 1 medium bell pepper (any color), stemmed and thinly sliced lengthwise",
                 "Freshly ground black pepper"
               ]},
-              { label: "Coconut-lime rice (Step 3)", ingredients: [
+              { label: "Coconut-lime rice", ingredients: [
                 "1 cup long-grain rice (jasmine or basmati)",
                 "½ cup full-fat coconut milk",
                 "1 cup water",
                 "Salt"
               ]},
-              { label: "Peanut sauce (Step 4)", ingredients: [
+              { label: "Peanut sauce", ingredients: [
                 "4 Tbsp lime juice (remaining from the ⅔ cup)",
                 "1 cup smooth, natural peanut butter",
                 "1 Tbsp red miso",
@@ -3065,12 +3065,12 @@ const data = {
                 "1 Tbsp buckwheat honey or molasses (+ 1 Tbsp more for dressing in Step 5)",
                 "¾ cup water"
               ]},
-              { label: "Tofu (Step 5 — roast)", ingredients: [
+              { label: "Tofu", ingredients: [
                 "2 (14-oz) packages extra-firm tofu, drained and sliced crosswise ¼-inch thick",
                 "Peanut or vegetable oil, for brushing pan and drizzling",
                 "Salt"
               ]},
-              { label: "Assembly (Step 6)", ingredients: [
+              { label: "To serve", ingredients: [
                 "Zest of 1 lime",
                 "3 cups peppery greens (arugula, mizuna, or baby mustard greens)",
                 "2 scallions, trimmed and thinly sliced"
@@ -3095,26 +3095,26 @@ const data = {
               "A \"no-stir\" oven polenta — the oven does the work while the mushrooms roast on the rack above. For an indulgent touch, stir a little heavy cream mixed with a finely grated garlic clove into the finished polenta."
             ],
             ingredientGroups: [
-              { label: "Mushrooms (Step 1 — go into oven first)", ingredients: [
+              { label: "Mushrooms", ingredients: [
                 "1½ lbs mixed mushrooms (crimini, shiitake, oyster, and/or maitake), torn into 1-inch pieces",
                 "4 thyme sprigs, plus thyme leaves for serving",
                 "6 garlic cloves, smashed",
                 "Kosher salt and freshly ground pepper",
                 "¼ cup extra-virgin olive oil"
               ]},
-              { label: "Polenta (Step 2)", ingredients: [
+              { label: "Polenta", ingredients: [
                 "4½ cups water",
                 "2 Tbsp unsalted butter",
                 "Kosher salt",
                 "1 cup polenta"
               ]},
-              { label: "Finish polenta (Step 4)", ingredients: [
+              { label: "Polenta — finish", ingredients: [
                 "4 oz Parmesan, finely grated, plus more for serving"
               ]},
-              { label: "Finish mushrooms (Step 5)", ingredients: [
+              { label: "Mushrooms — finish", ingredients: [
                 "1 Tbsp red wine vinegar"
               ]},
-              { label: "Serve", ingredients: [
+              { label: "To serve", ingredients: [
                 "Flaky sea salt",
                 "Thyme leaves",
                 "More Parmesan"
@@ -3137,7 +3137,7 @@ const data = {
               "Use large portobello mushrooms roughly 4 inches wide with slightly deeper caps — they're easier to stuff. Two mushrooms per serving makes a hearty main; one per person if serving as a side. For gluten-free, substitute gluten-free breadcrumbs."
             ],
             ingredientGroups: [
-              { label: "Marinara (Step 1 — make first, or substitute 1½ cups store-bought; Rao's recommended)", ingredients: [
+              { label: "Marinara", ingredients: [
                 "1 Tbsp olive oil",
                 "4 garlic cloves, roughly chopped",
                 "2 Tbsp tomato paste",
@@ -3146,25 +3146,25 @@ const data = {
                 "1 (28-oz) can Italian crushed tomatoes",
                 "Salt and freshly ground black pepper"
               ]},
-              { label: "Roast mushrooms (Step 2)", ingredients: [
+              { label: "Mushrooms", ingredients: [
                 "8 large (4-inch wide) portobello mushrooms, stems trimmed",
                 "Extra-virgin olive oil",
                 "Kosher salt and freshly ground black pepper"
               ]},
-              { label: "Sautéed spinach (Step 3)", ingredients: [
+              { label: "Spinach", ingredients: [
                 "1 Tbsp extra-virgin olive oil",
                 "1 shallot, finely sliced",
                 "6 oz baby spinach",
                 "Kosher salt and freshly ground black pepper"
               ]},
-              { label: "Crispy breadcrumb topping (Step 4)", ingredients: [
+              { label: "Breadcrumb topping", ingredients: [
                 "2 Tbsp unsalted butter",
                 "1 shallot, finely diced",
                 "½ cup panko breadcrumbs",
                 "1 garlic clove, finely minced",
                 "Kosher salt and freshly ground black pepper"
               ]},
-              { label: "Assembly (Steps 6–8)", ingredients: [
+              { label: "Assembly", ingredients: [
                 "4 oz goat cheese, cold from the fridge"
               ]}
             ],
@@ -3187,21 +3187,21 @@ const data = {
               "A go-to \"fancy\" dinner that's actually easy. The risotto should flow like slow-moving lava, not form a stiff ball. Black truffle puree is available at specialty grocery stores and online."
             ],
             ingredientGroups: [
-              { label: "Risotto base (Step 1)", ingredients: [
+              { label: "Risotto base", ingredients: [
                 "2 Tbsp unsalted butter (of 4 oz / 1 stick total, divided)",
                 "2 small shallots, finely minced",
                 "1½ cups arborio rice",
                 "½ cup dry white wine"
               ]},
-              { label: "Broth (Steps 1–2 — add gradually while stirring)", ingredients: [
+              { label: "Broth", ingredients: [
                 "6 cups chicken or vegetable broth, warmed"
               ]},
-              { label: "Mushrooms (Step 3 — sear while rice cooks)", ingredients: [
+              { label: "Mushrooms", ingredients: [
                 "1 Tbsp unsalted butter + 1 Tbsp neutral oil",
                 "12 oz cremini mushrooms, quartered",
                 "Salt and freshly cracked pepper"
               ]},
-              { label: "Finish (Step 4)", ingredients: [
+              { label: "Finish", ingredients: [
                 "Remaining 5 Tbsp unsalted butter",
                 "2 Tbsp black truffle puree",
                 "½ cup mascarpone",
@@ -3324,7 +3324,7 @@ const data = {
           title: "Coleslaw Salad",
           source: "Family recipe card (Grandmother Brenda)",
           ingredientGroups: [
-            { label: "Dressing (whisk together)", ingredients: [
+            { label: "Dressing", ingredients: [
               "1/4 cup vinegar",
               "1/2 cup oil",
               "1/2 cup sugar",
@@ -3372,16 +3372,16 @@ const data = {
             "The classic steak topping — also great over chicken, pork chops, or grain bowls. Have patience: let the mushrooms release all their moisture before they begin to brown. Leftovers keep in the fridge up to 10 days; reheat on the stovetop with a little extra butter."
           ],
           ingredientGroups: [
-            { label: "Sear (Steps 1–2)", ingredients: [
+            { label: "Mushrooms and fat", ingredients: [
               "2 lbs button mushrooms, halved",
               "2 Tbsp unsalted butter",
               "2 Tbsp olive oil"
             ]},
-            { label: "Aromatics (Step 2)", ingredients: [
+            { label: "Aromatics", ingredients: [
               "3 garlic cloves, minced",
               "Salt and pepper to taste"
             ]},
-            { label: "Glaze (Step 3)", ingredients: [
+            { label: "Glaze", ingredients: [
               "1½ Tbsp fresh thyme leaves",
               "¾ cup dry sherry"
             ]}
@@ -3400,7 +3400,7 @@ const data = {
             "The dressing makes more than needed for one salad — leftovers keep refrigerated for 1–2 weeks."
           ],
           ingredientGroups: [
-            { label: "Dressing (make first; whisk together)", ingredients: [
+            { label: "Dressing", ingredients: [
               "1 cup vinegar",
               "1/2 cup oil",
               "1/2 cup sugar",
@@ -3682,7 +3682,7 @@ const data = {
               ],
               source: "More Than a Tea Party (cookbook), Brunch and Luncheon chapter, p. 105",
               ingredientGroups: [
-                { label: "Sauce (mix together and let sit 2–3 hours at room temperature before serving)", ingredients: ["4 large, ripe tomatoes, peeled and coarsely chopped", "1 small red onion, coarsely chopped", "3 garlic cloves, finely minced", "1/2–3/4 cup fresh basil leaves, well washed and dried", "1/2 cup olive oil", "3/4 pound Brie cheese, rind removed and broken into chunks", "2 ounces Prosciutto, cut into thin strips", "1–2 teaspoons salt", "1–2 teaspoons freshly ground black pepper", "4 sun-dried tomatoes, well-chopped (optional)"] },
+                { label: "Sauce (2–3 hours ahead)", ingredients: ["4 large, ripe tomatoes, peeled and coarsely chopped", "1 small red onion, coarsely chopped", "3 garlic cloves, finely minced", "1/2–3/4 cup fresh basil leaves, well washed and dried", "1/2 cup olive oil", "3/4 pound Brie cheese, rind removed and broken into chunks", "2 ounces Prosciutto, cut into thin strips", "1–2 teaspoons salt", "1–2 teaspoons freshly ground black pepper", "4 sun-dried tomatoes, well-chopped (optional)"] },
                 { label: "Pasta", ingredients: ["1 pound linguine"] },
                 { label: "Garnish", ingredients: ["Freshly grated Parmesan cheese"] }
               ],
@@ -3764,7 +3764,7 @@ const data = {
               servings: "Serves 4   |   Total: 1 hr 15 min",
               source: "Molly Baz, The Club",
               ingredientGroups: [
-                { label: "Sauce (Step 1)", ingredients: [
+                { label: "Sauce", ingredients: [
                   "3 Tbsp unsalted butter",
                   "1 large yellow onion, finely chopped",
                   "1 cinnamon stick",
@@ -3773,7 +3773,7 @@ const data = {
                   "2 Tbsp red wine vinegar",
                   "Kosher salt"
                 ]},
-                { label: "Meatball mixture — also used as toasted breadcrumbs (Step 2)", ingredients: [
+                { label: "Meatball mixture", ingredients: [
                   "1 large egg",
                   "2 Tbsp extra-virgin olive oil",
                   "1 cup panko breadcrumbs",
@@ -3785,10 +3785,10 @@ const data = {
                   "1 bunch dill, coarsely chopped (reserve a handful for garnish)",
                   "1 bunch cilantro, coarsely chopped (reserve a handful for garnish)"
                 ]},
-                { label: "Beef (Step 3)", ingredients: [
+                { label: "Beef", ingredients: [
                   "1 lb ground beef (80/20)"
                 ]},
-                { label: "Finish + serve (Steps 4–5)", ingredients: [
+                { label: "Finish", ingredients: [
                   "1/2 cup water",
                   "1 Tbsp unsalted butter",
                   "1 lb fresh pappardelle or other fresh long pasta"
@@ -3989,11 +3989,11 @@ const data = {
               ],
               source: "Mostly Muffins (cookbook), p. 14",
               ingredientGroups: [
-                { label: "Dry ingredients (combine in a large bowl)", ingredients: ["1 1/2 cups all-purpose flour", "1 1/2 cups whole-wheat flour", "1 1/2 teaspoons baking powder", "1 1/2 teaspoons baking soda", "1/4 teaspoon salt"] },
-                { label: "Wet base (cream in another bowl)", ingredients: ["3/4 cup lightly salted butter or margarine, softened", "3/4 cup sugar"] },
-                { label: "Beat in", ingredients: ["3 eggs"] },
-                { label: "Stir in", ingredients: ["2 cups mashed ripe banana (about 4 medium bananas)", "6 tablespoons (3/8 cup) milk", "1 1/2 teaspoons vanilla"] },
-                { label: "Fold in (optional)", ingredients: ["3/4 cup broken walnuts (optional)"] }
+                { label: "Dry ingredients", ingredients: ["1 1/2 cups all-purpose flour", "1 1/2 cups whole-wheat flour", "1 1/2 teaspoons baking powder", "1 1/2 teaspoons baking soda", "1/4 teaspoon salt"] },
+                { label: "Wet base", ingredients: ["3/4 cup lightly salted butter or margarine, softened", "3/4 cup sugar"] },
+                { label: "Eggs", ingredients: ["3 eggs"] },
+                { label: "Wet additions", ingredients: ["2 cups mashed ripe banana (about 4 medium bananas)", "6 tablespoons (3/8 cup) milk", "1 1/2 teaspoons vanilla"] },
+                { label: "Walnuts (optional)", ingredients: ["3/4 cup broken walnuts (optional)"] }
               ],
               steps: [
                 "Preheat oven to 375°F. Grease muffin cups and the edges surrounding the cups.",
@@ -4026,7 +4026,7 @@ const data = {
               servings: "Serves 12–16   |   Bake: 350–375°F for 30–40 minutes",
               source: "Family recipe card, credited to Nana Regina (card reads \"delicious! Mother's\")",
               ingredientGroups: [
-                { label: "Cake (cream butter and sugar, then add in order)", ingredients: [
+                { label: "Cake batter", ingredients: [
                   "1/2 cup butter, softened (or margarine)",
                   "2 cups sugar",
                   "4 eggs, well beaten",
@@ -4036,7 +4036,7 @@ const data = {
                   "1/2 teaspoon salt",
                   "1 cup milk"
                 ]},
-                { label: "Filling (combine; spread over half the batter)", ingredients: [
+                { label: "Filling", ingredients: [
                   "1 cup brown sugar",
                   "1 cup nuts, chopped",
                   "2 tablespoons butter",
@@ -4062,7 +4062,7 @@ const data = {
                 "Card notes 'double recipe' — these quantities are the base (single) recipe."
               ],
               ingredientGroups: [
-                { label: "Dough (work together by hand)", ingredients: [
+                { label: "Dough", ingredients: [
                   "2 cups flour",
                   "1/4 cup sugar",
                   "1/2 teaspoon salt",
@@ -4072,7 +4072,7 @@ const data = {
                 { label: "Coating", ingredients: [
                   "1 cup chopped nuts"
                 ]},
-                { label: "Finish (after baking)", ingredients: [
+                { label: "Finish", ingredients: [
                   "Powdered sugar, for rolling"
                 ]}
               ],
@@ -4093,7 +4093,7 @@ const data = {
                 "The 2 oz. of red food coloring gives the classic deep red color."
               ],
               ingredientGroups: [
-                { label: "Paste (Step 1 — make first)", ingredients: [
+                { label: "Cocoa paste", ingredients: [
                   "3 tablespoons unsweetened cocoa powder (Dutch-process; e.g. Nestlé Toll House Cocoa or Hershey's Special Dark)",
                   "2 oz. red food coloring"
                 ]},
@@ -4108,11 +4108,11 @@ const data = {
                   "1 teaspoon baking soda",
                   "1 tablespoon white vinegar"
                 ]},
-                { label: "Frosting — Part 1 (cook and cool completely)", ingredients: [
+                { label: "Frosting — Part 1 (cool completely before using)", ingredients: [
                   "5 tablespoons flour",
                   "1 cup milk"
                 ]},
-                { label: "Frosting — Part 2 (cream together, then combine with Part 1)", ingredients: [
+                { label: "Frosting — Part 2", ingredients: [
                   "1/2 cup butter, softened",
                   "1/2 cup vegetable shortening",
                   "1 cup granulated sugar",
@@ -4140,11 +4140,11 @@ const data = {
                 "Frozen cheese blintzes from the store work perfectly."
               ],
               ingredientGroups: [
-                { label: "Pan (Step 1)", ingredients: [
+                { label: "Pan and blintzes", ingredients: [
                   "1 stick (1/2 cup) butter",
                   "2 packages (about 12) frozen cheese blintzes"
                 ]},
-                { label: "Custard (beat together; pour over blintzes)", ingredients: [
+                { label: "Custard", ingredients: [
                   "6 eggs",
                   "2/3 cup sugar",
                   "1/2 teaspoon vanilla",
@@ -4209,7 +4209,7 @@ const data = {
                 "Steps reconstructed from the ingredient list and standard apple tart method."
               ],
               ingredientGroups: [
-                { label: "Pastry (make first; refrigerate 30–60 minutes)", ingredients: [
+                { label: "Pastry (30–60 minutes ahead)", ingredients: [
                   "2 cups flour",
                   "3/4 cup vegetable shortening",
                   "2 egg yolks",
@@ -4222,7 +4222,7 @@ const data = {
                   "Lemon juice to taste",
                   "1 teaspoon cinnamon"
                 ]},
-                { label: "Glaze (drizzle over warm cake)", ingredients: [
+                { label: "Glaze", ingredients: [
                   "1 cup powdered sugar",
                   "1 tablespoon flour",
                   "1 teaspoon vanilla",
@@ -4405,7 +4405,7 @@ const data = {
             "A typed clipping from Nana Regina's collection. Serve immediately — Béarnaise does not reheat well."
           ],
           ingredientGroups: [
-            { label: "Reduction (Step 1)", ingredients: [
+            { label: "Reduction", ingredients: [
               "1/4 cup dry white wine",
               "2 tablespoons white wine vinegar or sherry vinegar",
               "1 tablespoon minced shallot",
@@ -4441,15 +4441,15 @@ const data = {
             "Inspired by Magnolia Bakery."
           ],
           ingredientGroups: [
-            { label: "Pudding base (Step 1 — make 1 hour ahead)", ingredients: [
+            { label: "Pudding base (1 hour ahead)", ingredients: [
               "1½ cups cold water",
               "1 (14 oz) can sweetened condensed milk",
               "⅔ cup instant vanilla pudding powder (or 1 whole box)"
             ]},
-            { label: "Whipped cream (Step 2)", ingredients: [
+            { label: "Whipped cream", ingredients: [
               "3 cups heavy cream"
             ]},
-            { label: "Assembly (Step 3)", ingredients: [
+            { label: "Assembly", ingredients: [
               "1 box vanilla wafers",
               "3–4 bananas, sliced"
             ]}
