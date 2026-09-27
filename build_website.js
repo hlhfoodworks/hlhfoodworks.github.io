@@ -148,29 +148,43 @@ const CLUSTER_MAP = {
   // Noodles: Italian — Middle Eastern/Persian
   'Spiced Meatballs with Pappardelle':                   'Middle Eastern/Persian',
   // Dressings — American
+  'Christy\'s Dressing':                                 'American',
   'Horseradish Sauce':                                   'General',
   'Steak Seasoning Rub':                                 'General',
+  // Sauces — American
+  'Bo\'s Barbeque Sauce':                                'American',
   'Cherry Barbecue Sauce':                               'General',
   // Sauces — Italian
   'Sun-Dried Tomato Cream Sauce':                        'Italian',
   // Dressings — Latin/South American
   'Authentic Chimichurri':                               'Latin/South American',
   // Desserts — American
+  'Christy\'s Easy Lemon Icebox Pie':                    'American',
   'Fresh Cranberry Mold':                                'General',
   'Lauren\'s Banana Pudding':                            'General',
+  'Millie\'s Cobbler':                                   'American',
+  'Summer Pudding':                                      'American',
   // Desserts — Thai
   'Mango with Sticky Rice (Khao Neow Mamuang)':         'Thai',
   // Drinks — American
+  'Apple Pie a la Mode Shake':                           'American',
+  'Christy\'s Iced Tea':                                 'American',
   'Melon Ball':                                          'General',
+  'Peanut Butter-Chocolate Shake':                       'American',
+  'Very Berry Shake':                                    'American',
   // Turkey — American
   'Expertly Spiced and Glazed Roast Turkey':             'General',
   'Turkey and Quinoa Meatloaf':                          'General',
   // Turkey — Indian
   'Turkey Tikka Masala':                                 'Indian',
+  // Other (Meat Mains) — American
+  "Christy's Jambalaya":                                 'American',
   // Other (Meat Mains) — French
   'Peppered Duck Breast With Red Wine Sauce':            'French',
   // Other (Meat Mains) — Italian
   'Sheet-Pan Italian Sub Dinner':                        'Italian',
+  // Other (Meat Mains) — Japanese
+  "Naomi's Nabe (Japanese Hot Pot)":                     'Japanese',
   // Tofu — American
   'Tofu Stir Fry':                                       'General',
   'Sesame Ginger Tofu and Veggie Stir Fry':              'General',
@@ -185,6 +199,8 @@ const CLUSTER_MAP = {
   'Slow Cooker Vegan Mole Chili':                        'Latin/South American',
   // Vegetables — Moroccan/North African
   'Moroccan Eggplant with Couscous':                     'Moroccan/North African',
+  // Salads > Greens — American
+  'Broccoli Salad':                                      'American',
   // Salads > Pasta Salads — American
   'Chuck Wagon Barbecued Pasta Salad':                   'General',
   // Salads > Pasta Salads — Chinese
@@ -200,6 +216,8 @@ const CLUSTER_MAP = {
   'Potato Latkes':                                       'Central/Eastern European',
   // Baking: Sweet — American
   'Jumbo Banana-Nut Muffins':                            'General',
+  'Kitchen Sink Cookies':                                'American',
+  'Marble Brownies':                                     'American',
   "Eric's Chocolate Chip Cookies":                       'General',
   'Chocolate "Birthday Cake"':                           'General',
   "Nana's Poundcake":                                    'General',
@@ -210,11 +228,14 @@ const CLUSTER_MAP = {
   'Blintz Soufflé':                                      'Central/Eastern European',
   "Brenda's Noodle Kugel":                               'Central/Eastern European',
   "Min Cohen's Inscrutable Apple Cake":                  'Central/Eastern European',
+  'Passover Cake':                                       'Central/Eastern European',
+  "Renee's Blintz Souffle":                              'Central/Eastern European',
   // Turkey — American
   'Bristol Farms Turkey Salad (Copycat)':                'General',
   // Dressings and Sauces — French
   'Béarnaise Sauce':                                     'French',
   // Appetizers — American
+  "Artichoke Hors D'oeuvre":                             'American',
   "Barbara Glabman's Cheese Ball":                       'General',
   'Shrimp Dip':                                          'General',
   // Appetizers — Central/Eastern European
@@ -226,9 +247,12 @@ const CLUSTER_MAP = {
   'Mushrooms Florentine':                                'Italian',
   // Baking Savory — Italian
   "Susan's Calzones":                                    'Italian',
+  // Baking: Bread — Central/Eastern European
+  "Nechamie's Challah":                                  'Central/Eastern European',
   // Baking Sweet — American
   'Butter Pecan Coffee Cake':                            'General',
   // Breakfast — American
+  'Baked Stuffed French Toast':                          'American',
   'Glazed Cinnamon Rolls (Tangzhong Version)':           'General',
   'Homemade Biscuits':                                   'General',
   'Raised Waffles':                                      'General',
@@ -239,6 +263,7 @@ const CLUSTER_MAP = {
   'Sea Scallops with Red Peppers and Tomatoes':           'Italian',
   'Mussels with Thai Broth':                             'Thai',
   'Linguine with Mussels':                               'Italian',
+  'Sage Pesto':                                          'Italian',
   'Linguine with Clams and Wild Mushrooms':               'Italian',
   'Baked Trout St. Helena':                              'Italian',
   'Soy-Salmon with Cilantro-Coconut Chutney':            'American',
