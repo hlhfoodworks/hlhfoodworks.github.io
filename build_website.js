@@ -1642,7 +1642,11 @@ function buildPage(section, navHtml, contentHtml, cookbookData) {
     document.querySelectorAll('.nav-recipe').forEach(function (li) {
       var link = li.querySelector('.nav-recipe-link');
       var title = link ? link.dataset.recipeTitle : '';
-      var show = !favOnly || favTitles.has(title);
+      // For current-page recipes, favTitles is authoritative.
+      // For other-page recipes, read the star span stamped at build time.
+      var starEl = link ? link.querySelector('.nav-star') : null;
+      var isFavInNav = starEl ? starEl.textContent.trim() === '★' : false;
+      var show = !favOnly || favTitles.has(title) || isFavInNav;
       li.classList.toggle('nav-hidden', !show);
     });
     document.querySelectorAll('.nav-cluster').forEach(function (li) {
