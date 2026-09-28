@@ -248,6 +248,7 @@ module.exports = {
         },
         {
           "title": "Raised Waffles",
+          "favorite": true,
           "servings": "About 8 waffles",
           "comments": [
             "The batter keeps well in the refrigerator for several days."
@@ -589,26 +590,28 @@ module.exports = {
         },
         {
           "title": "Charoset (Ashkenazic Style)",
-          "servings": "Serves 6–8",
+          "favorite": true,
+          "servings": "Serves 18–24",
           "source": "\"Celebration: The Book of Jewish Festivals,\" ed. Naomi Black (Jonathan David Publishers, 1989)",
           "comments": [
-            "Traditionally served at Passover Seder as a spread on matzah. Texture is a matter of preference — either chunky or finely chopped throughout."
+            "Traditionally served at Passover Seder as a spread on matzah. Texture is a matter of preference — either chunky or finely chopped throughout.",
+            "Use 3 different apple varieties for the best depth of flavor (e.g. one tart, one sweet, one somewhere in between)."
           ],
           "ingredientGroups": [
             {
               "label": null,
               "ingredients": [
-                "1 apple, preferably tart",
-                "1/4 cup walnuts, pecans, or almonds, chopped",
-                "1 teaspoon honey",
-                "Dash cinnamon",
-                "Dash orange zest",
-                "1 tablespoon kosher red wine"
+                "3 apples, using 3 different varieties",
+                "3/4 cup walnuts, pecans, or almonds, chopped",
+                "1 tablespoon honey",
+                "1/4 teaspoon cinnamon, or to taste",
+                "1/4 teaspoon orange zest, or to taste",
+                "3 tablespoons kosher red wine"
               ]
             }
           ],
           "steps": [
-            "Chop the apple to your preferred texture. If making a fine mixture, chop the nuts finely as well.",
+            "Chop the apples to your preferred texture. If making a fine mixture, chop the nuts finely as well.",
             "Mix together with the honey, cinnamon, orange zest, and wine. Serve immediately or refrigerate until the Seder."
           ]
         },
@@ -653,6 +656,7 @@ module.exports = {
         },
         {
           "title": "Baba Ganoush",
+          "favorite": true,
           "servings": "Serves 4",
           "source": "Love and Lemons / Jeanine Donofrio",
           "comments": [
@@ -819,6 +823,7 @@ module.exports = {
             },
             {
               "title": "Crunchy Romaine Toss",
+              "favorite": true,
               "servings": "Serves 10-12",
               "source": "From Christy Ponder",
               "ingredientGroups": [
@@ -1045,49 +1050,6 @@ module.exports = {
                 "Tear romaine into a large bowl. Add mushrooms, cherry tomatoes, mango, and avocado.",
                 "Top with cashews and sunflower seeds.",
                 "Drizzle dressing over salad just before serving and toss."
-              ]
-            },
-            {
-              "title": "Western River Curry Chicken Salad",
-              "servings": "Serves 4–6",
-              "source": "As served by Western River Expeditions in the Grand Canyon",
-              "comments": [
-                "For best texture, stir in cashews just before serving if making ahead, as they soften over time.",
-                "Can also serve in a pita or as a sandwich filling."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Dressing",
-                  "ingredients": [
-                    "1/2 cup plain yogurt",
-                    "2 tablespoons fresh lemon juice",
-                    "1 tablespoon curry powder",
-                    "1/2 teaspoon salt",
-                    "1/4 teaspoon black pepper"
-                  ]
-                },
-                {
-                  "label": "Salad",
-                  "ingredients": [
-                    "3–4 cups cooked chicken, diced or shredded (about 1½ pounds boneless breast or thighs)",
-                    "1 large carrot, shredded or finely diced",
-                    "1/4 cup red onion, finely minced",
-                    "1/2 cup golden raisins",
-                    "1/2 cup roasted cashews"
-                  ]
-                },
-                {
-                  "label": "To serve",
-                  "ingredients": [
-                    "Lettuce leaves or bed of mixed greens"
-                  ]
-                }
-              ],
-              "steps": [
-                "Whisk together yogurt, lemon juice, curry powder, salt, and pepper in a large bowl.",
-                "Add chicken, carrot, red onion, golden raisins, and cashews. Stir well until everything is evenly coated.",
-                "Refrigerate at least 1 hour before serving to allow flavors to meld and raisins to plump. (This step is optional but recommended.)",
-                "Serve over lettuce."
               ]
             },
             {
@@ -2186,6 +2148,49 @@ module.exports = {
                   ]
                 },
                 "Transfer the chicken and rice to a bowl, removing and discarding the cardamom pods and star anise. Garnish with the apricots, almonds, and cilantro."
+              ]
+            },
+            {
+              "title": "Western River Curry Chicken Salad",
+              "servings": "Serves 4–6",
+              "source": "As served by Western River Expeditions in the Grand Canyon",
+              "comments": [
+                "For best texture, stir in cashews just before serving if making ahead, as they soften over time.",
+                "Can also serve in an oversized spinach tortilla (as served by Western River Expeditions on Grand Canyon trips), in a pita, or as a sandwich filling."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Dressing",
+                  "ingredients": [
+                    "1/2 cup plain yogurt",
+                    "2 tablespoons fresh lemon juice",
+                    "1 tablespoon curry powder",
+                    "1/2 teaspoon salt",
+                    "1/4 teaspoon black pepper"
+                  ]
+                },
+                {
+                  "label": "Salad",
+                  "ingredients": [
+                    "3–4 cups cooked chicken, diced or shredded (about 1½ pounds boneless breast or thighs)",
+                    "1 large carrot, shredded or finely diced",
+                    "1/4 cup red onion, finely minced",
+                    "1/2 cup golden raisins",
+                    "1/2 cup roasted cashews"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "Lettuce leaves or bed of mixed greens"
+                  ]
+                }
+              ],
+              "steps": [
+                "Whisk together yogurt, lemon juice, curry powder, salt, and pepper in a large bowl.",
+                "Add chicken, carrot, red onion, golden raisins, and cashews. Stir well until everything is evenly coated.",
+                "Refrigerate at least 1 hour before serving to allow flavors to meld and raisins to plump. (This step is optional but recommended.)",
+                "Serve over lettuce."
               ]
             },
             {
@@ -3688,6 +3693,7 @@ module.exports = {
             },
             {
               "title": "Pad Krapow Gai (Thai Basil Chicken)",
+              "favorite": true,
               "servings": "Serves 2 to 4   |   Total: 15 minutes",
               "comments": [
                 "Thai seasoning sauce (such as Golden Mountain) is made from fermented soybeans, like soy sauce, and adds sweetness along with savory depth."
@@ -4449,6 +4455,7 @@ module.exports = {
             },
             {
               "title": "Crispy Chicken Katsu Bowls",
+              "favorite": true,
               "servings": "Serves 4   |   Prep: 30 minutes   |   Cook: 15 minutes   |   Total: 45 minutes",
               "source": "https://www.halfbakedharvest.com/chicken-katsu-bowls/",
               "ingredientGroups": [
@@ -5988,6 +5995,7 @@ module.exports = {
           "recipes": [
             {
               "title": "Dry-Brined Salmon",
+              "favorite": true,
               "servings": "Serves 4   |   Prep: 5 min   |   Marinate: 8 hrs – 2 days   |   Cook: 15 min   |   Total: ~8.5 hrs+",
               "source": "J. Kenji López-Alt, NYT Cooking",
               "comments": [
@@ -6495,6 +6503,7 @@ module.exports = {
             },
             {
               "title": "Moules Marinières",
+              "favorite": true,
               "servings": "Serves 4   |   Prep: 45 min   |   Cook: 15 min   |   Total: 1 hour",
               "source": "Florence Fabricant, NYT Cooking; garlic and cream option adapted from George Duran, Food Network",
               "ingredientGroups": [
@@ -8502,6 +8511,7 @@ module.exports = {
           "recipes": [
             {
               "title": "Mushrooms Florentine",
+              "favorite": true,
               "servings": "Serves 8–10",
               "source": "Family recipe card, credited to Sue Karp",
               "comments": [
@@ -8836,6 +8846,7 @@ module.exports = {
         },
         {
           "title": "Crispy Smashed Potatoes",
+          "favorite": true,
           "servings": "Serves 6",
           "source": "Modern Honey / Melissa Stadler",
           "ingredientGroups": [
@@ -9015,6 +9026,7 @@ module.exports = {
         },
         {
           "title": "Potato Latkes",
+          "favorite": true,
           "servings": "Makes about 12 latkes",
           "source": "\"Celebration: The Book of Jewish Festivals,\" ed. Naomi Black (Jonathan David Publishers, 1989)",
           "comments": [
@@ -9263,6 +9275,7 @@ module.exports = {
           "recipes": [
             {
               "title": "BIG Noods alla Gin with Sungold Tomatoes",
+              "favorite": true,
               "servings": "Serves 4 to 6   |   Prep: 40 minutes   |   Total: 50 minutes",
               "comments": [
                 "Fresh lasagna sheets are called for here for their fun, floppy volume on the plate, but any pasta shape — fresh or dried — works well.",
@@ -9956,8 +9969,12 @@ module.exports = {
           "recipes": [
             {
               "title": "Nechamie's Challah",
+              "favorite": true,
               "servings": "Makes 2 large loaves",
               "source": "From Nechamie (Chabad Jewish Center of Pudong)",
+              "comments": [
+                "Tangzhong option: Before mixing the dough, cook 3 tablespoons of the measured dough flour with 1/2 cup of the measured dough water in a small saucepan over medium heat, stirring constantly, until thick and pudding-like (about 65\u00b0F / 150\u00b0F), 3\u20134 minutes. Let cool completely, then add to the dough with the other wet ingredients, using the remaining (reduced) flour and water amounts. The result is a softer, more pillowy challah that stays fresh longer."
+              ],
               "ingredientGroups": [
                 {
                   "label": "Yeast starter",
@@ -10127,6 +10144,7 @@ module.exports = {
             },
             {
               "title": "Eric's Chocolate Chip Cookies",
+              "favorite": true,
               "servings": "About 3 dozen cookies",
               "comments": [
                 "Based on the classic Toll House chocolate chip cookie recipe, with a few of Eric's own touches — rolled oats and roughly chopped pecans."
@@ -10582,6 +10600,7 @@ module.exports = {
             },
             {
               "title": "Chocolate \"Birthday Cake\"",
+              "favorite": true,
               "servings": "One large sheet cake or a 2-layer 9-inch cake   |   Cook: 40-45 minutes",
               "comments": [
                 "For a single layer, halve the butter, sugar, chocolate, flour, baking soda, salt, vanilla, and water as noted below. For 1 1/2 eggs: whisk 2 eggs together and use 3/4 of the mixture.",
@@ -11360,6 +11379,7 @@ module.exports = {
           "recipes": [
             {
               "title": "72-Hour Pizza Dough",
+              "favorite": true,
               "servings": "Makes 3 pizzas (~283g each)",
               "source": "The Gourmandise School (The Pizza Class)",
               "ingredientGroups": [
@@ -11507,6 +11527,7 @@ module.exports = {
         },
         {
           "title": "Lemon Mustard Vinaigrette",
+          "favorite": true,
           "servings": "Serves 6   |   Prep: 5 minutes",
           "comments": [
             "Garlic doubled from the original recipe, and microplaned rather than minced for a smoother, more evenly distributed flavor."
@@ -11704,6 +11725,7 @@ module.exports = {
             {
               "id": "steak-seasoning-rub",
               "title": "Steak Seasoning Rub",
+              "favorite": true,
               "servings": "Makes enough for 4 large steaks   |   Total: 5 min",
               "source": "Sommer Collier, A Spicy Perspective",
               "comments": [
@@ -12220,6 +12242,7 @@ module.exports = {
         },
         {
           "title": "Mango with Sticky Rice (Khao Neow Mamuang)",
+          "favorite": true,
           "servings": "Serves about 8",
           "source": "\"A Passion for Thai Cooking\" by Sompon and Elizabeth Nabnian, p. 136",
           "comments": [
