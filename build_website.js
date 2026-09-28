@@ -226,6 +226,7 @@ const CLUSTER_MAP = {
   "Dad's Greek Salad":                                   'Mediterranean/Greek',
   // Salads > Greens — Indian
   'Indian Slaw':                                         'Indian',
+  'Cucumber Salad with Sesame and Rice Vinegar':         'Chinese',
   // Salads > Pasta Salads — General
   'Chuck Wagon Barbecued Pasta Salad':                   'General',
   // Salads > Pasta Salads — Chinese
@@ -318,6 +319,20 @@ const CLUSTER_MAP = {
   "Brenda's Chocolate Chip Cookies":                     'General',
   'Apple Pie':                                           'General',
   'Chinese Tomato Egg Stir-fry':                         'Chinese',
+  // New recipes added 2026-09-28
+  'Green Shakshuka with Feta':                           'Middle Eastern/Persian',
+  'Spring Roll Salad with Peanut Dressing':              'Vietnamese',
+  'Dumpling Tomato Salad with Chile Crisp Vinaigrette':  'Chinese',
+  'Extra-Stuffed Veggie Burritos':                       'Latin/South American',
+  'Aloo Gobi':                                           'Indian',
+  'Baked Rajma (Punjabi-Style Red Beans With Cream)':    'Indian',
+  'Cauliflower Curry':                                   'Indian',
+  'Chickpea Tikka Masala':                               'Indian',
+  'Gobhi Masaledaar':                                    'Indian',
+  'Indian Spiced Zucchini and Tomatoes':                 'Indian',
+  'Authentic Saag Paneer':                               'Indian',
+  'Spicy Roasted Cauliflower with Sriracha and Sesame':  'General',
+  'Shakshuka With Feta':                                 'Middle Eastern/Persian',
 };
 
 // ── Helpers ────────────────────────────────────────────────────────────────

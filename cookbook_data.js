@@ -287,6 +287,103 @@ module.exports = {
           ]
         },
         {
+          "title": "Green Shakshuka with Feta",
+          "servings": "Serves 4–6",
+          "source": "Chaya Rappoport / The Nosher",
+          "ingredientGroups": [
+            {
+              "label": "Aromatics and greens",
+              "ingredients": [
+                "1/4 cup olive oil",
+                "1 small onion, finely diced",
+                "4 garlic cloves, minced",
+                "1 pound Swiss chard or kale, stems removed, leaves coarsely chopped",
+                "2 cups packed baby spinach",
+                "1 teaspoon ground cumin",
+                "1/2 teaspoon ground coriander",
+                "Aleppo pepper or red pepper flakes to taste",
+                "Salt and black pepper"
+              ]
+            },
+            {
+              "label": "Eggs and feta",
+              "ingredients": [
+                "4 oz feta cheese, crumbled (about 1 cup)",
+                "6 large eggs"
+              ]
+            },
+            {
+              "label": "To serve",
+              "ingredients": [
+                "Fresh cilantro or parsley, chopped",
+                "Warm pita or crusty bread"
+              ]
+            }
+          ],
+          "steps": [
+            "Heat olive oil in a large, deep skillet over medium. Add onion and cook until softened, about 5 minutes. Add garlic and cook 1 minute more.",
+            "Add cumin, coriander, and Aleppo pepper; stir 30 seconds. Add greens in batches, stirring to wilt. Cook until all greens are wilted and excess liquid has evaporated, 5–8 minutes. Season well with salt and pepper.",
+            "Stir in half the feta. Using a spoon, make 6 wells in the greens. Crack one egg into each well. Scatter remaining feta over the top.",
+            "Cover and cook over low heat until whites are just set and yolks are still runny, 7–10 minutes. (Or transfer to a 375°F oven and bake 8–10 minutes.)",
+            "Garnish with fresh herbs and serve directly from the pan with warm pita or bread."
+          ]
+        },
+        {
+          "title": "Shakshuka With Feta",
+          "servings": "Serves 4–6   |   Total: 50 min",
+          "source": "Melissa Clark / NYT Cooking",
+          "ingredientGroups": [
+            {
+              "label": "Aromatics",
+              "ingredients": [
+                "3 tablespoons extra-virgin olive oil",
+                "1 large onion, halved and thinly sliced",
+                "1 large red bell pepper, seeded and thinly sliced",
+                "3 garlic cloves, thinly sliced"
+              ]
+            },
+            {
+              "label": "Spices",
+              "ingredients": [
+                "1 teaspoon ground cumin",
+                "1 teaspoon sweet paprika",
+                "1/8 teaspoon Aleppo pepper or red pepper flakes"
+              ]
+            },
+            {
+              "label": "Tomatoes",
+              "ingredients": [
+                "One 28-oz can whole plum tomatoes with their juices, coarsely chopped",
+                "3/4 teaspoon kosher salt",
+                "1/4 teaspoon black pepper"
+              ]
+            },
+            {
+              "label": "Feta",
+              "ingredients": [
+                "5 oz feta, crumbled (about 1 1/4 cups)"
+              ]
+            },
+            {
+              "label": "Eggs",
+              "ingredients": [
+                "6 large eggs"
+              ]
+            },
+            {
+              "label": "To serve",
+              "ingredients": [
+                "Chopped fresh cilantro",
+                "Hot sauce"
+              ]
+            }
+          ],
+          "steps": [
+            "Heat oven to 375°F. Heat oil in a large, deep ovenproof skillet over medium-low. Add onion and bell pepper; cook, stirring occasionally, until very soft, about 20 minutes. Add garlic and cook 1–2 minutes. Add cumin, paprika, and Aleppo pepper or red pepper flakes; cook 1 minute. Pour in tomatoes; season with salt and pepper. Simmer, stirring occasionally, until sauce thickens, about 10 minutes. Stir in feta.",
+            "Gently crack eggs directly into the skillet, spacing them evenly over the sauce. Season eggs with salt and pepper. Transfer skillet to oven and bake until whites are just set but yolks are still runny, 7–10 minutes. Sprinkle with cilantro and serve from the pan with hot sauce alongside."
+          ]
+        },
+        {
           "title": "Chinese Tomato Egg Stir-fry",
           "servings": "Serves 2",
           "source": "Adapted from The Woks of Life (thewoksoflife.com)",
@@ -1113,6 +1210,145 @@ module.exports = {
                 "Combine cabbage, onion, carrots, and jalapenos in a large bowl. Toss with salt and let sit 15–20 minutes to draw out moisture.",
                 "Squeeze or press out excess liquid from slaw by hand or in a colander. Toss with vegetable oil.",
                 "Add dressing, cashews, and cilantro; toss to coat. Taste and adjust salt. Serve immediately or refrigerate up to 2 days."
+              ]
+            },
+            {
+              "title": "Spring Roll Salad with Peanut Dressing",
+              "servings": "Serves 4",
+              "source": "Valerie Bertinelli / Food Network",
+              "ingredientGroups": [
+                {
+                  "label": "Peanut dressing",
+                  "ingredients": [
+                    "1/4 cup peanut butter",
+                    "3 tablespoons soy sauce",
+                    "2 tablespoons fresh lime juice",
+                    "1 tablespoon toasted sesame oil",
+                    "1 tablespoon honey or agave",
+                    "1 clove garlic, minced",
+                    "1 teaspoon freshly grated ginger",
+                    "2–3 tablespoons warm water, as needed"
+                  ]
+                },
+                {
+                  "label": "Salad",
+                  "ingredients": [
+                    "4 oz rice vermicelli noodles",
+                    "2 cups shredded cabbage (green or purple)",
+                    "1 cup shredded carrots",
+                    "1 red bell pepper, thinly sliced",
+                    "1 cup bean sprouts",
+                    "3 scallions, thinly sliced",
+                    "1/4 cup fresh basil leaves, torn",
+                    "1/4 cup fresh cilantro leaves",
+                    "1 tablespoon chopped fresh mint, or to taste"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "1/4 cup roasted peanuts, roughly chopped",
+                    "Lime wedges"
+                  ]
+                }
+              ],
+              "steps": [
+                "Whisk together all peanut dressing ingredients until smooth, adding warm water until dressing is pourable. Set aside.",
+                "Cook rice noodles per package instructions. Drain and rinse under cold water.",
+                "In a large bowl, combine noodles, cabbage, carrots, bell pepper, bean sprouts, and scallions. Toss well.",
+                "Add basil, cilantro, and mint; toss to combine.",
+                "Drizzle peanut dressing over salad and toss to coat. Top with chopped peanuts and serve with lime wedges."
+              ]
+            },
+            {
+              "title": "Cucumber Salad with Sesame and Rice Vinegar",
+              "servings": "Serves 2 to 4",
+              "source": "Lauren Muhlheim, adapted from Deb Perelman / Smitten Kitchen",
+              "favorite": true,
+              "comments": [
+                "Leftovers keep in the fridge for 2–3 days, becoming gently pickled."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Cucumbers",
+                  "ingredients": [
+                    "2 Persian cucumbers (about 1 pound), seeded and cut into thick wedges",
+                    "1 1/2 teaspoons kosher salt (Diamond brand; use 3/4 teaspoon if using another brand)"
+                  ]
+                },
+                {
+                  "label": "Dressing",
+                  "ingredients": [
+                    "3 tablespoons unseasoned rice vinegar",
+                    "1 tablespoon toasted sesame oil",
+                    "3 tablespoons light soy sauce",
+                    "1 1/2 teaspoons chili oil",
+                    "3/4 teaspoon sugar",
+                    "Ground black or white pepper to taste"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "Chili oil or chili crisp to taste, or Aleppo pepper or red pepper flakes",
+                    "Toasted sesame seeds"
+                  ]
+                }
+              ],
+              "steps": [
+                "Combine the cucumbers and salt in a colander. Set aside for 10–15 minutes, or up to 1–2 hours.",
+                "Rinse off the salt. Drain well.",
+                "In a serving bowl, whisk together the rice vinegar, sesame oil, soy sauce, chili oil, sugar, and a few grinds of pepper.",
+                "Add the drained cucumbers and toss to coat.",
+                "Finish with a drizzle of chili oil or chili crisp and a generous sprinkle of toasted sesame seeds."
+              ]
+            },
+            {
+              "title": "Dumpling Tomato Salad with Chile Crisp Vinaigrette",
+              "servings": "Serves 4   |   Total: 20 min",
+              "source": "Hetty Lui McKinnon / NYT Cooking",
+              "comments": [
+                "Use your favorite chile crisp—it is the dominant flavor and will greatly impact the final dish; brands vary in saltiness and spice, so season accordingly.",
+                "Salting works wonders for out-of-season tomatoes, so this salad is good year-round."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Tomato salad",
+                  "ingredients": [
+                    "2 1/2 pounds ripe tomatoes (any variety), cut into 1- to 2-inch pieces, at room temperature",
+                    "1 garlic clove, grated",
+                    "1/2 cup fresh basil leaves, torn, divided",
+                    "1 teaspoon kosher salt (Diamond Crystal brand preferred)",
+                    "Black pepper"
+                  ]
+                },
+                {
+                  "label": "Chile crisp vinaigrette",
+                  "ingredients": [
+                    "3 tablespoons chile crisp (or chile oil)",
+                    "2 tablespoons rice vinegar",
+                    "1 tablespoon soy sauce, or more to taste"
+                  ]
+                },
+                {
+                  "label": "Dumplings",
+                  "ingredients": [
+                    "1 pound frozen potsticker dumplings (not thawed)",
+                    "1–2 tablespoons neutral oil (canola or vegetable)"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "1–2 tablespoons store-bought crispy fried shallots (optional)"
+                  ]
+                }
+              ],
+              "steps": [
+                "Place tomatoes on a large serving platter or in a bowl. Add garlic, half the basil, salt, and a big pinch of black pepper. Toss and set aside.",
+                "Whisk together chile crisp, rice vinegar, and soy sauce. Taste; add more soy sauce if needed.",
+                "Heat a large (12-inch) nonstick or cast-iron skillet over medium-high for 1–2 minutes until very hot. Add 1–2 tablespoons oil. Working in batches, add dumplings flat-side down and cook until bottoms are lightly browned, 1–2 minutes. Add about 1/4 cup water, cover, and steam until water evaporates, 3–4 minutes. Transfer to a plate; repeat with remaining dumplings.",
+                "Place warm dumplings over the tomato salad and drizzle with vinaigrette. Toss gently. Top with crispy fried shallots (if using) and remaining basil. Serve warm or at room temperature."
               ]
             }
           ]
@@ -6968,6 +7204,51 @@ module.exports = {
               ]
             },
             {
+              "title": "Extra-Stuffed Veggie Burritos",
+              "servings": "Serves 2",
+              "source": "Washington Post",
+              "ingredientGroups": [
+                {
+                  "label": "Quinoa",
+                  "ingredients": [
+                    "1/3 cup dried quinoa, rinsed",
+                    "1/4 teaspoon kosher salt",
+                    "2/3 cup water",
+                    "1 tablespoon fresh lime juice"
+                  ]
+                },
+                {
+                  "label": "Burrito filling",
+                  "ingredients": [
+                    "2 tablespoons extra-virgin olive oil",
+                    "1/2 red bell pepper, seeded and thinly sliced",
+                    "1/2 green bell pepper, seeded and thinly sliced",
+                    "2 scallions, trimmed and thinly sliced",
+                    "4 oz cremini mushrooms, sliced",
+                    "One 15-oz can pinto beans, undrained",
+                    "1 tablespoon adobo sauce from a can of chipotle chiles, or more to taste",
+                    "1 tablespoon ground cumin",
+                    "1 teaspoon granulated garlic (garlic powder)",
+                    "1/2 teaspoon kosher salt"
+                  ]
+                },
+                {
+                  "label": "Assembly",
+                  "ingredients": [
+                    "Two 9- or 10-inch flour tortillas",
+                    "1/4 cup sour cream",
+                    "1 cup baby spinach or other tender salad greens"
+                  ]
+                }
+              ],
+              "steps": [
+                "Combine quinoa, salt, and water in a small saucepan over medium-high. Bring to a boil, reduce heat to a gentle bubble. Cover and cook 13–15 minutes until water is absorbed and quinoa is fluffy. Let stand covered 5 minutes, fluff with a fork, and stir in lime juice.",
+                "Heat oil in a large skillet over medium-high until shimmering. Add bell peppers, scallions, and mushrooms. Cook 3–5 minutes until tender and slightly charred. Add pinto beans and their liquid, adobo, cumin, garlic, and salt. Cook 2 minutes until liquid thickens. Taste and add more adobo for heat.",
+                "Warm tortillas on a stovetop burner or dry skillet for a few seconds per side until pliable.",
+                "Place each tortilla on a plate. Spread half the quinoa in the center. Top each with half the bean mixture, sour cream, and spinach. Fold tortilla in half over filling, tuck and roll into a tight burrito, folding in the sides. Cut in half and serve."
+              ]
+            },
+            {
               "title": "Sweet Potato and Black Bean Enchiladas",
               "servings": "Serves 5",
               "source": "Food Network / Martina McBride",
@@ -7330,6 +7611,227 @@ module.exports = {
               ]
             },
             {
+              "title": "Aloo Gobi",
+              "servings": "Serves 2–3",
+              "source": "Manali Singh / Cook With Manali",
+              "comments": [
+                "Sprinkle dried fenugreek leaves (kasuri methi) on top before serving for added depth of flavor.",
+                "If amchur (dried mango powder) is unavailable, squeeze fresh lemon juice over the finished dish."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Vegetables",
+                  "ingredients": [
+                    "2 medium potatoes (about 240 grams total), sliced 1/4 inch thick",
+                    "1 small head cauliflower (about 280 grams), cut into small florets"
+                  ]
+                },
+                {
+                  "label": "Oil and tempering",
+                  "ingredients": [
+                    "2 tablespoons plus 2 teaspoons oil (mustard oil preferred), divided",
+                    "1/2 teaspoon cumin seeds"
+                  ]
+                },
+                {
+                  "label": "Aromatics and masala",
+                  "ingredients": [
+                    "1 medium red onion, finely chopped",
+                    "1 1/2 teaspoons ginger-garlic paste",
+                    "2 medium tomatoes, finely chopped"
+                  ]
+                },
+                {
+                  "label": "Spices",
+                  "ingredients": [
+                    "1/2 teaspoon turmeric powder",
+                    "1/2 teaspoon amchur (dried mango powder)",
+                    "1/4 teaspoon Aleppo pepper or red pepper flakes",
+                    "1 teaspoon coriander powder",
+                    "1/4 teaspoon garam masala"
+                  ]
+                },
+                {
+                  "label": "Finish",
+                  "ingredients": [
+                    "3/4 teaspoon salt, or to taste",
+                    "2 tablespoons chopped fresh cilantro, plus more to garnish"
+                  ]
+                }
+              ],
+              "steps": [
+                "Heat 1 tablespoon oil in a heavy-bottom pan over medium. Add cauliflower florets and cook 2–3 minutes. Add potato slices and pan-fry over medium-low heat 7–8 minutes until vegetables have light brown spots. Remove to a paper towel-lined plate.",
+                "Add remaining 2 teaspoons oil to the same pan over medium. Add cumin seeds and let sizzle. Add onion and cook, stirring often, until translucent, 2–3 minutes.",
+                "Add ginger-garlic paste and cook 2 minutes until raw smell disappears. Add tomatoes and cook 2 minutes until softened.",
+                "Add turmeric, amchur, Aleppo pepper or red pepper flakes, and coriander powder. Stir to combine. Cover and cook the masala on medium heat 2–3 minutes.",
+                "Add pan-fried vegetables along with garam masala and cilantro. Mix well to coat. Cook uncovered over medium-low, stirring every minute or so, 5–6 minutes.",
+                "Add salt; stir well. Cover and cook 8–9 minutes on low-medium until vegetables are tender but not soggy (add water 1 tablespoon at a time if masala sticks). Remove from heat, keep covered 5 minutes. Garnish with more cilantro and serve."
+              ]
+            },
+            {
+              "title": "Baked Rajma (Punjabi-Style Red Beans With Cream)",
+              "servings": "Serves 4   |   Total: 1 hr",
+              "source": "Tejal Rao / NYT Cooking",
+              "comments": [
+                { "html": "Top with <a href='pickling.html#quick-pickled-red-onions'>Quick Pickled Red Onions</a> (Pickling section) when serving." },
+                "You can try the same technique with different beans—chickpeas to cannellini. Heavy cream may be swapped for 1 cup diced mozzarella scattered on top before baking."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Onion-garlic purée",
+                  "ingredients": [
+                    "1 red onion, divided: 3/4 roughly chopped (for purée), 1/4 thinly sliced (reserved for garnish)",
+                    "4 garlic cloves",
+                    "1 fresh green chile",
+                    "One 1-inch piece fresh ginger, peeled"
+                  ]
+                },
+                {
+                  "label": "Oil and tempering",
+                  "ingredients": [
+                    "2 tablespoons neutral oil",
+                    "1/4 teaspoon cumin seeds",
+                    "1 teaspoon sea salt"
+                  ]
+                },
+                {
+                  "label": "Beans and sauce",
+                  "ingredients": [
+                    "One 28-oz can crushed, diced, or whole tomatoes (puréed if not already crushed)",
+                    "Two 15-oz cans kidney beans, drained",
+                    "1/2 teaspoon Aleppo pepper or red pepper flakes",
+                    "1/4 teaspoon garam masala",
+                    "1/2 cup heavy cream"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "1/4 cup roughly chopped fresh cilantro",
+                    "Hot rice, flour tortillas, or buttered toast"
+                  ]
+                }
+              ],
+              "steps": [
+                "Heat oven to 350°F. Reserve thinly sliced onion for garnish. In a food processor, purée remaining onion with garlic, green chile, and ginger until fairly smooth.",
+                "Heat oil in a large, deep ovenproof skillet over medium. Add cumin seeds and cook until lightly toasted, about 30 seconds. Add onion purée and salt; cook, stirring occasionally, until liquid evaporates and mixture begins to turn golden, 8–10 minutes.",
+                "If using diced, chopped, or whole tomatoes, purée them in the food processor.",
+                "Add kidney beans and Aleppo pepper or red pepper flakes; mix well. Mash a tablespoon of beans against the pan to help thicken the sauce. Stir in puréed tomatoes and garam masala. Drizzle cream over the top.",
+                "Bake uncovered until sauce has thickened and top is lightly browned, 30–40 minutes.",
+                "Garnish with cilantro and serve over rice or with flour tortillas or buttered toast."
+              ]
+            },
+            {
+              "title": "Cauliflower Curry",
+              "servings": "Serves 3   |   Total: 30 min",
+              "source": "Swasthi Shreekanth / Swasthi's Recipes",
+              "comments": [
+                "Can add 1 cup canned chickpeas for extra protein.",
+                "Coconut milk adds creaminess and body; if using, increase spice powders slightly to maintain flavor intensity."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Oil and tempering",
+                  "ingredients": [
+                    "2 tablespoons oil",
+                    "1/4 teaspoon mustard seeds (optional)",
+                    "1/2 teaspoon cumin seeds",
+                    "1 sprig fresh curry leaves or 1 bay leaf (optional)"
+                  ]
+                },
+                {
+                  "label": "Aromatics",
+                  "ingredients": [
+                    "1 1/4 cups onion, finely chopped (about 2 medium)",
+                    "1 green chile, slit or chopped (optional)",
+                    "1/2 tablespoon fresh ginger, grated or finely chopped",
+                    "1/2 tablespoon garlic, minced or pressed (about 2 cloves)"
+                  ]
+                },
+                {
+                  "label": "Tomatoes and spices",
+                  "ingredients": [
+                    "1 cup tomatoes, finely chopped or puréed (about 2 medium)",
+                    "3/4 teaspoon salt, or to taste",
+                    "1/4 teaspoon turmeric",
+                    "1/2 teaspoon Aleppo pepper or red pepper flakes",
+                    "1 teaspoon garam masala or curry powder",
+                    "1/2 teaspoon coriander powder"
+                  ]
+                },
+                {
+                  "label": "Cauliflower",
+                  "ingredients": [
+                    "1 medium head cauliflower (about 2 heaped cups florets, 250 grams)"
+                  ]
+                },
+                {
+                  "label": "Finish",
+                  "ingredients": [
+                    "3/4 to 1 1/4 cups water or coconut milk",
+                    "Fresh cilantro for garnish"
+                  ]
+                }
+              ],
+              "steps": [
+                "Heat oil over medium-low. Add mustard seeds and cumin seeds; when they sizzle and pop, add curry leaves or bay leaf and fry 30–60 seconds.",
+                "Add onions and green chile; sauté until golden, 5–6 minutes. Add ginger and garlic; cook 30–60 seconds until fragrant.",
+                "Add tomatoes and salt; cook until tomatoes break down. Add turmeric, Aleppo pepper or red pepper flakes, garam masala, and coriander powder; stir and cook 30–60 seconds until aromatic.",
+                "Add cauliflower florets and sauté over medium-high for 1–2 minutes. Pour in 1/2 cup water or coconut milk; mix well.",
+                "Cover and cook until cauliflower is tender but not mushy, adding more liquid in batches as needed. If there is excess water, evaporate on high heat.",
+                "Taste and adjust salt and garam masala. Garnish with fresh cilantro and serve with rice or flatbread."
+              ]
+            },
+            {
+              "title": "Chickpea Tikka Masala",
+              "servings": "Serves 4–6   |   Makes about 5 cups",
+              "source": "Washington Post",
+              "comments": [
+                "If garam masala is unavailable, substitute: 1 1/2 teaspoons coriander, 3/4 teaspoon cumin, 1/4 teaspoon turmeric, 1/8 teaspoon each cardamom, black pepper, cloves, and cinnamon."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Tomato purée",
+                  "ingredients": [
+                    "One 28-oz can no-salt-added whole or diced tomatoes, with juices"
+                  ]
+                },
+                {
+                  "label": "Aromatics and spices",
+                  "ingredients": [
+                    "1 tablespoon extra-virgin olive oil",
+                    "1 medium yellow onion, finely chopped (about 1 1/2 cups)",
+                    "1/2 teaspoon fine sea salt, plus more to taste",
+                    "1 tablespoon fresh ginger root, peeled and grated or minced",
+                    "3 cloves garlic, pressed or minced",
+                    "1 tablespoon garam masala",
+                    "1/8 teaspoon ground cayenne pepper (optional)"
+                  ]
+                },
+                {
+                  "label": "Chickpeas and sauce",
+                  "ingredients": [
+                    "One 15-oz can no-salt-added chickpeas, rinsed and drained",
+                    "3/4 cup canned coconut milk (regular or low-fat)",
+                    "1/2 cup chopped fresh cilantro, plus more for garnish"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "Jasmine or Basmati rice"
+                  ]
+                }
+              ],
+              "steps": [
+                "Purée tomatoes with their juices in a blender or food processor until smooth. (An immersion blender in the can works well.)",
+                "Heat oil in a large skillet or Dutch oven over medium. Once shimmering, add onion and salt; cook, stirring occasionally, until soft and translucent, 5–7 minutes. Add ginger and garlic; cook 1 minute. Add garam masala and cayenne; stir until fragrant, about 30 seconds.",
+                "Add puréed tomatoes, chickpeas, coconut milk, and 1/2 cup cilantro. Taste and add more salt if needed.",
+                "Increase heat to medium-high; once mixture bubbles around edges, reduce to low. Simmer, stirring occasionally, until sauce thickens and flavors meld, about 20 minutes.",
+                "Spoon over rice and sprinkle with more cilantro."
+              ]
+            },
+            {
               "title": "Quick Chana Masala",
               "servings": "Serves 4",
               "source": "Cookie and Kate / Kathryne Taylor; adapted from The Oh She Glows Cookbook by Angela Liddon",
@@ -7416,6 +7918,97 @@ module.exports = {
                 "Heat oil in a large skillet over high heat until shimmering. Add cherry tomatoes and cook, undisturbed, 2 minutes, then stir occasionally until tomatoes burst and begin to caramelize, about 3–4 minutes more.",
                 "Add chickpeas and curry powder; season with salt, pepper, and Aleppo pepper or red pepper flakes. Stir and cook until chickpeas are heated through and coated in tomato juices, about 2–3 minutes.",
                 "Spread cucumber yogurt on a platter or in bowls. Spoon chickpea mixture on top. Garnish with cilantro or mint and optional pistachios. Serve with rice or flatbread."
+              ]
+            },
+            {
+              "title": "Gobhi Masaledaar",
+              "servings": "Serves 4",
+              "source": "Niru Gupta / NDTV Food",
+              "ingredientGroups": [
+                {
+                  "label": "Oil and tempering",
+                  "ingredients": [
+                    "3 tablespoons oil",
+                    "1/2 teaspoon cumin seeds",
+                    "1 teaspoon fresh ginger, grated",
+                    "2 cloves garlic, minced"
+                  ]
+                },
+                {
+                  "label": "Aromatics",
+                  "ingredients": [
+                    "1 medium onion, finely chopped",
+                    "2 tomatoes, finely chopped"
+                  ]
+                },
+                {
+                  "label": "Cauliflower and spices",
+                  "ingredients": [
+                    "1 medium head cauliflower (about 4 cups florets)",
+                    "1/2 teaspoon turmeric",
+                    "1 teaspoon coriander powder",
+                    "1/2 teaspoon Aleppo pepper or red pepper flakes",
+                    "1/2 teaspoon garam masala",
+                    "Salt to taste"
+                  ]
+                },
+                {
+                  "label": "Finish",
+                  "ingredients": [
+                    "2 tablespoons fresh cilantro, chopped"
+                  ]
+                }
+              ],
+              "steps": [
+                "Heat oil in a large pan over medium. Add cumin seeds and let them splutter. Add ginger and garlic; cook 30 seconds. Add onion and sauté until golden, about 5 minutes.",
+                "Add tomatoes and cook until soft and pulpy, 4–5 minutes.",
+                "Add turmeric, coriander powder, Aleppo pepper or red pepper flakes, garam masala, and salt. Stir and cook 1 minute.",
+                "Add cauliflower florets and mix well to coat with masala. Add 2–3 tablespoons water, cover, and cook over medium-low until cauliflower is tender but not mushy, 12–15 minutes, stirring occasionally.",
+                "Garnish with fresh cilantro and serve."
+              ]
+            },
+            {
+              "title": "Indian Spiced Zucchini and Tomatoes",
+              "servings": "Serves 4   |   Total: 45 min",
+              "source": "Liz Della Croce / The Lemon Bowl",
+              "comments": [
+                "Optional garnish: a dollop of plain yogurt alongside the fresh cilantro."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Aromatics and spices",
+                  "ingredients": [
+                    "1 medium onion, diced",
+                    "2 tablespoons fresh ginger, minced or grated",
+                    "1/4 teaspoon Aleppo pepper or red pepper flakes",
+                    "2 cloves garlic, grated",
+                    "1 tablespoon ground cumin",
+                    "1/2 tablespoon turmeric",
+                    "1 teaspoon coriander",
+                    "1/2 teaspoon sea salt"
+                  ]
+                },
+                {
+                  "label": "Vegetables",
+                  "ingredients": [
+                    "1 large or 2 medium zucchini, cut into large dice",
+                    "2 tomatoes, diced"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "1/4 cup fresh cilantro",
+                    "Plain yogurt (optional)"
+                  ]
+                }
+              ],
+              "steps": [
+                "Heat oil in a medium saucepan over medium. Sauté onion, ginger, and Aleppo pepper or red pepper flakes for 3–4 minutes until onion is tender.",
+                "Add garlic, cumin, turmeric, coriander, and salt. Cook 60 seconds, stirring, until fragrant.",
+                "Stir in zucchini and sauté 2 minutes.",
+                "Add tomatoes, stir to combine, and bring to a simmer.",
+                "Cover and cook 15–20 minutes until squash is tender. Garnish with fresh cilantro and serve with yogurt if desired."
               ]
             },
             {
@@ -7532,6 +8125,59 @@ module.exports = {
                 "Add Kashmiri chili powder and turmeric; stir 30 seconds. Add crushed tomatoes and cashew butter; season with salt. Simmer, stirring occasionally, until sauce darkens and oil separates at edges, about 10–12 minutes.",
                 "Add frozen peas and fried paneer; stir gently to coat. Cover and cook 5 minutes.",
                 "Stir in garam masala and heavy cream if using. Serve with rice or roti."
+              ]
+            },
+            {
+              "title": "Authentic Saag Paneer",
+              "servings": "Serves 4   |   Total: 1 hr",
+              "source": "Allrecipes",
+              "comments": [
+                "Fenugreek leaves give this dish its characteristic earthy flavor. If unavailable, substitute 1 tablespoon maple syrup.",
+                "Can substitute coconut milk for the heavy cream."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Greens",
+                  "ingredients": [
+                    "About 1 1/2 pounds spinach, roughly chopped",
+                    "1 bunch fenugreek leaves, roughly chopped"
+                  ]
+                },
+                {
+                  "label": "Paneer",
+                  "ingredients": [
+                    "1 tablespoon canola oil",
+                    "1/2 pound paneer, cubed"
+                  ]
+                },
+                {
+                  "label": "Aromatics and masala",
+                  "ingredients": [
+                    "2 tablespoons canola oil",
+                    "1 teaspoon cumin seeds",
+                    "1 onion, thinly sliced",
+                    "3 cloves garlic, minced",
+                    "1 teaspoon grated fresh ginger",
+                    "1 tomato, diced",
+                    "2 teaspoons garam masala",
+                    "1/2 teaspoon ground turmeric",
+                    "1/2 teaspoon Aleppo pepper or red pepper flakes"
+                  ]
+                },
+                {
+                  "label": "Cream",
+                  "ingredients": [
+                    "1/2 cup heavy whipping cream",
+                    "Salt to taste"
+                  ]
+                }
+              ],
+              "steps": [
+                "Bring a large saucepan of water to a boil. Add spinach and fenugreek; cook until wilted, about 3 minutes. Drain well, transfer to a food processor, and pulse until finely chopped (about 5 pulses). Set aside.",
+                "Heat 1 tablespoon oil in a large skillet over medium. Add paneer cubes and fry, turning, until browned on all sides, about 5 minutes. Transfer to a plate.",
+                "Add remaining 2 tablespoons oil to the same pan over medium. Add cumin seeds and fry until toasted and aromatic, about 3 minutes. Add onion; cook and stir until softened, 4–5 minutes. Add garlic and ginger; stir to coat.",
+                "Add tomato, garam masala, turmeric, and Aleppo pepper or red pepper flakes. Cook, stirring often, until tomato breaks down, about 10 minutes.",
+                "Stir in puréed greens, paneer, and cream. Season with salt. Reduce heat to low, cover, and simmer 15 minutes, stirring occasionally."
               ]
             },
             {
@@ -8436,6 +9082,45 @@ module.exports = {
             "Layer potatoes in the Pyrex dish. Mix together milk, eggs, salt, and pepper. Pour mixture over potatoes.",
             "Bake 1 to 1 1/4 hours. Every 15 minutes, remove from oven and, using a knife or wooden spoon, press down the top layer of potatoes that has gotten crusty and fold it into the rest.",
             "When golden and potatoes are tender, sprinkle with parmesan and return to oven. Bake until a golden crust forms, about 10–15 minutes."
+          ]
+        },
+        {
+          "title": "Spicy Roasted Cauliflower with Sriracha and Sesame",
+          "servings": "Serves 4–6",
+          "source": "Todd Porter and Diane Cu / Epicurious",
+          "ingredientGroups": [
+            {
+              "label": "Sauce",
+              "ingredients": [
+                "3 tablespoons sriracha",
+                "2 tablespoons vegetable or canola oil",
+                "2 tablespoons honey",
+                "1 tablespoon toasted sesame oil",
+                "1 tablespoon rice vinegar",
+                "2 teaspoons soy sauce",
+                "1/2 teaspoon garlic powder",
+                "1/2 teaspoon kosher salt"
+              ]
+            },
+            {
+              "label": "Cauliflower",
+              "ingredients": [
+                "1 medium head cauliflower (about 2 1/2 pounds), cut into florets"
+              ]
+            },
+            {
+              "label": "To serve",
+              "ingredients": [
+                "2 tablespoons toasted sesame seeds",
+                "2 scallions, thinly sliced"
+              ]
+            }
+          ],
+          "steps": [
+            "Preheat oven to 450°F. In a large bowl, whisk together sriracha, vegetable oil, honey, sesame oil, rice vinegar, soy sauce, garlic powder, and salt.",
+            "Add cauliflower florets and toss until evenly coated. Spread on a large rimmed baking sheet in a single layer.",
+            "Roast until cauliflower is tender and charred in spots, 20–25 minutes.",
+            "Transfer to a platter. Sprinkle with sesame seeds and scallions and serve."
           ]
         },
         {
