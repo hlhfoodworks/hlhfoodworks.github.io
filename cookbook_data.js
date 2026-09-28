@@ -288,7 +288,7 @@ module.exports = {
         },
         {
           "title": "Chinese Tomato Egg Stir-fry",
-          "servings": "2",
+          "servings": "Serves 2",
           "source": "Adapted from The Woks of Life (thewoksoflife.com)",
           "ingredientGroups": [
             {
@@ -556,7 +556,7 @@ module.exports = {
         },
         {
           "title": "Baba Ganoush",
-          "servings": "4",
+          "servings": "Serves 4",
           "source": "Love and Lemons / Jeanine Donofrio",
           "comments": [
             "Eggplant can be roasted up to 2 days ahead; refrigerate in an airtight container until ready to use.",
@@ -631,11 +631,11 @@ module.exports = {
           "recipes": [
             {
               "title": "Barbecue Bacon Wedge Salad with Grilled Corn",
-              "servings": "4",
+              "servings": "Serves 4",
               "source": "Food Network / Katie Lee Biegel",
               "comments": [
                 "Contains bacon.",
-                "For pickled red onions, see Quick Pickled Red Onions in the Pickling section — prepare at least 1 hour ahead."
+                { "html": "For pickled red onions, see <a href='pickling.html#quick-pickled-red-onions'>Quick Pickled Red Onions</a> in the Pickling section — prepare at least 1 hour ahead." }
               ],
               "ingredientGroups": [
                 {
@@ -789,7 +789,7 @@ module.exports = {
             },
             {
               "title": "Charred Broccoli and Cauliflower Salad",
-              "servings": "6 to 8   |   Total: 30 min   |   Active: 25 min",
+              "servings": "Serves 6 to 8   |   Total: 30 min   |   Active: 25 min",
               "source": "https://www.foodnetwork.com/recipes/ree-drummond/charred-broccoli-and-cauliflower-salad-19673188",
               "comments": [
                 "Great as a side at a barbecue with grilled seafood or meat, or to take to a potluck."
@@ -952,7 +952,7 @@ module.exports = {
             },
             {
               "title": "Western River Curry Chicken Salad",
-              "servings": "4–6",
+              "servings": "Serves 4–6",
               "source": "As served by Western River Expeditions in the Grand Canyon",
               "comments": [
                 "For best texture, stir in cashews just before serving if making ahead, as they soften over time.",
@@ -995,7 +995,7 @@ module.exports = {
             },
             {
               "title": "Roasted Cauliflower Salad",
-              "servings": "12",
+              "servings": "Serves 12",
               "source": "Food Network / Ree Drummond",
               "ingredientGroups": [
                 {
@@ -1034,7 +1034,7 @@ module.exports = {
             },
             {
               "title": "Dad's Greek Salad",
-              "servings": "6",
+              "servings": "Serves 6",
               "source": "Simply Recipes / Elise Bauer",
               "comments": [
                 "Tip: to reduce the bite of raw onion, soak chopped onion in a little vinegar or lemon juice for a few minutes before adding.",
@@ -1072,7 +1072,7 @@ module.exports = {
             },
             {
               "title": "Indian Slaw",
-              "servings": "8",
+              "servings": "Serves 8",
               "source": "Glebe Kitchen / Romain",
               "favorite": true,
               "comments": [
@@ -1281,7 +1281,7 @@ module.exports = {
           "recipes": [
             {
               "title": "Baked Crunchy Hot Honey Chicken",
-              "servings": "6   |   Prep: 15 minutes   |   Cook: 25 minutes   |   Total: 40 minutes",
+              "servings": "Serves 6   |   Prep: 15 minutes   |   Cook: 25 minutes   |   Total: 40 minutes",
               "source": "Half Baked Harvest, by Tieghan Gerard",
               "ingredientGroups": [
                 {
@@ -1339,7 +1339,7 @@ module.exports = {
             },
             {
               "title": "Brown Butter Sage Skillet Chicken",
-              "servings": "4   |   Prep: 10 minutes   |   Cook: 20 minutes   |   Total: 30 minutes",
+              "servings": "Serves 4   |   Prep: 10 minutes   |   Cook: 20 minutes   |   Total: 30 minutes",
               "comments": [
                 "Thin-sliced chicken breasts cook fastest; if starting with standard breasts, slice horizontally through the middle for thinner cutlets.",
                 "Great served over egg noodles, orzo, or a light pasta."
@@ -1426,7 +1426,7 @@ module.exports = {
             },
             {
               "title": "Creamy Spinach-Artichoke Chicken Stew",
-              "servings": "4 to 6   |   Total: 50 minutes",
+              "servings": "Serves 4 to 6   |   Total: 50 minutes",
               "source": "NYT Cooking, by Sarah DiGregorio",
               "ingredientGroups": [
                 {
@@ -1483,7 +1483,7 @@ module.exports = {
             },
             {
               "title": "Deep Fried BBQ Chicken Stuffed Pizzadilla",
-              "servings": "6   |   Prep: 45 minutes   |   Chill: 1 hour   |   Cook: 20 minutes   |   Total: ~2 hours",
+              "servings": "Serves 6   |   Prep: 45 minutes   |   Chill: 1 hour   |   Cook: 20 minutes   |   Total: ~2 hours",
               "source": "Twisted (U.K.), 2019",
               "comments": [
                 "Included in the family cookbook solely to see if anyone's paying attention."
@@ -1575,7 +1575,7 @@ module.exports = {
             },
             {
               "title": "Crispy Chicken With Lime Butter",
-              "servings": "4   |   Prep: 5 minutes   |   Cook: 35 minutes   |   Total: 40 minutes",
+              "servings": "Serves 4   |   Prep: 5 minutes   |   Cook: 35 minutes   |   Total: 40 minutes",
               "comments": [
                 "The rendered chicken fat (schmaltz) can be saved to pan-fry vegetables, enrich a soup or sauce, or spread on toast."
               ],
@@ -1622,7 +1622,7 @@ module.exports = {
             {
               "title": "Crispy Spice Rubbed Chicken Thighs",
               "favorite": true,
-              "servings": "3 to 4   |   Prep: 5 minutes   |   Cook: 30 minutes   |   Total: 35 minutes",
+              "servings": "Serves 3 to 4   |   Prep: 5 minutes   |   Cook: 30 minutes   |   Total: 35 minutes",
               "source": "Fifteen Spatulas",
               "ingredientGroups": [
                 {
@@ -1659,7 +1659,7 @@ module.exports = {
             },
             {
               "title": "Grilled Buffalo Wings",
-              "servings": "6 to 8   |   Total: 35 minutes",
+              "servings": "Serves 6 to 8   |   Total: 35 minutes",
               "comments": [
                 "Crowding the wings close together on the grill is intentional — it creates steam that helps render the fat and keep the meat moist before crisping."
               ],
@@ -1729,7 +1729,7 @@ module.exports = {
             },
             {
               "title": "Skillet Chicken and Zucchini With Charred Scallion Salsa",
-              "servings": "4   |   Total: 40 minutes",
+              "servings": "Serves 4   |   Total: 40 minutes",
               "comments": [
                 "Any seasonal, quick-roasting vegetable can stand in for the zucchini — cherry tomatoes or asparagus both work well.",
                 "If cilantro isn't your thing, basil is a good substitute, or use a mix of the two."
@@ -1781,7 +1781,7 @@ module.exports = {
             },
             {
               "title": "Spring Chicken Paillard",
-              "servings": "4   |   Total: 1 hour 25 minutes (includes marinating)",
+              "servings": "Serves 4   |   Total: 1 hour 25 minutes (includes marinating)",
               "comments": [
                 "Inspired by the chicken paillard at Pastis in New York City."
               ],
@@ -1884,7 +1884,7 @@ module.exports = {
             },
             {
               "title": "Weeknight Fancy Chicken and Rice",
-              "servings": "4 to 6   |   Total: 50 minutes",
+              "servings": "Serves 4 to 6   |   Total: 50 minutes",
               "comments": [
                 "Garnish is flexible — dried cranberries, hazelnuts, or pine nuts can stand in for or join the apricots and almonds."
               ],
@@ -1954,7 +1954,7 @@ module.exports = {
             },
             {
               "title": "Chicken Fajita Marinade",
-              "servings": "4   |   Prep: 10 minutes   |   Cook: 1 minute   |   Total: 41 minutes (includes 30 minutes marinating)",
+              "servings": "Serves 4   |   Prep: 10 minutes   |   Cook: 1 minute   |   Total: 41 minutes (includes 30 minutes marinating)",
               "comments": [
                 "This is a marinade rather than a full dish — cook the marinated chicken and vegetables however you like (grill, skillet, or oven).",
                 "Also works with other proteins, like shrimp, flank steak, or pork tenderloin."
@@ -2027,7 +2027,7 @@ module.exports = {
             },
             {
               "title": "Peruvian Roasted Chicken With Spicy Cilantro Sauce",
-              "servings": "4   |   Total: 50 minutes, plus marinating",
+              "servings": "Serves 4   |   Total: 50 minutes, plus marinating",
               "comments": [
                 "If aji amarillo/aji panca pastes aren't available, substitute a red chile paste like sriracha or sambal for the aji amarillo, and pasilla chile powder for the aji panca."
               ],
@@ -2089,7 +2089,7 @@ module.exports = {
             },
             {
               "title": "Slow-Cooker Chicken Mole",
-              "servings": "6   |   Prep: 15 minutes   |   Cook: 4 hours   |   Total: 4 hours 15 minutes",
+              "servings": "Serves 6   |   Prep: 15 minutes   |   Cook: 4 hours   |   Total: 4 hours 15 minutes",
               "comments": [
                 "Makes extra sauce; keeps refrigerated up to 4 days or frozen up to 3 months. Good over rice, with pinto beans, or warm corn tortillas."
               ],
@@ -2179,7 +2179,7 @@ module.exports = {
             },
             {
               "title": "Chicken Cacciatore",
-              "servings": "4 to 5   |   Total: 1 hour 45 minutes",
+              "servings": "Serves 4 to 5   |   Total: 1 hour 45 minutes",
               "source": "NYT Cooking, by Martha Rose Shulman",
               "ingredientGroups": [
                 {
@@ -2249,7 +2249,7 @@ module.exports = {
             },
             {
               "title": "Chicken Piccata",
-              "servings": "4   |   Prep: 15 minutes   |   Cook: 25 minutes   |   Total: 40 minutes",
+              "servings": "Serves 4   |   Prep: 15 minutes   |   Cook: 25 minutes   |   Total: 40 minutes",
               "source": "Food Network, by Giada De Laurentiis",
               "ingredientGroups": [
                 {
@@ -2337,7 +2337,7 @@ module.exports = {
             },
             {
               "title": "Marry Me Chicken",
-              "servings": "4   |   Prep: 10 minutes   |   Cook: 50 minutes   |   Total: 1 hour",
+              "servings": "Serves 4   |   Prep: 10 minutes   |   Cook: 50 minutes   |   Total: 1 hour",
               "comments": [
                 "To make slicing into cutlets easier, freeze the chicken breasts for 20 minutes first.",
                 "Great served over pasta, rice, or polenta, or with crusty bread and a green salad."
@@ -2454,7 +2454,7 @@ module.exports = {
             },
             {
               "title": "Chicken Kiev",
-              "servings": "2   |   Prep: 30 minutes   |   Cook: 30 minutes   |   Total: 1 hour, plus 1 hour freezing",
+              "servings": "Serves 2   |   Prep: 30 minutes   |   Cook: 30 minutes   |   Total: 1 hour, plus 1 hour freezing",
               "source": "RecipeTin Eats, by Nagi Maehashi",
               "ingredientGroups": [
                 {
@@ -2512,7 +2512,7 @@ module.exports = {
             },
             {
               "title": "Chicken Paprikash",
-              "servings": "4 to 6   |   Cook: 1 hour   |   Total: 1 hour",
+              "servings": "Serves 4 to 6   |   Cook: 1 hour   |   Total: 1 hour",
               "comments": [
                 "Use fresh Hungarian paprika if you can find it — it loses flavor quickly (within a few months) and turns dull and bitter with age."
               ],
@@ -2566,7 +2566,7 @@ module.exports = {
             },
             {
               "title": "Chicken-Zucchini Meatballs With Feta",
-              "servings": "4   |   Total: 45 minutes",
+              "servings": "Serves 4   |   Total: 45 minutes",
               "comments": [
                 "Made here with ground chicken; ground turkey can be substituted.",
                 "Sauce is Panning the Globe's lemony yogurt-sumac sauce, with the NYT recipe's quick-pickled shallot, feta, and remaining garnishes."
@@ -2633,7 +2633,7 @@ module.exports = {
             },
             {
               "title": "Greek Chicken and Orzo Pasta Salad",
-              "servings": "8   |   Prep: 30 minutes   |   Total: 1 hour 15 minutes (includes marinating and cooling)",
+              "servings": "Serves 8   |   Prep: 30 minutes   |   Total: 1 hour 15 minutes (includes marinating and cooling)",
               "source": "Food Network, by Katie Lee Biegel, from The Kitchen",
               "ingredientGroups": [
                 {
@@ -2701,7 +2701,7 @@ module.exports = {
             },
             {
               "title": "Mediterranean Grilled Chicken Thighs with Dill Yogurt Sauce",
-              "servings": "8   |   Prep: 10 minutes   |   Cook: 12 minutes   |   Total: 22 minutes, plus marinating",
+              "servings": "Serves 8   |   Prep: 10 minutes   |   Cook: 12 minutes   |   Total: 22 minutes, plus marinating",
               "source": "The Mediterranean Dish, by Suzy Karadsheh",
               "ingredientGroups": [
                 {
@@ -2750,7 +2750,7 @@ module.exports = {
             },
             {
               "title": "One-Pot Chicken and Rice With Caramelized Lemon",
-              "servings": "4   |   Prep: 10 minutes   |   Cook: 45 minutes   |   Total: 55 minutes",
+              "servings": "Serves 4   |   Prep: 10 minutes   |   Cook: 45 minutes   |   Total: 55 minutes",
               "source": "NYT Cooking, by Dan Pelosi",
               "ingredientGroups": [
                 {
@@ -2802,7 +2802,7 @@ module.exports = {
             },
             {
               "title": "Roast Lemon-Garlic Chicken with Green Olives",
-              "servings": "4",
+              "servings": "Serves 4",
               "comments": [
                 "The lemon-herb mixture can be made up to 4 hours ahead, covered, and kept at room temperature.",
                 "Can double the recipe; or use half black olives for a contrast of color."
@@ -2843,7 +2843,7 @@ module.exports = {
             },
             {
               "title": "Chicken Tagine With Olives and Preserved Lemons",
-              "servings": "4   |   Total: 1 hour, plus marinating",
+              "servings": "Serves 4   |   Total: 1 hour, plus marinating",
               "source": "NYT Cooking, from Shallots New York, adapted by Florence Fabricant",
               "ingredientGroups": [
                 {
@@ -2907,7 +2907,7 @@ module.exports = {
             },
             {
               "title": "Sheet-Pan Chicken With Chickpeas, Cumin and Turmeric",
-              "servings": "4   |   Total: 1 hour, plus marinating",
+              "servings": "Serves 4   |   Total: 1 hour, plus marinating",
               "source": "NYT Cooking, by Alison Roman",
               "ingredientGroups": [
                 {
@@ -2970,7 +2970,7 @@ module.exports = {
             },
             {
               "title": "Chicken Yassa",
-              "servings": "4   |   Total: 1 hour, plus marinating",
+              "servings": "Serves 4   |   Total: 1 hour, plus marinating",
               "source": "NYT Cooking, recipe from Pierre Thiam, adapted by Alexa Weibel",
               "ingredientGroups": [
                 {
@@ -3031,7 +3031,7 @@ module.exports = {
             },
             {
               "title": "Grilled Chicken Skewers with Toum (Shish Taouk)",
-              "servings": "4",
+              "servings": "Serves 4",
               "comments": [
                 "Toum uses raw egg white in an emulsified sauce, as in the original recipe."
               ],
@@ -3083,7 +3083,7 @@ module.exports = {
             },
             {
               "title": "Spiced Green Meatballs with Pickle Rice and Salty Yogurt",
-              "servings": "4   |   Prep: 55 minutes   |   Total: 1 hour 15 minutes",
+              "servings": "Serves 4   |   Prep: 55 minutes   |   Total: 1 hour 15 minutes",
               "comments": [
                 "Made here with ground chicken; ground turkey, pork, lamb, or beef can be substituted."
               ],
@@ -3186,7 +3186,7 @@ module.exports = {
             },
             {
               "title": "Amu's Chicken Korma",
-              "servings": "4   |   Total: 1 1/2 hours",
+              "servings": "Serves 4   |   Total: 1 1/2 hours",
               "comments": [
                 "Named by the author for her mother — a Bangladeshi-style korma enriched with yogurt rather than cream or nuts.",
                 "Great turned into a sandwich: pull the meat off the bone, dress it in the sauce, and pile it between mayo-slathered white bread."
@@ -3247,7 +3247,7 @@ module.exports = {
             {
               "title": "Bhatti da Murgh (Indian Grilled Chicken With Whole Spices)",
               "favorite": true,
-              "servings": "6 to 8   |   Total: 1 1/2 hours, plus marinating",
+              "servings": "Serves 6 to 8   |   Total: 1 1/2 hours, plus marinating",
               "comments": [
                 "At the restaurant this is cooked in a tandoor; roasting on a preheated baking sheet in a hot oven approximates that same intense, dry heat."
               ],
@@ -3322,7 +3322,7 @@ module.exports = {
             },
             {
               "title": "Chicken Tikka Masala",
-              "servings": "6   |   Prep: 20 minutes, plus 8 hours (up to 48) marinating   |   Cook: 40 minutes",
+              "servings": "Serves 6   |   Prep: 20 minutes, plus 8 hours (up to 48) marinating   |   Cook: 40 minutes",
               "comments": [
                 "Cashew cream can stand in for the heavy cream: blend 1/3 cup raw cashews (soaked, if your blender isn't powerful) with 1/3 cup water until very smooth.",
                 "Chicken thighs are more forgiving than breast here, which needs the full 8-hour marinade to avoid drying out."
@@ -3398,7 +3398,7 @@ module.exports = {
             },
             {
               "title": "One-Pot Chicken and Rice with Peanut Sauce",
-              "servings": "6   |   Prep: 15 minutes   |   Total: about 1 hour",
+              "servings": "Serves 6   |   Prep: 15 minutes   |   Total: about 1 hour",
               "comments": [
                 "The peanut sauce can be made up to 3 days ahead; cover and chill."
               ],
@@ -3452,7 +3452,7 @@ module.exports = {
             },
             {
               "title": "Pad Krapow Gai (Thai Basil Chicken)",
-              "servings": "2 to 4   |   Total: 15 minutes",
+              "servings": "Serves 2 to 4   |   Total: 15 minutes",
               "comments": [
                 "Thai seasoning sauce (such as Golden Mountain) is made from fermented soybeans, like soy sauce, and adds sweetness along with savory depth."
               ],
@@ -3515,7 +3515,7 @@ module.exports = {
             },
             {
               "title": "Sticky Coconut Chicken and Rice",
-              "servings": "4   |   Total: 45 minutes",
+              "servings": "Serves 4   |   Total: 45 minutes",
               "source": "NYT Cooking, by Kay Chun",
               "ingredientGroups": [
                 {
@@ -3571,7 +3571,7 @@ module.exports = {
             },
             {
               "title": "Thai Chicken Meatballs in Peanut Sauce",
-              "servings": "4   |   Prep: 10 minutes   |   Cook: 30 minutes   |   Total: 40 minutes",
+              "servings": "Serves 4   |   Prep: 10 minutes   |   Cook: 30 minutes   |   Total: 40 minutes",
               "comments": [
                 "Ground turkey, beef, or pork can be substituted for the chicken.",
                 "Bok choy can be swapped for peas, edamame, bell peppers, or spinach."
@@ -3648,7 +3648,7 @@ module.exports = {
             },
             {
               "title": "Thai-Inspired Chicken Meatball Soup",
-              "servings": "4 to 6   |   Total: 30 minutes",
+              "servings": "Serves 4 to 6   |   Total: 30 minutes",
               "source": "NYT Cooking, by Ali Slagle",
               "ingredientGroups": [
                 {
@@ -3711,7 +3711,7 @@ module.exports = {
             },
             {
               "title": "Vietnamese Caramel Ginger Chicken",
-              "servings": "5   |   Prep: 7 minutes   |   Cook: 15 minutes",
+              "servings": "Serves 5   |   Prep: 7 minutes   |   Cook: 15 minutes",
               "comments": [
                 "Chicken breast can be used instead of thigh, but is more prone to drying out — cook it in the caramel, remove once opaque, and return at the end to warm."
               ],
@@ -3779,7 +3779,7 @@ module.exports = {
             },
             {
               "title": "Easiest Chicken Adobo",
-              "servings": "4",
+              "servings": "Serves 4",
               "source": "Bon Appétit, by Claire Saffitz",
               "ingredientGroups": [
                 {
@@ -3826,7 +3826,7 @@ module.exports = {
             },
             {
               "title": "Coconut-Gochujang Glazed Chicken With Broccoli",
-              "servings": "4   |   Total: 15 minutes",
+              "servings": "Serves 4   |   Total: 15 minutes",
               "source": "NYT Cooking, by Kay Chun",
               "ingredientGroups": [
                 {
@@ -3876,7 +3876,7 @@ module.exports = {
             },
             {
               "title": "Peachy Peanut & Kimchi Chicken",
-              "servings": "4   |   Prep: 50 minutes   |   Total: 2 hours (including marinating)",
+              "servings": "Serves 4   |   Prep: 50 minutes   |   Total: 2 hours (including marinating)",
               "comments": [
                 "Chicken needs at least 1 hour to marinate (up to 2 days ahead is fine) — factor that into timing beyond the active cook time."
               ],
@@ -4052,7 +4052,7 @@ module.exports = {
             },
             {
               "title": "Kung Pao Chicken and Broccoli",
-              "servings": "2   |   Prep: 30 minutes   |   Cook: 30 minutes   |   Total: 1 hour",
+              "servings": "Serves 2   |   Prep: 30 minutes   |   Cook: 30 minutes   |   Total: 1 hour",
               "source": "https://cambodiarecipe.com/kung-pao-chicken-and-broccoli/",
               "ingredientGroups": [
                 {
@@ -4100,7 +4100,7 @@ module.exports = {
             },
             {
               "title": "Spicy Orange Sesame Chicken",
-              "servings": "6   |   Prep: 20 minutes   |   Cook: 20 minutes   |   Total: 40 minutes",
+              "servings": "Serves 6   |   Prep: 20 minutes   |   Cook: 20 minutes   |   Total: 40 minutes",
               "source": "Half Baked Harvest, by Tieghan Gerard",
               "ingredientGroups": [
                 {
@@ -4158,7 +4158,7 @@ module.exports = {
             },
             {
               "title": "Weeknight Sticky Ginger Sesame Chicken Meatballs",
-              "servings": "4   |   Prep: 10 minutes   |   Cook: 20 minutes   |   Total: 30 minutes",
+              "servings": "Serves 4   |   Prep: 10 minutes   |   Cook: 20 minutes   |   Total: 30 minutes",
               "comments": [
                 "Ground turkey or pork can be used in place of chicken.",
                 "If using winter squash instead of broccoli, roast it alone for 15 minutes before adding the meatballs to the sheet, since squash takes longer."
@@ -4213,7 +4213,7 @@ module.exports = {
             },
             {
               "title": "Crispy Chicken Katsu Bowls",
-              "servings": "4   |   Prep: 30 minutes   |   Cook: 15 minutes   |   Total: 45 minutes",
+              "servings": "Serves 4   |   Prep: 30 minutes   |   Cook: 15 minutes   |   Total: 45 minutes",
               "source": "https://www.halfbakedharvest.com/chicken-katsu-bowls/",
               "ingredientGroups": [
                 {
@@ -4280,7 +4280,7 @@ module.exports = {
             },
             {
               "title": "Japanese Fried Chicken (Shio Koji Karaage)",
-              "servings": "4   |   Prep: 10 minutes   |   Cook: 15 minutes   |   Total: 25 minutes",
+              "servings": "Serves 4   |   Prep: 10 minutes   |   Cook: 15 minutes   |   Total: 25 minutes",
               "comments": [
                 "Shio koji is a fermented rice-malt seasoning, available at Japanese/Asian grocers."
               ],
@@ -4325,7 +4325,7 @@ module.exports = {
             },
             {
               "title": "One-Pot Japanese Curry Chicken and Rice",
-              "servings": "4   |   Total: 1 hour",
+              "servings": "Serves 4   |   Total: 1 hour",
               "comments": [
                 "Sweet potatoes, cauliflower, or peas would be good substitutions or additions to the potato and carrots.",
                 "Serve with any pickle you have on hand for a vinegary contrast to the rich curry."
@@ -6921,7 +6921,7 @@ module.exports = {
             },
             {
               "title": "Chickpea Tacos",
-              "servings": "4",
+              "servings": "Serves 4",
               "source": "Live Eat Learn / Sarah Bond",
               "ingredientGroups": [
                 {
@@ -6969,7 +6969,7 @@ module.exports = {
             },
             {
               "title": "Sweet Potato and Black Bean Enchiladas",
-              "servings": "5",
+              "servings": "Serves 5",
               "source": "Food Network / Martina McBride",
               "comments": [
                 "The enchilada sauce calls for chicken broth; substitute vegetable broth to make fully vegetarian."
@@ -7285,7 +7285,7 @@ module.exports = {
             },
             {
               "title": "Red Lentil Soup",
-              "servings": "4",
+              "servings": "Serves 4",
               "source": "New York Times / Melissa Clark",
               "comments": [
                 "Based on Turkish red lentil soup (mercimek corbasi). Use vegetable broth for a fully vegetarian version."
@@ -7331,7 +7331,7 @@ module.exports = {
             },
             {
               "title": "Quick Chana Masala",
-              "servings": "4",
+              "servings": "Serves 4",
               "source": "Cookie and Kate / Kathryne Taylor; adapted from The Oh She Glows Cookbook by Angela Liddon",
               "ingredientGroups": [
                 {
@@ -7380,7 +7380,7 @@ module.exports = {
             },
             {
               "title": "Curry Tomatoes and Chickpeas with Cucumber Yogurt",
-              "servings": "3–4",
+              "servings": "Serves 3–4",
               "source": "New York Times / Ali Slagle",
               "ingredientGroups": [
                 {
@@ -7420,7 +7420,7 @@ module.exports = {
             },
             {
               "title": "Masoor Dal (Spiced Red Lentils)",
-              "servings": "4–6",
+              "servings": "Serves 4–6",
               "source": "New York Times / Nigella Lawson",
               "comments": [
                 "Optional: add 1 cup fried paneer cubes for a heartier dish (see step 4)."
@@ -7479,7 +7479,7 @@ module.exports = {
             },
             {
               "title": "Mattar Paneer (Peas and Paneer in Spiced Tomato Gravy)",
-              "servings": "2–4",
+              "servings": "Serves 2–4",
               "source": "New York Times / Zainab Shah",
               "comments": [
                 "Can substitute extra-firm tofu (pressed and cubed) for paneer to make vegan."
@@ -7536,7 +7536,7 @@ module.exports = {
             },
             {
               "title": "Thai Basil Eggplant",
-              "servings": "3",
+              "servings": "Serves 3",
               "source": "Cinnamon Snail / Adam Sobel",
               "comments": [
                 "Vegan."
@@ -7588,7 +7588,7 @@ module.exports = {
             },
             {
               "title": "Kung Pao Eggplant",
-              "servings": "4",
+              "servings": "Serves 4",
               "source": "Taste Love and Nourish / Caroline",
               "comments": [
                 "Vegan."
@@ -7810,7 +7810,7 @@ module.exports = {
             },
             {
               "title": "Silken Tofu With Spicy Soy Dressing",
-              "servings": "4",
+              "servings": "Serves 4",
               "source": "New York Times / Hetty Lui McKinnon",
               "comments": [
                 "Best served within minutes of assembling."
@@ -8149,7 +8149,7 @@ module.exports = {
         },
         {
           "title": "Brown Butter Mashed Potatoes",
-          "servings": "12",
+          "servings": "Serves 12",
           "source": "Food Network / Ree Drummond",
           "ingredientGroups": [
             {
@@ -8190,7 +8190,7 @@ module.exports = {
         },
         {
           "title": "Crispy Smashed Potatoes",
-          "servings": "6",
+          "servings": "Serves 6",
           "source": "Modern Honey / Melissa Stadler",
           "ingredientGroups": [
             {
@@ -8236,7 +8236,7 @@ module.exports = {
         },
         {
           "title": "Herby Roasted Carrots and Radishes",
-          "servings": "6",
+          "servings": "Serves 6",
           "source": "Food Network / Ree Drummond",
           "ingredientGroups": [
             {
@@ -8277,7 +8277,7 @@ module.exports = {
         },
         {
           "title": "Over-the-Top Scalloped Potatoes",
-          "servings": "6–8",
+          "servings": "Serves 6–8",
           "source": "Food Network / Ree Drummond",
           "comments": [
             "Contains bacon."
@@ -8331,7 +8331,7 @@ module.exports = {
         },
         {
           "title": "Perfect Twice Fried French Fries",
-          "servings": "4–6",
+          "servings": "Serves 4–6",
           "source": "The Salted Potato / Renee Robinson",
           "favorite": true,
           "comments": [
@@ -8440,7 +8440,7 @@ module.exports = {
         },
         {
           "title": "Broccoli with Garlic Sauce",
-          "servings": "4",
+          "servings": "Serves 4",
           "source": "I Heart Umami / ChihYu Smith",
           "comments": [
             "Can substitute vegetable broth for chicken broth to make vegetarian.",
@@ -8524,7 +8524,7 @@ module.exports = {
         },
         {
           "title": "Indian Style Rice",
-          "servings": "4 to 6   |   Prep: 15 minutes, plus 30 minutes soaking   |   Cook: about 25 minutes (rice cooker)",
+          "servings": "Serves 4 to 6   |   Prep: 15 minutes, plus 30 minutes soaking   |   Cook: about 25 minutes (rice cooker)",
           "comments": [
             "If you don't have whole cardamom pods or a cinnamon stick, use a pinch each of ground cardamom and ground cinnamon added with the turmeric.",
             "Adapted for a rice cooker — rather than boiling the rice separately and draining it (the original stovetop method), the sautéed spice mixture is stirred into the rice cooker with the water and rice."
@@ -8578,7 +8578,7 @@ module.exports = {
           "recipes": [
             {
               "title": "BIG Noods alla Gin with Sungold Tomatoes",
-              "servings": "4 to 6   |   Prep: 40 minutes   |   Total: 50 minutes",
+              "servings": "Serves 4 to 6   |   Prep: 40 minutes   |   Total: 50 minutes",
               "comments": [
                 "Fresh lasagna sheets are called for here for their fun, floppy volume on the plate, but any pasta shape — fresh or dried — works well.",
                 "Vodka can stand in for the gin."
@@ -8641,7 +8641,7 @@ module.exports = {
             },
             {
               "title": "Artichoke Pesto Pasta with Fried Peppercorns",
-              "servings": "4   |   Total: 30 minutes",
+              "servings": "Serves 4   |   Total: 30 minutes",
               "comments": [
                 "The fried peppercorns are worth making extra of — Molly Baz notes they're a great crispy, spicy garnish on all sorts of dishes."
               ],
@@ -8706,7 +8706,7 @@ module.exports = {
             },
             {
               "title": "Brie Linguine",
-              "servings": "6   |   Prep: 15 minutes, plus 2–3 hours resting",
+              "servings": "Serves 6   |   Prep: 15 minutes, plus 2–3 hours resting",
               "comments": [
                 "A very intense pasta, best served as a side dish.",
                 "Flavored fresh pasta — red pepper, basil, or spinach — provides wonderful color and taste."
@@ -8750,7 +8750,7 @@ module.exports = {
             {
               "title": "Lemon Fusilli with Arugula",
               "favorite": true,
-              "servings": "4 to 5   |   Prep: 10 minutes   |   Cook: 30 minutes   |   Total: 40 minutes",
+              "servings": "Serves 4 to 5   |   Prep: 10 minutes   |   Cook: 30 minutes   |   Total: 40 minutes",
               "source": "Food Network, by Ina Garten, from Barefoot Contessa at Home",
               "ingredientGroups": [
                 {
@@ -10798,7 +10798,7 @@ module.exports = {
         },
         {
           "title": "Greek Salad Dressing",
-          "servings": "6   |   Prep: 5 minutes",
+          "servings": "Serves 6   |   Prep: 5 minutes",
           "comments": [
             "Garlic doubled from the original recipe, and microplaned rather than minced for a smoother, more evenly distributed flavor."
           ],
@@ -10822,7 +10822,7 @@ module.exports = {
         },
         {
           "title": "Lemon Mustard Vinaigrette",
-          "servings": "6   |   Prep: 5 minutes",
+          "servings": "Serves 6   |   Prep: 5 minutes",
           "comments": [
             "Garlic doubled from the original recipe, and microplaned rather than minced for a smoother, more evenly distributed flavor."
           ],
@@ -11254,6 +11254,7 @@ module.exports = {
           ]
         },
         {
+          "id": "quick-pickled-red-onions",
           "title": "Quick Pickled Red Onions",
           "servings": "Makes about 8 servings   |   Prep: 5 minutes   |   Total: 15 minutes",
           "comments": [
