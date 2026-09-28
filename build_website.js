@@ -815,15 +815,20 @@ function buildPage(section, navHtml, contentHtml, cookbookData) {
   }
   #fav-toggle.active .star { color: #1a0e00; }
   #fav-toggle.active:hover { background: #e09a10; }
-  #collapse-all {
-    display: flex; align-items: center; gap: 8px;
-    padding: 7px 14px;
+  #expand-collapse-row {
+    display: flex; width: 100%; border-bottom: 1px solid #5a3e28;
+  }
+  #expand-all, #collapse-all {
+    flex: 1; display: flex; align-items: center; gap: 6px;
+    padding: 7px 10px;
     font-size: 0.82rem; cursor: pointer;
     color: var(--nav-text);
-    background: none; border: none; border-bottom: 1px solid #5a3e28;
-    text-align: left; width: 100%;
+    background: none; border: none;
+    text-align: left;
   }
-  #collapse-all:hover { background: #4e3522; }
+  #expand-all { border-right: 1px solid #5a3e28; }
+  #expand-all:hover, #collapse-all:hover { background: #4e3522; }
+  #expand-all .expand-icon { font-size: 0.85rem; color: #a8906e; }
   #collapse-all .collapse-icon { font-size: 0.85rem; color: #a8906e; }
 
   /* ── High Altitude toggle ── */
@@ -1215,7 +1220,10 @@ function buildPage(section, navHtml, contentHtml, cookbookData) {
   <div id="search-results"></div>
   <button id="fav-toggle"><span class="star">★</span> Favorites only</button>
   <button id="alt-toggle"><span class="alt-icon">&#9650;</span> High Altitude</button>
-  <button id="collapse-all"><span class="collapse-icon">⊟</span> Collapse all</button>
+  <div id="expand-collapse-row">
+    <button id="expand-all"><span class="expand-icon">⊞</span> Expand all</button>
+    <button id="collapse-all"><span class="collapse-icon">⊟</span> Collapse all</button>
+  </div>
   <div id="nav-tree">
     ${navHtml}
   </div>
@@ -1610,6 +1618,18 @@ function buildPage(section, navHtml, contentHtml, cookbookData) {
       document.addEventListener('click', cleanup, { once: true, capture: true });
       setTimeout(cleanup, 30000);
     } else { cleanup(); }
+  });
+
+  // ── Expand all nav menus ─────────────────────────────────────────────
+  document.getElementById('expand-all').addEventListener('click', function () {
+    var navState = {};
+    document.querySelectorAll('.nav-l2, .nav-l3, .nav-l4').forEach(function (list) {
+      list.classList.remove('collapsed');
+      var hd = document.querySelector('[data-toggle="' + list.id + '"]');
+      if (hd) hd.classList.add('open');
+      navState[list.id] = true;
+    });
+    try { localStorage.setItem('navState', JSON.stringify(navState)); } catch (e) {}
   });
 
   // ── Collapse all open nav menus ───────────────────────────────────────
