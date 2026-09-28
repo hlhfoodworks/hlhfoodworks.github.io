@@ -1805,11 +1805,37 @@
   try { favOnly = localStorage.getItem('favOnly') === 'true'; } catch (e) {}
   if (favOnly) { favBtn.classList.add('active'); applyFilters(); }
 
+  // If the page was loaded with a hash pointing to a hidden (non-favorite) recipe,
+  // quietly clear Favorites Only so the target is visible.
+  if (favOnly && window.location.hash) {
+    var hashTarget = document.getElementById(window.location.hash.slice(1));
+    if (hashTarget && hashTarget.classList.contains('hidden')) {
+      favOnly = false;
+      try { localStorage.setItem('favOnly', 'false'); } catch (e) {}
+      favBtn.classList.remove('active');
+      applyFilters();
+    }
+  }
+
   favBtn.addEventListener('click', function () {
     favOnly = !favOnly;
     try { localStorage.setItem('favOnly', favOnly); } catch (e) {}
     favBtn.classList.toggle('active', favOnly);
     applyFilters();
+  });
+
+  // Same-page cross-recipe links: if the target is hidden by Favorites Only, clear the filter.
+  document.addEventListener('click', function (e) {
+    if (!favOnly) return;
+    var anchor = e.target.closest('a[href^="#"]');
+    if (!anchor) return;
+    var targetEl = document.getElementById(anchor.getAttribute('href').slice(1));
+    if (targetEl && targetEl.classList.contains('hidden')) {
+      favOnly = false;
+      try { localStorage.setItem('favOnly', 'false'); } catch (e) {}
+      favBtn.classList.remove('active');
+      applyFilters();
+    }
   });
 
   // ── High Altitude toggle (localStorage-persisted) ─────────────────────
