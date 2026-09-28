@@ -630,6 +630,66 @@ module.exports = {
           "title": "Greens",
           "recipes": [
             {
+              "title": "Barbecue Bacon Wedge Salad with Grilled Corn",
+              "servings": "4",
+              "source": "Food Network / Katie Lee Biegel",
+              "comments": [
+                "Contains bacon.",
+                "For pickled red onions, see Quick Pickled Red Onions in the Pickling section — prepare at least 1 hour ahead."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Pickled red onions (1 hour ahead)",
+                  "ingredients": [
+                    "1 batch Quick Pickled Red Onions (see Pickling section)"
+                  ]
+                },
+                {
+                  "label": "Blue cheese dressing",
+                  "ingredients": [
+                    "1/2 cup mayonnaise",
+                    "2 tablespoons buttermilk",
+                    "1 tablespoon white vinegar",
+                    "1/4 teaspoon sugar",
+                    "Dash hot sauce",
+                    "Salt and pepper",
+                    "1/4 cup crumbled blue cheese"
+                  ]
+                },
+                {
+                  "label": "Barbecue bacon",
+                  "ingredients": [
+                    "1/4 cup barbecue sauce",
+                    "2 tablespoons apple cider vinegar",
+                    "1 tablespoon dark brown sugar",
+                    "1/2 pound slab bacon, cut into lardons"
+                  ]
+                },
+                {
+                  "label": "Grilled corn",
+                  "ingredients": [
+                    "1 ear corn, husked",
+                    "1 tablespoon olive oil"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "1 head iceberg lettuce, quartered into wedges",
+                    "1 cup cherry tomatoes, halved",
+                    "Salt and pepper"
+                  ]
+                }
+              ],
+              "steps": [
+                "Prepare Quick Pickled Red Onions (see Pickling section) at least 1 hour ahead.",
+                "Make blue cheese dressing: whisk together mayo, buttermilk, vinegar, sugar, and hot sauce; season with salt and pepper. Fold in blue cheese. Refrigerate until ready to serve.",
+                "Make barbecue bacon: combine barbecue sauce, vinegar, and brown sugar in a skillet over medium heat. Add bacon and cook, stirring, until caramelized and sticky, 8–10 minutes. Set aside.",
+                "Brush corn with olive oil. Grill or pan-sear over high heat until charred in spots. Cut kernels from cob.",
+                "To assemble: place a lettuce wedge on each plate. Top with cherry tomatoes, corn kernels, barbecue bacon, pickled onions, and blue cheese dressing. Season with salt and pepper."
+              ]
+            },
+            {
               "title": "Broccoli Salad",
               "servings": "Serves 4",
               "source": "New York Times",
@@ -931,6 +991,128 @@ module.exports = {
                 "Add chicken, carrot, red onion, golden raisins, and cashews. Stir well until everything is evenly coated.",
                 "Refrigerate at least 1 hour before serving to allow flavors to meld and raisins to plump. (This step is optional but recommended.)",
                 "Serve over lettuce."
+              ]
+            },
+            {
+              "title": "Roasted Cauliflower Salad",
+              "servings": "12",
+              "source": "Food Network / Ree Drummond",
+              "ingredientGroups": [
+                {
+                  "label": "Cauliflower",
+                  "ingredients": [
+                    "2 heads cauliflower, broken into florets",
+                    "2 tablespoons olive oil",
+                    "2 teaspoons kosher salt",
+                    "1 teaspoon black pepper"
+                  ]
+                },
+                {
+                  "label": "Dressing",
+                  "ingredients": [
+                    "1/4 cup pesto",
+                    "3 tablespoons champagne vinegar"
+                  ]
+                },
+                {
+                  "label": "Salad",
+                  "ingredients": [
+                    "1/2 cup pine nuts",
+                    "6 cups mixed baby arugula, spinach, and kale",
+                    "1/2 cup Castelvetrano olives, halved",
+                    "1/2 cup kalamata olives, halved",
+                    "1/2 cup fresh Italian parsley, chopped"
+                  ]
+                }
+              ],
+              "steps": [
+                "Preheat oven to 450 degrees F. Toss cauliflower with olive oil, salt, and pepper; spread on a rimmed baking sheet. Roast 18–20 minutes until golden and caramelized.",
+                "Toast pine nuts in a dry skillet over medium heat, stirring frequently, until golden, about 3–4 minutes. Watch carefully.",
+                "Shake pesto and champagne vinegar together in a jar until combined.",
+                "Combine greens, roasted cauliflower, olives, parsley, and pine nuts in a large bowl. Drizzle with dressing and toss to coat. Serve immediately."
+              ]
+            },
+            {
+              "title": "Dad's Greek Salad",
+              "servings": "6",
+              "source": "Simply Recipes / Elise Bauer",
+              "comments": [
+                "Tip: to reduce the bite of raw onion, soak chopped onion in a little vinegar or lemon juice for a few minutes before adding.",
+                "Dressing can be made up to 3 hours ahead; let stand at room temperature and re-whisk before using."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Dressing",
+                  "ingredients": [
+                    "6 tablespoons extra-virgin olive oil",
+                    "2 tablespoons fresh lemon juice",
+                    "1 teaspoon red wine vinegar",
+                    "1/2 teaspoon chopped garlic",
+                    "1/2 teaspoon dried oregano (or 1 teaspoon fresh)",
+                    "1/2 teaspoon dried dill (or 1 teaspoon fresh)",
+                    "Salt and freshly ground black pepper"
+                  ]
+                },
+                {
+                  "label": "Salad",
+                  "ingredients": [
+                    "3 large plum tomatoes, seeded and coarsely chopped",
+                    "3/4 large cucumber, peeled, seeded, and coarsely chopped",
+                    "1/2 small red onion, chopped",
+                    "1 bell pepper, seeded and coarsely chopped",
+                    "1/2 cup pitted black olives (preferably brine-cured), coarsely chopped",
+                    "Heaping 1/2 cup crumbled feta cheese"
+                  ]
+                }
+              ],
+              "steps": [
+                "Whisk together olive oil, lemon juice, vinegar, garlic, oregano, and dill until blended. Season with salt and pepper.",
+                "Combine tomatoes, cucumber, onion, bell pepper, and olives in a large bowl. Toss with dressing. Sprinkle with feta and serve."
+              ]
+            },
+            {
+              "title": "Indian Slaw",
+              "servings": "8",
+              "source": "Glebe Kitchen / Romain",
+              "favorite": true,
+              "comments": [
+                "Dressing benefits from at least 4 hours rest; overnight is best."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Dressing (4 hours ahead)",
+                  "ingredients": [
+                    "1/2 cup full-fat yogurt",
+                    "1/2 cup mayonnaise",
+                    "1/2 teaspoon coriander powder",
+                    "1/2 teaspoon cumin powder",
+                    "1/4 teaspoon Kashmiri chili powder",
+                    "1/2 teaspoon coarse black pepper",
+                    "1/4 teaspoon mustard powder",
+                    "2 1/2 tablespoons lemon juice",
+                    "1 teaspoon sugar",
+                    "1 tablespoon milk to thin (optional)"
+                  ]
+                },
+                {
+                  "label": "Slaw",
+                  "ingredients": [
+                    "1 small green cabbage, thinly sliced",
+                    "1/2 large Spanish onion, thinly sliced",
+                    "2 large carrots, shredded",
+                    "2 large jalapenos, seeded and julienned",
+                    "2 1/2 teaspoons kosher salt",
+                    "1 tablespoon vegetable oil",
+                    "1/2 cup cashews",
+                    "Large handful fresh cilantro, roughly chopped"
+                  ]
+                }
+              ],
+              "steps": [
+                "Whisk together all dressing ingredients. Refrigerate at least 4 hours — overnight is best — for flavors to meld.",
+                "Combine cabbage, onion, carrots, and jalapenos in a large bowl. Toss with salt and let sit 15–20 minutes to draw out moisture.",
+                "Squeeze or press out excess liquid from slaw by hand or in a colander. Toss with vegetable oil.",
+                "Add dressing, cashews, and cilantro; toss to coat. Taste and adjust salt. Serve immediately or refrigerate up to 2 days."
               ]
             }
           ]
@@ -6738,6 +6920,114 @@ module.exports = {
               ]
             },
             {
+              "title": "Chickpea Tacos",
+              "servings": "4",
+              "source": "Live Eat Learn / Sarah Bond",
+              "ingredientGroups": [
+                {
+                  "label": "Cilantro sauce",
+                  "ingredients": [
+                    "1 cup fresh cilantro",
+                    "1/2 cup plain yogurt",
+                    "1/4 cup red wine vinegar",
+                    "1/4 cup extra-virgin olive oil",
+                    "2 teaspoons mustard",
+                    "2 cloves garlic",
+                    "1/2 teaspoon smoked paprika",
+                    "1/2 teaspoon cumin",
+                    "1/2 teaspoon black pepper"
+                  ]
+                },
+                {
+                  "label": "Chickpea filling",
+                  "ingredients": [
+                    "1 tablespoon oil",
+                    "Two 15-oz cans chickpeas, drained and patted dry",
+                    "1 teaspoon salt",
+                    "1 teaspoon dried oregano",
+                    "1 teaspoon garlic powder",
+                    "1 teaspoon onion powder",
+                    "1 teaspoon cumin",
+                    "1 teaspoon smoked paprika"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "Tortillas",
+                    "White onion, diced",
+                    "Fresh cilantro",
+                    "Lime wedges"
+                  ]
+                }
+              ],
+              "steps": [
+                "Blend all cilantro sauce ingredients until smooth. Set aside.",
+                "Heat oil in a large skillet over medium-high heat. Add chickpeas and all spices; cook, stirring occasionally, until crispy and golden, about 8–10 minutes.",
+                "Warm tortillas. Fill with crispy chickpeas, drizzle with cilantro sauce, and top with diced onion, cilantro, and a squeeze of lime."
+              ]
+            },
+            {
+              "title": "Sweet Potato and Black Bean Enchiladas",
+              "servings": "5",
+              "source": "Food Network / Martina McBride",
+              "comments": [
+                "The enchilada sauce calls for chicken broth; substitute vegetable broth to make fully vegetarian."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Red enchilada sauce",
+                  "ingredients": [
+                    "2 tablespoons vegetable oil",
+                    "2 cloves garlic, minced",
+                    "One 15-oz can tomato sauce",
+                    "3/4 cup reduced-sodium chicken broth (or vegetable broth)",
+                    "1/2 teaspoon chipotle chile powder",
+                    "1/2 teaspoon ground cumin",
+                    "1–3 chipotle chiles in adobo sauce, minced (to taste)"
+                  ]
+                },
+                {
+                  "label": "Filling",
+                  "ingredients": [
+                    "1 teaspoon olive oil",
+                    "3 cloves garlic, minced",
+                    "1 small onion, diced",
+                    "1 jalapeno, minced",
+                    "2 1/2 cups sweet potato, peeled and cubed (about 1 medium)",
+                    "One 10-oz can diced tomatoes with green chiles",
+                    "1 1/2 cups canned black beans, drained and rinsed",
+                    "1/4 cup fresh cilantro, chopped",
+                    "1 teaspoon ground cumin",
+                    "1/2 teaspoon chili powder",
+                    "Salt to taste"
+                  ]
+                },
+                {
+                  "label": "Assembly",
+                  "ingredients": [
+                    "10 whole-wheat flour tortillas",
+                    "2 cups shredded Mexican cheese blend, divided"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "Sour cream"
+                  ]
+                }
+              ],
+              "steps": [
+                "Make the enchilada sauce: heat oil in a saucepan over medium heat. Add garlic and cook 1 minute. Add tomato sauce, broth, chipotle powder, cumin, and chipotle chiles. Simmer 10 minutes, stirring occasionally. Set aside.",
+                "Make the filling: heat olive oil in a large skillet over medium heat. Add garlic, onion, and jalapeno; cook until softened, about 5 minutes. Add sweet potato and 2 tablespoons water; cover and cook until tender, 8–10 minutes.",
+                "Stir in diced tomatoes with chiles, black beans, cilantro, cumin, and chili powder. Cook 2–3 minutes until well combined. Season with salt.",
+                "Preheat oven to 375 degrees F. Spread a thin layer of enchilada sauce in a 9x13 baking dish.",
+                "Fill each tortilla with a spoonful of sweet potato filling and a little cheese; roll up and place seam-side down in the dish.",
+                "Pour remaining sauce over enchiladas; top with remaining cheese.",
+                "Cover with foil and bake 20 minutes. Uncover and bake 10 minutes more until cheese is melted and bubbly. Serve with sour cream."
+              ]
+            },
+            {
               "title": "Eggplant Involtini",
               "servings": "Serves 4   |   Total: 1 hour",
               "comments": [
@@ -6992,6 +7282,358 @@ module.exports = {
                 "Add tomato juice, orange juice, and water. Bring to a boil, then reduce heat and simmer 2 minutes.",
                 "Remove from heat; stir in couscous. Cover and bake at 350°F for 20 minutes."
               ]
+            },
+            {
+              "title": "Red Lentil Soup",
+              "servings": "4",
+              "source": "New York Times / Melissa Clark",
+              "comments": [
+                "Based on Turkish red lentil soup (mercimek corbasi). Use vegetable broth for a fully vegetarian version."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Aromatics",
+                  "ingredients": [
+                    "3 tablespoons olive oil, plus more to drizzle",
+                    "1 large onion, diced",
+                    "4 cloves garlic, minced",
+                    "2 tablespoons tomato paste",
+                    "1 teaspoon ground cumin",
+                    "1/4 teaspoon chili powder or ground cayenne"
+                  ]
+                },
+                {
+                  "label": "Lentils and vegetables",
+                  "ingredients": [
+                    "4 cups chicken or vegetable stock",
+                    "2 cups water",
+                    "1 cup red lentils, rinsed",
+                    "1 large carrot, peeled and diced"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "Juice of 1 lemon",
+                    "Fresh cilantro, chopped",
+                    "Olive oil drizzle",
+                    "Salt and black pepper"
+                  ]
+                }
+              ],
+              "steps": [
+                "Heat olive oil in a large pot over medium heat. Add onion and cook until golden, about 7–9 minutes. Add garlic and cook 1 minute.",
+                "Add tomato paste, cumin, and chili powder; stir and cook 2 minutes until fragrant.",
+                "Add stock, water, lentils, and carrot. Bring to a boil, then reduce heat and simmer until lentils are completely tender, about 20–25 minutes.",
+                "Use an immersion blender to blend about half the soup directly in the pot (or transfer half to a blender and return). This gives a chunky-smooth texture.",
+                "Stir in lemon juice; season generously with salt and pepper. Serve with a drizzle of olive oil and fresh cilantro."
+              ]
+            },
+            {
+              "title": "Quick Chana Masala",
+              "servings": "4",
+              "source": "Cookie and Kate / Kathryne Taylor; adapted from The Oh She Glows Cookbook by Angela Liddon",
+              "ingredientGroups": [
+                {
+                  "label": "Aromatics",
+                  "ingredients": [
+                    "2 tablespoons coconut or olive oil",
+                    "1 medium yellow onion, finely chopped",
+                    "1 medium serrano or jalapeno pepper, minced",
+                    "1/2 teaspoon fine sea salt"
+                  ]
+                },
+                {
+                  "label": "Spice paste",
+                  "ingredients": [
+                    "5 cloves garlic, minced",
+                    "1 tablespoon fresh ginger, minced",
+                    "1 1/2 teaspoons garam masala",
+                    "1 1/2 teaspoons ground coriander",
+                    "3/4 teaspoon ground cumin",
+                    "1/2 teaspoon ground turmeric",
+                    "Pinch cayenne pepper"
+                  ]
+                },
+                {
+                  "label": "Tomatoes and chickpeas",
+                  "ingredients": [
+                    "One 28-oz can fire-roasted crushed tomatoes",
+                    "Two 14-oz cans chickpeas, drained and rinsed"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "Jasmine or Basmati rice",
+                    "Lemon wedges",
+                    "Fresh cilantro"
+                  ]
+                }
+              ],
+              "steps": [
+                "Heat oil in a large pot over medium heat. Add onion, jalapeno, and salt. Cook, stirring occasionally, until onion is soft and lightly golden, about 8–10 minutes.",
+                "Add garlic, ginger, and all spices; cook, stirring, until fragrant, about 2 minutes.",
+                "Add crushed tomatoes and chickpeas. Bring to a simmer and cook, uncovered, stirring occasionally, until sauce thickens, about 20 minutes.",
+                "Taste and adjust salt. Serve over rice with lemon wedges and fresh cilantro."
+              ]
+            },
+            {
+              "title": "Curry Tomatoes and Chickpeas with Cucumber Yogurt",
+              "servings": "3–4",
+              "source": "New York Times / Ali Slagle",
+              "ingredientGroups": [
+                {
+                  "label": "Cucumber yogurt",
+                  "ingredients": [
+                    "1 cup plain whole-milk yogurt",
+                    "1 small cucumber (about 5 oz), grated or finely chopped",
+                    "Salt"
+                  ]
+                },
+                {
+                  "label": "Tomatoes and chickpeas",
+                  "ingredients": [
+                    "3 tablespoons neutral oil",
+                    "1 pint cherry tomatoes (about 10 oz)",
+                    "One 15-oz can chickpeas, drained and rinsed",
+                    "2 teaspoons curry powder",
+                    "Salt and black pepper",
+                    "Aleppo pepper or red pepper flakes"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "Cooked rice or warm flatbread",
+                    "Fresh cilantro or mint",
+                    "Pistachios (optional)"
+                  ]
+                }
+              ],
+              "steps": [
+                "Stir together yogurt and cucumber; season with salt. Set aside.",
+                "Heat oil in a large skillet over high heat until shimmering. Add cherry tomatoes and cook, undisturbed, 2 minutes, then stir occasionally until tomatoes burst and begin to caramelize, about 3–4 minutes more.",
+                "Add chickpeas and curry powder; season with salt, pepper, and Aleppo pepper or red pepper flakes. Stir and cook until chickpeas are heated through and coated in tomato juices, about 2–3 minutes.",
+                "Spread cucumber yogurt on a platter or in bowls. Spoon chickpea mixture on top. Garnish with cilantro or mint and optional pistachios. Serve with rice or flatbread."
+              ]
+            },
+            {
+              "title": "Masoor Dal (Spiced Red Lentils)",
+              "servings": "4–6",
+              "source": "New York Times / Nigella Lawson",
+              "comments": [
+                "Optional: add 1 cup fried paneer cubes for a heartier dish (see step 4)."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Aromatics",
+                  "ingredients": [
+                    "2 tablespoons vegetable oil",
+                    "1 large onion, finely chopped",
+                    "1 medium sweet potato (about 8 oz), peeled and diced into 1/2-inch cubes",
+                    "1 tablespoon fresh ginger, grated",
+                    "2 cloves garlic, minced",
+                    "1 red chili, thinly sliced"
+                  ]
+                },
+                {
+                  "label": "Spices",
+                  "ingredients": [
+                    "1 teaspoon ground coriander",
+                    "1 teaspoon ground cumin",
+                    "1/2 teaspoon turmeric",
+                    "1/2 teaspoon ground ginger"
+                  ]
+                },
+                {
+                  "label": "Lentils",
+                  "ingredients": [
+                    "1 cup (about 7 oz) red lentils, rinsed",
+                    "One 14-oz can chopped tomatoes",
+                    "2 cups water"
+                  ]
+                },
+                {
+                  "label": "Paneer (optional)",
+                  "ingredients": [
+                    "1 cup paneer, cut into cubes",
+                    "Oil for frying"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "Cooked rice or naan",
+                    "Fresh cilantro"
+                  ]
+                }
+              ],
+              "steps": [
+                "Heat oil in a large pot over medium heat. Add onion and cook until softened and lightly golden, about 8 minutes. Add sweet potato and cook 3 minutes more.",
+                "Add ginger, garlic, and red chili; cook 1–2 minutes until fragrant. Add all ground spices and stir 30 seconds.",
+                "Add lentils, canned tomatoes, and water. Bring to a boil, then reduce heat and simmer uncovered, stirring occasionally, until lentils are completely soft and dal is thick, about 25–30 minutes.",
+                "Optional — fried paneer: heat oil in a skillet over medium-high heat. Add paneer cubes and fry, turning, until golden on most sides, about 3–4 minutes. Stir into finished dal.",
+                "Season with salt. Serve with rice or naan, garnished with fresh cilantro."
+              ]
+            },
+            {
+              "title": "Mattar Paneer (Peas and Paneer in Spiced Tomato Gravy)",
+              "servings": "2–4",
+              "source": "New York Times / Zainab Shah",
+              "comments": [
+                "Can substitute extra-firm tofu (pressed and cubed) for paneer to make vegan."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Paneer",
+                  "ingredients": [
+                    "2 tablespoons ghee, divided",
+                    "14 oz paneer, cut into 1/2-inch cubes"
+                  ]
+                },
+                {
+                  "label": "Aromatics",
+                  "ingredients": [
+                    "1 medium yellow onion, finely chopped",
+                    "1 tablespoon ginger paste (or 1 tablespoon fresh ginger, grated)",
+                    "1 tablespoon garlic paste (or 4 cloves garlic, minced)",
+                    "1 teaspoon cumin seeds"
+                  ]
+                },
+                {
+                  "label": "Tomato gravy",
+                  "ingredients": [
+                    "1 teaspoon Kashmiri red chile powder",
+                    "1/2 teaspoon turmeric",
+                    "One 14-oz can whole plum tomatoes, crushed by hand",
+                    "2 tablespoons cashew butter",
+                    "Salt"
+                  ]
+                },
+                {
+                  "label": "Peas and finish",
+                  "ingredients": [
+                    "1 cup frozen peas, thawed",
+                    "1 teaspoon garam masala",
+                    "2 tablespoons heavy cream (optional)"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "Jasmine or Basmati rice or roti"
+                  ]
+                }
+              ],
+              "steps": [
+                "Heat 1 tablespoon ghee in a large skillet over medium-high heat. Add paneer cubes and cook, turning occasionally, until golden on most sides, about 4–5 minutes. Remove to a plate.",
+                "Add remaining tablespoon ghee to the same pan. Add onion and cook until deeply golden, about 10–12 minutes. Add ginger paste, garlic paste, and cumin seeds; cook 2 minutes.",
+                "Add Kashmiri chili powder and turmeric; stir 30 seconds. Add crushed tomatoes and cashew butter; season with salt. Simmer, stirring occasionally, until sauce darkens and oil separates at edges, about 10–12 minutes.",
+                "Add frozen peas and fried paneer; stir gently to coat. Cover and cook 5 minutes.",
+                "Stir in garam masala and heavy cream if using. Serve with rice or roti."
+              ]
+            },
+            {
+              "title": "Thai Basil Eggplant",
+              "servings": "3",
+              "source": "Cinnamon Snail / Adam Sobel",
+              "comments": [
+                "Vegan."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Sauce",
+                  "ingredients": [
+                    "2 tablespoons tamari",
+                    "1 tablespoon sesame oil",
+                    "1 tablespoon rice vinegar",
+                    "4 teaspoons sambal oelek or sriracha",
+                    "1 tablespoon palm sugar, coconut sugar, or brown sugar",
+                    "2 tablespoons vegan fish sauce",
+                    "1/4 cup water",
+                    "2 teaspoons cornstarch"
+                  ]
+                },
+                {
+                  "label": "Stir-fry",
+                  "ingredients": [
+                    "3 tablespoons canola oil",
+                    "3 Chinese eggplants (or 7 Thai eggplants), cut into 1-inch pieces",
+                    "1/2 cup shallots or red onion, minced",
+                    "4 cloves garlic, minced",
+                    "1 red bell pepper, sliced",
+                    "1/2 green bell pepper, sliced",
+                    "5 Bird's eye chiles, sliced",
+                    "1 1/2 cups Thai basil, roughly chopped"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "Jasmine or Basmati rice",
+                    "Fresh Thai basil",
+                    "Bird's eye chiles, sliced",
+                    "Garlic chives or green onion"
+                  ]
+                }
+              ],
+              "steps": [
+                "Whisk together all sauce ingredients in a small bowl until cornstarch is dissolved; set aside.",
+                "Heat oil in a large wok or skillet over high heat. Add eggplant and stir-fry until browned and starting to soften, about 5–6 minutes.",
+                "Push eggplant to the side. Add shallots and garlic; cook until fragrant, about 1 minute. Add bell peppers and bird's eye chiles; stir-fry 2 minutes more.",
+                "Add Thai basil and sauce; toss everything together and cook until sauce thickens and basil wilts, about 1–2 minutes.",
+                "Serve over rice, garnished with fresh basil, sliced chiles, and garlic chives."
+              ]
+            },
+            {
+              "title": "Kung Pao Eggplant",
+              "servings": "4",
+              "source": "Taste Love and Nourish / Caroline",
+              "comments": [
+                "Vegan."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Sauce",
+                  "ingredients": [
+                    "2 tablespoons tamari or soy sauce",
+                    "2 tablespoons rice vinegar",
+                    "3 tablespoons vegetable broth",
+                    "2 tablespoons pure maple syrup",
+                    "1 tablespoon fresh ginger, finely grated",
+                    "1 teaspoon arrowroot or cornstarch",
+                    "1 teaspoon toasted sesame oil"
+                  ]
+                },
+                {
+                  "label": "Stir-fry",
+                  "ingredients": [
+                    "1 tablespoon plus 1 teaspoon coconut oil, divided",
+                    "2 medium eggplants (about 2 pounds total), cut into 1-inch cubes",
+                    "Kosher salt",
+                    "1 large red bell pepper, diced",
+                    "1 large green bell pepper, diced",
+                    "2 stalks celery, thinly sliced",
+                    "2 cloves garlic, minced",
+                    "3–4 dried red Chinese or Arbol chilies"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "1/2 cup roasted unsalted peanuts",
+                    "2 scallions, thinly sliced"
+                  ]
+                }
+              ],
+              "steps": [
+                "Whisk together all sauce ingredients in a small bowl; set aside.",
+                "Heat 1 tablespoon coconut oil in a large wok or skillet over high heat. Add eggplant, season with salt, and stir-fry until golden and tender, about 8 minutes. Remove to a plate.",
+                "Add remaining 1 teaspoon coconut oil to the pan. Add bell peppers and celery; stir-fry 2 minutes. Add garlic and dried chilies; cook 30 seconds.",
+                "Return eggplant to pan. Pour sauce over everything; toss to coat and cook until sauce thickens, about 1 minute.",
+                "Stir in peanuts. Serve over steamed rice, garnished with scallions."
+              ]
             }
           ]
         },
@@ -7164,6 +7806,47 @@ module.exports = {
                 "In a medium bowl, whisk together the remaining 4 tablespoons lime juice, peanut butter, miso, ginger, fish sauce (if using), habanero (or sambal), 2 tablespoons oil, 1 tablespoon honey, and ¾ cup water until smooth. Season to taste with salt.",
                 "Arrange tofu in a single layer on the oiled baking sheet; season with salt. Spoon about 2 tablespoons peanut sauce over each piece, coating the top and letting it run down the sides. Drizzle with a little oil and roast until the glaze is set, deep brown, and caramelized along the edges, 18–20 minutes. Add the remaining lime juice and 1 tablespoon honey to the leftover sauce in the bowl to make the dressing; set aside.",
                 "Divide the greens among bowls. Stir the lime zest and half the scallions into the rice, then fluff with a fork. Top greens with rice, then the tofu. Spoon the peanut dressing over everything and garnish with the drained pickled peppers and remaining scallions."
+              ]
+            },
+            {
+              "title": "Silken Tofu With Spicy Soy Dressing",
+              "servings": "4",
+              "source": "New York Times / Hetty Lui McKinnon",
+              "comments": [
+                "Best served within minutes of assembling."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Spicy soy dressing",
+                  "ingredients": [
+                    "3 tablespoons soy sauce",
+                    "2 tablespoons rice vinegar",
+                    "1 tablespoon sesame oil",
+                    "1–2 tablespoons chile oil (to taste)",
+                    "1 teaspoon sesame seeds",
+                    "1 teaspoon sugar",
+                    "1 scallion, thinly sliced"
+                  ]
+                },
+                {
+                  "label": "Tofu",
+                  "ingredients": [
+                    "Two 14–16-oz blocks silken tofu"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "1 scallion, thinly sliced",
+                    "Fresh cilantro"
+                  ]
+                }
+              ],
+              "steps": [
+                "Whisk together all dressing ingredients in a small bowl.",
+                "Gently unmold tofu onto a rimmed plate or shallow bowl. If using two blocks, arrange side by side.",
+                "Pour dressing over tofu. Top with sliced scallion and fresh cilantro.",
+                "Serve immediately, cutting into the tofu at the table."
               ]
             }
           ]
@@ -7465,6 +8148,226 @@ module.exports = {
           ]
         },
         {
+          "title": "Brown Butter Mashed Potatoes",
+          "servings": "12",
+          "source": "Food Network / Ree Drummond",
+          "ingredientGroups": [
+            {
+              "label": "Potatoes",
+              "ingredients": [
+                "5 pounds Yukon gold potatoes, peeled and cut into chunks"
+              ]
+            },
+            {
+              "label": "Brown butter",
+              "ingredients": [
+                "2 1/2 sticks (1 1/4 cups) salted butter"
+              ]
+            },
+            {
+              "label": "Enrichments",
+              "ingredients": [
+                "1 1/2 packages (12 oz total) cream cheese, softened",
+                "1/2 cup half-and-half",
+                "1/2 cup heavy cream",
+                "Kosher salt and black pepper",
+                "Splash of milk to thin, if needed"
+              ]
+            },
+            {
+              "label": "To serve",
+              "ingredients": [
+                "Fresh parsley, chopped"
+              ]
+            }
+          ],
+          "steps": [
+            "Boil potatoes in salted water until very tender, about 20–25 minutes. Drain.",
+            "Melt butter in a light-colored skillet over medium heat, swirling frequently, until milk solids turn golden brown and butter smells nutty, about 5–8 minutes. Watch carefully to avoid burning.",
+            "Mash or rice potatoes in a large bowl. Add brown butter, cream cheese, half-and-half, and heavy cream; stir until smooth. Season generously with salt and pepper. Thin with a splash of milk if needed.",
+            "Serve topped with fresh parsley."
+          ]
+        },
+        {
+          "title": "Crispy Smashed Potatoes",
+          "servings": "6",
+          "source": "Modern Honey / Melissa Stadler",
+          "ingredientGroups": [
+            {
+              "label": "Potatoes",
+              "ingredients": [
+                "1 1/2 pounds petite Yukon gold or fingerling potatoes"
+              ]
+            },
+            {
+              "label": "Drizzle",
+              "ingredients": [
+                "3 tablespoons salted butter, melted",
+                "2 tablespoons extra-virgin olive oil",
+                "1 teaspoon salt",
+                "1/2 teaspoon pepper"
+              ]
+            },
+            {
+              "label": "Garlic cheddar dip",
+              "ingredients": [
+                "8 oz sour cream",
+                "3/4 cup cheddar cheese, grated",
+                "1 garlic clove, minced (or 1/4 teaspoon garlic powder)",
+                "1/2 teaspoon garlic salt",
+                "1/4 teaspoon pepper"
+              ]
+            },
+            {
+              "label": "To serve",
+              "ingredients": [
+                "Fresh parsley, chopped"
+              ]
+            }
+          ],
+          "steps": [
+            "Cook potatoes: boil in salted water until fork-tender, 20–25 minutes, then drain. Alternatively, roast at 425 degrees F for about 25 minutes until just tender — this produces a drier potato and results in a crispier final texture after smashing.",
+            "Preheat oven to 425 degrees F (if using the boiling method). Arrange potatoes on a greased rimmed baking sheet. Smash each potato with the bottom of a glass or measuring cup until about 1/2-inch thick.",
+            "Mix melted butter, olive oil, salt, and pepper; drizzle over smashed potatoes.",
+            "Roast 35–45 minutes until deeply golden and crispy.",
+            "Meanwhile, stir together all dip ingredients until combined. Refrigerate until ready to serve.",
+            "Serve potatoes hot with garlic cheddar dip and fresh parsley."
+          ]
+        },
+        {
+          "title": "Herby Roasted Carrots and Radishes",
+          "servings": "6",
+          "source": "Food Network / Ree Drummond",
+          "ingredientGroups": [
+            {
+              "label": "Vegetables",
+              "ingredients": [
+                "2 pounds rainbow carrots, halved lengthwise",
+                "1 pound radishes, halved",
+                "2 jalapenos, sliced",
+                "2 tablespoons olive oil",
+                "2 teaspoons kosher salt",
+                "Black pepper"
+              ]
+            },
+            {
+              "label": "Herb oil",
+              "ingredients": [
+                "1 cup fresh cilantro, chopped",
+                "1 cup fresh parsley, chopped",
+                "Zest and juice of 1 lemon",
+                "Pinch Aleppo pepper or red pepper flakes",
+                "1/2 cup olive oil",
+                "1/2 teaspoon sea salt"
+              ]
+            },
+            {
+              "label": "To serve",
+              "ingredients": [
+                "1/2 cup raw sliced almonds, toasted"
+              ]
+            }
+          ],
+          "steps": [
+            "Preheat oven to 475 degrees F. Toss carrots, radishes, and jalapenos with 2 tablespoons olive oil, salt, and pepper; spread on a rimmed baking sheet. Roast 15–18 minutes until caramelized at edges.",
+            "Meanwhile, whisk together cilantro, parsley, lemon zest and juice, Aleppo pepper or red pepper flakes, 1/2 cup olive oil, and sea salt in a bowl.",
+            "Toast almonds in a dry skillet over medium heat until golden, about 3–4 minutes.",
+            "Spoon herb oil over roasted vegetables on a serving platter; scatter toasted almonds over the top."
+          ]
+        },
+        {
+          "title": "Over-the-Top Scalloped Potatoes",
+          "servings": "6–8",
+          "source": "Food Network / Ree Drummond",
+          "comments": [
+            "Contains bacon."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Onion and bacon",
+              "ingredients": [
+                "2 tablespoons salted butter",
+                "1 large white onion, thinly sliced",
+                "5 slices bacon, diced"
+              ]
+            },
+            {
+              "label": "Cream sauce",
+              "ingredients": [
+                "2 cups heavy cream",
+                "1 cup half-and-half",
+                "1/4 cup all-purpose flour",
+                "1 teaspoon freshly ground black pepper",
+                "Pinch kosher salt"
+              ]
+            },
+            {
+              "label": "Cheese",
+              "ingredients": [
+                "1 cup fontina, grated",
+                "1 cup Gruyere, grated"
+              ]
+            },
+            {
+              "label": "Potatoes",
+              "ingredients": [
+                "3 pounds Yukon gold potatoes, sliced 1/8-inch thick (use a mandoline)"
+              ]
+            },
+            {
+              "label": "To serve",
+              "ingredients": [
+                "2 green onions, thinly sliced"
+              ]
+            }
+          ],
+          "steps": [
+            "Preheat oven to 350 degrees F. Melt butter in a large skillet over medium heat. Add onion and cook until caramelized, about 15 minutes. Add bacon and cook until crisp. Set aside.",
+            "Whisk together heavy cream, half-and-half, flour, pepper, and salt until smooth.",
+            "Layer half the potatoes in a greased 2-quart baking dish. Top with half the onion-bacon mixture, half the cream sauce, and half the cheese.",
+            "Repeat layers with remaining potatoes, onion-bacon, cream sauce, and cheese.",
+            "Cover tightly with foil and bake 40 minutes. Uncover and bake 20 minutes more until golden and bubbly. Let rest 10 minutes before serving. Top with sliced green onions."
+          ]
+        },
+        {
+          "title": "Perfect Twice Fried French Fries",
+          "servings": "4–6",
+          "source": "The Salted Potato / Renee Robinson",
+          "favorite": true,
+          "comments": [
+            "The first fry cooks the interior; the second fry crisps the exterior. Two-stage frying is the key to the classic bistro-style fry."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Fries",
+              "ingredients": [
+                "4 large Russet potatoes, cut into 1/4-inch sticks (unpeeled)",
+                "Ice water to cover"
+              ]
+            },
+            {
+              "label": "For frying",
+              "ingredients": [
+                "2 quarts peanut oil"
+              ]
+            },
+            {
+              "label": "To season",
+              "ingredients": [
+                "Salt",
+                "Aleppo pepper"
+              ]
+            }
+          ],
+          "steps": [
+            "Place potato sticks in a large bowl, cover with ice water, and soak at least 30 minutes (or up to overnight in the refrigerator). Drain and pat thoroughly dry.",
+            "Heat peanut oil to 325 degrees F in a large Dutch oven or heavy-bottomed pot.",
+            "Working in batches, fry potatoes 8–9 minutes until pale golden but not browned. Remove with a spider or slotted spoon; drain on a wire rack. Let rest at least 15 minutes (or cool completely and refrigerate up to 24 hours).",
+            "Heat oil to 350 degrees F. Working in batches, fry potatoes again until deep golden and very crisp, about 2 minutes.",
+            "Drain on wire rack; season immediately with salt and Aleppo pepper. Serve at once."
+          ]
+        },
+        {
           "title": "Potato Latkes",
           "servings": "Makes about 12 latkes",
           "source": "\"Celebration: The Book of Jewish Festivals,\" ed. Naomi Black (Jonathan David Publishers, 1989)",
@@ -7533,6 +8436,48 @@ module.exports = {
             "Layer potatoes in the Pyrex dish. Mix together milk, eggs, salt, and pepper. Pour mixture over potatoes.",
             "Bake 1 to 1 1/4 hours. Every 15 minutes, remove from oven and, using a knife or wooden spoon, press down the top layer of potatoes that has gotten crusty and fold it into the rest.",
             "When golden and potatoes are tender, sprinkle with parmesan and return to oven. Bake until a golden crust forms, about 10–15 minutes."
+          ]
+        },
+        {
+          "title": "Broccoli with Garlic Sauce",
+          "servings": "4",
+          "source": "I Heart Umami / ChihYu Smith",
+          "comments": [
+            "Can substitute vegetable broth for chicken broth to make vegetarian.",
+            "Cornstarch can be substituted for tapioca starch in equal measure — both thicken similarly in this sauce."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Garlic sauce",
+              "ingredients": [
+                "1 oz garlic cloves (about 5 large), grated or crushed, divided in half",
+                "1/2 cup chicken broth",
+                "3 teaspoons tapioca starch (or cornstarch)"
+              ]
+            },
+            {
+              "label": "Broccoli",
+              "ingredients": [
+                "1 tablespoon avocado oil",
+                "15 oz broccoli florets",
+                "1/2 cup chicken broth (for steaming)",
+                "1/4 teaspoon coarse sea salt"
+              ]
+            },
+            {
+              "label": "To serve (optional)",
+              "ingredients": [
+                "1/4 teaspoon Takii shiitake mushroom seasoning",
+                "1 teaspoon toasted sesame oil"
+              ]
+            }
+          ],
+          "steps": [
+            "Mix 1/2 cup chicken broth with tapioca starch or cornstarch until dissolved; set aside. Grate or crush garlic and divide in half.",
+            "Heat avocado oil in a wide skillet over medium-high heat. Add half the garlic and cook 30 seconds until fragrant. Add broccoli and cook 1 minute.",
+            "Add remaining 1/2 cup broth to skillet; cover and steam broccoli 2 minutes.",
+            "Add remaining garlic and the starch slurry. Toss to coat and cook until sauce thickens, 30–60 seconds.",
+            "Season with salt; add shiitake seasoning and sesame oil if using. Serve immediately."
           ]
         }
       ]

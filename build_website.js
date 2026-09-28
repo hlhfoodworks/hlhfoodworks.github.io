@@ -200,9 +200,32 @@ const CLUSTER_MAP = {
   'Slow Cooker Vegan Mole Chili':                        'Latin/South American',
   // Vegetables — Moroccan/North African
   'Moroccan Eggplant with Couscous':                     'Moroccan/North African',
+  // Vegetables — Middle Eastern/Persian
+  'Red Lentil Soup':                                     'Middle Eastern/Persian',
+  // Vegetables — Indian
+  'Quick Chana Masala':                                  'Indian',
+  'Curry Tomatoes and Chickpeas with Cucumber Yogurt':   'Indian',
+  'Masoor Dal (Spiced Red Lentils)':                     'Indian',
+  'Mattar Paneer (Peas and Paneer in Spiced Tomato Gravy)': 'Indian',
+  // Vegetables — Thai
+  'Thai Basil Eggplant':                                 'Thai',
+  // Vegetables — Chinese
+  'Kung Pao Eggplant':                                   'Chinese',
+  // Tofu — Chinese
+  'Silken Tofu With Spicy Soy Dressing':                 'Chinese',
   // Salads > Greens — General
+  'Barbecue Bacon Wedge Salad with Grilled Corn':        'General',
   'Broccoli Salad':                                      'General',
   'Crunchy Romaine Toss':                                'General',
+  // Vegetables — Latin/South American
+  'Chickpea Tacos':                                      'Latin/South American',
+  'Sweet Potato and Black Bean Enchiladas':              'Latin/South American',
+  // Salads > Greens — Italian
+  'Roasted Cauliflower Salad':                           'Italian',
+  // Salads > Greens — Mediterranean/Greek
+  "Dad's Greek Salad":                                   'Mediterranean/Greek',
+  // Salads > Greens — Indian
+  'Indian Slaw':                                         'Indian',
   // Salads > Pasta Salads — General
   'Chuck Wagon Barbecued Pasta Salad':                   'General',
   // Salads > Pasta Salads — Chinese
@@ -213,8 +236,15 @@ const CLUSTER_MAP = {
   'Coleslaw Salad':                                      'General',
   'Summer Salad':                                        'General',
   'Western River Curry Chicken Salad':                   'General',
+  'Brown Butter Mashed Potatoes':                        'General',
+  'Crispy Smashed Potatoes':                             'General',
+  'Herby Roasted Carrots and Radishes':                  'General',
+  'Over-the-Top Scalloped Potatoes':                     'General',
+  'Perfect Twice Fried French Fries':                    'General',
   // Vegetable Sides — Mediterranean/Greek
   'Potatoes Gratin (Low Calorie)':                       'Mediterranean/Greek',
+  // Vegetable Sides — Chinese
+  'Broccoli with Garlic Sauce':                          'Chinese',
   // Vegetable Sides — Central/Eastern European
   'Potato Latkes':                                       'Central/Eastern European',
   // Baking: Sweet — General
