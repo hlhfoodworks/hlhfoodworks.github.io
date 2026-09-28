@@ -8,7 +8,7 @@ const { displayTitle } = require('./recipe_utils.js');
 // Recipes not in this map are rendered without a cluster level in the nav.
 // Add entries here whenever a subsection grows large enough to need grouping.
 const CLUSTER_MAP = {
-  // Chicken — American/Contemporary
+  // Chicken — General (American/contemporary)
   'Baked Crunchy Hot Honey Chicken':                      'General',
   'Brown Butter Sage Skillet Chicken':                    'General',
   'Company Baked Chicken':                                'General',
@@ -26,7 +26,7 @@ const CLUSTER_MAP = {
   'D.L. Jardine\'s Fajita Marinade':                     'Latin/South American',
   'Peruvian Roasted Chicken With Spicy Cilantro Sauce':  'Latin/South American',
   'Slow-Cooker Chicken Mole':                             'Latin/South American',
-  // Vegetables — American
+  // Vegetables — General
   'Lentil Chili':                                        'General',
   // Vegetables — Italian
   'Eggplant Involtini':                                   'Italian',
@@ -79,7 +79,7 @@ const CLUSTER_MAP = {
   'Japanese Fried Chicken (Shio Koji Karaage)':          'Japanese',
   'One-Pot Japanese Curry Chicken and Rice':             'Japanese',
   'Yakitori Chicken Kebabs':                             'Japanese',
-  // Pork — American
+  // Pork — General
   'Sloppy Moes':                                         'General',
   // Pork — Latin/South American
   'Slow Cooker Pork Mole':                               'Latin/South American',
@@ -105,7 +105,7 @@ const CLUSTER_MAP = {
   'Lula Kebabs':                                         'Middle Eastern/Persian',
   // Lamb — Indian
   'Luscious Tandoori Lamb Chops':                        'Indian',
-  // Beef — American
+  // Beef — General
   'Four Peppercorn Crusted Rotisserie Rib Roast':        'General',
   'The Best Passover Brisket':                           'General',
   "Brenda's Brisket":                                    'General',
@@ -116,7 +116,7 @@ const CLUSTER_MAP = {
   'Dijon and Cognac Beef Stew':                          'French',
   // Beef — Chinese
   'Asian Braised Short Ribs':                            'Chinese',
-  // Shellfish — American
+  // Shellfish — General
   'Stuffed Eggplant Creole':                             'General',
   'Shrimp with Orzo and Peas':                           'General',
   'Spicy Grilled Shrimp':                                'General',
@@ -127,7 +127,7 @@ const CLUSTER_MAP = {
   'Shrimp Scampi with Linguini':                         'Italian',
   // Shellfish — Chinese
   'Yang Chow Slippery Shrimp':                           'Chinese',
-  // Fish — American
+  // Fish — General
   'Dry-Brined Salmon':                                   'General',
   'Baked Lemon Salmon with Creamy Dill Sauce':           'General',
   'Sriracha Maple Salmon':                               'General',
@@ -140,7 +140,7 @@ const CLUSTER_MAP = {
   'Fast Vietnamese Caramel Bluefish':                    'Vietnamese',
   // Fish — Japanese
   'Spicy Tuna Salad with Crispy Rice':                   'Japanese',
-  // Ground Beef — American
+  // Ground Beef — General
   'Taco Night!!':                                        'General',
   'Sweet Potato Shepherd\'s Pie':                        'General',
   'Taco Soup':                                           'General',
@@ -148,18 +148,18 @@ const CLUSTER_MAP = {
   'Korean Beef Bowl':                                    'Korean-inspired',
   // Noodles: Italian — Middle Eastern/Persian
   'Spiced Meatballs with Pappardelle':                   'Middle Eastern/Persian',
-  // Dressings — American
+  // Dressings — General
   'Christy\'s Dressing':                                 'General',
   'Horseradish Sauce':                                   'General',
   'Steak Seasoning Rub':                                 'General',
-  // Sauces — American
+  // Sauces — General
   'Bo\'s Barbeque Sauce':                                'General',
   'Cherry Barbecue Sauce':                               'General',
   // Sauces — Italian
   'Sun-Dried Tomato Cream Sauce':                        'Italian',
   // Dressings — Latin/South American
   'Authentic Chimichurri':                               'Latin/South American',
-  // Desserts — American
+  // Desserts — General
   'Christy\'s Easy Lemon Icebox Pie':                    'General',
   'Fresh Cranberry Mold':                                'General',
   'Lauren\'s Banana Pudding':                            'General',
@@ -167,18 +167,18 @@ const CLUSTER_MAP = {
   'Summer Pudding':                                      'General',
   // Desserts — Thai
   'Mango with Sticky Rice (Khao Neow Mamuang)':         'Thai',
-  // Drinks — American
+  // Drinks — General
   'Apple Pie a la Mode Shake':                           'General',
   'Christy\'s Iced Tea':                                 'General',
   'Melon Ball':                                          'General',
   'Peanut Butter-Chocolate Shake':                       'General',
   'Very Berry Shake':                                    'General',
-  // Turkey — American
+  // Turkey — General
   'Expertly Spiced and Glazed Roast Turkey':             'General',
   'Turkey and Quinoa Meatloaf':                          'General',
   // Turkey — Indian
   'Turkey Tikka Masala':                                 'Indian',
-  // Other (Meat Mains) — American
+  // Other (Meat Mains) — General
   "Christy's Jambalaya":                                 'General',
   // Other (Meat Mains) — French
   'Peppered Duck Breast With Red Wine Sauce':            'French',
@@ -186,7 +186,7 @@ const CLUSTER_MAP = {
   'Sheet-Pan Italian Sub Dinner':                        'Italian',
   // Other (Meat Mains) — Japanese
   "Naomi's Nabe (Japanese Hot Pot)":                     'Japanese',
-  // Tofu — American
+  // Tofu — General
   'Tofu Stir Fry':                                       'General',
   'Sesame Ginger Tofu and Veggie Stir Fry':              'General',
   // Tofu — West African
@@ -200,15 +200,15 @@ const CLUSTER_MAP = {
   'Slow Cooker Vegan Mole Chili':                        'Latin/South American',
   // Vegetables — Moroccan/North African
   'Moroccan Eggplant with Couscous':                     'Moroccan/North African',
-  // Salads > Greens — American
+  // Salads > Greens — General
   'Broccoli Salad':                                      'General',
   'Crunchy Romaine Toss':                                'General',
-  // Salads > Pasta Salads — American
+  // Salads > Pasta Salads — General
   'Chuck Wagon Barbecued Pasta Salad':                   'General',
   // Salads > Pasta Salads — Chinese
   'Asian Pasta Salad':                                   'Chinese',
   "Holly's Spicy Noodle Salad with Peanut Dressing":    'Chinese',
-  // Vegetable Sides — American
+  // Vegetable Sides — General
   'Sautéed Mushrooms':                                   'General',
   'Coleslaw Salad':                                      'General',
   'Summer Salad':                                        'General',
@@ -216,7 +216,7 @@ const CLUSTER_MAP = {
   'Potatoes Gratin (Low Calorie)':                       'Mediterranean/Greek',
   // Vegetable Sides — Central/Eastern European
   'Potato Latkes':                                       'Central/Eastern European',
-  // Baking: Sweet — American
+  // Baking: Sweet — General
   'Jumbo Banana-Nut Muffins':                            'General',
   'Kitchen Sink Cookies':                                'General',
   'Marble Brownies':                                     'General',
@@ -232,11 +232,11 @@ const CLUSTER_MAP = {
   "Min Cohen's Inscrutable Apple Cake":                  'Central/Eastern European',
   'Passover Cake':                                       'Central/Eastern European',
   "Renee's Blintz Souffle":                              'Central/Eastern European',
-  // Turkey — American
+  // Turkey — General
   'Bristol Farms Turkey Salad (Copycat)':                'General',
   // Dressings and Sauces — French
   'Béarnaise Sauce':                                     'French',
-  // Appetizers — American
+  // Appetizers — General
   "Artichoke Hors D'oeuvre":                             'General',
   'Shrimp Mold':                                         'General',
   "Barbara Glabman's Cheese Ball":                       'General',
@@ -254,9 +254,9 @@ const CLUSTER_MAP = {
   "Susan's Calzones":                                    'Italian',
   // Baking: Bread — Central/Eastern European
   "Nechamie's Challah":                                  'Central/Eastern European',
-  // Baking Sweet — American
+  // Baking Sweet — General
   'Butter Pecan Coffee Cake':                            'General',
-  // Breakfast — American
+  // Breakfast — General
   'Baked Stuffed French Toast':                          'General',
   'Glazed Cinnamon Rolls (Tangzhong Version)':           'General',
   'Homemade Biscuits':                                   'General',
@@ -360,8 +360,8 @@ function renderIngredientGroups(ingredientGroups) {
   }).join('\n');
 }
 
-function renderRecipe(recipe, idPrefix, idx) {
-  const id = recipe.id || `${idPrefix}-${idx}`;
+function renderRecipe(recipe, idPrefix) {
+  const id = recipe.id || `${idPrefix}-${slug(recipe.title)}`;
   const title = displayTitle(recipe);
   const isFav = recipe.favorite ? ' data-fav="1"' : '';
   const hasAlt = !!recipe.highAltitude;
@@ -432,17 +432,15 @@ function renderRecipe(recipe, idPrefix, idx) {
 // clusterGroups: null (flat) or [{cluster, recipes}] from groupByCluster().
 function renderRecipeList(recipes, idPrefix, clusterGroups) {
   if (!clusterGroups) {
-    return recipes.map((r, i) => renderRecipe(r, idPrefix, i)).join('\n');
+    return recipes.map(r => renderRecipe(r, idPrefix)).join('\n');
   }
   let html = '';
-  let globalIdx = 0;
   for (const { cluster, recipes: cr } of clusterGroups) {
     const cid = `${idPrefix}--${slug(cluster)}`;
     html += `<div class="cluster-group" id="${esc(cid)}">
   <h4 class="cluster-heading">${esc(cluster)}</h4>
-  ${cr.map((r, i) => renderRecipe(r, idPrefix, globalIdx + i)).join('\n')}
+  ${cr.map(r => renderRecipe(r, idPrefix)).join('\n')}
 </div>\n`;
-    globalIdx += cr.length;
   }
   return html;
 }
@@ -493,15 +491,13 @@ function buildNav(data, currentSection) {
       if (section.recipes) {
         const clusterGroups = groupByCluster(section.recipes);
         if (clusterGroups) {
-          let globalIdx = 0;
           for (const { cluster, recipes: cr } of clusterGroups) {
             const cid = `${sl}--${slug(cluster)}`;
-            nav += navClusterItem(cid, cluster, cr, sl, globalIdx, filename);
-            globalIdx += cr.length;
+            nav += navClusterItem(cid, cluster, cr, sl, filename);
           }
         } else {
-          section.recipes.forEach((r, i) => {
-            const rid = r.id || `${sl}-${i}`;
+          section.recipes.forEach(r => {
+            const rid = r.id || `${sl}-${slug(r.title)}`;
             nav += navRecipeItem(rid, r, filename);
           });
         }
@@ -519,15 +515,13 @@ function buildNav(data, currentSection) {
           if (hasRecipes) {
             nav += `<ul class="nav-l3 collapsed" id="${subSecId}-children">`;
             if (clusterGroups) {
-              let globalIdx = 0;
               for (const { cluster, recipes: cr } of clusterGroups) {
                 const cid = `${subsl}--${slug(cluster)}`;
-                nav += navClusterItem(cid, cluster, cr, subsl, globalIdx, filename);
-                globalIdx += cr.length;
+                nav += navClusterItem(cid, cluster, cr, subsl, filename);
               }
             } else {
-              sub.recipes.forEach((r, i) => {
-                const rid = r.id || `${subsl}-${i}`;
+              sub.recipes.forEach(r => {
+                const rid = r.id || `${subsl}-${slug(r.title)}`;
                 nav += navRecipeItem(rid, r, filename);
               });
             }
@@ -545,12 +539,12 @@ function buildNav(data, currentSection) {
   return nav;
 }
 
-function navClusterItem(cid, cluster, recipes, idPrefix, startIdx, pageFile) {
+function navClusterItem(cid, cluster, recipes, idPrefix, pageFile) {
   let html = `<li class="nav-cluster">`;
   html += `<a class="nav-hd cluster-hd" href="${esc(pageFile)}#${esc(cid)}" data-toggle="${esc(cid)}-children"><span class="arrow">▶</span>${esc(cluster)}</a>`;
   html += `<ul class="nav-l4 collapsed" id="${esc(cid)}-children">`;
-  recipes.forEach((r, i) => {
-    const rid = r.id || `${idPrefix}-${startIdx + i}`;
+  recipes.forEach(r => {
+    const rid = r.id || `${idPrefix}-${slug(r.title)}`;
     html += navRecipeItem(rid, r, pageFile);
   });
   html += '</ul></li>\n';
@@ -606,24 +600,13 @@ function buildSearchIndex(data) {
     const filename = sectionFilename(section.title);
     const sl = slug(section.title);
 
-    // Must iterate in the same cluster-ordered sequence that renderRecipeList uses
     const addRecipes = (recipes, idPrefix) => {
       const clusterGroups = groupByCluster(recipes);
-      if (!clusterGroups) {
-        recipes.forEach((r, i) => {
-          const id = r.id || `${idPrefix}-${i}`;
-          index.push({ title: r.title, page: filename, id, fav: r.favorite ? 1 : 0, section: section.title });
-        });
-      } else {
-        let globalIdx = 0;
-        for (const { recipes: cr } of clusterGroups) {
-          cr.forEach((r, i) => {
-            const id = r.id || `${idPrefix}-${globalIdx + i}`;
-            index.push({ title: r.title, page: filename, id, fav: r.favorite ? 1 : 0, section: section.title });
-          });
-          globalIdx += cr.length;
-        }
-      }
+      const flat = clusterGroups ? clusterGroups.flatMap(g => g.recipes) : recipes;
+      flat.forEach(r => {
+        const id = r.id || `${idPrefix}-${slug(r.title)}`;
+        index.push({ title: r.title, page: filename, id, fav: r.favorite ? 1 : 0, section: section.title });
+      });
     };
 
     if (section.recipes) {
@@ -1033,6 +1016,7 @@ function buildPage(section, navHtml, contentHtml, cookbookData) {
 
   /* ── Search / filter ── */
   .recipe.hidden { display: none; }
+  .recipe.focused-hidden { display: none; }
   .cluster-group.all-hidden { display: none; }
   .subsection.all-hidden { display: none; }
   .section.all-hidden { display: none; }
@@ -1309,19 +1293,23 @@ function buildPage(section, navHtml, contentHtml, cookbookData) {
     var target = document.getElementById(focusId);
     if (!target) return;
 
+    // Update tab title to the recipe name
+    var recipeTitle = target.dataset.title;
+    if (recipeTitle) document.title = recipeTitle + ' — Family Cookbook';
+
     // Hide nav sidebar
     var nav = document.getElementById('nav');
     if (nav) nav.style.display = 'none';
 
-    // Hide all recipe articles except the target
+    // Hide all recipe articles except the target, using a class
     document.querySelectorAll('.recipe').forEach(function (el) {
-      if (el.id !== focusId) el.style.display = 'none';
+      if (el.id !== focusId) el.classList.add('focused-hidden');
     });
 
     // Hide cluster groups, subsections, and sections that became empty
     ['cluster-group', 'subsection', 'section'].forEach(function (cls) {
       document.querySelectorAll('.' + cls).forEach(function (el) {
-        if (!el.querySelector('.recipe:not([style*="display: none"])')) {
+        if (!el.querySelector('.recipe:not(.focused-hidden)')) {
           el.style.display = 'none';
         }
       });
@@ -1335,10 +1323,6 @@ function buildPage(section, navHtml, contentHtml, cookbookData) {
   const search = document.getElementById('search');
   const searchClear = document.getElementById('search-clear');
   const searchResults = document.getElementById('search-results');
-  function loadSearchIndex() {
-    return Promise.resolve(SEARCH_INDEX);
-  }
-
   search.addEventListener('input', function () {
     searchClear.style.display = search.value ? 'block' : 'none';
   });
@@ -1360,7 +1344,7 @@ function buildPage(section, navHtml, contentHtml, cookbookData) {
     searchResults.innerHTML = '';
     if (!q) { searchResults.style.display = 'none'; return; }
 
-    loadSearchIndex().then(function (index) {
+    (function (index) {
       const matches = index.filter(function (r) {
         return r.title.toLowerCase().includes(q);
       });
@@ -1407,7 +1391,7 @@ function buildPage(section, navHtml, contentHtml, cookbookData) {
           searchResults.style.maxHeight = h + 'px';
         });
       }
-    });
+    }(SEARCH_INDEX));
   }
 
   // ── Restore search from ?q= parameter (cross-page navigation) ───────────
