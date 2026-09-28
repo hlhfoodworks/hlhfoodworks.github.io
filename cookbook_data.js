@@ -190,7 +190,73 @@ module.exports = {
             "Cover loosely and let rise for 1 hour. Meanwhile, make the glaze: Sift the confectioners' sugar into a small bowl, then stir in the butter, water, and optional cinnamon until smooth. Tint with food coloring if desired.",
             "Bake in a preheated 400°F oven for 15-17 minutes. Remove the rolls and set them on a rack over a piece of waxed paper.",
             "Spoon the prepared glaze over each roll while still hot."
-          ]
+          ],
+          "highAltitude": {
+            "ingredientGroups": [
+              {
+                "label": "Tangzhong",
+                "ingredients": [
+                  "1/4 cup (30g) all-purpose flour",
+                  "2/3 cup (160g) milk"
+                ]
+              },
+              {
+                "label": "Yeast",
+                "ingredients": [
+                  "1/4 cup warm water",
+                  "1 package active dry yeast",
+                  "1 teaspoon sugar"
+                ]
+              },
+              {
+                "label": "Dough",
+                "ingredients": [
+                  "4 cups all-purpose flour",
+                  "1/4 cup sugar",
+                  "1 teaspoon salt",
+                  "1/2 pound (2 sticks) butter, chilled",
+                  "3 egg yolks",
+                  "1/3 cup plus 2 tablespoons milk (the reserved 1/3 cup from the tangzhong step, plus 2 tablespoons extra)"
+                ]
+              },
+              {
+                "label": "Filling",
+                "ingredients": [
+                  "1/2 cup (1 stick) butter, melted",
+                  "3/4 cup (12 tablespoons) sugar",
+                  "2 teaspoons cinnamon"
+                ]
+              },
+              {
+                "label": "Glaze",
+                "ingredients": [
+                  "1 1/2 cups confectioners' sugar",
+                  "2 tablespoons butter, room temperature",
+                  "2 tablespoons water",
+                  "1/4 teaspoon ground cinnamon (optional)",
+                  "Food coloring (optional, to taste)"
+                ]
+              }
+            ],
+            "steps": [
+              "Tangzhong: In a small saucepan, whisk together the 1/4 cup (30g) flour and 2/3 cup (160g) milk until smooth. Cook over medium heat, stirring constantly, until thickened to a paste, about 2 minutes. Scrape into a small bowl; reserve 1/3 cup for the dough and discard the rest (or save for another use).",
+              "Yeast: Put the warm water in a small bowl and sprinkle the yeast over. Stir in the 1 teaspoon sugar and let stand until foamy, about 5 minutes.",
+              "Dry mix: In the bowl of a food processor, combine the flour, sugar, and salt; pulse briefly to blend. Add the chilled butter and pulse until the mixture resembles coarse crumbs.",
+              "Dough: Transfer the flour-butter mixture to the bowl of a stand mixer fitted with the paddle attachment. Add the yeast mixture, the tangzhong, the egg yolks, and the 1/3 cup plus 2 tablespoons milk. Mix on medium speed until a smooth dough forms.",
+              {
+                "lead": "Filling:",
+                "bullets": [
+                  "Combine the melted butter, sugar, and cinnamon in a small bowl to make a spreadable filling.",
+                  "On a clean, floured countertop, roll out the whole batch of dough into one large, thin rectangle about 18-20 inches by 24 inches.",
+                  "Spread the filling mixture evenly over the rectangle.",
+                  "Using a pizza cutter, cut the rectangle lengthwise into 12 long strips. Roll each strip up individually into a spiral and place in a greased pan."
+                ]
+              },
+              "Cover loosely and let rise until almost doubled, 45\u201350 minutes (watch carefully \u2014 dough rises faster at altitude and over-proofing will hurt the texture). Meanwhile, make the glaze: Sift the confectioners' sugar into a small bowl, then stir in the butter, water, and optional cinnamon until smooth. Tint with food coloring if desired.",
+              "Bake in a preheated 415\u00b0F oven for 15-17 minutes. Remove the rolls and set them on a rack over a piece of waxed paper.",
+              "Spoon the prepared glaze over each roll while still hot."
+            ]
+          }
         },
         {
           "title": "Homemade Biscuits",
@@ -244,7 +310,53 @@ module.exports = {
             "Pat the dough into a rough 3/4-inch-thick rectangle. Cut into 8 squares — no need to cut rounds or reroll scraps.",
             "Arrange the squares close together on the skillet (or parchment-lined cookie sheet) to help them rise tall.",
             "Bake 15 to 20 minutes, until the tops are deeply golden brown and the biscuits have risen tall."
-          ]
+          ],
+          "highAltitude": {
+            "ingredientGroups": [
+              {
+                "label": "Soured milk",
+                "ingredients": [
+                  "2 cups whole milk",
+                  "1 tablespoon white vinegar"
+                ]
+              },
+              {
+                "label": "Dry ingredients",
+                "ingredients": [
+                  "4 cups + 2 tablespoons (535 g) all-purpose flour, spooned and leveled",
+                  "7 1/2 teaspoons (2 tablespoons + 1 1/2 teaspoons) aluminum-free baking powder, leveled",
+                  "1/2 teaspoon baking soda",
+                  "2 tablespoons sugar",
+                  "2 teaspoons fine sea salt"
+                ]
+              },
+              {
+                "label": "Butter",
+                "ingredients": [
+                  "12 tablespoons (1 1/2 sticks; 170 g) cold butter"
+                ]
+              }
+            ],
+            "steps": [
+              "Make the soured milk: Stir the vinegar into the whole milk. Let stand at least 5 minutes while you prepare the dough (it will look slightly curdled \u2014 that's fine).",
+              "Heat the oven to 450\u00b0F. Set aside an oven-safe 10- to 12-inch skillet, preferably cast iron, or a cookie sheet lined with parchment.",
+              "Dry ingredients: In a food processor, combine the flour, baking powder, baking soda, sugar, and salt. Pulse 3 to 4 times to combine.",
+              "Cut the cold butter into small cubes or thin slices; scatter over the flour mixture. Pulse 5 to 7 times, just until the butter is broken into pea-sized pieces.",
+              "Transfer to a large bowl. Make a well in the middle; pour in the soured milk and stir gently with a fork or spatula just until the dough comes together (some dry bits are fine \u2014 don't overmix).",
+              "Transfer the dough to a lightly floured work surface. Sprinkle a little flour over the top and gently bring the dough together with your hands.",
+              {
+                "lead": "Fold the dough:",
+                "bullets": [
+                  "Without overworking the dough, gently pat it into a rough rectangle about 3/4 inch thick.",
+                  "Fold the dough into thirds, envelope-style \u2014 bring one short side over the center, then fold the opposite side over it, like a letter.",
+                  "Rotate the dough 90 degrees, then repeat the pat-and-fold two more times to build flaky layers."
+                ]
+              },
+              "Pat the dough into a rough 3/4-inch-thick rectangle. Cut into 8 squares \u2014 no need to cut rounds or reroll scraps.",
+              "Arrange the squares close together on the skillet (or parchment-lined cookie sheet) to help them rise tall.",
+              "Bake 15 to 20 minutes, until the tops are deeply golden brown and the biscuits have risen tall."
+            ]
+          }
         },
         {
           "title": "Raised Waffles",
@@ -285,7 +397,41 @@ module.exports = {
             "Add the milk, butter, salt, sugar, and flour to the yeast mixture; beat until smooth and blended (a hand-rotary beater works well). Cover tightly and leave overnight at room temperature.",
             "Just before cooking, beat in the eggs and baking soda; stir until well mixed. The batter will be very thin.",
             "Pour about 1/2 to 3/4 cup batter into a very hot waffle iron. Bake until golden and crisp."
-          ]
+          ],
+          "highAltitude": {
+            "ingredientGroups": [
+              {
+                "label": "Yeast",
+                "ingredients": [
+                  "1/2 cup warm water",
+                  "1 package dry yeast"
+                ]
+              },
+              {
+                "label": "Batter (overnight)",
+                "ingredients": [
+                  "2 cups milk, warmed",
+                  "1/2 cup (1 stick) butter, melted",
+                  "1 teaspoon salt",
+                  "1 teaspoon sugar",
+                  "2 cups + 2 tablespoons all-purpose flour"
+                ]
+              },
+              {
+                "label": "Morning additions",
+                "ingredients": [
+                  "2 eggs",
+                  "1/8 teaspoon baking soda"
+                ]
+              }
+            ],
+            "steps": [
+              "Yeast: In a large mixing bowl (the batter will rise to double its volume), put the warm water and sprinkle the yeast over. Let stand until foamy, about 5 minutes.",
+              "Add the milk, butter, salt, sugar, and flour to the yeast mixture; beat until smooth and blended (a hand-rotary beater works well). Cover tightly and leave overnight at room temperature.",
+              "Just before cooking, beat in the eggs and baking soda; stir until well mixed. The batter will be very thin.",
+              "Pour about 1/2 to 3/4 cup batter into a very hot waffle iron. Bake until golden and crisp."
+            ]
+          }
         },
         {
           "title": "Green Shakshuka with Feta",
@@ -11100,7 +11246,40 @@ module.exports = {
                 "Pour remaining batter over filling. Sprinkle remaining filling on top.",
                 "Bake in middle of preheated 350-degree oven for 50-55 minutes."
               ],
-              "source": "Family recipe, attributed to great-grandmother Regina Pachter"
+              "source": "Family recipe, attributed to great-grandmother Regina Pachter",
+              "highAltitude": {
+                "ingredientGroups": [
+                  {
+                    "label": "Cake batter",
+                    "ingredients": [
+                      "1 stick butter, room temperature",
+                      "7/8 cup (14 tablespoons) sugar",
+                      "2 eggs",
+                      "1 teaspoon vanilla",
+                      "2 cups all-purpose flour",
+                      "3/4 teaspoon baking soda",
+                      "3/4 teaspoon baking powder",
+                      "1 cup + 1 tablespoon sour cream"
+                    ]
+                  },
+                  {
+                    "label": "Filling",
+                    "ingredients": [
+                      "1/2 cup brown sugar",
+                      "1/2 cup chopped pecans",
+                      "1 small package milk chocolate chips"
+                    ]
+                  }
+                ],
+                "steps": [
+                  "Beat butter with sugar until light. Add eggs one at a time. Add vanilla.",
+                  "Sift together flour, baking soda, and baking powder. Add alternately to butter mixture with sour cream, starting and ending with flour.",
+                  "Grease a springform pan well. Pour half the batter into the pan.",
+                  "Combine brown sugar, pecans, and chocolate chips. Sprinkle half the filling over the batter layer.",
+                  "Pour remaining batter over filling. Sprinkle remaining filling on top.",
+                  "Bake in middle of preheated 375-degree oven for 45-55 minutes."
+                ]
+              }
             },
             {
               "title": "Blintz Soufflé",
