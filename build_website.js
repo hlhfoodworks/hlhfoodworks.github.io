@@ -212,6 +212,7 @@ const CLUSTER_MAP = {
   'Sautéed Mushrooms':                                   'General',
   'Coleslaw Salad':                                      'General',
   'Summer Salad':                                        'General',
+  'Western River Curry Chicken Salad':                   'General',
   // Vegetable Sides — Mediterranean/Greek
   'Potatoes Gratin (Low Calorie)':                       'Mediterranean/Greek',
   // Vegetable Sides — Central/Eastern European
@@ -246,6 +247,8 @@ const CLUSTER_MAP = {
   'Charoset (Ashkenazic Style)':                         'Central/Eastern European',
   // Appetizers — Mediterranean/Greek
   'Gazpacho':                                            'Mediterranean/Greek',
+  // Appetizers — Middle Eastern/Persian
+  'Baba Ganoush':                                        'Middle Eastern/Persian',
   // Appetizers — Chinese
   'Creamy Ginger-Soy Dip':                              'Chinese',
   // Mushroom — Italian

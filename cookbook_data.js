@@ -555,6 +555,49 @@ module.exports = {
           ]
         },
         {
+          "title": "Baba Ganoush",
+          "servings": "4",
+          "source": "Love and Lemons / Jeanine Donofrio",
+          "comments": [
+            "Eggplant can be roasted up to 2 days ahead; refrigerate in an airtight container until ready to use.",
+            "Store finished baba ganoush in an airtight container in the refrigerator up to 4 days."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Eggplants",
+              "ingredients": [
+                "2 medium eggplants, pierced all over with a knife or fork"
+              ]
+            },
+            {
+              "label": "Dip",
+              "ingredients": [
+                "1/4 cup tahini",
+                "3 tablespoons fresh lemon juice",
+                "2 tablespoons extra-virgin olive oil",
+                "2 cloves garlic, minced, microplaned, or mashed to a paste",
+                "1/2 teaspoon sea salt",
+                "1/2 teaspoon smoked paprika",
+                "Aleppo pepper or red pepper flakes, to taste"
+              ]
+            },
+            {
+              "label": "To serve",
+              "ingredients": [
+                "Extra-virgin olive oil, to drizzle",
+                "Fresh parsley, finely chopped",
+                "Pita bread and fresh vegetables for dipping"
+              ]
+            }
+          ],
+          "steps": [
+            "Preheat oven to 400°F. Wrap eggplants in foil. Roast 50–60 minutes until very soft and collapsing to the touch. Remove and let cool to room temperature. Alternatively, pierce eggplants and grill directly over high heat, rotating as they char, until very soft and charred all over — this yields a smokier flavor.",
+            "Peel and discard the skin, removing any large clumps of seeds. Place eggplant flesh in a fine-mesh strainer set over a bowl; let drain 20 minutes. Discard liquid.",
+            "Combine drained eggplant, tahini, lemon juice, olive oil, garlic, salt, smoked paprika, and Aleppo pepper or red pepper flakes in a bowl. Mash with a fork or pastry blender until the dip comes together with a slightly chunky, textured consistency. Taste and adjust salt, lemon, and pepper.",
+            "Transfer to a serving dish. Drizzle with olive oil and scatter parsley over the top. Serve with pita and fresh vegetables."
+          ]
+        },
+        {
           "title": "Creamy Ginger-Soy Dip",
           "source": "Family recipe card, credited to Grandmother Brenda",
           "ingredientGroups": [
@@ -845,6 +888,49 @@ module.exports = {
                 "Tear romaine into a large bowl. Add mushrooms, cherry tomatoes, mango, and avocado.",
                 "Top with cashews and sunflower seeds.",
                 "Drizzle dressing over salad just before serving and toss."
+              ]
+            },
+            {
+              "title": "Western River Curry Chicken Salad",
+              "servings": "4–6",
+              "source": "As served by Western River Expeditions in the Grand Canyon",
+              "comments": [
+                "For best texture, stir in cashews just before serving if making ahead, as they soften over time.",
+                "Can also serve in a pita or as a sandwich filling."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Dressing",
+                  "ingredients": [
+                    "1/2 cup plain yogurt",
+                    "2 tablespoons fresh lemon juice",
+                    "1 tablespoon curry powder",
+                    "1/2 teaspoon salt",
+                    "1/4 teaspoon black pepper"
+                  ]
+                },
+                {
+                  "label": "Salad",
+                  "ingredients": [
+                    "3–4 cups cooked chicken, diced or shredded (about 1½ pounds boneless breast or thighs)",
+                    "1 large carrot, shredded or finely diced",
+                    "1/4 cup red onion, finely minced",
+                    "1/2 cup golden raisins",
+                    "1/2 cup roasted cashews"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "Lettuce leaves or bed of mixed greens"
+                  ]
+                }
+              ],
+              "steps": [
+                "Whisk together yogurt, lemon juice, curry powder, salt, and pepper in a large bowl.",
+                "Add chicken, carrot, red onion, golden raisins, and cashews. Stir well until everything is evenly coated.",
+                "Refrigerate at least 1 hour before serving to allow flavors to meld and raisins to plump. (This step is optional but recommended.)",
+                "Serve over lettuce."
               ]
             }
           ]
