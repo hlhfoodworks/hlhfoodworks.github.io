@@ -1667,8 +1667,8 @@
   document.getElementById('cookbook-logo-link').addEventListener('click', function (e) {
     // Always clear navState so breakfast.html won't restore previously open sections
     try { localStorage.removeItem('navState'); } catch (ex) {}
-    var isBreakfast = window.location.pathname.replace(/.*//, '') === 'breakfast.html' ||
-                      window.location.pathname === '/' || window.location.pathname === '';
+    var page = window.location.pathname.split('/').pop();
+    var isBreakfast = page === 'breakfast.html' || page === '' || page === 'index.html';
     if (isBreakfast) {
       // Already here — collapse in place without reloading
       e.preventDefault();
