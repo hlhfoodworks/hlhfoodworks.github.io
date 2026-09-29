@@ -11759,7 +11759,7 @@ module.exports = {
                 "Cook spaghettini in salted boiling water until al dente. Drain and add to the pan with diced eggplant and sauce. Mix well. Stir in the ham and half the Parmesan.",
                 "Lay the fried eggplant planks on a board. Spoon a generous amount of the spaghettini mixture onto each plank and roll up.",
                 "Spread a spoonful of béchamel and tomato sauce on the bottom of an oven-proof dish. Arrange eggplant rolls in rows. Spoon remaining tomato sauce and béchamel on top. Scatter with remaining Parmesan.",
-                "Bake at 180°C (350°F) for 15 minutes. Serve with fresh basil."
+                "Bake at 350°F for 15 minutes. Serve with fresh basil."
               ]
             },
             {
@@ -12284,7 +12284,7 @@ module.exports = {
                 "With the mixer on low speed (or by hand), add the flour mixture and mix just until no dry streaks remain — the dough should be stiff.",
                 "Fold in the chocolate chips and pecans by hand.",
                 "Cover and refrigerate the dough for at least 1 hour (and up to 2 days) to firm up before baking.",
-                "When ready to bake, preheat the oven to 375°F (190°C) and line baking sheets with parchment.",
+                "When ready to bake, preheat the oven to 375°F and line baking sheets with parchment.",
                 "Using an ice cream scoop, portion generous mounds of dough onto the prepared sheets, spacing them a few inches apart.",
                 "Bake 11-13 minutes, until the edges are golden brown and the centers still look slightly underbaked. Cool on the baking sheet for 5 minutes before transferring."
               ],
@@ -12332,7 +12332,7 @@ module.exports = {
                   "With the mixer on low speed (or by hand), add the flour mixture and mix just until no dry streaks remain — the dough should be stiff.",
                   "Fold in the chocolate chips and pecans by hand.",
                   "Cover and refrigerate the dough for at least 1 hour (and up to 2 days) to firm up before baking.",
-                  "When ready to bake, preheat the oven to 375°F (190°C) and line baking sheets with parchment.",
+                  "When ready to bake, preheat the oven to 375°F and line baking sheets with parchment.",
                   "Using an ice cream scoop, portion generous mounds of dough onto the prepared sheets, spacing them a few inches apart.",
                   "Bake 10–12 minutes, until the edges are golden brown and the centers still look slightly underbaked. (Check at 10 minutes — at altitude cookies spread faster and finish sooner.) Cool on the baking sheet for 5 minutes before transferring."
                 ]
@@ -14513,7 +14513,7 @@ module.exports = {
           "steps": [
             "Ricotta (13–14 hours ahead or overnight): stir the ricotta with the caster sugar and let sit covered in the refrigerator for at least 13–14 hours.",
             "Bagna: combine all bagna ingredients except the orange liqueur in a pan. Simmer on low heat until reduced to less than half. Let cool completely, then stir in the orange liqueur.",
-            "Sponge: beat eggs and sugar together until thick and ribbon-like. Fold in the sieved flour gently. Pour into a greased and floured cake pan and bake at 180°C for 40 minutes, until a skewer comes out clean. Cool completely before slicing.",
+            "Sponge: beat eggs and sugar together until thick and ribbon-like. Fold in the sieved flour gently. Pour into a greased and floured cake pan and bake at 350°F for 40 minutes, until a skewer comes out clean. Cool completely before slicing.",
             "Assembly: stir the raisins, candied fruit, and dark chocolate into the ricotta mixture. Carefully slice the cooled sponge horizontally into 4 even layers. Spoon bagna over each layer to moisten. Alternate layers of whipped cream and ricotta mixture between each sponge tier, spreading evenly. Finish the top with whipped cream, spreading to cover the cake. Refrigerate until serving. Best made a day ahead."
           ],
           "highAltitude": {
@@ -14561,7 +14561,7 @@ module.exports = {
             "steps": [
               "Ricotta (13–14 hours ahead or overnight): same as standard version.",
               "Bagna: same as standard version.",
-              "Sponge (high-altitude): beat eggs and sugar until thick, pale, and ribbon-like — stop slightly before the mixture reaches full volume (the foam expands further in the oven at altitude). Fold in the sieved flour gently. Pour into a greased and floured cake pan and bake at 175°C (reduced from 180°C). Begin checking at 35 minutes rather than 40; the cake is done when a skewer comes out clean and it begins to pull away from the sides. Critical: immediately invert the pan onto a wire rack after removing from the oven and cool completely inverted before unmolding.",
+              "Sponge (high-altitude): beat eggs and sugar until thick, pale, and ribbon-like — stop slightly before the mixture reaches full volume (the foam expands further in the oven at altitude). Fold in the sieved flour gently. Pour into a greased and floured cake pan and bake at 345°F (reduced from 350°F). Begin checking at 35 minutes rather than 40; the cake is done when a skewer comes out clean and it begins to pull away from the sides. Critical: immediately invert the pan onto a wire rack after removing from the oven and cool completely inverted before unmolding.",
               "Assembly: same as standard version."
             ]
           }
