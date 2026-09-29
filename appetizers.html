@@ -546,7 +546,7 @@
 </div>
 
 <div id="nav">
-  <div id="nav-header"><h1><a href="breakfast.html">Muhlheim Family Cookbook</a></h1></div>
+  <div id="nav-header"><h1><a href="breakfast.html" id="cookbook-logo-link">Muhlheim Family Cookbook</a></h1></div>
   <div id="search-wrap">
     <div id="search-box-wrap">
       <input id="search" type="text" placeholder="Search recipes…" autocomplete="off">
@@ -2700,10 +2700,24 @@
     } else { cleanup(); }
   });
 
+  // ── Logo: navigate to breakfast and collapse all ──────────────────────
+  document.getElementById('cookbook-logo-link').addEventListener('click', function (e) {
+    var isBreakfast = window.location.pathname.replace(/.*//, '') === 'breakfast.html' ||
+                      window.location.pathname === '/' || window.location.pathname === '';
+    if (isBreakfast) {
+      e.preventDefault();
+      document.querySelectorAll('.nav-hd.open, .nav-sec-arrow.open').forEach(function (el) { el.classList.remove('open'); });
+      document.querySelectorAll('.nav-l2, .nav-l3, .nav-l3b, .nav-l4').forEach(function (list) { list.classList.add('collapsed'); });
+      try { localStorage.removeItem('navState'); } catch (ex) {}
+      window.scrollTo(0, 0);
+    }
+    // else: default navigation to breakfast.html — page loads fresh with everything collapsed
+  });
+
   // ── Expand all nav menus ─────────────────────────────────────────────
   document.getElementById('expand-all').addEventListener('click', function () {
     var navState = {};
-    document.querySelectorAll('.nav-l2, .nav-l3, .nav-l4').forEach(function (list) {
+    document.querySelectorAll('.nav-l2, .nav-l3, .nav-l3b, .nav-l4').forEach(function (list) {
       list.classList.remove('collapsed');
       var hd = document.querySelector('[data-toggle="' + list.id + '"]');
       if (hd) hd.classList.add('open');
@@ -2715,7 +2729,7 @@
   // ── Collapse all open nav menus ───────────────────────────────────────
   document.getElementById('collapse-all').addEventListener('click', function () {
     document.querySelectorAll('.nav-hd.open, .nav-sec-arrow.open').forEach(function (el) { el.classList.remove('open'); });
-    document.querySelectorAll('.nav-l2, .nav-l3, .nav-l4').forEach(function (list) { list.classList.add('collapsed'); });
+    document.querySelectorAll('.nav-l2, .nav-l3, .nav-l3b, .nav-l4').forEach(function (list) { list.classList.add('collapsed'); });
     try { localStorage.removeItem('navState'); } catch (e) {}
   });
 
