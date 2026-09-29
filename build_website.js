@@ -632,7 +632,10 @@ function buildNav(data, currentSection) {
     const hasContent = section.recipes
       ? section.recipes.length > 0
       : section.subsections
-        ? section.subsections.some(s => s.recipes && s.recipes.length > 0)
+        ? section.subsections.some(s =>
+            (s.recipes && s.recipes.length > 0) ||
+            (s.subsections && s.subsections.some(ss => ss.recipes && ss.recipes.length > 0))
+          )
         : false;
 
     nav += `<li class="nav-section${isCurrent ? ' current' : ''}${hasContent ? '' : ' empty'}" data-sec="${secId}">`;
@@ -671,38 +674,100 @@ function buildNav(data, currentSection) {
         for (const sub of section.subsections) {
           const subsl = `${sl}-${slug(sub.title)}`;
           const subSecId = `sub-${subsl}`;
-          const hasRecipes = sub.recipes && sub.recipes.length > 0;
-          const clusterGroups = hasRecipes ? groupByCluster(sub.recipes) : null;
-          const subArrow = hasRecipes ? '<span class="arrow">▶</span>' : '';
 
-          nav += `<li class="nav-sub${hasRecipes ? '' : ' empty'}">`;
-          nav += `<a class="nav-hd sub-hd" href="#${subSecId}" data-toggle="${subSecId}-children">${subArrow}${esc(sub.title)}</a>`;
+          if (sub.subsections) {
+            // ── Sub-subsection case (e.g. With Meat / Meatless within Stovetop) ──
+            // Dynamic suppression: only show the intermediate level when >1 sub-subsection is non-empty.
+            const nonEmpty = sub.subsections.filter(ss => ss.recipes && ss.recipes.length > 0);
+            const showSubSubs = nonEmpty.length > 1;
+            const effectiveRecipes = showSubSubs ? null : (nonEmpty[0] ? nonEmpty[0].recipes : []);
+            const hasAny = nonEmpty.length > 0;
 
-          if (hasRecipes) {
-            nav += `<ul class="nav-l3 collapsed" id="${subSecId}-children">`;
-            const showClusterHeaders = clusterGroups && clusterGroups.length > 1;
-            // Safety rule: if subsection name is itself a geographic cluster name,
-            // suppress ALL cluster headers within it to prevent region-inside-region nesting.
-            const flattenSub = CLUSTER_ORDER.includes(sub.title);
-            const subNoHeader = flattenSub
-              ? new Set(CLUSTER_ORDER)
-              : new Set(['General', sub.title]);
-            if (clusterGroups) {
-              for (const { cluster, recipes: cr } of clusterGroups) {
-                const cid = `${subsl}--${slug(cluster)}`;
-                if (!showClusterHeaders || subNoHeader.has(cluster)) {
-                  cr.forEach(r => {
-                    const rid = r.id || `${subsl}-${slug(r.title)}`;
-                    nav += navRecipeItem(rid, r, filename);
-                  });
-                } else {
-                  nav += navClusterItem(cid, cluster, cr, subsl, filename);
+            nav += `<li class="nav-sub${hasAny ? '' : ' empty'}">`;
+            nav += `<a class="nav-hd sub-hd" href="#${subSecId}" data-toggle="${subSecId}-children">${hasAny ? '<span class="arrow">▶</span>' : ''}${esc(sub.title)}</a>`;
+
+            if (hasAny) {
+              nav += `<ul class="nav-l3 collapsed" id="${subSecId}-children">`;
+              if (showSubSubs) {
+                // Render each sub-subsection as a collapsible item
+                for (const ss of sub.subsections) {
+                  if (!ss.recipes || ss.recipes.length === 0) continue;
+                  const sssl = `${subsl}-${slug(ss.title)}`;
+                  const ssId = `subsub-${sssl}`;
+                  const ssGroups = groupByCluster(ss.recipes);
+                  const showClusters = ssGroups.length > 1;
+                  nav += `<li class="nav-subsub">`;
+                  nav += `<a class="nav-hd subsub-hd" href="#${ssId}" data-toggle="${ssId}-children"><span class="arrow">▶</span>${esc(ss.title)}</a>`;
+                  nav += `<ul class="nav-l3b collapsed" id="${ssId}-children">`;
+                  const ssNoHeader = new Set(['General', ss.title]);
+                  for (const { cluster, recipes: cr } of ssGroups) {
+                    const cid = `${sssl}--${slug(cluster)}`;
+                    if (!showClusters || ssNoHeader.has(cluster)) {
+                      cr.forEach(r => {
+                        const rid = r.id || `${sssl}-${slug(r.title)}`;
+                        nav += navRecipeItem(rid, r, filename);
+                      });
+                    } else {
+                      nav += navClusterItem(cid, cluster, cr, sssl, filename);
+                    }
+                  }
+                  nav += '</ul></li>\n';
+                }
+              } else {
+                // Collapsed: render the single non-empty sub-subsection's recipes directly
+                const clusterGroups = groupByCluster(effectiveRecipes);
+                const showClusterHeaders = clusterGroups.length > 1;
+                const flattenSub = CLUSTER_ORDER.includes(sub.title);
+                const subNoHeader = flattenSub ? new Set(CLUSTER_ORDER) : new Set(['General', sub.title]);
+                for (const { cluster, recipes: cr } of clusterGroups) {
+                  const cid = `${subsl}--${slug(cluster)}`;
+                  if (!showClusterHeaders || subNoHeader.has(cluster)) {
+                    cr.forEach(r => {
+                      const rid = r.id || `${subsl}-${slug(r.title)}`;
+                      nav += navRecipeItem(rid, r, filename);
+                    });
+                  } else {
+                    nav += navClusterItem(cid, cluster, cr, subsl, filename);
+                  }
                 }
               }
+              nav += '</ul>';
             }
-            nav += '</ul>';
+            nav += '</li>\n';
+
+          } else {
+            // ── Original flat-recipes subsection ──
+            const hasRecipes = sub.recipes && sub.recipes.length > 0;
+            const clusterGroups = hasRecipes ? groupByCluster(sub.recipes) : null;
+            const subArrow = hasRecipes ? '<span class="arrow">▶</span>' : '';
+
+            nav += `<li class="nav-sub${hasRecipes ? '' : ' empty'}">`;
+            nav += `<a class="nav-hd sub-hd" href="#${subSecId}" data-toggle="${subSecId}-children">${subArrow}${esc(sub.title)}</a>`;
+
+            if (hasRecipes) {
+              nav += `<ul class="nav-l3 collapsed" id="${subSecId}-children">`;
+              const showClusterHeaders = clusterGroups && clusterGroups.length > 1;
+              const flattenSub = CLUSTER_ORDER.includes(sub.title);
+              const subNoHeader = flattenSub
+                ? new Set(CLUSTER_ORDER)
+                : new Set(['General', sub.title]);
+              if (clusterGroups) {
+                for (const { cluster, recipes: cr } of clusterGroups) {
+                  const cid = `${subsl}--${slug(cluster)}`;
+                  if (!showClusterHeaders || subNoHeader.has(cluster)) {
+                    cr.forEach(r => {
+                      const rid = r.id || `${subsl}-${slug(r.title)}`;
+                      nav += navRecipeItem(rid, r, filename);
+                    });
+                  } else {
+                    nav += navClusterItem(cid, cluster, cr, subsl, filename);
+                  }
+                }
+              }
+              nav += '</ul>';
+            }
+            nav += '</li>\n';
           }
-          nav += '</li>\n';
         }
       }
 
@@ -754,16 +819,48 @@ function buildSectionContent(section) {
     for (const sub of section.subsections) {
       const subsl = `${sl}-${slug(sub.title)}`;
       const subSecId = `sub-${subsl}`;
-      const hasSubRecipes = sub.recipes && sub.recipes.length > 0;
-      const clusterGroups = hasSubRecipes ? groupByCluster(sub.recipes) : null;
-      // Safety rule: if subsection name is a geographic cluster name, flatten all clusters.
-      const flattenSub = CLUSTER_ORDER.includes(sub.title);
-      html += `<section id="${subSecId}" class="subsection">
+
+      if (sub.subsections) {
+        // ── Sub-subsection case: dynamic suppression ──
+        const nonEmpty = sub.subsections.filter(ss => ss.recipes && ss.recipes.length > 0);
+        const showSubSubs = nonEmpty.length > 1;
+
+        html += `<section id="${subSecId}" class="subsection">\n  <h3 class="subsection-heading">${esc(sub.title)}</h3>\n`;
+
+        if (nonEmpty.length === 0) {
+          html += `  <p class="empty"><em>No recipes yet.</em></p>\n`;
+        } else if (showSubSubs) {
+          // Render each sub-subsection with its own h4 heading
+          for (const ss of sub.subsections) {
+            if (!ss.recipes || ss.recipes.length === 0) continue;
+            const sssl = `${subsl}-${slug(ss.title)}`;
+            const ssId = `subsub-${sssl}`;
+            const ssGroups = groupByCluster(ss.recipes);
+            html += `<section id="${ssId}" class="sub-subsection">\n  <h4 class="sub-subsection-heading">${esc(ss.title)}</h4>\n`;
+            html += renderRecipeList(ss.recipes, sssl, ssGroups, [ss.title]);
+            html += `</section>\n`;
+          }
+        } else {
+          // Collapsed: render the single non-empty sub-subsection's recipes directly (no h4)
+          const flattenSub = CLUSTER_ORDER.includes(sub.title);
+          const clusterGroups = groupByCluster(nonEmpty[0].recipes);
+          html += renderRecipeList(nonEmpty[0].recipes, subsl, clusterGroups, flattenSub ? [...CLUSTER_ORDER] : [sub.title]);
+        }
+
+        html += `</section>\n`;
+
+      } else {
+        // ── Original flat-recipes subsection ──
+        const hasSubRecipes = sub.recipes && sub.recipes.length > 0;
+        const clusterGroups = hasSubRecipes ? groupByCluster(sub.recipes) : null;
+        const flattenSub = CLUSTER_ORDER.includes(sub.title);
+        html += `<section id="${subSecId}" class="subsection">
   <h3 class="subsection-heading">${esc(sub.title)}</h3>
   ${hasSubRecipes
     ? renderRecipeList(sub.recipes, subsl, clusterGroups, flattenSub ? [...CLUSTER_ORDER] : [sub.title])
     : '<p class="empty"><em>No recipes yet.</em></p>'}
 </section>\n`;
+      }
     }
     html += `</section>\n`;
   }
@@ -792,7 +889,14 @@ function buildSearchIndex(data) {
     } else if (section.subsections) {
       for (const sub of section.subsections) {
         const subsl = `${sl}-${slug(sub.title)}`;
-        addRecipes(sub.recipes || [], subsl);
+        if (sub.subsections) {
+          for (const ss of sub.subsections) {
+            const sssl = `${subsl}-${slug(ss.title)}`;
+            addRecipes(ss.recipes || [], sssl);
+          }
+        } else {
+          addRecipes(sub.recipes || [], subsl);
+        }
       }
     }
   }
@@ -807,7 +911,13 @@ function buildSectionCookbookData(section) {
     for (const r of section.recipes) map[r.title] = r;
   } else if (section.subsections) {
     for (const sub of section.subsections) {
-      for (const r of (sub.recipes || [])) map[r.title] = r;
+      if (sub.subsections) {
+        for (const ss of sub.subsections) {
+          for (const r of (ss.recipes || [])) map[r.title] = r;
+        }
+      } else {
+        for (const r of (sub.recipes || [])) map[r.title] = r;
+      }
     }
   }
   return map;
@@ -1063,7 +1173,7 @@ function buildPage(section, navHtml, contentHtml, cookbookData) {
   }
   .nav-sub.empty .sub-hd { color: #5a4030; cursor: default; }
 
-  /* Level 3 — clusters */
+  /* Level 3 — clusters (or sub-subsections when present) */
   .nav-l3 { padding-left: 0; }
   .cluster-hd {
     padding: 4px 14px 4px 32px;
@@ -1071,6 +1181,24 @@ function buildPage(section, navHtml, contentHtml, cookbookData) {
     color: #c4ad90;
     font-style: italic;
   }
+
+  /* Sub-subsection level (With Meat / Meatless beneath a subsection) */
+  .nav-subsub { list-style: none; }
+  .subsub-hd {
+    display: block;
+    padding: 4px 14px 4px 30px;
+    font-size: 0.79rem;
+    color: #b8a080;
+    font-style: italic;
+    text-decoration: none;
+  }
+  .subsub-hd:hover { color: var(--nav-hover); }
+  /* nav-l3b: cluster list inside a sub-subsection */
+  .nav-l3b { padding-left: 0; list-style: none; }
+  .nav-l3b .cluster-hd { padding-left: 44px; }
+  .nav-l3b .nav-l4 .nav-recipe-link { padding-left: 58px; }
+  /* Direct recipe links under a sub-subsection (no cluster header) */
+  .nav-l3b > li.nav-recipe > .nav-recipe-link { padding-left: 44px; font-size: 0.76rem; }
 
   /* Level 4 — recipes */
   .nav-l4 { padding-left: 0; }
@@ -1140,6 +1268,13 @@ function buildPage(section, navHtml, contentHtml, cookbookData) {
     font-size: 1.2rem; color: var(--muted);
     border-bottom: 1px solid var(--border);
     padding-bottom: 4px; margin-bottom: 16px;
+  }
+  .sub-subsection { margin-bottom: 24px; }
+  .sub-subsection-heading {
+    font-size: 1rem; color: var(--muted);
+    font-style: italic;
+    padding-bottom: 3px; margin-bottom: 12px;
+    border-bottom: 1px dashed var(--border);
   }
 
   /* Cluster groups */
