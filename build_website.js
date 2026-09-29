@@ -1028,7 +1028,7 @@ function buildPage(section, navHtml, contentHtml, cookbookData) {
     padding: 4px 14px 4px 32px;
     font-size: 0.8rem;
     color: #c4ad90;
-    font-style: normal;
+    font-style: italic;
   }
 
   /* Level 4 — recipes */
