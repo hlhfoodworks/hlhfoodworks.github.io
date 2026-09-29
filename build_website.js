@@ -210,6 +210,14 @@ const CLUSTER_MAP = {
   'Sun-Dried Tomato Cream Sauce':                        'Italian',
   // Dressings — Latin/South American
   'Authentic Chimichurri':                               'Latin/South American',
+  // Preserves & Pickles — General
+  'Dill Pickles':                                        'General',
+  'Quick Pickled Green Onions':                          'General',
+  'Quick Pickled Red Onions':                            'General',
+  // Preserves & Pickles — Latin/South American
+  'Pikliz':                                              'Latin/South American',
+  // Preserves & Pickles — Moroccan/North African
+  'Preserved Lemons':                                    'Moroccan/North African',
   // Desserts — General
   'Christy\'s Easy Lemon Icebox Pie':                    'General',
   'Fresh Cranberry Mold':                                'General',

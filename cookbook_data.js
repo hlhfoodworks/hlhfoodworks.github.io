@@ -1269,7 +1269,7 @@ module.exports = {
               "comments": [
                 "Contains bacon.",
                 {
-                  "html": "For pickled red onions, see <a href='pickling.html#quick-pickled-red-onions'>Quick Pickled Red Onions</a> in the Pickling section — prepare at least 1 hour ahead."
+                  "html": "For pickled red onions, see <a href='preserves-pickles.html#quick-pickled-red-onions'>Quick Pickled Red Onions</a> in the Preserves & Pickles section — prepare at least 1 hour ahead."
                 }
               ],
               "ingredientGroups": [
@@ -4027,9 +4027,13 @@ module.exports = {
               ]
             },
             {
+              "id": "chicken-tagine-with-olives-and-preserved-lemons",
               "title": "Chicken Tagine With Olives and Preserved Lemons",
               "servings": "Serves 4   |   Total: 1 hour, plus marinating",
               "source": "NYT Cooking, from Shallots New York, adapted by Florence Fabricant",
+              "comments": [
+                {"html": "Make your own preserved lemons: see <a href='preserves-pickles.html#preserved-lemons'>Preserved Lemons</a> in the Preserves & Pickles section."}
+              ],
               "ingredientGroups": [
                 {
                   "label": "Spice rub",
@@ -5981,7 +5985,7 @@ module.exports = {
               "source": "Patrick Celestin, adapted by Melissa Clark (NYT Cooking)",
               "comments": [
                 {
-                  "html": "Best served with <a href='pickling.html#haitian-pikliz'>Pikliz</a>."
+                  "html": "Best served with <a href='preserves-pickles.html#haitian-pikliz'>Pikliz</a>."
                 }
               ],
               "ingredientGroups": [
@@ -8929,7 +8933,7 @@ module.exports = {
               "source": "Tejal Rao / NYT Cooking",
               "comments": [
                 {
-                  "html": "Top with <a href='pickling.html#quick-pickled-red-onions'>Quick Pickled Red Onions</a> (Pickling section) when serving."
+                  "html": "Top with <a href='preserves-pickles.html#quick-pickled-red-onions'>Quick Pickled Red Onions</a> (Preserves & Pickles section) when serving."
                 },
                 "You can try the same technique with different beans—chickpeas to cannellini. Heavy cream may be swapped for 1 cup diced mozzarella scattered on top before baking."
               ],
@@ -13343,10 +13347,12 @@ module.exports = {
                   ]
                 },
                 {
+                  "id": "preserved-lemon-zaatar-pasta",
                   "title": "Preserved Lemon Za'atar Pasta",
                   "servings": "Serves 4 | Total: ~25 min",
                   "source": "Nik Sharma Cooks (Nik Sharma)",
                   "comments": [
+                    {"html": "Make your own preserved lemons: see <a href='preserves-pickles.html#preserved-lemons'>Preserved Lemons</a> in the Preserves & Pickles section."},
                     "Rinse preserved lemons well and discard the soft flesh -- use only the rind.",
                     "Pumpkin or sunflower seeds work in place of pine nuts for a nut-free version.",
                     "The breadcrumb topping is the star: adjust za'atar to taste, and don't skip it."
@@ -15544,11 +15550,12 @@ module.exports = {
               ]
             },
             {
+              "id": "moroccan-preserved-lemon-yogurt-sauce",
               "title": "Moroccan Preserved Lemon Yogurt Sauce",
               "servings": "Serves 8",
               "source": "Tamara Andersen / Beyond Mere Sustenance",
               "comments": [
-                "There is no substitute for preserved lemons -- the fermented flavor is unique. Find them at Middle Eastern grocery stores.",
+                {"html": "There is no substitute for preserved lemons -- the fermented flavor is unique. Make your own (see <a href='preserves-pickles.html#preserved-lemons'>Preserved Lemons</a> in the Preserves & Pickles section) or find them at Middle Eastern grocery stores."},
                 "Pairs well with tagines, roasted chicken, grain salads, and harissa dishes."
               ],
               "ingredientGroups": [
@@ -15780,7 +15787,7 @@ module.exports = {
       ]
     },
     {
-      "title": "Pickling",
+      "title": "Preserves & Pickles",
       "recipes": [
         {
           "title": "Dill Pickles",
@@ -15940,6 +15947,41 @@ module.exports = {
           "steps": [
             "Combine cabbage, onion, carrot, bell pepper, scallions, chiles, garlic, salt, peppercorns, and cloves in a large bowl. Toss well.",
             "Pack tightly into a 1-quart jar with a tightfitting lid. Pour vinegar and lime juice over vegetables, pressing down until completely submerged. Cover and refrigerate for at least 3 days before opening. Keeps for at least 3 weeks refrigerated."
+          ]
+        },
+        {
+          "id": "preserved-lemons",
+          "title": "Preserved Lemons",
+          "servings": "Makes about 8 preserved lemons   |   Active: 20 min   |   Pickling: 3 to 4 weeks",
+          "source": "The Mediterranean Dish (Suzy Karadsheh)",
+          "comments": [
+            "Use only the rind when cooking -- rinse well and discard the soft flesh.",
+            "Choose organic lemons if possible, since you eat the whole fruit. Eureka or Meyer lemons both work well.",
+            "Keeps refrigerated for up to 6 months."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Day 1 -- Salt and cure",
+              "ingredients": [
+                "8 large lemons, scrubbed clean",
+                "1/2 cup kosher salt",
+                "2 tablespoons sugar"
+              ]
+            },
+            {
+              "label": "Day 2 -- Pack the jar",
+              "ingredients": [
+                "2 tablespoons peppercorns",
+                "4 to 5 dry bay leaves",
+                "2 1/2 cups fresh lemon juice (from 7 to 8 additional lemons)"
+              ]
+            }
+          ],
+          "steps": [
+            "Trim 1/4 inch from both ends of each lemon. Stand each upright and cut into quarters from the top, stopping 1/2 inch from the bottom so the lemon stays connected.",
+            "Transfer lemons to a large bowl. Combine salt and sugar, then open each lemon and stuff generously with the mixture; roll the lemons in any remaining salt and sugar. Cover and refrigerate overnight, up to 24 hours. The lemons will release juice.",
+            "The next day, transfer the salted lemons and all accumulated juices to a large sterilized canning jar (a 2-liter jar works well). Press firmly down. Add peppercorns and bay leaves. Pour in fresh lemon juice to fully submerge the lemons.",
+            "Seal tightly and refrigerate for 3 to 4 weeks before using."
           ]
         }
       ]
