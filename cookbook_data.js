@@ -678,6 +678,155 @@ module.exports = {
           ]
         },
         {
+          "title": "Blooming Onions",
+          "servings": "Makes 3 onions",
+          "source": "Beth Pierce / Small Town Woman",
+          "comments": [
+            "Vidalia or other sweet onions are best.",
+            "Oven option: cover with foil and bake at 400 degrees F for 10 minutes, then uncover and bake 20 minutes more."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Dipping sauce",
+              "ingredients": [
+                "1/4 cup mayonnaise",
+                "1/4 cup sour cream",
+                "1 1/2 tablespoons prepared horseradish",
+                "1 1/2 tablespoons ketchup",
+                "1/2 teaspoon paprika",
+                "1/2 teaspoon garlic powder",
+                "1/4 teaspoon cayenne pepper"
+              ]
+            },
+            {
+              "label": "Egg wash",
+              "ingredients": [
+                "2 large eggs",
+                "1 cup milk"
+              ]
+            },
+            {
+              "label": "Seasoned flour",
+              "ingredients": [
+                "2 cups all-purpose flour",
+                "1 tablespoon paprika",
+                "2 teaspoons ground cumin",
+                "1 teaspoon dried oregano",
+                "1 teaspoon dried thyme",
+                "1 teaspoon salt",
+                "1 teaspoon cayenne pepper",
+                "1/2 teaspoon black pepper",
+                "1/2 teaspoon garlic powder"
+              ]
+            },
+            {
+              "label": "Onions",
+              "ingredients": [
+                "3 medium sweet onions (such as Vidalia)"
+              ]
+            },
+            {
+              "label": "Frying",
+              "ingredients": [
+                "Vegetable oil for frying"
+              ]
+            }
+          ],
+          "steps": [
+            "Make the dipping sauce: stir together mayonnaise, sour cream, horseradish, ketchup, paprika, garlic powder, and cayenne. Refrigerate until ready to serve. Can be made up to 2 days ahead.",
+            "In a wide, deep bowl, whisk together eggs and milk. In another wide bowl, combine flour with all the seasonings.",
+            "Prepare the onions: cut a thin slice from the non-root end so each onion sits flat. Place root side up. Using a sharp knife, cut the onion into quarters from top to bottom, stopping about 1/2 inch from the root. Cut each quarter into 3 to 4 more equal sections. Turn root side down and gently fan out the petals.",
+            "Coat each onion thoroughly in the seasoned flour, pressing it between the petals. Dip in the egg wash, then coat in the flour again.",
+            "Heat oil in a heavy pot to 375 degrees F (use a thermometer). Fry onions root side up for 7 to 10 minutes until deeply golden. Drain on paper towels. Serve promptly with dipping sauce."
+          ]
+        },
+        {
+          "title": "Fried Dill Pickles",
+          "servings": "Serves 4",
+          "source": "Holly Nilsson / Spend with Pennies",
+          "comments": [
+            "Keep Panko dry for best adhesion -- add a small amount to the bowl at a time and replenish as needed; wet crumbs won't stick.",
+            "Can be air fried at 400 degrees F for 10 to 12 minutes, flipping after 5 minutes."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Batter",
+              "ingredients": [
+                "1 cup all-purpose flour",
+                "1 cup milk",
+                "1 teaspoon baking powder",
+                "1 large egg",
+                "1 teaspoon paprika",
+                "1/2 teaspoon black pepper",
+                "1/2 teaspoon dried dill"
+              ]
+            },
+            {
+              "label": "Coating",
+              "ingredients": [
+                "2 1/2 cups Panko breadcrumbs",
+                "1/2 teaspoon cayenne pepper",
+                "1/2 teaspoon salt"
+              ]
+            },
+            {
+              "label": "Pickles",
+              "ingredients": [
+                "24 dill pickle slices, patted dry"
+              ]
+            },
+            {
+              "label": "Frying",
+              "ingredients": [
+                "Neutral oil for frying"
+              ]
+            }
+          ],
+          "steps": [
+            "Whisk together flour, milk, baking powder, egg, paprika, pepper, and dill in a bowl until smooth. Let rest at least 5 minutes.",
+            "In a separate bowl, combine Panko, cayenne, and salt.",
+            "Pat pickle slices thoroughly dry. Working in batches, dip each slice in the batter, then coat in the Panko mixture. Set on a baking sheet and let rest a few minutes before frying (this helps the crumbs adhere).",
+            "Heat oil in a skillet to 360 to 370 degrees F. Fry pickles in small batches, 3 to 4 minutes, until golden brown. Transfer to a paper towel-lined plate and season immediately with salt.",
+            "Serve with ranch dressing or your favorite dipping sauce."
+          ]
+        },
+        {
+          "title": "Jalapeño Poppers",
+          "servings": "Makes 24 halves",
+          "source": "Holly Nilsson / Spend with Pennies",
+          "ingredientGroups": [
+            {
+              "label": "Filling",
+              "ingredients": [
+                "6 oz cream cheese, softened",
+                "1 teaspoon garlic powder",
+                "4 oz sharp cheddar, shredded",
+                "2 tablespoons fresh chives, chopped"
+              ]
+            },
+            {
+              "label": "Topping",
+              "ingredients": [
+                "1/4 cup Panko breadcrumbs",
+                "1 tablespoon unsalted butter, melted"
+              ]
+            },
+            {
+              "label": "Peppers",
+              "ingredients": [
+                "12 jalapeños, halved lengthwise and seeded"
+              ]
+            }
+          ],
+          "steps": [
+            "Preheat oven to 400 degrees F. Wearing gloves, halve jalapeños lengthwise and scoop out seeds and membranes with a small spoon.",
+            "Stir together cream cheese, garlic powder, cheddar, and chives.",
+            "In a separate bowl, combine Panko and melted butter.",
+            "Fill each jalapeño half with the cheese mixture. Top with buttered breadcrumbs.",
+            "Arrange on a baking sheet and bake until golden, 18 to 22 minutes. Cool 5 minutes before serving."
+          ]
+        },
+        {
           "title": "Shrimp Dip",
           "servings": "Makes about 2 cups",
           "source": "Family recipe card (Grandmother Brenda)",
@@ -762,6 +911,55 @@ module.exports = {
           ]
         },
         {
+          "title": "Eggplant Pkhali",
+          "servings": "Makes about 2 cups",
+          "source": "Justin and Sarah Poitras / Travel Cook Repeat",
+          "comments": [
+            "Pkhali (pronounced p-KHAL-ee) is a traditional Georgian preparation -- a spread made from vegetables blended with walnuts, garlic, and warm spices. Fenugreek adds a distinctive depth; don't skip it.",
+            "May be served as a spread with bread or crackers, or shaped into small balls."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Eggplant",
+              "ingredients": [
+                "1 1/2 pounds eggplant",
+                "1 teaspoon extra-virgin olive oil"
+              ]
+            },
+            {
+              "label": "Walnut paste",
+              "ingredients": [
+                "1 cup walnuts",
+                "3 cloves garlic, quartered",
+                "Small handful fresh parsley leaves",
+                "Small handful fresh cilantro leaves",
+                "1/2 teaspoon ground coriander",
+                "3/4 teaspoon ground fenugreek",
+                "1 hefty pinch cayenne pepper",
+                "1 teaspoon extra-virgin olive oil",
+                "1/8 teaspoon black pepper, plus more to taste",
+                "1/4 teaspoon salt, plus more to taste",
+                "Juice of 1/2 lemon"
+              ]
+            },
+            {
+              "label": "Garnish",
+              "ingredients": [
+                "Seeds from 1/2 pomegranate",
+                "Fresh cilantro and parsley",
+                "Extra squeeze of lemon (optional)"
+              ]
+            }
+          ],
+          "steps": [
+            "Preheat oven to 475 degrees F. Halve eggplants lengthwise and brush cut sides with 1 teaspoon oil. Place cut side down on a parchment-lined baking sheet. Roast until completely tender, about 35 minutes. Let cool at least 5 minutes.",
+            "Scoop eggplant flesh from the skins with a spoon; discard skins.",
+            "In a food processor, combine walnuts, garlic, parsley, cilantro, coriander, fenugreek, cayenne, and 1 teaspoon oil. Pulse a few times to break down into a coarse paste.",
+            "Transfer the walnut mixture to a bowl. Add the eggplant flesh, lemon juice, salt, and pepper. Stir together by hand to a rough paste. Taste and adjust seasoning.",
+            "Transfer to a serving bowl and garnish with pomegranate seeds, fresh herbs, and a squeeze of lemon."
+          ]
+        },
+        {
           "title": "Gazpacho",
           "servings": "Serves 6",
           "source": "Restaurant Laurent, 111 East 56th Street, New York (family recipe card)",
@@ -842,6 +1040,104 @@ module.exports = {
             "Peel and discard the skin, removing any large clumps of seeds. Place eggplant flesh in a fine-mesh strainer set over a bowl; let drain 20 minutes. Discard liquid.",
             "Combine drained eggplant, tahini, lemon juice, olive oil, garlic, salt, smoked paprika, and Aleppo pepper or red pepper flakes in a bowl. Mash with a fork or pastry blender until the dip comes together with a slightly chunky, textured consistency. Taste and adjust salt, lemon, and pepper.",
             "Transfer to a serving dish. Drizzle with olive oil and scatter parsley over the top. Serve with pita and fresh vegetables."
+          ]
+        },
+        {
+          "title": "Israeli Hummus",
+          "servings": "Serves 4 to 6",
+          "source": "Milk Street / WGBH",
+          "comments": [
+            "Stir tahini thoroughly before using -- it separates and can be very thick at the bottom of the jar. If very thick, whisk in a tablespoon or two of warm water.",
+            "The full 3-minute processing step is essential for the airy, ultra-smooth texture characteristic of Israeli-style hummus. Do not cut it short."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Chickpeas (soak overnight)",
+              "ingredients": [
+                "8 oz dried chickpeas",
+                "8 cups cold water",
+                "2 tablespoons kosher salt"
+              ]
+            },
+            {
+              "label": "Cooking liquid",
+              "ingredients": [
+                "10 cups water",
+                "1/2 teaspoon baking soda"
+              ]
+            },
+            {
+              "label": "Hummus",
+              "ingredients": [
+                "3/4 cup tahini (sesame paste), room temperature",
+                "1 teaspoon kosher salt",
+                "3 1/2 tablespoons fresh lemon juice"
+              ]
+            },
+            {
+              "label": "To serve",
+              "ingredients": [
+                "1 to 2 tablespoons extra-virgin olive oil",
+                "1 tablespoon chopped fresh parsley",
+                "1/2 teaspoon ground cumin",
+                "1/2 teaspoon paprika"
+              ]
+            }
+          ],
+          "steps": [
+            "Soak the chickpeas: combine with 8 cups cold water and 2 tablespoons salt. Soak at least 12 hours or overnight.",
+            "Drain chickpeas. In a large pot, bring 10 cups water and baking soda to a boil over high heat. Add chickpeas, return to a simmer, then reduce to medium. Cook until skins are falling off and chickpeas are very tender, 45 to 50 minutes.",
+            "Drain through a strainer set over a large bowl, reserving 3/4 cup cooking water. Let rest 1 minute. Set aside 2 tablespoons of chickpeas for garnish.",
+            "Transfer remaining chickpeas to a food processor and process 3 full minutes. Add tahini and 1 teaspoon salt; process until lightened and very smooth, about 1 minute, scraping down the sides as needed.",
+            "With the machine running, add the reserved cooking water and lemon juice; process until combined. Taste and adjust salt.",
+            "Transfer to a shallow bowl. Make a well in the center with the back of a spoon. Drizzle with olive oil and top with reserved chickpeas, parsley, cumin, and paprika."
+          ]
+        },
+        {
+          "title": "Muhammara",
+          "servings": "Serves 6",
+          "source": "Ninon Michels / Nim Pairings",
+          "comments": [
+            "Keeps up to 3 days refrigerated.",
+            "Time-saving shortcut: 16 oz store-bought roasted red peppers in unflavored oil (drained well) can substitute for the fresh-roasted peppers."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Roasted peppers",
+              "ingredients": [
+                "3 large red bell peppers",
+                "2 tablespoons extra-virgin olive oil"
+              ]
+            },
+            {
+              "label": "Dip",
+              "ingredients": [
+                "1/2 cup walnuts",
+                "1 1/2 tablespoons breadcrumbs (homemade or store-bought)",
+                "1 medium garlic clove, crushed or grated",
+                "1 tablespoon fresh lemon juice",
+                "1 tablespoon extra-virgin olive oil",
+                "3/4 teaspoon ground cumin",
+                "1/4 teaspoon Aleppo pepper or red pepper flakes",
+                "3/4 teaspoon sumac",
+                "3/4 teaspoon kosher salt"
+              ]
+            },
+            {
+              "label": "Finish",
+              "ingredients": [
+                "1/2 cup pomegranate seeds, plus more to garnish",
+                "Chopped flat-leaf parsley, for garnish",
+                "Extra-virgin olive oil, for drizzling"
+              ]
+            }
+          ],
+          "steps": [
+            "Preheat oven to 390 degrees F. Using a vegetable peeler, remove most of the skin from the bell peppers. Halve each pepper, remove seeds and white membrane, and cut into 1/2-inch strips. Toss with 2 tablespoons olive oil on a parchment-lined baking sheet. Roast until tender and slightly charred, about 25 minutes.",
+            "While peppers roast, toast walnuts in a dry skillet over medium heat, stirring until fragrant and lightly golden. Set aside.",
+            "In a food processor, combine the roasted peppers, toasted walnuts, breadcrumbs, garlic, 1 tablespoon olive oil, lemon juice, cumin, Aleppo pepper, sumac, and salt. Pulse until well combined but still slightly textured, about 30 seconds.",
+            "Add pomegranate seeds and pulse 2 to 3 times -- the goal is to keep some texture and crunch; do not over-blend.",
+            "Spoon into a shallow bowl and swirl the surface with the back of a spoon. Garnish with additional pomegranate seeds, parsley, and a drizzle of olive oil. Serve with warm pita or flatbreads."
           ]
         },
         {
@@ -934,6 +1230,40 @@ module.exports = {
                 "Make barbecue bacon: combine barbecue sauce, vinegar, and brown sugar in a skillet over medium heat. Add bacon and cook, stirring, until caramelized and sticky, 8–10 minutes. Set aside.",
                 "Brush corn with olive oil. Grill or pan-sear over high heat until charred in spots. Cut kernels from cob.",
                 "To assemble: place a lettuce wedge on each plate. Top with cherry tomatoes, corn kernels, barbecue bacon, pickled onions, and blue cheese dressing. Season with salt and pepper."
+              ]
+            },
+            {
+              "title": "Boston Lettuce and Endives Salad",
+              "servings": "Serves 6",
+              "source": "Ricardo Cuisine",
+              "ingredientGroups": [
+                {
+                  "label": "Dressing",
+                  "ingredients": [
+                    "1/4 cup mayonnaise",
+                    "2 tablespoons apple cider vinegar",
+                    "1 tablespoon whole-grain mustard",
+                    "1 tablespoon maple syrup",
+                    "1 small garlic clove, finely chopped",
+                    "Salt and pepper to taste"
+                  ]
+                },
+                {
+                  "label": "Salad",
+                  "ingredients": [
+                    "4 cups Boston lettuce leaves (about 1 small head), torn",
+                    "2 white endives, halved and separated into leaves",
+                    "2 red endives, halved and separated into leaves",
+                    "1 red apple, cored and thinly sliced",
+                    "1/2 cup red grapes, halved",
+                    "1/2 cup roasted walnuts"
+                  ]
+                }
+              ],
+              "steps": [
+                "Whisk together mayonnaise, cider vinegar, mustard, maple syrup, and garlic. Season with salt and pepper. Can be made ahead.",
+                "Combine lettuce, endives, apple, grapes, and walnuts in a large bowl.",
+                "Just before serving, drizzle dressing over salad and toss well."
               ]
             },
             {
@@ -1159,6 +1489,47 @@ module.exports = {
               ]
             },
             {
+              "title": "Shaved Brussels Sprouts Salad With Lemon and Pecorino",
+              "favorite": true,
+              "servings": "Serves 6",
+              "source": "Katie Morford / Mom's Kitchen Handbook",
+              "comments": [
+                "As prepared by Pete Swanson.",
+                "The salad holds up well and is just as good the next day.",
+                "Variations: add dried cranberries or cherries for sweetness; whisk a teaspoon of Dijon into the dressing; swap almonds for walnuts."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Almonds",
+                  "ingredients": [
+                    "3/4 cup sliced almonds"
+                  ]
+                },
+                {
+                  "label": "Salad",
+                  "ingredients": [
+                    "1 pound Brussels sprouts, trimmed and shaved very thin (food processor slicer blade or mandoline)",
+                    "2 oz Pecorino Romano, finely grated (about 1/2 cup)",
+                    "1/8 cup fresh mint, roughly chopped"
+                  ]
+                },
+                {
+                  "label": "Dressing",
+                  "ingredients": [
+                    "1/4 cup fresh lemon juice (Meyer lemon if available)",
+                    "2 1/2 tablespoons extra-virgin olive oil",
+                    "1/2 teaspoon kosher salt",
+                    "Freshly ground black pepper to taste"
+                  ]
+                }
+              ],
+              "steps": [
+                "Preheat oven to 350 degrees F. Toast sliced almonds on a sheet pan until golden, about 8 minutes. Let cool.",
+                "Trim a thin slice from the root end of each Brussels sprout and shave very thin using the slicing blade of a food processor or a mandoline.",
+                "Combine shaved Brussels sprouts, almonds, Pecorino, mint, lemon juice, olive oil, salt, and pepper in a large bowl. Toss well and serve."
+              ]
+            },
+            {
               "title": "Summer Salad",
               "source": "Family recipe card (Grandmother Brenda)",
               "comments": [
@@ -1196,6 +1567,83 @@ module.exports = {
                 "Tear romaine into a large bowl. Add mushrooms, cherry tomatoes, mango, and avocado.",
                 "Top with cashews and sunflower seeds.",
                 "Drizzle dressing over salad just before serving and toss."
+              ]
+            },
+            {
+              "title": "Wood Ranch's Peanut Coleslaw",
+              "favorite": true,
+              "servings": "Serves 6",
+              "source": "Kadee and Desarae / Oh So Delicioso",
+              "comments": [
+                "Leftovers keep refrigerated for 1 to 2 days."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Dressing",
+                  "ingredients": [
+                    "1/3 cup red wine vinegar",
+                    "1/3 cup neutral oil (avocado, canola, or light olive oil)",
+                    "1 1/2 tablespoons sugar",
+                    "1/2 teaspoon seasoning salt",
+                    "1/2 teaspoon garlic powder",
+                    "1 teaspoon sesame seeds (black or white) (optional)"
+                  ]
+                },
+                {
+                  "label": "Slaw",
+                  "ingredients": [
+                    "16 oz green cabbage, shredded (pre-bagged or equivalent)",
+                    "1 1/2 cups purple cabbage, chopped",
+                    "3/4 cup celery, chopped",
+                    "2 green onions, chopped",
+                    "1 cup peanuts",
+                    "1/4 cup fresh cilantro, chopped (optional)"
+                  ]
+                }
+              ],
+              "steps": [
+                "Whisk together vinegar, oil, sugar, seasoning salt, garlic powder, and sesame seeds until sugar dissolves.",
+                "In a large bowl, combine green cabbage, purple cabbage, celery, green onions, peanuts, and cilantro.",
+                "Toss with dressing just before serving."
+              ]
+            },
+            {
+              "title": "Yellow Mustard Potato Salad",
+              "servings": "Serves 4",
+              "source": "Rachael Ray / Food Network",
+              "comments": [
+                "Spreading the potatoes on a sheet pan (rather than leaving them in the pot) lets them cool quickly without overcooking or turning mushy."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Potatoes",
+                  "ingredients": [
+                    "2 1/2 pounds russet potatoes (about 3 medium-large), peeled and cubed"
+                  ]
+                },
+                {
+                  "label": "Dressing",
+                  "ingredients": [
+                    "2 ribs celery, finely chopped",
+                    "1/2 small yellow onion, finely chopped",
+                    "3 tablespoons chopped pimento, drained",
+                    "3 tablespoons sweet pickle relish",
+                    "1/3 cup mayonnaise",
+                    "1/3 cup yellow mustard",
+                    "Salt and pepper to taste"
+                  ]
+                },
+                {
+                  "label": "Garnish",
+                  "ingredients": [
+                    "2 tablespoons chopped parsley (optional)"
+                  ]
+                }
+              ],
+              "steps": [
+                "Boil potatoes in generously salted water until just tender, 10 to 12 minutes. Drain and spread on a sheet pan; let cool about 10 minutes.",
+                "In a large bowl, stir together celery, onion, pimento, relish, mayonnaise, and mustard. Season with salt and pepper.",
+                "Add cooled potatoes and fold to combine. Taste and adjust seasoning. Garnish with parsley if desired. Serve immediately or chill."
               ]
             },
             {
@@ -1273,6 +1721,85 @@ module.exports = {
               "steps": [
                 "Whisk together olive oil, lemon juice, vinegar, garlic, oregano, and dill until blended. Season with salt and pepper.",
                 "Combine tomatoes, cucumber, onion, bell pepper, and olives in a large bowl. Toss with dressing. Sprinkle with feta and serve."
+              ]
+            },
+            {
+              "title": "Moroccan-Style Carrot Salad",
+              "servings": "Serves 6",
+              "source": "Suzy Karadsheh / The Mediterranean Dish",
+              "comments": [
+                "Dressing the carrots while warm is key -- they absorb the spices far better than when cold.",
+                "Keeps refrigerated for 3 to 4 days; always serve at room temperature.",
+                "Harissa spice blend adds a subtle heat; if unavailable, substitute a pinch of cayenne and extra cumin."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Carrots",
+                  "ingredients": [
+                    "2 pounds carrots, peeled and cut into 1/4-inch rounds",
+                    "Kosher salt"
+                  ]
+                },
+                {
+                  "label": "Dressing",
+                  "ingredients": [
+                    "1/2 teaspoon harissa spice (dry spice blend)",
+                    "1/2 teaspoon ground cumin",
+                    "1/2 teaspoon ground coriander",
+                    "1/2 teaspoon sweet paprika",
+                    "1 to 2 cloves garlic, minced",
+                    "1 to 2 tablespoons fresh lemon juice",
+                    "3 tablespoons extra-virgin olive oil"
+                  ]
+                },
+                {
+                  "label": "Finish",
+                  "ingredients": [
+                    "1 celery stalk, finely chopped",
+                    "1/2 cup fresh cilantro, chopped (mint or parsley can substitute)",
+                    "3 tablespoons toasted sesame seeds (optional)"
+                  ]
+                }
+              ],
+              "steps": [
+                "Bring a large pot of salted water to a boil. Add carrots and cook until very tender, about 20 minutes. Drain.",
+                "Transfer warm carrots to a large bowl immediately. While still hot, toss with a pinch of salt, harissa, cumin, coriander, paprika, garlic, lemon juice, and olive oil.",
+                "Add celery, cilantro, and sesame seeds and toss again. Let cool to room temperature before serving."
+              ]
+            },
+            {
+              "title": "Parsley Salad",
+              "servings": "Serves 4",
+              "source": "Alton Brown / Food Network (Good Eats)",
+              "comments": [
+                "Walnut oil is central to this recipe -- it pairs naturally with the slightly bitter parsley. Look for it at specialty grocery stores. In a pinch, half almond oil and half olive oil can substitute.",
+                "Works well as a side for grilled meats or as part of a mezze spread."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Dressing",
+                  "ingredients": [
+                    "2 tablespoons fresh lemon juice",
+                    "2 tablespoons lemon zest",
+                    "6 tablespoons walnut oil",
+                    "2 teaspoons dark sesame oil",
+                    "1 teaspoon honey",
+                    "Salt and freshly ground pepper to taste"
+                  ]
+                },
+                {
+                  "label": "Salad",
+                  "ingredients": [
+                    "4 oz Italian flat-leaf parsley, leaves only (about 2 quarts loosely packed)",
+                    "3 tablespoons toasted sesame seeds"
+                  ]
+                }
+              ],
+              "steps": [
+                "Wash and dry parsley thoroughly. Pick leaves and discard stems.",
+                "Whisk together lemon juice, lemon zest, walnut oil, sesame oil, honey, and salt and pepper in a large bowl.",
+                "Add parsley and sesame seeds; toss to combine.",
+                "Let sit at least 30 minutes before serving so flavors meld."
               ]
             },
             {
@@ -1366,6 +1893,41 @@ module.exports = {
                 "In a large bowl, combine noodles, cabbage, carrots, bell pepper, bean sprouts, and scallions. Toss well.",
                 "Add basil, cilantro, and mint; toss to combine.",
                 "Drizzle peanut dressing over salad and toss to coat. Top with chopped peanuts and serve with lime wedges."
+              ]
+            },
+            {
+              "title": "Chilled Cucumber Salad (Din Tai Fung Style)",
+              "servings": "Serves 4",
+              "source": "Andrea Potischman / Simmer + Sauce",
+              "comments": [
+                "Inspired by the cucumber salad at Din Tai Fung restaurants. The 4-hour marinade is essential — the cucumbers become lightly pickled and the flavors meld into something sweeter and more delicate than a quick-dressed salad."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Cucumbers",
+                  "ingredients": [
+                    "5 Persian cucumbers, cut into 1/2-inch thick rounds",
+                    "1 1/2 tablespoons kosher salt"
+                  ]
+                },
+                {
+                  "label": "Marinade",
+                  "ingredients": [
+                    "3 tablespoons rice vinegar",
+                    "2 tablespoons mirin",
+                    "2 tablespoons honey",
+                    "2 teaspoons canola oil",
+                    "2 teaspoons sesame oil",
+                    "1/2 teaspoon chili garlic sauce",
+                    "1/2 to 3/4 teaspoon salt"
+                  ]
+                }
+              ],
+              "steps": [
+                "Cut cucumbers into 1/2-inch rounds. Sprinkle with kosher salt, toss to coat, and let sit at room temperature for about 20 minutes.",
+                "Whisk together rice vinegar, mirin, honey, canola oil, sesame oil, chili garlic sauce, and 1/2 teaspoon salt.",
+                "Rinse the salt off the cucumbers and pat completely dry. Place in a gallon zip-lock bag and pour in the marinade. Seal and shake gently. Lay the bag flat in the refrigerator and marinate at least 4 hours.",
+                "To serve, taste and adjust with additional salt or chili garlic sauce. Arrange on a plate and drizzle with a little of the marinade. Serve cold."
               ]
             },
             {
@@ -7311,6 +7873,36 @@ module.exports = {
               ]
             },
             {
+              "title": "Smoky Chickpeas With Spinach",
+              "servings": "Serves 2",
+              "source": "Marisa Moore / Marisa Moore Nutrition",
+              "ingredientGroups": [
+                {
+                  "label": "Spice oil",
+                  "ingredients": [
+                    "1 1/2 tablespoons extra-virgin olive oil",
+                    "2 cloves garlic, minced",
+                    "1 teaspoon smoked paprika",
+                    "1/2 teaspoon ground turmeric"
+                  ]
+                },
+                {
+                  "label": "Chickpeas and spinach",
+                  "ingredients": [
+                    "2 cups cooked chickpeas (one 15 oz can, rinsed and drained)",
+                    "6 cups fresh spinach",
+                    "2 tablespoons water or vegetable broth",
+                    "Salt and pepper to taste"
+                  ]
+                }
+              ],
+              "steps": [
+                "Heat olive oil in a skillet over medium. Add garlic, smoked paprika, and turmeric; stir and cook until fragrant, 1 to 2 minutes.",
+                "Add chickpeas and toss to coat in the spiced oil. Add spinach and water or broth. Cook over medium heat, stirring, until spinach has wilted.",
+                "Season with salt and pepper and serve."
+              ]
+            },
+            {
               "title": "Chickpea Tacos",
               "servings": "Serves 4",
               "source": "Live Eat Learn / Sarah Bond",
@@ -7617,6 +8209,47 @@ module.exports = {
               ]
             },
             {
+              "title": "Roasted Tomatoes With White Beans and Basil",
+              "servings": "Serves 2 to 4",
+              "source": "Deb Perelman / Smitten Kitchen, July 2022",
+              "comments": [
+                "Excellent as a crostini topping.",
+                "Tinker freely: add anchovies, capers, cured olives, prepared pesto instead of fresh basil, or top with burrata, Parmesan, or pecorino."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Tomatoes",
+                  "ingredients": [
+                    "1 pound cherry tomatoes, halved",
+                    "6 small garlic cloves, peeled",
+                    "4 tablespoons olive oil, divided",
+                    "1 teaspoon kosher salt",
+                    "Black pepper or Aleppo pepper or red pepper flakes to taste"
+                  ]
+                },
+                {
+                  "label": "Beans",
+                  "ingredients": [
+                    "1 15 oz can cannellini or other white beans, drained and rinsed"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "1/4 cup fresh basil leaves, thinly sliced"
+                  ]
+                }
+              ],
+              "steps": [
+                "Heat oven to 400 degrees F. Pour 2 tablespoons olive oil into the bottom of a 13-by-9-inch baking dish.",
+                "Arrange tomatoes cut side up in the dish; nestle garlic cloves among them. Drizzle with 2 more tablespoons olive oil. Sprinkle with salt and black pepper.",
+                "Roast until bubbly and juicy, about 20 minutes.",
+                "Remove from oven. Use a fork to lightly mash the tomatoes and garlic (stand back -- they may spatter). Stir in white beans and more salt and pepper if needed.",
+                "Return to oven and roast 5 minutes more.",
+                "Drizzle with remaining 1 tablespoon olive oil, scatter with basil, and serve immediately -- as is or spooned over crostini."
+              ]
+            },
+            {
               "title": "Slow Cooker Vegan Mole Chili",
               "servings": "Serves 6   |   Prep: 25 min   |   Cook: 5 hours   |   Total: ~5 hr 25 min",
               "source": "Emily Stoffel, The Pig & Quill",
@@ -7763,6 +8396,70 @@ module.exports = {
                 "Add stock, water, lentils, and carrot. Bring to a boil, then reduce heat and simmer until lentils are completely tender, about 20–25 minutes.",
                 "Use an immersion blender to blend about half the soup directly in the pot (or transfer half to a blender and return). This gives a chunky-smooth texture.",
                 "Stir in lemon juice; season generously with salt and pepper. Serve with a drizzle of olive oil and fresh cilantro."
+              ]
+            },
+            {
+              "title": "Vegan Stuffed Cabbage",
+              "favorite": true,
+              "servings": "Serves 4 to 6",
+              "ingredientGroups": [
+                {
+                  "label": "Cabbage",
+                  "ingredients": [
+                    "1 medium-large green cabbage"
+                  ]
+                },
+                {
+                  "label": "Stuffing aromatics",
+                  "ingredients": [
+                    "Generous amount of olive oil for sauteing",
+                    "1 large red onion, peeled and finely chopped",
+                    "5 garlic cloves, crushed",
+                    "1 fresh jalapeño, minced",
+                    "2 medium carrots, peeled and cut into small cubes",
+                    "1/4 cup white wine",
+                    "1/4 cup water",
+                    "1 teaspoon salt"
+                  ]
+                },
+                {
+                  "label": "Stuffing finish",
+                  "ingredients": [
+                    "1 1/4 cups Jasmine or Basmati rice (uncooked)",
+                    "Handful of fresh parsley, chopped",
+                    "Handful of fresh cilantro, chopped",
+                    "1/2 cup dried barberries (or cranberries), whole",
+                    "1 to 2 tablespoons pomegranate molasses (or date syrup), to taste",
+                    "Ground pepper to taste",
+                    "Ground cumin to taste",
+                    "Ground nutmeg to taste"
+                  ]
+                },
+                {
+                  "label": "Sauce",
+                  "ingredients": [
+                    "3 tablespoons tomato paste",
+                    "2 cups water",
+                    "Salt, black pepper, ground cumin, and ground nutmeg to taste"
+                  ]
+                },
+                {
+                  "label": "Assembly",
+                  "ingredients": [
+                    "Olive oil for drizzling",
+                    "Fresh thyme branches"
+                  ]
+                }
+              ],
+              "steps": [
+                "Boil the cabbage whole in a large pot with 1 teaspoon of salt for about 10 minutes, until the outer leaves soften. Remove and let cool.",
+                "Heat a generous amount of olive oil in a large frying pan over high heat. Sauté the onion for 4 to 5 minutes. Add garlic and sauté 1 to 2 minutes. Add jalapeño and sauté 1 minute. Add carrots and sauté 2 more minutes. Add white wine and water; stir briefly. Remove from heat, transfer to a large bowl, and refrigerate about 10 minutes to cool.",
+                "Trim the cooled cabbage at the base to free the leaves. Peel leaves off whole, being careful to keep them intact. Trim the base further as you work toward the inside. You will not be able to use the whole cabbage; set aside any small inner leaves for double-layering.",
+                "Remove the stuffing bowl from the refrigerator. Mix in the rice, parsley, cilantro, barberries, any chopped smaller inner cabbage pieces, pomegranate molasses, cumin, and nutmeg to taste.",
+                "In each cabbage leaf, spoon about 2 tablespoons of stuffing near the base. Fold the sides in and roll up to create an enclosed package. If a leaf is torn, use a double layer. Place packages seam side down, packed fairly tightly, in a wide deep saucepan. Drizzle with olive oil.",
+                "Whisk together all sauce ingredients in a bowl. Pour the sauce over the stuffed cabbage -- it should come about halfway up the sides.",
+                "Bring to medium-high heat until the sauce starts to simmer. Reduce heat to medium-low, lay thyme branches on top, and cover. Cook 20 minutes covered. Turn off heat and let sit an additional 20 minutes covered.",
+                "Serve from the saucepan."
               ]
             },
             {
@@ -8434,6 +9131,61 @@ module.exports = {
                 "Add remaining 1 teaspoon coconut oil to the pan. Add bell peppers and celery; stir-fry 2 minutes. Add garlic and dried chilies; cook 30 seconds.",
                 "Return eggplant to pan. Pour sauce over everything; toss to coat and cook until sauce thickens, about 1 minute.",
                 "Stir in peanuts. Serve over steamed rice, garnished with scallions."
+              ]
+            },
+            {
+              "title": "Sticky Sesame Cauliflower",
+              "servings": "Serves 4",
+              "source": "Richa Hingle / Vegan Richa",
+              "comments": [
+                "If using regular soy sauce in place of tamari, start with 3 tablespoons -- soy sauce is saltier than tamari."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Sesame sauce",
+                  "ingredients": [
+                    "2 teaspoons sesame oil",
+                    "2 cloves garlic, minced",
+                    "2 teaspoons freshly grated ginger",
+                    "1/4 cup tamari or soy sauce",
+                    "1/3 cup maple syrup",
+                    "1 1/2 tablespoons rice vinegar",
+                    "1 teaspoon sriracha",
+                    "2 teaspoons cornstarch dissolved in 1/4 cup cold water"
+                  ]
+                },
+                {
+                  "label": "Cauliflower batter",
+                  "ingredients": [
+                    "1/2 cup rice flour",
+                    "3 tablespoons cornstarch",
+                    "1/2 teaspoon garlic powder",
+                    "1/4 teaspoon salt",
+                    "Dash of black pepper and cayenne",
+                    "1/2 cup water",
+                    "2 teaspoons sesame oil"
+                  ]
+                },
+                {
+                  "label": "Cauliflower",
+                  "ingredients": [
+                    "1 small head cauliflower, cut into equal-sized florets"
+                  ]
+                },
+                {
+                  "label": "Garnish",
+                  "ingredients": [
+                    "Sesame seeds (white and black), sliced scallions"
+                  ]
+                }
+              ],
+              "steps": [
+                "Preheat oven to 425 degrees F. Line a baking sheet with parchment.",
+                "Make the sauce: heat sesame oil in a skillet over medium. Add garlic and ginger; cook 1 minute. Add soy sauce, rice vinegar, maple syrup, and sriracha; bring to a boil. Stir in the cornstarch slurry and boil until thickened and glossy. Remove from heat.",
+                "Make the batter: whisk together rice flour, cornstarch, garlic powder, salt, pepper, and cayenne. Stir in water and sesame oil until smooth.",
+                "Toss cauliflower florets in the batter to coat. Transfer to the lined baking sheet in a single layer. Bake 30 minutes.",
+                "Brush sauce over each floret (or toss gently with sauce) and return to the oven for 10 to 15 minutes more.",
+                "Garnish with sesame seeds and scallions. Serve as-is, over rice, or in lettuce wraps."
               ]
             }
           ]
@@ -9171,6 +9923,364 @@ module.exports = {
           ]
         },
         {
+          "title": "Baked Zucchini Fries",
+          "favorite": true,
+          "servings": "Serves 6",
+          "source": "Chungah Rhee / Damn Delicious",
+          "comments": [
+            "Using a cooling rack elevates the fries so air circulates underneath, crisping all sides rather than steaming the bottom.",
+            "Best served right out of the oven."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Coating",
+              "ingredients": [
+                "1 cup Panko breadcrumbs",
+                "1/2 cup freshly grated Parmesan",
+                "1 teaspoon Italian seasoning",
+                "Kosher salt and black pepper to taste"
+              ]
+            },
+            {
+              "label": "Zucchini",
+              "ingredients": [
+                "2 medium zucchini, quartered lengthwise"
+              ]
+            },
+            {
+              "label": "For breading",
+              "ingredients": [
+                "1/2 cup all-purpose flour",
+                "2 large eggs, beaten"
+              ]
+            },
+            {
+              "label": "Garnish",
+              "ingredients": [
+                "2 tablespoons chopped fresh parsley"
+              ]
+            }
+          ],
+          "steps": [
+            "Preheat oven to 425 degrees F. Set a cooling rack on a sheet pan and coat with cooking spray.",
+            "Combine Panko, Parmesan, and Italian seasoning in a bowl; season with salt and pepper.",
+            "Dredge zucchini spears in flour, dip in beaten eggs, then coat thoroughly in the Panko mixture, pressing to adhere.",
+            "Arrange on the cooling rack and bake until golden and crisp, 20 to 22 minutes.",
+            "Serve immediately, garnished with parsley."
+          ]
+        },
+        {
+          "title": "Beets With Horseradish and Pumpkin Seeds",
+          "servings": "Serves 4",
+          "source": "Vallery Lomas / New York Times Cooking",
+          "comments": [
+            "Do ahead: beets can be roasted and peeled up to 2 days ahead (slice just before serving); horseradish cream and toasted seeds can also be made ahead.",
+            "Plain yogurt works as a substitute for sour cream.",
+            "Beet greens: saute in olive oil and finish with a splash of balsamic vinegar for an excellent accompaniment."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Beets",
+              "ingredients": [
+                "1 small bunch red beets (about 1 pound), washed and stems removed",
+                "1 small bunch golden beets (about 1 pound), washed and stems removed",
+                "2 tablespoons extra-virgin olive oil",
+                "Salt and black pepper"
+              ]
+            },
+            {
+              "label": "Horseradish cream",
+              "ingredients": [
+                "1/2 cup sour cream",
+                "2 tablespoons prepared horseradish",
+                "2 tablespoons fresh lemon juice",
+                "1/4 teaspoon each salt and pepper"
+              ]
+            },
+            {
+              "label": "To serve",
+              "ingredients": [
+                "1/4 cup raw pumpkin seeds (pepitas)"
+              ]
+            }
+          ],
+          "steps": [
+            "Heat oven to 375 degrees F. Place all beets on a large sheet of foil, drizzle with olive oil, and wrap tightly. Roast until tender, 65 to 70 minutes. Remove from oven and let cool slightly. Peel skins (use a paring knife if needed).",
+            "While beets roast, whisk together sour cream, horseradish, lemon juice, 1/4 teaspoon salt, and 1/4 teaspoon pepper. Taste and adjust seasoning.",
+            "Toast pumpkin seeds in a small dry skillet over medium heat, shaking, until they begin to pop and smell nutty, 2 to 3 minutes.",
+            "Slice peeled beets 1/4-inch thick and arrange on a serving platter. Season with salt and pepper. Spoon horseradish cream over the top and scatter with toasted pumpkin seeds. Serve warm or at room temperature."
+          ]
+        },
+        {
+          "title": "Brussels Sprouts With Pistachios and Lime",
+          "servings": "Serves 8 to 10",
+          "source": "Christina Chaey and Claire Saffitz / Bon Appetit, November 2019",
+          "comments": [
+            "Do ahead: Brussels sprouts can be roasted and the butter-pistachio mixture can be made up to 3 hours ahead; toss with glaze just before serving.",
+            "Date molasses (also called date syrup) adds a rich, caramel-like sweetness. Pomegranate molasses makes a brighter, more tart version."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Brussels sprouts",
+              "ingredients": [
+                "2 pounds Brussels sprouts, trimmed and halved",
+                "3 tablespoons vegetable oil",
+                "Kosher salt and freshly ground black pepper"
+              ]
+            },
+            {
+              "label": "Brown butter and pistachios",
+              "ingredients": [
+                "3 tablespoons unsalted butter",
+                "3 tablespoons raw pistachios",
+                "Pinch of salt"
+              ]
+            },
+            {
+              "label": "Glaze",
+              "ingredients": [
+                "2 tablespoons date molasses or pomegranate molasses",
+                "1 teaspoon honey",
+                "2 tablespoons fresh lime juice",
+                "1 tablespoon water"
+              ]
+            },
+            {
+              "label": "To serve",
+              "ingredients": [
+                "Zest of 1/2 lime",
+                "1/2 teaspoon Aleppo pepper or red pepper flakes",
+                "Lime wedges"
+              ]
+            }
+          ],
+          "steps": [
+            "Heat oven to 450 degrees F. Toss Brussels sprouts with vegetable oil on a large rimmed baking sheet; season with salt and pepper. Roast, shaking the pan once, until deeply browned on cut sides, about 15 to 25 minutes. Reduce heat to 350 degrees F and continue roasting until a knife slides through easily, 10 to 20 minutes more (35 to 45 minutes total).",
+            "Meanwhile, melt butter in a small skillet over medium heat. Add pistachios and a pinch of salt. Cook, stirring occasionally, until butter is golden brown and nutty, about 4 minutes. Transfer nuts to paper towels and let cool slightly, then coarsely chop.",
+            "In a large bowl, whisk together date molasses, honey, lime juice, and 1 tablespoon water. Add the warm roasted Brussels sprouts and toss to coat.",
+            "Transfer to a platter and scatter chopped pistachios, lime zest, Aleppo pepper, and a pinch of salt over the top. Serve with lime wedges."
+          ]
+        },
+        {
+          "title": "Classic Potato Gratin",
+          "servings": "Serves 6",
+          "source": "Claire Saffitz / Bon Appetit, November 2015",
+          "comments": [
+            "Do ahead: bake up to 1 day ahead; cover, refrigerate, bring to room temperature before broiling.",
+            "Do not rinse potato slices after cutting -- the starch is what makes the gratin creamy.",
+            "Comté is an excellent substitute for Gruyere."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Cream mixture",
+              "ingredients": [
+                "1 medium shallot, quartered through root end",
+                "1 1/4 cups heavy cream",
+                "1 1/2 teaspoons kosher salt",
+                "1/2 teaspoon freshly ground black pepper",
+                "1 1/2 teaspoons thyme leaves",
+                "2 cloves garlic"
+              ]
+            },
+            {
+              "label": "Gratin dish",
+              "ingredients": [
+                "1 small garlic clove, halved",
+                "1 1/2 teaspoons unsalted butter, room temperature"
+              ]
+            },
+            {
+              "label": "Potatoes",
+              "ingredients": [
+                "2 pounds russet potatoes, scrubbed and very thinly sliced on a mandoline (do not rinse after slicing)"
+              ]
+            },
+            {
+              "label": "Topping",
+              "ingredients": [
+                "1 1/2 oz Gruyere, finely grated",
+                "1/2 oz Parmesan, finely grated",
+                "Extra thyme leaves for serving"
+              ]
+            }
+          ],
+          "steps": [
+            "Preheat oven to 325 degrees F. Rub the inside of a 2-quart shallow baking dish with the cut sides of the halved garlic clove; smear with butter all over.",
+            "Combine shallot, cream, salt, pepper, thyme, and 2 garlic cloves in a small saucepan. Simmer over low heat until shallot and garlic are very soft, 15 to 20 minutes. Let cool slightly, then blend until smooth.",
+            "Fan out handfuls of potato slices and arrange in the buttered dish at a slight angle, shingling as you work. Tuck smaller slices into gaps. Pour cream mixture over potatoes. Cover tightly with foil.",
+            "Bake until potatoes are tender and creamy, 60 to 75 minutes (often closer to 90 -- baking the day ahead avoids this uncertainty). Let cool.",
+            "Heat broiler with rack in highest position. Remove foil and top potatoes with Gruyere and Parmesan. Broil until cheese is bubbling and golden, 5 to 10 minutes. Scatter with thyme leaves and serve."
+          ]
+        },
+        {
+          "title": "Classic Steakhouse Creamed Spinach",
+          "servings": "Serves 6",
+          "source": "Sabrina Snyder / Dinner, then Dessert",
+          "comments": [
+            "Can be made a day ahead and refrigerated; reheat gently on the stovetop with a splash of milk or cream to loosen."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Spinach",
+              "ingredients": [
+                "2 1/4 pounds fresh spinach (or 1 pound frozen spinach, defrosted and squeezed dry)",
+                "2 teaspoons kosher salt"
+              ]
+            },
+            {
+              "label": "Cream sauce base",
+              "ingredients": [
+                "4 tablespoons unsalted butter",
+                "1 medium yellow onion, minced",
+                "3 cloves garlic, minced",
+                "2 teaspoons kosher salt",
+                "1 teaspoon coarse ground black pepper",
+                "1/2 teaspoon ground nutmeg",
+                "1/4 cup all-purpose flour",
+                "3 1/2 cups half-and-half"
+              ]
+            },
+            {
+              "label": "Cheese",
+              "ingredients": [
+                "1 cup shredded mozzarella",
+                "4 oz cream cheese",
+                "1/2 cup grated Parmesan"
+              ]
+            }
+          ],
+          "steps": [
+            "Bring a large pot of water to a boil with 2 teaspoons salt. Add spinach and cook just until wilted, about 1 minute. Drain, rinse with cold water, and squeeze out as much water as possible in fistfuls. Chop into 3/4-inch pieces.",
+            "Melt butter in a large skillet over medium-low. Add onion and garlic; cook until onions are translucent, 8 to 10 minutes.",
+            "Stir in remaining 2 teaspoons salt, pepper, and nutmeg. Add flour and stir over low heat until the mixture smells nutty, 2 to 3 minutes.",
+            "Pour in half-and-half and cook, stirring, until the mixture comes to a boil.",
+            "Add mozzarella and cream cheese; stir until smooth. Cook until thickened, 6 to 8 minutes.",
+            "Stir in spinach and Parmesan. Serve hot."
+          ]
+        },
+        {
+          "title": "Crack Broccoli",
+          "favorite": true,
+          "servings": "Serves 6",
+          "source": "Jessica Knott / Swanky Recipes",
+          "comments": [
+            "Dry ranch seasoning adds a savory, slightly tangy character. Don't skip it.",
+            "The high oven temperature is essential -- lower temperatures steam rather than char the broccoli."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Seasoned oil",
+              "ingredients": [
+                "1/3 cup olive oil (not extra-virgin)",
+                "Zest of 1/2 lemon",
+                "2 teaspoons fresh lemon juice",
+                "1 1/2 teaspoons salt",
+                "1/2 teaspoon black pepper",
+                "1/8 teaspoon Aleppo pepper or red pepper flakes",
+                "1 1/2 teaspoons dry ranch seasoning powder",
+                "5 cloves garlic, minced (or 1 teaspoon garlic paste)"
+              ]
+            },
+            {
+              "label": "Broccoli",
+              "ingredients": [
+                "2 1/2 pounds broccoli crowns, cut into florets or 1/2-inch-thick steaks"
+              ]
+            },
+            {
+              "label": "Finish",
+              "ingredients": [
+                "1/4 cup raw sliced almonds",
+                "1/3 cup grated Parmesan"
+              ]
+            }
+          ],
+          "steps": [
+            "Preheat oven to 475 degrees F (or 450 degrees F for less char).",
+            "Whisk together olive oil, lemon zest, lemon juice, salt, pepper, Aleppo pepper, ranch seasoning, and garlic in a large bowl. Add broccoli and toss to coat.",
+            "Spread in a single layer on a large rimmed sheet pan. Roast 10 to 12 minutes. Remove from oven, flip broccoli, and scatter almonds over the pan.",
+            "Return to oven for 5 to 10 minutes more, until broccoli is tender with deeply charred edges and almonds are toasted.",
+            "Remove from oven and immediately sprinkle with Parmesan."
+          ]
+        },
+        {
+          "title": "Kickin' Collard Greens",
+          "servings": "Serves 6",
+          "source": "Ken Adams / Allrecipes",
+          "ingredientGroups": [
+            {
+              "label": "Aromatics",
+              "ingredients": [
+                "1 tablespoon olive oil",
+                "3 slices bacon",
+                "1 large onion, chopped",
+                "2 cloves garlic, minced"
+              ]
+            },
+            {
+              "label": "Greens",
+              "ingredients": [
+                "1 pound fresh collard greens, washed and cut into 2-inch pieces"
+              ]
+            },
+            {
+              "label": "Braising liquid",
+              "ingredients": [
+                "3 cups chicken broth",
+                "1 teaspoon salt",
+                "1 teaspoon black pepper",
+                "1 pinch Aleppo pepper or red pepper flakes, or more to taste"
+              ]
+            }
+          ],
+          "steps": [
+            "Heat oil in a large pot over medium-high. Add bacon and cook until crisp, 5 to 7 minutes. Remove with a slotted spoon, crumble, and return to the pot.",
+            "Add onion and cook until tender, about 5 minutes. Add garlic and cook until just fragrant, about 1 minute more. Add collard greens and stir until they start to wilt.",
+            "Pour in chicken broth and season with salt, pepper, and Aleppo pepper. Reduce heat to low, cover, and simmer until greens are very tender, about 45 minutes. Taste and add more Aleppo pepper for heat if desired."
+          ]
+        },
+        {
+          "title": "Mexican Street Corn (Elotes)",
+          "servings": "Serves 4",
+          "source": "Chef Billy Parisi / The Inspired Home",
+          "comments": [
+            "Cotija is a firm, salty Mexican cheese. Feta or Parmesan can substitute if unavailable.",
+            "Ancho chili powder has a mild, slightly fruity heat; regular chili powder works if ancho isn't available."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Corn",
+              "ingredients": [
+                "4 ears of corn, shucked"
+              ]
+            },
+            {
+              "label": "Topping",
+              "ingredients": [
+                "1/3 cup Mexican crema or sour cream",
+                "1/3 cup mayonnaise",
+                "2 cloves garlic, finely minced",
+                "1 teaspoon ancho chili powder, plus more for garnish",
+                "1 tablespoon fresh cilantro, finely minced, plus more for garnish",
+                "1/2 cup crumbled cotija cheese, plus more for garnish",
+                "1/4 teaspoon kosher salt"
+              ]
+            },
+            {
+              "label": "Garnish",
+              "ingredients": [
+                "Lime wedges"
+              ]
+            }
+          ],
+          "steps": [
+            "Preheat grill to high heat (450 to 550 degrees F).",
+            "Grill corn, turning occasionally, until cooked through and lightly charred on all sides. Keep warm on a cooler part of the grill.",
+            "In a bowl, whisk together crema, mayonnaise, garlic, chili powder, cilantro, cotija, and salt.",
+            "Generously coat each ear of corn with the crema mixture. Garnish with more chili powder, cilantro, and cotija. Serve with lime wedges."
+          ]
+        },
+        {
           "title": "Potato Latkes",
           "favorite": true,
           "servings": "Makes about 12 latkes",
@@ -9243,6 +10353,50 @@ module.exports = {
           ]
         },
         {
+          "title": "Red Cabbage With Walnuts and Feta",
+          "servings": "Serves 6 to 8",
+          "source": "Melissa Clark / New York Times Cooking",
+          "comments": [
+            "Works equally well as a substantial side or light main course.",
+            "A small head of green cabbage also works, though it may cook a bit faster."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Cabbage",
+              "ingredients": [
+                "1 medium red cabbage (1 3/4 to 2 pounds)",
+                "3 tablespoons extra-virgin olive oil",
+                "1/2 teaspoon salt"
+              ]
+            },
+            {
+              "label": "Vinaigrette",
+              "ingredients": [
+                "1 tablespoon apple cider vinegar, plus more to taste",
+                "1/2 teaspoon Dijon mustard",
+                "1/2 teaspoon salt",
+                "3 tablespoons extra-virgin olive oil"
+              ]
+            },
+            {
+              "label": "To serve",
+              "ingredients": [
+                "2/3 cup crumbled feta (3 oz)",
+                "1/3 cup walnuts, toasted and coarsely chopped",
+                "Lemon zest",
+                "Pomegranate seeds",
+                "Chopped mint, parsley, or dill (optional)"
+              ]
+            }
+          ],
+          "steps": [
+            "Heat oven to 425 degrees F. Peel any damaged outer leaves from the cabbage. Halve through the core, then cut each half into 1- to 1 1/2-inch wedges, keeping the layers together.",
+            "Arrange wedges on their sides on a sheet pan. Drizzle with 3 tablespoons olive oil and sprinkle with 1/2 teaspoon salt. Roast 20 minutes, flip, and continue roasting until cores are tender and edges are browned, 10 to 20 minutes more.",
+            "While cabbage roasts, whisk together vinegar, mustard, and 1/2 teaspoon salt until salt dissolves. Whisk in 3 tablespoons olive oil until emulsified. Taste and adjust with more vinegar or salt.",
+            "Arrange cabbage on a platter and drizzle with vinaigrette. Top with feta, walnuts, lemon zest, pomegranate seeds, and herbs if using. Serve hot or at room temperature."
+          ]
+        },
+        {
           "title": "Spicy Roasted Cauliflower with Sriracha and Sesame",
           "servings": "Serves 4–6",
           "source": "Todd Porter and Diane Cu / Epicurious",
@@ -9279,6 +10433,49 @@ module.exports = {
             "Add cauliflower florets and toss until evenly coated. Spread on a large rimmed baking sheet in a single layer.",
             "Roast until cauliflower is tender and charred in spots, 20–25 minutes.",
             "Transfer to a platter. Sprinkle with sesame seeds and scallions and serve."
+          ]
+        },
+        {
+          "title": "Gochujang Stir-Fried Brussels Sprouts",
+          "servings": "Serves 8 as a side",
+          "source": "Dana / Minimalist Baker",
+          "comments": [
+            "Use gochujang sauce (the ready-to-use sauce), not gochujang paste -- they are different products. Find it at Korean grocery stores or in the international aisle."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Sauce",
+              "ingredients": [
+                "1/2 cup Korean gochujang sauce (homemade or store-bought)",
+                "1 tablespoon sesame oil",
+                "1/3 cup soy sauce",
+                "2 to 3 tablespoons maple syrup",
+                "1 1/2 tablespoons chili garlic sauce",
+                "1 pinch sea salt"
+              ]
+            },
+            {
+              "label": "Brussels sprouts",
+              "ingredients": [
+                "1 tablespoon sesame or avocado oil",
+                "7 heaping cups Brussels sprouts, halved and stems trimmed",
+                "3 tablespoons soy sauce"
+              ]
+            },
+            {
+              "label": "To serve (optional)",
+              "ingredients": [
+                "Thinly sliced shallot or green onion",
+                "Chopped roasted salted peanuts"
+              ]
+            }
+          ],
+          "steps": [
+            "Make the sauce: whisk together gochujang sauce, sesame oil, soy sauce, maple syrup, chili garlic sauce, and salt. Taste and adjust -- more chili garlic sauce for heat, maple syrup for sweetness. Set aside.",
+            "Heat a large cast-iron or heavy skillet over medium-high. Add oil, then Brussels sprouts. Add 3 tablespoons soy sauce and toss to coat. Spread so each cut side touches the pan surface.",
+            "Cover and cook 2 minutes. Uncover and stir-fry, turning occasionally, until well browned and caramelized on all sides, 2 to 4 minutes more.",
+            "Add sliced shallot or green onion if using. Pour in the prepared sauce and stir-fry 1 to 2 minutes more to coat and caramelize.",
+            "Transfer to a platter. Garnish with crushed peanuts if desired. Serve hot."
           ]
         },
         {
@@ -9321,6 +10518,76 @@ module.exports = {
             "Add remaining 1/2 cup broth to skillet; cover and steam broccoli 2 minutes.",
             "Add remaining garlic and the starch slurry. Toss to coat and cook until sauce thickens, 30–60 seconds.",
             "Season with salt; add shiitake seasoning and sesame oil if using. Serve immediately."
+          ]
+        },
+        {
+          "title": "Garlicky Broccoli Stir-Fry",
+          "servings": "Serves 4",
+          "source": "Sarah Leung / The Woks of Life",
+          "comments": [
+            "Blanching the broccoli first keeps the sauce clean and ensures tenderness without overcooking.",
+            "Shaoxing wine is a Chinese rice wine; dry sherry can substitute. For vegetarian/vegan, use vegetable stock."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Cornstarch slurry",
+              "ingredients": [
+                "1 tablespoon cornstarch",
+                "2 tablespoons water"
+              ]
+            },
+            {
+              "label": "Stir-fry",
+              "ingredients": [
+                "4 cups broccoli florets",
+                "5 cloves garlic, minced",
+                "1 tablespoon neutral oil",
+                "1 tablespoon Shaoxing wine",
+                "1/2 cup chicken stock or vegetable stock",
+                "1 teaspoon salt",
+                "1/8 teaspoon white pepper",
+                "1/2 teaspoon sesame oil"
+              ]
+            }
+          ],
+          "steps": [
+            "Mix cornstarch into water and stir until completely dissolved; set aside.",
+            "Bring a large pot of water to a boil. Blanch broccoli for 1 minute. Drain and transfer to cold water to stop cooking. Drain well.",
+            "Heat a wok or large skillet over high heat until very hot. Add oil, garlic, broccoli, and Shaoxing wine. Stir-fry 1 minute, then pour in stock. Bring to a boil.",
+            "Season with salt, white pepper, and sesame oil. Stir the cornstarch slurry, then add half to the pan. Stir until the sauce thickens to coat the back of a spoon; add more slurry if needed.",
+            "Plate and serve hot."
+          ]
+        },
+        {
+          "title": "Stir-Fried Spinach With Garlic",
+          "favorite": true,
+          "servings": "Serves 3 to 4",
+          "source": "Rhonda Parkinson / The Spruce Eats",
+          "ingredientGroups": [
+            {
+              "label": "Stir-fry",
+              "ingredients": [
+                "2 tablespoons peanut or vegetable oil",
+                "1 teaspoon minced garlic",
+                "1/4 teaspoon chili paste, more to taste",
+                "1/2 teaspoon fine salt, more to taste",
+                "10 oz fresh spinach, rinsed and dried"
+              ]
+            },
+            {
+              "label": "Finish",
+              "ingredients": [
+                "1/4 teaspoon granulated sugar",
+                "1/4 teaspoon sesame oil",
+                "1 teaspoon freshly ground black pepper (optional)"
+              ]
+            }
+          ],
+          "steps": [
+            "Heat a wok over medium heat. Add oil, swirling to coat the pan about halfway up the sides.",
+            "When the oil is hot, add garlic, chili paste, and salt. Stir a few seconds until the garlic is aromatic.",
+            "Add spinach and stir-fry until leaves are almost wilted, 1 to 2 minutes.",
+            "Stir in sugar and sesame oil. Sprinkle with black pepper if using. Serve immediately."
           ]
         }
       ]
@@ -10066,6 +11333,56 @@ module.exports = {
                 "Heat the remaining oil in the wok over high heat. Add the noodles and sweet soy sauce; stir-fry 1 minute, stirring continuously. Turn the heat down, add the eggs, and stir to cook.",
                 "Add the reserved vegetable-and-chicken mixture; stir over high heat to combine. Add the sauce and stir-fry to combine.",
                 "Add the peanuts and basil leaves, stir once, and serve."
+              ]
+            },
+            {
+              "title": "Ginger-Orange Broccoli and Noodles",
+              "servings": "Serves 2 to 3",
+              "source": "Sonja and Alex Overhiser / The Washington Post",
+              "comments": [
+                "Any dried stir-fry noodles work; thick rice noodles give the best chewy texture.",
+                "Dark miso adds depth; white or red miso can substitute.",
+                "The sauce thickens very quickly off the heat -- have everything ready before adding it."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Noodles",
+                  "ingredients": [
+                    "4 oz dried stir-fry noodles (thick rice noodles recommended)"
+                  ]
+                },
+                {
+                  "label": "Sauce",
+                  "ingredients": [
+                    "1/4 cup low-sodium soy sauce",
+                    "1/2 cup fresh orange juice (from about 2 oranges)",
+                    "2 tablespoons cornstarch",
+                    "1 teaspoon sriracha",
+                    "1 tablespoon dark miso"
+                  ]
+                },
+                {
+                  "label": "Stir-fry",
+                  "ingredients": [
+                    "1 tablespoon sesame oil or neutral oil",
+                    "1/2 large sweet onion, thinly sliced",
+                    "1/2 large red bell pepper, seeded and thinly sliced",
+                    "1 yellow bell pepper, seeded and thinly sliced",
+                    "2 large broccoli crowns (1 1/2 pounds total), cut into bite-sized florets",
+                    "1/2 cup roasted unsalted whole cashews",
+                    "2 pinches kosher salt",
+                    "1/4 cup water",
+                    "2 cloves garlic, thinly sliced",
+                    "One 1-inch piece peeled fresh ginger, minced or grated"
+                  ]
+                }
+              ],
+              "steps": [
+                "Cook noodles according to package directions. Drain and set aside.",
+                "Whisk together soy sauce, orange juice, cornstarch, sriracha, and miso until smooth.",
+                "Heat oil in a large skillet over high heat. Add onion; stir-fry until it starts to brown, about 2 minutes. Add both bell peppers, broccoli, cashews, and salt. Stir-fry until broccoli stems are tender and cashews are slightly toasted, about 5 minutes.",
+                "Reduce heat to low. Add water and stir until it evaporates. Add garlic and ginger; stir-fry 1 minute. Turn off heat. Pour in the sauce and stir until it thickens into a glossy glaze. Add drained noodles and stir gently until evenly coated.",
+                "Serve warm."
               ]
             },
             {
@@ -11932,6 +13249,99 @@ module.exports = {
               "steps": [
                 "Mix all ingredients together in a small bowl until combined.",
                 "Use immediately, or store in an airtight jar in a cool, dry place for up to 3 months. Rub generously over all sides of the meat before cooking; let rest at least 20 minutes before grilling or searing."
+              ]
+            },
+            {
+              "title": "Moroccan Preserved Lemon Yogurt Sauce",
+              "servings": "Serves 8",
+              "source": "Tamara Andersen / Beyond Mere Sustenance",
+              "comments": [
+                "There is no substitute for preserved lemons -- the fermented flavor is unique. Find them at Middle Eastern grocery stores.",
+                "Pairs well with tagines, roasted chicken, grain salads, and harissa dishes."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Sauce",
+                  "ingredients": [
+                    "8 oz plain Greek yogurt (nonfat or whole milk)",
+                    "1 preserved lemon, rinsed, flesh removed, rind minced",
+                    "1/4 cup fresh herbs, finely chopped (cilantro, parsley, mint, or a combination)",
+                    "1 to 2 teaspoons preserved lemon brine, to taste"
+                  ]
+                },
+                {
+                  "label": "Garnish",
+                  "ingredients": [
+                    "Aleppo pepper or red pepper flakes (optional)"
+                  ]
+                }
+              ],
+              "steps": [
+                "Whisk together yogurt, minced preserved lemon rind, herbs, and 1 teaspoon of the preserved lemon brine. Taste and add more brine as desired.",
+                "Transfer to a serving bowl and garnish with Aleppo pepper and/or additional fresh herbs."
+              ]
+            },
+            {
+              "title": "Tahini Sauce With Garlic and Lemon",
+              "servings": "Makes about 2 cups",
+              "source": "J. Kenji Lopez-Alt and Lindsay Anderson / Serious Eats",
+              "comments": [
+                "Blending raw garlic with lemon juice and straining out the solids gives bold garlic flavor without harsh or sharp bits in the finished sauce."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Lemon-garlic juice",
+                  "ingredients": [
+                    "1 whole head garlic, broken into individual unpeeled cloves (about 20 cloves)",
+                    "2/3 cup fresh lemon juice (from 3 to 4 lemons)"
+                  ]
+                },
+                {
+                  "label": "Sauce",
+                  "ingredients": [
+                    "1/2 teaspoon ground cumin",
+                    "1 generous cup tahini paste (about 10 oz)",
+                    "Cold water as needed",
+                    "Kosher salt to taste"
+                  ]
+                }
+              ],
+              "steps": [
+                "Combine garlic cloves and lemon juice in a blender. Pulse until a pulpy puree forms, about 15 short pulses. Transfer to a fine-mesh strainer set over a large bowl. Press out as much liquid as possible with the back of a spoon, then discard the solids.",
+                "Add cumin and tahini to the lemon-garlic juice and whisk to combine -- the mixture will seize up and turn pasty. Add cold water a few tablespoons at a time, whisking between each addition, until a smooth, light sauce forms. The finished sauce should very slowly lose its shape when ribbons are dropped from the whisk. Season to taste with salt.",
+                "Refrigerate for up to 1 1/2 weeks."
+              ]
+            },
+            {
+              "title": "Authentic Raita",
+              "servings": "Makes about 1 1/2 cups",
+              "source": "Sylvia Fountaine / Feasting at Home",
+              "comments": [
+                "For a more aromatic version, toast whole cumin and coriander seeds in a dry skillet until fragrant, then grind before using.",
+                "Use thin-skinned cucumbers (Persian, English, or Turkish) and leave the skin on; scrape out the seeds. Peel waxy cucumbers."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Raita",
+                  "ingredients": [
+                    "3/4 cup plain whole-milk yogurt (or coconut yogurt)",
+                    "1/2 cup Persian or English cucumber, finely diced or grated, seeds scraped",
+                    "1 tablespoon finely chopped red onion (optional; or substitute chives or green onion)",
+                    "2 teaspoons fresh lemon or lime juice, more to taste",
+                    "1 tablespoon olive oil",
+                    "1/2 teaspoon ground cumin",
+                    "1/2 teaspoon ground coriander",
+                    "2 to 3 tablespoons fresh mint leaves, chopped",
+                    "2 to 3 tablespoons fresh cilantro, chopped",
+                    "1/4 teaspoon salt, more to taste",
+                    "1/4 teaspoon pepper"
+                  ]
+                }
+              ],
+              "steps": [
+                "Combine all ingredients in a bowl and stir.",
+                "Taste and adjust salt and lemon juice. Garnish with additional fresh herbs.",
+                "Refrigerate until ready to serve. Keeps 4 to 5 days."
               ]
             }
           ]

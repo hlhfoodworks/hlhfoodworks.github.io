@@ -96,6 +96,9 @@ const CLUSTER_MAP = {
   'Three Cheese Manicotti':                              'Italian',
   'Lisa\'s Pasta':                                       'Italian',
   // Noodles: Asian — Thai
+  // Noodles: Asian — Chinese
+  'Ginger-Orange Broccoli and Noodles':                 'Chinese',
+
   'Fried Drunken Noodles with Chicken (Phad Kii Maw Gai)': 'Thai',
   // Noodles: Asian — Japanese
   'Stir-Fried Udon Noodles With Pork and Scallions':    'Japanese',
@@ -155,6 +158,12 @@ const CLUSTER_MAP = {
   // Sauces — General
   'Bo\'s Barbeque Sauce':                                'General',
   'Cherry Barbecue Sauce':                               'General',
+  // Sauces — Moroccan/North African
+  'Moroccan Preserved Lemon Yogurt Sauce':              'Moroccan/North African',
+  // Sauces — Middle Eastern/Persian
+  'Tahini Sauce With Garlic and Lemon':                 'Middle Eastern/Persian',
+  // Sauces — Indian
+  'Authentic Raita':                                    'Indian',
   // Sauces — Italian
   'Sun-Dried Tomato Cream Sauce':                        'Italian',
   // Dressings — Latin/South American
@@ -196,12 +205,17 @@ const CLUSTER_MAP = {
   'Stuffed Portobello Mushrooms with Crispy Goat Cheese': 'Italian',
   'Truffle Mushroom Risotto':                            'Italian',
   'Roasted Portobellos With Pesto':                      'Italian',
+  // Vegetables — General
+  'Smoky Chickpeas With Spinach':                       'General',
+  // Vegetables — Italian
+  'Roasted Tomatoes With White Beans and Basil':        'Italian',
   // Vegetables — Latin/South American
   'Slow Cooker Vegan Mole Chili':                        'Latin/South American',
   // Vegetables — Moroccan/North African
   'Moroccan Eggplant with Couscous':                     'Moroccan/North African',
   // Vegetables — Middle Eastern/Persian
   'Red Lentil Soup':                                     'Middle Eastern/Persian',
+  'Vegan Stuffed Cabbage':                              'Middle Eastern/Persian',
   // Vegetables — Indian
   'Quick Chana Masala':                                  'Indian',
   'Curry Tomatoes and Chickpeas with Cucumber Yogurt':   'Indian',
@@ -211,12 +225,17 @@ const CLUSTER_MAP = {
   'Thai Basil Eggplant':                                 'Thai',
   // Vegetables — Chinese
   'Kung Pao Eggplant':                                   'Chinese',
+  'Sticky Sesame Cauliflower':                          'Chinese',
   // Tofu — Chinese
   'Silken Tofu With Spicy Soy Dressing':                 'Chinese',
   // Salads > Greens — General
   'Barbecue Bacon Wedge Salad with Grilled Corn':        'General',
   'Broccoli Salad':                                      'General',
   'Crunchy Romaine Toss':                                'General',
+  'Boston Lettuce and Endives Salad':                   'General',
+  'Shaved Brussels Sprouts Salad With Lemon and Pecorino': 'General',
+  "Wood Ranch's Peanut Coleslaw":                       'General',
+  'Yellow Mustard Potato Salad':                        'General',
   // Vegetables — Latin/South American
   'Chickpea Tacos':                                      'Latin/South American',
   'Sweet Potato and Black Bean Enchiladas':              'Latin/South American',
@@ -226,6 +245,11 @@ const CLUSTER_MAP = {
   "Dad's Greek Salad":                                   'Mediterranean/Greek',
   // Salads > Greens — Indian
   'Indian Slaw':                                         'Indian',
+  // Salads > Greens — Moroccan/North African
+  'Moroccan-Style Carrot Salad':                        'Moroccan/North African',
+  // Salads > Greens — Middle Eastern/Persian
+  'Parsley Salad':                                      'Middle Eastern/Persian',
+  'Chilled Cucumber Salad (Din Tai Fung Style)':         'Chinese',
   'Cucumber Salad with Sesame and Rice Vinegar':         'Chinese',
   // Salads > Pasta Salads — General
   'Chuck Wagon Barbecued Pasta Salad':                   'General',
@@ -242,11 +266,27 @@ const CLUSTER_MAP = {
   'Herby Roasted Carrots and Radishes':                  'General',
   'Over-the-Top Scalloped Potatoes':                     'General',
   'Perfect Twice Fried French Fries':                    'General',
+  'Baked Zucchini Fries':                              'General',
+  'Beets With Horseradish and Pumpkin Seeds':           'General',
+  'Brussels Sprouts With Pistachios and Lime':          'General',
+  'Classic Potato Gratin':                              'General',
+  'Classic Steakhouse Creamed Spinach':                 'General',
+  'Crack Broccoli':                                     'General',
+  "Kickin' Collard Greens":                             'General',
   // Vegetable Sides — Mediterranean/Greek
+  // Vegetable Sides — Latin/South American
+  'Mexican Street Corn (Elotes)':                       'Latin/South American',
+
   'Potatoes Gratin (Low Calorie)':                       'Mediterranean/Greek',
+  'Red Cabbage With Walnuts and Feta':                  'Mediterranean/Greek',
   // Vegetable Sides — Chinese
   'Broccoli with Garlic Sauce':                          'Chinese',
+  'Garlicky Broccoli Stir-Fry':                        'Chinese',
+  'Stir-Fried Spinach With Garlic':                    'Chinese',
   // Vegetable Sides — Central/Eastern European
+  // Vegetable Sides — Korean-inspired
+  'Gochujang Stir-Fried Brussels Sprouts':              'Korean-inspired',
+
   'Potato Latkes':                                       'Central/Eastern European',
   // Baking: Sweet — General
   'Jumbo Banana-Nut Muffins':                            'General',
@@ -273,13 +313,19 @@ const CLUSTER_MAP = {
   'Shrimp Mold':                                         'General',
   "Barbara Glabman's Cheese Ball":                       'General',
   'Shrimp Dip':                                          'General',
+  'Blooming Onions':                                     'General',
+  'Fried Dill Pickles':                                  'General',
+  'Jalapeño Poppers':                                   'General',
   // Appetizers — Central/Eastern European
   'Chopped Eggplant':                                    'Central/Eastern European',
   'Charoset (Ashkenazic Style)':                         'Central/Eastern European',
+  'Eggplant Pkhali':                                     'Central/Eastern European',
   // Appetizers — Mediterranean/Greek
   'Gazpacho':                                            'Mediterranean/Greek',
   // Appetizers — Middle Eastern/Persian
   'Baba Ganoush':                                        'Middle Eastern/Persian',
+  'Israeli Hummus':                                      'Middle Eastern/Persian',
+  'Muhammara':                                           'Middle Eastern/Persian',
   // Appetizers — Chinese
   'Creamy Ginger-Soy Dip':                              'Chinese',
   // Mushroom — Italian
