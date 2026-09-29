@@ -90,10 +90,10 @@ const CLUSTER_MAP = {
   'Crispy Pork Lettuce Wraps With Spicy Cucumbers':      'Korean-inspired',
   // Pork — Chinese
   'Moo Shu Mushrooms':                                   'Chinese',
-  // Noodles: Italian — General
+  // Noodles — General
   'Creamy Baked Mac and Cheese':                         'General',
   'Spinach Lasagna':                                     'Italian',
-  // Noodles: Italian — Italian
+  // Noodles — Italian
   'Brie Linguine':                                       'Italian',
   'Crisp Gnocchi with Sausage and Peas':                 'Italian',
   'Crispy-Crackly Minty-Pea Lasagna':                   'Italian',
@@ -104,7 +104,6 @@ const CLUSTER_MAP = {
   'Pasta with Spicy Sausages, Tomatoes, Rosemary and Olives': 'Italian',
   'Tagliatelle with Mushrooms, Sage Butter and Toasted Hazelnuts': 'Italian',
   'Three Cheese Manicotti':                              'Italian',
-  // Noodles — Italian (Batches B + C + D + creamed corn ravioli)
   'Browned Garlic Butter Creamed Corn Ravioli':         'Italian',
   'Caramelized Shallot Pasta':                          'Italian',
   'Homemade Butternut Squash Ravioli':                  'Italian',
@@ -117,16 +116,15 @@ const CLUSTER_MAP = {
   'Spaghetti Carbonara':                                'Italian',
   'Spaghetti with Burrata and Garlic-Chili Oil':        'Italian',
   'Spaghetti with Fresh Tomato and Basil Sauce':        'Italian',
-  // Noodles — Mediterranean/Greek (Batch E)
+  // Noodles — Mediterranean/Greek
   '"Finnish" Baked Feta Pasta':                         'Mediterranean/Greek',
-  // Noodles — Middle Eastern/Persian (Batch E)
+  // Noodles — Middle Eastern/Persian
   'Preserved Lemon Za\'atar Pasta':                     'Middle Eastern/Persian',
-  // Noodles — General (Batches B + D + E)
   'Classic Stuffed Shells':                             'Italian',
+  // Noodles — General
   'Four-Cheese Truffled Macaroni and Cheese':           'General',
   'Pasta with Corn, Mint and Red Onions':               'General',
   'Smoked Gouda Mac and Cheese':                        'General',
-  // Noodles — Italian (Batch E + cluster review)
   '30 Minute Artichoke and Pea Rigatoni':               'Italian',
   'Artichoke Pesto Pasta with Fried Peppercorns':       'Italian',
   'BIG Noods alla Gin with Sungold Tomatoes':           'Italian',
@@ -135,7 +133,6 @@ const CLUSTER_MAP = {
   'Burst Tomato Burrata Pasta':                         'Italian',
   'Ravioli with Sage Brown Butter Sauce':               'Italian',
   'Rigatoni with Easy Vodka Sauce':                     'Italian',
-  // Noodles — Chinese (Batch D)
   'Chili Crisp Fettuccine Alfredo with Spinach':        'General',
   // Noodles — Thai
   'Fried Drunken Noodles with Chicken (Phad Kii Maw Gai)': 'Thai',
@@ -156,9 +153,9 @@ const CLUSTER_MAP = {
   'Cranberry-Chili Brisket':                             'General',
   'Sous Vide Beef Back Ribs':                            'General',
   'Hearty Beef Stew With Red Onions and Ale':            'General',
-  // Beef — French
-  'Dijon and Cognac Beef Stew':                          'French',
-  // Beef — Chinese
+  // Beef — French/Continental
+  'Dijon and Cognac Beef Stew':                          'French/Continental',
+  // Beef — Italian
   'Beef Involtini':                                       'Italian',
   'Asian Braised Short Ribs':                            'Chinese',
   // Shellfish — General
@@ -166,8 +163,8 @@ const CLUSTER_MAP = {
   'Shrimp with Orzo and Peas':                           'General',
   'Spicy Grilled Shrimp':                                'General',
   'Bacon-Wrapped Scallops with Chili Butter':            'General',
-  // Shellfish — French
-  'Moules Marinières':                                   'French',
+  // Shellfish — French/Continental
+  'Moules Marinières':                                   'French/Continental',
   // Shellfish — Italian
   'Shrimp Scampi with Linguini':                         'Italian',
   // Shellfish — Chinese
@@ -177,8 +174,8 @@ const CLUSTER_MAP = {
   'Baked Lemon Salmon with Creamy Dill Sauce':           'General',
   'Sriracha Maple Salmon':                               'General',
   'Fish and Chips with Malt Vinegar Mayonnaise':         'General',
-  // Fish — French
-  'Smoked Salmon Niçoise Salad':                         'French',
+  // Fish — French/Continental
+  'Smoked Salmon Niçoise Salad':                         'French/Continental',
   // Fish — Italian
   'Sole with Lemon-Caper Sauce':                         'Italian',
   // Fish — Vietnamese
@@ -236,8 +233,8 @@ const CLUSTER_MAP = {
   'Turkey Tikka Masala':                                 'Indian',
   // Other (Meat Mains) — General
   "Christy's Jambalaya":                                 'General',
-  // Other (Meat Mains) — French
-  'Peppered Duck Breast With Red Wine Sauce':            'French',
+  // Other (Meat Mains) — French/Continental
+  'Peppered Duck Breast With Red Wine Sauce':            'French/Continental',
   // Other (Meat Mains) — Italian
   'Sheet-Pan Italian Sub Dinner':                        'Italian',
   // Other (Meat Mains) — Japanese
@@ -359,8 +356,8 @@ const CLUSTER_MAP = {
   "Renee's Blintz Souffle":                              'Central/Eastern European',
   // Turkey — General
   'Bristol Farms Turkey Salad (Copycat)':                'General',
-  // Dressings and Sauces — French
-  'Béarnaise Sauce':                                     'French',
+  // Dressings and Sauces — French/Continental
+  'Béarnaise Sauce':                                     'French/Continental',
   // Appetizers — General
   "Artichoke Hors D'oeuvre":                             'General',
   'Shrimp Mold':                                         'General',
@@ -421,7 +418,7 @@ const CLUSTER_MAP = {
   'Wild Mushroom Risotto':                               'Italian',
   'Creamy Louisiana Marinade':                           'General',
   "Nancy's Flank Steak":                                 'General',
-  'Coq au Vin':                                          'French',
+  'Coq au Vin':                                          'French/Continental',
   'Chicken Breasts and Garlic Balsamic Vinegar':         'Italian',
   "Regina's Coffee Cake":                                'General',
   "Brenda's Chocolate Chip Cookies":                     'General',
@@ -462,7 +459,7 @@ const CLUSTER_ORDER = [
   'General',
   'Latin/South American',
   'Italian',
-  'French',
+  'French/Continental',
   'Central/Eastern European',
   'Mediterranean/Greek',
   'Moroccan/North African',
@@ -504,6 +501,18 @@ function groupByCluster(recipes) {
     recipes: [...recipes].sort((a, b) =>
       titleSortKey(a.title).localeCompare(titleSortKey(b.title))),
   }));
+}
+
+// ── Sub-subsection layout helper ─────────────────────────────────────────────
+// Returns the nonEmpty list, the showSubSubs flag, and effectiveRecipes for the
+// collapsed (single non-empty sub-subsection) case.  Used by buildNav and
+// buildSectionContent to avoid repeating the same three-line derivation.
+function getSubSubsectionLayout(sub) {
+  const nonEmpty = sub.subsections.filter(ss => ss.recipes && ss.recipes.length > 0);
+  const showSubSubs = nonEmpty.length > 1;
+  const effectiveRecipes = showSubSubs ? null : (nonEmpty[0] ? nonEmpty[0].recipes : []);
+  const hasAny = nonEmpty.length > 0;
+  return { nonEmpty, showSubSubs, effectiveRecipes, hasAny };
 }
 
 // ── Content rendering ──────────────────────────────────────────────────────
@@ -682,10 +691,7 @@ function buildNav(data, currentSection) {
           if (sub.subsections) {
             // ── Sub-subsection case (e.g. With Meat / Meatless within Stovetop) ──
             // Dynamic suppression: only show the intermediate level when >1 sub-subsection is non-empty.
-            const nonEmpty = sub.subsections.filter(ss => ss.recipes && ss.recipes.length > 0);
-            const showSubSubs = nonEmpty.length > 1;
-            const effectiveRecipes = showSubSubs ? null : (nonEmpty[0] ? nonEmpty[0].recipes : []);
-            const hasAny = nonEmpty.length > 0;
+            const { nonEmpty, showSubSubs, effectiveRecipes, hasAny } = getSubSubsectionLayout(sub);
 
             nav += `<li class="nav-sub${hasAny ? '' : ' empty'}">`;
             nav += `<a class="nav-hd sub-hd" href="#${subSecId}" data-toggle="${subSecId}-children">${hasAny ? '<span class="arrow">▶</span>' : ''}${esc(sub.title)}</a>`;
@@ -826,8 +832,7 @@ function buildSectionContent(section) {
 
       if (sub.subsections) {
         // ── Sub-subsection case: dynamic suppression ──
-        const nonEmpty = sub.subsections.filter(ss => ss.recipes && ss.recipes.length > 0);
-        const showSubSubs = nonEmpty.length > 1;
+        const { nonEmpty, showSubSubs } = getSubSubsectionLayout(sub);
 
         html += `<section id="${subSecId}" class="subsection">\n  <h3 class="subsection-heading">${esc(sub.title)}</h3>\n`;
 
@@ -1111,7 +1116,7 @@ function buildPage(section, navHtml, contentHtml, cookbookData) {
 
   /* ── Nav tree ── */
   #nav-tree { flex: 1; overflow-y: auto; padding: 6px 0 24px; }
-  .nav-l1, .nav-l2, .nav-l3, .nav-l4 { list-style: none; }
+  .nav-l1, .nav-l2, .nav-l3, .nav-l3b, .nav-l4 { list-style: none; }
 
   /* collapsed/expanded */
   .collapsed { display: none; }
@@ -1340,6 +1345,7 @@ function buildPage(section, navHtml, contentHtml, cookbookData) {
   .recipe.hidden { display: none; }
   .recipe.focused-hidden { display: none; }
   .cluster-group.all-hidden { display: none; }
+  .sub-subsection.all-hidden { display: none; }
   .subsection.all-hidden { display: none; }
   .section.all-hidden { display: none; }
 
@@ -1507,7 +1513,6 @@ function buildPage(section, navHtml, contentHtml, cookbookData) {
 (function () {
   const COOKBOOK_DATA = ${JSON.stringify(cookbookData, null, 2)};
   const CURRENT_PAGE = '${filename}';
-  const SEARCH_INDEX = ${JSON.stringify(searchIndex)};
 
   // ── Hamburger toggle (mobile) ─────────────────────────────────────────
   const hamburger = document.getElementById('hamburger');
@@ -1646,10 +1651,41 @@ function buildPage(section, navHtml, contentHtml, cookbookData) {
     requestAnimationFrame(function () { window.scrollTo(0, 0); });
   }());
 
-  // ── Search (cross-section via search-index.json) ──────────────────────
+  // ── Search (cross-section via search-index.json, lazy-loaded) ───────────
   const search = document.getElementById('search');
   const searchClear = document.getElementById('search-clear');
   const searchResults = document.getElementById('search-results');
+
+  // Lazy-load the search index on first need.  The JSON is fetched once and
+  // cached; all callers queued during the in-flight request are flushed when
+  // the data arrives.
+  var _searchIndex = null;
+  var _searchLoading = false;
+  var _searchQueue = [];
+  function loadSearchIndex(cb) {
+    if (_searchIndex) { cb(_searchIndex); return; }
+    _searchQueue.push(cb);
+    if (_searchLoading) return;
+    _searchLoading = true;
+    fetch('search-index.json')
+      .then(function (r) { return r.json(); })
+      .then(function (data) {
+        _searchIndex = data;
+        _searchLoading = false;
+        var q = _searchQueue.splice(0);
+        q.forEach(function (fn) { fn(_searchIndex); });
+      })
+      .catch(function () {
+        _searchIndex = [];   // don't retry on error; search just returns nothing
+        _searchLoading = false;
+        var q = _searchQueue.splice(0);
+        q.forEach(function (fn) { fn([]); });
+      });
+  }
+
+  // Preload on first focus so results appear instantly when the user types.
+  search.addEventListener('focus', function () { loadSearchIndex(function () {}); }, { once: true });
+
   search.addEventListener('input', function () {
     searchClear.style.display = search.value ? 'block' : 'none';
   });
@@ -1671,7 +1707,7 @@ function buildPage(section, navHtml, contentHtml, cookbookData) {
     searchResults.innerHTML = '';
     if (!q) { searchResults.style.display = 'none'; return; }
 
-    (function (index) {
+    loadSearchIndex(function (index) {
       const matches = index.filter(function (r) {
         return r.title.toLowerCase().includes(q);
       });
@@ -1718,7 +1754,7 @@ function buildPage(section, navHtml, contentHtml, cookbookData) {
           searchResults.style.maxHeight = h + 'px';
         });
       }
-    }(SEARCH_INDEX));
+    });
   }
 
   // ── Restore search from ?q= parameter (cross-page navigation) ───────────
@@ -1903,6 +1939,7 @@ function buildPage(section, navHtml, contentHtml, cookbookData) {
       document.querySelectorAll('.nav-hd.open, .nav-sec-arrow.open').forEach(function (el) { el.classList.remove('open'); });
       document.querySelectorAll('.nav-l2, .nav-l3, .nav-l3b, .nav-l4').forEach(function (list) { list.classList.add('collapsed'); });
       window.scrollTo(0, 0);
+      return;
     }
     // else: navigate to breakfast.html fully collapsed
     e.preventDefault();
@@ -1938,6 +1975,10 @@ function buildPage(section, navHtml, contentHtml, cookbookData) {
     document.querySelectorAll('.cluster-group').forEach(function (g) {
       var visible = g.querySelectorAll('.recipe:not(.hidden)').length > 0;
       g.classList.toggle('all-hidden', !visible && favOnly);
+    });
+    document.querySelectorAll('.sub-subsection').forEach(function (s) {
+      var visible = s.querySelectorAll('.recipe:not(.hidden)').length > 0;
+      s.classList.toggle('all-hidden', !visible && favOnly);
     });
     document.querySelectorAll('.subsection').forEach(function (s) {
       var visible = s.querySelectorAll('.recipe:not(.hidden)').length > 0;
