@@ -1592,7 +1592,9 @@ function buildPage(section, navHtml, contentHtml, cookbookData) {
     try { navState = JSON.parse(localStorage.getItem('navState') || '{}'); } catch (e) {}
     // Default: expand current section if not explicitly stored
     var currentL2Id = 'sec-${slug(section.title)}-children';
-    if (navState[currentL2Id] === undefined) navState[currentL2Id] = true;
+    var logoNav = false;
+    try { logoNav = sessionStorage.getItem('logoNav') === '1'; sessionStorage.removeItem('logoNav'); } catch (ex) {}
+    if (!logoNav && navState[currentL2Id] === undefined) navState[currentL2Id] = true;
     Object.keys(navState).forEach(function (listId) {
       if (!navState[listId]) return; // leave collapsed
       var list = document.getElementById(listId);
@@ -1902,7 +1904,10 @@ function buildPage(section, navHtml, contentHtml, cookbookData) {
       document.querySelectorAll('.nav-l2, .nav-l3, .nav-l3b, .nav-l4').forEach(function (list) { list.classList.add('collapsed'); });
       window.scrollTo(0, 0);
     }
-    // else: let browser navigate to breakfast.html; navState is already cleared above
+    // else: navigate to breakfast.html fully collapsed
+    e.preventDefault();
+    try { sessionStorage.setItem('logoNav', '1'); } catch (ex) {}
+    window.location.href = 'breakfast.html';
   });
 
   // ── Expand all nav menus ─────────────────────────────────────────────
