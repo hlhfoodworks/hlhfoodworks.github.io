@@ -13317,6 +13317,357 @@ module.exports = {
             "Combine remaining 1/2 cup Parmesan with bread crumbs; sprinkle over pasta. Drizzle truffle oil on top.",
             "Bake until bubbling and topping is golden, about 30 minutes. Cool 10 minutes before serving."
           ]
+        },
+        {
+          "title": "\"Finnish\" Baked Feta Pasta",
+          "favorite": true,
+          "servings": "Serves 4-6 | Total: ~55 min",
+          "source": "ScheckEats (Jeremy Scheck)",
+          "comments": [
+            "The garlic head roasts whole in the pan alongside the feta and tomatoes -- squeezing it out directly into the dish is the key to easy peeling.",
+            "Recipe scales up or down easily; just use a proportionate dish."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Roasting pan",
+              "ingredients": [
+                "2-3 tablespoons olive oil, plus more for drizzling",
+                "2 pints cherry tomatoes",
+                "1 (8-oz) block feta cheese",
+                "Freshly ground black pepper, to taste",
+                "Aleppo pepper or red pepper flakes, to taste",
+                "Dried oregano, to taste",
+                "1 head garlic, top sliced off to expose all cloves",
+                "A drizzle of honey"
+              ]
+            },
+            {
+              "label": "Pasta",
+              "ingredients": [
+                "Salt",
+                "1 pound short pasta (orecchiette, shells, or radiatore)"
+              ]
+            },
+            {
+              "label": "To finish",
+              "ingredients": [
+                "Small bunch of fresh basil, torn",
+                "Zest of 1 lemon",
+                "Parmigiano Reggiano or shredded mozzarella, to taste",
+                "2 large handfuls panko bread crumbs",
+                "Reserved pasta water, a few dashes"
+              ]
+            }
+          ],
+          "steps": [
+            "Preheat oven to 400°F. In a 9x13-inch casserole dish, pour in oil. Add tomatoes and arrange feta block in the center. Season with pepper, Aleppo pepper or red pepper flakes, and oregano. Tuck in the garlic head; drizzle with honey. Bake 40 minutes, until tomatoes are blistered and burst and feta is lightly browned.",
+            "When about 7-8 minutes remain on the tomatoes, bring a pot of salted water to a boil and cook pasta until just shy of al dente. Reserve pasta water; drain.",
+            "Remove pan from oven. Use tongs to squeeze out roasted garlic; smash individual cloves with a fork. Mix feta and roasted garlic together with the tomatoes. Add torn basil, lemon zest, and cooked pasta. Mix with a few dashes of reserved pasta water.",
+            "Sprinkle with Parmigiano Reggiano (or mozzarella) and panko. Return to oven until lightly golden, or broil for a few minutes."
+          ]
+        },
+        {
+          "title": "Rigatoni with Easy Vodka Sauce",
+          "favorite": true,
+          "servings": "Serves 4 | Total: ~40 min",
+          "source": "Bon Appetit (Claire Saffitz)",
+          "comments": [
+            "Using a spider to transfer the pasta (rather than draining) brings pasta water directly into the sauce.",
+            "Double-concentrated tomato paste in a tube (not a can) gives a richer, deeper flavor."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Sauce base",
+              "ingredients": [
+                "Kosher salt",
+                "1 medium onion, finely chopped",
+                "4 garlic cloves, firmly smashed and peeled",
+                "2 tablespoons extra-virgin olive oil, plus more for drizzling",
+                "1 (4.5-oz) tube double-concentrated tomato paste",
+                "1/2 teaspoon Aleppo pepper or red pepper flakes"
+              ]
+            },
+            {
+              "label": "Cream addition",
+              "ingredients": [
+                "2 oz vodka",
+                "3/4 cup heavy cream, warmed (see steps)"
+              ]
+            },
+            {
+              "label": "Pasta",
+              "ingredients": [
+                "1 pound rigatoni"
+              ]
+            },
+            {
+              "label": "To finish",
+              "ingredients": [
+                "4 oz Parmesan, finely grated on the small holes of a box grater (divided)",
+                "Fresh basil leaves, for serving"
+              ]
+            }
+          ],
+          "steps": [
+            "Fill a large pot three-quarters with water, salt generously, and bring to a boil over high.",
+            "Heat 2 tablespoons oil in a Dutch oven over medium next to the pasta pot. Add onion and garlic; cook, stirring constantly, until onion is just starting to brown at the edges, 5-7 minutes.",
+            "Add the entire tube of tomato paste and Aleppo pepper or red pepper flakes; stir until paste coats the onion. Cook, stirring often, until paste is deep red and starting to brown on the bottom, 5-7 minutes.",
+            "Add vodka to deglaze, scraping the bottom. Reduce heat to low.",
+            "Scoop about 1/4 cup of the boiling pasta water into a heatproof measuring cup, then add cream to that cup (this tempers the cream). Slowly pour warmed cream into the Dutch oven, stirring constantly until smooth. Remove from heat.",
+            "Cook rigatoni in boiling salted water until al dente per package directions. About 1 minute before done, scoop about 1 cup pasta cooking liquid. Heat Dutch oven over low.",
+            "Transfer rigatoni with a spider directly to the Dutch oven. Add 1/2 cup pasta cooking liquid and stir to incorporate, then gradually add half the Parmesan, stirring constantly to melt into a smooth, glossy sauce. Season with salt; add a splash more pasta water to thin if needed.",
+            "Divide among bowls. Top with remaining Parmesan; drizzle with more oil; tear basil over."
+          ]
+        },
+        {
+          "title": "30 Minute Artichoke and Pea Rigatoni",
+          "servings": "Serves 6 | Total: 30 min",
+          "source": "Half Baked Harvest",
+          "comments": [
+            "Pulsing part of the artichoke mixture into a paste (step 1) creates the sauce base while the reserved whole pieces add texture."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Artichoke base",
+              "ingredients": [
+                "1/4 cup extra-virgin olive oil",
+                "1 clove garlic, minced or grated",
+                "1 tablespoon fresh thyme, chopped",
+                "1 (12-oz) jar marinated artichoke hearts, drained",
+                "1/4 cup green olives",
+                "1 pinch Aleppo pepper or red pepper flakes"
+              ]
+            },
+            {
+              "label": "Sauce",
+              "ingredients": [
+                "1 cup white wine",
+                "Kosher salt and black pepper"
+              ]
+            },
+            {
+              "label": "Pasta",
+              "ingredients": [
+                "Salt",
+                "1 pound rigatoni or other short pasta",
+                "1 cup frozen peas (added to pasta water in last minute)",
+                "1 cup reserved pasta cooking water"
+              ]
+            },
+            {
+              "label": "To finish",
+              "ingredients": [
+                "1 cup grated Parmesan",
+                "Zest and juice of 1 lemon",
+                "1/4 cup fresh basil, chopped"
+              ]
+            },
+            {
+              "label": "To serve (optional)",
+              "ingredients": [
+                "Fresh peas and pea sprouts"
+              ]
+            }
+          ],
+          "steps": [
+            "Heat oil in a large skillet over medium. When shimmering, add garlic, thyme, artichokes, olives, and a pinch of Aleppo pepper or red pepper flakes. Cook until artichoke edges begin to crisp, about 5 minutes. Remove from heat. Reserve 1/4 cup of the artichoke mixture, then transfer the rest to a food processor and pulse until a rough paste forms.",
+            "Return paste and reserved artichokes to the skillet. Add white wine; season with salt and pepper. Simmer over medium until reduced by about 1/3.",
+            "Bring a large pot of salted water to a boil. Cook pasta until al dente; add frozen peas in the last minute of cooking. Reserve 1 cup pasta water; drain.",
+            "Toss hot pasta and peas into the artichoke skillet. Add Parmesan, lemon zest, lemon juice, basil, and enough pasta water to create a sauce. Taste and season.",
+            "Divide among plates; serve topped with fresh peas and pea sprouts if using."
+          ]
+        },
+        {
+          "title": "Preserved Lemon Za'atar Pasta",
+          "servings": "Serves 4 | Total: ~25 min",
+          "source": "Nik Sharma Cooks (Nik Sharma)",
+          "comments": [
+            "Rinse preserved lemons well and discard the soft flesh -- use only the rind.",
+            "Pumpkin or sunflower seeds work in place of pine nuts for a nut-free version.",
+            "The breadcrumb topping is the star: adjust za'atar to taste, and don't skip it."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Za'atar breadcrumb topping",
+              "ingredients": [
+                "2 tablespoons extra-virgin olive oil (from 1/4 cup total)",
+                "2 garlic cloves, grated (from 4 total)",
+                "2 tablespoons pine nuts or sliced almonds",
+                "1 teaspoon Aleppo pepper or red pepper flakes",
+                "1 cup Italian or panko breadcrumbs",
+                "2 tablespoons za'atar, plus more to taste",
+                "1/2 teaspoon ground black pepper",
+                "Fine sea salt"
+              ]
+            },
+            {
+              "label": "Pasta",
+              "ingredients": [
+                "Fine sea salt",
+                "1 pound dried spaghetti or angel hair pasta"
+              ]
+            },
+            {
+              "label": "Garlic-lemon finish",
+              "ingredients": [
+                "2 tablespoons extra-virgin olive oil (remaining)",
+                "2 garlic cloves, grated (remaining)",
+                "1 whole preserved lemon, rinsed and minced (peel only; discard soft flesh)"
+              ]
+            },
+            {
+              "label": "Whipped ricotta",
+              "ingredients": [
+                "8 oz ricotta",
+                "1 tablespoon fresh lemon juice",
+                "Zest of 1 lemon"
+              ]
+            },
+            {
+              "label": "To serve",
+              "ingredients": [
+                "Fresh basil or oregano leaves, torn",
+                "Extra-virgin olive oil, for drizzling"
+              ]
+            }
+          ],
+          "steps": [
+            "Heat a medium saucepan over medium-high. Add 2 tablespoons oil and saute 2 grated garlic cloves, pine nuts, and Aleppo pepper or red pepper flakes until fragrant, 30-45 seconds. Fold in breadcrumbs; toast until golden brown, 3-4 minutes. Fold in za'atar and 1/2 teaspoon pepper; taste and season with salt. Transfer to a bowl; wipe saucepan clean.",
+            "Bring a large pot of salted water to a boil. Cook pasta until al dente per package directions. Drain; transfer to a large bowl.",
+            "In the wiped saucepan, heat remaining 2 tablespoons oil over medium-high. Saute remaining 2 grated garlic cloves until fragrant, 30-45 seconds. Fold in preserved lemon and cooked spaghetti; toss to combine.",
+            "In a separate bowl, combine ricotta, lemon juice, and lemon zest. Whip with a hand mixer or food processor until smooth. Season with salt and pepper.",
+            "Divide whipped ricotta among 4 serving bowls. Mound pasta on top. Spoon 2-3 generous tablespoons of the breadcrumb mixture over each bowl; garnish with fresh basil. Drizzle with olive oil; serve immediately."
+          ]
+        },
+        {
+          "title": "Burst Tomato Burrata Pasta",
+          "servings": "Serves 2-4 | Total: 45 min",
+          "source": "How Sweet Eats",
+          "comments": [
+            "The 20-25 minute burst is key -- slow-cooked tomatoes become a concentrated, jammy sauce. Don't rush it.",
+            "Add Parmesan to each bowl at serving rather than stirring into the pasta so the burrata stays distinct."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Burst tomato sauce",
+              "ingredients": [
+                "1/4 cup olive oil",
+                "6 garlic cloves, minced",
+                "1/2 teaspoon dried basil",
+                "1/4 teaspoon Aleppo pepper or red pepper flakes, plus more for serving",
+                "3 cups cherry or grape tomatoes",
+                "Kosher salt and black pepper"
+              ]
+            },
+            {
+              "label": "Pasta",
+              "ingredients": [
+                "Salt",
+                "1/2 pound pasta (spaghetti or bucatini)"
+              ]
+            },
+            {
+              "label": "To finish",
+              "ingredients": [
+                "1/4 cup fresh basil, chopped, plus more for serving"
+              ]
+            },
+            {
+              "label": "To serve",
+              "ingredients": [
+                "8 oz burrata",
+                "Parmesan, for topping"
+              ]
+            }
+          ],
+          "steps": [
+            "Heat oil in a large skillet over medium-low. Add garlic, dried basil, and Aleppo pepper or red pepper flakes; cook 1-2 minutes. Add tomatoes with a big pinch of salt and pepper; toss in the oil. Cook 20-25 minutes until tomatoes burst. Adjust heat as needed -- lower if splattering, slightly higher if tomatoes aren't bursting.",
+            "While tomatoes cook, bring a pot of salted water to a boil and cook pasta.",
+            "Drain pasta and add directly to the skillet. Toss to coat all the noodles. Turn off heat; toss in fresh basil. Add burrata in pieces (or as one large ball) and mix in to your liking. Taste and season with salt and pepper.",
+            "Serve immediately with Parmesan, more fresh basil, and Aleppo pepper or red pepper flakes."
+          ]
+        },
+        {
+          "title": "Smoked Gouda Mac and Cheese",
+          "servings": "Serves 8 | Total: 30 min",
+          "source": "Joyous Apron (MinShien)",
+          "comments": [
+            "Cheese sauce thickens significantly as it cools -- if it seizes up, stir in a few drops of milk to loosen.",
+            "Shred the Gouda from the block (not pre-shredded) for the best melt.",
+            "The American cheese is there for texture and melt, not flavor -- don't skip it.",
+            "Recipe is stovetop only; no baking."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Pasta",
+              "ingredients": [
+                "Salt",
+                "8 oz macaroni"
+              ]
+            },
+            {
+              "label": "Cheese sauce",
+              "ingredients": [
+                "2 tablespoons unsalted butter",
+                "2 tablespoons all-purpose flour",
+                "1 1/2 cups heavy cream",
+                "1/4 cup whole milk, plus more to thin if needed",
+                "6 oz smoked Gouda, shredded (rind removed)",
+                "2 slices American cheese (such as Kraft Deluxe)",
+                "1 teaspoon salt, plus more to taste"
+              ]
+            }
+          ],
+          "steps": [
+            "Cook macaroni in salted boiling water per package directions. Drain.",
+            "In a medium-large pot over medium heat, melt butter. Add flour and stir to combine into a paste.",
+            "Add heavy cream, milk, and salt. Whisk continuously to smooth out the flour -- the sauce will thicken quickly once it heats.",
+            "Once the sauce comes to a boil, turn off heat. Add shredded Gouda and American cheese; stir until fully melted and smooth. If sauce is too thick, add milk a tablespoon at a time.",
+            "Taste and adjust salt. Fold in drained macaroni. Serve immediately."
+          ]
+        },
+        {
+          "title": "Ravioli with Sage Brown Butter Sauce",
+          "servings": "Serves 2 | Total: 20 min",
+          "source": "Budget Bytes",
+          "comments": [
+            "Butternut squash-filled ravioli is the classic pairing here; cheese ravioli works when squash isn't available. Any 8-10 oz package will work with this amount of sauce.",
+            "Have everything prepped before starting the butter -- it goes from golden to burnt quickly."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Pasta",
+              "ingredients": [
+                "9 oz ravioli (butternut squash or cheese-filled)"
+              ]
+            },
+            {
+              "label": "Sage brown butter",
+              "ingredients": [
+                "4 tablespoons unsalted butter",
+                "1 clove garlic, minced",
+                "1/4 cup walnuts, roughly chopped",
+                "1/2 teaspoon dried sage",
+                "1/4 pound fresh spinach",
+                "Salt and pepper",
+                "1/4 cup reserved pasta cooking water"
+              ]
+            },
+            {
+              "label": "To serve",
+              "ingredients": [
+                "1 tablespoon grated Parmesan",
+                "Freshly cracked black pepper"
+              ]
+            }
+          ],
+          "steps": [
+            "Bring a pot of water to a boil and cook ravioli until tender (check package for time; varies with size and whether fresh or dried). Reserve 1/4 cup cooking water; drain.",
+            "While ravioli cooks, mince the garlic and chop the walnuts -- the brown butter sauce cooks quickly and requires everything ready in advance.",
+            "Melt butter in a large skillet over medium-low, stirring continuously. When butter sizzles and turns foamy (2-3 minutes), add garlic and walnuts. Continue stirring over medium-low until the sediment turns deep golden brown, 3-5 minutes. Remove from heat; stir in dried sage.",
+            "Add spinach and reserved pasta water to the skillet. Return to low heat; stir until spinach wilts, about 2 minutes. Season with salt.",
+            "Add drained ravioli and toss to coat. Serve with Parmesan and freshly cracked pepper."
+          ]
         }
       ]
     },
@@ -15307,6 +15658,35 @@ module.exports = {
                 "Stir in flour and cook 1 minute.",
                 "Stir in broth, cream, sun-dried tomatoes, thyme, salt, and Aleppo pepper. Bring to a boil and cook 1 minute.",
                 "Pour into a measuring cup and serve over pasta or chicken."
+              ]
+            },
+            {
+              "title": "Garlic and Oregano Pesto",
+              "servings": "Makes about 10 servings | Total: 10 min",
+              "source": "Whole Food Bellies",
+              "comments": [
+                "Spread a thin layer of olive oil on the surface of refrigerated pesto to prevent browning.",
+                "To freeze: press into an ice cube tray, freeze solid, then transfer to a zip-top bag.",
+                "Good on grilled chicken, fish, roasted vegetables, or pasta.",
+                "Pine nuts or walnuts can substitute for almonds."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Pesto",
+                  "ingredients": [
+                    "1 cup fresh oregano leaves, tightly packed",
+                    "1/2 cup grated Parmesan",
+                    "2 cloves garlic, peeled",
+                    "1/2 cup raw almonds",
+                    "Salt and pepper to taste",
+                    "1/2 cup olive oil"
+                  ]
+                }
+              ],
+              "steps": [
+                "Add all ingredients except the olive oil to a food processor. Pulse until roughly combined.",
+                "With the processor running, slowly stream in the olive oil until the mixture is smooth. Taste and adjust seasoning.",
+                "Store in an airtight container in the refrigerator for 5-7 days, or freeze in ice cube trays."
               ]
             }
           ]

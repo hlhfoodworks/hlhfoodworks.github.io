@@ -117,10 +117,20 @@ const CLUSTER_MAP = {
   'Spaghetti Carbonara':                                'Italian',
   'Spaghetti with Burrata and Garlic-Chili Oil':        'Italian',
   'Spaghetti with Fresh Tomato and Basil Sauce':        'Italian',
-  // Noodles — General (Batches B + D)
+  // Noodles — Mediterranean/Greek (Batch E)
+  '"Finnish" Baked Feta Pasta':                         'Mediterranean/Greek',
+  // Noodles — Middle Eastern/Persian (Batch E)
+  'Preserved Lemon Za\'atar Pasta':                     'Middle Eastern/Persian',
+  // Noodles — General (Batches B + D + E)
   'Classic Stuffed Shells':                             'General',
   'Four-Cheese Truffled Macaroni and Cheese':           'General',
   'Pasta with Corn, Mint and Red Onions':               'General',
+  'Smoked Gouda Mac and Cheese':                        'General',
+  // Noodles — Italian (Batch E)
+  '30 Minute Artichoke and Pea Rigatoni':               'Italian',
+  'Burst Tomato Burrata Pasta':                         'Italian',
+  'Ravioli with Sage Brown Butter Sauce':               'Italian',
+  'Rigatoni with Easy Vodka Sauce':                     'Italian',
   // Noodles — Chinese (Batch D)
   'Chili Crisp Fettuccine Alfredo with Spinach':        'Chinese',
   // Noodles — Thai
@@ -195,6 +205,7 @@ const CLUSTER_MAP = {
   // Sauces — Indian
   'Authentic Raita':                                    'Indian',
   // Sauces — Italian
+  'Garlic and Oregano Pesto':                            'Italian',
   'Sun-Dried Tomato Cream Sauce':                        'Italian',
   // Dressings — Latin/South American
   'Authentic Chimichurri':                               'Latin/South American',
