@@ -30,6 +30,7 @@ const CLUSTER_MAP = {
   'Lentil Chili':                                        'General',
   // Vegetables — Italian
   'Eggplant Involtini':                                   'Italian',
+  'Eggplant Involtini alla Siciliana':                    'Italian',
   'Eggplant Parmesan':                                    'Italian',
   // Chicken — Italian
   'Chicken Cacciatore':                                   'Italian',
@@ -118,6 +119,7 @@ const CLUSTER_MAP = {
   // Beef — French
   'Dijon and Cognac Beef Stew':                          'French',
   // Beef — Chinese
+  'Beef Involtini':                                       'Italian',
   'Asian Braised Short Ribs':                            'Chinese',
   // Shellfish — General
   'Stuffed Eggplant Creole':                             'General',
@@ -175,11 +177,13 @@ const CLUSTER_MAP = {
   'Millie\'s Cobbler':                                   'General',
   'Summer Pudding':                                      'General',
   // Desserts — Thai
+  'Cassata Siciliana':                                    'Italian',
   'Mango with Sticky Rice (Khao Neow Mamuang)':         'Thai',
   // Drinks — General
   'Apple Pie a la Mode Shake':                           'General',
   'Christy\'s Iced Tea':                                 'General',
   'Melon Ball':                                          'General',
+  'Aperitivo Numero Uno':                                'Italian',
   'Peanut Butter-Chocolate Shake':                       'General',
   'Very Berry Shake':                                    'General',
   // Turkey — General
@@ -236,6 +240,11 @@ const CLUSTER_MAP = {
   'Shaved Brussels Sprouts Salad With Lemon and Pecorino': 'General',
   "Wood Ranch's Peanut Coleslaw":                       'General',
   'Yellow Mustard Potato Salad':                        'General',
+  "Nechamie's Coleslaw Salad":                          'General',
+  "Nechamie's Summer Salad":                            'General',
+  'Popped Rice Salad':                                  'General',
+  'Poppy Seed Salad':                                   'General',
+  'Spinach and Egg Salad':                              'General',
   // Vegetables — Latin/South American
   'Chickpea Tacos':                                      'Latin/South American',
   'Sweet Potato and Black Bean Enchiladas':              'Latin/South American',
@@ -275,6 +284,8 @@ const CLUSTER_MAP = {
   "Kickin' Collard Greens":                             'General',
   // Vegetable Sides — Mediterranean/Greek
   // Vegetable Sides — Latin/South American
+  'Eggplant Caponata':                                    'Italian',
+  'Zucchini Involtini':                                   'Italian',
   'Mexican Street Corn (Elotes)':                       'Latin/South American',
 
   'Potatoes Gratin (Low Calorie)':                       'Mediterranean/Greek',
@@ -312,6 +323,7 @@ const CLUSTER_MAP = {
   "Artichoke Hors D'oeuvre":                             'General',
   'Shrimp Mold':                                         'General',
   "Barbara Glabman's Cheese Ball":                       'General',
+  'Marinated Anchovies and Prawns':                      'Italian',
   'Shrimp Dip':                                          'General',
   'Blooming Onions':                                     'General',
   'Fried Dill Pickles':                                  'General',
@@ -348,9 +360,14 @@ const CLUSTER_MAP = {
   'Sea Scallops with Red Peppers and Tomatoes':           'Italian',
   'Mussels with Thai Broth':                             'Thai',
   'Linguine with Mussels':                               'Italian',
+  'Eggplant Rolls in Spaghettini':                       'Italian',
+  'Pasta con le Sarde':                                  'Italian',
+  'Busiate (Sicilian Spiral Pasta)':                     'Italian',
   'Sage Pesto':                                          'Italian',
   'Linguine with Clams and Wild Mushrooms':               'Italian',
   'Baked Trout St. Helena':                              'Italian',
+  'Tuna alla Siciliana':                                  'Italian',
+  'Swordfish Involtini':                                  'Italian',
   'Soy-Salmon with Cilantro-Coconut Chutney':            'General',
   'Chicken with 40 Cloves of Garlic and Garlic Bread':   'Italian',
   'Lemon-Rubbed Chicken Legs with Garlic and Rosemary':  'General',

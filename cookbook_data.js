@@ -851,6 +851,48 @@ module.exports = {
           ]
         },
         {
+          "title": "Marinated Anchovies and Prawns",
+          "servings": "Serves 4 as a starter",
+          "source": "From Chef Louisa (Villa Britannia, Taormina, Sicily)",
+          "comments": [
+            "Mackerel can substitute for anchovies; if using mackerel, marinate in vinegar 24 hours in advance rather than 1 hour.",
+            "The marinade should balance lemon and olive oil — taste before adding the fish and adjust so neither dominates."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Anchovies (1 hour ahead)",
+              "ingredients": [
+                "500g fresh anchovies, cleaned and boned, split into 2 fillets each"
+              ]
+            },
+            {
+              "label": "Marinade",
+              "ingredients": [
+                "1/2 cup extra-virgin olive oil",
+                "Juice of 1–2 lemons, to taste",
+                "1 tablespoon wild fennel or fennel fronds, finely chopped (substitute: dill)",
+                "1 tablespoon fresh basil, finely chopped",
+                "1 tablespoon celery leaves, finely chopped",
+                "1/2 teaspoon dried oregano",
+                "1/2 red chili, finely chopped",
+                "Fine salt and white pepper to taste"
+              ]
+            },
+            {
+              "label": "To add",
+              "ingredients": [
+                "500g raw prawns, cleaned"
+              ]
+            }
+          ],
+          "steps": [
+            "Clean the anchovies: remove heads and interiors. Remove the central bone and open each anchovy into 2 fillets. Clean the prawns. Rinse both under cold water and drain well.",
+            "In a bowl, combine all marinade ingredients except the fish. Taste and adjust lemon and olive oil — neither should dominate.",
+            "Add anchovies and prawns to the marinade. Refrigerate uncovered for 1 hour.",
+            "Remove from the refrigerator 20 minutes before serving to come to room temperature."
+          ]
+        },
+        {
           "title": "Chopped Eggplant",
           "source": "Family recipe card (Grandmother Brenda; card reads \"Recipe from Mother\")",
           "comments": [
@@ -1489,6 +1531,146 @@ module.exports = {
               ]
             },
             {
+              "title": "Nechamie's Coleslaw Salad",
+              "source": "From Nechamie Greenberg (Chabad Jewish Center of Pudong)",
+              "ingredientGroups": [
+                {
+                  "label": "Dressing",
+                  "ingredients": [
+                    "1/4 cup vinegar",
+                    "1/4 cup oil",
+                    "1/4 cup sugar",
+                    "3/4 teaspoon pepper",
+                    "1 teaspoon salt"
+                  ]
+                },
+                {
+                  "label": "Salad",
+                  "ingredients": [
+                    "1 package coleslaw mix",
+                    "Craisins to taste",
+                    "Slivered almonds, toasted, to taste"
+                  ]
+                }
+              ],
+              "steps": [
+                "Whisk together all dressing ingredients.",
+                "Pour dressing over salad just before serving and toss to combine."
+              ]
+            },
+            {
+              "title": "Nechamie's Summer Salad",
+              "source": "From Nechamie Greenberg (Chabad Jewish Center of Pudong)",
+              "comments": [
+                "The dressing makes more than needed for one salad — leftovers keep refrigerated for 1–2 weeks."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Dressing",
+                  "ingredients": [
+                    "1 cup vinegar",
+                    "3/4 cup sugar",
+                    "3/4 cup ketchup",
+                    "1/4 cup oil",
+                    "2 cloves garlic, crushed",
+                    "3/4 teaspoon paprika",
+                    "1/4 teaspoon mustard",
+                    "1 teaspoon salt"
+                  ]
+                },
+                {
+                  "label": "Salad",
+                  "ingredients": [
+                    "1 bag Romaine lettuce",
+                    "5–6 mushrooms, sliced",
+                    "1 container cherry tomatoes",
+                    "3/4 to 1 mango, cubed",
+                    "3/4 avocado, cubed",
+                    "A handful of salted cashews",
+                    "A handful of sunflower seeds"
+                  ]
+                }
+              ],
+              "steps": [
+                "Whisk together all dressing ingredients.",
+                "Pour dressing over salad just before serving and toss to combine."
+              ]
+            },
+            {
+              "title": "Popped Rice Salad",
+              "source": "From Nechamie Greenberg (Chabad Jewish Center of Pudong)",
+              "comments": [
+                "The rice is popped dry in a covered pot — it puffs and crisps like a lighter version of puffed rice. Long-grain white rice (converted or standard) works best for even popping."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Dressing",
+                  "ingredients": [
+                    "1 cup oil",
+                    "3/4 cup vinegar",
+                    "3/4 cup sugar",
+                    "Salt to taste"
+                  ]
+                },
+                {
+                  "label": "Salad",
+                  "ingredients": [
+                    "Romaine lettuce",
+                    "Cucumbers, sliced",
+                    "Avocado, diced"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "Jasmine or Basmati rice, popped (see Step 1)"
+                  ]
+                }
+              ],
+              "steps": [
+                "Pop the rice: heat a thin film of oil in a small pot over medium-high heat. Add a small amount of uncooked rice, cover, and cook until the rice pops and puffs. Remove from heat immediately and transfer to a bowl to cool.",
+                "Whisk together all dressing ingredients.",
+                "Just before serving, pour dressing over salad and toss to combine. Sprinkle popped rice on top."
+              ]
+            },
+            {
+              "title": "Poppy Seed Salad",
+              "source": "From Nechamie Greenberg (Chabad Jewish Center of Pudong)",
+              "ingredientGroups": [
+                {
+                  "label": "Dressing",
+                  "ingredients": [
+                    "1 1/3 cups oil",
+                    "3/4 cup vinegar",
+                    "3/4 cup sugar",
+                    "6 heaping tablespoons mayonnaise",
+                    "2 cloves garlic",
+                    "Prepared mustard (a generous squeeze)",
+                    "1 1/2 tablespoons poppy seeds",
+                    "Salt to taste",
+                    "Pepper to taste"
+                  ]
+                },
+                {
+                  "label": "Salad",
+                  "ingredients": [
+                    "Romaine lettuce",
+                    "Purple cabbage, shredded",
+                    "Mushrooms, sliced",
+                    "Radishes, thinly sliced",
+                    "Scallions, thinly sliced",
+                    "Cherry tomatoes",
+                    "Cucumbers, sliced",
+                    "Chow mein noodles"
+                  ]
+                }
+              ],
+              "steps": [
+                "Whisk together all dressing ingredients.",
+                "Pour dressing over salad just before serving and toss to combine. Add chow mein noodles at the last moment to keep them crunchy."
+              ]
+            },
+            {
               "title": "Shaved Brussels Sprouts Salad With Lemon and Pecorino",
               "favorite": true,
               "servings": "Serves 6",
@@ -1527,6 +1709,37 @@ module.exports = {
                 "Preheat oven to 350 degrees F. Toast sliced almonds on a sheet pan until golden, about 8 minutes. Let cool.",
                 "Trim a thin slice from the root end of each Brussels sprout and shave very thin using the slicing blade of a food processor or a mandoline.",
                 "Combine shaved Brussels sprouts, almonds, Pecorino, mint, lemon juice, olive oil, salt, and pepper in a large bowl. Toss well and serve."
+              ]
+            },
+            {
+              "title": "Spinach and Egg Salad",
+              "source": "From Nechamie Greenberg (Chabad Jewish Center of Pudong)",
+              "ingredientGroups": [
+                {
+                  "label": "Dressing",
+                  "ingredients": [
+                    "2 tablespoons brown sugar",
+                    "2 tablespoons vinegar",
+                    "1/4 cup oil",
+                    "1/2 teaspoon mustard",
+                    "2 tablespoons mayonnaise",
+                    "1/4 teaspoon salt",
+                    "Pepper to taste"
+                  ]
+                },
+                {
+                  "label": "Salad",
+                  "ingredients": [
+                    "Spinach",
+                    "3 hard-boiled eggs, sliced",
+                    "Chow mein noodles to taste",
+                    "Scallions, finely chopped"
+                  ]
+                }
+              ],
+              "steps": [
+                "Whisk together all dressing ingredients.",
+                "Pour dressing over salad just before serving and toss to combine. Add chow mein noodles at the last moment to keep them crunchy."
               ]
             },
             {
@@ -6439,6 +6652,48 @@ module.exports = {
               ]
             },
             {
+              "title": "Beef Involtini",
+              "servings": "Serves 4",
+              "source": "From Chef Louisa (Villa Britannia, Taormina, Sicily)",
+              "comments": [
+                "Beef fillet is ideal but any thin-sliced cut works. Can also be made with chicken or pork.",
+                "For the cheese: provola (smoked) is the classic choice. Good alternatives: hard mozzarella, Emmental, or pecorino — any low-water-content cheese that will hold in the roll."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Bread coating",
+                  "ingredients": [
+                    "1 1/2 cups fresh breadcrumbs (grated or food-processed from crustless white bread)",
+                    "1/2 cup Parmesan, grated",
+                    "2 tablespoons flat-leaf parsley, finely chopped",
+                    "1 clove garlic, finely chopped",
+                    "Salt and pepper to taste"
+                  ]
+                },
+                {
+                  "label": "Beef and filling",
+                  "ingredients": [
+                    "600g beef fillet, sliced thinly (about 1/2 cm), halved, and pounded flat with a meat mallet",
+                    "Olive oil, for coating",
+                    "Provola (smoked) or hard mozzarella, Emmental, or pecorino, cut in small pieces"
+                  ]
+                },
+                {
+                  "label": "To cook",
+                  "ingredients": [
+                    "Bay leaves (one per roll)",
+                    "Wooden skewers"
+                  ]
+                }
+              ],
+              "steps": [
+                "Make the bread coating: combine breadcrumbs, Parmesan, parsley, garlic, salt, and pepper in a bowl and mix with your hands.",
+                "Coat each beef slice in olive oil. Press into the bread coating to coat. Place a piece of provola on each slice.",
+                "Roll up and thread onto wooden skewers, alternating each roll with a bay leaf.",
+                "Fry in a pan lined with baking paper over high heat with a small drizzle of olive oil, 4–8 minutes until nicely browned. Can also be grilled, barbecued, or baked."
+              ]
+            },
+            {
               "title": "Asian Braised Short Ribs",
               "favorite": true,
               "servings": "Serves 6   |   Prep: 30 min   |   Cook: 6 hrs (slow cooker)   |   Total: ~6.5 hrs",
@@ -6975,6 +7230,94 @@ module.exports = {
               "steps": [
                 "Pat sole fillets dry with paper towels. Season evenly with 1 teaspoon salt. Heat a medium skillet over high heat; add 1 tablespoon olive oil and 1 tablespoon butter. When butter is fully melted and bubbles have subsided, dredge 2 fillets in flour, shaking off excess. Add to skillet; reduce heat to medium-high. Cook until beginning to brown around the edges, 2–3 minutes. Flip gently and cook 30 seconds more. Transfer to a plate. Repeat with remaining 1 tablespoon olive oil, 1 tablespoon butter, and fish.",
                 "With all 4 fillets out of the skillet, add capers and garlic and cook over medium heat, stirring, until fragrant, about 15 seconds. Add chicken stock and lemon juice; stir, scraping up any browned bits. Season with remaining ¼ teaspoon salt. Simmer about 2 minutes to reduce slightly. Finish by stirring in the remaining 2 tablespoons butter, Calabrian chili paste, and oregano. Spoon sauce over fish, sprinkle with parsley, and serve."
+              ]
+            },
+            {
+              "title": "Tuna alla Siciliana",
+              "servings": "Serves 4",
+              "source": "From Chef Louisa (Villa Britannia, Taormina, Sicily)",
+              "comments": [
+                "Piccadilly tomatoes are a sweet Italian plum variety; any good plum or cherry tomatoes work well.",
+                "Tuna cooks quickly — check at 5 minutes and do not overcook or it will dry out."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Onion base",
+                  "ingredients": [
+                    "2–3 tablespoons extra-virgin olive oil",
+                    "Small drizzle of sunflower oil",
+                    "2 onions, sliced julienne",
+                    "4 cloves garlic, finely sliced"
+                  ]
+                },
+                {
+                  "label": "Sauce",
+                  "ingredients": [
+                    "5 plum or Piccadilly tomatoes, sliced",
+                    "1 red chili, finely chopped (to taste)",
+                    "Small handful fresh basil, finely chopped",
+                    "Small handful flat-leaf parsley, finely chopped",
+                    "Small handful wild fennel or fennel fronds, finely chopped (substitute: dill)",
+                    "2 tablespoons capers"
+                  ]
+                },
+                {
+                  "label": "Tuna",
+                  "ingredients": [
+                    "1 kg tuna, sliced (cheek cut preferred; any loin works)",
+                    "Plain flour, for dusting",
+                    "50ml dry white wine",
+                    "Salt and pepper"
+                  ]
+                }
+              ],
+              "steps": [
+                "Heat olive oil and sunflower oil in a wide pan over low-medium heat. Add onions and cook slowly for 10 minutes. Add garlic and cook briefly.",
+                "Add chili, basil, parsley, fennel, capers, and tomatoes. Cook on low heat for about 45 minutes, adding a splash of water 4–5 times to keep the sauce moist. The tomatoes should completely soften.",
+                "Lightly dust tuna slices with flour. Nestle into the sauce, season with salt and pepper, and pour in the white wine. Stir to combine. Cook 5–10 minutes — tuna cooks quickly and will dry out if overcooked."
+              ]
+            },
+            {
+              "title": "Swordfish Involtini",
+              "servings": "Serves 4",
+              "source": "From Chef Louisa (Villa Britannia, Taormina, Sicily)",
+              "comments": [
+                "The herbed breadcrumb coating (1 part Parmesan to 3 parts fresh breadcrumbs) is the base for all Villa Britannia involtini.",
+                "The swordfish must be sliced very thin — ask your fishmonger, or pound thin with a meat mallet between sheets of plastic wrap."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Bread coating",
+                  "ingredients": [
+                    "1 1/2 cups fresh breadcrumbs (grated or food-processed from crustless white bread)",
+                    "1/2 cup Parmesan, grated",
+                    "2 tablespoons flat-leaf parsley, finely chopped",
+                    "1 clove garlic, finely chopped",
+                    "Salt and pepper to taste"
+                  ]
+                },
+                {
+                  "label": "Swordfish and filling",
+                  "ingredients": [
+                    "600g swordfish, sliced very thinly (pound thinner with a meat mallet if needed)",
+                    "Olive oil, for coating",
+                    "A handful of raisins, lightly chopped",
+                    "A handful of pine nuts, lightly chopped"
+                  ]
+                },
+                {
+                  "label": "To cook",
+                  "ingredients": [
+                    "Bay leaves (one per roll)",
+                    "Wooden skewers"
+                  ]
+                }
+              ],
+              "steps": [
+                "Make the bread coating: combine breadcrumbs, Parmesan, parsley, garlic, salt, and pepper in a bowl and mix with your hands. Add raisins, pine nuts, and a drizzle of olive oil; mix to combine.",
+                "Brush swordfish slices with olive oil (this acts as glue for the coating). Press each slice into the bread mix; add a small spoonful of extra coating on top.",
+                "Roll each slice diagonally. Thread onto wooden skewers, alternating each roll with a bay leaf.",
+                "Fry in a pan lined with baking paper over high heat with a small drizzle of olive oil, 4–8 minutes until nicely browned. Can also be grilled, barbecued, or baked."
               ]
             },
             {
@@ -8130,6 +8473,43 @@ module.exports = {
                 },
                 "Bake: Brush the tops lightly with olive oil. Bake uncovered about 30 minutes, until bubbly at the edges and browned on top.",
                 "Squeeze the lemon juice over the top and scatter with fresh basil. Serve with the reserved sauce and extra Parmesan on the side."
+              ]
+            },
+            {
+              "title": "Eggplant Involtini alla Siciliana",
+              "servings": "Serves 4",
+              "source": "From Chef Louisa (Villa Britannia, Taormina, Sicily)",
+              "comments": [
+                "This is a distinct recipe from the Smitten Kitchen Eggplant Involtini already in the cookbook — that version uses a three-cheese filling with no breading, roasted in tomato sauce. This Sicilian version uses a herbed breadcrumb coating, sun-dried tomatoes, and smoky cheese.",
+                "For the smoky cheese: scamorza affumicata or provola are ideal; smoked Gouda also works."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Bread coating",
+                  "ingredients": [
+                    "1 1/2 cups fresh breadcrumbs (grated or food-processed from crustless white bread)",
+                    "1/2 cup Parmesan, grated",
+                    "2 tablespoons flat-leaf parsley, finely chopped",
+                    "1 clove garlic, finely chopped",
+                    "Salt and pepper to taste"
+                  ]
+                },
+                {
+                  "label": "Eggplant and filling",
+                  "ingredients": [
+                    "2 medium eggplants",
+                    "Olive oil, for coating",
+                    "Sun-dried tomatoes, roughly chopped (to taste)",
+                    "Smoky cheese (scamorza affumicata, provola, or smoked Gouda), cut in small pieces",
+                    "Fresh basil, finely chopped"
+                  ]
+                }
+              ],
+              "steps": [
+                "Make the bread coating: combine breadcrumbs, Parmesan, parsley, garlic, salt, and pepper. Mix with your hands. Add sun-dried tomatoes, smoky cheese, and basil; mix to combine.",
+                "Peel the eggplants completely. Slice lengthwise into 1/2 cm planks. If planks are too thick to roll, soften briefly in a dry pan over medium-high heat between sheets of baking paper until pliable.",
+                "Brush eggplant slices with olive oil. Spread the bread coating over each slice. Roll up and thread onto wooden skewers.",
+                "Fry in a pan lined with baking paper over high heat with a small drizzle of olive oil, 4–8 minutes until nicely browned. Can also be grilled, barbecued, or baked."
               ]
             },
             {
@@ -10240,6 +10620,105 @@ module.exports = {
           ]
         },
         {
+          "title": "Eggplant Caponata",
+          "servings": "Serves 4–6",
+          "source": "From Chef Louisa (Villa Britannia, Taormina, Sicily)",
+          "comments": [
+            "Even better a day or two after making — serve warm or cold, as a starter or side.",
+            "The two add-in options (olives and capers, or raisins and pine nuts) can be used separately or mixed together.",
+            "Optional additional vegetables: carrots (parboil 3 minutes like the celery), zucchini or potatoes (deep-fry with the eggplant), artichoke hearts (parboil)."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Eggplant (1 hour ahead)",
+              "ingredients": [
+                "600g eggplant, peeled mostly (leaving a little skin), diced into roughly 2 cm cubes",
+                "1 tablespoon fine salt (for draining)",
+                "500ml sunflower or peanut oil (for frying)"
+              ]
+            },
+            {
+              "label": "Peppers",
+              "ingredients": [
+                "500g mixed-color peppers, diced into roughly 2 cm pieces"
+              ]
+            },
+            {
+              "label": "Base",
+              "ingredients": [
+                "100ml extra-virgin olive oil",
+                "200g red onion, diced into 1 cm pieces",
+                "200g celery (outer stalks), lightly peeled, cut into 1 cm pieces (briefly boil in unsalted water 3 minutes — keep crunch)",
+                "300g cherry or plum tomatoes, roughly chopped"
+              ]
+            },
+            {
+              "label": "Sweet-sour finish",
+              "ingredients": [
+                "30g (about 2 tablespoons) brown sugar",
+                "100ml red wine vinegar"
+              ]
+            },
+            {
+              "label": "Add-ins",
+              "ingredients": [
+                "100g green olives, rinsed and roughly chopped; and 50g capers, desalted and roughly chopped",
+                "OR: 100g raisins; and 50g pine nuts"
+              ]
+            },
+            {
+              "label": "To finish",
+              "ingredients": [
+                "Large handful of fresh basil leaves, torn"
+              ]
+            }
+          ],
+          "steps": [
+            "Toss diced eggplant with the salt in a colander. Place a weighted plate on top (with a bowl underneath). Leave at least 1 hour. Squeeze handfuls to remove remaining moisture before frying.",
+            "Heat sunflower oil in a deep pan until sizzling. Fry eggplant in batches until lightly browned. Remove and drain on kitchen paper. Fry the peppers in the same oil last (they discolor the oil). Drain on kitchen paper.",
+            "In a large pan, heat olive oil over medium heat. Add onion and sweat until soft. Add celery and cook on low 5 minutes.",
+            "Push vegetables to one side of the pan. Add sugar to the exposed side and let it caramelize. Pour red wine vinegar over everything, stir, and let it begin to evaporate.",
+            "Add olives and capers, or raisins and pine nuts (or both). Add tomatoes. Add the fried eggplant and peppers. Warm gently a few minutes — keep each vegetable distinct, do not overcook.",
+            "Tear in the basil. Allow to cool. Ideally make 1–2 days ahead to let flavors develop."
+          ]
+        },
+        {
+          "title": "Zucchini Involtini",
+          "servings": "Serves 4 as a side",
+          "source": "From Chef Louisa (Villa Britannia, Taormina, Sicily)",
+          "comments": [
+            "Same herbed breadcrumb coating as all Villa Britannia involtini (1 part Parmesan to 3 parts fresh breadcrumbs).",
+            "'Blanched tomatoes' means briefly blanched and peeled before chopping."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Bread coating",
+              "ingredients": [
+                "1 1/2 cups fresh breadcrumbs (grated or food-processed from crustless white bread)",
+                "1/2 cup Parmesan, grated",
+                "2 tablespoons flat-leaf parsley, finely chopped",
+                "1 clove garlic, finely chopped",
+                "Salt and pepper to taste"
+              ]
+            },
+            {
+              "label": "Zucchini and filling",
+              "ingredients": [
+                "3–4 medium zucchini",
+                "Salt and olive oil",
+                "2–3 plum tomatoes, blanched, peeled, and roughly chopped",
+                "Hard cheese (Parmesan, Emmental, or pecorino), cut in small pieces"
+              ]
+            }
+          ],
+          "steps": [
+            "Make the bread coating: combine breadcrumbs, Parmesan, parsley, garlic, salt, and pepper. Mix with your hands. Add blanched, chopped tomatoes and combine.",
+            "Cut zucchini lengthwise into very thin slices. Salt lightly on both sides and drizzle with olive oil.",
+            "Coat each zucchini slice in the bread coating. Add a little extra coating on top and place a small piece of hard cheese in the center. Roll up and thread onto wooden skewers.",
+            "Fry in a pan lined with baking paper over high heat with a small drizzle of olive oil, 4–6 minutes until lightly browned. Can also be grilled, barbecued, or baked."
+          ]
+        },
+        {
           "title": "Mexican Street Corn (Elotes)",
           "servings": "Serves 4",
           "source": "Chef Billy Parisi / The Inspired Home",
@@ -11211,6 +11690,158 @@ module.exports = {
                 "Add mussels, cover, and cook 3 minutes until shells open. Remove from heat. Discard any unopened shells. Reserve 10 shells with meat intact; remove meat from the rest.",
                 "Combine water and cornstarch; add to tomato mixture and boil 2 minutes, stirring.",
                 "Serve 1 cup pasta per plate topped with 1 cup sauce and 5 mussels in shells."
+              ]
+            },
+            {
+              "title": "Eggplant Rolls in Spaghettini",
+              "servings": "Serves 4",
+              "source": "From Chef Louisa (Villa Britannia, Taormina, Sicily)",
+              "comments": [
+                "Piccadilly tomatoes are a sweet Italian plum variety; cherry tomatoes are an excellent substitute.",
+                "The béchamel can be made ahead and kept warm with plastic wrap pressed to the surface to prevent a skin forming."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Tomato sauce (30–45 minutes ahead)",
+                  "ingredients": [
+                    "2 tablespoons extra-virgin olive oil",
+                    "2 carrots, quartered",
+                    "6 celery sticks, quartered",
+                    "3 shallots, quartered",
+                    "2 tablespoons fresh basil, finely chopped",
+                    "400g Piccadilly or cherry tomatoes, halved",
+                    "Rock salt to taste"
+                  ]
+                },
+                {
+                  "label": "Béchamel",
+                  "ingredients": [
+                    "600ml whole milk",
+                    "1 slice of onion",
+                    "1 bay leaf",
+                    "Small pinch of freshly grated nutmeg",
+                    "Pinch of salt",
+                    "75g butter",
+                    "50g plain flour (tipo 00)"
+                  ]
+                },
+                {
+                  "label": "Eggplant (1 hour ahead)",
+                  "ingredients": [
+                    "2 large eggplants",
+                    "1 tablespoon rock salt (for draining)",
+                    "Sunflower oil for frying (vegetables should nearly swim in the oil)",
+                    "1 clove garlic, crushed in 1 teaspoon olive oil (garlic oil)"
+                  ]
+                },
+                {
+                  "label": "Spaghettini",
+                  "ingredients": [
+                    "200g spaghettini",
+                    "Salted water for boiling"
+                  ]
+                },
+                {
+                  "label": "Filling and topping",
+                  "ingredients": [
+                    "100g ham, roughly chopped",
+                    "100g Parmesan, grated",
+                    "Fresh basil, finely chopped"
+                  ]
+                }
+              ],
+              "steps": [
+                "Make the tomato sauce: in a pan over low heat, fry olive oil, carrots, celery, shallots, and basil for 15 minutes. Add tomatoes and rock salt, cover, and cook 20–30 minutes on low until very soft. Pass through a food mill, discarding solids.",
+                "Make the béchamel: bring milk to a simmer with the onion, bay leaf, nutmeg, and salt; steep 10 minutes, then strain. In a saucepan, melt butter, add flour, and stir well. Gradually whisk in the strained milk until smooth and not too thick. Set aside.",
+                "Prepare the eggplant: peel mostly, leaving a few stripes of skin. Slice lengthwise into 1/2 cm planks. Dice 2 of the planks into small cubes. Place sliced and diced eggplant in separate bowls, toss each with rock salt, and let drain at least 1 hour. Squeeze handfuls to remove excess moisture.",
+                "Heat sunflower oil until sizzling. Fry eggplant slices and diced cubes separately in batches until lightly golden. Drain on kitchen paper.",
+                "In a separate pan, heat the garlic oil. Add half the tomato sauce and the diced eggplant; toss to combine.",
+                "Cook spaghettini in salted boiling water until al dente. Drain and add to the pan with diced eggplant and sauce. Mix well. Stir in the ham and half the Parmesan.",
+                "Lay the fried eggplant planks on a board. Spoon a generous amount of the spaghettini mixture onto each plank and roll up.",
+                "Spread a spoonful of béchamel and tomato sauce on the bottom of an oven-proof dish. Arrange eggplant rolls in rows. Spoon remaining tomato sauce and béchamel on top. Scatter with remaining Parmesan.",
+                "Bake at 180°C (350°F) for 15 minutes. Serve with fresh basil."
+              ]
+            },
+            {
+              "title": "Pasta con le Sarde",
+              "servings": "Serves 4",
+              "source": "From Chef Louisa (Villa Britannia, Taormina, Sicily)",
+              "comments": [
+                { "html": "Traditionally made with <a href='#busiate'>Busiate</a> (Sicilian spiral pasta; see recipe, this section). Good store-bought substitutes: bucatini, perciatelli, or thick spaghetti." },
+                "Wild fennel is traditional and highly recommended; the frond tops of a fennel bulb are an excellent substitute.",
+                "The breadcrumb topping (pangrattato) is essential — do not skip it."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Pasta",
+                  "ingredients": [
+                    "1 batch Busiate (see recipe, this section) or store-bought bucatini, perciatelli, or thick spaghetti"
+                  ]
+                },
+                {
+                  "label": "Sardine sauce",
+                  "ingredients": [
+                    "60ml extra-virgin olive oil",
+                    "1 small onion, finely diced",
+                    "2 salted anchovies (or 4 oil-packed fillets, rinsed)",
+                    "400g fresh sardines, cleaned and filleted",
+                    "60g raisins",
+                    "30g pine nuts",
+                    "1/2 glass dry white wine",
+                    "1 saffron sachet (0.125g), dissolved in 2 tablespoons warm water",
+                    "100ml tomato passata",
+                    "100g wild fennel (or fennel frond tops), boiled until just tender"
+                  ]
+                },
+                {
+                  "label": "Breadcrumb topping",
+                  "ingredients": [
+                    "30ml olive oil",
+                    "1 clove garlic",
+                    "2 salted anchovies (or 4 oil-packed fillets, rinsed)",
+                    "80g dried breadcrumbs"
+                  ]
+                }
+              ],
+              "steps": [
+                "Make or obtain the pasta: prepare Busiate following the recipe in this section, or use store-bought bucatini or thick spaghetti.",
+                "Make the breadcrumb topping: heat olive oil in a small pan. Add garlic and anchovies, stirring until anchovies dissolve. Add breadcrumbs and toast, stirring, until golden and crisp. Remove from heat and spread out to cool.",
+                "Make the sardine sauce: heat olive oil over medium heat. Add onion and the 2 anchovies; cook until anchovies dissolve and onion softens. Add raisins and pine nuts. Pour in white wine and let reduce briefly. Add saffron water, passata, and boiled fennel. Add fresh sardines and cook about 8 minutes until just cooked through.",
+                "Cook the pasta in well-salted boiling water (8–10 minutes for busiate; per package for store-bought). Drain and toss with the sardine sauce. Plate and top generously with the breadcrumb topping."
+              ]
+            },
+            {
+              "id": "busiate",
+              "title": "Busiate (Sicilian Spiral Pasta)",
+              "servings": "Makes about 8 servings",
+              "source": "From Chef Louisa (Villa Britannia, Taormina, Sicily)",
+              "comments": [
+                "Busiate is the traditional pasta of western Sicily (Trapani). Made with semola rather than egg — firmer and more toothsome than egg pasta.",
+                "The shaping tool is a ferro (long thin metal skewer); a thin wooden skewer or knitting needle works as a substitute.",
+                "Use with Pasta con le Sarde (this section), pesto trapanese, or any bold Sicilian sauce."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Pasta dough",
+                  "ingredients": [
+                    "500g semola flour (durum wheat semolina)",
+                    "250ml water",
+                    "1 tablespoon olive oil",
+                    "Large pinch of salt"
+                  ]
+                },
+                {
+                  "label": "To shape",
+                  "ingredients": [
+                    "1 ferro (long thin metal skewer) or thin wooden skewer"
+                  ]
+                }
+              ],
+              "steps": [
+                "Mound the semola on a clean surface. Add salt and olive oil and make a well in the center. Gradually work the water into the flour with your hands, adding slowly, until a firm dough forms.",
+                "Knead the dough, stretching and folding, for 10–15 minutes. If the dough warms up, stop and rest briefly. Refrigerate 15–30 minutes.",
+                "Pinch off a small piece of dough and roll into a thin rope on the work surface. Hold the skewer at a slight diagonal against the rope and press-roll forward, spiraling the dough around the skewer. Slide off. Repeat with remaining dough.",
+                "Cook in well-salted boiling water for 8–10 minutes."
               ]
             },
             {
@@ -13830,6 +14461,112 @@ module.exports = {
           ]
         },
         {
+          "title": "Cassata Siciliana",
+          "servings": "Serves 10–12",
+          "source": "From Chef Louisa (Villa Britannia, Taormina, Sicily)",
+          "comments": [
+            "The ricotta must be started 13–14 hours ahead (or the night before). The bagna also needs time to cool before using.",
+            "The assembled cake keeps refrigerated for 2–3 days and actually improves overnight.",
+            "High-altitude version in Appendix."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Sponge",
+              "ingredients": [
+                "200g sugar",
+                "8 eggs",
+                "250g plain flour, sieved"
+              ]
+            },
+            {
+              "label": "Bagna (soaking syrup — make ahead, must be cold)",
+              "ingredients": [
+                "2 oranges, juiced",
+                "1 apple, peeled",
+                "1 pear, peeled",
+                "1 banana, peeled",
+                "2 strawberries",
+                "50g raisins",
+                "1 liter water",
+                "100g sugar",
+                "1 bay leaf",
+                "20ml orange liqueur"
+              ]
+            },
+            {
+              "label": "Ricotta filling (13–14 hours ahead)",
+              "ingredients": [
+                "700g ricotta",
+                "100g caster sugar"
+              ]
+            },
+            {
+              "label": "Assembly",
+              "ingredients": [
+                "500ml double cream, whipped to soft peaks",
+                "1 handful raisins, soaked in orange liqueur",
+                "1 handful candied fruit, soaked in orange liqueur",
+                "50g dark chocolate, broken into small pieces"
+              ]
+            }
+          ],
+          "steps": [
+            "Ricotta (13–14 hours ahead or overnight): stir the ricotta with the caster sugar and let sit covered in the refrigerator for at least 13–14 hours.",
+            "Bagna: combine all bagna ingredients except the orange liqueur in a pan. Simmer on low heat until reduced to less than half. Let cool completely, then stir in the orange liqueur.",
+            "Sponge: beat eggs and sugar together until thick and ribbon-like. Fold in the sieved flour gently. Pour into a greased and floured cake pan and bake at 180°C for 40 minutes, until a skewer comes out clean. Cool completely before slicing.",
+            "Assembly: stir the raisins, candied fruit, and dark chocolate into the ricotta mixture. Carefully slice the cooled sponge horizontally into 4 even layers. Spoon bagna over each layer to moisten. Alternate layers of whipped cream and ricotta mixture between each sponge tier, spreading evenly. Finish the top with whipped cream, spreading to cover the cake. Refrigerate until serving. Best made a day ahead."
+          ],
+          "highAltitude": {
+            "ingredientGroups": [
+              {
+                "label": "Sponge (high altitude — 4,000–5,000 ft)",
+                "ingredients": [
+                  "180g sugar (reduced from 200g)",
+                  "8 eggs (same — but see note in steps on beating)",
+                  "265g plain flour, sieved (increased from 250g)"
+                ]
+              },
+              {
+                "label": "Bagna (soaking syrup — make ahead, must be cold)",
+                "ingredients": [
+                  "2 oranges, juiced",
+                  "1 apple, peeled",
+                  "1 pear, peeled",
+                  "1 banana, peeled",
+                  "2 strawberries",
+                  "50g raisins",
+                  "1 liter water",
+                  "100g sugar",
+                  "1 bay leaf",
+                  "20ml orange liqueur"
+                ]
+              },
+              {
+                "label": "Ricotta filling (13–14 hours ahead)",
+                "ingredients": [
+                  "700g ricotta",
+                  "100g caster sugar"
+                ]
+              },
+              {
+                "label": "Assembly",
+                "ingredients": [
+                  "500ml double cream, whipped to soft peaks",
+                  "1 handful raisins, soaked in orange liqueur",
+                  "1 handful candied fruit, soaked in orange liqueur",
+                  "50g dark chocolate, broken into small pieces"
+                ]
+              }
+            ],
+            "steps": [
+              "Ricotta (13–14 hours ahead or overnight): same as standard version.",
+              "Bagna: same as standard version.",
+              "Sponge (high-altitude): beat eggs and sugar until thick, pale, and ribbon-like — stop slightly before the mixture reaches full volume (the foam expands further in the oven at altitude). Fold in the sieved flour gently. Pour into a greased and floured cake pan and bake at 175°C (reduced from 180°C). Begin checking at 35 minutes rather than 40; the cake is done when a skewer comes out clean and it begins to pull away from the sides. Critical: immediately invert the pan onto a wire rack after removing from the oven and cool completely inverted before unmolding.",
+              "Assembly: same as standard version."
+            ]
+          }
+        },
+        {
           "title": "Mango with Sticky Rice (Khao Neow Mamuang)",
           "favorite": true,
           "servings": "Serves about 8",
@@ -13904,6 +14641,43 @@ module.exports = {
                 "Fill a glass with ice. Add Midori and vodka.",
                 "Top off with orange juice.",
                 "Garnish with melon balls, if desired."
+              ]
+            },
+            {
+              "title": "Aperitivo Numero Uno",
+              "servings": "Makes 1 pitcher (scale per serving)",
+              "source": "From Chef Louisa (Villa Britannia, Taormina, Sicily)",
+              "ingredientGroups": [
+                {
+                  "label": "Cocktail base",
+                  "ingredients": [
+                    "Aperol",
+                    "Campari",
+                    "Red vermouth (e.g. Cinzano Rosso)",
+                    "White vermouth (e.g. Cinzano Bianco)",
+                    "Gin"
+                  ]
+                },
+                {
+                  "label": "Per serving",
+                  "ingredients": [
+                    "A splash of fresh orange juice",
+                    "A squeeze of lemon",
+                    "50ml soda water",
+                    "Plenty of ice"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "Cherries or strawberries"
+                  ]
+                }
+              ],
+              "steps": [
+                "In a pitcher, combine equal parts Aperol, Campari, red vermouth, white vermouth, and gin with plenty of ice.",
+                "Add a splash of orange juice and a squeeze of lemon. Stir.",
+                "Add 50ml soda water per person. Pour into glasses over ice. Garnish with a cherry or strawberry."
               ]
             }
           ]
