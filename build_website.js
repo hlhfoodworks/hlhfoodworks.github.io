@@ -104,12 +104,30 @@ const CLUSTER_MAP = {
   'Pasta with Spicy Sausages, Tomatoes, Rosemary and Olives': 'Italian',
   'Tagliatelle with Mushrooms, Sage Butter and Toasted Hazelnuts': 'Italian',
   'Three Cheese Manicotti':                              'Italian',
-  // Noodles: Asian — Thai
-  // Noodles: Asian — Chinese
-  'Ginger-Orange Broccoli and Noodles':                 'Chinese',
-
+  // Noodles — Italian (Batches B + C + D + creamed corn ravioli)
+  'Browned Garlic Butter Creamed Corn Ravioli':         'Italian',
+  'Caramelized Shallot Pasta':                          'Italian',
+  'Homemade Butternut Squash Ravioli':                  'Italian',
+  'Linguine with Chickpeas, Broccoli and Ricotta':      'Italian',
+  'Linguine with White Clam Sauce':                     'Italian',
+  'Pasta Alla Norma':                                   'Italian',
+  'Pasta with Gorgonzola and Arugula':                  'Italian',
+  'Quick Ragu with Ricotta and Lemon':                  'Italian',
+  'Sheet-Pan Gnocchi with Asparagus, Leeks and Peas':   'Italian',
+  'Spaghetti Carbonara':                                'Italian',
+  'Spaghetti with Burrata and Garlic-Chili Oil':        'Italian',
+  'Spaghetti with Fresh Tomato and Basil Sauce':        'Italian',
+  // Noodles — General (Batches B + D)
+  'Classic Stuffed Shells':                             'General',
+  'Four-Cheese Truffled Macaroni and Cheese':           'General',
+  'Pasta with Corn, Mint and Red Onions':               'General',
+  // Noodles — Chinese (Batch D)
+  'Chili Crisp Fettuccine Alfredo with Spinach':        'Chinese',
+  // Noodles — Thai
   'Fried Drunken Noodles with Chicken (Phad Kii Maw Gai)': 'Thai',
-  // Noodles: Asian — Japanese
+  // Noodles — Chinese
+  'Ginger-Orange Broccoli and Noodles':                 'Chinese',
+  // Noodles — Japanese
   'Stir-Fried Udon Noodles With Pork and Scallions':    'Japanese',
   // Lamb — Mediterranean/Greek
   'Garlic & Rosemary Grilled Lamb Chops':                'Mediterranean/Greek',
@@ -243,6 +261,7 @@ const CLUSTER_MAP = {
   // Tofu — Chinese
   'Silken Tofu With Spicy Soy Dressing':                 'Chinese',
   // Salads > Greens — General
+  'Pear, Gorgonzola and Walnut Salad':                  'General',
   'Barbecue Bacon Wedge Salad with Grilled Corn':        'General',
   'Broccoli Salad':                                      'General',
   'Crunchy Romaine Toss':                                'General',
@@ -384,6 +403,7 @@ const CLUSTER_MAP = {
   'Stir-Fry Shrimp':                                     'Chinese',
   "Christy's Stir-Fry (Adapted)":                        'Chinese',
   'Rice with Dill':                                      'General',
+  'Wild Mushroom Risotto':                               'Italian',
   'Creamy Louisiana Marinade':                           'General',
   "Nancy's Flank Steak":                                 'General',
   'Coq au Vin':                                          'French',

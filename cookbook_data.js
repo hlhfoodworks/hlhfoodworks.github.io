@@ -2167,11 +2167,11 @@ module.exports = {
               ]
             },
             {
-              "title": "Dumpling Tomato Salad with Chile Crisp Vinaigrette",
+              "title": "Dumpling Tomato Salad with Chili Crisp Vinaigrette",
               "servings": "Serves 4   |   Total: 20 min",
               "source": "Hetty Lui McKinnon / NYT Cooking",
               "comments": [
-                "Use your favorite chile crisp—it is the dominant flavor and will greatly impact the final dish; brands vary in saltiness and spice, so season accordingly.",
+                "Use your favorite chili crisp—it is the dominant flavor and will greatly impact the final dish; brands vary in saltiness and spice, so season accordingly.",
                 "Salting works wonders for out-of-season tomatoes, so this salad is good year-round."
               ],
               "ingredientGroups": [
@@ -2186,9 +2186,9 @@ module.exports = {
                   ]
                 },
                 {
-                  "label": "Chile crisp vinaigrette",
+                  "label": "Chili crisp vinaigrette",
                   "ingredients": [
-                    "3 tablespoons chile crisp (or chile oil)",
+                    "3 tablespoons chili crisp (or chili oil)",
                     "2 tablespoons rice vinegar",
                     "1 tablespoon soy sauce, or more to taste"
                   ]
@@ -2209,9 +2209,52 @@ module.exports = {
               ],
               "steps": [
                 "Place tomatoes on a large serving platter or in a bowl. Add garlic, half the basil, salt, and a big pinch of black pepper. Toss and set aside.",
-                "Whisk together chile crisp, rice vinegar, and soy sauce. Taste; add more soy sauce if needed.",
+                "Whisk together chili crisp, rice vinegar, and soy sauce. Taste; add more soy sauce if needed.",
                 "Heat a large (12-inch) nonstick or cast-iron skillet over medium-high for 1–2 minutes until very hot. Add 1–2 tablespoons oil. Working in batches, add dumplings flat-side down and cook until bottoms are lightly browned, 1–2 minutes. Add about 1/4 cup water, cover, and steam until water evaporates, 3–4 minutes. Transfer to a plate; repeat with remaining dumplings.",
                 "Place warm dumplings over the tomato salad and drizzle with vinaigrette. Toss gently. Top with crispy fried shallots (if using) and remaining basil. Serve warm or at room temperature."
+              ]
+            },
+            {
+              "title": "Pear, Gorgonzola and Walnut Salad",
+              "servings": "Serves 4   |   Total: 10 min",
+              "source": "Sarah Epperson Loveless, EatingWell",
+              "comments": [
+                "Anjou or Bartlett pear also works well; Bosc holds its shape best.",
+                "To toast walnuts: spread in a dry skillet over medium heat and toast 3-5 minutes, shaking frequently.",
+                "Best dressed and served immediately -- the dressed greens wilt quickly."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Dressing",
+                  "ingredients": [
+                    "2 tablespoons olive oil",
+                    "2 tablespoons fresh lemon juice (from 1 lemon)",
+                    "2 teaspoons honey",
+                    "1 teaspoon chopped fresh thyme",
+                    "1 teaspoon Dijon mustard",
+                    "1/2 teaspoon black pepper",
+                    "1/4 teaspoon kosher salt"
+                  ]
+                },
+                {
+                  "label": "Salad",
+                  "ingredients": [
+                    "4 cups mixed baby lettuces"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "1 medium ripe Bosc pear, thinly sliced",
+                    "1/4 cup crumbled Gorgonzola cheese",
+                    "1/4 cup toasted walnuts, coarsely chopped",
+                    "1/4 cup golden raisins"
+                  ]
+                }
+              ],
+              "steps": [
+                "Whisk together all dressing ingredients in a large bowl. Add lettuces and gently toss to coat.",
+                "Top with sliced pear, Gorgonzola, walnuts, and golden raisins. Serve immediately."
               ]
             }
           ]
@@ -5093,10 +5136,10 @@ module.exports = {
               ]
             },
             {
-              "title": "Chile Crisp Chicken n' Peanuts Scoop",
+              "title": "Chili Crisp Chicken n' Peanuts Scoop",
               "servings": "Serves 6   |   Active: 15–20 minutes",
               "comments": [
-                "A not-so-classic chicken salad made spicy with chile crisp and nutty with peanut butter — no cooking required. Be gentle when mixing; the acid in the dressing can break down the chicken if you overwork it. A few careful folds are all it takes.",
+                "A not-so-classic chicken salad made spicy with chili crisp and nutty with peanut butter — no cooking required. Be gentle when mixing; the acid in the dressing can break down the chicken if you overwork it. A few careful folds are all it takes.",
                 "Excellent served over pan-fried udon noodles."
               ],
               "source": "Molly Baz",
@@ -5116,7 +5159,7 @@ module.exports = {
                     "Heaping ⅓ cup crunchy peanut butter",
                     "2 tablespoons rice vinegar, plus more to taste",
                     "1 teaspoon kosher salt, plus more to taste",
-                    "2–4 tablespoons chile crisp, plus more to taste",
+                    "2–4 tablespoons chili crisp, plus more to taste",
                     "Honey, to taste (optional)",
                     "Water, added 1 teaspoon at a time to reach thick but pourable consistency"
                   ]
@@ -5126,7 +5169,7 @@ module.exports = {
                   "ingredients": [
                     "Fresh mint",
                     "Toasted sesame seeds",
-                    "Additional grated ginger and chile crisp, if desired"
+                    "Additional grated ginger and chili crisp, if desired"
                   ]
                 }
               ],
@@ -5142,12 +5185,12 @@ module.exports = {
                   "lead": "Make the peanut dressing:",
                   "bullets": [
                     "In a large bowl, whisk together the peanut butter, 2 tablespoons rice vinegar, grated ginger, and 1 teaspoon salt.",
-                    "Add chile crisp a tablespoon at a time, stirring, until the desired spice level is reached (you'll likely use 2–4 tablespoons). Add honey to taste, if desired.",
+                    "Add chili crisp a tablespoon at a time, stirring, until the desired spice level is reached (you'll likely use 2–4 tablespoons). Add honey to taste, if desired.",
                     "Stir in water a teaspoon at a time until the dressing is thick but pourable.",
                     "Add the pulled chicken, diced cucumber, and sliced scallions; fold gently to coat. Do not overmix — you want to retain the texture of the chicken. Season to taste with salt and additional rice vinegar."
                   ]
                 },
-                "Serve topped with mint, toasted sesame seeds, and additional grated ginger and chile crisp if desired."
+                "Serve topped with mint, toasted sesame seeds, and additional grated ginger and chili crisp if desired."
               ]
             },
             {
@@ -9737,7 +9780,7 @@ module.exports = {
                     "3 tablespoons soy sauce",
                     "2 tablespoons rice vinegar",
                     "1 tablespoon sesame oil",
-                    "1–2 tablespoons chile oil (to taste)",
+                    "1–2 tablespoons chili oil (to taste)",
                     "1 teaspoon sesame seeds",
                     "1 teaspoon sugar",
                     "1 scallion, thinly sliced"
@@ -11138,6 +11181,56 @@ module.exports = {
             "Rice cooker: Add the drained rice, the cloves, cardamom, cinnamon, and the sautéed onion mixture to the rice cooker. Add the water and salt; stir to combine. Cook on the regular rice cycle.",
             "Fluff the rice with a fork, picking out the whole cloves, cardamom pod, and cinnamon stick as you find them (or leave them in and warn guests)."
           ]
+        },
+        {
+          "title": "Wild Mushroom Risotto",
+          "servings": "Serves 6   |   Total: 45-50 min",
+          "source": "Bon Appetit (Lori de Mori)",
+          "comments": [
+            "A mix of mushroom varieties gives the best depth of flavor; pure porcini also works beautifully.",
+            "Vermouth adds a subtle botanical note that white wine alone does not supply -- do not skip it if you have it."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Mushrooms",
+              "ingredients": [
+                "8 tablespoons (1 stick) unsalted butter, divided into 4 portions of 2 tablespoons each",
+                "1 1/2 pounds fresh wild mushrooms (porcini, hen of the woods, chanterelle, or stemmed shiitake), large ones sliced, small ones halved or quartered",
+                "Salt and black pepper"
+              ]
+            },
+            {
+              "label": "Broth",
+              "ingredients": [
+                "7 cups (about) low-salt chicken broth"
+              ]
+            },
+            {
+              "label": "Risotto base",
+              "ingredients": [
+                "1 1/2 tablespoons unsalted butter",
+                "1 tablespoon extra-virgin olive oil",
+                "3/4 cup finely chopped leek (white and pale green parts only)",
+                "1 1/4 cups arborio rice",
+                "1/4 cup dry white wine",
+                "1/4 cup dry white vermouth"
+              ]
+            },
+            {
+              "label": "To finish",
+              "ingredients": [
+                "1/4 cup grated Parmesan, plus more for serving (optional)"
+              ]
+            }
+          ],
+          "steps": [
+            "Melt 2 tablespoons butter in a large skillet over medium-high. Add one-quarter of the mushrooms, sprinkle with salt, and saute until tender and beginning to brown, 3-4 minutes. Transfer to a bowl. Repeat with remaining butter and mushrooms in 3 more batches, seasoning each with salt and pepper.",
+            "Bring chicken broth to a simmer in a medium saucepan; keep warm over low heat.",
+            "In a separate large saucepan, melt remaining 1 1/2 tablespoons butter with olive oil over medium-low. Add leek, sprinkle with salt, and saute until tender, 4-5 minutes. Add rice and increase heat to medium; stir until edges of rice look translucent, 3-4 minutes. Add white wine and vermouth and stir until absorbed, about 1 minute.",
+            "Add 3/4 cup warm broth; stir until almost fully absorbed. Continue adding broth by 3/4-cup additions, stirring and letting each addition absorb before adding the next, for about 10 minutes total (until rice is halfway cooked). Stir in all sauteed mushrooms.",
+            "Continue adding broth in 3/4-cup additions, stirring constantly, until rice is tender but still firm to the bite and risotto is creamy, about 10 more minutes. Stir in Parmesan if using.",
+            "Transfer to a serving bowl and pass additional Parmesan alongside."
+          ]
         }
       ]
     },
@@ -11490,7 +11583,7 @@ module.exports = {
           ]
         },
         {
-          "title": "Nuala's Pasta",
+          "title": "Nuala's Riccota Penne",
           "servings": "Serves 2–3",
           "source": "Family recipe card, credited to Nuala O'Connor",
           "ingredientGroups": [
@@ -11557,7 +11650,7 @@ module.exports = {
           ]
         },
         {
-          "title": "Lisa's Pasta",
+          "title": "Lisa's Angel Hair Tomato Basil Toss",
           "servings": "Serves 4–6",
           "source": "Family recipe card, credited to Lisa Sullivan; subtitled \"Angel Hair Tomato Basil Toss\"",
           "ingredientGroups": [
@@ -12422,6 +12515,807 @@ module.exports = {
             "Wipe out skillet. Heat remaining 1 tablespoon vegetable oil over medium-high. Add pork, spreading across the pan; cook undisturbed until underside is browned, about 3 min. Break up meat and continue cooking until no longer pink, about 1 min. Add scallion whites and pale greens, ginger, and Aleppo pepper; cook, tossing, until scallions soften and skillet starts to brown, about 1 min.",
             "Add noodle-cabbage mixture, mirin, and soy sauce. Cook, tossing constantly and scraping up browned bits, until noodles are coated, about 45 seconds. Remove from heat; toss in dark scallion greens and 1 tablespoon sesame seeds.",
             "Divide among bowls and top with more sesame seeds."
+          ]
+        },
+        {
+          "title": "Linguine with White Clam Sauce",
+          "servings": "Serves 6   |   Total: 40 min",
+          "source": "Anne Burrell, Food Network",
+          "comments": [
+            "When pouring reserved clam cooking liquid, stop before the last bit -- better to lose some liquid than to get sand in the pasta.",
+            "Parmigiano is optional; traditional Italian cooking avoids cheese with shellfish, but this recipe offers it."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "First clam batch",
+              "ingredients": [
+                "Extra-virgin olive oil",
+                "5 garlic cloves, smashed",
+                "3 1/2 dozen littleneck clams, scrubbed",
+                "1 cup dry white wine",
+                "1/2 cup water",
+                "1 large pinch Aleppo pepper or red pepper flakes"
+              ]
+            },
+            {
+              "label": "Second clam batch",
+              "ingredients": [
+                "Extra-virgin olive oil",
+                "4 garlic cloves, smashed",
+                "1 1/2 dozen littleneck clams, scrubbed",
+                "1 large pinch Aleppo pepper or red pepper flakes"
+              ]
+            },
+            {
+              "label": "Pasta",
+              "ingredients": [
+                "Salt",
+                "1 pound linguine"
+              ]
+            },
+            {
+              "label": "To finish",
+              "ingredients": [
+                "2 tablespoons unsalted butter",
+                "2 tablespoons chopped fresh Italian parsley",
+                "2 tablespoons chopped fresh oregano",
+                "1 cup grated Parmigiano-Reggiano (optional), plus shavings for garnish",
+                "High-quality finishing extra-virgin olive oil"
+              ]
+            }
+          ],
+          "steps": [
+            "Coat a large saute pan generously with olive oil and add 5 garlic cloves. Cook over medium-high until garlic is golden and very fragrant; remove and discard garlic. Add 3 1/2 dozen clams, white wine, 1/2 cup water, and a pinch of Aleppo pepper or red pepper flakes. Cover and cook over medium heat until clams open, about 10 minutes. Transfer clams to a bowl; reduce cooking liquid by a third or so. Let clams cool, remove meat from shells, and reserve. Discard shells. Pour cooking liquid into a measuring cup, leaving any sand behind.",
+            "Bring a large pot of well-salted water to a boil.",
+            "Return the saute pan to the heat and coat again with olive oil. Add remaining 4 garlic cloves and a pinch of Aleppo pepper or red pepper flakes. Cook until garlic is golden; remove and discard. Add remaining 1 1/2 dozen raw clams and the reserved clam cooking liquid. Cover and cook until clams open.",
+            "While second batch of clams cooks, add linguine to the boiling water and cook until very al dente, about 1 minute less than package directions.",
+            "Remove whole cooked clams from the pan and keep warm. Add butter and the shelled clam meat to the pan. Bring to a boil, add cooked linguine and herbs, and toss together, cooking until the sauce clings to the pasta. Turn off heat and toss in Parmigiano-Reggiano if using. Finish with a drizzle of high-quality olive oil; toss vigorously.",
+            "Divide into serving dishes and garnish with whole clams in shells and more Parmigiano shavings if desired."
+          ]
+        },
+        {
+          "title": "Classic Stuffed Shells",
+          "servings": "Serves 6   |   Total: 55 min",
+          "source": "Sara Welch, dinneratthezoo.com",
+          "comments": [
+            "Can be assembled up to 8 hours ahead, covered, and refrigerated; add 10 extra minutes to baking time.",
+            "Freezes well uncooked (up to 3 months); thaw overnight and bake as directed.",
+            "Use whole-milk ricotta and mozzarella for best flavor. Shred your own cheese for best melt."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Shells",
+              "ingredients": [
+                "24 jumbo pasta shells",
+                "Cooking spray"
+              ]
+            },
+            {
+              "label": "Filling",
+              "ingredients": [
+                "15 oz ricotta cheese",
+                "1 1/2 cups shredded mozzarella (from 3 cups total)",
+                "2 teaspoons Italian seasoning",
+                "Salt and pepper to taste",
+                "1 egg",
+                "1/2 cup grated Parmesan"
+              ]
+            },
+            {
+              "label": "Assembly",
+              "ingredients": [
+                "3 cups marinara sauce, divided (1 1/2 cups for base; 1 1/2 cups for topping)",
+                "1 1/2 cups shredded mozzarella (remaining)"
+              ]
+            },
+            {
+              "label": "To serve",
+              "ingredients": [
+                "2 tablespoons chopped fresh parsley"
+              ]
+            }
+          ],
+          "steps": [
+            "Preheat oven to 375°F. Coat a 9x13-inch baking dish with cooking spray. Spread 1 1/2 cups marinara sauce in the bottom.",
+            "Cook shells in salted boiling water until just shy of al dente (1-2 minutes less than package directions; they will finish in the oven). Drain.",
+            "Combine ricotta, 1 1/2 cups mozzarella, Italian seasoning, egg, salt, pepper, and Parmesan. Mix well.",
+            "Fill each shell with the ricotta mixture and arrange in the baking dish. Spoon remaining 1 1/2 cups marinara over shells, then sprinkle remaining 1 1/2 cups mozzarella on top.",
+            "Cover with foil and bake 20 minutes. Uncover and bake 10 more minutes until cheese is melted and starting to brown. Sprinkle with parsley and serve."
+          ]
+        },
+        {
+          "title": "Homemade Butternut Squash Ravioli",
+          "servings": "Serves 12 (makes about 6 dozen ravioli)   |   Total: 1 hr 45 min",
+          "source": "Krissy Allori, selfproclaimedfoodie.com",
+          "comments": [
+            "Makes about 6 dozen ravioli -- freeze extras on a parchment-lined sheet, then transfer to a bag.",
+            "Recommended equipment: stand mixer with dough hook, pasta roller, and ravioli mold or press.",
+            "The sauce quantity is calibrated for 4 servings; double or triple if cooking the full batch at once."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Pasta dough",
+              "ingredients": [
+                "1 1/2 cups semolina flour",
+                "1 1/2 cups all-purpose flour",
+                "4 eggs",
+                "4 tablespoons olive oil",
+                "4 tablespoons water",
+                "1 teaspoon kosher salt"
+              ]
+            },
+            {
+              "label": "Filling",
+              "ingredients": [
+                "2 1/2 pounds butternut squash, peeled and roughly chopped",
+                "8 whole garlic cloves",
+                "1/4 cup olive oil",
+                "1/2 cup grated Parmesan",
+                "1/2 teaspoon dried sage",
+                "Salt and pepper to taste"
+              ]
+            },
+            {
+              "label": "Brown butter sauce",
+              "ingredients": [
+                "4 tablespoons (1/2 stick) unsalted butter",
+                "10 whole fresh sage leaves"
+              ]
+            },
+            {
+              "label": "To serve",
+              "ingredients": [
+                "1/4 cup toasted pine nuts",
+                "Freshly grated Parmesan"
+              ]
+            }
+          ],
+          "steps": [
+            "Make pasta dough: Combine all dough ingredients and mix to form a stiff dough. Knead by hand or in a stand mixer with the dough hook on medium-low for 10 minutes until elastic. Wrap in plastic and rest at least 20 minutes.",
+            "Make filling: Toss butternut squash and garlic cloves in olive oil. Roast on a baking sheet at 400°F for about 45 minutes until very soft. Transfer to a food processor and blend smooth, adding additional olive oil as needed. Add Parmesan, dried sage, salt, and pepper; season to taste.",
+            "Make sauce: Combine butter and sage in a small saucepan. Heat over low for 15 minutes to infuse. Increase heat slightly and stir continuously until butter browns lightly and sage crisps. Do not burn.",
+            "Roll pasta dough into thin sheets using a pasta roller. Place one sheet over a ravioli mold, create wells, and fill each with about 1 heaping teaspoon of squash filling. Wet edges with water, cover with a second sheet, and gently roll to seal and cut. Flour generously for easy release.",
+            "Cook ravioli in generously salted boiling water until they float, just 2-3 minutes. Remove carefully, drain, and serve with sage brown butter, toasted pine nuts, and freshly grated Parmesan."
+          ]
+        },
+        {
+          "title": "Browned Garlic Butter Creamed Corn Ravioli",
+          "servings": "Serves 6   |   Prep: 10 min   |   Total: 25 min",
+          "source": "Half Baked Harvest (halfbakedharvest.com)",
+          "comments": [
+            "Use heavy cream for richest result; canned coconut milk or whole milk work as lighter options."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Pasta",
+              "ingredients": [
+                "1 pound cheese ravioli, homemade or store-bought"
+              ]
+            },
+            {
+              "label": "Sauce base",
+              "ingredients": [
+                "2 tablespoons extra-virgin olive oil",
+                "1 medium shallot, chopped",
+                "3-4 ears corn, kernels removed from the cob",
+                "4 tablespoons salted butter",
+                "2 cloves garlic, minced or grated",
+                "1 tablespoon fresh thyme, chopped, plus more for serving",
+                "Salt and black pepper",
+                "1 teaspoon Aleppo pepper or red pepper flakes"
+              ]
+            },
+            {
+              "label": "Sauce",
+              "ingredients": [
+                "1/2 cup dry white wine (such as Pinot Grigio or Sauvignon Blanc)",
+                "1/3 cup heavy cream, canned coconut milk, or whole milk",
+                "1/3 cup grated Parmesan or Asiago cheese",
+                "1/3 cup fresh basil, plus more for serving"
+              ]
+            },
+            {
+              "label": "To serve",
+              "ingredients": [
+                "Reserved corn and butter (from above)",
+                "Fresh basil and fresh thyme"
+              ]
+            }
+          ],
+          "steps": [
+            "Bring a large pot of salted water to a boil. Cook ravioli according to package directions until al dente. Drain.",
+            "Meanwhile, heat olive oil in a large skillet over medium heat. When the oil shimmers, add shallot and corn. Cook 5 minutes until corn is golden. Add butter, garlic, and thyme; season with salt and pepper. Cook until butter begins to brown and corn begins to crisp, 3-4 minutes. Season with Aleppo pepper or red pepper flakes. Remove 1-2 large spoonfuls of corn and butter from the skillet and set aside for serving.",
+            "Reduce heat to low. Pour in wine and simmer 2 minutes. Add cream and Parmesan; cook a few more minutes until warmed through. Add drained ravioli and toss gently to combine. Remove from heat and fold in basil.",
+            "Divide among plates and top with reserved corn, fresh basil, and thyme."
+          ]
+        },
+        {
+          "title": "Quick Ragu with Ricotta and Lemon",
+          "servings": "Serves 4   |   Total: 45 min",
+          "source": "New York Times (Sarah Copeland)",
+          "comments": [
+            "Ground turkey or spicy Italian sausage can substitute for the beef; if using sausage or turkey, consider adding extra fennel seeds and Aleppo pepper or red pepper flakes with the onion in Step 1 to amplify flavor.",
+            "Calabrian chile paste or Hungarian paprika paste can substitute for sambal oelek."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Ragu base",
+              "ingredients": [
+                "1/4 cup extra-virgin olive oil, plus more for drizzling",
+                "1 medium onion, thinly sliced",
+                "2 garlic cloves, peeled and smashed",
+                "Fine sea salt and black pepper",
+                "1 pound ground beef",
+                "2 heaping tablespoons sambal oelek (or any spicy red-pepper paste)",
+                "1/4 cup full-bodied red wine (cabernet or merlot)",
+                "1 (28-oz) can whole peeled tomatoes, with their juices"
+              ]
+            },
+            {
+              "label": "Pasta",
+              "ingredients": [
+                "Salt",
+                "8 oz plain or whole-wheat lasagna noodles (not no-cook), broken into 1- to 2-inch pieces"
+              ]
+            },
+            {
+              "label": "Fennel topping",
+              "ingredients": [
+                "1 teaspoon fennel seeds"
+              ]
+            },
+            {
+              "label": "To serve",
+              "ingredients": [
+                "1 cup fresh ricotta",
+                "Zest of 1 lemon",
+                "Flaky sea salt (such as Maldon)"
+              ]
+            }
+          ],
+          "steps": [
+            "Heat oil in a large Dutch oven or pot over medium. Add onion and garlic, season with salt, and cook until just beginning to soften, about 5 minutes. Add ground beef and cook, breaking it apart, until nicely browned but not completely cooked through, about 6 minutes. Stir in sambal oelek. Add wine and stir to release any brown bits from the bottom.",
+            "Add tomatoes and their juices, crushing completely with your hands or a potato masher. Cook over medium-low, stirring occasionally, until tomatoes break down and meat is cooked through, about 30 minutes. Season with salt and pepper halfway through.",
+            "Meanwhile, bring a large pot of generously salted water to a boil. Cook broken lasagna noodles according to package directions until al dente.",
+            "In a small skillet, toast fennel seeds over medium heat until fragrant, 2-3 minutes. Remove and crush on a cutting board with the flat end of a knife.",
+            "Drain pasta, add to the ragu, and toss to coat. Divide among four bowls and dollop each generously with ricotta. Sprinkle with lemon zest, cracked fennel, flaky salt, and pepper. Drizzle with olive oil and serve warm."
+          ]
+        },
+        {
+          "title": "Spaghetti Carbonara",
+          "servings": "Serves 8   |   Total: 40 min",
+          "source": "Allrecipes (SABRINATEE)",
+          "comments": [
+            "Not a traditional Roman carbonara (which uses no onion, garlic, or wine and relies on guanciale). This is a richer, more casual home-cooking version.",
+            "For a closer-to-traditional result, omit onion, garlic, and wine, and use guanciale or pancetta in place of bacon.",
+            "Bacon and Parmesan are both salty -- taste before adding more salt."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Pasta",
+              "ingredients": [
+                "Salt",
+                "1 pound spaghetti",
+                "1 tablespoon olive oil (for tossing after draining)"
+              ]
+            },
+            {
+              "label": "Bacon",
+              "ingredients": [
+                "8 slices bacon, diced"
+              ]
+            },
+            {
+              "label": "Aromatics",
+              "ingredients": [
+                "1 tablespoon olive oil",
+                "1 onion, chopped",
+                "1 clove garlic, minced",
+                "1/4 cup dry white wine"
+              ]
+            },
+            {
+              "label": "Egg finish",
+              "ingredients": [
+                "4 large eggs, beaten",
+                "1/2 cup grated Parmesan cheese",
+                "Salt and black pepper to taste"
+              ]
+            },
+            {
+              "label": "To serve",
+              "ingredients": [
+                "2 tablespoons chopped fresh parsley",
+                "2 tablespoons grated Parmesan cheese"
+              ]
+            }
+          ],
+          "steps": [
+            "Bring a large pot of lightly salted water to a boil. Cook spaghetti until al dente, about 12 minutes. Drain, toss with 1 tablespoon olive oil, and set aside.",
+            "Place diced bacon in a large skillet over medium heat; cook until evenly browned, about 10 minutes. Drain bacon on paper towels, reserving 2 tablespoons bacon fat in the skillet.",
+            "Add 1 tablespoon olive oil to the reserved bacon fat over medium. Add onion and cook until translucent. Add garlic and cook until fragrant, about 1 minute. Add wine and cook 1 minute more.",
+            "Return bacon to the skillet; add cooked spaghetti and toss to coat and heat through, adding more olive oil if dry. Add beaten eggs and cook, tossing constantly with tongs or a large fork, until eggs are barely set. Quickly add 1/2 cup Parmesan and toss again. Season with salt and pepper.",
+            "Serve warm with parsley and extra Parmesan."
+          ]
+        },
+        {
+          "title": "Caramelized Shallot Pasta",
+          "servings": "Serves 4   |   Total: 40 min",
+          "source": "New York Times (Alison Roman)",
+          "comments": [
+            "Recipe yields enough shallot mixture for a double batch of pasta -- refrigerate or freeze the reserved half for another night.",
+            "Also excellent spread on roasted vegetables, fried eggs, or under crispy chicken thighs."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Shallot mixture",
+              "ingredients": [
+                "1/4 cup olive oil",
+                "6 large shallots, very thinly sliced",
+                "5 garlic cloves (4 thinly sliced; 1 finely chopped and reserved for parsley topping)",
+                "Kosher salt and freshly ground black pepper",
+                "1 teaspoon Aleppo pepper or red pepper flakes, plus more to taste",
+                "1 (2-oz) can anchovy fillets (about 12), drained",
+                "1/2 to 3/4 cup tomato paste (one 4.5-oz tube or 6-oz can)"
+              ]
+            },
+            {
+              "label": "Pasta",
+              "ingredients": [
+                "Salt",
+                "10 oz pasta",
+                "1 cup reserved pasta cooking water"
+              ]
+            },
+            {
+              "label": "Parsley topping",
+              "ingredients": [
+                "1 cup parsley leaves and tender stems, finely chopped",
+                "1 garlic clove, finely chopped (reserved from above)",
+                "Flaky sea salt"
+              ]
+            }
+          ],
+          "steps": [
+            "Heat oil in a large Dutch oven over medium-high. Add shallots and 4 thinly sliced garlic cloves; season with salt and pepper. Cook, stirring occasionally, until totally softened and caramelized with golden-brown edges, 15-20 minutes.",
+            "Add Aleppo pepper or red pepper flakes and anchovies (no need to chop; they will dissolve). Stir to melt anchovies, about 2 minutes.",
+            "Add tomato paste; season with salt and pepper. Cook, stirring constantly, until tomato paste caramelizes and turns brick red, about 2 minutes. Remove from heat and transfer half the mixture to a container for later use.",
+            "Cook pasta in generously salted boiling water until very al dente. Transfer pasta to the Dutch oven with the remaining shallot mixture and 1 cup pasta water. Cook over medium-high heat, swirling to coat, until sauce is sticky and reduced (not saucy), 3-5 minutes.",
+            "Combine finely chopped garlic and parsley in a small bowl; season with flaky salt and pepper. Divide pasta among bowls and top with parsley mixture and more Aleppo pepper if desired."
+          ]
+        },
+        {
+          "title": "Chili Crisp Fettuccine Alfredo with Spinach",
+          "servings": "Serves 6   |   Total: 25 min",
+          "source": "New York Times (Genevieve Ko)",
+          "comments": [
+            "Lao Gan Ma and Fly By Jing are the favored brands.",
+            "Chili crisp varies widely in heat; start with 1 tablespoon and add more to taste. For the most flavor, use more of the solids than the oil."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Chili butter",
+              "ingredients": [
+                "4 tablespoons butter",
+                "1 to 2 tablespoons chili crisp, plus more to taste"
+              ]
+            },
+            {
+              "label": "Cream sauce",
+              "ingredients": [
+                "1 cup heavy cream"
+              ]
+            },
+            {
+              "label": "Pasta",
+              "ingredients": [
+                "Salt",
+                "1 pound dried fettuccine"
+              ]
+            },
+            {
+              "label": "Spinach and cheese",
+              "ingredients": [
+                "1 (5-oz) package baby spinach",
+                "3/4 cup finely grated Parmesan (2 1/4 oz), plus more for serving"
+              ]
+            }
+          ],
+          "steps": [
+            "Bring a large pot of salted water to a boil. While it heats, melt butter with chili crisp in a very large skillet or Dutch oven over low. Whisk in cream and keep warm over low (it should steam, not bubble).",
+            "Cook fettuccine until al dente per package directions. Use tongs to transfer noodles to the cream mixture, reserving pasta water.",
+            "Add spinach and turn with tongs until noodles are well coated.",
+            "Add Parmesan and toss over low heat until noodles are slicked with a creamy sauce, adding a spoonful or two of pasta water to loosen if needed. Divide among serving dishes; top with more Parmesan and additional chili crisp if desired. Serve immediately."
+          ]
+        },
+        {
+          "title": "Linguine with Chickpeas, Broccoli and Ricotta",
+          "servings": "Serves 4   |   Total: 20 min",
+          "source": "New York Times (Sarah Copeland)",
+          "comments": [
+            "The broiler is the key technique here -- it creates a flavorful char in minutes. Spread vegetables out in a single layer; crowding causes steaming instead of caramelizing."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Pasta",
+              "ingredients": [
+                "Kosher salt",
+                "12 oz dried linguine or spaghetti"
+              ]
+            },
+            {
+              "label": "Broiled vegetables",
+              "ingredients": [
+                "1 bunch broccoli or broccolini, trimmed and cut into thin florets (about 1 1/2 pounds; stems reserved for another use)",
+                "1 (14-oz) can chickpeas or other white beans, drained and rinsed",
+                "2 large garlic cloves, thinly sliced",
+                "1/2 teaspoon Aleppo pepper or red pepper flakes",
+                "1/3 cup extra-virgin olive oil, plus more for drizzling",
+                "Black pepper"
+              ]
+            },
+            {
+              "label": "Broiled kale",
+              "ingredients": [
+                "1 bunch Tuscan kale (cavolo nero/Lacinato), stemmed and cut into bite-size pieces",
+                "Extra-virgin olive oil for tossing"
+              ]
+            },
+            {
+              "label": "Pasta finish",
+              "ingredients": [
+                "1/4 cup reserved pasta cooking water",
+                "8 oz ricotta, preferably room temperature",
+                "2 tablespoons unsalted butter",
+                "Finely grated zest of 1 lemon"
+              ]
+            },
+            {
+              "label": "To serve",
+              "ingredients": [
+                "Flaky sea salt",
+                "Lemon wedges"
+              ]
+            }
+          ],
+          "steps": [
+            "Bring a large pot of salted water to a boil. Add pasta and cook until al dente. Reserve 1/2 cup pasta water; drain.",
+            "Heat broiler with a rack about 8 inches from the heat source. Toss broccoli, chickpeas, garlic, Aleppo pepper or red pepper flakes, and 1/3 cup oil in a large bowl; season and spread on one sheet pan. Toss kale with residual oil and more oil as needed; spread on a second sheet pan.",
+            "Broil broccoli-chickpea pan (tossing halfway) until chickpeas are toasty and broccoli is charred, 5-7 minutes. Broil kale until just charred and crisp, about 5 minutes.",
+            "Zest the lemon, halve it, cut one half into wedges, and squeeze juice from the other half over roasted vegetables. Season.",
+            "Return pasta to the pot. Add 1/4 cup pasta water, ricotta, butter, and lemon zest; toss until combined. Add roasted vegetables and toss, adding more pasta water if needed. Season with flaky salt and pepper; serve with lemon wedges. Drizzle with more oil if desired."
+          ]
+        },
+        {
+          "title": "Pasta Alla Norma",
+          "favorite": true,
+          "servings": "Serves 4-6   |   Total: 45 min",
+          "source": "New York Times (Mark Bittman)",
+          "comments": [
+            "Traditional Sicilian pasta. Ricotta salata is the classic cheese; pecorino Romano works well too.",
+            "Canned tomatoes are fine out of peak season."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Eggplant",
+              "ingredients": [
+                "1 1/2 pounds eggplant, sliced 1/2 inch thick",
+                "1/2 cup or more olive oil",
+                "Salt and pepper"
+              ]
+            },
+            {
+              "label": "Tomato sauce",
+              "ingredients": [
+                "1 tablespoon chopped garlic",
+                "3 or 4 dried chiles",
+                "1 1/2 pounds tomatoes, chopped (canned are fine; about 1 can)",
+                "1 teaspoon good dried oregano (or 1 tablespoon fresh)",
+                "Salt and pepper"
+              ]
+            },
+            {
+              "label": "Pasta",
+              "ingredients": [
+                "Salt",
+                "1 pound long pasta"
+              ]
+            },
+            {
+              "label": "To serve",
+              "ingredients": [
+                "1/2 cup chopped fresh parsley or basil",
+                "1/2 cup grated ricotta salata (or pecorino Romano in a pinch)"
+              ]
+            }
+          ],
+          "steps": [
+            "Cook eggplant in abundant olive oil without crowding, sprinkling with salt and adding more oil as needed. Cook in batches until nicely browned and soft. Remove to a plate (do not drain on paper towels). Meanwhile, bring a large pot of salted water to a boil.",
+            "When all eggplant is done, the pan should have about 2 tablespoons oil. Adjust if needed. Add garlic and chiles over medium heat; cook until garlic just colors. Add tomatoes, oregano, salt, and pepper; cook until saucy, stirring occasionally.",
+            "Cook pasta until tender but not mushy. While pasta cooks, cut eggplant into strips and reheat 1 minute in the tomato sauce. Drain pasta and toss with tomato sauce and eggplant. Taste and adjust seasoning; top with parsley or basil and grated cheese."
+          ]
+        },
+        {
+          "title": "Pasta with Corn, Mint and Red Onions",
+          "servings": "Serves 4-6   |   Total: 25 min",
+          "source": "New York Times (Melissa Clark)",
+          "comments": [
+            "Equally good with frozen corn and year-round grape tomatoes cut in cubes.",
+            "Can be served warm, at room temperature, or cold as a pasta salad."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Pasta and corn",
+              "ingredients": [
+                "Fine sea salt or table salt",
+                "1 pound cavatelli (or orecchiette, shells, or another small pasta)",
+                "5 ears corn, shucked, kernels removed (about 4 cups)"
+              ]
+            },
+            {
+              "label": "Tomato-onion marinade",
+              "ingredients": [
+                "2 cups diced ripe tomatoes",
+                "1/2 cup thinly sliced red onion",
+                "2 teaspoons fresh lemon juice, more to taste",
+                "1 teaspoon fine salt"
+              ]
+            },
+            {
+              "label": "Garlic-chili oil",
+              "ingredients": [
+                "1/2 cup olive oil, plus more for serving",
+                "3 small or 2 large garlic cloves, grated",
+                "1/2 teaspoon Aleppo pepper or red pepper flakes, more for serving"
+              ]
+            },
+            {
+              "label": "Herbs",
+              "ingredients": [
+                "1/2 cup chopped soft herbs (mint, basil, cilantro, or a combination)"
+              ]
+            },
+            {
+              "label": "Ricotta (optional)",
+              "ingredients": [
+                "Fresh ricotta, for serving"
+              ]
+            }
+          ],
+          "steps": [
+            "Bring a large pot of salted water to a boil. Add pasta and cook until al dente. Add corn kernels 2-4 minutes before pasta is done. Drain.",
+            "Meanwhile, combine tomatoes, onion, lemon juice, and 1 teaspoon salt in a large bowl. Let marinate while pasta cooks.",
+            "In a small skillet, heat oil, garlic, and Aleppo pepper or red pepper flakes over medium-high until garlic is fragrant but not brown, about 1 minute. Pour into tomato mixture.",
+            "Add drained pasta and corn to the tomato mixture; stir well to coat. Mix in herbs. Taste and adjust lemon and salt. Serve warm or at room temperature with more olive oil, herbs, Aleppo pepper, and ricotta dollops if desired."
+          ]
+        },
+        {
+          "title": "Pasta with Gorgonzola and Arugula",
+          "servings": "Serves 4   |   Total: 30 min",
+          "source": "New York Times (Mark Bittman)",
+          "comments": [
+            "A full teaspoon of black pepper for the whole dish is not too much -- the pepper cuts the richness of the Gorgonzola.",
+            "For a lighter sauce, halve both Gorgonzola and butter. The arugula should retain some texture and freshness when tossed in."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Gorgonzola sauce",
+              "ingredients": [
+                "4 tablespoons unsalted butter",
+                "1/2 pound ripe Gorgonzola"
+              ]
+            },
+            {
+              "label": "Arugula",
+              "ingredients": [
+                "6 oz arugula, washed and dried"
+              ]
+            },
+            {
+              "label": "Pasta",
+              "ingredients": [
+                "Salt",
+                "1 pound cut pasta (ziti or farfalle)",
+                "A little reserved pasta cooking water if needed"
+              ]
+            },
+            {
+              "label": "To finish",
+              "ingredients": [
+                "Salt",
+                "Plenty of freshly ground black pepper"
+              ]
+            }
+          ],
+          "steps": [
+            "Bring a large pot of water to a boil. Meanwhile, melt butter in a small saucepan over low. Add Gorgonzola and cook, stirring frequently, until melted. Keep warm.",
+            "Tear arugula into bite-size pieces (not too small).",
+            "Cook pasta in salted boiling water until tender but not mushy. Reserve a little cooking water; drain. Toss pasta immediately with arugula and Gorgonzola sauce, adding a splash of pasta water if the mixture seems dry.",
+            "Season very generously with black pepper and salt. Serve."
+          ]
+        },
+        {
+          "title": "Sheet-Pan Gnocchi with Asparagus, Leeks and Peas",
+          "servings": "Serves 4   |   Total: 30 min",
+          "source": "New York Times (Susan Spungen)",
+          "comments": [
+            "Fresh or refrigerated gnocchi work best; if using shelf-stable gnocchi, boil first and proceed.",
+            "Experiment with vegetables: pair delicate ones (zucchini, cherry tomatoes) in larger pieces with firmer ones cut smaller."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Gnocchi",
+              "ingredients": [
+                "2 (12-oz) packages gnocchi (preferably fresh refrigerated)",
+                "2 tablespoons olive oil",
+                "1 tablespoon unsalted butter",
+                "1/2 teaspoon kosher salt"
+              ]
+            },
+            {
+              "label": "Sheet-pan vegetables",
+              "ingredients": [
+                "1 bunch asparagus (about 1 pound), trimmed and cut into thirds",
+                "2 small leeks, trimmed, halved lengthwise, sliced 1/2-inch thick",
+                "2 shallots, trimmed and sliced lengthwise 1/4-inch thick",
+                "1 tablespoon olive oil",
+                "1 tablespoon unsalted butter",
+                "1/2 teaspoon kosher salt",
+                "Freshly ground black pepper"
+              ]
+            },
+            {
+              "label": "Peas",
+              "ingredients": [
+                "1 cup frozen peas, thawed (or fresh peas)"
+              ]
+            },
+            {
+              "label": "To finish",
+              "ingredients": [
+                "1 lemon, scrubbed (for zesting)",
+                "1/2 cup grated Parmesan, divided",
+                "1/4 cup sliced fresh chives or parsley (optional)",
+                "Salt and pepper"
+              ]
+            }
+          ],
+          "steps": [
+            "Heat oven to 425°F. On a large rimmed baking sheet, toss gnocchi with 2 tablespoons oil, 1 tablespoon butter, and 1/2 teaspoon salt.",
+            "On a second baking sheet, toss asparagus, leeks, and shallots with remaining oil, butter, 1/2 teaspoon salt, and generous pepper.",
+            "Bake both sheets: gnocchi on the bottom rack, vegetables above. Stir both after 5 minutes to distribute butter. Stir vegetables once or twice more but leave gnocchi undisturbed. Stir peas into vegetables in the last 5 minutes. Vegetables should be golden and crisping at about 15 minutes; gnocchi golden brown on one side at 20-25 minutes.",
+            "Combine gnocchi and vegetables on one tray. Grate lemon zest over the top; sprinkle with half the Parmesan and chives. Season; toss to combine. Transfer to a serving bowl and top with remaining Parmesan and chives. Serve immediately."
+          ]
+        },
+        {
+          "title": "Spaghetti with Burrata and Garlic-Chili Oil",
+          "servings": "Serves 4-6   |   Total: 20 min",
+          "source": "New York Times (Sarah Copeland)",
+          "comments": [
+            "Whole-wheat spaghetti adds nuttiness; regular spaghetti works too.",
+            "Burrata should be at room temperature. Fresh mozzarella can substitute, but you lose the creamy center."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Chili oil",
+              "ingredients": [
+                "1 teaspoon fennel seeds, cracked",
+                "3/4 cup extra-virgin olive oil",
+                "1 large head fennel (about 8 oz), trimmed, cored, and thinly sliced",
+                "10 garlic cloves, thinly sliced lengthwise",
+                "3/4 teaspoon Aleppo pepper or red pepper flakes"
+              ]
+            },
+            {
+              "label": "Pasta",
+              "ingredients": [
+                "Kosher salt",
+                "1 pound whole-wheat spaghetti"
+              ]
+            },
+            {
+              "label": "To serve",
+              "ingredients": [
+                "8 oz burrata",
+                "1 teaspoon flaky sea salt (such as Maldon)",
+                "Freshly ground black pepper"
+              ]
+            }
+          ],
+          "steps": [
+            "Crack fennel seeds with the flat side of a large knife. Combine oil, sliced fennel bulb, garlic, cracked fennel seeds, and Aleppo pepper or red pepper flakes in a large skillet over low. Cook, stirring occasionally, until garlic and fennel are softened and oil is deeply flavored, 12-15 minutes.",
+            "Meanwhile, bring a large pot of generously salted water to a boil. Cook pasta until al dente; drain, return to pot.",
+            "Reserve a few tablespoons of the fennel-oil mixture; add the rest to the pasta and toss to coat.",
+            "Divide pasta and burrata among shallow bowls. Spoon reserved fennel oil over top; season with flaky salt and black pepper."
+          ]
+        },
+        {
+          "title": "Spaghetti with Fresh Tomato and Basil Sauce",
+          "servings": "Serves 4   |   Total: 40 min",
+          "source": "New York Times (Scott Conant)",
+          "comments": [
+            "Adding the pasta halfway through its cooking is the key technique -- the pasta finishes absorbing the sauce and develops great flavor.",
+            "Works with hothouse tomatoes when summer tomatoes are not at their peak."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Tomato sauce",
+              "ingredients": [
+                "3 pounds fresh plum tomatoes, blanched, peeled, seeded, and quartered",
+                "3 oz olive oil",
+                "Salt and freshly ground black pepper",
+                "1 pinch Aleppo pepper or red pepper flakes"
+              ]
+            },
+            {
+              "label": "Pasta",
+              "ingredients": [
+                "Salt",
+                "1 pound dry spaghetti"
+              ]
+            },
+            {
+              "label": "To finish",
+              "ingredients": [
+                "2 oz extra-virgin olive oil",
+                "1 tablespoon unsalted butter",
+                "6 leaves fresh basil, shredded",
+                "2 tablespoons freshly grated Parmigiano-Reggiano"
+              ]
+            }
+          ],
+          "steps": [
+            "Blanch tomatoes, remove skins, halve and seed, then cut crosswise. Set aside.",
+            "Heat 3 oz olive oil in a large, deep skillet over medium-high until it just smokes. Add tomatoes; season lightly with salt, pepper, and Aleppo pepper or red pepper flakes (salt will concentrate as sauce reduces). Chop with a potato masher until in fine chunks. Simmer over medium 25 minutes.",
+            "While sauce simmers, bring a large pot of salted water to a boil. Cook spaghetti until only about halfway done. Drain, reserving some cooking water.",
+            "Taste and adjust sauce seasoning. Add pasta to sauce and cook over medium-high, swirling, until all liquid is absorbed and pasta is al dente. Add reserved pasta water if sauce over-reduces.",
+            "Remove from heat; add extra-virgin olive oil, butter, basil, and Parmesan. Mix thoroughly until pasta is an orangy color. Adjust salt; serve on a platter."
+          ]
+        },
+        {
+          "title": "Four-Cheese Truffled Macaroni and Cheese",
+          "servings": "Serves 12   |   Total: 1 hr 15 min",
+          "source": "Allrecipes (Hilary van Santen)",
+          "comments": [
+            "Truffle salt can also be sprinkled over the top before serving. One small bottle of truffle oil goes a very long way.",
+            "Shred cheeses from the block for best melt."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Pasta",
+              "ingredients": [
+                "Salt",
+                "1 (16-oz) package cavatappi (corkscrew macaroni)"
+              ]
+            },
+            {
+              "label": "Cheese sauce",
+              "ingredients": [
+                "6 tablespoons unsalted butter",
+                "1/2 cup all-purpose flour",
+                "5 1/2 cups milk, divided (2 cups first, then remaining 3 1/2 cups)",
+                "2 1/2 cups shredded smoked Gouda",
+                "2 cups shredded sharp cheddar",
+                "1 1/2 cups shredded Swiss cheese",
+                "1 cup grated Parmesan (from 1 1/2 cups total)"
+              ]
+            },
+            {
+              "label": "Topping",
+              "ingredients": [
+                "1/2 cup grated Parmesan (remaining)",
+                "1/2 cup dry bread crumbs",
+                "1 tablespoon truffle oil"
+              ]
+            }
+          ],
+          "steps": [
+            "Preheat oven to 350°F. Grease a 9x13-inch baking dish.",
+            "Cook cavatappi in salted boiling water until al dente, about 8 minutes. Drain.",
+            "While pasta cooks, melt butter in a large pot over medium-low. Whisk in flour to a thick paste, about 30 seconds. Slowly whisk in 2 cups milk until smooth, then stir in remaining 3 1/2 cups milk. Increase heat to medium-high and cook, whisking constantly, until thick and almost boiling, 5-10 minutes.",
+            "Add Gouda, cheddar, Swiss, and 1 cup Parmesan; stir until melted and smooth. Fold in cavatappi. Pour into prepared baking dish.",
+            "Combine remaining 1/2 cup Parmesan with bread crumbs; sprinkle over pasta. Drizzle truffle oil on top.",
+            "Bake until bubbling and topping is golden, about 30 minutes. Cool 10 minutes before serving."
           ]
         }
       ]
