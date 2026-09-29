@@ -2047,16 +2047,18 @@
 
   // ── Logo: navigate to breakfast and collapse all ──────────────────────
   document.getElementById('cookbook-logo-link').addEventListener('click', function (e) {
+    // Always clear navState so breakfast.html won't restore previously open sections
+    try { localStorage.removeItem('navState'); } catch (ex) {}
     var isBreakfast = window.location.pathname.replace(/.*//, '') === 'breakfast.html' ||
                       window.location.pathname === '/' || window.location.pathname === '';
     if (isBreakfast) {
+      // Already here — collapse in place without reloading
       e.preventDefault();
       document.querySelectorAll('.nav-hd.open, .nav-sec-arrow.open').forEach(function (el) { el.classList.remove('open'); });
       document.querySelectorAll('.nav-l2, .nav-l3, .nav-l3b, .nav-l4').forEach(function (list) { list.classList.add('collapsed'); });
-      try { localStorage.removeItem('navState'); } catch (ex) {}
       window.scrollTo(0, 0);
     }
-    // else: default navigation to breakfast.html — page loads fresh with everything collapsed
+    // else: let browser navigate to breakfast.html; navState is already cleared above
   });
 
   // ── Expand all nav menus ─────────────────────────────────────────────
