@@ -2032,8 +2032,8 @@
     });
   });
 
-  // Subsection and cluster headings — toggle only (always preventDefault).
-  document.querySelectorAll('.sub-hd[data-toggle], .cluster-hd[data-toggle]').forEach(function (hd) {
+  // Subsection, sub-subsection and cluster headings — toggle only (always preventDefault).
+  document.querySelectorAll('.sub-hd[data-toggle], .subsub-hd[data-toggle], .cluster-hd[data-toggle]').forEach(function (hd) {
     hd.addEventListener('click', function (e) {
       e.preventDefault();
       const href = hd.getAttribute('href');
