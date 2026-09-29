@@ -558,13 +558,15 @@ function renderRecipe(recipe, idPrefix) {
 
 // Render a list of recipes grouped by cluster.
 // clusterGroups: [{cluster, recipes}] from groupByCluster().
-// Cluster headings are shown only when there are multiple clusters AND the
-// cluster is not 'General' (General recipes appear without a heading label).
-function renderRecipeList(recipes, idPrefix, clusterGroups) {
+// suppressedClusters: additional cluster names to render without a heading
+//   (always includes 'General'; also pass the parent subsection/section title
+//   to prevent a cluster header that repeats its parent's name).
+function renderRecipeList(recipes, idPrefix, clusterGroups, suppressedClusters = []) {
+  const noHeader = new Set(['General', ...suppressedClusters]);
   const showHeaders = clusterGroups.length > 1;
   let html = '';
   for (const { cluster, recipes: cr } of clusterGroups) {
-    if (!showHeaders || cluster === 'General') {
+    if (!showHeaders || noHeader.has(cluster)) {
       html += cr.map(r => renderRecipe(r, idPrefix)).join('\n') + '\n';
     } else {
       const cid = `${idPrefix}--${slug(cluster)}`;
@@ -648,10 +650,16 @@ function buildNav(data, currentSection) {
           if (hasRecipes) {
             nav += `<ul class="nav-l3 collapsed" id="${subSecId}-children">`;
             const showClusterHeaders = clusterGroups && clusterGroups.length > 1;
+            // Safety rule: if subsection name is itself a geographic cluster name,
+            // suppress ALL cluster headers within it to prevent region-inside-region nesting.
+            const flattenSub = CLUSTER_ORDER.includes(sub.title);
+            const subNoHeader = flattenSub
+              ? new Set(CLUSTER_ORDER)
+              : new Set(['General', sub.title]);
             if (clusterGroups) {
               for (const { cluster, recipes: cr } of clusterGroups) {
                 const cid = `${subsl}--${slug(cluster)}`;
-                if (!showClusterHeaders || cluster === 'General') {
+                if (!showClusterHeaders || subNoHeader.has(cluster)) {
                   cr.forEach(r => {
                     const rid = r.id || `${subsl}-${slug(r.title)}`;
                     nav += navRecipeItem(rid, r, filename);
@@ -717,10 +725,12 @@ function buildSectionContent(section) {
       const subSecId = `sub-${subsl}`;
       const hasSubRecipes = sub.recipes && sub.recipes.length > 0;
       const clusterGroups = hasSubRecipes ? groupByCluster(sub.recipes) : null;
+      // Safety rule: if subsection name is a geographic cluster name, flatten all clusters.
+      const flattenSub = CLUSTER_ORDER.includes(sub.title);
       html += `<section id="${subSecId}" class="subsection">
   <h3 class="subsection-heading">${esc(sub.title)}</h3>
   ${hasSubRecipes
-    ? renderRecipeList(sub.recipes, subsl, clusterGroups)
+    ? renderRecipeList(sub.recipes, subsl, clusterGroups, flattenSub ? [...CLUSTER_ORDER] : [sub.title])
     : '<p class="empty"><em>No recipes yet.</em></p>'}
 </section>\n`;
     }

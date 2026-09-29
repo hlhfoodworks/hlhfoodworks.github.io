@@ -252,8 +252,8 @@ module.exports = {
                   "Using a pizza cutter, cut the rectangle lengthwise into 12 long strips. Roll each strip up individually into a spiral and place in a greased pan."
                 ]
               },
-              "Cover loosely and let rise until almost doubled, 45\u201350 minutes (watch carefully \u2014 dough rises faster at altitude and over-proofing will hurt the texture). Meanwhile, make the glaze: Sift the confectioners' sugar into a small bowl, then stir in the butter, water, and optional cinnamon until smooth. Tint with food coloring if desired.",
-              "Bake in a preheated 415\u00b0F oven for 15-17 minutes. Remove the rolls and set them on a rack over a piece of waxed paper.",
+              "Cover loosely and let rise until almost doubled, 45–50 minutes (watch carefully — dough rises faster at altitude and over-proofing will hurt the texture). Meanwhile, make the glaze: Sift the confectioners' sugar into a small bowl, then stir in the butter, water, and optional cinnamon until smooth. Tint with food coloring if desired.",
+              "Bake in a preheated 415°F oven for 15-17 minutes. Remove the rolls and set them on a rack over a piece of waxed paper.",
               "Spoon the prepared glaze over each roll while still hot."
             ]
           }
@@ -338,21 +338,21 @@ module.exports = {
               }
             ],
             "steps": [
-              "Make the soured milk: Stir the vinegar into the whole milk. Let stand at least 5 minutes while you prepare the dough (it will look slightly curdled \u2014 that's fine).",
-              "Heat the oven to 450\u00b0F. Set aside an oven-safe 10- to 12-inch skillet, preferably cast iron, or a cookie sheet lined with parchment.",
+              "Make the soured milk: Stir the vinegar into the whole milk. Let stand at least 5 minutes while you prepare the dough (it will look slightly curdled — that's fine).",
+              "Heat the oven to 450°F. Set aside an oven-safe 10- to 12-inch skillet, preferably cast iron, or a cookie sheet lined with parchment.",
               "Dry ingredients: In a food processor, combine the flour, baking powder, baking soda, sugar, and salt. Pulse 3 to 4 times to combine.",
               "Cut the cold butter into small cubes or thin slices; scatter over the flour mixture. Pulse 5 to 7 times, just until the butter is broken into pea-sized pieces.",
-              "Transfer to a large bowl. Make a well in the middle; pour in the soured milk and stir gently with a fork or spatula just until the dough comes together (some dry bits are fine \u2014 don't overmix).",
+              "Transfer to a large bowl. Make a well in the middle; pour in the soured milk and stir gently with a fork or spatula just until the dough comes together (some dry bits are fine — don't overmix).",
               "Transfer the dough to a lightly floured work surface. Sprinkle a little flour over the top and gently bring the dough together with your hands.",
               {
                 "lead": "Fold the dough:",
                 "bullets": [
                   "Without overworking the dough, gently pat it into a rough rectangle about 3/4 inch thick.",
-                  "Fold the dough into thirds, envelope-style \u2014 bring one short side over the center, then fold the opposite side over it, like a letter.",
+                  "Fold the dough into thirds, envelope-style — bring one short side over the center, then fold the opposite side over it, like a letter.",
                   "Rotate the dough 90 degrees, then repeat the pat-and-fold two more times to build flaky layers."
                 ]
               },
-              "Pat the dough into a rough 3/4-inch-thick rectangle. Cut into 8 squares \u2014 no need to cut rounds or reroll scraps.",
+              "Pat the dough into a rough 3/4-inch-thick rectangle. Cut into 8 squares — no need to cut rounds or reroll scraps.",
               "Arrange the squares close together on the skillet (or parchment-lined cookie sheet) to help them rise tall.",
               "Bake 15 to 20 minutes, until the tops are deeply golden brown and the biscuits have risen tall."
             ]
@@ -850,55 +850,54 @@ module.exports = {
             "Refrigerate at least 30 minutes before serving. Serve with crackers or sliced bread."
           ]
         },
+        {
+          "title": "Burrata Bruschetta Toasts",
+          "servings": "Serves 8",
+          "source": "Molly, yestoyolks.com",
+          "comments": [
+            "Heirloom or beefsteak tomatoes work beautifully when in season; cherry and grape tomatoes are reliable year-round.",
+            "Fresh mozzarella can substitute for burrata.",
+            "Total: 30 min."
+          ],
+          "ingredientGroups": [
             {
-              "title": "Burrata Bruschetta Toasts",
-              "servings": "Serves 8",
-              "source": "Molly, yestoyolks.com",
-              "comments": [
-                "Heirloom or beefsteak tomatoes work beautifully when in season; cherry and grape tomatoes are reliable year-round.",
-                "Fresh mozzarella can substitute for burrata.",
-                "Total: 30 min."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Bruschetta topping (15 minutes ahead)",
-                  "ingredients": [
-                    "2 cups cherry or grape tomatoes, halved",
-                    "1/4 cup finely chopped red onion",
-                    "1 garlic clove, grated or very finely minced",
-                    "2 tablespoons extra-virgin olive oil",
-                    "1 tablespoon balsamic vinegar",
-                    "1 teaspoon kosher salt",
-                    "1/2 teaspoon black pepper",
-                    "1/4 cup chopped fresh basil"
-                  ]
-                },
-                {
-                  "label": "Toasts",
-                  "ingredients": [
-                    "8 slices crusty bread",
-                    "Extra-virgin olive oil",
-                    "Salt and pepper",
-                    "1 whole garlic clove, peeled"
-                  ]
-                },
-                {
-                  "label": "To serve",
-                  "ingredients": [
-                    "2 large or 4 small balls burrata",
-                    "Balsamic glaze",
-                    "Fresh basil leaves"
-                  ]
-                }
-              ],
-              "steps": [
-                "Combine all bruschetta topping ingredients in a bowl, toss well, and let sit at least 15 minutes to meld flavors.",
-                "Preheat oven to 400 degrees F. Arrange bread slices on a baking sheet. Drizzle with olive oil, season with salt and pepper. Bake 10-12 minutes until edges are golden and crisp.",
-                "Remove from oven and rub the peeled garlic clove over the surface of each hot toast. Let cool slightly.",
-                "Spoon bruschetta mixture over toasts. Tear burrata into large chunks and arrange on top. Garnish with balsamic glaze, additional basil, and more salt and pepper. Serve immediately."
+              "label": "Bruschetta topping (15 minutes ahead)",
+              "ingredients": [
+                "2 cups cherry or grape tomatoes, halved",
+                "1/4 cup finely chopped red onion",
+                "1 garlic clove, grated or very finely minced",
+                "2 tablespoons extra-virgin olive oil",
+                "1 tablespoon balsamic vinegar",
+                "1 teaspoon kosher salt",
+                "1/2 teaspoon black pepper",
+                "1/4 cup chopped fresh basil"
               ]
             },
-
+            {
+              "label": "Toasts",
+              "ingredients": [
+                "8 slices crusty bread",
+                "Extra-virgin olive oil",
+                "Salt and pepper",
+                "1 whole garlic clove, peeled"
+              ]
+            },
+            {
+              "label": "To serve",
+              "ingredients": [
+                "2 large or 4 small balls burrata",
+                "Balsamic glaze",
+                "Fresh basil leaves"
+              ]
+            }
+          ],
+          "steps": [
+            "Combine all bruschetta topping ingredients in a bowl, toss well, and let sit at least 15 minutes to meld flavors.",
+            "Preheat oven to 400 degrees F. Arrange bread slices on a baking sheet. Drizzle with olive oil, season with salt and pepper. Bake 10-12 minutes until edges are golden and crisp.",
+            "Remove from oven and rub the peeled garlic clove over the surface of each hot toast. Let cool slightly.",
+            "Spoon bruschetta mixture over toasts. Tear burrata into large chunks and arrange on top. Garnish with balsamic glaze, additional basil, and more salt and pepper. Serve immediately."
+          ]
+        },
         {
           "title": "Marinated Anchovies and Prawns",
           "servings": "Serves 4 as a starter",
@@ -1269,7 +1268,9 @@ module.exports = {
               "source": "Food Network / Katie Lee Biegel",
               "comments": [
                 "Contains bacon.",
-                { "html": "For pickled red onions, see <a href='pickling.html#quick-pickled-red-onions'>Quick Pickled Red Onions</a> in the Pickling section — prepare at least 1 hour ahead." }
+                {
+                  "html": "For pickled red onions, see <a href='pickling.html#quick-pickled-red-onions'>Quick Pickled Red Onions</a> in the Pickling section — prepare at least 1 hour ahead."
+                }
               ],
               "ingredientGroups": [
                 {
@@ -8884,7 +8885,9 @@ module.exports = {
               "servings": "Serves 4   |   Total: 1 hr",
               "source": "Tejal Rao / NYT Cooking",
               "comments": [
-                { "html": "Top with <a href='pickling.html#quick-pickled-red-onions'>Quick Pickled Red Onions</a> (Pickling section) when serving." },
+                {
+                  "html": "Top with <a href='pickling.html#quick-pickled-red-onions'>Quick Pickled Red Onions</a> (Pickling section) when serving."
+                },
                 "You can try the same technique with different beans—chickpeas to cannellini. Heavy cream may be swapped for 1 cup diced mozzarella scattered on top before baking."
               ],
               "ingredientGroups": [
@@ -11140,1295 +11143,1285 @@ module.exports = {
     },
     {
       "title": "Noodles",
-      "subsections": [
+      "recipes": [
         {
-          "title": "Italian",
-          "recipes": [
+          "title": "BIG Noods alla Gin with Sungold Tomatoes",
+          "favorite": true,
+          "servings": "Serves 4 to 6   |   Prep: 40 minutes   |   Total: 50 minutes",
+          "comments": [
+            "Fresh lasagna sheets are called for here for their fun, floppy volume on the plate, but any pasta shape — fresh or dried — works well.",
+            "Vodka can stand in for the gin."
+          ],
+          "source": "The Club, by Molly Baz",
+          "ingredientGroups": [
             {
-              "title": "BIG Noods alla Gin with Sungold Tomatoes",
-              "favorite": true,
-              "servings": "Serves 4 to 6   |   Prep: 40 minutes   |   Total: 50 minutes",
-              "comments": [
-                "Fresh lasagna sheets are called for here for their fun, floppy volume on the plate, but any pasta shape — fresh or dried — works well.",
-                "Vodka can stand in for the gin."
-              ],
-              "source": "The Club, by Molly Baz",
-              "ingredientGroups": [
-                {
-                  "label": "Prep",
-                  "ingredients": [
-                    "2 pints Sungold or cherry tomatoes, halved",
-                    "1 yellow onion, finely chopped",
-                    "6 garlic cloves, sliced"
-                  ]
-                },
-                {
-                  "label": "Sauce",
-                  "ingredients": [
-                    "3 tablespoons unsalted butter",
-                    "Kosher salt",
-                    "3 ounces double concentrated tomato paste (about 3/4 of a tube)",
-                    "1 tablespoon chopped Calabrian chilies",
-                    "1/4 cup gin or vodka",
-                    "1/4 cup heavy cream",
-                    "1 1/2 ounces (about 3/4 cup) finely grated Parmigiano-Reggiano"
-                  ]
-                },
-                {
-                  "label": "Pasta",
-                  "ingredients": [
-                    "12 ounces fresh lasagna sheets (or any pasta shape, fresh or dried)"
-                  ]
-                },
-                {
-                  "label": "To finish",
-                  "ingredients": [
-                    "Handful of basil",
-                    "Olive oil, for drizzling",
-                    "More grated Parmigiano-Reggiano"
-                  ]
-                }
-              ],
-              "steps": [
-                "Bring a large pot of salted water to a boil.",
-                "Prep: Cut the tomatoes in half. Finely chop the onion and slice the garlic.",
-                {
-                  "lead": "Sungold sauce:",
-                  "bullets": [
-                    "Heat the butter in a large Dutch oven over medium heat. Add the onion and a big pinch of salt; cook, stirring occasionally, until soft and golden, about 10 minutes.",
-                    "Add the garlic and cook 2 minutes more.",
-                    "Stir in the tomato paste and Calabrian chilies. Cook, stirring occasionally, until the tomato paste starts to caramelize and turn a deeper red, about 5 minutes.",
-                    "Stir in the gin and cook until fully evaporated, about 1 minute.",
-                    "In a small measuring cup, stir 1/4 cup of the hot pasta water into the cream to temper it (this warms the cream so it doesn't break the sauce). Stir the tempered cream into the sauce.",
-                    "Stir in the Parmesan. Remove from heat and cover to keep warm."
-                  ]
-                },
-                "Cook the pasta: Add the lasagna sheets to the boiling water, tearing them in half and separating them as you add them; stir to keep them from sticking. Cook about 1 minute less than the package directions. Reserve 1/2 cup pasta water, then drain.",
-                "Add the noodles and the remaining tomatoes to the pot of sauce. Return to medium heat and cook, stirring gently so as not to break up the noodles, until the tomatoes just begin to wilt, 1 to 2 minutes. Loosen with pasta water as needed.",
-                "Divide among bowls; top with basil, a drizzle of olive oil, and more Parmesan."
+              "label": "Prep",
+              "ingredients": [
+                "2 pints Sungold or cherry tomatoes, halved",
+                "1 yellow onion, finely chopped",
+                "6 garlic cloves, sliced"
               ]
             },
             {
-              "title": "Artichoke Pesto Pasta with Fried Peppercorns",
-              "servings": "Serves 4   |   Total: 30 minutes",
-              "comments": [
-                "The fried peppercorns are worth making extra of — Molly Baz notes they're a great crispy, spicy garnish on all sorts of dishes."
-              ],
-              "source": "The Club, by Molly Baz",
-              "ingredientGroups": [
-                {
-                  "label": "Prep",
-                  "ingredients": [
-                    "2 to 3 lemons (1 1/2 for peel and juice; remaining 1/2 to 1 lemon reserved for finishing)",
-                    "1 large bunch flat-leaf parsley, leaves and tender stems picked (about 2 cups packed)",
-                    "1 large or 2 small garlic cloves",
-                    "2 ounces Parmigiano-Reggiano, finely grated (about 3/4 cup), divided",
-                    "One 14.5- to 16-ounce jar marinated artichokes (preferably Mezzetta), drained, brine reserved"
-                  ]
-                },
-                {
-                  "label": "Pesto",
-                  "ingredients": [
-                    "1/3 cup olive oil",
-                    "3/4 cup (2 ounces) blanched almonds",
-                    "2 teaspoons kosher salt"
-                  ]
-                },
-                {
-                  "label": "Pasta",
-                  "ingredients": [
-                    "1 pound mezzi rigatoni",
-                    "Kosher salt, for the pasta water"
-                  ]
-                },
-                {
-                  "label": "Fried peppercorns",
-                  "ingredients": [
-                    "2 tablespoons olive oil",
-                    "2 tablespoons black peppercorns",
-                    "Kosher salt, to taste"
-                  ]
-                },
-                {
-                  "label": "To finish",
-                  "ingredients": [
-                    "One 8-ounce ball burrata",
-                    "More grated Parmigiano-Reggiano"
-                  ]
-                }
-              ],
-              "steps": [
-                "Prep: Remove the peel from 1 1/2 lemons in long strips with a vegetable peeler; squeeze 1/4 cup juice from the lemons (reserve more lemon for finishing).",
-                "Pesto: In a food processor, process the lemon peels until finely chopped. Add the parsley and process until roughly chopped. Add the garlic, artichokes, artichoke brine, olive oil, almonds, half the Parmesan, and the salt; process until a coarse pesto forms. Taste; add lemon juice if needed.",
-                "Cook the pasta: Bring a large pot of heavily salted water to a boil. Add the rigatoni and cook to al dente, 1 to 2 minutes less than the package directions. Reserve 1 cup pasta water, then drain.",
-                {
-                  "lead": "Fried peppercorns (meanwhile, as the pasta boils):",
-                  "bullets": [
-                    "Add the remaining 2 tablespoons olive oil to your smallest skillet. When shimmering, add the peppercorns. Toast, swirling the pan, until fragrant and slightly darkened, about 2 minutes.",
-                    "Remove from heat and let rest in the oil until they stop popping. Transfer to a paper-towel-lined plate with a slotted spoon.",
-                    "Let cool, then roughly chop. Season generously with salt."
-                  ]
-                },
-                "Plate it up: Return the pasta to the pot and add the pesto. Set over medium-low heat. Add 1/2 cup of the reserved pasta water and the remaining Parmesan; toss vigorously until the sauce emulsifies and coats the pasta. Add more pasta water or lemon juice to loosen if needed.",
-                "Divide among plates and top with torn burrata, a final grating of Parmesan, and the fried peppercorns."
+              "label": "Sauce",
+              "ingredients": [
+                "3 tablespoons unsalted butter",
+                "Kosher salt",
+                "3 ounces double concentrated tomato paste (about 3/4 of a tube)",
+                "1 tablespoon chopped Calabrian chilies",
+                "1/4 cup gin or vodka",
+                "1/4 cup heavy cream",
+                "1 1/2 ounces (about 3/4 cup) finely grated Parmigiano-Reggiano"
               ]
             },
             {
-              "title": "Brie Linguine",
-              "servings": "Serves 6   |   Prep: 15 minutes, plus 2–3 hours resting",
-              "comments": [
-                "A very intense pasta, best served as a side dish.",
-                "Flavored fresh pasta — red pepper, basil, or spinach — provides wonderful color and taste."
-              ],
-              "source": "More Than a Tea Party (cookbook), Brunch and Luncheon chapter, p. 105",
-              "ingredientGroups": [
-                {
-                  "label": "Sauce (2–3 hours ahead)",
-                  "ingredients": [
-                    "4 large, ripe tomatoes, peeled and coarsely chopped",
-                    "1 small red onion, coarsely chopped",
-                    "3 garlic cloves, finely minced",
-                    "1/2–3/4 cup fresh basil leaves, well washed and dried",
-                    "1/2 cup olive oil",
-                    "3/4 pound Brie cheese, rind removed and broken into chunks",
-                    "2 ounces Prosciutto, cut into thin strips",
-                    "1–2 teaspoons salt",
-                    "1–2 teaspoons freshly ground black pepper",
-                    "4 sun-dried tomatoes, well-chopped (optional)"
-                  ]
-                },
-                {
-                  "label": "Pasta",
-                  "ingredients": [
-                    "1 pound linguine"
-                  ]
-                },
-                {
-                  "label": "Garnish",
-                  "ingredients": [
-                    "Freshly grated Parmesan cheese"
-                  ]
-                }
-              ],
-              "steps": [
-                "Sauce: In a large bowl, mix together the tomatoes, onion, garlic, basil, olive oil, Brie, Prosciutto, salt, pepper, and sun-dried tomatoes (if using). Cover and let sit at room temperature for at least 2–3 hours before serving.",
-                "Cook linguine in boiling salted water until al dente. Drain.",
-                "Toss pasta with tomato-Brie mixture, correct seasoning, and garnish generously with Parmesan. Serve immediately."
+              "label": "Pasta",
+              "ingredients": [
+                "12 ounces fresh lasagna sheets (or any pasta shape, fresh or dried)"
               ]
             },
             {
-              "title": "Lemon Fusilli with Arugula",
-              "favorite": true,
-              "servings": "Serves 4 to 5   |   Prep: 10 minutes   |   Cook: 30 minutes   |   Total: 40 minutes",
-              "source": "Food Network, by Ina Garten, from Barefoot Contessa at Home",
-              "ingredientGroups": [
-                {
-                  "label": "Lemon cream sauce",
-                  "ingredients": [
-                    "1 tablespoon good olive oil",
-                    "1 tablespoon minced garlic (2 cloves)",
-                    "2 cups heavy cream",
-                    "Zest and juice of 2 lemons",
-                    "Kosher salt and freshly ground black pepper"
-                  ]
-                },
-                {
-                  "label": "Broccoli",
-                  "ingredients": [
-                    "1 bunch broccoli, cut into florets"
-                  ]
-                },
-                {
-                  "label": "Pasta",
-                  "ingredients": [
-                    "1 pound dried fusilli pasta"
-                  ]
-                },
-                {
-                  "label": "To finish",
-                  "ingredients": [
-                    "1/2 pound baby arugula (or 2 bunches common arugula, leaves cut in thirds)",
-                    "1/2 cup freshly grated Parmesan",
-                    "1 pint grape or cherry tomatoes, halved",
-                    "1 remaining lemon, sliced 1/4-inch thick"
-                  ]
-                }
-              ],
-              "steps": [
-                "Lemon cream sauce: Heat the olive oil in a medium saucepan over medium heat; add the garlic and cook 60 seconds. Add the cream and bring to a boil. Add the lemon zest and juice; simmer over low heat until thickened, about 20 minutes. Season with salt and pepper.",
-                "Meanwhile, cook the broccoli florets in a pot of boiling salted water 3 to 5 minutes, until tender but still firm. Drain and set aside.",
-                {
-                  "lead": "Pasta:",
-                  "bullets": [
-                    "Bring a large pot of water to a boil; add 1 tablespoon salt and the pasta. Cook according to the package directions, about 12 minutes. Drain.",
-                    "Return the pasta to the pot. Immediately add the cream mixture and cook over medium-low heat 3 minutes, until most of the sauce is absorbed."
-                  ]
-                },
-                "Pour the hot pasta into a large bowl; add the arugula, Parmesan, tomatoes, and cooked broccoli.",
-                "Cut the remaining lemon in half lengthwise, slice 1/4-inch thick crosswise, and add to the pasta.",
-                "Toss well, season to taste, and serve hot."
-              ]
-            },
-            {
-              "title": "Christy's Pesto (Adapted)",
-              "servings": "Six 2-person servings",
-              "comments": [
-                "Walnuts can be swapped for pine nuts or pecans, or a mix of the two."
-              ],
-              "source": "Family recipe card (\"Christy's Pesto, Adapted\")",
-              "ingredientGroups": [
-                {
-                  "ingredients": [
-                    "6 cloves garlic",
-                    "4 cups fresh basil leaves (about 2 bunches, stemmed)",
-                    "3/4 cup olive oil",
-                    "1 cup chopped walnuts",
-                    "1 teaspoon salt",
-                    "1 cup grated Parmesan cheese",
-                    "1 tablespoon warm water"
-                  ]
-                }
-              ],
-              "steps": [
-                "Mince the garlic in a food processor.",
-                "Add the basil and pulse until finely chopped.",
-                "With the processor running, add the olive oil, walnuts, salt, Parmesan, and warm water; process until smooth.",
-                "Portion into individual packages (3 heaping tablespoons each) and freeze."
-              ]
-            },
-            {
-              "title": "Pasta with Sausage, Basil, and Mustard",
-              "favorite": true,
-              "servings": "Serves 4   |   Active: 10 min   |   Total: 20 min",
-              "source": "Nigel Slater, Food & Wine (September 2002)",
-              "ingredientGroups": [
-                {
-                  "label": "Pasta",
-                  "ingredients": [
-                    "1 pound penne, rigatoni, or medium shells"
-                  ]
-                },
-                {
-                  "label": "Sausage + sauce",
-                  "ingredients": [
-                    "1 tablespoon extra-virgin olive oil",
-                    "8 hot Italian sausage links, casings removed, meat crumbled (about 1 1/2 pounds); or substitute one 1-pound roll sweet Italian or sage sausage (such as Jimmy Dean)",
-                    "3/4 cup dry white wine",
-                    "3/4 cup heavy cream",
-                    "3 tablespoons grainy mustard",
-                    "Pinch of Aleppo pepper or red pepper flakes"
-                  ]
-                },
-                {
-                  "label": "Finish",
-                  "ingredients": [
-                    "1 cup fresh basil, thinly sliced"
-                  ]
-                }
-              ],
-              "steps": [
-                "Cook pasta in a large pot of boiling salted water until al dente. Drain.",
-                "Meanwhile, heat olive oil in a large, deep skillet over moderately high heat. Add sausage meat and brown, breaking up as it cooks, about 5 min.",
-                "Add wine and simmer, scraping up any browned bits from the bottom, until reduced by half, about 5 min.",
-                "Add cream, mustard, and Aleppo pepper; simmer 2 min.",
-                "Remove from heat. Add drained pasta and basil; toss to coat. Serve immediately."
-              ]
-            },
-            {
-              "title": "Spiced Meatballs with Pappardelle",
-              "servings": "Serves 4   |   Total: 1 hr 15 min",
-              "source": "Molly Baz, The Club",
-              "ingredientGroups": [
-                {
-                  "label": "Sauce",
-                  "ingredients": [
-                    "3 tablespoons unsalted butter",
-                    "1 large yellow onion, finely chopped",
-                    "1 cinnamon stick",
-                    "1 teaspoon Aleppo pepper or red pepper flakes",
-                    "1 (28-oz) can crushed tomatoes",
-                    "2 tablespoons red wine vinegar",
-                    "Kosher salt"
-                  ]
-                },
-                {
-                  "label": "Meatball mixture",
-                  "ingredients": [
-                    "1 large egg",
-                    "2 tablespoons extra-virgin olive oil",
-                    "1 cup panko breadcrumbs",
-                    "1 1/2 teaspoons garam masala (or baharat or hawaij)",
-                    "1 1/2 teaspoons ground turmeric",
-                    "1 tablespoon kosher salt, plus more",
-                    "1/3 cup golden raisins or currants",
-                    "3 garlic cloves, finely grated",
-                    "1 bunch dill, coarsely chopped (reserve a handful for garnish)",
-                    "1 bunch cilantro, coarsely chopped (reserve a handful for garnish)"
-                  ]
-                },
-                {
-                  "label": "Beef",
-                  "ingredients": [
-                    "1 pound ground beef (80/20)"
-                  ]
-                },
-                {
-                  "label": "Finish",
-                  "ingredients": [
-                    "1/2 cup water",
-                    "1 tablespoon unsalted butter",
-                    "1 pound fresh pappardelle or other fresh long pasta"
-                  ]
-                }
-              ],
-              "steps": [
-                "Preheat oven to 400°F. In a large Dutch oven over medium heat, melt 3 tablespoons butter. Add onion, cinnamon stick, Aleppo pepper or red pepper flakes, and a big pinch of salt. Cook, stirring, until onions begin to soften, 5–6 minutes. Add crushed tomatoes and red wine vinegar. Cover with a tight-fitting lid and transfer to oven for 20 minutes.",
-                "Meanwhile, in a large bowl, whisk together egg and olive oil. Add panko, garam masala, turmeric, salt, raisins, and grated garlic; mix well. Coarsely chop dill and cilantro (reserving a handful of each for garnish) and stir into the panko mixture. Scoop out 3/4 cup of this mixture and spread on a small rimmed baking sheet; toast in the oven until golden and crisp, stirring once, 9–14 minutes. Let cool. (These are your breadcrumbs.)",
-                "Add ground beef to the remaining panko mixture and work with your hands until evenly combined. Divide into 8 equal portions and roll into balls.",
-                "Bring a large pot of salted water to a boil. Remove Dutch oven from oven, uncover, and stir in 1/2 cup water. Nestle meatballs in the sauce, turning once to coat. Return lid slightly ajar and bake until meatballs are just cooked through and bouncy, 12–16 minutes. Remove from oven and keep covered.",
-                "Transfer meatballs to a plate. Cook pappardelle per package directions until just al dente. Use tongs to transfer pasta into the sauce, add 1 tablespoon butter, and toss to coat, adding pasta water as needed. Divide pasta and sauce among bowls, top with meatballs, toasted breadcrumbs, and fresh herbs."
-              ]
-            },
-            {
-              "title": "Nuala's Pasta",
-              "servings": "Serves 2–3",
-              "source": "Family recipe card, credited to Nuala O'Connor",
-              "ingredientGroups": [
-                {
-                  "label": "Pasta",
-                  "ingredients": [
-                    "1/2 pound tubular pasta (rigatoni or penne)"
-                  ]
-                },
-                {
-                  "label": "Ricotta sauce",
-                  "ingredients": [
-                    "3/4 cup part-skim ricotta, at room temperature",
-                    "3 scallions, finely chopped",
-                    "1 tablespoon chopped parsley or fresh basil",
-                    "1/3 cup grated parmesan cheese",
-                    "1/2 teaspoon salt",
-                    "1/4 teaspoon nutmeg",
-                    "Pinch cayenne pepper"
-                  ]
-                }
-              ],
-              "steps": [
-                "Bring ricotta to room temperature. Place in a large serving bowl.",
-                "Add scallions, parsley or basil, grated parmesan, salt, nutmeg, and cayenne to ricotta; mix.",
-                "Cook pasta. When ready, stir 1/4 cup pasta cooking water into the ricotta mixture. Drain pasta and toss with ricotta."
-              ]
-            },
-            {
-              "title": "Three Cheese Manicotti",
-              "source": "Family recipe card, credited to Susan Muhlheim",
-              "ingredientGroups": [
-                {
-                  "label": "Shells",
-                  "ingredients": [
-                    "8 manicotti shells"
-                  ]
-                },
-                {
-                  "label": "Filling",
-                  "ingredients": [
-                    "2 eggs, beaten",
-                    "1 cup shredded mozzarella",
-                    "1 1/2 cups ricotta cheese",
-                    "1/2 cup grated parmesan",
-                    "1/4 cup chopped parsley",
-                    "1/2 teaspoon oregano",
-                    "Dash of pepper"
-                  ]
-                },
-                {
-                  "label": "Sauce and topping",
-                  "ingredients": [
-                    "Spaghetti sauce (jarred or homemade)",
-                    "1 cup shredded mozzarella (reserved for topping)"
-                  ]
-                }
-              ],
-              "steps": [
-                "Cook manicotti shells; rinse in cold water.",
-                "Stir together eggs, 1 cup mozzarella, ricotta, parmesan, parsley, oregano, and pepper. Spoon filling into manicotti shells.",
-                "Pour spaghetti sauce into the bottom of a rectangular baking dish (just cover the bottom). Arrange stuffed manicotti in dish. Pour remaining sauce over shells. Sprinkle reserved mozzarella on top.",
-                "Bake, covered, at 350°F for 35–40 minutes."
-              ]
-            },
-            {
-              "title": "Lisa's Pasta",
-              "servings": "Serves 4–6",
-              "source": "Family recipe card, credited to Lisa Sullivan; subtitled \"Angel Hair Tomato Basil Toss\"",
-              "ingredientGroups": [
-                {
-                  "label": "Sauce base",
-                  "ingredients": [
-                    "1/2 cup olive oil",
-                    "2 cloves garlic, minced",
-                    "1/4 cup sliced green onions"
-                  ]
-                },
-                {
-                  "label": "Tomatoes and herbs",
-                  "ingredients": [
-                    "3 large tomatoes, peeled and diced",
-                    "2 tablespoons chopped fresh basil",
-                    "1 teaspoon salt",
-                    "1/4 teaspoon coarse ground black pepper"
-                  ]
-                },
-                {
-                  "label": "Pasta and finish",
-                  "ingredients": [
-                    "1/2 pound angel hair pasta",
-                    "Grated parmesan cheese, for serving"
-                  ]
-                }
-              ],
-              "steps": [
-                "In a large skillet, heat olive oil. Add garlic and green onions; stir-fry 1 minute.",
-                "Stir in tomatoes, basil, salt, and pepper; cook 2 minutes, stirring frequently.",
-                "Cook angel hair pasta; drain. Toss hot pasta with tomato mixture immediately. Serve sprinkled with parmesan."
-              ]
-            },
-            {
-              "title": "Linguine with Clams and Wild Mushrooms",
-              "servings": "Serves 4",
-              "ingredientGroups": [
-                {
-                  "label": "Mushrooms",
-                  "ingredients": [
-                    "6 tablespoons olive oil (divided)",
-                    "1 pound mixed fresh wild mushrooms (oyster and/or shiitake), stems trimmed, caps sliced"
-                  ]
-                },
-                {
-                  "label": "Clams",
-                  "ingredients": [
-                    "6 large garlic cloves, minced",
-                    "1/4 teaspoon Aleppo pepper or red pepper flakes",
-                    "1 cup dry white wine",
-                    "5 pounds clams (about 24 littlenecks)"
-                  ]
-                },
-                {
-                  "label": "Finish",
-                  "ingredients": [
-                    "1 pound linguine",
-                    "2 bunches fresh chives or 1 bunch green onions, chopped",
-                    "Salt and pepper to taste"
-                  ]
-                }
-              ],
-              "steps": [
-                "Heat 3 tablespoons oil over high heat. Saute mushrooms until beginning to brown, about 5 minutes. Transfer to plate using slotted spoon.",
-                "Add remaining 3 tablespoons oil and garlic to pot. Saute until tender, about 3 minutes.",
-                "Add Aleppo pepper, then wine and clams. Cover and cook until clams open, about 8 minutes.",
-                "Cook linguine in a large pot of boiling salted water until just tender but firm to bite. Drain and transfer to large bowl.",
-                "Spoon mushrooms over pasta, then top with clam mixture, discarding any unopened clams. Season with salt and pepper. Sprinkle with chives."
-              ]
-            },
-            {
-              "title": "Linguine with Mussels",
-              "ingredientGroups": [
-                {
-                  "label": "Aromatics",
-                  "ingredients": [
-                    "2 teaspoons olive oil",
-                    "1/2 cup chopped fennel bulb",
-                    "1/2 cup finely chopped onion",
-                    "2 garlic cloves, minced"
-                  ]
-                },
-                {
-                  "label": "Sauce",
-                  "ingredients": [
-                    "1 cup diced tomato",
-                    "1 cup dry vermouth",
-                    "3 tablespoons chopped fresh parsley",
-                    "1 tablespoon tomato paste",
-                    "1 teaspoon fresh thyme leaves",
-                    "1/4 teaspoon salt",
-                    "1/8 teaspoon Aleppo pepper or red pepper flakes"
-                  ]
-                },
-                {
-                  "label": "Finish",
-                  "ingredients": [
-                    "28 fresh mussels, scrubbed and debearded",
-                    "2 tablespoons water",
-                    "2 teaspoons cornstarch",
-                    "2 cups hot cooked linguine (about 4 oz uncooked)"
-                  ]
-                }
-              ],
-              "steps": [
-                "Heat oil over medium heat. Add fennel, onion, and garlic; saute 5 minutes.",
-                "Add sauce ingredients and bring to boil.",
-                "Add mussels, cover, and cook 3 minutes until shells open. Remove from heat. Discard any unopened shells. Reserve 10 shells with meat intact; remove meat from the rest.",
-                "Combine water and cornstarch; add to tomato mixture and boil 2 minutes, stirring.",
-                "Serve 1 cup pasta per plate topped with 1 cup sauce and 5 mussels in shells."
-              ]
-            },
-            {
-              "title": "Eggplant Rolls in Spaghettini",
-              "servings": "Serves 4",
-              "source": "From Chef Louisa (Villa Britannia, Taormina, Sicily)",
-              "comments": [
-                "Piccadilly tomatoes are a sweet Italian plum variety; cherry tomatoes are an excellent substitute.",
-                "The béchamel can be made ahead and kept warm with plastic wrap pressed to the surface to prevent a skin forming."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Tomato sauce (30–45 minutes ahead)",
-                  "ingredients": [
-                    "2 tablespoons extra-virgin olive oil",
-                    "2 carrots, quartered",
-                    "6 celery sticks, quartered",
-                    "3 shallots, quartered",
-                    "2 tablespoons fresh basil, finely chopped",
-                    "400g Piccadilly or cherry tomatoes, halved",
-                    "Rock salt to taste"
-                  ]
-                },
-                {
-                  "label": "Béchamel",
-                  "ingredients": [
-                    "600ml whole milk",
-                    "1 slice of onion",
-                    "1 bay leaf",
-                    "Small pinch of freshly grated nutmeg",
-                    "Pinch of salt",
-                    "75g butter",
-                    "50g plain flour (tipo 00)"
-                  ]
-                },
-                {
-                  "label": "Eggplant (1 hour ahead)",
-                  "ingredients": [
-                    "2 large eggplants",
-                    "1 tablespoon rock salt (for draining)",
-                    "Sunflower oil for frying (vegetables should nearly swim in the oil)",
-                    "1 clove garlic, crushed in 1 teaspoon olive oil (garlic oil)"
-                  ]
-                },
-                {
-                  "label": "Spaghettini",
-                  "ingredients": [
-                    "200g spaghettini",
-                    "Salted water for boiling"
-                  ]
-                },
-                {
-                  "label": "Filling and topping",
-                  "ingredients": [
-                    "100g ham, roughly chopped",
-                    "100g Parmesan, grated",
-                    "Fresh basil, finely chopped"
-                  ]
-                }
-              ],
-              "steps": [
-                "Make the tomato sauce: in a pan over low heat, fry olive oil, carrots, celery, shallots, and basil for 15 minutes. Add tomatoes and rock salt, cover, and cook 20–30 minutes on low until very soft. Pass through a food mill, discarding solids.",
-                "Make the béchamel: bring milk to a simmer with the onion, bay leaf, nutmeg, and salt; steep 10 minutes, then strain. In a saucepan, melt butter, add flour, and stir well. Gradually whisk in the strained milk until smooth and not too thick. Set aside.",
-                "Prepare the eggplant: peel mostly, leaving a few stripes of skin. Slice lengthwise into 1/2 cm planks. Dice 2 of the planks into small cubes. Place sliced and diced eggplant in separate bowls, toss each with rock salt, and let drain at least 1 hour. Squeeze handfuls to remove excess moisture.",
-                "Heat sunflower oil until sizzling. Fry eggplant slices and diced cubes separately in batches until lightly golden. Drain on kitchen paper.",
-                "In a separate pan, heat the garlic oil. Add half the tomato sauce and the diced eggplant; toss to combine.",
-                "Cook spaghettini in salted boiling water until al dente. Drain and add to the pan with diced eggplant and sauce. Mix well. Stir in the ham and half the Parmesan.",
-                "Lay the fried eggplant planks on a board. Spoon a generous amount of the spaghettini mixture onto each plank and roll up.",
-                "Spread a spoonful of béchamel and tomato sauce on the bottom of an oven-proof dish. Arrange eggplant rolls in rows. Spoon remaining tomato sauce and béchamel on top. Scatter with remaining Parmesan.",
-                "Bake at 350°F for 15 minutes. Serve with fresh basil."
-              ]
-            },
-            {
-              "title": "Pasta con le Sarde",
-              "servings": "Serves 4",
-              "source": "From Chef Louisa (Villa Britannia, Taormina, Sicily)",
-              "comments": [
-                { "html": "Traditionally made with <a href='#busiate'>Busiate</a> (Sicilian spiral pasta; see recipe, this section). Good store-bought substitutes: bucatini, perciatelli, or thick spaghetti." },
-                "Wild fennel is traditional and highly recommended; the frond tops of a fennel bulb are an excellent substitute.",
-                "The breadcrumb topping (pangrattato) is essential — do not skip it."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Pasta",
-                  "ingredients": [
-                    "1 batch Busiate (see recipe, this section) or store-bought bucatini, perciatelli, or thick spaghetti"
-                  ]
-                },
-                {
-                  "label": "Sardine sauce",
-                  "ingredients": [
-                    "60ml extra-virgin olive oil",
-                    "1 small onion, finely diced",
-                    "2 salted anchovies (or 4 oil-packed fillets, rinsed)",
-                    "400g fresh sardines, cleaned and filleted",
-                    "60g raisins",
-                    "30g pine nuts",
-                    "1/2 glass dry white wine",
-                    "1 saffron sachet (0.125g), dissolved in 2 tablespoons warm water",
-                    "100ml tomato passata",
-                    "100g wild fennel (or fennel frond tops), boiled until just tender"
-                  ]
-                },
-                {
-                  "label": "Breadcrumb topping",
-                  "ingredients": [
-                    "30ml olive oil",
-                    "1 clove garlic",
-                    "2 salted anchovies (or 4 oil-packed fillets, rinsed)",
-                    "80g dried breadcrumbs"
-                  ]
-                }
-              ],
-              "steps": [
-                "Make or obtain the pasta: prepare Busiate following the recipe in this section, or use store-bought bucatini or thick spaghetti.",
-                "Make the breadcrumb topping: heat olive oil in a small pan. Add garlic and anchovies, stirring until anchovies dissolve. Add breadcrumbs and toast, stirring, until golden and crisp. Remove from heat and spread out to cool.",
-                "Make the sardine sauce: heat olive oil over medium heat. Add onion and the 2 anchovies; cook until anchovies dissolve and onion softens. Add raisins and pine nuts. Pour in white wine and let reduce briefly. Add saffron water, passata, and boiled fennel. Add fresh sardines and cook about 8 minutes until just cooked through.",
-                "Cook the pasta in well-salted boiling water (8–10 minutes for busiate; per package for store-bought). Drain and toss with the sardine sauce. Plate and top generously with the breadcrumb topping."
-              ]
-            },
-            {
-              "id": "busiate",
-              "title": "Busiate (Sicilian Spiral Pasta)",
-              "servings": "Makes about 8 servings",
-              "source": "From Chef Louisa (Villa Britannia, Taormina, Sicily)",
-              "comments": [
-                "Busiate is the traditional pasta of western Sicily (Trapani). Made with semola rather than egg — firmer and more toothsome than egg pasta.",
-                "The shaping tool is a ferro (long thin metal skewer); a thin wooden skewer or knitting needle works as a substitute.",
-                "Use with Pasta con le Sarde (this section), pesto trapanese, or any bold Sicilian sauce."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Pasta dough",
-                  "ingredients": [
-                    "500g semola flour (durum wheat semolina)",
-                    "250ml water",
-                    "1 tablespoon olive oil",
-                    "Large pinch of salt"
-                  ]
-                },
-                {
-                  "label": "To shape",
-                  "ingredients": [
-                    "1 ferro (long thin metal skewer) or thin wooden skewer"
-                  ]
-                }
-              ],
-              "steps": [
-                "Mound the semola on a clean surface. Add salt and olive oil and make a well in the center. Gradually work the water into the flour with your hands, adding slowly, until a firm dough forms.",
-                "Knead the dough, stretching and folding, for 10–15 minutes. If the dough warms up, stop and rest briefly. Refrigerate 15–30 minutes.",
-                "Pinch off a small piece of dough and roll into a thin rope on the work surface. Hold the skewer at a slight diagonal against the rope and press-roll forward, spiraling the dough around the skewer. Slide off. Repeat with remaining dough.",
-                "Cook in well-salted boiling water for 8–10 minutes."
-              ]
-            },
-            {
-              "title": "Sage Pesto",
-              "servings": "Makes 1 cup (serving: 1 tablespoon)",
-              "ingredientGroups": [
-                {
-                  "label": "Processor base",
-                  "ingredients": [
-                    "2 tablespoons pine nuts, toasted",
-                    "2 large garlic cloves, peeled"
-                  ]
-                },
-                {
-                  "label": "Herbs and greens",
-                  "ingredients": [
-                    "2 cups torn spinach",
-                    "2 cups fresh flat-leaf parsley leaves",
-                    "3/4 cup fresh sage leaves"
-                  ]
-                },
-                {
-                  "label": "Seasoning",
-                  "ingredients": [
-                    "2 tablespoons (1/2 oz) grated fresh Parmesan",
-                    "4 teaspoons lemon juice",
-                    "1/8 teaspoon salt"
-                  ]
-                },
-                {
-                  "label": "Finish",
-                  "ingredients": [
-                    "3 tablespoons extra-virgin olive oil"
-                  ]
-                }
-              ],
-              "steps": [
-                "With the food processor running, drop pine nuts and garlic through the feed chute; process until minced.",
-                "Add spinach, parsley, sage, Parmesan, lemon juice, and salt; process until finely minced.",
-                "With the processor running, drizzle in olive oil; process until well blended.",
-                "Store in an airtight container in the refrigerator."
+              "label": "To finish",
+              "ingredients": [
+                "Handful of basil",
+                "Olive oil, for drizzling",
+                "More grated Parmigiano-Reggiano"
               ]
             }
-,
+          ],
+          "steps": [
+            "Bring a large pot of salted water to a boil.",
+            "Prep: Cut the tomatoes in half. Finely chop the onion and slice the garlic.",
             {
-              "title": "Crispy-Crackly Minty-Pea Lasagna",
-              "servings": "Serves 8",
-              "source": "Molly Baz, \"The Club\"",
-              "comments": [
-                "Meyer lemon is optional but adds a bright floral note when layered in. No-boil noodles are not recommended -- use standard dry lasagna noodles.",
-                "The cracker-crisp top is the signature of this recipe; bake until noodles are very burnished. Everyone gets a crunchy piece.",
-                "Active: 30 min; Bake: 60-65 min."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Noodles",
-                  "ingredients": [
-                    "1 pound dry lasagna noodles",
-                    "Kosher salt",
-                    "Extra-virgin olive oil (for greasing noodles and pan)"
-                  ]
-                },
-                {
-                  "label": "Filling",
-                  "ingredients": [
-                    "1 (16-oz) bag frozen peas, defrosted (10 oz / about 2 1/2 cups for filling; 6 oz reserved for assembly)",
-                    "1 (10-oz) bag frozen spinach, defrosted and squeezed very dry",
-                    "5 cloves garlic",
-                    "1 pound fresh ricotta",
-                    "1/3 cup extra-virgin olive oil",
-                    "2/3 cup heavy cream",
-                    "1 large egg",
-                    "1 3/4 oz Pecorino Romano, finely grated (half of 3 1/2 oz total)",
-                    "1 tablespoon plus 1 teaspoon kosher salt",
-                    "Freshly ground black pepper",
-                    "2 cups packed fresh mint leaves"
-                  ]
-                },
-                {
-                  "label": "Mozzarella layer",
-                  "ingredients": [
-                    "8 oz whole milk mozzarella (not fresh), grated on the large holes of a box grater"
-                  ]
-                },
-                {
-                  "label": "Assembly (optional)",
-                  "ingredients": [
-                    "1 Meyer lemon, roughly chopped (seeds discarded)"
-                  ]
-                },
-                {
-                  "label": "Crispy top",
-                  "ingredients": [
-                    "Extra-virgin olive oil (for drizzling)",
-                    "1 3/4 oz Pecorino Romano, finely grated (remaining half)"
-                  ]
-                }
-              ],
-              "steps": [
-                "Cook lasagna noodles in a large pot of generously salted boiling water 2-3 minutes less than package directions (very al dente). Drain and transfer to a sheet pan; coat lightly with olive oil.",
-                "Combine ricotta, garlic, spinach, and 10 oz (about 2 1/2 cups) peas in a food processor. Process until a homogeneous green forms, scraping sides. Add olive oil, cream, egg, half the Pecorino, the salt, and lots of black pepper. Process until combined. Add mint and pulse just to combine. Season to taste. Reserve remaining 6 oz peas for assembly.",
-                "Preheat oven to 400 degrees F. Line a baking sheet with parchment. Lightly grease a 2 1/2- to 3-quart baking dish with olive oil.",
-                "Assemble: Spread 1 cup ricotta mixture in the bottom of the dish. Top with one layer of noodles. For each of 3 layers: top with one-third of remaining ricotta mixture, one-third of mozzarella, one-third of Meyer lemon (if using), and one-third of reserved peas; add another layer of noodles. Finish with a fourth layer of noodles. (Noodles may hang over the sides -- this is desirable.)",
-                "Cover with foil and place on the prepared baking sheet. Bake 30 minutes.",
-                "Increase oven to 450 degrees F. Uncover, drizzle noodles generously with olive oil, and sprinkle remaining Pecorino on top. Bake 28-34 more minutes, until noodles are very crisp and burnished. Rest 15 minutes before cutting."
+              "lead": "Sungold sauce:",
+              "bullets": [
+                "Heat the butter in a large Dutch oven over medium heat. Add the onion and a big pinch of salt; cook, stirring occasionally, until soft and golden, about 10 minutes.",
+                "Add the garlic and cook 2 minutes more.",
+                "Stir in the tomato paste and Calabrian chilies. Cook, stirring occasionally, until the tomato paste starts to caramelize and turn a deeper red, about 5 minutes.",
+                "Stir in the gin and cook until fully evaporated, about 1 minute.",
+                "In a small measuring cup, stir 1/4 cup of the hot pasta water into the cream to temper it (this warms the cream so it doesn't break the sauce). Stir the tempered cream into the sauce.",
+                "Stir in the Parmesan. Remove from heat and cover to keep warm."
               ]
             },
-            {
-              "title": "Crisp Gnocchi with Sausage and Peas",
-              "servings": "Serves 4",
-              "source": "New York Times (Ali Slagle)",
-              "comments": [
-                "No boiling needed -- gnocchi cook directly from the package in the skillet.",
-                "Hot or sweet Italian sausage works equally well. A splash of heavy cream added with the Parmesan makes a creamier version.",
-                "Total: 25 min."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Gnocchi",
-                  "ingredients": [
-                    "3 tablespoons extra-virgin olive oil, plus more as needed",
-                    "1 (12- to 18-oz) package shelf-stable potato gnocchi"
-                  ]
-                },
-                {
-                  "label": "Sausage",
-                  "ingredients": [
-                    "1 pound hot or sweet Italian sausage, casings removed"
-                  ]
-                },
-                {
-                  "label": "Sauce",
-                  "ingredients": [
-                    "2 cups (10 oz) frozen peas (no need to thaw)",
-                    "1 tablespoon Dijon mustard",
-                    "1/2 cup water"
-                  ]
-                },
-                {
-                  "label": "Finish",
-                  "ingredients": [
-                    "1/2 cup (1 oz) grated Parmesan, plus more for serving",
-                    "Salt and freshly ground black pepper",
-                    "1/2 cup torn fresh dill, mint, or basil, plus more for serving"
-                  ]
-                }
-              ],
-              "steps": [
-                "Heat 1 tablespoon oil in a large (12-inch) nonstick or cast-iron skillet over medium-high. Break up any stuck-together gnocchi and add in an even layer. Cover and cook, undisturbed, until golden underneath and unstuck, 2-4 minutes. Uncover and cook, stirring, until crisp on both sides, 2-3 minutes more. Transfer to a bowl.",
-                "Add remaining 2 tablespoons oil to the skillet over medium-high. Add sausage and break into small pieces. Cook undisturbed until browned, 2-4 minutes; stir and cook through, 2-4 minutes more.",
-                "Stir in peas, mustard, and 1/2 cup water; scrape up the browned bits. Simmer until peas are cooked through, 2-4 minutes.",
-                "Add browned gnocchi and Parmesan; stir until cheese melts. Season with salt and pepper, stir in herbs, and serve topped with more herbs, Parmesan, and black pepper."
-              ]
-            },
-            {
-              "title": "One-Pan Orzo with Spinach and Feta",
-              "servings": "Serves 4",
-              "source": "New York Times (Melissa Clark)",
-              "comments": [
-                "Inspired by spanakorizo, the Greek spinach-and-rice dish. Works as a complete meatless meal or a hearty side to roasted meats or fish.",
-                "Parsley or cilantro can substitute for dill.",
-                "Total: 30 min."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Aromatics",
-                  "ingredients": [
-                    "2 tablespoons unsalted butter",
-                    "4 large scallions, trimmed and thinly sliced (reserve green parts for garnish)",
-                    "2 large garlic cloves, minced"
-                  ]
-                },
-                {
-                  "label": "Spinach",
-                  "ingredients": [
-                    "8 oz baby spinach (about 8 cups), coarsely chopped",
-                    "1/2 teaspoon kosher salt"
-                  ]
-                },
-                {
-                  "label": "Orzo",
-                  "ingredients": [
-                    "1 3/4 cups low-sodium chicken or vegetable stock",
-                    "1 cup orzo",
-                    "1 teaspoon finely grated lemon zest",
-                    "1/2 teaspoon kosher salt"
-                  ]
-                },
-                {
-                  "label": "Finish",
-                  "ingredients": [
-                    "3/4 cup crumbled feta (3 oz), plus more for garnish",
-                    "1/2 cup frozen peas, thawed (optional)",
-                    "1 cup chopped fresh dill (or parsley or cilantro)"
-                  ]
-                }
-              ],
-              "steps": [
-                "Heat a 10-inch skillet over medium and melt butter, about 30-60 seconds. Stir in scallions (reserving some green tops for garnish) and garlic; cook, stirring frequently, until softened, about 3 minutes.",
-                "Stir in spinach in batches if needed and 1/2 teaspoon salt. Cook, stirring occasionally, until wilted, about 5 minutes.",
-                "Stir in stock and bring to a simmer. Stir in orzo, lemon zest, and remaining 1/2 teaspoon salt. Cover and simmer over medium-low until orzo is nearly done and most liquid is absorbed, 10-14 minutes, stirring once or twice.",
-                "Stir in feta, peas (if using), and dill. Cover and cook 1 more minute. Serve topped with more feta and reserved scallion greens."
-              ]
-            },
-            {
-              "title": "Pasta with Spicy Sausages, Tomatoes, Rosemary and Olives",
-              "servings": "Serves 2-3",
-              "source": "New York Times (Melissa Clark)",
-              "comments": [
-                "Originally developed for whole wheat pasta; works with any variety.",
-                "If fresh tomatoes are not at their peak, substitute one 15-oz can whole tomatoes.",
-                "Total: 30 min."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Sauce",
-                  "ingredients": [
-                    "2 tablespoons extra-virgin olive oil",
-                    "1/2 pound hot Italian sausage, casings removed",
-                    "1 large sprig fresh rosemary",
-                    "1 fat garlic clove, finely chopped",
-                    "1 1/2 pounds ripe plum tomatoes, trimmed and diced",
-                    "1/4 cup pitted green olives, slivered",
-                    "Salt to taste"
-                  ]
-                },
-                {
-                  "label": "Pasta",
-                  "ingredients": [
-                    "Salt",
-                    "1/2 pound penne"
-                  ]
-                },
-                {
-                  "label": "To serve (optional)",
-                  "ingredients": [
-                    "Finely chopped fresh parsley"
-                  ]
-                }
-              ],
-              "steps": [
-                "Warm oil in a large skillet over medium-high heat. Add sausage and rosemary; cook, breaking up meat with a fork, until browned and cooked through, 5-7 minutes. Add garlic and cook 1 minute.",
-                "Add tomatoes and stir occasionally until they break down into a sauce, 10-15 minutes. Stir in olives for the last 5 minutes. Season with salt; cover and keep warm.",
-                "Meanwhile, bring a large pot of salted water to a boil. Cook penne according to package directions. Drain and toss with sauce. Finish with parsley if desired."
-              ]
-            },
-            {
-              "title": "Spinach Lasagna",
-              "servings": "Serves 8",
-              "source": "Holly Nilsson, spendwithpennies.com",
-              "comments": [
-                "Can be assembled up to 2 days ahead, covered, and refrigerated; bake as directed, adding 10-15 minutes covered time. Freezes well uncooked -- thaw overnight before baking.",
-                "Cottage cheese can substitute for ricotta for a lighter texture.",
-                "Total: 2 hr 15 min (including rest)."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Noodles",
-                  "ingredients": [
-                    "9 lasagna noodles"
-                  ]
-                },
-                {
-                  "label": "Sauce",
-                  "ingredients": [
-                    "1 tablespoon olive oil",
-                    "1 large onion, chopped",
-                    "3 cloves garlic, minced",
-                    "4 cups pasta sauce",
-                    "2 teaspoons Italian seasoning"
-                  ]
-                },
-                {
-                  "label": "Filling",
-                  "ingredients": [
-                    "10 oz frozen chopped spinach, thawed and squeezed dry",
-                    "15 oz ricotta cheese",
-                    "2 1/2 cups shredded mozzarella (from 4 cups total)",
-                    "1/4 cup shredded Parmesan (from 1/2 cup total)",
-                    "1 egg",
-                    "1 tablespoon chopped fresh parsley",
-                    "1/2 teaspoon salt"
-                  ]
-                },
-                {
-                  "label": "Cheese topping",
-                  "ingredients": [
-                    "1 1/2 cups shredded mozzarella (remaining)",
-                    "1/4 cup shredded Parmesan (remaining)"
-                  ]
-                }
-              ],
-              "steps": [
-                "Preheat oven to 350 degrees F. Place lasagna noodles in a 9x13-inch pan, cover with boiling water, and soak 15 minutes. Rinse with cold water and pat dry.",
-                "Meanwhile, heat olive oil in a skillet over medium. Cook onion and garlic until tender, about 5 minutes. Add pasta sauce and Italian seasoning; simmer 5 minutes until slightly thickened.",
-                "Squeeze spinach to remove as much moisture as possible. Combine with ricotta, 2 1/2 cups mozzarella, 1/4 cup Parmesan, egg, parsley, and salt. Mix well.",
-                "Spread 1 cup sauce in the bottom of the baking pan. Layer 3 noodles, half the spinach-cheese mixture, and one-third of the remaining sauce. Add 3 more noodles, remaining spinach-cheese mixture, and one-third more sauce. Top with last 3 noodles and remaining sauce.",
-                "Cover tightly with foil and bake 45 minutes. Remove foil, sprinkle with remaining 1 1/2 cups mozzarella and 1/4 cup Parmesan, and bake 15-20 more minutes until browned. Rest 20 minutes before cutting."
-              ]
-            },
-            {
-              "title": "Tagliatelle with Mushrooms, Sage Butter and Toasted Hazelnuts",
-              "servings": "Serves 4",
-              "source": "Denisse, lepetiteats.com",
-              "comments": [
-                "One-pot meal -- boil pasta, wipe pot, make sauce and finish all in the same pot.",
-                "Stay close while browning butter and frying sage to avoid burning.",
-                "Total: 30 min."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Hazelnuts",
-                  "ingredients": [
-                    "1/2 cup hazelnuts"
-                  ]
-                },
-                {
-                  "label": "Pasta",
-                  "ingredients": [
-                    "Salt",
-                    "1 pound tagliatelle"
-                  ]
-                },
-                {
-                  "label": "Brown butter and mushrooms",
-                  "ingredients": [
-                    "1 stick (8 tablespoons) unsalted butter",
-                    "12 fresh sage leaves",
-                    "1/2 pound mixed mushrooms (shiitake, oyster, and cremini), sliced",
-                    "1 large garlic clove, minced",
-                    "Salt and freshly ground black pepper"
-                  ]
-                },
-                {
-                  "label": "Finish",
-                  "ingredients": [
-                    "1/4 to 1/2 cup reserved pasta cooking water",
-                    "Juice of 1/2 lemon",
-                    "1/4 to 1/2 cup grated Parmesan"
-                  ]
-                }
-              ],
-              "steps": [
-                "Preheat oven to 350 degrees F. Toast hazelnuts in a single layer on a baking sheet 10-12 minutes, until lightly colored and skins blistered. Let cool and chop roughly. Set aside.",
-                "Cook tagliatelle in a large pot of generously salted boiling water until al dente. Drain, reserving 1/4 to 1/2 cup pasta water.",
-                "Wipe out the pot and return to medium heat. Add butter and cook, watching carefully, until just beginning to smell nutty and brown. Add sage leaves and fry about 30 seconds per side until crisp. Season with salt; remove sage leaves to paper towels.",
-                "Add mushrooms to the pot (butter will continue to brown) and cook 4-5 minutes. Season with salt and pepper; add garlic and cook 1 more minute.",
-                "Reduce heat to low. Return tagliatelle to the pot with 1/4 cup pasta water, lemon juice, and Parmesan. Toss until cheese melts and a silky sauce forms, adding more pasta water if needed. Season to taste.",
-                "Serve in bowls topped with crispy sage leaves and chopped toasted hazelnuts."
-              ]
-            },
-            {
-              "title": "Creamy Baked Mac and Cheese",
-              "servings": "Serves 8-10",
-              "source": "thechunkychef.com",
-              "comments": [
-                "Always shred cheese from the block -- pre-shredded bags have anti-caking agents that inhibit melting.",
-                "For a crunchy topping, mix 1 cup panko with 2 tablespoons melted butter (or 1 cup crushed Ritz crackers with 2 tablespoons butter) and sprinkle on top before baking.",
-                "Can be assembled ahead, refrigerated 1-2 days, and baked as directed, adding 25-35 minutes covered.",
-                "Total: 35 min active; 15-35 min bake."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Pasta",
-                  "ingredients": [
-                    "1 pound dried elbow pasta",
-                    "Salt"
-                  ]
-                },
-                {
-                  "label": "Cheese sauce",
-                  "ingredients": [
-                    "1/2 cup unsalted butter",
-                    "1/2 cup all-purpose flour",
-                    "1 1/2 cups whole milk",
-                    "2 1/2 cups half-and-half",
-                    "3 cups mixed shredded cheddar and Gruyere (for sauce -- see Comments for totals)",
-                    "1/2 tablespoon salt",
-                    "1/2 teaspoon black pepper",
-                    "1/4 teaspoon smoked paprika"
-                  ]
-                },
-                {
-                  "label": "Cheese layers",
-                  "ingredients": [
-                    "3 cups mixed shredded cheddar and Gruyere (1 1/2 cups for inner layer, 1 1/2 cups for topping)"
-                  ]
-                }
-              ],
-              "steps": [
-                "Preheat oven to 325 degrees F. Grease a 9x13-inch baking dish.",
-                "Cook pasta in salted water 1 minute less than package directions for al dente. Drain.",
-                "Shred all cheese from the block and toss together (total: 4 cups cheddar + 2 cups Gruyere). Divide into three portions: 3 cups for the sauce, 1 1/2 cups for the inner layer, 1 1/2 cups for the topping.",
-                "Melt butter in a large saucepan over medium heat. Whisk in flour (it will look like wet sand); cook 1 minute. Slowly whisk in half-and-half, then milk, whisking constantly until smooth. Heat over medium, whisking frequently, until thickened to a semi-condensed-soup consistency.",
-                "Remove from heat. Stir in salt, pepper, paprika, and the 3-cup sauce portion of cheese in two additions, stirring each until completely melted.",
-                "Combine drained pasta with cheese sauce. Pour half into the baking dish. Sprinkle with inner-layer cheese, then add remaining pasta. Sprinkle topping cheese on top.",
-                "Bake 15 minutes until bubbly and lightly golden. For a crunchier, firmer result, bake at 350-375 degrees F for 20-30 minutes, then broil 2-5 minutes."
-              ]
-            }
-,
-            {
-              "title": "Pasta (or Ravioli) with Brown Butter and Crispy Sage",
-              "servings": "Serves 4",
-              "source": "Adapted from New York Times (Mark Bittman) and Marilena Leavitt, marilenaskitchen.com",
-              "comments": [
-                "Thirty sage leaves is not too many -- the crispy fried leaves become the star of the dish.",
-                "For ravioli, lift from the water with a slotted spoon about 30 seconds early so they finish cooking in the skillet. Fresh ravioli (ricotta, butternut squash, or similar) pairs especially well.",
-                "Use a light-colored (stainless or enameled) pan to monitor the butter color.",
-                "Total: 20 min."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Pasta",
-                  "ingredients": [
-                    "Salt",
-                    "1 pound cut pasta (ziti, rigatoni, or tagliatelle), OR 1 pound fresh ravioli (ricotta, butternut squash, or other filling)"
-                  ]
-                },
-                {
-                  "label": "Brown butter and sage",
-                  "ingredients": [
-                    "5-6 tablespoons unsalted butter",
-                    "30 fresh sage leaves, washed and dried",
-                    "Salt and freshly ground black pepper",
-                    "1 tablespoon fresh lemon juice"
-                  ]
-                },
-                {
-                  "label": "Finish",
-                  "ingredients": [
-                    "1 cup reserved pasta cooking water, plus more as needed",
-                    "1 cup freshly grated Parmesan, plus more for serving"
-                  ]
-                }
-              ],
-              "steps": [
-                "Bring a large pot of salted water to a boil. Cook pasta until just al dente. For fresh ravioli, cook at a gentle boil about 6 minutes or per package directions. Reserve 1 cup cooking water; drain or lift out with a spider.",
-                "While pasta cooks, heat butter in a large, light-colored skillet over medium. Cook, stirring occasionally, until butter just begins to brown and smell nutty. Add sage leaves and fry until crispy and butter is deep golden, 1-2 minutes more. Season with salt and pepper. Add lemon juice; remove from heat.",
-                "Add cooked pasta to the skillet over medium heat. Add 3/4 cup pasta water and toss; it will be loose. Cook, tossing, until pasta is done and sauce clings, about 1 minute.",
-                "Stir in Parmesan; sauce will turn creamy. Thin with more pasta water if needed. Taste and adjust salt. Serve immediately with more Parmesan."
-              ]
-            }
+            "Cook the pasta: Add the lasagna sheets to the boiling water, tearing them in half and separating them as you add them; stir to keep them from sticking. Cook about 1 minute less than the package directions. Reserve 1/2 cup pasta water, then drain.",
+            "Add the noodles and the remaining tomatoes to the pot of sauce. Return to medium heat and cook, stirring gently so as not to break up the noodles, until the tomatoes just begin to wilt, 1 to 2 minutes. Loosen with pasta water as needed.",
+            "Divide among bowls; top with basil, a drizzle of olive oil, and more Parmesan."
           ]
         },
         {
-          "title": "Asian",
-          "recipes": [
+          "title": "Artichoke Pesto Pasta with Fried Peppercorns",
+          "servings": "Serves 4   |   Total: 30 minutes",
+          "comments": [
+            "The fried peppercorns are worth making extra of — Molly Baz notes they're a great crispy, spicy garnish on all sorts of dishes."
+          ],
+          "source": "The Club, by Molly Baz",
+          "ingredientGroups": [
             {
-              "title": "Fried Drunken Noodles with Chicken (Phad Kii Maw Gai)",
-              "servings": "Serves 6",
-              "source": "\"A Passion for Thai Cooking\" by Sompon and Elizabeth Nabnian, p. 69",
-              "comments": [
-                "Scaled to 6 servings. The book's original recipe listed \"serves 4\" but the full quantities were more consistent with 10–12; this is half of the full recipe.",
-                "Krachai (also called fingerroot or lesser ginger) is a Thai rhizome available at Asian grocery stores. Substitute extra fresh ginger in a pinch.",
-                "Use holy basil (Thai holy basil / bai krapao), which is distinct from Thai sweet basil.",
-                "Adjust chilli quantity to taste — the recipe is designed to be quite spicy."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Aromatics",
-                  "ingredients": [
-                    "90ml (6 tablespoons) vegetable oil, divided",
-                    "5 cloves garlic, roughly chopped",
-                    "2 shallots, roughly chopped",
-                    "1 big green chilli, sliced",
-                    "1 big red chilli, sliced",
-                    "3 medium chillies, roughly chopped"
-                  ]
-                },
-                {
-                  "label": "Chicken and aromatics",
-                  "ingredients": [
-                    "150g (5 oz) chicken, thinly sliced",
-                    "30g (1 oz) krachai (fingerroot / lesser ginger), shredded",
-                    "10g fresh young green peppercorns",
-                    "15g (1/2 oz) dried shrimps"
-                  ]
-                },
-                {
-                  "label": "Vegetables",
-                  "ingredients": [
-                    "1 small tomato, cut into wedges",
-                    "3–4 long beans, sliced",
-                    "2 baby corn, each sliced into 3",
-                    "75g (2-1/2 oz) straw mushrooms, quartered",
-                    "50g (1-3/4 oz) carrots, sliced"
-                  ]
-                },
-                {
-                  "label": "Noodles and eggs",
-                  "ingredients": [
-                    "175g (6 oz) large flat rice noodles",
-                    "1/4 teaspoon sweet soy sauce",
-                    "2 eggs, beaten"
-                  ]
-                },
-                {
-                  "label": "Sauce",
-                  "ingredients": [
-                    "30ml (2 tablespoons) oyster sauce",
-                    "15ml (1 tablespoon) soy sauce",
-                    "30ml (2 tablespoons) fish sauce",
-                    "1/4 teaspoon sugar"
-                  ]
-                },
-                {
-                  "label": "Finish",
-                  "ingredients": [
-                    "50g (1-3/4 oz) peanuts, roasted and crushed",
-                    "15g holy basil leaves"
-                  ]
-                }
-              ],
-              "steps": [
-                "Heat 30ml (2 tablespoons) of the oil in a wok over high heat. Add the garlic, shallots, and all the chillies; fry for 1 minute.",
-                "Add the chicken; stir-fry until the outside turns white, 2–3 minutes.",
-                "Add the krachai, green peppercorns, and dried shrimps; stir-fry for 2 more minutes.",
-                "Turn the heat down. Add the tomato, long beans, baby corn, mushrooms, and carrots; cook 3 minutes. Turn off the heat and set the vegetable mixture aside.",
-                "Heat the remaining oil in the wok over high heat. Add the noodles and sweet soy sauce; stir-fry 1 minute, stirring continuously. Turn the heat down, add the eggs, and stir to cook.",
-                "Add the reserved vegetable-and-chicken mixture; stir over high heat to combine. Add the sauce and stir-fry to combine.",
-                "Add the peanuts and basil leaves, stir once, and serve."
+              "label": "Prep",
+              "ingredients": [
+                "2 to 3 lemons (1 1/2 for peel and juice; remaining 1/2 to 1 lemon reserved for finishing)",
+                "1 large bunch flat-leaf parsley, leaves and tender stems picked (about 2 cups packed)",
+                "1 large or 2 small garlic cloves",
+                "2 ounces Parmigiano-Reggiano, finely grated (about 3/4 cup), divided",
+                "One 14.5- to 16-ounce jar marinated artichokes (preferably Mezzetta), drained, brine reserved"
               ]
             },
             {
-              "title": "Ginger-Orange Broccoli and Noodles",
-              "servings": "Serves 2 to 3",
-              "source": "Sonja and Alex Overhiser / The Washington Post",
-              "comments": [
-                "Any dried stir-fry noodles work; thick rice noodles give the best chewy texture.",
-                "Dark miso adds depth; white or red miso can substitute.",
-                "The sauce thickens very quickly off the heat -- have everything ready before adding it."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Noodles",
-                  "ingredients": [
-                    "4 oz dried stir-fry noodles (thick rice noodles recommended)"
-                  ]
-                },
-                {
-                  "label": "Sauce",
-                  "ingredients": [
-                    "1/4 cup low-sodium soy sauce",
-                    "1/2 cup fresh orange juice (from about 2 oranges)",
-                    "2 tablespoons cornstarch",
-                    "1 teaspoon sriracha",
-                    "1 tablespoon dark miso"
-                  ]
-                },
-                {
-                  "label": "Stir-fry",
-                  "ingredients": [
-                    "1 tablespoon sesame oil or neutral oil",
-                    "1/2 large sweet onion, thinly sliced",
-                    "1/2 large red bell pepper, seeded and thinly sliced",
-                    "1 yellow bell pepper, seeded and thinly sliced",
-                    "2 large broccoli crowns (1 1/2 pounds total), cut into bite-sized florets",
-                    "1/2 cup roasted unsalted whole cashews",
-                    "2 pinches kosher salt",
-                    "1/4 cup water",
-                    "2 cloves garlic, thinly sliced",
-                    "One 1-inch piece peeled fresh ginger, minced or grated"
-                  ]
-                }
-              ],
-              "steps": [
-                "Cook noodles according to package directions. Drain and set aside.",
-                "Whisk together soy sauce, orange juice, cornstarch, sriracha, and miso until smooth.",
-                "Heat oil in a large skillet over high heat. Add onion; stir-fry until it starts to brown, about 2 minutes. Add both bell peppers, broccoli, cashews, and salt. Stir-fry until broccoli stems are tender and cashews are slightly toasted, about 5 minutes.",
-                "Reduce heat to low. Add water and stir until it evaporates. Add garlic and ginger; stir-fry 1 minute. Turn off heat. Pour in the sauce and stir until it thickens into a glossy glaze. Add drained noodles and stir gently until evenly coated.",
-                "Serve warm."
+              "label": "Pesto",
+              "ingredients": [
+                "1/3 cup olive oil",
+                "3/4 cup (2 ounces) blanched almonds",
+                "2 teaspoons kosher salt"
               ]
             },
             {
-              "title": "Stir-Fried Udon Noodles With Pork and Scallions",
-              "servings": "Serves 4   |   Total: 25 min",
-              "source": "Claire Saffitz, Bon Appétit (April 2019)",
-              "ingredientGroups": [
-                {
-                  "label": "Noodles + cabbage",
-                  "ingredients": [
-                    "4 cups very coarsely chopped green cabbage (about 1/4 medium head)",
-                    "2 (7-oz.) packages instant udon noodles, flavor packets discarded"
-                  ]
-                },
-                {
-                  "label": "Stir-fry",
-                  "ingredients": [
-                    "2 tablespoons vegetable oil, divided",
-                    "2 teaspoons toasted sesame oil",
-                    "8 oz ground pork",
-                    "5 scallions, white and pale green parts coarsely chopped, dark green parts thinly sliced (kept separate)",
-                    "2 teaspoons finely grated peeled ginger",
-                    "1 teaspoon Aleppo pepper or red pepper flakes",
-                    "1/3 cup mirin (sweet Japanese rice wine)",
-                    "1/3 cup soy sauce",
-                    "1 tablespoon toasted sesame seeds, plus more for serving"
-                  ]
-                }
-              ],
-              "steps": [
-                "Heat 1 tablespoon vegetable oil in a large skillet over medium-high. Cook cabbage, tossing often, until edges are browned, about 4 min. Reduce heat to low and continue cooking until thickest parts are tender, about 4 min more. Remove from heat.",
-                "Place udon noodles in a large heatproof bowl; cover with 6 cups boiling water. Let sit 1 minute, stirring to separate, then drain. Toss noodles with sesame oil. Add reserved cabbage to bowl.",
-                "Wipe out skillet. Heat remaining 1 tablespoon vegetable oil over medium-high. Add pork, spreading across the pan; cook undisturbed until underside is browned, about 3 min. Break up meat and continue cooking until no longer pink, about 1 min. Add scallion whites and pale greens, ginger, and Aleppo pepper; cook, tossing, until scallions soften and skillet starts to brown, about 1 min.",
-                "Add noodle-cabbage mixture, mirin, and soy sauce. Cook, tossing constantly and scraping up browned bits, until noodles are coated, about 45 seconds. Remove from heat; toss in dark scallion greens and 1 tablespoon sesame seeds.",
-                "Divide among bowls and top with more sesame seeds."
+              "label": "Pasta",
+              "ingredients": [
+                "1 pound mezzi rigatoni",
+                "Kosher salt, for the pasta water"
+              ]
+            },
+            {
+              "label": "Fried peppercorns",
+              "ingredients": [
+                "2 tablespoons olive oil",
+                "2 tablespoons black peppercorns",
+                "Kosher salt, to taste"
+              ]
+            },
+            {
+              "label": "To finish",
+              "ingredients": [
+                "One 8-ounce ball burrata",
+                "More grated Parmigiano-Reggiano"
               ]
             }
+          ],
+          "steps": [
+            "Prep: Remove the peel from 1 1/2 lemons in long strips with a vegetable peeler; squeeze 1/4 cup juice from the lemons (reserve more lemon for finishing).",
+            "Pesto: In a food processor, process the lemon peels until finely chopped. Add the parsley and process until roughly chopped. Add the garlic, artichokes, artichoke brine, olive oil, almonds, half the Parmesan, and the salt; process until a coarse pesto forms. Taste; add lemon juice if needed.",
+            "Cook the pasta: Bring a large pot of heavily salted water to a boil. Add the rigatoni and cook to al dente, 1 to 2 minutes less than the package directions. Reserve 1 cup pasta water, then drain.",
+            {
+              "lead": "Fried peppercorns (meanwhile, as the pasta boils):",
+              "bullets": [
+                "Add the remaining 2 tablespoons olive oil to your smallest skillet. When shimmering, add the peppercorns. Toast, swirling the pan, until fragrant and slightly darkened, about 2 minutes.",
+                "Remove from heat and let rest in the oil until they stop popping. Transfer to a paper-towel-lined plate with a slotted spoon.",
+                "Let cool, then roughly chop. Season generously with salt."
+              ]
+            },
+            "Plate it up: Return the pasta to the pot and add the pesto. Set over medium-low heat. Add 1/2 cup of the reserved pasta water and the remaining Parmesan; toss vigorously until the sauce emulsifies and coats the pasta. Add more pasta water or lemon juice to loosen if needed.",
+            "Divide among plates and top with torn burrata, a final grating of Parmesan, and the fried peppercorns."
+          ]
+        },
+        {
+          "title": "Brie Linguine",
+          "servings": "Serves 6   |   Prep: 15 minutes, plus 2–3 hours resting",
+          "comments": [
+            "A very intense pasta, best served as a side dish.",
+            "Flavored fresh pasta — red pepper, basil, or spinach — provides wonderful color and taste."
+          ],
+          "source": "More Than a Tea Party (cookbook), Brunch and Luncheon chapter, p. 105",
+          "ingredientGroups": [
+            {
+              "label": "Sauce (2–3 hours ahead)",
+              "ingredients": [
+                "4 large, ripe tomatoes, peeled and coarsely chopped",
+                "1 small red onion, coarsely chopped",
+                "3 garlic cloves, finely minced",
+                "1/2–3/4 cup fresh basil leaves, well washed and dried",
+                "1/2 cup olive oil",
+                "3/4 pound Brie cheese, rind removed and broken into chunks",
+                "2 ounces Prosciutto, cut into thin strips",
+                "1–2 teaspoons salt",
+                "1–2 teaspoons freshly ground black pepper",
+                "4 sun-dried tomatoes, well-chopped (optional)"
+              ]
+            },
+            {
+              "label": "Pasta",
+              "ingredients": [
+                "1 pound linguine"
+              ]
+            },
+            {
+              "label": "Garnish",
+              "ingredients": [
+                "Freshly grated Parmesan cheese"
+              ]
+            }
+          ],
+          "steps": [
+            "Sauce: In a large bowl, mix together the tomatoes, onion, garlic, basil, olive oil, Brie, Prosciutto, salt, pepper, and sun-dried tomatoes (if using). Cover and let sit at room temperature for at least 2–3 hours before serving.",
+            "Cook linguine in boiling salted water until al dente. Drain.",
+            "Toss pasta with tomato-Brie mixture, correct seasoning, and garnish generously with Parmesan. Serve immediately."
+          ]
+        },
+        {
+          "title": "Lemon Fusilli with Arugula",
+          "favorite": true,
+          "servings": "Serves 4 to 5   |   Prep: 10 minutes   |   Cook: 30 minutes   |   Total: 40 minutes",
+          "source": "Food Network, by Ina Garten, from Barefoot Contessa at Home",
+          "ingredientGroups": [
+            {
+              "label": "Lemon cream sauce",
+              "ingredients": [
+                "1 tablespoon good olive oil",
+                "1 tablespoon minced garlic (2 cloves)",
+                "2 cups heavy cream",
+                "Zest and juice of 2 lemons",
+                "Kosher salt and freshly ground black pepper"
+              ]
+            },
+            {
+              "label": "Broccoli",
+              "ingredients": [
+                "1 bunch broccoli, cut into florets"
+              ]
+            },
+            {
+              "label": "Pasta",
+              "ingredients": [
+                "1 pound dried fusilli pasta"
+              ]
+            },
+            {
+              "label": "To finish",
+              "ingredients": [
+                "1/2 pound baby arugula (or 2 bunches common arugula, leaves cut in thirds)",
+                "1/2 cup freshly grated Parmesan",
+                "1 pint grape or cherry tomatoes, halved",
+                "1 remaining lemon, sliced 1/4-inch thick"
+              ]
+            }
+          ],
+          "steps": [
+            "Lemon cream sauce: Heat the olive oil in a medium saucepan over medium heat; add the garlic and cook 60 seconds. Add the cream and bring to a boil. Add the lemon zest and juice; simmer over low heat until thickened, about 20 minutes. Season with salt and pepper.",
+            "Meanwhile, cook the broccoli florets in a pot of boiling salted water 3 to 5 minutes, until tender but still firm. Drain and set aside.",
+            {
+              "lead": "Pasta:",
+              "bullets": [
+                "Bring a large pot of water to a boil; add 1 tablespoon salt and the pasta. Cook according to the package directions, about 12 minutes. Drain.",
+                "Return the pasta to the pot. Immediately add the cream mixture and cook over medium-low heat 3 minutes, until most of the sauce is absorbed."
+              ]
+            },
+            "Pour the hot pasta into a large bowl; add the arugula, Parmesan, tomatoes, and cooked broccoli.",
+            "Cut the remaining lemon in half lengthwise, slice 1/4-inch thick crosswise, and add to the pasta.",
+            "Toss well, season to taste, and serve hot."
+          ]
+        },
+        {
+          "title": "Christy's Pesto (Adapted)",
+          "servings": "Six 2-person servings",
+          "comments": [
+            "Walnuts can be swapped for pine nuts or pecans, or a mix of the two."
+          ],
+          "source": "Family recipe card (\"Christy's Pesto, Adapted\")",
+          "ingredientGroups": [
+            {
+              "ingredients": [
+                "6 cloves garlic",
+                "4 cups fresh basil leaves (about 2 bunches, stemmed)",
+                "3/4 cup olive oil",
+                "1 cup chopped walnuts",
+                "1 teaspoon salt",
+                "1 cup grated Parmesan cheese",
+                "1 tablespoon warm water"
+              ]
+            }
+          ],
+          "steps": [
+            "Mince the garlic in a food processor.",
+            "Add the basil and pulse until finely chopped.",
+            "With the processor running, add the olive oil, walnuts, salt, Parmesan, and warm water; process until smooth.",
+            "Portion into individual packages (3 heaping tablespoons each) and freeze."
+          ]
+        },
+        {
+          "title": "Pasta with Sausage, Basil, and Mustard",
+          "favorite": true,
+          "servings": "Serves 4   |   Active: 10 min   |   Total: 20 min",
+          "source": "Nigel Slater, Food & Wine (September 2002)",
+          "ingredientGroups": [
+            {
+              "label": "Pasta",
+              "ingredients": [
+                "1 pound penne, rigatoni, or medium shells"
+              ]
+            },
+            {
+              "label": "Sausage + sauce",
+              "ingredients": [
+                "1 tablespoon extra-virgin olive oil",
+                "8 hot Italian sausage links, casings removed, meat crumbled (about 1 1/2 pounds); or substitute one 1-pound roll sweet Italian or sage sausage (such as Jimmy Dean)",
+                "3/4 cup dry white wine",
+                "3/4 cup heavy cream",
+                "3 tablespoons grainy mustard",
+                "Pinch of Aleppo pepper or red pepper flakes"
+              ]
+            },
+            {
+              "label": "Finish",
+              "ingredients": [
+                "1 cup fresh basil, thinly sliced"
+              ]
+            }
+          ],
+          "steps": [
+            "Cook pasta in a large pot of boiling salted water until al dente. Drain.",
+            "Meanwhile, heat olive oil in a large, deep skillet over moderately high heat. Add sausage meat and brown, breaking up as it cooks, about 5 min.",
+            "Add wine and simmer, scraping up any browned bits from the bottom, until reduced by half, about 5 min.",
+            "Add cream, mustard, and Aleppo pepper; simmer 2 min.",
+            "Remove from heat. Add drained pasta and basil; toss to coat. Serve immediately."
+          ]
+        },
+        {
+          "title": "Spiced Meatballs with Pappardelle",
+          "servings": "Serves 4   |   Total: 1 hr 15 min",
+          "source": "Molly Baz, The Club",
+          "ingredientGroups": [
+            {
+              "label": "Sauce",
+              "ingredients": [
+                "3 tablespoons unsalted butter",
+                "1 large yellow onion, finely chopped",
+                "1 cinnamon stick",
+                "1 teaspoon Aleppo pepper or red pepper flakes",
+                "1 (28-oz) can crushed tomatoes",
+                "2 tablespoons red wine vinegar",
+                "Kosher salt"
+              ]
+            },
+            {
+              "label": "Meatball mixture",
+              "ingredients": [
+                "1 large egg",
+                "2 tablespoons extra-virgin olive oil",
+                "1 cup panko breadcrumbs",
+                "1 1/2 teaspoons garam masala (or baharat or hawaij)",
+                "1 1/2 teaspoons ground turmeric",
+                "1 tablespoon kosher salt, plus more",
+                "1/3 cup golden raisins or currants",
+                "3 garlic cloves, finely grated",
+                "1 bunch dill, coarsely chopped (reserve a handful for garnish)",
+                "1 bunch cilantro, coarsely chopped (reserve a handful for garnish)"
+              ]
+            },
+            {
+              "label": "Beef",
+              "ingredients": [
+                "1 pound ground beef (80/20)"
+              ]
+            },
+            {
+              "label": "Finish",
+              "ingredients": [
+                "1/2 cup water",
+                "1 tablespoon unsalted butter",
+                "1 pound fresh pappardelle or other fresh long pasta"
+              ]
+            }
+          ],
+          "steps": [
+            "Preheat oven to 400°F. In a large Dutch oven over medium heat, melt 3 tablespoons butter. Add onion, cinnamon stick, Aleppo pepper or red pepper flakes, and a big pinch of salt. Cook, stirring, until onions begin to soften, 5–6 minutes. Add crushed tomatoes and red wine vinegar. Cover with a tight-fitting lid and transfer to oven for 20 minutes.",
+            "Meanwhile, in a large bowl, whisk together egg and olive oil. Add panko, garam masala, turmeric, salt, raisins, and grated garlic; mix well. Coarsely chop dill and cilantro (reserving a handful of each for garnish) and stir into the panko mixture. Scoop out 3/4 cup of this mixture and spread on a small rimmed baking sheet; toast in the oven until golden and crisp, stirring once, 9–14 minutes. Let cool. (These are your breadcrumbs.)",
+            "Add ground beef to the remaining panko mixture and work with your hands until evenly combined. Divide into 8 equal portions and roll into balls.",
+            "Bring a large pot of salted water to a boil. Remove Dutch oven from oven, uncover, and stir in 1/2 cup water. Nestle meatballs in the sauce, turning once to coat. Return lid slightly ajar and bake until meatballs are just cooked through and bouncy, 12–16 minutes. Remove from oven and keep covered.",
+            "Transfer meatballs to a plate. Cook pappardelle per package directions until just al dente. Use tongs to transfer pasta into the sauce, add 1 tablespoon butter, and toss to coat, adding pasta water as needed. Divide pasta and sauce among bowls, top with meatballs, toasted breadcrumbs, and fresh herbs."
+          ]
+        },
+        {
+          "title": "Nuala's Pasta",
+          "servings": "Serves 2–3",
+          "source": "Family recipe card, credited to Nuala O'Connor",
+          "ingredientGroups": [
+            {
+              "label": "Pasta",
+              "ingredients": [
+                "1/2 pound tubular pasta (rigatoni or penne)"
+              ]
+            },
+            {
+              "label": "Ricotta sauce",
+              "ingredients": [
+                "3/4 cup part-skim ricotta, at room temperature",
+                "3 scallions, finely chopped",
+                "1 tablespoon chopped parsley or fresh basil",
+                "1/3 cup grated parmesan cheese",
+                "1/2 teaspoon salt",
+                "1/4 teaspoon nutmeg",
+                "Pinch cayenne pepper"
+              ]
+            }
+          ],
+          "steps": [
+            "Bring ricotta to room temperature. Place in a large serving bowl.",
+            "Add scallions, parsley or basil, grated parmesan, salt, nutmeg, and cayenne to ricotta; mix.",
+            "Cook pasta. When ready, stir 1/4 cup pasta cooking water into the ricotta mixture. Drain pasta and toss with ricotta."
+          ]
+        },
+        {
+          "title": "Three Cheese Manicotti",
+          "source": "Family recipe card, credited to Susan Muhlheim",
+          "ingredientGroups": [
+            {
+              "label": "Shells",
+              "ingredients": [
+                "8 manicotti shells"
+              ]
+            },
+            {
+              "label": "Filling",
+              "ingredients": [
+                "2 eggs, beaten",
+                "1 cup shredded mozzarella",
+                "1 1/2 cups ricotta cheese",
+                "1/2 cup grated parmesan",
+                "1/4 cup chopped parsley",
+                "1/2 teaspoon oregano",
+                "Dash of pepper"
+              ]
+            },
+            {
+              "label": "Sauce and topping",
+              "ingredients": [
+                "Spaghetti sauce (jarred or homemade)",
+                "1 cup shredded mozzarella (reserved for topping)"
+              ]
+            }
+          ],
+          "steps": [
+            "Cook manicotti shells; rinse in cold water.",
+            "Stir together eggs, 1 cup mozzarella, ricotta, parmesan, parsley, oregano, and pepper. Spoon filling into manicotti shells.",
+            "Pour spaghetti sauce into the bottom of a rectangular baking dish (just cover the bottom). Arrange stuffed manicotti in dish. Pour remaining sauce over shells. Sprinkle reserved mozzarella on top.",
+            "Bake, covered, at 350°F for 35–40 minutes."
+          ]
+        },
+        {
+          "title": "Lisa's Pasta",
+          "servings": "Serves 4–6",
+          "source": "Family recipe card, credited to Lisa Sullivan; subtitled \"Angel Hair Tomato Basil Toss\"",
+          "ingredientGroups": [
+            {
+              "label": "Sauce base",
+              "ingredients": [
+                "1/2 cup olive oil",
+                "2 cloves garlic, minced",
+                "1/4 cup sliced green onions"
+              ]
+            },
+            {
+              "label": "Tomatoes and herbs",
+              "ingredients": [
+                "3 large tomatoes, peeled and diced",
+                "2 tablespoons chopped fresh basil",
+                "1 teaspoon salt",
+                "1/4 teaspoon coarse ground black pepper"
+              ]
+            },
+            {
+              "label": "Pasta and finish",
+              "ingredients": [
+                "1/2 pound angel hair pasta",
+                "Grated parmesan cheese, for serving"
+              ]
+            }
+          ],
+          "steps": [
+            "In a large skillet, heat olive oil. Add garlic and green onions; stir-fry 1 minute.",
+            "Stir in tomatoes, basil, salt, and pepper; cook 2 minutes, stirring frequently.",
+            "Cook angel hair pasta; drain. Toss hot pasta with tomato mixture immediately. Serve sprinkled with parmesan."
+          ]
+        },
+        {
+          "title": "Linguine with Clams and Wild Mushrooms",
+          "servings": "Serves 4",
+          "ingredientGroups": [
+            {
+              "label": "Mushrooms",
+              "ingredients": [
+                "6 tablespoons olive oil (divided)",
+                "1 pound mixed fresh wild mushrooms (oyster and/or shiitake), stems trimmed, caps sliced"
+              ]
+            },
+            {
+              "label": "Clams",
+              "ingredients": [
+                "6 large garlic cloves, minced",
+                "1/4 teaspoon Aleppo pepper or red pepper flakes",
+                "1 cup dry white wine",
+                "5 pounds clams (about 24 littlenecks)"
+              ]
+            },
+            {
+              "label": "Finish",
+              "ingredients": [
+                "1 pound linguine",
+                "2 bunches fresh chives or 1 bunch green onions, chopped",
+                "Salt and pepper to taste"
+              ]
+            }
+          ],
+          "steps": [
+            "Heat 3 tablespoons oil over high heat. Saute mushrooms until beginning to brown, about 5 minutes. Transfer to plate using slotted spoon.",
+            "Add remaining 3 tablespoons oil and garlic to pot. Saute until tender, about 3 minutes.",
+            "Add Aleppo pepper, then wine and clams. Cover and cook until clams open, about 8 minutes.",
+            "Cook linguine in a large pot of boiling salted water until just tender but firm to bite. Drain and transfer to large bowl.",
+            "Spoon mushrooms over pasta, then top with clam mixture, discarding any unopened clams. Season with salt and pepper. Sprinkle with chives."
+          ]
+        },
+        {
+          "title": "Linguine with Mussels",
+          "ingredientGroups": [
+            {
+              "label": "Aromatics",
+              "ingredients": [
+                "2 teaspoons olive oil",
+                "1/2 cup chopped fennel bulb",
+                "1/2 cup finely chopped onion",
+                "2 garlic cloves, minced"
+              ]
+            },
+            {
+              "label": "Sauce",
+              "ingredients": [
+                "1 cup diced tomato",
+                "1 cup dry vermouth",
+                "3 tablespoons chopped fresh parsley",
+                "1 tablespoon tomato paste",
+                "1 teaspoon fresh thyme leaves",
+                "1/4 teaspoon salt",
+                "1/8 teaspoon Aleppo pepper or red pepper flakes"
+              ]
+            },
+            {
+              "label": "Finish",
+              "ingredients": [
+                "28 fresh mussels, scrubbed and debearded",
+                "2 tablespoons water",
+                "2 teaspoons cornstarch",
+                "2 cups hot cooked linguine (about 4 oz uncooked)"
+              ]
+            }
+          ],
+          "steps": [
+            "Heat oil over medium heat. Add fennel, onion, and garlic; saute 5 minutes.",
+            "Add sauce ingredients and bring to boil.",
+            "Add mussels, cover, and cook 3 minutes until shells open. Remove from heat. Discard any unopened shells. Reserve 10 shells with meat intact; remove meat from the rest.",
+            "Combine water and cornstarch; add to tomato mixture and boil 2 minutes, stirring.",
+            "Serve 1 cup pasta per plate topped with 1 cup sauce and 5 mussels in shells."
+          ]
+        },
+        {
+          "title": "Eggplant Rolls in Spaghettini",
+          "servings": "Serves 4",
+          "source": "From Chef Louisa (Villa Britannia, Taormina, Sicily)",
+          "comments": [
+            "Piccadilly tomatoes are a sweet Italian plum variety; cherry tomatoes are an excellent substitute.",
+            "The béchamel can be made ahead and kept warm with plastic wrap pressed to the surface to prevent a skin forming."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Tomato sauce (30–45 minutes ahead)",
+              "ingredients": [
+                "2 tablespoons extra-virgin olive oil",
+                "2 carrots, quartered",
+                "6 celery sticks, quartered",
+                "3 shallots, quartered",
+                "2 tablespoons fresh basil, finely chopped",
+                "400g Piccadilly or cherry tomatoes, halved",
+                "Rock salt to taste"
+              ]
+            },
+            {
+              "label": "Béchamel",
+              "ingredients": [
+                "600ml whole milk",
+                "1 slice of onion",
+                "1 bay leaf",
+                "Small pinch of freshly grated nutmeg",
+                "Pinch of salt",
+                "75g butter",
+                "50g plain flour (tipo 00)"
+              ]
+            },
+            {
+              "label": "Eggplant (1 hour ahead)",
+              "ingredients": [
+                "2 large eggplants",
+                "1 tablespoon rock salt (for draining)",
+                "Sunflower oil for frying (vegetables should nearly swim in the oil)",
+                "1 clove garlic, crushed in 1 teaspoon olive oil (garlic oil)"
+              ]
+            },
+            {
+              "label": "Spaghettini",
+              "ingredients": [
+                "200g spaghettini",
+                "Salted water for boiling"
+              ]
+            },
+            {
+              "label": "Filling and topping",
+              "ingredients": [
+                "100g ham, roughly chopped",
+                "100g Parmesan, grated",
+                "Fresh basil, finely chopped"
+              ]
+            }
+          ],
+          "steps": [
+            "Make the tomato sauce: in a pan over low heat, fry olive oil, carrots, celery, shallots, and basil for 15 minutes. Add tomatoes and rock salt, cover, and cook 20–30 minutes on low until very soft. Pass through a food mill, discarding solids.",
+            "Make the béchamel: bring milk to a simmer with the onion, bay leaf, nutmeg, and salt; steep 10 minutes, then strain. In a saucepan, melt butter, add flour, and stir well. Gradually whisk in the strained milk until smooth and not too thick. Set aside.",
+            "Prepare the eggplant: peel mostly, leaving a few stripes of skin. Slice lengthwise into 1/2 cm planks. Dice 2 of the planks into small cubes. Place sliced and diced eggplant in separate bowls, toss each with rock salt, and let drain at least 1 hour. Squeeze handfuls to remove excess moisture.",
+            "Heat sunflower oil until sizzling. Fry eggplant slices and diced cubes separately in batches until lightly golden. Drain on kitchen paper.",
+            "In a separate pan, heat the garlic oil. Add half the tomato sauce and the diced eggplant; toss to combine.",
+            "Cook spaghettini in salted boiling water until al dente. Drain and add to the pan with diced eggplant and sauce. Mix well. Stir in the ham and half the Parmesan.",
+            "Lay the fried eggplant planks on a board. Spoon a generous amount of the spaghettini mixture onto each plank and roll up.",
+            "Spread a spoonful of béchamel and tomato sauce on the bottom of an oven-proof dish. Arrange eggplant rolls in rows. Spoon remaining tomato sauce and béchamel on top. Scatter with remaining Parmesan.",
+            "Bake at 350°F for 15 minutes. Serve with fresh basil."
+          ]
+        },
+        {
+          "title": "Pasta con le Sarde",
+          "servings": "Serves 4",
+          "source": "From Chef Louisa (Villa Britannia, Taormina, Sicily)",
+          "comments": [
+            {
+              "html": "Traditionally made with <a href='#busiate'>Busiate</a> (Sicilian spiral pasta; see recipe, this section). Good store-bought substitutes: bucatini, perciatelli, or thick spaghetti."
+            },
+            "Wild fennel is traditional and highly recommended; the frond tops of a fennel bulb are an excellent substitute.",
+            "The breadcrumb topping (pangrattato) is essential — do not skip it."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Pasta",
+              "ingredients": [
+                "1 batch Busiate (see recipe, this section) or store-bought bucatini, perciatelli, or thick spaghetti"
+              ]
+            },
+            {
+              "label": "Sardine sauce",
+              "ingredients": [
+                "60ml extra-virgin olive oil",
+                "1 small onion, finely diced",
+                "2 salted anchovies (or 4 oil-packed fillets, rinsed)",
+                "400g fresh sardines, cleaned and filleted",
+                "60g raisins",
+                "30g pine nuts",
+                "1/2 glass dry white wine",
+                "1 saffron sachet (0.125g), dissolved in 2 tablespoons warm water",
+                "100ml tomato passata",
+                "100g wild fennel (or fennel frond tops), boiled until just tender"
+              ]
+            },
+            {
+              "label": "Breadcrumb topping",
+              "ingredients": [
+                "30ml olive oil",
+                "1 clove garlic",
+                "2 salted anchovies (or 4 oil-packed fillets, rinsed)",
+                "80g dried breadcrumbs"
+              ]
+            }
+          ],
+          "steps": [
+            "Make or obtain the pasta: prepare Busiate following the recipe in this section, or use store-bought bucatini or thick spaghetti.",
+            "Make the breadcrumb topping: heat olive oil in a small pan. Add garlic and anchovies, stirring until anchovies dissolve. Add breadcrumbs and toast, stirring, until golden and crisp. Remove from heat and spread out to cool.",
+            "Make the sardine sauce: heat olive oil over medium heat. Add onion and the 2 anchovies; cook until anchovies dissolve and onion softens. Add raisins and pine nuts. Pour in white wine and let reduce briefly. Add saffron water, passata, and boiled fennel. Add fresh sardines and cook about 8 minutes until just cooked through.",
+            "Cook the pasta in well-salted boiling water (8–10 minutes for busiate; per package for store-bought). Drain and toss with the sardine sauce. Plate and top generously with the breadcrumb topping."
+          ]
+        },
+        {
+          "id": "busiate",
+          "title": "Busiate (Sicilian Spiral Pasta)",
+          "servings": "Makes about 8 servings",
+          "source": "From Chef Louisa (Villa Britannia, Taormina, Sicily)",
+          "comments": [
+            "Busiate is the traditional pasta of western Sicily (Trapani). Made with semola rather than egg — firmer and more toothsome than egg pasta.",
+            "The shaping tool is a ferro (long thin metal skewer); a thin wooden skewer or knitting needle works as a substitute.",
+            "Use with Pasta con le Sarde (this section), pesto trapanese, or any bold Sicilian sauce."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Pasta dough",
+              "ingredients": [
+                "500g semola flour (durum wheat semolina)",
+                "250ml water",
+                "1 tablespoon olive oil",
+                "Large pinch of salt"
+              ]
+            },
+            {
+              "label": "To shape",
+              "ingredients": [
+                "1 ferro (long thin metal skewer) or thin wooden skewer"
+              ]
+            }
+          ],
+          "steps": [
+            "Mound the semola on a clean surface. Add salt and olive oil and make a well in the center. Gradually work the water into the flour with your hands, adding slowly, until a firm dough forms.",
+            "Knead the dough, stretching and folding, for 10–15 minutes. If the dough warms up, stop and rest briefly. Refrigerate 15–30 minutes.",
+            "Pinch off a small piece of dough and roll into a thin rope on the work surface. Hold the skewer at a slight diagonal against the rope and press-roll forward, spiraling the dough around the skewer. Slide off. Repeat with remaining dough.",
+            "Cook in well-salted boiling water for 8–10 minutes."
+          ]
+        },
+        {
+          "title": "Sage Pesto",
+          "servings": "Makes 1 cup (serving: 1 tablespoon)",
+          "ingredientGroups": [
+            {
+              "label": "Processor base",
+              "ingredients": [
+                "2 tablespoons pine nuts, toasted",
+                "2 large garlic cloves, peeled"
+              ]
+            },
+            {
+              "label": "Herbs and greens",
+              "ingredients": [
+                "2 cups torn spinach",
+                "2 cups fresh flat-leaf parsley leaves",
+                "3/4 cup fresh sage leaves"
+              ]
+            },
+            {
+              "label": "Seasoning",
+              "ingredients": [
+                "2 tablespoons (1/2 oz) grated fresh Parmesan",
+                "4 teaspoons lemon juice",
+                "1/8 teaspoon salt"
+              ]
+            },
+            {
+              "label": "Finish",
+              "ingredients": [
+                "3 tablespoons extra-virgin olive oil"
+              ]
+            }
+          ],
+          "steps": [
+            "With the food processor running, drop pine nuts and garlic through the feed chute; process until minced.",
+            "Add spinach, parsley, sage, Parmesan, lemon juice, and salt; process until finely minced.",
+            "With the processor running, drizzle in olive oil; process until well blended.",
+            "Store in an airtight container in the refrigerator."
+          ]
+        },
+        {
+          "title": "Crispy-Crackly Minty-Pea Lasagna",
+          "servings": "Serves 8",
+          "source": "Molly Baz, \"The Club\"",
+          "comments": [
+            "Meyer lemon is optional but adds a bright floral note when layered in. No-boil noodles are not recommended -- use standard dry lasagna noodles.",
+            "The cracker-crisp top is the signature of this recipe; bake until noodles are very burnished. Everyone gets a crunchy piece.",
+            "Active: 30 min; Bake: 60-65 min."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Noodles",
+              "ingredients": [
+                "1 pound dry lasagna noodles",
+                "Kosher salt",
+                "Extra-virgin olive oil (for greasing noodles and pan)"
+              ]
+            },
+            {
+              "label": "Filling",
+              "ingredients": [
+                "1 (16-oz) bag frozen peas, defrosted (10 oz / about 2 1/2 cups for filling; 6 oz reserved for assembly)",
+                "1 (10-oz) bag frozen spinach, defrosted and squeezed very dry",
+                "5 cloves garlic",
+                "1 pound fresh ricotta",
+                "1/3 cup extra-virgin olive oil",
+                "2/3 cup heavy cream",
+                "1 large egg",
+                "1 3/4 oz Pecorino Romano, finely grated (half of 3 1/2 oz total)",
+                "1 tablespoon plus 1 teaspoon kosher salt",
+                "Freshly ground black pepper",
+                "2 cups packed fresh mint leaves"
+              ]
+            },
+            {
+              "label": "Mozzarella layer",
+              "ingredients": [
+                "8 oz whole milk mozzarella (not fresh), grated on the large holes of a box grater"
+              ]
+            },
+            {
+              "label": "Assembly (optional)",
+              "ingredients": [
+                "1 Meyer lemon, roughly chopped (seeds discarded)"
+              ]
+            },
+            {
+              "label": "Crispy top",
+              "ingredients": [
+                "Extra-virgin olive oil (for drizzling)",
+                "1 3/4 oz Pecorino Romano, finely grated (remaining half)"
+              ]
+            }
+          ],
+          "steps": [
+            "Cook lasagna noodles in a large pot of generously salted boiling water 2-3 minutes less than package directions (very al dente). Drain and transfer to a sheet pan; coat lightly with olive oil.",
+            "Combine ricotta, garlic, spinach, and 10 oz (about 2 1/2 cups) peas in a food processor. Process until a homogeneous green forms, scraping sides. Add olive oil, cream, egg, half the Pecorino, the salt, and lots of black pepper. Process until combined. Add mint and pulse just to combine. Season to taste. Reserve remaining 6 oz peas for assembly.",
+            "Preheat oven to 400 degrees F. Line a baking sheet with parchment. Lightly grease a 2 1/2- to 3-quart baking dish with olive oil.",
+            "Assemble: Spread 1 cup ricotta mixture in the bottom of the dish. Top with one layer of noodles. For each of 3 layers: top with one-third of remaining ricotta mixture, one-third of mozzarella, one-third of Meyer lemon (if using), and one-third of reserved peas; add another layer of noodles. Finish with a fourth layer of noodles. (Noodles may hang over the sides -- this is desirable.)",
+            "Cover with foil and place on the prepared baking sheet. Bake 30 minutes.",
+            "Increase oven to 450 degrees F. Uncover, drizzle noodles generously with olive oil, and sprinkle remaining Pecorino on top. Bake 28-34 more minutes, until noodles are very crisp and burnished. Rest 15 minutes before cutting."
+          ]
+        },
+        {
+          "title": "Crisp Gnocchi with Sausage and Peas",
+          "servings": "Serves 4",
+          "source": "New York Times (Ali Slagle)",
+          "comments": [
+            "No boiling needed -- gnocchi cook directly from the package in the skillet.",
+            "Hot or sweet Italian sausage works equally well. A splash of heavy cream added with the Parmesan makes a creamier version.",
+            "Total: 25 min."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Gnocchi",
+              "ingredients": [
+                "3 tablespoons extra-virgin olive oil, plus more as needed",
+                "1 (12- to 18-oz) package shelf-stable potato gnocchi"
+              ]
+            },
+            {
+              "label": "Sausage",
+              "ingredients": [
+                "1 pound hot or sweet Italian sausage, casings removed"
+              ]
+            },
+            {
+              "label": "Sauce",
+              "ingredients": [
+                "2 cups (10 oz) frozen peas (no need to thaw)",
+                "1 tablespoon Dijon mustard",
+                "1/2 cup water"
+              ]
+            },
+            {
+              "label": "Finish",
+              "ingredients": [
+                "1/2 cup (1 oz) grated Parmesan, plus more for serving",
+                "Salt and freshly ground black pepper",
+                "1/2 cup torn fresh dill, mint, or basil, plus more for serving"
+              ]
+            }
+          ],
+          "steps": [
+            "Heat 1 tablespoon oil in a large (12-inch) nonstick or cast-iron skillet over medium-high. Break up any stuck-together gnocchi and add in an even layer. Cover and cook, undisturbed, until golden underneath and unstuck, 2-4 minutes. Uncover and cook, stirring, until crisp on both sides, 2-3 minutes more. Transfer to a bowl.",
+            "Add remaining 2 tablespoons oil to the skillet over medium-high. Add sausage and break into small pieces. Cook undisturbed until browned, 2-4 minutes; stir and cook through, 2-4 minutes more.",
+            "Stir in peas, mustard, and 1/2 cup water; scrape up the browned bits. Simmer until peas are cooked through, 2-4 minutes.",
+            "Add browned gnocchi and Parmesan; stir until cheese melts. Season with salt and pepper, stir in herbs, and serve topped with more herbs, Parmesan, and black pepper."
+          ]
+        },
+        {
+          "title": "One-Pan Orzo with Spinach and Feta",
+          "servings": "Serves 4",
+          "source": "New York Times (Melissa Clark)",
+          "comments": [
+            "Inspired by spanakorizo, the Greek spinach-and-rice dish. Works as a complete meatless meal or a hearty side to roasted meats or fish.",
+            "Parsley or cilantro can substitute for dill.",
+            "Total: 30 min."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Aromatics",
+              "ingredients": [
+                "2 tablespoons unsalted butter",
+                "4 large scallions, trimmed and thinly sliced (reserve green parts for garnish)",
+                "2 large garlic cloves, minced"
+              ]
+            },
+            {
+              "label": "Spinach",
+              "ingredients": [
+                "8 oz baby spinach (about 8 cups), coarsely chopped",
+                "1/2 teaspoon kosher salt"
+              ]
+            },
+            {
+              "label": "Orzo",
+              "ingredients": [
+                "1 3/4 cups low-sodium chicken or vegetable stock",
+                "1 cup orzo",
+                "1 teaspoon finely grated lemon zest",
+                "1/2 teaspoon kosher salt"
+              ]
+            },
+            {
+              "label": "Finish",
+              "ingredients": [
+                "3/4 cup crumbled feta (3 oz), plus more for garnish",
+                "1/2 cup frozen peas, thawed (optional)",
+                "1 cup chopped fresh dill (or parsley or cilantro)"
+              ]
+            }
+          ],
+          "steps": [
+            "Heat a 10-inch skillet over medium and melt butter, about 30-60 seconds. Stir in scallions (reserving some green tops for garnish) and garlic; cook, stirring frequently, until softened, about 3 minutes.",
+            "Stir in spinach in batches if needed and 1/2 teaspoon salt. Cook, stirring occasionally, until wilted, about 5 minutes.",
+            "Stir in stock and bring to a simmer. Stir in orzo, lemon zest, and remaining 1/2 teaspoon salt. Cover and simmer over medium-low until orzo is nearly done and most liquid is absorbed, 10-14 minutes, stirring once or twice.",
+            "Stir in feta, peas (if using), and dill. Cover and cook 1 more minute. Serve topped with more feta and reserved scallion greens."
+          ]
+        },
+        {
+          "title": "Pasta with Spicy Sausages, Tomatoes, Rosemary and Olives",
+          "servings": "Serves 2-3",
+          "source": "New York Times (Melissa Clark)",
+          "comments": [
+            "Originally developed for whole wheat pasta; works with any variety.",
+            "If fresh tomatoes are not at their peak, substitute one 15-oz can whole tomatoes.",
+            "Total: 30 min."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Sauce",
+              "ingredients": [
+                "2 tablespoons extra-virgin olive oil",
+                "1/2 pound hot Italian sausage, casings removed",
+                "1 large sprig fresh rosemary",
+                "1 fat garlic clove, finely chopped",
+                "1 1/2 pounds ripe plum tomatoes, trimmed and diced",
+                "1/4 cup pitted green olives, slivered",
+                "Salt to taste"
+              ]
+            },
+            {
+              "label": "Pasta",
+              "ingredients": [
+                "Salt",
+                "1/2 pound penne"
+              ]
+            },
+            {
+              "label": "To serve (optional)",
+              "ingredients": [
+                "Finely chopped fresh parsley"
+              ]
+            }
+          ],
+          "steps": [
+            "Warm oil in a large skillet over medium-high heat. Add sausage and rosemary; cook, breaking up meat with a fork, until browned and cooked through, 5-7 minutes. Add garlic and cook 1 minute.",
+            "Add tomatoes and stir occasionally until they break down into a sauce, 10-15 minutes. Stir in olives for the last 5 minutes. Season with salt; cover and keep warm.",
+            "Meanwhile, bring a large pot of salted water to a boil. Cook penne according to package directions. Drain and toss with sauce. Finish with parsley if desired."
+          ]
+        },
+        {
+          "title": "Spinach Lasagna",
+          "servings": "Serves 8",
+          "source": "Holly Nilsson, spendwithpennies.com",
+          "comments": [
+            "Can be assembled up to 2 days ahead, covered, and refrigerated; bake as directed, adding 10-15 minutes covered time. Freezes well uncooked -- thaw overnight before baking.",
+            "Cottage cheese can substitute for ricotta for a lighter texture.",
+            "Total: 2 hr 15 min (including rest)."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Noodles",
+              "ingredients": [
+                "9 lasagna noodles"
+              ]
+            },
+            {
+              "label": "Sauce",
+              "ingredients": [
+                "1 tablespoon olive oil",
+                "1 large onion, chopped",
+                "3 cloves garlic, minced",
+                "4 cups pasta sauce",
+                "2 teaspoons Italian seasoning"
+              ]
+            },
+            {
+              "label": "Filling",
+              "ingredients": [
+                "10 oz frozen chopped spinach, thawed and squeezed dry",
+                "15 oz ricotta cheese",
+                "2 1/2 cups shredded mozzarella (from 4 cups total)",
+                "1/4 cup shredded Parmesan (from 1/2 cup total)",
+                "1 egg",
+                "1 tablespoon chopped fresh parsley",
+                "1/2 teaspoon salt"
+              ]
+            },
+            {
+              "label": "Cheese topping",
+              "ingredients": [
+                "1 1/2 cups shredded mozzarella (remaining)",
+                "1/4 cup shredded Parmesan (remaining)"
+              ]
+            }
+          ],
+          "steps": [
+            "Preheat oven to 350 degrees F. Place lasagna noodles in a 9x13-inch pan, cover with boiling water, and soak 15 minutes. Rinse with cold water and pat dry.",
+            "Meanwhile, heat olive oil in a skillet over medium. Cook onion and garlic until tender, about 5 minutes. Add pasta sauce and Italian seasoning; simmer 5 minutes until slightly thickened.",
+            "Squeeze spinach to remove as much moisture as possible. Combine with ricotta, 2 1/2 cups mozzarella, 1/4 cup Parmesan, egg, parsley, and salt. Mix well.",
+            "Spread 1 cup sauce in the bottom of the baking pan. Layer 3 noodles, half the spinach-cheese mixture, and one-third of the remaining sauce. Add 3 more noodles, remaining spinach-cheese mixture, and one-third more sauce. Top with last 3 noodles and remaining sauce.",
+            "Cover tightly with foil and bake 45 minutes. Remove foil, sprinkle with remaining 1 1/2 cups mozzarella and 1/4 cup Parmesan, and bake 15-20 more minutes until browned. Rest 20 minutes before cutting."
+          ]
+        },
+        {
+          "title": "Tagliatelle with Mushrooms, Sage Butter and Toasted Hazelnuts",
+          "servings": "Serves 4",
+          "source": "Denisse, lepetiteats.com",
+          "comments": [
+            "One-pot meal -- boil pasta, wipe pot, make sauce and finish all in the same pot.",
+            "Stay close while browning butter and frying sage to avoid burning.",
+            "Total: 30 min."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Hazelnuts",
+              "ingredients": [
+                "1/2 cup hazelnuts"
+              ]
+            },
+            {
+              "label": "Pasta",
+              "ingredients": [
+                "Salt",
+                "1 pound tagliatelle"
+              ]
+            },
+            {
+              "label": "Brown butter and mushrooms",
+              "ingredients": [
+                "1 stick (8 tablespoons) unsalted butter",
+                "12 fresh sage leaves",
+                "1/2 pound mixed mushrooms (shiitake, oyster, and cremini), sliced",
+                "1 large garlic clove, minced",
+                "Salt and freshly ground black pepper"
+              ]
+            },
+            {
+              "label": "Finish",
+              "ingredients": [
+                "1/4 to 1/2 cup reserved pasta cooking water",
+                "Juice of 1/2 lemon",
+                "1/4 to 1/2 cup grated Parmesan"
+              ]
+            }
+          ],
+          "steps": [
+            "Preheat oven to 350 degrees F. Toast hazelnuts in a single layer on a baking sheet 10-12 minutes, until lightly colored and skins blistered. Let cool and chop roughly. Set aside.",
+            "Cook tagliatelle in a large pot of generously salted boiling water until al dente. Drain, reserving 1/4 to 1/2 cup pasta water.",
+            "Wipe out the pot and return to medium heat. Add butter and cook, watching carefully, until just beginning to smell nutty and brown. Add sage leaves and fry about 30 seconds per side until crisp. Season with salt; remove sage leaves to paper towels.",
+            "Add mushrooms to the pot (butter will continue to brown) and cook 4-5 minutes. Season with salt and pepper; add garlic and cook 1 more minute.",
+            "Reduce heat to low. Return tagliatelle to the pot with 1/4 cup pasta water, lemon juice, and Parmesan. Toss until cheese melts and a silky sauce forms, adding more pasta water if needed. Season to taste.",
+            "Serve in bowls topped with crispy sage leaves and chopped toasted hazelnuts."
+          ]
+        },
+        {
+          "title": "Creamy Baked Mac and Cheese",
+          "servings": "Serves 8-10",
+          "source": "thechunkychef.com",
+          "comments": [
+            "Always shred cheese from the block -- pre-shredded bags have anti-caking agents that inhibit melting.",
+            "For a crunchy topping, mix 1 cup panko with 2 tablespoons melted butter (or 1 cup crushed Ritz crackers with 2 tablespoons butter) and sprinkle on top before baking.",
+            "Can be assembled ahead, refrigerated 1-2 days, and baked as directed, adding 25-35 minutes covered.",
+            "Total: 35 min active; 15-35 min bake."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Pasta",
+              "ingredients": [
+                "1 pound dried elbow pasta",
+                "Salt"
+              ]
+            },
+            {
+              "label": "Cheese sauce",
+              "ingredients": [
+                "1/2 cup unsalted butter",
+                "1/2 cup all-purpose flour",
+                "1 1/2 cups whole milk",
+                "2 1/2 cups half-and-half",
+                "3 cups mixed shredded cheddar and Gruyere (for sauce -- see Comments for totals)",
+                "1/2 tablespoon salt",
+                "1/2 teaspoon black pepper",
+                "1/4 teaspoon smoked paprika"
+              ]
+            },
+            {
+              "label": "Cheese layers",
+              "ingredients": [
+                "3 cups mixed shredded cheddar and Gruyere (1 1/2 cups for inner layer, 1 1/2 cups for topping)"
+              ]
+            }
+          ],
+          "steps": [
+            "Preheat oven to 325 degrees F. Grease a 9x13-inch baking dish.",
+            "Cook pasta in salted water 1 minute less than package directions for al dente. Drain.",
+            "Shred all cheese from the block and toss together (total: 4 cups cheddar + 2 cups Gruyere). Divide into three portions: 3 cups for the sauce, 1 1/2 cups for the inner layer, 1 1/2 cups for the topping.",
+            "Melt butter in a large saucepan over medium heat. Whisk in flour (it will look like wet sand); cook 1 minute. Slowly whisk in half-and-half, then milk, whisking constantly until smooth. Heat over medium, whisking frequently, until thickened to a semi-condensed-soup consistency.",
+            "Remove from heat. Stir in salt, pepper, paprika, and the 3-cup sauce portion of cheese in two additions, stirring each until completely melted.",
+            "Combine drained pasta with cheese sauce. Pour half into the baking dish. Sprinkle with inner-layer cheese, then add remaining pasta. Sprinkle topping cheese on top.",
+            "Bake 15 minutes until bubbly and lightly golden. For a crunchier, firmer result, bake at 350-375 degrees F for 20-30 minutes, then broil 2-5 minutes."
+          ]
+        },
+        {
+          "title": "Pasta (or Ravioli) with Brown Butter and Crispy Sage",
+          "servings": "Serves 4",
+          "source": "Adapted from New York Times (Mark Bittman) and Marilena Leavitt, marilenaskitchen.com",
+          "comments": [
+            "Thirty sage leaves is not too many -- the crispy fried leaves become the star of the dish.",
+            "For ravioli, lift from the water with a slotted spoon about 30 seconds early so they finish cooking in the skillet. Fresh ravioli (ricotta, butternut squash, or similar) pairs especially well.",
+            "Use a light-colored (stainless or enameled) pan to monitor the butter color.",
+            "Total: 20 min."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Pasta",
+              "ingredients": [
+                "Salt",
+                "1 pound cut pasta (ziti, rigatoni, or tagliatelle), OR 1 pound fresh ravioli (ricotta, butternut squash, or other filling)"
+              ]
+            },
+            {
+              "label": "Brown butter and sage",
+              "ingredients": [
+                "5-6 tablespoons unsalted butter",
+                "30 fresh sage leaves, washed and dried",
+                "Salt and freshly ground black pepper",
+                "1 tablespoon fresh lemon juice"
+              ]
+            },
+            {
+              "label": "Finish",
+              "ingredients": [
+                "1 cup reserved pasta cooking water, plus more as needed",
+                "1 cup freshly grated Parmesan, plus more for serving"
+              ]
+            }
+          ],
+          "steps": [
+            "Bring a large pot of salted water to a boil. Cook pasta until just al dente. For fresh ravioli, cook at a gentle boil about 6 minutes or per package directions. Reserve 1 cup cooking water; drain or lift out with a spider.",
+            "While pasta cooks, heat butter in a large, light-colored skillet over medium. Cook, stirring occasionally, until butter just begins to brown and smell nutty. Add sage leaves and fry until crispy and butter is deep golden, 1-2 minutes more. Season with salt and pepper. Add lemon juice; remove from heat.",
+            "Add cooked pasta to the skillet over medium heat. Add 3/4 cup pasta water and toss; it will be loose. Cook, tossing, until pasta is done and sauce clings, about 1 minute.",
+            "Stir in Parmesan; sauce will turn creamy. Thin with more pasta water if needed. Taste and adjust salt. Serve immediately with more Parmesan."
+          ]
+        },
+        {
+          "title": "Fried Drunken Noodles with Chicken (Phad Kii Maw Gai)",
+          "servings": "Serves 6",
+          "source": "\"A Passion for Thai Cooking\" by Sompon and Elizabeth Nabnian, p. 69",
+          "comments": [
+            "Scaled to 6 servings. The book's original recipe listed \"serves 4\" but the full quantities were more consistent with 10–12; this is half of the full recipe.",
+            "Krachai (also called fingerroot or lesser ginger) is a Thai rhizome available at Asian grocery stores. Substitute extra fresh ginger in a pinch.",
+            "Use holy basil (Thai holy basil / bai krapao), which is distinct from Thai sweet basil.",
+            "Adjust chilli quantity to taste — the recipe is designed to be quite spicy."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Aromatics",
+              "ingredients": [
+                "90ml (6 tablespoons) vegetable oil, divided",
+                "5 cloves garlic, roughly chopped",
+                "2 shallots, roughly chopped",
+                "1 big green chilli, sliced",
+                "1 big red chilli, sliced",
+                "3 medium chillies, roughly chopped"
+              ]
+            },
+            {
+              "label": "Chicken and aromatics",
+              "ingredients": [
+                "150g (5 oz) chicken, thinly sliced",
+                "30g (1 oz) krachai (fingerroot / lesser ginger), shredded",
+                "10g fresh young green peppercorns",
+                "15g (1/2 oz) dried shrimps"
+              ]
+            },
+            {
+              "label": "Vegetables",
+              "ingredients": [
+                "1 small tomato, cut into wedges",
+                "3–4 long beans, sliced",
+                "2 baby corn, each sliced into 3",
+                "75g (2-1/2 oz) straw mushrooms, quartered",
+                "50g (1-3/4 oz) carrots, sliced"
+              ]
+            },
+            {
+              "label": "Noodles and eggs",
+              "ingredients": [
+                "175g (6 oz) large flat rice noodles",
+                "1/4 teaspoon sweet soy sauce",
+                "2 eggs, beaten"
+              ]
+            },
+            {
+              "label": "Sauce",
+              "ingredients": [
+                "30ml (2 tablespoons) oyster sauce",
+                "15ml (1 tablespoon) soy sauce",
+                "30ml (2 tablespoons) fish sauce",
+                "1/4 teaspoon sugar"
+              ]
+            },
+            {
+              "label": "Finish",
+              "ingredients": [
+                "50g (1-3/4 oz) peanuts, roasted and crushed",
+                "15g holy basil leaves"
+              ]
+            }
+          ],
+          "steps": [
+            "Heat 30ml (2 tablespoons) of the oil in a wok over high heat. Add the garlic, shallots, and all the chillies; fry for 1 minute.",
+            "Add the chicken; stir-fry until the outside turns white, 2–3 minutes.",
+            "Add the krachai, green peppercorns, and dried shrimps; stir-fry for 2 more minutes.",
+            "Turn the heat down. Add the tomato, long beans, baby corn, mushrooms, and carrots; cook 3 minutes. Turn off the heat and set the vegetable mixture aside.",
+            "Heat the remaining oil in the wok over high heat. Add the noodles and sweet soy sauce; stir-fry 1 minute, stirring continuously. Turn the heat down, add the eggs, and stir to cook.",
+            "Add the reserved vegetable-and-chicken mixture; stir over high heat to combine. Add the sauce and stir-fry to combine.",
+            "Add the peanuts and basil leaves, stir once, and serve."
+          ]
+        },
+        {
+          "title": "Ginger-Orange Broccoli and Noodles",
+          "servings": "Serves 2 to 3",
+          "source": "Sonja and Alex Overhiser / The Washington Post",
+          "comments": [
+            "Any dried stir-fry noodles work; thick rice noodles give the best chewy texture.",
+            "Dark miso adds depth; white or red miso can substitute.",
+            "The sauce thickens very quickly off the heat -- have everything ready before adding it."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Noodles",
+              "ingredients": [
+                "4 oz dried stir-fry noodles (thick rice noodles recommended)"
+              ]
+            },
+            {
+              "label": "Sauce",
+              "ingredients": [
+                "1/4 cup low-sodium soy sauce",
+                "1/2 cup fresh orange juice (from about 2 oranges)",
+                "2 tablespoons cornstarch",
+                "1 teaspoon sriracha",
+                "1 tablespoon dark miso"
+              ]
+            },
+            {
+              "label": "Stir-fry",
+              "ingredients": [
+                "1 tablespoon sesame oil or neutral oil",
+                "1/2 large sweet onion, thinly sliced",
+                "1/2 large red bell pepper, seeded and thinly sliced",
+                "1 yellow bell pepper, seeded and thinly sliced",
+                "2 large broccoli crowns (1 1/2 pounds total), cut into bite-sized florets",
+                "1/2 cup roasted unsalted whole cashews",
+                "2 pinches kosher salt",
+                "1/4 cup water",
+                "2 cloves garlic, thinly sliced",
+                "One 1-inch piece peeled fresh ginger, minced or grated"
+              ]
+            }
+          ],
+          "steps": [
+            "Cook noodles according to package directions. Drain and set aside.",
+            "Whisk together soy sauce, orange juice, cornstarch, sriracha, and miso until smooth.",
+            "Heat oil in a large skillet over high heat. Add onion; stir-fry until it starts to brown, about 2 minutes. Add both bell peppers, broccoli, cashews, and salt. Stir-fry until broccoli stems are tender and cashews are slightly toasted, about 5 minutes.",
+            "Reduce heat to low. Add water and stir until it evaporates. Add garlic and ginger; stir-fry 1 minute. Turn off heat. Pour in the sauce and stir until it thickens into a glossy glaze. Add drained noodles and stir gently until evenly coated.",
+            "Serve warm."
+          ]
+        },
+        {
+          "title": "Stir-Fried Udon Noodles With Pork and Scallions",
+          "servings": "Serves 4   |   Total: 25 min",
+          "source": "Claire Saffitz, Bon Appétit (April 2019)",
+          "ingredientGroups": [
+            {
+              "label": "Noodles + cabbage",
+              "ingredients": [
+                "4 cups very coarsely chopped green cabbage (about 1/4 medium head)",
+                "2 (7-oz.) packages instant udon noodles, flavor packets discarded"
+              ]
+            },
+            {
+              "label": "Stir-fry",
+              "ingredients": [
+                "2 tablespoons vegetable oil, divided",
+                "2 teaspoons toasted sesame oil",
+                "8 oz ground pork",
+                "5 scallions, white and pale green parts coarsely chopped, dark green parts thinly sliced (kept separate)",
+                "2 teaspoons finely grated peeled ginger",
+                "1 teaspoon Aleppo pepper or red pepper flakes",
+                "1/3 cup mirin (sweet Japanese rice wine)",
+                "1/3 cup soy sauce",
+                "1 tablespoon toasted sesame seeds, plus more for serving"
+              ]
+            }
+          ],
+          "steps": [
+            "Heat 1 tablespoon vegetable oil in a large skillet over medium-high. Cook cabbage, tossing often, until edges are browned, about 4 min. Reduce heat to low and continue cooking until thickest parts are tender, about 4 min more. Remove from heat.",
+            "Place udon noodles in a large heatproof bowl; cover with 6 cups boiling water. Let sit 1 minute, stirring to separate, then drain. Toss noodles with sesame oil. Add reserved cabbage to bowl.",
+            "Wipe out skillet. Heat remaining 1 tablespoon vegetable oil over medium-high. Add pork, spreading across the pan; cook undisturbed until underside is browned, about 3 min. Break up meat and continue cooking until no longer pink, about 1 min. Add scallion whites and pale greens, ginger, and Aleppo pepper; cook, tossing, until scallions soften and skillet starts to brown, about 1 min.",
+            "Add noodle-cabbage mixture, mirin, and soy sauce. Cook, tossing constantly and scraping up browned bits, until noodles are coated, about 45 seconds. Remove from heat; toss in dark scallion greens and 1 tablespoon sesame seeds.",
+            "Divide among bowls and top with more sesame seeds."
           ]
         }
       ]
@@ -12445,7 +12438,7 @@ module.exports = {
               "servings": "Makes 2 large loaves",
               "source": "From Nechamie (Chabad Jewish Center of Pudong)",
               "comments": [
-                "Tangzhong option: Before mixing the dough, cook 3 tablespoons of the measured dough flour with 1/2 cup of the measured dough water in a small saucepan over medium heat, stirring constantly, until thick and pudding-like (about 65\u00b0F / 150\u00b0F), 3\u20134 minutes. Let cool completely, then add to the dough with the other wet ingredients, using the remaining (reduced) flour and water amounts. The result is a softer, more pillowy challah that stays fresh longer."
+                "Tangzhong option: Before mixing the dough, cook 3 tablespoons of the measured dough flour with 1/2 cup of the measured dough water in a small saucepan over medium heat, stirring constantly, until thick and pudding-like (about 65°F / 150°F), 3–4 minutes. Let cool completely, then add to the dough with the other wet ingredients, using the remaining (reduced) flour and water amounts. The result is a softer, more pillowy challah that stays fresh longer."
               ],
               "ingredientGroups": [
                 {
