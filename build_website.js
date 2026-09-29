@@ -92,13 +92,13 @@ const CLUSTER_MAP = {
   'Moo Shu Mushrooms':                                   'Chinese',
   // Noodles: Italian — General
   'Creamy Baked Mac and Cheese':                         'General',
-  'Spinach Lasagna':                                     'General',
+  'Spinach Lasagna':                                     'Italian',
   // Noodles: Italian — Italian
   'Brie Linguine':                                       'Italian',
   'Crisp Gnocchi with Sausage and Peas':                 'Italian',
   'Crispy-Crackly Minty-Pea Lasagna':                   'Italian',
-  'Lisa\'s Pasta':                                       'Italian',
-  'Nuala\'s Pasta':                                      'Italian',
+  'Lisa\'s Angel Hair Tomato Basil Toss':                'Italian',
+  'Nuala\'s Riccota Penne':                              'Italian',
   'Pasta with Sausage, Basil, and Mustard':              'Italian',
   'Pasta (or Ravioli) with Brown Butter and Crispy Sage':  'Italian',
   'Pasta with Spicy Sausages, Tomatoes, Rosemary and Olives': 'Italian',
@@ -122,17 +122,21 @@ const CLUSTER_MAP = {
   // Noodles — Middle Eastern/Persian (Batch E)
   'Preserved Lemon Za\'atar Pasta':                     'Middle Eastern/Persian',
   // Noodles — General (Batches B + D + E)
-  'Classic Stuffed Shells':                             'General',
+  'Classic Stuffed Shells':                             'Italian',
   'Four-Cheese Truffled Macaroni and Cheese':           'General',
   'Pasta with Corn, Mint and Red Onions':               'General',
   'Smoked Gouda Mac and Cheese':                        'General',
-  // Noodles — Italian (Batch E)
+  // Noodles — Italian (Batch E + cluster review)
   '30 Minute Artichoke and Pea Rigatoni':               'Italian',
+  'Artichoke Pesto Pasta with Fried Peppercorns':       'Italian',
+  'BIG Noods alla Gin with Sungold Tomatoes':           'Italian',
+  "Christy's Pesto (Adapted)":                          'Italian',
+  'Lemon Fusilli with Arugula':                         'Italian',
   'Burst Tomato Burrata Pasta':                         'Italian',
   'Ravioli with Sage Brown Butter Sauce':               'Italian',
   'Rigatoni with Easy Vodka Sauce':                     'Italian',
   // Noodles — Chinese (Batch D)
-  'Chili Crisp Fettuccine Alfredo with Spinach':        'Chinese',
+  'Chili Crisp Fettuccine Alfredo with Spinach':        'General',
   // Noodles — Thai
   'Fried Drunken Noodles with Chicken (Phad Kii Maw Gai)': 'Thai',
   // Noodles — Chinese
