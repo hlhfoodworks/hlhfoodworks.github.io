@@ -90,12 +90,20 @@ const CLUSTER_MAP = {
   'Crispy Pork Lettuce Wraps With Spicy Cucumbers':      'Korean-inspired',
   // Pork — Chinese
   'Moo Shu Mushrooms':                                   'Chinese',
+  // Noodles: Italian — General
+  'Creamy Baked Mac and Cheese':                         'General',
+  'Spinach Lasagna':                                     'General',
   // Noodles: Italian — Italian
   'Brie Linguine':                                       'Italian',
-  'Pasta with Sausage, Basil, and Mustard':              'Italian',
-  'Nuala\'s Pasta':                                      'Italian',
-  'Three Cheese Manicotti':                              'Italian',
+  'Crisp Gnocchi with Sausage and Peas':                 'Italian',
+  'Crispy-Crackly Minty-Pea Lasagna':                   'Italian',
   'Lisa\'s Pasta':                                       'Italian',
+  'Nuala\'s Pasta':                                      'Italian',
+  'Pasta with Sausage, Basil, and Mustard':              'Italian',
+  'Pasta (or Ravioli) with Brown Butter and Crispy Sage':  'Italian',
+  'Pasta with Spicy Sausages, Tomatoes, Rosemary and Olives': 'Italian',
+  'Tagliatelle with Mushrooms, Sage Butter and Toasted Hazelnuts': 'Italian',
+  'Three Cheese Manicotti':                              'Italian',
   // Noodles: Asian — Thai
   // Noodles: Asian — Chinese
   'Ginger-Orange Broccoli and Noodles':                 'Chinese',
@@ -153,6 +161,8 @@ const CLUSTER_MAP = {
   'Korean Beef Bowl':                                    'Korean-inspired',
   // Noodles: Italian — Middle Eastern/Persian
   'Spiced Meatballs with Pappardelle':                   'Middle Eastern/Persian',
+  // Noodles: Italian — Mediterranean/Greek
+  'One-Pan Orzo with Spinach and Feta':                  'Mediterranean/Greek',
   // Dressings — General
   'Christy\'s Dressing':                                 'General',
   'Horseradish Sauce':                                   'General',
@@ -242,9 +252,9 @@ const CLUSTER_MAP = {
   'Yellow Mustard Potato Salad':                        'General',
   "Nechamie's Coleslaw Salad":                          'General',
   "Nechamie's Summer Salad":                            'General',
-  'Popped Rice Salad':                                  'General',
-  'Poppy Seed Salad':                                   'General',
-  'Spinach and Egg Salad':                              'General',
+  "Nechamie's Popped Rice Salad":                                  'General',
+  "Nechamie's Poppy Seed Salad":                                   'General',
+  "Nechamie's Spinach and Egg Salad":                              'General',
   // Vegetables — Latin/South American
   'Chickpea Tacos':                                      'Latin/South American',
   'Sweet Potato and Black Bean Enchiladas':              'Latin/South American',
@@ -267,8 +277,6 @@ const CLUSTER_MAP = {
   "Holly's Spicy Noodle Salad with Peanut Dressing":    'Chinese',
   // Vegetable Sides — General
   'Sautéed Mushrooms':                                   'General',
-  'Coleslaw Salad':                                      'General',
-  'Summer Salad':                                        'General',
   'Western River Curry Chicken Salad':                   'General',
   'Brown Butter Mashed Potatoes':                        'General',
   'Crispy Smashed Potatoes':                             'General',
@@ -323,6 +331,8 @@ const CLUSTER_MAP = {
   "Artichoke Hors D'oeuvre":                             'General',
   'Shrimp Mold':                                         'General',
   "Barbara Glabman's Cheese Ball":                       'General',
+  // Appetizers — Italian
+  'Burrata Bruschetta Toasts':                           'Italian',
   'Marinated Anchovies and Prawns':                      'Italian',
   'Shrimp Dip':                                          'General',
   'Blooming Onions':                                     'General',
@@ -432,10 +442,14 @@ const CLUSTER_ORDER = [
   'Japanese',
 ];
 
-// Group an array of recipes by their CLUSTER_MAP entry.
-// Merges all recipes with the same cluster (non-consecutive runs are combined).
-// Returns [{cluster, recipes}] sorted by CLUSTER_ORDER, or null if all recipes
-// fall into a single cluster (no headers needed).
+// Alphabetical sort key: strip leading "The" / "A" / "An" and lowercase.
+function titleSortKey(t) {
+  return t.replace(/^(the|an?)\s+/i, '').toLowerCase();
+}
+
+// Group recipes by CLUSTER_MAP entry; sort clusters by CLUSTER_ORDER; sort
+// recipes alphabetically (ignoring leading article) within each cluster.
+// Always returns [{cluster, recipes}] — never null.
 function groupByCluster(recipes) {
   const clusterMap = new Map();
   for (const recipe of recipes) {
@@ -443,15 +457,18 @@ function groupByCluster(recipes) {
     if (!clusterMap.has(c)) clusterMap.set(c, []);
     clusterMap.get(c).push(recipe);
   }
-  // If there's only one cluster, no headers needed — return null.
-  if (clusterMap.size <= 1) return null;
   // Sort clusters by CLUSTER_ORDER; unknown clusters go at the end.
   const sorted = [...clusterMap.entries()].sort(([a], [b]) => {
     const ai = CLUSTER_ORDER.indexOf(a);
     const bi = CLUSTER_ORDER.indexOf(b);
     return (ai === -1 ? 999 : ai) - (bi === -1 ? 999 : bi);
   });
-  return sorted.map(([cluster, recipes]) => ({ cluster, recipes }));
+  // Sort recipes alphabetically within each cluster.
+  return sorted.map(([cluster, recipes]) => ({
+    cluster,
+    recipes: [...recipes].sort((a, b) =>
+      titleSortKey(a.title).localeCompare(titleSortKey(b.title))),
+  }));
 }
 
 // ── Content rendering ──────────────────────────────────────────────────────
@@ -539,19 +556,23 @@ function renderRecipe(recipe, idPrefix) {
 </article>`;
 }
 
-// Render a list of recipes, optionally wrapped in cluster groups.
-// clusterGroups: null (flat) or [{cluster, recipes}] from groupByCluster().
+// Render a list of recipes grouped by cluster.
+// clusterGroups: [{cluster, recipes}] from groupByCluster().
+// Cluster headings are shown only when there are multiple clusters AND the
+// cluster is not 'General' (General recipes appear without a heading label).
 function renderRecipeList(recipes, idPrefix, clusterGroups) {
-  if (!clusterGroups) {
-    return recipes.map(r => renderRecipe(r, idPrefix)).join('\n');
-  }
+  const showHeaders = clusterGroups.length > 1;
   let html = '';
   for (const { cluster, recipes: cr } of clusterGroups) {
-    const cid = `${idPrefix}--${slug(cluster)}`;
-    html += `<div class="cluster-group" id="${esc(cid)}">
+    if (!showHeaders || cluster === 'General') {
+      html += cr.map(r => renderRecipe(r, idPrefix)).join('\n') + '\n';
+    } else {
+      const cid = `${idPrefix}--${slug(cluster)}`;
+      html += `<div class="cluster-group" id="${esc(cid)}">
   <h4 class="cluster-heading">${esc(cluster)}</h4>
   ${cr.map(r => renderRecipe(r, idPrefix)).join('\n')}
 </div>\n`;
+    }
   }
   return html;
 }
@@ -601,16 +622,17 @@ function buildNav(data, currentSection) {
 
       if (section.recipes) {
         const clusterGroups = groupByCluster(section.recipes);
-        if (clusterGroups) {
-          for (const { cluster, recipes: cr } of clusterGroups) {
-            const cid = `${sl}--${slug(cluster)}`;
+        const showClusterHeaders = clusterGroups.length > 1;
+        for (const { cluster, recipes: cr } of clusterGroups) {
+          const cid = `${sl}--${slug(cluster)}`;
+          if (!showClusterHeaders || cluster === 'General') {
+            cr.forEach(r => {
+              const rid = r.id || `${sl}-${slug(r.title)}`;
+              nav += navRecipeItem(rid, r, filename);
+            });
+          } else {
             nav += navClusterItem(cid, cluster, cr, sl, filename);
           }
-        } else {
-          section.recipes.forEach(r => {
-            const rid = r.id || `${sl}-${slug(r.title)}`;
-            nav += navRecipeItem(rid, r, filename);
-          });
         }
       } else if (section.subsections) {
         for (const sub of section.subsections) {
@@ -625,16 +647,19 @@ function buildNav(data, currentSection) {
 
           if (hasRecipes) {
             nav += `<ul class="nav-l3 collapsed" id="${subSecId}-children">`;
+            const showClusterHeaders = clusterGroups && clusterGroups.length > 1;
             if (clusterGroups) {
               for (const { cluster, recipes: cr } of clusterGroups) {
                 const cid = `${subsl}--${slug(cluster)}`;
-                nav += navClusterItem(cid, cluster, cr, subsl, filename);
+                if (!showClusterHeaders || cluster === 'General') {
+                  cr.forEach(r => {
+                    const rid = r.id || `${subsl}-${slug(r.title)}`;
+                    nav += navRecipeItem(rid, r, filename);
+                  });
+                } else {
+                  nav += navClusterItem(cid, cluster, cr, subsl, filename);
+                }
               }
-            } else {
-              sub.recipes.forEach(r => {
-                const rid = r.id || `${subsl}-${slug(r.title)}`;
-                nav += navRecipeItem(rid, r, filename);
-              });
             }
             nav += '</ul>';
           }
@@ -690,10 +715,11 @@ function buildSectionContent(section) {
     for (const sub of section.subsections) {
       const subsl = `${sl}-${slug(sub.title)}`;
       const subSecId = `sub-${subsl}`;
-      const clusterGroups = sub.recipes && sub.recipes.length ? groupByCluster(sub.recipes) : null;
+      const hasSubRecipes = sub.recipes && sub.recipes.length > 0;
+      const clusterGroups = hasSubRecipes ? groupByCluster(sub.recipes) : null;
       html += `<section id="${subSecId}" class="subsection">
   <h3 class="subsection-heading">${esc(sub.title)}</h3>
-  ${sub.recipes && sub.recipes.length
+  ${hasSubRecipes
     ? renderRecipeList(sub.recipes, subsl, clusterGroups)
     : '<p class="empty"><em>No recipes yet.</em></p>'}
 </section>\n`;
@@ -713,7 +739,7 @@ function buildSearchIndex(data) {
 
     const addRecipes = (recipes, idPrefix) => {
       const clusterGroups = groupByCluster(recipes);
-      const flat = clusterGroups ? clusterGroups.flatMap(g => g.recipes) : recipes;
+      const flat = clusterGroups.flatMap(g => g.recipes);
       flat.forEach(r => {
         const id = r.id || `${idPrefix}-${slug(r.title)}`;
         index.push({ title: r.title, page: filename, id, fav: r.favorite ? 1 : 0, section: section.title });
