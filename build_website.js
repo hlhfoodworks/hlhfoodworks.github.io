@@ -399,8 +399,20 @@ const CLUSTER_MAP = {
   'Mushrooms Florentine':                                'Italian',
   // Baking Savory — Italian
   "Susan's Calzones":                                    'Italian',
+  'Eggplant Parm Pizza':                                 'Italian',
+  // Baking Savory — French/Continental
+  'Mushroom and Gruyere Bread Pudding':                  'French/Continental',
+  // Baking Savory — Central/Eastern European
+  'Khachapuri Adjaruli (Georgian Cheese Bread Boat)':    'Central/Eastern European',
+  // Baking Savory — Chinese
+  'Scallion Pancakes':                                   'Chinese',
+  // Baking: Bread — Italian
+  'Overnight Focaccia':                                  'Italian',
+  'Same-Day Focaccia':                                   'Italian',
   // Baking: Bread — Central/Eastern European
   "Nechamie's Challah":                                  'Central/Eastern European',
+  // Baking: Bread — Indian
+  'Onion Kulcha (Whole Wheat)':                          'Indian',
   // Baking Sweet — General
   'Butter Pecan Coffee Cake':                            'General',
   // Breakfast — General

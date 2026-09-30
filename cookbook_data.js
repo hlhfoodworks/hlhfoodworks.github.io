@@ -14047,6 +14047,278 @@ module.exports = {
                   "Bake at 375° for 30-40 minutes until deep golden brown. Cool on racks."
                 ]
               }
+            }            ,
+            {
+              "title": "Overnight Focaccia",
+              "servings": "Makes one 18x13-inch pan (serves 12-16)   |   Total: 3 hours active + overnight",
+              "source": "Bon Appétit (Claire Saffitz)",
+              "comments": [
+                "Bread flour gives this focaccia a chewier, more structured crumb than all-purpose. The long cold rise develops deep flavor.",
+                "Topping options: press 2-3 sprigs of fresh rosemary into the dimples before baking. Other additions: halved kalamata olives, sundried tomatoes, caramelized onions, halved cherry tomatoes (cut-side up), or thinly sliced garlic. Scatter shaved Parmesan over the top for the last 5 minutes if desired."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Flour base",
+                  "ingredients": [
+                    "6 1/4 cups bread flour",
+                    "2 1/2 cups room-temperature water"
+                  ]
+                },
+                {
+                  "label": "Yeast starter",
+                  "ingredients": [
+                    "2 1/4 teaspoons active dry yeast",
+                    "Pinch of sugar",
+                    "1/2 cup warm water (about 110 degrees F)"
+                  ]
+                },
+                {
+                  "label": "Dough additions",
+                  "ingredients": [
+                    "2 tablespoons Diamond Crystal kosher salt (or 1 tablespoon Morton kosher salt)",
+                    "3 tablespoons extra-virgin olive oil"
+                  ]
+                },
+                {
+                  "label": "Pan",
+                  "ingredients": [
+                    "2 tablespoons extra-virgin olive oil, plus more for drizzling and greasing hands"
+                  ]
+                },
+                {
+                  "label": "To top",
+                  "ingredients": [
+                    "Flaky sea salt"
+                  ]
+                }
+              ],
+              "steps": [
+                "In a large bowl, combine bread flour and room-temperature water; mix until a shaggy dough forms. Let rest while the yeast blooms.",
+                "In a small bowl, stir together yeast, sugar, and warm water. Let sit until foamy, 5-10 minutes.",
+                "Scrape the yeast mixture into the flour mixture. Add salt and 3 tablespoons olive oil; mix until combined. Turn dough onto an unfloured surface and knead until smooth and slightly tacky, about 5 minutes (use a bench scraper to help -- the dough will be sticky). Do not add more flour.",
+                "Pour 3 tablespoons olive oil into a large bowl. Transfer dough to the bowl, turning to coat. Cover; let rise at room temperature until more than doubled, 2-3 hours.",
+                "Coat an 18x13-inch rimmed baking sheet with the remaining 2 tablespoons olive oil. Transfer dough to the sheet; with oiled hands, fold dough over itself in thirds like a letter. Flip and repeat. Stretch dough toward the pan corners as much as possible without tearing. Cover with plastic wrap; refrigerate 8-24 hours.",
+                "Remove from fridge; uncover. Let sit at room temperature until dough is puffed and has filled the pan, 45-65 minutes.",
+                "Preheat oven to 450°F. Oil your fingers and press firmly all over the dough to create deep dimples throughout. Drizzle generously with olive oil. Scatter flaky sea salt (and any toppings) over the surface.",
+                "Bake until deeply golden on top and bottom, 25-35 minutes. Let cool at least 5 minutes before cutting."
+              ],
+              "highAltitude": {
+                "ingredientGroups": [
+                  {
+                    "label": "Flour base",
+                    "ingredients": [
+                      "6 1/4 cups bread flour",
+                      "2 1/2 cups room-temperature water"
+                    ]
+                  },
+                  {
+                    "label": "Yeast starter",
+                    "ingredients": [
+                      "1 3/4 teaspoons active dry yeast",
+                      "Pinch of sugar",
+                      "1/2 cup warm water (about 110 degrees F)"
+                    ]
+                  },
+                  {
+                    "label": "Dough additions",
+                    "ingredients": [
+                      "2 tablespoons Diamond Crystal kosher salt (or 1 tablespoon Morton kosher salt)",
+                      "3 tablespoons extra-virgin olive oil"
+                    ]
+                  },
+                  {
+                    "label": "Pan",
+                    "ingredients": [
+                      "2 tablespoons extra-virgin olive oil, plus more for drizzling and greasing hands"
+                    ]
+                  },
+                  {
+                    "label": "To top",
+                    "ingredients": [
+                      "Flaky sea salt"
+                    ]
+                  }
+                ],
+                "steps": [
+                  "In a large bowl, combine bread flour and room-temperature water; mix until a shaggy dough forms. Let rest while the yeast blooms.",
+                  "In a small bowl, stir together yeast, sugar, and warm water. Let sit until foamy, 5-10 minutes.",
+                  "Scrape the yeast mixture into the flour mixture. Add salt and 3 tablespoons olive oil; mix until combined. Turn dough onto an unfloured surface and knead until smooth and slightly tacky, about 5 minutes (use a bench scraper to help -- the dough will be sticky). Do not add more flour.",
+                  "Pour 3 tablespoons olive oil into a large bowl. Transfer dough to the bowl, turning to coat. Cover; let rise at room temperature until more than doubled, 1.5-2 hours (at altitude dough rises 30-50% faster -- start checking at 1.5 hours).",
+                  "Coat an 18x13-inch rimmed baking sheet with the remaining 2 tablespoons olive oil. Transfer dough to the sheet; with oiled hands, fold dough over itself in thirds like a letter. Flip and repeat. Stretch dough toward the pan corners as much as possible without tearing. Cover with plastic wrap; refrigerate 8-24 hours.",
+                  "Remove from fridge; uncover. Let sit at room temperature until dough is puffed and has filled the pan, 30-45 minutes.",
+                  "Preheat oven to 450°F. Oil your fingers and press firmly all over the dough to create deep dimples throughout. Drizzle generously with olive oil. Scatter flaky sea salt (and any toppings) over the surface.",
+                  "Bake until deeply golden on top and bottom, 25-35 minutes. Let cool at least 5 minutes before cutting."
+                ]
+              }
+            },
+            {
+              "title": "Same-Day Focaccia",
+              "servings": "Serves 8-12   |   Total: about 2 hours",
+              "source": "Gimme Some Oven (Ali Martin)",
+              "comments": [
+                "This is a quick, approachable focaccia with a tender crumb and crispy bottom -- great for a weeknight.",
+                "Topping options: press 2-3 sprigs of fresh rosemary into the dimples before baking. Other additions: halved kalamata olives, sundried tomatoes, caramelized onions, halved cherry tomatoes (cut-side up), or thinly sliced garlic. Scatter grated Parmesan over the top for the last 5 minutes if desired.",
+                "To make by hand (no stand mixer): after blooming yeast, stir in flour, oil, and salt until a shaggy dough forms; turn onto a floured surface and knead by hand 5 minutes, adding flour as needed."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Yeast starter",
+                  "ingredients": [
+                    "1 1/2 cups warm water (about 110 degrees F)",
+                    "2 teaspoons honey or sugar",
+                    "2 1/4 teaspoons active dry yeast (1 standard packet)"
+                  ]
+                },
+                {
+                  "label": "Dough",
+                  "ingredients": [
+                    "3 1/2 cups all-purpose flour, plus more as needed",
+                    "1/4 cup extra-virgin olive oil, plus more for pan and drizzling",
+                    "2 teaspoons flaky sea salt"
+                  ]
+                },
+                {
+                  "label": "To top",
+                  "ingredients": [
+                    "Extra-virgin olive oil for drizzling",
+                    "Flaky sea salt"
+                  ]
+                }
+              ],
+              "steps": [
+                "Combine warm water and honey in the bowl of a stand mixer. Sprinkle yeast on top; let sit until foamy, 5-10 minutes.",
+                "Attach dough hook. Add flour, 1/4 cup olive oil, and salt. Mix on low until combined; increase to medium-low and knead 5 minutes until dough pulls away from the sides and is smooth. If dough is too sticky to pull from the sides, add more flour 1 tablespoon at a time (up to 1/4 cup more).",
+                "Shape dough into a ball. Lightly oil the bowl; return dough and turn to coat. Cover with a damp towel; let rise in a warm spot until nearly doubled, 45-60 minutes.",
+                "Oil a 9x13-inch baking dish or a large rimmed baking sheet. Transfer dough and stretch to fit. If dough springs back, let rest 5 minutes, then try again. Cover; let rise another 20 minutes.",
+                "Preheat oven to 400°F. Using oiled fingertips, press deep dimples all over the surface, going all the way to the bottom. Drizzle olive oil over the top; sprinkle with flaky sea salt (and any toppings).",
+                "Bake 20-25 minutes until golden. Drizzle with more olive oil if desired. Serve warm."
+              ],
+              "highAltitude": {
+                "ingredientGroups": [
+                  {
+                    "label": "Yeast starter",
+                    "ingredients": [
+                      "1 1/2 cups warm water (about 110 degrees F)",
+                      "2 teaspoons honey or sugar",
+                      "1 3/4 teaspoons active dry yeast"
+                    ]
+                  },
+                  {
+                    "label": "Dough",
+                    "ingredients": [
+                      "3 1/2 cups all-purpose flour, plus more as needed",
+                      "1/4 cup extra-virgin olive oil, plus more for pan and drizzling",
+                      "2 teaspoons flaky sea salt"
+                    ]
+                  },
+                  {
+                    "label": "To top",
+                    "ingredients": [
+                      "Extra-virgin olive oil for drizzling",
+                      "Flaky sea salt"
+                    ]
+                  }
+                ],
+                "steps": [
+                  "Combine warm water and honey in the bowl of a stand mixer. Sprinkle yeast on top; let sit until foamy, 5-10 minutes.",
+                  "Attach dough hook. Add flour, 1/4 cup olive oil, and salt. Mix on low until combined; increase to medium-low and knead 5 minutes until dough pulls away from the sides and is smooth. If dough is too sticky to pull from the sides, add more flour 1 tablespoon at a time (up to 1/4 cup more).",
+                  "Shape dough into a ball. Lightly oil the bowl; return dough and turn to coat. Cover with a damp towel; let rise in a warm spot until nearly doubled, 30-40 minutes (at altitude dough rises faster -- start checking at 30 minutes).",
+                  "Oil a 9x13-inch baking dish or a large rimmed baking sheet. Transfer dough and stretch to fit. If dough springs back, let rest 5 minutes, then try again. Cover; let rise another 15 minutes.",
+                  "Preheat oven to 400°F. Using oiled fingertips, press deep dimples all over the surface, going all the way to the bottom. Drizzle olive oil over the top; sprinkle with flaky sea salt (and any toppings).",
+                  "Bake 20-25 minutes until golden. Drizzle with more olive oil if desired. Serve warm."
+                ]
+              }
+            }            ,
+            {
+              "title": "Onion Kulcha (Whole Wheat)",
+              "servings": "Makes 5 kulcha",
+              "source": "Cook With Manali (Manali Singh)",
+              "comments": [
+                "Anardana (pomegranate seed powder) is available at Indian grocery stores; adds a subtle tartness to the filling.",
+                "Can also cook in the oven: set to broil, place rolled kulcha inside, and cook 2-3 minutes per side until brown spots appear."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Dough (2 hours ahead)",
+                  "ingredients": [
+                    "1 1/4 cups whole wheat flour (atta)",
+                    "1/4 cup all-purpose flour",
+                    "3/4 teaspoon salt",
+                    "1 1/2 teaspoons sugar",
+                    "1/2 teaspoon baking powder",
+                    "1/8 teaspoon baking soda",
+                    "2 tablespoons plain yogurt",
+                    "1 1/2 tablespoons neutral oil, plus more for coating",
+                    "1/2 cup + 1 tablespoon warm milk"
+                  ]
+                },
+                {
+                  "label": "Onion filling",
+                  "ingredients": [
+                    "1 medium onion, finely chopped",
+                    "1/4 teaspoon cumin seeds",
+                    "1/4 teaspoon carom seeds (ajwain)",
+                    "1/8 teaspoon red chili powder, or to taste",
+                    "1/4 teaspoon pomegranate seed powder (anardana)",
+                    "1 tablespoon fresh coriander leaves, finely chopped",
+                    "Salt to taste"
+                  ]
+                },
+                {
+                  "label": "To finish",
+                  "ingredients": [
+                    "2-3 tablespoons butter, for brushing"
+                  ]
+                }
+              ],
+              "steps": [
+                "Sift both flours, salt, sugar, baking soda, and baking powder into a large bowl. Make a well in the center; add yogurt and oil. Mix until incorporated. Gradually add warm milk and knead until a smooth, soft dough forms. Coat dough lightly in oil on all sides. Cover and let rest in a warm place 2 hours.",
+                "While dough rests, make the onion filling: combine onion, cumin seeds, carom seeds, red chili powder, anardana, and salt; mix well. Stir in coriander leaves. Set aside.",
+                "After 2 hours, give the dough a quick knead and divide into 5 equal balls. Working with one at a time, roll out to a chapati-sized round. Place about 1 1/2 tablespoons of filling in the center. Gather the edges and pinch firmly to seal. Roll the stuffed ball again to an even, medium thickness -- not too thin, not too thick.",
+                "Heat a tawa or heavy skillet over medium heat. Place a kulcha on the hot surface. When bubbles appear on the surface, about 1 minute, flip and cook the other side. Flip again and cook until brown spots appear on both sides and the bread is cooked through. Remove and immediately brush with butter. Repeat with remaining kulcha. Serve warm."
+              ],
+              "highAltitude": {
+                "ingredientGroups": [
+                  {
+                    "label": "Dough (2 hours ahead)",
+                    "ingredients": [
+                      "1 1/4 cups whole wheat flour (atta)",
+                      "1/4 cup all-purpose flour",
+                      "3/4 teaspoon salt",
+                      "1 1/2 teaspoons sugar",
+                      "3/8 teaspoon baking powder",
+                      "A very scant 1/8 teaspoon baking soda (about 1/16 teaspoon)",
+                      "2 tablespoons plain yogurt",
+                      "1 1/2 tablespoons neutral oil, plus more for coating",
+                      "1/2 cup + 1 tablespoon warm milk"
+                    ]
+                  },
+                  {
+                    "label": "Onion filling",
+                    "ingredients": [
+                      "1 medium onion, finely chopped",
+                      "1/4 teaspoon cumin seeds",
+                      "1/4 teaspoon carom seeds (ajwain)",
+                      "1/8 teaspoon red chili powder, or to taste",
+                      "1/4 teaspoon pomegranate seed powder (anardana)",
+                      "1 tablespoon fresh coriander leaves, finely chopped",
+                      "Salt to taste"
+                    ]
+                  },
+                  {
+                    "label": "To finish",
+                    "ingredients": [
+                      "2-3 tablespoons butter, for brushing"
+                    ]
+                  }
+                ],
+                "steps": [
+                  "Sift both flours, salt, sugar, baking soda, and baking powder into a large bowl. Make a well in the center; add yogurt and oil. Mix until incorporated. Gradually add warm milk and knead until a smooth, soft dough forms. Coat dough lightly in oil on all sides. Cover and let rest in a warm place 1.5-2 hours (at altitude dough may puff faster; check at 1.5 hours).",
+                  "While dough rests, make the onion filling: combine onion, cumin seeds, carom seeds, red chili powder, anardana, and salt; mix well. Stir in coriander leaves. Set aside.",
+                  "After resting, give the dough a quick knead and divide into 5 equal balls. Working with one at a time, roll out to a chapati-sized round. Place about 1 1/2 tablespoons of filling in the center. Gather the edges and pinch firmly to seal. Roll the stuffed ball again to an even, medium thickness -- not too thin, not too thick.",
+                  "Heat a tawa or heavy skillet over medium heat. Place a kulcha on the hot surface. When bubbles appear on the surface, about 1 minute, flip and cook the other side. Flip again and cook until brown spots appear on both sides and the bread is cooked through. Remove and immediately brush with butter. Repeat with remaining kulcha. Serve warm."
+                ]
+              }
             }
           ]
         },
@@ -15497,6 +15769,260 @@ module.exports = {
                 "Spoon filling onto one half of each square. Fold dough over to form a triangle. Press edges firmly with fork tines to seal.",
                 "Place on a baking sheet. Bake at 350°F for 18 minutes.",
                 "Optional: 10 minutes in, spoon additional spaghetti sauce over the top and sprinkle with parmesan; return to oven for remaining 8 minutes."
+              ]
+            }            ,
+            {
+              "title": "Eggplant Parm Pizza",
+              "servings": "Makes one 12-inch pizza",
+              "source": "Bon Appétit (Molly Baz)",
+              "comments": [
+                "Uses one ball of 72-Hour Pizza Dough from Baking > Savory. Make the dough at least 3 days ahead.",
+                "Preheat, stretch, and bake the dough per that recipe's instructions."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Eggplant (30-45 minutes ahead)",
+                  "ingredients": [
+                    "1 medium eggplant (about 1 pound), cut into 1/2-inch rounds",
+                    "1 teaspoon kosher salt"
+                  ]
+                },
+                {
+                  "label": "Sauce",
+                  "ingredients": [
+                    "2 tablespoons extra-virgin olive oil",
+                    "4 garlic cloves, thinly sliced",
+                    "1 (14 oz) can whole peeled tomatoes, crushed by hand",
+                    "1/2 teaspoon kosher salt",
+                    "Freshly ground black pepper to taste",
+                    "A small handful of fresh basil leaves, torn"
+                  ]
+                },
+                {
+                  "label": "Frying oil",
+                  "ingredients": [
+                    "4 tablespoons extra-virgin olive oil, plus more as needed between batches"
+                  ]
+                },
+                {
+                  "label": "Assembly",
+                  "ingredients": [
+                    "4 oz fresh mozzarella, torn"
+                  ]
+                },
+                {
+                  "label": "To finish",
+                  "ingredients": [
+                    "1 1/2 oz Parmesan or Pecorino Romano, finely grated",
+                    "Fresh basil leaves",
+                    "Aleppo pepper or red pepper flakes"
+                  ]
+                }
+              ],
+              "steps": [
+                "Arrange eggplant rounds on a wire rack set over a baking sheet. Season generously on both sides with the kosher salt. Let drain 30-45 minutes. Pat dry with paper towels.",
+                "While eggplant drains, make the sauce: heat 2 tablespoons olive oil in a small saucepan over medium heat. Add garlic; cook, stirring occasionally, until fragrant and just beginning to turn golden, 3-4 minutes. Add crushed tomatoes. Season with salt and pepper. Simmer, stirring occasionally, until sauce thickens slightly, 10-12 minutes. Stir in the torn basil. Remove from heat.",
+                "Heat 2 tablespoons of the frying oil in a large skillet over medium-high. Working in batches, fry eggplant rounds until deep golden brown on both sides, 3-4 minutes per side. Add more oil as needed between batches. Transfer to the rack.",
+                "Assemble: stretch the dough and preheat the oven per the 72-Hour Pizza Dough recipe. Spoon sauce over the stretched dough in an even layer, leaving a 1-inch border. Scatter torn mozzarella over the sauce, then arrange fried eggplant rounds on top, overlapping slightly. Bake per the pizza dough recipe instructions.",
+                "Transfer to a cutting board. Grate Parmesan or Pecorino over the top, tear fresh basil over, and scatter Aleppo pepper or red pepper flakes. Slice and serve immediately."
+              ]
+            }            ,
+            {
+              "title": "Mushroom and Gruyere Bread Pudding",
+              "servings": "Serves 8-10   |   Total: 1 hour 20 minutes",
+              "source": "Ina Garten",
+              "comments": [
+                "Wipe mushroom caps with a paper towel; do not wash them.",
+                "To make vegetarian: substitute vegetable stock for the chicken stock.",
+                "Great as a Thanksgiving side in place of traditional stuffing."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Baking dish",
+                  "ingredients": [
+                    "1 tablespoon unsalted butter (for greasing)"
+                  ]
+                },
+                {
+                  "label": "Mushroom mixture",
+                  "ingredients": [
+                    "6 tablespoons unsalted butter, divided",
+                    "1 1/2 cups chopped yellow onion (about 1 large)",
+                    "2 garlic cloves, minced",
+                    "12 oz cremini mushrooms, stems trimmed, caps sliced 1/4-inch thick",
+                    "1/4 cup cream sherry (such as Harvey's Bristol Cream)",
+                    "2 teaspoons fresh rosemary leaves, minced"
+                  ]
+                },
+                {
+                  "label": "Bread base",
+                  "ingredients": [
+                    "1 (12 oz) bag herb-seasoned cubed stuffing mix (about 7 cups; such as Pepperidge Farm Herb Seasoned)"
+                  ]
+                },
+                {
+                  "label": "Cheese",
+                  "ingredients": [
+                    "3 cups grated Gruyere (8-10 oz), divided"
+                  ]
+                },
+                {
+                  "label": "Custard",
+                  "ingredients": [
+                    "5 extra-large eggs",
+                    "2 1/4 cups half-and-half",
+                    "1 1/4 cups chicken stock",
+                    "2 teaspoons kosher salt",
+                    "1 teaspoon freshly ground black pepper"
+                  ]
+                }
+              ],
+              "steps": [
+                "Preheat oven to 350 degrees F. Grease a 9x13x2-inch baking dish with the 1 tablespoon butter; set aside.",
+                "Melt 4 tablespoons butter over medium heat in a medium (10-inch) saute pan. Add onion; cook, stirring occasionally, 7 minutes until tender. Add remaining 2 tablespoons butter, garlic, and mushrooms; cook 7-8 minutes, stirring occasionally, until mushrooms begin to brown. Add sherry and rosemary; simmer 2 minutes.",
+                "Put the stuffing mix in a very large bowl. Stir in the mushroom mixture and let cool 5 minutes. Stir in 2 cups of the Gruyere.",
+                "In a separate bowl, whisk together eggs, half-and-half, chicken stock, salt, and pepper. Pour the custard over the stuffing mixture and stir well. Let sit 10 minutes, stirring occasionally, until the bread has absorbed most of the liquid. Transfer to the prepared baking dish; sprinkle evenly with the remaining 1 cup Gruyere.",
+                "Bake 40-50 minutes until the top is golden brown and the custard is set in the middle. Serve hot."
+              ]
+            }            ,
+            {
+              "title": "Khachapuri Adjaruli (Georgian Cheese Bread Boat)",
+              "servings": "Serves 2 as an entree or 4 as an appetizer",
+              "source": "New York Times Cooking (Daniela Galarza, adapted from Carla Capalbo)",
+              "comments": [
+                "The egg yolk and cold butter stirred in at the end are traditional and essential -- don't skip them.",
+                "Herb additions to the cheese filling: stir in 2-3 tablespoons chopped fresh dill and/or 1-2 tablespoons chopped fresh cilantro before filling. Other traditional herb options include tarragon (the classic Georgian choice, tarkhunit), flat-leaf parsley, or a pinch of ground coriander seed.",
+                "Shortcut: substitute 12 oz store-bought pizza dough or one ball of 72-Hour Pizza Dough (Baking > Savory) in place of the handmade dough -- skip steps 1-2 and proceed directly to step 3."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Dough",
+                  "ingredients": [
+                    "1 3/4 cups all-purpose or bread flour",
+                    "3/4 teaspoon granulated sugar",
+                    "3/4 teaspoon active dry yeast",
+                    "3/4 teaspoon kosher salt",
+                    "1 tablespoon olive oil",
+                    "1/2 cup + 2 tablespoons water, warmed to 105-110 degrees F"
+                  ]
+                },
+                {
+                  "label": "Cheese filling",
+                  "ingredients": [
+                    "1 cup shredded whole-milk, low-moisture mozzarella (not fresh mozzarella)",
+                    "1/3 cup goat cheese, finely crumbled",
+                    "1/3 cup brined feta (not low-fat), drained and finely crumbled",
+                    "3 tablespoons water"
+                  ]
+                },
+                {
+                  "label": "Finishing",
+                  "ingredients": [
+                    "1 tablespoon unsalted butter, melted (for brushing the crust)",
+                    "1 egg yolk (from 1 large egg)",
+                    "2 tablespoons cold unsalted butter, for serving"
+                  ]
+                }
+              ],
+              "steps": [
+                "Make the dough: in a large bowl, stir together flour, sugar, yeast, and salt. Add the warm water and knead with your hands until a smooth dough forms, about 5 minutes.",
+                "Pour olive oil into a medium bowl; use the dough to coat the bowl, then set dough in the bowl, oiled side up. Cover with a damp cloth or plastic wrap and let rise in a warm place until doubled, about 2 hours.",
+                "Preheat oven to 450 degrees F. Line a half-sheet pan with parchment paper. On a lightly floured surface, roll out the dough to a circle about 10-12 inches across and 1/4-inch thick. Brush off excess flour and lay on the parchment. Using your fingers, roll, press, and pinch two opposite sides of the circle a few inches inward, building up the sides; press and pinch the narrow ends together to form two points. Continue pinching and pressing to create a raised rim and an oval boat shape. Let rest in a warm place while you make the filling.",
+                "In a medium bowl, combine mozzarella, goat cheese, and feta. Add 3 tablespoons water and stir with a fork until thoroughly blended. Stir in any herbs if using (see Notes). Scrape the cheese mixture into the center of the dough boat, spreading into an even layer.",
+                "Bake until the crust begins to brown and the cheese is melted, about 15 minutes. Remove from oven. Brush the sides of the bread generously with the melted butter. Return to oven for another 5 minutes until the crust is extra crisp and the cheese just starts to brown at the edges.",
+                "Using a spoon, make a shallow 2-inch-wide well in the center of the hot cheese. Add the egg yolk and cold butter. Serve immediately: hold one pointed end of the bread with a fork and use a second fork to quickly stir the egg and butter into the cheese until smooth and stretchy. Tear off pieces of the bread boat to dip in the cheese."
+              ],
+              "highAltitude": {
+                "ingredientGroups": [
+                  {
+                    "label": "Dough",
+                    "ingredients": [
+                      "1 3/4 cups all-purpose or bread flour",
+                      "3/4 teaspoon granulated sugar",
+                      "1/2 teaspoon active dry yeast",
+                      "3/4 teaspoon kosher salt",
+                      "1 tablespoon olive oil",
+                      "1/2 cup + 2 tablespoons water, warmed to 105-110 degrees F"
+                    ]
+                  },
+                  {
+                    "label": "Cheese filling",
+                    "ingredients": [
+                      "1 cup shredded whole-milk, low-moisture mozzarella (not fresh mozzarella)",
+                      "1/3 cup goat cheese, finely crumbled",
+                      "1/3 cup brined feta (not low-fat), drained and finely crumbled",
+                      "3 tablespoons water"
+                    ]
+                  },
+                  {
+                    "label": "Finishing",
+                    "ingredients": [
+                      "1 tablespoon unsalted butter, melted (for brushing the crust)",
+                      "1 egg yolk (from 1 large egg)",
+                      "2 tablespoons cold unsalted butter, for serving"
+                    ]
+                  }
+                ],
+                "steps": [
+                  "Make the dough: in a large bowl, stir together flour, sugar, yeast, and salt. Add the warm water and knead with your hands until a smooth dough forms, about 5 minutes.",
+                  "Pour olive oil into a medium bowl; use the dough to coat the bowl, then set dough in the bowl, oiled side up. Cover with a damp cloth or plastic wrap and let rise in a warm place until doubled, about 1.5 hours (at altitude dough rises faster -- start checking at 1.25 hours).",
+                  "Preheat oven to 450 degrees F. Line a half-sheet pan with parchment paper. On a lightly floured surface, roll out the dough to a circle about 10-12 inches across and 1/4-inch thick. Brush off excess flour and lay on the parchment. Using your fingers, roll, press, and pinch two opposite sides of the circle a few inches inward, building up the sides; press and pinch the narrow ends together to form two points. Continue pinching and pressing to create a raised rim and an oval boat shape. Let rest in a warm place while you make the filling.",
+                  "In a medium bowl, combine mozzarella, goat cheese, and feta. Add 3 tablespoons water and stir with a fork until thoroughly blended. Stir in any herbs if using (see Notes). Scrape the cheese mixture into the center of the dough boat, spreading into an even layer.",
+                  "Bake until the crust begins to brown and the cheese is melted, about 15 minutes. Remove from oven. Brush the sides of the bread generously with the melted butter. Return to oven for another 5 minutes until the crust is extra crisp and the cheese just starts to brown at the edges.",
+                  "Using a spoon, make a shallow 2-inch-wide well in the center of the hot cheese. Add the egg yolk and cold butter. Serve immediately: hold one pointed end of the bread with a fork and use a second fork to quickly stir the egg and butter into the cheese until smooth and stretchy. Tear off pieces of the bread boat to dip in the cheese."
+                ]
+              }
+            }            ,
+            {
+              "title": "Scallion Pancakes",
+              "servings": "Makes 8 pancakes (serves 4-6)   |   Total: 2 hours (including 1 hour rest)",
+              "source": "Bon Appétit (Sue Li)",
+              "comments": [
+                "The key to flaky, layered pancakes is the roll-coil-re-roll technique and the boiling water in the dough.",
+                "Chicken fat adds richness; vegetable oil is a fine substitute."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Dough",
+                  "ingredients": [
+                    "2 1/2 cups all-purpose flour, plus more for surface",
+                    "1 teaspoon kosher salt",
+                    "1 tablespoon toasted sesame oil",
+                    "1 cup boiling water"
+                  ]
+                },
+                {
+                  "label": "Filling",
+                  "ingredients": [
+                    "1/3 cup chicken fat, warmed, or vegetable oil",
+                    "2 bunches scallions, thinly sliced (about 2 cups)",
+                    "Kosher salt"
+                  ]
+                },
+                {
+                  "label": "Cooking oil",
+                  "ingredients": [
+                    "8 tablespoons vegetable oil, divided (1 tablespoon per pancake)"
+                  ]
+                },
+                {
+                  "label": "Dipping sauce",
+                  "ingredients": [
+                    "3 tablespoons unseasoned rice vinegar",
+                    "2 tablespoons soy sauce",
+                    "1 teaspoon chili oil",
+                    "1/2 teaspoon sugar",
+                    "1/4 teaspoon Aleppo pepper or red pepper flakes"
+                  ]
+                }
+              ],
+              "steps": [
+                "Whisk flour and 1 teaspoon salt in a large bowl. Add sesame oil and 1 cup boiling water; mix with a wooden spoon until a shaggy dough forms. Turn onto a lightly floured surface and knead, adding flour as needed to prevent sticking, until smooth, about 5 minutes. Cover; let rest at room temperature 1 hour.",
+                "While dough rests, make the dipping sauce: whisk rice vinegar, soy sauce, chili oil, sugar, and Aleppo pepper or red pepper flakes until sugar dissolves. Set aside.",
+                "Divide rested dough into 8 pieces. Working with one at a time (keep others covered), roll out on a lightly floured surface as thin as possible, about 10 inches in diameter. Brush with about 2 teaspoons chicken fat; scatter about 1/4 cup scallions over the surface and season with salt. Roll dough away from you like a jelly roll into a thin cylinder, then wind one end onto itself to form a coil (like a cinnamon roll). Set aside; repeat with remaining pieces. Let all coils rest 15 minutes.",
+                "Working with one coil at a time, roll out on a lightly floured surface to a 5-inch round. Stack finished rounds as you go, separated by parchment or lightly oiled foil.",
+                "Heat 1 tablespoon vegetable oil in a medium skillet over medium-low. Cook one pancake, turning frequently to prevent scallions from burning, until golden brown and crisp on both sides and cooked through, 8-10 minutes. Transfer to a wire rack; rest 5 minutes before cutting into wedges. Repeat with remaining pancakes, adding 1 tablespoon oil per batch.",
+                "Serve with dipping sauce."
               ]
             }
           ]
