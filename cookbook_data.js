@@ -8637,7 +8637,7 @@ module.exports = {
               "servings": "Serves 4",
               "source": "From Chef Louisa (Villa Britannia, Taormina, Sicily)",
               "comments": [
-                "This is a distinct recipe from the Smitten Kitchen Eggplant Involtini already in the cookbook — that version uses a three-cheese filling with no breading, roasted in tomato sauce. This Sicilian version uses a herbed breadcrumb coating, sun-dried tomatoes, and smoky cheese.",
+                {"html": "This is a distinct recipe from the <a href=\"vegetarian-mains.html#vegetarian-mains-vegetables-eggplant-involtini\">Smitten Kitchen Eggplant Involtini</a> already in the cookbook — that version uses a three-cheese filling with no breading, roasted in tomato sauce. This Sicilian version uses a herbed breadcrumb coating, sun-dried tomatoes, and smoky cheese."},
                 "For the smoky cheese: scamorza affumicata or provola are ideal; smoked Gouda also works."
               ],
               "ingredientGroups": [
@@ -12336,7 +12336,7 @@ module.exports = {
                     }
                   ],
                   "steps": [
-                    "Make or obtain the pasta: prepare Busiate following the recipe in this section, or use store-bought bucatini or thick spaghetti.",
+                    {"html": "Make or obtain the pasta: prepare <a href=\"noodles.html#busiate\">Busiate</a> following the recipe in this section, or use store-bought bucatini or thick spaghetti."},
                     "Make the breadcrumb topping: heat olive oil in a small pan. Add garlic and anchovies, stirring until anchovies dissolve. Add breadcrumbs and toast, stirring, until golden and crisp. Remove from heat and spread out to cool.",
                     "Make the sardine sauce: heat olive oil over medium heat. Add onion and the 2 anchovies; cook until anchovies dissolve and onion softens. Add raisins and pine nuts. Pour in white wine and let reduce briefly. Add saffron water, passata, and boiled fennel. Add fresh sardines and cook about 8 minutes until just cooked through.",
                     "Cook the pasta in well-salted boiling water (8–10 minutes for busiate; per package for store-bought). Drain and toss with the sardine sauce. Plate and top generously with the breadcrumb topping."
@@ -16565,7 +16565,7 @@ module.exports = {
               "servings": "Makes one 12-inch pizza",
               "source": "Bon Appétit (Molly Baz)",
               "comments": [
-                "Uses one ball of 72-Hour Pizza Dough from Baking > Savory. Make the dough at least 3 days ahead.",
+                {"html": "Uses one ball of <a href=\"baking.html#baking-savory-72-hour-pizza-dough\">72-Hour Pizza Dough</a> from Baking &gt; Savory. Make the dough at least 3 days ahead."},
                 "Preheat, stretch, and bake the dough per that recipe's instructions."
               ],
               "ingredientGroups": [
@@ -16612,7 +16612,7 @@ module.exports = {
                 "Arrange eggplant rounds on a wire rack set over a baking sheet. Season generously on both sides with the kosher salt. Let drain 30-45 minutes. Pat dry with paper towels.",
                 "While eggplant drains, make the sauce: heat 2 tablespoons olive oil in a small saucepan over medium heat. Add garlic; cook, stirring occasionally, until fragrant and just beginning to turn golden, 3-4 minutes. Add crushed tomatoes. Season with salt and pepper. Simmer, stirring occasionally, until sauce thickens slightly, 10-12 minutes. Stir in the torn basil. Remove from heat.",
                 "Heat 2 tablespoons of the frying oil in a large skillet over medium-high. Working in batches, fry eggplant rounds until deep golden brown on both sides, 3-4 minutes per side. Add more oil as needed between batches. Transfer to the rack.",
-                "Assemble: stretch the dough and preheat the oven per the 72-Hour Pizza Dough recipe. Spoon sauce over the stretched dough in an even layer, leaving a 1-inch border. Scatter torn mozzarella over the sauce, then arrange fried eggplant rounds on top, overlapping slightly. Bake per the pizza dough recipe instructions.",
+                {"html": "Assemble: stretch the dough and preheat the oven per the <a href=\"baking.html#baking-savory-72-hour-pizza-dough\">72-Hour Pizza Dough</a> recipe. Spoon sauce over the stretched dough in an even layer, leaving a 1-inch border. Scatter torn mozzarella over the sauce, then arrange fried eggplant rounds on top, overlapping slightly. Bake per the pizza dough recipe instructions."},
                 "Transfer to a cutting board. Grate Parmesan or Pecorino over the top, tear fresh basil over, and scatter Aleppo pepper or red pepper flakes. Slice and serve immediately."
               ]
             }
@@ -16624,7 +16624,7 @@ module.exports = {
               "source": "Grits and Chopsticks (broccoli filling) / Once Upon a Chef, Jennifer Segal (spinach filling)",
               "comments": [
                 "Make one filling, not both. Both use the same cream custard base.",
-                "The crust must be fully blind-baked before filling -- follow the All-Shortening Pie Crust recipe (Baking > Sweet) all the way through the full blind-bake step, then proceed here.",
+                {"html": "The crust must be fully blind-baked before filling -- follow the <a href=\"baking.html#baking-sweet-all-shortening-pie-crust\">All-Shortening Pie Crust</a> recipe (Baking &gt; Sweet) all the way through the full blind-bake step, then proceed here."},
                 "If the crust cracks after blind baking, mix 1 1/2 tablespoons flour with 1 tablespoon softened butter into a paste; patch cracks with your fingers and return to the oven 1 minute to set.",
                 "Make-ahead: quiche keeps refrigerated up to 1 day. Freeze up to 3 months. Reheat covered with foil at 300 degrees F for 35-45 minutes until hot in the center."
               ],
@@ -16632,7 +16632,7 @@ module.exports = {
                 {
                   "label": "Crust",
                   "ingredients": [
-                    "1 disk All-Shortening Pie Crust (Baking > Sweet), fully blind-baked"
+                    {"html": "1 disk <a href=\"baking.html#baking-sweet-all-shortening-pie-crust\">All-Shortening Pie Crust</a> (Baking &gt; Sweet), fully blind-baked"}
                   ]
                 },
                 {
@@ -16673,7 +16673,7 @@ module.exports = {
                 }
               ],
               "steps": [
-                "Blind bake the crust fully, following the All-Shortening Pie Crust recipe (Baking > Sweet). Set the baked crust aside on a baking sheet. Reduce oven to 325 degrees F.",
+                {"html": "Blind bake the crust fully, following the <a href=\"baking.html#baking-sweet-all-shortening-pie-crust\">All-Shortening Pie Crust</a> recipe (Baking &gt; Sweet). Set the baked crust aside on a baking sheet. Reduce oven to 325 degrees F."},
                 "Prepare your chosen filling. Broccoli: heat olive oil in a skillet with a tight-fitting lid over medium heat. Add the onion; saute 2-3 minutes until translucent. Add garlic and broccoli; saute 2 minutes more. Add the tablespoon of water, cover, and reduce heat to medium-low; steam 2-3 minutes until the broccoli is bright green but still slightly crunchy. Remove from heat, drain in a colander, and let cool completely. Spinach: melt butter in a small skillet over medium-low heat. Add shallots and cook until soft and translucent, about 8 minutes -- do not brown. Set aside to cool.",
                 "In a medium bowl, whisk together eggs, cream, salt, pepper, nutmeg, and cayenne until just incorporated -- do not overbeat or you will get froth.",
                 "Spread the filling evenly over the bottom of the baked crust. For spinach: layer shallots first, then Gruyere, then spinach. For broccoli: spread broccoli, then Gruyere. Sprinkle Parmesan over the top if using. Slowly pour the custard over the filling, up to within 1/4 inch of the rim.",
@@ -17128,21 +17128,21 @@ module.exports = {
               "servings": "Serves 6   |   Active: 15 minutes   |   Total: 45 minutes (plus dough rising time)",
               "source": "Bon Appetit (Alfia Muzio), September 2014",
               "comments": [
-                "The leavening is in the Grandma-Style Pizza Dough. At high altitude, use the high-altitude adjusted dough.",
+                {"html": "The leavening is in the <a href=\"baking.html#baking-savory-grandma-style-pizza-dough\">Grandma-Style Pizza Dough</a>. At high altitude, use the high-altitude adjusted dough."},
                 "For a spicier pie, use twice as much hot soppressata and omit the sweet."
               ],
               "ingredientGroups": [
                 {
                   "label": "Dough",
                   "ingredients": [
-                    "1 recipe Grandma-Style Pizza Dough (Baking > Savory), risen on an 18x13-inch baking sheet"
+                    {"html": "1 recipe <a href=\"baking.html#baking-savory-grandma-style-pizza-dough\">Grandma-Style Pizza Dough</a> (Baking &gt; Savory), risen on an 18x13-inch baking sheet"}
                   ]
                 },
                 {
                   "label": "Toppings",
                   "ingredients": [
                     "12 oz fresh mozzarella, grated (about 2 1/2 cups)",
-                    "1 cup Fresh Tomato Pizza Sauce (Sauces > Italian)",
+                    {"html": "1 cup <a href=\"sauces.html#sauces-italian-fresh-tomato-pizza-sauce\">Fresh Tomato Pizza Sauce</a> (Sauces &gt; Italian)"},
                     "2 oz thinly sliced hot soppressata",
                     "2 oz thinly sliced sweet soppressata",
                     "1/2 fennel bulb, thinly sliced",

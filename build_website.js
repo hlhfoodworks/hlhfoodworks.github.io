@@ -574,6 +574,7 @@ function getSubSubsectionLayout(sub) {
 
 function renderStep(step) {
   if (typeof step === 'string') return `<li>${esc(step)}</li>`;
+  if (step.html) return `<li>${step.html}</li>`;
   const bullets = step.bullets.map(b => `<li>${esc(b)}</li>`).join('\n');
   return `<li><strong>${esc(step.lead)}</strong><ul class="sub-steps">${bullets}</ul></li>`;
 }
@@ -581,7 +582,7 @@ function renderStep(step) {
 function renderIngredientGroups(ingredientGroups) {
   return (ingredientGroups || []).map(g => {
     const note = g.note ? ` <span class="group-note">(${esc(g.note)})</span>` : '';
-    const items = g.ingredients.map(i => `<li>${esc(i)}</li>`).join('\n');
+    const items = g.ingredients.map(i => typeof i === 'object' && i.html ? `<li>${i.html}</li>` : `<li>${esc(i)}</li>`).join('\n');
     const label = g.label ? `<h4>${esc(g.label)}${note}</h4>` : '';
     return `<div class="ing-group">${label}<ul class="ingredients">${items}</ul></div>`;
   }).join('\n');
