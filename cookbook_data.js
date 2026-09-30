@@ -15245,7 +15245,8 @@ module.exports = {
                 "Transfer to the pie plate by rolling the dough over the rolling pin and unrolling it over the plate, or carefully lift with a spatula. Gently lift the edges and let the dough settle naturally into the plate without pressing or stretching (to avoid shrinking during baking). Trim to a 1-inch overhang; tuck under and crimp or flute the edges as desired. For a double-crust pie, roll out the second disk for the top.",
                 "To blind bake: heat the oven to 425 degrees F with a rack in the lower-middle position. Press a large square of parchment paper (or foil) snugly into the crust, covering the bottom and sides completely. Pour in pie weights and press them against the sides as well as covering the bottom.",
                 "Place the pie on a baking sheet and bake until the edges are just beginning to turn golden, 12-15 minutes. Remove from the oven and lift the parchment and weights out by the corners. The bottom will look wet and uncooked at this point.",
-                "Return the uncovered crust to the oven. For a par-baked crust (pies baked again with filling): bake 5 minutes more until the bottom looks dry but still pale. For a fully blind-baked crust (no-bake fillings): continue baking a few minutes more until the bottom is lightly golden. Cool as directed by your pie recipe before filling."
+                "Return the uncovered crust to the oven. For a par-baked crust (pies baked again with filling): bake 5 minutes more until the bottom looks dry but still pale. For a fully blind-baked crust (no-bake fillings): continue baking a few minutes more until the bottom is lightly golden. Cool as directed by your pie recipe before filling.",
+                "If the crust has cracked, mix 1 1/2 tablespoons flour with 1 tablespoon softened butter into a paste; patch the cracks with your fingers and return to the oven 1 minute to set."
               ]
             },
             {
@@ -16625,7 +16626,6 @@ module.exports = {
               "comments": [
                 "Make one filling, not both. Both use the same cream custard base.",
                 {"html": "The crust must be fully blind-baked before filling -- follow the <a href=\"baking.html#baking-sweet-all-shortening-pie-crust\">All-Shortening Pie Crust</a> recipe (Baking &gt; Sweet) all the way through the full blind-bake step, then proceed here."},
-                "If the crust cracks after blind baking, mix 1 1/2 tablespoons flour with 1 tablespoon softened butter into a paste; patch cracks with your fingers and return to the oven 1 minute to set.",
                 "Make-ahead: quiche keeps refrigerated up to 1 day. Freeze up to 3 months. Reheat covered with foil at 300 degrees F for 35-45 minutes until hot in the center."
               ],
               "ingredientGroups": [
