@@ -353,6 +353,7 @@ const CLUSTER_MAP = {
 
   'Potato Latkes':                                       'Central/Eastern European',
   // Baking: Sweet — General
+  'All-Shortening Pie Crust':                            'General',
   'Jumbo Banana-Nut Muffins':                            'General',
   'Kitchen Sink Cookies':                                'General',
   'Marble Brownies':                                     'General',
@@ -401,6 +402,7 @@ const CLUSTER_MAP = {
   "Susan's Calzones":                                    'Italian',
   'Eggplant Parm Pizza':                                 'Italian',
   // Baking Savory — French/Continental
+  'Gruyere Quiche':                                      'French/Continental',
   'Mushroom and Gruyere Bread Pudding':                  'French/Continental',
   // Baking Savory — Central/Eastern European
   'Khachapuri Adjaruli (Georgian Cheese Bread Boat)':    'Central/Eastern European',

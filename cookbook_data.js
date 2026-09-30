@@ -14726,6 +14726,53 @@ module.exports = {
         {
           "title": "Sweet",
           "recipes": [
+                        {
+              "title": "All-Shortening Pie Crust",
+              "favorite": true,
+              "servings": "Makes 2 crusts   |   Prep: 15 minutes + 30-minute chill",
+              "source": "The Pioneer Woman (Ree Drummond) / The Kitchn (blind baking method)",
+              "comments": [
+                "This recipe makes two crusts comfortably. Use one now; keep the second in the freezer for up to 3 months. Thaw guidelines: frozen less than 1 hour -- roll out immediately; frozen 4 hours -- rest 15 minutes at room temperature; frozen solid -- thaw in the refrigerator 4 hours or at room temperature 1 hour.",
+                "The egg and vinegar keep the dough tender and easy to handle -- don't skip them.",
+                "Blind baking: par-bake for custard pies (pumpkin, pecan, quiche); fully blind-bake for no-bake fillings (French silk, cream pies). Your recipe will specify which.",
+                "Pie weights can be substituted with dried beans or clean pennies. Store used beans in a labeled jar -- don't cook them afterward."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Dough",
+                  "ingredients": [
+                    "3 cups all-purpose flour, plus more for dusting",
+                    "1 1/2 cups vegetable shortening"
+                  ]
+                },
+                {
+                  "label": "Dough binder",
+                  "ingredients": [
+                    "1 large egg",
+                    "4 tablespoons ice water",
+                    "1 tablespoon distilled white vinegar",
+                    "1 teaspoon kosher salt"
+                  ]
+                },
+                {
+                  "label": "Blind baking setup",
+                  "ingredients": [
+                    "Parchment paper or aluminum foil",
+                    "Pie weights, dried beans, or clean pennies (enough to cover the bottom and press against the sides)"
+                  ]
+                }
+              ],
+              "steps": [
+                "In a large bowl, use a pastry cutter to gradually work the shortening into the flour until the mixture resembles coarse meal, 3-4 minutes.",
+                "In a small bowl, beat the egg with a fork. Pour it into the flour mixture. Add the ice water, vinegar, and salt. Stir gently until all ingredients are incorporated and the dough sticks together when pinched.",
+                "Divide into 2 equal pieces. Form each into a ball, then place each in a 1-gallon zip-top bag (do not seal). Use a rolling pin to flatten each ball into a disk about 1/2-inch thick. Seal the bags and freeze at least 25-30 minutes before using. (Dough can be refrigerated up to 2 days or frozen up to 3 months.)",
+                "When ready to use, remove one disk from the freezer. On a generously floured surface, roll out from the center outward until the dough is approximately 2 inches larger than your pie plate. If it sticks, slide a metal spatula underneath, flip, and continue rolling with more flour as needed.",
+                "Transfer to the pie plate by rolling the dough over the rolling pin and unrolling it over the plate, or carefully lift with a spatula. Gently lift the edges and let the dough settle naturally into the plate without pressing or stretching (to avoid shrinking during baking). Trim to a 1-inch overhang; tuck under and crimp or flute the edges as desired. For a double-crust pie, roll out the second disk for the top.",
+                "To blind bake: heat the oven to 425 degrees F with a rack in the lower-middle position. Press a large square of parchment paper (or foil) snugly into the crust, covering the bottom and sides completely. Pour in pie weights and press them against the sides as well as covering the bottom.",
+                "Place the pie on a baking sheet and bake until the edges are just beginning to turn golden, 12-15 minutes. Remove from the oven and lift the parchment and weights out by the corners. The bottom will look wet and uncooked at this point.",
+                "Return the uncovered crust to the oven. For a par-baked crust (pies baked again with filling): bake 5 minutes more until the bottom looks dry but still pale. For a fully blind-baked crust (no-bake fillings): continue baking a few minutes more until the bottom is lightly golden. Cool as directed by your pie recipe before filling."
+              ]
+            },
             {
               "title": "Apple Pie",
               "servings": "Makes 1 pie",
@@ -15826,7 +15873,72 @@ module.exports = {
                 "Assemble: stretch the dough and preheat the oven per the 72-Hour Pizza Dough recipe. Spoon sauce over the stretched dough in an even layer, leaving a 1-inch border. Scatter torn mozzarella over the sauce, then arrange fried eggplant rounds on top, overlapping slightly. Bake per the pizza dough recipe instructions.",
                 "Transfer to a cutting board. Grate Parmesan or Pecorino over the top, tear fresh basil over, and scatter Aleppo pepper or red pepper flakes. Slice and serve immediately."
               ]
-            }            ,
+            }
+            ,
+            {
+              "title": "Gruyere Quiche",
+              "favorite": true,
+              "servings": "Serves 4-6   |   Total: 1 hour 30 minutes (including blind baking)",
+              "source": "Grits and Chopsticks (broccoli filling) / Once Upon a Chef, Jennifer Segal (spinach filling)",
+              "comments": [
+                "Make one filling, not both. Both use the same cream custard base.",
+                "The crust must be fully blind-baked before filling -- follow the All-Shortening Pie Crust recipe (Baking > Sweet) all the way through the full blind-bake step, then proceed here.",
+                "If the crust cracks after blind baking, mix 1 1/2 tablespoons flour with 1 tablespoon softened butter into a paste; patch cracks with your fingers and return to the oven 1 minute to set.",
+                "Make-ahead: quiche keeps refrigerated up to 1 day. Freeze up to 3 months. Reheat covered with foil at 300 degrees F for 35-45 minutes until hot in the center."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Crust",
+                  "ingredients": [
+                    "1 disk All-Shortening Pie Crust (Baking > Sweet), fully blind-baked"
+                  ]
+                },
+                {
+                  "label": "Broccoli filling",
+                  "ingredients": [
+                    "1 tablespoon olive oil",
+                    "1/2 small onion, minced",
+                    "1 clove garlic, minced",
+                    "2 cups fresh broccoli florets (not stems)",
+                    "1 tablespoon water"
+                  ]
+                },
+                {
+                  "label": "Spinach filling",
+                  "ingredients": [
+                    "1 tablespoon unsalted butter",
+                    "1/2 cup thinly sliced shallots (from about 2 medium shallots)",
+                    "1 (10-oz) package frozen chopped spinach, defrosted and squeezed completely dry"
+                  ]
+                },
+                {
+                  "label": "Custard",
+                  "ingredients": [
+                    "4 large eggs",
+                    "1 1/4 cups heavy cream",
+                    "3/4 teaspoon salt",
+                    "1/4 teaspoon freshly ground black pepper",
+                    "Pinch of ground nutmeg",
+                    "1/8 teaspoon cayenne pepper"
+                  ]
+                },
+                {
+                  "label": "Cheese",
+                  "ingredients": [
+                    "1 cup (4 oz) finely shredded Gruyere",
+                    "1/2 cup freshly grated Parmesan (optional; especially good with the broccoli filling)"
+                  ]
+                }
+              ],
+              "steps": [
+                "Blind bake the crust fully, following the All-Shortening Pie Crust recipe (Baking > Sweet). Set the baked crust aside on a baking sheet. Reduce oven to 325 degrees F.",
+                "Prepare your chosen filling. Broccoli: heat olive oil in a skillet with a tight-fitting lid over medium heat. Add the onion; saute 2-3 minutes until translucent. Add garlic and broccoli; saute 2 minutes more. Add the tablespoon of water, cover, and reduce heat to medium-low; steam 2-3 minutes until the broccoli is bright green but still slightly crunchy. Remove from heat, drain in a colander, and let cool completely. Spinach: melt butter in a small skillet over medium-low heat. Add shallots and cook until soft and translucent, about 8 minutes -- do not brown. Set aside to cool.",
+                "In a medium bowl, whisk together eggs, cream, salt, pepper, nutmeg, and cayenne until just incorporated -- do not overbeat or you will get froth.",
+                "Spread the filling evenly over the bottom of the baked crust. For spinach: layer shallots first, then Gruyere, then spinach. For broccoli: spread broccoli, then Gruyere. Sprinkle Parmesan over the top if using. Slowly pour the custard over the filling, up to within 1/4 inch of the rim.",
+                "Bake at 325 degrees F for 45-55 minutes until the custard is set and the top is lightly golden. The center should jiggle only slightly when the pan is shaken. Let cool on a wire rack for 10-15 minutes before slicing. Serve warm or at room temperature."
+              ]
+            }
+            ,
             {
               "title": "Mushroom and Gruyere Bread Pudding",
               "servings": "Serves 8-10   |   Total: 1 hour 20 minutes",
