@@ -13660,6 +13660,54 @@ module.exports = {
                     "Add noodle-cabbage mixture, mirin, and soy sauce. Cook, tossing constantly and scraping up browned bits, until noodles are coated, about 45 seconds. Remove from heat; toss in dark scallion greens and 1 tablespoon sesame seeds.",
                     "Divide among bowls and top with more sesame seeds."
                   ]
+                },
+                {
+                  "title": "Spicy Sichuan Noodles",
+                  "servings": "Serves 4   |   Total: 25 min",
+                  "source": "New York Times (Ken Hom, adapted by Florence Fabricant)",
+                  "ingredientGroups": [
+                    {
+                      "label": "Sichuan pepper",
+                      "ingredients": [
+                        "1 tablespoon Sichuan peppercorns"
+                      ]
+                    },
+                    {
+                      "label": "Pork",
+                      "ingredients": [
+                        "1/2 pound ground pork",
+                        "1 tablespoon dark soy sauce",
+                        "1 teaspoon salt",
+                        "1 cup peanut oil"
+                      ]
+                    },
+                    {
+                      "label": "Sauce",
+                      "ingredients": [
+                        "3 tablespoons chopped garlic",
+                        "2 tablespoons finely chopped peeled fresh ginger",
+                        "5 tablespoons finely chopped scallions",
+                        "2 tablespoons sesame paste or smooth peanut butter",
+                        "2 tablespoons dark soy sauce",
+                        "Salt to taste",
+                        "2 tablespoons chili oil",
+                        "1 cup chicken stock"
+                      ]
+                    },
+                    {
+                      "label": "Noodles",
+                      "ingredients": [
+                        "12 oz fresh or dried Chinese egg noodles (or spaghetti)"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Toast Sichuan peppercorns in a dry wok over medium heat, stirring, until lightly browned and starting to smoke, about 5 minutes. Remove from heat, cool completely, then grind. Set aside.",
+                    "Combine ground pork with 1 tablespoon soy sauce and 1 teaspoon salt; mix well. Heat wok, add peanut oil; when hot, deep-fry pork, breaking up with a spatula, until crispy, about 4 minutes. Remove with slotted spoon and drain on paper towels.",
+                    "Pour off all but 2 tablespoons oil from the wok. Bring a large pot of water to a boil.",
+                    "Reheat wok with remaining oil over medium-high. Stir-fry garlic, ginger, and scallions for 30 seconds. Add sesame paste, remaining 2 tablespoons soy sauce, salt to taste, chili oil, and chicken stock. Simmer 4 minutes. Return pork to pan and stir.",
+                    "Cook noodles (2 minutes if fresh, 5 minutes if dried; follow package directions if using spaghetti). Drain. Divide among bowls, ladle sauce over, and top with fried pork. Sprinkle with ground Sichuan pepper."
+                  ]
                 }
               ]
             },
@@ -13714,6 +13762,189 @@ module.exports = {
                     "Heat oil in a large skillet over high heat. Add onion; stir-fry until it starts to brown, about 2 minutes. Add both bell peppers, broccoli, cashews, and salt. Stir-fry until broccoli stems are tender and cashews are slightly toasted, about 5 minutes.",
                     "Reduce heat to low. Add water and stir until it evaporates. Add garlic and ginger; stir-fry 1 minute. Turn off heat. Pour in the sauce and stir until it thickens into a glossy glaze. Add drained noodles and stir gently until evenly coated.",
                     "Serve warm."
+                  ]
+                },
+                {
+                  "title": "Kimchi Udon with Scallions",
+                  "servings": "Serves 4   |   Total: 20 min",
+                  "source": "Bon Appetit (Andy Baraghani)",
+                  "ingredientGroups": [
+                    {
+                      "label": "Kimchi sauce",
+                      "ingredients": [
+                        "2 tablespoons unsalted butter",
+                        "1 cup finely chopped kimchi, plus 1/3 cup kimchi juice",
+                        "2 tablespoons gochujang (Korean hot pepper paste)",
+                        "1/2 cup low-sodium chicken broth"
+                      ]
+                    },
+                    {
+                      "label": "Noodles",
+                      "ingredients": [
+                        "1 pound fresh or frozen udon noodles",
+                        "Kosher salt",
+                        "3 tablespoons unsalted butter"
+                      ]
+                    },
+                    {
+                      "label": "To serve",
+                      "ingredients": [
+                        "4 large egg yolks, room temperature",
+                        "3 scallions, white and pale-green parts only, thinly sliced on a diagonal",
+                        "1 tablespoon toasted sesame seeds"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Heat 2 tablespoons butter in a large skillet over medium-high. Add chopped kimchi and gochujang; cook, stirring occasionally, until kimchi is softened and lightly caramelized, about 4 minutes. Add chicken broth and kimchi juice; bring to a simmer and cook until liquid is slightly reduced, about 3 minutes.",
+                    "Meanwhile, cook udon according to package directions.",
+                    "Transfer noodles to the skillet using tongs; add remaining 3 tablespoons butter and toss until sauce coats noodles, about 2 minutes. Season with salt if needed.",
+                    "Divide among bowls. Top each with an egg yolk, scallions, and sesame seeds."
+                  ]
+                },
+                {
+                  "title": "Biang Biang Noodles with Chili Oil (You Po Mian)",
+                  "servings": "Serves 1-2   |   Active: 30 min + 2 hr rest",
+                  "source": "r/Cooking (u/mthmchris)",
+                  "comments": [
+                    "Serves 2 alongside other dishes, or 1 as a generous main.",
+                    "Weekday shortcut: mix and knead dough in the morning (10 minutes total), rest 4-10 hours instead of the 30-min + 2-hr autolyse rests, then roll flat, slice into ~2.5-inch strips, and shape noodles when you get home.",
+                    "Chinese chili flakes are traditional; Aleppo pepper or red pepper flakes also work.",
+                    "Other topping options: stewed pork dice, cumin lamb, or tomato and egg."
+                  ],
+                  "ingredientGroups": [
+                    {
+                      "label": "Noodle dough",
+                      "ingredients": [
+                        "1 2/3 cups (200g) all-purpose flour",
+                        "1/2 teaspoon salt",
+                        "7 tablespoons (100g) water"
+                      ]
+                    },
+                    {
+                      "label": "Resting oil",
+                      "ingredients": [
+                        "3 tablespoons neutral oil"
+                      ]
+                    },
+                    {
+                      "label": "Chili oil -- aromatics",
+                      "ingredients": [
+                        "One 3-inch section leek, minced",
+                        "2 large cloves garlic, minced"
+                      ]
+                    },
+                    {
+                      "label": "Chili oil -- sauce",
+                      "ingredients": [
+                        "4 teaspoons Chinese chili flakes (Aleppo pepper or red pepper flakes work)",
+                        "1/2 teaspoon Sichuan peppercorn powder (optional)",
+                        "4 tablespoons light soy sauce",
+                        "1 tablespoon dark Chinese vinegar (Chinkiang/Zhenjiang; substitute half cider vinegar + half balsamic in a pinch)",
+                        "1/4 teaspoon salt",
+                        "5 tablespoons peanut oil"
+                      ]
+                    },
+                    {
+                      "label": "Vegetables (optional)",
+                      "ingredients": [
+                        "1/2 to 1 baby bok choy, quartered (or bean sprouts)"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Make dough: Combine flour and salt. Slowly drizzle in water, mixing with your hands, aiming at dry spots to hydrate evenly. Knead about 1 minute until dough just comes together -- do not over-knead. Cover and rest 30 minutes.",
+                    "After rest, knead 2 minutes. Pinch together the craggly side; push dough around the work surface about 12 times in different directions to smooth.",
+                    "Divide dough into 4 equal pieces. Pinch cut sides together, roll each into a ~5-6 inch log. Toss logs in a bowl with 3 tablespoons oil, coating well. Rest 2 hours.",
+                    "Bring a large pot of water to a rapid boil.",
+                    "Shape and cook noodles one at a time: flatten a log with a rolling pin, then press a groove down the center with a chopstick. Hold the noodle in your palm with light thumb pressure and smack down against the work surface about 10 times to lengthen. Push through the chopstick groove and pull to extend the noodle further. Drop into boiling water; cook about 1 minute until it floats. Shape and cook remaining logs while each noodle boils.",
+                    "While noodles cook, blanch bok choy in the same pot for 45 seconds; remove.",
+                    "Assemble bowls: place noodles and bok choy in bowl. Scatter minced leek, garlic, chili flakes, and Sichuan peppercorn powder over top. Spoon soy sauce and vinegar around the sides. Heat peanut oil until just smoking (~420 degrees F), then pour directly over the aromatics and chili. Stir at the table and eat immediately."
+                  ]
+                },
+                {
+                  "title": "Sesame Peanut Noodles",
+                  "servings": "Serves 4   |   Total: 25 min",
+                  "source": "Tasty (Rachel Gaewski)",
+                  "ingredientGroups": [
+                    {
+                      "label": "Peanut sauce",
+                      "ingredients": [
+                        "1/2 cup peanut butter",
+                        "3 tablespoons low-sodium soy sauce",
+                        "2 tablespoons sesame oil",
+                        "2 tablespoons rice vinegar",
+                        "3 tablespoons water",
+                        "2 1/2 teaspoons brown sugar",
+                        "1 clove garlic",
+                        "1/2 tablespoon minced fresh ginger"
+                      ]
+                    },
+                    {
+                      "label": "Noodles and vegetables",
+                      "ingredients": [
+                        "8 oz dried spaghetti or thin Chinese noodles, cooked per package directions and drained",
+                        "1/2 cup shredded carrots",
+                        "1/2 cup shredded red cabbage",
+                        "3/4 cup shelled edamame"
+                      ]
+                    },
+                    {
+                      "label": "To serve",
+                      "ingredients": [
+                        "Chopped peanuts",
+                        "1 tablespoon black sesame seeds",
+                        "Thinly sliced scallions"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "In a blender, combine all peanut sauce ingredients and blend until smooth.",
+                    "In a large bowl, toss together the noodles, carrots, cabbage, and edamame. Pour peanut sauce over and toss with tongs until fully coated.",
+                    "Divide among bowls and top with chopped peanuts, black sesame seeds, and scallions."
+                  ]
+                },
+                {
+                  "title": "Sesame-Brown Butter Udon Noodles",
+                  "servings": "Serves 4   |   Total: 15 min",
+                  "source": "New York Times (Ali Slagle)",
+                  "comments": [
+                    "A highly adaptable weeknight dish in the tradition of wafu (Japanese-style pasta).",
+                    "Umami variations: swap soy sauce for Parmesan, miso, seaweed, or mushrooms.",
+                    "Heat variations: swap black pepper for ginger or Aleppo pepper or red pepper flakes.",
+                    "Protein additions: boil eggs or shelled edamame in the pasta water before the udon, or add tinned mackerel or fresh yuba with the sesame seeds.",
+                    "If udon are unavailable, use the dried thinner variety resembling linguine."
+                  ],
+                  "ingredientGroups": [
+                    {
+                      "label": "Noodles",
+                      "ingredients": [
+                        "Salted water",
+                        "14-16 oz udon noodles (preferably thick fresh, frozen, or shelf-stable)",
+                        "1 pound baby spinach, or mature spinach coarsely chopped"
+                      ]
+                    },
+                    {
+                      "label": "Brown butter sauce",
+                      "ingredients": [
+                        "5 tablespoons unsalted butter",
+                        "1 teaspoon coarsely ground black pepper, plus more for serving",
+                        "1 tablespoon low-sodium soy sauce, plus more as needed",
+                        "Pinch of granulated sugar"
+                      ]
+                    },
+                    {
+                      "label": "To finish",
+                      "ingredients": [
+                        "1 tablespoon unsalted butter",
+                        "2 tablespoons toasted sesame seeds, plus more for serving"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Bring a large pot of salted water to a boil. Cook udon per package directions until just tender. Reserve 1 cup cooking water. Add spinach and press to submerge; it will continue cooking later. Drain noodles and spinach, shaking off excess water.",
+                    "Set the same pot over medium heat. Add 5 tablespoons butter and cook, stirring occasionally, until foam subsides and milk solids turn golden-brown and smell nutty, 3-4 minutes. Add black pepper; stir until fragrant. Add 1/4 cup pasta water, then noodles and spinach, soy sauce, and sugar. Toss until sauce thickens and clings to the noodles. Add pasta water 1 tablespoon at a time as needed to keep sauce silky.",
+                    "Remove from heat. Add sesame seeds and stir in remaining 1 tablespoon butter until melted. Season with more soy sauce and pepper if mild, or a pinch more sugar if too salty. Serve with extra sesame seeds on top."
                   ]
                 }
               ]

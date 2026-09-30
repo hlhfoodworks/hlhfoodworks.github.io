@@ -136,9 +136,15 @@ const CLUSTER_MAP = {
   'Chili Crisp Fettuccine Alfredo with Spinach':        'General',
   // Noodles — Thai
   'Fried Drunken Noodles with Chicken (Phad Kii Maw Gai)': 'Thai',
+  // Noodles — Korean-inspired
+  'Kimchi Udon with Scallions':                          'Korean-inspired',
   // Noodles — Chinese
+  'Biang Biang Noodles with Chili Oil (You Po Mian)':   'Chinese',
   'Ginger-Orange Broccoli and Noodles':                 'Chinese',
+  'Sesame Peanut Noodles':                              'Chinese',
+  'Spicy Sichuan Noodles':                              'Chinese',
   // Noodles — Japanese
+  'Sesame-Brown Butter Udon Noodles':                   'Japanese',
   'Stir-Fried Udon Noodles With Pork and Scallions':    'Japanese',
   // Lamb — Mediterranean/Greek
   'Garlic & Rosemary Grilled Lamb Chops':                'Mediterranean/Greek',
