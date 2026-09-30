@@ -198,6 +198,14 @@ const CLUSTER_MAP = {
   'Spiced Meatballs with Pappardelle':                   'Middle Eastern/Persian',
   // Noodles: Italian — Mediterranean/Greek
   'One-Pan Orzo with Spinach and Feta':                  'Mediterranean/Greek',
+  // Sauces — Italian
+  'Fresh Tomato Pizza Sauce':                            'Italian',
+  // Sauces — Middle Eastern/Persian
+  'Yemenite Green Hot Sauce (Zhug)':                     'Middle Eastern/Persian',
+  // Vegetable Sides — General
+  'Tomato Cobbler With Ricotta Biscuits':                'General',
+  // Dairy — General
+  'Homemade Mozzarella':                                 'General',
   // Dressings — General
   'Christy\'s Dressing':                                 'General',
   'Horseradish Sauce':                                   'General',
@@ -230,7 +238,10 @@ const CLUSTER_MAP = {
   'Lauren\'s Banana Pudding':                            'General',
   'Millie\'s Cobbler':                                   'General',
   'Summer Pudding':                                      'General',
-  // Desserts — Thai
+  'Bonfire Night Cake':                                  'General',
+  'Fresh Southern Peach Cobbler':                        'General',
+  // Desserts — Italian
+  'Classic Tiramisu':                                    'Italian',
   'Cassata Siciliana':                                    'Italian',
   'Mango with Sticky Rice (Khao Neow Mamuang)':         'Thai',
   // Drinks — General
@@ -354,7 +365,10 @@ const CLUSTER_MAP = {
   'Potato Latkes':                                       'Central/Eastern European',
   // Baking: Sweet — General
   'All-Shortening Pie Crust':                            'General',
+  'Blueberry Coffee Cake (Blueberry Boy Bait)':          'General',
   'Jumbo Banana-Nut Muffins':                            'General',
+  'Mom’s Zucchini Bread':                          'General',
+  'Pumpkin Gut Bread':                                   'General',
   'Kitchen Sink Cookies':                                'General',
   'Marble Brownies':                                     'General',
   "Eric's Chocolate Chip Cookies":                       'General',
@@ -394,13 +408,20 @@ const CLUSTER_MAP = {
   'Baba Ganoush':                                        'Middle Eastern/Persian',
   'Israeli Hummus':                                      'Middle Eastern/Persian',
   'Muhammara':                                           'Middle Eastern/Persian',
+  // Appetizers — Korean-inspired
+  'Kimchijeon':                                          'Korean-inspired',
   // Appetizers — Chinese
   'Creamy Ginger-Soy Dip':                              'Chinese',
   // Mushroom — Italian
   'Mushrooms Florentine':                                'Italian',
+  // Baking Savory — General
+  'Buttermilk Cornbread':                                'General',
+  'Buttermilk Cheddar Jalapeno Cornbread':               'General',
   // Baking Savory — Italian
   "Susan's Calzones":                                    'Italian',
   'Eggplant Parm Pizza':                                 'Italian',
+  'Grandma-Style Pizza Dough':                           'Italian',
+  'Hot and Sweet Soppressata and Fennel Grandma Pie':   'Italian',
   // Baking Savory — French/Continental
   'Gruyere Quiche':                                      'French/Continental',
   'Mushroom and Gruyere Bread Pudding':                  'French/Continental',
@@ -408,13 +429,18 @@ const CLUSTER_MAP = {
   'Khachapuri Adjaruli (Georgian Cheese Bread Boat)':    'Central/Eastern European',
   // Baking Savory — Chinese
   'Scallion Pancakes':                                   'Chinese',
+  // Baking: Bread — General
+  'Ultra-Fluffy Milk Bread Rolls':                       'General',
   // Baking: Bread — Italian
   'Overnight Focaccia':                                  'Italian',
   'Same-Day Focaccia':                                   'Italian',
   // Baking: Bread — Central/Eastern European
   "Nechamie's Challah":                                  'Central/Eastern European',
   // Baking: Bread — Indian
+  'Homemade Naan Bread':                                 'Indian',
   'Onion Kulcha (Whole Wheat)':                          'Indian',
+  // Baking: Bread — Middle Eastern/Persian
+  'Flaky Bread (Malawah)':                               'Middle Eastern/Persian',
   // Baking Sweet — General
   'Butter Pecan Coffee Cake':                            'General',
   // Breakfast — General
@@ -423,6 +449,7 @@ const CLUSTER_MAP = {
   'Homemade Biscuits':                                   'General',
   'Raised Waffles':                                      'General',
   'Baked German Pancake (or Dutch Babies)':              'General',
+  'Double Chocolate Muffins':                            'General',
   'Egg Strata':                                          'General',
   'Broiled Cod in Miso Sauce':                            'Japanese',
   'Grilled Shrimp and Green Onion Skewers':               'General',

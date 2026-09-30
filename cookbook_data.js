@@ -81,6 +81,100 @@ module.exports = {
           ]
         },
         {
+          "title": "Double Chocolate Muffins",
+          "servings": "Makes 18 muffins   |   Prep: 15 minutes   |   Bake: 17-18 minutes",
+          "source": "Sam Merritt, Sugar Spun Run (sugarspunrun.com)",
+          "comments": [
+            "Natural cocoa powder gives the best chocolate flavor; Dutch-process can also be used since the sour cream provides sufficient acidity to activate the baking soda.",
+            "Full-fat plain Greek yogurt can substitute for sour cream.",
+            "If baking in one 12-cup tin, let the tin cool completely before the second batch."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Dry ingredients",
+              "ingredients": [
+                "1 2/3 cups all-purpose flour",
+                "1 cup granulated sugar",
+                "1 1/2 teaspoons baking soda",
+                "1/2 teaspoon salt"
+              ]
+            },
+            {
+              "label": "Cocoa bloom",
+              "ingredients": [
+                "1/2 cup natural cocoa powder",
+                "1/2 cup very hot or boiling water"
+              ]
+            },
+            {
+              "label": "Wet ingredients",
+              "ingredients": [
+                "1/2 cup neutral oil (avocado, canola, or vegetable)",
+                "1 cup sour cream",
+                "2 large eggs, lightly beaten",
+                "1 teaspoon vanilla extract"
+              ]
+            },
+            {
+              "label": "Chocolate chips",
+              "ingredients": [
+                "2 cups semisweet chocolate chips, divided (a blend of mini and regular works well)"
+              ]
+            }
+          ],
+          "steps": [
+            "Preheat oven to 375°F. Line muffin tins with paper liners (recipe makes 18; use two tins or bake in batches).",
+            "Whisk flour, sugar, baking soda, and salt together in a large bowl.",
+            "In a separate heatproof bowl, pour hot water over cocoa powder and whisk until smooth. Whisk in oil (it will separate -- that is fine). Add sour cream, eggs, and vanilla; whisk until thoroughly combined.",
+            "Pour wet ingredients into dry. Fold together with a spatula until about halfway combined. Add 1 1/2 cups of the chocolate chips and continue folding until just combined. Do not over-mix.",
+            "Portion batter into muffin cups, filling each about 2/3 full. Scatter remaining chocolate chips over the tops.",
+            "Bake 17-18 minutes until a toothpick comes out clean or with a few moist crumbs (avoid testing through a chip). Cool in tins 10-15 minutes, then remove to a rack."
+          ],
+          "highAltitude": {
+            "ingredientGroups": [
+              {
+                "label": "Dry ingredients",
+                "ingredients": [
+                  "1 2/3 cups + 2 tablespoons all-purpose flour",
+                  "3/4 cup + 2 tablespoons granulated sugar",
+                  "1 1/4 teaspoons baking soda",
+                  "1/2 teaspoon salt"
+                ]
+              },
+              {
+                "label": "Cocoa bloom",
+                "ingredients": [
+                  "1/2 cup natural cocoa powder",
+                  "1/2 cup very hot or boiling water"
+                ]
+              },
+              {
+                "label": "Wet ingredients",
+                "ingredients": [
+                  "1/2 cup neutral oil (avocado, canola, or vegetable)",
+                  "1 cup + 2 tablespoons sour cream",
+                  "2 large eggs, lightly beaten",
+                  "1 teaspoon vanilla extract"
+                ]
+              },
+              {
+                "label": "Chocolate chips",
+                "ingredients": [
+                  "2 cups semisweet chocolate chips, divided (a blend of mini and regular works well)"
+                ]
+              }
+            ],
+            "steps": [
+              "Preheat oven to 375°F. Line muffin tins with paper liners (recipe makes 18; use two tins or bake in batches).",
+              "Whisk flour, sugar, baking soda, and salt together in a large bowl.",
+              "In a separate heatproof bowl, pour hot water over cocoa powder and whisk until smooth. Whisk in oil (it will separate -- that is fine). Add sour cream, eggs, and vanilla; whisk until thoroughly combined.",
+              "Pour wet ingredients into dry. Fold together with a spatula until about halfway combined. Add 1 1/2 cups of the chocolate chips and continue folding until just combined. Do not over-mix.",
+              "Portion batter into muffin cups, filling each about 2/3 full. Scatter remaining chocolate chips over the tops.",
+              "Bake 17-18 minutes until a toothpick comes out clean or with a few moist crumbs (avoid testing through a chip). Cool in tins 10-15 minutes, then remove to a rack."
+            ]
+          }
+        },
+        {
           "title": "Egg Strata",
           "source": "Family recipe card",
           "comments": [
@@ -1252,6 +1346,42 @@ module.exports = {
             "Combine all ingredients and mix well.",
             "Cover and refrigerate for at least 1 hour before serving.",
             "Serve with raw vegetables."
+          ]
+        },
+        {
+          "title": "Kimchijeon",
+          "servings": "Serves 2-4   |   Total: 20 minutes",
+          "source": "Maangchi (maangchi.com)",
+          "comments": [
+            "Well-fermented, sour kimchi makes the best kimchijeon -- the tangy depth of flavor is what this pancake is about. Fresh kimchi will work but produces a milder result.",
+            "A nonstick pan and a generous amount of oil are both essential for a crispy pancake.",
+            "Serve with a dipping sauce of equal parts soy sauce and rice wine vinegar with a few drops of sesame oil."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Batter",
+              "ingredients": [
+                "1/2 pound well-fermented napa cabbage kimchi, chopped into small pieces",
+                "2 tablespoons kimchi brine",
+                "3 scallions, chopped",
+                "1/2 teaspoon sugar",
+                "1/2 cup all-purpose flour",
+                "1/2 cup water"
+              ]
+            },
+            {
+              "label": "Cooking oil",
+              "ingredients": [
+                "4 tablespoons vegetable oil"
+              ]
+            }
+          ],
+          "steps": [
+            "Combine kimchi, kimchi brine, scallions, sugar, flour, and water in a medium bowl and mix well.",
+            "Heat a 12-inch nonstick skillet over medium heat. Add 2 tablespoons of the oil and swirl to coat.",
+            "Pour the batter into the pan and spread into a large circle with the back of a spoon or spatula.",
+            "Cook until the bottom is golden brown and crisp, 3-5 minutes. Carefully flip the pancake. Drizzle the remaining 2 tablespoons oil around the edges of the skillet. Using a thin spatula, lift the edges of the pancake to allow oil to run underneath; tilt the pan to spread evenly.",
+            "Cook until the second side is light golden and crisp, 3-5 minutes. Flip once more and cook 1 additional minute. Slide onto a plate and serve immediately."
           ]
         }
       ]
@@ -11097,6 +11227,117 @@ module.exports = {
             "Add spinach and stir-fry until leaves are almost wilted, 1 to 2 minutes.",
             "Stir in sugar and sesame oil. Sprinkle with black pepper if using. Serve immediately."
           ]
+        },
+        {
+          "title": "Tomato Cobbler With Ricotta Biscuits",
+          "servings": "Serves 10   |   Total: 1 hour 30 minutes",
+          "source": "New York Times (Nicole Rucker / Tejal Rao), 2019",
+          "comments": [
+            "This dish sits somewhere between a savory course and a sweet one -- serve it either way.",
+            "Sungold tomatoes are sweeter and especially good here when in season."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Ricotta (30 minutes ahead)",
+              "ingredients": [
+                "3/4 cup whole-milk ricotta"
+              ]
+            },
+            {
+              "label": "Biscuit dry ingredients",
+              "ingredients": [
+                "2 1/2 cups cake flour, plus more for dusting",
+                "1 tablespoon granulated sugar",
+                "1 teaspoon kosher salt",
+                "1 1/2 teaspoons baking powder",
+                "1 teaspoon baking soda"
+              ]
+            },
+            {
+              "label": "Biscuit fat",
+              "ingredients": [
+                "1/2 cup unsalted butter, cut into cubes and chilled"
+              ]
+            },
+            {
+              "label": "Biscuit liquid",
+              "ingredients": [
+                "1 cup buttermilk, plus 2 tablespoons for brushing"
+              ]
+            },
+            {
+              "label": "Tomato base",
+              "ingredients": [
+                "2 to 2 1/2 pounds cherry tomatoes or Sungold tomatoes",
+                "1/4 cup extra-virgin olive oil",
+                "1 tablespoon sherry vinegar",
+                "2 sprigs fresh thyme",
+                "1/4 cup granulated sugar",
+                "2 tablespoons cake flour",
+                "Kosher salt and freshly ground black pepper"
+              ]
+            }
+          ],
+          "steps": [
+            "Strain the ricotta in a cheesecloth or fine-mesh strainer for at least 30 minutes. Squeeze out any excess moisture before using.",
+            "Prepare the biscuit dry ingredients: combine 2 1/2 cups cake flour, sugar, salt, baking powder, and baking soda in a large bowl and whisk to combine. Transfer to the freezer to chill for about 20 minutes. Add the cold butter and smear pieces between your fingers, pinching into thin flakes and working into the flour until no large pieces remain.",
+            "Make a well in the center and gradually pour in 1 cup buttermilk, using a fork to fluff in flour from the sides until a shaggy dough forms. Crumble in the ricotta and loosely incorporate with your fingers.",
+            "Scrape the dough onto a lightly floured surface and shape into a roughly 4x6-inch rectangle. Fold into thirds and flatten back to the same size; repeat 2 more times. Flatten to about 1 inch thick. Refrigerate 20 minutes.",
+            "Position a rack in the center of the oven and preheat to 350 degrees F. Cut about half the tomatoes in half. In a 2-quart baking dish, combine all the tomatoes with olive oil, vinegar, thyme sprigs, 1/4 cup sugar, and 2 tablespoons cake flour. Season generously with salt and pepper; let sit while you work on the biscuit dough.",
+            "Lay biscuit dough onto a lightly floured surface. Cut into 2-inch squares or circles and arrange in a single layer over the tomatoes -- you should have about 10-12 biscuits. (Bake any scraps separately.) Brush the tops of the biscuits with the remaining 2 tablespoons buttermilk. Bake 45 minutes, until the tomato mixture has bubbled up and the biscuits are browned on top. Allow to cool; serve warm or at room temperature. Finish with a sprinkle of salt and pepper."
+          ],
+          "highAltitude": {
+            "ingredientGroups": [
+              {
+                "label": "Ricotta (30 minutes ahead)",
+                "ingredients": [
+                  "3/4 cup whole-milk ricotta"
+                ]
+              },
+              {
+                "label": "Biscuit dry ingredients",
+                "ingredients": [
+                  "2 1/2 cups cake flour, plus more for dusting",
+                  "1 tablespoon granulated sugar",
+                  "1 teaspoon kosher salt",
+                  "1 teaspoon baking powder (reduced from 1 1/2 teaspoons)",
+                  "3/4 teaspoon baking soda (reduced from 1 teaspoon)"
+                ]
+              },
+              {
+                "label": "Biscuit fat",
+                "ingredients": [
+                  "1/2 cup unsalted butter, cut into cubes and chilled"
+                ]
+              },
+              {
+                "label": "Biscuit liquid",
+                "ingredients": [
+                  "1 cup buttermilk, plus 2 tablespoons for brushing"
+                ]
+              },
+              {
+                "label": "Tomato base",
+                "ingredients": [
+                  "2 to 2 1/2 pounds cherry tomatoes or Sungold tomatoes",
+                  "1/4 cup extra-virgin olive oil",
+                  "1 tablespoon sherry vinegar",
+                  "2 sprigs fresh thyme",
+                  "1/4 cup granulated sugar",
+                  "2 tablespoons cake flour",
+                  "Kosher salt and freshly ground black pepper"
+                ]
+              }
+            ],
+            "steps": [
+              "Strain the ricotta in a cheesecloth or fine-mesh strainer for at least 30 minutes. Squeeze out any excess moisture before using.",
+              "Prepare the biscuit dry ingredients: combine 2 1/2 cups cake flour, sugar, salt, baking powder, and baking soda in a large bowl and whisk to combine. Transfer to the freezer to chill for about 20 minutes. Add the cold butter and smear pieces between your fingers, pinching into thin flakes and working into the flour until no large pieces remain.",
+              "Make a well in the center and gradually pour in 1 cup buttermilk, using a fork to fluff in flour from the sides until a shaggy dough forms. Crumble in the ricotta and loosely incorporate with your fingers.",
+              "Scrape the dough onto a lightly floured surface and shape into a roughly 4x6-inch rectangle. Fold into thirds and flatten back to the same size; repeat 2 more times. Flatten to about 1 inch thick. Refrigerate 20 minutes.",
+              "Position a rack in the center of the oven and preheat to 350 degrees F. Cut about half the tomatoes in half. In a 2-quart baking dish, combine all the tomatoes with olive oil, vinegar, thyme sprigs, 1/4 cup sugar, and 2 tablespoons cake flour. Season generously with salt and pepper; let sit while you work on the biscuit dough.",
+              "Lay biscuit dough onto a lightly floured surface. Cut into 2-inch squares or circles and arrange in a single layer over the tomatoes -- you should have about 10-12 biscuits. (Bake any scraps separately.) Brush the tops of the biscuits with the remaining 2 tablespoons buttermilk. Bake 40-45 minutes (check at 40 minutes), until the tomato mixture has bubbled up and the biscuits are browned on top. Allow to cool; serve warm or at room temperature. Finish with a sprinkle of salt and pepper."
+            ]
+          }
         }
       ]
     },
@@ -14230,6 +14471,89 @@ module.exports = {
               }
             }            ,
             {
+              "title": "Homemade Naan Bread",
+              "servings": "Makes 8 naan",
+              "source": "Kristyn Merkley, Lil’ Luna (lilluna.com)",
+              "comments": [
+                "Thickness matters -- 3-5mm is the sweet spot for proper bubbling.",
+                "A cast iron skillet distributes heat evenly and gives the best results.",
+                "Bread flour can be substituted for chewier naan.",
+                "Dough can be refrigerated up to 2 days; punch down and divide before cooking."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Yeast starter",
+                  "ingredients": [
+                    "1/2 cup warm water (105-115°F)",
+                    "2 teaspoons instant yeast",
+                    "1 teaspoon sugar"
+                  ]
+                },
+                {
+                  "label": "Dough",
+                  "ingredients": [
+                    "3 tablespoons olive oil",
+                    "1/4 cup plain yogurt",
+                    "1 large egg",
+                    "1/2 teaspoon salt",
+                    "2 1/2 to 3 cups all-purpose flour"
+                  ]
+                },
+                {
+                  "label": "Garlic butter",
+                  "ingredients": [
+                    "2 tablespoons unsalted butter, melted",
+                    "2 teaspoons minced garlic"
+                  ]
+                }
+              ],
+              "steps": [
+                "Combine warm water, yeast, and sugar in a large bowl. Let sit 5 minutes until bubbly.",
+                "Add olive oil, yogurt, egg, salt, and 2 1/2 cups flour. Stir until smooth. Add more flour a bit at a time until the dough is soft and only slightly tacky. Knead briefly on a lightly floured surface until smooth. Place in a greased bowl, cover, and let rise until doubled, about 1 hour.",
+                "Stir minced garlic into melted butter; set aside.",
+                "Preheat a skillet (cast iron preferred) over medium heat. Divide dough into 8 pieces. On a lightly floured surface, roll each piece into a 6-inch circle, about 3-5mm thick.",
+                "Lightly oil or spray the skillet. Cook each naan 2-3 minutes until bubbles form and the underside is golden brown. Flip and cook 2-3 minutes more.",
+                "Immediately brush the bubbly side with garlic butter. Serve warm."
+              ],
+              "highAltitude": {
+                "ingredientGroups": [
+                  {
+                    "label": "Yeast starter",
+                    "ingredients": [
+                      "1/2 cup warm water (105-115°F)",
+                      "1 1/2 teaspoons instant yeast",
+                      "1 teaspoon sugar"
+                    ]
+                  },
+                  {
+                    "label": "Dough",
+                    "ingredients": [
+                      "3 tablespoons olive oil",
+                      "1/4 cup plain yogurt",
+                      "1 large egg",
+                      "1/2 teaspoon salt",
+                      "2 1/2 to 3 cups all-purpose flour"
+                    ]
+                  },
+                  {
+                    "label": "Garlic butter",
+                    "ingredients": [
+                      "2 tablespoons unsalted butter, melted",
+                      "2 teaspoons minced garlic"
+                    ]
+                  }
+                ],
+                "steps": [
+                  "Combine warm water, yeast, and sugar in a large bowl. Let sit 5 minutes until bubbly.",
+                  "Add olive oil, yogurt, egg, salt, and 2 1/2 cups flour. Stir until smooth. Add more flour a bit at a time until the dough is soft and only slightly tacky. Knead briefly on a lightly floured surface until smooth. Place in a greased bowl, cover, and let rise until doubled, about 30-45 minutes (dough rises 30-50% faster at altitude -- watch the dough, not the clock).",
+                  "Stir minced garlic into melted butter; set aside.",
+                  "Preheat a skillet (cast iron preferred) over medium heat. Divide dough into 8 pieces. On a lightly floured surface, roll each piece into a 6-inch circle, about 3-5mm thick.",
+                  "Lightly oil or spray the skillet. Cook each naan 2-3 minutes until bubbles form and the underside is golden brown. Flip and cook 2-3 minutes more.",
+                  "Immediately brush the bubbly side with garlic butter. Serve warm."
+                ]
+              }
+            },
+            {
               "title": "Onion Kulcha (Whole Wheat)",
               "servings": "Makes 5 kulcha",
               "source": "Cook With Manali (Manali Singh)",
@@ -14317,6 +14641,157 @@ module.exports = {
                   "While dough rests, make the onion filling: combine onion, cumin seeds, carom seeds, red chili powder, anardana, and salt; mix well. Stir in coriander leaves. Set aside.",
                   "After resting, give the dough a quick knead and divide into 5 equal balls. Working with one at a time, roll out to a chapati-sized round. Place about 1 1/2 tablespoons of filling in the center. Gather the edges and pinch firmly to seal. Roll the stuffed ball again to an even, medium thickness -- not too thin, not too thick.",
                   "Heat a tawa or heavy skillet over medium heat. Place a kulcha on the hot surface. When bubbles appear on the surface, about 1 minute, flip and cook the other side. Flip again and cook until brown spots appear on both sides and the bread is cooked through. Remove and immediately brush with butter. Repeat with remaining kulcha. Serve warm."
+                ]
+              }
+            },
+            {
+              "title": "Flaky Bread (Malawah)",
+              "servings": "Makes 10 pieces   |   Total: 4 hours 30 minutes (including dough rest)",
+              "source": "Bon Appetit (Alison Roman), February 2014",
+              "comments": [
+                "An unfloured surface provides traction -- this is what allows the dough to roll very thin without sticking.",
+                "Versatile: serve with eggs at breakfast, as a dipper for hummus or zhug, or wrapped around grilled meat at dinner.",
+                "Do ahead: rolled-out coils can be frozen up to 1 month; wrap tightly. Cook from frozen, adding 1-2 minutes per side to cooking time."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Dough (4 hours ahead)",
+                  "ingredients": [
+                    "1 teaspoon kosher salt",
+                    "3 cups all-purpose flour, plus more for surface",
+                    "6 tablespoons unsalted butter, melted",
+                    "3/4 cup water"
+                  ]
+                },
+                {
+                  "label": "For rolling and cooking",
+                  "ingredients": [
+                    "About 10 tablespoons unsalted butter, room temperature",
+                    "Flaky sea salt (such as Maldon)",
+                    "Olive oil, for oiling parchment paper"
+                  ]
+                }
+              ],
+              "steps": [
+                "Whisk salt and flour in a large bowl. Drizzle in melted butter; mix well. Gradually mix in 3/4 cup water. Knead on a lightly floured surface until dough is shiny and very soft, about 5 minutes. Wrap in plastic; let rest in a warm spot at least 4 hours.",
+                "Divide dough into 10 pieces and roll each into a ball using your palm. Place on a baking sheet, cover with plastic wrap, and rest 15 minutes.",
+                "Working 1 piece at a time, roll out on an unfloured surface with a rolling pin into very thin rounds or ovals about 9 inches across. (If dough bounces back, cover with plastic and let rest a few minutes.)",
+                "Brush the top of each round with room-temperature butter and sprinkle with sea salt. Roll each round up into a long thin rope, then wind the rope around itself into a tight coil.",
+                "Working 1 coil at a time, roll out on an unfloured surface to 10-inch rounds no more than 1/8 inch thick. Stack as you go, separating with sheets of oiled parchment.",
+                "Heat a large cast-iron griddle or skillet over medium-high heat. Working 1 at a time, brush both sides of a dough round with room-temperature butter and cook until lightly blistered and cooked through, about 2 minutes per side. Transfer to a wire rack and sprinkle with sea salt."
+              ]
+            },
+            {
+              "title": "Ultra-Fluffy Milk Bread Rolls",
+              "favorite": true,
+              "servings": "Makes 9 rolls",
+              "source": "Cleobuttera (Tasbih), adapted from King Arthur Flour",
+              "comments": [
+                "Tangzhong (also called a water roux or flour paste) is a Japanese/Chinese technique: cooking a small portion of flour with liquid before adding it to the dough lets the dough absorb much more moisture, producing exceptionally soft, springy bread.",
+                "To make 18 rolls, double the recipe and bake in a 13x9-inch pan.",
+                "To make as a loaf: after the initial rise, divide dough into 4 pieces. Flatten each into a rectangle, fold the short ends in toward each other like a letter, flatten again, and roll into a log. Place the 4 logs side by side, seam-side down, in a greased 9x5-inch loaf pan. Rise 40-50 minutes, then bake at 350 degrees F for about 30 minutes until 190 degrees F internally.",
+                "Do ahead: after step 3 (first knead), refrigerate overnight in a tightly covered greased bowl. Proceed from step 4 the next day. Baked rolls keep up to 5 days tightly wrapped at room temperature."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Tangzhong",
+                  "ingredients": [
+                    "3 tablespoons water",
+                    "3 tablespoons whole milk",
+                    "2 tablespoons bread flour"
+                  ]
+                },
+                {
+                  "label": "Dry ingredients",
+                  "ingredients": [
+                    "2 1/2 cups bread flour",
+                    "2 tablespoons dry milk powder",
+                    "1/4 cup sugar",
+                    "1 teaspoon salt",
+                    "1 tablespoon instant yeast"
+                  ]
+                },
+                {
+                  "label": "Wet ingredients",
+                  "ingredients": [
+                    "1/2 cup whole milk, slightly warmed",
+                    "1 large egg",
+                    "4 tablespoons unsalted butter, melted"
+                  ]
+                },
+                {
+                  "label": "Egg wash",
+                  "ingredients": [
+                    "1 large egg",
+                    "1 tablespoon heavy cream or milk"
+                  ]
+                },
+                {
+                  "label": "To finish",
+                  "ingredients": [
+                    "1/2 tablespoon unsalted butter, melted"
+                  ]
+                }
+              ],
+              "steps": [
+                "Make the tangzhong: whisk water, milk, and flour together in a small saucepan until smooth. Cook over low heat, stirring constantly, until thickened to a loose roux consistency and the spatula leaves lines in the bottom of the pan, 3-5 minutes. Transfer to a small bowl, press plastic wrap directly on the surface, and cool to room temperature. (Refrigerate to speed cooling while you prepare everything else.)",
+                "Whisk together bread flour, milk powder, sugar, salt, and yeast in the bowl of a stand mixer. In a measuring cup, whisk together the warmed milk, egg, melted butter, and cooled tangzhong until combined.",
+                "Pour the liquid mixture over the dry ingredients. Knead on low speed with the dough hook until a dough forms (it will be very sticky -- resist adding flour). Increase to medium-low speed and knead until smooth, elastic, and no longer sticky, 15-20 minutes. The dough should feel tacky and you should be able to stretch a small piece into a thin film between your hands without it tearing right away.",
+                "Shape dough into a ball with lightly oiled hands. Place in a lightly greased bowl, cover tightly with plastic wrap, and let rise in a warm place until almost doubled, 60-90 minutes.",
+                "Grease an 8 or 9-inch square baking pan. Turn dough out onto an unfloured work surface. Pat into an 8-inch square of even thickness and cut into 9 pieces (3 rows x 3 rows). Working 1 piece at a time (keep remaining pieces covered), cup your hand around each piece and use small circular motions to form a taut round ball. Place into the prepared pan. Cover loosely with plastic wrap and let rise until puffy, 40-50 minutes. In the last 10 minutes, preheat oven to 350 degrees F.",
+                "Whisk egg and cream for the egg wash. Uncover rolls, gently brush with egg wash, and bake until golden brown, 20-25 minutes. The center roll should register at least 190 degrees F internally. (If tops brown too quickly, tent loosely with foil.)",
+                "Remove from oven and immediately brush with melted butter. Cool in the pan 10 minutes, then turn out onto a wire rack. Serve warm."
+              ],
+              "highAltitude": {
+                "ingredientGroups": [
+                  {
+                    "label": "Tangzhong",
+                    "ingredients": [
+                      "3 tablespoons water",
+                      "3 tablespoons whole milk",
+                      "2 tablespoons bread flour"
+                    ]
+                  },
+                  {
+                    "label": "Dry ingredients",
+                    "ingredients": [
+                      "2 1/2 cups bread flour",
+                      "2 tablespoons dry milk powder",
+                      "1/4 cup sugar",
+                      "1 teaspoon salt",
+                      "2 1/4 teaspoons instant yeast (reduced from 1 tablespoon)"
+                    ]
+                  },
+                  {
+                    "label": "Wet ingredients",
+                    "ingredients": [
+                      "1/2 cup whole milk, slightly warmed",
+                      "1 large egg",
+                      "4 tablespoons unsalted butter, melted"
+                    ]
+                  },
+                  {
+                    "label": "Egg wash",
+                    "ingredients": [
+                      "1 large egg",
+                      "1 tablespoon heavy cream or milk"
+                    ]
+                  },
+                  {
+                    "label": "To finish",
+                    "ingredients": [
+                      "1/2 tablespoon unsalted butter, melted"
+                    ]
+                  }
+                ],
+                "steps": [
+                  "Make the tangzhong: whisk water, milk, and flour together in a small saucepan until smooth. Cook over low heat, stirring constantly, until thickened to a loose roux consistency and the spatula leaves lines in the bottom of the pan, 3-5 minutes. Transfer to a small bowl, press plastic wrap directly on the surface, and cool to room temperature. (Refrigerate to speed cooling while you prepare everything else.)",
+                  "Whisk together bread flour, milk powder, sugar, salt, and yeast in the bowl of a stand mixer. In a measuring cup, whisk together the warmed milk, egg, melted butter, and cooled tangzhong until combined.",
+                  "Pour the liquid mixture over the dry ingredients. Knead on low speed with the dough hook until a dough forms (it will be very sticky -- resist adding flour). Increase to medium-low speed and knead until smooth, elastic, and no longer sticky, 15-20 minutes. The dough should feel tacky and you should be able to stretch a small piece into a thin film between your hands without it tearing right away.",
+                  "Shape dough into a ball with lightly oiled hands. Place in a lightly greased bowl, cover tightly with plastic wrap, and let rise in a warm place until almost doubled, 45-60 minutes (shorter than at sea level; dough may overproof quickly at altitude).",
+                  "Grease an 8 or 9-inch square baking pan. Turn dough out onto an unfloured work surface. Pat into an 8-inch square of even thickness and cut into 9 pieces (3 rows x 3 rows). Working 1 piece at a time (keep remaining pieces covered), cup your hand around each piece and use small circular motions to form a taut round ball. Place into the prepared pan. Cover loosely with plastic wrap and let rise until puffy, 30-40 minutes. In the last 10 minutes, preheat oven to 350 degrees F.",
+                  "Whisk egg and cream for the egg wash. Uncover rolls, gently brush with egg wash, and bake until golden brown, 20-25 minutes. The center roll should register at least 190 degrees F internally. (If tops brown too quickly, tent loosely with foil.)",
+                  "Remove from oven and immediately brush with melted butter. Cool in the pan 10 minutes, then turn out onto a wire rack. Serve warm."
                 ]
               }
             }
@@ -14805,6 +15280,98 @@ module.exports = {
               "source": "From Susan Muhlheim"
             },
             {
+              "title": "Blueberry Coffee Cake (Blueberry Boy Bait)",
+              "favorite": true,
+              "servings": "Serves 12-16   |   Bake: 375°F for 45-55 minutes",
+              "source": "Adapted from Once Upon a Chef (onceuponachef.com) by Jennifer Segal",
+              "comments": [
+                "Meant to replicate the coffee cake from Hobee’s in Palo Alto.",
+                "Best the day it is made; leftovers keep well wrapped in foil at room temperature for a few days."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Streusel",
+                  "ingredients": [
+                    "12 tablespoons packed light brown sugar (3/4 cup)",
+                    "1 cup all-purpose flour",
+                    "2 teaspoons ground cinnamon",
+                    "1/2 teaspoon salt",
+                    "8 tablespoons unsalted butter (1 stick), cold, cut into 1/2-inch chunks"
+                  ]
+                },
+                {
+                  "label": "Dry ingredients",
+                  "ingredients": [
+                    "3 cups all-purpose flour",
+                    "3 teaspoons baking powder",
+                    "3/4 teaspoon salt"
+                  ]
+                },
+                {
+                  "label": "Cake batter",
+                  "ingredients": [
+                    "3/4 cup (1 1/2 sticks) unsalted butter, softened",
+                    "1 cup + 2 tablespoons granulated sugar",
+                    "3 large eggs",
+                    "2 1/4 teaspoons vanilla extract",
+                    "1 1/2 teaspoons packed lemon zest (from about 1 lemon)",
+                    "3/4 cup milk",
+                    "5 cups fresh blueberries (frozen may be used but do not defrost)"
+                  ]
+                }
+              ],
+              "steps": [
+                "Make streusel: combine brown sugar, flour, cinnamon, and salt in a bowl. Rub in cold butter with fingertips until mixture is crumbly. Refrigerate until ready to use.",
+                "Preheat oven to 375°F. Grease a 9x13-inch baking dish.",
+                "Whisk flour, baking powder, and salt together in a medium bowl. Set aside.",
+                "Beat butter and sugar with an electric mixer until creamy, about 2 minutes. Add eggs one at a time, scraping down the bowl and beating well after each addition. Beat in vanilla and lemon zest.",
+                "On low speed, add flour mixture alternating with milk, beginning and ending with flour. Fold in blueberries gently with a spatula. Do not over-mix.",
+                "Spread batter evenly in the prepared dish. Sprinkle streusel evenly over the top. Bake 45-55 minutes until golden brown at the edges and a cake tester comes out clean. Cool in pan on a rack at least 20 minutes before serving."
+              ],
+              "highAltitude": {
+                "ingredientGroups": [
+                  {
+                    "label": "Streusel",
+                    "ingredients": [
+                      "12 tablespoons packed light brown sugar (3/4 cup)",
+                      "1 cup all-purpose flour",
+                      "2 teaspoons ground cinnamon",
+                      "1/2 teaspoon salt",
+                      "8 tablespoons unsalted butter (1 stick), cold, cut into 1/2-inch chunks"
+                    ]
+                  },
+                  {
+                    "label": "Dry ingredients",
+                    "ingredients": [
+                      "3 cups all-purpose flour",
+                      "2 1/4 teaspoons baking powder",
+                      "3/4 teaspoon salt"
+                    ]
+                  },
+                  {
+                    "label": "Cake batter",
+                    "ingredients": [
+                      "3/4 cup (1 1/2 sticks) unsalted butter, softened",
+                      "1 cup granulated sugar",
+                      "3 large eggs",
+                      "2 1/4 teaspoons vanilla extract",
+                      "1 1/2 teaspoons packed lemon zest (from about 1 lemon)",
+                      "3/4 cup + 2 tablespoons milk",
+                      "5 cups fresh blueberries (frozen may be used but do not defrost)"
+                    ]
+                  }
+                ],
+                "steps": [
+                  "Make streusel: combine brown sugar, flour, cinnamon, and salt in a bowl. Rub in cold butter with fingertips until mixture is crumbly. Refrigerate until ready to use.",
+                  "Preheat oven to 375°F. Grease a 9x13-inch baking dish.",
+                  "Whisk flour, baking powder, and salt together in a medium bowl. Set aside.",
+                  "Beat butter and sugar with an electric mixer until creamy, about 2 minutes. Add eggs one at a time, scraping down the bowl and beating well after each addition. Beat in vanilla and lemon zest.",
+                  "On low speed, add flour mixture alternating with milk, beginning and ending with flour. Fold in blueberries gently with a spatula. Do not over-mix.",
+                  "Spread batter evenly in the prepared dish. Sprinkle streusel evenly over the top. Bake 45-55 minutes until golden brown at the edges and a cake tester comes out clean. With abundant berries releasing juice at altitude, test with a cake tester inserted into the batter portion rather than through a berry. May need the full 55 minutes. Cool in pan on a rack at least 20 minutes before serving."
+                ]
+              }
+            },
+            {
               "title": "Butter Pecan Coffee Cake",
               "servings": "Serves 12–16",
               "source": "Family recipe card",
@@ -15212,6 +15779,88 @@ module.exports = {
               }
             },
             {
+              "title": "Mom’s Zucchini Bread",
+              "servings": "Makes 2 (8x4-inch) loaves   |   Bake: 325°F for 40-60 minutes",
+              "source": "Allrecipes (Vicki Monte), tested by Allrecipes Test Kitchen",
+              "comments": [
+                "Freezes well. Keeps in the refrigerator for weeks."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Dry ingredients",
+                  "ingredients": [
+                    "3 cups all-purpose flour",
+                    "1 tablespoon ground cinnamon",
+                    "1 teaspoon salt",
+                    "1 teaspoon baking powder",
+                    "1 teaspoon baking soda"
+                  ]
+                },
+                {
+                  "label": "Wet ingredients",
+                  "ingredients": [
+                    "2 1/4 cups white sugar",
+                    "1 cup vegetable oil",
+                    "3 large eggs",
+                    "1 tablespoon vanilla extract"
+                  ]
+                },
+                {
+                  "label": "Mix-ins",
+                  "ingredients": [
+                    "2 cups shredded zucchini",
+                    "1 cup chopped walnuts"
+                  ]
+                }
+              ],
+              "steps": [
+                "Preheat oven to 325°F. Grease and flour two 8x4-inch loaf pans.",
+                "Sift flour, cinnamon, salt, baking powder, and baking soda together in a large bowl.",
+                "Beat sugar, oil, eggs, and vanilla with an electric mixer until combined. Add flour mixture and beat well.",
+                "Stir in shredded zucchini and walnuts until combined. Pour into prepared pans.",
+                "Bake until a toothpick inserted in the center comes out clean, 40-60 minutes. Cool in pans on a wire rack for 20 minutes.",
+                "Run a knife around the edges to loosen. Turn out onto a wire rack and cool completely."
+              ],
+              "highAltitude": {
+                "ingredientGroups": [
+                  {
+                    "label": "Dry ingredients",
+                    "ingredients": [
+                      "3 cups + 2 tablespoons all-purpose flour",
+                      "1 tablespoon ground cinnamon",
+                      "1 teaspoon salt",
+                      "3/4 teaspoon baking powder",
+                      "3/4 teaspoon baking soda"
+                    ]
+                  },
+                  {
+                    "label": "Wet ingredients",
+                    "ingredients": [
+                      "2 cups white sugar",
+                      "1 cup + 2 tablespoons vegetable oil",
+                      "3 large eggs",
+                      "1 tablespoon vanilla extract"
+                    ]
+                  },
+                  {
+                    "label": "Mix-ins",
+                    "ingredients": [
+                      "2 cups shredded zucchini",
+                      "1 cup chopped walnuts"
+                    ]
+                  }
+                ],
+                "steps": [
+                  "Preheat oven to 325°F. Grease and flour two 8x4-inch loaf pans.",
+                  "Sift flour, cinnamon, salt, baking powder, and baking soda together in a large bowl.",
+                  "Beat sugar, oil, eggs, and vanilla with an electric mixer until combined. Add flour mixture and beat well.",
+                  "Stir in shredded zucchini and walnuts until combined. Pour into prepared pans.",
+                  "Bake until a toothpick inserted in the center comes out clean, 40-60 minutes. Cool in pans on a wire rack for 20 minutes.",
+                  "Run a knife around the edges to loosen. Turn out onto a wire rack and cool completely."
+                ]
+              }
+            },
+            {
               "title": "Nana's Poundcake",
               "favorite": true,
               "servings": "1 loaf or bundt cake   |   Cook: 90 minutes",
@@ -15260,6 +15909,99 @@ module.exports = {
                   "Add the flour and vanilla.",
                   "Pour into a well-greased loaf pan or bundt pan.",
                   "Bake at 375°F for 70–80 minutes. Start checking at 70 minutes with a toothpick or cake tester in the center. The cake is done when the tester comes out clean and the top is deep golden."
+                ]
+              }
+            },
+            {
+              "title": "Pumpkin Gut Bread",
+              "servings": "Makes 2 (9x5-inch) loaves   |   Bake: 350°F for about 1 hour",
+              "source": "Diana Johnson, EatingRichly.com",
+              "comments": [
+                "Pumpkin guts are the stringy fibrous strands from the inside of a pumpkin, with the seeds removed. Unlike puree, they stay chunky, creating golden ribbons throughout the loaf. Pumpkin puree may be substituted but will blend fully into the batter.",
+                "Recipe makes two loaves and freezes very well."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Dry ingredients",
+                  "ingredients": [
+                    "3 1/2 cups whole wheat flour (all-purpose may be substituted)",
+                    "3 cups sugar",
+                    "2 teaspoons ground cinnamon",
+                    "2 teaspoons ground nutmeg",
+                    "2 teaspoons baking soda",
+                    "1 1/2 teaspoons salt"
+                  ]
+                },
+                {
+                  "label": "Wet ingredients",
+                  "ingredients": [
+                    "4 large eggs, beaten",
+                    "1 cup vegetable oil",
+                    "1/2 cup water"
+                  ]
+                },
+                {
+                  "label": "Pumpkin",
+                  "ingredients": [
+                    "2 cups fresh pumpkin guts (fibrous strands from the pumpkin interior, separated from seeds)"
+                  ]
+                },
+                {
+                  "label": "Pecans (optional)",
+                  "ingredients": [
+                    "1 cup chopped pecans"
+                  ]
+                }
+              ],
+              "steps": [
+                "Preheat oven to 350°F. Grease and flour two 9x5-inch loaf pans.",
+                "Snip the pumpkin gut fibers with scissors into shorter, workable pieces -- avoid large clumps.",
+                "Combine flour, sugar, cinnamon, nutmeg, baking soda, and salt in a large bowl.",
+                "Add eggs, oil, water, and pumpkin guts. Stir until batter is smooth.",
+                "Stir in pecans, or reserve to sprinkle over the top before baking.",
+                "Divide batter between prepared pans. Bake 1 hour, then test the center with a wooden skewer. Continue baking and check every 5 minutes if not clean. Cool in pans 10 minutes, then turn out onto a wire rack."
+              ],
+              "highAltitude": {
+                "ingredientGroups": [
+                  {
+                    "label": "Dry ingredients",
+                    "ingredients": [
+                      "3 1/2 cups whole wheat flour (all-purpose may be substituted)",
+                      "2 2/3 cups sugar",
+                      "2 teaspoons ground cinnamon",
+                      "2 teaspoons ground nutmeg",
+                      "1 1/2 teaspoons baking soda",
+                      "1 1/2 teaspoons salt"
+                    ]
+                  },
+                  {
+                    "label": "Wet ingredients",
+                    "ingredients": [
+                      "4 large eggs, beaten",
+                      "1 cup vegetable oil",
+                      "1/2 cup + 2 tablespoons water"
+                    ]
+                  },
+                  {
+                    "label": "Pumpkin",
+                    "ingredients": [
+                      "2 cups fresh pumpkin guts (fibrous strands from the pumpkin interior, separated from seeds)"
+                    ]
+                  },
+                  {
+                    "label": "Pecans (optional)",
+                    "ingredients": [
+                      "1 cup chopped pecans"
+                    ]
+                  }
+                ],
+                "steps": [
+                  "Preheat oven to 350°F. Grease and flour two 9x5-inch loaf pans.",
+                  "Snip the pumpkin gut fibers with scissors into shorter, workable pieces -- avoid large clumps.",
+                  "Combine flour, sugar, cinnamon, nutmeg, baking soda, and salt in a large bowl.",
+                  "Add eggs, oil, water, and pumpkin guts. Stir until batter is smooth.",
+                  "Stir in pecans, or reserve to sprinkle over the top before baking.",
+                  "Divide batter between prepared pans. Bake 1 hour, then test the center with a wooden skewer. Continue baking and check every 5 minutes if not clean. Cool in pans 10 minutes, then turn out onto a wire rack."
                 ]
               }
             },
@@ -16136,7 +16878,341 @@ module.exports = {
                 "Heat 1 tablespoon vegetable oil in a medium skillet over medium-low. Cook one pancake, turning frequently to prevent scallions from burning, until golden brown and crisp on both sides and cooked through, 8-10 minutes. Transfer to a wire rack; rest 5 minutes before cutting into wedges. Repeat with remaining pancakes, adding 1 tablespoon oil per batch.",
                 "Serve with dipping sauce."
               ]
+            },
+            {
+              "title": "Buttermilk Cornbread",
+              "servings": "Makes one 13x9-inch pan (about 16 pieces)   |   Total: 35 minutes",
+              "source": "Bon Appetit (Molly Baz), November 2018",
+              "comments": [
+                "For a sweeter, muffin-like result, increase sugar to 1/2 cup."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Pan prep",
+                  "ingredients": [
+                    "Nonstick vegetable oil spray"
+                  ]
+                },
+                {
+                  "label": "Dry ingredients",
+                  "ingredients": [
+                    "2 cups all-purpose flour",
+                    "2 cups medium-grind yellow cornmeal",
+                    "1/3 cup sugar",
+                    "1 tablespoon baking powder",
+                    "2 1/2 teaspoons kosher salt",
+                    "3/4 teaspoon freshly ground black pepper"
+                  ]
+                },
+                {
+                  "label": "Wet ingredients",
+                  "ingredients": [
+                    "4 large eggs",
+                    "2 cups buttermilk",
+                    "1/2 cup unsalted butter, melted and slightly cooled"
+                  ]
+                }
+              ],
+              "steps": [
+                "Preheat oven to 400 degrees F. Lightly coat a 13x9-inch baking dish with nonstick spray.",
+                "Whisk flour, cornmeal, sugar, baking powder, salt, and pepper in a large bowl.",
+                "Whisk eggs, buttermilk, and butter in a medium bowl. Make a well in the dry ingredients, pour in the egg mixture, and stir with a wooden spoon until just combined. Scrape into the prepared pan and smooth the top.",
+                "Bake, rotating the dish halfway through, until a tester inserted in the center comes out clean, 20-25 minutes. Let cool slightly in the dish, then cut crosswise into 4 large pieces. Transfer to a wire rack and let cool completely."
+              ],
+              "highAltitude": {
+                "ingredientGroups": [
+                  {
+                    "label": "Pan prep",
+                    "ingredients": [
+                      "Nonstick vegetable oil spray"
+                    ]
+                  },
+                  {
+                    "label": "Dry ingredients",
+                    "ingredients": [
+                      "2 cups all-purpose flour",
+                      "2 cups medium-grind yellow cornmeal",
+                      "1/3 cup sugar",
+                      "2 1/4 teaspoons baking powder (reduced from 1 tablespoon)",
+                      "2 1/2 teaspoons kosher salt",
+                      "3/4 teaspoon freshly ground black pepper"
+                    ]
+                  },
+                  {
+                    "label": "Wet ingredients",
+                    "ingredients": [
+                      "4 large eggs",
+                      "2 cups buttermilk",
+                      "1/2 cup unsalted butter, melted and slightly cooled"
+                    ]
+                  }
+                ],
+                "steps": [
+                  "Preheat oven to 400 degrees F. Lightly coat a 13x9-inch baking dish with nonstick spray.",
+                  "Whisk flour, cornmeal, sugar, baking powder, salt, and pepper in a large bowl.",
+                  "Whisk eggs, buttermilk, and butter in a medium bowl. Make a well in the dry ingredients, pour in the egg mixture, and stir with a wooden spoon until just combined. Scrape into the prepared pan and smooth the top.",
+                  "Bake, rotating the dish halfway through, until a tester inserted in the center comes out clean, starting to check at 18 minutes. Let cool slightly in the dish, then cut crosswise into 4 large pieces. Transfer to a wire rack and let cool completely."
+                ]
+              }
+            },
+            {
+              "title": "Buttermilk Cheddar Jalapeno Cornbread",
+              "servings": "Makes one 9-inch square pan (8 generous pieces)   |   Total: 45 minutes",
+              "source": "Of Batter and Dough (Rebecca Blackwell)",
+              "comments": [
+                "Pickled jalapenos give tangy heat that plays off the buttermilk; fresh jalapenos (seeded and minced) can be substituted.",
+                "Any melting cheese works: Monterey Jack or pepper jack (note pepper jack will significantly increase heat)."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Pan prep",
+                  "ingredients": [
+                    "Nonstick spray"
+                  ]
+                },
+                {
+                  "label": "Dry ingredients",
+                  "ingredients": [
+                    "1 1/2 cups all-purpose flour",
+                    "1 cup ground cornmeal",
+                    "1 tablespoon cornstarch",
+                    "1 tablespoon dark brown sugar",
+                    "2 teaspoons baking powder",
+                    "1/4 teaspoon baking soda",
+                    "3/4 teaspoon salt"
+                  ]
+                },
+                {
+                  "label": "Mix-ins",
+                  "ingredients": [
+                    "2 heaping cups grated cheddar or Monterey Jack cheese, divided",
+                    "1/2 cup diced pickled jalapenos"
+                  ]
+                },
+                {
+                  "label": "Wet ingredients",
+                  "ingredients": [
+                    "1 cup buttermilk",
+                    "3 tablespoons honey",
+                    "3 large eggs",
+                    "8 tablespoons unsalted butter, melted"
+                  ]
+                }
+              ],
+              "steps": [
+                "Preheat oven to 400 degrees F. Spray a 9-inch square baking pan with nonstick spray.",
+                "In a large bowl, combine flour, cornmeal, cornstarch, brown sugar, baking powder, baking soda, and salt; stir to combine. Add 1 cup of the grated cheese and the jalapenos; stir to combine.",
+                "In a separate bowl, whisk buttermilk, honey, and eggs together. Slowly whisk in the melted butter. Pour the wet ingredients into the dry and stir just until all dry ingredients are moistened. Pour into the prepared pan and sprinkle the remaining 1 cup cheese on top.",
+                "Bake 30-35 minutes, until a toothpick inserted in the center comes out clean. Check after 20-25 minutes -- if the cheese on top is browning too quickly, loosely cover with foil. Let cool slightly before serving."
+              ],
+              "highAltitude": {
+                "ingredientGroups": [
+                  {
+                    "label": "Pan prep",
+                    "ingredients": [
+                      "Nonstick spray"
+                    ]
+                  },
+                  {
+                    "label": "Dry ingredients",
+                    "ingredients": [
+                      "1 1/2 cups all-purpose flour",
+                      "1 cup ground cornmeal",
+                      "1 tablespoon cornstarch",
+                      "1 tablespoon dark brown sugar",
+                      "1 1/2 teaspoons baking powder (reduced from 2 teaspoons)",
+                      "A scant 1/4 teaspoon baking soda (reduced from 1/4 teaspoon)",
+                      "3/4 teaspoon salt"
+                    ]
+                  },
+                  {
+                    "label": "Mix-ins",
+                    "ingredients": [
+                      "2 heaping cups grated cheddar or Monterey Jack cheese, divided",
+                      "1/2 cup diced pickled jalapenos"
+                    ]
+                  },
+                  {
+                    "label": "Wet ingredients",
+                    "ingredients": [
+                      "1 cup buttermilk",
+                      "3 tablespoons honey",
+                      "3 large eggs",
+                      "8 tablespoons unsalted butter, melted"
+                    ]
+                  }
+                ],
+                "steps": [
+                  "Preheat oven to 400 degrees F. Spray a 9-inch square baking pan with nonstick spray.",
+                  "In a large bowl, combine flour, cornmeal, cornstarch, brown sugar, baking powder, baking soda, and salt; stir to combine. Add 1 cup of the grated cheese and the jalapenos; stir to combine.",
+                  "In a separate bowl, whisk buttermilk, honey, and eggs together. Slowly whisk in the melted butter. Pour the wet ingredients into the dry and stir just until all dry ingredients are moistened. Pour into the prepared pan and sprinkle the remaining 1 cup cheese on top.",
+                  "Bake 30-35 minutes, until a toothpick inserted in the center comes out clean. Start checking at 25 minutes -- if the cheese on top is browning too quickly, loosely cover with foil. Let cool slightly before serving."
+                ]
+              }
+            },
+            {
+              "title": "Grandma-Style Pizza Dough",
+              "favorite": true,
+              "servings": "Makes enough for 1 pie (18x13-inch baking sheet)   |   Active: 30 minutes   |   Total: 25 hours (including overnight refrigerator rise)",
+              "source": "Bon Appetit (Alfia Muzio), September 2014",
+              "comments": [
+                "The second rise is key: if baked too soon, the dough will be firm and too chewy. It should feel floppy, with plenty of puffy air bubbles.",
+                "Special equipment: 18x13-inch rimmed baking sheet."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Yeast starter",
+                  "ingredients": [
+                    "1 envelope active dry yeast (about 2 1/4 teaspoons)",
+                    "1 3/4 cups warm water (105-110 degrees F)"
+                  ]
+                },
+                {
+                  "label": "Dough",
+                  "ingredients": [
+                    "2 tablespoons extra-virgin olive oil",
+                    "2 teaspoons kosher salt",
+                    "4 cups all-purpose flour, divided, plus more for surface"
+                  ]
+                },
+                {
+                  "label": "Baking sheet",
+                  "ingredients": [
+                    "1/2 cup extra-virgin olive oil"
+                  ]
+                }
+              ],
+              "steps": [
+                "Stir together yeast and warm water in the bowl of a stand mixer. Let stand until yeast starts to foam, about 10 minutes.",
+                "Mix in 2 tablespoons oil, then salt and 2 cups flour. Attach dough hook and mix until just combined. Scrape down sides of bowl. Add remaining 2 cups flour, 1 cup at a time, mixing until incorporated and a shaggy dough forms, about 3 minutes.",
+                "Increase speed to medium and mix until dough is soft and elastic and starts to pull away from sides of bowl, 5-6 minutes. It will still be somewhat sticky. Place dough in a lightly oiled bowl, cover with plastic wrap, and refrigerate 24 hours.",
+                "Coat an 18x13-inch rimmed baking sheet with 1/2 cup oil. Turn out dough onto the pan and let sit 10 minutes to take off the chill. Gently and gradually stretch dough until it reaches the edges and all 4 corners. (If dough springs back, let it rest a few minutes before continuing -- you may need to do this more than once.)",
+                "Cover dough tightly with plastic wrap and let sit in a warm place (about 70 degrees F is ideal) until puffed and full of air bubbles, 30-40 minutes. Top and bake according to your pizza recipe."
+              ],
+              "highAltitude": {
+                "ingredientGroups": [
+                  {
+                    "label": "Yeast starter",
+                    "ingredients": [
+                      "1 1/2 teaspoons active dry yeast (reduced from 2 1/4 teaspoons)",
+                      "1 3/4 cups warm water (105-110 degrees F)"
+                    ]
+                  },
+                  {
+                    "label": "Dough",
+                    "ingredients": [
+                      "2 tablespoons extra-virgin olive oil",
+                      "2 teaspoons kosher salt",
+                      "4 cups all-purpose flour, divided, plus more for surface"
+                    ]
+                  },
+                  {
+                    "label": "Baking sheet",
+                    "ingredients": [
+                      "1/2 cup extra-virgin olive oil"
+                    ]
+                  }
+                ],
+                "steps": [
+                  "Stir together yeast and warm water in the bowl of a stand mixer. Let stand until yeast starts to foam, about 10 minutes.",
+                  "Mix in 2 tablespoons oil, then salt and 2 cups flour. Attach dough hook and mix until just combined. Scrape down sides of bowl. Add remaining 2 cups flour, 1 cup at a time, mixing until incorporated and a shaggy dough forms, about 3 minutes.",
+                  "Increase speed to medium and mix until dough is soft and elastic and starts to pull away from sides of bowl, 5-6 minutes. It will still be somewhat sticky. Place dough in a lightly oiled bowl, cover with plastic wrap, and refrigerate 24 hours.",
+                  "Coat an 18x13-inch rimmed baking sheet with 1/2 cup oil. Turn out dough onto the pan and let sit 10 minutes to take off the chill. Gently and gradually stretch dough until it reaches the edges and all 4 corners. (If dough springs back, let it rest a few minutes before continuing -- you may need to do this more than once.)",
+                  "Cover dough tightly with plastic wrap and let sit in a warm place until puffed and full of air bubbles, 20-30 minutes (shorter rise at altitude). Watch for the puffed, bubbly appearance rather than going strictly by time. Top and bake according to your pizza recipe."
+                ]
+              }
+            },
+            {
+              "title": "Hot and Sweet Soppressata and Fennel Grandma Pie",
+              "favorite": true,
+              "servings": "Serves 6   |   Active: 15 minutes   |   Total: 45 minutes (plus dough rising time)",
+              "source": "Bon Appetit (Alfia Muzio), September 2014",
+              "comments": [
+                "The leavening is in the Grandma-Style Pizza Dough. At high altitude, use the high-altitude adjusted dough.",
+                "For a spicier pie, use twice as much hot soppressata and omit the sweet."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Dough",
+                  "ingredients": [
+                    "1 recipe Grandma-Style Pizza Dough (Baking > Savory), risen on an 18x13-inch baking sheet"
+                  ]
+                },
+                {
+                  "label": "Toppings",
+                  "ingredients": [
+                    "12 oz fresh mozzarella, grated (about 2 1/2 cups)",
+                    "1 cup Fresh Tomato Pizza Sauce (Sauces > Italian)",
+                    "2 oz thinly sliced hot soppressata",
+                    "2 oz thinly sliced sweet soppressata",
+                    "1/2 fennel bulb, thinly sliced",
+                    "2-3 fresh red chiles, thinly sliced",
+                    "2 oz Pecorino Romano, finely grated (about 1/2 cup)",
+                    "1/4 cup olive oil"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "Coarsely chopped fennel fronds (optional)",
+                    "Flaky sea salt (optional)",
+                    "Aleppo pepper or red pepper flakes (optional)"
+                  ]
+                }
+              ],
+              "steps": [
+                "Place a rack in the lower third of the oven and preheat to 525 degrees F, or as high as the oven will go.",
+                "Once dough has risen in the baking sheet, top with mozzarella, dot with tomato sauce, then layer on hot and sweet soppressata, fennel, chiles, and Pecorino. Drizzle with oil.",
+                "Bake until golden brown and crisp on the bottom and sides, 20-30 minutes.",
+                "Serve topped with fennel fronds, sea salt, and Aleppo pepper or red pepper flakes, if using."
+              ]
             }
+          ]
+        }
+      ]
+    },
+        {
+      "title": "Dairy",
+      "recipes": [
+        {
+          "title": "Homemade Mozzarella",
+          "servings": "Makes about 1 pound   |   Total: 45 minutes",
+          "source": "The Gourmandise School (Clemence)",
+          "comments": [
+            "The fresh, unstretched curds at the end of step 5 are essentially burrata -- spoon them over pizza or salad. They caramelize beautifully because of the high lactose content.",
+            "Note: this recipe uses cream of tartar (tartaric acid) in place of the more traditional citric acid. The preparation steps refer to the resulting solution as a citric acid solution -- that is a naming holdover from the source template. The cream of tartar functions the same way.",
+            "Special equipment: large non-reactive pot, heat-resistant gloves, muslin or cheesecloth."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Acid solution",
+              "ingredients": [
+                "3 teaspoons cream of tartar",
+                "1/4 cup water"
+              ]
+            },
+            {
+              "label": "Milk",
+              "ingredients": [
+                "1 gallon whole milk",
+                "1/2 teaspoon calcium chloride (omit if using raw milk)"
+              ]
+            },
+            {
+              "label": "Rennet",
+              "ingredients": [
+                "1/4 teaspoon liquid rennet, dissolved in 1 cup room-temperature water"
+              ]
+            }
+          ],
+          "steps": [
+            "Dissolve cream of tartar in 1/4 cup water in a large non-reactive pot, stirring until completely dissolved.",
+            "Pour in the milk (and calcium chloride if using pasteurized, non-raw milk). Heat to 90 degrees F, stirring continuously.",
+            "Turn off the heat and add the dissolved rennet. Stir for about 30 seconds only, then cover and let rest undisturbed off the heat for 10 minutes.",
+            "Once the curds have clearly separated from the whey, cut the curds into 1-inch squares using a long spatula or bread knife.",
+            "Return the pot to the stove over medium heat. Slowly stir the curds for 3-4 minutes. Strain the curds into a muslin-lined colander (or lift out with a slotted spoon).",
+            "Heat the remaining whey to a simmer in the pot, then lower to a gentle heat. Shape the drained curds loosely into balls and place in the hot whey for 5-10 minutes.",
+            "Wearing heat-resistant gloves, remove the balls from the whey and gently stretch, pull, and shape into smooth mozzarella balls. Use immediately or store submerged in lightly salted water in the refrigerator for up to 2 days."
           ]
         }
       ]
@@ -16609,6 +17685,33 @@ module.exports = {
                 "With the processor running, slowly stream in the olive oil until the mixture is smooth. Taste and adjust seasoning.",
                 "Store in an airtight container in the refrigerator for 5-7 days, or freeze in ice cube trays."
               ]
+            },
+            {
+              "title": "Fresh Tomato Pizza Sauce",
+              "favorite": true,
+              "servings": "Makes about 5 cups   |   Total: 5 minutes",
+              "source": "Bon Appetit (Alfia Muzio), September 2014",
+              "comments": [
+                "Pulse just 2-3 times -- the sauce should be mostly smooth but still have some chunky texture and body. Over-processing makes it thin.",
+                "The tomatoes release extra liquid when drained; add it to a braise.",
+                "To make meatless: substitute 1 teaspoon soy sauce + 2 pinches crumbled nori for the anchovy fillets."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Sauce",
+                  "ingredients": [
+                    "1 28-oz can whole peeled tomatoes, drained",
+                    "2 anchovy fillets packed in oil, drained",
+                    "2 garlic cloves",
+                    "6 tablespoons olive oil",
+                    "1/4 cup fresh basil leaves",
+                    "Kosher salt and freshly ground black pepper"
+                  ]
+                }
+              ],
+              "steps": [
+                "Pulse tomatoes, anchovies, garlic, oil, and basil in a food processor or blender just 2-3 times, until mostly smooth but still with some texture. Season with salt and pepper."
+              ]
             }
           ]
         },
@@ -16649,6 +17752,55 @@ module.exports = {
                 "Remove from heat. Whisking constantly, drizzle in warm melted butter in a very thin, slow stream until fully emulsified.",
                 "Stir in 3 teaspoons of the chopped tarragon and the black pepper. Taste and adjust salt. Garnish with remaining 1 teaspoon tarragon.",
                 "Serve immediately, or keep warm by setting the bowl over warm (not simmering) water."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Middle Eastern/Persian",
+          "recipes": [
+            {
+              "title": "Yemenite Green Hot Sauce (Zhug)",
+              "servings": "Serves 4 as a condiment   |   Total: 15 minutes",
+              "source": "Bon Appetit (Andy Baraghani), January 2018",
+              "comments": [
+                "Use whatever fresh chiles you can find, but the sauce should have real heat. Jalapenos work in a pinch but are milder.",
+                "Excellent with sandwiches, over grilled meats, roasted potatoes, and with Flaky Bread (Malawah) in Baking > Bread.",
+                "Do ahead: sauce (without lemon juice) can be made 1 day ahead. Cover and refrigerate. Let come to room temperature, then stir in lemon juice before serving.",
+                "Special equipment: spice mill or mortar and pestle."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Whole spices",
+                  "ingredients": [
+                    "2 cardamom pods",
+                    "1 teaspoon black peppercorns",
+                    "1 teaspoon coriander seeds",
+                    "1/2 teaspoon cumin seeds"
+                  ]
+                },
+                {
+                  "label": "Chile paste",
+                  "ingredients": [
+                    "4 serrano chiles, finely chopped",
+                    "2 garlic cloves, chopped",
+                    "Kosher salt"
+                  ]
+                },
+                {
+                  "label": "Sauce",
+                  "ingredients": [
+                    "1 cup very finely chopped parsley",
+                    "3/4 cup very finely chopped cilantro",
+                    "2/3 cup extra-virgin olive oil",
+                    "4 teaspoons fresh lemon juice"
+                  ]
+                }
+              ],
+              "steps": [
+                "Remove cardamom seeds from pods; discard pods. Toast cardamom seeds, peppercorns, coriander, and cumin in a dry small skillet over medium-high heat, swirling often, until fragrant, about 2 minutes. Transfer to a spice mill or mortar and pestle; let cool, then finely grind.",
+                "Place chiles and garlic on a cutting board, sprinkle with a large pinch of salt, and smash into a paste with the flat side of a chef's knife. (Or use a mortar and pestle.)",
+                "Transfer chile paste to a small bowl. Work in the spice mixture, parsley, cilantro, and oil. Season with salt. Let sit 10 minutes for flavors to marry. Stir in lemon juice."
               ]
             }
           ]
@@ -16859,6 +18011,144 @@ module.exports = {
       "title": "Desserts",
       "recipes": [
         {
+          "title": "Bonfire Night Cake",
+          "servings": "Serves 10-12   |   Bake: 350°F for 30-35 minutes",
+          "source": "Prue Leith",
+          "comments": [
+            "Mixed spice is a British blend; substitute pumpkin pie spice or apple pie spice if unavailable.",
+            "Pressing the apple pieces below the surface of the batter is key -- they will sink into the cake as it bakes rather than burning on top.",
+            "Winner on The Great British Bake Off."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Apples",
+              "ingredients": [
+                "4 Granny Smith apples, peeled, cored, and diced",
+                "1 tablespoon all-purpose flour (for tossing)"
+              ]
+            },
+            {
+              "label": "Cake batter",
+              "ingredients": [
+                "11 tablespoons unsalted butter, softened",
+                "3/4 cup + 2 tablespoons granulated sugar",
+                "1 teaspoon vanilla extract",
+                "4 large eggs",
+                "2/3 cup sour cream"
+              ]
+            },
+            {
+              "label": "Dry ingredients",
+              "ingredients": [
+                "2 cups all-purpose flour",
+                "1 1/2 teaspoons baking powder",
+                "1/4 teaspoon baking soda",
+                "1 1/2 teaspoons ground cinnamon",
+                "1 teaspoon mixed spice",
+                "A grating of fresh nutmeg (about 1/4 of a whole nutmeg)",
+                "1/2 teaspoon salt",
+                "Zest of 1 lemon",
+                "Zest of 1 orange"
+              ]
+            },
+            {
+              "label": "Cream cheese filling",
+              "ingredients": [
+                "7 tablespoons unsalted butter, melted and cooled",
+                "Two 8-oz packages full-fat cream cheese, softened",
+                "1 2/3 cups powdered sugar",
+                "1-2 teaspoons ground cinnamon"
+              ]
+            },
+            {
+              "label": "Caramel sauce",
+              "ingredients": [
+                "2/3 cup granulated sugar",
+                "1/2 cup heavy cream",
+                "7 tablespoons unsalted butter",
+                "1/2 teaspoon salt",
+                "1/2 teaspoon vanilla extract"
+              ]
+            }
+          ],
+          "steps": [
+            "Preheat oven to 350°F. Grease and line two 8-inch round cake pans.",
+            "Spread diced apples on a double layer of paper towels; lay another double layer on top and press to remove excess moisture. Set aside.",
+            "Beat butter and sugar together until pale and fluffy. Add vanilla, then add eggs one at a time, scraping down the bowl between each. Stir in sour cream.",
+            "Toss the dried apple pieces with 1 tablespoon flour until coated (this prevents them from sinking).",
+            "Sift the remaining flour, baking powder, baking soda, cinnamon, mixed spice, nutmeg, and salt into a bowl; stir in the lemon and orange zests. Fold the dry ingredients into the batter in two additions until just combined. Fold in 3/4 of the apple and divide between the two pans. Scatter the remaining apple evenly over the tops and press down gently so the pieces sit just below the surface.",
+            "Bake 30-35 minutes until the sponge bounces back when prodded in the center. Cool in pans on a wire rack for 10 minutes, then turn out and cool to room temperature.",
+            "Make the cream cheese filling: whisk cream cheese, powdered sugar, and cinnamon together. Slowly whisk in the cooled melted butter until combined. Refrigerate until ready to assemble.",
+            "Make the caramel sauce: melt sugar in a heavy-bottomed saucepan over medium heat, moving it with a fork until dissolved then swirling the pan (do not stir once dissolved). Cook until dark amber. Remove from heat and carefully add cream and butter all at once, stirring constantly. Stir in salt and vanilla. Cool to room temperature.",
+            "To assemble: place first layer on a plate, spread with cream cheese filling, and drizzle generously with caramel sauce. Top with second layer and repeat."
+          ],
+          "highAltitude": {
+            "ingredientGroups": [
+              {
+                "label": "Apples",
+                "ingredients": [
+                  "4 Granny Smith apples, peeled, cored, and diced",
+                  "1 tablespoon all-purpose flour (for tossing)"
+                ]
+              },
+              {
+                "label": "Cake batter",
+                "ingredients": [
+                  "11 tablespoons unsalted butter, softened",
+                  "3/4 cup granulated sugar",
+                  "1 teaspoon vanilla extract",
+                  "4 large eggs",
+                  "2/3 cup + 1 tablespoon sour cream"
+                ]
+              },
+              {
+                "label": "Dry ingredients",
+                "ingredients": [
+                  "2 cups + 2 tablespoons all-purpose flour",
+                  "1 1/8 teaspoons baking powder",
+                  "1/4 teaspoon baking soda",
+                  "1 1/2 teaspoons ground cinnamon",
+                  "1 teaspoon mixed spice",
+                  "A grating of fresh nutmeg (about 1/4 of a whole nutmeg)",
+                  "1/2 teaspoon salt",
+                  "Zest of 1 lemon",
+                  "Zest of 1 orange"
+                ]
+              },
+              {
+                "label": "Cream cheese filling",
+                "ingredients": [
+                  "7 tablespoons unsalted butter, melted and cooled",
+                  "Two 8-oz packages full-fat cream cheese, softened",
+                  "1 2/3 cups powdered sugar",
+                  "1-2 teaspoons ground cinnamon"
+                ]
+              },
+              {
+                "label": "Caramel sauce",
+                "ingredients": [
+                  "2/3 cup granulated sugar",
+                  "1/2 cup heavy cream",
+                  "7 tablespoons unsalted butter",
+                  "1/2 teaspoon salt",
+                  "1/2 teaspoon vanilla extract"
+                ]
+              }
+            ],
+            "steps": [
+              "Preheat oven to 350°F. Grease and line two 8-inch round cake pans.",
+              "Spread diced apples on a double layer of paper towels; lay another double layer on top and press to remove excess moisture. Set aside.",
+              "Beat butter and sugar together until pale and fluffy. Add vanilla, then add eggs one at a time, scraping down the bowl between each. Stir in sour cream.",
+              "Toss the dried apple pieces with 1 tablespoon flour until coated (this prevents them from sinking).",
+              "Sift the remaining flour, baking powder, baking soda, cinnamon, mixed spice, nutmeg, and salt into a bowl; stir in the lemon and orange zests. Fold the dry ingredients into the batter in two additions until just combined. Fold in 3/4 of the apple and divide between the two pans. Scatter the remaining apple evenly over the tops and press down gently so the pieces sit just below the surface.",
+              "Bake 30-35 minutes until the sponge bounces back when prodded in the center. Cool in pans on a wire rack for 10 minutes, then turn out and cool to room temperature.",
+              "Make the cream cheese filling: whisk cream cheese, powdered sugar, and cinnamon together. Slowly whisk in the cooled melted butter until combined. Refrigerate until ready to assemble.",
+              "Make the caramel sauce: melt sugar in a heavy-bottomed saucepan over medium heat, moving it with a fork until dissolved then swirling the pan (do not stir once dissolved). Cook until dark amber. Remove from heat and carefully add cream and butter all at once, stirring constantly. Stir in salt and vanilla. Cool to room temperature.",
+              "To assemble: place first layer on a plate, spread with cream cheese filling, and drizzle generously with caramel sauce. Top with second layer and repeat."
+            ]
+          }
+        },
+        {
           "title": "Christy's Easy Lemon Icebox Pie",
           "source": "From Christy Ponder",
           "ingredientGroups": [
@@ -17062,6 +18352,95 @@ module.exports = {
           ]
         },
         {
+          "title": "Fresh Southern Peach Cobbler",
+          "servings": "Serves 6-8   |   Bake: 425°F for 40 minutes total",
+          "source": "Allrecipes (aeposey), tested by Allrecipes Test Kitchen",
+          "ingredientGroups": [
+            {
+              "label": "Peach filling",
+              "ingredients": [
+                "8 fresh peaches, peeled, pitted, and sliced into thin wedges",
+                "1/4 cup white sugar",
+                "1/4 cup brown sugar",
+                "1/4 teaspoon ground cinnamon",
+                "1/8 teaspoon ground nutmeg",
+                "1 teaspoon fresh lemon juice",
+                "2 teaspoons cornstarch"
+              ]
+            },
+            {
+              "label": "Cobbler topping",
+              "ingredients": [
+                "1 cup all-purpose flour",
+                "1/4 cup white sugar",
+                "1/4 cup brown sugar",
+                "1 teaspoon baking powder",
+                "1/2 teaspoon salt",
+                "6 tablespoons unsalted butter, chilled and cut into small pieces",
+                "1/4 cup boiling water"
+              ]
+            },
+            {
+              "label": "Cinnamon sugar",
+              "ingredients": [
+                "3 tablespoons white sugar",
+                "1 teaspoon ground cinnamon"
+              ]
+            }
+          ],
+          "steps": [
+            "Preheat oven to 425°F.",
+            "Toss peaches with white sugar, brown sugar, cinnamon, nutmeg, lemon juice, and cornstarch. Pour into a 2-quart baking dish. Bake 10 minutes.",
+            "Meanwhile, combine flour, white sugar, brown sugar, baking powder, and salt. Blend in butter with fingertips or a pastry blender until mixture resembles coarse crumbs. Stir in boiling water until just combined.",
+            "Remove peaches from oven. Drop spoonfuls of topping over the peaches.",
+            "Stir together white sugar and cinnamon; sprinkle over entire cobbler.",
+            "Return to oven and bake until topping is golden and filling is bubbling at the edges, about 30 minutes."
+          ],
+          "highAltitude": {
+            "ingredientGroups": [
+              {
+                "label": "Peach filling",
+                "ingredients": [
+                  "8 fresh peaches, peeled, pitted, and sliced into thin wedges",
+                  "1/4 cup white sugar",
+                  "1/4 cup brown sugar",
+                  "1/4 teaspoon ground cinnamon",
+                  "1/8 teaspoon ground nutmeg",
+                  "1 teaspoon fresh lemon juice",
+                  "2 teaspoons cornstarch"
+                ]
+              },
+              {
+                "label": "Cobbler topping",
+                "ingredients": [
+                  "1 cup all-purpose flour",
+                  "1/4 cup white sugar",
+                  "1/4 cup brown sugar",
+                  "3/4 teaspoon baking powder",
+                  "1/2 teaspoon salt",
+                  "6 tablespoons unsalted butter, chilled and cut into small pieces",
+                  "1/4 cup boiling water"
+                ]
+              },
+              {
+                "label": "Cinnamon sugar",
+                "ingredients": [
+                  "3 tablespoons white sugar",
+                  "1 teaspoon ground cinnamon"
+                ]
+              }
+            ],
+            "steps": [
+              "Preheat oven to 425°F.",
+              "Toss peaches with white sugar, brown sugar, cinnamon, nutmeg, lemon juice, and cornstarch. Pour into a 2-quart baking dish. Bake 10 minutes.",
+              "Meanwhile, combine flour, white sugar, brown sugar, baking powder, and salt. Blend in butter with fingertips or a pastry blender until mixture resembles coarse crumbs. Stir in boiling water until just combined.",
+              "Remove peaches from oven. Drop spoonfuls of topping over the peaches.",
+              "Stir together white sugar and cinnamon; sprinkle over entire cobbler.",
+              "Return to oven and bake until topping is golden and filling is bubbling at the edges, about 30 minutes."
+            ]
+          }
+        },
+        {
           "title": "Cassata Siciliana",
           "servings": "Serves 10–12",
           "source": "From Chef Louisa (Villa Britannia, Taormina, Sicily)",
@@ -17166,6 +18545,54 @@ module.exports = {
               "Assembly: same as standard version."
             ]
           }
+        },
+        {
+          "title": "Classic Tiramisu",
+          "servings": "Serves 8-10   |   Chill: at least 4 hours, ideally 24",
+          "source": "Alison Roman, NYT Cooking",
+          "comments": [
+            "Dip ladyfingers quickly -- they are porous and will fall apart if left in the espresso too long. If using soft, spongy ladyfingers, brush lightly rather than dipping."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Egg yolk cream",
+              "ingredients": [
+                "4 large egg yolks",
+                "1/4 cup granulated sugar"
+              ]
+            },
+            {
+              "label": "Mascarpone cream",
+              "ingredients": [
+                "3/4 cup heavy cream",
+                "1/4 cup granulated sugar",
+                "1 cup mascarpone (8 oz)"
+              ]
+            },
+            {
+              "label": "Espresso soak",
+              "ingredients": [
+                "1 3/4 cups espresso or very strong coffee",
+                "2 tablespoons rum or cognac"
+              ]
+            },
+            {
+              "label": "Assembly",
+              "ingredients": [
+                "2 tablespoons unsweetened cocoa powder",
+                "About 24 ladyfingers (one 7-oz package)",
+                "1-2 oz bittersweet chocolate, for shaving (optional)"
+              ]
+            }
+          ],
+          "steps": [
+            "Using an electric mixer in a large bowl, whip egg yolks with 1/4 cup sugar until very pale yellow and about tripled in volume. Set aside.",
+            "In a medium bowl, whip heavy cream with remaining 1/4 cup sugar to soft peaks. Add mascarpone and whip to medium peaks. Gently fold into the egg yolk mixture until combined.",
+            "Combine espresso and rum in a shallow bowl.",
+            "Sift 1 tablespoon of the cocoa powder over the bottom of a 2-quart baking dish (8x8-inch or 9-inch round).",
+            "Working one at a time, briefly dip each ladyfinger into the espresso mixture and arrange rounded side up in a single layer, breaking pieces as needed to fill gaps. Spread half the mascarpone mixture evenly over the ladyfingers. Repeat with remaining ladyfingers and mascarpone.",
+            "Dust with remaining 1 tablespoon cocoa powder. Cover and refrigerate at least 4 hours, ideally 24. Top with shaved or grated chocolate just before serving."
+          ]
         },
         {
           "title": "Mango with Sticky Rice (Khao Neow Mamuang)",
