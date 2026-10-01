@@ -227,9 +227,9 @@
   }
   .nav-section.empty .nav-sec-row { padding-left: 14px; }
   .nav-section.empty .section-hd { padding-left: 0; }
-  /* Non-current sections are <a> links */
+  /* Non-current sections are <a> links; all section headings are now clickable */
   a.section-hd { color: #c4b09a; font-weight: normal; }
-  a.section-hd:hover { color: var(--nav-hover); background: #4e3522; }
+  a.section-hd:hover, span.section-hd:hover { color: var(--nav-hover); background: #4e3522; cursor: pointer; }
   /* Current section marker */
   .current-section { color: var(--nav-hover) !important; }
   .nav-section.empty .section-hd { color: #7a5e45; cursor: default; }
@@ -3233,23 +3233,21 @@
     });
   });
 
-  // Section headings — double-click to toggle expand/collapse.
-  // Single-click on anchor headings still navigates to the section page as before.
-  // (For the current-page <span> heading, single-click does nothing, double-click toggles.)
+  // Section headings — click toggles expand/collapse (same as the arrow button).
+  // Anchor headings no longer navigate on click; use recipe links to move between sections.
+  // Double-click suppresses the second toggle so both single- and double-click = one toggle.
   document.querySelectorAll('.nav-hd.section-hd').forEach(function (el) {
-    var lastClick = 0;
+    var lastToggle = 0;
     el.addEventListener('click', function (e) {
+      e.preventDefault();
       var now = Date.now();
-      if (now - lastClick < 350) {
-        // Double-click: toggle expand/collapse instead of navigating
-        e.preventDefault();
-        var btn = el.closest('.nav-sec-row').querySelector('[data-toggle]');
-        if (btn) toggleList(btn.dataset.toggle, btn);
-        lastClick = 0;
-      } else {
-        lastClick = now;
-        // First click: allow default (navigate for anchors; no-op for spans)
+      if (now - lastToggle < 350) {
+        lastToggle = 0;
+        return; // second click of a double-click: suppress to avoid toggling back
       }
+      var btn = el.closest('.nav-sec-row').querySelector('[data-toggle]');
+      if (btn) toggleList(btn.dataset.toggle, btn);
+      lastToggle = now;
     });
   });
 
