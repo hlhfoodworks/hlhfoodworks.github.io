@@ -10997,16 +10997,45 @@
     });
   });
 
-  // Subsection, sub-subsection and cluster headings — toggle only (always preventDefault).
+  // Section headings — double-click to toggle expand/collapse.
+  // Single-click on anchor headings still navigates to the section page as before.
+  // (For the current-page <span> heading, single-click does nothing, double-click toggles.)
+  document.querySelectorAll('.nav-hd.section-hd').forEach(function (el) {
+    var lastClick = 0;
+    el.addEventListener('click', function (e) {
+      var now = Date.now();
+      if (now - lastClick < 350) {
+        // Double-click: toggle expand/collapse instead of navigating
+        e.preventDefault();
+        var btn = el.closest('.nav-sec-row').querySelector('[data-toggle]');
+        if (btn) toggleList(btn.dataset.toggle, btn);
+        lastClick = 0;
+      } else {
+        lastClick = now;
+        // First click: allow default (navigate for anchors; no-op for spans)
+      }
+    });
+  });
+
+  // Subsection, sub-subsection and cluster headings — toggle on click.
+  // Double-click suppresses the second toggle so the net result is still one toggle.
   document.querySelectorAll('.sub-hd[data-toggle], .subsub-hd[data-toggle], .cluster-hd[data-toggle]').forEach(function (hd) {
+    var lastToggle = 0;
     hd.addEventListener('click', function (e) {
       e.preventDefault();
+      var now = Date.now();
+      if (now - lastToggle < 350) {
+        // Second click of a double-click: suppress to avoid toggling back
+        lastToggle = 0;
+        return;
+      }
       const href = hd.getAttribute('href');
       if (href && href.startsWith('#')) {
         const target = document.getElementById(href.slice(1));
         if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
       toggleList(hd.dataset.toggle, hd);
+      lastToggle = now;
     });
   });
 
