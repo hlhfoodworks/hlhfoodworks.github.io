@@ -2657,7 +2657,7 @@ module.exports = {
               "comments": [
                 "Contains bacon.",
                 {
-                  "html": "For pickled red onions, see <a href='preserves-pickles.html#quick-pickled-red-onions'>Quick Pickled Red Onions</a> in the Preserves & Pickles section — prepare at least 1 hour ahead."
+                  "html": "For pickled red onions, see <a href='preserves.html#quick-pickled-red-onions'>Quick Pickled Red Onions</a> — prepare at least 1 hour ahead."
                 }
               ],
               "ingredientGroups": [
@@ -5296,7 +5296,7 @@ module.exports = {
               "source": "NYT Cooking, from Shallots New York, adapted by Florence Fabricant",
               "comments": [
                 {
-                  "html": "Make your own preserved lemons: see <a href='preserves-pickles.html#preserved-lemons'>Preserved Lemons</a> in the Preserves & Pickles section."
+                  "html": "Make your own preserved lemons: see <a href='preserves.html#preserved-lemons'>Preserved Lemons</a>."
                 }
               ],
               "ingredientGroups": [
@@ -7226,7 +7226,7 @@ module.exports = {
               "source": "Patrick Celestin, adapted by Melissa Clark (NYT Cooking)",
               "comments": [
                 {
-                  "html": "Best served with <a href='preserves-pickles.html#haitian-pikliz'>Pikliz</a>."
+                  "html": "Best served with <a href='preserves.html#haitian-pikliz'>Pikliz</a>."
                 }
               ],
               "ingredientGroups": [
@@ -9999,7 +9999,7 @@ module.exports = {
               "source": "Tejal Rao / NYT Cooking",
               "comments": [
                 {
-                  "html": "Top with <a href='preserves-pickles.html#quick-pickled-red-onions'>Quick Pickled Red Onions</a> (Preserves & Pickles section) when serving."
+                  "html": "Top with <a href='preserves.html#quick-pickled-red-onions'>Quick Pickled Red Onions</a> when serving."
                 },
                 "You can try the same technique with different beans—chickpeas to cannellini. Heavy cream may be swapped for 1 cup diced mozzarella scattered on top before baking."
               ],
@@ -13254,7 +13254,7 @@ module.exports = {
                   "source": "Nik Sharma Cooks (Nik Sharma)",
                   "comments": [
                     {
-                      "html": "Make your own preserved lemons: see <a href='preserves-pickles.html#preserved-lemons'>Preserved Lemons</a> in the Preserves & Pickles section."
+                      "html": "Make your own preserved lemons: see <a href='preserves.html#preserved-lemons'>Preserved Lemons</a>."
                     },
                     "Rinse preserved lemons well and discard the soft flesh -- use only the rind.",
                     "Pumpkin or sunflower seeds work in place of pine nuts for a nut-free version.",
@@ -20803,7 +20803,7 @@ module.exports = {
               "source": "Tamara Andersen / Beyond Mere Sustenance",
               "comments": [
                 {
-                  "html": "There is no substitute for preserved lemons -- the fermented flavor is unique. Make your own (see <a href='preserves-pickles.html#preserved-lemons'>Preserved Lemons</a> in the Preserves & Pickles section) or find them at Middle Eastern grocery stores."
+                  "html": "There is no substitute for preserved lemons -- the fermented flavor is unique. Make your own (see <a href='preserves.html#preserved-lemons'>Preserved Lemons</a>) or find them at Middle Eastern grocery stores."
                 },
                 "Pairs well with tagines, roasted chicken, grain salads, and harissa dishes."
               ],
@@ -21255,8 +21255,11 @@ module.exports = {
       ]
     },
     {
-      "title": "Preserves & Pickles",
-      "recipes": [
+      "title": "Preserves",
+      "subsections": [
+        {
+          "title": "Pickles & Ferments",
+          "recipes": [
         {
           "title": "Dill Pickles",
           "servings": "Makes 4 (8-oz) or 2 (16-oz) jars   |   Prep: 10 minutes   |   Chilling: 1–5 days",
@@ -21451,7 +21454,12 @@ module.exports = {
             "The next day, transfer the salted lemons and all accumulated juices to a large sterilized canning jar (a 2-liter jar works well). Press firmly down. Add peppercorns and bay leaves. Pour in fresh lemon juice to fully submerge the lemons.",
             "Seal tightly and refrigerate for 3 to 4 weeks before using."
           ]
+        }
+          ]
         },
+        {
+          "title": "Jams & Spreads",
+          "recipes": [
         {
           "title": "Fig Jam",
           "servings": "Makes 1 1/2 cups   |   Total: about 30 min active + 1 hour cooling",
@@ -21516,6 +21524,8 @@ module.exports = {
             "Uncover; stir in vanilla. Continue cooking uncovered on low for about 2 hours.",
             "Puree with an immersion blender until smooth.",
             "Spoon into sterile containers. Refrigerate up to 2 weeks or freeze up to 3 months."
+          ]
+        }
           ]
         }
       ]
