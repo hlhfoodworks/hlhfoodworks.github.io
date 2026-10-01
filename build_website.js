@@ -477,7 +477,7 @@ const CLUSTER_MAP = {
   'Chicken Breasts and Garlic Balsamic Vinegar':         'Italian',
   "Regina's Coffee Cake":                                'General',
   "Brenda's Chocolate Chip Cookies":                     'General',
-  'Apple Pie':                                           'General',
+  "Susan's Apple Pie":                                   'General',
   'Chinese Tomato Egg Stir-fry':                         'Chinese',
   // New recipes added 2026-09-28
   'Green Shakshuka with Feta':                           'Middle Eastern/Persian',
@@ -493,6 +493,14 @@ const CLUSTER_MAP = {
   'Authentic Saag Paneer':                               'Indian',
   'Spicy Roasted Cauliflower with Sriracha and Sesame':  'General',
   'Shakshuka With Feta':                                 'Middle Eastern/Persian',
+  // New recipes added 2026-09-30
+  'Tom Kha Gai Soup':                                    'Thai',
+  'Creamy Tortellini Soup':                              'Italian',
+  'Blackberry Brie Grilled Cheese':                      'General',
+  "Viral Trader Joe's Dumpling Bake":                    'Thai',
+  'Saag Paneer Lasagna':                                 'Indian',
+  'Burst Cherry Tomato Orzotto':                         'Italian',
+  'Black Pepper Beef and Cabbage Stir-Fry':              'Chinese',
 };
 
 // ── Helpers ────────────────────────────────────────────────────────────────

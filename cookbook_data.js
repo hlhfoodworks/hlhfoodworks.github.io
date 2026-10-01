@@ -662,6 +662,46 @@ module.exports = {
       ]
     },
     {
+      "title": "Sandwiches",
+      "recipes": [
+        {
+          "title": "Blackberry Brie Grilled Cheese",
+          "servings": "Makes 1 large sandwich   |   Total: 25 min",
+          "source": "Ree Drummond / Food Network, The Pioneer Woman",
+          "comments": [
+            "To make your own everything bagel seasoning: combine 1 tablespoon white sesame seeds, 1 tablespoon black sesame seeds, 1 tablespoon dried minced garlic, 1 tablespoon dried minced onion, 2 teaspoons poppy seeds, and 1 teaspoon flaky sea salt."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Filling",
+              "ingredients": [
+                "2 slices prosciutto",
+                "2 thick slices sourdough bread",
+                "4 oz triple cream Brie, sliced",
+                "8 to 10 blackberries",
+                "2 tablespoons blackberry jam"
+              ]
+            },
+            {
+              "label": "Butter coating",
+              "ingredients": [
+                "3 tablespoons salted butter, at room temperature",
+                "1 tablespoon balsamic glaze",
+                "1 teaspoon everything bagel seasoning",
+                "1/2 teaspoon Aleppo pepper or red pepper flakes"
+              ]
+            }
+          ],
+          "steps": [
+            "Preheat a nonstick skillet over medium heat. Add prosciutto and cook until crisp, about 2 minutes per side. Remove and turn heat down to medium-low.",
+            "Build the sandwich: top one slice of sourdough with Brie. Press blackberries into the Brie to make them stick. Top with crispy prosciutto. Spread the remaining bread slice with jam and place on top, jam side down.",
+            "In a small bowl, mix butter, balsamic glaze, bagel seasoning, and Aleppo pepper or red pepper flakes. Spread half onto the top of the sandwich. Place butter side down in the skillet. Spread remaining butter mixture on top. Cook until golden, crisp, and Brie is melted, 2–3 minutes per side.",
+            "Transfer to a cutting board, slice in half, and serve."
+          ]
+        }
+      ]
+    },
+    {
       "title": "Appetizers",
       "recipes": [
         {
@@ -1144,45 +1184,6 @@ module.exports = {
           ]
         },
         {
-          "title": "Gazpacho",
-          "servings": "Serves 6",
-          "source": "Restaurant Laurent, 111 East 56th Street, New York (family recipe card)",
-          "comments": [
-            "From a recipe card kept by the family, compliments of Restaurant Laurent — a classic New York restaurant. Serve in chilled bowls with condiments passed at the table."
-          ],
-          "ingredientGroups": [
-            {
-              "label": "Soup base",
-              "ingredients": [
-                "3 cloves garlic, mashed",
-                "1 medium onion, peeled and chopped",
-                "5 very ripe tomatoes, peeled and chopped",
-                "Small bunch flat-leaf parsley, chopped fine",
-                "2 tablespoons wine vinegar",
-                "3 tablespoons olive oil",
-                "1/4 teaspoon paprika",
-                "1 cup beef stock or consommé",
-                "Salt and pepper to taste"
-              ]
-            },
-            {
-              "label": "To serve",
-              "ingredients": [
-                "1 cucumber, peeled, seeded, and diced",
-                "1 green pepper, finely diced",
-                "1/2 onion, finely diced",
-                "Croutons"
-              ]
-            }
-          ],
-          "steps": [
-            "Put garlic and onion in a blender; blend until liquified.",
-            "Add remaining soup base ingredients; blend 2–3 minutes.",
-            "Season with salt and pepper. Chill thoroughly in refrigerator.",
-            "Serve in chilled bowls. Pass cucumber, green pepper, onion, and croutons separately at the table for guests to add."
-          ]
-        },
-        {
           "title": "Baba Ganoush",
           "favorite": true,
           "servings": "Serves 4",
@@ -1382,6 +1383,503 @@ module.exports = {
             "Pour the batter into the pan and spread into a large circle with the back of a spoon or spatula.",
             "Cook until the bottom is golden brown and crisp, 3-5 minutes. Carefully flip the pancake. Drizzle the remaining 2 tablespoons oil around the edges of the skillet. Using a thin spatula, lift the edges of the pancake to allow oil to run underneath; tilt the pan to spread evenly.",
             "Cook until the second side is light golden and crisp, 3-5 minutes. Flip once more and cook 1 additional minute. Slide onto a plate and serve immediately."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Soups & Stews",
+      "recipes": [
+        {
+          "title": "Gazpacho",
+          "servings": "Serves 6",
+          "source": "Restaurant Laurent, 111 East 56th Street, New York (family recipe card)",
+          "comments": [
+            "From a recipe card kept by the family, compliments of Restaurant Laurent — a classic New York restaurant. Serve in chilled bowls with condiments passed at the table."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Soup base",
+              "ingredients": [
+                "3 cloves garlic, mashed",
+                "1 medium onion, peeled and chopped",
+                "5 very ripe tomatoes, peeled and chopped",
+                "Small bunch flat-leaf parsley, chopped fine",
+                "2 tablespoons wine vinegar",
+                "3 tablespoons olive oil",
+                "1/4 teaspoon paprika",
+                "1 cup beef stock or consommé",
+                "Salt and pepper to taste"
+              ]
+            },
+            {
+              "label": "To serve",
+              "ingredients": [
+                "1 cucumber, peeled, seeded, and diced",
+                "1 green pepper, finely diced",
+                "1/2 onion, finely diced",
+                "Croutons"
+              ]
+            }
+          ],
+          "steps": [
+            "Put garlic and onion in a blender; blend until liquified.",
+            "Add remaining soup base ingredients; blend 2–3 minutes.",
+            "Season with salt and pepper. Chill thoroughly in refrigerator.",
+            "Serve in chilled bowls. Pass cucumber, green pepper, onion, and croutons separately at the table for guests to add."
+          ]
+        },
+        {
+          "title": "Creamy Tortellini Soup",
+          "servings": "Serves 6–8   |   Total: 40 min",
+          "source": "New York Times Cooking / Dan Pelosi",
+          "comments": [
+            "Sausage is optional — skip it and start at the aromatics step for a vegetarian version.",
+            "Kale can be replaced with spinach, Swiss chard, or cabbage.",
+            "Tortellini can be replaced with ravioli."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Sausage (optional)",
+              "ingredients": [
+                "1 tablespoon olive oil",
+                "1 pound loose sweet Italian sausage, or links with casings removed"
+              ]
+            },
+            {
+              "label": "Soup base",
+              "ingredients": [
+                "1 medium white or yellow onion, diced",
+                "6 garlic cloves, minced",
+                "1 teaspoon paprika",
+                "1/2 teaspoon dried fennel seeds",
+                "1 1/2 teaspoons salt",
+                "1 1/2 teaspoons black pepper",
+                "Aleppo pepper or red pepper flakes, a pinch",
+                "2 tablespoons tomato paste",
+                "1 (28-oz) can tomato purée",
+                "8 cups (64 oz) vegetable or chicken stock",
+                "1 (9- to 10-oz) package refrigerated or frozen cheese tortellini"
+              ]
+            },
+            {
+              "label": "To finish",
+              "ingredients": [
+                "1 1/4 cups heavy cream",
+                "1 bunch Tuscan (lacinato) kale, leaves stripped and chopped",
+                "1/2 cup roughly chopped fresh basil",
+                "Juice of 1 lemon"
+              ]
+            },
+            {
+              "label": "To serve",
+              "ingredients": [
+                "Grated Parmesan"
+              ]
+            }
+          ],
+          "steps": [
+            "If using sausage: Heat oil in a large pot or Dutch oven over medium-high. Add sausage and cook, breaking it up, until browned, 5–9 minutes. Push to one side and spoon out excess grease, leaving about 2 tablespoons.",
+            "Adjust heat to medium. Add onion, garlic, paprika, fennel, salt, pepper, and Aleppo pepper or red pepper flakes; cook, stirring, 2 minutes until fragrant and onion is just softened. Add tomato paste; stir until it darkens, 2–3 minutes. Increase heat to high; stir in tomato purée and stock. Cover and bring to a gentle boil. Add tortellini and cook until tender, 2–3 minutes (1 minute longer if frozen).",
+            "Add cream, kale, and basil. Cook, stirring, until kale and basil are just wilted and soup is warmed through, about 2 minutes. Remove from heat; add lemon juice. Season with salt and pepper.",
+            "Serve topped with grated Parmesan. Refrigerates up to 5 days; freezes up to 3 months."
+          ]
+        },
+        {
+          "title": "Tom Kha Gai Soup",
+          "servings": "Serves 6   |   Total: 55 min",
+          "source": "So Much Food / Jenny Goycochea (somuchfoodblog.com)",
+          "comments": [
+            "Rice straw mushrooms are the traditional choice; cremini or button mushrooms are a good substitute if unavailable.",
+            "Heavy cream adds richness but is not traditional — omit freely.",
+            "Add raw medium shrimp (peeled, tails removed, deveined) along with the mushrooms for extra protein; simmer 4–5 minutes."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Aromatics",
+              "ingredients": [
+                "1 tablespoon neutral oil",
+                "2 shallots, peeled and thinly sliced",
+                "2-inch piece galangal root, sliced",
+                "1 lemongrass stalk, chopped",
+                "5 large kaffir lime leaves",
+                "2 rounded tablespoons red curry paste",
+                "7 cups chicken stock"
+              ]
+            },
+            {
+              "label": "Coconut broth",
+              "ingredients": [
+                "4 boneless skinless chicken breasts, thinly sliced",
+                "2 1/2 cups full-fat coconut milk",
+                "1/3 cup heavy cream (optional)",
+                "2 oz palm sugar (or coconut sugar or brown sugar)",
+                "1 1/2 tablespoons fish sauce"
+              ]
+            },
+            {
+              "label": "Mushrooms",
+              "ingredients": [
+                "1 can (15 oz) rice straw mushrooms, drained (substitute: 8 oz cremini mushrooms, quartered)"
+              ]
+            },
+            {
+              "label": "To serve",
+              "ingredients": [
+                "Fresh lime juice, to taste",
+                "Salt, to taste",
+                "Chopped fresh cilantro",
+                "Chili oil (optional)"
+              ]
+            }
+          ],
+          "steps": [
+            "In a 4-quart heavy-bottomed pot, heat oil over medium. Add shallots, lemongrass, and galangal; cook 2–3 minutes until shallots soften. Add kaffir lime leaves and curry paste; cook 2 minutes until fragrant. Add chicken stock and bring to a simmer; cook 20 minutes.",
+            "Use a slotted spoon to remove and discard galangal, lemongrass, and kaffir lime leaves. Add chicken, coconut milk, heavy cream (if using), palm sugar, and fish sauce. Bring to a gentle simmer and cook about 20 minutes until chicken is cooked through.",
+            "Add mushrooms to the soup. (Optional: sauté them first in a cast-iron pan with a little oil until browned for added flavor.) Simmer 5 minutes. Season to taste with salt and lime juice.",
+            "Ladle into bowls and top with cilantro and chili oil if desired."
+          ]
+        },
+        {
+          "title": "Thai-Inspired Chicken Meatball Soup",
+          "servings": "Serves 4 to 6   |   Total: 30 minutes",
+          "source": "NYT Cooking, by Ali Slagle",
+          "ingredientGroups": [
+            {
+              "label": "Aromatics",
+              "ingredients": [
+                "1 (4-inch) piece fresh ginger, peeled",
+                "6 garlic cloves, peeled",
+                "1 jalapeño"
+              ]
+            },
+            {
+              "label": "Meatball mix",
+              "ingredients": [
+                "2 pounds ground chicken",
+                "1 large bunch cilantro, leaves and stems finely chopped (reserve a few whole leaves for serving)",
+                "2 tablespoons fish sauce",
+                "1 teaspoon kosher salt"
+              ]
+            },
+            {
+              "label": "For browning",
+              "ingredients": [
+                "2 tablespoons vegetable or coconut oil, plus more as needed"
+              ]
+            },
+            {
+              "label": "Broth",
+              "ingredients": [
+                "2 cups chicken broth",
+                "1 (14-ounce) can full-fat coconut milk",
+                "1/2 teaspoon granulated sugar",
+                "1 tablespoon fish sauce (remaining from the 3 tablespoons above)"
+              ]
+            },
+            {
+              "label": "To finish",
+              "ingredients": [
+                "5 ounces baby spinach",
+                "1 tablespoon lime juice"
+              ]
+            },
+            {
+              "label": "To serve",
+              "ingredients": [
+                "Steamed white or brown rice",
+                "Reserved cilantro leaves",
+                "Lime wedges"
+              ]
+            }
+          ],
+          "steps": [
+            "Aromatics: Grate (or finely chop) the ginger, garlic, and jalapeño together. Divide in half; set one half aside for the broth.",
+            "Meatball mix: In a large bowl, combine the ground chicken, chopped cilantro, 2 tablespoons fish sauce, 1 teaspoon salt, and half the aromatics. Mix until just combined. Form into 2-inch meatballs (about 2 ounces each).",
+            "Heat the oil in a large Dutch oven or pot over medium-high heat. Brown the meatballs in batches until golden on two sides, about 4 minutes total. Transfer to a plate.",
+            "Broth: Reduce the heat to medium. If the oil is burnt, wipe out the pot and add a bit more oil. Add the reserved aromatics and cook, stirring, until fragrant, about 1 minute. Add the broth, coconut milk, sugar, and 1 tablespoon fish sauce; bring to a simmer.",
+            "Add the meatballs and any accumulated juices to the pot; simmer until the meatballs are cooked through, 5-8 minutes.",
+            "Remove from heat and stir in the spinach and lime juice.",
+            "Assemble: Divide the rice among bowls; top with the soup, meatballs, and reserved cilantro leaves. Serve with lime wedges."
+          ]
+        },
+        {
+          "title": "Creamy Spinach-Artichoke Chicken Stew",
+          "servings": "Serves 4 to 6   |   Total: 50 minutes",
+          "source": "NYT Cooking, by Sarah DiGregorio",
+          "ingredientGroups": [
+            {
+              "label": "Aromatics",
+              "ingredients": [
+                "2 tablespoons unsalted butter",
+                "1 large yellow or red onion, finely chopped",
+                "Kosher salt and black pepper",
+                "3 celery stalks, chopped",
+                "8 garlic cloves, smashed and chopped"
+              ]
+            },
+            {
+              "label": "Braise",
+              "ingredients": [
+                "2 cups chicken stock",
+                "3/4 cup white wine",
+                "2 to 2 1/4 pounds boneless, skinless chicken thighs",
+                "1/2 lemon, juiced (about 1 1/2 tablespoons)",
+                "1 teaspoon Aleppo pepper or red pepper flakes"
+              ]
+            },
+            {
+              "label": "Spinach and artichokes",
+              "ingredients": [
+                "1 (10-ounce) package frozen cut spinach",
+                "1 (12-ounce) jar marinated artichoke hearts, drained (about 1 heaping cup)"
+              ]
+            },
+            {
+              "label": "To finish",
+              "ingredients": [
+                "1/2 cup cream cheese (about 4 ounces)",
+                "1/2 cup finely chopped fresh dill",
+                "4 to 6 scallions, thinly sliced",
+                "Grated Parmesan cheese"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "lead": "Aromatics:",
+              "bullets": [
+                "In a large Dutch oven over medium-high heat, melt the butter. Add the onion, season lightly with salt, and cook, stirring, until softened, about 5 minutes.",
+                "Add the celery and cook, stirring, until softened, about 5 minutes, adjusting the heat as needed to avoid scorching. Stir in the garlic and cook 1 minute more."
+              ]
+            },
+            "Pour in the stock and wine, and bring to a bubble. Add the chicken thighs, lemon juice, and Aleppo pepper or red pepper flakes.",
+            "Reduce the heat to maintain a low simmer and simmer, uncovered, 20 minutes.",
+            "Add the frozen spinach and artichoke hearts. Increase the heat to medium-high and cook, stirring, to help the spinach defrost and the liquid reduce slightly, about 5 minutes.",
+            "Add the cream cheese in dollops, stirring to melt it into the stew. Add the dill. Using two forks, coarsely break or shred the chicken into pieces. Taste and adjust seasoning.",
+            "Divide among bowls and top with scallions and Parmesan."
+          ]
+        },
+        {
+          "title": "Dijon and Cognac Beef Stew",
+          "servings": "Serves 4–6   |   Total: about 3 hours",
+          "source": "Regina Schrambling, NYT Cooking",
+          "comments": [
+            "Slow-cooker variation: render salt pork and sear flour-dusted beef in a sauté pan, then transfer to slow cooker with onions, shallots, carrots, mushrooms, and red wine. Deglaze pan with Cognac, then add 1 cup (not 2) stock, Dijon, and 1 tablespoon Pommery mustard; transfer to slow cooker. Cook on low 6–8 hours. Stir in remaining 3 tablespoons Pommery mustard before serving."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Aromatics",
+              "ingredients": [
+                "1/4 pound salt pork, diced",
+                "1 large onion, finely diced",
+                "3 shallots, chopped",
+                "2 tablespoons unsalted butter, plus more as needed"
+              ]
+            },
+            {
+              "label": "Beef",
+              "ingredients": [
+                "2 pounds beef chuck, cut into 1-inch cubes",
+                "2 tablespoons all-purpose flour",
+                "Kosher salt and black pepper"
+              ]
+            },
+            {
+              "label": "Braising liquid",
+              "ingredients": [
+                "1/2 cup Cognac",
+                "2 cups beef stock",
+                "1/2 cup Dijon mustard",
+                "1 tablespoon Pommery mustard (or other whole-grain Dijon)"
+              ]
+            },
+            {
+              "label": "Add-ins",
+              "ingredients": [
+                "4 large carrots, peeled and cut into half-moon slices",
+                "2 tablespoons unsalted butter",
+                "1/2 pound mushrooms, stemmed, cleaned, and quartered",
+                "3 tablespoons Pommery mustard (remaining)",
+                "1/4 cup red wine"
+              ]
+            }
+          ],
+          "steps": [
+            "Place salt pork in a Dutch oven over low heat and cook until fat is rendered. Remove and discard solids. Raise heat, add onion and shallots, and cook until softened but not browned, 10–15 minutes. Transfer to a bowl with a slotted spoon.",
+            "Add 2 tablespoons butter to the pot if needed to augment fat. Dust beef cubes with flour, season with salt and pepper, and shake off excess. Working in batches, brown beef over medium-high until well browned and almost crusty on all sides; transfer to the bowl with onions. Repeat.",
+            "Add Cognac to the empty pot and cook, stirring, until the bottom is deglazed. Add stock, Dijon mustard, and 1 tablespoon Pommery mustard; whisk to blend. Return meat and onions to pot. Reduce heat, partly cover, and simmer gently until meat is very tender, about 1 1/2 hours.",
+            "Add carrots and continue simmering until tender, about 30 minutes. Meanwhile, heat 2 tablespoons butter in a medium skillet over medium-high and sauté mushrooms until browned.",
+            "Stir mushrooms into the stew along with the remaining 3 tablespoons Pommery mustard and red wine. Simmer 5 minutes, taste, and adjust seasoning. Serve hot."
+          ]
+        },
+        {
+          "title": "Hearty Beef Stew With Red Onions and Ale",
+          "servings": "Serves 6   |   Total: 3 hours",
+          "source": "Melissa Clark, NYT Cooking",
+          "comments": [
+            "Tastes even better a day or two later; can be frozen for up to two months. Serve over mashed potatoes, noodles, or polenta."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Beef",
+              "ingredients": [
+                "2 pounds boneless beef stew meat, cut into 1-inch chunks",
+                "Kosher salt and black pepper",
+                "1–2 tablespoons all-purpose flour",
+                "2 tablespoons unsalted butter",
+                "1 tablespoon olive oil, plus more as needed"
+              ]
+            },
+            {
+              "label": "Onions",
+              "ingredients": [
+                "3 medium red onions (2 sliced into half-moons; 1 cut into ½-inch wedges for Step 6)"
+              ]
+            },
+            {
+              "label": "Aromatics",
+              "ingredients": [
+                "4 garlic cloves, thinly sliced",
+                "1 tablespoon tomato paste",
+                "1 teaspoon ground coriander",
+                "¼ teaspoon ground allspice"
+              ]
+            },
+            {
+              "label": "Liquid",
+              "ingredients": [
+                "2 cups beef or chicken stock (preferably homemade)",
+                "1 cup ale or beer (nonalcoholic is fine)",
+                "1 cup water",
+                "1 rosemary sprig"
+              ]
+            },
+            {
+              "label": "Vegetables",
+              "ingredients": [
+                "3 carrots, sliced",
+                "Red onion wedges (from Step 2 prep)"
+              ]
+            },
+            {
+              "label": "Finish",
+              "ingredients": [
+                "1 tablespoon cider vinegar or sherry vinegar, plus more to taste"
+              ]
+            },
+            {
+              "label": "Garnish",
+              "ingredients": [
+                "Chopped fresh chives",
+                "Flaky sea salt",
+                "Freshly ground black pepper"
+              ]
+            }
+          ],
+          "steps": [
+            "Season beef all over with salt and pepper. Set aside while you prepare the onions.",
+            "Peel onions. Cut 2 of them in half root to stem, then thinly slice crosswise into half-moons. Cut the third onion root to stem into ½-inch wedges; set wedges aside for Step 6.",
+            "Dust beef cubes lightly with flour. Heat butter and 1 tablespoon oil in a large Dutch oven over medium-high. Working in batches (do not crowd the pan), sear beef until dark all over, 5–6 minutes per batch. Transfer to a bowl as they brown. Add more oil and adjust heat as needed to prevent burning.",
+            "Stir in sliced onions; raise heat to medium-high if you lowered it. Cook, stirring occasionally, until pale golden and soft, 10–15 minutes. Add garlic and sauté until fragrant and lightly golden at the edges, 2–3 minutes more.",
+            "Make a well in the center of the onions. Stir in tomato paste, coriander, and allspice; cook, stirring, until paste is darkened, about 1 minute. Stir in stock, ale, 1 cup water, and rosemary sprig. Return beef and any accumulated juices to the pot; bring to a simmer. Partly cover and simmer gently for 45 minutes.",
+            "Give the beef a stir, then add reserved onion wedges. Simmer 15 minutes, then add carrots. Continue simmering until meat, onions, and carrots are tender, 30–45 minutes more.",
+            "If sauce seems thin, use a slotted spoon to transfer meat and vegetables to a platter; cover with foil to keep warm. Discard rosemary. Return pot to stove and simmer until thickened, 5–10 minutes. Stir in vinegar. Taste and adjust salt and vinegar. Spoon sauce over meat; garnish with chives, flaky sea salt, and more black pepper."
+          ]
+        },
+        {
+          "title": "Taco Soup",
+          "servings": "Serves 4–6",
+          "source": "Family recipe card, credited to Susan Muhlheim",
+          "ingredientGroups": [
+            {
+              "label": "Chicken",
+              "ingredients": [
+                "1 pound ground chicken",
+                "1/4 cup chopped onion",
+                "Garlic powder to taste"
+              ]
+            },
+            {
+              "label": "Canned goods",
+              "ingredients": [
+                "1 (16-oz) can tomatoes with liquid",
+                "1 (16-oz) can kidney beans with liquid",
+                "1 (17-oz) can corn with liquid",
+                "1 (8-oz) can tomato sauce"
+              ]
+            },
+            {
+              "label": "Seasoning",
+              "ingredients": [
+                "1 package taco seasoning"
+              ]
+            },
+            {
+              "label": "To serve (optional)",
+              "ingredients": [
+                "Avocados",
+                "Grated cheese",
+                "Sour cream",
+                "Taco chips",
+                "Jalapeños"
+              ]
+            }
+          ],
+          "steps": [
+            "Brown ground chicken and onion (and garlic powder if using). Drain.",
+            "Add all remaining canned goods and taco seasoning. Bring to a boil, then reduce heat and simmer 10–15 minutes.",
+            "Garnish with avocados, grated cheese, sour cream, and taco chips if desired."
+          ],
+          "comments": [
+            "Ground beef or turkey also works well.",
+            "Jalapeños and garlic powder can be added with the canned goods for more heat."
+          ]
+        },
+        {
+          "title": "Red Lentil Soup",
+          "servings": "Serves 4",
+          "source": "New York Times / Melissa Clark",
+          "comments": [
+            "Based on Turkish red lentil soup (mercimek corbasi). Use vegetable broth for a fully vegetarian version."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Aromatics",
+              "ingredients": [
+                "3 tablespoons olive oil, plus more to drizzle",
+                "1 large onion, diced",
+                "4 cloves garlic, minced",
+                "2 tablespoons tomato paste",
+                "1 teaspoon ground cumin",
+                "1/4 teaspoon chili powder or ground cayenne"
+              ]
+            },
+            {
+              "label": "Lentils and vegetables",
+              "ingredients": [
+                "4 cups chicken or vegetable stock",
+                "2 cups water",
+                "1 cup red lentils, rinsed",
+                "1 large carrot, peeled and diced"
+              ]
+            },
+            {
+              "label": "To serve",
+              "ingredients": [
+                "Juice of 1 lemon",
+                "Fresh cilantro, chopped",
+                "Olive oil drizzle",
+                "Salt and black pepper"
+              ]
+            }
+          ],
+          "steps": [
+            "Heat olive oil in a large pot over medium heat. Add onion and cook until golden, about 7–9 minutes. Add garlic and cook 1 minute.",
+            "Add tomato paste, cumin, and chili powder; stir and cook 2 minutes until fragrant.",
+            "Add stock, water, lentils, and carrot. Bring to a boil, then reduce heat and simmer until lentils are completely tender, about 20–25 minutes.",
+            "Use an immersion blender to blend about half the soup directly in the pot (or transfer half to a blender and return). This gives a chunky-smooth texture.",
+            "Stir in lemon juice; season generously with salt and pepper. Serve with a drizzle of olive oil and fresh cilantro."
           ]
         }
       ]
@@ -2694,63 +3192,6 @@ module.exports = {
                 "Preheat the oven to 350°F.",
                 "Place the chicken skin-side down in a baking dish with the marinade. Bake uncovered 45 minutes.",
                 "Turn the chicken pieces over, sprinkle with sesame seeds, and continue baking another 30 minutes, basting occasionally with the pan juices."
-              ]
-            },
-            {
-              "title": "Creamy Spinach-Artichoke Chicken Stew",
-              "servings": "Serves 4 to 6   |   Total: 50 minutes",
-              "source": "NYT Cooking, by Sarah DiGregorio",
-              "ingredientGroups": [
-                {
-                  "label": "Aromatics",
-                  "ingredients": [
-                    "2 tablespoons unsalted butter",
-                    "1 large yellow or red onion, finely chopped",
-                    "Kosher salt and black pepper",
-                    "3 celery stalks, chopped",
-                    "8 garlic cloves, smashed and chopped"
-                  ]
-                },
-                {
-                  "label": "Braise",
-                  "ingredients": [
-                    "2 cups chicken stock",
-                    "3/4 cup white wine",
-                    "2 to 2 1/4 pounds boneless, skinless chicken thighs",
-                    "1/2 lemon, juiced (about 1 1/2 tablespoons)",
-                    "1 teaspoon Aleppo pepper or red pepper flakes"
-                  ]
-                },
-                {
-                  "label": "Spinach and artichokes",
-                  "ingredients": [
-                    "1 (10-ounce) package frozen cut spinach",
-                    "1 (12-ounce) jar marinated artichoke hearts, drained (about 1 heaping cup)"
-                  ]
-                },
-                {
-                  "label": "To finish",
-                  "ingredients": [
-                    "1/2 cup cream cheese (about 4 ounces)",
-                    "1/2 cup finely chopped fresh dill",
-                    "4 to 6 scallions, thinly sliced",
-                    "Grated Parmesan cheese"
-                  ]
-                }
-              ],
-              "steps": [
-                {
-                  "lead": "Aromatics:",
-                  "bullets": [
-                    "In a large Dutch oven over medium-high heat, melt the butter. Add the onion, season lightly with salt, and cook, stirring, until softened, about 5 minutes.",
-                    "Add the celery and cook, stirring, until softened, about 5 minutes, adjusting the heat as needed to avoid scorching. Stir in the garlic and cook 1 minute more."
-                  ]
-                },
-                "Pour in the stock and wine, and bring to a bubble. Add the chicken thighs, lemon juice, and Aleppo pepper or red pepper flakes.",
-                "Reduce the heat to maintain a low simmer and simmer, uncovered, 20 minutes.",
-                "Add the frozen spinach and artichoke hearts. Increase the heat to medium-high and cook, stirring, to help the spinach defrost and the liquid reduce slightly, about 5 minutes.",
-                "Add the cream cheese in dollops, stirring to melt it into the stew. Add the dill. Using two forks, coarsely break or shred the chicken into pieces. Taste and adjust seasoning.",
-                "Divide among bowls and top with scallions and Parmesan."
               ]
             },
             {
@@ -4967,69 +5408,6 @@ module.exports = {
               ]
             },
             {
-              "title": "Thai-Inspired Chicken Meatball Soup",
-              "servings": "Serves 4 to 6   |   Total: 30 minutes",
-              "source": "NYT Cooking, by Ali Slagle",
-              "ingredientGroups": [
-                {
-                  "label": "Aromatics",
-                  "ingredients": [
-                    "1 (4-inch) piece fresh ginger, peeled",
-                    "6 garlic cloves, peeled",
-                    "1 jalapeño"
-                  ]
-                },
-                {
-                  "label": "Meatball mix",
-                  "ingredients": [
-                    "2 pounds ground chicken",
-                    "1 large bunch cilantro, leaves and stems finely chopped (reserve a few whole leaves for serving)",
-                    "2 tablespoons fish sauce",
-                    "1 teaspoon kosher salt"
-                  ]
-                },
-                {
-                  "label": "For browning",
-                  "ingredients": [
-                    "2 tablespoons vegetable or coconut oil, plus more as needed"
-                  ]
-                },
-                {
-                  "label": "Broth",
-                  "ingredients": [
-                    "2 cups chicken broth",
-                    "1 (14-ounce) can full-fat coconut milk",
-                    "1/2 teaspoon granulated sugar",
-                    "1 tablespoon fish sauce (remaining from the 3 tablespoons above)"
-                  ]
-                },
-                {
-                  "label": "To finish",
-                  "ingredients": [
-                    "5 ounces baby spinach",
-                    "1 tablespoon lime juice"
-                  ]
-                },
-                {
-                  "label": "To serve",
-                  "ingredients": [
-                    "Steamed white or brown rice",
-                    "Reserved cilantro leaves",
-                    "Lime wedges"
-                  ]
-                }
-              ],
-              "steps": [
-                "Aromatics: Grate (or finely chop) the ginger, garlic, and jalapeño together. Divide in half; set one half aside for the broth.",
-                "Meatball mix: In a large bowl, combine the ground chicken, chopped cilantro, 2 tablespoons fish sauce, 1 teaspoon salt, and half the aromatics. Mix until just combined. Form into 2-inch meatballs (about 2 ounces each).",
-                "Heat the oil in a large Dutch oven or pot over medium-high heat. Brown the meatballs in batches until golden on two sides, about 4 minutes total. Transfer to a plate.",
-                "Broth: Reduce the heat to medium. If the oil is burnt, wipe out the pot and add a bit more oil. Add the reserved aromatics and cook, stirring, until fragrant, about 1 minute. Add the broth, coconut milk, sugar, and 1 tablespoon fish sauce; bring to a simmer.",
-                "Add the meatballs and any accumulated juices to the pot; simmer until the meatballs are cooked through, 5-8 minutes.",
-                "Remove from heat and stir in the spinach and lime juice.",
-                "Assemble: Divide the rice among bowls; top with the soup, meatballs, and reserved cilantro leaves. Serve with lime wedges."
-              ]
-            },
-            {
               "title": "Vietnamese Caramel Ginger Chicken",
               "servings": "Serves 5   |   Prep: 7 minutes   |   Cook: 15 minutes",
               "comments": [
@@ -5741,7 +6119,46 @@ module.exports = {
                 "Place kebabs on a broiler pan coated with cooking spray. Broil 15 minutes, turning occasionally and basting with reserved marinade.",
                 "Serve over soba or rice."
               ]
-            }
+            },
+            {
+                          "title": "Viral Trader Joe's Dumpling Bake",
+                          "servings": "Serves 4   |   Total: 45 min",
+                          "source": "Hannah Kling / Lovely Delites (lovelydelites.com)",
+                          "comments": [
+                            "Any frozen dumplings or potstickers work here — chicken, pork, shrimp, or veggie. Use straight from frozen; no thawing needed.",
+                            "Leftover sauce is excellent spooned over rice or noodles."
+                          ],
+                          "ingredientGroups": [
+                            {
+                              "label": "Sauce base",
+                              "ingredients": [
+                                "1 can (13.5 oz) full-fat coconut milk",
+                                "1/2 bottle (about 5.5 oz) red Thai curry sauce",
+                                "3 tablespoons Soyaki sauce",
+                                "3 cloves garlic, minced"
+                              ]
+                            },
+                            {
+                              "label": "Spinach and dumplings",
+                              "ingredients": [
+                                "1–2 cups fresh spinach",
+                                "1 bag (16 oz) frozen chicken gyoza (potstickers)"
+                              ]
+                            },
+                            {
+                              "label": "To serve",
+                              "ingredients": [
+                                "Lao Gan Ma or Fly By Jing chili crisp"
+                              ]
+                            }
+                          ],
+                          "steps": [
+                            "Preheat oven to 350°F. In a medium baking dish, whisk together coconut milk, red Thai curry sauce, soyaki sauce, and garlic until smooth.",
+                            "Scatter spinach evenly over the sauce. Arrange frozen dumplings in a single layer on top.",
+                            "Cover tightly with foil and bake 35–40 minutes, until dumplings are heated through and the sauce is bubbling.",
+                            "Uncover, stir the sauce gently if desired, and top with chili crisp. Serve warm."
+                          ]
+                        }
           ]
         },
         {
@@ -6645,80 +7062,6 @@ module.exports = {
               ]
             },
             {
-              "title": "Hearty Beef Stew With Red Onions and Ale",
-              "servings": "Serves 6   |   Total: 3 hours",
-              "source": "Melissa Clark, NYT Cooking",
-              "comments": [
-                "Tastes even better a day or two later; can be frozen for up to two months. Serve over mashed potatoes, noodles, or polenta."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Beef",
-                  "ingredients": [
-                    "2 pounds boneless beef stew meat, cut into 1-inch chunks",
-                    "Kosher salt and black pepper",
-                    "1–2 tablespoons all-purpose flour",
-                    "2 tablespoons unsalted butter",
-                    "1 tablespoon olive oil, plus more as needed"
-                  ]
-                },
-                {
-                  "label": "Onions",
-                  "ingredients": [
-                    "3 medium red onions (2 sliced into half-moons; 1 cut into ½-inch wedges for Step 6)"
-                  ]
-                },
-                {
-                  "label": "Aromatics",
-                  "ingredients": [
-                    "4 garlic cloves, thinly sliced",
-                    "1 tablespoon tomato paste",
-                    "1 teaspoon ground coriander",
-                    "¼ teaspoon ground allspice"
-                  ]
-                },
-                {
-                  "label": "Liquid",
-                  "ingredients": [
-                    "2 cups beef or chicken stock (preferably homemade)",
-                    "1 cup ale or beer (nonalcoholic is fine)",
-                    "1 cup water",
-                    "1 rosemary sprig"
-                  ]
-                },
-                {
-                  "label": "Vegetables",
-                  "ingredients": [
-                    "3 carrots, sliced",
-                    "Red onion wedges (from Step 2 prep)"
-                  ]
-                },
-                {
-                  "label": "Finish",
-                  "ingredients": [
-                    "1 tablespoon cider vinegar or sherry vinegar, plus more to taste"
-                  ]
-                },
-                {
-                  "label": "Garnish",
-                  "ingredients": [
-                    "Chopped fresh chives",
-                    "Flaky sea salt",
-                    "Freshly ground black pepper"
-                  ]
-                }
-              ],
-              "steps": [
-                "Season beef all over with salt and pepper. Set aside while you prepare the onions.",
-                "Peel onions. Cut 2 of them in half root to stem, then thinly slice crosswise into half-moons. Cut the third onion root to stem into ½-inch wedges; set wedges aside for Step 6.",
-                "Dust beef cubes lightly with flour. Heat butter and 1 tablespoon oil in a large Dutch oven over medium-high. Working in batches (do not crowd the pan), sear beef until dark all over, 5–6 minutes per batch. Transfer to a bowl as they brown. Add more oil and adjust heat as needed to prevent burning.",
-                "Stir in sliced onions; raise heat to medium-high if you lowered it. Cook, stirring occasionally, until pale golden and soft, 10–15 minutes. Add garlic and sauté until fragrant and lightly golden at the edges, 2–3 minutes more.",
-                "Make a well in the center of the onions. Stir in tomato paste, coriander, and allspice; cook, stirring, until paste is darkened, about 1 minute. Stir in stock, ale, 1 cup water, and rosemary sprig. Return beef and any accumulated juices to the pot; bring to a simmer. Partly cover and simmer gently for 45 minutes.",
-                "Give the beef a stir, then add reserved onion wedges. Simmer 15 minutes, then add carrots. Continue simmering until meat, onions, and carrots are tender, 30–45 minutes more.",
-                "If sauce seems thin, use a slotted spoon to transfer meat and vegetables to a platter; cover with foil to keep warm. Discard rosemary. Return pot to stove and simmer until thickened, 5–10 minutes. Stir in vinegar. Taste and adjust salt and vinegar. Spoon sauce over meat; garnish with chives, flaky sea salt, and more black pepper."
-              ]
-            },
-            {
               "title": "Nancy's Flank Steak",
               "ingredientGroups": [
                 {
@@ -6754,59 +7097,6 @@ module.exports = {
                 "Steak quantity, thyme amount, and parsley quantity not specified on original card; adjust to taste."
               ],
               "source": "Family recipe, attributed to Grandmother Nancy"
-            },
-            {
-              "title": "Dijon and Cognac Beef Stew",
-              "servings": "Serves 4–6   |   Total: about 3 hours",
-              "source": "Regina Schrambling, NYT Cooking",
-              "comments": [
-                "Slow-cooker variation: render salt pork and sear flour-dusted beef in a sauté pan, then transfer to slow cooker with onions, shallots, carrots, mushrooms, and red wine. Deglaze pan with Cognac, then add 1 cup (not 2) stock, Dijon, and 1 tablespoon Pommery mustard; transfer to slow cooker. Cook on low 6–8 hours. Stir in remaining 3 tablespoons Pommery mustard before serving."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Aromatics",
-                  "ingredients": [
-                    "1/4 pound salt pork, diced",
-                    "1 large onion, finely diced",
-                    "3 shallots, chopped",
-                    "2 tablespoons unsalted butter, plus more as needed"
-                  ]
-                },
-                {
-                  "label": "Beef",
-                  "ingredients": [
-                    "2 pounds beef chuck, cut into 1-inch cubes",
-                    "2 tablespoons all-purpose flour",
-                    "Kosher salt and black pepper"
-                  ]
-                },
-                {
-                  "label": "Braising liquid",
-                  "ingredients": [
-                    "1/2 cup Cognac",
-                    "2 cups beef stock",
-                    "1/2 cup Dijon mustard",
-                    "1 tablespoon Pommery mustard (or other whole-grain Dijon)"
-                  ]
-                },
-                {
-                  "label": "Add-ins",
-                  "ingredients": [
-                    "4 large carrots, peeled and cut into half-moon slices",
-                    "2 tablespoons unsalted butter",
-                    "1/2 pound mushrooms, stemmed, cleaned, and quartered",
-                    "3 tablespoons Pommery mustard (remaining)",
-                    "1/4 cup red wine"
-                  ]
-                }
-              ],
-              "steps": [
-                "Place salt pork in a Dutch oven over low heat and cook until fat is rendered. Remove and discard solids. Raise heat, add onion and shallots, and cook until softened but not browned, 10–15 minutes. Transfer to a bowl with a slotted spoon.",
-                "Add 2 tablespoons butter to the pot if needed to augment fat. Dust beef cubes with flour, season with salt and pepper, and shake off excess. Working in batches, brown beef over medium-high until well browned and almost crusty on all sides; transfer to the bowl with onions. Repeat.",
-                "Add Cognac to the empty pot and cook, stirring, until the bottom is deglazed. Add stock, Dijon mustard, and 1 tablespoon Pommery mustard; whisk to blend. Return meat and onions to pot. Reduce heat, partly cover, and simmer gently until meat is very tender, about 1 1/2 hours.",
-                "Add carrots and continue simmering until tender, about 30 minutes. Meanwhile, heat 2 tablespoons butter in a medium skillet over medium-high and sauté mushrooms until browned.",
-                "Stir mushrooms into the stew along with the remaining 3 tablespoons Pommery mustard and red wine. Simmer 5 minutes, taste, and adjust seasoning. Serve hot."
-              ]
             },
             {
               "title": "Beef Involtini",
@@ -6893,7 +7183,52 @@ module.exports = {
                 "Add more oil to pan if needed. Reduce heat to medium, add onion and garlic, and cook, stirring occasionally, until soft, about 5 minutes. Add plum wine and stir to deglaze, scraping up browned bits. Increase heat to medium-high and cook until wine is reduced by half, 2–3 minutes. Transfer to slow cooker along with soy sauce, rice vinegar, sesame oil, chili garlic paste, ginger, orange zest, orange juice, and sugar mixture. Cover and cook on high for 6 hours.",
                 "Skim fat from the surface. Serve ribs and sauce over steamed rice."
               ]
-            }
+            },
+            {
+                          "title": "Black Pepper Beef and Cabbage Stir-Fry",
+                          "servings": "Serves 2–4   |   Total: 20 min",
+                          "source": "New York Times Cooking / Sue Li",
+                          "comments": [
+                            "Don't hold back on the peppercorns — the full tablespoon balances the richness of the beef and gives the dish its character.",
+                            "Can marinate the beef up to 8 hours ahead."
+                          ],
+                          "ingredientGroups": [
+                            {
+                              "label": "Steak and rub",
+                              "ingredients": [
+                                "3/4 pound sirloin steak, thinly sliced crosswise",
+                                "1 tablespoon whole black peppercorns, coarsely crushed",
+                                "3 garlic cloves, grated",
+                                "2 teaspoons light brown sugar",
+                                "1 teaspoon cornstarch",
+                                "1 teaspoon kosher salt"
+                              ]
+                            },
+                            {
+                              "label": "Stir-fry",
+                              "ingredients": [
+                                "3 tablespoons sunflower or other neutral oil",
+                                "2 tablespoons soy sauce",
+                                "1/2 head small green cabbage (about 8 oz), thinly sliced",
+                                "1 tablespoon sherry vinegar"
+                              ]
+                            },
+                            {
+                              "label": "To serve",
+                              "ingredients": [
+                                "1 tablespoon toasted sesame seeds, crushed with your fingertips",
+                                "2 scallions, thinly sliced",
+                                "Cooked rice"
+                              ]
+                            }
+                          ],
+                          "steps": [
+                            "Combine crushed peppercorns, garlic, brown sugar, cornstarch, and salt in a medium bowl. Add sliced steak and toss to coat.",
+                            "Heat oil in a large cast-iron skillet over medium-high. Add steak and cook, stirring frequently, until edges are lightly browned, 3–4 minutes. Add soy sauce and toss to coat, about 1 minute. Transfer beef to a plate with a slotted spoon.",
+                            "Add cabbage to the skillet, spread in an even layer, and cook undisturbed 1 minute to caramelize some pieces. Toss and cook, stirring occasionally, until crisp-tender, 4–6 minutes. Stir in sherry vinegar; season with salt.",
+                            "Return steak and any juices to the skillet; toss until combined with the cabbage and warmed through, about 1 minute. Top with sesame seeds and scallions; serve with rice."
+                          ]
+                        }
           ]
         },
         {
@@ -7057,55 +7392,6 @@ module.exports = {
                 "Heat oil in a large frying pan over medium flame. Add onion and sauté until translucent, about 3 minutes. Add ground beef and sauté until no longer pink.",
                 "Add garlic powder, onion powder, paprika, salt, pepper, soy sauce, and teriyaki sauce; mix well to incorporate. Add Marsala wine, tomato paste, water, peas and carrots; mix well and cook 3 minutes.",
                 "Transfer meat mixture to a 9\" round pan. Top with mashed sweet potatoes. Using a fork, make a design on the surface. Lightly brush the top with oil. Bake uncovered at 400°F for 25 minutes."
-              ]
-            },
-            {
-              "title": "Taco Soup",
-              "servings": "Serves 4–6",
-              "source": "Family recipe card, credited to Susan Muhlheim",
-              "ingredientGroups": [
-                {
-                  "label": "Chicken",
-                  "ingredients": [
-                    "1 pound ground chicken",
-                    "1/4 cup chopped onion",
-                    "Garlic powder to taste"
-                  ]
-                },
-                {
-                  "label": "Canned goods",
-                  "ingredients": [
-                    "1 (16-oz) can tomatoes with liquid",
-                    "1 (16-oz) can kidney beans with liquid",
-                    "1 (17-oz) can corn with liquid",
-                    "1 (8-oz) can tomato sauce"
-                  ]
-                },
-                {
-                  "label": "Seasoning",
-                  "ingredients": [
-                    "1 package taco seasoning"
-                  ]
-                },
-                {
-                  "label": "To serve (optional)",
-                  "ingredients": [
-                    "Avocados",
-                    "Grated cheese",
-                    "Sour cream",
-                    "Taco chips",
-                    "Jalapeños"
-                  ]
-                }
-              ],
-              "steps": [
-                "Brown ground chicken and onion (and garlic powder if using). Drain.",
-                "Add all remaining canned goods and taco seasoning. Bring to a boil, then reduce heat and simmer 10–15 minutes.",
-                "Garnish with avocados, grated cheese, sour cream, and taco chips if desired."
-              ],
-              "comments": [
-                "Ground beef or turkey also works well.",
-                "Jalapeños and garlic powder can be added with the canned goods for more heat."
               ]
             }
           ]
@@ -8887,52 +9173,6 @@ module.exports = {
                 "Heat oil in an ovenproof Dutch oven over medium-high heat. Add spice mixture, then eggplant, tomato, onion, carrot, cabbage, ginger, and garlic. Sauté 3 minutes.",
                 "Add tomato juice, orange juice, and water. Bring to a boil, then reduce heat and simmer 2 minutes.",
                 "Remove from heat; stir in couscous. Cover and bake at 350°F for 20 minutes."
-              ]
-            },
-            {
-              "title": "Red Lentil Soup",
-              "servings": "Serves 4",
-              "source": "New York Times / Melissa Clark",
-              "comments": [
-                "Based on Turkish red lentil soup (mercimek corbasi). Use vegetable broth for a fully vegetarian version."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Aromatics",
-                  "ingredients": [
-                    "3 tablespoons olive oil, plus more to drizzle",
-                    "1 large onion, diced",
-                    "4 cloves garlic, minced",
-                    "2 tablespoons tomato paste",
-                    "1 teaspoon ground cumin",
-                    "1/4 teaspoon chili powder or ground cayenne"
-                  ]
-                },
-                {
-                  "label": "Lentils and vegetables",
-                  "ingredients": [
-                    "4 cups chicken or vegetable stock",
-                    "2 cups water",
-                    "1 cup red lentils, rinsed",
-                    "1 large carrot, peeled and diced"
-                  ]
-                },
-                {
-                  "label": "To serve",
-                  "ingredients": [
-                    "Juice of 1 lemon",
-                    "Fresh cilantro, chopped",
-                    "Olive oil drizzle",
-                    "Salt and black pepper"
-                  ]
-                }
-              ],
-              "steps": [
-                "Heat olive oil in a large pot over medium heat. Add onion and cook until golden, about 7–9 minutes. Add garlic and cook 1 minute.",
-                "Add tomato paste, cumin, and chili powder; stir and cook 2 minutes until fragrant.",
-                "Add stock, water, lentils, and carrot. Bring to a boil, then reduce heat and simmer until lentils are completely tender, about 20–25 minutes.",
-                "Use an immersion blender to blend about half the soup directly in the pot (or transfer half to a blender and return). This gives a chunky-smooth texture.",
-                "Stir in lemon juice; season generously with salt and pepper. Serve with a drizzle of olive oil and fresh cilantro."
               ]
             },
             {
@@ -12066,7 +12306,77 @@ module.exports = {
                     "Remove pan from oven. Use tongs to squeeze out roasted garlic; smash individual cloves with a fork. Mix feta and roasted garlic together with the tomatoes. Add torn basil, lemon zest, and cooked pasta. Mix with a few dashes of reserved pasta water.",
                     "Sprinkle with Parmigiano Reggiano (or mozzarella) and panko. Return to oven until lightly golden, or broil for a few minutes."
                   ]
-                }
+                },
+                {
+                                  "title": "Saag Paneer Lasagna",
+                                  "servings": "Serves 8–10   |   Total: 2 hrs 45 min",
+                                  "source": "New York Times Cooking / Khushbu Shah; from the cookbook Amrikan (W. W. Norton, 2024)",
+                                  "comments": [
+                                    "Kasoori methi (dried fenugreek leaves) adds an earthy, aromatic note — highly recommended but optional. If unavailable, stir 1–2 teaspoons maple syrup into the saag along with the spices to approximate its subtle sweetness.",
+                                    "Both the saag filling and béchamel may be made up to 2 days ahead and refrigerated. Loosen the béchamel with a splash of milk or water before assembling.",
+                                    "Leftovers may be wrapped in foil and frozen up to 3 months. Thaw overnight in the fridge before reheating."
+                                  ],
+                                  "ingredientGroups": [
+                                    {
+                                      "label": "Spinach blend",
+                                      "ingredients": [
+                                        "16 oz baby spinach",
+                                        "2 small Roma tomatoes, quartered",
+                                        "2 green serrano chiles, stemmed and halved lengthwise",
+                                        "Leaves and tender stems from 1 bunch cilantro, rinsed and dried",
+                                        "3 tablespoons kasoori methi (dried fenugreek leaves), optional",
+                                        "3/4 cup water",
+                                        "Salt"
+                                      ]
+                                    },
+                                    {
+                                      "label": "Saag aromatics",
+                                      "ingredients": [
+                                        "3 tablespoons ghee or neutral oil",
+                                        "1 medium white onion, finely chopped",
+                                        "1 1/2 tablespoons garlic paste, or 5 garlic cloves, minced",
+                                        "1 1/2 tablespoons ginger paste, or 1/2-inch piece fresh ginger, grated"
+                                      ]
+                                    },
+                                    {
+                                      "label": "Saag spices",
+                                      "ingredients": [
+                                        "1 1/2 teaspoons Kashmiri chile powder",
+                                        "1 1/2 tablespoons ground coriander",
+                                        "2 teaspoons ground cumin",
+                                        "1 teaspoon ground turmeric",
+                                        "Salt"
+                                      ]
+                                    },
+                                    {
+                                      "label": "Bechamel",
+                                      "ingredients": [
+                                        "8 tablespoons butter",
+                                        "1/2 cup all-purpose flour",
+                                        "1 quart whole milk, at room temperature",
+                                        "1/2 teaspoon black pepper",
+                                        "1/4 teaspoon grated nutmeg",
+                                        "3/4 cup shredded Parmesan (1/2 cup into sauce; 1/4 cup reserved for topping)"
+                                      ]
+                                    },
+                                    {
+                                      "label": "Assembly",
+                                      "ingredients": [
+                                        "Olive oil, for greasing",
+                                        "2 (8-oz) boxes no-boil lasagna noodles (about 24 sheets)",
+                                        "1 (12- to 14-oz) block paneer, coarsely grated"
+                                      ]
+                                    }
+                                  ],
+                                  "steps": [
+                                    "Make the saag blend: Bring a large pot of water to boil. Add spinach and blanch until just wilted, about 2 minutes. Drain, run cold water over to cool, and let drain completely. Transfer to a blender. Add tomatoes, serrano chiles, cilantro, kasoori methi (if using), and 3/4 cup water. Blitz 30 seconds to 1 minute until puréed. Season with salt; set aside. (Can be made up to 2 days ahead.)",
+                                    "In the same pot, melt ghee over medium heat. Add onion; sauté 6–8 minutes until softened and lightly golden. Add garlic and ginger; stir 2 minutes. Add chile powder, coriander, cumin, turmeric, and salt; stir well. Add the saag blend and gently simmer, stirring occasionally, until slightly thickened, 10–12 minutes. Remove from heat.",
+                                    "Make the béchamel: In a large pot, melt butter over low heat. Whisk in flour until smooth; cook until the roux is golden, 2–3 minutes. Add milk; increase heat to medium and stir continuously until the sauce thickens and coats the back of a spoon, 5–8 minutes. Remove from heat; stir in pepper, nutmeg, and 1/2 cup Parmesan. Season with salt. (Can be made up to 2 days ahead; loosen with milk before using.)",
+                                    "Heat oven to 400°F. Grease a 9×13-inch baking dish (at least 2 inches deep) with 1 tablespoon oil. Spread enough béchamel to cover the bottom. Layer 4–6 noodle sheets on top, breaking as needed. Spread 1/3 of the saag, then 1/3 of the paneer, then 1/4 of the remaining béchamel. Repeat twice more. Top with a final layer of noodles, the remaining béchamel, and the reserved 1/4 cup Parmesan.",
+                                    "Cover with foil (lightly grease the underside to prevent sticking). Bake 40 minutes.",
+                                    "Remove foil and bake uncovered about 20 minutes more, until lightly golden on top. Let cool 15–20 minutes before slicing."
+                                  ]
+                                }
               ]
             }
           ]
@@ -13780,7 +14090,59 @@ module.exports = {
                     "Add spinach and reserved pasta water to the skillet. Return to low heat; stir until spinach wilts, about 2 minutes. Season with salt.",
                     "Add drained ravioli and toss to coat. Serve with Parmesan and freshly cracked pepper."
                   ]
-                }
+                },
+                {
+                                  "title": "Burst Cherry Tomato Orzotto",
+                                  "servings": "Serves 4–6   |   Total: 50 min",
+                                  "source": "New York Times Cooking / Kayla Hoang",
+                                  "comments": [
+                                    "Use the best cherry tomatoes you can find — the dish is only as good as the tomatoes.",
+                                    "Top each serving with a handful of arugula for a fresh, peppery contrast."
+                                  ],
+                                  "ingredientGroups": [
+                                    {
+                                      "label": "Aromatics",
+                                      "ingredients": [
+                                        "3 tablespoons olive oil",
+                                        "1 large shallot, chopped (about 1/3 cup)",
+                                        "1 teaspoon salt, plus more to taste",
+                                        "1 tablespoon garlic, grated (from 3–4 large cloves)",
+                                        "1/4 to 1/2 teaspoon Aleppo pepper or red pepper flakes"
+                                      ]
+                                    },
+                                    {
+                                      "label": "Tomato base",
+                                      "ingredients": [
+                                        "1 1/2 pounds cherry tomatoes",
+                                        "1 cup fresh basil leaves, tightly packed and roughly chopped, plus 1 sprig for cooking",
+                                        "1 1/4 cups water"
+                                      ]
+                                    },
+                                    {
+                                      "label": "Orzo",
+                                      "ingredients": [
+                                        "1 pound orzo",
+                                        "1 quart (4 cups) low-sodium vegetable or chicken broth",
+                                        "1/4 teaspoon salt"
+                                      ]
+                                    },
+                                    {
+                                      "label": "To finish",
+                                      "ingredients": [
+                                        "2/3 cup grated Parmesan, plus more for serving",
+                                        "1 tablespoon unsalted butter",
+                                        "1 1/2 teaspoons fresh lemon juice"
+                                      ]
+                                    }
+                                  ],
+                                  "steps": [
+                                    "Heat olive oil in a large Dutch oven over medium for about 30 seconds. Add shallot and 1 teaspoon salt; cook, stirring often, until translucent, 2–3 minutes. Add garlic and Aleppo pepper or red pepper flakes; stir until fragrant, about 30 seconds.",
+                                    "Add cherry tomatoes, basil sprig, and 1 1/4 cups water. Cover and increase heat to medium-high. Cook, covered, until tomatoes are very soft and burst when pressed, about 8 minutes.",
+                                    "Use the back of a wooden spoon to press all tomatoes against the side of the pot until broken down. Maintain a steady, gentle boil. Cook uncovered, stirring occasionally, until the tomato liquid has thickened and reduced by about half, 6–10 minutes.",
+                                    "Stir in orzo, broth, and 1/4 teaspoon salt. Bring to a boil over high heat, 4–5 minutes. Reduce to a simmer and cook, stirring every minute or two and scraping the bottom, until orzo is tender and saucy, 9–10 minutes.",
+                                    "Remove from heat; discard basil sprig. Stir in Parmesan, butter, lemon juice, and chopped basil until silky. Season with salt. Serve immediately, topped with more Parmesan."
+                                  ]
+                                }
               ]
             }
           ]
@@ -15202,6 +15564,7 @@ module.exports = {
           "title": "Sweet",
           "recipes": [
                         {
+              "id": "baking-sweet-all-shortening-pie-crust",
               "title": "All-Shortening Pie Crust",
               "favorite": true,
               "servings": "Makes 2 crusts   |   Prep: 15 minutes + 30-minute chill",
@@ -15250,16 +15613,13 @@ module.exports = {
               ]
             },
             {
-              "title": "Apple Pie",
+              "title": "Susan's Apple Pie",
               "servings": "Makes 1 pie",
               "ingredientGroups": [
                 {
                   "label": "Crust",
                   "ingredients": [
-                    "1 1/4 cups all-purpose flour",
-                    "1/4 teaspoon salt",
-                    "1/3 cup shortening",
-                    "3-4 tablespoons water"
+                    {"html": "1 disk <a href=\"baking.html#baking-sweet-all-shortening-pie-crust\">All-Shortening Pie Crust</a> (Baking &gt; Sweet)"}
                   ]
                 },
                 {
@@ -15273,10 +15633,10 @@ module.exports = {
                 }
               ],
               "steps": [
-                "Crust: Stir together flour and salt. Cut in shortening until pieces are the size of peas. Add water gradually, tossing with fork, until all is moistened. Roll out pastry to approximately 12\" diameter on floured surface. Mold edges to pie plate.",
+                {"html": "Prepare 1 disk of the <a href=\"baking.html#baking-sweet-all-shortening-pie-crust\">All-Shortening Pie Crust</a>. Roll out to approximately 12 inches diameter on a floured surface and mold into the pie plate."},
                 "Toss sliced apples with 1/4 cup of the brown sugar. Arrange in pie crust.",
                 "Combine remaining brown sugar and flour; cut in margarine until crumbly. Sprinkle mixture over apples.",
-                "Bake at 375 for 40 minutes."
+                "Bake at 375\u00b0F for 40 minutes."
               ],
               "source": "From Susan Muhlheim"
             },
