@@ -767,7 +767,7 @@ module.exports = {
                 "1 1/2 cups plain yogurt",
                 "Dash of cinnamon (optional)",
                 "Dried fruit such as raisins (optional)",
-                "Nuts such as hazelnuts (optional)",
+                "Pecans or slivered almonds (optional)",
                 "Toasted coconut (optional)"
               ]
             },
