@@ -3366,8 +3366,12 @@
       }
       el = el.parentElement;
     }
-    // Scroll the nav item into view, centered so it's not hidden by the browser status bar
-    navLink.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    // Defer scroll until after the browser re-lays out the newly-expanded nav content
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () {
+        navLink.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      });
+    });
   }
 
   // Section expand/collapse arrow buttons
