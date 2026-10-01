@@ -22028,7 +22028,12 @@ module.exports = {
               "steps": [
                 "Blend all ingredients until smooth. Serve immediately."
               ]
-            },
+            }
+          ]
+        },
+        {
+          "title": "Mixers",
+          "recipes": [
             {
               "title": "Sweet and Sour Mix",
               "servings": "Makes about 3 cups   |   Total: about 15 min + cooling",
