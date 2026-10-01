@@ -1675,8 +1675,8 @@ function buildPage(section, navHtml, contentHtml, cookbookData) {
       }
       el = el.parentElement;
     }
-    // Scroll the nav item into view with minimal movement
-    navLink.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    // Scroll the nav item into view, centered so it's not hidden by the browser status bar
+    navLink.scrollIntoView({ behavior: 'smooth', block: 'center' });
   }
 
   // Section expand/collapse arrow buttons
