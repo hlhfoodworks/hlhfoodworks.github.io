@@ -13409,7 +13409,553 @@ module.exports = {
           "title": "Stovetop",
           "subsections": [
             {
-              "title": "With Meat",
+              "title": "Tomato-Based",
+              "recipes": [
+                {
+                  "title": "Spiced Meatballs with Pappardelle",
+                  "servings": "Serves 4   |   Total: 1 hr 15 min",
+                  "source": "Molly Baz, The Club",
+                  "ingredientGroups": [
+                    {
+                      "label": "Sauce",
+                      "ingredients": [
+                        "3 tablespoons unsalted butter",
+                        "1 large yellow onion, finely chopped",
+                        "1 cinnamon stick",
+                        "1 teaspoon Aleppo pepper or red pepper flakes",
+                        "1 (28-oz) can crushed tomatoes",
+                        "2 tablespoons red wine vinegar",
+                        "Kosher salt"
+                      ]
+                    },
+                    {
+                      "label": "Meatball mixture",
+                      "ingredients": [
+                        "1 large egg",
+                        "2 tablespoons extra-virgin olive oil",
+                        "1 cup panko breadcrumbs",
+                        "1 1/2 teaspoons garam masala (or baharat or hawaij)",
+                        "1 1/2 teaspoons ground turmeric",
+                        "1 tablespoon kosher salt, plus more",
+                        "1/3 cup golden raisins or currants",
+                        "3 garlic cloves, finely grated",
+                        "1 bunch dill, coarsely chopped (reserve a handful for garnish)",
+                        "1 bunch cilantro, coarsely chopped (reserve a handful for garnish)"
+                      ]
+                    },
+                    {
+                      "label": "Beef",
+                      "ingredients": [
+                        "1 pound ground beef (80/20)"
+                      ]
+                    },
+                    {
+                      "label": "Finish",
+                      "ingredients": [
+                        "1/2 cup water",
+                        "1 tablespoon unsalted butter",
+                        "1 pound fresh pappardelle or other fresh long pasta"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Preheat oven to 400°F. In a large Dutch oven over medium heat, melt 3 tablespoons butter. Add onion, cinnamon stick, Aleppo pepper or red pepper flakes, and a big pinch of salt. Cook, stirring, until onions begin to soften, 5–6 minutes. Add crushed tomatoes and red wine vinegar. Cover with a tight-fitting lid and transfer to oven for 20 minutes.",
+                    "Meanwhile, in a large bowl, whisk together egg and olive oil. Add panko, garam masala, turmeric, salt, raisins, and grated garlic; mix well. Coarsely chop dill and cilantro (reserving a handful of each for garnish) and stir into the panko mixture. Scoop out 3/4 cup of this mixture and spread on a small rimmed baking sheet; toast in the oven until golden and crisp, stirring once, 9–14 minutes. Let cool. (These are your breadcrumbs.)",
+                    "Add ground beef to the remaining panko mixture and work with your hands until evenly combined. Divide into 8 equal portions and roll into balls.",
+                    "Bring a large pot of salted water to a boil. Remove Dutch oven from oven, uncover, and stir in 1/2 cup water. Nestle meatballs in the sauce, turning once to coat. Return lid slightly ajar and bake until meatballs are just cooked through and bouncy, 12–16 minutes. Remove from oven and keep covered.",
+                    "Transfer meatballs to a plate. Cook pappardelle per package directions until just al dente. Use tongs to transfer pasta into the sauce, add 1 tablespoon butter, and toss to coat, adding pasta water as needed. Divide pasta and sauce among bowls, top with meatballs, toasted breadcrumbs, and fresh herbs."
+                  ]
+                },
+                {
+                  "title": "Pasta with Spicy Sausages, Tomatoes, Rosemary and Olives",
+                  "servings": "Serves 2-3",
+                  "source": "New York Times (Melissa Clark)",
+                  "comments": [
+                    "Originally developed for whole wheat pasta; works with any variety.",
+                    "If fresh tomatoes are not at their peak, substitute one 15-oz can whole tomatoes.",
+                    "Total: 30 min."
+                  ],
+                  "ingredientGroups": [
+                    {
+                      "label": "Sauce",
+                      "ingredients": [
+                        "2 tablespoons extra-virgin olive oil",
+                        "1/2 pound hot Italian sausage, casings removed",
+                        "1 large sprig fresh rosemary",
+                        "1 fat garlic clove, finely chopped",
+                        "1 1/2 pounds ripe plum tomatoes, trimmed and diced",
+                        "1/4 cup pitted green olives, slivered",
+                        "Salt to taste"
+                      ]
+                    },
+                    {
+                      "label": "Pasta",
+                      "ingredients": [
+                        "Salt",
+                        "1/2 pound penne"
+                      ]
+                    },
+                    {
+                      "label": "To serve (optional)",
+                      "ingredients": [
+                        "Finely chopped fresh parsley"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Warm oil in a large skillet over medium-high heat. Add sausage and rosemary; cook, breaking up meat with a fork, until browned and cooked through, 5-7 minutes. Add garlic and cook 1 minute.",
+                    "Add tomatoes and stir occasionally until they break down into a sauce, 10-15 minutes. Stir in olives for the last 5 minutes. Season with salt; cover and keep warm.",
+                    "Meanwhile, bring a large pot of salted water to a boil. Cook penne according to package directions. Drain and toss with sauce. Finish with parsley if desired."
+                  ]
+                },
+                {
+                  "title": "Quick Ragu with Ricotta and Lemon",
+                  "servings": "Serves 4   |   Total: 45 min",
+                  "source": "New York Times (Sarah Copeland)",
+                  "comments": [
+                    "Ground turkey or spicy Italian sausage can substitute for the beef; if using sausage or turkey, consider adding extra fennel seeds and Aleppo pepper or red pepper flakes with the onion in Step 1 to amplify flavor.",
+                    "Calabrian chile paste or Hungarian paprika paste can substitute for sambal oelek."
+                  ],
+                  "ingredientGroups": [
+                    {
+                      "label": "Ragu base",
+                      "ingredients": [
+                        "1/4 cup extra-virgin olive oil, plus more for drizzling",
+                        "1 medium onion, thinly sliced",
+                        "2 garlic cloves, peeled and smashed",
+                        "Fine sea salt and black pepper",
+                        "1 pound ground beef",
+                        "2 heaping tablespoons sambal oelek (or any spicy red-pepper paste)",
+                        "1/4 cup full-bodied red wine (cabernet or merlot)",
+                        "1 (28-oz) can whole peeled tomatoes, with their juices"
+                      ]
+                    },
+                    {
+                      "label": "Pasta",
+                      "ingredients": [
+                        "Salt",
+                        "8 oz plain or whole-wheat lasagna noodles (not no-cook), broken into 1- to 2-inch pieces"
+                      ]
+                    },
+                    {
+                      "label": "Fennel topping",
+                      "ingredients": [
+                        "1 teaspoon fennel seeds"
+                      ]
+                    },
+                    {
+                      "label": "To serve",
+                      "ingredients": [
+                        "1 cup fresh ricotta",
+                        "Zest of 1 lemon",
+                        "Flaky sea salt (such as Maldon)"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Heat oil in a large Dutch oven or pot over medium. Add onion and garlic, season with salt, and cook until just beginning to soften, about 5 minutes. Add ground beef and cook, breaking it apart, until nicely browned but not completely cooked through, about 6 minutes. Stir in sambal oelek. Add wine and stir to release any brown bits from the bottom.",
+                    "Add tomatoes and their juices, crushing completely with your hands or a potato masher. Cook over medium-low, stirring occasionally, until tomatoes break down and meat is cooked through, about 30 minutes. Season with salt and pepper halfway through.",
+                    "Meanwhile, bring a large pot of generously salted water to a boil. Cook broken lasagna noodles according to package directions until al dente.",
+                    "In a small skillet, toast fennel seeds over medium heat until fragrant, 2-3 minutes. Remove and crush on a cutting board with the flat end of a knife.",
+                    "Drain pasta, add to the ragu, and toss to coat. Divide among four bowls and dollop each generously with ricotta. Sprinkle with lemon zest, cracked fennel, flaky salt, and pepper. Drizzle with olive oil and serve warm."
+                  ]
+                },
+                {
+                  "title": "BIG Noods alla Gin with Sungold Tomatoes",
+                  "favorite": true,
+                  "servings": "Serves 4 to 6   |   Prep: 40 minutes   |   Total: 50 minutes",
+                  "comments": [
+                    "Fresh lasagna sheets are called for here for their fun, floppy volume on the plate, but any pasta shape — fresh or dried — works well.",
+                    "Vodka can stand in for the gin."
+                  ],
+                  "source": "The Club, by Molly Baz",
+                  "ingredientGroups": [
+                    {
+                      "label": "Prep",
+                      "ingredients": [
+                        "2 pints Sungold or cherry tomatoes, halved",
+                        "1 yellow onion, finely chopped",
+                        "6 garlic cloves, sliced"
+                      ]
+                    },
+                    {
+                      "label": "Sauce",
+                      "ingredients": [
+                        "3 tablespoons unsalted butter",
+                        "Kosher salt",
+                        "3 ounces double concentrated tomato paste (about 3/4 of a tube)",
+                        "1 tablespoon chopped Calabrian chilies",
+                        "1/4 cup gin or vodka",
+                        "1/4 cup heavy cream",
+                        "1 1/2 ounces (about 3/4 cup) finely grated Parmigiano-Reggiano"
+                      ]
+                    },
+                    {
+                      "label": "Pasta",
+                      "ingredients": [
+                        "12 ounces fresh lasagna sheets (or any pasta shape, fresh or dried)"
+                      ]
+                    },
+                    {
+                      "label": "To finish",
+                      "ingredients": [
+                        "Handful of basil",
+                        "Olive oil, for drizzling",
+                        "More grated Parmigiano-Reggiano"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Bring a large pot of salted water to a boil.",
+                    "Prep: Cut the tomatoes in half. Finely chop the onion and slice the garlic.",
+                    {
+                      "lead": "Sungold sauce:",
+                      "bullets": [
+                        "Heat the butter in a large Dutch oven over medium heat. Add the onion and a big pinch of salt; cook, stirring occasionally, until soft and golden, about 10 minutes.",
+                        "Add the garlic and cook 2 minutes more.",
+                        "Stir in the tomato paste and Calabrian chilies. Cook, stirring occasionally, until the tomato paste starts to caramelize and turn a deeper red, about 5 minutes.",
+                        "Stir in the gin and cook until fully evaporated, about 1 minute.",
+                        "In a small measuring cup, stir 1/4 cup of the hot pasta water into the cream to temper it (this warms the cream so it doesn't break the sauce). Stir the tempered cream into the sauce.",
+                        "Stir in the Parmesan. Remove from heat and cover to keep warm."
+                      ]
+                    },
+                    "Cook the pasta: Add the lasagna sheets to the boiling water, tearing them in half and separating them as you add them; stir to keep them from sticking. Cook about 1 minute less than the package directions. Reserve 1/2 cup pasta water, then drain.",
+                    "Add the noodles and the remaining tomatoes to the pot of sauce. Return to medium heat and cook, stirring gently so as not to break up the noodles, until the tomatoes just begin to wilt, 1 to 2 minutes. Loosen with pasta water as needed.",
+                    "Divide among bowls; top with basil, a drizzle of olive oil, and more Parmesan."
+                  ]
+                },
+                {
+                  "title": "Lisa's Angel Hair Tomato Basil Toss",
+                  "servings": "Serves 4–6",
+                  "source": "Family recipe card, credited to Lisa Sullivan; subtitled \"Angel Hair Tomato Basil Toss\"",
+                  "ingredientGroups": [
+                    {
+                      "label": "Sauce base",
+                      "ingredients": [
+                        "1/2 cup olive oil",
+                        "2 cloves garlic, minced",
+                        "1/4 cup sliced green onions"
+                      ]
+                    },
+                    {
+                      "label": "Tomatoes and herbs",
+                      "ingredients": [
+                        "3 large tomatoes, peeled and diced",
+                        "2 tablespoons chopped fresh basil",
+                        "1 teaspoon salt",
+                        "1/4 teaspoon coarse ground black pepper"
+                      ]
+                    },
+                    {
+                      "label": "Pasta and finish",
+                      "ingredients": [
+                        "1/2 pound angel hair pasta",
+                        "Grated parmesan cheese, for serving"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "In a large skillet, heat olive oil. Add garlic and green onions; stir-fry 1 minute.",
+                    "Stir in tomatoes, basil, salt, and pepper; cook 2 minutes, stirring frequently.",
+                    "Cook angel hair pasta; drain. Toss hot pasta with tomato mixture immediately. Serve sprinkled with parmesan."
+                  ]
+                },
+                {
+                  "title": "Caramelized Shallot Pasta",
+                  "servings": "Serves 4   |   Total: 40 min",
+                  "source": "New York Times (Alison Roman)",
+                  "comments": [
+                    "Recipe yields enough shallot mixture for a double batch of pasta -- refrigerate or freeze the reserved half for another night.",
+                    "Also excellent spread on roasted vegetables, fried eggs, or under crispy chicken thighs.",
+                    "To make meatless: substitute ½ teaspoon soy sauce + a pinch of crumbled nori per anchovy fillet."
+                  ],
+                  "ingredientGroups": [
+                    {
+                      "label": "Shallot mixture",
+                      "ingredients": [
+                        "1/4 cup olive oil",
+                        "6 large shallots, very thinly sliced",
+                        "5 garlic cloves (4 thinly sliced; 1 finely chopped and reserved for parsley topping)",
+                        "Kosher salt and freshly ground black pepper",
+                        "1 teaspoon Aleppo pepper or red pepper flakes, plus more to taste",
+                        "1 (2-oz) can anchovy fillets (about 12), drained",
+                        "1/2 to 3/4 cup tomato paste (one 4.5-oz tube or 6-oz can)"
+                      ]
+                    },
+                    {
+                      "label": "Pasta",
+                      "ingredients": [
+                        "Salt",
+                        "10 oz pasta",
+                        "1 cup reserved pasta cooking water"
+                      ]
+                    },
+                    {
+                      "label": "Parsley topping",
+                      "ingredients": [
+                        "1 cup parsley leaves and tender stems, finely chopped",
+                        "1 garlic clove, finely chopped (reserved from above)",
+                        "Flaky sea salt"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Heat oil in a large Dutch oven over medium-high. Add shallots and 4 thinly sliced garlic cloves; season with salt and pepper. Cook, stirring occasionally, until totally softened and caramelized with golden-brown edges, 15-20 minutes.",
+                    "Add Aleppo pepper or red pepper flakes and anchovies (no need to chop; they will dissolve). Stir to melt anchovies, about 2 minutes.",
+                    "Add tomato paste; season with salt and pepper. Cook, stirring constantly, until tomato paste caramelizes and turns brick red, about 2 minutes. Remove from heat and transfer half the mixture to a container for later use.",
+                    "Cook pasta in generously salted boiling water until very al dente. Transfer pasta to the Dutch oven with the remaining shallot mixture and 1 cup pasta water. Cook over medium-high heat, swirling to coat, until sauce is sticky and reduced (not saucy), 3-5 minutes.",
+                    "Combine finely chopped garlic and parsley in a small bowl; season with flaky salt and pepper. Divide pasta among bowls and top with parsley mixture and more Aleppo pepper if desired."
+                  ]
+                },
+                {
+                  "title": "Pasta Alla Norma",
+                  "favorite": true,
+                  "servings": "Serves 4-6   |   Total: 45 min",
+                  "source": "New York Times (Mark Bittman)",
+                  "comments": [
+                    "Traditional Sicilian pasta. Ricotta salata is the classic cheese; pecorino Romano works well too.",
+                    "Canned tomatoes are fine out of peak season."
+                  ],
+                  "ingredientGroups": [
+                    {
+                      "label": "Eggplant",
+                      "ingredients": [
+                        "1 1/2 pounds eggplant, sliced 1/2 inch thick",
+                        "1/2 cup or more olive oil",
+                        "Salt and pepper"
+                      ]
+                    },
+                    {
+                      "label": "Tomato sauce",
+                      "ingredients": [
+                        "1 tablespoon chopped garlic",
+                        "3 or 4 dried chiles",
+                        "1 1/2 pounds tomatoes, chopped (canned are fine; about 1 can)",
+                        "1 teaspoon good dried oregano (or 1 tablespoon fresh)",
+                        "Salt and pepper"
+                      ]
+                    },
+                    {
+                      "label": "Pasta",
+                      "ingredients": [
+                        "Salt",
+                        "1 pound long pasta"
+                      ]
+                    },
+                    {
+                      "label": "To serve",
+                      "ingredients": [
+                        "1/2 cup chopped fresh parsley or basil",
+                        "1/2 cup grated ricotta salata (or pecorino Romano in a pinch)"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Cook eggplant in abundant olive oil without crowding, sprinkling with salt and adding more oil as needed. Cook in batches until nicely browned and soft. Remove to a plate (do not drain on paper towels). Meanwhile, bring a large pot of salted water to a boil.",
+                    "When all eggplant is done, the pan should have about 2 tablespoons oil. Adjust if needed. Add garlic and chiles over medium heat; cook until garlic just colors. Add tomatoes, oregano, salt, and pepper; cook until saucy, stirring occasionally.",
+                    "Cook pasta until tender but not mushy. While pasta cooks, cut eggplant into strips and reheat 1 minute in the tomato sauce. Drain pasta and toss with tomato sauce and eggplant. Taste and adjust seasoning; top with parsley or basil and grated cheese."
+                  ]
+                },
+                {
+                  "title": "Spaghetti with Fresh Tomato and Basil Sauce",
+                  "servings": "Serves 4   |   Total: 40 min",
+                  "source": "New York Times (Scott Conant)",
+                  "comments": [
+                    "Adding the pasta halfway through its cooking is the key technique -- the pasta finishes absorbing the sauce and develops great flavor.",
+                    "Works with hothouse tomatoes when summer tomatoes are not at their peak."
+                  ],
+                  "ingredientGroups": [
+                    {
+                      "label": "Tomato sauce",
+                      "ingredients": [
+                        "3 pounds fresh plum tomatoes, blanched, peeled, seeded, and quartered",
+                        "3 oz olive oil",
+                        "Salt and freshly ground black pepper",
+                        "1 pinch Aleppo pepper or red pepper flakes"
+                      ]
+                    },
+                    {
+                      "label": "Pasta",
+                      "ingredients": [
+                        "Salt",
+                        "1 pound dry spaghetti"
+                      ]
+                    },
+                    {
+                      "label": "To finish",
+                      "ingredients": [
+                        "2 oz extra-virgin olive oil",
+                        "1 tablespoon unsalted butter",
+                        "6 leaves fresh basil, shredded",
+                        "2 tablespoons freshly grated Parmigiano-Reggiano"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Blanch tomatoes, remove skins, halve and seed, then cut crosswise. Set aside.",
+                    "Heat 3 oz olive oil in a large, deep skillet over medium-high until it just smokes. Add tomatoes; season lightly with salt, pepper, and Aleppo pepper or red pepper flakes (salt will concentrate as sauce reduces). Chop with a potato masher until in fine chunks. Simmer over medium 25 minutes.",
+                    "While sauce simmers, bring a large pot of salted water to a boil. Cook spaghetti until only about halfway done. Drain, reserving some cooking water.",
+                    "Taste and adjust sauce seasoning. Add pasta to sauce and cook over medium-high, swirling, until all liquid is absorbed and pasta is al dente. Add reserved pasta water if sauce over-reduces.",
+                    "Remove from heat; add extra-virgin olive oil, butter, basil, and Parmesan. Mix thoroughly until pasta is an orangy color. Adjust salt; serve on a platter."
+                  ]
+                },
+                {
+                  "title": "Rigatoni with Easy Vodka Sauce",
+                  "favorite": true,
+                  "servings": "Serves 4 | Total: ~40 min",
+                  "source": "Bon Appetit (Claire Saffitz)",
+                  "comments": [
+                    "Using a spider to transfer the pasta (rather than draining) brings pasta water directly into the sauce.",
+                    "Double-concentrated tomato paste in a tube (not a can) gives a richer, deeper flavor."
+                  ],
+                  "ingredientGroups": [
+                    {
+                      "label": "Sauce base",
+                      "ingredients": [
+                        "Kosher salt",
+                        "1 medium onion, finely chopped",
+                        "4 garlic cloves, firmly smashed and peeled",
+                        "2 tablespoons extra-virgin olive oil, plus more for drizzling",
+                        "1 (4.5-oz) tube double-concentrated tomato paste",
+                        "1/2 teaspoon Aleppo pepper or red pepper flakes"
+                      ]
+                    },
+                    {
+                      "label": "Cream addition",
+                      "ingredients": [
+                        "2 oz vodka",
+                        "3/4 cup heavy cream, warmed (see steps)"
+                      ]
+                    },
+                    {
+                      "label": "Pasta",
+                      "ingredients": [
+                        "1 pound rigatoni"
+                      ]
+                    },
+                    {
+                      "label": "To finish",
+                      "ingredients": [
+                        "4 oz Parmesan, finely grated on the small holes of a box grater (divided)",
+                        "Fresh basil leaves, for serving"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Fill a large pot three-quarters with water, salt generously, and bring to a boil over high.",
+                    "Heat 2 tablespoons oil in a Dutch oven over medium next to the pasta pot. Add onion and garlic; cook, stirring constantly, until onion is just starting to brown at the edges, 5-7 minutes.",
+                    "Add the entire tube of tomato paste and Aleppo pepper or red pepper flakes; stir until paste coats the onion. Cook, stirring often, until paste is deep red and starting to brown on the bottom, 5-7 minutes.",
+                    "Add vodka to deglaze, scraping the bottom. Reduce heat to low.",
+                    "Scoop about 1/4 cup of the boiling pasta water into a heatproof measuring cup, then add cream to that cup (this tempers the cream). Slowly pour warmed cream into the Dutch oven, stirring constantly until smooth. Remove from heat.",
+                    "Cook rigatoni in boiling salted water until al dente per package directions. About 1 minute before done, scoop about 1 cup pasta cooking liquid. Heat Dutch oven over low.",
+                    "Transfer rigatoni with a spider directly to the Dutch oven. Add 1/2 cup pasta cooking liquid and stir to incorporate, then gradually add half the Parmesan, stirring constantly to melt into a smooth, glossy sauce. Season with salt; add a splash more pasta water to thin if needed.",
+                    "Divide among bowls. Top with remaining Parmesan; drizzle with more oil; tear basil over."
+                  ]
+                },
+                {
+                  "title": "Burst Tomato Burrata Pasta",
+                  "servings": "Serves 2-4 | Total: 45 min",
+                  "source": "How Sweet Eats",
+                  "comments": [
+                    "The 20-25 minute burst is key -- slow-cooked tomatoes become a concentrated, jammy sauce. Don't rush it.",
+                    "Add Parmesan to each bowl at serving rather than stirring into the pasta so the burrata stays distinct."
+                  ],
+                  "ingredientGroups": [
+                    {
+                      "label": "Burst tomato sauce",
+                      "ingredients": [
+                        "1/4 cup olive oil",
+                        "6 garlic cloves, minced",
+                        "1/2 teaspoon dried basil",
+                        "1/4 teaspoon Aleppo pepper or red pepper flakes, plus more for serving",
+                        "3 cups cherry or grape tomatoes",
+                        "Kosher salt and black pepper"
+                      ]
+                    },
+                    {
+                      "label": "Pasta",
+                      "ingredients": [
+                        "Salt",
+                        "1/2 pound pasta (spaghetti or bucatini)"
+                      ]
+                    },
+                    {
+                      "label": "To finish",
+                      "ingredients": [
+                        "1/4 cup fresh basil, chopped, plus more for serving"
+                      ]
+                    },
+                    {
+                      "label": "To serve",
+                      "ingredients": [
+                        "8 oz burrata",
+                        "Parmesan, for topping"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Heat oil in a large skillet over medium-low. Add garlic, dried basil, and Aleppo pepper or red pepper flakes; cook 1-2 minutes. Add tomatoes with a big pinch of salt and pepper; toss in the oil. Cook 20-25 minutes until tomatoes burst. Adjust heat as needed -- lower if splattering, slightly higher if tomatoes aren't bursting.",
+                    "While tomatoes cook, bring a pot of salted water to a boil and cook pasta.",
+                    "Drain pasta and add directly to the skillet. Toss to coat all the noodles. Turn off heat; toss in fresh basil. Add burrata in pieces (or as one large ball) and mix in to your liking. Taste and season with salt and pepper.",
+                    "Serve immediately with Parmesan, more fresh basil, and Aleppo pepper or red pepper flakes."
+                  ]
+                },
+                {
+                  "title": "Burst Cherry Tomato Orzotto",
+                  "servings": "Serves 4–6   |   Total: 50 min",
+                  "source": "New York Times Cooking / Kayla Hoang",
+                  "comments": [
+                    "Use the best cherry tomatoes you can find — the dish is only as good as the tomatoes.",
+                    "Top each serving with a handful of arugula for a fresh, peppery contrast."
+                  ],
+                  "ingredientGroups": [
+                    {
+                      "label": "Aromatics",
+                      "ingredients": [
+                        "3 tablespoons olive oil",
+                        "1 large shallot, chopped (about 1/3 cup)",
+                        "1 teaspoon salt, plus more to taste",
+                        "1 tablespoon garlic, grated (from 3–4 large cloves)",
+                        "1/4 to 1/2 teaspoon Aleppo pepper or red pepper flakes"
+                      ]
+                    },
+                    {
+                      "label": "Tomato base",
+                      "ingredients": [
+                        "1 1/2 pounds cherry tomatoes",
+                        "1 cup fresh basil leaves, tightly packed and roughly chopped, plus 1 sprig for cooking",
+                        "1 1/4 cups water"
+                      ]
+                    },
+                    {
+                      "label": "Orzo",
+                      "ingredients": [
+                        "1 pound orzo",
+                        "1 quart (4 cups) low-sodium vegetable or chicken broth",
+                        "1/4 teaspoon salt"
+                      ]
+                    },
+                    {
+                      "label": "To finish",
+                      "ingredients": [
+                        "2/3 cup grated Parmesan, plus more for serving",
+                        "1 tablespoon unsalted butter",
+                        "1 1/2 teaspoons fresh lemon juice"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Heat olive oil in a large Dutch oven over medium for about 30 seconds. Add shallot and 1 teaspoon salt; cook, stirring often, until translucent, 2–3 minutes. Add garlic and Aleppo pepper or red pepper flakes; stir until fragrant, about 30 seconds.",
+                    "Add cherry tomatoes, basil sprig, and 1 1/4 cups water. Cover and increase heat to medium-high. Cook, covered, until tomatoes are very soft and burst when pressed, about 8 minutes.",
+                    "Use the back of a wooden spoon to press all tomatoes against the side of the pot until broken down. Maintain a steady, gentle boil. Cook uncovered, stirring occasionally, until the tomato liquid has thickened and reduced by about half, 6–10 minutes.",
+                    "Stir in orzo, broth, and 1/4 teaspoon salt. Bring to a boil over high heat, 4–5 minutes. Reduce to a simmer and cook, stirring every minute or two and scraping the bottom, until orzo is tender and saucy, 9–10 minutes.",
+                    "Remove from heat; discard basil sprig. Stir in Parmesan, butter, lemon juice, and chopped basil until silky. Season with salt. Serve immediately, topped with more Parmesan."
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Cream, Butter & Cheese",
               "recipes": [
                 {
                   "title": "Brie Linguine",
@@ -13493,192 +14039,6 @@ module.exports = {
                   ]
                 },
                 {
-                  "title": "Spiced Meatballs with Pappardelle",
-                  "servings": "Serves 4   |   Total: 1 hr 15 min",
-                  "source": "Molly Baz, The Club",
-                  "ingredientGroups": [
-                    {
-                      "label": "Sauce",
-                      "ingredients": [
-                        "3 tablespoons unsalted butter",
-                        "1 large yellow onion, finely chopped",
-                        "1 cinnamon stick",
-                        "1 teaspoon Aleppo pepper or red pepper flakes",
-                        "1 (28-oz) can crushed tomatoes",
-                        "2 tablespoons red wine vinegar",
-                        "Kosher salt"
-                      ]
-                    },
-                    {
-                      "label": "Meatball mixture",
-                      "ingredients": [
-                        "1 large egg",
-                        "2 tablespoons extra-virgin olive oil",
-                        "1 cup panko breadcrumbs",
-                        "1 1/2 teaspoons garam masala (or baharat or hawaij)",
-                        "1 1/2 teaspoons ground turmeric",
-                        "1 tablespoon kosher salt, plus more",
-                        "1/3 cup golden raisins or currants",
-                        "3 garlic cloves, finely grated",
-                        "1 bunch dill, coarsely chopped (reserve a handful for garnish)",
-                        "1 bunch cilantro, coarsely chopped (reserve a handful for garnish)"
-                      ]
-                    },
-                    {
-                      "label": "Beef",
-                      "ingredients": [
-                        "1 pound ground beef (80/20)"
-                      ]
-                    },
-                    {
-                      "label": "Finish",
-                      "ingredients": [
-                        "1/2 cup water",
-                        "1 tablespoon unsalted butter",
-                        "1 pound fresh pappardelle or other fresh long pasta"
-                      ]
-                    }
-                  ],
-                  "steps": [
-                    "Preheat oven to 400°F. In a large Dutch oven over medium heat, melt 3 tablespoons butter. Add onion, cinnamon stick, Aleppo pepper or red pepper flakes, and a big pinch of salt. Cook, stirring, until onions begin to soften, 5–6 minutes. Add crushed tomatoes and red wine vinegar. Cover with a tight-fitting lid and transfer to oven for 20 minutes.",
-                    "Meanwhile, in a large bowl, whisk together egg and olive oil. Add panko, garam masala, turmeric, salt, raisins, and grated garlic; mix well. Coarsely chop dill and cilantro (reserving a handful of each for garnish) and stir into the panko mixture. Scoop out 3/4 cup of this mixture and spread on a small rimmed baking sheet; toast in the oven until golden and crisp, stirring once, 9–14 minutes. Let cool. (These are your breadcrumbs.)",
-                    "Add ground beef to the remaining panko mixture and work with your hands until evenly combined. Divide into 8 equal portions and roll into balls.",
-                    "Bring a large pot of salted water to a boil. Remove Dutch oven from oven, uncover, and stir in 1/2 cup water. Nestle meatballs in the sauce, turning once to coat. Return lid slightly ajar and bake until meatballs are just cooked through and bouncy, 12–16 minutes. Remove from oven and keep covered.",
-                    "Transfer meatballs to a plate. Cook pappardelle per package directions until just al dente. Use tongs to transfer pasta into the sauce, add 1 tablespoon butter, and toss to coat, adding pasta water as needed. Divide pasta and sauce among bowls, top with meatballs, toasted breadcrumbs, and fresh herbs."
-                  ]
-                },
-                {
-                  "title": "Linguine with Clams and Wild Mushrooms",
-                  "servings": "Serves 4",
-                  "ingredientGroups": [
-                    {
-                      "label": "Mushrooms",
-                      "ingredients": [
-                        "6 tablespoons olive oil (divided)",
-                        "1 pound mixed fresh wild mushrooms (oyster and/or shiitake), stems trimmed, caps sliced"
-                      ]
-                    },
-                    {
-                      "label": "Clams",
-                      "ingredients": [
-                        "6 large garlic cloves, minced",
-                        "1/4 teaspoon Aleppo pepper or red pepper flakes",
-                        "1 cup dry white wine",
-                        "5 pounds clams (about 24 littlenecks)"
-                      ]
-                    },
-                    {
-                      "label": "Finish",
-                      "ingredients": [
-                        "1 pound linguine",
-                        "2 bunches fresh chives or 1 bunch green onions, chopped",
-                        "Salt and pepper to taste"
-                      ]
-                    }
-                  ],
-                  "steps": [
-                    "Heat 3 tablespoons oil over high heat. Saute mushrooms until beginning to brown, about 5 minutes. Transfer to plate using slotted spoon.",
-                    "Add remaining 3 tablespoons oil and garlic to pot. Saute until tender, about 3 minutes.",
-                    "Add Aleppo pepper, then wine and clams. Cover and cook until clams open, about 8 minutes.",
-                    "Cook linguine in a large pot of boiling salted water until just tender but firm to bite. Drain and transfer to large bowl.",
-                    "Spoon mushrooms over pasta, then top with clam mixture, discarding any unopened clams. Season with salt and pepper. Sprinkle with chives."
-                  ]
-                },
-                {
-                  "title": "Linguine with Mussels",
-                  "ingredientGroups": [
-                    {
-                      "label": "Aromatics",
-                      "ingredients": [
-                        "2 teaspoons olive oil",
-                        "1/2 cup chopped fennel bulb",
-                        "1/2 cup finely chopped onion",
-                        "2 garlic cloves, minced"
-                      ]
-                    },
-                    {
-                      "label": "Sauce",
-                      "ingredients": [
-                        "1 cup diced tomato",
-                        "1 cup dry vermouth",
-                        "3 tablespoons chopped fresh parsley",
-                        "1 tablespoon tomato paste",
-                        "1 teaspoon fresh thyme leaves",
-                        "1/4 teaspoon salt",
-                        "1/8 teaspoon Aleppo pepper or red pepper flakes"
-                      ]
-                    },
-                    {
-                      "label": "Finish",
-                      "ingredients": [
-                        "28 fresh mussels, scrubbed and debearded",
-                        "2 tablespoons water",
-                        "2 teaspoons cornstarch",
-                        "2 cups hot cooked linguine (about 4 oz uncooked)"
-                      ]
-                    }
-                  ],
-                  "steps": [
-                    "Heat oil over medium heat. Add fennel, onion, and garlic; saute 5 minutes.",
-                    "Add sauce ingredients and bring to boil.",
-                    "Add mussels, cover, and cook 3 minutes until shells open. Remove from heat. Discard any unopened shells. Reserve 10 shells with meat intact; remove meat from the rest.",
-                    "Combine water and cornstarch; add to tomato mixture and boil 2 minutes, stirring.",
-                    "Serve 1 cup pasta per plate topped with 1 cup sauce and 5 mussels in shells."
-                  ]
-                },
-                {
-                  "title": "Pasta con le Sarde",
-                  "servings": "Serves 4",
-                  "source": "From Chef Louisa (Villa Britannia, Taormina, Sicily)",
-                  "comments": [
-                    {
-                      "html": "Traditionally made with <a href='#busiate'>Busiate</a> (Sicilian spiral pasta; see recipe, this section). Good store-bought substitutes: bucatini, perciatelli, or thick spaghetti."
-                    },
-                    "Wild fennel is traditional and highly recommended; the frond tops of a fennel bulb are an excellent substitute.",
-                    "The breadcrumb topping (pangrattato) is essential — do not skip it."
-                  ],
-                  "ingredientGroups": [
-                    {
-                      "label": "Pasta",
-                      "ingredients": [
-                        "1 batch Busiate (see recipe, this section) or store-bought bucatini, perciatelli, or thick spaghetti"
-                      ]
-                    },
-                    {
-                      "label": "Sardine sauce",
-                      "ingredients": [
-                        "60ml extra-virgin olive oil",
-                        "1 small onion, finely diced",
-                        "2 salted anchovies (or 4 oil-packed fillets, rinsed)",
-                        "400g fresh sardines, cleaned and filleted",
-                        "60g raisins",
-                        "30g pine nuts",
-                        "1/2 glass dry white wine",
-                        "1 saffron sachet (0.125g), dissolved in 2 tablespoons warm water",
-                        "100ml tomato passata",
-                        "100g wild fennel (or fennel frond tops), boiled until just tender"
-                      ]
-                    },
-                    {
-                      "label": "Breadcrumb topping",
-                      "ingredients": [
-                        "30ml olive oil",
-                        "1 clove garlic",
-                        "2 salted anchovies (or 4 oil-packed fillets, rinsed)",
-                        "80g dried breadcrumbs"
-                      ]
-                    }
-                  ],
-                  "steps": [
-                    {
-                      "html": "Make or obtain the pasta: prepare <a href=\"noodles.html#busiate\">Busiate</a> following the recipe in this section, or use store-bought bucatini or thick spaghetti."
-                    },
-                    "Make the breadcrumb topping: heat olive oil in a small pan. Add garlic and anchovies, stirring until anchovies dissolve. Add breadcrumbs and toast, stirring, until golden and crisp. Remove from heat and spread out to cool.",
-                    "Make the sardine sauce: heat olive oil over medium heat. Add onion and the 2 anchovies; cook until anchovies dissolve and onion softens. Add raisins and pine nuts. Pour in white wine and let reduce briefly. Add saffron water, passata, and boiled fennel. Add fresh sardines and cook about 8 minutes until just cooked through.",
-                    "Cook the pasta in well-salted boiling water (8–10 minutes for busiate; per package for store-bought). Drain and toss with the sardine sauce. Plate and top generously with the breadcrumb topping."
-                  ]
-                },
-                {
                   "title": "Crisp Gnocchi with Sausage and Peas",
                   "servings": "Serves 4",
                   "source": "New York Times (Ali Slagle)",
@@ -13723,156 +14083,6 @@ module.exports = {
                     "Add remaining 2 tablespoons oil to the skillet over medium-high. Add sausage and break into small pieces. Cook undisturbed until browned, 2-4 minutes; stir and cook through, 2-4 minutes more.",
                     "Stir in peas, mustard, and 1/2 cup water; scrape up the browned bits. Simmer until peas are cooked through, 2-4 minutes.",
                     "Add browned gnocchi and Parmesan; stir until cheese melts. Season with salt and pepper, stir in herbs, and serve topped with more herbs, Parmesan, and black pepper."
-                  ]
-                },
-                {
-                  "title": "Pasta with Spicy Sausages, Tomatoes, Rosemary and Olives",
-                  "servings": "Serves 2-3",
-                  "source": "New York Times (Melissa Clark)",
-                  "comments": [
-                    "Originally developed for whole wheat pasta; works with any variety.",
-                    "If fresh tomatoes are not at their peak, substitute one 15-oz can whole tomatoes.",
-                    "Total: 30 min."
-                  ],
-                  "ingredientGroups": [
-                    {
-                      "label": "Sauce",
-                      "ingredients": [
-                        "2 tablespoons extra-virgin olive oil",
-                        "1/2 pound hot Italian sausage, casings removed",
-                        "1 large sprig fresh rosemary",
-                        "1 fat garlic clove, finely chopped",
-                        "1 1/2 pounds ripe plum tomatoes, trimmed and diced",
-                        "1/4 cup pitted green olives, slivered",
-                        "Salt to taste"
-                      ]
-                    },
-                    {
-                      "label": "Pasta",
-                      "ingredients": [
-                        "Salt",
-                        "1/2 pound penne"
-                      ]
-                    },
-                    {
-                      "label": "To serve (optional)",
-                      "ingredients": [
-                        "Finely chopped fresh parsley"
-                      ]
-                    }
-                  ],
-                  "steps": [
-                    "Warm oil in a large skillet over medium-high heat. Add sausage and rosemary; cook, breaking up meat with a fork, until browned and cooked through, 5-7 minutes. Add garlic and cook 1 minute.",
-                    "Add tomatoes and stir occasionally until they break down into a sauce, 10-15 minutes. Stir in olives for the last 5 minutes. Season with salt; cover and keep warm.",
-                    "Meanwhile, bring a large pot of salted water to a boil. Cook penne according to package directions. Drain and toss with sauce. Finish with parsley if desired."
-                  ]
-                },
-                {
-                  "title": "Linguine with White Clam Sauce",
-                  "servings": "Serves 6   |   Total: 40 min",
-                  "source": "Anne Burrell, Food Network",
-                  "comments": [
-                    "When pouring reserved clam cooking liquid, stop before the last bit -- better to lose some liquid than to get sand in the pasta.",
-                    "Parmigiano is optional; traditional Italian cooking avoids cheese with shellfish, but this recipe offers it."
-                  ],
-                  "ingredientGroups": [
-                    {
-                      "label": "First clam batch",
-                      "ingredients": [
-                        "Extra-virgin olive oil",
-                        "5 garlic cloves, smashed",
-                        "3 1/2 dozen littleneck clams, scrubbed",
-                        "1 cup dry white wine",
-                        "1/2 cup water",
-                        "1 large pinch Aleppo pepper or red pepper flakes"
-                      ]
-                    },
-                    {
-                      "label": "Second clam batch",
-                      "ingredients": [
-                        "Extra-virgin olive oil",
-                        "4 garlic cloves, smashed",
-                        "1 1/2 dozen littleneck clams, scrubbed",
-                        "1 large pinch Aleppo pepper or red pepper flakes"
-                      ]
-                    },
-                    {
-                      "label": "Pasta",
-                      "ingredients": [
-                        "Salt",
-                        "1 pound linguine"
-                      ]
-                    },
-                    {
-                      "label": "To finish",
-                      "ingredients": [
-                        "2 tablespoons unsalted butter",
-                        "2 tablespoons chopped fresh Italian parsley",
-                        "2 tablespoons chopped fresh oregano",
-                        "1 cup grated Parmigiano-Reggiano (optional), plus shavings for garnish",
-                        "High-quality finishing extra-virgin olive oil"
-                      ]
-                    }
-                  ],
-                  "steps": [
-                    "Coat a large saute pan generously with olive oil and add 5 garlic cloves. Cook over medium-high until garlic is golden and very fragrant; remove and discard garlic. Add 3 1/2 dozen clams, white wine, 1/2 cup water, and a pinch of Aleppo pepper or red pepper flakes. Cover and cook over medium heat until clams open, about 10 minutes. Transfer clams to a bowl; reduce cooking liquid by a third or so. Let clams cool, remove meat from shells, and reserve. Discard shells. Pour cooking liquid into a measuring cup, leaving any sand behind.",
-                    "Bring a large pot of well-salted water to a boil.",
-                    "Return the saute pan to the heat and coat again with olive oil. Add remaining 4 garlic cloves and a pinch of Aleppo pepper or red pepper flakes. Cook until garlic is golden; remove and discard. Add remaining 1 1/2 dozen raw clams and the reserved clam cooking liquid. Cover and cook until clams open.",
-                    "While second batch of clams cooks, add linguine to the boiling water and cook until very al dente, about 1 minute less than package directions.",
-                    "Remove whole cooked clams from the pan and keep warm. Add butter and the shelled clam meat to the pan. Bring to a boil, add cooked linguine and herbs, and toss together, cooking until the sauce clings to the pasta. Turn off heat and toss in Parmigiano-Reggiano if using. Finish with a drizzle of high-quality olive oil; toss vigorously.",
-                    "Divide into serving dishes and garnish with whole clams in shells and more Parmigiano shavings if desired."
-                  ]
-                },
-                {
-                  "title": "Quick Ragu with Ricotta and Lemon",
-                  "servings": "Serves 4   |   Total: 45 min",
-                  "source": "New York Times (Sarah Copeland)",
-                  "comments": [
-                    "Ground turkey or spicy Italian sausage can substitute for the beef; if using sausage or turkey, consider adding extra fennel seeds and Aleppo pepper or red pepper flakes with the onion in Step 1 to amplify flavor.",
-                    "Calabrian chile paste or Hungarian paprika paste can substitute for sambal oelek."
-                  ],
-                  "ingredientGroups": [
-                    {
-                      "label": "Ragu base",
-                      "ingredients": [
-                        "1/4 cup extra-virgin olive oil, plus more for drizzling",
-                        "1 medium onion, thinly sliced",
-                        "2 garlic cloves, peeled and smashed",
-                        "Fine sea salt and black pepper",
-                        "1 pound ground beef",
-                        "2 heaping tablespoons sambal oelek (or any spicy red-pepper paste)",
-                        "1/4 cup full-bodied red wine (cabernet or merlot)",
-                        "1 (28-oz) can whole peeled tomatoes, with their juices"
-                      ]
-                    },
-                    {
-                      "label": "Pasta",
-                      "ingredients": [
-                        "Salt",
-                        "8 oz plain or whole-wheat lasagna noodles (not no-cook), broken into 1- to 2-inch pieces"
-                      ]
-                    },
-                    {
-                      "label": "Fennel topping",
-                      "ingredients": [
-                        "1 teaspoon fennel seeds"
-                      ]
-                    },
-                    {
-                      "label": "To serve",
-                      "ingredients": [
-                        "1 cup fresh ricotta",
-                        "Zest of 1 lemon",
-                        "Flaky sea salt (such as Maldon)"
-                      ]
-                    }
-                  ],
-                  "steps": [
-                    "Heat oil in a large Dutch oven or pot over medium. Add onion and garlic, season with salt, and cook until just beginning to soften, about 5 minutes. Add ground beef and cook, breaking it apart, until nicely browned but not completely cooked through, about 6 minutes. Stir in sambal oelek. Add wine and stir to release any brown bits from the bottom.",
-                    "Add tomatoes and their juices, crushing completely with your hands or a potato masher. Cook over medium-low, stirring occasionally, until tomatoes break down and meat is cooked through, about 30 minutes. Season with salt and pepper halfway through.",
-                    "Meanwhile, bring a large pot of generously salted water to a boil. Cook broken lasagna noodles according to package directions until al dente.",
-                    "In a small skillet, toast fennel seeds over medium heat until fragrant, 2-3 minutes. Remove and crush on a cutting board with the flat end of a knife.",
-                    "Drain pasta, add to the ragu, and toss to coat. Divide among four bowls and dollop each generously with ricotta. Sprinkle with lemon zest, cracked fennel, flaky salt, and pepper. Drizzle with olive oil and serve warm."
                   ]
                 },
                 {
@@ -13931,193 +14141,6 @@ module.exports = {
                     "Return bacon to the skillet; add cooked spaghetti and toss to coat and heat through, adding more olive oil if dry. Add beaten eggs and cook, tossing constantly with tongs or a large fork, until eggs are barely set. Quickly add 1/2 cup Parmesan and toss again. Season with salt and pepper.",
                     "Serve warm with parsley and extra Parmesan."
                   ]
-                }
-              ]
-            },
-            {
-              "title": "Meatless",
-              "recipes": [
-                {
-                  "title": "BIG Noods alla Gin with Sungold Tomatoes",
-                  "favorite": true,
-                  "servings": "Serves 4 to 6   |   Prep: 40 minutes   |   Total: 50 minutes",
-                  "comments": [
-                    "Fresh lasagna sheets are called for here for their fun, floppy volume on the plate, but any pasta shape — fresh or dried — works well.",
-                    "Vodka can stand in for the gin."
-                  ],
-                  "source": "The Club, by Molly Baz",
-                  "ingredientGroups": [
-                    {
-                      "label": "Prep",
-                      "ingredients": [
-                        "2 pints Sungold or cherry tomatoes, halved",
-                        "1 yellow onion, finely chopped",
-                        "6 garlic cloves, sliced"
-                      ]
-                    },
-                    {
-                      "label": "Sauce",
-                      "ingredients": [
-                        "3 tablespoons unsalted butter",
-                        "Kosher salt",
-                        "3 ounces double concentrated tomato paste (about 3/4 of a tube)",
-                        "1 tablespoon chopped Calabrian chilies",
-                        "1/4 cup gin or vodka",
-                        "1/4 cup heavy cream",
-                        "1 1/2 ounces (about 3/4 cup) finely grated Parmigiano-Reggiano"
-                      ]
-                    },
-                    {
-                      "label": "Pasta",
-                      "ingredients": [
-                        "12 ounces fresh lasagna sheets (or any pasta shape, fresh or dried)"
-                      ]
-                    },
-                    {
-                      "label": "To finish",
-                      "ingredients": [
-                        "Handful of basil",
-                        "Olive oil, for drizzling",
-                        "More grated Parmigiano-Reggiano"
-                      ]
-                    }
-                  ],
-                  "steps": [
-                    "Bring a large pot of salted water to a boil.",
-                    "Prep: Cut the tomatoes in half. Finely chop the onion and slice the garlic.",
-                    {
-                      "lead": "Sungold sauce:",
-                      "bullets": [
-                        "Heat the butter in a large Dutch oven over medium heat. Add the onion and a big pinch of salt; cook, stirring occasionally, until soft and golden, about 10 minutes.",
-                        "Add the garlic and cook 2 minutes more.",
-                        "Stir in the tomato paste and Calabrian chilies. Cook, stirring occasionally, until the tomato paste starts to caramelize and turn a deeper red, about 5 minutes.",
-                        "Stir in the gin and cook until fully evaporated, about 1 minute.",
-                        "In a small measuring cup, stir 1/4 cup of the hot pasta water into the cream to temper it (this warms the cream so it doesn't break the sauce). Stir the tempered cream into the sauce.",
-                        "Stir in the Parmesan. Remove from heat and cover to keep warm."
-                      ]
-                    },
-                    "Cook the pasta: Add the lasagna sheets to the boiling water, tearing them in half and separating them as you add them; stir to keep them from sticking. Cook about 1 minute less than the package directions. Reserve 1/2 cup pasta water, then drain.",
-                    "Add the noodles and the remaining tomatoes to the pot of sauce. Return to medium heat and cook, stirring gently so as not to break up the noodles, until the tomatoes just begin to wilt, 1 to 2 minutes. Loosen with pasta water as needed.",
-                    "Divide among bowls; top with basil, a drizzle of olive oil, and more Parmesan."
-                  ]
-                },
-                {
-                  "title": "Artichoke Pesto Pasta with Fried Peppercorns",
-                  "servings": "Serves 4   |   Total: 30 minutes",
-                  "comments": [
-                    "The fried peppercorns are worth making extra of — Molly Baz notes they're a great crispy, spicy garnish on all sorts of dishes."
-                  ],
-                  "source": "The Club, by Molly Baz",
-                  "ingredientGroups": [
-                    {
-                      "label": "Prep",
-                      "ingredients": [
-                        "2 to 3 lemons (1 1/2 for peel and juice; remaining 1/2 to 1 lemon reserved for finishing)",
-                        "1 large bunch flat-leaf parsley, leaves and tender stems picked (about 2 cups packed)",
-                        "1 large or 2 small garlic cloves",
-                        "2 ounces Parmigiano-Reggiano, finely grated (about 3/4 cup), divided",
-                        "One 14.5- to 16-ounce jar marinated artichokes (preferably Mezzetta), drained, brine reserved"
-                      ]
-                    },
-                    {
-                      "label": "Pesto",
-                      "ingredients": [
-                        "1/3 cup olive oil",
-                        "3/4 cup (2 ounces) blanched almonds",
-                        "2 teaspoons kosher salt"
-                      ]
-                    },
-                    {
-                      "label": "Pasta",
-                      "ingredients": [
-                        "1 pound mezzi rigatoni",
-                        "Kosher salt, for the pasta water"
-                      ]
-                    },
-                    {
-                      "label": "Fried peppercorns",
-                      "ingredients": [
-                        "2 tablespoons olive oil",
-                        "2 tablespoons black peppercorns",
-                        "Kosher salt, to taste"
-                      ]
-                    },
-                    {
-                      "label": "To finish",
-                      "ingredients": [
-                        "One 8-ounce ball burrata",
-                        "More grated Parmigiano-Reggiano"
-                      ]
-                    }
-                  ],
-                  "steps": [
-                    "Prep: Remove the peel from 1 1/2 lemons in long strips with a vegetable peeler; squeeze 1/4 cup juice from the lemons (reserve more lemon for finishing).",
-                    "Pesto: In a food processor, process the lemon peels until finely chopped. Add the parsley and process until roughly chopped. Add the garlic, artichokes, artichoke brine, olive oil, almonds, half the Parmesan, and the salt; process until a coarse pesto forms. Taste; add lemon juice if needed.",
-                    "Cook the pasta: Bring a large pot of heavily salted water to a boil. Add the rigatoni and cook to al dente, 1 to 2 minutes less than the package directions. Reserve 1 cup pasta water, then drain.",
-                    {
-                      "lead": "Fried peppercorns (meanwhile, as the pasta boils):",
-                      "bullets": [
-                        "Add the remaining 2 tablespoons olive oil to your smallest skillet. When shimmering, add the peppercorns. Toast, swirling the pan, until fragrant and slightly darkened, about 2 minutes.",
-                        "Remove from heat and let rest in the oil until they stop popping. Transfer to a paper-towel-lined plate with a slotted spoon.",
-                        "Let cool, then roughly chop. Season generously with salt."
-                      ]
-                    },
-                    "Plate it up: Return the pasta to the pot and add the pesto. Set over medium-low heat. Add 1/2 cup of the reserved pasta water and the remaining Parmesan; toss vigorously until the sauce emulsifies and coats the pasta. Add more pasta water or lemon juice to loosen if needed.",
-                    "Divide among plates and top with torn burrata, a final grating of Parmesan, and the fried peppercorns."
-                  ]
-                },
-                {
-                  "title": "Lemon Fusilli with Arugula",
-                  "favorite": true,
-                  "servings": "Serves 4 to 5   |   Prep: 10 minutes   |   Cook: 30 minutes   |   Total: 40 minutes",
-                  "source": "Food Network, by Ina Garten, from Barefoot Contessa at Home",
-                  "ingredientGroups": [
-                    {
-                      "label": "Lemon cream sauce",
-                      "ingredients": [
-                        "1 tablespoon good olive oil",
-                        "1 tablespoon minced garlic (2 cloves)",
-                        "2 cups heavy cream",
-                        "Zest and juice of 2 lemons",
-                        "Kosher salt and freshly ground black pepper"
-                      ]
-                    },
-                    {
-                      "label": "Broccoli",
-                      "ingredients": [
-                        "1 bunch broccoli, cut into florets"
-                      ]
-                    },
-                    {
-                      "label": "Pasta",
-                      "ingredients": [
-                        "1 pound dried fusilli pasta"
-                      ]
-                    },
-                    {
-                      "label": "To finish",
-                      "ingredients": [
-                        "1/2 pound baby arugula (or 2 bunches common arugula, leaves cut in thirds)",
-                        "1/2 cup freshly grated Parmesan",
-                        "1 pint grape or cherry tomatoes, halved",
-                        "1 remaining lemon, sliced 1/4-inch thick"
-                      ]
-                    }
-                  ],
-                  "steps": [
-                    "Lemon cream sauce: Heat the olive oil in a medium saucepan over medium heat; add the garlic and cook 60 seconds. Add the cream and bring to a boil. Add the lemon zest and juice; simmer over low heat until thickened, about 20 minutes. Season with salt and pepper.",
-                    "Meanwhile, cook the broccoli florets in a pot of boiling salted water 3 to 5 minutes, until tender but still firm. Drain and set aside.",
-                    {
-                      "lead": "Pasta:",
-                      "bullets": [
-                        "Bring a large pot of water to a boil; add 1 tablespoon salt and the pasta. Cook according to the package directions, about 12 minutes. Drain.",
-                        "Return the pasta to the pot. Immediately add the cream mixture and cook over medium-low heat 3 minutes, until most of the sauce is absorbed."
-                      ]
-                    },
-                    "Pour the hot pasta into a large bowl; add the arugula, Parmesan, tomatoes, and cooked broccoli.",
-                    "Cut the remaining lemon in half lengthwise, slice 1/4-inch thick crosswise, and add to the pasta.",
-                    "Toss well, season to taste, and serve hot."
-                  ]
                 },
                 {
                   "title": "Nuala's Riccota Penne",
@@ -14147,76 +14170,6 @@ module.exports = {
                     "Bring ricotta to room temperature. Place in a large serving bowl.",
                     "Add scallions, parsley or basil, grated parmesan, salt, nutmeg, and cayenne to ricotta; mix.",
                     "Cook pasta. When ready, stir 1/4 cup pasta cooking water into the ricotta mixture. Drain pasta and toss with ricotta."
-                  ]
-                },
-                {
-                  "title": "Lisa's Angel Hair Tomato Basil Toss",
-                  "servings": "Serves 4–6",
-                  "source": "Family recipe card, credited to Lisa Sullivan; subtitled \"Angel Hair Tomato Basil Toss\"",
-                  "ingredientGroups": [
-                    {
-                      "label": "Sauce base",
-                      "ingredients": [
-                        "1/2 cup olive oil",
-                        "2 cloves garlic, minced",
-                        "1/4 cup sliced green onions"
-                      ]
-                    },
-                    {
-                      "label": "Tomatoes and herbs",
-                      "ingredients": [
-                        "3 large tomatoes, peeled and diced",
-                        "2 tablespoons chopped fresh basil",
-                        "1 teaspoon salt",
-                        "1/4 teaspoon coarse ground black pepper"
-                      ]
-                    },
-                    {
-                      "label": "Pasta and finish",
-                      "ingredients": [
-                        "1/2 pound angel hair pasta",
-                        "Grated parmesan cheese, for serving"
-                      ]
-                    }
-                  ],
-                  "steps": [
-                    "In a large skillet, heat olive oil. Add garlic and green onions; stir-fry 1 minute.",
-                    "Stir in tomatoes, basil, salt, and pepper; cook 2 minutes, stirring frequently.",
-                    "Cook angel hair pasta; drain. Toss hot pasta with tomato mixture immediately. Serve sprinkled with parmesan."
-                  ]
-                },
-                {
-                  "id": "busiate",
-                  "title": "Busiate (Sicilian Spiral Pasta)",
-                  "servings": "Makes about 8 servings",
-                  "source": "From Chef Louisa (Villa Britannia, Taormina, Sicily)",
-                  "comments": [
-                    "Busiate is the traditional pasta of western Sicily (Trapani). Made with semola rather than egg — firmer and more toothsome than egg pasta.",
-                    "The shaping tool is a ferro (long thin metal skewer); a thin wooden skewer or knitting needle works as a substitute.",
-                    "Use with Pasta con le Sarde (this section), pesto trapanese, or any bold Sicilian sauce."
-                  ],
-                  "ingredientGroups": [
-                    {
-                      "label": "Pasta dough",
-                      "ingredients": [
-                        "500g semola flour (durum wheat semolina)",
-                        "250ml water",
-                        "1 tablespoon olive oil",
-                        "Large pinch of salt"
-                      ]
-                    },
-                    {
-                      "label": "To shape",
-                      "ingredients": [
-                        "1 ferro (long thin metal skewer) or thin wooden skewer"
-                      ]
-                    }
-                  ],
-                  "steps": [
-                    "Mound the semola on a clean surface. Add salt and olive oil and make a well in the center. Gradually work the water into the flour with your hands, adding slowly, until a firm dough forms.",
-                    "Knead the dough, stretching and folding, for 10–15 minutes. If the dough warms up, stop and rest briefly. Refrigerate 15–30 minutes.",
-                    "Pinch off a small piece of dough and roll into a thin rope on the work surface. Hold the skewer at a slight diagonal against the rope and press-roll forward, spiraling the dough around the skewer. Slide off. Repeat with remaining dough.",
-                    "Cook in well-salted boiling water for 8–10 minutes."
                   ]
                 },
                 {
@@ -14363,53 +14316,6 @@ module.exports = {
                   ]
                 },
                 {
-                  "title": "Caramelized Shallot Pasta",
-                  "servings": "Serves 4   |   Total: 40 min",
-                  "source": "New York Times (Alison Roman)",
-                  "comments": [
-                    "Recipe yields enough shallot mixture for a double batch of pasta -- refrigerate or freeze the reserved half for another night.",
-                    "Also excellent spread on roasted vegetables, fried eggs, or under crispy chicken thighs.",
-                    "To make meatless: substitute ½ teaspoon soy sauce + a pinch of crumbled nori per anchovy fillet."
-                  ],
-                  "ingredientGroups": [
-                    {
-                      "label": "Shallot mixture",
-                      "ingredients": [
-                        "1/4 cup olive oil",
-                        "6 large shallots, very thinly sliced",
-                        "5 garlic cloves (4 thinly sliced; 1 finely chopped and reserved for parsley topping)",
-                        "Kosher salt and freshly ground black pepper",
-                        "1 teaspoon Aleppo pepper or red pepper flakes, plus more to taste",
-                        "1 (2-oz) can anchovy fillets (about 12), drained",
-                        "1/2 to 3/4 cup tomato paste (one 4.5-oz tube or 6-oz can)"
-                      ]
-                    },
-                    {
-                      "label": "Pasta",
-                      "ingredients": [
-                        "Salt",
-                        "10 oz pasta",
-                        "1 cup reserved pasta cooking water"
-                      ]
-                    },
-                    {
-                      "label": "Parsley topping",
-                      "ingredients": [
-                        "1 cup parsley leaves and tender stems, finely chopped",
-                        "1 garlic clove, finely chopped (reserved from above)",
-                        "Flaky sea salt"
-                      ]
-                    }
-                  ],
-                  "steps": [
-                    "Heat oil in a large Dutch oven over medium-high. Add shallots and 4 thinly sliced garlic cloves; season with salt and pepper. Cook, stirring occasionally, until totally softened and caramelized with golden-brown edges, 15-20 minutes.",
-                    "Add Aleppo pepper or red pepper flakes and anchovies (no need to chop; they will dissolve). Stir to melt anchovies, about 2 minutes.",
-                    "Add tomato paste; season with salt and pepper. Cook, stirring constantly, until tomato paste caramelizes and turns brick red, about 2 minutes. Remove from heat and transfer half the mixture to a container for later use.",
-                    "Cook pasta in generously salted boiling water until very al dente. Transfer pasta to the Dutch oven with the remaining shallot mixture and 1 cup pasta water. Cook over medium-high heat, swirling to coat, until sauce is sticky and reduced (not saucy), 3-5 minutes.",
-                    "Combine finely chopped garlic and parsley in a small bowl; season with flaky salt and pepper. Divide pasta among bowls and top with parsley mixture and more Aleppo pepper if desired."
-                  ]
-                },
-                {
                   "title": "Chili Crisp Fettuccine Alfredo with Spinach",
                   "servings": "Serves 6   |   Total: 25 min",
                   "source": "New York Times (Genevieve Ko)",
@@ -14512,109 +14418,6 @@ module.exports = {
                   ]
                 },
                 {
-                  "title": "Pasta Alla Norma",
-                  "favorite": true,
-                  "servings": "Serves 4-6   |   Total: 45 min",
-                  "source": "New York Times (Mark Bittman)",
-                  "comments": [
-                    "Traditional Sicilian pasta. Ricotta salata is the classic cheese; pecorino Romano works well too.",
-                    "Canned tomatoes are fine out of peak season."
-                  ],
-                  "ingredientGroups": [
-                    {
-                      "label": "Eggplant",
-                      "ingredients": [
-                        "1 1/2 pounds eggplant, sliced 1/2 inch thick",
-                        "1/2 cup or more olive oil",
-                        "Salt and pepper"
-                      ]
-                    },
-                    {
-                      "label": "Tomato sauce",
-                      "ingredients": [
-                        "1 tablespoon chopped garlic",
-                        "3 or 4 dried chiles",
-                        "1 1/2 pounds tomatoes, chopped (canned are fine; about 1 can)",
-                        "1 teaspoon good dried oregano (or 1 tablespoon fresh)",
-                        "Salt and pepper"
-                      ]
-                    },
-                    {
-                      "label": "Pasta",
-                      "ingredients": [
-                        "Salt",
-                        "1 pound long pasta"
-                      ]
-                    },
-                    {
-                      "label": "To serve",
-                      "ingredients": [
-                        "1/2 cup chopped fresh parsley or basil",
-                        "1/2 cup grated ricotta salata (or pecorino Romano in a pinch)"
-                      ]
-                    }
-                  ],
-                  "steps": [
-                    "Cook eggplant in abundant olive oil without crowding, sprinkling with salt and adding more oil as needed. Cook in batches until nicely browned and soft. Remove to a plate (do not drain on paper towels). Meanwhile, bring a large pot of salted water to a boil.",
-                    "When all eggplant is done, the pan should have about 2 tablespoons oil. Adjust if needed. Add garlic and chiles over medium heat; cook until garlic just colors. Add tomatoes, oregano, salt, and pepper; cook until saucy, stirring occasionally.",
-                    "Cook pasta until tender but not mushy. While pasta cooks, cut eggplant into strips and reheat 1 minute in the tomato sauce. Drain pasta and toss with tomato sauce and eggplant. Taste and adjust seasoning; top with parsley or basil and grated cheese."
-                  ]
-                },
-                {
-                  "title": "Pasta with Corn, Mint and Red Onions",
-                  "servings": "Serves 4-6   |   Total: 25 min",
-                  "source": "New York Times (Melissa Clark)",
-                  "comments": [
-                    "Equally good with frozen corn and year-round grape tomatoes cut in cubes.",
-                    "Can be served warm, at room temperature, or cold as a pasta salad."
-                  ],
-                  "ingredientGroups": [
-                    {
-                      "label": "Pasta and corn",
-                      "ingredients": [
-                        "Fine sea salt or table salt",
-                        "1 pound cavatelli (or orecchiette, shells, or another small pasta)",
-                        "5 ears corn, shucked, kernels removed (about 4 cups)"
-                      ]
-                    },
-                    {
-                      "label": "Tomato-onion marinade",
-                      "ingredients": [
-                        "2 cups diced ripe tomatoes",
-                        "1/2 cup thinly sliced red onion",
-                        "2 teaspoons fresh lemon juice, more to taste",
-                        "1 teaspoon fine salt"
-                      ]
-                    },
-                    {
-                      "label": "Garlic-chili oil",
-                      "ingredients": [
-                        "1/2 cup olive oil, plus more for serving",
-                        "3 small or 2 large garlic cloves, grated",
-                        "1/2 teaspoon Aleppo pepper or red pepper flakes, more for serving"
-                      ]
-                    },
-                    {
-                      "label": "Herbs",
-                      "ingredients": [
-                        "1/2 cup chopped soft herbs (mint, basil, cilantro, or a combination)"
-                      ]
-                    },
-                    {
-                      "label": "Ricotta (optional)",
-                      "ingredients": [
-                        "Fresh ricotta, for serving"
-                      ]
-                    }
-                  ],
-                  "steps": [
-                    "Bring a large pot of salted water to a boil. Add pasta and cook until al dente. Add corn kernels 2-4 minutes before pasta is done. Drain.",
-                    "Meanwhile, combine tomatoes, onion, lemon juice, and 1 teaspoon salt in a large bowl. Let marinate while pasta cooks.",
-                    "In a small skillet, heat oil, garlic, and Aleppo pepper or red pepper flakes over medium-high until garlic is fragrant but not brown, about 1 minute. Pour into tomato mixture.",
-                    "Add drained pasta and corn to the tomato mixture; stir well to coat. Mix in herbs. Taste and adjust lemon and salt. Serve warm or at room temperature with more olive oil, herbs, Aleppo pepper, and ricotta dollops if desired."
-                  ]
-                },
-                {
                   "title": "Pasta with Gorgonzola and Arugula",
                   "servings": "Serves 4   |   Total: 30 min",
                   "source": "New York Times (Mark Bittman)",
@@ -14657,144 +14460,6 @@ module.exports = {
                     "Tear arugula into bite-size pieces (not too small).",
                     "Cook pasta in salted boiling water until tender but not mushy. Reserve a little cooking water; drain. Toss pasta immediately with arugula and Gorgonzola sauce, adding a splash of pasta water if the mixture seems dry.",
                     "Season very generously with black pepper and salt. Serve."
-                  ]
-                },
-                {
-                  "title": "Spaghetti with Burrata and Garlic-Chili Oil",
-                  "servings": "Serves 4-6   |   Total: 20 min",
-                  "source": "New York Times (Sarah Copeland)",
-                  "comments": [
-                    "Whole-wheat spaghetti adds nuttiness; regular spaghetti works too.",
-                    "Burrata should be at room temperature. Fresh mozzarella can substitute, but you lose the creamy center."
-                  ],
-                  "ingredientGroups": [
-                    {
-                      "label": "Chili oil",
-                      "ingredients": [
-                        "1 teaspoon fennel seeds, cracked",
-                        "3/4 cup extra-virgin olive oil",
-                        "1 large head fennel (about 8 oz), trimmed, cored, and thinly sliced",
-                        "10 garlic cloves, thinly sliced lengthwise",
-                        "3/4 teaspoon Aleppo pepper or red pepper flakes"
-                      ]
-                    },
-                    {
-                      "label": "Pasta",
-                      "ingredients": [
-                        "Kosher salt",
-                        "1 pound whole-wheat spaghetti"
-                      ]
-                    },
-                    {
-                      "label": "To serve",
-                      "ingredients": [
-                        "8 oz burrata",
-                        "1 teaspoon flaky sea salt (such as Maldon)",
-                        "Freshly ground black pepper"
-                      ]
-                    }
-                  ],
-                  "steps": [
-                    "Crack fennel seeds with the flat side of a large knife. Combine oil, sliced fennel bulb, garlic, cracked fennel seeds, and Aleppo pepper or red pepper flakes in a large skillet over low. Cook, stirring occasionally, until garlic and fennel are softened and oil is deeply flavored, 12-15 minutes.",
-                    "Meanwhile, bring a large pot of generously salted water to a boil. Cook pasta until al dente; drain, return to pot.",
-                    "Reserve a few tablespoons of the fennel-oil mixture; add the rest to the pasta and toss to coat.",
-                    "Divide pasta and burrata among shallow bowls. Spoon reserved fennel oil over top; season with flaky salt and black pepper."
-                  ]
-                },
-                {
-                  "title": "Spaghetti with Fresh Tomato and Basil Sauce",
-                  "servings": "Serves 4   |   Total: 40 min",
-                  "source": "New York Times (Scott Conant)",
-                  "comments": [
-                    "Adding the pasta halfway through its cooking is the key technique -- the pasta finishes absorbing the sauce and develops great flavor.",
-                    "Works with hothouse tomatoes when summer tomatoes are not at their peak."
-                  ],
-                  "ingredientGroups": [
-                    {
-                      "label": "Tomato sauce",
-                      "ingredients": [
-                        "3 pounds fresh plum tomatoes, blanched, peeled, seeded, and quartered",
-                        "3 oz olive oil",
-                        "Salt and freshly ground black pepper",
-                        "1 pinch Aleppo pepper or red pepper flakes"
-                      ]
-                    },
-                    {
-                      "label": "Pasta",
-                      "ingredients": [
-                        "Salt",
-                        "1 pound dry spaghetti"
-                      ]
-                    },
-                    {
-                      "label": "To finish",
-                      "ingredients": [
-                        "2 oz extra-virgin olive oil",
-                        "1 tablespoon unsalted butter",
-                        "6 leaves fresh basil, shredded",
-                        "2 tablespoons freshly grated Parmigiano-Reggiano"
-                      ]
-                    }
-                  ],
-                  "steps": [
-                    "Blanch tomatoes, remove skins, halve and seed, then cut crosswise. Set aside.",
-                    "Heat 3 oz olive oil in a large, deep skillet over medium-high until it just smokes. Add tomatoes; season lightly with salt, pepper, and Aleppo pepper or red pepper flakes (salt will concentrate as sauce reduces). Chop with a potato masher until in fine chunks. Simmer over medium 25 minutes.",
-                    "While sauce simmers, bring a large pot of salted water to a boil. Cook spaghetti until only about halfway done. Drain, reserving some cooking water.",
-                    "Taste and adjust sauce seasoning. Add pasta to sauce and cook over medium-high, swirling, until all liquid is absorbed and pasta is al dente. Add reserved pasta water if sauce over-reduces.",
-                    "Remove from heat; add extra-virgin olive oil, butter, basil, and Parmesan. Mix thoroughly until pasta is an orangy color. Adjust salt; serve on a platter."
-                  ]
-                },
-                {
-                  "title": "Rigatoni with Easy Vodka Sauce",
-                  "favorite": true,
-                  "servings": "Serves 4 | Total: ~40 min",
-                  "source": "Bon Appetit (Claire Saffitz)",
-                  "comments": [
-                    "Using a spider to transfer the pasta (rather than draining) brings pasta water directly into the sauce.",
-                    "Double-concentrated tomato paste in a tube (not a can) gives a richer, deeper flavor."
-                  ],
-                  "ingredientGroups": [
-                    {
-                      "label": "Sauce base",
-                      "ingredients": [
-                        "Kosher salt",
-                        "1 medium onion, finely chopped",
-                        "4 garlic cloves, firmly smashed and peeled",
-                        "2 tablespoons extra-virgin olive oil, plus more for drizzling",
-                        "1 (4.5-oz) tube double-concentrated tomato paste",
-                        "1/2 teaspoon Aleppo pepper or red pepper flakes"
-                      ]
-                    },
-                    {
-                      "label": "Cream addition",
-                      "ingredients": [
-                        "2 oz vodka",
-                        "3/4 cup heavy cream, warmed (see steps)"
-                      ]
-                    },
-                    {
-                      "label": "Pasta",
-                      "ingredients": [
-                        "1 pound rigatoni"
-                      ]
-                    },
-                    {
-                      "label": "To finish",
-                      "ingredients": [
-                        "4 oz Parmesan, finely grated on the small holes of a box grater (divided)",
-                        "Fresh basil leaves, for serving"
-                      ]
-                    }
-                  ],
-                  "steps": [
-                    "Fill a large pot three-quarters with water, salt generously, and bring to a boil over high.",
-                    "Heat 2 tablespoons oil in a Dutch oven over medium next to the pasta pot. Add onion and garlic; cook, stirring constantly, until onion is just starting to brown at the edges, 5-7 minutes.",
-                    "Add the entire tube of tomato paste and Aleppo pepper or red pepper flakes; stir until paste coats the onion. Cook, stirring often, until paste is deep red and starting to brown on the bottom, 5-7 minutes.",
-                    "Add vodka to deglaze, scraping the bottom. Reduce heat to low.",
-                    "Scoop about 1/4 cup of the boiling pasta water into a heatproof measuring cup, then add cream to that cup (this tempers the cream). Slowly pour warmed cream into the Dutch oven, stirring constantly until smooth. Remove from heat.",
-                    "Cook rigatoni in boiling salted water until al dente per package directions. About 1 minute before done, scoop about 1 cup pasta cooking liquid. Heat Dutch oven over low.",
-                    "Transfer rigatoni with a spider directly to the Dutch oven. Add 1/2 cup pasta cooking liquid and stir to incorporate, then gradually add half the Parmesan, stirring constantly to melt into a smooth, glossy sauce. Season with salt; add a splash more pasta water to thin if needed.",
-                    "Divide among bowls. Top with remaining Parmesan; drizzle with more oil; tear basil over."
                   ]
                 },
                 {
@@ -14853,120 +14518,6 @@ module.exports = {
                     "Bring a large pot of salted water to a boil. Cook pasta until al dente; add frozen peas in the last minute of cooking. Reserve 1 cup pasta water; drain.",
                     "Toss hot pasta and peas into the artichoke skillet. Add Parmesan, lemon zest, lemon juice, basil, and enough pasta water to create a sauce. Taste and season.",
                     "Divide among plates; serve topped with fresh peas and pea sprouts if using."
-                  ]
-                },
-                {
-                  "id": "preserved-lemon-zaatar-pasta",
-                  "title": "Preserved Lemon Za'atar Pasta",
-                  "servings": "Serves 4 | Total: ~25 min",
-                  "source": "Nik Sharma Cooks (Nik Sharma)",
-                  "comments": [
-                    {
-                      "html": "Make your own preserved lemons: see <a href='preserves-pickles.html#preserved-lemons'>Preserved Lemons</a> in the Preserves & Pickles section."
-                    },
-                    "Rinse preserved lemons well and discard the soft flesh -- use only the rind.",
-                    "Pumpkin or sunflower seeds work in place of pine nuts for a nut-free version.",
-                    "The breadcrumb topping is the star: adjust za'atar to taste, and don't skip it."
-                  ],
-                  "ingredientGroups": [
-                    {
-                      "label": "Za'atar breadcrumb topping",
-                      "ingredients": [
-                        "2 tablespoons extra-virgin olive oil (from 1/4 cup total)",
-                        "2 garlic cloves, grated (from 4 total)",
-                        "2 tablespoons pine nuts or sliced almonds",
-                        "1 teaspoon Aleppo pepper or red pepper flakes",
-                        "1 cup Italian or panko breadcrumbs",
-                        "2 tablespoons za'atar, plus more to taste",
-                        "1/2 teaspoon ground black pepper",
-                        "Fine sea salt"
-                      ]
-                    },
-                    {
-                      "label": "Pasta",
-                      "ingredients": [
-                        "Fine sea salt",
-                        "1 pound dried spaghetti or angel hair pasta"
-                      ]
-                    },
-                    {
-                      "label": "Garlic-lemon finish",
-                      "ingredients": [
-                        "2 tablespoons extra-virgin olive oil (remaining)",
-                        "2 garlic cloves, grated (remaining)",
-                        "1 whole preserved lemon, rinsed and minced (peel only; discard soft flesh)"
-                      ]
-                    },
-                    {
-                      "label": "Whipped ricotta",
-                      "ingredients": [
-                        "8 oz ricotta",
-                        "1 tablespoon fresh lemon juice",
-                        "Zest of 1 lemon"
-                      ]
-                    },
-                    {
-                      "label": "To serve",
-                      "ingredients": [
-                        "Fresh basil or oregano leaves, torn",
-                        "Extra-virgin olive oil, for drizzling"
-                      ]
-                    }
-                  ],
-                  "steps": [
-                    "Heat a medium saucepan over medium-high. Add 2 tablespoons oil and saute 2 grated garlic cloves, pine nuts, and Aleppo pepper or red pepper flakes until fragrant, 30-45 seconds. Fold in breadcrumbs; toast until golden brown, 3-4 minutes. Fold in za'atar and 1/2 teaspoon pepper; taste and season with salt. Transfer to a bowl; wipe saucepan clean.",
-                    "Bring a large pot of salted water to a boil. Cook pasta until al dente per package directions. Drain; transfer to a large bowl.",
-                    "In the wiped saucepan, heat remaining 2 tablespoons oil over medium-high. Saute remaining 2 grated garlic cloves until fragrant, 30-45 seconds. Fold in preserved lemon and cooked spaghetti; toss to combine.",
-                    "In a separate bowl, combine ricotta, lemon juice, and lemon zest. Whip with a hand mixer or food processor until smooth. Season with salt and pepper.",
-                    "Divide whipped ricotta among 4 serving bowls. Mound pasta on top. Spoon 2-3 generous tablespoons of the breadcrumb mixture over each bowl; garnish with fresh basil. Drizzle with olive oil; serve immediately."
-                  ]
-                },
-                {
-                  "title": "Burst Tomato Burrata Pasta",
-                  "servings": "Serves 2-4 | Total: 45 min",
-                  "source": "How Sweet Eats",
-                  "comments": [
-                    "The 20-25 minute burst is key -- slow-cooked tomatoes become a concentrated, jammy sauce. Don't rush it.",
-                    "Add Parmesan to each bowl at serving rather than stirring into the pasta so the burrata stays distinct."
-                  ],
-                  "ingredientGroups": [
-                    {
-                      "label": "Burst tomato sauce",
-                      "ingredients": [
-                        "1/4 cup olive oil",
-                        "6 garlic cloves, minced",
-                        "1/2 teaspoon dried basil",
-                        "1/4 teaspoon Aleppo pepper or red pepper flakes, plus more for serving",
-                        "3 cups cherry or grape tomatoes",
-                        "Kosher salt and black pepper"
-                      ]
-                    },
-                    {
-                      "label": "Pasta",
-                      "ingredients": [
-                        "Salt",
-                        "1/2 pound pasta (spaghetti or bucatini)"
-                      ]
-                    },
-                    {
-                      "label": "To finish",
-                      "ingredients": [
-                        "1/4 cup fresh basil, chopped, plus more for serving"
-                      ]
-                    },
-                    {
-                      "label": "To serve",
-                      "ingredients": [
-                        "8 oz burrata",
-                        "Parmesan, for topping"
-                      ]
-                    }
-                  ],
-                  "steps": [
-                    "Heat oil in a large skillet over medium-low. Add garlic, dried basil, and Aleppo pepper or red pepper flakes; cook 1-2 minutes. Add tomatoes with a big pinch of salt and pepper; toss in the oil. Cook 20-25 minutes until tomatoes burst. Adjust heat as needed -- lower if splattering, slightly higher if tomatoes aren't bursting.",
-                    "While tomatoes cook, bring a pot of salted water to a boil and cook pasta.",
-                    "Drain pasta and add directly to the skillet. Toss to coat all the noodles. Turn off heat; toss in fresh basil. Add burrata in pieces (or as one large ball) and mix in to your liking. Taste and season with salt and pepper.",
-                    "Serve immediately with Parmesan, more fresh basil, and Aleppo pepper or red pepper flakes."
                   ]
                 },
                 {
@@ -15050,57 +14601,516 @@ module.exports = {
                     "Add spinach and reserved pasta water to the skillet. Return to low heat; stir until spinach wilts, about 2 minutes. Season with salt.",
                     "Add drained ravioli and toss to coat. Serve with Parmesan and freshly cracked pepper."
                   ]
-                },
+                }
+              ]
+            },
+            {
+              "title": "Oil & Pesto",
+              "recipes": [
                 {
-                  "title": "Burst Cherry Tomato Orzotto",
-                  "servings": "Serves 4–6   |   Total: 50 min",
-                  "source": "New York Times Cooking / Kayla Hoang",
+                  "title": "Artichoke Pesto Pasta with Fried Peppercorns",
+                  "servings": "Serves 4   |   Total: 30 minutes",
                   "comments": [
-                    "Use the best cherry tomatoes you can find — the dish is only as good as the tomatoes.",
-                    "Top each serving with a handful of arugula for a fresh, peppery contrast."
+                    "The fried peppercorns are worth making extra of — Molly Baz notes they're a great crispy, spicy garnish on all sorts of dishes."
                   ],
+                  "source": "The Club, by Molly Baz",
                   "ingredientGroups": [
                     {
-                      "label": "Aromatics",
+                      "label": "Prep",
                       "ingredients": [
-                        "3 tablespoons olive oil",
-                        "1 large shallot, chopped (about 1/3 cup)",
-                        "1 teaspoon salt, plus more to taste",
-                        "1 tablespoon garlic, grated (from 3–4 large cloves)",
-                        "1/4 to 1/2 teaspoon Aleppo pepper or red pepper flakes"
+                        "2 to 3 lemons (1 1/2 for peel and juice; remaining 1/2 to 1 lemon reserved for finishing)",
+                        "1 large bunch flat-leaf parsley, leaves and tender stems picked (about 2 cups packed)",
+                        "1 large or 2 small garlic cloves",
+                        "2 ounces Parmigiano-Reggiano, finely grated (about 3/4 cup), divided",
+                        "One 14.5- to 16-ounce jar marinated artichokes (preferably Mezzetta), drained, brine reserved"
                       ]
                     },
                     {
-                      "label": "Tomato base",
+                      "label": "Pesto",
                       "ingredients": [
-                        "1 1/2 pounds cherry tomatoes",
-                        "1 cup fresh basil leaves, tightly packed and roughly chopped, plus 1 sprig for cooking",
-                        "1 1/4 cups water"
+                        "1/3 cup olive oil",
+                        "3/4 cup (2 ounces) blanched almonds",
+                        "2 teaspoons kosher salt"
                       ]
                     },
                     {
-                      "label": "Orzo",
+                      "label": "Pasta",
                       "ingredients": [
-                        "1 pound orzo",
-                        "1 quart (4 cups) low-sodium vegetable or chicken broth",
-                        "1/4 teaspoon salt"
+                        "1 pound mezzi rigatoni",
+                        "Kosher salt, for the pasta water"
+                      ]
+                    },
+                    {
+                      "label": "Fried peppercorns",
+                      "ingredients": [
+                        "2 tablespoons olive oil",
+                        "2 tablespoons black peppercorns",
+                        "Kosher salt, to taste"
                       ]
                     },
                     {
                       "label": "To finish",
                       "ingredients": [
-                        "2/3 cup grated Parmesan, plus more for serving",
-                        "1 tablespoon unsalted butter",
-                        "1 1/2 teaspoons fresh lemon juice"
+                        "One 8-ounce ball burrata",
+                        "More grated Parmigiano-Reggiano"
                       ]
                     }
                   ],
                   "steps": [
-                    "Heat olive oil in a large Dutch oven over medium for about 30 seconds. Add shallot and 1 teaspoon salt; cook, stirring often, until translucent, 2–3 minutes. Add garlic and Aleppo pepper or red pepper flakes; stir until fragrant, about 30 seconds.",
-                    "Add cherry tomatoes, basil sprig, and 1 1/4 cups water. Cover and increase heat to medium-high. Cook, covered, until tomatoes are very soft and burst when pressed, about 8 minutes.",
-                    "Use the back of a wooden spoon to press all tomatoes against the side of the pot until broken down. Maintain a steady, gentle boil. Cook uncovered, stirring occasionally, until the tomato liquid has thickened and reduced by about half, 6–10 minutes.",
-                    "Stir in orzo, broth, and 1/4 teaspoon salt. Bring to a boil over high heat, 4–5 minutes. Reduce to a simmer and cook, stirring every minute or two and scraping the bottom, until orzo is tender and saucy, 9–10 minutes.",
-                    "Remove from heat; discard basil sprig. Stir in Parmesan, butter, lemon juice, and chopped basil until silky. Season with salt. Serve immediately, topped with more Parmesan."
+                    "Prep: Remove the peel from 1 1/2 lemons in long strips with a vegetable peeler; squeeze 1/4 cup juice from the lemons (reserve more lemon for finishing).",
+                    "Pesto: In a food processor, process the lemon peels until finely chopped. Add the parsley and process until roughly chopped. Add the garlic, artichokes, artichoke brine, olive oil, almonds, half the Parmesan, and the salt; process until a coarse pesto forms. Taste; add lemon juice if needed.",
+                    "Cook the pasta: Bring a large pot of heavily salted water to a boil. Add the rigatoni and cook to al dente, 1 to 2 minutes less than the package directions. Reserve 1 cup pasta water, then drain.",
+                    {
+                      "lead": "Fried peppercorns (meanwhile, as the pasta boils):",
+                      "bullets": [
+                        "Add the remaining 2 tablespoons olive oil to your smallest skillet. When shimmering, add the peppercorns. Toast, swirling the pan, until fragrant and slightly darkened, about 2 minutes.",
+                        "Remove from heat and let rest in the oil until they stop popping. Transfer to a paper-towel-lined plate with a slotted spoon.",
+                        "Let cool, then roughly chop. Season generously with salt."
+                      ]
+                    },
+                    "Plate it up: Return the pasta to the pot and add the pesto. Set over medium-low heat. Add 1/2 cup of the reserved pasta water and the remaining Parmesan; toss vigorously until the sauce emulsifies and coats the pasta. Add more pasta water or lemon juice to loosen if needed.",
+                    "Divide among plates and top with torn burrata, a final grating of Parmesan, and the fried peppercorns."
+                  ]
+                },
+                {
+                  "title": "Lemon Fusilli with Arugula",
+                  "favorite": true,
+                  "servings": "Serves 4 to 5   |   Prep: 10 minutes   |   Cook: 30 minutes   |   Total: 40 minutes",
+                  "source": "Food Network, by Ina Garten, from Barefoot Contessa at Home",
+                  "ingredientGroups": [
+                    {
+                      "label": "Lemon cream sauce",
+                      "ingredients": [
+                        "1 tablespoon good olive oil",
+                        "1 tablespoon minced garlic (2 cloves)",
+                        "2 cups heavy cream",
+                        "Zest and juice of 2 lemons",
+                        "Kosher salt and freshly ground black pepper"
+                      ]
+                    },
+                    {
+                      "label": "Broccoli",
+                      "ingredients": [
+                        "1 bunch broccoli, cut into florets"
+                      ]
+                    },
+                    {
+                      "label": "Pasta",
+                      "ingredients": [
+                        "1 pound dried fusilli pasta"
+                      ]
+                    },
+                    {
+                      "label": "To finish",
+                      "ingredients": [
+                        "1/2 pound baby arugula (or 2 bunches common arugula, leaves cut in thirds)",
+                        "1/2 cup freshly grated Parmesan",
+                        "1 pint grape or cherry tomatoes, halved",
+                        "1 remaining lemon, sliced 1/4-inch thick"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Lemon cream sauce: Heat the olive oil in a medium saucepan over medium heat; add the garlic and cook 60 seconds. Add the cream and bring to a boil. Add the lemon zest and juice; simmer over low heat until thickened, about 20 minutes. Season with salt and pepper.",
+                    "Meanwhile, cook the broccoli florets in a pot of boiling salted water 3 to 5 minutes, until tender but still firm. Drain and set aside.",
+                    {
+                      "lead": "Pasta:",
+                      "bullets": [
+                        "Bring a large pot of water to a boil; add 1 tablespoon salt and the pasta. Cook according to the package directions, about 12 minutes. Drain.",
+                        "Return the pasta to the pot. Immediately add the cream mixture and cook over medium-low heat 3 minutes, until most of the sauce is absorbed."
+                      ]
+                    },
+                    "Pour the hot pasta into a large bowl; add the arugula, Parmesan, tomatoes, and cooked broccoli.",
+                    "Cut the remaining lemon in half lengthwise, slice 1/4-inch thick crosswise, and add to the pasta.",
+                    "Toss well, season to taste, and serve hot."
+                  ]
+                },
+                {
+                  "id": "busiate",
+                  "title": "Busiate (Sicilian Spiral Pasta)",
+                  "servings": "Makes about 8 servings",
+                  "source": "From Chef Louisa (Villa Britannia, Taormina, Sicily)",
+                  "comments": [
+                    "Busiate is the traditional pasta of western Sicily (Trapani). Made with semola rather than egg — firmer and more toothsome than egg pasta.",
+                    "The shaping tool is a ferro (long thin metal skewer); a thin wooden skewer or knitting needle works as a substitute.",
+                    "Use with Pasta con le Sarde (this section), pesto trapanese, or any bold Sicilian sauce."
+                  ],
+                  "ingredientGroups": [
+                    {
+                      "label": "Pasta dough",
+                      "ingredients": [
+                        "500g semola flour (durum wheat semolina)",
+                        "250ml water",
+                        "1 tablespoon olive oil",
+                        "Large pinch of salt"
+                      ]
+                    },
+                    {
+                      "label": "To shape",
+                      "ingredients": [
+                        "1 ferro (long thin metal skewer) or thin wooden skewer"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Mound the semola on a clean surface. Add salt and olive oil and make a well in the center. Gradually work the water into the flour with your hands, adding slowly, until a firm dough forms.",
+                    "Knead the dough, stretching and folding, for 10–15 minutes. If the dough warms up, stop and rest briefly. Refrigerate 15–30 minutes.",
+                    "Pinch off a small piece of dough and roll into a thin rope on the work surface. Hold the skewer at a slight diagonal against the rope and press-roll forward, spiraling the dough around the skewer. Slide off. Repeat with remaining dough.",
+                    "Cook in well-salted boiling water for 8–10 minutes."
+                  ]
+                },
+                {
+                  "title": "Pasta with Corn, Mint and Red Onions",
+                  "servings": "Serves 4-6   |   Total: 25 min",
+                  "source": "New York Times (Melissa Clark)",
+                  "comments": [
+                    "Equally good with frozen corn and year-round grape tomatoes cut in cubes.",
+                    "Can be served warm, at room temperature, or cold as a pasta salad."
+                  ],
+                  "ingredientGroups": [
+                    {
+                      "label": "Pasta and corn",
+                      "ingredients": [
+                        "Fine sea salt or table salt",
+                        "1 pound cavatelli (or orecchiette, shells, or another small pasta)",
+                        "5 ears corn, shucked, kernels removed (about 4 cups)"
+                      ]
+                    },
+                    {
+                      "label": "Tomato-onion marinade",
+                      "ingredients": [
+                        "2 cups diced ripe tomatoes",
+                        "1/2 cup thinly sliced red onion",
+                        "2 teaspoons fresh lemon juice, more to taste",
+                        "1 teaspoon fine salt"
+                      ]
+                    },
+                    {
+                      "label": "Garlic-chili oil",
+                      "ingredients": [
+                        "1/2 cup olive oil, plus more for serving",
+                        "3 small or 2 large garlic cloves, grated",
+                        "1/2 teaspoon Aleppo pepper or red pepper flakes, more for serving"
+                      ]
+                    },
+                    {
+                      "label": "Herbs",
+                      "ingredients": [
+                        "1/2 cup chopped soft herbs (mint, basil, cilantro, or a combination)"
+                      ]
+                    },
+                    {
+                      "label": "Ricotta (optional)",
+                      "ingredients": [
+                        "Fresh ricotta, for serving"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Bring a large pot of salted water to a boil. Add pasta and cook until al dente. Add corn kernels 2-4 minutes before pasta is done. Drain.",
+                    "Meanwhile, combine tomatoes, onion, lemon juice, and 1 teaspoon salt in a large bowl. Let marinate while pasta cooks.",
+                    "In a small skillet, heat oil, garlic, and Aleppo pepper or red pepper flakes over medium-high until garlic is fragrant but not brown, about 1 minute. Pour into tomato mixture.",
+                    "Add drained pasta and corn to the tomato mixture; stir well to coat. Mix in herbs. Taste and adjust lemon and salt. Serve warm or at room temperature with more olive oil, herbs, Aleppo pepper, and ricotta dollops if desired."
+                  ]
+                },
+                {
+                  "title": "Spaghetti with Burrata and Garlic-Chili Oil",
+                  "servings": "Serves 4-6   |   Total: 20 min",
+                  "source": "New York Times (Sarah Copeland)",
+                  "comments": [
+                    "Whole-wheat spaghetti adds nuttiness; regular spaghetti works too.",
+                    "Burrata should be at room temperature. Fresh mozzarella can substitute, but you lose the creamy center."
+                  ],
+                  "ingredientGroups": [
+                    {
+                      "label": "Chili oil",
+                      "ingredients": [
+                        "1 teaspoon fennel seeds, cracked",
+                        "3/4 cup extra-virgin olive oil",
+                        "1 large head fennel (about 8 oz), trimmed, cored, and thinly sliced",
+                        "10 garlic cloves, thinly sliced lengthwise",
+                        "3/4 teaspoon Aleppo pepper or red pepper flakes"
+                      ]
+                    },
+                    {
+                      "label": "Pasta",
+                      "ingredients": [
+                        "Kosher salt",
+                        "1 pound whole-wheat spaghetti"
+                      ]
+                    },
+                    {
+                      "label": "To serve",
+                      "ingredients": [
+                        "8 oz burrata",
+                        "1 teaspoon flaky sea salt (such as Maldon)",
+                        "Freshly ground black pepper"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Crack fennel seeds with the flat side of a large knife. Combine oil, sliced fennel bulb, garlic, cracked fennel seeds, and Aleppo pepper or red pepper flakes in a large skillet over low. Cook, stirring occasionally, until garlic and fennel are softened and oil is deeply flavored, 12-15 minutes.",
+                    "Meanwhile, bring a large pot of generously salted water to a boil. Cook pasta until al dente; drain, return to pot.",
+                    "Reserve a few tablespoons of the fennel-oil mixture; add the rest to the pasta and toss to coat.",
+                    "Divide pasta and burrata among shallow bowls. Spoon reserved fennel oil over top; season with flaky salt and black pepper."
+                  ]
+                },
+                {
+                  "id": "preserved-lemon-zaatar-pasta",
+                  "title": "Preserved Lemon Za'atar Pasta",
+                  "servings": "Serves 4 | Total: ~25 min",
+                  "source": "Nik Sharma Cooks (Nik Sharma)",
+                  "comments": [
+                    {
+                      "html": "Make your own preserved lemons: see <a href='preserves-pickles.html#preserved-lemons'>Preserved Lemons</a> in the Preserves & Pickles section."
+                    },
+                    "Rinse preserved lemons well and discard the soft flesh -- use only the rind.",
+                    "Pumpkin or sunflower seeds work in place of pine nuts for a nut-free version.",
+                    "The breadcrumb topping is the star: adjust za'atar to taste, and don't skip it."
+                  ],
+                  "ingredientGroups": [
+                    {
+                      "label": "Za'atar breadcrumb topping",
+                      "ingredients": [
+                        "2 tablespoons extra-virgin olive oil (from 1/4 cup total)",
+                        "2 garlic cloves, grated (from 4 total)",
+                        "2 tablespoons pine nuts or sliced almonds",
+                        "1 teaspoon Aleppo pepper or red pepper flakes",
+                        "1 cup Italian or panko breadcrumbs",
+                        "2 tablespoons za'atar, plus more to taste",
+                        "1/2 teaspoon ground black pepper",
+                        "Fine sea salt"
+                      ]
+                    },
+                    {
+                      "label": "Pasta",
+                      "ingredients": [
+                        "Fine sea salt",
+                        "1 pound dried spaghetti or angel hair pasta"
+                      ]
+                    },
+                    {
+                      "label": "Garlic-lemon finish",
+                      "ingredients": [
+                        "2 tablespoons extra-virgin olive oil (remaining)",
+                        "2 garlic cloves, grated (remaining)",
+                        "1 whole preserved lemon, rinsed and minced (peel only; discard soft flesh)"
+                      ]
+                    },
+                    {
+                      "label": "Whipped ricotta",
+                      "ingredients": [
+                        "8 oz ricotta",
+                        "1 tablespoon fresh lemon juice",
+                        "Zest of 1 lemon"
+                      ]
+                    },
+                    {
+                      "label": "To serve",
+                      "ingredients": [
+                        "Fresh basil or oregano leaves, torn",
+                        "Extra-virgin olive oil, for drizzling"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Heat a medium saucepan over medium-high. Add 2 tablespoons oil and saute 2 grated garlic cloves, pine nuts, and Aleppo pepper or red pepper flakes until fragrant, 30-45 seconds. Fold in breadcrumbs; toast until golden brown, 3-4 minutes. Fold in za'atar and 1/2 teaspoon pepper; taste and season with salt. Transfer to a bowl; wipe saucepan clean.",
+                    "Bring a large pot of salted water to a boil. Cook pasta until al dente per package directions. Drain; transfer to a large bowl.",
+                    "In the wiped saucepan, heat remaining 2 tablespoons oil over medium-high. Saute remaining 2 grated garlic cloves until fragrant, 30-45 seconds. Fold in preserved lemon and cooked spaghetti; toss to combine.",
+                    "In a separate bowl, combine ricotta, lemon juice, and lemon zest. Whip with a hand mixer or food processor until smooth. Season with salt and pepper.",
+                    "Divide whipped ricotta among 4 serving bowls. Mound pasta on top. Spoon 2-3 generous tablespoons of the breadcrumb mixture over each bowl; garnish with fresh basil. Drizzle with olive oil; serve immediately."
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Seafood",
+              "recipes": [
+                {
+                  "title": "Linguine with Clams and Wild Mushrooms",
+                  "servings": "Serves 4",
+                  "ingredientGroups": [
+                    {
+                      "label": "Mushrooms",
+                      "ingredients": [
+                        "6 tablespoons olive oil (divided)",
+                        "1 pound mixed fresh wild mushrooms (oyster and/or shiitake), stems trimmed, caps sliced"
+                      ]
+                    },
+                    {
+                      "label": "Clams",
+                      "ingredients": [
+                        "6 large garlic cloves, minced",
+                        "1/4 teaspoon Aleppo pepper or red pepper flakes",
+                        "1 cup dry white wine",
+                        "5 pounds clams (about 24 littlenecks)"
+                      ]
+                    },
+                    {
+                      "label": "Finish",
+                      "ingredients": [
+                        "1 pound linguine",
+                        "2 bunches fresh chives or 1 bunch green onions, chopped",
+                        "Salt and pepper to taste"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Heat 3 tablespoons oil over high heat. Saute mushrooms until beginning to brown, about 5 minutes. Transfer to plate using slotted spoon.",
+                    "Add remaining 3 tablespoons oil and garlic to pot. Saute until tender, about 3 minutes.",
+                    "Add Aleppo pepper, then wine and clams. Cover and cook until clams open, about 8 minutes.",
+                    "Cook linguine in a large pot of boiling salted water until just tender but firm to bite. Drain and transfer to large bowl.",
+                    "Spoon mushrooms over pasta, then top with clam mixture, discarding any unopened clams. Season with salt and pepper. Sprinkle with chives."
+                  ]
+                },
+                {
+                  "title": "Linguine with Mussels",
+                  "ingredientGroups": [
+                    {
+                      "label": "Aromatics",
+                      "ingredients": [
+                        "2 teaspoons olive oil",
+                        "1/2 cup chopped fennel bulb",
+                        "1/2 cup finely chopped onion",
+                        "2 garlic cloves, minced"
+                      ]
+                    },
+                    {
+                      "label": "Sauce",
+                      "ingredients": [
+                        "1 cup diced tomato",
+                        "1 cup dry vermouth",
+                        "3 tablespoons chopped fresh parsley",
+                        "1 tablespoon tomato paste",
+                        "1 teaspoon fresh thyme leaves",
+                        "1/4 teaspoon salt",
+                        "1/8 teaspoon Aleppo pepper or red pepper flakes"
+                      ]
+                    },
+                    {
+                      "label": "Finish",
+                      "ingredients": [
+                        "28 fresh mussels, scrubbed and debearded",
+                        "2 tablespoons water",
+                        "2 teaspoons cornstarch",
+                        "2 cups hot cooked linguine (about 4 oz uncooked)"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Heat oil over medium heat. Add fennel, onion, and garlic; saute 5 minutes.",
+                    "Add sauce ingredients and bring to boil.",
+                    "Add mussels, cover, and cook 3 minutes until shells open. Remove from heat. Discard any unopened shells. Reserve 10 shells with meat intact; remove meat from the rest.",
+                    "Combine water and cornstarch; add to tomato mixture and boil 2 minutes, stirring.",
+                    "Serve 1 cup pasta per plate topped with 1 cup sauce and 5 mussels in shells."
+                  ]
+                },
+                {
+                  "title": "Pasta con le Sarde",
+                  "servings": "Serves 4",
+                  "source": "From Chef Louisa (Villa Britannia, Taormina, Sicily)",
+                  "comments": [
+                    {
+                      "html": "Traditionally made with <a href='#busiate'>Busiate</a> (Sicilian spiral pasta; see recipe, this section). Good store-bought substitutes: bucatini, perciatelli, or thick spaghetti."
+                    },
+                    "Wild fennel is traditional and highly recommended; the frond tops of a fennel bulb are an excellent substitute.",
+                    "The breadcrumb topping (pangrattato) is essential — do not skip it."
+                  ],
+                  "ingredientGroups": [
+                    {
+                      "label": "Pasta",
+                      "ingredients": [
+                        "1 batch Busiate (see recipe, this section) or store-bought bucatini, perciatelli, or thick spaghetti"
+                      ]
+                    },
+                    {
+                      "label": "Sardine sauce",
+                      "ingredients": [
+                        "60ml extra-virgin olive oil",
+                        "1 small onion, finely diced",
+                        "2 salted anchovies (or 4 oil-packed fillets, rinsed)",
+                        "400g fresh sardines, cleaned and filleted",
+                        "60g raisins",
+                        "30g pine nuts",
+                        "1/2 glass dry white wine",
+                        "1 saffron sachet (0.125g), dissolved in 2 tablespoons warm water",
+                        "100ml tomato passata",
+                        "100g wild fennel (or fennel frond tops), boiled until just tender"
+                      ]
+                    },
+                    {
+                      "label": "Breadcrumb topping",
+                      "ingredients": [
+                        "30ml olive oil",
+                        "1 clove garlic",
+                        "2 salted anchovies (or 4 oil-packed fillets, rinsed)",
+                        "80g dried breadcrumbs"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    {
+                      "html": "Make or obtain the pasta: prepare <a href=\"noodles.html#busiate\">Busiate</a> following the recipe in this section, or use store-bought bucatini or thick spaghetti."
+                    },
+                    "Make the breadcrumb topping: heat olive oil in a small pan. Add garlic and anchovies, stirring until anchovies dissolve. Add breadcrumbs and toast, stirring, until golden and crisp. Remove from heat and spread out to cool.",
+                    "Make the sardine sauce: heat olive oil over medium heat. Add onion and the 2 anchovies; cook until anchovies dissolve and onion softens. Add raisins and pine nuts. Pour in white wine and let reduce briefly. Add saffron water, passata, and boiled fennel. Add fresh sardines and cook about 8 minutes until just cooked through.",
+                    "Cook the pasta in well-salted boiling water (8–10 minutes for busiate; per package for store-bought). Drain and toss with the sardine sauce. Plate and top generously with the breadcrumb topping."
+                  ]
+                },
+                {
+                  "title": "Linguine with White Clam Sauce",
+                  "servings": "Serves 6   |   Total: 40 min",
+                  "source": "Anne Burrell, Food Network",
+                  "comments": [
+                    "When pouring reserved clam cooking liquid, stop before the last bit -- better to lose some liquid than to get sand in the pasta.",
+                    "Parmigiano is optional; traditional Italian cooking avoids cheese with shellfish, but this recipe offers it."
+                  ],
+                  "ingredientGroups": [
+                    {
+                      "label": "First clam batch",
+                      "ingredients": [
+                        "Extra-virgin olive oil",
+                        "5 garlic cloves, smashed",
+                        "3 1/2 dozen littleneck clams, scrubbed",
+                        "1 cup dry white wine",
+                        "1/2 cup water",
+                        "1 large pinch Aleppo pepper or red pepper flakes"
+                      ]
+                    },
+                    {
+                      "label": "Second clam batch",
+                      "ingredients": [
+                        "Extra-virgin olive oil",
+                        "4 garlic cloves, smashed",
+                        "1 1/2 dozen littleneck clams, scrubbed",
+                        "1 large pinch Aleppo pepper or red pepper flakes"
+                      ]
+                    },
+                    {
+                      "label": "Pasta",
+                      "ingredients": [
+                        "Salt",
+                        "1 pound linguine"
+                      ]
+                    },
+                    {
+                      "label": "To finish",
+                      "ingredients": [
+                        "2 tablespoons unsalted butter",
+                        "2 tablespoons chopped fresh Italian parsley",
+                        "2 tablespoons chopped fresh oregano",
+                        "1 cup grated Parmigiano-Reggiano (optional), plus shavings for garnish",
+                        "High-quality finishing extra-virgin olive oil"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Coat a large saute pan generously with olive oil and add 5 garlic cloves. Cook over medium-high until garlic is golden and very fragrant; remove and discard garlic. Add 3 1/2 dozen clams, white wine, 1/2 cup water, and a pinch of Aleppo pepper or red pepper flakes. Cover and cook over medium heat until clams open, about 10 minutes. Transfer clams to a bowl; reduce cooking liquid by a third or so. Let clams cool, remove meat from shells, and reserve. Discard shells. Pour cooking liquid into a measuring cup, leaving any sand behind.",
+                    "Bring a large pot of well-salted water to a boil.",
+                    "Return the saute pan to the heat and coat again with olive oil. Add remaining 4 garlic cloves and a pinch of Aleppo pepper or red pepper flakes. Cook until garlic is golden; remove and discard. Add remaining 1 1/2 dozen raw clams and the reserved clam cooking liquid. Cover and cook until clams open.",
+                    "While second batch of clams cooks, add linguine to the boiling water and cook until very al dente, about 1 minute less than package directions.",
+                    "Remove whole cooked clams from the pan and keep warm. Add butter and the shelled clam meat to the pan. Bring to a boil, add cooked linguine and herbs, and toss together, cooking until the sauce clings to the pasta. Turn off heat and toss in Parmigiano-Reggiano if using. Finish with a drizzle of high-quality olive oil; toss vigorously.",
+                    "Divide into serving dishes and garnish with whole clams in shells and more Parmigiano shavings if desired."
                   ]
                 }
               ]
