@@ -10,18 +10,17 @@ if exist .git\index.lock (
     del .git\index.lock
 )
 
-git add cookbook_data.js index.html build_website.js recipe_utils.js
+git add cookbook_data.js build_website.js check_labels.js recipe_utils.js search-index.json *.html
 
 git diff --cached --quiet
 if %errorlevel%==0 (
-    echo Nothing new to publish.
-    goto done
+    echo Nothing new to stage.
+) else (
+    for /f "tokens=*" %%I in ('powershell -NoProfile -Command "Get-Date -Format yyyy-MM-dd"') do set today=%%I
+    git commit -m "Update cookbook: %today%"
 )
 
-for /f "tokens=2 delims==" %%I in ('wmic os get localdatetime /value') do set dt=%%I
-set today=%dt:~0,4%-%dt:~4,2%-%dt:~6,2%
-
-git commit -m "Update cookbook: %today%"
+git config gc.auto 0
 git push
 
 if %errorlevel%==0 (
