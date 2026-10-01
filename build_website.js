@@ -1782,7 +1782,9 @@ function buildPage(section, navHtml, contentHtml, cookbookData) {
     const hashId = location.hash.slice(1);
     const el = document.getElementById(hashId);
     if (el) requestAnimationFrame(function () {
-      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      var rect = el.getBoundingClientRect();
+      var targetTop = window.pageYOffset + rect.top - 24;
+      window.scrollTo({ top: Math.max(0, targetTop), behavior: 'smooth' });
     });
     // Expand the nav path to this recipe (e.g. after a cross-page search click)
     expandNavToRecipe(hashId);
@@ -1902,7 +1904,13 @@ function buildPage(section, navHtml, contentHtml, cookbookData) {
             a.addEventListener('click', function (e) {
               e.preventDefault();
               const el = document.getElementById(r.id);
-              if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              if (el) {
+                // Use window.scrollTo for precise control: put recipe 24px below viewport top.
+                // scrollIntoView({ block: 'start' }) can overshoot on pages with smooth-scroll.
+                var rect = el.getBoundingClientRect();
+                var targetTop = window.pageYOffset + rect.top - 24;
+                window.scrollTo({ top: Math.max(0, targetTop), behavior: 'smooth' });
+              }
               expandNavToRecipe(r.id);
               // Leave search results panel open so query state is preserved
             });
