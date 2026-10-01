@@ -18600,13 +18600,6 @@ module.exports = {
                   "servings": "Serves 10–12",
                   "ingredientGroups": [
                     {
-                      "label": "Ghee (make ahead)",
-                      "ingredients": [
-                        "2 cups (4 sticks) unsalted butter",
-                        "3 layers cheesecloth (for straining)"
-                      ]
-                    },
-                    {
                       "label": "Streusel",
                       "ingredients": [
                         "1/2 cup all-purpose flour",
@@ -18642,7 +18635,7 @@ module.exports = {
                     }
                   ],
                   "steps": [
-                    "Line a fine-mesh sieve with cheesecloth. Melt butter in a medium heavy saucepan over medium heat, stirring often, until simmering. Cook, stirring constantly, 10 minutes. Reduce heat to low; continue cooking, stirring constantly, until golden brown and caramelized milk solids appear on the spatula, about 10 minutes longer. Strain ghee through prepared sieve into a large jar. Reserve ghee and caramelized milk solids separately. (Ghee can be made 3 months ahead; store tightly covered at room temperature.)",
+                    { "html": "Make the ghee: Follow the <a href='dairy.html#dairy-ghee'>Ghee recipe</a> using 2 cups (4 sticks) unsalted butter and a cheesecloth-lined fine-mesh sieve — but unlike that recipe, do not discard the caramelized milk solids. Reserve the strained ghee and the milk solids separately. (Can be made 3 months ahead; store tightly covered at room temperature.)" },
                     "Whisk flour, brown sugar, spices, and salt together for streusel in a medium bowl. Add 1 tablespoon caramelized milk solids and 1/2 cup ghee. Work with hands until mixture resembles wet sand. Set aside.",
                     "Preheat oven to 325°F. Line a 9x9-inch baking pan with parchment, leaving overhang on 2 sides.",
                     "Whisk together 2 cups flour, baking powder, baking soda, and salt in a medium bowl. In a large bowl, whisk eggs, egg yolk, yogurt, milk, both sugars, vanilla, 3/4 cup ghee, and 1 teaspoon caramelized milk solids together. Sift in dry ingredients and fold just until no dry spots remain (batter will be thick and slightly lumpy).",
@@ -18652,13 +18645,6 @@ module.exports = {
                   "source": "Hetal Vasavada / Bon Appétit (bonappetit.com)",
                   "highAltitude": {
                     "ingredientGroups": [
-                      {
-                        "label": "Ghee (make ahead)",
-                        "ingredients": [
-                          "2 cups (4 sticks) unsalted butter",
-                          "3 layers cheesecloth (for straining)"
-                        ]
-                      },
                       {
                         "label": "Streusel",
                         "ingredients": [
