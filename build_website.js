@@ -505,7 +505,7 @@ const CLUSTER_MAP = {
   // Soups & Stews
   'Creamy Tomato Soup':                                  'General',
   'Pumpkin Soup':                                        'General',
-  'Locro de Zapallo':                                    'Latin/South American',
+  'Locro de Zapallo (Peruvian Pumpkin Stew)':                                    'Latin/South American',
   'French Onion Soup':                                   'French/Continental',
   'Lentil and Orzo Stew With Roasted Eggplant':          'Mediterranean/Greek',
   'West African Peanut Soup':                            'West African',
@@ -844,34 +844,45 @@ function buildNav(data, currentSection) {
             // ── Original flat-recipes subsection ──
             const hasRecipes = sub.recipes && sub.recipes.length > 0;
             const clusterGroups = hasRecipes ? groupByCluster(sub.recipes) : null;
-            const subArrow = hasRecipes ? '<span class="arrow">▶</span>' : '';
+            const flattenSub = CLUSTER_ORDER.includes(sub.title);
+            const subNoHeader = flattenSub
+              ? new Set(CLUSTER_ORDER)
+              : new Set(['General', sub.title]);
 
-            nav += `<li class="nav-sub${hasRecipes ? '' : ' empty'}">`;
-            nav += `<a class="nav-hd sub-hd" href="#${subSecId}" data-toggle="${subSecId}-children">${subArrow}${esc(sub.title)}</a>`;
-
-            if (hasRecipes) {
-              nav += `<ul class="nav-l3 collapsed" id="${subSecId}-children">`;
-              const showClusterHeaders = clusterGroups && clusterGroups.length > 1;
-              const flattenSub = CLUSTER_ORDER.includes(sub.title);
-              const subNoHeader = flattenSub
-                ? new Set(CLUSTER_ORDER)
-                : new Set(['General', sub.title]);
+            if (sub.title === 'General') {
+              // ── "General" subsection: render recipes directly, no nav header ──
               if (clusterGroups) {
                 for (const { cluster, recipes: cr } of clusterGroups) {
-                  const cid = `${subsl}--${slug(cluster)}`;
-                  if (!showClusterHeaders || subNoHeader.has(cluster)) {
-                    cr.forEach(r => {
-                      const rid = r.id || `${subsl}-${slug(r.title)}`;
-                      nav += navRecipeItem(rid, r, filename);
-                    });
-                  } else {
-                    nav += navClusterItem(cid, cluster, cr, subsl, filename);
-                  }
+                  cr.forEach(r => {
+                    const rid = r.id || `${subsl}-${slug(r.title)}`;
+                    nav += navRecipeItem(rid, r, filename);
+                  });
                 }
               }
-              nav += '</ul>';
+            } else {
+              const subArrow = hasRecipes ? '<span class="arrow">▶</span>' : '';
+              nav += `<li class="nav-sub${hasRecipes ? '' : ' empty'}">`;
+              nav += `<a class="nav-hd sub-hd" href="#${subSecId}" data-toggle="${subSecId}-children">${subArrow}${esc(sub.title)}</a>`;
+              if (hasRecipes) {
+                nav += `<ul class="nav-l3 collapsed" id="${subSecId}-children">`;
+                const showClusterHeaders = clusterGroups && clusterGroups.length > 1;
+                if (clusterGroups) {
+                  for (const { cluster, recipes: cr } of clusterGroups) {
+                    const cid = `${subsl}--${slug(cluster)}`;
+                    if (!showClusterHeaders || subNoHeader.has(cluster)) {
+                      cr.forEach(r => {
+                        const rid = r.id || `${subsl}-${slug(r.title)}`;
+                        nav += navRecipeItem(rid, r, filename);
+                      });
+                    } else {
+                      nav += navClusterItem(cid, cluster, cr, subsl, filename);
+                    }
+                  }
+                }
+                nav += '</ul>';
+              }
+              nav += '</li>\n';
             }
-            nav += '</li>\n';
           }
         }
       }
@@ -929,7 +940,7 @@ function buildSectionContent(section) {
         // ── Sub-subsection case: dynamic suppression ──
         const { nonEmpty, showSubSubs } = getSubSubsectionLayout(sub);
 
-        html += `<section id="${subSecId}" class="subsection">\n  <h3 class="subsection-heading">${esc(sub.title)}</h3>\n`;
+        html += `<section id="${subSecId}" class="subsection">\n  ${sub.title !== 'General' ? `<h3 class="subsection-heading">${esc(sub.title)}</h3>` : ''}\n`;
 
         if (nonEmpty.length === 0) {
           html += `  <p class="empty"><em>No recipes yet.</em></p>\n`;
@@ -959,7 +970,7 @@ function buildSectionContent(section) {
         const clusterGroups = hasSubRecipes ? groupByCluster(sub.recipes) : null;
         const flattenSub = CLUSTER_ORDER.includes(sub.title);
         html += `<section id="${subSecId}" class="subsection">
-  <h3 class="subsection-heading">${esc(sub.title)}</h3>
+  ${sub.title !== 'General' ? `<h3 class="subsection-heading">${esc(sub.title)}</h3>` : ''}
   ${hasSubRecipes
     ? renderRecipeList(sub.recipes, subsl, clusterGroups, flattenSub ? [...CLUSTER_ORDER] : [sub.title])
     : '<p class="empty"><em>No recipes yet.</em></p>'}

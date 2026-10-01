@@ -2300,7 +2300,7 @@ module.exports = {
           ]
         },
         {
-          "title": "Locro de Zapallo",
+          "title": "Locro de Zapallo (Peruvian Pumpkin Stew)",
           "servings": "Serves 6   |   Total: about 50 min",
           "source": "Fresh Farm (adapted from Epicurious)",
           "comments": [
@@ -2648,1011 +2648,1006 @@ module.exports = {
       "title": "Salads",
       "subsections": [
         {
-          "title": "Greens",
-          "subsections": [
+          "title": "Green Salads",
+          "recipes": [
             {
-              "title": "Green Salads",
-              "recipes": [
+              "title": "Barbecue Bacon Wedge Salad with Grilled Corn",
+              "servings": "Serves 4",
+              "source": "Food Network / Katie Lee Biegel",
+              "comments": [
+                "Contains bacon.",
                 {
-                  "title": "Barbecue Bacon Wedge Salad with Grilled Corn",
-                  "servings": "Serves 4",
-                  "source": "Food Network / Katie Lee Biegel",
-                  "comments": [
-                    "Contains bacon.",
-                    {
-                      "html": "For pickled red onions, see <a href='preserves-pickles.html#quick-pickled-red-onions'>Quick Pickled Red Onions</a> in the Preserves & Pickles section — prepare at least 1 hour ahead."
-                    }
-                  ],
-                  "ingredientGroups": [
-                    {
-                      "label": "Pickled red onions (1 hour ahead)",
-                      "ingredients": [
-                        "1 batch Quick Pickled Red Onions (see Pickling section)"
-                      ]
-                    },
-                    {
-                      "label": "Blue cheese dressing",
-                      "ingredients": [
-                        "1/2 cup mayonnaise",
-                        "2 tablespoons buttermilk",
-                        "1 tablespoon white vinegar",
-                        "1/4 teaspoon sugar",
-                        "Dash hot sauce",
-                        "Salt and pepper",
-                        "1/4 cup crumbled blue cheese"
-                      ]
-                    },
-                    {
-                      "label": "Barbecue bacon",
-                      "ingredients": [
-                        "1/4 cup barbecue sauce",
-                        "2 tablespoons apple cider vinegar",
-                        "1 tablespoon dark brown sugar",
-                        "1/2 pound slab bacon, cut into lardons"
-                      ]
-                    },
-                    {
-                      "label": "Grilled corn",
-                      "ingredients": [
-                        "1 ear corn, husked",
-                        "1 tablespoon olive oil"
-                      ]
-                    },
-                    {
-                      "label": "To serve",
-                      "ingredients": [
-                        "1 head iceberg lettuce, quartered into wedges",
-                        "1 cup cherry tomatoes, halved",
-                        "Salt and pepper"
-                      ]
-                    }
-                  ],
-                  "steps": [
-                    "Prepare Quick Pickled Red Onions (see Pickling section) at least 1 hour ahead.",
-                    "Make blue cheese dressing: whisk together mayo, buttermilk, vinegar, sugar, and hot sauce; season with salt and pepper. Fold in blue cheese. Refrigerate until ready to serve.",
-                    "Make barbecue bacon: combine barbecue sauce, vinegar, and brown sugar in a skillet over medium heat. Add bacon and cook, stirring, until caramelized and sticky, 8–10 minutes. Set aside.",
-                    "Brush corn with olive oil. Grill or pan-sear over high heat until charred in spots. Cut kernels from cob.",
-                    "To assemble: place a lettuce wedge on each plate. Top with cherry tomatoes, corn kernels, barbecue bacon, pickled onions, and blue cheese dressing. Season with salt and pepper."
+                  "html": "For pickled red onions, see <a href='preserves-pickles.html#quick-pickled-red-onions'>Quick Pickled Red Onions</a> in the Preserves & Pickles section — prepare at least 1 hour ahead."
+                }
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Pickled red onions (1 hour ahead)",
+                  "ingredients": [
+                    "1 batch Quick Pickled Red Onions (see Pickling section)"
                   ]
                 },
                 {
-                  "title": "Boston Lettuce and Endives Salad",
-                  "servings": "Serves 6",
-                  "source": "Ricardo Cuisine",
-                  "ingredientGroups": [
-                    {
-                      "label": "Dressing",
-                      "ingredients": [
-                        "1/4 cup mayonnaise",
-                        "2 tablespoons apple cider vinegar",
-                        "1 tablespoon whole-grain mustard",
-                        "1 tablespoon maple syrup",
-                        "1 small garlic clove, finely chopped",
-                        "Salt and pepper to taste"
-                      ]
-                    },
-                    {
-                      "label": "Salad",
-                      "ingredients": [
-                        "4 cups Boston lettuce leaves (about 1 small head), torn",
-                        "2 white endives, halved and separated into leaves",
-                        "2 red endives, halved and separated into leaves",
-                        "1 red apple, cored and thinly sliced",
-                        "1/2 cup red grapes, halved",
-                        "1/2 cup roasted walnuts"
-                      ]
-                    }
-                  ],
-                  "steps": [
-                    "Whisk together mayonnaise, cider vinegar, mustard, maple syrup, and garlic. Season with salt and pepper. Can be made ahead.",
-                    "Combine lettuce, endives, apple, grapes, and walnuts in a large bowl.",
-                    "Just before serving, drizzle dressing over salad and toss well."
+                  "label": "Blue cheese dressing",
+                  "ingredients": [
+                    "1/2 cup mayonnaise",
+                    "2 tablespoons buttermilk",
+                    "1 tablespoon white vinegar",
+                    "1/4 teaspoon sugar",
+                    "Dash hot sauce",
+                    "Salt and pepper",
+                    "1/4 cup crumbled blue cheese"
                   ]
                 },
                 {
-                  "title": "Crunchy Romaine Toss",
-                  "favorite": true,
-                  "servings": "Serves 10-12",
-                  "source": "From Christy Ponder",
-                  "ingredientGroups": [
-                    {
-                      "label": "Sweet & Sour Dressing",
-                      "ingredients": [
-                        "1 cup vegetable oil",
-                        "1 cup sugar",
-                        "1/2 cup white vinegar",
-                        "3 teaspoons soy sauce",
-                        "Salt and pepper to taste"
-                      ]
-                    },
-                    {
-                      "label": "Toasted noodle mixture",
-                      "ingredients": [
-                        "1 package ramen noodles, uncooked, broken up (discard flavor packet)",
-                        "1 cup walnuts, chopped",
-                        "2 tablespoons unsalted butter",
-                        "2 tablespoons olive oil"
-                      ]
-                    },
-                    {
-                      "label": "Salad",
-                      "ingredients": [
-                        "1 bunch broccoli, coarsely chopped",
-                        "1 head romaine lettuce, washed and broken into pieces",
-                        "4 green onions, chopped"
-                      ]
-                    }
-                  ],
-                  "steps": [
-                    "Whisk together all dressing ingredients until the sugar dissolves. Set aside.",
-                    "In a large skillet over medium heat, melt butter with olive oil. Add broken ramen noodles and walnuts; cook, stirring, until golden, about 5 minutes. Spread on paper towels to cool.",
-                    "In a large bowl, combine broccoli, romaine, and green onions. Add the cooled noodle mixture and toss to combine.",
-                    "Pour dressing over the salad and toss to coat well. Serve immediately."
+                  "label": "Barbecue bacon",
+                  "ingredients": [
+                    "1/4 cup barbecue sauce",
+                    "2 tablespoons apple cider vinegar",
+                    "1 tablespoon dark brown sugar",
+                    "1/2 pound slab bacon, cut into lardons"
                   ]
                 },
                 {
-                  "title": "Butter Lettuce and Citrus Salad",
-                  "servings": "Serves 2–3",
-                  "comments": [
-                    "\"Supreming\" citrus means cutting away the peel and pith, then slicing between the membranes to release clean segments."
-                  ],
-                  "source": "The Gourmandise School (The Pizza Class)",
-                  "ingredientGroups": [
-                    {
-                      "label": null,
-                      "ingredients": [
-                        "1 head butter lettuce",
-                        "1 shallot",
-                        "Salt & pepper to taste",
-                        "1 grapefruit or orange",
-                        "2 tablespoons lemon juice",
-                        "¼ cup olive oil"
-                      ]
-                    }
-                  ],
-                  "steps": [
-                    "Remove any wilted leaves from the butter lettuce. Tear into bite-sized pieces and place in a medium bowl.",
-                    "Mince the shallot and place in a small bowl with a pinch of salt and pepper.",
-                    "Supreme (segment) your grapefruit right over the small bowl to catch any juices. Set the segmented citrus aside.",
-                    "Add lemon juice to the shallot bowl, then whisk in the olive oil. Dress the butter lettuce with the citronette. Plate and tuck the segmented citrus into and on top of the greens."
+                  "label": "Grilled corn",
+                  "ingredients": [
+                    "1 ear corn, husked",
+                    "1 tablespoon olive oil"
                   ]
                 },
                 {
-                  "title": "Joan's on Third Butter Lettuce Salad (Copycat)",
-                  "servings": "Serves 4",
-                  "comments": [
-                    "Original recipe uses French feta; family uses goat cheese in oil instead. Shallot is in the original but was skipped. Dressing recipe from CopyKat Recipes."
-                  ],
-                  "source": "Copycat recipe based on Joan's on Third, Los Angeles",
-                  "ingredientGroups": [
-                    {
-                      "label": "Dressing",
-                      "ingredients": [
-                        "¼ cup white wine vinegar (or champagne vinegar)",
-                        "1 tablespoon Dijon mustard",
-                        "2–3 cloves garlic, minced",
-                        "¼ teaspoon lemon juice",
-                        "Dried oregano, to taste",
-                        "Dried basil, to taste",
-                        "9 tablespoons extra virgin olive oil",
-                        "Salt and freshly ground black pepper, to taste"
-                      ]
-                    },
-                    {
-                      "label": "Salad",
-                      "ingredients": [
-                        "1–2 large heads butter lettuce, washed, dried, and torn",
-                        "½ cup goat cheese, crumbled",
-                        "⅓ cup dried cranberries"
-                      ]
-                    }
-                  ],
-                  "steps": [
-                    {
-                      "lead": "Make the dressing:",
-                      "bullets": [
-                        "Whisk together the white wine vinegar, Dijon mustard, minced garlic, lemon juice, oregano, and basil in a small bowl.",
-                        "Slowly drizzle in the olive oil while whisking constantly until emulsified.",
-                        "Season with salt and pepper to taste."
-                      ]
-                    },
-                    "Place the torn butter lettuce in a large serving bowl.",
-                    "Sprinkle the crumbled goat cheese and dried cranberries evenly over the lettuce.",
-                    "Drizzle the vinaigrette lightly over the top just before serving and toss gently to combine."
-                  ]
-                },
-                {
-                  "title": "Nechamie's Summer Salad",
-                  "source": "From Nechamie Greenberg (Chabad Jewish Center of Pudong)",
-                  "comments": [
-                    "The dressing makes more than needed for one salad — leftovers keep refrigerated for 1–2 weeks."
-                  ],
-                  "ingredientGroups": [
-                    {
-                      "label": "Dressing",
-                      "ingredients": [
-                        "1 cup vinegar",
-                        "3/4 cup sugar",
-                        "3/4 cup ketchup",
-                        "1/4 cup oil",
-                        "2 cloves garlic, crushed",
-                        "3/4 teaspoon paprika",
-                        "1/4 teaspoon mustard",
-                        "1 teaspoon salt"
-                      ]
-                    },
-                    {
-                      "label": "Salad",
-                      "ingredients": [
-                        "1 bag Romaine lettuce",
-                        "5–6 mushrooms, sliced",
-                        "1 container cherry tomatoes",
-                        "3/4 to 1 mango, cubed",
-                        "3/4 avocado, cubed",
-                        "A handful of salted cashews",
-                        "A handful of sunflower seeds"
-                      ]
-                    }
-                  ],
-                  "steps": [
-                    "Whisk together all dressing ingredients.",
-                    "Pour dressing over salad just before serving and toss to combine."
-                  ]
-                },
-                {
-                  "title": "Nechamie's Poppy Seed Salad",
-                  "source": "From Nechamie Greenberg (Chabad Jewish Center of Pudong)",
-                  "ingredientGroups": [
-                    {
-                      "label": "Dressing",
-                      "ingredients": [
-                        "1 1/3 cups oil",
-                        "3/4 cup vinegar",
-                        "3/4 cup sugar",
-                        "6 heaping tablespoons mayonnaise",
-                        "2 cloves garlic",
-                        "Prepared mustard (a generous squeeze)",
-                        "1 1/2 tablespoons poppy seeds",
-                        "Salt to taste",
-                        "Pepper to taste"
-                      ]
-                    },
-                    {
-                      "label": "Salad",
-                      "ingredients": [
-                        "Romaine lettuce",
-                        "Purple cabbage, shredded",
-                        "Mushrooms, sliced",
-                        "Radishes, thinly sliced",
-                        "Scallions, thinly sliced",
-                        "Cherry tomatoes",
-                        "Cucumbers, sliced",
-                        "Chow mein noodles"
-                      ]
-                    }
-                  ],
-                  "steps": [
-                    "Whisk together all dressing ingredients.",
-                    "Pour dressing over salad just before serving and toss to combine. Add chow mein noodles at the last moment to keep them crunchy."
-                  ]
-                },
-                {
-                  "title": "Nechamie's Spinach and Egg Salad",
-                  "source": "From Nechamie Greenberg (Chabad Jewish Center of Pudong)",
-                  "ingredientGroups": [
-                    {
-                      "label": "Dressing",
-                      "ingredients": [
-                        "2 tablespoons brown sugar",
-                        "2 tablespoons vinegar",
-                        "1/4 cup oil",
-                        "1/2 teaspoon mustard",
-                        "2 tablespoons mayonnaise",
-                        "1/4 teaspoon salt",
-                        "Pepper to taste"
-                      ]
-                    },
-                    {
-                      "label": "Salad",
-                      "ingredients": [
-                        "Spinach",
-                        "3 hard-boiled eggs, sliced",
-                        "Chow mein noodles to taste",
-                        "Scallions, finely chopped"
-                      ]
-                    }
-                  ],
-                  "steps": [
-                    "Whisk together all dressing ingredients.",
-                    "Pour dressing over salad just before serving and toss to combine. Add chow mein noodles at the last moment to keep them crunchy."
-                  ]
-                },
-                {
-                  "title": "Pear, Gorgonzola and Walnut Salad",
-                  "servings": "Serves 4   |   Total: 10 min",
-                  "source": "Sarah Epperson Loveless, EatingWell",
-                  "comments": [
-                    "Anjou or Bartlett pear also works well; Bosc holds its shape best.",
-                    "To toast walnuts: spread in a dry skillet over medium heat and toast 3-5 minutes, shaking frequently.",
-                    "Best dressed and served immediately -- the dressed greens wilt quickly."
-                  ],
-                  "ingredientGroups": [
-                    {
-                      "label": "Dressing",
-                      "ingredients": [
-                        "2 tablespoons olive oil",
-                        "2 tablespoons fresh lemon juice (from 1 lemon)",
-                        "2 teaspoons honey",
-                        "1 teaspoon chopped fresh thyme",
-                        "1 teaspoon Dijon mustard",
-                        "1/2 teaspoon black pepper",
-                        "1/4 teaspoon kosher salt"
-                      ]
-                    },
-                    {
-                      "label": "Salad",
-                      "ingredients": [
-                        "4 cups mixed baby lettuces"
-                      ]
-                    },
-                    {
-                      "label": "To serve",
-                      "ingredients": [
-                        "1 medium ripe Bosc pear, thinly sliced",
-                        "1/4 cup crumbled Gorgonzola cheese",
-                        "1/4 cup toasted walnuts, coarsely chopped",
-                        "1/4 cup golden raisins"
-                      ]
-                    }
-                  ],
-                  "steps": [
-                    "Whisk together all dressing ingredients in a large bowl. Add lettuces and gently toss to coat.",
-                    "Top with sliced pear, Gorgonzola, walnuts, and golden raisins. Serve immediately."
+                  "label": "To serve",
+                  "ingredients": [
+                    "1 head iceberg lettuce, quartered into wedges",
+                    "1 cup cherry tomatoes, halved",
+                    "Salt and pepper"
                   ]
                 }
+              ],
+              "steps": [
+                "Prepare Quick Pickled Red Onions (see Pickling section) at least 1 hour ahead.",
+                "Make blue cheese dressing: whisk together mayo, buttermilk, vinegar, sugar, and hot sauce; season with salt and pepper. Fold in blue cheese. Refrigerate until ready to serve.",
+                "Make barbecue bacon: combine barbecue sauce, vinegar, and brown sugar in a skillet over medium heat. Add bacon and cook, stirring, until caramelized and sticky, 8–10 minutes. Set aside.",
+                "Brush corn with olive oil. Grill or pan-sear over high heat until charred in spots. Cut kernels from cob.",
+                "To assemble: place a lettuce wedge on each plate. Top with cherry tomatoes, corn kernels, barbecue bacon, pickled onions, and blue cheese dressing. Season with salt and pepper."
               ]
             },
             {
-              "title": "Chopped & Composed Salads",
-              "recipes": [
+              "title": "Boston Lettuce and Endives Salad",
+              "servings": "Serves 6",
+              "source": "Ricardo Cuisine",
+              "ingredientGroups": [
                 {
-                  "title": "Broccoli Salad",
-                  "servings": "Serves 4",
-                  "source": "New York Times",
-                  "ingredientGroups": [
-                    {
-                      "label": "Broccoli",
-                      "ingredients": [
-                        "1 1/2 to 2 pounds fresh broccoli (about 4 cups)",
-                        "Salt to taste"
-                      ]
-                    },
-                    {
-                      "label": "Dressing",
-                      "ingredients": [
-                        "1 small red onion, cut into 1/2-inch cubes (about 1 cup)",
-                        "2 teaspoons Dijon mustard",
-                        "3 tablespoons lemon juice",
-                        "1/4 cup olive oil",
-                        "1/4 cup flat-leaf parsley, finely chopped",
-                        "Salt to taste"
-                      ]
-                    }
-                  ],
-                  "steps": [
-                    "Cook broccoli in salted boiling water for 5 minutes until crisp-tender. Drain and place in a salad bowl.",
-                    "Sprinkle onion cubes over broccoli.",
-                    "Whisk mustard and lemon juice together, then beat in oil; season with salt and stir in parsley.",
-                    "Spoon dressing over broccoli. Serve hot, warm, or cold."
+                  "label": "Dressing",
+                  "ingredients": [
+                    "1/4 cup mayonnaise",
+                    "2 tablespoons apple cider vinegar",
+                    "1 tablespoon whole-grain mustard",
+                    "1 tablespoon maple syrup",
+                    "1 small garlic clove, finely chopped",
+                    "Salt and pepper to taste"
                   ]
                 },
                 {
-                  "title": "Charred Broccoli and Cauliflower Salad",
-                  "servings": "Serves 6 to 8   |   Total: 30 min   |   Active: 25 min",
-                  "source": "https://www.foodnetwork.com/recipes/ree-drummond/charred-broccoli-and-cauliflower-salad-19673188",
-                  "comments": [
-                    "Great as a side at a barbecue with grilled seafood or meat, or to take to a potluck."
-                  ],
-                  "ingredientGroups": [
-                    {
-                      "label": "Vegetables",
-                      "ingredients": [
-                        "1 medium crown broccoli, broken into large florets",
-                        "1 medium cauliflower, broken into large florets",
-                        "3 tablespoons olive oil",
-                        "1 teaspoon kosher salt",
-                        "1/2 teaspoon freshly ground black pepper"
-                      ]
-                    },
-                    {
-                      "label": "Dressing",
-                      "ingredients": [
-                        "2/3 cup mayonnaise",
-                        "1/3 cup Greek yogurt",
-                        "2 tablespoons chopped fresh dill",
-                        "2 tablespoons chopped fresh parsley",
-                        "Zest and juice of 1 lemon",
-                        "Pinch kosher salt",
-                        "Pinch freshly ground black pepper"
-                      ]
-                    },
-                    {
-                      "label": "Salad",
-                      "ingredients": [
-                        "1 cup arugula",
-                        "1/2 cup dried blueberries, plus extra for garnish",
-                        "1/4 cup pickled red onions, plus extra for garnish",
-                        "2 tablespoons sunflower seeds, plus extra for garnish"
-                      ]
-                    }
-                  ],
-                  "steps": [
-                    "Preheat the grill to medium-high heat.",
-                    "Toss the broccoli and cauliflower with the olive oil, salt, and pepper. Grill, turning as needed, until tender and well charred, 8–10 minutes. Transfer to a large bowl.",
-                    "Make the dressing: whisk together the mayonnaise, Greek yogurt, dill, parsley, lemon zest, and lemon juice. Season with salt and pepper.",
-                    "Spread the dressing onto a serving platter, leaving a well in the middle.",
-                    "Add the arugula, blueberries, pickled red onions, and sunflower seeds to the bowl with the charred vegetables and toss to combine.",
-                    "Mound the vegetable mixture into the well. Garnish with extra blueberries, pickled red onions, and sunflower seeds. Serve."
-                  ]
-                },
-                {
-                  "title": "Nechamie's Coleslaw Salad",
-                  "source": "From Nechamie Greenberg (Chabad Jewish Center of Pudong)",
-                  "ingredientGroups": [
-                    {
-                      "label": "Dressing",
-                      "ingredients": [
-                        "1/4 cup vinegar",
-                        "1/4 cup oil",
-                        "1/4 cup sugar",
-                        "3/4 teaspoon pepper",
-                        "1 teaspoon salt"
-                      ]
-                    },
-                    {
-                      "label": "Salad",
-                      "ingredients": [
-                        "1 package coleslaw mix",
-                        "Craisins to taste",
-                        "Slivered almonds, toasted, to taste"
-                      ]
-                    }
-                  ],
-                  "steps": [
-                    "Whisk together all dressing ingredients.",
-                    "Pour dressing over salad just before serving and toss to combine."
-                  ]
-                },
-                {
-                  "title": "Nechamie's Popped Rice Salad",
-                  "source": "From Nechamie Greenberg (Chabad Jewish Center of Pudong)",
-                  "comments": [
-                    "The rice is popped dry in a covered pot — it puffs and crisps like a lighter version of puffed rice. Long-grain white rice (converted or standard) works best for even popping."
-                  ],
-                  "ingredientGroups": [
-                    {
-                      "label": "Dressing",
-                      "ingredients": [
-                        "1 cup oil",
-                        "3/4 cup vinegar",
-                        "3/4 cup sugar",
-                        "Salt to taste"
-                      ]
-                    },
-                    {
-                      "label": "Salad",
-                      "ingredients": [
-                        "Romaine lettuce",
-                        "Cucumbers, sliced",
-                        "Avocado, diced"
-                      ]
-                    },
-                    {
-                      "label": "To serve",
-                      "ingredients": [
-                        "Jasmine or Basmati rice, popped (see Step 1)"
-                      ]
-                    }
-                  ],
-                  "steps": [
-                    "Pop the rice: heat a thin film of oil in a small pot over medium-high heat. Add a small amount of uncooked rice, cover, and cook until the rice pops and puffs. Remove from heat immediately and transfer to a bowl to cool.",
-                    "Whisk together all dressing ingredients.",
-                    "Just before serving, pour dressing over salad and toss to combine. Sprinkle popped rice on top."
-                  ]
-                },
-                {
-                  "title": "Shaved Brussels Sprouts Salad With Lemon and Pecorino",
-                  "favorite": true,
-                  "servings": "Serves 6",
-                  "source": "Katie Morford / Mom's Kitchen Handbook",
-                  "comments": [
-                    "As prepared by Pete Swanson.",
-                    "The salad holds up well and is just as good the next day.",
-                    "Variations: add dried cranberries or cherries for sweetness; whisk a teaspoon of Dijon into the dressing; swap almonds for walnuts."
-                  ],
-                  "ingredientGroups": [
-                    {
-                      "label": "Almonds",
-                      "ingredients": [
-                        "3/4 cup sliced almonds"
-                      ]
-                    },
-                    {
-                      "label": "Salad",
-                      "ingredients": [
-                        "1 pound Brussels sprouts, trimmed and shaved very thin (food processor slicer blade or mandoline)",
-                        "2 oz Pecorino Romano, finely grated (about 1/2 cup)",
-                        "1/8 cup fresh mint, roughly chopped"
-                      ]
-                    },
-                    {
-                      "label": "Dressing",
-                      "ingredients": [
-                        "1/4 cup fresh lemon juice (Meyer lemon if available)",
-                        "2 1/2 tablespoons extra-virgin olive oil",
-                        "1/2 teaspoon kosher salt",
-                        "Freshly ground black pepper to taste"
-                      ]
-                    }
-                  ],
-                  "steps": [
-                    "Preheat oven to 350 degrees F. Toast sliced almonds on a sheet pan until golden, about 8 minutes. Let cool.",
-                    "Trim a thin slice from the root end of each Brussels sprout and shave very thin using the slicing blade of a food processor or a mandoline.",
-                    "Combine shaved Brussels sprouts, almonds, Pecorino, mint, lemon juice, olive oil, salt, and pepper in a large bowl. Toss well and serve."
-                  ]
-                },
-                {
-                  "title": "Wood Ranch's Peanut Coleslaw",
-                  "favorite": true,
-                  "servings": "Serves 6",
-                  "source": "Kadee and Desarae / Oh So Delicioso",
-                  "comments": [
-                    "Leftovers keep refrigerated for 1 to 2 days."
-                  ],
-                  "ingredientGroups": [
-                    {
-                      "label": "Dressing",
-                      "ingredients": [
-                        "1/3 cup red wine vinegar",
-                        "1/3 cup neutral oil (avocado, canola, or light olive oil)",
-                        "1 1/2 tablespoons sugar",
-                        "1/2 teaspoon seasoning salt",
-                        "1/2 teaspoon garlic powder",
-                        "1 teaspoon sesame seeds (black or white) (optional)"
-                      ]
-                    },
-                    {
-                      "label": "Slaw",
-                      "ingredients": [
-                        "16 oz green cabbage, shredded (pre-bagged or equivalent)",
-                        "1 1/2 cups purple cabbage, chopped",
-                        "3/4 cup celery, chopped",
-                        "2 green onions, chopped",
-                        "1 cup peanuts",
-                        "1/4 cup fresh cilantro, chopped (optional)"
-                      ]
-                    }
-                  ],
-                  "steps": [
-                    "Whisk together vinegar, oil, sugar, seasoning salt, garlic powder, and sesame seeds until sugar dissolves.",
-                    "In a large bowl, combine green cabbage, purple cabbage, celery, green onions, peanuts, and cilantro.",
-                    "Toss with dressing just before serving."
-                  ]
-                },
-                {
-                  "title": "Yellow Mustard Potato Salad",
-                  "servings": "Serves 4",
-                  "source": "Rachael Ray / Food Network",
-                  "comments": [
-                    "Spreading the potatoes on a sheet pan (rather than leaving them in the pot) lets them cool quickly without overcooking or turning mushy."
-                  ],
-                  "ingredientGroups": [
-                    {
-                      "label": "Potatoes",
-                      "ingredients": [
-                        "2 1/2 pounds russet potatoes (about 3 medium-large), peeled and cubed"
-                      ]
-                    },
-                    {
-                      "label": "Dressing",
-                      "ingredients": [
-                        "2 ribs celery, finely chopped",
-                        "1/2 small yellow onion, finely chopped",
-                        "3 tablespoons chopped pimento, drained",
-                        "3 tablespoons sweet pickle relish",
-                        "1/3 cup mayonnaise",
-                        "1/3 cup yellow mustard",
-                        "Salt and pepper to taste"
-                      ]
-                    },
-                    {
-                      "label": "Garnish",
-                      "ingredients": [
-                        "2 tablespoons chopped parsley (optional)"
-                      ]
-                    }
-                  ],
-                  "steps": [
-                    "Boil potatoes in generously salted water until just tender, 10 to 12 minutes. Drain and spread on a sheet pan; let cool about 10 minutes.",
-                    "In a large bowl, stir together celery, onion, pimento, relish, mayonnaise, and mustard. Season with salt and pepper.",
-                    "Add cooled potatoes and fold to combine. Taste and adjust seasoning. Garnish with parsley if desired. Serve immediately or chill."
-                  ]
-                },
-                {
-                  "title": "Roasted Cauliflower Salad",
-                  "servings": "Serves 12",
-                  "source": "Food Network / Ree Drummond",
-                  "ingredientGroups": [
-                    {
-                      "label": "Cauliflower",
-                      "ingredients": [
-                        "2 heads cauliflower, broken into florets",
-                        "2 tablespoons olive oil",
-                        "2 teaspoons kosher salt",
-                        "1 teaspoon black pepper"
-                      ]
-                    },
-                    {
-                      "label": "Dressing",
-                      "ingredients": [
-                        "1/4 cup pesto",
-                        "3 tablespoons champagne vinegar"
-                      ]
-                    },
-                    {
-                      "label": "Salad",
-                      "ingredients": [
-                        "1/2 cup pine nuts",
-                        "6 cups mixed baby arugula, spinach, and kale",
-                        "1/2 cup Castelvetrano olives, halved",
-                        "1/2 cup kalamata olives, halved",
-                        "1/2 cup fresh Italian parsley, chopped"
-                      ]
-                    }
-                  ],
-                  "steps": [
-                    "Preheat oven to 450 degrees F. Toss cauliflower with olive oil, salt, and pepper; spread on a rimmed baking sheet. Roast 18–20 minutes until golden and caramelized.",
-                    "Toast pine nuts in a dry skillet over medium heat, stirring frequently, until golden, about 3–4 minutes. Watch carefully.",
-                    "Shake pesto and champagne vinegar together in a jar until combined.",
-                    "Combine greens, roasted cauliflower, olives, parsley, and pine nuts in a large bowl. Drizzle with dressing and toss to coat. Serve immediately."
-                  ]
-                },
-                {
-                  "title": "Dad's Greek Salad",
-                  "servings": "Serves 6",
-                  "source": "Simply Recipes / Elise Bauer",
-                  "comments": [
-                    "Tip: to reduce the bite of raw onion, soak chopped onion in a little vinegar or lemon juice for a few minutes before adding.",
-                    "Dressing can be made up to 3 hours ahead; let stand at room temperature and re-whisk before using."
-                  ],
-                  "ingredientGroups": [
-                    {
-                      "label": "Dressing",
-                      "ingredients": [
-                        "6 tablespoons extra-virgin olive oil",
-                        "2 tablespoons fresh lemon juice",
-                        "1 teaspoon red wine vinegar",
-                        "1/2 teaspoon chopped garlic",
-                        "1/2 teaspoon dried oregano (or 1 teaspoon fresh)",
-                        "1/2 teaspoon dried dill (or 1 teaspoon fresh)",
-                        "Salt and freshly ground black pepper"
-                      ]
-                    },
-                    {
-                      "label": "Salad",
-                      "ingredients": [
-                        "3 large plum tomatoes, seeded and coarsely chopped",
-                        "3/4 large cucumber, peeled, seeded, and coarsely chopped",
-                        "1/2 small red onion, chopped",
-                        "1 bell pepper, seeded and coarsely chopped",
-                        "1/2 cup pitted black olives (preferably brine-cured), coarsely chopped",
-                        "Heaping 1/2 cup crumbled feta cheese"
-                      ]
-                    }
-                  ],
-                  "steps": [
-                    "Whisk together olive oil, lemon juice, vinegar, garlic, oregano, and dill until blended. Season with salt and pepper.",
-                    "Combine tomatoes, cucumber, onion, bell pepper, and olives in a large bowl. Toss with dressing. Sprinkle with feta and serve."
-                  ]
-                },
-                {
-                  "title": "Moroccan-Style Carrot Salad",
-                  "servings": "Serves 6",
-                  "source": "Suzy Karadsheh / The Mediterranean Dish",
-                  "comments": [
-                    "Dressing the carrots while warm is key -- they absorb the spices far better than when cold.",
-                    "Keeps refrigerated for 3 to 4 days; always serve at room temperature.",
-                    "Harissa spice blend adds a subtle heat; if unavailable, substitute a pinch of cayenne and extra cumin."
-                  ],
-                  "ingredientGroups": [
-                    {
-                      "label": "Carrots",
-                      "ingredients": [
-                        "2 pounds carrots, peeled and cut into 1/4-inch rounds",
-                        "Kosher salt"
-                      ]
-                    },
-                    {
-                      "label": "Dressing",
-                      "ingredients": [
-                        "1/2 teaspoon harissa spice (dry spice blend)",
-                        "1/2 teaspoon ground cumin",
-                        "1/2 teaspoon ground coriander",
-                        "1/2 teaspoon sweet paprika",
-                        "1 to 2 cloves garlic, minced",
-                        "1 to 2 tablespoons fresh lemon juice",
-                        "3 tablespoons extra-virgin olive oil"
-                      ]
-                    },
-                    {
-                      "label": "Finish",
-                      "ingredients": [
-                        "1 celery stalk, finely chopped",
-                        "1/2 cup fresh cilantro, chopped (mint or parsley can substitute)",
-                        "3 tablespoons toasted sesame seeds (optional)"
-                      ]
-                    }
-                  ],
-                  "steps": [
-                    "Bring a large pot of salted water to a boil. Add carrots and cook until very tender, about 20 minutes. Drain.",
-                    "Transfer warm carrots to a large bowl immediately. While still hot, toss with a pinch of salt, harissa, cumin, coriander, paprika, garlic, lemon juice, and olive oil.",
-                    "Add celery, cilantro, and sesame seeds and toss again. Let cool to room temperature before serving."
-                  ]
-                },
-                {
-                  "title": "Parsley Salad",
-                  "servings": "Serves 4",
-                  "source": "Alton Brown / Food Network (Good Eats)",
-                  "comments": [
-                    "Walnut oil is central to this recipe -- it pairs naturally with the slightly bitter parsley. Look for it at specialty grocery stores. In a pinch, half almond oil and half olive oil can substitute.",
-                    "Works well as a side for grilled meats or as part of a mezze spread."
-                  ],
-                  "ingredientGroups": [
-                    {
-                      "label": "Dressing",
-                      "ingredients": [
-                        "2 tablespoons fresh lemon juice",
-                        "2 tablespoons lemon zest",
-                        "6 tablespoons walnut oil",
-                        "2 teaspoons dark sesame oil",
-                        "1 teaspoon honey",
-                        "Salt and freshly ground pepper to taste"
-                      ]
-                    },
-                    {
-                      "label": "Salad",
-                      "ingredients": [
-                        "4 oz Italian flat-leaf parsley, leaves only (about 2 quarts loosely packed)",
-                        "3 tablespoons toasted sesame seeds"
-                      ]
-                    }
-                  ],
-                  "steps": [
-                    "Wash and dry parsley thoroughly. Pick leaves and discard stems.",
-                    "Whisk together lemon juice, lemon zest, walnut oil, sesame oil, honey, and salt and pepper in a large bowl.",
-                    "Add parsley and sesame seeds; toss to combine.",
-                    "Let sit at least 30 minutes before serving so flavors meld."
-                  ]
-                },
-                {
-                  "title": "Indian Slaw",
-                  "servings": "Serves 8",
-                  "source": "Glebe Kitchen / Romain",
-                  "favorite": true,
-                  "comments": [
-                    "Dressing benefits from at least 4 hours rest; overnight is best."
-                  ],
-                  "ingredientGroups": [
-                    {
-                      "label": "Dressing (4 hours ahead)",
-                      "ingredients": [
-                        "1/2 cup full-fat yogurt",
-                        "1/2 cup mayonnaise",
-                        "1/2 teaspoon coriander powder",
-                        "1/2 teaspoon cumin powder",
-                        "1/4 teaspoon Kashmiri chili powder",
-                        "1/2 teaspoon coarse black pepper",
-                        "1/4 teaspoon mustard powder",
-                        "2 1/2 tablespoons lemon juice",
-                        "1 teaspoon sugar",
-                        "1 tablespoon milk to thin (optional)"
-                      ]
-                    },
-                    {
-                      "label": "Slaw",
-                      "ingredients": [
-                        "1 small green cabbage, thinly sliced",
-                        "1/2 large Spanish onion, thinly sliced",
-                        "2 large carrots, shredded",
-                        "2 large jalapenos, seeded and julienned",
-                        "2 1/2 teaspoons kosher salt",
-                        "1 tablespoon vegetable oil",
-                        "1/2 cup cashews",
-                        "Large handful fresh cilantro, roughly chopped"
-                      ]
-                    }
-                  ],
-                  "steps": [
-                    "Whisk together all dressing ingredients. Refrigerate at least 4 hours — overnight is best — for flavors to meld.",
-                    "Combine cabbage, onion, carrots, and jalapenos in a large bowl. Toss with salt and let sit 15–20 minutes to draw out moisture.",
-                    "Squeeze or press out excess liquid from slaw by hand or in a colander. Toss with vegetable oil.",
-                    "Add dressing, cashews, and cilantro; toss to coat. Taste and adjust salt. Serve immediately or refrigerate up to 2 days."
-                  ]
-                },
-                {
-                  "title": "Spring Roll Salad with Peanut Dressing",
-                  "servings": "Serves 4",
-                  "source": "Valerie Bertinelli / Food Network",
-                  "ingredientGroups": [
-                    {
-                      "label": "Peanut dressing",
-                      "ingredients": [
-                        "1/4 cup peanut butter",
-                        "3 tablespoons soy sauce",
-                        "2 tablespoons fresh lime juice",
-                        "1 tablespoon toasted sesame oil",
-                        "1 tablespoon honey or agave",
-                        "1 clove garlic, minced",
-                        "1 teaspoon freshly grated ginger",
-                        "2–3 tablespoons warm water, as needed"
-                      ]
-                    },
-                    {
-                      "label": "Salad",
-                      "ingredients": [
-                        "4 oz rice vermicelli noodles",
-                        "2 cups shredded cabbage (green or purple)",
-                        "1 cup shredded carrots",
-                        "1 red bell pepper, thinly sliced",
-                        "1 cup bean sprouts",
-                        "3 scallions, thinly sliced",
-                        "1/4 cup fresh basil leaves, torn",
-                        "1/4 cup fresh cilantro leaves",
-                        "1 tablespoon chopped fresh mint, or to taste"
-                      ]
-                    },
-                    {
-                      "label": "To serve",
-                      "ingredients": [
-                        "1/4 cup roasted peanuts, roughly chopped",
-                        "Lime wedges"
-                      ]
-                    }
-                  ],
-                  "steps": [
-                    "Whisk together all peanut dressing ingredients until smooth, adding warm water until dressing is pourable. Set aside.",
-                    "Cook rice noodles per package instructions. Drain and rinse under cold water.",
-                    "In a large bowl, combine noodles, cabbage, carrots, bell pepper, bean sprouts, and scallions. Toss well.",
-                    "Add basil, cilantro, and mint; toss to combine.",
-                    "Drizzle peanut dressing over salad and toss to coat. Top with chopped peanuts and serve with lime wedges."
-                  ]
-                },
-                {
-                  "title": "Chilled Cucumber Salad (Din Tai Fung Style)",
-                  "servings": "Serves 4",
-                  "source": "Andrea Potischman / Simmer + Sauce",
-                  "comments": [
-                    "Inspired by the cucumber salad at Din Tai Fung restaurants. The 4-hour marinade is essential — the cucumbers become lightly pickled and the flavors meld into something sweeter and more delicate than a quick-dressed salad."
-                  ],
-                  "ingredientGroups": [
-                    {
-                      "label": "Cucumbers",
-                      "ingredients": [
-                        "5 Persian cucumbers, cut into 1/2-inch thick rounds",
-                        "1 1/2 tablespoons kosher salt"
-                      ]
-                    },
-                    {
-                      "label": "Marinade",
-                      "ingredients": [
-                        "3 tablespoons rice vinegar",
-                        "2 tablespoons mirin",
-                        "2 tablespoons honey",
-                        "2 teaspoons canola oil",
-                        "2 teaspoons sesame oil",
-                        "1/2 teaspoon chili garlic sauce",
-                        "1/2 to 3/4 teaspoon salt"
-                      ]
-                    }
-                  ],
-                  "steps": [
-                    "Cut cucumbers into 1/2-inch rounds. Sprinkle with kosher salt, toss to coat, and let sit at room temperature for about 20 minutes.",
-                    "Whisk together rice vinegar, mirin, honey, canola oil, sesame oil, chili garlic sauce, and 1/2 teaspoon salt.",
-                    "Rinse the salt off the cucumbers and pat completely dry. Place in a gallon zip-lock bag and pour in the marinade. Seal and shake gently. Lay the bag flat in the refrigerator and marinate at least 4 hours.",
-                    "To serve, taste and adjust with additional salt or chili garlic sauce. Arrange on a plate and drizzle with a little of the marinade. Serve cold."
-                  ]
-                },
-                {
-                  "title": "Cucumber Salad with Sesame and Rice Vinegar",
-                  "servings": "Serves 2 to 4",
-                  "source": "Lauren Muhlheim, adapted from Deb Perelman / Smitten Kitchen",
-                  "favorite": true,
-                  "comments": [
-                    "Leftovers keep in the fridge for 2–3 days, becoming gently pickled."
-                  ],
-                  "ingredientGroups": [
-                    {
-                      "label": "Cucumbers",
-                      "ingredients": [
-                        "2 Persian cucumbers (about 1 pound), seeded and cut into thick wedges",
-                        "1 1/2 teaspoons kosher salt (Diamond brand; use 3/4 teaspoon if using another brand)"
-                      ]
-                    },
-                    {
-                      "label": "Dressing",
-                      "ingredients": [
-                        "3 tablespoons unseasoned rice vinegar",
-                        "1 tablespoon toasted sesame oil",
-                        "3 tablespoons light soy sauce",
-                        "1 1/2 teaspoons chili oil",
-                        "3/4 teaspoon sugar",
-                        "Ground black or white pepper to taste"
-                      ]
-                    },
-                    {
-                      "label": "To serve",
-                      "ingredients": [
-                        "Chili oil or chili crisp to taste, or Aleppo pepper or red pepper flakes",
-                        "Toasted sesame seeds"
-                      ]
-                    }
-                  ],
-                  "steps": [
-                    "Combine the cucumbers and salt in a colander. Set aside for 10–15 minutes, or up to 1–2 hours.",
-                    "Rinse off the salt. Drain well.",
-                    "In a serving bowl, whisk together the rice vinegar, sesame oil, soy sauce, chili oil, sugar, and a few grinds of pepper.",
-                    "Add the drained cucumbers and toss to coat.",
-                    "Finish with a drizzle of chili oil or chili crisp and a generous sprinkle of toasted sesame seeds."
-                  ]
-                },
-                {
-                  "title": "Dumpling Tomato Salad with Chili Crisp Vinaigrette",
-                  "servings": "Serves 4   |   Total: 20 min",
-                  "source": "Hetty Lui McKinnon / NYT Cooking",
-                  "comments": [
-                    "Use your favorite chili crisp—it is the dominant flavor and will greatly impact the final dish; brands vary in saltiness and spice, so season accordingly.",
-                    "Salting works wonders for out-of-season tomatoes, so this salad is good year-round."
-                  ],
-                  "ingredientGroups": [
-                    {
-                      "label": "Tomato salad",
-                      "ingredients": [
-                        "2 1/2 pounds ripe tomatoes (any variety), cut into 1- to 2-inch pieces, at room temperature",
-                        "1 garlic clove, grated",
-                        "1/2 cup fresh basil leaves, torn, divided",
-                        "1 teaspoon kosher salt (Diamond Crystal brand preferred)",
-                        "Black pepper"
-                      ]
-                    },
-                    {
-                      "label": "Chili crisp vinaigrette",
-                      "ingredients": [
-                        "3 tablespoons chili crisp (or chili oil)",
-                        "2 tablespoons rice vinegar",
-                        "1 tablespoon soy sauce, or more to taste"
-                      ]
-                    },
-                    {
-                      "label": "Dumplings",
-                      "ingredients": [
-                        "1 pound frozen potsticker dumplings (not thawed)",
-                        "1–2 tablespoons neutral oil (canola or vegetable)"
-                      ]
-                    },
-                    {
-                      "label": "To serve",
-                      "ingredients": [
-                        "1–2 tablespoons store-bought crispy fried shallots (optional)"
-                      ]
-                    }
-                  ],
-                  "steps": [
-                    "Place tomatoes on a large serving platter or in a bowl. Add garlic, half the basil, salt, and a big pinch of black pepper. Toss and set aside.",
-                    "Whisk together chili crisp, rice vinegar, and soy sauce. Taste; add more soy sauce if needed.",
-                    "Heat a large (12-inch) nonstick or cast-iron skillet over medium-high for 1–2 minutes until very hot. Add 1–2 tablespoons oil. Working in batches, add dumplings flat-side down and cook until bottoms are lightly browned, 1–2 minutes. Add about 1/4 cup water, cover, and steam until water evaporates, 3–4 minutes. Transfer to a plate; repeat with remaining dumplings.",
-                    "Place warm dumplings over the tomato salad and drizzle with vinaigrette. Toss gently. Top with crispy fried shallots (if using) and remaining basil. Serve warm or at room temperature."
+                  "label": "Salad",
+                  "ingredients": [
+                    "4 cups Boston lettuce leaves (about 1 small head), torn",
+                    "2 white endives, halved and separated into leaves",
+                    "2 red endives, halved and separated into leaves",
+                    "1 red apple, cored and thinly sliced",
+                    "1/2 cup red grapes, halved",
+                    "1/2 cup roasted walnuts"
                   ]
                 }
+              ],
+              "steps": [
+                "Whisk together mayonnaise, cider vinegar, mustard, maple syrup, and garlic. Season with salt and pepper. Can be made ahead.",
+                "Combine lettuce, endives, apple, grapes, and walnuts in a large bowl.",
+                "Just before serving, drizzle dressing over salad and toss well."
+              ]
+            },
+            {
+              "title": "Crunchy Romaine Toss",
+              "favorite": true,
+              "servings": "Serves 10-12",
+              "source": "From Christy Ponder",
+              "ingredientGroups": [
+                {
+                  "label": "Sweet & Sour Dressing",
+                  "ingredients": [
+                    "1 cup vegetable oil",
+                    "1 cup sugar",
+                    "1/2 cup white vinegar",
+                    "3 teaspoons soy sauce",
+                    "Salt and pepper to taste"
+                  ]
+                },
+                {
+                  "label": "Toasted noodle mixture",
+                  "ingredients": [
+                    "1 package ramen noodles, uncooked, broken up (discard flavor packet)",
+                    "1 cup walnuts, chopped",
+                    "2 tablespoons unsalted butter",
+                    "2 tablespoons olive oil"
+                  ]
+                },
+                {
+                  "label": "Salad",
+                  "ingredients": [
+                    "1 bunch broccoli, coarsely chopped",
+                    "1 head romaine lettuce, washed and broken into pieces",
+                    "4 green onions, chopped"
+                  ]
+                }
+              ],
+              "steps": [
+                "Whisk together all dressing ingredients until the sugar dissolves. Set aside.",
+                "In a large skillet over medium heat, melt butter with olive oil. Add broken ramen noodles and walnuts; cook, stirring, until golden, about 5 minutes. Spread on paper towels to cool.",
+                "In a large bowl, combine broccoli, romaine, and green onions. Add the cooled noodle mixture and toss to combine.",
+                "Pour dressing over the salad and toss to coat well. Serve immediately."
+              ]
+            },
+            {
+              "title": "Butter Lettuce and Citrus Salad",
+              "servings": "Serves 2–3",
+              "comments": [
+                "\"Supreming\" citrus means cutting away the peel and pith, then slicing between the membranes to release clean segments."
+              ],
+              "source": "The Gourmandise School (The Pizza Class)",
+              "ingredientGroups": [
+                {
+                  "label": null,
+                  "ingredients": [
+                    "1 head butter lettuce",
+                    "1 shallot",
+                    "Salt & pepper to taste",
+                    "1 grapefruit or orange",
+                    "2 tablespoons lemon juice",
+                    "¼ cup olive oil"
+                  ]
+                }
+              ],
+              "steps": [
+                "Remove any wilted leaves from the butter lettuce. Tear into bite-sized pieces and place in a medium bowl.",
+                "Mince the shallot and place in a small bowl with a pinch of salt and pepper.",
+                "Supreme (segment) your grapefruit right over the small bowl to catch any juices. Set the segmented citrus aside.",
+                "Add lemon juice to the shallot bowl, then whisk in the olive oil. Dress the butter lettuce with the citronette. Plate and tuck the segmented citrus into and on top of the greens."
+              ]
+            },
+            {
+              "title": "Joan's on Third Butter Lettuce Salad (Copycat)",
+              "servings": "Serves 4",
+              "comments": [
+                "Original recipe uses French feta; family uses goat cheese in oil instead. Shallot is in the original but was skipped. Dressing recipe from CopyKat Recipes."
+              ],
+              "source": "Copycat recipe based on Joan's on Third, Los Angeles",
+              "ingredientGroups": [
+                {
+                  "label": "Dressing",
+                  "ingredients": [
+                    "¼ cup white wine vinegar (or champagne vinegar)",
+                    "1 tablespoon Dijon mustard",
+                    "2–3 cloves garlic, minced",
+                    "¼ teaspoon lemon juice",
+                    "Dried oregano, to taste",
+                    "Dried basil, to taste",
+                    "9 tablespoons extra virgin olive oil",
+                    "Salt and freshly ground black pepper, to taste"
+                  ]
+                },
+                {
+                  "label": "Salad",
+                  "ingredients": [
+                    "1–2 large heads butter lettuce, washed, dried, and torn",
+                    "½ cup goat cheese, crumbled",
+                    "⅓ cup dried cranberries"
+                  ]
+                }
+              ],
+              "steps": [
+                {
+                  "lead": "Make the dressing:",
+                  "bullets": [
+                    "Whisk together the white wine vinegar, Dijon mustard, minced garlic, lemon juice, oregano, and basil in a small bowl.",
+                    "Slowly drizzle in the olive oil while whisking constantly until emulsified.",
+                    "Season with salt and pepper to taste."
+                  ]
+                },
+                "Place the torn butter lettuce in a large serving bowl.",
+                "Sprinkle the crumbled goat cheese and dried cranberries evenly over the lettuce.",
+                "Drizzle the vinaigrette lightly over the top just before serving and toss gently to combine."
+              ]
+            },
+            {
+              "title": "Nechamie's Summer Salad",
+              "source": "From Nechamie Greenberg (Chabad Jewish Center of Pudong)",
+              "comments": [
+                "The dressing makes more than needed for one salad — leftovers keep refrigerated for 1–2 weeks."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Dressing",
+                  "ingredients": [
+                    "1 cup vinegar",
+                    "3/4 cup sugar",
+                    "3/4 cup ketchup",
+                    "1/4 cup oil",
+                    "2 cloves garlic, crushed",
+                    "3/4 teaspoon paprika",
+                    "1/4 teaspoon mustard",
+                    "1 teaspoon salt"
+                  ]
+                },
+                {
+                  "label": "Salad",
+                  "ingredients": [
+                    "1 bag Romaine lettuce",
+                    "5–6 mushrooms, sliced",
+                    "1 container cherry tomatoes",
+                    "3/4 to 1 mango, cubed",
+                    "3/4 avocado, cubed",
+                    "A handful of salted cashews",
+                    "A handful of sunflower seeds"
+                  ]
+                }
+              ],
+              "steps": [
+                "Whisk together all dressing ingredients.",
+                "Pour dressing over salad just before serving and toss to combine."
+              ]
+            },
+            {
+              "title": "Nechamie's Poppy Seed Salad",
+              "source": "From Nechamie Greenberg (Chabad Jewish Center of Pudong)",
+              "ingredientGroups": [
+                {
+                  "label": "Dressing",
+                  "ingredients": [
+                    "1 1/3 cups oil",
+                    "3/4 cup vinegar",
+                    "3/4 cup sugar",
+                    "6 heaping tablespoons mayonnaise",
+                    "2 cloves garlic",
+                    "Prepared mustard (a generous squeeze)",
+                    "1 1/2 tablespoons poppy seeds",
+                    "Salt to taste",
+                    "Pepper to taste"
+                  ]
+                },
+                {
+                  "label": "Salad",
+                  "ingredients": [
+                    "Romaine lettuce",
+                    "Purple cabbage, shredded",
+                    "Mushrooms, sliced",
+                    "Radishes, thinly sliced",
+                    "Scallions, thinly sliced",
+                    "Cherry tomatoes",
+                    "Cucumbers, sliced",
+                    "Chow mein noodles"
+                  ]
+                }
+              ],
+              "steps": [
+                "Whisk together all dressing ingredients.",
+                "Pour dressing over salad just before serving and toss to combine. Add chow mein noodles at the last moment to keep them crunchy."
+              ]
+            },
+            {
+              "title": "Nechamie's Spinach and Egg Salad",
+              "source": "From Nechamie Greenberg (Chabad Jewish Center of Pudong)",
+              "ingredientGroups": [
+                {
+                  "label": "Dressing",
+                  "ingredients": [
+                    "2 tablespoons brown sugar",
+                    "2 tablespoons vinegar",
+                    "1/4 cup oil",
+                    "1/2 teaspoon mustard",
+                    "2 tablespoons mayonnaise",
+                    "1/4 teaspoon salt",
+                    "Pepper to taste"
+                  ]
+                },
+                {
+                  "label": "Salad",
+                  "ingredients": [
+                    "Spinach",
+                    "3 hard-boiled eggs, sliced",
+                    "Chow mein noodles to taste",
+                    "Scallions, finely chopped"
+                  ]
+                }
+              ],
+              "steps": [
+                "Whisk together all dressing ingredients.",
+                "Pour dressing over salad just before serving and toss to combine. Add chow mein noodles at the last moment to keep them crunchy."
+              ]
+            },
+            {
+              "title": "Pear, Gorgonzola and Walnut Salad",
+              "servings": "Serves 4   |   Total: 10 min",
+              "source": "Sarah Epperson Loveless, EatingWell",
+              "comments": [
+                "Anjou or Bartlett pear also works well; Bosc holds its shape best.",
+                "To toast walnuts: spread in a dry skillet over medium heat and toast 3-5 minutes, shaking frequently.",
+                "Best dressed and served immediately -- the dressed greens wilt quickly."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Dressing",
+                  "ingredients": [
+                    "2 tablespoons olive oil",
+                    "2 tablespoons fresh lemon juice (from 1 lemon)",
+                    "2 teaspoons honey",
+                    "1 teaspoon chopped fresh thyme",
+                    "1 teaspoon Dijon mustard",
+                    "1/2 teaspoon black pepper",
+                    "1/4 teaspoon kosher salt"
+                  ]
+                },
+                {
+                  "label": "Salad",
+                  "ingredients": [
+                    "4 cups mixed baby lettuces"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "1 medium ripe Bosc pear, thinly sliced",
+                    "1/4 cup crumbled Gorgonzola cheese",
+                    "1/4 cup toasted walnuts, coarsely chopped",
+                    "1/4 cup golden raisins"
+                  ]
+                }
+              ],
+              "steps": [
+                "Whisk together all dressing ingredients in a large bowl. Add lettuces and gently toss to coat.",
+                "Top with sliced pear, Gorgonzola, walnuts, and golden raisins. Serve immediately."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Chopped & Composed Salads",
+          "recipes": [
+            {
+              "title": "Broccoli Salad",
+              "servings": "Serves 4",
+              "source": "New York Times",
+              "ingredientGroups": [
+                {
+                  "label": "Broccoli",
+                  "ingredients": [
+                    "1 1/2 to 2 pounds fresh broccoli (about 4 cups)",
+                    "Salt to taste"
+                  ]
+                },
+                {
+                  "label": "Dressing",
+                  "ingredients": [
+                    "1 small red onion, cut into 1/2-inch cubes (about 1 cup)",
+                    "2 teaspoons Dijon mustard",
+                    "3 tablespoons lemon juice",
+                    "1/4 cup olive oil",
+                    "1/4 cup flat-leaf parsley, finely chopped",
+                    "Salt to taste"
+                  ]
+                }
+              ],
+              "steps": [
+                "Cook broccoli in salted boiling water for 5 minutes until crisp-tender. Drain and place in a salad bowl.",
+                "Sprinkle onion cubes over broccoli.",
+                "Whisk mustard and lemon juice together, then beat in oil; season with salt and stir in parsley.",
+                "Spoon dressing over broccoli. Serve hot, warm, or cold."
+              ]
+            },
+            {
+              "title": "Charred Broccoli and Cauliflower Salad",
+              "servings": "Serves 6 to 8   |   Total: 30 min   |   Active: 25 min",
+              "source": "https://www.foodnetwork.com/recipes/ree-drummond/charred-broccoli-and-cauliflower-salad-19673188",
+              "comments": [
+                "Great as a side at a barbecue with grilled seafood or meat, or to take to a potluck."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Vegetables",
+                  "ingredients": [
+                    "1 medium crown broccoli, broken into large florets",
+                    "1 medium cauliflower, broken into large florets",
+                    "3 tablespoons olive oil",
+                    "1 teaspoon kosher salt",
+                    "1/2 teaspoon freshly ground black pepper"
+                  ]
+                },
+                {
+                  "label": "Dressing",
+                  "ingredients": [
+                    "2/3 cup mayonnaise",
+                    "1/3 cup Greek yogurt",
+                    "2 tablespoons chopped fresh dill",
+                    "2 tablespoons chopped fresh parsley",
+                    "Zest and juice of 1 lemon",
+                    "Pinch kosher salt",
+                    "Pinch freshly ground black pepper"
+                  ]
+                },
+                {
+                  "label": "Salad",
+                  "ingredients": [
+                    "1 cup arugula",
+                    "1/2 cup dried blueberries, plus extra for garnish",
+                    "1/4 cup pickled red onions, plus extra for garnish",
+                    "2 tablespoons sunflower seeds, plus extra for garnish"
+                  ]
+                }
+              ],
+              "steps": [
+                "Preheat the grill to medium-high heat.",
+                "Toss the broccoli and cauliflower with the olive oil, salt, and pepper. Grill, turning as needed, until tender and well charred, 8–10 minutes. Transfer to a large bowl.",
+                "Make the dressing: whisk together the mayonnaise, Greek yogurt, dill, parsley, lemon zest, and lemon juice. Season with salt and pepper.",
+                "Spread the dressing onto a serving platter, leaving a well in the middle.",
+                "Add the arugula, blueberries, pickled red onions, and sunflower seeds to the bowl with the charred vegetables and toss to combine.",
+                "Mound the vegetable mixture into the well. Garnish with extra blueberries, pickled red onions, and sunflower seeds. Serve."
+              ]
+            },
+            {
+              "title": "Nechamie's Coleslaw Salad",
+              "source": "From Nechamie Greenberg (Chabad Jewish Center of Pudong)",
+              "ingredientGroups": [
+                {
+                  "label": "Dressing",
+                  "ingredients": [
+                    "1/4 cup vinegar",
+                    "1/4 cup oil",
+                    "1/4 cup sugar",
+                    "3/4 teaspoon pepper",
+                    "1 teaspoon salt"
+                  ]
+                },
+                {
+                  "label": "Salad",
+                  "ingredients": [
+                    "1 package coleslaw mix",
+                    "Craisins to taste",
+                    "Slivered almonds, toasted, to taste"
+                  ]
+                }
+              ],
+              "steps": [
+                "Whisk together all dressing ingredients.",
+                "Pour dressing over salad just before serving and toss to combine."
+              ]
+            },
+            {
+              "title": "Nechamie's Popped Rice Salad",
+              "source": "From Nechamie Greenberg (Chabad Jewish Center of Pudong)",
+              "comments": [
+                "The rice is popped dry in a covered pot — it puffs and crisps like a lighter version of puffed rice. Long-grain white rice (converted or standard) works best for even popping."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Dressing",
+                  "ingredients": [
+                    "1 cup oil",
+                    "3/4 cup vinegar",
+                    "3/4 cup sugar",
+                    "Salt to taste"
+                  ]
+                },
+                {
+                  "label": "Salad",
+                  "ingredients": [
+                    "Romaine lettuce",
+                    "Cucumbers, sliced",
+                    "Avocado, diced"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "Jasmine or Basmati rice, popped (see Step 1)"
+                  ]
+                }
+              ],
+              "steps": [
+                "Pop the rice: heat a thin film of oil in a small pot over medium-high heat. Add a small amount of uncooked rice, cover, and cook until the rice pops and puffs. Remove from heat immediately and transfer to a bowl to cool.",
+                "Whisk together all dressing ingredients.",
+                "Just before serving, pour dressing over salad and toss to combine. Sprinkle popped rice on top."
+              ]
+            },
+            {
+              "title": "Shaved Brussels Sprouts Salad With Lemon and Pecorino",
+              "favorite": true,
+              "servings": "Serves 6",
+              "source": "Katie Morford / Mom's Kitchen Handbook",
+              "comments": [
+                "As prepared by Pete Swanson.",
+                "The salad holds up well and is just as good the next day.",
+                "Variations: add dried cranberries or cherries for sweetness; whisk a teaspoon of Dijon into the dressing; swap almonds for walnuts."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Almonds",
+                  "ingredients": [
+                    "3/4 cup sliced almonds"
+                  ]
+                },
+                {
+                  "label": "Salad",
+                  "ingredients": [
+                    "1 pound Brussels sprouts, trimmed and shaved very thin (food processor slicer blade or mandoline)",
+                    "2 oz Pecorino Romano, finely grated (about 1/2 cup)",
+                    "1/8 cup fresh mint, roughly chopped"
+                  ]
+                },
+                {
+                  "label": "Dressing",
+                  "ingredients": [
+                    "1/4 cup fresh lemon juice (Meyer lemon if available)",
+                    "2 1/2 tablespoons extra-virgin olive oil",
+                    "1/2 teaspoon kosher salt",
+                    "Freshly ground black pepper to taste"
+                  ]
+                }
+              ],
+              "steps": [
+                "Preheat oven to 350 degrees F. Toast sliced almonds on a sheet pan until golden, about 8 minutes. Let cool.",
+                "Trim a thin slice from the root end of each Brussels sprout and shave very thin using the slicing blade of a food processor or a mandoline.",
+                "Combine shaved Brussels sprouts, almonds, Pecorino, mint, lemon juice, olive oil, salt, and pepper in a large bowl. Toss well and serve."
+              ]
+            },
+            {
+              "title": "Wood Ranch's Peanut Coleslaw",
+              "favorite": true,
+              "servings": "Serves 6",
+              "source": "Kadee and Desarae / Oh So Delicioso",
+              "comments": [
+                "Leftovers keep refrigerated for 1 to 2 days."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Dressing",
+                  "ingredients": [
+                    "1/3 cup red wine vinegar",
+                    "1/3 cup neutral oil (avocado, canola, or light olive oil)",
+                    "1 1/2 tablespoons sugar",
+                    "1/2 teaspoon seasoning salt",
+                    "1/2 teaspoon garlic powder",
+                    "1 teaspoon sesame seeds (black or white) (optional)"
+                  ]
+                },
+                {
+                  "label": "Slaw",
+                  "ingredients": [
+                    "16 oz green cabbage, shredded (pre-bagged or equivalent)",
+                    "1 1/2 cups purple cabbage, chopped",
+                    "3/4 cup celery, chopped",
+                    "2 green onions, chopped",
+                    "1 cup peanuts",
+                    "1/4 cup fresh cilantro, chopped (optional)"
+                  ]
+                }
+              ],
+              "steps": [
+                "Whisk together vinegar, oil, sugar, seasoning salt, garlic powder, and sesame seeds until sugar dissolves.",
+                "In a large bowl, combine green cabbage, purple cabbage, celery, green onions, peanuts, and cilantro.",
+                "Toss with dressing just before serving."
+              ]
+            },
+            {
+              "title": "Yellow Mustard Potato Salad",
+              "servings": "Serves 4",
+              "source": "Rachael Ray / Food Network",
+              "comments": [
+                "Spreading the potatoes on a sheet pan (rather than leaving them in the pot) lets them cool quickly without overcooking or turning mushy."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Potatoes",
+                  "ingredients": [
+                    "2 1/2 pounds russet potatoes (about 3 medium-large), peeled and cubed"
+                  ]
+                },
+                {
+                  "label": "Dressing",
+                  "ingredients": [
+                    "2 ribs celery, finely chopped",
+                    "1/2 small yellow onion, finely chopped",
+                    "3 tablespoons chopped pimento, drained",
+                    "3 tablespoons sweet pickle relish",
+                    "1/3 cup mayonnaise",
+                    "1/3 cup yellow mustard",
+                    "Salt and pepper to taste"
+                  ]
+                },
+                {
+                  "label": "Garnish",
+                  "ingredients": [
+                    "2 tablespoons chopped parsley (optional)"
+                  ]
+                }
+              ],
+              "steps": [
+                "Boil potatoes in generously salted water until just tender, 10 to 12 minutes. Drain and spread on a sheet pan; let cool about 10 minutes.",
+                "In a large bowl, stir together celery, onion, pimento, relish, mayonnaise, and mustard. Season with salt and pepper.",
+                "Add cooled potatoes and fold to combine. Taste and adjust seasoning. Garnish with parsley if desired. Serve immediately or chill."
+              ]
+            },
+            {
+              "title": "Roasted Cauliflower Salad",
+              "servings": "Serves 12",
+              "source": "Food Network / Ree Drummond",
+              "ingredientGroups": [
+                {
+                  "label": "Cauliflower",
+                  "ingredients": [
+                    "2 heads cauliflower, broken into florets",
+                    "2 tablespoons olive oil",
+                    "2 teaspoons kosher salt",
+                    "1 teaspoon black pepper"
+                  ]
+                },
+                {
+                  "label": "Dressing",
+                  "ingredients": [
+                    "1/4 cup pesto",
+                    "3 tablespoons champagne vinegar"
+                  ]
+                },
+                {
+                  "label": "Salad",
+                  "ingredients": [
+                    "1/2 cup pine nuts",
+                    "6 cups mixed baby arugula, spinach, and kale",
+                    "1/2 cup Castelvetrano olives, halved",
+                    "1/2 cup kalamata olives, halved",
+                    "1/2 cup fresh Italian parsley, chopped"
+                  ]
+                }
+              ],
+              "steps": [
+                "Preheat oven to 450 degrees F. Toss cauliflower with olive oil, salt, and pepper; spread on a rimmed baking sheet. Roast 18–20 minutes until golden and caramelized.",
+                "Toast pine nuts in a dry skillet over medium heat, stirring frequently, until golden, about 3–4 minutes. Watch carefully.",
+                "Shake pesto and champagne vinegar together in a jar until combined.",
+                "Combine greens, roasted cauliflower, olives, parsley, and pine nuts in a large bowl. Drizzle with dressing and toss to coat. Serve immediately."
+              ]
+            },
+            {
+              "title": "Dad's Greek Salad",
+              "servings": "Serves 6",
+              "source": "Simply Recipes / Elise Bauer",
+              "comments": [
+                "Tip: to reduce the bite of raw onion, soak chopped onion in a little vinegar or lemon juice for a few minutes before adding.",
+                "Dressing can be made up to 3 hours ahead; let stand at room temperature and re-whisk before using."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Dressing",
+                  "ingredients": [
+                    "6 tablespoons extra-virgin olive oil",
+                    "2 tablespoons fresh lemon juice",
+                    "1 teaspoon red wine vinegar",
+                    "1/2 teaspoon chopped garlic",
+                    "1/2 teaspoon dried oregano (or 1 teaspoon fresh)",
+                    "1/2 teaspoon dried dill (or 1 teaspoon fresh)",
+                    "Salt and freshly ground black pepper"
+                  ]
+                },
+                {
+                  "label": "Salad",
+                  "ingredients": [
+                    "3 large plum tomatoes, seeded and coarsely chopped",
+                    "3/4 large cucumber, peeled, seeded, and coarsely chopped",
+                    "1/2 small red onion, chopped",
+                    "1 bell pepper, seeded and coarsely chopped",
+                    "1/2 cup pitted black olives (preferably brine-cured), coarsely chopped",
+                    "Heaping 1/2 cup crumbled feta cheese"
+                  ]
+                }
+              ],
+              "steps": [
+                "Whisk together olive oil, lemon juice, vinegar, garlic, oregano, and dill until blended. Season with salt and pepper.",
+                "Combine tomatoes, cucumber, onion, bell pepper, and olives in a large bowl. Toss with dressing. Sprinkle with feta and serve."
+              ]
+            },
+            {
+              "title": "Moroccan-Style Carrot Salad",
+              "servings": "Serves 6",
+              "source": "Suzy Karadsheh / The Mediterranean Dish",
+              "comments": [
+                "Dressing the carrots while warm is key -- they absorb the spices far better than when cold.",
+                "Keeps refrigerated for 3 to 4 days; always serve at room temperature.",
+                "Harissa spice blend adds a subtle heat; if unavailable, substitute a pinch of cayenne and extra cumin."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Carrots",
+                  "ingredients": [
+                    "2 pounds carrots, peeled and cut into 1/4-inch rounds",
+                    "Kosher salt"
+                  ]
+                },
+                {
+                  "label": "Dressing",
+                  "ingredients": [
+                    "1/2 teaspoon harissa spice (dry spice blend)",
+                    "1/2 teaspoon ground cumin",
+                    "1/2 teaspoon ground coriander",
+                    "1/2 teaspoon sweet paprika",
+                    "1 to 2 cloves garlic, minced",
+                    "1 to 2 tablespoons fresh lemon juice",
+                    "3 tablespoons extra-virgin olive oil"
+                  ]
+                },
+                {
+                  "label": "Finish",
+                  "ingredients": [
+                    "1 celery stalk, finely chopped",
+                    "1/2 cup fresh cilantro, chopped (mint or parsley can substitute)",
+                    "3 tablespoons toasted sesame seeds (optional)"
+                  ]
+                }
+              ],
+              "steps": [
+                "Bring a large pot of salted water to a boil. Add carrots and cook until very tender, about 20 minutes. Drain.",
+                "Transfer warm carrots to a large bowl immediately. While still hot, toss with a pinch of salt, harissa, cumin, coriander, paprika, garlic, lemon juice, and olive oil.",
+                "Add celery, cilantro, and sesame seeds and toss again. Let cool to room temperature before serving."
+              ]
+            },
+            {
+              "title": "Parsley Salad",
+              "servings": "Serves 4",
+              "source": "Alton Brown / Food Network (Good Eats)",
+              "comments": [
+                "Walnut oil is central to this recipe -- it pairs naturally with the slightly bitter parsley. Look for it at specialty grocery stores. In a pinch, half almond oil and half olive oil can substitute.",
+                "Works well as a side for grilled meats or as part of a mezze spread."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Dressing",
+                  "ingredients": [
+                    "2 tablespoons fresh lemon juice",
+                    "2 tablespoons lemon zest",
+                    "6 tablespoons walnut oil",
+                    "2 teaspoons dark sesame oil",
+                    "1 teaspoon honey",
+                    "Salt and freshly ground pepper to taste"
+                  ]
+                },
+                {
+                  "label": "Salad",
+                  "ingredients": [
+                    "4 oz Italian flat-leaf parsley, leaves only (about 2 quarts loosely packed)",
+                    "3 tablespoons toasted sesame seeds"
+                  ]
+                }
+              ],
+              "steps": [
+                "Wash and dry parsley thoroughly. Pick leaves and discard stems.",
+                "Whisk together lemon juice, lemon zest, walnut oil, sesame oil, honey, and salt and pepper in a large bowl.",
+                "Add parsley and sesame seeds; toss to combine.",
+                "Let sit at least 30 minutes before serving so flavors meld."
+              ]
+            },
+            {
+              "title": "Indian Slaw",
+              "servings": "Serves 8",
+              "source": "Glebe Kitchen / Romain",
+              "favorite": true,
+              "comments": [
+                "Dressing benefits from at least 4 hours rest; overnight is best."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Dressing (4 hours ahead)",
+                  "ingredients": [
+                    "1/2 cup full-fat yogurt",
+                    "1/2 cup mayonnaise",
+                    "1/2 teaspoon coriander powder",
+                    "1/2 teaspoon cumin powder",
+                    "1/4 teaspoon Kashmiri chili powder",
+                    "1/2 teaspoon coarse black pepper",
+                    "1/4 teaspoon mustard powder",
+                    "2 1/2 tablespoons lemon juice",
+                    "1 teaspoon sugar",
+                    "1 tablespoon milk to thin (optional)"
+                  ]
+                },
+                {
+                  "label": "Slaw",
+                  "ingredients": [
+                    "1 small green cabbage, thinly sliced",
+                    "1/2 large Spanish onion, thinly sliced",
+                    "2 large carrots, shredded",
+                    "2 large jalapenos, seeded and julienned",
+                    "2 1/2 teaspoons kosher salt",
+                    "1 tablespoon vegetable oil",
+                    "1/2 cup cashews",
+                    "Large handful fresh cilantro, roughly chopped"
+                  ]
+                }
+              ],
+              "steps": [
+                "Whisk together all dressing ingredients. Refrigerate at least 4 hours — overnight is best — for flavors to meld.",
+                "Combine cabbage, onion, carrots, and jalapenos in a large bowl. Toss with salt and let sit 15–20 minutes to draw out moisture.",
+                "Squeeze or press out excess liquid from slaw by hand or in a colander. Toss with vegetable oil.",
+                "Add dressing, cashews, and cilantro; toss to coat. Taste and adjust salt. Serve immediately or refrigerate up to 2 days."
+              ]
+            },
+            {
+              "title": "Spring Roll Salad with Peanut Dressing",
+              "servings": "Serves 4",
+              "source": "Valerie Bertinelli / Food Network",
+              "ingredientGroups": [
+                {
+                  "label": "Peanut dressing",
+                  "ingredients": [
+                    "1/4 cup peanut butter",
+                    "3 tablespoons soy sauce",
+                    "2 tablespoons fresh lime juice",
+                    "1 tablespoon toasted sesame oil",
+                    "1 tablespoon honey or agave",
+                    "1 clove garlic, minced",
+                    "1 teaspoon freshly grated ginger",
+                    "2–3 tablespoons warm water, as needed"
+                  ]
+                },
+                {
+                  "label": "Salad",
+                  "ingredients": [
+                    "4 oz rice vermicelli noodles",
+                    "2 cups shredded cabbage (green or purple)",
+                    "1 cup shredded carrots",
+                    "1 red bell pepper, thinly sliced",
+                    "1 cup bean sprouts",
+                    "3 scallions, thinly sliced",
+                    "1/4 cup fresh basil leaves, torn",
+                    "1/4 cup fresh cilantro leaves",
+                    "1 tablespoon chopped fresh mint, or to taste"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "1/4 cup roasted peanuts, roughly chopped",
+                    "Lime wedges"
+                  ]
+                }
+              ],
+              "steps": [
+                "Whisk together all peanut dressing ingredients until smooth, adding warm water until dressing is pourable. Set aside.",
+                "Cook rice noodles per package instructions. Drain and rinse under cold water.",
+                "In a large bowl, combine noodles, cabbage, carrots, bell pepper, bean sprouts, and scallions. Toss well.",
+                "Add basil, cilantro, and mint; toss to combine.",
+                "Drizzle peanut dressing over salad and toss to coat. Top with chopped peanuts and serve with lime wedges."
+              ]
+            },
+            {
+              "title": "Chilled Cucumber Salad (Din Tai Fung Style)",
+              "servings": "Serves 4",
+              "source": "Andrea Potischman / Simmer + Sauce",
+              "comments": [
+                "Inspired by the cucumber salad at Din Tai Fung restaurants. The 4-hour marinade is essential — the cucumbers become lightly pickled and the flavors meld into something sweeter and more delicate than a quick-dressed salad."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Cucumbers",
+                  "ingredients": [
+                    "5 Persian cucumbers, cut into 1/2-inch thick rounds",
+                    "1 1/2 tablespoons kosher salt"
+                  ]
+                },
+                {
+                  "label": "Marinade",
+                  "ingredients": [
+                    "3 tablespoons rice vinegar",
+                    "2 tablespoons mirin",
+                    "2 tablespoons honey",
+                    "2 teaspoons canola oil",
+                    "2 teaspoons sesame oil",
+                    "1/2 teaspoon chili garlic sauce",
+                    "1/2 to 3/4 teaspoon salt"
+                  ]
+                }
+              ],
+              "steps": [
+                "Cut cucumbers into 1/2-inch rounds. Sprinkle with kosher salt, toss to coat, and let sit at room temperature for about 20 minutes.",
+                "Whisk together rice vinegar, mirin, honey, canola oil, sesame oil, chili garlic sauce, and 1/2 teaspoon salt.",
+                "Rinse the salt off the cucumbers and pat completely dry. Place in a gallon zip-lock bag and pour in the marinade. Seal and shake gently. Lay the bag flat in the refrigerator and marinate at least 4 hours.",
+                "To serve, taste and adjust with additional salt or chili garlic sauce. Arrange on a plate and drizzle with a little of the marinade. Serve cold."
+              ]
+            },
+            {
+              "title": "Cucumber Salad with Sesame and Rice Vinegar",
+              "servings": "Serves 2 to 4",
+              "source": "Lauren Muhlheim, adapted from Deb Perelman / Smitten Kitchen",
+              "favorite": true,
+              "comments": [
+                "Leftovers keep in the fridge for 2–3 days, becoming gently pickled."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Cucumbers",
+                  "ingredients": [
+                    "2 Persian cucumbers (about 1 pound), seeded and cut into thick wedges",
+                    "1 1/2 teaspoons kosher salt (Diamond brand; use 3/4 teaspoon if using another brand)"
+                  ]
+                },
+                {
+                  "label": "Dressing",
+                  "ingredients": [
+                    "3 tablespoons unseasoned rice vinegar",
+                    "1 tablespoon toasted sesame oil",
+                    "3 tablespoons light soy sauce",
+                    "1 1/2 teaspoons chili oil",
+                    "3/4 teaspoon sugar",
+                    "Ground black or white pepper to taste"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "Chili oil or chili crisp to taste, or Aleppo pepper or red pepper flakes",
+                    "Toasted sesame seeds"
+                  ]
+                }
+              ],
+              "steps": [
+                "Combine the cucumbers and salt in a colander. Set aside for 10–15 minutes, or up to 1–2 hours.",
+                "Rinse off the salt. Drain well.",
+                "In a serving bowl, whisk together the rice vinegar, sesame oil, soy sauce, chili oil, sugar, and a few grinds of pepper.",
+                "Add the drained cucumbers and toss to coat.",
+                "Finish with a drizzle of chili oil or chili crisp and a generous sprinkle of toasted sesame seeds."
+              ]
+            },
+            {
+              "title": "Dumpling Tomato Salad with Chili Crisp Vinaigrette",
+              "servings": "Serves 4   |   Total: 20 min",
+              "source": "Hetty Lui McKinnon / NYT Cooking",
+              "comments": [
+                "Use your favorite chili crisp—it is the dominant flavor and will greatly impact the final dish; brands vary in saltiness and spice, so season accordingly.",
+                "Salting works wonders for out-of-season tomatoes, so this salad is good year-round."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Tomato salad",
+                  "ingredients": [
+                    "2 1/2 pounds ripe tomatoes (any variety), cut into 1- to 2-inch pieces, at room temperature",
+                    "1 garlic clove, grated",
+                    "1/2 cup fresh basil leaves, torn, divided",
+                    "1 teaspoon kosher salt (Diamond Crystal brand preferred)",
+                    "Black pepper"
+                  ]
+                },
+                {
+                  "label": "Chili crisp vinaigrette",
+                  "ingredients": [
+                    "3 tablespoons chili crisp (or chili oil)",
+                    "2 tablespoons rice vinegar",
+                    "1 tablespoon soy sauce, or more to taste"
+                  ]
+                },
+                {
+                  "label": "Dumplings",
+                  "ingredients": [
+                    "1 pound frozen potsticker dumplings (not thawed)",
+                    "1–2 tablespoons neutral oil (canola or vegetable)"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "1–2 tablespoons store-bought crispy fried shallots (optional)"
+                  ]
+                }
+              ],
+              "steps": [
+                "Place tomatoes on a large serving platter or in a bowl. Add garlic, half the basil, salt, and a big pinch of black pepper. Toss and set aside.",
+                "Whisk together chili crisp, rice vinegar, and soy sauce. Taste; add more soy sauce if needed.",
+                "Heat a large (12-inch) nonstick or cast-iron skillet over medium-high for 1–2 minutes until very hot. Add 1–2 tablespoons oil. Working in batches, add dumplings flat-side down and cook until bottoms are lightly browned, 1–2 minutes. Add about 1/4 cup water, cover, and steam until water evaporates, 3–4 minutes. Transfer to a plate; repeat with remaining dumplings.",
+                "Place warm dumplings over the tomato salad and drizzle with vinaigrette. Toss gently. Top with crispy fried shallots (if using) and remaining basil. Serve warm or at room temperature."
               ]
             }
           ]
