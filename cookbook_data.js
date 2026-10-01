@@ -2649,1000 +2649,1010 @@ module.exports = {
       "subsections": [
         {
           "title": "Greens",
-          "recipes": [
+          "subsections": [
             {
-              "title": "Barbecue Bacon Wedge Salad with Grilled Corn",
-              "servings": "Serves 4",
-              "source": "Food Network / Katie Lee Biegel",
-              "comments": [
-                "Contains bacon.",
+              "title": "Green Salads",
+              "recipes": [
                 {
-                  "html": "For pickled red onions, see <a href='preserves-pickles.html#quick-pickled-red-onions'>Quick Pickled Red Onions</a> in the Preserves & Pickles section — prepare at least 1 hour ahead."
+                  "title": "Barbecue Bacon Wedge Salad with Grilled Corn",
+                  "servings": "Serves 4",
+                  "source": "Food Network / Katie Lee Biegel",
+                  "comments": [
+                    "Contains bacon.",
+                    {
+                      "html": "For pickled red onions, see <a href='preserves-pickles.html#quick-pickled-red-onions'>Quick Pickled Red Onions</a> in the Preserves & Pickles section — prepare at least 1 hour ahead."
+                    }
+                  ],
+                  "ingredientGroups": [
+                    {
+                      "label": "Pickled red onions (1 hour ahead)",
+                      "ingredients": [
+                        "1 batch Quick Pickled Red Onions (see Pickling section)"
+                      ]
+                    },
+                    {
+                      "label": "Blue cheese dressing",
+                      "ingredients": [
+                        "1/2 cup mayonnaise",
+                        "2 tablespoons buttermilk",
+                        "1 tablespoon white vinegar",
+                        "1/4 teaspoon sugar",
+                        "Dash hot sauce",
+                        "Salt and pepper",
+                        "1/4 cup crumbled blue cheese"
+                      ]
+                    },
+                    {
+                      "label": "Barbecue bacon",
+                      "ingredients": [
+                        "1/4 cup barbecue sauce",
+                        "2 tablespoons apple cider vinegar",
+                        "1 tablespoon dark brown sugar",
+                        "1/2 pound slab bacon, cut into lardons"
+                      ]
+                    },
+                    {
+                      "label": "Grilled corn",
+                      "ingredients": [
+                        "1 ear corn, husked",
+                        "1 tablespoon olive oil"
+                      ]
+                    },
+                    {
+                      "label": "To serve",
+                      "ingredients": [
+                        "1 head iceberg lettuce, quartered into wedges",
+                        "1 cup cherry tomatoes, halved",
+                        "Salt and pepper"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Prepare Quick Pickled Red Onions (see Pickling section) at least 1 hour ahead.",
+                    "Make blue cheese dressing: whisk together mayo, buttermilk, vinegar, sugar, and hot sauce; season with salt and pepper. Fold in blue cheese. Refrigerate until ready to serve.",
+                    "Make barbecue bacon: combine barbecue sauce, vinegar, and brown sugar in a skillet over medium heat. Add bacon and cook, stirring, until caramelized and sticky, 8–10 minutes. Set aside.",
+                    "Brush corn with olive oil. Grill or pan-sear over high heat until charred in spots. Cut kernels from cob.",
+                    "To assemble: place a lettuce wedge on each plate. Top with cherry tomatoes, corn kernels, barbecue bacon, pickled onions, and blue cheese dressing. Season with salt and pepper."
+                  ]
+                },
+                {
+                  "title": "Boston Lettuce and Endives Salad",
+                  "servings": "Serves 6",
+                  "source": "Ricardo Cuisine",
+                  "ingredientGroups": [
+                    {
+                      "label": "Dressing",
+                      "ingredients": [
+                        "1/4 cup mayonnaise",
+                        "2 tablespoons apple cider vinegar",
+                        "1 tablespoon whole-grain mustard",
+                        "1 tablespoon maple syrup",
+                        "1 small garlic clove, finely chopped",
+                        "Salt and pepper to taste"
+                      ]
+                    },
+                    {
+                      "label": "Salad",
+                      "ingredients": [
+                        "4 cups Boston lettuce leaves (about 1 small head), torn",
+                        "2 white endives, halved and separated into leaves",
+                        "2 red endives, halved and separated into leaves",
+                        "1 red apple, cored and thinly sliced",
+                        "1/2 cup red grapes, halved",
+                        "1/2 cup roasted walnuts"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Whisk together mayonnaise, cider vinegar, mustard, maple syrup, and garlic. Season with salt and pepper. Can be made ahead.",
+                    "Combine lettuce, endives, apple, grapes, and walnuts in a large bowl.",
+                    "Just before serving, drizzle dressing over salad and toss well."
+                  ]
+                },
+                {
+                  "title": "Crunchy Romaine Toss",
+                  "favorite": true,
+                  "servings": "Serves 10-12",
+                  "source": "From Christy Ponder",
+                  "ingredientGroups": [
+                    {
+                      "label": "Sweet & Sour Dressing",
+                      "ingredients": [
+                        "1 cup vegetable oil",
+                        "1 cup sugar",
+                        "1/2 cup white vinegar",
+                        "3 teaspoons soy sauce",
+                        "Salt and pepper to taste"
+                      ]
+                    },
+                    {
+                      "label": "Toasted noodle mixture",
+                      "ingredients": [
+                        "1 package ramen noodles, uncooked, broken up (discard flavor packet)",
+                        "1 cup walnuts, chopped",
+                        "2 tablespoons unsalted butter",
+                        "2 tablespoons olive oil"
+                      ]
+                    },
+                    {
+                      "label": "Salad",
+                      "ingredients": [
+                        "1 bunch broccoli, coarsely chopped",
+                        "1 head romaine lettuce, washed and broken into pieces",
+                        "4 green onions, chopped"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Whisk together all dressing ingredients until the sugar dissolves. Set aside.",
+                    "In a large skillet over medium heat, melt butter with olive oil. Add broken ramen noodles and walnuts; cook, stirring, until golden, about 5 minutes. Spread on paper towels to cool.",
+                    "In a large bowl, combine broccoli, romaine, and green onions. Add the cooled noodle mixture and toss to combine.",
+                    "Pour dressing over the salad and toss to coat well. Serve immediately."
+                  ]
+                },
+                {
+                  "title": "Butter Lettuce and Citrus Salad",
+                  "servings": "Serves 2–3",
+                  "comments": [
+                    "\"Supreming\" citrus means cutting away the peel and pith, then slicing between the membranes to release clean segments."
+                  ],
+                  "source": "The Gourmandise School (The Pizza Class)",
+                  "ingredientGroups": [
+                    {
+                      "label": null,
+                      "ingredients": [
+                        "1 head butter lettuce",
+                        "1 shallot",
+                        "Salt & pepper to taste",
+                        "1 grapefruit or orange",
+                        "2 tablespoons lemon juice",
+                        "¼ cup olive oil"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Remove any wilted leaves from the butter lettuce. Tear into bite-sized pieces and place in a medium bowl.",
+                    "Mince the shallot and place in a small bowl with a pinch of salt and pepper.",
+                    "Supreme (segment) your grapefruit right over the small bowl to catch any juices. Set the segmented citrus aside.",
+                    "Add lemon juice to the shallot bowl, then whisk in the olive oil. Dress the butter lettuce with the citronette. Plate and tuck the segmented citrus into and on top of the greens."
+                  ]
+                },
+                {
+                  "title": "Joan's on Third Butter Lettuce Salad (Copycat)",
+                  "servings": "Serves 4",
+                  "comments": [
+                    "Original recipe uses French feta; family uses goat cheese in oil instead. Shallot is in the original but was skipped. Dressing recipe from CopyKat Recipes."
+                  ],
+                  "source": "Copycat recipe based on Joan's on Third, Los Angeles",
+                  "ingredientGroups": [
+                    {
+                      "label": "Dressing",
+                      "ingredients": [
+                        "¼ cup white wine vinegar (or champagne vinegar)",
+                        "1 tablespoon Dijon mustard",
+                        "2–3 cloves garlic, minced",
+                        "¼ teaspoon lemon juice",
+                        "Dried oregano, to taste",
+                        "Dried basil, to taste",
+                        "9 tablespoons extra virgin olive oil",
+                        "Salt and freshly ground black pepper, to taste"
+                      ]
+                    },
+                    {
+                      "label": "Salad",
+                      "ingredients": [
+                        "1–2 large heads butter lettuce, washed, dried, and torn",
+                        "½ cup goat cheese, crumbled",
+                        "⅓ cup dried cranberries"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    {
+                      "lead": "Make the dressing:",
+                      "bullets": [
+                        "Whisk together the white wine vinegar, Dijon mustard, minced garlic, lemon juice, oregano, and basil in a small bowl.",
+                        "Slowly drizzle in the olive oil while whisking constantly until emulsified.",
+                        "Season with salt and pepper to taste."
+                      ]
+                    },
+                    "Place the torn butter lettuce in a large serving bowl.",
+                    "Sprinkle the crumbled goat cheese and dried cranberries evenly over the lettuce.",
+                    "Drizzle the vinaigrette lightly over the top just before serving and toss gently to combine."
+                  ]
+                },
+                {
+                  "title": "Nechamie's Summer Salad",
+                  "source": "From Nechamie Greenberg (Chabad Jewish Center of Pudong)",
+                  "comments": [
+                    "The dressing makes more than needed for one salad — leftovers keep refrigerated for 1–2 weeks."
+                  ],
+                  "ingredientGroups": [
+                    {
+                      "label": "Dressing",
+                      "ingredients": [
+                        "1 cup vinegar",
+                        "3/4 cup sugar",
+                        "3/4 cup ketchup",
+                        "1/4 cup oil",
+                        "2 cloves garlic, crushed",
+                        "3/4 teaspoon paprika",
+                        "1/4 teaspoon mustard",
+                        "1 teaspoon salt"
+                      ]
+                    },
+                    {
+                      "label": "Salad",
+                      "ingredients": [
+                        "1 bag Romaine lettuce",
+                        "5–6 mushrooms, sliced",
+                        "1 container cherry tomatoes",
+                        "3/4 to 1 mango, cubed",
+                        "3/4 avocado, cubed",
+                        "A handful of salted cashews",
+                        "A handful of sunflower seeds"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Whisk together all dressing ingredients.",
+                    "Pour dressing over salad just before serving and toss to combine."
+                  ]
+                },
+                {
+                  "title": "Nechamie's Poppy Seed Salad",
+                  "source": "From Nechamie Greenberg (Chabad Jewish Center of Pudong)",
+                  "ingredientGroups": [
+                    {
+                      "label": "Dressing",
+                      "ingredients": [
+                        "1 1/3 cups oil",
+                        "3/4 cup vinegar",
+                        "3/4 cup sugar",
+                        "6 heaping tablespoons mayonnaise",
+                        "2 cloves garlic",
+                        "Prepared mustard (a generous squeeze)",
+                        "1 1/2 tablespoons poppy seeds",
+                        "Salt to taste",
+                        "Pepper to taste"
+                      ]
+                    },
+                    {
+                      "label": "Salad",
+                      "ingredients": [
+                        "Romaine lettuce",
+                        "Purple cabbage, shredded",
+                        "Mushrooms, sliced",
+                        "Radishes, thinly sliced",
+                        "Scallions, thinly sliced",
+                        "Cherry tomatoes",
+                        "Cucumbers, sliced",
+                        "Chow mein noodles"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Whisk together all dressing ingredients.",
+                    "Pour dressing over salad just before serving and toss to combine. Add chow mein noodles at the last moment to keep them crunchy."
+                  ]
+                },
+                {
+                  "title": "Nechamie's Spinach and Egg Salad",
+                  "source": "From Nechamie Greenberg (Chabad Jewish Center of Pudong)",
+                  "ingredientGroups": [
+                    {
+                      "label": "Dressing",
+                      "ingredients": [
+                        "2 tablespoons brown sugar",
+                        "2 tablespoons vinegar",
+                        "1/4 cup oil",
+                        "1/2 teaspoon mustard",
+                        "2 tablespoons mayonnaise",
+                        "1/4 teaspoon salt",
+                        "Pepper to taste"
+                      ]
+                    },
+                    {
+                      "label": "Salad",
+                      "ingredients": [
+                        "Spinach",
+                        "3 hard-boiled eggs, sliced",
+                        "Chow mein noodles to taste",
+                        "Scallions, finely chopped"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Whisk together all dressing ingredients.",
+                    "Pour dressing over salad just before serving and toss to combine. Add chow mein noodles at the last moment to keep them crunchy."
+                  ]
+                },
+                {
+                  "title": "Pear, Gorgonzola and Walnut Salad",
+                  "servings": "Serves 4   |   Total: 10 min",
+                  "source": "Sarah Epperson Loveless, EatingWell",
+                  "comments": [
+                    "Anjou or Bartlett pear also works well; Bosc holds its shape best.",
+                    "To toast walnuts: spread in a dry skillet over medium heat and toast 3-5 minutes, shaking frequently.",
+                    "Best dressed and served immediately -- the dressed greens wilt quickly."
+                  ],
+                  "ingredientGroups": [
+                    {
+                      "label": "Dressing",
+                      "ingredients": [
+                        "2 tablespoons olive oil",
+                        "2 tablespoons fresh lemon juice (from 1 lemon)",
+                        "2 teaspoons honey",
+                        "1 teaspoon chopped fresh thyme",
+                        "1 teaspoon Dijon mustard",
+                        "1/2 teaspoon black pepper",
+                        "1/4 teaspoon kosher salt"
+                      ]
+                    },
+                    {
+                      "label": "Salad",
+                      "ingredients": [
+                        "4 cups mixed baby lettuces"
+                      ]
+                    },
+                    {
+                      "label": "To serve",
+                      "ingredients": [
+                        "1 medium ripe Bosc pear, thinly sliced",
+                        "1/4 cup crumbled Gorgonzola cheese",
+                        "1/4 cup toasted walnuts, coarsely chopped",
+                        "1/4 cup golden raisins"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Whisk together all dressing ingredients in a large bowl. Add lettuces and gently toss to coat.",
+                    "Top with sliced pear, Gorgonzola, walnuts, and golden raisins. Serve immediately."
+                  ]
                 }
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Pickled red onions (1 hour ahead)",
-                  "ingredients": [
-                    "1 batch Quick Pickled Red Onions (see Pickling section)"
-                  ]
-                },
-                {
-                  "label": "Blue cheese dressing",
-                  "ingredients": [
-                    "1/2 cup mayonnaise",
-                    "2 tablespoons buttermilk",
-                    "1 tablespoon white vinegar",
-                    "1/4 teaspoon sugar",
-                    "Dash hot sauce",
-                    "Salt and pepper",
-                    "1/4 cup crumbled blue cheese"
-                  ]
-                },
-                {
-                  "label": "Barbecue bacon",
-                  "ingredients": [
-                    "1/4 cup barbecue sauce",
-                    "2 tablespoons apple cider vinegar",
-                    "1 tablespoon dark brown sugar",
-                    "1/2 pound slab bacon, cut into lardons"
-                  ]
-                },
-                {
-                  "label": "Grilled corn",
-                  "ingredients": [
-                    "1 ear corn, husked",
-                    "1 tablespoon olive oil"
-                  ]
-                },
-                {
-                  "label": "To serve",
-                  "ingredients": [
-                    "1 head iceberg lettuce, quartered into wedges",
-                    "1 cup cherry tomatoes, halved",
-                    "Salt and pepper"
-                  ]
-                }
-              ],
-              "steps": [
-                "Prepare Quick Pickled Red Onions (see Pickling section) at least 1 hour ahead.",
-                "Make blue cheese dressing: whisk together mayo, buttermilk, vinegar, sugar, and hot sauce; season with salt and pepper. Fold in blue cheese. Refrigerate until ready to serve.",
-                "Make barbecue bacon: combine barbecue sauce, vinegar, and brown sugar in a skillet over medium heat. Add bacon and cook, stirring, until caramelized and sticky, 8–10 minutes. Set aside.",
-                "Brush corn with olive oil. Grill or pan-sear over high heat until charred in spots. Cut kernels from cob.",
-                "To assemble: place a lettuce wedge on each plate. Top with cherry tomatoes, corn kernels, barbecue bacon, pickled onions, and blue cheese dressing. Season with salt and pepper."
               ]
             },
             {
-              "title": "Boston Lettuce and Endives Salad",
-              "servings": "Serves 6",
-              "source": "Ricardo Cuisine",
-              "ingredientGroups": [
+              "title": "Chopped & Composed Salads",
+              "recipes": [
                 {
-                  "label": "Dressing",
-                  "ingredients": [
-                    "1/4 cup mayonnaise",
-                    "2 tablespoons apple cider vinegar",
-                    "1 tablespoon whole-grain mustard",
-                    "1 tablespoon maple syrup",
-                    "1 small garlic clove, finely chopped",
-                    "Salt and pepper to taste"
+                  "title": "Broccoli Salad",
+                  "servings": "Serves 4",
+                  "source": "New York Times",
+                  "ingredientGroups": [
+                    {
+                      "label": "Broccoli",
+                      "ingredients": [
+                        "1 1/2 to 2 pounds fresh broccoli (about 4 cups)",
+                        "Salt to taste"
+                      ]
+                    },
+                    {
+                      "label": "Dressing",
+                      "ingredients": [
+                        "1 small red onion, cut into 1/2-inch cubes (about 1 cup)",
+                        "2 teaspoons Dijon mustard",
+                        "3 tablespoons lemon juice",
+                        "1/4 cup olive oil",
+                        "1/4 cup flat-leaf parsley, finely chopped",
+                        "Salt to taste"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Cook broccoli in salted boiling water for 5 minutes until crisp-tender. Drain and place in a salad bowl.",
+                    "Sprinkle onion cubes over broccoli.",
+                    "Whisk mustard and lemon juice together, then beat in oil; season with salt and stir in parsley.",
+                    "Spoon dressing over broccoli. Serve hot, warm, or cold."
                   ]
                 },
                 {
-                  "label": "Salad",
-                  "ingredients": [
-                    "4 cups Boston lettuce leaves (about 1 small head), torn",
-                    "2 white endives, halved and separated into leaves",
-                    "2 red endives, halved and separated into leaves",
-                    "1 red apple, cored and thinly sliced",
-                    "1/2 cup red grapes, halved",
-                    "1/2 cup roasted walnuts"
+                  "title": "Charred Broccoli and Cauliflower Salad",
+                  "servings": "Serves 6 to 8   |   Total: 30 min   |   Active: 25 min",
+                  "source": "https://www.foodnetwork.com/recipes/ree-drummond/charred-broccoli-and-cauliflower-salad-19673188",
+                  "comments": [
+                    "Great as a side at a barbecue with grilled seafood or meat, or to take to a potluck."
+                  ],
+                  "ingredientGroups": [
+                    {
+                      "label": "Vegetables",
+                      "ingredients": [
+                        "1 medium crown broccoli, broken into large florets",
+                        "1 medium cauliflower, broken into large florets",
+                        "3 tablespoons olive oil",
+                        "1 teaspoon kosher salt",
+                        "1/2 teaspoon freshly ground black pepper"
+                      ]
+                    },
+                    {
+                      "label": "Dressing",
+                      "ingredients": [
+                        "2/3 cup mayonnaise",
+                        "1/3 cup Greek yogurt",
+                        "2 tablespoons chopped fresh dill",
+                        "2 tablespoons chopped fresh parsley",
+                        "Zest and juice of 1 lemon",
+                        "Pinch kosher salt",
+                        "Pinch freshly ground black pepper"
+                      ]
+                    },
+                    {
+                      "label": "Salad",
+                      "ingredients": [
+                        "1 cup arugula",
+                        "1/2 cup dried blueberries, plus extra for garnish",
+                        "1/4 cup pickled red onions, plus extra for garnish",
+                        "2 tablespoons sunflower seeds, plus extra for garnish"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Preheat the grill to medium-high heat.",
+                    "Toss the broccoli and cauliflower with the olive oil, salt, and pepper. Grill, turning as needed, until tender and well charred, 8–10 minutes. Transfer to a large bowl.",
+                    "Make the dressing: whisk together the mayonnaise, Greek yogurt, dill, parsley, lemon zest, and lemon juice. Season with salt and pepper.",
+                    "Spread the dressing onto a serving platter, leaving a well in the middle.",
+                    "Add the arugula, blueberries, pickled red onions, and sunflower seeds to the bowl with the charred vegetables and toss to combine.",
+                    "Mound the vegetable mixture into the well. Garnish with extra blueberries, pickled red onions, and sunflower seeds. Serve."
+                  ]
+                },
+                {
+                  "title": "Nechamie's Coleslaw Salad",
+                  "source": "From Nechamie Greenberg (Chabad Jewish Center of Pudong)",
+                  "ingredientGroups": [
+                    {
+                      "label": "Dressing",
+                      "ingredients": [
+                        "1/4 cup vinegar",
+                        "1/4 cup oil",
+                        "1/4 cup sugar",
+                        "3/4 teaspoon pepper",
+                        "1 teaspoon salt"
+                      ]
+                    },
+                    {
+                      "label": "Salad",
+                      "ingredients": [
+                        "1 package coleslaw mix",
+                        "Craisins to taste",
+                        "Slivered almonds, toasted, to taste"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Whisk together all dressing ingredients.",
+                    "Pour dressing over salad just before serving and toss to combine."
+                  ]
+                },
+                {
+                  "title": "Nechamie's Popped Rice Salad",
+                  "source": "From Nechamie Greenberg (Chabad Jewish Center of Pudong)",
+                  "comments": [
+                    "The rice is popped dry in a covered pot — it puffs and crisps like a lighter version of puffed rice. Long-grain white rice (converted or standard) works best for even popping."
+                  ],
+                  "ingredientGroups": [
+                    {
+                      "label": "Dressing",
+                      "ingredients": [
+                        "1 cup oil",
+                        "3/4 cup vinegar",
+                        "3/4 cup sugar",
+                        "Salt to taste"
+                      ]
+                    },
+                    {
+                      "label": "Salad",
+                      "ingredients": [
+                        "Romaine lettuce",
+                        "Cucumbers, sliced",
+                        "Avocado, diced"
+                      ]
+                    },
+                    {
+                      "label": "To serve",
+                      "ingredients": [
+                        "Jasmine or Basmati rice, popped (see Step 1)"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Pop the rice: heat a thin film of oil in a small pot over medium-high heat. Add a small amount of uncooked rice, cover, and cook until the rice pops and puffs. Remove from heat immediately and transfer to a bowl to cool.",
+                    "Whisk together all dressing ingredients.",
+                    "Just before serving, pour dressing over salad and toss to combine. Sprinkle popped rice on top."
+                  ]
+                },
+                {
+                  "title": "Shaved Brussels Sprouts Salad With Lemon and Pecorino",
+                  "favorite": true,
+                  "servings": "Serves 6",
+                  "source": "Katie Morford / Mom's Kitchen Handbook",
+                  "comments": [
+                    "As prepared by Pete Swanson.",
+                    "The salad holds up well and is just as good the next day.",
+                    "Variations: add dried cranberries or cherries for sweetness; whisk a teaspoon of Dijon into the dressing; swap almonds for walnuts."
+                  ],
+                  "ingredientGroups": [
+                    {
+                      "label": "Almonds",
+                      "ingredients": [
+                        "3/4 cup sliced almonds"
+                      ]
+                    },
+                    {
+                      "label": "Salad",
+                      "ingredients": [
+                        "1 pound Brussels sprouts, trimmed and shaved very thin (food processor slicer blade or mandoline)",
+                        "2 oz Pecorino Romano, finely grated (about 1/2 cup)",
+                        "1/8 cup fresh mint, roughly chopped"
+                      ]
+                    },
+                    {
+                      "label": "Dressing",
+                      "ingredients": [
+                        "1/4 cup fresh lemon juice (Meyer lemon if available)",
+                        "2 1/2 tablespoons extra-virgin olive oil",
+                        "1/2 teaspoon kosher salt",
+                        "Freshly ground black pepper to taste"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Preheat oven to 350 degrees F. Toast sliced almonds on a sheet pan until golden, about 8 minutes. Let cool.",
+                    "Trim a thin slice from the root end of each Brussels sprout and shave very thin using the slicing blade of a food processor or a mandoline.",
+                    "Combine shaved Brussels sprouts, almonds, Pecorino, mint, lemon juice, olive oil, salt, and pepper in a large bowl. Toss well and serve."
+                  ]
+                },
+                {
+                  "title": "Wood Ranch's Peanut Coleslaw",
+                  "favorite": true,
+                  "servings": "Serves 6",
+                  "source": "Kadee and Desarae / Oh So Delicioso",
+                  "comments": [
+                    "Leftovers keep refrigerated for 1 to 2 days."
+                  ],
+                  "ingredientGroups": [
+                    {
+                      "label": "Dressing",
+                      "ingredients": [
+                        "1/3 cup red wine vinegar",
+                        "1/3 cup neutral oil (avocado, canola, or light olive oil)",
+                        "1 1/2 tablespoons sugar",
+                        "1/2 teaspoon seasoning salt",
+                        "1/2 teaspoon garlic powder",
+                        "1 teaspoon sesame seeds (black or white) (optional)"
+                      ]
+                    },
+                    {
+                      "label": "Slaw",
+                      "ingredients": [
+                        "16 oz green cabbage, shredded (pre-bagged or equivalent)",
+                        "1 1/2 cups purple cabbage, chopped",
+                        "3/4 cup celery, chopped",
+                        "2 green onions, chopped",
+                        "1 cup peanuts",
+                        "1/4 cup fresh cilantro, chopped (optional)"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Whisk together vinegar, oil, sugar, seasoning salt, garlic powder, and sesame seeds until sugar dissolves.",
+                    "In a large bowl, combine green cabbage, purple cabbage, celery, green onions, peanuts, and cilantro.",
+                    "Toss with dressing just before serving."
+                  ]
+                },
+                {
+                  "title": "Yellow Mustard Potato Salad",
+                  "servings": "Serves 4",
+                  "source": "Rachael Ray / Food Network",
+                  "comments": [
+                    "Spreading the potatoes on a sheet pan (rather than leaving them in the pot) lets them cool quickly without overcooking or turning mushy."
+                  ],
+                  "ingredientGroups": [
+                    {
+                      "label": "Potatoes",
+                      "ingredients": [
+                        "2 1/2 pounds russet potatoes (about 3 medium-large), peeled and cubed"
+                      ]
+                    },
+                    {
+                      "label": "Dressing",
+                      "ingredients": [
+                        "2 ribs celery, finely chopped",
+                        "1/2 small yellow onion, finely chopped",
+                        "3 tablespoons chopped pimento, drained",
+                        "3 tablespoons sweet pickle relish",
+                        "1/3 cup mayonnaise",
+                        "1/3 cup yellow mustard",
+                        "Salt and pepper to taste"
+                      ]
+                    },
+                    {
+                      "label": "Garnish",
+                      "ingredients": [
+                        "2 tablespoons chopped parsley (optional)"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Boil potatoes in generously salted water until just tender, 10 to 12 minutes. Drain and spread on a sheet pan; let cool about 10 minutes.",
+                    "In a large bowl, stir together celery, onion, pimento, relish, mayonnaise, and mustard. Season with salt and pepper.",
+                    "Add cooled potatoes and fold to combine. Taste and adjust seasoning. Garnish with parsley if desired. Serve immediately or chill."
+                  ]
+                },
+                {
+                  "title": "Roasted Cauliflower Salad",
+                  "servings": "Serves 12",
+                  "source": "Food Network / Ree Drummond",
+                  "ingredientGroups": [
+                    {
+                      "label": "Cauliflower",
+                      "ingredients": [
+                        "2 heads cauliflower, broken into florets",
+                        "2 tablespoons olive oil",
+                        "2 teaspoons kosher salt",
+                        "1 teaspoon black pepper"
+                      ]
+                    },
+                    {
+                      "label": "Dressing",
+                      "ingredients": [
+                        "1/4 cup pesto",
+                        "3 tablespoons champagne vinegar"
+                      ]
+                    },
+                    {
+                      "label": "Salad",
+                      "ingredients": [
+                        "1/2 cup pine nuts",
+                        "6 cups mixed baby arugula, spinach, and kale",
+                        "1/2 cup Castelvetrano olives, halved",
+                        "1/2 cup kalamata olives, halved",
+                        "1/2 cup fresh Italian parsley, chopped"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Preheat oven to 450 degrees F. Toss cauliflower with olive oil, salt, and pepper; spread on a rimmed baking sheet. Roast 18–20 minutes until golden and caramelized.",
+                    "Toast pine nuts in a dry skillet over medium heat, stirring frequently, until golden, about 3–4 minutes. Watch carefully.",
+                    "Shake pesto and champagne vinegar together in a jar until combined.",
+                    "Combine greens, roasted cauliflower, olives, parsley, and pine nuts in a large bowl. Drizzle with dressing and toss to coat. Serve immediately."
+                  ]
+                },
+                {
+                  "title": "Dad's Greek Salad",
+                  "servings": "Serves 6",
+                  "source": "Simply Recipes / Elise Bauer",
+                  "comments": [
+                    "Tip: to reduce the bite of raw onion, soak chopped onion in a little vinegar or lemon juice for a few minutes before adding.",
+                    "Dressing can be made up to 3 hours ahead; let stand at room temperature and re-whisk before using."
+                  ],
+                  "ingredientGroups": [
+                    {
+                      "label": "Dressing",
+                      "ingredients": [
+                        "6 tablespoons extra-virgin olive oil",
+                        "2 tablespoons fresh lemon juice",
+                        "1 teaspoon red wine vinegar",
+                        "1/2 teaspoon chopped garlic",
+                        "1/2 teaspoon dried oregano (or 1 teaspoon fresh)",
+                        "1/2 teaspoon dried dill (or 1 teaspoon fresh)",
+                        "Salt and freshly ground black pepper"
+                      ]
+                    },
+                    {
+                      "label": "Salad",
+                      "ingredients": [
+                        "3 large plum tomatoes, seeded and coarsely chopped",
+                        "3/4 large cucumber, peeled, seeded, and coarsely chopped",
+                        "1/2 small red onion, chopped",
+                        "1 bell pepper, seeded and coarsely chopped",
+                        "1/2 cup pitted black olives (preferably brine-cured), coarsely chopped",
+                        "Heaping 1/2 cup crumbled feta cheese"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Whisk together olive oil, lemon juice, vinegar, garlic, oregano, and dill until blended. Season with salt and pepper.",
+                    "Combine tomatoes, cucumber, onion, bell pepper, and olives in a large bowl. Toss with dressing. Sprinkle with feta and serve."
+                  ]
+                },
+                {
+                  "title": "Moroccan-Style Carrot Salad",
+                  "servings": "Serves 6",
+                  "source": "Suzy Karadsheh / The Mediterranean Dish",
+                  "comments": [
+                    "Dressing the carrots while warm is key -- they absorb the spices far better than when cold.",
+                    "Keeps refrigerated for 3 to 4 days; always serve at room temperature.",
+                    "Harissa spice blend adds a subtle heat; if unavailable, substitute a pinch of cayenne and extra cumin."
+                  ],
+                  "ingredientGroups": [
+                    {
+                      "label": "Carrots",
+                      "ingredients": [
+                        "2 pounds carrots, peeled and cut into 1/4-inch rounds",
+                        "Kosher salt"
+                      ]
+                    },
+                    {
+                      "label": "Dressing",
+                      "ingredients": [
+                        "1/2 teaspoon harissa spice (dry spice blend)",
+                        "1/2 teaspoon ground cumin",
+                        "1/2 teaspoon ground coriander",
+                        "1/2 teaspoon sweet paprika",
+                        "1 to 2 cloves garlic, minced",
+                        "1 to 2 tablespoons fresh lemon juice",
+                        "3 tablespoons extra-virgin olive oil"
+                      ]
+                    },
+                    {
+                      "label": "Finish",
+                      "ingredients": [
+                        "1 celery stalk, finely chopped",
+                        "1/2 cup fresh cilantro, chopped (mint or parsley can substitute)",
+                        "3 tablespoons toasted sesame seeds (optional)"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Bring a large pot of salted water to a boil. Add carrots and cook until very tender, about 20 minutes. Drain.",
+                    "Transfer warm carrots to a large bowl immediately. While still hot, toss with a pinch of salt, harissa, cumin, coriander, paprika, garlic, lemon juice, and olive oil.",
+                    "Add celery, cilantro, and sesame seeds and toss again. Let cool to room temperature before serving."
+                  ]
+                },
+                {
+                  "title": "Parsley Salad",
+                  "servings": "Serves 4",
+                  "source": "Alton Brown / Food Network (Good Eats)",
+                  "comments": [
+                    "Walnut oil is central to this recipe -- it pairs naturally with the slightly bitter parsley. Look for it at specialty grocery stores. In a pinch, half almond oil and half olive oil can substitute.",
+                    "Works well as a side for grilled meats or as part of a mezze spread."
+                  ],
+                  "ingredientGroups": [
+                    {
+                      "label": "Dressing",
+                      "ingredients": [
+                        "2 tablespoons fresh lemon juice",
+                        "2 tablespoons lemon zest",
+                        "6 tablespoons walnut oil",
+                        "2 teaspoons dark sesame oil",
+                        "1 teaspoon honey",
+                        "Salt and freshly ground pepper to taste"
+                      ]
+                    },
+                    {
+                      "label": "Salad",
+                      "ingredients": [
+                        "4 oz Italian flat-leaf parsley, leaves only (about 2 quarts loosely packed)",
+                        "3 tablespoons toasted sesame seeds"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Wash and dry parsley thoroughly. Pick leaves and discard stems.",
+                    "Whisk together lemon juice, lemon zest, walnut oil, sesame oil, honey, and salt and pepper in a large bowl.",
+                    "Add parsley and sesame seeds; toss to combine.",
+                    "Let sit at least 30 minutes before serving so flavors meld."
+                  ]
+                },
+                {
+                  "title": "Indian Slaw",
+                  "servings": "Serves 8",
+                  "source": "Glebe Kitchen / Romain",
+                  "favorite": true,
+                  "comments": [
+                    "Dressing benefits from at least 4 hours rest; overnight is best."
+                  ],
+                  "ingredientGroups": [
+                    {
+                      "label": "Dressing (4 hours ahead)",
+                      "ingredients": [
+                        "1/2 cup full-fat yogurt",
+                        "1/2 cup mayonnaise",
+                        "1/2 teaspoon coriander powder",
+                        "1/2 teaspoon cumin powder",
+                        "1/4 teaspoon Kashmiri chili powder",
+                        "1/2 teaspoon coarse black pepper",
+                        "1/4 teaspoon mustard powder",
+                        "2 1/2 tablespoons lemon juice",
+                        "1 teaspoon sugar",
+                        "1 tablespoon milk to thin (optional)"
+                      ]
+                    },
+                    {
+                      "label": "Slaw",
+                      "ingredients": [
+                        "1 small green cabbage, thinly sliced",
+                        "1/2 large Spanish onion, thinly sliced",
+                        "2 large carrots, shredded",
+                        "2 large jalapenos, seeded and julienned",
+                        "2 1/2 teaspoons kosher salt",
+                        "1 tablespoon vegetable oil",
+                        "1/2 cup cashews",
+                        "Large handful fresh cilantro, roughly chopped"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Whisk together all dressing ingredients. Refrigerate at least 4 hours — overnight is best — for flavors to meld.",
+                    "Combine cabbage, onion, carrots, and jalapenos in a large bowl. Toss with salt and let sit 15–20 minutes to draw out moisture.",
+                    "Squeeze or press out excess liquid from slaw by hand or in a colander. Toss with vegetable oil.",
+                    "Add dressing, cashews, and cilantro; toss to coat. Taste and adjust salt. Serve immediately or refrigerate up to 2 days."
+                  ]
+                },
+                {
+                  "title": "Spring Roll Salad with Peanut Dressing",
+                  "servings": "Serves 4",
+                  "source": "Valerie Bertinelli / Food Network",
+                  "ingredientGroups": [
+                    {
+                      "label": "Peanut dressing",
+                      "ingredients": [
+                        "1/4 cup peanut butter",
+                        "3 tablespoons soy sauce",
+                        "2 tablespoons fresh lime juice",
+                        "1 tablespoon toasted sesame oil",
+                        "1 tablespoon honey or agave",
+                        "1 clove garlic, minced",
+                        "1 teaspoon freshly grated ginger",
+                        "2–3 tablespoons warm water, as needed"
+                      ]
+                    },
+                    {
+                      "label": "Salad",
+                      "ingredients": [
+                        "4 oz rice vermicelli noodles",
+                        "2 cups shredded cabbage (green or purple)",
+                        "1 cup shredded carrots",
+                        "1 red bell pepper, thinly sliced",
+                        "1 cup bean sprouts",
+                        "3 scallions, thinly sliced",
+                        "1/4 cup fresh basil leaves, torn",
+                        "1/4 cup fresh cilantro leaves",
+                        "1 tablespoon chopped fresh mint, or to taste"
+                      ]
+                    },
+                    {
+                      "label": "To serve",
+                      "ingredients": [
+                        "1/4 cup roasted peanuts, roughly chopped",
+                        "Lime wedges"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Whisk together all peanut dressing ingredients until smooth, adding warm water until dressing is pourable. Set aside.",
+                    "Cook rice noodles per package instructions. Drain and rinse under cold water.",
+                    "In a large bowl, combine noodles, cabbage, carrots, bell pepper, bean sprouts, and scallions. Toss well.",
+                    "Add basil, cilantro, and mint; toss to combine.",
+                    "Drizzle peanut dressing over salad and toss to coat. Top with chopped peanuts and serve with lime wedges."
+                  ]
+                },
+                {
+                  "title": "Chilled Cucumber Salad (Din Tai Fung Style)",
+                  "servings": "Serves 4",
+                  "source": "Andrea Potischman / Simmer + Sauce",
+                  "comments": [
+                    "Inspired by the cucumber salad at Din Tai Fung restaurants. The 4-hour marinade is essential — the cucumbers become lightly pickled and the flavors meld into something sweeter and more delicate than a quick-dressed salad."
+                  ],
+                  "ingredientGroups": [
+                    {
+                      "label": "Cucumbers",
+                      "ingredients": [
+                        "5 Persian cucumbers, cut into 1/2-inch thick rounds",
+                        "1 1/2 tablespoons kosher salt"
+                      ]
+                    },
+                    {
+                      "label": "Marinade",
+                      "ingredients": [
+                        "3 tablespoons rice vinegar",
+                        "2 tablespoons mirin",
+                        "2 tablespoons honey",
+                        "2 teaspoons canola oil",
+                        "2 teaspoons sesame oil",
+                        "1/2 teaspoon chili garlic sauce",
+                        "1/2 to 3/4 teaspoon salt"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Cut cucumbers into 1/2-inch rounds. Sprinkle with kosher salt, toss to coat, and let sit at room temperature for about 20 minutes.",
+                    "Whisk together rice vinegar, mirin, honey, canola oil, sesame oil, chili garlic sauce, and 1/2 teaspoon salt.",
+                    "Rinse the salt off the cucumbers and pat completely dry. Place in a gallon zip-lock bag and pour in the marinade. Seal and shake gently. Lay the bag flat in the refrigerator and marinate at least 4 hours.",
+                    "To serve, taste and adjust with additional salt or chili garlic sauce. Arrange on a plate and drizzle with a little of the marinade. Serve cold."
+                  ]
+                },
+                {
+                  "title": "Cucumber Salad with Sesame and Rice Vinegar",
+                  "servings": "Serves 2 to 4",
+                  "source": "Lauren Muhlheim, adapted from Deb Perelman / Smitten Kitchen",
+                  "favorite": true,
+                  "comments": [
+                    "Leftovers keep in the fridge for 2–3 days, becoming gently pickled."
+                  ],
+                  "ingredientGroups": [
+                    {
+                      "label": "Cucumbers",
+                      "ingredients": [
+                        "2 Persian cucumbers (about 1 pound), seeded and cut into thick wedges",
+                        "1 1/2 teaspoons kosher salt (Diamond brand; use 3/4 teaspoon if using another brand)"
+                      ]
+                    },
+                    {
+                      "label": "Dressing",
+                      "ingredients": [
+                        "3 tablespoons unseasoned rice vinegar",
+                        "1 tablespoon toasted sesame oil",
+                        "3 tablespoons light soy sauce",
+                        "1 1/2 teaspoons chili oil",
+                        "3/4 teaspoon sugar",
+                        "Ground black or white pepper to taste"
+                      ]
+                    },
+                    {
+                      "label": "To serve",
+                      "ingredients": [
+                        "Chili oil or chili crisp to taste, or Aleppo pepper or red pepper flakes",
+                        "Toasted sesame seeds"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Combine the cucumbers and salt in a colander. Set aside for 10–15 minutes, or up to 1–2 hours.",
+                    "Rinse off the salt. Drain well.",
+                    "In a serving bowl, whisk together the rice vinegar, sesame oil, soy sauce, chili oil, sugar, and a few grinds of pepper.",
+                    "Add the drained cucumbers and toss to coat.",
+                    "Finish with a drizzle of chili oil or chili crisp and a generous sprinkle of toasted sesame seeds."
+                  ]
+                },
+                {
+                  "title": "Dumpling Tomato Salad with Chili Crisp Vinaigrette",
+                  "servings": "Serves 4   |   Total: 20 min",
+                  "source": "Hetty Lui McKinnon / NYT Cooking",
+                  "comments": [
+                    "Use your favorite chili crisp—it is the dominant flavor and will greatly impact the final dish; brands vary in saltiness and spice, so season accordingly.",
+                    "Salting works wonders for out-of-season tomatoes, so this salad is good year-round."
+                  ],
+                  "ingredientGroups": [
+                    {
+                      "label": "Tomato salad",
+                      "ingredients": [
+                        "2 1/2 pounds ripe tomatoes (any variety), cut into 1- to 2-inch pieces, at room temperature",
+                        "1 garlic clove, grated",
+                        "1/2 cup fresh basil leaves, torn, divided",
+                        "1 teaspoon kosher salt (Diamond Crystal brand preferred)",
+                        "Black pepper"
+                      ]
+                    },
+                    {
+                      "label": "Chili crisp vinaigrette",
+                      "ingredients": [
+                        "3 tablespoons chili crisp (or chili oil)",
+                        "2 tablespoons rice vinegar",
+                        "1 tablespoon soy sauce, or more to taste"
+                      ]
+                    },
+                    {
+                      "label": "Dumplings",
+                      "ingredients": [
+                        "1 pound frozen potsticker dumplings (not thawed)",
+                        "1–2 tablespoons neutral oil (canola or vegetable)"
+                      ]
+                    },
+                    {
+                      "label": "To serve",
+                      "ingredients": [
+                        "1–2 tablespoons store-bought crispy fried shallots (optional)"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Place tomatoes on a large serving platter or in a bowl. Add garlic, half the basil, salt, and a big pinch of black pepper. Toss and set aside.",
+                    "Whisk together chili crisp, rice vinegar, and soy sauce. Taste; add more soy sauce if needed.",
+                    "Heat a large (12-inch) nonstick or cast-iron skillet over medium-high for 1–2 minutes until very hot. Add 1–2 tablespoons oil. Working in batches, add dumplings flat-side down and cook until bottoms are lightly browned, 1–2 minutes. Add about 1/4 cup water, cover, and steam until water evaporates, 3–4 minutes. Transfer to a plate; repeat with remaining dumplings.",
+                    "Place warm dumplings over the tomato salad and drizzle with vinaigrette. Toss gently. Top with crispy fried shallots (if using) and remaining basil. Serve warm or at room temperature."
                   ]
                 }
-              ],
-              "steps": [
-                "Whisk together mayonnaise, cider vinegar, mustard, maple syrup, and garlic. Season with salt and pepper. Can be made ahead.",
-                "Combine lettuce, endives, apple, grapes, and walnuts in a large bowl.",
-                "Just before serving, drizzle dressing over salad and toss well."
-              ]
-            },
-            {
-              "title": "Broccoli Salad",
-              "servings": "Serves 4",
-              "source": "New York Times",
-              "ingredientGroups": [
-                {
-                  "label": "Broccoli",
-                  "ingredients": [
-                    "1 1/2 to 2 pounds fresh broccoli (about 4 cups)",
-                    "Salt to taste"
-                  ]
-                },
-                {
-                  "label": "Dressing",
-                  "ingredients": [
-                    "1 small red onion, cut into 1/2-inch cubes (about 1 cup)",
-                    "2 teaspoons Dijon mustard",
-                    "3 tablespoons lemon juice",
-                    "1/4 cup olive oil",
-                    "1/4 cup flat-leaf parsley, finely chopped",
-                    "Salt to taste"
-                  ]
-                }
-              ],
-              "steps": [
-                "Cook broccoli in salted boiling water for 5 minutes until crisp-tender. Drain and place in a salad bowl.",
-                "Sprinkle onion cubes over broccoli.",
-                "Whisk mustard and lemon juice together, then beat in oil; season with salt and stir in parsley.",
-                "Spoon dressing over broccoli. Serve hot, warm, or cold."
-              ]
-            },
-            {
-              "title": "Crunchy Romaine Toss",
-              "favorite": true,
-              "servings": "Serves 10-12",
-              "source": "From Christy Ponder",
-              "ingredientGroups": [
-                {
-                  "label": "Sweet & Sour Dressing",
-                  "ingredients": [
-                    "1 cup vegetable oil",
-                    "1 cup sugar",
-                    "1/2 cup white vinegar",
-                    "3 teaspoons soy sauce",
-                    "Salt and pepper to taste"
-                  ]
-                },
-                {
-                  "label": "Toasted noodle mixture",
-                  "ingredients": [
-                    "1 package ramen noodles, uncooked, broken up (discard flavor packet)",
-                    "1 cup walnuts, chopped",
-                    "2 tablespoons unsalted butter",
-                    "2 tablespoons olive oil"
-                  ]
-                },
-                {
-                  "label": "Salad",
-                  "ingredients": [
-                    "1 bunch broccoli, coarsely chopped",
-                    "1 head romaine lettuce, washed and broken into pieces",
-                    "4 green onions, chopped"
-                  ]
-                }
-              ],
-              "steps": [
-                "Whisk together all dressing ingredients until the sugar dissolves. Set aside.",
-                "In a large skillet over medium heat, melt butter with olive oil. Add broken ramen noodles and walnuts; cook, stirring, until golden, about 5 minutes. Spread on paper towels to cool.",
-                "In a large bowl, combine broccoli, romaine, and green onions. Add the cooled noodle mixture and toss to combine.",
-                "Pour dressing over the salad and toss to coat well. Serve immediately."
-              ]
-            },
-            {
-              "title": "Butter Lettuce and Citrus Salad",
-              "servings": "Serves 2–3",
-              "comments": [
-                "\"Supreming\" citrus means cutting away the peel and pith, then slicing between the membranes to release clean segments."
-              ],
-              "source": "The Gourmandise School (The Pizza Class)",
-              "ingredientGroups": [
-                {
-                  "label": null,
-                  "ingredients": [
-                    "1 head butter lettuce",
-                    "1 shallot",
-                    "Salt & pepper to taste",
-                    "1 grapefruit or orange",
-                    "2 tablespoons lemon juice",
-                    "¼ cup olive oil"
-                  ]
-                }
-              ],
-              "steps": [
-                "Remove any wilted leaves from the butter lettuce. Tear into bite-sized pieces and place in a medium bowl.",
-                "Mince the shallot and place in a small bowl with a pinch of salt and pepper.",
-                "Supreme (segment) your grapefruit right over the small bowl to catch any juices. Set the segmented citrus aside.",
-                "Add lemon juice to the shallot bowl, then whisk in the olive oil. Dress the butter lettuce with the citronette. Plate and tuck the segmented citrus into and on top of the greens."
-              ]
-            },
-            {
-              "title": "Charred Broccoli and Cauliflower Salad",
-              "servings": "Serves 6 to 8   |   Total: 30 min   |   Active: 25 min",
-              "source": "https://www.foodnetwork.com/recipes/ree-drummond/charred-broccoli-and-cauliflower-salad-19673188",
-              "comments": [
-                "Great as a side at a barbecue with grilled seafood or meat, or to take to a potluck."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Vegetables",
-                  "ingredients": [
-                    "1 medium crown broccoli, broken into large florets",
-                    "1 medium cauliflower, broken into large florets",
-                    "3 tablespoons olive oil",
-                    "1 teaspoon kosher salt",
-                    "1/2 teaspoon freshly ground black pepper"
-                  ]
-                },
-                {
-                  "label": "Dressing",
-                  "ingredients": [
-                    "2/3 cup mayonnaise",
-                    "1/3 cup Greek yogurt",
-                    "2 tablespoons chopped fresh dill",
-                    "2 tablespoons chopped fresh parsley",
-                    "Zest and juice of 1 lemon",
-                    "Pinch kosher salt",
-                    "Pinch freshly ground black pepper"
-                  ]
-                },
-                {
-                  "label": "Salad",
-                  "ingredients": [
-                    "1 cup arugula",
-                    "1/2 cup dried blueberries, plus extra for garnish",
-                    "1/4 cup pickled red onions, plus extra for garnish",
-                    "2 tablespoons sunflower seeds, plus extra for garnish"
-                  ]
-                }
-              ],
-              "steps": [
-                "Preheat the grill to medium-high heat.",
-                "Toss the broccoli and cauliflower with the olive oil, salt, and pepper. Grill, turning as needed, until tender and well charred, 8–10 minutes. Transfer to a large bowl.",
-                "Make the dressing: whisk together the mayonnaise, Greek yogurt, dill, parsley, lemon zest, and lemon juice. Season with salt and pepper.",
-                "Spread the dressing onto a serving platter, leaving a well in the middle.",
-                "Add the arugula, blueberries, pickled red onions, and sunflower seeds to the bowl with the charred vegetables and toss to combine.",
-                "Mound the vegetable mixture into the well. Garnish with extra blueberries, pickled red onions, and sunflower seeds. Serve."
-              ]
-            },
-            {
-              "title": "Joan's on Third Butter Lettuce Salad (Copycat)",
-              "servings": "Serves 4",
-              "comments": [
-                "Original recipe uses French feta; family uses goat cheese in oil instead. Shallot is in the original but was skipped. Dressing recipe from CopyKat Recipes."
-              ],
-              "source": "Copycat recipe based on Joan's on Third, Los Angeles",
-              "ingredientGroups": [
-                {
-                  "label": "Dressing",
-                  "ingredients": [
-                    "¼ cup white wine vinegar (or champagne vinegar)",
-                    "1 tablespoon Dijon mustard",
-                    "2–3 cloves garlic, minced",
-                    "¼ teaspoon lemon juice",
-                    "Dried oregano, to taste",
-                    "Dried basil, to taste",
-                    "9 tablespoons extra virgin olive oil",
-                    "Salt and freshly ground black pepper, to taste"
-                  ]
-                },
-                {
-                  "label": "Salad",
-                  "ingredients": [
-                    "1–2 large heads butter lettuce, washed, dried, and torn",
-                    "½ cup goat cheese, crumbled",
-                    "⅓ cup dried cranberries"
-                  ]
-                }
-              ],
-              "steps": [
-                {
-                  "lead": "Make the dressing:",
-                  "bullets": [
-                    "Whisk together the white wine vinegar, Dijon mustard, minced garlic, lemon juice, oregano, and basil in a small bowl.",
-                    "Slowly drizzle in the olive oil while whisking constantly until emulsified.",
-                    "Season with salt and pepper to taste."
-                  ]
-                },
-                "Place the torn butter lettuce in a large serving bowl.",
-                "Sprinkle the crumbled goat cheese and dried cranberries evenly over the lettuce.",
-                "Drizzle the vinaigrette lightly over the top just before serving and toss gently to combine."
-              ]
-            },
-            {
-              "title": "Nechamie's Coleslaw Salad",
-              "source": "From Nechamie Greenberg (Chabad Jewish Center of Pudong)",
-              "ingredientGroups": [
-                {
-                  "label": "Dressing",
-                  "ingredients": [
-                    "1/4 cup vinegar",
-                    "1/4 cup oil",
-                    "1/4 cup sugar",
-                    "3/4 teaspoon pepper",
-                    "1 teaspoon salt"
-                  ]
-                },
-                {
-                  "label": "Salad",
-                  "ingredients": [
-                    "1 package coleslaw mix",
-                    "Craisins to taste",
-                    "Slivered almonds, toasted, to taste"
-                  ]
-                }
-              ],
-              "steps": [
-                "Whisk together all dressing ingredients.",
-                "Pour dressing over salad just before serving and toss to combine."
-              ]
-            },
-            {
-              "title": "Nechamie's Summer Salad",
-              "source": "From Nechamie Greenberg (Chabad Jewish Center of Pudong)",
-              "comments": [
-                "The dressing makes more than needed for one salad — leftovers keep refrigerated for 1–2 weeks."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Dressing",
-                  "ingredients": [
-                    "1 cup vinegar",
-                    "3/4 cup sugar",
-                    "3/4 cup ketchup",
-                    "1/4 cup oil",
-                    "2 cloves garlic, crushed",
-                    "3/4 teaspoon paprika",
-                    "1/4 teaspoon mustard",
-                    "1 teaspoon salt"
-                  ]
-                },
-                {
-                  "label": "Salad",
-                  "ingredients": [
-                    "1 bag Romaine lettuce",
-                    "5–6 mushrooms, sliced",
-                    "1 container cherry tomatoes",
-                    "3/4 to 1 mango, cubed",
-                    "3/4 avocado, cubed",
-                    "A handful of salted cashews",
-                    "A handful of sunflower seeds"
-                  ]
-                }
-              ],
-              "steps": [
-                "Whisk together all dressing ingredients.",
-                "Pour dressing over salad just before serving and toss to combine."
-              ]
-            },
-            {
-              "title": "Nechamie's Popped Rice Salad",
-              "source": "From Nechamie Greenberg (Chabad Jewish Center of Pudong)",
-              "comments": [
-                "The rice is popped dry in a covered pot — it puffs and crisps like a lighter version of puffed rice. Long-grain white rice (converted or standard) works best for even popping."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Dressing",
-                  "ingredients": [
-                    "1 cup oil",
-                    "3/4 cup vinegar",
-                    "3/4 cup sugar",
-                    "Salt to taste"
-                  ]
-                },
-                {
-                  "label": "Salad",
-                  "ingredients": [
-                    "Romaine lettuce",
-                    "Cucumbers, sliced",
-                    "Avocado, diced"
-                  ]
-                },
-                {
-                  "label": "To serve",
-                  "ingredients": [
-                    "Jasmine or Basmati rice, popped (see Step 1)"
-                  ]
-                }
-              ],
-              "steps": [
-                "Pop the rice: heat a thin film of oil in a small pot over medium-high heat. Add a small amount of uncooked rice, cover, and cook until the rice pops and puffs. Remove from heat immediately and transfer to a bowl to cool.",
-                "Whisk together all dressing ingredients.",
-                "Just before serving, pour dressing over salad and toss to combine. Sprinkle popped rice on top."
-              ]
-            },
-            {
-              "title": "Nechamie's Poppy Seed Salad",
-              "source": "From Nechamie Greenberg (Chabad Jewish Center of Pudong)",
-              "ingredientGroups": [
-                {
-                  "label": "Dressing",
-                  "ingredients": [
-                    "1 1/3 cups oil",
-                    "3/4 cup vinegar",
-                    "3/4 cup sugar",
-                    "6 heaping tablespoons mayonnaise",
-                    "2 cloves garlic",
-                    "Prepared mustard (a generous squeeze)",
-                    "1 1/2 tablespoons poppy seeds",
-                    "Salt to taste",
-                    "Pepper to taste"
-                  ]
-                },
-                {
-                  "label": "Salad",
-                  "ingredients": [
-                    "Romaine lettuce",
-                    "Purple cabbage, shredded",
-                    "Mushrooms, sliced",
-                    "Radishes, thinly sliced",
-                    "Scallions, thinly sliced",
-                    "Cherry tomatoes",
-                    "Cucumbers, sliced",
-                    "Chow mein noodles"
-                  ]
-                }
-              ],
-              "steps": [
-                "Whisk together all dressing ingredients.",
-                "Pour dressing over salad just before serving and toss to combine. Add chow mein noodles at the last moment to keep them crunchy."
-              ]
-            },
-            {
-              "title": "Shaved Brussels Sprouts Salad With Lemon and Pecorino",
-              "favorite": true,
-              "servings": "Serves 6",
-              "source": "Katie Morford / Mom's Kitchen Handbook",
-              "comments": [
-                "As prepared by Pete Swanson.",
-                "The salad holds up well and is just as good the next day.",
-                "Variations: add dried cranberries or cherries for sweetness; whisk a teaspoon of Dijon into the dressing; swap almonds for walnuts."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Almonds",
-                  "ingredients": [
-                    "3/4 cup sliced almonds"
-                  ]
-                },
-                {
-                  "label": "Salad",
-                  "ingredients": [
-                    "1 pound Brussels sprouts, trimmed and shaved very thin (food processor slicer blade or mandoline)",
-                    "2 oz Pecorino Romano, finely grated (about 1/2 cup)",
-                    "1/8 cup fresh mint, roughly chopped"
-                  ]
-                },
-                {
-                  "label": "Dressing",
-                  "ingredients": [
-                    "1/4 cup fresh lemon juice (Meyer lemon if available)",
-                    "2 1/2 tablespoons extra-virgin olive oil",
-                    "1/2 teaspoon kosher salt",
-                    "Freshly ground black pepper to taste"
-                  ]
-                }
-              ],
-              "steps": [
-                "Preheat oven to 350 degrees F. Toast sliced almonds on a sheet pan until golden, about 8 minutes. Let cool.",
-                "Trim a thin slice from the root end of each Brussels sprout and shave very thin using the slicing blade of a food processor or a mandoline.",
-                "Combine shaved Brussels sprouts, almonds, Pecorino, mint, lemon juice, olive oil, salt, and pepper in a large bowl. Toss well and serve."
-              ]
-            },
-            {
-              "title": "Nechamie's Spinach and Egg Salad",
-              "source": "From Nechamie Greenberg (Chabad Jewish Center of Pudong)",
-              "ingredientGroups": [
-                {
-                  "label": "Dressing",
-                  "ingredients": [
-                    "2 tablespoons brown sugar",
-                    "2 tablespoons vinegar",
-                    "1/4 cup oil",
-                    "1/2 teaspoon mustard",
-                    "2 tablespoons mayonnaise",
-                    "1/4 teaspoon salt",
-                    "Pepper to taste"
-                  ]
-                },
-                {
-                  "label": "Salad",
-                  "ingredients": [
-                    "Spinach",
-                    "3 hard-boiled eggs, sliced",
-                    "Chow mein noodles to taste",
-                    "Scallions, finely chopped"
-                  ]
-                }
-              ],
-              "steps": [
-                "Whisk together all dressing ingredients.",
-                "Pour dressing over salad just before serving and toss to combine. Add chow mein noodles at the last moment to keep them crunchy."
-              ]
-            },
-            {
-              "title": "Wood Ranch's Peanut Coleslaw",
-              "favorite": true,
-              "servings": "Serves 6",
-              "source": "Kadee and Desarae / Oh So Delicioso",
-              "comments": [
-                "Leftovers keep refrigerated for 1 to 2 days."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Dressing",
-                  "ingredients": [
-                    "1/3 cup red wine vinegar",
-                    "1/3 cup neutral oil (avocado, canola, or light olive oil)",
-                    "1 1/2 tablespoons sugar",
-                    "1/2 teaspoon seasoning salt",
-                    "1/2 teaspoon garlic powder",
-                    "1 teaspoon sesame seeds (black or white) (optional)"
-                  ]
-                },
-                {
-                  "label": "Slaw",
-                  "ingredients": [
-                    "16 oz green cabbage, shredded (pre-bagged or equivalent)",
-                    "1 1/2 cups purple cabbage, chopped",
-                    "3/4 cup celery, chopped",
-                    "2 green onions, chopped",
-                    "1 cup peanuts",
-                    "1/4 cup fresh cilantro, chopped (optional)"
-                  ]
-                }
-              ],
-              "steps": [
-                "Whisk together vinegar, oil, sugar, seasoning salt, garlic powder, and sesame seeds until sugar dissolves.",
-                "In a large bowl, combine green cabbage, purple cabbage, celery, green onions, peanuts, and cilantro.",
-                "Toss with dressing just before serving."
-              ]
-            },
-            {
-              "title": "Yellow Mustard Potato Salad",
-              "servings": "Serves 4",
-              "source": "Rachael Ray / Food Network",
-              "comments": [
-                "Spreading the potatoes on a sheet pan (rather than leaving them in the pot) lets them cool quickly without overcooking or turning mushy."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Potatoes",
-                  "ingredients": [
-                    "2 1/2 pounds russet potatoes (about 3 medium-large), peeled and cubed"
-                  ]
-                },
-                {
-                  "label": "Dressing",
-                  "ingredients": [
-                    "2 ribs celery, finely chopped",
-                    "1/2 small yellow onion, finely chopped",
-                    "3 tablespoons chopped pimento, drained",
-                    "3 tablespoons sweet pickle relish",
-                    "1/3 cup mayonnaise",
-                    "1/3 cup yellow mustard",
-                    "Salt and pepper to taste"
-                  ]
-                },
-                {
-                  "label": "Garnish",
-                  "ingredients": [
-                    "2 tablespoons chopped parsley (optional)"
-                  ]
-                }
-              ],
-              "steps": [
-                "Boil potatoes in generously salted water until just tender, 10 to 12 minutes. Drain and spread on a sheet pan; let cool about 10 minutes.",
-                "In a large bowl, stir together celery, onion, pimento, relish, mayonnaise, and mustard. Season with salt and pepper.",
-                "Add cooled potatoes and fold to combine. Taste and adjust seasoning. Garnish with parsley if desired. Serve immediately or chill."
-              ]
-            },
-            {
-              "title": "Roasted Cauliflower Salad",
-              "servings": "Serves 12",
-              "source": "Food Network / Ree Drummond",
-              "ingredientGroups": [
-                {
-                  "label": "Cauliflower",
-                  "ingredients": [
-                    "2 heads cauliflower, broken into florets",
-                    "2 tablespoons olive oil",
-                    "2 teaspoons kosher salt",
-                    "1 teaspoon black pepper"
-                  ]
-                },
-                {
-                  "label": "Dressing",
-                  "ingredients": [
-                    "1/4 cup pesto",
-                    "3 tablespoons champagne vinegar"
-                  ]
-                },
-                {
-                  "label": "Salad",
-                  "ingredients": [
-                    "1/2 cup pine nuts",
-                    "6 cups mixed baby arugula, spinach, and kale",
-                    "1/2 cup Castelvetrano olives, halved",
-                    "1/2 cup kalamata olives, halved",
-                    "1/2 cup fresh Italian parsley, chopped"
-                  ]
-                }
-              ],
-              "steps": [
-                "Preheat oven to 450 degrees F. Toss cauliflower with olive oil, salt, and pepper; spread on a rimmed baking sheet. Roast 18–20 minutes until golden and caramelized.",
-                "Toast pine nuts in a dry skillet over medium heat, stirring frequently, until golden, about 3–4 minutes. Watch carefully.",
-                "Shake pesto and champagne vinegar together in a jar until combined.",
-                "Combine greens, roasted cauliflower, olives, parsley, and pine nuts in a large bowl. Drizzle with dressing and toss to coat. Serve immediately."
-              ]
-            },
-            {
-              "title": "Dad's Greek Salad",
-              "servings": "Serves 6",
-              "source": "Simply Recipes / Elise Bauer",
-              "comments": [
-                "Tip: to reduce the bite of raw onion, soak chopped onion in a little vinegar or lemon juice for a few minutes before adding.",
-                "Dressing can be made up to 3 hours ahead; let stand at room temperature and re-whisk before using."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Dressing",
-                  "ingredients": [
-                    "6 tablespoons extra-virgin olive oil",
-                    "2 tablespoons fresh lemon juice",
-                    "1 teaspoon red wine vinegar",
-                    "1/2 teaspoon chopped garlic",
-                    "1/2 teaspoon dried oregano (or 1 teaspoon fresh)",
-                    "1/2 teaspoon dried dill (or 1 teaspoon fresh)",
-                    "Salt and freshly ground black pepper"
-                  ]
-                },
-                {
-                  "label": "Salad",
-                  "ingredients": [
-                    "3 large plum tomatoes, seeded and coarsely chopped",
-                    "3/4 large cucumber, peeled, seeded, and coarsely chopped",
-                    "1/2 small red onion, chopped",
-                    "1 bell pepper, seeded and coarsely chopped",
-                    "1/2 cup pitted black olives (preferably brine-cured), coarsely chopped",
-                    "Heaping 1/2 cup crumbled feta cheese"
-                  ]
-                }
-              ],
-              "steps": [
-                "Whisk together olive oil, lemon juice, vinegar, garlic, oregano, and dill until blended. Season with salt and pepper.",
-                "Combine tomatoes, cucumber, onion, bell pepper, and olives in a large bowl. Toss with dressing. Sprinkle with feta and serve."
-              ]
-            },
-            {
-              "title": "Moroccan-Style Carrot Salad",
-              "servings": "Serves 6",
-              "source": "Suzy Karadsheh / The Mediterranean Dish",
-              "comments": [
-                "Dressing the carrots while warm is key -- they absorb the spices far better than when cold.",
-                "Keeps refrigerated for 3 to 4 days; always serve at room temperature.",
-                "Harissa spice blend adds a subtle heat; if unavailable, substitute a pinch of cayenne and extra cumin."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Carrots",
-                  "ingredients": [
-                    "2 pounds carrots, peeled and cut into 1/4-inch rounds",
-                    "Kosher salt"
-                  ]
-                },
-                {
-                  "label": "Dressing",
-                  "ingredients": [
-                    "1/2 teaspoon harissa spice (dry spice blend)",
-                    "1/2 teaspoon ground cumin",
-                    "1/2 teaspoon ground coriander",
-                    "1/2 teaspoon sweet paprika",
-                    "1 to 2 cloves garlic, minced",
-                    "1 to 2 tablespoons fresh lemon juice",
-                    "3 tablespoons extra-virgin olive oil"
-                  ]
-                },
-                {
-                  "label": "Finish",
-                  "ingredients": [
-                    "1 celery stalk, finely chopped",
-                    "1/2 cup fresh cilantro, chopped (mint or parsley can substitute)",
-                    "3 tablespoons toasted sesame seeds (optional)"
-                  ]
-                }
-              ],
-              "steps": [
-                "Bring a large pot of salted water to a boil. Add carrots and cook until very tender, about 20 minutes. Drain.",
-                "Transfer warm carrots to a large bowl immediately. While still hot, toss with a pinch of salt, harissa, cumin, coriander, paprika, garlic, lemon juice, and olive oil.",
-                "Add celery, cilantro, and sesame seeds and toss again. Let cool to room temperature before serving."
-              ]
-            },
-            {
-              "title": "Parsley Salad",
-              "servings": "Serves 4",
-              "source": "Alton Brown / Food Network (Good Eats)",
-              "comments": [
-                "Walnut oil is central to this recipe -- it pairs naturally with the slightly bitter parsley. Look for it at specialty grocery stores. In a pinch, half almond oil and half olive oil can substitute.",
-                "Works well as a side for grilled meats or as part of a mezze spread."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Dressing",
-                  "ingredients": [
-                    "2 tablespoons fresh lemon juice",
-                    "2 tablespoons lemon zest",
-                    "6 tablespoons walnut oil",
-                    "2 teaspoons dark sesame oil",
-                    "1 teaspoon honey",
-                    "Salt and freshly ground pepper to taste"
-                  ]
-                },
-                {
-                  "label": "Salad",
-                  "ingredients": [
-                    "4 oz Italian flat-leaf parsley, leaves only (about 2 quarts loosely packed)",
-                    "3 tablespoons toasted sesame seeds"
-                  ]
-                }
-              ],
-              "steps": [
-                "Wash and dry parsley thoroughly. Pick leaves and discard stems.",
-                "Whisk together lemon juice, lemon zest, walnut oil, sesame oil, honey, and salt and pepper in a large bowl.",
-                "Add parsley and sesame seeds; toss to combine.",
-                "Let sit at least 30 minutes before serving so flavors meld."
-              ]
-            },
-            {
-              "title": "Indian Slaw",
-              "servings": "Serves 8",
-              "source": "Glebe Kitchen / Romain",
-              "favorite": true,
-              "comments": [
-                "Dressing benefits from at least 4 hours rest; overnight is best."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Dressing (4 hours ahead)",
-                  "ingredients": [
-                    "1/2 cup full-fat yogurt",
-                    "1/2 cup mayonnaise",
-                    "1/2 teaspoon coriander powder",
-                    "1/2 teaspoon cumin powder",
-                    "1/4 teaspoon Kashmiri chili powder",
-                    "1/2 teaspoon coarse black pepper",
-                    "1/4 teaspoon mustard powder",
-                    "2 1/2 tablespoons lemon juice",
-                    "1 teaspoon sugar",
-                    "1 tablespoon milk to thin (optional)"
-                  ]
-                },
-                {
-                  "label": "Slaw",
-                  "ingredients": [
-                    "1 small green cabbage, thinly sliced",
-                    "1/2 large Spanish onion, thinly sliced",
-                    "2 large carrots, shredded",
-                    "2 large jalapenos, seeded and julienned",
-                    "2 1/2 teaspoons kosher salt",
-                    "1 tablespoon vegetable oil",
-                    "1/2 cup cashews",
-                    "Large handful fresh cilantro, roughly chopped"
-                  ]
-                }
-              ],
-              "steps": [
-                "Whisk together all dressing ingredients. Refrigerate at least 4 hours — overnight is best — for flavors to meld.",
-                "Combine cabbage, onion, carrots, and jalapenos in a large bowl. Toss with salt and let sit 15–20 minutes to draw out moisture.",
-                "Squeeze or press out excess liquid from slaw by hand or in a colander. Toss with vegetable oil.",
-                "Add dressing, cashews, and cilantro; toss to coat. Taste and adjust salt. Serve immediately or refrigerate up to 2 days."
-              ]
-            },
-            {
-              "title": "Spring Roll Salad with Peanut Dressing",
-              "servings": "Serves 4",
-              "source": "Valerie Bertinelli / Food Network",
-              "ingredientGroups": [
-                {
-                  "label": "Peanut dressing",
-                  "ingredients": [
-                    "1/4 cup peanut butter",
-                    "3 tablespoons soy sauce",
-                    "2 tablespoons fresh lime juice",
-                    "1 tablespoon toasted sesame oil",
-                    "1 tablespoon honey or agave",
-                    "1 clove garlic, minced",
-                    "1 teaspoon freshly grated ginger",
-                    "2–3 tablespoons warm water, as needed"
-                  ]
-                },
-                {
-                  "label": "Salad",
-                  "ingredients": [
-                    "4 oz rice vermicelli noodles",
-                    "2 cups shredded cabbage (green or purple)",
-                    "1 cup shredded carrots",
-                    "1 red bell pepper, thinly sliced",
-                    "1 cup bean sprouts",
-                    "3 scallions, thinly sliced",
-                    "1/4 cup fresh basil leaves, torn",
-                    "1/4 cup fresh cilantro leaves",
-                    "1 tablespoon chopped fresh mint, or to taste"
-                  ]
-                },
-                {
-                  "label": "To serve",
-                  "ingredients": [
-                    "1/4 cup roasted peanuts, roughly chopped",
-                    "Lime wedges"
-                  ]
-                }
-              ],
-              "steps": [
-                "Whisk together all peanut dressing ingredients until smooth, adding warm water until dressing is pourable. Set aside.",
-                "Cook rice noodles per package instructions. Drain and rinse under cold water.",
-                "In a large bowl, combine noodles, cabbage, carrots, bell pepper, bean sprouts, and scallions. Toss well.",
-                "Add basil, cilantro, and mint; toss to combine.",
-                "Drizzle peanut dressing over salad and toss to coat. Top with chopped peanuts and serve with lime wedges."
-              ]
-            },
-            {
-              "title": "Chilled Cucumber Salad (Din Tai Fung Style)",
-              "servings": "Serves 4",
-              "source": "Andrea Potischman / Simmer + Sauce",
-              "comments": [
-                "Inspired by the cucumber salad at Din Tai Fung restaurants. The 4-hour marinade is essential — the cucumbers become lightly pickled and the flavors meld into something sweeter and more delicate than a quick-dressed salad."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Cucumbers",
-                  "ingredients": [
-                    "5 Persian cucumbers, cut into 1/2-inch thick rounds",
-                    "1 1/2 tablespoons kosher salt"
-                  ]
-                },
-                {
-                  "label": "Marinade",
-                  "ingredients": [
-                    "3 tablespoons rice vinegar",
-                    "2 tablespoons mirin",
-                    "2 tablespoons honey",
-                    "2 teaspoons canola oil",
-                    "2 teaspoons sesame oil",
-                    "1/2 teaspoon chili garlic sauce",
-                    "1/2 to 3/4 teaspoon salt"
-                  ]
-                }
-              ],
-              "steps": [
-                "Cut cucumbers into 1/2-inch rounds. Sprinkle with kosher salt, toss to coat, and let sit at room temperature for about 20 minutes.",
-                "Whisk together rice vinegar, mirin, honey, canola oil, sesame oil, chili garlic sauce, and 1/2 teaspoon salt.",
-                "Rinse the salt off the cucumbers and pat completely dry. Place in a gallon zip-lock bag and pour in the marinade. Seal and shake gently. Lay the bag flat in the refrigerator and marinate at least 4 hours.",
-                "To serve, taste and adjust with additional salt or chili garlic sauce. Arrange on a plate and drizzle with a little of the marinade. Serve cold."
-              ]
-            },
-            {
-              "title": "Cucumber Salad with Sesame and Rice Vinegar",
-              "servings": "Serves 2 to 4",
-              "source": "Lauren Muhlheim, adapted from Deb Perelman / Smitten Kitchen",
-              "favorite": true,
-              "comments": [
-                "Leftovers keep in the fridge for 2–3 days, becoming gently pickled."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Cucumbers",
-                  "ingredients": [
-                    "2 Persian cucumbers (about 1 pound), seeded and cut into thick wedges",
-                    "1 1/2 teaspoons kosher salt (Diamond brand; use 3/4 teaspoon if using another brand)"
-                  ]
-                },
-                {
-                  "label": "Dressing",
-                  "ingredients": [
-                    "3 tablespoons unseasoned rice vinegar",
-                    "1 tablespoon toasted sesame oil",
-                    "3 tablespoons light soy sauce",
-                    "1 1/2 teaspoons chili oil",
-                    "3/4 teaspoon sugar",
-                    "Ground black or white pepper to taste"
-                  ]
-                },
-                {
-                  "label": "To serve",
-                  "ingredients": [
-                    "Chili oil or chili crisp to taste, or Aleppo pepper or red pepper flakes",
-                    "Toasted sesame seeds"
-                  ]
-                }
-              ],
-              "steps": [
-                "Combine the cucumbers and salt in a colander. Set aside for 10–15 minutes, or up to 1–2 hours.",
-                "Rinse off the salt. Drain well.",
-                "In a serving bowl, whisk together the rice vinegar, sesame oil, soy sauce, chili oil, sugar, and a few grinds of pepper.",
-                "Add the drained cucumbers and toss to coat.",
-                "Finish with a drizzle of chili oil or chili crisp and a generous sprinkle of toasted sesame seeds."
-              ]
-            },
-            {
-              "title": "Dumpling Tomato Salad with Chili Crisp Vinaigrette",
-              "servings": "Serves 4   |   Total: 20 min",
-              "source": "Hetty Lui McKinnon / NYT Cooking",
-              "comments": [
-                "Use your favorite chili crisp—it is the dominant flavor and will greatly impact the final dish; brands vary in saltiness and spice, so season accordingly.",
-                "Salting works wonders for out-of-season tomatoes, so this salad is good year-round."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Tomato salad",
-                  "ingredients": [
-                    "2 1/2 pounds ripe tomatoes (any variety), cut into 1- to 2-inch pieces, at room temperature",
-                    "1 garlic clove, grated",
-                    "1/2 cup fresh basil leaves, torn, divided",
-                    "1 teaspoon kosher salt (Diamond Crystal brand preferred)",
-                    "Black pepper"
-                  ]
-                },
-                {
-                  "label": "Chili crisp vinaigrette",
-                  "ingredients": [
-                    "3 tablespoons chili crisp (or chili oil)",
-                    "2 tablespoons rice vinegar",
-                    "1 tablespoon soy sauce, or more to taste"
-                  ]
-                },
-                {
-                  "label": "Dumplings",
-                  "ingredients": [
-                    "1 pound frozen potsticker dumplings (not thawed)",
-                    "1–2 tablespoons neutral oil (canola or vegetable)"
-                  ]
-                },
-                {
-                  "label": "To serve",
-                  "ingredients": [
-                    "1–2 tablespoons store-bought crispy fried shallots (optional)"
-                  ]
-                }
-              ],
-              "steps": [
-                "Place tomatoes on a large serving platter or in a bowl. Add garlic, half the basil, salt, and a big pinch of black pepper. Toss and set aside.",
-                "Whisk together chili crisp, rice vinegar, and soy sauce. Taste; add more soy sauce if needed.",
-                "Heat a large (12-inch) nonstick or cast-iron skillet over medium-high for 1–2 minutes until very hot. Add 1–2 tablespoons oil. Working in batches, add dumplings flat-side down and cook until bottoms are lightly browned, 1–2 minutes. Add about 1/4 cup water, cover, and steam until water evaporates, 3–4 minutes. Transfer to a plate; repeat with remaining dumplings.",
-                "Place warm dumplings over the tomato salad and drizzle with vinaigrette. Toss gently. Top with crispy fried shallots (if using) and remaining basil. Serve warm or at room temperature."
-              ]
-            },
-            {
-              "title": "Pear, Gorgonzola and Walnut Salad",
-              "servings": "Serves 4   |   Total: 10 min",
-              "source": "Sarah Epperson Loveless, EatingWell",
-              "comments": [
-                "Anjou or Bartlett pear also works well; Bosc holds its shape best.",
-                "To toast walnuts: spread in a dry skillet over medium heat and toast 3-5 minutes, shaking frequently.",
-                "Best dressed and served immediately -- the dressed greens wilt quickly."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Dressing",
-                  "ingredients": [
-                    "2 tablespoons olive oil",
-                    "2 tablespoons fresh lemon juice (from 1 lemon)",
-                    "2 teaspoons honey",
-                    "1 teaspoon chopped fresh thyme",
-                    "1 teaspoon Dijon mustard",
-                    "1/2 teaspoon black pepper",
-                    "1/4 teaspoon kosher salt"
-                  ]
-                },
-                {
-                  "label": "Salad",
-                  "ingredients": [
-                    "4 cups mixed baby lettuces"
-                  ]
-                },
-                {
-                  "label": "To serve",
-                  "ingredients": [
-                    "1 medium ripe Bosc pear, thinly sliced",
-                    "1/4 cup crumbled Gorgonzola cheese",
-                    "1/4 cup toasted walnuts, coarsely chopped",
-                    "1/4 cup golden raisins"
-                  ]
-                }
-              ],
-              "steps": [
-                "Whisk together all dressing ingredients in a large bowl. Add lettuces and gently toss to coat.",
-                "Top with sliced pear, Gorgonzola, walnuts, and golden raisins. Serve immediately."
               ]
             }
           ]
@@ -4466,79 +4476,6 @@ module.exports = {
                 "Add chicken, carrot, red onion, golden raisins, and cashews. Stir well until everything is evenly coated.",
                 "Refrigerate at least 1 hour before serving to allow flavors to meld and raisins to plump. (This step is optional but recommended.)",
                 "Serve over lettuce."
-              ]
-            },
-            {
-              "title": "Chicken Fajita Marinade",
-              "servings": "Serves 4   |   Prep: 10 minutes   |   Cook: 1 minute   |   Total: 41 minutes (includes 30 minutes marinating)",
-              "comments": [
-                "This is a marinade rather than a full dish — cook the marinated chicken and vegetables however you like (grill, skillet, or oven).",
-                "Also works with other proteins, like shrimp, flank steak, or pork tenderloin."
-              ],
-              "source": "Dinner at the Zoo, by Sara Welch",
-              "ingredientGroups": [
-                {
-                  "label": "Marinade",
-                  "ingredients": [
-                    "1/4 cup olive oil",
-                    "1/3 cup lime juice",
-                    "1/4 cup water",
-                    "1 teaspoon sugar",
-                    "1 1/4 teaspoons kosher salt",
-                    "1/4 teaspoon ground cumin",
-                    "2 cloves garlic, minced",
-                    "1 1/2 teaspoons smoked paprika",
-                    "1 teaspoon onion powder",
-                    "1 to 2 tablespoons chili powder, to taste (start with 1 tablespoon if your chili powder has real heat)",
-                    "1/4 teaspoon pepper"
-                  ]
-                },
-                {
-                  "label": "To marinate",
-                  "ingredients": [
-                    "1 pound chicken, sliced",
-                    "1 1/2 cups sliced bell peppers",
-                    "1/2 cup sliced onion"
-                  ]
-                }
-              ],
-              "steps": [
-                "In a bowl, whisk together the olive oil, lime juice, water, sugar, salt, cumin, garlic, smoked paprika, onion powder, chili powder, and pepper.",
-                "Add the sliced chicken, bell peppers, and onion to the bowl and toss to coat.",
-                "Marinate at least 30 minutes and up to 8 hours, then cook as desired — grilled, pan-seared, or baked — for fajitas."
-              ]
-            },
-            {
-              "title": "D.L. Jardine's Fajita Marinade",
-              "servings": "Serves 4",
-              "comments": [
-                "Works for both chicken and beef; marinate all day or overnight for best results."
-              ],
-              "source": "https://www.food.com/recipe/d-l-jardines-fajita-marinade-336920",
-              "ingredientGroups": [
-                {
-                  "label": "Liquids",
-                  "ingredients": [
-                    "3/4 cup Worcestershire sauce",
-                    "1/4 cup light soy sauce",
-                    "2 tablespoons water",
-                    "1 tablespoon white vinegar",
-                    "2 tablespoons lime juice"
-                  ]
-                },
-                {
-                  "label": "Spice blend",
-                  "note": "combine in a small bowl",
-                  "ingredients": [
-                    "1/2 teaspoon garlic powder",
-                    "1/2 teaspoon black pepper",
-                    "1/2 teaspoon cumin",
-                    "1/2 teaspoon oregano"
-                  ]
-                }
-              ],
-              "steps": [
-                "Whisk together the liquids and spice blend until fully combined. Use immediately as a marinade, or refrigerate until ready to use."
               ]
             },
             {
@@ -11205,1209 +11142,1224 @@ module.exports = {
     },
     {
       "title": "Vegetable Sides",
-      "recipes": [
+      "subsections": [
         {
-          "title": "Sautéed Mushrooms",
-          "servings": "Serves 6   |   Prep: 10 min   |   Cook: 20 min   |   Total: 30 min",
-          "source": "Sommer Collier, A Spicy Perspective",
-          "comments": [
-            "The classic steak topping — also great over chicken, pork chops, or grain bowls. Have patience: let the mushrooms release all their moisture before they begin to brown. Leftovers keep in the fridge up to 10 days; reheat on the stovetop with a little extra butter."
-          ],
-          "ingredientGroups": [
+          "title": "Potatoes",
+          "recipes": [
             {
-              "label": "Mushrooms and fat",
-              "ingredients": [
-                "2 pounds button mushrooms, halved",
-                "2 tablespoons unsalted butter",
-                "2 tablespoons olive oil"
+              "title": "Brown Butter Mashed Potatoes",
+              "servings": "Serves 12",
+              "source": "Food Network / Ree Drummond",
+              "ingredientGroups": [
+                {
+                  "label": "Potatoes",
+                  "ingredients": [
+                    "5 pounds Yukon gold potatoes, peeled and cut into chunks"
+                  ]
+                },
+                {
+                  "label": "Brown butter",
+                  "ingredients": [
+                    "2 1/2 sticks (1 1/4 cups) salted butter"
+                  ]
+                },
+                {
+                  "label": "Enrichments",
+                  "ingredients": [
+                    "1 1/2 packages (12 oz total) cream cheese, softened",
+                    "1/2 cup half-and-half",
+                    "1/2 cup heavy cream",
+                    "Kosher salt and black pepper",
+                    "Splash of milk to thin, if needed"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "Fresh parsley, chopped"
+                  ]
+                }
+              ],
+              "steps": [
+                "Boil potatoes in salted water until very tender, about 20–25 minutes. Drain.",
+                "Melt butter in a light-colored skillet over medium heat, swirling frequently, until milk solids turn golden brown and butter smells nutty, about 5–8 minutes. Watch carefully to avoid burning.",
+                "Mash or rice potatoes in a large bowl. Add brown butter, cream cheese, half-and-half, and heavy cream; stir until smooth. Season generously with salt and pepper. Thin with a splash of milk if needed.",
+                "Serve topped with fresh parsley."
               ]
             },
             {
-              "label": "Aromatics",
-              "ingredients": [
-                "3 garlic cloves, minced",
-                "Salt and pepper to taste"
+              "title": "Crispy Smashed Potatoes",
+              "favorite": true,
+              "servings": "Serves 6",
+              "source": "Modern Honey / Melissa Stadler",
+              "ingredientGroups": [
+                {
+                  "label": "Potatoes",
+                  "ingredients": [
+                    "1 1/2 pounds petite Yukon gold or fingerling potatoes"
+                  ]
+                },
+                {
+                  "label": "Drizzle",
+                  "ingredients": [
+                    "3 tablespoons salted butter, melted",
+                    "2 tablespoons extra-virgin olive oil",
+                    "1 teaspoon salt",
+                    "1/2 teaspoon pepper"
+                  ]
+                },
+                {
+                  "label": "Garlic cheddar dip",
+                  "ingredients": [
+                    "8 oz sour cream",
+                    "3/4 cup cheddar cheese, grated",
+                    "1 garlic clove, minced (or 1/4 teaspoon garlic powder)",
+                    "1/2 teaspoon garlic salt",
+                    "1/4 teaspoon pepper"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "Fresh parsley, chopped"
+                  ]
+                }
+              ],
+              "steps": [
+                "Cook potatoes: boil in salted water until fork-tender, 20–25 minutes, then drain. Alternatively, roast at 425 degrees F for about 25 minutes until just tender — this produces a drier potato and results in a crispier final texture after smashing.",
+                "Preheat oven to 425 degrees F (if using the boiling method). Arrange potatoes on a greased rimmed baking sheet. Smash each potato with the bottom of a glass or measuring cup until about 1/2-inch thick.",
+                "Mix melted butter, olive oil, salt, and pepper; drizzle over smashed potatoes.",
+                "Roast 35–45 minutes until deeply golden and crispy.",
+                "Meanwhile, stir together all dip ingredients until combined. Refrigerate until ready to serve.",
+                "Serve potatoes hot with garlic cheddar dip and fresh parsley."
               ]
             },
             {
-              "label": "Glaze",
-              "ingredients": [
-                "1½ tablespoons fresh thyme leaves",
-                "¾ cup dry sherry"
+              "title": "Over-the-Top Scalloped Potatoes",
+              "servings": "Serves 6–8",
+              "source": "Food Network / Ree Drummond",
+              "comments": [
+                "Contains bacon."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Onion and bacon",
+                  "ingredients": [
+                    "2 tablespoons salted butter",
+                    "1 large white onion, thinly sliced",
+                    "5 slices bacon, diced"
+                  ]
+                },
+                {
+                  "label": "Cream sauce",
+                  "ingredients": [
+                    "2 cups heavy cream",
+                    "1 cup half-and-half",
+                    "1/4 cup all-purpose flour",
+                    "1 teaspoon freshly ground black pepper",
+                    "Pinch kosher salt"
+                  ]
+                },
+                {
+                  "label": "Cheese",
+                  "ingredients": [
+                    "1 cup fontina, grated",
+                    "1 cup Gruyere, grated"
+                  ]
+                },
+                {
+                  "label": "Potatoes",
+                  "ingredients": [
+                    "3 pounds Yukon gold potatoes, sliced 1/8-inch thick (use a mandoline)"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "2 green onions, thinly sliced"
+                  ]
+                }
+              ],
+              "steps": [
+                "Preheat oven to 350 degrees F. Melt butter in a large skillet over medium heat. Add onion and cook until caramelized, about 15 minutes. Add bacon and cook until crisp. Set aside.",
+                "Whisk together heavy cream, half-and-half, flour, pepper, and salt until smooth.",
+                "Layer half the potatoes in a greased 2-quart baking dish. Top with half the onion-bacon mixture, half the cream sauce, and half the cheese.",
+                "Repeat layers with remaining potatoes, onion-bacon, cream sauce, and cheese.",
+                "Cover tightly with foil and bake 40 minutes. Uncover and bake 20 minutes more until golden and bubbly. Let rest 10 minutes before serving. Top with sliced green onions."
+              ]
+            },
+            {
+              "title": "Perfect Twice Fried French Fries",
+              "servings": "Serves 4–6",
+              "source": "The Salted Potato / Renee Robinson",
+              "favorite": true,
+              "comments": [
+                "The first fry cooks the interior; the second fry crisps the exterior. Two-stage frying is the key to the classic bistro-style fry."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Fries",
+                  "ingredients": [
+                    "4 large Russet potatoes, cut into 1/4-inch sticks (unpeeled)",
+                    "Ice water to cover"
+                  ]
+                },
+                {
+                  "label": "For frying",
+                  "ingredients": [
+                    "2 quarts peanut oil"
+                  ]
+                },
+                {
+                  "label": "To season",
+                  "ingredients": [
+                    "Salt",
+                    "Aleppo pepper"
+                  ]
+                }
+              ],
+              "steps": [
+                "Place potato sticks in a large bowl, cover with ice water, and soak at least 30 minutes (or up to overnight in the refrigerator). Drain and pat thoroughly dry.",
+                "Heat peanut oil to 325 degrees F in a large Dutch oven or heavy-bottomed pot.",
+                "Working in batches, fry potatoes 8–9 minutes until pale golden but not browned. Remove with a spider or slotted spoon; drain on a wire rack. Let rest at least 15 minutes (or cool completely and refrigerate up to 24 hours).",
+                "Heat oil to 350 degrees F. Working in batches, fry potatoes again until deep golden and very crisp, about 2 minutes.",
+                "Drain on wire rack; season immediately with salt and Aleppo pepper. Serve at once."
+              ]
+            },
+            {
+              "title": "Classic Potato Gratin",
+              "servings": "Serves 6",
+              "source": "Claire Saffitz / Bon Appetit, November 2015",
+              "comments": [
+                "Do ahead: bake up to 1 day ahead; cover, refrigerate, bring to room temperature before broiling.",
+                "Do not rinse potato slices after cutting -- the starch is what makes the gratin creamy.",
+                "Comté is an excellent substitute for Gruyere."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Cream mixture",
+                  "ingredients": [
+                    "1 medium shallot, quartered through root end",
+                    "1 1/4 cups heavy cream",
+                    "1 1/2 teaspoons kosher salt",
+                    "1/2 teaspoon freshly ground black pepper",
+                    "1 1/2 teaspoons thyme leaves",
+                    "2 cloves garlic"
+                  ]
+                },
+                {
+                  "label": "Gratin dish",
+                  "ingredients": [
+                    "1 small garlic clove, halved",
+                    "1 1/2 teaspoons unsalted butter, room temperature"
+                  ]
+                },
+                {
+                  "label": "Potatoes",
+                  "ingredients": [
+                    "2 pounds russet potatoes, scrubbed and very thinly sliced on a mandoline (do not rinse after slicing)"
+                  ]
+                },
+                {
+                  "label": "Topping",
+                  "ingredients": [
+                    "1 1/2 oz Gruyere, finely grated",
+                    "1/2 oz Parmesan, finely grated",
+                    "Extra thyme leaves for serving"
+                  ]
+                }
+              ],
+              "steps": [
+                "Preheat oven to 325 degrees F. Rub the inside of a 2-quart shallow baking dish with the cut sides of the halved garlic clove; smear with butter all over.",
+                "Combine shallot, cream, salt, pepper, thyme, and 2 garlic cloves in a small saucepan. Simmer over low heat until shallot and garlic are very soft, 15 to 20 minutes. Let cool slightly, then blend until smooth.",
+                "Fan out handfuls of potato slices and arrange in the buttered dish at a slight angle, shingling as you work. Tuck smaller slices into gaps. Pour cream mixture over potatoes. Cover tightly with foil.",
+                "Bake until potatoes are tender and creamy, 60 to 75 minutes (often closer to 90 -- baking the day ahead avoids this uncertainty). Let cool.",
+                "Heat broiler with rack in highest position. Remove foil and top potatoes with Gruyere and Parmesan. Broil until cheese is bubbling and golden, 5 to 10 minutes. Scatter with thyme leaves and serve."
+              ]
+            },
+            {
+              "title": "Potato Latkes",
+              "favorite": true,
+              "servings": "Makes about 12 latkes",
+              "source": "\"Celebration: The Book of Jewish Festivals,\" ed. Naomi Black (Jonathan David Publishers, 1989)",
+              "comments": [
+                "Keep finished latkes warm in a 250°F oven while frying subsequent batches.",
+                "The original notes you can use more flour or matzo meal as needed to hold the batter together.",
+                "Variation: Pour the same batter into a well-greased muffin pan and bake 45 minutes at 350°F."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Batter",
+                  "ingredients": [
+                    "6 medium potatoes, grated",
+                    "1 onion, grated",
+                    "2 eggs",
+                    "2 tablespoons flour or matzo meal (more as needed)",
+                    "1 teaspoon salt"
+                  ]
+                },
+                {
+                  "label": "For frying",
+                  "ingredients": [
+                    "Vegetable oil"
+                  ]
+                }
+              ],
+              "steps": [
+                "Grate the potatoes into a mixing bowl. Squeeze out the liquid or drain in a colander for a few minutes. Grate the onion into the potatoes.",
+                "Add the eggs and mix. Add the flour and mix. Add the salt and stir until you have a smooth batter that drops heavily from the spoon.",
+                "Heat enough vegetable oil in a frying pan to cover the latkes amply. Drop the batter from a tablespoon into the hot oil, making pancakes about 3 inches in diameter. Do not allow the oil to smoke; let it come back up to temperature after every few latkes and after replenishing the oil.",
+                "Fry until brown on the underside, then turn and brown the other side. Lift out and drain on paper towels. Keep warm in a 250°F oven while frying remaining batches."
+              ]
+            },
+            {
+              "title": "Potatoes Gratin (Low Calorie)",
+              "servings": "Serves 6–8   |   Prep: 10 min   |   Cook: 1 to 1 1/4 hours",
+              "source": "Family recipe card",
+              "comments": [
+                "Low-calorie version using skim milk and eggs rather than cream."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Potatoes",
+                  "ingredients": [
+                    "2 large garlic cloves, halved lengthwise",
+                    "3 pounds new potatoes, unpeeled, scrubbed, and very thinly sliced"
+                  ]
+                },
+                {
+                  "label": "Custard",
+                  "ingredients": [
+                    "3 1/3 cups skim milk",
+                    "2 large eggs, lightly beaten",
+                    "Salt and pepper to taste"
+                  ]
+                },
+                {
+                  "label": "Topping",
+                  "ingredients": [
+                    "6 tablespoons grated parmesan cheese"
+                  ]
+                }
+              ],
+              "steps": [
+                "Preheat oven to 400°F. Rub the inside of a 9x14x2-inch Pyrex dish with the cut side of the garlic. Thinly slice the garlic and toss with the potatoes.",
+                "Layer potatoes in the Pyrex dish. Mix together milk, eggs, salt, and pepper. Pour mixture over potatoes.",
+                "Bake 1 to 1 1/4 hours. Every 15 minutes, remove from oven and, using a knife or wooden spoon, press down the top layer of potatoes that has gotten crusty and fold it into the rest.",
+                "When golden and potatoes are tender, sprinkle with parmesan and return to oven. Bake until a golden crust forms, about 10–15 minutes."
               ]
             }
-          ],
-          "steps": [
-            "Place a large sauté pan over medium heat. Add the butter and olive oil. Once the butter has melted, add the mushrooms.",
-            "Let the mushrooms sear for 5 minutes, stirring to flip them. Add the garlic and salt and pepper to taste. Sear another 5 minutes to develop a rich caramelized color.",
-            "Stir in the thyme leaves and sherry. Lower heat to medium-low and simmer about 10 minutes, stirring occasionally, until the mushrooms have absorbed the sherry and only a small amount of moisture remains in the pan.",
-            "Taste and adjust salt and pepper. Serve warm over steak, chicken, pork chops, or as a side dish."
           ]
         },
         {
-          "title": "Brown Butter Mashed Potatoes",
-          "servings": "Serves 12",
-          "source": "Food Network / Ree Drummond",
-          "ingredientGroups": [
+          "title": "Stovetop",
+          "recipes": [
             {
-              "label": "Potatoes",
-              "ingredients": [
-                "5 pounds Yukon gold potatoes, peeled and cut into chunks"
+              "title": "Sautéed Mushrooms",
+              "servings": "Serves 6   |   Prep: 10 min   |   Cook: 20 min   |   Total: 30 min",
+              "source": "Sommer Collier, A Spicy Perspective",
+              "comments": [
+                "The classic steak topping — also great over chicken, pork chops, or grain bowls. Have patience: let the mushrooms release all their moisture before they begin to brown. Leftovers keep in the fridge up to 10 days; reheat on the stovetop with a little extra butter."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Mushrooms and fat",
+                  "ingredients": [
+                    "2 pounds button mushrooms, halved",
+                    "2 tablespoons unsalted butter",
+                    "2 tablespoons olive oil"
+                  ]
+                },
+                {
+                  "label": "Aromatics",
+                  "ingredients": [
+                    "3 garlic cloves, minced",
+                    "Salt and pepper to taste"
+                  ]
+                },
+                {
+                  "label": "Glaze",
+                  "ingredients": [
+                    "1½ tablespoons fresh thyme leaves",
+                    "¾ cup dry sherry"
+                  ]
+                }
+              ],
+              "steps": [
+                "Place a large sauté pan over medium heat. Add the butter and olive oil. Once the butter has melted, add the mushrooms.",
+                "Let the mushrooms sear for 5 minutes, stirring to flip them. Add the garlic and salt and pepper to taste. Sear another 5 minutes to develop a rich caramelized color.",
+                "Stir in the thyme leaves and sherry. Lower heat to medium-low and simmer about 10 minutes, stirring occasionally, until the mushrooms have absorbed the sherry and only a small amount of moisture remains in the pan.",
+                "Taste and adjust salt and pepper. Serve warm over steak, chicken, pork chops, or as a side dish."
               ]
             },
             {
-              "label": "Brown butter",
-              "ingredients": [
-                "2 1/2 sticks (1 1/4 cups) salted butter"
+              "title": "Classic Steakhouse Creamed Spinach",
+              "servings": "Serves 6",
+              "source": "Sabrina Snyder / Dinner, then Dessert",
+              "comments": [
+                "Can be made a day ahead and refrigerated; reheat gently on the stovetop with a splash of milk or cream to loosen."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Spinach",
+                  "ingredients": [
+                    "2 1/4 pounds fresh spinach (or 1 pound frozen spinach, defrosted and squeezed dry)",
+                    "2 teaspoons kosher salt"
+                  ]
+                },
+                {
+                  "label": "Cream sauce base",
+                  "ingredients": [
+                    "4 tablespoons unsalted butter",
+                    "1 medium yellow onion, minced",
+                    "3 cloves garlic, minced",
+                    "2 teaspoons kosher salt",
+                    "1 teaspoon coarse ground black pepper",
+                    "1/2 teaspoon ground nutmeg",
+                    "1/4 cup all-purpose flour",
+                    "3 1/2 cups half-and-half"
+                  ]
+                },
+                {
+                  "label": "Cheese",
+                  "ingredients": [
+                    "1 cup shredded mozzarella",
+                    "4 oz cream cheese",
+                    "1/2 cup grated Parmesan"
+                  ]
+                }
+              ],
+              "steps": [
+                "Bring a large pot of water to a boil with 2 teaspoons salt. Add spinach and cook just until wilted, about 1 minute. Drain, rinse with cold water, and squeeze out as much water as possible in fistfuls. Chop into 3/4-inch pieces.",
+                "Melt butter in a large skillet over medium-low. Add onion and garlic; cook until onions are translucent, 8 to 10 minutes.",
+                "Stir in remaining 2 teaspoons salt, pepper, and nutmeg. Add flour and stir over low heat until the mixture smells nutty, 2 to 3 minutes.",
+                "Pour in half-and-half and cook, stirring, until the mixture comes to a boil.",
+                "Add mozzarella and cream cheese; stir until smooth. Cook until thickened, 6 to 8 minutes.",
+                "Stir in spinach and Parmesan. Serve hot."
               ]
             },
             {
-              "label": "Enrichments",
-              "ingredients": [
-                "1 1/2 packages (12 oz total) cream cheese, softened",
-                "1/2 cup half-and-half",
-                "1/2 cup heavy cream",
-                "Kosher salt and black pepper",
-                "Splash of milk to thin, if needed"
+              "title": "Kickin' Collard Greens",
+              "servings": "Serves 6",
+              "source": "Ken Adams / Allrecipes",
+              "ingredientGroups": [
+                {
+                  "label": "Aromatics",
+                  "ingredients": [
+                    "1 tablespoon olive oil",
+                    "3 slices bacon",
+                    "1 large onion, chopped",
+                    "2 cloves garlic, minced"
+                  ]
+                },
+                {
+                  "label": "Greens",
+                  "ingredients": [
+                    "1 pound fresh collard greens, washed and cut into 2-inch pieces"
+                  ]
+                },
+                {
+                  "label": "Braising liquid",
+                  "ingredients": [
+                    "3 cups chicken broth",
+                    "1 teaspoon salt",
+                    "1 teaspoon black pepper",
+                    "1 pinch Aleppo pepper or red pepper flakes, or more to taste"
+                  ]
+                }
+              ],
+              "steps": [
+                "Heat oil in a large pot over medium-high. Add bacon and cook until crisp, 5 to 7 minutes. Remove with a slotted spoon, crumble, and return to the pot.",
+                "Add onion and cook until tender, about 5 minutes. Add garlic and cook until just fragrant, about 1 minute more. Add collard greens and stir until they start to wilt.",
+                "Pour in chicken broth and season with salt, pepper, and Aleppo pepper. Reduce heat to low, cover, and simmer until greens are very tender, about 45 minutes. Taste and add more Aleppo pepper for heat if desired."
               ]
             },
             {
-              "label": "To serve",
-              "ingredients": [
-                "Fresh parsley, chopped"
+              "title": "Eggplant Caponata",
+              "servings": "Serves 4–6",
+              "source": "From Chef Louisa (Villa Britannia, Taormina, Sicily)",
+              "comments": [
+                "Even better a day or two after making — serve warm or cold, as a starter or side.",
+                "The two add-in options (olives and capers, or raisins and pine nuts) can be used separately or mixed together.",
+                "Optional additional vegetables: carrots (parboil 3 minutes like the celery), zucchini or potatoes (deep-fry with the eggplant), artichoke hearts (parboil)."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Eggplant (1 hour ahead)",
+                  "ingredients": [
+                    "600g eggplant, peeled mostly (leaving a little skin), diced into roughly 2 cm cubes",
+                    "1 tablespoon fine salt (for draining)",
+                    "500ml sunflower or peanut oil (for frying)"
+                  ]
+                },
+                {
+                  "label": "Peppers",
+                  "ingredients": [
+                    "500g mixed-color peppers, diced into roughly 2 cm pieces"
+                  ]
+                },
+                {
+                  "label": "Base",
+                  "ingredients": [
+                    "100ml extra-virgin olive oil",
+                    "200g red onion, diced into 1 cm pieces",
+                    "200g celery (outer stalks), lightly peeled, cut into 1 cm pieces (briefly boil in unsalted water 3 minutes — keep crunch)",
+                    "300g cherry or plum tomatoes, roughly chopped"
+                  ]
+                },
+                {
+                  "label": "Sweet-sour finish",
+                  "ingredients": [
+                    "30g (about 2 tablespoons) brown sugar",
+                    "100ml red wine vinegar"
+                  ]
+                },
+                {
+                  "label": "Add-ins",
+                  "ingredients": [
+                    "100g green olives, rinsed and roughly chopped; and 50g capers, desalted and roughly chopped",
+                    "OR: 100g raisins; and 50g pine nuts"
+                  ]
+                },
+                {
+                  "label": "To finish",
+                  "ingredients": [
+                    "Large handful of fresh basil leaves, torn"
+                  ]
+                }
+              ],
+              "steps": [
+                "Toss diced eggplant with the salt in a colander. Place a weighted plate on top (with a bowl underneath). Leave at least 1 hour. Squeeze handfuls to remove remaining moisture before frying.",
+                "Heat sunflower oil in a deep pan until sizzling. Fry eggplant in batches until lightly browned. Remove and drain on kitchen paper. Fry the peppers in the same oil last (they discolor the oil). Drain on kitchen paper.",
+                "In a large pan, heat olive oil over medium heat. Add onion and sweat until soft. Add celery and cook on low 5 minutes.",
+                "Push vegetables to one side of the pan. Add sugar to the exposed side and let it caramelize. Pour red wine vinegar over everything, stir, and let it begin to evaporate.",
+                "Add olives and capers, or raisins and pine nuts (or both). Add tomatoes. Add the fried eggplant and peppers. Warm gently a few minutes — keep each vegetable distinct, do not overcook.",
+                "Tear in the basil. Allow to cool. Ideally make 1–2 days ahead to let flavors develop."
+              ]
+            },
+            {
+              "title": "Mexican Street Corn (Elotes)",
+              "servings": "Serves 4",
+              "source": "Chef Billy Parisi / The Inspired Home",
+              "comments": [
+                "Cotija is a firm, salty Mexican cheese. Feta or Parmesan can substitute if unavailable.",
+                "Ancho chili powder has a mild, slightly fruity heat; regular chili powder works if ancho isn't available."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Corn",
+                  "ingredients": [
+                    "4 ears of corn, shucked"
+                  ]
+                },
+                {
+                  "label": "Topping",
+                  "ingredients": [
+                    "1/3 cup Mexican crema or sour cream",
+                    "1/3 cup mayonnaise",
+                    "2 cloves garlic, finely minced",
+                    "1 teaspoon ancho chili powder, plus more for garnish",
+                    "1 tablespoon fresh cilantro, finely minced, plus more for garnish",
+                    "1/2 cup crumbled cotija cheese, plus more for garnish",
+                    "1/4 teaspoon kosher salt"
+                  ]
+                },
+                {
+                  "label": "Garnish",
+                  "ingredients": [
+                    "Lime wedges"
+                  ]
+                }
+              ],
+              "steps": [
+                "Preheat grill to high heat (450 to 550 degrees F).",
+                "Grill corn, turning occasionally, until cooked through and lightly charred on all sides. Keep warm on a cooler part of the grill.",
+                "In a bowl, whisk together crema, mayonnaise, garlic, chili powder, cilantro, cotija, and salt.",
+                "Generously coat each ear of corn with the crema mixture. Garnish with more chili powder, cilantro, and cotija. Serve with lime wedges."
+              ]
+            },
+            {
+              "title": "Red Cabbage With Walnuts and Feta",
+              "servings": "Serves 6 to 8",
+              "source": "Melissa Clark / New York Times Cooking",
+              "comments": [
+                "Works equally well as a substantial side or light main course.",
+                "A small head of green cabbage also works, though it may cook a bit faster."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Cabbage",
+                  "ingredients": [
+                    "1 medium red cabbage (1 3/4 to 2 pounds)",
+                    "3 tablespoons extra-virgin olive oil",
+                    "1/2 teaspoon salt"
+                  ]
+                },
+                {
+                  "label": "Vinaigrette",
+                  "ingredients": [
+                    "1 tablespoon apple cider vinegar, plus more to taste",
+                    "1/2 teaspoon Dijon mustard",
+                    "1/2 teaspoon salt",
+                    "3 tablespoons extra-virgin olive oil"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "2/3 cup crumbled feta (3 oz)",
+                    "1/3 cup walnuts, toasted and coarsely chopped",
+                    "Lemon zest",
+                    "Pomegranate seeds",
+                    "Chopped mint, parsley, or dill (optional)"
+                  ]
+                }
+              ],
+              "steps": [
+                "Heat oven to 425 degrees F. Peel any damaged outer leaves from the cabbage. Halve through the core, then cut each half into 1- to 1 1/2-inch wedges, keeping the layers together.",
+                "Arrange wedges on their sides on a sheet pan. Drizzle with 3 tablespoons olive oil and sprinkle with 1/2 teaspoon salt. Roast 20 minutes, flip, and continue roasting until cores are tender and edges are browned, 10 to 20 minutes more.",
+                "While cabbage roasts, whisk together vinegar, mustard, and 1/2 teaspoon salt until salt dissolves. Whisk in 3 tablespoons olive oil until emulsified. Taste and adjust with more vinegar or salt.",
+                "Arrange cabbage on a platter and drizzle with vinaigrette. Top with feta, walnuts, lemon zest, pomegranate seeds, and herbs if using. Serve hot or at room temperature."
+              ]
+            },
+            {
+              "title": "Gochujang Stir-Fried Brussels Sprouts",
+              "servings": "Serves 8 as a side",
+              "source": "Dana / Minimalist Baker",
+              "comments": [
+                "Use gochujang sauce (the ready-to-use sauce), not gochujang paste -- they are different products. Find it at Korean grocery stores or in the international aisle."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Sauce",
+                  "ingredients": [
+                    "1/2 cup Korean gochujang sauce (homemade or store-bought)",
+                    "1 tablespoon sesame oil",
+                    "1/3 cup soy sauce",
+                    "2 to 3 tablespoons maple syrup",
+                    "1 1/2 tablespoons chili garlic sauce",
+                    "1 pinch sea salt"
+                  ]
+                },
+                {
+                  "label": "Brussels sprouts",
+                  "ingredients": [
+                    "1 tablespoon sesame or avocado oil",
+                    "7 heaping cups Brussels sprouts, halved and stems trimmed",
+                    "3 tablespoons soy sauce"
+                  ]
+                },
+                {
+                  "label": "To serve (optional)",
+                  "ingredients": [
+                    "Thinly sliced shallot or green onion",
+                    "Chopped roasted salted peanuts"
+                  ]
+                }
+              ],
+              "steps": [
+                "Make the sauce: whisk together gochujang sauce, sesame oil, soy sauce, maple syrup, chili garlic sauce, and salt. Taste and adjust -- more chili garlic sauce for heat, maple syrup for sweetness. Set aside.",
+                "Heat a large cast-iron or heavy skillet over medium-high. Add oil, then Brussels sprouts. Add 3 tablespoons soy sauce and toss to coat. Spread so each cut side touches the pan surface.",
+                "Cover and cook 2 minutes. Uncover and stir-fry, turning occasionally, until well browned and caramelized on all sides, 2 to 4 minutes more.",
+                "Add sliced shallot or green onion if using. Pour in the prepared sauce and stir-fry 1 to 2 minutes more to coat and caramelize.",
+                "Transfer to a platter. Garnish with crushed peanuts if desired. Serve hot."
+              ]
+            },
+            {
+              "title": "Broccoli with Garlic Sauce",
+              "servings": "Serves 4",
+              "source": "I Heart Umami / ChihYu Smith",
+              "comments": [
+                "Can substitute vegetable broth for chicken broth to make vegetarian.",
+                "Cornstarch can be substituted for tapioca starch in equal measure — both thicken similarly in this sauce."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Garlic sauce",
+                  "ingredients": [
+                    "1 oz garlic cloves (about 5 large), grated or crushed, divided in half",
+                    "1/2 cup chicken broth",
+                    "3 teaspoons tapioca starch (or cornstarch)"
+                  ]
+                },
+                {
+                  "label": "Broccoli",
+                  "ingredients": [
+                    "1 tablespoon avocado oil",
+                    "15 oz broccoli florets",
+                    "1/2 cup chicken broth (for steaming)",
+                    "1/4 teaspoon coarse sea salt"
+                  ]
+                },
+                {
+                  "label": "To serve (optional)",
+                  "ingredients": [
+                    "1/4 teaspoon Takii shiitake mushroom seasoning",
+                    "1 teaspoon toasted sesame oil"
+                  ]
+                }
+              ],
+              "steps": [
+                "Mix 1/2 cup chicken broth with tapioca starch or cornstarch until dissolved; set aside. Grate or crush garlic and divide in half.",
+                "Heat avocado oil in a wide skillet over medium-high heat. Add half the garlic and cook 30 seconds until fragrant. Add broccoli and cook 1 minute.",
+                "Add remaining 1/2 cup broth to skillet; cover and steam broccoli 2 minutes.",
+                "Add remaining garlic and the starch slurry. Toss to coat and cook until sauce thickens, 30–60 seconds.",
+                "Season with salt; add shiitake seasoning and sesame oil if using. Serve immediately."
+              ]
+            },
+            {
+              "title": "Garlicky Broccoli Stir-Fry",
+              "servings": "Serves 4",
+              "source": "Sarah Leung / The Woks of Life",
+              "comments": [
+                "Blanching the broccoli first keeps the sauce clean and ensures tenderness without overcooking.",
+                "Shaoxing wine is a Chinese rice wine; dry sherry can substitute. For vegetarian/vegan, use vegetable stock."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Cornstarch slurry",
+                  "ingredients": [
+                    "1 tablespoon cornstarch",
+                    "2 tablespoons water"
+                  ]
+                },
+                {
+                  "label": "Stir-fry",
+                  "ingredients": [
+                    "4 cups broccoli florets",
+                    "5 cloves garlic, minced",
+                    "1 tablespoon neutral oil",
+                    "1 tablespoon Shaoxing wine",
+                    "1/2 cup chicken stock or vegetable stock",
+                    "1 teaspoon salt",
+                    "1/8 teaspoon white pepper",
+                    "1/2 teaspoon sesame oil"
+                  ]
+                }
+              ],
+              "steps": [
+                "Mix cornstarch into water and stir until completely dissolved; set aside.",
+                "Bring a large pot of water to a boil. Blanch broccoli for 1 minute. Drain and transfer to cold water to stop cooking. Drain well.",
+                "Heat a wok or large skillet over high heat until very hot. Add oil, garlic, broccoli, and Shaoxing wine. Stir-fry 1 minute, then pour in stock. Bring to a boil.",
+                "Season with salt, white pepper, and sesame oil. Stir the cornstarch slurry, then add half to the pan. Stir until the sauce thickens to coat the back of a spoon; add more slurry if needed.",
+                "Plate and serve hot."
+              ]
+            },
+            {
+              "title": "Stir-Fried Spinach With Garlic",
+              "favorite": true,
+              "servings": "Serves 3 to 4",
+              "source": "Rhonda Parkinson / The Spruce Eats",
+              "ingredientGroups": [
+                {
+                  "label": "Stir-fry",
+                  "ingredients": [
+                    "2 tablespoons peanut or vegetable oil",
+                    "1 teaspoon minced garlic",
+                    "1/4 teaspoon chili paste, more to taste",
+                    "1/2 teaspoon fine salt, more to taste",
+                    "10 oz fresh spinach, rinsed and dried"
+                  ]
+                },
+                {
+                  "label": "Finish",
+                  "ingredients": [
+                    "1/4 teaspoon granulated sugar",
+                    "1/4 teaspoon sesame oil",
+                    "1 teaspoon freshly ground black pepper (optional)"
+                  ]
+                }
+              ],
+              "steps": [
+                "Heat a wok over medium heat. Add oil, swirling to coat the pan about halfway up the sides.",
+                "When the oil is hot, add garlic, chili paste, and salt. Stir a few seconds until the garlic is aromatic.",
+                "Add spinach and stir-fry until leaves are almost wilted, 1 to 2 minutes.",
+                "Stir in sugar and sesame oil. Sprinkle with black pepper if using. Serve immediately."
               ]
             }
-          ],
-          "steps": [
-            "Boil potatoes in salted water until very tender, about 20–25 minutes. Drain.",
-            "Melt butter in a light-colored skillet over medium heat, swirling frequently, until milk solids turn golden brown and butter smells nutty, about 5–8 minutes. Watch carefully to avoid burning.",
-            "Mash or rice potatoes in a large bowl. Add brown butter, cream cheese, half-and-half, and heavy cream; stir until smooth. Season generously with salt and pepper. Thin with a splash of milk if needed.",
-            "Serve topped with fresh parsley."
           ]
         },
         {
-          "title": "Crispy Smashed Potatoes",
-          "favorite": true,
-          "servings": "Serves 6",
-          "source": "Modern Honey / Melissa Stadler",
-          "ingredientGroups": [
+          "title": "Oven",
+          "recipes": [
             {
-              "label": "Potatoes",
-              "ingredients": [
-                "1 1/2 pounds petite Yukon gold or fingerling potatoes"
+              "title": "Herby Roasted Carrots and Radishes",
+              "servings": "Serves 6",
+              "source": "Food Network / Ree Drummond",
+              "ingredientGroups": [
+                {
+                  "label": "Vegetables",
+                  "ingredients": [
+                    "2 pounds rainbow carrots, halved lengthwise",
+                    "1 pound radishes, halved",
+                    "2 jalapenos, sliced",
+                    "2 tablespoons olive oil",
+                    "2 teaspoons kosher salt",
+                    "Black pepper"
+                  ]
+                },
+                {
+                  "label": "Herb oil",
+                  "ingredients": [
+                    "1 cup fresh cilantro, chopped",
+                    "1 cup fresh parsley, chopped",
+                    "Zest and juice of 1 lemon",
+                    "Pinch Aleppo pepper or red pepper flakes",
+                    "1/2 cup olive oil",
+                    "1/2 teaspoon sea salt"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "1/2 cup raw sliced almonds, toasted"
+                  ]
+                }
+              ],
+              "steps": [
+                "Preheat oven to 475 degrees F. Toss carrots, radishes, and jalapenos with 2 tablespoons olive oil, salt, and pepper; spread on a rimmed baking sheet. Roast 15–18 minutes until caramelized at edges.",
+                "Meanwhile, whisk together cilantro, parsley, lemon zest and juice, Aleppo pepper or red pepper flakes, 1/2 cup olive oil, and sea salt in a bowl.",
+                "Toast almonds in a dry skillet over medium heat until golden, about 3–4 minutes.",
+                "Spoon herb oil over roasted vegetables on a serving platter; scatter toasted almonds over the top."
               ]
             },
             {
-              "label": "Drizzle",
-              "ingredients": [
-                "3 tablespoons salted butter, melted",
-                "2 tablespoons extra-virgin olive oil",
-                "1 teaspoon salt",
-                "1/2 teaspoon pepper"
+              "title": "Baked Zucchini Fries",
+              "favorite": true,
+              "servings": "Serves 6",
+              "source": "Chungah Rhee / Damn Delicious",
+              "comments": [
+                "Using a cooling rack elevates the fries so air circulates underneath, crisping all sides rather than steaming the bottom.",
+                "Best served right out of the oven."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Coating",
+                  "ingredients": [
+                    "1 cup Panko breadcrumbs",
+                    "1/2 cup freshly grated Parmesan",
+                    "1 teaspoon Italian seasoning",
+                    "Kosher salt and black pepper to taste"
+                  ]
+                },
+                {
+                  "label": "Zucchini",
+                  "ingredients": [
+                    "2 medium zucchini, quartered lengthwise"
+                  ]
+                },
+                {
+                  "label": "For breading",
+                  "ingredients": [
+                    "1/2 cup all-purpose flour",
+                    "2 large eggs, beaten"
+                  ]
+                },
+                {
+                  "label": "Garnish",
+                  "ingredients": [
+                    "2 tablespoons chopped fresh parsley"
+                  ]
+                }
+              ],
+              "steps": [
+                "Preheat oven to 425 degrees F. Set a cooling rack on a sheet pan and coat with cooking spray.",
+                "Combine Panko, Parmesan, and Italian seasoning in a bowl; season with salt and pepper.",
+                "Dredge zucchini spears in flour, dip in beaten eggs, then coat thoroughly in the Panko mixture, pressing to adhere.",
+                "Arrange on the cooling rack and bake until golden and crisp, 20 to 22 minutes.",
+                "Serve immediately, garnished with parsley."
               ]
             },
             {
-              "label": "Garlic cheddar dip",
-              "ingredients": [
-                "8 oz sour cream",
-                "3/4 cup cheddar cheese, grated",
-                "1 garlic clove, minced (or 1/4 teaspoon garlic powder)",
-                "1/2 teaspoon garlic salt",
-                "1/4 teaspoon pepper"
+              "title": "Beets With Horseradish and Pumpkin Seeds",
+              "servings": "Serves 4",
+              "source": "Vallery Lomas / New York Times Cooking",
+              "comments": [
+                "Do ahead: beets can be roasted and peeled up to 2 days ahead (slice just before serving); horseradish cream and toasted seeds can also be made ahead.",
+                "Plain yogurt works as a substitute for sour cream.",
+                "Beet greens: saute in olive oil and finish with a splash of balsamic vinegar for an excellent accompaniment."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Beets",
+                  "ingredients": [
+                    "1 small bunch red beets (about 1 pound), washed and stems removed",
+                    "1 small bunch golden beets (about 1 pound), washed and stems removed",
+                    "2 tablespoons extra-virgin olive oil",
+                    "Salt and black pepper"
+                  ]
+                },
+                {
+                  "label": "Horseradish cream",
+                  "ingredients": [
+                    "1/2 cup sour cream",
+                    "2 tablespoons prepared horseradish",
+                    "2 tablespoons fresh lemon juice",
+                    "1/4 teaspoon each salt and pepper"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "1/4 cup raw pumpkin seeds (pepitas)"
+                  ]
+                }
+              ],
+              "steps": [
+                "Heat oven to 375 degrees F. Place all beets on a large sheet of foil, drizzle with olive oil, and wrap tightly. Roast until tender, 65 to 70 minutes. Remove from oven and let cool slightly. Peel skins (use a paring knife if needed).",
+                "While beets roast, whisk together sour cream, horseradish, lemon juice, 1/4 teaspoon salt, and 1/4 teaspoon pepper. Taste and adjust seasoning.",
+                "Toast pumpkin seeds in a small dry skillet over medium heat, shaking, until they begin to pop and smell nutty, 2 to 3 minutes.",
+                "Slice peeled beets 1/4-inch thick and arrange on a serving platter. Season with salt and pepper. Spoon horseradish cream over the top and scatter with toasted pumpkin seeds. Serve warm or at room temperature."
               ]
             },
             {
-              "label": "To serve",
-              "ingredients": [
-                "Fresh parsley, chopped"
-              ]
-            }
-          ],
-          "steps": [
-            "Cook potatoes: boil in salted water until fork-tender, 20–25 minutes, then drain. Alternatively, roast at 425 degrees F for about 25 minutes until just tender — this produces a drier potato and results in a crispier final texture after smashing.",
-            "Preheat oven to 425 degrees F (if using the boiling method). Arrange potatoes on a greased rimmed baking sheet. Smash each potato with the bottom of a glass or measuring cup until about 1/2-inch thick.",
-            "Mix melted butter, olive oil, salt, and pepper; drizzle over smashed potatoes.",
-            "Roast 35–45 minutes until deeply golden and crispy.",
-            "Meanwhile, stir together all dip ingredients until combined. Refrigerate until ready to serve.",
-            "Serve potatoes hot with garlic cheddar dip and fresh parsley."
-          ]
-        },
-        {
-          "title": "Herby Roasted Carrots and Radishes",
-          "servings": "Serves 6",
-          "source": "Food Network / Ree Drummond",
-          "ingredientGroups": [
-            {
-              "label": "Vegetables",
-              "ingredients": [
-                "2 pounds rainbow carrots, halved lengthwise",
-                "1 pound radishes, halved",
-                "2 jalapenos, sliced",
-                "2 tablespoons olive oil",
-                "2 teaspoons kosher salt",
-                "Black pepper"
-              ]
-            },
-            {
-              "label": "Herb oil",
-              "ingredients": [
-                "1 cup fresh cilantro, chopped",
-                "1 cup fresh parsley, chopped",
-                "Zest and juice of 1 lemon",
-                "Pinch Aleppo pepper or red pepper flakes",
-                "1/2 cup olive oil",
-                "1/2 teaspoon sea salt"
-              ]
-            },
-            {
-              "label": "To serve",
-              "ingredients": [
-                "1/2 cup raw sliced almonds, toasted"
-              ]
-            }
-          ],
-          "steps": [
-            "Preheat oven to 475 degrees F. Toss carrots, radishes, and jalapenos with 2 tablespoons olive oil, salt, and pepper; spread on a rimmed baking sheet. Roast 15–18 minutes until caramelized at edges.",
-            "Meanwhile, whisk together cilantro, parsley, lemon zest and juice, Aleppo pepper or red pepper flakes, 1/2 cup olive oil, and sea salt in a bowl.",
-            "Toast almonds in a dry skillet over medium heat until golden, about 3–4 minutes.",
-            "Spoon herb oil over roasted vegetables on a serving platter; scatter toasted almonds over the top."
-          ]
-        },
-        {
-          "title": "Over-the-Top Scalloped Potatoes",
-          "servings": "Serves 6–8",
-          "source": "Food Network / Ree Drummond",
-          "comments": [
-            "Contains bacon."
-          ],
-          "ingredientGroups": [
-            {
-              "label": "Onion and bacon",
-              "ingredients": [
-                "2 tablespoons salted butter",
-                "1 large white onion, thinly sliced",
-                "5 slices bacon, diced"
+              "title": "Brussels Sprouts With Pistachios and Lime",
+              "servings": "Serves 8 to 10",
+              "source": "Christina Chaey and Claire Saffitz / Bon Appetit, November 2019",
+              "comments": [
+                "Do ahead: Brussels sprouts can be roasted and the butter-pistachio mixture can be made up to 3 hours ahead; toss with glaze just before serving.",
+                "Date molasses (also called date syrup) adds a rich, caramel-like sweetness. Pomegranate molasses makes a brighter, more tart version."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Brussels sprouts",
+                  "ingredients": [
+                    "2 pounds Brussels sprouts, trimmed and halved",
+                    "3 tablespoons vegetable oil",
+                    "Kosher salt and freshly ground black pepper"
+                  ]
+                },
+                {
+                  "label": "Brown butter and pistachios",
+                  "ingredients": [
+                    "3 tablespoons unsalted butter",
+                    "3 tablespoons raw pistachios",
+                    "Pinch of salt"
+                  ]
+                },
+                {
+                  "label": "Glaze",
+                  "ingredients": [
+                    "2 tablespoons date molasses or pomegranate molasses",
+                    "1 teaspoon honey",
+                    "2 tablespoons fresh lime juice",
+                    "1 tablespoon water"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "Zest of 1/2 lime",
+                    "1/2 teaspoon Aleppo pepper or red pepper flakes",
+                    "Lime wedges"
+                  ]
+                }
+              ],
+              "steps": [
+                "Heat oven to 450 degrees F. Toss Brussels sprouts with vegetable oil on a large rimmed baking sheet; season with salt and pepper. Roast, shaking the pan once, until deeply browned on cut sides, about 15 to 25 minutes. Reduce heat to 350 degrees F and continue roasting until a knife slides through easily, 10 to 20 minutes more (35 to 45 minutes total).",
+                "Meanwhile, melt butter in a small skillet over medium heat. Add pistachios and a pinch of salt. Cook, stirring occasionally, until butter is golden brown and nutty, about 4 minutes. Transfer nuts to paper towels and let cool slightly, then coarsely chop.",
+                "In a large bowl, whisk together date molasses, honey, lime juice, and 1 tablespoon water. Add the warm roasted Brussels sprouts and toss to coat.",
+                "Transfer to a platter and scatter chopped pistachios, lime zest, Aleppo pepper, and a pinch of salt over the top. Serve with lime wedges."
               ]
             },
             {
-              "label": "Cream sauce",
-              "ingredients": [
-                "2 cups heavy cream",
-                "1 cup half-and-half",
-                "1/4 cup all-purpose flour",
-                "1 teaspoon freshly ground black pepper",
-                "Pinch kosher salt"
+              "title": "Crack Broccoli",
+              "favorite": true,
+              "servings": "Serves 6",
+              "source": "Jessica Knott / Swanky Recipes",
+              "comments": [
+                "Dry ranch seasoning adds a savory, slightly tangy character. Don't skip it.",
+                "The high oven temperature is essential -- lower temperatures steam rather than char the broccoli."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Seasoned oil",
+                  "ingredients": [
+                    "1/3 cup olive oil (not extra-virgin)",
+                    "Zest of 1/2 lemon",
+                    "2 teaspoons fresh lemon juice",
+                    "1 1/2 teaspoons salt",
+                    "1/2 teaspoon black pepper",
+                    "1/8 teaspoon Aleppo pepper or red pepper flakes",
+                    "1 1/2 teaspoons dry ranch seasoning powder",
+                    "5 cloves garlic, minced (or 1 teaspoon garlic paste)"
+                  ]
+                },
+                {
+                  "label": "Broccoli",
+                  "ingredients": [
+                    "2 1/2 pounds broccoli crowns, cut into florets or 1/2-inch-thick steaks"
+                  ]
+                },
+                {
+                  "label": "Finish",
+                  "ingredients": [
+                    "1/4 cup raw sliced almonds",
+                    "1/3 cup grated Parmesan"
+                  ]
+                }
+              ],
+              "steps": [
+                "Preheat oven to 475 degrees F (or 450 degrees F for less char).",
+                "Whisk together olive oil, lemon zest, lemon juice, salt, pepper, Aleppo pepper, ranch seasoning, and garlic in a large bowl. Add broccoli and toss to coat.",
+                "Spread in a single layer on a large rimmed sheet pan. Roast 10 to 12 minutes. Remove from oven, flip broccoli, and scatter almonds over the pan.",
+                "Return to oven for 5 to 10 minutes more, until broccoli is tender with deeply charred edges and almonds are toasted.",
+                "Remove from oven and immediately sprinkle with Parmesan."
               ]
             },
             {
-              "label": "Cheese",
-              "ingredients": [
-                "1 cup fontina, grated",
-                "1 cup Gruyere, grated"
+              "title": "Zucchini Involtini",
+              "servings": "Serves 4 as a side",
+              "source": "From Chef Louisa (Villa Britannia, Taormina, Sicily)",
+              "comments": [
+                "Same herbed breadcrumb coating as all Villa Britannia involtini (1 part Parmesan to 3 parts fresh breadcrumbs).",
+                "'Blanched tomatoes' means briefly blanched and peeled before chopping."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Bread coating",
+                  "ingredients": [
+                    "1 1/2 cups fresh breadcrumbs (grated or food-processed from crustless white bread)",
+                    "1/2 cup Parmesan, grated",
+                    "2 tablespoons flat-leaf parsley, finely chopped",
+                    "1 clove garlic, finely chopped",
+                    "Salt and pepper to taste"
+                  ]
+                },
+                {
+                  "label": "Zucchini and filling",
+                  "ingredients": [
+                    "3–4 medium zucchini",
+                    "Salt and olive oil",
+                    "2–3 plum tomatoes, blanched, peeled, and roughly chopped",
+                    "Hard cheese (Parmesan, Emmental, or pecorino), cut in small pieces"
+                  ]
+                }
+              ],
+              "steps": [
+                "Make the bread coating: combine breadcrumbs, Parmesan, parsley, garlic, salt, and pepper. Mix with your hands. Add blanched, chopped tomatoes and combine.",
+                "Cut zucchini lengthwise into very thin slices. Salt lightly on both sides and drizzle with olive oil.",
+                "Coat each zucchini slice in the bread coating. Add a little extra coating on top and place a small piece of hard cheese in the center. Roll up and thread onto wooden skewers.",
+                "Fry in a pan lined with baking paper over high heat with a small drizzle of olive oil, 4–6 minutes until lightly browned. Can also be grilled, barbecued, or baked."
               ]
             },
             {
-              "label": "Potatoes",
-              "ingredients": [
-                "3 pounds Yukon gold potatoes, sliced 1/8-inch thick (use a mandoline)"
+              "title": "Spicy Roasted Cauliflower with Sriracha and Sesame",
+              "servings": "Serves 4–6",
+              "source": "Todd Porter and Diane Cu / Epicurious",
+              "ingredientGroups": [
+                {
+                  "label": "Sauce",
+                  "ingredients": [
+                    "3 tablespoons sriracha",
+                    "2 tablespoons vegetable or canola oil",
+                    "2 tablespoons honey",
+                    "1 tablespoon toasted sesame oil",
+                    "1 tablespoon rice vinegar",
+                    "2 teaspoons soy sauce",
+                    "1/2 teaspoon garlic powder",
+                    "1/2 teaspoon kosher salt"
+                  ]
+                },
+                {
+                  "label": "Cauliflower",
+                  "ingredients": [
+                    "1 medium head cauliflower (about 2 1/2 pounds), cut into florets"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "2 tablespoons toasted sesame seeds",
+                    "2 scallions, thinly sliced"
+                  ]
+                }
+              ],
+              "steps": [
+                "Preheat oven to 450°F. In a large bowl, whisk together sriracha, vegetable oil, honey, sesame oil, rice vinegar, soy sauce, garlic powder, and salt.",
+                "Add cauliflower florets and toss until evenly coated. Spread on a large rimmed baking sheet in a single layer.",
+                "Roast until cauliflower is tender and charred in spots, 20–25 minutes.",
+                "Transfer to a platter. Sprinkle with sesame seeds and scallions and serve."
               ]
             },
             {
-              "label": "To serve",
-              "ingredients": [
-                "2 green onions, thinly sliced"
-              ]
-            }
-          ],
-          "steps": [
-            "Preheat oven to 350 degrees F. Melt butter in a large skillet over medium heat. Add onion and cook until caramelized, about 15 minutes. Add bacon and cook until crisp. Set aside.",
-            "Whisk together heavy cream, half-and-half, flour, pepper, and salt until smooth.",
-            "Layer half the potatoes in a greased 2-quart baking dish. Top with half the onion-bacon mixture, half the cream sauce, and half the cheese.",
-            "Repeat layers with remaining potatoes, onion-bacon, cream sauce, and cheese.",
-            "Cover tightly with foil and bake 40 minutes. Uncover and bake 20 minutes more until golden and bubbly. Let rest 10 minutes before serving. Top with sliced green onions."
-          ]
-        },
-        {
-          "title": "Perfect Twice Fried French Fries",
-          "servings": "Serves 4–6",
-          "source": "The Salted Potato / Renee Robinson",
-          "favorite": true,
-          "comments": [
-            "The first fry cooks the interior; the second fry crisps the exterior. Two-stage frying is the key to the classic bistro-style fry."
-          ],
-          "ingredientGroups": [
-            {
-              "label": "Fries",
-              "ingredients": [
-                "4 large Russet potatoes, cut into 1/4-inch sticks (unpeeled)",
-                "Ice water to cover"
-              ]
-            },
-            {
-              "label": "For frying",
-              "ingredients": [
-                "2 quarts peanut oil"
-              ]
-            },
-            {
-              "label": "To season",
-              "ingredients": [
-                "Salt",
-                "Aleppo pepper"
-              ]
-            }
-          ],
-          "steps": [
-            "Place potato sticks in a large bowl, cover with ice water, and soak at least 30 minutes (or up to overnight in the refrigerator). Drain and pat thoroughly dry.",
-            "Heat peanut oil to 325 degrees F in a large Dutch oven or heavy-bottomed pot.",
-            "Working in batches, fry potatoes 8–9 minutes until pale golden but not browned. Remove with a spider or slotted spoon; drain on a wire rack. Let rest at least 15 minutes (or cool completely and refrigerate up to 24 hours).",
-            "Heat oil to 350 degrees F. Working in batches, fry potatoes again until deep golden and very crisp, about 2 minutes.",
-            "Drain on wire rack; season immediately with salt and Aleppo pepper. Serve at once."
-          ]
-        },
-        {
-          "title": "Baked Zucchini Fries",
-          "favorite": true,
-          "servings": "Serves 6",
-          "source": "Chungah Rhee / Damn Delicious",
-          "comments": [
-            "Using a cooling rack elevates the fries so air circulates underneath, crisping all sides rather than steaming the bottom.",
-            "Best served right out of the oven."
-          ],
-          "ingredientGroups": [
-            {
-              "label": "Coating",
-              "ingredients": [
-                "1 cup Panko breadcrumbs",
-                "1/2 cup freshly grated Parmesan",
-                "1 teaspoon Italian seasoning",
-                "Kosher salt and black pepper to taste"
-              ]
-            },
-            {
-              "label": "Zucchini",
-              "ingredients": [
-                "2 medium zucchini, quartered lengthwise"
-              ]
-            },
-            {
-              "label": "For breading",
-              "ingredients": [
-                "1/2 cup all-purpose flour",
-                "2 large eggs, beaten"
-              ]
-            },
-            {
-              "label": "Garnish",
-              "ingredients": [
-                "2 tablespoons chopped fresh parsley"
-              ]
-            }
-          ],
-          "steps": [
-            "Preheat oven to 425 degrees F. Set a cooling rack on a sheet pan and coat with cooking spray.",
-            "Combine Panko, Parmesan, and Italian seasoning in a bowl; season with salt and pepper.",
-            "Dredge zucchini spears in flour, dip in beaten eggs, then coat thoroughly in the Panko mixture, pressing to adhere.",
-            "Arrange on the cooling rack and bake until golden and crisp, 20 to 22 minutes.",
-            "Serve immediately, garnished with parsley."
-          ]
-        },
-        {
-          "title": "Beets With Horseradish and Pumpkin Seeds",
-          "servings": "Serves 4",
-          "source": "Vallery Lomas / New York Times Cooking",
-          "comments": [
-            "Do ahead: beets can be roasted and peeled up to 2 days ahead (slice just before serving); horseradish cream and toasted seeds can also be made ahead.",
-            "Plain yogurt works as a substitute for sour cream.",
-            "Beet greens: saute in olive oil and finish with a splash of balsamic vinegar for an excellent accompaniment."
-          ],
-          "ingredientGroups": [
-            {
-              "label": "Beets",
-              "ingredients": [
-                "1 small bunch red beets (about 1 pound), washed and stems removed",
-                "1 small bunch golden beets (about 1 pound), washed and stems removed",
-                "2 tablespoons extra-virgin olive oil",
-                "Salt and black pepper"
-              ]
-            },
-            {
-              "label": "Horseradish cream",
-              "ingredients": [
-                "1/2 cup sour cream",
-                "2 tablespoons prepared horseradish",
-                "2 tablespoons fresh lemon juice",
-                "1/4 teaspoon each salt and pepper"
-              ]
-            },
-            {
-              "label": "To serve",
-              "ingredients": [
-                "1/4 cup raw pumpkin seeds (pepitas)"
-              ]
-            }
-          ],
-          "steps": [
-            "Heat oven to 375 degrees F. Place all beets on a large sheet of foil, drizzle with olive oil, and wrap tightly. Roast until tender, 65 to 70 minutes. Remove from oven and let cool slightly. Peel skins (use a paring knife if needed).",
-            "While beets roast, whisk together sour cream, horseradish, lemon juice, 1/4 teaspoon salt, and 1/4 teaspoon pepper. Taste and adjust seasoning.",
-            "Toast pumpkin seeds in a small dry skillet over medium heat, shaking, until they begin to pop and smell nutty, 2 to 3 minutes.",
-            "Slice peeled beets 1/4-inch thick and arrange on a serving platter. Season with salt and pepper. Spoon horseradish cream over the top and scatter with toasted pumpkin seeds. Serve warm or at room temperature."
-          ]
-        },
-        {
-          "title": "Brussels Sprouts With Pistachios and Lime",
-          "servings": "Serves 8 to 10",
-          "source": "Christina Chaey and Claire Saffitz / Bon Appetit, November 2019",
-          "comments": [
-            "Do ahead: Brussels sprouts can be roasted and the butter-pistachio mixture can be made up to 3 hours ahead; toss with glaze just before serving.",
-            "Date molasses (also called date syrup) adds a rich, caramel-like sweetness. Pomegranate molasses makes a brighter, more tart version."
-          ],
-          "ingredientGroups": [
-            {
-              "label": "Brussels sprouts",
-              "ingredients": [
-                "2 pounds Brussels sprouts, trimmed and halved",
-                "3 tablespoons vegetable oil",
-                "Kosher salt and freshly ground black pepper"
-              ]
-            },
-            {
-              "label": "Brown butter and pistachios",
-              "ingredients": [
-                "3 tablespoons unsalted butter",
-                "3 tablespoons raw pistachios",
-                "Pinch of salt"
-              ]
-            },
-            {
-              "label": "Glaze",
-              "ingredients": [
-                "2 tablespoons date molasses or pomegranate molasses",
-                "1 teaspoon honey",
-                "2 tablespoons fresh lime juice",
-                "1 tablespoon water"
-              ]
-            },
-            {
-              "label": "To serve",
-              "ingredients": [
-                "Zest of 1/2 lime",
-                "1/2 teaspoon Aleppo pepper or red pepper flakes",
-                "Lime wedges"
-              ]
-            }
-          ],
-          "steps": [
-            "Heat oven to 450 degrees F. Toss Brussels sprouts with vegetable oil on a large rimmed baking sheet; season with salt and pepper. Roast, shaking the pan once, until deeply browned on cut sides, about 15 to 25 minutes. Reduce heat to 350 degrees F and continue roasting until a knife slides through easily, 10 to 20 minutes more (35 to 45 minutes total).",
-            "Meanwhile, melt butter in a small skillet over medium heat. Add pistachios and a pinch of salt. Cook, stirring occasionally, until butter is golden brown and nutty, about 4 minutes. Transfer nuts to paper towels and let cool slightly, then coarsely chop.",
-            "In a large bowl, whisk together date molasses, honey, lime juice, and 1 tablespoon water. Add the warm roasted Brussels sprouts and toss to coat.",
-            "Transfer to a platter and scatter chopped pistachios, lime zest, Aleppo pepper, and a pinch of salt over the top. Serve with lime wedges."
-          ]
-        },
-        {
-          "title": "Classic Potato Gratin",
-          "servings": "Serves 6",
-          "source": "Claire Saffitz / Bon Appetit, November 2015",
-          "comments": [
-            "Do ahead: bake up to 1 day ahead; cover, refrigerate, bring to room temperature before broiling.",
-            "Do not rinse potato slices after cutting -- the starch is what makes the gratin creamy.",
-            "Comté is an excellent substitute for Gruyere."
-          ],
-          "ingredientGroups": [
-            {
-              "label": "Cream mixture",
-              "ingredients": [
-                "1 medium shallot, quartered through root end",
-                "1 1/4 cups heavy cream",
-                "1 1/2 teaspoons kosher salt",
-                "1/2 teaspoon freshly ground black pepper",
-                "1 1/2 teaspoons thyme leaves",
-                "2 cloves garlic"
-              ]
-            },
-            {
-              "label": "Gratin dish",
-              "ingredients": [
-                "1 small garlic clove, halved",
-                "1 1/2 teaspoons unsalted butter, room temperature"
-              ]
-            },
-            {
-              "label": "Potatoes",
-              "ingredients": [
-                "2 pounds russet potatoes, scrubbed and very thinly sliced on a mandoline (do not rinse after slicing)"
-              ]
-            },
-            {
-              "label": "Topping",
-              "ingredients": [
-                "1 1/2 oz Gruyere, finely grated",
-                "1/2 oz Parmesan, finely grated",
-                "Extra thyme leaves for serving"
-              ]
-            }
-          ],
-          "steps": [
-            "Preheat oven to 325 degrees F. Rub the inside of a 2-quart shallow baking dish with the cut sides of the halved garlic clove; smear with butter all over.",
-            "Combine shallot, cream, salt, pepper, thyme, and 2 garlic cloves in a small saucepan. Simmer over low heat until shallot and garlic are very soft, 15 to 20 minutes. Let cool slightly, then blend until smooth.",
-            "Fan out handfuls of potato slices and arrange in the buttered dish at a slight angle, shingling as you work. Tuck smaller slices into gaps. Pour cream mixture over potatoes. Cover tightly with foil.",
-            "Bake until potatoes are tender and creamy, 60 to 75 minutes (often closer to 90 -- baking the day ahead avoids this uncertainty). Let cool.",
-            "Heat broiler with rack in highest position. Remove foil and top potatoes with Gruyere and Parmesan. Broil until cheese is bubbling and golden, 5 to 10 minutes. Scatter with thyme leaves and serve."
-          ]
-        },
-        {
-          "title": "Classic Steakhouse Creamed Spinach",
-          "servings": "Serves 6",
-          "source": "Sabrina Snyder / Dinner, then Dessert",
-          "comments": [
-            "Can be made a day ahead and refrigerated; reheat gently on the stovetop with a splash of milk or cream to loosen."
-          ],
-          "ingredientGroups": [
-            {
-              "label": "Spinach",
-              "ingredients": [
-                "2 1/4 pounds fresh spinach (or 1 pound frozen spinach, defrosted and squeezed dry)",
-                "2 teaspoons kosher salt"
-              ]
-            },
-            {
-              "label": "Cream sauce base",
-              "ingredients": [
-                "4 tablespoons unsalted butter",
-                "1 medium yellow onion, minced",
-                "3 cloves garlic, minced",
-                "2 teaspoons kosher salt",
-                "1 teaspoon coarse ground black pepper",
-                "1/2 teaspoon ground nutmeg",
-                "1/4 cup all-purpose flour",
-                "3 1/2 cups half-and-half"
-              ]
-            },
-            {
-              "label": "Cheese",
-              "ingredients": [
-                "1 cup shredded mozzarella",
-                "4 oz cream cheese",
-                "1/2 cup grated Parmesan"
-              ]
-            }
-          ],
-          "steps": [
-            "Bring a large pot of water to a boil with 2 teaspoons salt. Add spinach and cook just until wilted, about 1 minute. Drain, rinse with cold water, and squeeze out as much water as possible in fistfuls. Chop into 3/4-inch pieces.",
-            "Melt butter in a large skillet over medium-low. Add onion and garlic; cook until onions are translucent, 8 to 10 minutes.",
-            "Stir in remaining 2 teaspoons salt, pepper, and nutmeg. Add flour and stir over low heat until the mixture smells nutty, 2 to 3 minutes.",
-            "Pour in half-and-half and cook, stirring, until the mixture comes to a boil.",
-            "Add mozzarella and cream cheese; stir until smooth. Cook until thickened, 6 to 8 minutes.",
-            "Stir in spinach and Parmesan. Serve hot."
-          ]
-        },
-        {
-          "title": "Crack Broccoli",
-          "favorite": true,
-          "servings": "Serves 6",
-          "source": "Jessica Knott / Swanky Recipes",
-          "comments": [
-            "Dry ranch seasoning adds a savory, slightly tangy character. Don't skip it.",
-            "The high oven temperature is essential -- lower temperatures steam rather than char the broccoli."
-          ],
-          "ingredientGroups": [
-            {
-              "label": "Seasoned oil",
-              "ingredients": [
-                "1/3 cup olive oil (not extra-virgin)",
-                "Zest of 1/2 lemon",
-                "2 teaspoons fresh lemon juice",
-                "1 1/2 teaspoons salt",
-                "1/2 teaspoon black pepper",
-                "1/8 teaspoon Aleppo pepper or red pepper flakes",
-                "1 1/2 teaspoons dry ranch seasoning powder",
-                "5 cloves garlic, minced (or 1 teaspoon garlic paste)"
-              ]
-            },
-            {
-              "label": "Broccoli",
-              "ingredients": [
-                "2 1/2 pounds broccoli crowns, cut into florets or 1/2-inch-thick steaks"
-              ]
-            },
-            {
-              "label": "Finish",
-              "ingredients": [
-                "1/4 cup raw sliced almonds",
-                "1/3 cup grated Parmesan"
-              ]
-            }
-          ],
-          "steps": [
-            "Preheat oven to 475 degrees F (or 450 degrees F for less char).",
-            "Whisk together olive oil, lemon zest, lemon juice, salt, pepper, Aleppo pepper, ranch seasoning, and garlic in a large bowl. Add broccoli and toss to coat.",
-            "Spread in a single layer on a large rimmed sheet pan. Roast 10 to 12 minutes. Remove from oven, flip broccoli, and scatter almonds over the pan.",
-            "Return to oven for 5 to 10 minutes more, until broccoli is tender with deeply charred edges and almonds are toasted.",
-            "Remove from oven and immediately sprinkle with Parmesan."
-          ]
-        },
-        {
-          "title": "Kickin' Collard Greens",
-          "servings": "Serves 6",
-          "source": "Ken Adams / Allrecipes",
-          "ingredientGroups": [
-            {
-              "label": "Aromatics",
-              "ingredients": [
-                "1 tablespoon olive oil",
-                "3 slices bacon",
-                "1 large onion, chopped",
-                "2 cloves garlic, minced"
-              ]
-            },
-            {
-              "label": "Greens",
-              "ingredients": [
-                "1 pound fresh collard greens, washed and cut into 2-inch pieces"
-              ]
-            },
-            {
-              "label": "Braising liquid",
-              "ingredients": [
-                "3 cups chicken broth",
-                "1 teaspoon salt",
-                "1 teaspoon black pepper",
-                "1 pinch Aleppo pepper or red pepper flakes, or more to taste"
-              ]
-            }
-          ],
-          "steps": [
-            "Heat oil in a large pot over medium-high. Add bacon and cook until crisp, 5 to 7 minutes. Remove with a slotted spoon, crumble, and return to the pot.",
-            "Add onion and cook until tender, about 5 minutes. Add garlic and cook until just fragrant, about 1 minute more. Add collard greens and stir until they start to wilt.",
-            "Pour in chicken broth and season with salt, pepper, and Aleppo pepper. Reduce heat to low, cover, and simmer until greens are very tender, about 45 minutes. Taste and add more Aleppo pepper for heat if desired."
-          ]
-        },
-        {
-          "title": "Eggplant Caponata",
-          "servings": "Serves 4–6",
-          "source": "From Chef Louisa (Villa Britannia, Taormina, Sicily)",
-          "comments": [
-            "Even better a day or two after making — serve warm or cold, as a starter or side.",
-            "The two add-in options (olives and capers, or raisins and pine nuts) can be used separately or mixed together.",
-            "Optional additional vegetables: carrots (parboil 3 minutes like the celery), zucchini or potatoes (deep-fry with the eggplant), artichoke hearts (parboil)."
-          ],
-          "ingredientGroups": [
-            {
-              "label": "Eggplant (1 hour ahead)",
-              "ingredients": [
-                "600g eggplant, peeled mostly (leaving a little skin), diced into roughly 2 cm cubes",
-                "1 tablespoon fine salt (for draining)",
-                "500ml sunflower or peanut oil (for frying)"
-              ]
-            },
-            {
-              "label": "Peppers",
-              "ingredients": [
-                "500g mixed-color peppers, diced into roughly 2 cm pieces"
-              ]
-            },
-            {
-              "label": "Base",
-              "ingredients": [
-                "100ml extra-virgin olive oil",
-                "200g red onion, diced into 1 cm pieces",
-                "200g celery (outer stalks), lightly peeled, cut into 1 cm pieces (briefly boil in unsalted water 3 minutes — keep crunch)",
-                "300g cherry or plum tomatoes, roughly chopped"
-              ]
-            },
-            {
-              "label": "Sweet-sour finish",
-              "ingredients": [
-                "30g (about 2 tablespoons) brown sugar",
-                "100ml red wine vinegar"
-              ]
-            },
-            {
-              "label": "Add-ins",
-              "ingredients": [
-                "100g green olives, rinsed and roughly chopped; and 50g capers, desalted and roughly chopped",
-                "OR: 100g raisins; and 50g pine nuts"
-              ]
-            },
-            {
-              "label": "To finish",
-              "ingredients": [
-                "Large handful of fresh basil leaves, torn"
-              ]
-            }
-          ],
-          "steps": [
-            "Toss diced eggplant with the salt in a colander. Place a weighted plate on top (with a bowl underneath). Leave at least 1 hour. Squeeze handfuls to remove remaining moisture before frying.",
-            "Heat sunflower oil in a deep pan until sizzling. Fry eggplant in batches until lightly browned. Remove and drain on kitchen paper. Fry the peppers in the same oil last (they discolor the oil). Drain on kitchen paper.",
-            "In a large pan, heat olive oil over medium heat. Add onion and sweat until soft. Add celery and cook on low 5 minutes.",
-            "Push vegetables to one side of the pan. Add sugar to the exposed side and let it caramelize. Pour red wine vinegar over everything, stir, and let it begin to evaporate.",
-            "Add olives and capers, or raisins and pine nuts (or both). Add tomatoes. Add the fried eggplant and peppers. Warm gently a few minutes — keep each vegetable distinct, do not overcook.",
-            "Tear in the basil. Allow to cool. Ideally make 1–2 days ahead to let flavors develop."
-          ]
-        },
-        {
-          "title": "Zucchini Involtini",
-          "servings": "Serves 4 as a side",
-          "source": "From Chef Louisa (Villa Britannia, Taormina, Sicily)",
-          "comments": [
-            "Same herbed breadcrumb coating as all Villa Britannia involtini (1 part Parmesan to 3 parts fresh breadcrumbs).",
-            "'Blanched tomatoes' means briefly blanched and peeled before chopping."
-          ],
-          "ingredientGroups": [
-            {
-              "label": "Bread coating",
-              "ingredients": [
-                "1 1/2 cups fresh breadcrumbs (grated or food-processed from crustless white bread)",
-                "1/2 cup Parmesan, grated",
-                "2 tablespoons flat-leaf parsley, finely chopped",
-                "1 clove garlic, finely chopped",
-                "Salt and pepper to taste"
-              ]
-            },
-            {
-              "label": "Zucchini and filling",
-              "ingredients": [
-                "3–4 medium zucchini",
-                "Salt and olive oil",
-                "2–3 plum tomatoes, blanched, peeled, and roughly chopped",
-                "Hard cheese (Parmesan, Emmental, or pecorino), cut in small pieces"
-              ]
-            }
-          ],
-          "steps": [
-            "Make the bread coating: combine breadcrumbs, Parmesan, parsley, garlic, salt, and pepper. Mix with your hands. Add blanched, chopped tomatoes and combine.",
-            "Cut zucchini lengthwise into very thin slices. Salt lightly on both sides and drizzle with olive oil.",
-            "Coat each zucchini slice in the bread coating. Add a little extra coating on top and place a small piece of hard cheese in the center. Roll up and thread onto wooden skewers.",
-            "Fry in a pan lined with baking paper over high heat with a small drizzle of olive oil, 4–6 minutes until lightly browned. Can also be grilled, barbecued, or baked."
-          ]
-        },
-        {
-          "title": "Mexican Street Corn (Elotes)",
-          "servings": "Serves 4",
-          "source": "Chef Billy Parisi / The Inspired Home",
-          "comments": [
-            "Cotija is a firm, salty Mexican cheese. Feta or Parmesan can substitute if unavailable.",
-            "Ancho chili powder has a mild, slightly fruity heat; regular chili powder works if ancho isn't available."
-          ],
-          "ingredientGroups": [
-            {
-              "label": "Corn",
-              "ingredients": [
-                "4 ears of corn, shucked"
-              ]
-            },
-            {
-              "label": "Topping",
-              "ingredients": [
-                "1/3 cup Mexican crema or sour cream",
-                "1/3 cup mayonnaise",
-                "2 cloves garlic, finely minced",
-                "1 teaspoon ancho chili powder, plus more for garnish",
-                "1 tablespoon fresh cilantro, finely minced, plus more for garnish",
-                "1/2 cup crumbled cotija cheese, plus more for garnish",
-                "1/4 teaspoon kosher salt"
-              ]
-            },
-            {
-              "label": "Garnish",
-              "ingredients": [
-                "Lime wedges"
-              ]
-            }
-          ],
-          "steps": [
-            "Preheat grill to high heat (450 to 550 degrees F).",
-            "Grill corn, turning occasionally, until cooked through and lightly charred on all sides. Keep warm on a cooler part of the grill.",
-            "In a bowl, whisk together crema, mayonnaise, garlic, chili powder, cilantro, cotija, and salt.",
-            "Generously coat each ear of corn with the crema mixture. Garnish with more chili powder, cilantro, and cotija. Serve with lime wedges."
-          ]
-        },
-        {
-          "title": "Potato Latkes",
-          "favorite": true,
-          "servings": "Makes about 12 latkes",
-          "source": "\"Celebration: The Book of Jewish Festivals,\" ed. Naomi Black (Jonathan David Publishers, 1989)",
-          "comments": [
-            "Keep finished latkes warm in a 250°F oven while frying subsequent batches.",
-            "The original notes you can use more flour or matzo meal as needed to hold the batter together.",
-            "Variation: Pour the same batter into a well-greased muffin pan and bake 45 minutes at 350°F."
-          ],
-          "ingredientGroups": [
-            {
-              "label": "Batter",
-              "ingredients": [
-                "6 medium potatoes, grated",
-                "1 onion, grated",
-                "2 eggs",
-                "2 tablespoons flour or matzo meal (more as needed)",
-                "1 teaspoon salt"
-              ]
-            },
-            {
-              "label": "For frying",
-              "ingredients": [
-                "Vegetable oil"
-              ]
-            }
-          ],
-          "steps": [
-            "Grate the potatoes into a mixing bowl. Squeeze out the liquid or drain in a colander for a few minutes. Grate the onion into the potatoes.",
-            "Add the eggs and mix. Add the flour and mix. Add the salt and stir until you have a smooth batter that drops heavily from the spoon.",
-            "Heat enough vegetable oil in a frying pan to cover the latkes amply. Drop the batter from a tablespoon into the hot oil, making pancakes about 3 inches in diameter. Do not allow the oil to smoke; let it come back up to temperature after every few latkes and after replenishing the oil.",
-            "Fry until brown on the underside, then turn and brown the other side. Lift out and drain on paper towels. Keep warm in a 250°F oven while frying remaining batches."
-          ]
-        },
-        {
-          "title": "Potatoes Gratin (Low Calorie)",
-          "servings": "Serves 6–8   |   Prep: 10 min   |   Cook: 1 to 1 1/4 hours",
-          "source": "Family recipe card",
-          "comments": [
-            "Low-calorie version using skim milk and eggs rather than cream."
-          ],
-          "ingredientGroups": [
-            {
-              "label": "Potatoes",
-              "ingredients": [
-                "2 large garlic cloves, halved lengthwise",
-                "3 pounds new potatoes, unpeeled, scrubbed, and very thinly sliced"
-              ]
-            },
-            {
-              "label": "Custard",
-              "ingredients": [
-                "3 1/3 cups skim milk",
-                "2 large eggs, lightly beaten",
-                "Salt and pepper to taste"
-              ]
-            },
-            {
-              "label": "Topping",
-              "ingredients": [
-                "6 tablespoons grated parmesan cheese"
-              ]
-            }
-          ],
-          "steps": [
-            "Preheat oven to 400°F. Rub the inside of a 9x14x2-inch Pyrex dish with the cut side of the garlic. Thinly slice the garlic and toss with the potatoes.",
-            "Layer potatoes in the Pyrex dish. Mix together milk, eggs, salt, and pepper. Pour mixture over potatoes.",
-            "Bake 1 to 1 1/4 hours. Every 15 minutes, remove from oven and, using a knife or wooden spoon, press down the top layer of potatoes that has gotten crusty and fold it into the rest.",
-            "When golden and potatoes are tender, sprinkle with parmesan and return to oven. Bake until a golden crust forms, about 10–15 minutes."
-          ]
-        },
-        {
-          "title": "Red Cabbage With Walnuts and Feta",
-          "servings": "Serves 6 to 8",
-          "source": "Melissa Clark / New York Times Cooking",
-          "comments": [
-            "Works equally well as a substantial side or light main course.",
-            "A small head of green cabbage also works, though it may cook a bit faster."
-          ],
-          "ingredientGroups": [
-            {
-              "label": "Cabbage",
-              "ingredients": [
-                "1 medium red cabbage (1 3/4 to 2 pounds)",
-                "3 tablespoons extra-virgin olive oil",
-                "1/2 teaspoon salt"
-              ]
-            },
-            {
-              "label": "Vinaigrette",
-              "ingredients": [
-                "1 tablespoon apple cider vinegar, plus more to taste",
-                "1/2 teaspoon Dijon mustard",
-                "1/2 teaspoon salt",
-                "3 tablespoons extra-virgin olive oil"
-              ]
-            },
-            {
-              "label": "To serve",
-              "ingredients": [
-                "2/3 cup crumbled feta (3 oz)",
-                "1/3 cup walnuts, toasted and coarsely chopped",
-                "Lemon zest",
-                "Pomegranate seeds",
-                "Chopped mint, parsley, or dill (optional)"
-              ]
-            }
-          ],
-          "steps": [
-            "Heat oven to 425 degrees F. Peel any damaged outer leaves from the cabbage. Halve through the core, then cut each half into 1- to 1 1/2-inch wedges, keeping the layers together.",
-            "Arrange wedges on their sides on a sheet pan. Drizzle with 3 tablespoons olive oil and sprinkle with 1/2 teaspoon salt. Roast 20 minutes, flip, and continue roasting until cores are tender and edges are browned, 10 to 20 minutes more.",
-            "While cabbage roasts, whisk together vinegar, mustard, and 1/2 teaspoon salt until salt dissolves. Whisk in 3 tablespoons olive oil until emulsified. Taste and adjust with more vinegar or salt.",
-            "Arrange cabbage on a platter and drizzle with vinaigrette. Top with feta, walnuts, lemon zest, pomegranate seeds, and herbs if using. Serve hot or at room temperature."
-          ]
-        },
-        {
-          "title": "Spicy Roasted Cauliflower with Sriracha and Sesame",
-          "servings": "Serves 4–6",
-          "source": "Todd Porter and Diane Cu / Epicurious",
-          "ingredientGroups": [
-            {
-              "label": "Sauce",
-              "ingredients": [
-                "3 tablespoons sriracha",
-                "2 tablespoons vegetable or canola oil",
-                "2 tablespoons honey",
-                "1 tablespoon toasted sesame oil",
-                "1 tablespoon rice vinegar",
-                "2 teaspoons soy sauce",
-                "1/2 teaspoon garlic powder",
-                "1/2 teaspoon kosher salt"
-              ]
-            },
-            {
-              "label": "Cauliflower",
-              "ingredients": [
-                "1 medium head cauliflower (about 2 1/2 pounds), cut into florets"
-              ]
-            },
-            {
-              "label": "To serve",
-              "ingredients": [
-                "2 tablespoons toasted sesame seeds",
-                "2 scallions, thinly sliced"
-              ]
-            }
-          ],
-          "steps": [
-            "Preheat oven to 450°F. In a large bowl, whisk together sriracha, vegetable oil, honey, sesame oil, rice vinegar, soy sauce, garlic powder, and salt.",
-            "Add cauliflower florets and toss until evenly coated. Spread on a large rimmed baking sheet in a single layer.",
-            "Roast until cauliflower is tender and charred in spots, 20–25 minutes.",
-            "Transfer to a platter. Sprinkle with sesame seeds and scallions and serve."
-          ]
-        },
-        {
-          "title": "Gochujang Stir-Fried Brussels Sprouts",
-          "servings": "Serves 8 as a side",
-          "source": "Dana / Minimalist Baker",
-          "comments": [
-            "Use gochujang sauce (the ready-to-use sauce), not gochujang paste -- they are different products. Find it at Korean grocery stores or in the international aisle."
-          ],
-          "ingredientGroups": [
-            {
-              "label": "Sauce",
-              "ingredients": [
-                "1/2 cup Korean gochujang sauce (homemade or store-bought)",
-                "1 tablespoon sesame oil",
-                "1/3 cup soy sauce",
-                "2 to 3 tablespoons maple syrup",
-                "1 1/2 tablespoons chili garlic sauce",
-                "1 pinch sea salt"
-              ]
-            },
-            {
-              "label": "Brussels sprouts",
-              "ingredients": [
-                "1 tablespoon sesame or avocado oil",
-                "7 heaping cups Brussels sprouts, halved and stems trimmed",
-                "3 tablespoons soy sauce"
-              ]
-            },
-            {
-              "label": "To serve (optional)",
-              "ingredients": [
-                "Thinly sliced shallot or green onion",
-                "Chopped roasted salted peanuts"
-              ]
-            }
-          ],
-          "steps": [
-            "Make the sauce: whisk together gochujang sauce, sesame oil, soy sauce, maple syrup, chili garlic sauce, and salt. Taste and adjust -- more chili garlic sauce for heat, maple syrup for sweetness. Set aside.",
-            "Heat a large cast-iron or heavy skillet over medium-high. Add oil, then Brussels sprouts. Add 3 tablespoons soy sauce and toss to coat. Spread so each cut side touches the pan surface.",
-            "Cover and cook 2 minutes. Uncover and stir-fry, turning occasionally, until well browned and caramelized on all sides, 2 to 4 minutes more.",
-            "Add sliced shallot or green onion if using. Pour in the prepared sauce and stir-fry 1 to 2 minutes more to coat and caramelize.",
-            "Transfer to a platter. Garnish with crushed peanuts if desired. Serve hot."
-          ]
-        },
-        {
-          "title": "Broccoli with Garlic Sauce",
-          "servings": "Serves 4",
-          "source": "I Heart Umami / ChihYu Smith",
-          "comments": [
-            "Can substitute vegetable broth for chicken broth to make vegetarian.",
-            "Cornstarch can be substituted for tapioca starch in equal measure — both thicken similarly in this sauce."
-          ],
-          "ingredientGroups": [
-            {
-              "label": "Garlic sauce",
-              "ingredients": [
-                "1 oz garlic cloves (about 5 large), grated or crushed, divided in half",
-                "1/2 cup chicken broth",
-                "3 teaspoons tapioca starch (or cornstarch)"
-              ]
-            },
-            {
-              "label": "Broccoli",
-              "ingredients": [
-                "1 tablespoon avocado oil",
-                "15 oz broccoli florets",
-                "1/2 cup chicken broth (for steaming)",
-                "1/4 teaspoon coarse sea salt"
-              ]
-            },
-            {
-              "label": "To serve (optional)",
-              "ingredients": [
-                "1/4 teaspoon Takii shiitake mushroom seasoning",
-                "1 teaspoon toasted sesame oil"
-              ]
-            }
-          ],
-          "steps": [
-            "Mix 1/2 cup chicken broth with tapioca starch or cornstarch until dissolved; set aside. Grate or crush garlic and divide in half.",
-            "Heat avocado oil in a wide skillet over medium-high heat. Add half the garlic and cook 30 seconds until fragrant. Add broccoli and cook 1 minute.",
-            "Add remaining 1/2 cup broth to skillet; cover and steam broccoli 2 minutes.",
-            "Add remaining garlic and the starch slurry. Toss to coat and cook until sauce thickens, 30–60 seconds.",
-            "Season with salt; add shiitake seasoning and sesame oil if using. Serve immediately."
-          ]
-        },
-        {
-          "title": "Garlicky Broccoli Stir-Fry",
-          "servings": "Serves 4",
-          "source": "Sarah Leung / The Woks of Life",
-          "comments": [
-            "Blanching the broccoli first keeps the sauce clean and ensures tenderness without overcooking.",
-            "Shaoxing wine is a Chinese rice wine; dry sherry can substitute. For vegetarian/vegan, use vegetable stock."
-          ],
-          "ingredientGroups": [
-            {
-              "label": "Cornstarch slurry",
-              "ingredients": [
-                "1 tablespoon cornstarch",
-                "2 tablespoons water"
-              ]
-            },
-            {
-              "label": "Stir-fry",
-              "ingredients": [
-                "4 cups broccoli florets",
-                "5 cloves garlic, minced",
-                "1 tablespoon neutral oil",
-                "1 tablespoon Shaoxing wine",
-                "1/2 cup chicken stock or vegetable stock",
-                "1 teaspoon salt",
-                "1/8 teaspoon white pepper",
-                "1/2 teaspoon sesame oil"
-              ]
-            }
-          ],
-          "steps": [
-            "Mix cornstarch into water and stir until completely dissolved; set aside.",
-            "Bring a large pot of water to a boil. Blanch broccoli for 1 minute. Drain and transfer to cold water to stop cooking. Drain well.",
-            "Heat a wok or large skillet over high heat until very hot. Add oil, garlic, broccoli, and Shaoxing wine. Stir-fry 1 minute, then pour in stock. Bring to a boil.",
-            "Season with salt, white pepper, and sesame oil. Stir the cornstarch slurry, then add half to the pan. Stir until the sauce thickens to coat the back of a spoon; add more slurry if needed.",
-            "Plate and serve hot."
-          ]
-        },
-        {
-          "title": "Stir-Fried Spinach With Garlic",
-          "favorite": true,
-          "servings": "Serves 3 to 4",
-          "source": "Rhonda Parkinson / The Spruce Eats",
-          "ingredientGroups": [
-            {
-              "label": "Stir-fry",
-              "ingredients": [
-                "2 tablespoons peanut or vegetable oil",
-                "1 teaspoon minced garlic",
-                "1/4 teaspoon chili paste, more to taste",
-                "1/2 teaspoon fine salt, more to taste",
-                "10 oz fresh spinach, rinsed and dried"
-              ]
-            },
-            {
-              "label": "Finish",
-              "ingredients": [
-                "1/4 teaspoon granulated sugar",
-                "1/4 teaspoon sesame oil",
-                "1 teaspoon freshly ground black pepper (optional)"
-              ]
-            }
-          ],
-          "steps": [
-            "Heat a wok over medium heat. Add oil, swirling to coat the pan about halfway up the sides.",
-            "When the oil is hot, add garlic, chili paste, and salt. Stir a few seconds until the garlic is aromatic.",
-            "Add spinach and stir-fry until leaves are almost wilted, 1 to 2 minutes.",
-            "Stir in sugar and sesame oil. Sprinkle with black pepper if using. Serve immediately."
-          ]
-        },
-        {
-          "title": "Tomato Cobbler With Ricotta Biscuits",
-          "servings": "Serves 10   |   Total: 1 hour 30 minutes",
-          "source": "New York Times (Nicole Rucker / Tejal Rao), 2019",
-          "comments": [
-            "This dish sits somewhere between a savory course and a sweet one -- serve it either way.",
-            "Sungold tomatoes are sweeter and especially good here when in season."
-          ],
-          "ingredientGroups": [
-            {
-              "label": "Ricotta (30 minutes ahead)",
-              "ingredients": [
-                "3/4 cup whole-milk ricotta"
-              ]
-            },
-            {
-              "label": "Biscuit dry ingredients",
-              "ingredients": [
-                "2 1/2 cups cake flour, plus more for dusting",
-                "1 tablespoon granulated sugar",
-                "1 teaspoon kosher salt",
-                "1 1/2 teaspoons baking powder",
-                "1 teaspoon baking soda"
-              ]
-            },
-            {
-              "label": "Biscuit fat",
-              "ingredients": [
-                "1/2 cup unsalted butter, cut into cubes and chilled"
-              ]
-            },
-            {
-              "label": "Biscuit liquid",
-              "ingredients": [
-                "1 cup buttermilk, plus 2 tablespoons for brushing"
-              ]
-            },
-            {
-              "label": "Tomato base",
-              "ingredients": [
-                "2 to 2 1/2 pounds cherry tomatoes or Sungold tomatoes",
-                "1/4 cup extra-virgin olive oil",
-                "1 tablespoon sherry vinegar",
-                "2 sprigs fresh thyme",
-                "1/4 cup granulated sugar",
-                "2 tablespoons cake flour",
-                "Kosher salt and freshly ground black pepper"
-              ]
-            }
-          ],
-          "steps": [
-            "Strain the ricotta in a cheesecloth or fine-mesh strainer for at least 30 minutes. Squeeze out any excess moisture before using.",
-            "Prepare the biscuit dry ingredients: combine 2 1/2 cups cake flour, sugar, salt, baking powder, and baking soda in a large bowl and whisk to combine. Transfer to the freezer to chill for about 20 minutes. Add the cold butter and smear pieces between your fingers, pinching into thin flakes and working into the flour until no large pieces remain.",
-            "Make a well in the center and gradually pour in 1 cup buttermilk, using a fork to fluff in flour from the sides until a shaggy dough forms. Crumble in the ricotta and loosely incorporate with your fingers.",
-            "Scrape the dough onto a lightly floured surface and shape into a roughly 4x6-inch rectangle. Fold into thirds and flatten back to the same size; repeat 2 more times. Flatten to about 1 inch thick. Refrigerate 20 minutes.",
-            "Position a rack in the center of the oven and preheat to 350 degrees F. Cut about half the tomatoes in half. In a 2-quart baking dish, combine all the tomatoes with olive oil, vinegar, thyme sprigs, 1/4 cup sugar, and 2 tablespoons cake flour. Season generously with salt and pepper; let sit while you work on the biscuit dough.",
-            "Lay biscuit dough onto a lightly floured surface. Cut into 2-inch squares or circles and arrange in a single layer over the tomatoes -- you should have about 10-12 biscuits. (Bake any scraps separately.) Brush the tops of the biscuits with the remaining 2 tablespoons buttermilk. Bake 45 minutes, until the tomato mixture has bubbled up and the biscuits are browned on top. Allow to cool; serve warm or at room temperature. Finish with a sprinkle of salt and pepper."
-          ],
-          "highAltitude": {
-            "ingredientGroups": [
-              {
-                "label": "Ricotta (30 minutes ahead)",
-                "ingredients": [
-                  "3/4 cup whole-milk ricotta"
-                ]
-              },
-              {
-                "label": "Biscuit dry ingredients",
-                "ingredients": [
-                  "2 1/2 cups cake flour, plus more for dusting",
-                  "1 tablespoon granulated sugar",
-                  "1 teaspoon kosher salt",
-                  "1 teaspoon baking powder (reduced from 1 1/2 teaspoons)",
-                  "3/4 teaspoon baking soda (reduced from 1 teaspoon)"
-                ]
-              },
-              {
-                "label": "Biscuit fat",
-                "ingredients": [
-                  "1/2 cup unsalted butter, cut into cubes and chilled"
-                ]
-              },
-              {
-                "label": "Biscuit liquid",
-                "ingredients": [
-                  "1 cup buttermilk, plus 2 tablespoons for brushing"
-                ]
-              },
-              {
-                "label": "Tomato base",
-                "ingredients": [
-                  "2 to 2 1/2 pounds cherry tomatoes or Sungold tomatoes",
-                  "1/4 cup extra-virgin olive oil",
-                  "1 tablespoon sherry vinegar",
-                  "2 sprigs fresh thyme",
-                  "1/4 cup granulated sugar",
-                  "2 tablespoons cake flour",
-                  "Kosher salt and freshly ground black pepper"
+              "title": "Tomato Cobbler With Ricotta Biscuits",
+              "servings": "Serves 10   |   Total: 1 hour 30 minutes",
+              "source": "New York Times (Nicole Rucker / Tejal Rao), 2019",
+              "comments": [
+                "This dish sits somewhere between a savory course and a sweet one -- serve it either way.",
+                "Sungold tomatoes are sweeter and especially good here when in season."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Ricotta (30 minutes ahead)",
+                  "ingredients": [
+                    "3/4 cup whole-milk ricotta"
+                  ]
+                },
+                {
+                  "label": "Biscuit dry ingredients",
+                  "ingredients": [
+                    "2 1/2 cups cake flour, plus more for dusting",
+                    "1 tablespoon granulated sugar",
+                    "1 teaspoon kosher salt",
+                    "1 1/2 teaspoons baking powder",
+                    "1 teaspoon baking soda"
+                  ]
+                },
+                {
+                  "label": "Biscuit fat",
+                  "ingredients": [
+                    "1/2 cup unsalted butter, cut into cubes and chilled"
+                  ]
+                },
+                {
+                  "label": "Biscuit liquid",
+                  "ingredients": [
+                    "1 cup buttermilk, plus 2 tablespoons for brushing"
+                  ]
+                },
+                {
+                  "label": "Tomato base",
+                  "ingredients": [
+                    "2 to 2 1/2 pounds cherry tomatoes or Sungold tomatoes",
+                    "1/4 cup extra-virgin olive oil",
+                    "1 tablespoon sherry vinegar",
+                    "2 sprigs fresh thyme",
+                    "1/4 cup granulated sugar",
+                    "2 tablespoons cake flour",
+                    "Kosher salt and freshly ground black pepper"
+                  ]
+                }
+              ],
+              "steps": [
+                "Strain the ricotta in a cheesecloth or fine-mesh strainer for at least 30 minutes. Squeeze out any excess moisture before using.",
+                "Prepare the biscuit dry ingredients: combine 2 1/2 cups cake flour, sugar, salt, baking powder, and baking soda in a large bowl and whisk to combine. Transfer to the freezer to chill for about 20 minutes. Add the cold butter and smear pieces between your fingers, pinching into thin flakes and working into the flour until no large pieces remain.",
+                "Make a well in the center and gradually pour in 1 cup buttermilk, using a fork to fluff in flour from the sides until a shaggy dough forms. Crumble in the ricotta and loosely incorporate with your fingers.",
+                "Scrape the dough onto a lightly floured surface and shape into a roughly 4x6-inch rectangle. Fold into thirds and flatten back to the same size; repeat 2 more times. Flatten to about 1 inch thick. Refrigerate 20 minutes.",
+                "Position a rack in the center of the oven and preheat to 350 degrees F. Cut about half the tomatoes in half. In a 2-quart baking dish, combine all the tomatoes with olive oil, vinegar, thyme sprigs, 1/4 cup sugar, and 2 tablespoons cake flour. Season generously with salt and pepper; let sit while you work on the biscuit dough.",
+                "Lay biscuit dough onto a lightly floured surface. Cut into 2-inch squares or circles and arrange in a single layer over the tomatoes -- you should have about 10-12 biscuits. (Bake any scraps separately.) Brush the tops of the biscuits with the remaining 2 tablespoons buttermilk. Bake 45 minutes, until the tomato mixture has bubbled up and the biscuits are browned on top. Allow to cool; serve warm or at room temperature. Finish with a sprinkle of salt and pepper."
+              ],
+              "highAltitude": {
+                "ingredientGroups": [
+                  {
+                    "label": "Ricotta (30 minutes ahead)",
+                    "ingredients": [
+                      "3/4 cup whole-milk ricotta"
+                    ]
+                  },
+                  {
+                    "label": "Biscuit dry ingredients",
+                    "ingredients": [
+                      "2 1/2 cups cake flour, plus more for dusting",
+                      "1 tablespoon granulated sugar",
+                      "1 teaspoon kosher salt",
+                      "1 teaspoon baking powder (reduced from 1 1/2 teaspoons)",
+                      "3/4 teaspoon baking soda (reduced from 1 teaspoon)"
+                    ]
+                  },
+                  {
+                    "label": "Biscuit fat",
+                    "ingredients": [
+                      "1/2 cup unsalted butter, cut into cubes and chilled"
+                    ]
+                  },
+                  {
+                    "label": "Biscuit liquid",
+                    "ingredients": [
+                      "1 cup buttermilk, plus 2 tablespoons for brushing"
+                    ]
+                  },
+                  {
+                    "label": "Tomato base",
+                    "ingredients": [
+                      "2 to 2 1/2 pounds cherry tomatoes or Sungold tomatoes",
+                      "1/4 cup extra-virgin olive oil",
+                      "1 tablespoon sherry vinegar",
+                      "2 sprigs fresh thyme",
+                      "1/4 cup granulated sugar",
+                      "2 tablespoons cake flour",
+                      "Kosher salt and freshly ground black pepper"
+                    ]
+                  }
+                ],
+                "steps": [
+                  "Strain the ricotta in a cheesecloth or fine-mesh strainer for at least 30 minutes. Squeeze out any excess moisture before using.",
+                  "Prepare the biscuit dry ingredients: combine 2 1/2 cups cake flour, sugar, salt, baking powder, and baking soda in a large bowl and whisk to combine. Transfer to the freezer to chill for about 20 minutes. Add the cold butter and smear pieces between your fingers, pinching into thin flakes and working into the flour until no large pieces remain.",
+                  "Make a well in the center and gradually pour in 1 cup buttermilk, using a fork to fluff in flour from the sides until a shaggy dough forms. Crumble in the ricotta and loosely incorporate with your fingers.",
+                  "Scrape the dough onto a lightly floured surface and shape into a roughly 4x6-inch rectangle. Fold into thirds and flatten back to the same size; repeat 2 more times. Flatten to about 1 inch thick. Refrigerate 20 minutes.",
+                  "Position a rack in the center of the oven and preheat to 350 degrees F. Cut about half the tomatoes in half. In a 2-quart baking dish, combine all the tomatoes with olive oil, vinegar, thyme sprigs, 1/4 cup sugar, and 2 tablespoons cake flour. Season generously with salt and pepper; let sit while you work on the biscuit dough.",
+                  "Lay biscuit dough onto a lightly floured surface. Cut into 2-inch squares or circles and arrange in a single layer over the tomatoes -- you should have about 10-12 biscuits. (Bake any scraps separately.) Brush the tops of the biscuits with the remaining 2 tablespoons buttermilk. Bake 40-45 minutes (check at 40 minutes), until the tomato mixture has bubbled up and the biscuits are browned on top. Allow to cool; serve warm or at room temperature. Finish with a sprinkle of salt and pepper."
                 ]
               }
-            ],
-            "steps": [
-              "Strain the ricotta in a cheesecloth or fine-mesh strainer for at least 30 minutes. Squeeze out any excess moisture before using.",
-              "Prepare the biscuit dry ingredients: combine 2 1/2 cups cake flour, sugar, salt, baking powder, and baking soda in a large bowl and whisk to combine. Transfer to the freezer to chill for about 20 minutes. Add the cold butter and smear pieces between your fingers, pinching into thin flakes and working into the flour until no large pieces remain.",
-              "Make a well in the center and gradually pour in 1 cup buttermilk, using a fork to fluff in flour from the sides until a shaggy dough forms. Crumble in the ricotta and loosely incorporate with your fingers.",
-              "Scrape the dough onto a lightly floured surface and shape into a roughly 4x6-inch rectangle. Fold into thirds and flatten back to the same size; repeat 2 more times. Flatten to about 1 inch thick. Refrigerate 20 minutes.",
-              "Position a rack in the center of the oven and preheat to 350 degrees F. Cut about half the tomatoes in half. In a 2-quart baking dish, combine all the tomatoes with olive oil, vinegar, thyme sprigs, 1/4 cup sugar, and 2 tablespoons cake flour. Season generously with salt and pepper; let sit while you work on the biscuit dough.",
-              "Lay biscuit dough onto a lightly floured surface. Cut into 2-inch squares or circles and arrange in a single layer over the tomatoes -- you should have about 10-12 biscuits. (Bake any scraps separately.) Brush the tops of the biscuits with the remaining 2 tablespoons buttermilk. Bake 40-45 minutes (check at 40 minutes), until the tomato mixture has bubbled up and the biscuits are browned on top. Allow to cool; serve warm or at room temperature. Finish with a sprinkle of salt and pepper."
-            ]
-          }
-        },
-        {
-          "id": "cornbread-dressing-with-sausage-and-corn-nuts",
-          "title": "Cornbread Dressing With Sausage and Corn Nuts",
-          "servings": "Serves 8 to 10   |   Active: 40 min   |   Total: 2 hours",
-          "source": "Bon Appetit (Rick Martinez and Chris Morocco)",
-          "comments": [
-            {
-              "html": "Uses homemade or store-bought cornbread. Also forms the base of <a href=\"rice.html#cornbread-stuffing-fried-rice\">Cornbread Stuffing Fried Rice</a>."
-            },
-            "Can be baked at 350 degrees F up to 3 days ahead; let cool, then chill. Reheat in a 350 degrees F oven before increasing to 425 degrees F and removing foil.",
-            "Corn nuts are ground into a powder, not used whole -- they add depth and crunch to the finished texture."
-          ],
-          "ingredientGroups": [
-            {
-              "label": "Cornbread",
-              "ingredients": [
-                "3 lb cornbread, cut into small pieces (about 3/4 inch; 14 to 16 cups)"
-              ]
             },
             {
-              "label": "Sausage",
-              "ingredients": [
-                "1 1/2 lb breakfast sausage, casings removed if needed"
-              ]
-            },
-            {
-              "label": "Aromatics",
-              "ingredients": [
-                "1 cup (2 sticks) unsalted butter, plus more for pan",
-                "2 medium onions, chopped",
-                "4 celery stalks, chopped",
-                "Kosher salt",
-                "3 garlic cloves, finely chopped",
-                "2 Thai chiles or 1 jalapeño (with seeds), chopped"
-              ]
-            },
-            {
-              "label": "Corn nut powder",
-              "ingredients": [
-                "3/4 cup corn nuts, finely ground in a food processor, blender, or mortar and pestle (about 1/2 cup ground)"
-              ]
-            },
-            {
-              "label": "Wine and herbs",
-              "ingredients": [
-                "3/4 cup dry white wine",
-                "1 tablespoon finely chopped fresh sage",
-                "2 teaspoons finely chopped fresh thyme"
-              ]
-            },
-            {
-              "label": "Custard",
-              "ingredients": [
-                "3 large eggs",
-                "3 1/2 cups turkey stock or low-sodium chicken broth",
-                "Freshly ground black pepper"
+              "id": "cornbread-dressing-with-sausage-and-corn-nuts",
+              "title": "Cornbread Dressing With Sausage and Corn Nuts",
+              "servings": "Serves 8 to 10   |   Active: 40 min   |   Total: 2 hours",
+              "source": "Bon Appetit (Rick Martinez and Chris Morocco)",
+              "comments": [
+                {
+                  "html": "Uses homemade or store-bought cornbread. Also forms the base of <a href=\"rice.html#cornbread-stuffing-fried-rice\">Cornbread Stuffing Fried Rice</a>."
+                },
+                "Can be baked at 350 degrees F up to 3 days ahead; let cool, then chill. Reheat in a 350 degrees F oven before increasing to 425 degrees F and removing foil.",
+                "Corn nuts are ground into a powder, not used whole -- they add depth and crunch to the finished texture."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Cornbread",
+                  "ingredients": [
+                    "3 lb cornbread, cut into small pieces (about 3/4 inch; 14 to 16 cups)"
+                  ]
+                },
+                {
+                  "label": "Sausage",
+                  "ingredients": [
+                    "1 1/2 lb breakfast sausage, casings removed if needed"
+                  ]
+                },
+                {
+                  "label": "Aromatics",
+                  "ingredients": [
+                    "1 cup (2 sticks) unsalted butter, plus more for pan",
+                    "2 medium onions, chopped",
+                    "4 celery stalks, chopped",
+                    "Kosher salt",
+                    "3 garlic cloves, finely chopped",
+                    "2 Thai chiles or 1 jalapeño (with seeds), chopped"
+                  ]
+                },
+                {
+                  "label": "Corn nut powder",
+                  "ingredients": [
+                    "3/4 cup corn nuts, finely ground in a food processor, blender, or mortar and pestle (about 1/2 cup ground)"
+                  ]
+                },
+                {
+                  "label": "Wine and herbs",
+                  "ingredients": [
+                    "3/4 cup dry white wine",
+                    "1 tablespoon finely chopped fresh sage",
+                    "2 teaspoons finely chopped fresh thyme"
+                  ]
+                },
+                {
+                  "label": "Custard",
+                  "ingredients": [
+                    "3 large eggs",
+                    "3 1/2 cups turkey stock or low-sodium chicken broth",
+                    "Freshly ground black pepper"
+                  ]
+                }
+              ],
+              "steps": [
+                "Preheat oven to 325 degrees F. Divide cornbread evenly between 2 large rimmed baking sheets and bake, tossing occasionally, until dried out and lightly browned around the edges, 40 to 50 minutes. Let cool at least 10 minutes. Increase oven temperature to 350 degrees F.",
+                "Meanwhile, cook breakfast sausage in a large skillet over medium-high heat, stirring and breaking up with a spoon, until lightly browned and cooked through, 6 to 8 minutes. Transfer to a plate.",
+                "Reduce heat to medium and melt butter in the same skillet. Add onions and celery; season with salt. Cook, stirring occasionally, until softened but not browned, 8 to 10 minutes. Add garlic and chiles; cook, stirring once, until very fragrant, about 1 minute. Add ground corn nuts and cook, stirring often, until very fragrant and vegetables are starting to brown around the edges, about 3 minutes. Add wine and cook, stirring occasionally, until almost completely evaporated, about 3 minutes. Add sage and thyme; toss to combine. Remove from heat.",
+                "Combine cornbread, sausage, and sauteed vegetable mixture in a large bowl. Whisk eggs and stock together in a medium bowl until very well combined. Pour over cornbread mixture and let sit, gently stirring every minute or so, until cornbread has absorbed all or virtually all of the liquid. Season with kosher salt (about 1 tablespoon Diamond Crystal or 1 1/2 teaspoons Morton kosher salt) and freshly ground black pepper.",
+                "Lightly butter a 3-quart or 13x9x2-inch casserole dish. Transfer dressing to dish and tap lightly against counter to distribute and compact. Cover tightly with aluminum foil and bake until very hot throughout and bubbles appear around sides, 40 to 45 minutes. Increase oven temperature to 425 degrees F and remove foil. Continue to bake until top is lightly browned, 15 to 20 minutes longer."
               ]
             }
-          ],
-          "steps": [
-            "Preheat oven to 325 degrees F. Divide cornbread evenly between 2 large rimmed baking sheets and bake, tossing occasionally, until dried out and lightly browned around the edges, 40 to 50 minutes. Let cool at least 10 minutes. Increase oven temperature to 350 degrees F.",
-            "Meanwhile, cook breakfast sausage in a large skillet over medium-high heat, stirring and breaking up with a spoon, until lightly browned and cooked through, 6 to 8 minutes. Transfer to a plate.",
-            "Reduce heat to medium and melt butter in the same skillet. Add onions and celery; season with salt. Cook, stirring occasionally, until softened but not browned, 8 to 10 minutes. Add garlic and chiles; cook, stirring once, until very fragrant, about 1 minute. Add ground corn nuts and cook, stirring often, until very fragrant and vegetables are starting to brown around the edges, about 3 minutes. Add wine and cook, stirring occasionally, until almost completely evaporated, about 3 minutes. Add sage and thyme; toss to combine. Remove from heat.",
-            "Combine cornbread, sausage, and sauteed vegetable mixture in a large bowl. Whisk eggs and stock together in a medium bowl until very well combined. Pour over cornbread mixture and let sit, gently stirring every minute or so, until cornbread has absorbed all or virtually all of the liquid. Season with kosher salt (about 1 tablespoon Diamond Crystal or 1 1/2 teaspoons Morton kosher salt) and freshly ground black pepper.",
-            "Lightly butter a 3-quart or 13x9x2-inch casserole dish. Transfer dressing to dish and tap lightly against counter to distribute and compact. Cover tightly with aluminum foil and bake until very hot throughout and bubbles appear around sides, 40 to 45 minutes. Increase oven temperature to 425 degrees F and remove foil. Continue to bake until top is lightly browned, 15 to 20 minutes longer."
           ]
         }
       ]
@@ -14168,33 +14120,6 @@ module.exports = {
                   ]
                 },
                 {
-                  "title": "Christy's Pesto (Adapted)",
-                  "servings": "Six 2-person servings",
-                  "comments": [
-                    "Walnuts can be swapped for pine nuts or pecans, or a mix of the two."
-                  ],
-                  "source": "Family recipe card (\"Christy's Pesto, Adapted\")",
-                  "ingredientGroups": [
-                    {
-                      "ingredients": [
-                        "6 cloves garlic",
-                        "4 cups fresh basil leaves (about 2 bunches, stemmed)",
-                        "3/4 cup olive oil",
-                        "1 cup chopped walnuts",
-                        "1 teaspoon salt",
-                        "1 cup grated Parmesan cheese",
-                        "1 tablespoon warm water"
-                      ]
-                    }
-                  ],
-                  "steps": [
-                    "Mince the garlic in a food processor.",
-                    "Add the basil and pulse until finely chopped.",
-                    "With the processor running, add the olive oil, walnuts, salt, Parmesan, and warm water; process until smooth.",
-                    "Portion into individual packages (3 heaping tablespoons each) and freeze."
-                  ]
-                },
-                {
                   "title": "Nuala's Riccota Penne",
                   "servings": "Serves 2–3",
                   "source": "Family recipe card, credited to Nuala O'Connor",
@@ -14292,47 +14217,6 @@ module.exports = {
                     "Knead the dough, stretching and folding, for 10–15 minutes. If the dough warms up, stop and rest briefly. Refrigerate 15–30 minutes.",
                     "Pinch off a small piece of dough and roll into a thin rope on the work surface. Hold the skewer at a slight diagonal against the rope and press-roll forward, spiraling the dough around the skewer. Slide off. Repeat with remaining dough.",
                     "Cook in well-salted boiling water for 8–10 minutes."
-                  ]
-                },
-                {
-                  "title": "Sage Pesto",
-                  "servings": "Makes 1 cup (serving: 1 tablespoon)",
-                  "ingredientGroups": [
-                    {
-                      "label": "Processor base",
-                      "ingredients": [
-                        "2 tablespoons pine nuts, toasted",
-                        "2 large garlic cloves, peeled"
-                      ]
-                    },
-                    {
-                      "label": "Herbs and greens",
-                      "ingredients": [
-                        "2 cups torn spinach",
-                        "2 cups fresh flat-leaf parsley leaves",
-                        "3/4 cup fresh sage leaves"
-                      ]
-                    },
-                    {
-                      "label": "Seasoning",
-                      "ingredients": [
-                        "2 tablespoons (1/2 oz) grated fresh Parmesan",
-                        "4 teaspoons lemon juice",
-                        "1/8 teaspoon salt"
-                      ]
-                    },
-                    {
-                      "label": "Finish",
-                      "ingredients": [
-                        "3 tablespoons extra-virgin olive oil"
-                      ]
-                    }
-                  ],
-                  "steps": [
-                    "With the food processor running, drop pine nuts and garlic through the feed chute; process until minced.",
-                    "Add spinach, parsley, sage, Parmesan, lemon juice, and salt; process until finely minced.",
-                    "With the processor running, drizzle in olive oil; process until well blended.",
-                    "Store in an airtight container in the refrigerator."
                   ]
                 },
                 {
@@ -17020,1872 +16904,1882 @@ module.exports = {
         },
         {
           "title": "Sweet",
-          "recipes": [
+          "subsections": [
             {
-              "id": "baking-sweet-all-shortening-pie-crust",
-              "title": "All-Shortening Pie Crust",
-              "favorite": true,
-              "servings": "Makes 2 crusts   |   Prep: 15 minutes + 30-minute chill",
-              "source": "The Pioneer Woman (Ree Drummond) / The Kitchn (blind baking method)",
-              "comments": [
-                "This recipe makes two crusts comfortably. Use one now; keep the second in the freezer for up to 3 months. Thaw guidelines: frozen less than 1 hour -- roll out immediately; frozen 4 hours -- rest 15 minutes at room temperature; frozen solid -- thaw in the refrigerator 4 hours or at room temperature 1 hour.",
-                "The egg and vinegar keep the dough tender and easy to handle -- don't skip them.",
-                "Blind baking: par-bake for custard pies (pumpkin, pecan, quiche); fully blind-bake for no-bake fillings (French silk, cream pies). Your recipe will specify which.",
-                "Pie weights can be substituted with dried beans or clean pennies. Store used beans in a labeled jar -- don't cook them afterward."
-              ],
-              "ingredientGroups": [
+              "title": "Pies, Pastries & Breads",
+              "recipes": [
                 {
-                  "label": "Dough",
-                  "ingredients": [
-                    "3 cups all-purpose flour, plus more for dusting",
-                    "1 1/2 cups vegetable shortening"
-                  ]
-                },
-                {
-                  "label": "Dough binder",
-                  "ingredients": [
-                    "1 large egg",
-                    "4 tablespoons ice water",
-                    "1 tablespoon distilled white vinegar",
-                    "1 teaspoon kosher salt"
-                  ]
-                },
-                {
-                  "label": "Blind baking setup",
-                  "ingredients": [
-                    "Parchment paper or aluminum foil",
-                    "Pie weights, dried beans, or clean pennies (enough to cover the bottom and press against the sides)"
-                  ]
-                }
-              ],
-              "steps": [
-                "In a large bowl, use a pastry cutter to gradually work the shortening into the flour until the mixture resembles coarse meal, 3-4 minutes.",
-                "In a small bowl, beat the egg with a fork. Pour it into the flour mixture. Add the ice water, vinegar, and salt. Stir gently until all ingredients are incorporated and the dough sticks together when pinched.",
-                "Divide into 2 equal pieces. Form each into a ball, then place each in a 1-gallon zip-top bag (do not seal). Use a rolling pin to flatten each ball into a disk about 1/2-inch thick. Seal the bags and freeze at least 25-30 minutes before using. (Dough can be refrigerated up to 2 days or frozen up to 3 months.)",
-                "When ready to use, remove one disk from the freezer. On a generously floured surface, roll out from the center outward until the dough is approximately 2 inches larger than your pie plate. If it sticks, slide a metal spatula underneath, flip, and continue rolling with more flour as needed.",
-                "Transfer to the pie plate by rolling the dough over the rolling pin and unrolling it over the plate, or carefully lift with a spatula. Gently lift the edges and let the dough settle naturally into the plate without pressing or stretching (to avoid shrinking during baking). Trim to a 1-inch overhang; tuck under and crimp or flute the edges as desired. For a double-crust pie, roll out the second disk for the top.",
-                "To blind bake: heat the oven to 425 degrees F with a rack in the lower-middle position. Press a large square of parchment paper (or foil) snugly into the crust, covering the bottom and sides completely. Pour in pie weights and press them against the sides as well as covering the bottom.",
-                "Place the pie on a baking sheet and bake until the edges are just beginning to turn golden, 12-15 minutes. Remove from the oven and lift the parchment and weights out by the corners. The bottom will look wet and uncooked at this point.",
-                "Return the uncovered crust to the oven. For a par-baked crust (pies baked again with filling): bake 5 minutes more until the bottom looks dry but still pale. For a fully blind-baked crust (no-bake fillings): continue baking a few minutes more until the bottom is lightly golden. Cool as directed by your pie recipe before filling.",
-                "If the crust has cracked, mix 1 1/2 tablespoons flour with 1 tablespoon softened butter into a paste; patch the cracks with your fingers and return to the oven 1 minute to set."
-              ]
-            },
-            {
-              "title": "Susan's Apple Pie",
-              "servings": "Makes 1 pie",
-              "ingredientGroups": [
-                {
-                  "label": "Crust",
-                  "ingredients": [
+                  "id": "baking-sweet-all-shortening-pie-crust",
+                  "title": "All-Shortening Pie Crust",
+                  "favorite": true,
+                  "servings": "Makes 2 crusts   |   Prep: 15 minutes + 30-minute chill",
+                  "source": "The Pioneer Woman (Ree Drummond) / The Kitchn (blind baking method)",
+                  "comments": [
+                    "This recipe makes two crusts comfortably. Use one now; keep the second in the freezer for up to 3 months. Thaw guidelines: frozen less than 1 hour -- roll out immediately; frozen 4 hours -- rest 15 minutes at room temperature; frozen solid -- thaw in the refrigerator 4 hours or at room temperature 1 hour.",
+                    "The egg and vinegar keep the dough tender and easy to handle -- don't skip them.",
+                    "Blind baking: par-bake for custard pies (pumpkin, pecan, quiche); fully blind-bake for no-bake fillings (French silk, cream pies). Your recipe will specify which.",
+                    "Pie weights can be substituted with dried beans or clean pennies. Store used beans in a labeled jar -- don't cook them afterward."
+                  ],
+                  "ingredientGroups": [
                     {
-                      "html": "1 disk <a href=\"baking.html#baking-sweet-all-shortening-pie-crust\">All-Shortening Pie Crust</a>"
-                    }
-                  ]
-                },
-                {
-                  "label": "Filling",
-                  "ingredients": [
-                    "5 apples of at least 3 different varieties, peeled and sliced into 8 pieces each",
-                    "3/4 cup brown sugar (divided)",
-                    "1/2 cup flour",
-                    "2 tablespoons margarine or butter"
-                  ]
-                }
-              ],
-              "steps": [
-                {
-                  "html": "Prepare 1 disk of the <a href=\"baking.html#baking-sweet-all-shortening-pie-crust\">All-Shortening Pie Crust</a>. Roll out to approximately 12 inches diameter on a floured surface and mold into the pie plate."
-                },
-                "Toss sliced apples with 1/4 cup of the brown sugar. Arrange in pie crust.",
-                "Combine remaining brown sugar and flour; cut in margarine until crumbly. Sprinkle mixture over apples.",
-                "Bake at 375°F for 40 minutes."
-              ],
-              "source": "From Susan Muhlheim"
-            },
-            {
-              "title": "Blueberry Coffee Cake (Blueberry Boy Bait)",
-              "favorite": true,
-              "servings": "Serves 12-16   |   Bake: 375°F for 45-55 minutes",
-              "source": "Adapted from Once Upon a Chef (onceuponachef.com) by Jennifer Segal",
-              "comments": [
-                "Meant to replicate the coffee cake from Hobee’s in Palo Alto.",
-                "Best the day it is made; leftovers keep well wrapped in foil at room temperature for a few days."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Streusel",
-                  "ingredients": [
-                    "12 tablespoons packed light brown sugar (3/4 cup)",
-                    "1 cup all-purpose flour",
-                    "2 teaspoons ground cinnamon",
-                    "1/2 teaspoon salt",
-                    "8 tablespoons unsalted butter (1 stick), cold, cut into 1/2-inch chunks"
-                  ]
-                },
-                {
-                  "label": "Dry ingredients",
-                  "ingredients": [
-                    "3 cups all-purpose flour",
-                    "3 teaspoons baking powder",
-                    "3/4 teaspoon salt"
-                  ]
-                },
-                {
-                  "label": "Cake batter",
-                  "ingredients": [
-                    "3/4 cup (1 1/2 sticks) unsalted butter, softened",
-                    "1 cup + 2 tablespoons granulated sugar",
-                    "3 large eggs",
-                    "2 1/4 teaspoons vanilla extract",
-                    "1 1/2 teaspoons packed lemon zest (from about 1 lemon)",
-                    "3/4 cup milk",
-                    "5 cups fresh blueberries (frozen may be used but do not defrost)"
-                  ]
-                }
-              ],
-              "steps": [
-                "Make streusel: combine brown sugar, flour, cinnamon, and salt in a bowl. Rub in cold butter with fingertips until mixture is crumbly. Refrigerate until ready to use.",
-                "Preheat oven to 375°F. Grease a 9x13-inch baking dish.",
-                "Whisk flour, baking powder, and salt together in a medium bowl. Set aside.",
-                "Beat butter and sugar with an electric mixer until creamy, about 2 minutes. Add eggs one at a time, scraping down the bowl and beating well after each addition. Beat in vanilla and lemon zest.",
-                "On low speed, add flour mixture alternating with milk, beginning and ending with flour. Fold in blueberries gently with a spatula. Do not over-mix.",
-                "Spread batter evenly in the prepared dish. Sprinkle streusel evenly over the top. Bake 45-55 minutes until golden brown at the edges and a cake tester comes out clean. Cool in pan on a rack at least 20 minutes before serving."
-              ],
-              "highAltitude": {
-                "ingredientGroups": [
-                  {
-                    "label": "Streusel",
-                    "ingredients": [
-                      "12 tablespoons packed light brown sugar (3/4 cup)",
-                      "1 cup all-purpose flour",
-                      "2 teaspoons ground cinnamon",
-                      "1/2 teaspoon salt",
-                      "8 tablespoons unsalted butter (1 stick), cold, cut into 1/2-inch chunks"
-                    ]
-                  },
-                  {
-                    "label": "Dry ingredients",
-                    "ingredients": [
-                      "3 cups all-purpose flour",
-                      "2 1/4 teaspoons baking powder",
-                      "3/4 teaspoon salt"
-                    ]
-                  },
-                  {
-                    "label": "Cake batter",
-                    "ingredients": [
-                      "3/4 cup (1 1/2 sticks) unsalted butter, softened",
-                      "1 cup granulated sugar",
-                      "3 large eggs",
-                      "2 1/4 teaspoons vanilla extract",
-                      "1 1/2 teaspoons packed lemon zest (from about 1 lemon)",
-                      "3/4 cup + 2 tablespoons milk",
-                      "5 cups fresh blueberries (frozen may be used but do not defrost)"
-                    ]
-                  }
-                ],
-                "steps": [
-                  "Make streusel: combine brown sugar, flour, cinnamon, and salt in a bowl. Rub in cold butter with fingertips until mixture is crumbly. Refrigerate until ready to use.",
-                  "Preheat oven to 375°F. Grease a 9x13-inch baking dish.",
-                  "Whisk flour, baking powder, and salt together in a medium bowl. Set aside.",
-                  "Beat butter and sugar with an electric mixer until creamy, about 2 minutes. Add eggs one at a time, scraping down the bowl and beating well after each addition. Beat in vanilla and lemon zest.",
-                  "On low speed, add flour mixture alternating with milk, beginning and ending with flour. Fold in blueberries gently with a spatula. Do not over-mix.",
-                  "Spread batter evenly in the prepared dish. Sprinkle streusel evenly over the top. Bake 45-55 minutes until golden brown at the edges and a cake tester comes out clean. With abundant berries releasing juice at altitude, test with a cake tester inserted into the batter portion rather than through a berry. May need the full 55 minutes. Cool in pan on a rack at least 20 minutes before serving."
-                ]
-              }
-            },
-            {
-              "title": "Butter Pecan Coffee Cake",
-              "servings": "Serves 12–16",
-              "source": "Family recipe card",
-              "comments": [
-                "The key technique: butter and pecans go into the Bundt pan during preheat, so they melt and toast before the batter goes in. Invert immediately after baking so the caramelized pecan layer becomes the topping.",
-                "Vanilla-butter-nut flavoring can substitute for the vanilla and butter flavoring — use 3 teaspoons Alternatively, use 2 teaspoons pure vanilla with no butter flavoring."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Pan base",
-                  "ingredients": [
-                    "1 stick (8 tablespoons) butter or margarine",
-                    "1 cup pecans"
-                  ]
-                },
-                {
-                  "label": "Batter",
-                  "ingredients": [
-                    "1 package Duncan Hines yellow cake mix",
-                    "1 package Jell-O instant vanilla pudding",
-                    "3/4 cup vegetable oil",
-                    "3/4 cup water",
-                    "1 teaspoon pure vanilla extract",
-                    "1 teaspoon butter flavoring (or use 2 teaspoons pure vanilla with no butter flavoring)"
-                  ]
-                },
-                {
-                  "label": "Eggs",
-                  "ingredients": [
-                    "4 large eggs, beaten"
-                  ]
-                },
-                {
-                  "label": "Cinnamon swirl",
-                  "ingredients": [
-                    "2 teaspoons cinnamon",
-                    "1/2 cup sugar",
-                    "1/2 cup pecans"
-                  ]
-                }
-              ],
-              "steps": [
-                "Grease and flour a Bundt pan. Place butter and 1 cup pecans in the bottom.",
-                "Place pan in oven while it preheats to 350°F; leave for 6 minutes, so the butter melts and pecans toast slightly.",
-                "Meanwhile, in a large mixing bowl, combine cake mix, pudding mix, oil, water, vanilla, and butter flavoring. Beat to combine.",
-                "Beat eggs separately, then add to batter while mixing. Beat until smooth.",
-                "Remove pan from oven after 6 minutes. Pour half the batter over the pecan-butter base.",
-                "Mix together cinnamon, sugar, and 1/2 cup pecans. Sprinkle evenly over batter layer.",
-                "Pour remaining batter on top. Gently swirl the surface with a knife without disturbing the bottom layer.",
-                "Bake at 350°F for 60 minutes.",
-                "Immediately invert onto a serving plate. Remove pan — the caramelized pecan layer will now be on top."
-              ],
-              "highAltitude": {
-                "comments": [
-                  "The key technique: butter and pecans go into the Bundt pan during preheat, so they melt and toast before the batter goes in. Invert immediately after baking so the caramelized pecan layer becomes the topping.",
-                  "Vanilla-butter-nut flavoring can substitute for the vanilla and butter flavoring — use 3 teaspoons Alternatively, use 2 teaspoons pure vanilla with no butter flavoring."
-                ],
-                "ingredientGroups": [
-                  {
-                    "label": "Pan base",
-                    "ingredients": [
-                      "1 stick (8 tablespoons) butter or margarine",
-                      "1 cup pecans"
-                    ]
-                  },
-                  {
-                    "label": "Batter",
-                    "ingredients": [
-                      "1 package Duncan Hines yellow cake mix",
-                      "1 package Jell-O instant vanilla pudding",
-                      "3/4 cup vegetable oil",
-                      "3/4 cup + 2 tablespoons water",
-                      "1 teaspoon pure vanilla extract",
-                      "1 teaspoon butter flavoring"
-                    ]
-                  },
-                  {
-                    "label": "Eggs",
-                    "ingredients": [
-                      "4 large eggs, beaten"
-                    ]
-                  },
-                  {
-                    "label": "Cinnamon swirl",
-                    "ingredients": [
-                      "2 teaspoons cinnamon",
-                      "7 tablespoons sugar",
-                      "1/2 cup pecans"
-                    ]
-                  }
-                ],
-                "steps": [
-                  "Grease and flour a Bundt pan. Place butter and 1 cup pecans in the bottom.",
-                  "Place pan in oven while it preheats to 375°F; leave for 6 minutes, so the butter melts and pecans toast slightly.",
-                  "Meanwhile, in a large mixing bowl, combine cake mix, pudding mix, oil, water, vanilla, and butter flavoring. Beat to combine.",
-                  "Beat eggs separately, then add to batter while mixing. Beat until smooth.",
-                  "Remove pan from oven after 6 minutes. Pour half the batter over the pecan-butter base.",
-                  "Mix together cinnamon, sugar, and 1/2 cup pecans. Sprinkle evenly over batter layer.",
-                  "Pour remaining batter on top. Gently swirl the surface with a knife without disturbing the bottom layer.",
-                  "Bake at 375°F for 50–55 minutes (check at 50 minutes with a toothpick).",
-                  "Immediately invert onto a serving plate. Remove pan — the caramelized pecan layer will now be on top."
-                ]
-              }
-            },
-            {
-              "title": "Chocolate \"Birthday Cake\"",
-              "favorite": true,
-              "servings": "One large sheet cake or a 2-layer 9-inch cake   |   Cook: 40-45 minutes",
-              "comments": [
-                "For a single layer, halve the butter, sugar, chocolate, flour, baking soda, salt, vanilla, and water as noted below. For 1 1/2 eggs: whisk 2 eggs together and use 3/4 of the mixture.",
-                "Don't halve the frosting, even for a single layer — a full batch is right (a half batch isn't quite enough)."
-              ],
-              "source": "Family recipe card written by Grandmother Brenda; the single-layer/half-batch margin annotations are from Lauren",
-              "ingredientGroups": [
-                {
-                  "label": "Creamed base",
-                  "ingredients": [
-                    "1 cup (2 sticks) butter [1 stick]",
-                    "2 cups sugar [1 cup]",
-                    "3 eggs [1 1/2 eggs]",
-                    "2 teaspoons vanilla [1 teaspoon]"
-                  ]
-                },
-                {
-                  "label": "Chocolate",
-                  "ingredients": [
-                    "4 oz unsweetened chocolate [2 oz]"
-                  ]
-                },
-                {
-                  "label": "Dry ingredients",
-                  "ingredients": [
-                    "2 2/3 cups flour [1 1/3 cups]",
-                    "2 teaspoons baking soda [1 teaspoon]",
-                    "1 teaspoon salt [1/2 teaspoon]"
-                  ]
-                },
-                {
-                  "label": "Liquid",
-                  "ingredients": [
-                    "Up to 2 cups water, added gradually as needed [up to 1 cup]"
-                  ]
-                },
-                {
-                  "label": "Frosting",
-                  "ingredients": [
-                    "2 cups confectioners' sugar (be generous — you may want more)",
-                    "3/4 cup butter",
-                    "1 teaspoon vanilla",
-                    "2-3 oz unsweetened chocolate, melted"
-                  ]
-                }
-              ],
-              "steps": [
-                "Cream the butter; add the sugar, then the eggs and vanilla, beating well after each addition.",
-                "Melt the chocolate in the microwave (20-30 second bursts, stirring between, until smooth) and add to the creamed mixture.",
-                "Sift together the flour, baking soda, and salt.",
-                "Add the flour mixture to the creamed mixture alternately with the water, mixing just until combined. You likely won't need the full 2 cups of water — add enough to make a smooth, pourable batter.",
-                "Bake in a large buttered pan, or two buttered 9-inch round layer pans, for 40-45 minutes at 325°F.",
-                "Frost after the layer(s) are completely cool, on a baking rack.",
-                "Frosting: Cream the confectioners' sugar with the butter until smooth. Add the vanilla and beat well.",
-                "Melt the 2-3 oz chocolate and add to the frosting; mix until smooth. Add a bit more confectioners' sugar if needed to reach a spreadable consistency.",
-                "Spread over the cooled cake."
-              ],
-              "highAltitude": {
-                "comments": [
-                  "For a single layer, halve all cake ingredients as noted in the standard recipe. The single-layer proportions given in the original apply — reduce each adjusted amount by half in the same way.",
-                  "Don’t halve the frosting, even for a single layer — a full batch is right (a half batch isn’t quite enough)."
-                ],
-                "ingredientGroups": [
-                  {
-                    "label": "Creamed base",
-                    "ingredients": [
-                      "1 cup (2 sticks) butter [1/2 stick for half batch]",
-                      "1 3/4 cups sugar [7/8 cup for half batch]",
-                      "3 eggs [1 1/2 eggs]",
-                      "2 teaspoons vanilla [1 teaspoon]"
-                    ]
-                  },
-                  {
-                    "label": "Chocolate",
-                    "ingredients": [
-                      "4 oz unsweetened chocolate [2 oz]"
-                    ]
-                  },
-                  {
-                    "label": "Dry ingredients",
-                    "ingredients": [
-                      "2 3/4 cups flour [1 3/8 cups]",
-                      "1 1/2 teaspoons baking soda [3/4 teaspoon]",
-                      "1 teaspoon salt [1/2 teaspoon]"
-                    ]
-                  },
-                  {
-                    "label": "Liquid",
-                    "ingredients": [
-                      "Up to 2 cups water, use the full amount [up to 1 cup for half batch]"
-                    ]
-                  },
-                  {
-                    "label": "Frosting",
-                    "ingredients": [
-                      "2 cups confectioners’ sugar",
-                      "3/4 cup butter",
-                      "1 teaspoon vanilla",
-                      "2–3 oz unsweetened chocolate, melted"
-                    ]
-                  }
-                ],
-                "steps": [
-                  "Cream the butter; add the sugar, then the eggs and vanilla, beating well after each addition.",
-                  "Melt the chocolate in the microwave (20–30 second bursts, stirring between, until smooth) and add to the creamed mixture.",
-                  "Sift together the flour, baking soda, and salt.",
-                  "Add the flour mixture to the creamed mixture alternately with the water, mixing just until combined. At altitude, use the full 2 cups of water (evaporation is faster and the batter needs the moisture).",
-                  "Bake in a large buttered pan, or two buttered 9-inch round layer pans, for 35–40 minutes at 375°F. Start checking at 33 minutes.",
-                  "Frost after the layer(s) are completely cool, on a baking rack.",
-                  "Frosting: Cream the confectioners’ sugar with the butter until smooth. Add the vanilla and beat well.",
-                  "Melt the 2–3 oz chocolate and add to the frosting; mix until smooth. Add a bit more confectioners’ sugar if needed to reach a spreadable consistency.",
-                  "Spread over the cooled cake."
-                ]
-              }
-            },
-            {
-              "title": "Chocolate Chip Scones",
-              "servings": "Makes 8 large scones",
-              "ingredientGroups": [
-                {
-                  "label": "Dry ingredients",
-                  "ingredients": [
-                    "2 cups all-purpose flour, plus more for hands and surface",
-                    "2 1/2 teaspoons baking powder",
-                    "1 teaspoon ground cinnamon",
-                    "1/2 teaspoon salt"
-                  ]
-                },
-                {
-                  "label": "Wet ingredients",
-                  "ingredients": [
-                    "1/2 cup (8 tablespoons) unsalted butter, frozen",
-                    "1/2 cup heavy cream, plus 2 tablespoons for brushing",
-                    "1/2 cup packed light or dark brown sugar",
-                    "1 large egg",
-                    "1 1/2 teaspoons pure vanilla extract",
-                    "1 1/4 cups mini chocolate chips"
-                  ]
-                },
-                {
-                  "label": "Finishing",
-                  "ingredients": [
-                    "Coarse sugar for sprinkling (optional)",
-                    "Confectioners' sugar for dusting (optional)"
-                  ]
-                }
-              ],
-              "steps": [
-                "Whisk flour, baking powder, cinnamon, and salt together in a large bowl. Grate frozen butter using a box grater; add to flour mixture and cut in with a pastry cutter, two forks, or your fingers until mixture comes together in pea-sized crumbs. Refrigerate while mixing wet ingredients.",
-                "Whisk 1/2 cup heavy cream, brown sugar, egg, and vanilla together in a small bowl. Drizzle over flour mixture; add chocolate chips. Mix until everything appears moistened. Turn onto counter and work into a ball with floured hands. (If too sticky, add more flour; if too dry, add 1–2 tablespoons more cream.) Press into an 8-inch disc; cut into 8 wedges. Brush with remaining 2 tablespoons heavy cream; sprinkle with coarse sugar if desired.",
-                "Refrigerate scones at least 15 minutes. Meanwhile, preheat oven to 400°F.",
-                "Arrange scones 2–3 inches apart on a parchment-lined baking sheet. Bake 22–25 minutes until golden brown around edges and lightly browned on top. Cool a few minutes before serving. Dust with confectioners' sugar if desired."
-              ],
-              "comments": [
-                "Mini chocolate chips preferred; regular-size work too (increase to 1 1/2 cups). Can prepare through step 2 and refrigerate overnight. Unbaked scones also freeze well. Leftovers keep at room temperature 2 days or refrigerated 5 days."
-              ],
-              "source": "Sally McKenney / Sally's Baking Addiction (sallysbakingaddiction.com)",
-              "highAltitude": {
-                "ingredientGroups": [
-                  {
-                    "label": "Dry ingredients",
-                    "ingredients": [
-                      "2 cups + 4 tablespoons all-purpose flour, plus more for hands and surface",
-                      "2 teaspoons baking powder",
-                      "1 teaspoon ground cinnamon",
-                      "1/2 teaspoon salt"
-                    ]
-                  },
-                  {
-                    "label": "Wet ingredients",
-                    "ingredients": [
-                      "1/2 cup (8 tablespoons) unsalted butter, frozen",
-                      "1/2 cup heavy cream, plus 2 tablespoons for brushing",
-                      "7 tablespoons packed light or dark brown sugar",
-                      "1 large egg",
-                      "1 1/2 teaspoons pure vanilla extract",
-                      "1 1/4 cups mini chocolate chips"
-                    ]
-                  },
-                  {
-                    "label": "Finishing",
-                    "ingredients": [
-                      "Coarse sugar for sprinkling (optional)",
-                      "Confectioners' sugar for dusting (optional)"
-                    ]
-                  }
-                ]
-              }
-            },
-            {
-              "title": "Doughnut Glazes",
-              "servings": "Each glaze makes enough for 10–12 doughnuts",
-              "ingredientGroups": [
-                {
-                  "label": "Vanilla glaze",
-                  "ingredients": [
-                    "1 1/2 cups (6 oz) powdered sugar",
-                    "2–3 tablespoons milk",
-                    "1 1/2 teaspoons vanilla extract"
-                  ]
-                },
-                {
-                  "label": "Funfetti glaze",
-                  "ingredients": [
-                    "1 1/2 cups (6 oz) powdered sugar",
-                    "2–3 tablespoons milk",
-                    "1 teaspoon vanilla extract",
-                    "1/4 teaspoon almond extract",
-                    "1 small drop pink food coloring"
-                  ]
-                },
-                {
-                  "label": "Chocolate glaze",
-                  "ingredients": [
-                    "1 1/2 cups (6 oz) powdered sugar",
-                    "4 tablespoons unsweetened cocoa powder",
-                    "3 tablespoons milk",
-                    "1 teaspoon pure vanilla extract"
-                  ]
-                },
-                {
-                  "label": "Maple glaze",
-                  "ingredients": [
-                    "1 1/2 cups (6 oz) powdered sugar",
-                    "1–2 tablespoons milk",
-                    "4 tablespoons maple syrup",
-                    "1 teaspoon vanilla extract"
-                  ]
-                },
-                {
-                  "label": "Cinnamon sugar",
-                  "ingredients": [
-                    "1 cup (8 oz) granulated sugar",
-                    "2 tablespoons ground cinnamon",
-                    "1/8 teaspoon salt"
-                  ]
-                }
-              ],
-              "steps": [
-                "For vanilla, funfetti, or maple glaze: whisk all ingredients together until silky and smooth. Add more milk for a thinner glaze. Dip doughnuts while still warm.",
-                "For chocolate glaze: whisk powdered sugar and cocoa together. Slowly stir in milk and vanilla; whisk until smooth, adding a touch more milk if needed for a dippable consistency. Dip doughnuts; let rest to harden slightly.",
-                "For cinnamon sugar: combine sugar, cinnamon, and salt in a medium bowl. Toss doughnuts in cinnamon sugar while still warm.",
-                "All glazes store in an airtight container at room temperature for 2 weeks. Cinnamon sugar keeps up to 2 years."
-              ],
-              "source": "Gemma Stafford / Bigger Bolder Baking (biggerbolderbaking.com)"
-            },
-            {
-              "title": "Filled Coffee Cake",
-              "servings": "Serves 12–16   |   Bake: 350–375°F for 30–40 minutes",
-              "source": "Family recipe card, credited to Nana Regina (card reads \"delicious! Mother's\")",
-              "ingredientGroups": [
-                {
-                  "label": "Cake batter",
-                  "ingredients": [
-                    "1/2 cup butter, softened (or margarine)",
-                    "2 cups sugar",
-                    "4 eggs, well beaten",
-                    "1 teaspoon vanilla",
-                    "3 cups flour",
-                    "2 teaspoons baking powder",
-                    "1/2 teaspoon salt",
-                    "1 cup milk"
-                  ]
-                },
-                {
-                  "label": "Filling",
-                  "ingredients": [
-                    "1 cup brown sugar",
-                    "1 cup nuts, chopped",
-                    "2 tablespoons butter",
-                    "2 tablespoons flour",
-                    "1 teaspoon cinnamon"
-                  ]
-                }
-              ],
-              "steps": [
-                "Preheat oven to 350–375°F. Grease a 9x13 pan (or tube pan).",
-                "Cream butter and sugar until light and fluffy. Add well-beaten eggs and vanilla; beat well.",
-                "Whisk together flour, baking powder, and salt in a separate bowl.",
-                "Alternately add the flour mixture and the milk to the butter mixture in 3 additions each, beginning and ending with flour. Stir until just combined.",
-                "Make filling: combine brown sugar, nuts, butter, flour, and cinnamon; mix until crumbly.",
-                "Pour half the batter into the prepared pan. Spread the filling evenly over the batter. Pour remaining batter on top.",
-                "Bake 30–40 minutes until a toothpick inserted in the center comes out clean."
-              ],
-              "highAltitude": {
-                "ingredientGroups": [
-                  {
-                    "label": "Cake batter",
-                    "ingredients": [
-                      "1/2 cup butter, softened (or margarine)",
-                      "1 3/4 cups sugar",
-                      "4 eggs, well beaten",
-                      "1 teaspoon vanilla",
-                      "3 cups flour",
-                      "1 3/4 teaspoons baking powder",
-                      "1/2 teaspoon salt",
-                      "1 cup + 2 tablespoons milk"
-                    ]
-                  },
-                  {
-                    "label": "Filling",
-                    "ingredients": [
-                      "14 tablespoons (7/8 cup) brown sugar",
-                      "1 cup nuts, chopped",
-                      "2 tablespoons butter",
-                      "2 tablespoons flour",
-                      "1 teaspoon cinnamon"
-                    ]
-                  }
-                ],
-                "steps": [
-                  "Preheat oven to 375°F. Grease a 9×13 pan (or tube pan).",
-                  "Cream butter and sugar until light and fluffy. Add well-beaten eggs and vanilla; beat well.",
-                  "Whisk together flour, baking powder, and salt in a separate bowl.",
-                  "Alternately add the flour mixture and the milk to the butter mixture in 3 additions each, beginning and ending with flour. Stir until just combined.",
-                  "Make filling: combine brown sugar, nuts, butter, flour, and cinnamon; mix until crumbly.",
-                  "Pour half the batter into the prepared pan. Spread the filling evenly over the batter. Pour remaining batter on top.",
-                  "Bake 25–32 minutes until a toothpick inserted in the center comes out clean. Check at 25 minutes."
-                ]
-              }
-            },
-            {
-              "title": "Jumbo Banana-Nut Muffins",
-              "servings": "Makes 12 muffins",
-              "comments": [
-                "Recipe scaled 1.5x from original (from 9 jumbo muffins to 12). Walnuts made optional.",
-                "1 cup mashed ripe banana ≈ 2 medium bananas."
-              ],
-              "source": "Mostly Muffins (cookbook), p. 14",
-              "ingredientGroups": [
-                {
-                  "label": "Dry ingredients",
-                  "ingredients": [
-                    "1 1/2 cups all-purpose flour",
-                    "1 1/2 cups whole-wheat flour",
-                    "1 1/2 teaspoons baking powder",
-                    "1 1/2 teaspoons baking soda",
-                    "1/4 teaspoon salt"
-                  ]
-                },
-                {
-                  "label": "Wet base",
-                  "ingredients": [
-                    "3/4 cup lightly salted butter or margarine, softened",
-                    "3/4 cup sugar"
-                  ]
-                },
-                {
-                  "label": "Eggs",
-                  "ingredients": [
-                    "3 eggs"
-                  ]
-                },
-                {
-                  "label": "Wet additions",
-                  "ingredients": [
-                    "2 cups mashed ripe banana (about 4 medium bananas)",
-                    "6 tablespoons (3/8 cup) milk",
-                    "1 1/2 teaspoons vanilla"
-                  ]
-                },
-                {
-                  "label": "Walnuts (optional)",
-                  "ingredients": [
-                    "3/4 cup broken walnuts (optional)"
-                  ]
-                }
-              ],
-              "steps": [
-                "Preheat oven to 375°F. Grease muffin cups and the edges surrounding the cups.",
-                "In a large bowl, stir together the flours, baking powder, baking soda, and salt.",
-                "In another bowl, cream butter and sugar until light and fluffy; beat in eggs. Stir in banana, milk, and vanilla.",
-                "Add dry ingredients to wet mixture and stir just to combine. Fold in walnuts if using.",
-                "Spoon batter into prepared muffin cups; bake 25 to 30 minutes or until a cake tester inserted in the center comes out clean.",
-                "Remove muffin tin(s) to wire rack. Cool 5 minutes before removing muffins from cups; finish cooling on rack. Serve warm or store in an airtight container at room temperature. These muffins freeze well."
-              ],
-              "highAltitude": {
-                "comments": [
-                  "Recipe scaled 1.5x from original (from 9 jumbo muffins to 12). Walnuts made optional.",
-                  "1 cup mashed ripe banana = about 2 medium bananas."
-                ],
-                "ingredientGroups": [
-                  {
-                    "label": "Dry ingredients",
-                    "ingredients": [
-                      "1 1/2 cups all-purpose flour",
-                      "1 1/2 cups whole-wheat flour",
-                      "1 1/4 teaspoons baking powder",
-                      "1 1/4 teaspoons baking soda",
-                      "1/4 teaspoon salt"
-                    ]
-                  },
-                  {
-                    "label": "Wet base",
-                    "ingredients": [
-                      "3/4 cup lightly salted butter or margarine, softened",
-                      "10 tablespoons sugar"
-                    ]
-                  },
-                  {
-                    "label": "Eggs",
-                    "ingredients": [
-                      "3 eggs"
-                    ]
-                  },
-                  {
-                    "label": "Wet additions",
-                    "ingredients": [
-                      "2 cups mashed ripe banana (about 4 medium bananas)",
-                      "1/2 cup milk",
-                      "1 1/2 teaspoons vanilla"
-                    ]
-                  },
-                  {
-                    "label": "Walnuts (optional)",
-                    "ingredients": [
-                      "3/4 cup broken walnuts (optional)"
-                    ]
-                  }
-                ],
-                "steps": [
-                  "Preheat oven to 400°F. Grease muffin cups and the edges surrounding the cups.",
-                  "In a large bowl, stir together the flours, baking powder, baking soda, and salt.",
-                  "In another bowl, cream butter and sugar until light and fluffy; beat in eggs. Stir in banana, milk, and vanilla.",
-                  "Add dry ingredients to wet mixture and stir just to combine. Fold in walnuts if using.",
-                  "Spoon batter into prepared muffin cups; bake 22–27 minutes or until a cake tester inserted in the center comes out clean. (Check at 22 minutes — the higher temp means they finish faster.)",
-                  "Remove muffin tin(s) to wire rack. Cool 5 minutes before removing muffins from cups; finish cooling on rack. Serve warm or store in an airtight container at room temperature. These muffins freeze well."
-                ]
-              }
-            },
-            {
-              "title": "Lemony Glazed Cake Doughnuts",
-              "servings": "Makes 8 doughnuts (plus holes)",
-              "ingredientGroups": [
-                {
-                  "label": "Dry ingredients",
-                  "ingredients": [
-                    "2 1/2 teaspoons baking powder",
-                    "2 cups all-purpose flour, plus more for dusting",
-                    "1 teaspoon kosher salt"
-                  ]
-                },
-                {
-                  "label": "Dough",
-                  "ingredients": [
-                    "2 large egg yolks",
-                    "1 cup whole-milk Greek yogurt",
-                    "1/2 cup granulated sugar",
-                    "2 tablespoons unsalted butter, melted and slightly cooled",
-                    "1 teaspoon vanilla extract",
-                    "Vegetable oil for frying (6–8 cups)"
-                  ]
-                },
-                {
-                  "label": "Glaze",
-                  "ingredients": [
-                    "1 cup powdered sugar",
-                    "Zest from 1/4 lemon",
-                    "Pinch of kosher salt",
-                    "1/4 cup water"
-                  ]
-                }
-              ],
-              "steps": [
-                "Whisk baking powder, flour, and 1 teaspoon salt in a medium bowl. Whisk egg yolks, yogurt, granulated sugar, melted butter, and vanilla in a large bowl. Mix in dry ingredients until dough comes together and is smooth.",
-                "Turn dough onto a well-floured sheet of parchment. Dust with flour; cover with a second sheet; roll to 1/2-inch thick. Remove top sheet; brush off excess flour. Punch out circles about 3 1/2 inches in diameter. Punch out centers about 1 inch in diameter. Reroll scraps to punch out more.",
-                "Pour oil into a large pot to a depth of 1 1/2 inches. Fit with deep-fry thermometer; heat over medium-high to 350°F. Fry doughnuts, turning once, until puffy and mahogany brown, about 2 minutes per side (slightly less for holes). Transfer to a wire rack; cool 10 minutes.",
-                "Whisk powdered sugar, lemon zest, pinch of salt, and 1/4 cup water until smooth. Dip each side of doughnut into glaze; let excess run off. Return to rack. Eat as soon as possible."
-              ],
-              "source": "Chris Morocco / Bon Appétit (bonappetit.com)",
-              "highAltitude": {
-                "ingredientGroups": [
-                  {
-                    "label": "Dry ingredients",
-                    "ingredients": [
-                      "2 teaspoons baking powder",
-                      "2 cups + 2 tablespoons all-purpose flour, plus more for dusting",
-                      "1 teaspoon kosher salt"
-                    ]
-                  },
-                  {
-                    "label": "Dough",
-                    "ingredients": [
-                      "2 large egg yolks",
-                      "1 cup whole-milk Greek yogurt",
-                      "7 tablespoons granulated sugar",
-                      "2 tablespoons unsalted butter, melted and slightly cooled",
-                      "1 teaspoon vanilla extract",
-                      "Vegetable oil for frying (6–8 cups)"
-                    ]
-                  },
-                  {
-                    "label": "Glaze",
-                    "ingredients": [
-                      "1 cup powdered sugar",
-                      "Zest from 1/4 lemon",
-                      "Pinch of kosher salt",
-                      "1/4 cup water"
-                    ]
-                  }
-                ]
-              }
-            },
-            {
-              "title": "Mom’s Zucchini Bread",
-              "servings": "Makes 2 (8x4-inch) loaves   |   Bake: 325°F for 40-60 minutes",
-              "source": "Allrecipes (Vicki Monte), tested by Allrecipes Test Kitchen",
-              "comments": [
-                "Freezes well. Keeps in the refrigerator for weeks."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Dry ingredients",
-                  "ingredients": [
-                    "3 cups all-purpose flour",
-                    "1 tablespoon ground cinnamon",
-                    "1 teaspoon salt",
-                    "1 teaspoon baking powder",
-                    "1 teaspoon baking soda"
-                  ]
-                },
-                {
-                  "label": "Wet ingredients",
-                  "ingredients": [
-                    "2 1/4 cups white sugar",
-                    "1 cup vegetable oil",
-                    "3 large eggs",
-                    "1 tablespoon vanilla extract"
-                  ]
-                },
-                {
-                  "label": "Mix-ins",
-                  "ingredients": [
-                    "2 cups shredded zucchini",
-                    "1 cup chopped walnuts"
-                  ]
-                }
-              ],
-              "steps": [
-                "Preheat oven to 325°F. Grease and flour two 8x4-inch loaf pans.",
-                "Sift flour, cinnamon, salt, baking powder, and baking soda together in a large bowl.",
-                "Beat sugar, oil, eggs, and vanilla with an electric mixer until combined. Add flour mixture and beat well.",
-                "Stir in shredded zucchini and walnuts until combined. Pour into prepared pans.",
-                "Bake until a toothpick inserted in the center comes out clean, 40-60 minutes. Cool in pans on a wire rack for 20 minutes.",
-                "Run a knife around the edges to loosen. Turn out onto a wire rack and cool completely."
-              ],
-              "highAltitude": {
-                "ingredientGroups": [
-                  {
-                    "label": "Dry ingredients",
-                    "ingredients": [
-                      "3 cups + 2 tablespoons all-purpose flour",
-                      "1 tablespoon ground cinnamon",
-                      "1 teaspoon salt",
-                      "3/4 teaspoon baking powder",
-                      "3/4 teaspoon baking soda"
-                    ]
-                  },
-                  {
-                    "label": "Wet ingredients",
-                    "ingredients": [
-                      "2 cups white sugar",
-                      "1 cup + 2 tablespoons vegetable oil",
-                      "3 large eggs",
-                      "1 tablespoon vanilla extract"
-                    ]
-                  },
-                  {
-                    "label": "Mix-ins",
-                    "ingredients": [
-                      "2 cups shredded zucchini",
-                      "1 cup chopped walnuts"
-                    ]
-                  }
-                ],
-                "steps": [
-                  "Preheat oven to 325°F. Grease and flour two 8x4-inch loaf pans.",
-                  "Sift flour, cinnamon, salt, baking powder, and baking soda together in a large bowl.",
-                  "Beat sugar, oil, eggs, and vanilla with an electric mixer until combined. Add flour mixture and beat well.",
-                  "Stir in shredded zucchini and walnuts until combined. Pour into prepared pans.",
-                  "Bake until a toothpick inserted in the center comes out clean, 40-60 minutes. Cool in pans on a wire rack for 20 minutes.",
-                  "Run a knife around the edges to loosen. Turn out onto a wire rack and cool completely."
-                ]
-              }
-            },
-            {
-              "title": "Nana's Poundcake",
-              "favorite": true,
-              "servings": "1 loaf or bundt cake   |   Cook: 90 minutes",
-              "comments": [
-                "A four-generation family recipe."
-              ],
-              "source": "Family recipe, credited to Nana, via Lauren's blog post \"Nana's Poundcake, Food, and Cultural Connection\"",
-              "ingredientGroups": [
-                {
-                  "label": "Cake",
-                  "ingredients": [
-                    "1/2 pound salted butter (2 sticks), softened",
-                    "1 3/4 cups sugar",
-                    "5 eggs",
-                    "2 cups sifted flour",
-                    "2 tablespoons vanilla"
-                  ]
-                }
-              ],
-              "steps": [
-                "Cream the butter and sugar.",
-                "Add the eggs one at a time, beating constantly.",
-                "Add the flour and vanilla.",
-                "Pour into a well-greased loaf pan or bundt pan.",
-                "Bake at 350°F for 90 minutes."
-              ],
-              "highAltitude": {
-                "comments": [
-                  "A four-generation family recipe."
-                ],
-                "ingredientGroups": [
-                  {
-                    "label": "Cake",
-                    "ingredients": [
-                      "1/2 pound salted butter (2 sticks), softened",
-                      "1 1/2 cups sugar",
-                      "5 eggs",
-                      "2 cups + 2 tablespoons sifted flour",
-                      "2 tablespoons vanilla"
-                    ]
-                  }
-                ],
-                "steps": [
-                  "Cream the butter and sugar.",
-                  "Add the eggs one at a time, beating constantly.",
-                  "Add the flour and vanilla.",
-                  "Pour into a well-greased loaf pan or bundt pan.",
-                  "Bake at 375°F for 70–80 minutes. Start checking at 70 minutes with a toothpick or cake tester in the center. The cake is done when the tester comes out clean and the top is deep golden."
-                ]
-              }
-            },
-            {
-              "id": "baking-sweet-passover-cream-puff-shells",
-              "title": "Passover Cream Puff Shells",
-              "servings": "Makes about 2 dozen shells",
-              "ingredientGroups": [
-                {
-                  "label": "Dough",
-                  "ingredients": [
-                    "1 cup water",
-                    "1/2 cup (4 oz) unsalted butter or margarine, cut into 8 pieces",
-                    "1 teaspoon salt",
-                    "1 1/2 cups matzo cake meal",
-                    "5 large eggs"
-                  ]
-                }
-              ],
-              "steps": [
-                "Position a rack in center of oven; heat to 400°F. Grease corners of 2 baking sheets; line with parchment paper.",
-                "Combine water and butter in a small saucepan over medium-low heat until butter melts. Increase heat; bring to a boil. Remove from heat; add matzo cake meal all at once and mix vigorously. Return to low heat; cook, stirring constantly, until mixture is a thick paste, about 1 minute. Transfer to the bowl of a stand mixer or large bowl; cool 5 minutes.",
-                "Using paddle attachment or wooden spoon, beat in one egg at a time, fully incorporating each before adding the next, until dough is smooth.",
-                "Drop rounded tablespoons (about 1 1/2 tablespoons each) onto baking sheets, spacing 1 1/2 inches apart. Smooth any points with a moistened finger.",
-                "Bake 15 minutes. Reduce oven to 375°F; bake until golden and firm, 14–20 more minutes. Turn off oven; wedge door open with a wooden spoon and leave puffs 30 minutes to dry out.",
-                "Remove; pierce each puff at the center of one side with a paring knife to release steam."
-              ],
-              "comments": [
-                "Best on the day baked. Unfilled shells keep 1 day in an airtight container at room temperature, or freeze well. Reheat in oven or toaster oven before using. Filled cream puffs can be refrigerated up to 1 day.",
-                "Used in Passover Profiteroles with Strawberries (Desserts)."
-              ],
-              "source": "Faye Levy / Los Angeles Times",
-              "highAltitude": {
-                "ingredientGroups": [
-                  {
-                    "label": "Dough",
-                    "ingredients": [
-                      "1 cup water",
-                      "1/2 cup (4 oz) unsalted butter or margarine, cut into 8 pieces",
-                      "1 teaspoon salt",
-                      "1 1/2 cups + 1 tablespoon matzo cake meal",
-                      "5 large eggs"
-                    ]
-                  }
-                ],
-                "steps": [
-                  "Position a rack in center of oven; heat to 400°F. Grease corners of 2 baking sheets; line with parchment paper.",
-                  "Combine water and butter in a small saucepan over medium-low heat until butter melts. Increase heat; bring to a boil. Remove from heat; add matzo cake meal all at once and mix vigorously. Return to low heat; cook, stirring constantly until paste pulls cleanly from the pan (30–60 seconds longer than at sea level). Transfer to stand mixer bowl; cool 5 minutes.",
-                  "Using paddle attachment or wooden spoon, beat in one egg at a time, fully incorporating each before adding the next, until dough is smooth.",
-                  "Drop rounded tablespoons onto baking sheets, spacing 1 1/2 inches apart. Smooth any points with a moistened finger.",
-                  "Bake the full 15 minutes at 400°F before reducing heat; do not open the oven early. Reduce to 375°F; bake until golden and firm, 14–20 more minutes. Turn off oven; wedge door open and leave puffs 30 minutes to dry out.",
-                  "Remove; pierce each puff at the center of one side with a paring knife to release steam."
-                ]
-              }
-            },
-            {
-              "title": "Pumpkin Gut Bread",
-              "servings": "Makes 2 (9x5-inch) loaves   |   Bake: 350°F for about 1 hour",
-              "source": "Diana Johnson, EatingRichly.com",
-              "comments": [
-                "Pumpkin guts are the stringy fibrous strands from the inside of a pumpkin, with the seeds removed. Unlike puree, they stay chunky, creating golden ribbons throughout the loaf. Pumpkin puree may be substituted but will blend fully into the batter.",
-                "Recipe makes two loaves and freezes very well."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Dry ingredients",
-                  "ingredients": [
-                    "3 1/2 cups whole wheat flour (all-purpose may be substituted)",
-                    "3 cups sugar",
-                    "2 teaspoons ground cinnamon",
-                    "2 teaspoons ground nutmeg",
-                    "2 teaspoons baking soda",
-                    "1 1/2 teaspoons salt"
-                  ]
-                },
-                {
-                  "label": "Wet ingredients",
-                  "ingredients": [
-                    "4 large eggs, beaten",
-                    "1 cup vegetable oil",
-                    "1/2 cup water"
-                  ]
-                },
-                {
-                  "label": "Pumpkin",
-                  "ingredients": [
-                    "2 cups fresh pumpkin guts (fibrous strands from the pumpkin interior, separated from seeds)"
-                  ]
-                },
-                {
-                  "label": "Pecans (optional)",
-                  "ingredients": [
-                    "1 cup chopped pecans"
-                  ]
-                }
-              ],
-              "steps": [
-                "Preheat oven to 350°F. Grease and flour two 9x5-inch loaf pans.",
-                "Snip the pumpkin gut fibers with scissors into shorter, workable pieces -- avoid large clumps.",
-                "Combine flour, sugar, cinnamon, nutmeg, baking soda, and salt in a large bowl.",
-                "Add eggs, oil, water, and pumpkin guts. Stir until batter is smooth.",
-                "Stir in pecans, or reserve to sprinkle over the top before baking.",
-                "Divide batter between prepared pans. Bake 1 hour, then test the center with a wooden skewer. Continue baking and check every 5 minutes if not clean. Cool in pans 10 minutes, then turn out onto a wire rack."
-              ],
-              "highAltitude": {
-                "ingredientGroups": [
-                  {
-                    "label": "Dry ingredients",
-                    "ingredients": [
-                      "3 1/2 cups whole wheat flour (all-purpose may be substituted)",
-                      "2 2/3 cups sugar",
-                      "2 teaspoons ground cinnamon",
-                      "2 teaspoons ground nutmeg",
-                      "1 1/2 teaspoons baking soda",
-                      "1 1/2 teaspoons salt"
-                    ]
-                  },
-                  {
-                    "label": "Wet ingredients",
-                    "ingredients": [
-                      "4 large eggs, beaten",
-                      "1 cup vegetable oil",
-                      "1/2 cup + 2 tablespoons water"
-                    ]
-                  },
-                  {
-                    "label": "Pumpkin",
-                    "ingredients": [
-                      "2 cups fresh pumpkin guts (fibrous strands from the pumpkin interior, separated from seeds)"
-                    ]
-                  },
-                  {
-                    "label": "Pecans (optional)",
-                    "ingredients": [
-                      "1 cup chopped pecans"
-                    ]
-                  }
-                ],
-                "steps": [
-                  "Preheat oven to 350°F. Grease and flour two 9x5-inch loaf pans.",
-                  "Snip the pumpkin gut fibers with scissors into shorter, workable pieces -- avoid large clumps.",
-                  "Combine flour, sugar, cinnamon, nutmeg, baking soda, and salt in a large bowl.",
-                  "Add eggs, oil, water, and pumpkin guts. Stir until batter is smooth.",
-                  "Stir in pecans, or reserve to sprinkle over the top before baking.",
-                  "Divide batter between prepared pans. Bake 1 hour, then test the center with a wooden skewer. Continue baking and check every 5 minutes if not clean. Cool in pans 10 minutes, then turn out onto a wire rack."
-                ]
-              }
-            },
-            {
-              "title": "Red Velvet Cake",
-              "servings": "One 6-layer cake   |   Bake: 350°F for 30 minutes",
-              "source": "Family recipe card (Grandmother Brenda; card noted as \"original on paper yellow with age\")",
-              "comments": [
-                "Uses a cooked ermine frosting (flour-and-milk based) rather than the cream cheese frosting common in modern versions.",
-                "The 2 oz. of red food coloring gives the classic deep red color."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Cocoa paste",
-                  "ingredients": [
-                    "3 tablespoons unsweetened cocoa powder (Dutch-process; e.g. Nestlé Toll House Cocoa or Hershey's Special Dark)",
-                    "2 oz. red food coloring"
-                  ]
-                },
-                {
-                  "label": "Cake",
-                  "ingredients": [
-                    "1/2 cup vegetable shortening",
-                    "1-3/4 cups sugar",
-                    "2 eggs, beaten",
-                    "1 cup buttermilk",
-                    "2-1/2 cups cake flour",
-                    "1 teaspoon vanilla",
-                    "1 teaspoon salt",
-                    "1 teaspoon baking soda",
-                    "1 tablespoon white vinegar"
-                  ]
-                },
-                {
-                  "label": "Frosting — Part 1 (cool completely before using)",
-                  "ingredients": [
-                    "5 tablespoons flour",
-                    "1 cup milk"
-                  ]
-                },
-                {
-                  "label": "Frosting — Part 2",
-                  "ingredients": [
-                    "1/2 cup butter, softened",
-                    "1/2 cup vegetable shortening",
-                    "1 cup granulated sugar",
-                    "2 tablespoons vanilla"
-                  ]
-                }
-              ],
-              "steps": [
-                "Preheat oven to 350°F. Grease and flour cake pans.",
-                "In a small bowl, mix cocoa powder and red food coloring into a paste. Set aside.",
-                "Cream shortening and sugar until light. Add beaten eggs; mix well. Add the cocoa-coloring paste; blend.",
-                "Add salt and vanilla. Alternately add buttermilk and flour in 3 additions each, beginning and ending with flour. Mix well.",
-                "Fold in baking soda and vinegar (the mixture will bubble slightly). Do not overmix.",
-                "Pour into well-greased pans. Bake at 350°F for 30 minutes. Cool completely. Split each layer horizontally to make 6 thin layers total.",
-                "Frosting Part 1: Cook flour and milk together in a saucepan over low heat, stirring constantly, until very thick (paste consistency). Set aside to cool completely.",
-                "Frosting Part 2: Cream butter, shortening, and granulated sugar until light. Add vanilla. Add the cooled flour-milk paste to the creamed mixture. Beat at high speed until light and fluffy, like whipped cream.",
-                "Frost between layers and on the outside of the cake."
-              ],
-              "highAltitude": {
-                "comments": [
-                  "Uses a cooked ermine frosting (flour-and-milk based) rather than the cream cheese frosting common in modern versions.",
-                  "The 2 oz. of red food coloring gives the classic deep red color."
-                ],
-                "ingredientGroups": [
-                  {
-                    "label": "Cocoa paste",
-                    "ingredients": [
-                      "3 tablespoons unsweetened cocoa powder (Dutch-process; e.g. Nestle Toll House Cocoa or Hershey’s Special Dark)",
-                      "2 oz. red food coloring"
-                    ]
-                  },
-                  {
-                    "label": "Cake",
-                    "ingredients": [
-                      "1/2 cup vegetable shortening",
-                      "1 2/3 cups sugar",
-                      "2 eggs, beaten",
-                      "1 cup + 2 tablespoons buttermilk",
-                      "2 1/2 cups + 2 tablespoons cake flour",
-                      "1 teaspoon vanilla",
-                      "1 teaspoon salt",
-                      "3/4 teaspoon baking soda",
-                      "1 tablespoon white vinegar"
-                    ]
-                  },
-                  {
-                    "label": "Frosting — Part 1 (cool completely before using)",
-                    "ingredients": [
-                      "5 tablespoons flour",
-                      "1 cup milk"
-                    ]
-                  },
-                  {
-                    "label": "Frosting — Part 2",
-                    "ingredients": [
-                      "1/2 cup butter, softened",
-                      "1/2 cup vegetable shortening",
-                      "14 tablespoons granulated sugar",
-                      "2 tablespoons vanilla"
-                    ]
-                  }
-                ],
-                "steps": [
-                  "Preheat oven to 375°F. Grease and flour cake pans.",
-                  "In a small bowl, mix cocoa powder and red food coloring into a paste. Set aside.",
-                  "Cream shortening and sugar until light. Add beaten eggs; mix well. Add the cocoa-coloring paste; blend.",
-                  "Add salt and vanilla. Alternately add buttermilk and flour in 3 additions each, beginning and ending with flour. Mix well.",
-                  "Fold in baking soda and vinegar (the mixture will bubble slightly). Do not overmix.",
-                  "Pour into well-greased pans. Bake at 375°F for 25–28 minutes. Cool completely. Split each layer horizontally to make 6 thin layers total.",
-                  "Frosting Part 1: Cook flour and milk together in a saucepan over low heat, stirring constantly, until very thick (paste consistency). Set aside to cool completely.",
-                  "Frosting Part 2: Cream butter, shortening, and granulated sugar until light. Add vanilla. Add the cooled flour-milk paste to the creamed mixture. Beat at high speed until light and fluffy, like whipped cream.",
-                  "Frost between layers and on the outside of the cake."
-                ]
-              }
-            },
-            {
-              "title": "Regina's Coffee Cake",
-              "ingredientGroups": [
-                {
-                  "label": "Cake batter",
-                  "ingredients": [
-                    "1 stick butter, room temperature",
-                    "1 cup sugar",
-                    "2 eggs",
-                    "1 teaspoon vanilla",
-                    "2 cups all-purpose flour",
-                    "1 teaspoon baking soda",
-                    "1 teaspoon baking powder",
-                    "1 cup sour cream"
-                  ]
-                },
-                {
-                  "label": "Filling",
-                  "ingredients": [
-                    "1/2 cup brown sugar",
-                    "1/2 cup chopped pecans",
-                    "1 small package milk chocolate chips"
-                  ]
-                }
-              ],
-              "steps": [
-                "Beat butter with sugar until light. Add eggs one at a time. Add vanilla.",
-                "Sift together flour, baking soda, and baking powder. Add alternately to butter mixture with sour cream, starting and ending with flour.",
-                "Grease a springform pan well. Pour half the batter into the pan.",
-                "Combine brown sugar, pecans, and chocolate chips. Sprinkle half the filling over the batter layer.",
-                "Pour remaining batter over filling. Sprinkle remaining filling on top.",
-                "Bake in middle of preheated 350-degree oven for 50-55 minutes."
-              ],
-              "source": "Family recipe, attributed to great-grandmother Regina Pachter",
-              "highAltitude": {
-                "ingredientGroups": [
-                  {
-                    "label": "Cake batter",
-                    "ingredients": [
-                      "1 stick butter, room temperature",
-                      "7/8 cup (14 tablespoons) sugar",
-                      "2 eggs",
-                      "1 teaspoon vanilla",
-                      "2 cups all-purpose flour",
-                      "3/4 teaspoon baking soda",
-                      "3/4 teaspoon baking powder",
-                      "1 cup + 1 tablespoon sour cream"
-                    ]
-                  },
-                  {
-                    "label": "Filling",
-                    "ingredients": [
-                      "1/2 cup brown sugar",
-                      "1/2 cup chopped pecans",
-                      "1 small package milk chocolate chips"
-                    ]
-                  }
-                ],
-                "steps": [
-                  "Beat butter with sugar until light. Add eggs one at a time. Add vanilla.",
-                  "Sift together flour, baking soda, and baking powder. Add alternately to butter mixture with sour cream, starting and ending with flour.",
-                  "Grease a springform pan well. Pour half the batter into the pan.",
-                  "Combine brown sugar, pecans, and chocolate chips. Sprinkle half the filling over the batter layer.",
-                  "Pour remaining batter over filling. Sprinkle remaining filling on top.",
-                  "Bake in middle of preheated 375-degree oven for 45-55 minutes."
-                ]
-              }
-            },
-            {
-              "title": "Frangipane",
-              "servings": "Makes about 1/2 cup (enough for one tart or tartlets)",
-              "ingredientGroups": [
-                {
-                  "label": "Almond cream",
-                  "ingredients": [
-                    "3 tablespoons unsalted butter, softened",
-                    "1/4 cup granulated sugar",
-                    "1/2 cup ground almond meal",
-                    "1 large egg",
-                    "3/4 teaspoon vanilla extract",
-                    "1 tablespoon all-purpose flour"
-                  ]
-                }
-              ],
-              "steps": [
-                "Cream butter and sugar together in the bowl of a stand mixer until pale and fluffy.",
-                "Add almond meal; mix to combine. Add egg and vanilla; beat gently until incorporated. Add flour; mix until smooth.",
-                "Use immediately as a filling for tarts or tartlets, and bake. Refrigerates up to 1 week in an airtight container (bring to room temperature before using). Freezes up to 1 month."
-              ],
-              "source": "Rebecca Franklin / The Spruce Eats (thespruceeats.com)"
-            },
-            {
-              "title": "Blintz Soufflé",
-              "servings": "Serves 6–8   |   Bake: 350°F covered 1 hour, then uncovered 10 minutes",
-              "source": "Family recipe, courtesy of Marsha Firestone (noted on card as smaller recipe for small casserole)",
-              "comments": [
-                "Marsha Firestone's smaller version — uses 2 packages of blintzes and a smaller casserole dish.",
-                "Frozen cheese blintzes from the store work perfectly."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Pan and blintzes",
-                  "ingredients": [
-                    "1 stick (1/2 cup) butter",
-                    "2 packages (about 12) frozen cheese blintzes"
-                  ]
-                },
-                {
-                  "label": "Custard",
-                  "ingredients": [
-                    "6 eggs",
-                    "2/3 cup sugar",
-                    "1/2 teaspoon vanilla",
-                    "1 teaspoon orange juice",
-                    "1-1/2 cups sour cream"
-                  ]
-                }
-              ],
-              "steps": [
-                "Preheat oven to 350°F.",
-                "Melt butter in a casserole dish. Arrange frozen blintzes in a single layer on top.",
-                "Beat eggs with sugar, vanilla, orange juice, and sour cream until smooth. Pour evenly over blintzes.",
-                "Bake covered for 1 hour.",
-                "Uncover and bake an additional 10 minutes until golden and puffed."
-              ],
-              "highAltitude": {
-                "comments": [
-                  "Marsha Firestone’s smaller version — uses 2 packages of blintzes and a smaller casserole dish.",
-                  "Frozen cheese blintzes from the store work perfectly."
-                ],
-                "ingredientGroups": [
-                  {
-                    "label": "Pan and blintzes",
-                    "ingredients": [
-                      "1 stick (1/2 cup) butter",
-                      "2 packages (about 12) frozen cheese blintzes"
-                    ]
-                  },
-                  {
-                    "label": "Custard",
-                    "ingredients": [
-                      "6 eggs",
-                      "9 tablespoons sugar",
-                      "1/2 teaspoon vanilla",
-                      "1 teaspoon orange juice",
-                      "1 1/2 cups sour cream"
-                    ]
-                  }
-                ],
-                "steps": [
-                  "Preheat oven to 375°F.",
-                  "Melt butter in a casserole dish. Arrange frozen blintzes in a single layer on top.",
-                  "Beat eggs with sugar, vanilla, orange juice, and sour cream until smooth. Pour evenly over blintzes.",
-                  "Bake covered at 375°F for 45–50 minutes.",
-                  "Uncover and bake an additional 15–20 minutes until golden and firmly set. (At altitude, egg custards need slightly longer uncovered to firm up — check by gently shaking the dish; it should have no liquidy jiggle in the center.)"
-                ]
-              }
-            },
-            {
-              "title": "Brenda's Noodle Kugel",
-              "favorite": true,
-              "source": "Family recipe card, credited to Brenda",
-              "comments": [
-                "Can be assembled up to 2 days ahead and refrigerated — hold the topping until ready to bake."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Noodles",
-                  "ingredients": [
-                    "1 pound extra-wide egg noodles"
-                  ]
-                },
-                {
-                  "label": "Filling",
-                  "note": "mix together",
-                  "ingredients": [
-                    "8 oz. cream cheese, softened",
-                    "1 cup sour cream",
-                    "1 stick (1/2 cup) butter, softened",
-                    "1/2 cup sugar",
-                    "1/2 teaspoon vanilla extract",
-                    "3 eggs",
-                    "1 package golden raisins"
-                  ]
-                },
-                {
-                  "label": "Topping",
-                  "ingredients": [
-                    "1/2 stick (1/4 cup) butter, melted",
-                    "1 1/2 cups corn flakes"
-                  ]
-                }
-              ],
-              "steps": [
-                "Preheat oven to 350°F. Grease a large Pyrex casserole dish.",
-                "Cook noodles according to package instructions. Drain thoroughly.",
-                "Mix the filling ingredients together until combined, then fold in the drained noodles. Transfer to the prepared casserole.",
-                "Bake uncovered at 350°F for 30–45 minutes. Remove from oven and let cool.",
-                "Mix the melted butter with the corn flakes and spread over the cooled casserole.",
-                "Return to the oven and bake for another 15 minutes, until the topping is golden and crisp."
-              ]
-            },
-            {
-              "title": "Min Cohen's Inscrutable Apple Cake",
-              "servings": "Serves 8–10   |   Bake: 375°F for 40–45 minutes",
-              "source": "Mrs. Min Cohen's recipe, transcribed by Grandmother Brenda",
-              "comments": [
-                "Grandmother Brenda wrote on the card: \"I never made this because I do not understand it -- but Perhaps Renee will tell you -- It was a delicious cake!\"",
-                "Steps reconstructed from the ingredient list and standard apple tart method."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Pastry (30–60 minutes ahead)",
-                  "ingredients": [
-                    "2 cups flour",
-                    "3/4 cup vegetable shortening",
-                    "2 egg yolks",
-                    "1/4 teaspoon salt",
-                    "7 tablespoons cold water"
-                  ]
-                },
-                {
-                  "label": "Filling",
-                  "ingredients": [
-                    "7–8 apples, sliced thin",
-                    "1 cup sugar",
-                    "Lemon juice to taste",
-                    "1 teaspoon cinnamon"
-                  ]
-                },
-                {
-                  "label": "Glaze",
-                  "ingredients": [
-                    "1 cup powdered sugar",
-                    "1 tablespoon flour",
-                    "1 teaspoon vanilla",
-                    "2 tablespoons milk"
-                  ]
-                }
-              ],
-              "steps": [
-                "Make pastry: combine flour and shortening; add egg yolks, salt, and cold water. Mix until just combined. Knead briefly, then refrigerate 30–60 minutes.",
-                "Preheat oven to 375°F. Roll pastry out very thin. Use about 2/3 to line a baking pan; reserve the rest for the top.",
-                "Make filling: toss sliced apples with sugar, a squeeze of lemon juice, and cinnamon.",
-                "Spread apple filling over the pastry. Cover with remaining rolled-out pastry.",
-                "Bake at 375°F for 40–45 minutes until golden.",
-                "Make glaze: beat powdered sugar, flour, vanilla, and milk until smooth. Drizzle over warm cake."
-              ]
-            },
-            {
-              "title": "Passover Cake",
-              "servings": "Serves 12",
-              "source": "Family recipe, attributed to Grandmother Brenda",
-              "comments": [
-                "An egg-leavened sponge cake with no chemical leavening -- entirely appropriate for Passover. Cool inverted (angel-food-cake style): the fragile egg-foam structure must hang upside down to avoid collapsing while it sets. The cake adheres to the ungreased bundt pan and will not fall out. Only unmold once completely cool."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Batter",
-                  "ingredients": [
-                    "10 eggs",
-                    "1 1/2 cups sugar",
-                    "3/4 cup potato starch",
-                    "1/4 cup matzo cake meal",
-                    "Juice and rind of 1 lemon",
-                    "Juice and rind of 1/2 orange",
-                    "1/4 teaspoon salt (optional)"
-                  ]
-                }
-              ],
-              "steps": [
-                "Combine all ingredients in the bowl of a stand mixer. Beat on high speed for 25 minutes.",
-                "Pour into an ungreased bundt pan.",
-                "Place in a cold oven on the lower rack. Turn oven on to 350° and bake for 50 minutes.",
-                "Immediately invert the bundt pan over the neck of a tall bottle (a soda bottle works well). Leave suspended upside down until completely cool, at least 1 hour. (The cake adheres to the pan and will not fall out -- do not attempt to unmold until fully cooled.)",
-                "Once cool, run a thin knife around the edges and center tube to release. Invert onto a serving plate."
-              ],
-              "highAltitude": {
-                "ingredientGroups": [
-                  {
-                    "label": "Batter",
-                    "ingredients": [
-                      "10 eggs",
-                      "1 1/4 cups + 2 tablespoons sugar",
-                      "3/4 cup + 1 tablespoon potato starch",
-                      "1/4 cup matzo cake meal",
-                      "Juice and rind of 1 lemon",
-                      "Juice and rind of 1/2 orange",
-                      "1/4 teaspoon salt (optional)"
-                    ]
-                  }
-                ],
-                "steps": [
-                  "Combine all ingredients in the bowl of a stand mixer. Beat on high speed for 20-22 minutes. (Slightly less than sea level -- stopping before the foam becomes too stiff prevents it from over-expanding and collapsing.)",
-                  "Pour into an ungreased bundt pan.",
-                  "Place in a cold oven on the lower rack. Turn oven on to 350° and bake for 42-45 minutes. Check at 40 minutes -- done when top is set and a skewer comes out clean.",
-                  "Immediately invert the bundt pan over the neck of a tall bottle (a soda bottle works well). Leave suspended upside down until completely cool, at least 1 hour.",
-                  "Once cool, run a thin knife around the edges and center tube to release. Invert onto a serving plate."
-                ]
-              }
-            },
-            {
-              "title": "Renee's Blintz Souffle",
-              "servings": "Makes 1 large + 1 small 9x13 casserole",
-              "source": "From Renee Epstein",
-              "comments": [
-                "Renee's larger party-size version with blueberry blintzes added. For a smaller all-cheese version, see Blintz Souffle (Marsha Firestone)."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Pan and blintzes",
-                  "ingredients": [
-                    "1 stick (1/2 cup) butter, melted",
-                    "4 packages frozen blintzes (2 blueberry, 2 cheese)"
-                  ]
-                },
-                {
-                  "label": "Custard",
-                  "ingredients": [
-                    "12 eggs",
-                    "1 cup sugar",
-                    "1 1/2 teaspoons vanilla",
-                    "1/2 cup orange juice",
-                    "2 1/2 cups sour cream"
-                  ]
-                }
-              ],
-              "steps": [
-                "Preheat oven to 350°.",
-                "Pour melted butter into the bottom of casserole dish(es). Arrange frozen blintzes in a single layer.",
-                "Beat eggs with sugar, vanilla, orange juice, and sour cream until smooth. Pour evenly over blintzes.",
-                "Bake covered or uncovered at 350° for 45-60 minutes until puffed and set."
-              ],
-              "highAltitude": {
-                "ingredientGroups": [
-                  {
-                    "label": "Pan and blintzes",
-                    "ingredients": [
-                      "1 stick (1/2 cup) butter, melted",
-                      "4 packages frozen blintzes (2 blueberry, 2 cheese)"
-                    ]
-                  },
-                  {
-                    "label": "Custard",
-                    "ingredients": [
-                      "12 eggs",
-                      "14 tablespoons sugar",
-                      "1 1/2 teaspoons vanilla",
-                      "1/2 cup orange juice",
-                      "2 1/2 cups sour cream"
-                    ]
-                  }
-                ],
-                "steps": [
-                  "Preheat oven to 375°.",
-                  "Pour melted butter into the bottom of casserole dish(es). Arrange frozen blintzes in a single layer.",
-                  "Beat eggs with sugar, vanilla, orange juice, and sour cream until smooth. Pour evenly over blintzes.",
-                  "Bake covered at 375° for 45-55 minutes. Remove cover and bake 20-25 minutes more until puffed, golden, and set in the center."
-                ]
-              }
-            },
-            {
-              "title": "Chai Cake With Brown-Butter-Ghee Streusel",
-              "servings": "Serves 10–12",
-              "ingredientGroups": [
-                {
-                  "label": "Ghee (make ahead)",
-                  "ingredients": [
-                    "2 cups (4 sticks) unsalted butter",
-                    "3 layers cheesecloth (for straining)"
-                  ]
-                },
-                {
-                  "label": "Streusel",
-                  "ingredients": [
-                    "1/2 cup all-purpose flour",
-                    "1 cup (packed) dark brown sugar",
-                    "1/2 teaspoon ground cardamom",
-                    "1/2 teaspoon ground cinnamon",
-                    "1/2 teaspoon ground ginger",
-                    "1/4 teaspoon ground nutmeg",
-                    "1/4 teaspoon ground cloves (optional)",
-                    "1/4 teaspoon ground star anise (optional)",
-                    "1/4 teaspoon kosher salt",
-                    "1 tablespoon reserved caramelized milk solids (from ghee)",
-                    "1/2 cup reserved brown-butter ghee"
-                  ]
-                },
-                {
-                  "label": "Cake batter",
-                  "ingredients": [
-                    "2 cups all-purpose flour",
-                    "1/2 teaspoon baking powder",
-                    "1/4 teaspoon baking soda",
-                    "1/2 teaspoon kosher salt",
-                    "2 large eggs, room temperature",
-                    "1 large egg yolk, room temperature",
-                    "3/4 cup plain yogurt, room temperature",
-                    "1/2 cup milk",
-                    "1/2 cup granulated sugar",
-                    "5 tablespoons (packed) dark brown sugar",
-                    "1 teaspoon vanilla extract",
-                    "3/4 cup reserved brown-butter ghee",
-                    "1 teaspoon reserved caramelized milk solids"
-                  ]
-                }
-              ],
-              "steps": [
-                "Line a fine-mesh sieve with cheesecloth. Melt butter in a medium heavy saucepan over medium heat, stirring often, until simmering. Cook, stirring constantly, 10 minutes. Reduce heat to low; continue cooking, stirring constantly, until golden brown and caramelized milk solids appear on the spatula, about 10 minutes longer. Strain ghee through prepared sieve into a large jar. Reserve ghee and caramelized milk solids separately. (Ghee can be made 3 months ahead; store tightly covered at room temperature.)",
-                "Whisk flour, brown sugar, spices, and salt together for streusel in a medium bowl. Add 1 tablespoon caramelized milk solids and 1/2 cup ghee. Work with hands until mixture resembles wet sand. Set aside.",
-                "Preheat oven to 325°F. Line a 9x9-inch baking pan with parchment, leaving overhang on 2 sides.",
-                "Whisk together 2 cups flour, baking powder, baking soda, and salt in a medium bowl. In a large bowl, whisk eggs, egg yolk, yogurt, milk, both sugars, vanilla, 3/4 cup ghee, and 1 teaspoon caramelized milk solids together. Sift in dry ingredients and fold just until no dry spots remain (batter will be thick and slightly lumpy).",
-                "Spoon half of batter into prepared pan; spread to edges. Sprinkle half of streusel evenly over. Dollop remaining batter on top and gently spread. Sprinkle remaining streusel on top; gently pat to adhere.",
-                "Bake until a tester inserted in center comes out clean, 40–45 minutes. Transfer to a wire rack; let cool before slicing. (Cake keeps tightly wrapped at room temperature up to 4 days.)"
-              ],
-              "source": "Hetal Vasavada / Bon Appétit (bonappetit.com)",
-              "highAltitude": {
-                "ingredientGroups": [
-                  {
-                    "label": "Ghee (make ahead)",
-                    "ingredients": [
-                      "2 cups (4 sticks) unsalted butter",
-                      "3 layers cheesecloth (for straining)"
-                    ]
-                  },
-                  {
-                    "label": "Streusel",
-                    "ingredients": [
-                      "1/2 cup + 1 tablespoon all-purpose flour",
-                      "14 tablespoons (packed) dark brown sugar",
-                      "1/2 teaspoon ground cardamom",
-                      "1/2 teaspoon ground cinnamon",
-                      "1/2 teaspoon ground ginger",
-                      "1/4 teaspoon ground nutmeg",
-                      "1/4 teaspoon ground cloves (optional)",
-                      "1/4 teaspoon ground star anise (optional)",
-                      "1/4 teaspoon kosher salt",
-                      "1 tablespoon reserved caramelized milk solids",
-                      "1/2 cup reserved brown-butter ghee"
-                    ]
-                  },
-                  {
-                    "label": "Cake batter",
-                    "ingredients": [
-                      "2 cups + 4 tablespoons all-purpose flour",
-                      "scant 1/2 teaspoon baking powder (about 3/8 teaspoon)",
-                      "scant 1/4 teaspoon baking soda",
-                      "1/2 teaspoon kosher salt",
-                      "2 large eggs, room temperature",
-                      "1 large egg yolk, room temperature",
-                      "3/4 cup plain yogurt, room temperature",
-                      "1/2 cup milk",
-                      "7 tablespoons granulated sugar",
-                      "5 tablespoons (packed) dark brown sugar",
-                      "1 teaspoon vanilla extract",
-                      "3/4 cup reserved brown-butter ghee",
-                      "1 teaspoon reserved caramelized milk solids"
-                    ]
-                  }
-                ]
-              }
-            },
-            {
-              "title": "Sqirl's Sourdough Scones",
-              "servings": "Makes 8 scones",
-              "ingredientGroups": [
-                {
-                  "label": "Dry ingredients",
-                  "ingredients": [
-                    "2 cups all-purpose flour",
-                    "1 cup plus 2 tablespoons whole-grain spelt flour",
-                    "1/3 cup granulated sugar, plus more for sprinkling",
-                    "1 1/2 tablespoons baking powder",
-                    "2 teaspoons fine sea salt (or 1 tablespoon kosher salt)",
-                    "1 teaspoon baking soda"
-                  ]
-                },
-                {
-                  "label": "Butter",
-                  "ingredients": [
-                    "3/4 cup (1 1/2 sticks) unsalted butter, cut into 1/2-inch cubes and chilled"
-                  ]
-                },
-                {
-                  "label": "Liquid ingredients",
-                  "ingredients": [
-                    "1/2 cup chilled heavy cream",
-                    "3 tablespoons chilled buttermilk, plus more for brushing",
-                    {
-                      "html": "3 tablespoons chilled <a href=\"dairy.html#dairy-creme-fraiche\">Creme Fraiche</a> (Dairy), or store-bought"
+                      "label": "Dough",
+                      "ingredients": [
+                        "3 cups all-purpose flour, plus more for dusting",
+                        "1 1/2 cups vegetable shortening"
+                      ]
                     },
-                    "2 tablespoons honey",
-                    "2 tablespoons sourdough starter discard",
-                    "1 tablespoon finely grated orange or lemon zest"
+                    {
+                      "label": "Dough binder",
+                      "ingredients": [
+                        "1 large egg",
+                        "4 tablespoons ice water",
+                        "1 tablespoon distilled white vinegar",
+                        "1 teaspoon kosher salt"
+                      ]
+                    },
+                    {
+                      "label": "Blind baking setup",
+                      "ingredients": [
+                        "Parchment paper or aluminum foil",
+                        "Pie weights, dried beans, or clean pennies (enough to cover the bottom and press against the sides)"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "In a large bowl, use a pastry cutter to gradually work the shortening into the flour until the mixture resembles coarse meal, 3-4 minutes.",
+                    "In a small bowl, beat the egg with a fork. Pour it into the flour mixture. Add the ice water, vinegar, and salt. Stir gently until all ingredients are incorporated and the dough sticks together when pinched.",
+                    "Divide into 2 equal pieces. Form each into a ball, then place each in a 1-gallon zip-top bag (do not seal). Use a rolling pin to flatten each ball into a disk about 1/2-inch thick. Seal the bags and freeze at least 25-30 minutes before using. (Dough can be refrigerated up to 2 days or frozen up to 3 months.)",
+                    "When ready to use, remove one disk from the freezer. On a generously floured surface, roll out from the center outward until the dough is approximately 2 inches larger than your pie plate. If it sticks, slide a metal spatula underneath, flip, and continue rolling with more flour as needed.",
+                    "Transfer to the pie plate by rolling the dough over the rolling pin and unrolling it over the plate, or carefully lift with a spatula. Gently lift the edges and let the dough settle naturally into the plate without pressing or stretching (to avoid shrinking during baking). Trim to a 1-inch overhang; tuck under and crimp or flute the edges as desired. For a double-crust pie, roll out the second disk for the top.",
+                    "To blind bake: heat the oven to 425 degrees F with a rack in the lower-middle position. Press a large square of parchment paper (or foil) snugly into the crust, covering the bottom and sides completely. Pour in pie weights and press them against the sides as well as covering the bottom.",
+                    "Place the pie on a baking sheet and bake until the edges are just beginning to turn golden, 12-15 minutes. Remove from the oven and lift the parchment and weights out by the corners. The bottom will look wet and uncooked at this point.",
+                    "Return the uncovered crust to the oven. For a par-baked crust (pies baked again with filling): bake 5 minutes more until the bottom looks dry but still pale. For a fully blind-baked crust (no-bake fillings): continue baking a few minutes more until the bottom is lightly golden. Cool as directed by your pie recipe before filling.",
+                    "If the crust has cracked, mix 1 1/2 tablespoons flour with 1 tablespoon softened butter into a paste; patch the cracks with your fingers and return to the oven 1 minute to set."
                   ]
-                }
-              ],
-              "steps": [
-                "Whisk both flours, sugar, baking powder, salt, and baking soda together in a large bowl. Add butter; toss to coat in dry ingredients. Place bowl in freezer 10 minutes until butter is very cold.",
-                "In a large measuring cup, whisk together cream, buttermilk, creme fraiche, honey, sourdough starter, and citrus zest. Keep chilled until ready to use. Line a large baking sheet with parchment.",
-                "Using a stand mixer with paddle on low (or fingertips), break butter into pea-sized pieces in the dry ingredients, 1–2 minutes. Pour in chilled liquid and stir gently with a fork until large clumps form.",
-                "Scrape dough onto a lightly floured surface; shape into a 7-inch-diameter disk, 1 1/2 inches thick. Cut into 8 wedges; arrange on prepared baking sheet, evenly spaced. Freeze at least 30 minutes.",
-                "Heat oven to 400°F with a rack in the center. Brush scones with buttermilk; sprinkle liberally with sugar. Bake, rotating sheet halfway through, until deep golden brown, 30–32 minutes. Transfer to a wire rack; cool completely before serving."
-              ],
-              "comments": [
-                {
-                  "html": "For add-in variations (blueberry lemon, cranberry orange, strawberry jam, cherry almond, cardamom spiced), see <a href=\"baking.html#baking-sweet-squirls-sourdough-scone-variations\">Sqirl’s Sourdough Scone Variations</a>."
                 },
                 {
-                  "html": "Creme fraiche can be purchased or made at home; see <a href=\"dairy.html#dairy-creme-fraiche\">Creme Fraiche</a> (Dairy)."
+                  "title": "Susan's Apple Pie",
+                  "servings": "Makes 1 pie",
+                  "ingredientGroups": [
+                    {
+                      "label": "Crust",
+                      "ingredients": [
+                        {
+                          "html": "1 disk <a href=\"baking.html#baking-sweet-all-shortening-pie-crust\">All-Shortening Pie Crust</a>"
+                        }
+                      ]
+                    },
+                    {
+                      "label": "Filling",
+                      "ingredients": [
+                        "5 apples of at least 3 different varieties, peeled and sliced into 8 pieces each",
+                        "3/4 cup brown sugar (divided)",
+                        "1/2 cup flour",
+                        "2 tablespoons margarine or butter"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    {
+                      "html": "Prepare 1 disk of the <a href=\"baking.html#baking-sweet-all-shortening-pie-crust\">All-Shortening Pie Crust</a>. Roll out to approximately 12 inches diameter on a floured surface and mold into the pie plate."
+                    },
+                    "Toss sliced apples with 1/4 cup of the brown sugar. Arrange in pie crust.",
+                    "Combine remaining brown sugar and flour; cut in margarine until crumbly. Sprinkle mixture over apples.",
+                    "Bake at 375°F for 40 minutes."
+                  ],
+                  "source": "From Susan Muhlheim"
                 },
-                "Scones can be frozen through step 4 for up to 2 months; bake from frozen at same time. Baked scones keep in an airtight container at room temperature up to 3 days."
-              ],
-              "source": "Catalina Flores, adapted by / Los Angeles Times",
-              "highAltitude": {
-                "ingredientGroups": [
-                  {
-                    "label": "Dry ingredients",
-                    "ingredients": [
-                      "2 cups + 4 tablespoons all-purpose flour",
-                      "1 cup + 4 tablespoons whole-grain spelt flour",
-                      "scant 1/3 cup granulated sugar, plus more for sprinkling",
-                      "1 tablespoon + 1/2 teaspoon baking powder",
-                      "2 teaspoons fine sea salt (or 1 tablespoon kosher salt)",
-                      "3/4 teaspoon baking soda"
-                    ]
-                  },
-                  {
-                    "label": "Butter",
-                    "ingredients": [
-                      "3/4 cup (1 1/2 sticks) unsalted butter, cut into 1/2-inch cubes and chilled"
-                    ]
-                  },
-                  {
-                    "label": "Liquid ingredients",
-                    "ingredients": [
-                      "1/2 cup chilled heavy cream",
-                      "3 tablespoons chilled buttermilk, plus more for brushing",
+                {
+                  "title": "Chocolate Chip Scones",
+                  "servings": "Makes 8 large scones",
+                  "ingredientGroups": [
+                    {
+                      "label": "Dry ingredients",
+                      "ingredients": [
+                        "2 cups all-purpose flour, plus more for hands and surface",
+                        "2 1/2 teaspoons baking powder",
+                        "1 teaspoon ground cinnamon",
+                        "1/2 teaspoon salt"
+                      ]
+                    },
+                    {
+                      "label": "Wet ingredients",
+                      "ingredients": [
+                        "1/2 cup (8 tablespoons) unsalted butter, frozen",
+                        "1/2 cup heavy cream, plus 2 tablespoons for brushing",
+                        "1/2 cup packed light or dark brown sugar",
+                        "1 large egg",
+                        "1 1/2 teaspoons pure vanilla extract",
+                        "1 1/4 cups mini chocolate chips"
+                      ]
+                    },
+                    {
+                      "label": "Finishing",
+                      "ingredients": [
+                        "Coarse sugar for sprinkling (optional)",
+                        "Confectioners' sugar for dusting (optional)"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Whisk flour, baking powder, cinnamon, and salt together in a large bowl. Grate frozen butter using a box grater; add to flour mixture and cut in with a pastry cutter, two forks, or your fingers until mixture comes together in pea-sized crumbs. Refrigerate while mixing wet ingredients.",
+                    "Whisk 1/2 cup heavy cream, brown sugar, egg, and vanilla together in a small bowl. Drizzle over flour mixture; add chocolate chips. Mix until everything appears moistened. Turn onto counter and work into a ball with floured hands. (If too sticky, add more flour; if too dry, add 1–2 tablespoons more cream.) Press into an 8-inch disc; cut into 8 wedges. Brush with remaining 2 tablespoons heavy cream; sprinkle with coarse sugar if desired.",
+                    "Refrigerate scones at least 15 minutes. Meanwhile, preheat oven to 400°F.",
+                    "Arrange scones 2–3 inches apart on a parchment-lined baking sheet. Bake 22–25 minutes until golden brown around edges and lightly browned on top. Cool a few minutes before serving. Dust with confectioners' sugar if desired."
+                  ],
+                  "comments": [
+                    "Mini chocolate chips preferred; regular-size work too (increase to 1 1/2 cups). Can prepare through step 2 and refrigerate overnight. Unbaked scones also freeze well. Leftovers keep at room temperature 2 days or refrigerated 5 days."
+                  ],
+                  "source": "Sally McKenney / Sally's Baking Addiction (sallysbakingaddiction.com)",
+                  "highAltitude": {
+                    "ingredientGroups": [
                       {
-                        "html": "3 tablespoons chilled <a href=\"dairy.html#dairy-creme-fraiche\">Creme Fraiche</a> (Dairy), or store-bought"
+                        "label": "Dry ingredients",
+                        "ingredients": [
+                          "2 cups + 4 tablespoons all-purpose flour, plus more for hands and surface",
+                          "2 teaspoons baking powder",
+                          "1 teaspoon ground cinnamon",
+                          "1/2 teaspoon salt"
+                        ]
                       },
-                      "2 tablespoons honey",
-                      "2 tablespoons sourdough starter discard",
-                      "1 tablespoon finely grated orange or lemon zest"
+                      {
+                        "label": "Wet ingredients",
+                        "ingredients": [
+                          "1/2 cup (8 tablespoons) unsalted butter, frozen",
+                          "1/2 cup heavy cream, plus 2 tablespoons for brushing",
+                          "7 tablespoons packed light or dark brown sugar",
+                          "1 large egg",
+                          "1 1/2 teaspoons pure vanilla extract",
+                          "1 1/4 cups mini chocolate chips"
+                        ]
+                      },
+                      {
+                        "label": "Finishing",
+                        "ingredients": [
+                          "Coarse sugar for sprinkling (optional)",
+                          "Confectioners' sugar for dusting (optional)"
+                        ]
+                      }
                     ]
                   }
-                ]
-              }
-            },
-            {
-              "title": "Sqirl's Sourdough Scone Variations",
-              "servings": "Each variation makes 8 scones (using Sqirl’s Sourdough Scones base)",
-              "ingredientGroups": [
-                {
-                  "label": "Blueberry Lemon",
-                  "ingredients": [
-                    "1 cup fresh or frozen blueberries",
-                    "(Use lemon zest in base recipe liquid)"
-                  ]
                 },
                 {
-                  "label": "Cranberry Orange",
-                  "ingredients": [
-                    "1 cup dried cranberries",
-                    "(Use orange zest in base recipe liquid)"
-                  ]
+                  "title": "Doughnut Glazes",
+                  "servings": "Each glaze makes enough for 10–12 doughnuts",
+                  "ingredientGroups": [
+                    {
+                      "label": "Vanilla glaze",
+                      "ingredients": [
+                        "1 1/2 cups (6 oz) powdered sugar",
+                        "2–3 tablespoons milk",
+                        "1 1/2 teaspoons vanilla extract"
+                      ]
+                    },
+                    {
+                      "label": "Funfetti glaze",
+                      "ingredients": [
+                        "1 1/2 cups (6 oz) powdered sugar",
+                        "2–3 tablespoons milk",
+                        "1 teaspoon vanilla extract",
+                        "1/4 teaspoon almond extract",
+                        "1 small drop pink food coloring"
+                      ]
+                    },
+                    {
+                      "label": "Chocolate glaze",
+                      "ingredients": [
+                        "1 1/2 cups (6 oz) powdered sugar",
+                        "4 tablespoons unsweetened cocoa powder",
+                        "3 tablespoons milk",
+                        "1 teaspoon pure vanilla extract"
+                      ]
+                    },
+                    {
+                      "label": "Maple glaze",
+                      "ingredients": [
+                        "1 1/2 cups (6 oz) powdered sugar",
+                        "1–2 tablespoons milk",
+                        "4 tablespoons maple syrup",
+                        "1 teaspoon vanilla extract"
+                      ]
+                    },
+                    {
+                      "label": "Cinnamon sugar",
+                      "ingredients": [
+                        "1 cup (8 oz) granulated sugar",
+                        "2 tablespoons ground cinnamon",
+                        "1/8 teaspoon salt"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "For vanilla, funfetti, or maple glaze: whisk all ingredients together until silky and smooth. Add more milk for a thinner glaze. Dip doughnuts while still warm.",
+                    "For chocolate glaze: whisk powdered sugar and cocoa together. Slowly stir in milk and vanilla; whisk until smooth, adding a touch more milk if needed for a dippable consistency. Dip doughnuts; let rest to harden slightly.",
+                    "For cinnamon sugar: combine sugar, cinnamon, and salt in a medium bowl. Toss doughnuts in cinnamon sugar while still warm.",
+                    "All glazes store in an airtight container at room temperature for 2 weeks. Cinnamon sugar keeps up to 2 years."
+                  ],
+                  "source": "Gemma Stafford / Bigger Bolder Baking (biggerbolderbaking.com)"
                 },
                 {
-                  "label": "Strawberry Jam",
-                  "ingredients": [
-                    "1/3 cup strawberry jam or preserves",
-                    "(Use lemon zest in base recipe liquid; swirl lightly into dough rather than fully incorporating)"
-                  ]
-                },
-                {
-                  "label": "Cherry Almond",
-                  "ingredients": [
-                    "3/4 cup halved fresh or frozen pitted sweet cherries",
-                    "1/4 cup finely chopped toasted almonds",
-                    "(Use orange zest in base recipe liquid)"
-                  ]
-                },
-                {
-                  "label": "Cardamom Spiced",
-                  "ingredients": [
-                    "1 tablespoon ground cardamom",
-                    "1 teaspoon ground cinnamon",
-                    "(Add dry spices to dry ingredients in step 1 of base recipe; use orange zest in liquid)"
-                  ]
-                }
-              ],
-              "steps": [
-                {
-                  "html": "Prepare one batch of <a href=\"baking.html#baking-sweet-squirls-sourdough-scones\">Sqirl’s Sourdough Scones</a>. For Cardamom Spiced, add the spices to the dry ingredients in step 1 of that recipe."
-                },
-                "In step 3, fold in the selected add-ins just before shaping the dough.",
-                "Brush with buttermilk and sprinkle liberally with sugar as usual. For Cardamom Spiced, mix 1 tablespoon sugar with 1/4 teaspoon cinnamon for the topping."
-              ],
-              "source": "Catalina Flores, adapted by / Los Angeles Times"
-            },
-            {
-              "title": "Ube Chiffon Cake",
-              "servings": "Serves 12",
-              "ingredientGroups": [
-                {
-                  "label": "Dry ingredients",
-                  "ingredients": [
-                    "1 1/2 cups sifted cake flour",
-                    "1 1/2 cups granulated sugar",
-                    "2 teaspoons baking powder",
-                    "1/2 teaspoon salt"
-                  ]
-                },
-                {
-                  "label": "Egg yolk batter",
-                  "ingredients": [
-                    "2 large eggs, room temperature",
-                    "5 large egg yolks, room temperature",
-                    "3/4 cup water, room temperature",
-                    "1/2 cup canola oil or vegetable oil",
-                    "2 tablespoons ube extract"
-                  ]
-                },
-                {
-                  "label": "Meringue",
-                  "ingredients": [
-                    "5 large egg whites, room temperature",
-                    "1/2 teaspoon cream of tartar"
-                  ]
-                }
-              ],
-              "steps": [
-                "Adjust baking rack to the lower-third position; preheat oven to 325°F. Line a 16-cup tube pan with parchment paper. Do not grease.",
-                "Whisk cake flour, sugar, baking powder, and salt together in a large bowl.",
-                "Add whole eggs, egg yolks, water, oil, and ube extract; whisk until smooth.",
-                "Using a stand or hand mixer with whisk attachment, whip egg whites with cream of tartar on medium until foamy. Increase to medium-high; whip until stiff peaks form.",
-                "Add egg whites to the yolk mixture; fold gently until no white streaks remain. Handle carefully to preserve the air.",
-                "Pour batter into tube pan; smooth top with a spatula. Tap pan gently to release air bubbles. Bake 30 minutes; rotate pan; bake another 30 minutes, until a skewer inserted in center comes out clean.",
-                "Immediately invert pan to cool — either on the tube pan’s own feet, or over the neck of a bottle. Cool completely, about 2 hours. Do not rush.",
-                "Run a thin knife around the edges to loosen. Gently tap upside down onto parchment; peel off parchment, flip right side up onto a platter, and serve."
-              ],
-              "comments": [
-                "Keeps at room temperature up to 2 days or refrigerated up to 4 days.",
-                "Ube extract is available at Filipino grocery stores and online; do not substitute ube flavoring.",
-                "Special equipment: 16-cup tube pan."
-              ],
-              "source": "Jolina / The Unlikely Baker (theunlikelybaker.com)",
-              "highAltitude": {
-                "ingredientGroups": [
-                  {
-                    "label": "Dry ingredients",
-                    "ingredients": [
-                      "1 1/2 cups + 3 tablespoons sifted cake flour",
-                      "1 cup + 5 tablespoons granulated sugar",
-                      "1 1/2 teaspoons baking powder",
-                      "1/2 teaspoon salt"
-                    ]
-                  },
-                  {
-                    "label": "Egg yolk batter",
-                    "ingredients": [
-                      "2 large eggs, room temperature",
-                      "5 large egg yolks, room temperature",
-                      "3/4 cup water, room temperature",
-                      "1/2 cup canola oil or vegetable oil",
-                      "2 tablespoons ube extract"
-                    ]
-                  },
-                  {
-                    "label": "Meringue",
-                    "ingredients": [
-                      "5 large egg whites, room temperature",
-                      "1/2 teaspoon cream of tartar"
+                  "title": "Jumbo Banana-Nut Muffins",
+                  "servings": "Makes 12 muffins",
+                  "comments": [
+                    "Recipe scaled 1.5x from original (from 9 jumbo muffins to 12). Walnuts made optional.",
+                    "1 cup mashed ripe banana ≈ 2 medium bananas."
+                  ],
+                  "source": "Mostly Muffins (cookbook), p. 14",
+                  "ingredientGroups": [
+                    {
+                      "label": "Dry ingredients",
+                      "ingredients": [
+                        "1 1/2 cups all-purpose flour",
+                        "1 1/2 cups whole-wheat flour",
+                        "1 1/2 teaspoons baking powder",
+                        "1 1/2 teaspoons baking soda",
+                        "1/4 teaspoon salt"
+                      ]
+                    },
+                    {
+                      "label": "Wet base",
+                      "ingredients": [
+                        "3/4 cup lightly salted butter or margarine, softened",
+                        "3/4 cup sugar"
+                      ]
+                    },
+                    {
+                      "label": "Eggs",
+                      "ingredients": [
+                        "3 eggs"
+                      ]
+                    },
+                    {
+                      "label": "Wet additions",
+                      "ingredients": [
+                        "2 cups mashed ripe banana (about 4 medium bananas)",
+                        "6 tablespoons (3/8 cup) milk",
+                        "1 1/2 teaspoons vanilla"
+                      ]
+                    },
+                    {
+                      "label": "Walnuts (optional)",
+                      "ingredients": [
+                        "3/4 cup broken walnuts (optional)"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Preheat oven to 375°F. Grease muffin cups and the edges surrounding the cups.",
+                    "In a large bowl, stir together the flours, baking powder, baking soda, and salt.",
+                    "In another bowl, cream butter and sugar until light and fluffy; beat in eggs. Stir in banana, milk, and vanilla.",
+                    "Add dry ingredients to wet mixture and stir just to combine. Fold in walnuts if using.",
+                    "Spoon batter into prepared muffin cups; bake 25 to 30 minutes or until a cake tester inserted in the center comes out clean.",
+                    "Remove muffin tin(s) to wire rack. Cool 5 minutes before removing muffins from cups; finish cooling on rack. Serve warm or store in an airtight container at room temperature. These muffins freeze well."
+                  ],
+                  "highAltitude": {
+                    "comments": [
+                      "Recipe scaled 1.5x from original (from 9 jumbo muffins to 12). Walnuts made optional.",
+                      "1 cup mashed ripe banana = about 2 medium bananas."
+                    ],
+                    "ingredientGroups": [
+                      {
+                        "label": "Dry ingredients",
+                        "ingredients": [
+                          "1 1/2 cups all-purpose flour",
+                          "1 1/2 cups whole-wheat flour",
+                          "1 1/4 teaspoons baking powder",
+                          "1 1/4 teaspoons baking soda",
+                          "1/4 teaspoon salt"
+                        ]
+                      },
+                      {
+                        "label": "Wet base",
+                        "ingredients": [
+                          "3/4 cup lightly salted butter or margarine, softened",
+                          "10 tablespoons sugar"
+                        ]
+                      },
+                      {
+                        "label": "Eggs",
+                        "ingredients": [
+                          "3 eggs"
+                        ]
+                      },
+                      {
+                        "label": "Wet additions",
+                        "ingredients": [
+                          "2 cups mashed ripe banana (about 4 medium bananas)",
+                          "1/2 cup milk",
+                          "1 1/2 teaspoons vanilla"
+                        ]
+                      },
+                      {
+                        "label": "Walnuts (optional)",
+                        "ingredients": [
+                          "3/4 cup broken walnuts (optional)"
+                        ]
+                      }
+                    ],
+                    "steps": [
+                      "Preheat oven to 400°F. Grease muffin cups and the edges surrounding the cups.",
+                      "In a large bowl, stir together the flours, baking powder, baking soda, and salt.",
+                      "In another bowl, cream butter and sugar until light and fluffy; beat in eggs. Stir in banana, milk, and vanilla.",
+                      "Add dry ingredients to wet mixture and stir just to combine. Fold in walnuts if using.",
+                      "Spoon batter into prepared muffin cups; bake 22–27 minutes or until a cake tester inserted in the center comes out clean. (Check at 22 minutes — the higher temp means they finish faster.)",
+                      "Remove muffin tin(s) to wire rack. Cool 5 minutes before removing muffins from cups; finish cooling on rack. Serve warm or store in an airtight container at room temperature. These muffins freeze well."
                     ]
                   }
-                ],
-                "steps": [
-                  "Adjust baking rack to the lower-third position; preheat oven to 325°F. Line a 16-cup tube pan with parchment paper. Do not grease.",
-                  "Whisk cake flour, sugar, baking powder, and salt together in a large bowl.",
-                  "Add whole eggs, egg yolks, water, oil, and ube extract; whisk until smooth.",
-                  "Using a stand or hand mixer with whisk attachment, whip egg whites with cream of tartar on medium until foamy. Increase to medium-high; whip only to medium-firm peaks (not quite stiff) — at altitude, egg whites can over-expand and collapse; slightly under-beaten whites give the batter room.",
-                  "Add egg whites to the yolk mixture; fold gently until no white streaks remain.",
-                  "Pour batter into tube pan; smooth top. Tap pan gently. Begin checking at 25 minutes per side; total bake time is typically 50–55 minutes.",
-                  "Immediately invert pan to cool. Inverted cooling is even more critical at altitude — leave inverted at least 2–3 hours. Do not rush.",
-                  "Run a thin knife around the edges to loosen. Gently tap upside down onto parchment; peel off parchment, flip right side up onto a platter, and serve."
-                ]
-              }
+                },
+                {
+                  "title": "Lemony Glazed Cake Doughnuts",
+                  "servings": "Makes 8 doughnuts (plus holes)",
+                  "ingredientGroups": [
+                    {
+                      "label": "Dry ingredients",
+                      "ingredients": [
+                        "2 1/2 teaspoons baking powder",
+                        "2 cups all-purpose flour, plus more for dusting",
+                        "1 teaspoon kosher salt"
+                      ]
+                    },
+                    {
+                      "label": "Dough",
+                      "ingredients": [
+                        "2 large egg yolks",
+                        "1 cup whole-milk Greek yogurt",
+                        "1/2 cup granulated sugar",
+                        "2 tablespoons unsalted butter, melted and slightly cooled",
+                        "1 teaspoon vanilla extract",
+                        "Vegetable oil for frying (6–8 cups)"
+                      ]
+                    },
+                    {
+                      "label": "Glaze",
+                      "ingredients": [
+                        "1 cup powdered sugar",
+                        "Zest from 1/4 lemon",
+                        "Pinch of kosher salt",
+                        "1/4 cup water"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Whisk baking powder, flour, and 1 teaspoon salt in a medium bowl. Whisk egg yolks, yogurt, granulated sugar, melted butter, and vanilla in a large bowl. Mix in dry ingredients until dough comes together and is smooth.",
+                    "Turn dough onto a well-floured sheet of parchment. Dust with flour; cover with a second sheet; roll to 1/2-inch thick. Remove top sheet; brush off excess flour. Punch out circles about 3 1/2 inches in diameter. Punch out centers about 1 inch in diameter. Reroll scraps to punch out more.",
+                    "Pour oil into a large pot to a depth of 1 1/2 inches. Fit with deep-fry thermometer; heat over medium-high to 350°F. Fry doughnuts, turning once, until puffy and mahogany brown, about 2 minutes per side (slightly less for holes). Transfer to a wire rack; cool 10 minutes.",
+                    "Whisk powdered sugar, lemon zest, pinch of salt, and 1/4 cup water until smooth. Dip each side of doughnut into glaze; let excess run off. Return to rack. Eat as soon as possible."
+                  ],
+                  "source": "Chris Morocco / Bon Appétit (bonappetit.com)",
+                  "highAltitude": {
+                    "ingredientGroups": [
+                      {
+                        "label": "Dry ingredients",
+                        "ingredients": [
+                          "2 teaspoons baking powder",
+                          "2 cups + 2 tablespoons all-purpose flour, plus more for dusting",
+                          "1 teaspoon kosher salt"
+                        ]
+                      },
+                      {
+                        "label": "Dough",
+                        "ingredients": [
+                          "2 large egg yolks",
+                          "1 cup whole-milk Greek yogurt",
+                          "7 tablespoons granulated sugar",
+                          "2 tablespoons unsalted butter, melted and slightly cooled",
+                          "1 teaspoon vanilla extract",
+                          "Vegetable oil for frying (6–8 cups)"
+                        ]
+                      },
+                      {
+                        "label": "Glaze",
+                        "ingredients": [
+                          "1 cup powdered sugar",
+                          "Zest from 1/4 lemon",
+                          "Pinch of kosher salt",
+                          "1/4 cup water"
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "title": "Mom’s Zucchini Bread",
+                  "servings": "Makes 2 (8x4-inch) loaves   |   Bake: 325°F for 40-60 minutes",
+                  "source": "Allrecipes (Vicki Monte), tested by Allrecipes Test Kitchen",
+                  "comments": [
+                    "Freezes well. Keeps in the refrigerator for weeks."
+                  ],
+                  "ingredientGroups": [
+                    {
+                      "label": "Dry ingredients",
+                      "ingredients": [
+                        "3 cups all-purpose flour",
+                        "1 tablespoon ground cinnamon",
+                        "1 teaspoon salt",
+                        "1 teaspoon baking powder",
+                        "1 teaspoon baking soda"
+                      ]
+                    },
+                    {
+                      "label": "Wet ingredients",
+                      "ingredients": [
+                        "2 1/4 cups white sugar",
+                        "1 cup vegetable oil",
+                        "3 large eggs",
+                        "1 tablespoon vanilla extract"
+                      ]
+                    },
+                    {
+                      "label": "Mix-ins",
+                      "ingredients": [
+                        "2 cups shredded zucchini",
+                        "1 cup chopped walnuts"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Preheat oven to 325°F. Grease and flour two 8x4-inch loaf pans.",
+                    "Sift flour, cinnamon, salt, baking powder, and baking soda together in a large bowl.",
+                    "Beat sugar, oil, eggs, and vanilla with an electric mixer until combined. Add flour mixture and beat well.",
+                    "Stir in shredded zucchini and walnuts until combined. Pour into prepared pans.",
+                    "Bake until a toothpick inserted in the center comes out clean, 40-60 minutes. Cool in pans on a wire rack for 20 minutes.",
+                    "Run a knife around the edges to loosen. Turn out onto a wire rack and cool completely."
+                  ],
+                  "highAltitude": {
+                    "ingredientGroups": [
+                      {
+                        "label": "Dry ingredients",
+                        "ingredients": [
+                          "3 cups + 2 tablespoons all-purpose flour",
+                          "1 tablespoon ground cinnamon",
+                          "1 teaspoon salt",
+                          "3/4 teaspoon baking powder",
+                          "3/4 teaspoon baking soda"
+                        ]
+                      },
+                      {
+                        "label": "Wet ingredients",
+                        "ingredients": [
+                          "2 cups white sugar",
+                          "1 cup + 2 tablespoons vegetable oil",
+                          "3 large eggs",
+                          "1 tablespoon vanilla extract"
+                        ]
+                      },
+                      {
+                        "label": "Mix-ins",
+                        "ingredients": [
+                          "2 cups shredded zucchini",
+                          "1 cup chopped walnuts"
+                        ]
+                      }
+                    ],
+                    "steps": [
+                      "Preheat oven to 325°F. Grease and flour two 8x4-inch loaf pans.",
+                      "Sift flour, cinnamon, salt, baking powder, and baking soda together in a large bowl.",
+                      "Beat sugar, oil, eggs, and vanilla with an electric mixer until combined. Add flour mixture and beat well.",
+                      "Stir in shredded zucchini and walnuts until combined. Pour into prepared pans.",
+                      "Bake until a toothpick inserted in the center comes out clean, 40-60 minutes. Cool in pans on a wire rack for 20 minutes.",
+                      "Run a knife around the edges to loosen. Turn out onto a wire rack and cool completely."
+                    ]
+                  }
+                },
+                {
+                  "id": "baking-sweet-passover-cream-puff-shells",
+                  "title": "Passover Cream Puff Shells",
+                  "servings": "Makes about 2 dozen shells",
+                  "ingredientGroups": [
+                    {
+                      "label": "Dough",
+                      "ingredients": [
+                        "1 cup water",
+                        "1/2 cup (4 oz) unsalted butter or margarine, cut into 8 pieces",
+                        "1 teaspoon salt",
+                        "1 1/2 cups matzo cake meal",
+                        "5 large eggs"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Position a rack in center of oven; heat to 400°F. Grease corners of 2 baking sheets; line with parchment paper.",
+                    "Combine water and butter in a small saucepan over medium-low heat until butter melts. Increase heat; bring to a boil. Remove from heat; add matzo cake meal all at once and mix vigorously. Return to low heat; cook, stirring constantly, until mixture is a thick paste, about 1 minute. Transfer to the bowl of a stand mixer or large bowl; cool 5 minutes.",
+                    "Using paddle attachment or wooden spoon, beat in one egg at a time, fully incorporating each before adding the next, until dough is smooth.",
+                    "Drop rounded tablespoons (about 1 1/2 tablespoons each) onto baking sheets, spacing 1 1/2 inches apart. Smooth any points with a moistened finger.",
+                    "Bake 15 minutes. Reduce oven to 375°F; bake until golden and firm, 14–20 more minutes. Turn off oven; wedge door open with a wooden spoon and leave puffs 30 minutes to dry out.",
+                    "Remove; pierce each puff at the center of one side with a paring knife to release steam."
+                  ],
+                  "comments": [
+                    "Best on the day baked. Unfilled shells keep 1 day in an airtight container at room temperature, or freeze well. Reheat in oven or toaster oven before using. Filled cream puffs can be refrigerated up to 1 day.",
+                    "Used in Passover Profiteroles with Strawberries (Desserts)."
+                  ],
+                  "source": "Faye Levy / Los Angeles Times",
+                  "highAltitude": {
+                    "ingredientGroups": [
+                      {
+                        "label": "Dough",
+                        "ingredients": [
+                          "1 cup water",
+                          "1/2 cup (4 oz) unsalted butter or margarine, cut into 8 pieces",
+                          "1 teaspoon salt",
+                          "1 1/2 cups + 1 tablespoon matzo cake meal",
+                          "5 large eggs"
+                        ]
+                      }
+                    ],
+                    "steps": [
+                      "Position a rack in center of oven; heat to 400°F. Grease corners of 2 baking sheets; line with parchment paper.",
+                      "Combine water and butter in a small saucepan over medium-low heat until butter melts. Increase heat; bring to a boil. Remove from heat; add matzo cake meal all at once and mix vigorously. Return to low heat; cook, stirring constantly until paste pulls cleanly from the pan (30–60 seconds longer than at sea level). Transfer to stand mixer bowl; cool 5 minutes.",
+                      "Using paddle attachment or wooden spoon, beat in one egg at a time, fully incorporating each before adding the next, until dough is smooth.",
+                      "Drop rounded tablespoons onto baking sheets, spacing 1 1/2 inches apart. Smooth any points with a moistened finger.",
+                      "Bake the full 15 minutes at 400°F before reducing heat; do not open the oven early. Reduce to 375°F; bake until golden and firm, 14–20 more minutes. Turn off oven; wedge door open and leave puffs 30 minutes to dry out.",
+                      "Remove; pierce each puff at the center of one side with a paring knife to release steam."
+                    ]
+                  }
+                },
+                {
+                  "title": "Pumpkin Gut Bread",
+                  "servings": "Makes 2 (9x5-inch) loaves   |   Bake: 350°F for about 1 hour",
+                  "source": "Diana Johnson, EatingRichly.com",
+                  "comments": [
+                    "Pumpkin guts are the stringy fibrous strands from the inside of a pumpkin, with the seeds removed. Unlike puree, they stay chunky, creating golden ribbons throughout the loaf. Pumpkin puree may be substituted but will blend fully into the batter.",
+                    "Recipe makes two loaves and freezes very well."
+                  ],
+                  "ingredientGroups": [
+                    {
+                      "label": "Dry ingredients",
+                      "ingredients": [
+                        "3 1/2 cups whole wheat flour (all-purpose may be substituted)",
+                        "3 cups sugar",
+                        "2 teaspoons ground cinnamon",
+                        "2 teaspoons ground nutmeg",
+                        "2 teaspoons baking soda",
+                        "1 1/2 teaspoons salt"
+                      ]
+                    },
+                    {
+                      "label": "Wet ingredients",
+                      "ingredients": [
+                        "4 large eggs, beaten",
+                        "1 cup vegetable oil",
+                        "1/2 cup water"
+                      ]
+                    },
+                    {
+                      "label": "Pumpkin",
+                      "ingredients": [
+                        "2 cups fresh pumpkin guts (fibrous strands from the pumpkin interior, separated from seeds)"
+                      ]
+                    },
+                    {
+                      "label": "Pecans (optional)",
+                      "ingredients": [
+                        "1 cup chopped pecans"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Preheat oven to 350°F. Grease and flour two 9x5-inch loaf pans.",
+                    "Snip the pumpkin gut fibers with scissors into shorter, workable pieces -- avoid large clumps.",
+                    "Combine flour, sugar, cinnamon, nutmeg, baking soda, and salt in a large bowl.",
+                    "Add eggs, oil, water, and pumpkin guts. Stir until batter is smooth.",
+                    "Stir in pecans, or reserve to sprinkle over the top before baking.",
+                    "Divide batter between prepared pans. Bake 1 hour, then test the center with a wooden skewer. Continue baking and check every 5 minutes if not clean. Cool in pans 10 minutes, then turn out onto a wire rack."
+                  ],
+                  "highAltitude": {
+                    "ingredientGroups": [
+                      {
+                        "label": "Dry ingredients",
+                        "ingredients": [
+                          "3 1/2 cups whole wheat flour (all-purpose may be substituted)",
+                          "2 2/3 cups sugar",
+                          "2 teaspoons ground cinnamon",
+                          "2 teaspoons ground nutmeg",
+                          "1 1/2 teaspoons baking soda",
+                          "1 1/2 teaspoons salt"
+                        ]
+                      },
+                      {
+                        "label": "Wet ingredients",
+                        "ingredients": [
+                          "4 large eggs, beaten",
+                          "1 cup vegetable oil",
+                          "1/2 cup + 2 tablespoons water"
+                        ]
+                      },
+                      {
+                        "label": "Pumpkin",
+                        "ingredients": [
+                          "2 cups fresh pumpkin guts (fibrous strands from the pumpkin interior, separated from seeds)"
+                        ]
+                      },
+                      {
+                        "label": "Pecans (optional)",
+                        "ingredients": [
+                          "1 cup chopped pecans"
+                        ]
+                      }
+                    ],
+                    "steps": [
+                      "Preheat oven to 350°F. Grease and flour two 9x5-inch loaf pans.",
+                      "Snip the pumpkin gut fibers with scissors into shorter, workable pieces -- avoid large clumps.",
+                      "Combine flour, sugar, cinnamon, nutmeg, baking soda, and salt in a large bowl.",
+                      "Add eggs, oil, water, and pumpkin guts. Stir until batter is smooth.",
+                      "Stir in pecans, or reserve to sprinkle over the top before baking.",
+                      "Divide batter between prepared pans. Bake 1 hour, then test the center with a wooden skewer. Continue baking and check every 5 minutes if not clean. Cool in pans 10 minutes, then turn out onto a wire rack."
+                    ]
+                  }
+                },
+                {
+                  "title": "Frangipane",
+                  "servings": "Makes about 1/2 cup (enough for one tart or tartlets)",
+                  "ingredientGroups": [
+                    {
+                      "label": "Almond cream",
+                      "ingredients": [
+                        "3 tablespoons unsalted butter, softened",
+                        "1/4 cup granulated sugar",
+                        "1/2 cup ground almond meal",
+                        "1 large egg",
+                        "3/4 teaspoon vanilla extract",
+                        "1 tablespoon all-purpose flour"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Cream butter and sugar together in the bowl of a stand mixer until pale and fluffy.",
+                    "Add almond meal; mix to combine. Add egg and vanilla; beat gently until incorporated. Add flour; mix until smooth.",
+                    "Use immediately as a filling for tarts or tartlets, and bake. Refrigerates up to 1 week in an airtight container (bring to room temperature before using). Freezes up to 1 month."
+                  ],
+                  "source": "Rebecca Franklin / The Spruce Eats (thespruceeats.com)"
+                },
+                {
+                  "title": "Blintz Soufflé",
+                  "servings": "Serves 6–8   |   Bake: 350°F covered 1 hour, then uncovered 10 minutes",
+                  "source": "Family recipe, courtesy of Marsha Firestone (noted on card as smaller recipe for small casserole)",
+                  "comments": [
+                    "Marsha Firestone's smaller version — uses 2 packages of blintzes and a smaller casserole dish.",
+                    "Frozen cheese blintzes from the store work perfectly."
+                  ],
+                  "ingredientGroups": [
+                    {
+                      "label": "Pan and blintzes",
+                      "ingredients": [
+                        "1 stick (1/2 cup) butter",
+                        "2 packages (about 12) frozen cheese blintzes"
+                      ]
+                    },
+                    {
+                      "label": "Custard",
+                      "ingredients": [
+                        "6 eggs",
+                        "2/3 cup sugar",
+                        "1/2 teaspoon vanilla",
+                        "1 teaspoon orange juice",
+                        "1-1/2 cups sour cream"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Preheat oven to 350°F.",
+                    "Melt butter in a casserole dish. Arrange frozen blintzes in a single layer on top.",
+                    "Beat eggs with sugar, vanilla, orange juice, and sour cream until smooth. Pour evenly over blintzes.",
+                    "Bake covered for 1 hour.",
+                    "Uncover and bake an additional 10 minutes until golden and puffed."
+                  ],
+                  "highAltitude": {
+                    "comments": [
+                      "Marsha Firestone’s smaller version — uses 2 packages of blintzes and a smaller casserole dish.",
+                      "Frozen cheese blintzes from the store work perfectly."
+                    ],
+                    "ingredientGroups": [
+                      {
+                        "label": "Pan and blintzes",
+                        "ingredients": [
+                          "1 stick (1/2 cup) butter",
+                          "2 packages (about 12) frozen cheese blintzes"
+                        ]
+                      },
+                      {
+                        "label": "Custard",
+                        "ingredients": [
+                          "6 eggs",
+                          "9 tablespoons sugar",
+                          "1/2 teaspoon vanilla",
+                          "1 teaspoon orange juice",
+                          "1 1/2 cups sour cream"
+                        ]
+                      }
+                    ],
+                    "steps": [
+                      "Preheat oven to 375°F.",
+                      "Melt butter in a casserole dish. Arrange frozen blintzes in a single layer on top.",
+                      "Beat eggs with sugar, vanilla, orange juice, and sour cream until smooth. Pour evenly over blintzes.",
+                      "Bake covered at 375°F for 45–50 minutes.",
+                      "Uncover and bake an additional 15–20 minutes until golden and firmly set. (At altitude, egg custards need slightly longer uncovered to firm up — check by gently shaking the dish; it should have no liquidy jiggle in the center.)"
+                    ]
+                  }
+                },
+                {
+                  "title": "Brenda's Noodle Kugel",
+                  "favorite": true,
+                  "source": "Family recipe card, credited to Brenda",
+                  "comments": [
+                    "Can be assembled up to 2 days ahead and refrigerated — hold the topping until ready to bake."
+                  ],
+                  "ingredientGroups": [
+                    {
+                      "label": "Noodles",
+                      "ingredients": [
+                        "1 pound extra-wide egg noodles"
+                      ]
+                    },
+                    {
+                      "label": "Filling",
+                      "note": "mix together",
+                      "ingredients": [
+                        "8 oz. cream cheese, softened",
+                        "1 cup sour cream",
+                        "1 stick (1/2 cup) butter, softened",
+                        "1/2 cup sugar",
+                        "1/2 teaspoon vanilla extract",
+                        "3 eggs",
+                        "1 package golden raisins"
+                      ]
+                    },
+                    {
+                      "label": "Topping",
+                      "ingredients": [
+                        "1/2 stick (1/4 cup) butter, melted",
+                        "1 1/2 cups corn flakes"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Preheat oven to 350°F. Grease a large Pyrex casserole dish.",
+                    "Cook noodles according to package instructions. Drain thoroughly.",
+                    "Mix the filling ingredients together until combined, then fold in the drained noodles. Transfer to the prepared casserole.",
+                    "Bake uncovered at 350°F for 30–45 minutes. Remove from oven and let cool.",
+                    "Mix the melted butter with the corn flakes and spread over the cooled casserole.",
+                    "Return to the oven and bake for another 15 minutes, until the topping is golden and crisp."
+                  ]
+                },
+                {
+                  "title": "Renee's Blintz Souffle",
+                  "servings": "Makes 1 large + 1 small 9x13 casserole",
+                  "source": "From Renee Epstein",
+                  "comments": [
+                    "Renee's larger party-size version with blueberry blintzes added. For a smaller all-cheese version, see Blintz Souffle (Marsha Firestone)."
+                  ],
+                  "ingredientGroups": [
+                    {
+                      "label": "Pan and blintzes",
+                      "ingredients": [
+                        "1 stick (1/2 cup) butter, melted",
+                        "4 packages frozen blintzes (2 blueberry, 2 cheese)"
+                      ]
+                    },
+                    {
+                      "label": "Custard",
+                      "ingredients": [
+                        "12 eggs",
+                        "1 cup sugar",
+                        "1 1/2 teaspoons vanilla",
+                        "1/2 cup orange juice",
+                        "2 1/2 cups sour cream"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Preheat oven to 350°.",
+                    "Pour melted butter into the bottom of casserole dish(es). Arrange frozen blintzes in a single layer.",
+                    "Beat eggs with sugar, vanilla, orange juice, and sour cream until smooth. Pour evenly over blintzes.",
+                    "Bake covered or uncovered at 350° for 45-60 minutes until puffed and set."
+                  ],
+                  "highAltitude": {
+                    "ingredientGroups": [
+                      {
+                        "label": "Pan and blintzes",
+                        "ingredients": [
+                          "1 stick (1/2 cup) butter, melted",
+                          "4 packages frozen blintzes (2 blueberry, 2 cheese)"
+                        ]
+                      },
+                      {
+                        "label": "Custard",
+                        "ingredients": [
+                          "12 eggs",
+                          "14 tablespoons sugar",
+                          "1 1/2 teaspoons vanilla",
+                          "1/2 cup orange juice",
+                          "2 1/2 cups sour cream"
+                        ]
+                      }
+                    ],
+                    "steps": [
+                      "Preheat oven to 375°.",
+                      "Pour melted butter into the bottom of casserole dish(es). Arrange frozen blintzes in a single layer.",
+                      "Beat eggs with sugar, vanilla, orange juice, and sour cream until smooth. Pour evenly over blintzes.",
+                      "Bake covered at 375° for 45-55 minutes. Remove cover and bake 20-25 minutes more until puffed, golden, and set in the center."
+                    ]
+                  }
+                },
+                {
+                  "title": "Sqirl's Sourdough Scones",
+                  "servings": "Makes 8 scones",
+                  "ingredientGroups": [
+                    {
+                      "label": "Dry ingredients",
+                      "ingredients": [
+                        "2 cups all-purpose flour",
+                        "1 cup plus 2 tablespoons whole-grain spelt flour",
+                        "1/3 cup granulated sugar, plus more for sprinkling",
+                        "1 1/2 tablespoons baking powder",
+                        "2 teaspoons fine sea salt (or 1 tablespoon kosher salt)",
+                        "1 teaspoon baking soda"
+                      ]
+                    },
+                    {
+                      "label": "Butter",
+                      "ingredients": [
+                        "3/4 cup (1 1/2 sticks) unsalted butter, cut into 1/2-inch cubes and chilled"
+                      ]
+                    },
+                    {
+                      "label": "Liquid ingredients",
+                      "ingredients": [
+                        "1/2 cup chilled heavy cream",
+                        "3 tablespoons chilled buttermilk, plus more for brushing",
+                        {
+                          "html": "3 tablespoons chilled <a href=\"dairy.html#dairy-creme-fraiche\">Creme Fraiche</a> (Dairy), or store-bought"
+                        },
+                        "2 tablespoons honey",
+                        "2 tablespoons sourdough starter discard",
+                        "1 tablespoon finely grated orange or lemon zest"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Whisk both flours, sugar, baking powder, salt, and baking soda together in a large bowl. Add butter; toss to coat in dry ingredients. Place bowl in freezer 10 minutes until butter is very cold.",
+                    "In a large measuring cup, whisk together cream, buttermilk, creme fraiche, honey, sourdough starter, and citrus zest. Keep chilled until ready to use. Line a large baking sheet with parchment.",
+                    "Using a stand mixer with paddle on low (or fingertips), break butter into pea-sized pieces in the dry ingredients, 1–2 minutes. Pour in chilled liquid and stir gently with a fork until large clumps form.",
+                    "Scrape dough onto a lightly floured surface; shape into a 7-inch-diameter disk, 1 1/2 inches thick. Cut into 8 wedges; arrange on prepared baking sheet, evenly spaced. Freeze at least 30 minutes.",
+                    "Heat oven to 400°F with a rack in the center. Brush scones with buttermilk; sprinkle liberally with sugar. Bake, rotating sheet halfway through, until deep golden brown, 30–32 minutes. Transfer to a wire rack; cool completely before serving."
+                  ],
+                  "comments": [
+                    {
+                      "html": "For add-in variations (blueberry lemon, cranberry orange, strawberry jam, cherry almond, cardamom spiced), see <a href=\"baking.html#baking-sweet-squirls-sourdough-scone-variations\">Sqirl’s Sourdough Scone Variations</a>."
+                    },
+                    {
+                      "html": "Creme fraiche can be purchased or made at home; see <a href=\"dairy.html#dairy-creme-fraiche\">Creme Fraiche</a> (Dairy)."
+                    },
+                    "Scones can be frozen through step 4 for up to 2 months; bake from frozen at same time. Baked scones keep in an airtight container at room temperature up to 3 days."
+                  ],
+                  "source": "Catalina Flores, adapted by / Los Angeles Times",
+                  "highAltitude": {
+                    "ingredientGroups": [
+                      {
+                        "label": "Dry ingredients",
+                        "ingredients": [
+                          "2 cups + 4 tablespoons all-purpose flour",
+                          "1 cup + 4 tablespoons whole-grain spelt flour",
+                          "scant 1/3 cup granulated sugar, plus more for sprinkling",
+                          "1 tablespoon + 1/2 teaspoon baking powder",
+                          "2 teaspoons fine sea salt (or 1 tablespoon kosher salt)",
+                          "3/4 teaspoon baking soda"
+                        ]
+                      },
+                      {
+                        "label": "Butter",
+                        "ingredients": [
+                          "3/4 cup (1 1/2 sticks) unsalted butter, cut into 1/2-inch cubes and chilled"
+                        ]
+                      },
+                      {
+                        "label": "Liquid ingredients",
+                        "ingredients": [
+                          "1/2 cup chilled heavy cream",
+                          "3 tablespoons chilled buttermilk, plus more for brushing",
+                          {
+                            "html": "3 tablespoons chilled <a href=\"dairy.html#dairy-creme-fraiche\">Creme Fraiche</a> (Dairy), or store-bought"
+                          },
+                          "2 tablespoons honey",
+                          "2 tablespoons sourdough starter discard",
+                          "1 tablespoon finely grated orange or lemon zest"
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "title": "Sqirl's Sourdough Scone Variations",
+                  "servings": "Each variation makes 8 scones (using Sqirl’s Sourdough Scones base)",
+                  "ingredientGroups": [
+                    {
+                      "label": "Blueberry Lemon",
+                      "ingredients": [
+                        "1 cup fresh or frozen blueberries",
+                        "(Use lemon zest in base recipe liquid)"
+                      ]
+                    },
+                    {
+                      "label": "Cranberry Orange",
+                      "ingredients": [
+                        "1 cup dried cranberries",
+                        "(Use orange zest in base recipe liquid)"
+                      ]
+                    },
+                    {
+                      "label": "Strawberry Jam",
+                      "ingredients": [
+                        "1/3 cup strawberry jam or preserves",
+                        "(Use lemon zest in base recipe liquid; swirl lightly into dough rather than fully incorporating)"
+                      ]
+                    },
+                    {
+                      "label": "Cherry Almond",
+                      "ingredients": [
+                        "3/4 cup halved fresh or frozen pitted sweet cherries",
+                        "1/4 cup finely chopped toasted almonds",
+                        "(Use orange zest in base recipe liquid)"
+                      ]
+                    },
+                    {
+                      "label": "Cardamom Spiced",
+                      "ingredients": [
+                        "1 tablespoon ground cardamom",
+                        "1 teaspoon ground cinnamon",
+                        "(Add dry spices to dry ingredients in step 1 of base recipe; use orange zest in liquid)"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    {
+                      "html": "Prepare one batch of <a href=\"baking.html#baking-sweet-squirls-sourdough-scones\">Sqirl’s Sourdough Scones</a>. For Cardamom Spiced, add the spices to the dry ingredients in step 1 of that recipe."
+                    },
+                    "In step 3, fold in the selected add-ins just before shaping the dough.",
+                    "Brush with buttermilk and sprinkle liberally with sugar as usual. For Cardamom Spiced, mix 1 tablespoon sugar with 1/4 teaspoon cinnamon for the topping."
+                  ],
+                  "source": "Catalina Flores, adapted by / Los Angeles Times"
+                }
+              ]
+            },
+            {
+              "title": "Cakes & Cupcakes",
+              "recipes": [
+                {
+                  "title": "Blueberry Coffee Cake (Blueberry Boy Bait)",
+                  "favorite": true,
+                  "servings": "Serves 12-16   |   Bake: 375°F for 45-55 minutes",
+                  "source": "Adapted from Once Upon a Chef (onceuponachef.com) by Jennifer Segal",
+                  "comments": [
+                    "Meant to replicate the coffee cake from Hobee’s in Palo Alto.",
+                    "Best the day it is made; leftovers keep well wrapped in foil at room temperature for a few days."
+                  ],
+                  "ingredientGroups": [
+                    {
+                      "label": "Streusel",
+                      "ingredients": [
+                        "12 tablespoons packed light brown sugar (3/4 cup)",
+                        "1 cup all-purpose flour",
+                        "2 teaspoons ground cinnamon",
+                        "1/2 teaspoon salt",
+                        "8 tablespoons unsalted butter (1 stick), cold, cut into 1/2-inch chunks"
+                      ]
+                    },
+                    {
+                      "label": "Dry ingredients",
+                      "ingredients": [
+                        "3 cups all-purpose flour",
+                        "3 teaspoons baking powder",
+                        "3/4 teaspoon salt"
+                      ]
+                    },
+                    {
+                      "label": "Cake batter",
+                      "ingredients": [
+                        "3/4 cup (1 1/2 sticks) unsalted butter, softened",
+                        "1 cup + 2 tablespoons granulated sugar",
+                        "3 large eggs",
+                        "2 1/4 teaspoons vanilla extract",
+                        "1 1/2 teaspoons packed lemon zest (from about 1 lemon)",
+                        "3/4 cup milk",
+                        "5 cups fresh blueberries (frozen may be used but do not defrost)"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Make streusel: combine brown sugar, flour, cinnamon, and salt in a bowl. Rub in cold butter with fingertips until mixture is crumbly. Refrigerate until ready to use.",
+                    "Preheat oven to 375°F. Grease a 9x13-inch baking dish.",
+                    "Whisk flour, baking powder, and salt together in a medium bowl. Set aside.",
+                    "Beat butter and sugar with an electric mixer until creamy, about 2 minutes. Add eggs one at a time, scraping down the bowl and beating well after each addition. Beat in vanilla and lemon zest.",
+                    "On low speed, add flour mixture alternating with milk, beginning and ending with flour. Fold in blueberries gently with a spatula. Do not over-mix.",
+                    "Spread batter evenly in the prepared dish. Sprinkle streusel evenly over the top. Bake 45-55 minutes until golden brown at the edges and a cake tester comes out clean. Cool in pan on a rack at least 20 minutes before serving."
+                  ],
+                  "highAltitude": {
+                    "ingredientGroups": [
+                      {
+                        "label": "Streusel",
+                        "ingredients": [
+                          "12 tablespoons packed light brown sugar (3/4 cup)",
+                          "1 cup all-purpose flour",
+                          "2 teaspoons ground cinnamon",
+                          "1/2 teaspoon salt",
+                          "8 tablespoons unsalted butter (1 stick), cold, cut into 1/2-inch chunks"
+                        ]
+                      },
+                      {
+                        "label": "Dry ingredients",
+                        "ingredients": [
+                          "3 cups all-purpose flour",
+                          "2 1/4 teaspoons baking powder",
+                          "3/4 teaspoon salt"
+                        ]
+                      },
+                      {
+                        "label": "Cake batter",
+                        "ingredients": [
+                          "3/4 cup (1 1/2 sticks) unsalted butter, softened",
+                          "1 cup granulated sugar",
+                          "3 large eggs",
+                          "2 1/4 teaspoons vanilla extract",
+                          "1 1/2 teaspoons packed lemon zest (from about 1 lemon)",
+                          "3/4 cup + 2 tablespoons milk",
+                          "5 cups fresh blueberries (frozen may be used but do not defrost)"
+                        ]
+                      }
+                    ],
+                    "steps": [
+                      "Make streusel: combine brown sugar, flour, cinnamon, and salt in a bowl. Rub in cold butter with fingertips until mixture is crumbly. Refrigerate until ready to use.",
+                      "Preheat oven to 375°F. Grease a 9x13-inch baking dish.",
+                      "Whisk flour, baking powder, and salt together in a medium bowl. Set aside.",
+                      "Beat butter and sugar with an electric mixer until creamy, about 2 minutes. Add eggs one at a time, scraping down the bowl and beating well after each addition. Beat in vanilla and lemon zest.",
+                      "On low speed, add flour mixture alternating with milk, beginning and ending with flour. Fold in blueberries gently with a spatula. Do not over-mix.",
+                      "Spread batter evenly in the prepared dish. Sprinkle streusel evenly over the top. Bake 45-55 minutes until golden brown at the edges and a cake tester comes out clean. With abundant berries releasing juice at altitude, test with a cake tester inserted into the batter portion rather than through a berry. May need the full 55 minutes. Cool in pan on a rack at least 20 minutes before serving."
+                    ]
+                  }
+                },
+                {
+                  "title": "Butter Pecan Coffee Cake",
+                  "servings": "Serves 12–16",
+                  "source": "Family recipe card",
+                  "comments": [
+                    "The key technique: butter and pecans go into the Bundt pan during preheat, so they melt and toast before the batter goes in. Invert immediately after baking so the caramelized pecan layer becomes the topping.",
+                    "Vanilla-butter-nut flavoring can substitute for the vanilla and butter flavoring — use 3 teaspoons Alternatively, use 2 teaspoons pure vanilla with no butter flavoring."
+                  ],
+                  "ingredientGroups": [
+                    {
+                      "label": "Pan base",
+                      "ingredients": [
+                        "1 stick (8 tablespoons) butter or margarine",
+                        "1 cup pecans"
+                      ]
+                    },
+                    {
+                      "label": "Batter",
+                      "ingredients": [
+                        "1 package Duncan Hines yellow cake mix",
+                        "1 package Jell-O instant vanilla pudding",
+                        "3/4 cup vegetable oil",
+                        "3/4 cup water",
+                        "1 teaspoon pure vanilla extract",
+                        "1 teaspoon butter flavoring (or use 2 teaspoons pure vanilla with no butter flavoring)"
+                      ]
+                    },
+                    {
+                      "label": "Eggs",
+                      "ingredients": [
+                        "4 large eggs, beaten"
+                      ]
+                    },
+                    {
+                      "label": "Cinnamon swirl",
+                      "ingredients": [
+                        "2 teaspoons cinnamon",
+                        "1/2 cup sugar",
+                        "1/2 cup pecans"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Grease and flour a Bundt pan. Place butter and 1 cup pecans in the bottom.",
+                    "Place pan in oven while it preheats to 350°F; leave for 6 minutes, so the butter melts and pecans toast slightly.",
+                    "Meanwhile, in a large mixing bowl, combine cake mix, pudding mix, oil, water, vanilla, and butter flavoring. Beat to combine.",
+                    "Beat eggs separately, then add to batter while mixing. Beat until smooth.",
+                    "Remove pan from oven after 6 minutes. Pour half the batter over the pecan-butter base.",
+                    "Mix together cinnamon, sugar, and 1/2 cup pecans. Sprinkle evenly over batter layer.",
+                    "Pour remaining batter on top. Gently swirl the surface with a knife without disturbing the bottom layer.",
+                    "Bake at 350°F for 60 minutes.",
+                    "Immediately invert onto a serving plate. Remove pan — the caramelized pecan layer will now be on top."
+                  ],
+                  "highAltitude": {
+                    "comments": [
+                      "The key technique: butter and pecans go into the Bundt pan during preheat, so they melt and toast before the batter goes in. Invert immediately after baking so the caramelized pecan layer becomes the topping.",
+                      "Vanilla-butter-nut flavoring can substitute for the vanilla and butter flavoring — use 3 teaspoons Alternatively, use 2 teaspoons pure vanilla with no butter flavoring."
+                    ],
+                    "ingredientGroups": [
+                      {
+                        "label": "Pan base",
+                        "ingredients": [
+                          "1 stick (8 tablespoons) butter or margarine",
+                          "1 cup pecans"
+                        ]
+                      },
+                      {
+                        "label": "Batter",
+                        "ingredients": [
+                          "1 package Duncan Hines yellow cake mix",
+                          "1 package Jell-O instant vanilla pudding",
+                          "3/4 cup vegetable oil",
+                          "3/4 cup + 2 tablespoons water",
+                          "1 teaspoon pure vanilla extract",
+                          "1 teaspoon butter flavoring"
+                        ]
+                      },
+                      {
+                        "label": "Eggs",
+                        "ingredients": [
+                          "4 large eggs, beaten"
+                        ]
+                      },
+                      {
+                        "label": "Cinnamon swirl",
+                        "ingredients": [
+                          "2 teaspoons cinnamon",
+                          "7 tablespoons sugar",
+                          "1/2 cup pecans"
+                        ]
+                      }
+                    ],
+                    "steps": [
+                      "Grease and flour a Bundt pan. Place butter and 1 cup pecans in the bottom.",
+                      "Place pan in oven while it preheats to 375°F; leave for 6 minutes, so the butter melts and pecans toast slightly.",
+                      "Meanwhile, in a large mixing bowl, combine cake mix, pudding mix, oil, water, vanilla, and butter flavoring. Beat to combine.",
+                      "Beat eggs separately, then add to batter while mixing. Beat until smooth.",
+                      "Remove pan from oven after 6 minutes. Pour half the batter over the pecan-butter base.",
+                      "Mix together cinnamon, sugar, and 1/2 cup pecans. Sprinkle evenly over batter layer.",
+                      "Pour remaining batter on top. Gently swirl the surface with a knife without disturbing the bottom layer.",
+                      "Bake at 375°F for 50–55 minutes (check at 50 minutes with a toothpick).",
+                      "Immediately invert onto a serving plate. Remove pan — the caramelized pecan layer will now be on top."
+                    ]
+                  }
+                },
+                {
+                  "title": "Chocolate \"Birthday Cake\"",
+                  "favorite": true,
+                  "servings": "One large sheet cake or a 2-layer 9-inch cake   |   Cook: 40-45 minutes",
+                  "comments": [
+                    "For a single layer, halve the butter, sugar, chocolate, flour, baking soda, salt, vanilla, and water as noted below. For 1 1/2 eggs: whisk 2 eggs together and use 3/4 of the mixture.",
+                    "Don't halve the frosting, even for a single layer — a full batch is right (a half batch isn't quite enough)."
+                  ],
+                  "source": "Family recipe card written by Grandmother Brenda; the single-layer/half-batch margin annotations are from Lauren",
+                  "ingredientGroups": [
+                    {
+                      "label": "Creamed base",
+                      "ingredients": [
+                        "1 cup (2 sticks) butter [1 stick]",
+                        "2 cups sugar [1 cup]",
+                        "3 eggs [1 1/2 eggs]",
+                        "2 teaspoons vanilla [1 teaspoon]"
+                      ]
+                    },
+                    {
+                      "label": "Chocolate",
+                      "ingredients": [
+                        "4 oz unsweetened chocolate [2 oz]"
+                      ]
+                    },
+                    {
+                      "label": "Dry ingredients",
+                      "ingredients": [
+                        "2 2/3 cups flour [1 1/3 cups]",
+                        "2 teaspoons baking soda [1 teaspoon]",
+                        "1 teaspoon salt [1/2 teaspoon]"
+                      ]
+                    },
+                    {
+                      "label": "Liquid",
+                      "ingredients": [
+                        "Up to 2 cups water, added gradually as needed [up to 1 cup]"
+                      ]
+                    },
+                    {
+                      "label": "Frosting",
+                      "ingredients": [
+                        "2 cups confectioners' sugar (be generous — you may want more)",
+                        "3/4 cup butter",
+                        "1 teaspoon vanilla",
+                        "2-3 oz unsweetened chocolate, melted"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Cream the butter; add the sugar, then the eggs and vanilla, beating well after each addition.",
+                    "Melt the chocolate in the microwave (20-30 second bursts, stirring between, until smooth) and add to the creamed mixture.",
+                    "Sift together the flour, baking soda, and salt.",
+                    "Add the flour mixture to the creamed mixture alternately with the water, mixing just until combined. You likely won't need the full 2 cups of water — add enough to make a smooth, pourable batter.",
+                    "Bake in a large buttered pan, or two buttered 9-inch round layer pans, for 40-45 minutes at 325°F.",
+                    "Frost after the layer(s) are completely cool, on a baking rack.",
+                    "Frosting: Cream the confectioners' sugar with the butter until smooth. Add the vanilla and beat well.",
+                    "Melt the 2-3 oz chocolate and add to the frosting; mix until smooth. Add a bit more confectioners' sugar if needed to reach a spreadable consistency.",
+                    "Spread over the cooled cake."
+                  ],
+                  "highAltitude": {
+                    "comments": [
+                      "For a single layer, halve all cake ingredients as noted in the standard recipe. The single-layer proportions given in the original apply — reduce each adjusted amount by half in the same way.",
+                      "Don’t halve the frosting, even for a single layer — a full batch is right (a half batch isn’t quite enough)."
+                    ],
+                    "ingredientGroups": [
+                      {
+                        "label": "Creamed base",
+                        "ingredients": [
+                          "1 cup (2 sticks) butter [1/2 stick for half batch]",
+                          "1 3/4 cups sugar [7/8 cup for half batch]",
+                          "3 eggs [1 1/2 eggs]",
+                          "2 teaspoons vanilla [1 teaspoon]"
+                        ]
+                      },
+                      {
+                        "label": "Chocolate",
+                        "ingredients": [
+                          "4 oz unsweetened chocolate [2 oz]"
+                        ]
+                      },
+                      {
+                        "label": "Dry ingredients",
+                        "ingredients": [
+                          "2 3/4 cups flour [1 3/8 cups]",
+                          "1 1/2 teaspoons baking soda [3/4 teaspoon]",
+                          "1 teaspoon salt [1/2 teaspoon]"
+                        ]
+                      },
+                      {
+                        "label": "Liquid",
+                        "ingredients": [
+                          "Up to 2 cups water, use the full amount [up to 1 cup for half batch]"
+                        ]
+                      },
+                      {
+                        "label": "Frosting",
+                        "ingredients": [
+                          "2 cups confectioners’ sugar",
+                          "3/4 cup butter",
+                          "1 teaspoon vanilla",
+                          "2–3 oz unsweetened chocolate, melted"
+                        ]
+                      }
+                    ],
+                    "steps": [
+                      "Cream the butter; add the sugar, then the eggs and vanilla, beating well after each addition.",
+                      "Melt the chocolate in the microwave (20–30 second bursts, stirring between, until smooth) and add to the creamed mixture.",
+                      "Sift together the flour, baking soda, and salt.",
+                      "Add the flour mixture to the creamed mixture alternately with the water, mixing just until combined. At altitude, use the full 2 cups of water (evaporation is faster and the batter needs the moisture).",
+                      "Bake in a large buttered pan, or two buttered 9-inch round layer pans, for 35–40 minutes at 375°F. Start checking at 33 minutes.",
+                      "Frost after the layer(s) are completely cool, on a baking rack.",
+                      "Frosting: Cream the confectioners’ sugar with the butter until smooth. Add the vanilla and beat well.",
+                      "Melt the 2–3 oz chocolate and add to the frosting; mix until smooth. Add a bit more confectioners’ sugar if needed to reach a spreadable consistency.",
+                      "Spread over the cooled cake."
+                    ]
+                  }
+                },
+                {
+                  "title": "Filled Coffee Cake",
+                  "servings": "Serves 12–16   |   Bake: 350–375°F for 30–40 minutes",
+                  "source": "Family recipe card, credited to Nana Regina (card reads \"delicious! Mother's\")",
+                  "ingredientGroups": [
+                    {
+                      "label": "Cake batter",
+                      "ingredients": [
+                        "1/2 cup butter, softened (or margarine)",
+                        "2 cups sugar",
+                        "4 eggs, well beaten",
+                        "1 teaspoon vanilla",
+                        "3 cups flour",
+                        "2 teaspoons baking powder",
+                        "1/2 teaspoon salt",
+                        "1 cup milk"
+                      ]
+                    },
+                    {
+                      "label": "Filling",
+                      "ingredients": [
+                        "1 cup brown sugar",
+                        "1 cup nuts, chopped",
+                        "2 tablespoons butter",
+                        "2 tablespoons flour",
+                        "1 teaspoon cinnamon"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Preheat oven to 350–375°F. Grease a 9x13 pan (or tube pan).",
+                    "Cream butter and sugar until light and fluffy. Add well-beaten eggs and vanilla; beat well.",
+                    "Whisk together flour, baking powder, and salt in a separate bowl.",
+                    "Alternately add the flour mixture and the milk to the butter mixture in 3 additions each, beginning and ending with flour. Stir until just combined.",
+                    "Make filling: combine brown sugar, nuts, butter, flour, and cinnamon; mix until crumbly.",
+                    "Pour half the batter into the prepared pan. Spread the filling evenly over the batter. Pour remaining batter on top.",
+                    "Bake 30–40 minutes until a toothpick inserted in the center comes out clean."
+                  ],
+                  "highAltitude": {
+                    "ingredientGroups": [
+                      {
+                        "label": "Cake batter",
+                        "ingredients": [
+                          "1/2 cup butter, softened (or margarine)",
+                          "1 3/4 cups sugar",
+                          "4 eggs, well beaten",
+                          "1 teaspoon vanilla",
+                          "3 cups flour",
+                          "1 3/4 teaspoons baking powder",
+                          "1/2 teaspoon salt",
+                          "1 cup + 2 tablespoons milk"
+                        ]
+                      },
+                      {
+                        "label": "Filling",
+                        "ingredients": [
+                          "14 tablespoons (7/8 cup) brown sugar",
+                          "1 cup nuts, chopped",
+                          "2 tablespoons butter",
+                          "2 tablespoons flour",
+                          "1 teaspoon cinnamon"
+                        ]
+                      }
+                    ],
+                    "steps": [
+                      "Preheat oven to 375°F. Grease a 9×13 pan (or tube pan).",
+                      "Cream butter and sugar until light and fluffy. Add well-beaten eggs and vanilla; beat well.",
+                      "Whisk together flour, baking powder, and salt in a separate bowl.",
+                      "Alternately add the flour mixture and the milk to the butter mixture in 3 additions each, beginning and ending with flour. Stir until just combined.",
+                      "Make filling: combine brown sugar, nuts, butter, flour, and cinnamon; mix until crumbly.",
+                      "Pour half the batter into the prepared pan. Spread the filling evenly over the batter. Pour remaining batter on top.",
+                      "Bake 25–32 minutes until a toothpick inserted in the center comes out clean. Check at 25 minutes."
+                    ]
+                  }
+                },
+                {
+                  "title": "Nana's Poundcake",
+                  "favorite": true,
+                  "servings": "1 loaf or bundt cake   |   Cook: 90 minutes",
+                  "comments": [
+                    "A four-generation family recipe."
+                  ],
+                  "source": "Family recipe, credited to Nana, via Lauren's blog post \"Nana's Poundcake, Food, and Cultural Connection\"",
+                  "ingredientGroups": [
+                    {
+                      "label": "Cake",
+                      "ingredients": [
+                        "1/2 pound salted butter (2 sticks), softened",
+                        "1 3/4 cups sugar",
+                        "5 eggs",
+                        "2 cups sifted flour",
+                        "2 tablespoons vanilla"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Cream the butter and sugar.",
+                    "Add the eggs one at a time, beating constantly.",
+                    "Add the flour and vanilla.",
+                    "Pour into a well-greased loaf pan or bundt pan.",
+                    "Bake at 350°F for 90 minutes."
+                  ],
+                  "highAltitude": {
+                    "comments": [
+                      "A four-generation family recipe."
+                    ],
+                    "ingredientGroups": [
+                      {
+                        "label": "Cake",
+                        "ingredients": [
+                          "1/2 pound salted butter (2 sticks), softened",
+                          "1 1/2 cups sugar",
+                          "5 eggs",
+                          "2 cups + 2 tablespoons sifted flour",
+                          "2 tablespoons vanilla"
+                        ]
+                      }
+                    ],
+                    "steps": [
+                      "Cream the butter and sugar.",
+                      "Add the eggs one at a time, beating constantly.",
+                      "Add the flour and vanilla.",
+                      "Pour into a well-greased loaf pan or bundt pan.",
+                      "Bake at 375°F for 70–80 minutes. Start checking at 70 minutes with a toothpick or cake tester in the center. The cake is done when the tester comes out clean and the top is deep golden."
+                    ]
+                  }
+                },
+                {
+                  "title": "Red Velvet Cake",
+                  "servings": "One 6-layer cake   |   Bake: 350°F for 30 minutes",
+                  "source": "Family recipe card (Grandmother Brenda; card noted as \"original on paper yellow with age\")",
+                  "comments": [
+                    "Uses a cooked ermine frosting (flour-and-milk based) rather than the cream cheese frosting common in modern versions.",
+                    "The 2 oz. of red food coloring gives the classic deep red color."
+                  ],
+                  "ingredientGroups": [
+                    {
+                      "label": "Cocoa paste",
+                      "ingredients": [
+                        "3 tablespoons unsweetened cocoa powder (Dutch-process; e.g. Nestlé Toll House Cocoa or Hershey's Special Dark)",
+                        "2 oz. red food coloring"
+                      ]
+                    },
+                    {
+                      "label": "Cake",
+                      "ingredients": [
+                        "1/2 cup vegetable shortening",
+                        "1-3/4 cups sugar",
+                        "2 eggs, beaten",
+                        "1 cup buttermilk",
+                        "2-1/2 cups cake flour",
+                        "1 teaspoon vanilla",
+                        "1 teaspoon salt",
+                        "1 teaspoon baking soda",
+                        "1 tablespoon white vinegar"
+                      ]
+                    },
+                    {
+                      "label": "Frosting — Part 1 (cool completely before using)",
+                      "ingredients": [
+                        "5 tablespoons flour",
+                        "1 cup milk"
+                      ]
+                    },
+                    {
+                      "label": "Frosting — Part 2",
+                      "ingredients": [
+                        "1/2 cup butter, softened",
+                        "1/2 cup vegetable shortening",
+                        "1 cup granulated sugar",
+                        "2 tablespoons vanilla"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Preheat oven to 350°F. Grease and flour cake pans.",
+                    "In a small bowl, mix cocoa powder and red food coloring into a paste. Set aside.",
+                    "Cream shortening and sugar until light. Add beaten eggs; mix well. Add the cocoa-coloring paste; blend.",
+                    "Add salt and vanilla. Alternately add buttermilk and flour in 3 additions each, beginning and ending with flour. Mix well.",
+                    "Fold in baking soda and vinegar (the mixture will bubble slightly). Do not overmix.",
+                    "Pour into well-greased pans. Bake at 350°F for 30 minutes. Cool completely. Split each layer horizontally to make 6 thin layers total.",
+                    "Frosting Part 1: Cook flour and milk together in a saucepan over low heat, stirring constantly, until very thick (paste consistency). Set aside to cool completely.",
+                    "Frosting Part 2: Cream butter, shortening, and granulated sugar until light. Add vanilla. Add the cooled flour-milk paste to the creamed mixture. Beat at high speed until light and fluffy, like whipped cream.",
+                    "Frost between layers and on the outside of the cake."
+                  ],
+                  "highAltitude": {
+                    "comments": [
+                      "Uses a cooked ermine frosting (flour-and-milk based) rather than the cream cheese frosting common in modern versions.",
+                      "The 2 oz. of red food coloring gives the classic deep red color."
+                    ],
+                    "ingredientGroups": [
+                      {
+                        "label": "Cocoa paste",
+                        "ingredients": [
+                          "3 tablespoons unsweetened cocoa powder (Dutch-process; e.g. Nestle Toll House Cocoa or Hershey’s Special Dark)",
+                          "2 oz. red food coloring"
+                        ]
+                      },
+                      {
+                        "label": "Cake",
+                        "ingredients": [
+                          "1/2 cup vegetable shortening",
+                          "1 2/3 cups sugar",
+                          "2 eggs, beaten",
+                          "1 cup + 2 tablespoons buttermilk",
+                          "2 1/2 cups + 2 tablespoons cake flour",
+                          "1 teaspoon vanilla",
+                          "1 teaspoon salt",
+                          "3/4 teaspoon baking soda",
+                          "1 tablespoon white vinegar"
+                        ]
+                      },
+                      {
+                        "label": "Frosting — Part 1 (cool completely before using)",
+                        "ingredients": [
+                          "5 tablespoons flour",
+                          "1 cup milk"
+                        ]
+                      },
+                      {
+                        "label": "Frosting — Part 2",
+                        "ingredients": [
+                          "1/2 cup butter, softened",
+                          "1/2 cup vegetable shortening",
+                          "14 tablespoons granulated sugar",
+                          "2 tablespoons vanilla"
+                        ]
+                      }
+                    ],
+                    "steps": [
+                      "Preheat oven to 375°F. Grease and flour cake pans.",
+                      "In a small bowl, mix cocoa powder and red food coloring into a paste. Set aside.",
+                      "Cream shortening and sugar until light. Add beaten eggs; mix well. Add the cocoa-coloring paste; blend.",
+                      "Add salt and vanilla. Alternately add buttermilk and flour in 3 additions each, beginning and ending with flour. Mix well.",
+                      "Fold in baking soda and vinegar (the mixture will bubble slightly). Do not overmix.",
+                      "Pour into well-greased pans. Bake at 375°F for 25–28 minutes. Cool completely. Split each layer horizontally to make 6 thin layers total.",
+                      "Frosting Part 1: Cook flour and milk together in a saucepan over low heat, stirring constantly, until very thick (paste consistency). Set aside to cool completely.",
+                      "Frosting Part 2: Cream butter, shortening, and granulated sugar until light. Add vanilla. Add the cooled flour-milk paste to the creamed mixture. Beat at high speed until light and fluffy, like whipped cream.",
+                      "Frost between layers and on the outside of the cake."
+                    ]
+                  }
+                },
+                {
+                  "title": "Regina's Coffee Cake",
+                  "ingredientGroups": [
+                    {
+                      "label": "Cake batter",
+                      "ingredients": [
+                        "1 stick butter, room temperature",
+                        "1 cup sugar",
+                        "2 eggs",
+                        "1 teaspoon vanilla",
+                        "2 cups all-purpose flour",
+                        "1 teaspoon baking soda",
+                        "1 teaspoon baking powder",
+                        "1 cup sour cream"
+                      ]
+                    },
+                    {
+                      "label": "Filling",
+                      "ingredients": [
+                        "1/2 cup brown sugar",
+                        "1/2 cup chopped pecans",
+                        "1 small package milk chocolate chips"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Beat butter with sugar until light. Add eggs one at a time. Add vanilla.",
+                    "Sift together flour, baking soda, and baking powder. Add alternately to butter mixture with sour cream, starting and ending with flour.",
+                    "Grease a springform pan well. Pour half the batter into the pan.",
+                    "Combine brown sugar, pecans, and chocolate chips. Sprinkle half the filling over the batter layer.",
+                    "Pour remaining batter over filling. Sprinkle remaining filling on top.",
+                    "Bake in middle of preheated 350-degree oven for 50-55 minutes."
+                  ],
+                  "source": "Family recipe, attributed to great-grandmother Regina Pachter",
+                  "highAltitude": {
+                    "ingredientGroups": [
+                      {
+                        "label": "Cake batter",
+                        "ingredients": [
+                          "1 stick butter, room temperature",
+                          "7/8 cup (14 tablespoons) sugar",
+                          "2 eggs",
+                          "1 teaspoon vanilla",
+                          "2 cups all-purpose flour",
+                          "3/4 teaspoon baking soda",
+                          "3/4 teaspoon baking powder",
+                          "1 cup + 1 tablespoon sour cream"
+                        ]
+                      },
+                      {
+                        "label": "Filling",
+                        "ingredients": [
+                          "1/2 cup brown sugar",
+                          "1/2 cup chopped pecans",
+                          "1 small package milk chocolate chips"
+                        ]
+                      }
+                    ],
+                    "steps": [
+                      "Beat butter with sugar until light. Add eggs one at a time. Add vanilla.",
+                      "Sift together flour, baking soda, and baking powder. Add alternately to butter mixture with sour cream, starting and ending with flour.",
+                      "Grease a springform pan well. Pour half the batter into the pan.",
+                      "Combine brown sugar, pecans, and chocolate chips. Sprinkle half the filling over the batter layer.",
+                      "Pour remaining batter over filling. Sprinkle remaining filling on top.",
+                      "Bake in middle of preheated 375-degree oven for 45-55 minutes."
+                    ]
+                  }
+                },
+                {
+                  "title": "Min Cohen's Inscrutable Apple Cake",
+                  "servings": "Serves 8–10   |   Bake: 375°F for 40–45 minutes",
+                  "source": "Mrs. Min Cohen's recipe, transcribed by Grandmother Brenda",
+                  "comments": [
+                    "Grandmother Brenda wrote on the card: \"I never made this because I do not understand it -- but Perhaps Renee will tell you -- It was a delicious cake!\"",
+                    "Steps reconstructed from the ingredient list and standard apple tart method."
+                  ],
+                  "ingredientGroups": [
+                    {
+                      "label": "Pastry (30–60 minutes ahead)",
+                      "ingredients": [
+                        "2 cups flour",
+                        "3/4 cup vegetable shortening",
+                        "2 egg yolks",
+                        "1/4 teaspoon salt",
+                        "7 tablespoons cold water"
+                      ]
+                    },
+                    {
+                      "label": "Filling",
+                      "ingredients": [
+                        "7–8 apples, sliced thin",
+                        "1 cup sugar",
+                        "Lemon juice to taste",
+                        "1 teaspoon cinnamon"
+                      ]
+                    },
+                    {
+                      "label": "Glaze",
+                      "ingredients": [
+                        "1 cup powdered sugar",
+                        "1 tablespoon flour",
+                        "1 teaspoon vanilla",
+                        "2 tablespoons milk"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Make pastry: combine flour and shortening; add egg yolks, salt, and cold water. Mix until just combined. Knead briefly, then refrigerate 30–60 minutes.",
+                    "Preheat oven to 375°F. Roll pastry out very thin. Use about 2/3 to line a baking pan; reserve the rest for the top.",
+                    "Make filling: toss sliced apples with sugar, a squeeze of lemon juice, and cinnamon.",
+                    "Spread apple filling over the pastry. Cover with remaining rolled-out pastry.",
+                    "Bake at 375°F for 40–45 minutes until golden.",
+                    "Make glaze: beat powdered sugar, flour, vanilla, and milk until smooth. Drizzle over warm cake."
+                  ]
+                },
+                {
+                  "title": "Passover Cake",
+                  "servings": "Serves 12",
+                  "source": "Family recipe, attributed to Grandmother Brenda",
+                  "comments": [
+                    "An egg-leavened sponge cake with no chemical leavening -- entirely appropriate for Passover. Cool inverted (angel-food-cake style): the fragile egg-foam structure must hang upside down to avoid collapsing while it sets. The cake adheres to the ungreased bundt pan and will not fall out. Only unmold once completely cool."
+                  ],
+                  "ingredientGroups": [
+                    {
+                      "label": "Batter",
+                      "ingredients": [
+                        "10 eggs",
+                        "1 1/2 cups sugar",
+                        "3/4 cup potato starch",
+                        "1/4 cup matzo cake meal",
+                        "Juice and rind of 1 lemon",
+                        "Juice and rind of 1/2 orange",
+                        "1/4 teaspoon salt (optional)"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Combine all ingredients in the bowl of a stand mixer. Beat on high speed for 25 minutes.",
+                    "Pour into an ungreased bundt pan.",
+                    "Place in a cold oven on the lower rack. Turn oven on to 350° and bake for 50 minutes.",
+                    "Immediately invert the bundt pan over the neck of a tall bottle (a soda bottle works well). Leave suspended upside down until completely cool, at least 1 hour. (The cake adheres to the pan and will not fall out -- do not attempt to unmold until fully cooled.)",
+                    "Once cool, run a thin knife around the edges and center tube to release. Invert onto a serving plate."
+                  ],
+                  "highAltitude": {
+                    "ingredientGroups": [
+                      {
+                        "label": "Batter",
+                        "ingredients": [
+                          "10 eggs",
+                          "1 1/4 cups + 2 tablespoons sugar",
+                          "3/4 cup + 1 tablespoon potato starch",
+                          "1/4 cup matzo cake meal",
+                          "Juice and rind of 1 lemon",
+                          "Juice and rind of 1/2 orange",
+                          "1/4 teaspoon salt (optional)"
+                        ]
+                      }
+                    ],
+                    "steps": [
+                      "Combine all ingredients in the bowl of a stand mixer. Beat on high speed for 20-22 minutes. (Slightly less than sea level -- stopping before the foam becomes too stiff prevents it from over-expanding and collapsing.)",
+                      "Pour into an ungreased bundt pan.",
+                      "Place in a cold oven on the lower rack. Turn oven on to 350° and bake for 42-45 minutes. Check at 40 minutes -- done when top is set and a skewer comes out clean.",
+                      "Immediately invert the bundt pan over the neck of a tall bottle (a soda bottle works well). Leave suspended upside down until completely cool, at least 1 hour.",
+                      "Once cool, run a thin knife around the edges and center tube to release. Invert onto a serving plate."
+                    ]
+                  }
+                },
+                {
+                  "title": "Chai Cake With Brown-Butter-Ghee Streusel",
+                  "servings": "Serves 10–12",
+                  "ingredientGroups": [
+                    {
+                      "label": "Ghee (make ahead)",
+                      "ingredients": [
+                        "2 cups (4 sticks) unsalted butter",
+                        "3 layers cheesecloth (for straining)"
+                      ]
+                    },
+                    {
+                      "label": "Streusel",
+                      "ingredients": [
+                        "1/2 cup all-purpose flour",
+                        "1 cup (packed) dark brown sugar",
+                        "1/2 teaspoon ground cardamom",
+                        "1/2 teaspoon ground cinnamon",
+                        "1/2 teaspoon ground ginger",
+                        "1/4 teaspoon ground nutmeg",
+                        "1/4 teaspoon ground cloves (optional)",
+                        "1/4 teaspoon ground star anise (optional)",
+                        "1/4 teaspoon kosher salt",
+                        "1 tablespoon reserved caramelized milk solids (from ghee)",
+                        "1/2 cup reserved brown-butter ghee"
+                      ]
+                    },
+                    {
+                      "label": "Cake batter",
+                      "ingredients": [
+                        "2 cups all-purpose flour",
+                        "1/2 teaspoon baking powder",
+                        "1/4 teaspoon baking soda",
+                        "1/2 teaspoon kosher salt",
+                        "2 large eggs, room temperature",
+                        "1 large egg yolk, room temperature",
+                        "3/4 cup plain yogurt, room temperature",
+                        "1/2 cup milk",
+                        "1/2 cup granulated sugar",
+                        "5 tablespoons (packed) dark brown sugar",
+                        "1 teaspoon vanilla extract",
+                        "3/4 cup reserved brown-butter ghee",
+                        "1 teaspoon reserved caramelized milk solids"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Line a fine-mesh sieve with cheesecloth. Melt butter in a medium heavy saucepan over medium heat, stirring often, until simmering. Cook, stirring constantly, 10 minutes. Reduce heat to low; continue cooking, stirring constantly, until golden brown and caramelized milk solids appear on the spatula, about 10 minutes longer. Strain ghee through prepared sieve into a large jar. Reserve ghee and caramelized milk solids separately. (Ghee can be made 3 months ahead; store tightly covered at room temperature.)",
+                    "Whisk flour, brown sugar, spices, and salt together for streusel in a medium bowl. Add 1 tablespoon caramelized milk solids and 1/2 cup ghee. Work with hands until mixture resembles wet sand. Set aside.",
+                    "Preheat oven to 325°F. Line a 9x9-inch baking pan with parchment, leaving overhang on 2 sides.",
+                    "Whisk together 2 cups flour, baking powder, baking soda, and salt in a medium bowl. In a large bowl, whisk eggs, egg yolk, yogurt, milk, both sugars, vanilla, 3/4 cup ghee, and 1 teaspoon caramelized milk solids together. Sift in dry ingredients and fold just until no dry spots remain (batter will be thick and slightly lumpy).",
+                    "Spoon half of batter into prepared pan; spread to edges. Sprinkle half of streusel evenly over. Dollop remaining batter on top and gently spread. Sprinkle remaining streusel on top; gently pat to adhere.",
+                    "Bake until a tester inserted in center comes out clean, 40–45 minutes. Transfer to a wire rack; let cool before slicing. (Cake keeps tightly wrapped at room temperature up to 4 days.)"
+                  ],
+                  "source": "Hetal Vasavada / Bon Appétit (bonappetit.com)",
+                  "highAltitude": {
+                    "ingredientGroups": [
+                      {
+                        "label": "Ghee (make ahead)",
+                        "ingredients": [
+                          "2 cups (4 sticks) unsalted butter",
+                          "3 layers cheesecloth (for straining)"
+                        ]
+                      },
+                      {
+                        "label": "Streusel",
+                        "ingredients": [
+                          "1/2 cup + 1 tablespoon all-purpose flour",
+                          "14 tablespoons (packed) dark brown sugar",
+                          "1/2 teaspoon ground cardamom",
+                          "1/2 teaspoon ground cinnamon",
+                          "1/2 teaspoon ground ginger",
+                          "1/4 teaspoon ground nutmeg",
+                          "1/4 teaspoon ground cloves (optional)",
+                          "1/4 teaspoon ground star anise (optional)",
+                          "1/4 teaspoon kosher salt",
+                          "1 tablespoon reserved caramelized milk solids",
+                          "1/2 cup reserved brown-butter ghee"
+                        ]
+                      },
+                      {
+                        "label": "Cake batter",
+                        "ingredients": [
+                          "2 cups + 4 tablespoons all-purpose flour",
+                          "scant 1/2 teaspoon baking powder (about 3/8 teaspoon)",
+                          "scant 1/4 teaspoon baking soda",
+                          "1/2 teaspoon kosher salt",
+                          "2 large eggs, room temperature",
+                          "1 large egg yolk, room temperature",
+                          "3/4 cup plain yogurt, room temperature",
+                          "1/2 cup milk",
+                          "7 tablespoons granulated sugar",
+                          "5 tablespoons (packed) dark brown sugar",
+                          "1 teaspoon vanilla extract",
+                          "3/4 cup reserved brown-butter ghee",
+                          "1 teaspoon reserved caramelized milk solids"
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "title": "Ube Chiffon Cake",
+                  "servings": "Serves 12",
+                  "ingredientGroups": [
+                    {
+                      "label": "Dry ingredients",
+                      "ingredients": [
+                        "1 1/2 cups sifted cake flour",
+                        "1 1/2 cups granulated sugar",
+                        "2 teaspoons baking powder",
+                        "1/2 teaspoon salt"
+                      ]
+                    },
+                    {
+                      "label": "Egg yolk batter",
+                      "ingredients": [
+                        "2 large eggs, room temperature",
+                        "5 large egg yolks, room temperature",
+                        "3/4 cup water, room temperature",
+                        "1/2 cup canola oil or vegetable oil",
+                        "2 tablespoons ube extract"
+                      ]
+                    },
+                    {
+                      "label": "Meringue",
+                      "ingredients": [
+                        "5 large egg whites, room temperature",
+                        "1/2 teaspoon cream of tartar"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Adjust baking rack to the lower-third position; preheat oven to 325°F. Line a 16-cup tube pan with parchment paper. Do not grease.",
+                    "Whisk cake flour, sugar, baking powder, and salt together in a large bowl.",
+                    "Add whole eggs, egg yolks, water, oil, and ube extract; whisk until smooth.",
+                    "Using a stand or hand mixer with whisk attachment, whip egg whites with cream of tartar on medium until foamy. Increase to medium-high; whip until stiff peaks form.",
+                    "Add egg whites to the yolk mixture; fold gently until no white streaks remain. Handle carefully to preserve the air.",
+                    "Pour batter into tube pan; smooth top with a spatula. Tap pan gently to release air bubbles. Bake 30 minutes; rotate pan; bake another 30 minutes, until a skewer inserted in center comes out clean.",
+                    "Immediately invert pan to cool — either on the tube pan’s own feet, or over the neck of a bottle. Cool completely, about 2 hours. Do not rush.",
+                    "Run a thin knife around the edges to loosen. Gently tap upside down onto parchment; peel off parchment, flip right side up onto a platter, and serve."
+                  ],
+                  "comments": [
+                    "Keeps at room temperature up to 2 days or refrigerated up to 4 days.",
+                    "Ube extract is available at Filipino grocery stores and online; do not substitute ube flavoring.",
+                    "Special equipment: 16-cup tube pan."
+                  ],
+                  "source": "Jolina / The Unlikely Baker (theunlikelybaker.com)",
+                  "highAltitude": {
+                    "ingredientGroups": [
+                      {
+                        "label": "Dry ingredients",
+                        "ingredients": [
+                          "1 1/2 cups + 3 tablespoons sifted cake flour",
+                          "1 cup + 5 tablespoons granulated sugar",
+                          "1 1/2 teaspoons baking powder",
+                          "1/2 teaspoon salt"
+                        ]
+                      },
+                      {
+                        "label": "Egg yolk batter",
+                        "ingredients": [
+                          "2 large eggs, room temperature",
+                          "5 large egg yolks, room temperature",
+                          "3/4 cup water, room temperature",
+                          "1/2 cup canola oil or vegetable oil",
+                          "2 tablespoons ube extract"
+                        ]
+                      },
+                      {
+                        "label": "Meringue",
+                        "ingredients": [
+                          "5 large egg whites, room temperature",
+                          "1/2 teaspoon cream of tartar"
+                        ]
+                      }
+                    ],
+                    "steps": [
+                      "Adjust baking rack to the lower-third position; preheat oven to 325°F. Line a 16-cup tube pan with parchment paper. Do not grease.",
+                      "Whisk cake flour, sugar, baking powder, and salt together in a large bowl.",
+                      "Add whole eggs, egg yolks, water, oil, and ube extract; whisk until smooth.",
+                      "Using a stand or hand mixer with whisk attachment, whip egg whites with cream of tartar on medium until foamy. Increase to medium-high; whip only to medium-firm peaks (not quite stiff) — at altitude, egg whites can over-expand and collapse; slightly under-beaten whites give the batter room.",
+                      "Add egg whites to the yolk mixture; fold gently until no white streaks remain.",
+                      "Pour batter into tube pan; smooth top. Tap pan gently. Begin checking at 25 minutes per side; total bake time is typically 50–55 minutes.",
+                      "Immediately invert pan to cool. Inverted cooling is even more critical at altitude — leave inverted at least 2–3 hours. Do not rush.",
+                      "Run a thin knife around the edges to loosen. Gently tap upside down onto parchment; peel off parchment, flip right side up onto a platter, and serve."
+                    ]
+                  }
+                }
+              ]
             }
           ]
         },
@@ -20197,12 +20091,209 @@ module.exports = {
                 "Mix all ingredients together in a bowl until well combined.",
                 "Let sit at least 5–10 minutes before serving (ideally 2 hours for fuller flavor). Use to baste meats while grilling, or serve as a condiment."
               ]
+            },
+            {
+              "title": "Chicken Fajita Marinade",
+              "servings": "Serves 4   |   Prep: 10 minutes   |   Cook: 1 minute   |   Total: 41 minutes (includes 30 minutes marinating)",
+              "comments": [
+                "This is a marinade rather than a full dish — cook the marinated chicken and vegetables however you like (grill, skillet, or oven).",
+                "Also works with other proteins, like shrimp, flank steak, or pork tenderloin."
+              ],
+              "source": "Dinner at the Zoo, by Sara Welch",
+              "ingredientGroups": [
+                {
+                  "label": "Marinade",
+                  "ingredients": [
+                    "1/4 cup olive oil",
+                    "1/3 cup lime juice",
+                    "1/4 cup water",
+                    "1 teaspoon sugar",
+                    "1 1/4 teaspoons kosher salt",
+                    "1/4 teaspoon ground cumin",
+                    "2 cloves garlic, minced",
+                    "1 1/2 teaspoons smoked paprika",
+                    "1 teaspoon onion powder",
+                    "1 to 2 tablespoons chili powder, to taste (start with 1 tablespoon if your chili powder has real heat)",
+                    "1/4 teaspoon pepper"
+                  ]
+                },
+                {
+                  "label": "To marinate",
+                  "ingredients": [
+                    "1 pound chicken, sliced",
+                    "1 1/2 cups sliced bell peppers",
+                    "1/2 cup sliced onion"
+                  ]
+                }
+              ],
+              "steps": [
+                "In a bowl, whisk together the olive oil, lime juice, water, sugar, salt, cumin, garlic, smoked paprika, onion powder, chili powder, and pepper.",
+                "Add the sliced chicken, bell peppers, and onion to the bowl and toss to coat.",
+                "Marinate at least 30 minutes and up to 8 hours, then cook as desired — grilled, pan-seared, or baked — for fajitas."
+              ]
+            },
+            {
+              "title": "D.L. Jardine's Fajita Marinade",
+              "servings": "Serves 4",
+              "comments": [
+                "Works for both chicken and beef; marinate all day or overnight for best results."
+              ],
+              "source": "https://www.food.com/recipe/d-l-jardines-fajita-marinade-336920",
+              "ingredientGroups": [
+                {
+                  "label": "Liquids",
+                  "ingredients": [
+                    "3/4 cup Worcestershire sauce",
+                    "1/4 cup light soy sauce",
+                    "2 tablespoons water",
+                    "1 tablespoon white vinegar",
+                    "2 tablespoons lime juice"
+                  ]
+                },
+                {
+                  "label": "Spice blend",
+                  "note": "combine in a small bowl",
+                  "ingredients": [
+                    "1/2 teaspoon garlic powder",
+                    "1/2 teaspoon black pepper",
+                    "1/2 teaspoon cumin",
+                    "1/2 teaspoon oregano"
+                  ]
+                }
+              ],
+              "steps": [
+                "Whisk together the liquids and spice blend until fully combined. Use immediately as a marinade, or refrigerate until ready to use."
+              ]
             }
           ]
         },
         {
           "title": "Italian",
           "recipes": [
+            {
+              "title": "Christy's Pesto (Adapted)",
+              "servings": "Six 2-person servings",
+              "comments": [
+                "Walnuts can be swapped for pine nuts or pecans, or a mix of the two."
+              ],
+              "source": "Family recipe card (\"Christy's Pesto, Adapted\")",
+              "ingredientGroups": [
+                {
+                  "ingredients": [
+                    "6 cloves garlic",
+                    "4 cups fresh basil leaves (about 2 bunches, stemmed)",
+                    "3/4 cup olive oil",
+                    "1 cup chopped walnuts",
+                    "1 teaspoon salt",
+                    "1 cup grated Parmesan cheese",
+                    "1 tablespoon warm water"
+                  ]
+                }
+              ],
+              "steps": [
+                "Mince the garlic in a food processor.",
+                "Add the basil and pulse until finely chopped.",
+                "With the processor running, add the olive oil, walnuts, salt, Parmesan, and warm water; process until smooth.",
+                "Portion into individual packages (3 heaping tablespoons each) and freeze."
+              ]
+            },
+            {
+              "title": "Fresh Tomato Pizza Sauce",
+              "favorite": true,
+              "servings": "Makes about 5 cups   |   Total: 5 minutes",
+              "source": "Bon Appetit (Alfia Muzio), September 2014",
+              "comments": [
+                "Pulse just 2-3 times -- the sauce should be mostly smooth but still have some chunky texture and body. Over-processing makes it thin.",
+                "The tomatoes release extra liquid when drained; add it to a braise.",
+                "To make meatless: substitute 1 teaspoon soy sauce + 2 pinches crumbled nori for the anchovy fillets."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Sauce",
+                  "ingredients": [
+                    "1 28-oz can whole peeled tomatoes, drained",
+                    "2 anchovy fillets packed in oil, drained",
+                    "2 garlic cloves",
+                    "6 tablespoons olive oil",
+                    "1/4 cup fresh basil leaves",
+                    "Kosher salt and freshly ground black pepper"
+                  ]
+                }
+              ],
+              "steps": [
+                "Pulse tomatoes, anchovies, garlic, oil, and basil in a food processor or blender just 2-3 times, until mostly smooth but still with some texture. Season with salt and pepper."
+              ]
+            },
+            {
+              "title": "Garlic and Oregano Pesto",
+              "servings": "Makes about 10 servings | Total: 10 min",
+              "source": "Whole Food Bellies",
+              "comments": [
+                "Spread a thin layer of olive oil on the surface of refrigerated pesto to prevent browning.",
+                "To freeze: press into an ice cube tray, freeze solid, then transfer to a zip-top bag.",
+                "Good on grilled chicken, fish, roasted vegetables, or pasta.",
+                "Pine nuts or walnuts can substitute for almonds."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Pesto",
+                  "ingredients": [
+                    "1 cup fresh oregano leaves, tightly packed",
+                    "1/2 cup grated Parmesan",
+                    "2 cloves garlic, peeled",
+                    "1/2 cup raw almonds",
+                    "Salt and pepper to taste",
+                    "1/2 cup olive oil"
+                  ]
+                }
+              ],
+              "steps": [
+                "Add all ingredients except the olive oil to a food processor. Pulse until roughly combined.",
+                "With the processor running, slowly stream in the olive oil until the mixture is smooth. Taste and adjust seasoning.",
+                "Store in an airtight container in the refrigerator for 5-7 days, or freeze in ice cube trays."
+              ]
+            },
+            {
+              "title": "Sage Pesto",
+              "servings": "Makes 1 cup (serving: 1 tablespoon)",
+              "ingredientGroups": [
+                {
+                  "label": "Processor base",
+                  "ingredients": [
+                    "2 tablespoons pine nuts, toasted",
+                    "2 large garlic cloves, peeled"
+                  ]
+                },
+                {
+                  "label": "Herbs and greens",
+                  "ingredients": [
+                    "2 cups torn spinach",
+                    "2 cups fresh flat-leaf parsley leaves",
+                    "3/4 cup fresh sage leaves"
+                  ]
+                },
+                {
+                  "label": "Seasoning",
+                  "ingredients": [
+                    "2 tablespoons (1/2 oz) grated fresh Parmesan",
+                    "4 teaspoons lemon juice",
+                    "1/8 teaspoon salt"
+                  ]
+                },
+                {
+                  "label": "Finish",
+                  "ingredients": [
+                    "3 tablespoons extra-virgin olive oil"
+                  ]
+                }
+              ],
+              "steps": [
+                "With the food processor running, drop pine nuts and garlic through the feed chute; process until minced.",
+                "Add spinach, parsley, sage, Parmesan, lemon juice, and salt; process until finely minced.",
+                "With the processor running, drizzle in olive oil; process until well blended.",
+                "Store in an airtight container in the refrigerator."
+              ]
+            },
             {
               "title": "Sun-Dried Tomato Cream Sauce",
               "source": "Family recipe card",
@@ -20236,62 +20327,6 @@ module.exports = {
                 "Stir in flour and cook 1 minute.",
                 "Stir in broth, cream, sun-dried tomatoes, thyme, salt, and Aleppo pepper. Bring to a boil and cook 1 minute.",
                 "Pour into a measuring cup and serve over pasta or chicken."
-              ]
-            },
-            {
-              "title": "Garlic and Oregano Pesto",
-              "servings": "Makes about 10 servings | Total: 10 min",
-              "source": "Whole Food Bellies",
-              "comments": [
-                "Spread a thin layer of olive oil on the surface of refrigerated pesto to prevent browning.",
-                "To freeze: press into an ice cube tray, freeze solid, then transfer to a zip-top bag.",
-                "Good on grilled chicken, fish, roasted vegetables, or pasta.",
-                "Pine nuts or walnuts can substitute for almonds."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Pesto",
-                  "ingredients": [
-                    "1 cup fresh oregano leaves, tightly packed",
-                    "1/2 cup grated Parmesan",
-                    "2 cloves garlic, peeled",
-                    "1/2 cup raw almonds",
-                    "Salt and pepper to taste",
-                    "1/2 cup olive oil"
-                  ]
-                }
-              ],
-              "steps": [
-                "Add all ingredients except the olive oil to a food processor. Pulse until roughly combined.",
-                "With the processor running, slowly stream in the olive oil until the mixture is smooth. Taste and adjust seasoning.",
-                "Store in an airtight container in the refrigerator for 5-7 days, or freeze in ice cube trays."
-              ]
-            },
-            {
-              "title": "Fresh Tomato Pizza Sauce",
-              "favorite": true,
-              "servings": "Makes about 5 cups   |   Total: 5 minutes",
-              "source": "Bon Appetit (Alfia Muzio), September 2014",
-              "comments": [
-                "Pulse just 2-3 times -- the sauce should be mostly smooth but still have some chunky texture and body. Over-processing makes it thin.",
-                "The tomatoes release extra liquid when drained; add it to a braise.",
-                "To make meatless: substitute 1 teaspoon soy sauce + 2 pinches crumbled nori for the anchovy fillets."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Sauce",
-                  "ingredients": [
-                    "1 28-oz can whole peeled tomatoes, drained",
-                    "2 anchovy fillets packed in oil, drained",
-                    "2 garlic cloves",
-                    "6 tablespoons olive oil",
-                    "1/4 cup fresh basil leaves",
-                    "Kosher salt and freshly ground black pepper"
-                  ]
-                }
-              ],
-              "steps": [
-                "Pulse tomatoes, anchovies, garlic, oil, and basil in a food processor or blender just 2-3 times, until mostly smooth but still with some texture. Season with salt and pepper."
               ]
             }
           ]
