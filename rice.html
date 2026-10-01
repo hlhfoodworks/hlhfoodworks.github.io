@@ -1904,10 +1904,18 @@
       }
       el = el.parentElement;
     }
-    // Defer scroll until after the browser re-lays out the newly-expanded nav content
+    // Defer scroll until after the browser re-lays out the newly-expanded nav content.
+    // Use scrollTop on #nav-tree directly (not scrollIntoView) to avoid the browser
+    // also scrolling the window, which would knock the recipe content out of position.
     requestAnimationFrame(function () {
       requestAnimationFrame(function () {
-        navLink.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        var navTree = document.getElementById('nav-tree');
+        if (!navTree) return;
+        var linkRect = navLink.getBoundingClientRect();
+        var treeRect = navTree.getBoundingClientRect();
+        var linkOffset = linkRect.top - treeRect.top + navTree.scrollTop;
+        var target = linkOffset - (navTree.clientHeight / 2) + (linkRect.height / 2);
+        navTree.scrollTop = Math.max(0, target);
       });
     });
   }
