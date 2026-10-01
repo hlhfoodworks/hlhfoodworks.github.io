@@ -80,7 +80,7 @@ module.exports = {
             "Sprinkle the lemon juice over the pancake(s) and dust with confectioners' sugar. Serve at once, while puffed and hot."
           ]
         },
-{
+        {
           "title": "Best Blueberry Muffins (More Berries Than Batter)",
           "servings": "Makes 12 muffins",
           "ingredientGroups": [
@@ -120,13 +120,13 @@ module.exports = {
             }
           ],
           "steps": [
-            "Heat oven to 400\u00b0F. Spray a 12-cup muffin tin with nonstick baking spray, including the flat top around the cups. (Line with cupcake liners if desired.)",
+            "Heat oven to 400°F. Spray a 12-cup muffin tin with nonstick baking spray, including the flat top around the cups. (Line with cupcake liners if desired.)",
             "Whisk flour, 1/2 cup plus 2 tablespoons sugar, cornstarch, baking powder, salt, and cinnamon together in a large bowl. Add blueberries; toss to coat.",
-            "Whisk milk, melted butter, vanilla, almond extract (if using), and egg together in a measuring cup. Pour over dry ingredients; fold gently until batter just forms with small lumps \u2014 stop slightly before it looks done.",
-            "Divide batter among muffin cups; sprinkle each with 1/4 teaspoon of reserved sugar. Bake, rotating tin halfway through, until muffins are domed and light golden, 20\u201324 minutes. Cool in tin 5 minutes; remove and serve hot with cold butter."
+            "Whisk milk, melted butter, vanilla, almond extract (if using), and egg together in a measuring cup. Pour over dry ingredients; fold gently until batter just forms with small lumps — stop slightly before it looks done.",
+            "Divide batter among muffin cups; sprinkle each with 1/4 teaspoon of reserved sugar. Bake, rotating tin halfway through, until muffins are domed and light golden, 20–24 minutes. Cool in tin 5 minutes; remove and serve hot with cold butter."
           ],
           "comments": [
-            "Keeps wrapped individually and frozen up to 1 month; thaw overnight, rewarm in 350\u00b0F oven 10 minutes.",
+            "Keeps wrapped individually and frozen up to 1 month; thaw overnight, rewarm in 350°F oven 10 minutes.",
             "Variations: lemon-blueberry (add 1 lemon's zest to dry ingredients); whole-wheat (replace 3/4 cup flour with whole-wheat); blackberry or raspberry (substitute 2 cups halved blackberries or whole raspberries)."
           ],
           "source": "Los Angeles Times",
@@ -2213,6 +2213,433 @@ module.exports = {
             "Add stock, water, lentils, and carrot. Bring to a boil, then reduce heat and simmer until lentils are completely tender, about 20–25 minutes.",
             "Use an immersion blender to blend about half the soup directly in the pot (or transfer half to a blender and return). This gives a chunky-smooth texture.",
             "Stir in lemon juice; season generously with salt and pepper. Serve with a drizzle of olive oil and fresh cilantro."
+          ]
+        },
+        {
+          "title": "Creamy Tomato Soup",
+          "servings": "Serves 4   |   Total: 1 hour, largely unattended",
+          "source": "Los Angeles Times",
+          "comments": [
+            "Sweet Tomato Soup variation: add 1 small peeled diced carrot or sweet potato with the onion, increasing oil to 4 tablespoons.",
+            "Tomato Basil Soup variation: add 3 fresh basil sprigs 10 minutes before the soup is done simmering; discard before blending.",
+            "Refrigerates up to 1 week."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Soup",
+              "ingredients": [
+                "3 tablespoons extra-virgin olive oil, plus more if needed",
+                "1/2 small yellow onion, finely diced",
+                "Kosher salt",
+                "1/4 teaspoon Aleppo pepper or red pepper flakes (optional)",
+                "1 can (28 oz) whole peeled plum tomatoes, preferably San Marzano",
+                "3 tablespoons heavy cream or creme fraiche"
+              ]
+            }
+          ],
+          "steps": [
+            "Combine olive oil, onion, and a pinch of salt in a large saucepan -- enough oil to coat the bottom; add more if needed. Set over medium-low heat and cook, stirring occasionally, until onion is translucent and tender, 8 to 10 minutes.",
+            "Add Aleppo pepper or red pepper flakes (if using) and stir for 15 seconds. Crush tomatoes directly into the saucepan one by one, then pour in all the can juices. Add 1/4 cup water to the can, swish, and pour in.",
+            "Bring to a boil over high heat, then reduce to a steady simmer. Cook, stirring occasionally, until tomatoes lose their acidity and the mixture thickens, about 40 minutes. Puree in a blender to your desired consistency.",
+            "Return soup to saucepan. Add 1/4 cup water to the blender, swish, and pour in. Set over low heat. When the soup steams, stir in cream and season with salt. Serve hot."
+          ]
+        },
+        {
+          "title": "Pumpkin Soup",
+          "servings": "Serves 4   |   Total: about 45 min",
+          "source": "Spend With Pennies (Holly Nilsson)",
+          "comments": [
+            "To use fresh pumpkin: halve a small sugar pumpkin, remove seeds, brush with olive oil, and bake at 350 degrees F for 35 to 40 minutes until tender. Scoop flesh and puree in a food processor.",
+            "Do not substitute milk for cream -- it can curdle in hot soup. Heavy cream or coconut milk works best."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Bacon",
+              "ingredients": [
+                "4 slices bacon",
+                "2 tablespoons bacon drippings or butter (as needed)"
+              ]
+            },
+            {
+              "label": "Aromatics",
+              "ingredients": [
+                "1 medium onion, diced",
+                "1/2 cup shredded carrot (about 1 medium)",
+                "1 clove garlic, minced"
+              ]
+            },
+            {
+              "label": "Soup",
+              "ingredients": [
+                "2 1/2 cups chicken broth",
+                "1 teaspoon brown sugar",
+                "1 bay leaf",
+                "2 sprigs fresh thyme (or 1/4 teaspoon dried thyme)",
+                "1/2 teaspoon salt",
+                "1/4 teaspoon black pepper",
+                "1/8 teaspoon ground nutmeg",
+                "1 (15 oz) can pumpkin puree",
+                "1/2 cup heavy whipping cream, plus extra for garnish"
+              ]
+            },
+            {
+              "label": "To serve",
+              "ingredients": [
+                "2 tablespoons chopped fresh parsley, divided",
+                "1/2 cup croutons (optional)"
+              ]
+            }
+          ],
+          "steps": [
+            "In a soup pot over medium-high heat, cook bacon until crisp. Transfer to a paper towel-lined plate. Leave 2 tablespoons of fat in the pot; if less than that, add butter to make up the difference.",
+            "Reduce heat to medium. Add onion and cook until softened, about 3 minutes. Stir in carrot and garlic; cook until fragrant, about 1 minute.",
+            "Add chicken broth, brown sugar, bay leaf, thyme, salt, pepper, and nutmeg. Bring to a boil, then reduce heat and simmer uncovered for 15 minutes.",
+            "Add pumpkin puree and cream; simmer 2 to 3 minutes.",
+            "Discard bay leaf and thyme stems. Puree with an immersion blender until smooth.",
+            "Stir in 1 tablespoon parsley and pour into bowls. Garnish with a swirl of cream, croutons, crumbled bacon, and remaining parsley."
+          ]
+        },
+        {
+          "title": "Locro de Zapallo",
+          "servings": "Serves 6   |   Total: about 50 min",
+          "source": "Fresh Farm (adapted from Epicurious)",
+          "comments": [
+            "A Peruvian creamy pumpkin or squash stew. Butternut squash works well when sugar pumpkin is unavailable."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Aromatics",
+              "ingredients": [
+                "2 tablespoons olive oil",
+                "1 large red onion, diced",
+                "4 garlic cloves, minced",
+                "1 tablespoon fresh oregano, chopped",
+                "1 fresh chili pepper, seeded and minced (optional)"
+              ]
+            },
+            {
+              "label": "Vegetables",
+              "ingredients": [
+                "3 1/2 pounds pumpkin or butternut squash, peeled, seeded, and cut into 1-inch cubes",
+                "2 medium potatoes, peeled and diced",
+                "2 to 3 cups water or vegetable broth",
+                "Salt to taste"
+              ]
+            },
+            {
+              "label": "Finish",
+              "ingredients": [
+                "1 cup frozen peas",
+                "1 cup frozen corn",
+                "1/2 cup heavy cream",
+                "1/2 cup crumbled feta"
+              ]
+            },
+            {
+              "label": "To serve",
+              "ingredients": [
+                "Fresh cilantro"
+              ]
+            }
+          ],
+          "steps": [
+            "Heat olive oil in a large pot over medium heat. Add red onion and cook, stirring occasionally, until softened, about 5 minutes. Add garlic, oregano, and chili pepper (if using); cook 1 minute more.",
+            "Add pumpkin and potatoes; stir to coat with the aromatics. Pour in enough water or broth to barely cover the vegetables. Season with salt. Bring to a boil, then reduce heat to medium-low.",
+            "Simmer, stirring occasionally and breaking up the squash as it softens, until vegetables are very tender and the stew has thickened naturally, about 30 minutes.",
+            "Stir in frozen peas and corn; cook 5 minutes.",
+            "Stir in heavy cream and simmer 2 to 3 more minutes. Taste and adjust salt.",
+            "Serve topped with crumbled feta and fresh cilantro."
+          ]
+        },
+        {
+          "title": "French Onion Soup",
+          "servings": "Serves 4 to 6   |   Total: 1 hour (10 min prep, 50 min cook)",
+          "source": "Gimme Some Oven",
+          "comments": [
+            "Make sure your soup bowls are oven-safe and rated for broiling before placing them under the broiler."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Caramelized onions",
+              "ingredients": [
+                "4 pounds yellow onions, peeled and thinly sliced (about 5 to 6 large)",
+                "3 tablespoons butter",
+                "4 cloves garlic, minced",
+                "3 tablespoons all-purpose flour",
+                "1/2 cup dry white wine"
+              ]
+            },
+            {
+              "label": "Soup",
+              "ingredients": [
+                "6 cups beef stock (or vegetable stock)",
+                "1 teaspoon Worcestershire sauce",
+                "1 bay leaf",
+                "3 sprigs fresh thyme (or 1 teaspoon dried thyme)",
+                "Fine sea salt and freshly cracked black pepper to taste"
+              ]
+            },
+            {
+              "label": "Topping",
+              "ingredients": [
+                "1 baguette, sliced 1 inch thick",
+                "Grated or sliced Gruyere, Asiago, Swiss, Gouda, or Mozzarella cheese (about 1/4 cup shredded per bowl)"
+              ]
+            }
+          ],
+          "steps": [
+            "Caramelize the onions: Melt butter in a large heavy-bottomed stockpot over medium-high heat. Add onions and saute, stirring every 3 to 5 minutes at first and then about once a minute near the end, until deeply caramelized (not burnt), about 30 minutes. Add garlic and cook 2 minutes. Stir in flour and cook 1 minute more. Stir in wine to deglaze, scraping up any browned bits.",
+            "Simmer the soup: Add stock, Worcestershire, bay leaf, and thyme; stir to combine. Bring to a simmer, then reduce heat to medium-low, cover, and simmer at least 10 minutes. Discard bay leaf and thyme sprigs. Season with salt and pepper.",
+            "Toast the bread: Preheat oven to 400 degrees F. Arrange baguette slices on a baking sheet and bake 6 to 8 minutes until golden around the edges.",
+            "Broil the topping: Switch oven to broil. Place oven-safe soup bowls on a thick baking sheet. Ladle soup into each bowl, top with a baguette slice and cheese. Broil on a rack about 6 inches from the heat for 2 to 4 minutes, until cheese is melted and bubbly. Watch carefully to prevent burning. Serve immediately."
+          ]
+        },
+        {
+          "title": "Lentil and Orzo Stew With Roasted Eggplant",
+          "servings": "Serves 4   |   Total: 45 min to 1 hour",
+          "source": "New York Times (Yewande Komolafe)",
+          "ingredientGroups": [
+            {
+              "label": "Roasted eggplant (25-30 minutes ahead)",
+              "ingredients": [
+                "1 1/2 pounds eggplant (2 small or 1 large), chopped into 1-inch pieces",
+                "1/4 cup olive oil",
+                "1 tablespoon coriander seeds, crushed",
+                "Kosher salt and black pepper"
+              ]
+            },
+            {
+              "label": "Stew base",
+              "ingredients": [
+                "2 tablespoons olive oil",
+                "1 medium carrot, finely chopped",
+                "1 medium yellow onion, finely chopped",
+                "2 celery stalks, finely chopped",
+                "3 garlic cloves, finely chopped",
+                "1 tablespoon tomato paste",
+                "1 cup dried lentils (green, black, or brown)",
+                "5 cups chicken or vegetable stock, or water"
+              ]
+            },
+            {
+              "label": "Pasta and finish",
+              "ingredients": [
+                "1/2 cup orzo or other small pasta (ditalini, stelline, or macaroni)",
+                "Zest and juice of 1 lemon, plus 4 lemon wedges for serving"
+              ]
+            },
+            {
+              "label": "To serve",
+              "ingredients": [
+                "1/4 cup shaved ricotta salata or crumbled feta"
+              ]
+            }
+          ],
+          "steps": [
+            "Heat oven to 425 degrees F. In a large bowl, toss eggplant with 1/4 cup olive oil and crushed coriander seeds until coated; season with salt and pepper. Spread in an even layer on a large rimmed baking sheet. Roast until tender and golden brown, 25 to 30 minutes, shaking the pan halfway through.",
+            "While eggplant roasts, heat 2 tablespoons oil in a large skillet over medium. Add carrot, onion, and celery. Season with salt and pepper. Cook, stirring frequently, until softened, about 3 minutes.",
+            "Stir in garlic and tomato paste; cook until tomato paste begins to darken on the bottom of the pan, about 5 minutes.",
+            "Add lentils and stir until coated. Pour in stock or water and bring to a boil over high heat. Reduce to medium and simmer until lentils are tender, 20 to 30 minutes (depending on type and age).",
+            "Stir in orzo and cook until softened, 8 to 10 minutes. Remove from heat; stir in lemon zest and juice.",
+            "Season to taste with salt and pepper. Ladle into bowls and top with roasted eggplant and shavings of ricotta salata. Serve with lemon wedges."
+          ]
+        },
+        {
+          "title": "West African Peanut Soup",
+          "servings": "Serves 6   |   Total: about 35 min",
+          "source": "Cookie + Kate (Kathryne Taylor)",
+          "comments": [
+            "Serve over cooked brown rice if desired, garnished with roasted peanuts, sliced green onion, and fresh cilantro."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Aromatics",
+              "ingredients": [
+                "1 tablespoon olive oil",
+                "1 large red onion, chopped",
+                "1/2 jalapeno, finely chopped (optional)",
+                "1/2 teaspoon fine sea salt, plus more to taste",
+                "1 tablespoon fresh ginger, grated",
+                "3 garlic cloves, pressed or minced"
+              ]
+            },
+            {
+              "label": "Soup base",
+              "ingredients": [
+                "4 cups vegetable broth",
+                "2 cups water",
+                "1/2 cup creamy peanut butter",
+                "1/4 cup tomato paste"
+              ]
+            },
+            {
+              "label": "Greens and finish",
+              "ingredients": [
+                "1 bunch collard greens or kale, ribs removed, leaves sliced into thin ribbons",
+                "1 to 2 tablespoons hot sauce (such as Sriracha), to taste"
+              ]
+            },
+            {
+              "label": "To serve (optional)",
+              "ingredients": [
+                "Cooked brown rice",
+                "Roasted peanuts, sliced green onion, fresh cilantro"
+              ]
+            }
+          ],
+          "steps": [
+            "Heat oil in a large pot over medium heat. Add onion, jalapeno (if using), and a big pinch of salt. Cook, stirring occasionally, until softened, about 5 minutes.",
+            "Add ginger and garlic; cook, stirring, until fragrant, about 30 seconds.",
+            "Add broth, water, peanut butter, and tomato paste. Whisk until peanut butter is fully incorporated. Bring to a gentle boil, then reduce heat to medium.",
+            "Add collard greens or kale; cook, stirring occasionally, until greens are tender, 5 to 10 minutes.",
+            "Season generously with hot sauce, salt, and pepper to taste. Serve over brown rice if desired, garnished with roasted peanuts, green onion, and cilantro."
+          ]
+        },
+        {
+          "title": "Spiced Chickpea Stew With Coconut and Turmeric",
+          "servings": "Serves 4 to 6   |   Total: 55 minutes",
+          "source": "New York Times (Alison Roman)",
+          "ingredientGroups": [
+            {
+              "label": "Aromatics",
+              "ingredients": [
+                "1/4 cup olive oil, plus more for serving",
+                "4 garlic cloves, chopped",
+                "1 large yellow onion, chopped",
+                "1 (2-inch) piece ginger, finely chopped",
+                "Kosher salt and black pepper"
+              ]
+            },
+            {
+              "label": "Spices and chickpeas",
+              "ingredients": [
+                "1 1/2 teaspoons ground turmeric, plus more for serving",
+                "1 teaspoon Aleppo pepper or red pepper flakes, plus more for serving",
+                "2 (15 oz) cans chickpeas, drained and rinsed"
+              ]
+            },
+            {
+              "label": "Liquid",
+              "ingredients": [
+                "2 (15 oz) cans full-fat coconut milk",
+                "2 cups vegetable or chicken stock"
+              ]
+            },
+            {
+              "label": "Greens",
+              "ingredients": [
+                "1 bunch Swiss chard, kale, or collard greens, stems removed, torn into bite-size pieces"
+              ]
+            },
+            {
+              "label": "To serve",
+              "ingredients": [
+                "1 cup fresh mint leaves",
+                "Yogurt (optional)",
+                "Toasted pita, lavash, or other flatbread (optional)"
+              ]
+            }
+          ],
+          "steps": [
+            "Heat 1/4 cup oil in a large pot over medium. Add garlic, onion, and ginger. Season with salt and pepper. Cook, stirring occasionally, until onion is translucent and starting to brown at the edges, 3 to 5 minutes.",
+            "Add turmeric, Aleppo pepper or red pepper flakes, and chickpeas. Season with salt and pepper. Cook, stirring frequently, until chickpeas sizzle and fry in the spices and start to break down and brown slightly, 8 to 10 minutes. Remove about 1 cup chickpeas and set aside for garnish.",
+            "Crush the remaining chickpeas slightly with a wooden spoon or spatula to release their starchy insides and help thicken the stew. Add coconut milk and stock; season with salt and pepper.",
+            "Bring to a simmer, scraping up any bits from the bottom. Cook, stirring occasionally, until stew has thickened, 30 to 35 minutes. Taste a chickpea or two (not just the liquid) -- they should be fully cooked and delicious.",
+            "Add greens; stir and make sure they're submerged. Cook until wilted and softened, 3 to 7 minutes (Swiss chard and spinach wilt faster than kale or collards). Taste and adjust seasoning.",
+            "Serve topped with the reserved whole chickpeas, mint leaves, and a drizzle of olive oil. Add pinches of turmeric and Aleppo pepper if desired. Serve yogurt and flatbread alongside."
+          ]
+        },
+        {
+          "title": "Spicy Thai Kale Soup",
+          "servings": "Serves 4   |   Total: about 20 min",
+          "source": "Bunny's Bite",
+          "comments": [
+            "Vegan and gluten-free."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Aromatics",
+              "ingredients": [
+                "1 tablespoon olive or coconut oil",
+                "3 garlic cloves, minced",
+                "1 tablespoon fresh ginger, grated",
+                "1 lemongrass stalk, bruised and cut into 2-inch pieces"
+              ]
+            },
+            {
+              "label": "Vegetables",
+              "ingredients": [
+                "8 oz cremini mushrooms, sliced",
+                "1 red bell pepper, diced",
+                "4 cups kale, stems removed, leaves roughly chopped"
+              ]
+            },
+            {
+              "label": "Soup",
+              "ingredients": [
+                "4 cups vegetable broth",
+                "1 can (14 oz) coconut milk",
+                "2 tablespoons red curry paste",
+                "1 to 2 teaspoons hot chili oil, to taste",
+                "Juice of 1 lime",
+                "Salt to taste"
+              ]
+            },
+            {
+              "label": "To serve",
+              "ingredients": [
+                "3 green onions, thinly sliced",
+                "1/4 cup fresh cilantro, roughly chopped"
+              ]
+            }
+          ],
+          "steps": [
+            "Heat oil in a large pot over medium heat. Add garlic, ginger, and lemongrass; saute until fragrant, 1 to 2 minutes.",
+            "Add mushrooms and red bell pepper; cook, stirring, until beginning to soften, 3 to 4 minutes.",
+            "Add broth, coconut milk, and red curry paste; stir to combine. Bring to a simmer.",
+            "Add kale and cook until just wilted and tender, 2 to 3 minutes. Remove and discard lemongrass pieces.",
+            "Stir in lime juice and chili oil; season with salt to taste. Ladle into bowls and garnish with green onions and cilantro."
+          ]
+        },
+        {
+          "title": "Spring Hot-and-Sour Soup",
+          "servings": "Serves 2   |   Total: about 20 min",
+          "source": "Bon Appetit (Chris Morocco)",
+          "ingredientGroups": [
+            {
+              "label": "Aromatics",
+              "ingredients": [
+                "1 tablespoon extra-virgin olive oil or vegetable oil",
+                "3 garlic cloves, thinly sliced",
+                "1 inch piece ginger, peeled, finely chopped"
+              ]
+            },
+            {
+              "label": "Broth",
+              "ingredients": [
+                "3 cups water",
+                "2 tablespoons miso, dissolved in 2 tablespoons water",
+                "1 tablespoon soy sauce",
+                "2 teaspoons unseasoned rice vinegar or apple cider vinegar",
+                "1/2 teaspoon toasted sesame oil",
+                "1/2 teaspoon Aleppo pepper or red pepper flakes, plus more for serving"
+              ]
+            },
+            {
+              "label": "Add-ins",
+              "ingredients": [
+                "2 oz shiitake or cremini mushrooms, trimmed, thinly sliced",
+                "1 cup mixed peas (baby, snow, and/or sugar snap -- halved if large)",
+                "1 large egg, lightly beaten -- OR 8 oz silken tofu -- OR 2.5 oz yuba sheets",
+                "Kosher salt"
+              ]
+            }
+          ],
+          "steps": [
+            "Heat oil in a medium saucepan over medium. Cook garlic and ginger, stirring often, until softened and very fragrant, about 3 minutes.",
+            "Add 3 cups water. Whisk dissolved miso into the aromatics, then add soy sauce, vinegar, sesame oil, and Aleppo pepper or red pepper flakes. Increase to medium-high and bring to a simmer. Reduce heat to maintain a simmer and cook until flavors come together, about 10 minutes.",
+            "Add mushrooms and peas; cook until crisp-tender, about 3 minutes. If using egg, gently stir it in with a few turns of the spoon to set it into ribbons, about 30 seconds. If using tofu, drop in by spoonfuls; if using yuba, thinly slice before adding. Cook until heated through, about 1 minute. Season with salt.",
+            "Ladle into bowls and sprinkle with more Aleppo pepper or red pepper flakes if desired."
           ]
         }
       ]
@@ -4936,7 +5363,9 @@ module.exports = {
               "servings": "Serves 4   |   Total: 1 hour, plus marinating",
               "source": "NYT Cooking, from Shallots New York, adapted by Florence Fabricant",
               "comments": [
-                {"html": "Make your own preserved lemons: see <a href='preserves-pickles.html#preserved-lemons'>Preserved Lemons</a> in the Preserves & Pickles section."}
+                {
+                  "html": "Make your own preserved lemons: see <a href='preserves-pickles.html#preserved-lemons'>Preserved Lemons</a> in the Preserves & Pickles section."
+                }
               ],
               "ingredientGroups": [
                 {
@@ -6454,44 +6883,44 @@ module.exports = {
               ]
             },
             {
-                          "title": "Viral Trader Joe's Dumpling Bake",
-                          "servings": "Serves 4   |   Total: 45 min",
-                          "source": "Hannah Kling / Lovely Delites (lovelydelites.com)",
-                          "comments": [
-                            "Any frozen dumplings or potstickers work here — chicken, pork, shrimp, or veggie. Use straight from frozen; no thawing needed.",
-                            "Leftover sauce is excellent spooned over rice or noodles."
-                          ],
-                          "ingredientGroups": [
-                            {
-                              "label": "Sauce base",
-                              "ingredients": [
-                                "1 can (13.5 oz) full-fat coconut milk",
-                                "1/2 bottle (about 5.5 oz) red Thai curry sauce",
-                                "3 tablespoons Soyaki sauce",
-                                "3 cloves garlic, minced"
-                              ]
-                            },
-                            {
-                              "label": "Spinach and dumplings",
-                              "ingredients": [
-                                "1–2 cups fresh spinach",
-                                "1 bag (16 oz) frozen chicken gyoza (potstickers)"
-                              ]
-                            },
-                            {
-                              "label": "To serve",
-                              "ingredients": [
-                                "Lao Gan Ma or Fly By Jing chili crisp"
-                              ]
-                            }
-                          ],
-                          "steps": [
-                            "Preheat oven to 350°F. In a medium baking dish, whisk together coconut milk, red Thai curry sauce, soyaki sauce, and garlic until smooth.",
-                            "Scatter spinach evenly over the sauce. Arrange frozen dumplings in a single layer on top.",
-                            "Cover tightly with foil and bake 35–40 minutes, until dumplings are heated through and the sauce is bubbling.",
-                            "Uncover, stir the sauce gently if desired, and top with chili crisp. Serve warm."
-                          ]
-                        }
+              "title": "Viral Trader Joe's Dumpling Bake",
+              "servings": "Serves 4   |   Total: 45 min",
+              "source": "Hannah Kling / Lovely Delites (lovelydelites.com)",
+              "comments": [
+                "Any frozen dumplings or potstickers work here — chicken, pork, shrimp, or veggie. Use straight from frozen; no thawing needed.",
+                "Leftover sauce is excellent spooned over rice or noodles."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Sauce base",
+                  "ingredients": [
+                    "1 can (13.5 oz) full-fat coconut milk",
+                    "1/2 bottle (about 5.5 oz) red Thai curry sauce",
+                    "3 tablespoons Soyaki sauce",
+                    "3 cloves garlic, minced"
+                  ]
+                },
+                {
+                  "label": "Spinach and dumplings",
+                  "ingredients": [
+                    "1–2 cups fresh spinach",
+                    "1 bag (16 oz) frozen chicken gyoza (potstickers)"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "Lao Gan Ma or Fly By Jing chili crisp"
+                  ]
+                }
+              ],
+              "steps": [
+                "Preheat oven to 350°F. In a medium baking dish, whisk together coconut milk, red Thai curry sauce, soyaki sauce, and garlic until smooth.",
+                "Scatter spinach evenly over the sauce. Arrange frozen dumplings in a single layer on top.",
+                "Cover tightly with foil and bake 35–40 minutes, until dumplings are heated through and the sauce is bubbling.",
+                "Uncover, stir the sauce gently if desired, and top with chili crisp. Serve warm."
+              ]
+            }
           ]
         },
         {
@@ -7518,50 +7947,50 @@ module.exports = {
               ]
             },
             {
-                          "title": "Black Pepper Beef and Cabbage Stir-Fry",
-                          "servings": "Serves 2–4   |   Total: 20 min",
-                          "source": "New York Times Cooking / Sue Li",
-                          "comments": [
-                            "Don't hold back on the peppercorns — the full tablespoon balances the richness of the beef and gives the dish its character.",
-                            "Can marinate the beef up to 8 hours ahead."
-                          ],
-                          "ingredientGroups": [
-                            {
-                              "label": "Steak and rub",
-                              "ingredients": [
-                                "3/4 pound sirloin steak, thinly sliced crosswise",
-                                "1 tablespoon whole black peppercorns, coarsely crushed",
-                                "3 garlic cloves, grated",
-                                "2 teaspoons light brown sugar",
-                                "1 teaspoon cornstarch",
-                                "1 teaspoon kosher salt"
-                              ]
-                            },
-                            {
-                              "label": "Stir-fry",
-                              "ingredients": [
-                                "3 tablespoons sunflower or other neutral oil",
-                                "2 tablespoons soy sauce",
-                                "1/2 head small green cabbage (about 8 oz), thinly sliced",
-                                "1 tablespoon sherry vinegar"
-                              ]
-                            },
-                            {
-                              "label": "To serve",
-                              "ingredients": [
-                                "1 tablespoon toasted sesame seeds, crushed with your fingertips",
-                                "2 scallions, thinly sliced",
-                                "Cooked rice"
-                              ]
-                            }
-                          ],
-                          "steps": [
-                            "Combine crushed peppercorns, garlic, brown sugar, cornstarch, and salt in a medium bowl. Add sliced steak and toss to coat.",
-                            "Heat oil in a large cast-iron skillet over medium-high. Add steak and cook, stirring frequently, until edges are lightly browned, 3–4 minutes. Add soy sauce and toss to coat, about 1 minute. Transfer beef to a plate with a slotted spoon.",
-                            "Add cabbage to the skillet, spread in an even layer, and cook undisturbed 1 minute to caramelize some pieces. Toss and cook, stirring occasionally, until crisp-tender, 4–6 minutes. Stir in sherry vinegar; season with salt.",
-                            "Return steak and any juices to the skillet; toss until combined with the cabbage and warmed through, about 1 minute. Top with sesame seeds and scallions; serve with rice."
-                          ]
-                        }
+              "title": "Black Pepper Beef and Cabbage Stir-Fry",
+              "servings": "Serves 2–4   |   Total: 20 min",
+              "source": "New York Times Cooking / Sue Li",
+              "comments": [
+                "Don't hold back on the peppercorns — the full tablespoon balances the richness of the beef and gives the dish its character.",
+                "Can marinate the beef up to 8 hours ahead."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Steak and rub",
+                  "ingredients": [
+                    "3/4 pound sirloin steak, thinly sliced crosswise",
+                    "1 tablespoon whole black peppercorns, coarsely crushed",
+                    "3 garlic cloves, grated",
+                    "2 teaspoons light brown sugar",
+                    "1 teaspoon cornstarch",
+                    "1 teaspoon kosher salt"
+                  ]
+                },
+                {
+                  "label": "Stir-fry",
+                  "ingredients": [
+                    "3 tablespoons sunflower or other neutral oil",
+                    "2 tablespoons soy sauce",
+                    "1/2 head small green cabbage (about 8 oz), thinly sliced",
+                    "1 tablespoon sherry vinegar"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "1 tablespoon toasted sesame seeds, crushed with your fingertips",
+                    "2 scallions, thinly sliced",
+                    "Cooked rice"
+                  ]
+                }
+              ],
+              "steps": [
+                "Combine crushed peppercorns, garlic, brown sugar, cornstarch, and salt in a medium bowl. Add sliced steak and toss to coat.",
+                "Heat oil in a large cast-iron skillet over medium-high. Add steak and cook, stirring frequently, until edges are lightly browned, 3–4 minutes. Add soy sauce and toss to coat, about 1 minute. Transfer beef to a plate with a slotted spoon.",
+                "Add cabbage to the skillet, spread in an even layer, and cook undisturbed 1 minute to caramelize some pieces. Toss and cook, stirring occasionally, until crisp-tender, 4–6 minutes. Stir in sherry vinegar; season with salt.",
+                "Return steak and any juices to the skillet; toss until combined with the cabbage and warmed through, about 1 minute. Top with sesame seeds and scallions; serve with rice."
+              ]
+            }
           ]
         },
         {
@@ -9256,7 +9685,9 @@ module.exports = {
               "servings": "Serves 4",
               "source": "From Chef Louisa (Villa Britannia, Taormina, Sicily)",
               "comments": [
-                {"html": "This is a distinct recipe from the <a href=\"vegetarian-mains.html#vegetarian-mains-vegetables-eggplant-involtini\">Smitten Kitchen Eggplant Involtini</a> already in the cookbook — that version uses a three-cheese filling with no breading, roasted in tomato sauce. This Sicilian version uses a herbed breadcrumb coating, sun-dried tomatoes, and smoky cheese."},
+                {
+                  "html": "This is a distinct recipe from the <a href=\"vegetarian-mains.html#vegetarian-mains-vegetables-eggplant-involtini\">Smitten Kitchen Eggplant Involtini</a> already in the cookbook — that version uses a three-cheese filling with no breading, roasted in tomato sauce. This Sicilian version uses a herbed breadcrumb coating, sun-dried tomatoes, and smoky cheese."
+                },
                 "For the smoky cheese: scamorza affumicata or provola are ideal; smoked Gouda also works."
               ],
               "ingredientGroups": [
@@ -11911,6 +12342,73 @@ module.exports = {
               "Lay biscuit dough onto a lightly floured surface. Cut into 2-inch squares or circles and arrange in a single layer over the tomatoes -- you should have about 10-12 biscuits. (Bake any scraps separately.) Brush the tops of the biscuits with the remaining 2 tablespoons buttermilk. Bake 40-45 minutes (check at 40 minutes), until the tomato mixture has bubbled up and the biscuits are browned on top. Allow to cool; serve warm or at room temperature. Finish with a sprinkle of salt and pepper."
             ]
           }
+        },
+        {
+          "id": "cornbread-dressing-with-sausage-and-corn-nuts",
+          "title": "Cornbread Dressing With Sausage and Corn Nuts",
+          "servings": "Serves 8 to 10   |   Active: 40 min   |   Total: 2 hours",
+          "source": "Bon Appetit (Rick Martinez and Chris Morocco)",
+          "comments": [
+            {
+              "html": "Uses homemade or store-bought cornbread. Also forms the base of <a href=\"rice.html#cornbread-stuffing-fried-rice\">Cornbread Stuffing Fried Rice</a>."
+            },
+            "Can be baked at 350 degrees F up to 3 days ahead; let cool, then chill. Reheat in a 350 degrees F oven before increasing to 425 degrees F and removing foil.",
+            "Corn nuts are ground into a powder, not used whole -- they add depth and crunch to the finished texture."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Cornbread",
+              "ingredients": [
+                "3 lb cornbread, cut into small pieces (about 3/4 inch; 14 to 16 cups)"
+              ]
+            },
+            {
+              "label": "Sausage",
+              "ingredients": [
+                "1 1/2 lb breakfast sausage, casings removed if needed"
+              ]
+            },
+            {
+              "label": "Aromatics",
+              "ingredients": [
+                "1 cup (2 sticks) unsalted butter, plus more for pan",
+                "2 medium onions, chopped",
+                "4 celery stalks, chopped",
+                "Kosher salt",
+                "3 garlic cloves, finely chopped",
+                "2 Thai chiles or 1 jalapeño (with seeds), chopped"
+              ]
+            },
+            {
+              "label": "Corn nut powder",
+              "ingredients": [
+                "3/4 cup corn nuts, finely ground in a food processor, blender, or mortar and pestle (about 1/2 cup ground)"
+              ]
+            },
+            {
+              "label": "Wine and herbs",
+              "ingredients": [
+                "3/4 cup dry white wine",
+                "1 tablespoon finely chopped fresh sage",
+                "2 teaspoons finely chopped fresh thyme"
+              ]
+            },
+            {
+              "label": "Custard",
+              "ingredients": [
+                "3 large eggs",
+                "3 1/2 cups turkey stock or low-sodium chicken broth",
+                "Freshly ground black pepper"
+              ]
+            }
+          ],
+          "steps": [
+            "Preheat oven to 325 degrees F. Divide cornbread evenly between 2 large rimmed baking sheets and bake, tossing occasionally, until dried out and lightly browned around the edges, 40 to 50 minutes. Let cool at least 10 minutes. Increase oven temperature to 350 degrees F.",
+            "Meanwhile, cook breakfast sausage in a large skillet over medium-high heat, stirring and breaking up with a spoon, until lightly browned and cooked through, 6 to 8 minutes. Transfer to a plate.",
+            "Reduce heat to medium and melt butter in the same skillet. Add onions and celery; season with salt. Cook, stirring occasionally, until softened but not browned, 8 to 10 minutes. Add garlic and chiles; cook, stirring once, until very fragrant, about 1 minute. Add ground corn nuts and cook, stirring often, until very fragrant and vegetables are starting to brown around the edges, about 3 minutes. Add wine and cook, stirring occasionally, until almost completely evaporated, about 3 minutes. Add sage and thyme; toss to combine. Remove from heat.",
+            "Combine cornbread, sausage, and sauteed vegetable mixture in a large bowl. Whisk eggs and stock together in a medium bowl until very well combined. Pour over cornbread mixture and let sit, gently stirring every minute or so, until cornbread has absorbed all or virtually all of the liquid. Season with kosher salt (about 1 tablespoon Diamond Crystal or 1 1/2 teaspoons Morton kosher salt) and freshly ground black pepper.",
+            "Lightly butter a 3-quart or 13x9x2-inch casserole dish. Transfer dressing to dish and tap lightly against counter to distribute and compact. Cover tightly with aluminum foil and bake until very hot throughout and bubbles appear around sides, 40 to 45 minutes. Increase oven temperature to 425 degrees F and remove foil. Continue to bake until top is lightly browned, 15 to 20 minutes longer."
+          ]
         }
       ]
     },
@@ -12048,6 +12546,247 @@ module.exports = {
             "Add 3/4 cup warm broth; stir until almost fully absorbed. Continue adding broth by 3/4-cup additions, stirring and letting each addition absorb before adding the next, for about 10 minutes total (until rice is halfway cooked). Stir in all sauteed mushrooms.",
             "Continue adding broth in 3/4-cup additions, stirring constantly, until rice is tender but still firm to the bite and risotto is creamy, about 10 more minutes. Stir in Parmesan if using.",
             "Transfer to a serving bowl and pass additional Parmesan alongside."
+          ]
+        },
+        {
+          "title": "Spanish Rice",
+          "servings": "Serves 3 to 4   |   Total: about 15 min",
+          "source": "Food.com (JeanSgt)",
+          "comments": [
+            "A good use for leftover rice. Day-old rice that has dried out slightly gives the best texture."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Aromatics",
+              "ingredients": [
+                "2 tablespoons olive oil",
+                "1 tablespoon butter",
+                "1/2 onion, diced",
+                "4 garlic cloves, minced"
+              ]
+            },
+            {
+              "label": "Sauce",
+              "ingredients": [
+                "1/2 cup tomato sauce",
+                "1/4 cup water",
+                "1/4 teaspoon ground coriander",
+                "Salt and pepper to taste"
+              ]
+            },
+            {
+              "label": "Rice",
+              "ingredients": [
+                "3 cups cooked rice"
+              ]
+            }
+          ],
+          "steps": [
+            "Heat olive oil and butter in a large skillet over medium heat. Add onion and cook until softened, about 3 to 4 minutes. Add garlic; cook 1 minute.",
+            "Stir in tomato sauce, water, and coriander; season with salt and pepper.",
+            "Add cooked rice; stir to combine. Cook, stirring occasionally, until heated through and sauce has coated the rice, about 5 minutes."
+          ]
+        },
+        {
+          "title": "Pink Risotto With Beet Greens and Roasted Beets",
+          "servings": "Serves 4 to 5   |   Total: 45 min + 45-60 min to roast beets",
+          "source": "New York Times (Martha Rose Shulman)",
+          "comments": [
+            "Use a full-bodied vegetable stock to keep it vegetarian."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Beets (45-60 minutes ahead)",
+              "ingredients": [
+                "3/4 pound beets (1 small bunch), unpeeled"
+              ]
+            },
+            {
+              "label": "Beet greens",
+              "ingredients": [
+                "1 bunch beet greens, stemmed and washed, cut crosswise into 1-inch strips"
+              ]
+            },
+            {
+              "label": "Simmering stock",
+              "ingredients": [
+                "6 to 7 cups chicken or vegetable stock, well seasoned"
+              ]
+            },
+            {
+              "label": "Risotto base",
+              "ingredients": [
+                "2 tablespoons extra-virgin olive oil",
+                "1/2 cup finely chopped onion",
+                "1 1/2 cups Arborio or Carnaroli rice",
+                "2 garlic cloves, minced or pressed",
+                "1/2 cup red wine, rose, or dry white wine",
+                "Salt and freshly ground pepper"
+              ]
+            },
+            {
+              "label": "Finish",
+              "ingredients": [
+                "1 to 2 oz Parmesan, grated (1/4 to 1/2 cup)",
+                "2 tablespoons finely chopped flat-leaf parsley"
+              ]
+            }
+          ],
+          "steps": [
+            "Roast the beets: Wrap unpeeled beets loosely in foil and roast at 400 degrees F until tender when pierced, 45 to 60 minutes. Cool, peel, and dice into small cubes.",
+            "Bring stock to a simmer in a saucepan; season well. Keep on low heat throughout the cooking process.",
+            "Cut stemmed, washed beet greens crosswise into 1-inch strips; set aside.",
+            "Heat olive oil over medium heat in a large nonstick skillet or wide heavy saucepan. Add onion and cook, stirring, until beginning to soften, about 3 minutes. Add rice and garlic; cook, stirring, until grains are separate and beginning to crackle, about 3 minutes. Stir in wine and cook over medium heat, stirring constantly, until mostly evaporated.",
+            "Add a ladleful or two of simmering stock (about 1/2 cup), just enough to cover the rice. Cook, stirring often, adding more stock when the rice is nearly dry, for 10 minutes.",
+            "Stir in beet greens and diced roasted beets. Continue adding stock a ladleful at a time, stirring often, for another 10 to 15 minutes, until the rice is cooked through but still chewy. Taste a grain -- not hard in the middle. Adjust salt as needed.",
+            "Add a generous amount of freshly ground pepper. Stir in another 1/2 cup stock, the Parmesan, and the parsley. Remove from heat. The risotto should be creamy; add more stock if needed. Taste, adjust seasonings, and serve immediately."
+          ]
+        },
+        {
+          "title": "Tomato Risotto",
+          "servings": "Serves 4 to 6   |   Total: 30 min",
+          "source": "New York Times (David Tanis)",
+          "ingredientGroups": [
+            {
+              "label": "Aromatics and rice",
+              "ingredients": [
+                "3 tablespoons extra-virgin olive oil, plus 2 tablespoons for finishing",
+                "1 large onion, diced (about 1 1/2 cups)",
+                "Salt and pepper",
+                "1 1/2 cups Arborio or Carnaroli rice",
+                "Pinch of Aleppo pepper or red pepper flakes",
+                "2 garlic cloves",
+                "1/2 cup white wine",
+                "2 cups diced ripe red tomatoes"
+              ]
+            },
+            {
+              "label": "Liquid",
+              "ingredients": [
+                "3 cups boiling water or vegetable broth"
+              ]
+            },
+            {
+              "label": "Finish",
+              "ingredients": [
+                "1/2 cup grated pecorino or Parmesan, plus more for serving"
+              ]
+            },
+            {
+              "label": "To serve",
+              "ingredients": [
+                "4 medium tomatoes in different colors, sliced",
+                "Chopped parsley, for garnish",
+                "Snipped basil, for garnish"
+              ]
+            }
+          ],
+          "steps": [
+            "Put 3 tablespoons olive oil in a heavy-bottomed saucepan over medium-high heat. Add onion, season generously with salt and pepper, and cook until softened, about 5 minutes.",
+            "Add rice and cook, stirring, until the onions are barely browned and the rice is toasted, about 2 minutes. Add Aleppo pepper or red pepper flakes, garlic, wine, and diced tomatoes. Cook until most of the liquid has evaporated, about 5 minutes.",
+            "Add 2 cups boiling water or broth; adjust heat to a brisk simmer. Cook, stirring with a wooden spoon every minute or so, for 5 to 6 minutes.",
+            "When liquid is absorbed, add remaining 1 cup water or broth and continue cooking, stirring, for another 5 minutes, until rice is cooked but grains are still firm. Taste and adjust seasoning; add a splash more liquid if needed. Turn off heat; stir in pecorino and the remaining 2 tablespoons olive oil.",
+            "Transfer to a low, wide serving bowl. Surround with sliced tomatoes; season them with salt and pepper. Sprinkle with parsley and basil. Pass more cheese at the table."
+          ]
+        },
+        {
+          "title": "Saffron Rice",
+          "servings": "Serves 3   |   Total: about 45 min (including 20-30 min soak)",
+          "source": "Veg Recipes of India (Dassana Amit)",
+          "ingredientGroups": [
+            {
+              "label": "Rice (20-30 minutes ahead)",
+              "ingredients": [
+                "1 1/2 cups Jasmine or Basmati rice"
+              ]
+            },
+            {
+              "label": "Saffron bloom",
+              "ingredients": [
+                "8 to 10 saffron threads",
+                "2 tablespoons warm water or milk"
+              ]
+            },
+            {
+              "label": "Whole spices",
+              "ingredients": [
+                "2 tablespoons ghee",
+                "1/2 teaspoon caraway seeds (shahi jeera)",
+                "3 to 4 green cardamom pods, lightly crushed",
+                "1 Indian bay leaf (tej patta)",
+                "1 inch cinnamon stick",
+                "3 to 4 whole cloves",
+                "1 blade of mace"
+              ]
+            },
+            {
+              "label": "Liquid",
+              "ingredients": [
+                "3 cups water",
+                "1/4 teaspoon turmeric (optional)",
+                "Salt to taste"
+              ]
+            }
+          ],
+          "steps": [
+            "Rinse rice in several changes of cold water until mostly clear. Soak in fresh water for 20 to 30 minutes; drain well.",
+            "Steep saffron threads in 2 tablespoons warm water or milk; set aside.",
+            "Heat ghee in a medium pot over medium heat. Add caraway seeds, cardamoms, bay leaf, cinnamon, cloves, and mace. Saute, stirring, until fragrant, about 30 to 60 seconds.",
+            "Add drained rice and stir gently to coat with the ghee; toast lightly, about 1 minute.",
+            "Add water, the bloomed saffron with its soaking liquid, and turmeric (if using). Season with salt. Bring to a boil over high heat.",
+            "Reduce heat to the lowest setting, cover tightly, and cook until water is absorbed and rice is tender, about 15 minutes.",
+            "Remove from heat and let rest, covered, for 5 minutes. Fluff gently with a fork. Remove whole spices before serving if desired."
+          ]
+        },
+        {
+          "id": "cornbread-stuffing-fried-rice",
+          "title": "Cornbread Stuffing Fried Rice",
+          "servings": "Serves 8   |   Total: about 1 hour (including chili crisp)",
+          "source": "Bon Appetit (Rick Martinez)",
+          "comments": [
+            {
+              "html": "Uses <a href=\"vegetable-sides.html#cornbread-dressing-with-sausage-and-corn-nuts\">Cornbread Dressing With Sausage and Corn Nuts</a> as a key ingredient -- a great use for Thanksgiving leftovers."
+            },
+            "The chili crisp can be made up to 1 week ahead; store in an airtight container.",
+            "Use day-old cooked rice for the best fried-rice texture."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Chili crisp (make ahead)",
+              "ingredients": [
+                "2 dried guajillo chiles, seeds removed, torn into pieces",
+                "1 dried ancho chile, seeds removed, torn into pieces",
+                "3 chiles de arbol, stems removed",
+                "1 cup vegetable oil",
+                "6 shallots, thinly sliced (about 1 cup)",
+                "8 garlic cloves, thinly sliced",
+                "1 tablespoon finely grated peeled ginger",
+                "1/4 teaspoon ground allspice",
+                "1 tablespoon soy sauce",
+                "2 teaspoons sugar",
+                "1 teaspoon kosher salt"
+              ]
+            },
+            {
+              "label": "Fried rice",
+              "ingredients": [
+                "2 tablespoons vegetable oil, divided",
+                "4 garlic cloves, thinly sliced",
+                "3 cups Cornbread Dressing With Sausage and Corn Nuts, crumbled",
+                "4 cups day-old cooked Jasmine or Basmati rice",
+                "1 pound Brussels sprouts, leaves separated (about 4 cups)",
+                "6 large eggs, beaten",
+                "2 tablespoons soy sauce",
+                "4 scallions, thinly sliced",
+                "Kosher salt"
+              ]
+            }
+          ],
+          "steps": [
+            "Make the chili crisp: Tear guajillo and ancho chiles into pieces; remove seeds. Toast all dried chiles in a dry medium saucepan over medium heat, pressing with a spatula, until fragrant, about 2 minutes. Add oil, shallots, garlic, ginger, and allspice; cook, stirring occasionally, until shallots and garlic are golden, 10 to 12 minutes. Let cool 5 minutes. Stir in soy sauce, sugar, and salt. Transfer to an airtight container. Can be made up to 1 week ahead.",
+            "Heat 1 tablespoon oil in a large wok or skillet over high heat. Add garlic and cook, stirring, until starting to brown, 30 to 60 seconds. Add cornbread dressing and rice; press into an even layer. Cook without stirring until crisp on the bottom, about 4 minutes. Toss to combine, then press again and cook until more is crisp, 3 to 4 minutes more.",
+            "Push rice mixture to sides. Add remaining 1 tablespoon oil to center; add Brussels sprout leaves. Cook, stirring, until bright green and slightly wilted, 1 to 2 minutes. Toss to combine with rice.",
+            "Push mixture to sides; add beaten eggs to center. Scramble and toss just as eggs begin to set. Add soy sauce and 3 tablespoons chili crisp; toss to combine. Season with salt. Transfer to a platter; top with scallions and more chili crisp."
           ]
         }
       ]
@@ -12641,75 +13380,75 @@ module.exports = {
                   ]
                 },
                 {
-                                  "title": "Saag Paneer Lasagna",
-                                  "servings": "Serves 8–10   |   Total: 2 hrs 45 min",
-                                  "source": "New York Times Cooking / Khushbu Shah; from the cookbook Amrikan (W. W. Norton, 2024)",
-                                  "comments": [
-                                    "Kasoori methi (dried fenugreek leaves) adds an earthy, aromatic note — highly recommended but optional. If unavailable, stir 1–2 teaspoons maple syrup into the saag along with the spices to approximate its subtle sweetness.",
-                                    "Both the saag filling and béchamel may be made up to 2 days ahead and refrigerated. Loosen the béchamel with a splash of milk or water before assembling.",
-                                    "Leftovers may be wrapped in foil and frozen up to 3 months. Thaw overnight in the fridge before reheating."
-                                  ],
-                                  "ingredientGroups": [
-                                    {
-                                      "label": "Spinach blend",
-                                      "ingredients": [
-                                        "16 oz baby spinach",
-                                        "2 small Roma tomatoes, quartered",
-                                        "2 green serrano chiles, stemmed and halved lengthwise",
-                                        "Leaves and tender stems from 1 bunch cilantro, rinsed and dried",
-                                        "3 tablespoons kasoori methi (dried fenugreek leaves), optional",
-                                        "3/4 cup water",
-                                        "Salt"
-                                      ]
-                                    },
-                                    {
-                                      "label": "Saag aromatics",
-                                      "ingredients": [
-                                        "3 tablespoons ghee or neutral oil",
-                                        "1 medium white onion, finely chopped",
-                                        "1 1/2 tablespoons garlic paste, or 5 garlic cloves, minced",
-                                        "1 1/2 tablespoons ginger paste, or 1/2-inch piece fresh ginger, grated"
-                                      ]
-                                    },
-                                    {
-                                      "label": "Saag spices",
-                                      "ingredients": [
-                                        "1 1/2 teaspoons Kashmiri chile powder",
-                                        "1 1/2 tablespoons ground coriander",
-                                        "2 teaspoons ground cumin",
-                                        "1 teaspoon ground turmeric",
-                                        "Salt"
-                                      ]
-                                    },
-                                    {
-                                      "label": "Bechamel",
-                                      "ingredients": [
-                                        "8 tablespoons butter",
-                                        "1/2 cup all-purpose flour",
-                                        "1 quart whole milk, at room temperature",
-                                        "1/2 teaspoon black pepper",
-                                        "1/4 teaspoon grated nutmeg",
-                                        "3/4 cup shredded Parmesan (1/2 cup into sauce; 1/4 cup reserved for topping)"
-                                      ]
-                                    },
-                                    {
-                                      "label": "Assembly",
-                                      "ingredients": [
-                                        "Olive oil, for greasing",
-                                        "2 (8-oz) boxes no-boil lasagna noodles (about 24 sheets)",
-                                        "1 (12- to 14-oz) block paneer, coarsely grated"
-                                      ]
-                                    }
-                                  ],
-                                  "steps": [
-                                    "Make the saag blend: Bring a large pot of water to boil. Add spinach and blanch until just wilted, about 2 minutes. Drain, run cold water over to cool, and let drain completely. Transfer to a blender. Add tomatoes, serrano chiles, cilantro, kasoori methi (if using), and 3/4 cup water. Blitz 30 seconds to 1 minute until puréed. Season with salt; set aside. (Can be made up to 2 days ahead.)",
-                                    "In the same pot, melt ghee over medium heat. Add onion; sauté 6–8 minutes until softened and lightly golden. Add garlic and ginger; stir 2 minutes. Add chile powder, coriander, cumin, turmeric, and salt; stir well. Add the saag blend and gently simmer, stirring occasionally, until slightly thickened, 10–12 minutes. Remove from heat.",
-                                    "Make the béchamel: In a large pot, melt butter over low heat. Whisk in flour until smooth; cook until the roux is golden, 2–3 minutes. Add milk; increase heat to medium and stir continuously until the sauce thickens and coats the back of a spoon, 5–8 minutes. Remove from heat; stir in pepper, nutmeg, and 1/2 cup Parmesan. Season with salt. (Can be made up to 2 days ahead; loosen with milk before using.)",
-                                    "Heat oven to 400°F. Grease a 9×13-inch baking dish (at least 2 inches deep) with 1 tablespoon oil. Spread enough béchamel to cover the bottom. Layer 4–6 noodle sheets on top, breaking as needed. Spread 1/3 of the saag, then 1/3 of the paneer, then 1/4 of the remaining béchamel. Repeat twice more. Top with a final layer of noodles, the remaining béchamel, and the reserved 1/4 cup Parmesan.",
-                                    "Cover with foil (lightly grease the underside to prevent sticking). Bake 40 minutes.",
-                                    "Remove foil and bake uncovered about 20 minutes more, until lightly golden on top. Let cool 15–20 minutes before slicing."
-                                  ]
-                                }
+                  "title": "Saag Paneer Lasagna",
+                  "servings": "Serves 8–10   |   Total: 2 hrs 45 min",
+                  "source": "New York Times Cooking / Khushbu Shah; from the cookbook Amrikan (W. W. Norton, 2024)",
+                  "comments": [
+                    "Kasoori methi (dried fenugreek leaves) adds an earthy, aromatic note — highly recommended but optional. If unavailable, stir 1–2 teaspoons maple syrup into the saag along with the spices to approximate its subtle sweetness.",
+                    "Both the saag filling and béchamel may be made up to 2 days ahead and refrigerated. Loosen the béchamel with a splash of milk or water before assembling.",
+                    "Leftovers may be wrapped in foil and frozen up to 3 months. Thaw overnight in the fridge before reheating."
+                  ],
+                  "ingredientGroups": [
+                    {
+                      "label": "Spinach blend",
+                      "ingredients": [
+                        "16 oz baby spinach",
+                        "2 small Roma tomatoes, quartered",
+                        "2 green serrano chiles, stemmed and halved lengthwise",
+                        "Leaves and tender stems from 1 bunch cilantro, rinsed and dried",
+                        "3 tablespoons kasoori methi (dried fenugreek leaves), optional",
+                        "3/4 cup water",
+                        "Salt"
+                      ]
+                    },
+                    {
+                      "label": "Saag aromatics",
+                      "ingredients": [
+                        "3 tablespoons ghee or neutral oil",
+                        "1 medium white onion, finely chopped",
+                        "1 1/2 tablespoons garlic paste, or 5 garlic cloves, minced",
+                        "1 1/2 tablespoons ginger paste, or 1/2-inch piece fresh ginger, grated"
+                      ]
+                    },
+                    {
+                      "label": "Saag spices",
+                      "ingredients": [
+                        "1 1/2 teaspoons Kashmiri chile powder",
+                        "1 1/2 tablespoons ground coriander",
+                        "2 teaspoons ground cumin",
+                        "1 teaspoon ground turmeric",
+                        "Salt"
+                      ]
+                    },
+                    {
+                      "label": "Bechamel",
+                      "ingredients": [
+                        "8 tablespoons butter",
+                        "1/2 cup all-purpose flour",
+                        "1 quart whole milk, at room temperature",
+                        "1/2 teaspoon black pepper",
+                        "1/4 teaspoon grated nutmeg",
+                        "3/4 cup shredded Parmesan (1/2 cup into sauce; 1/4 cup reserved for topping)"
+                      ]
+                    },
+                    {
+                      "label": "Assembly",
+                      "ingredients": [
+                        "Olive oil, for greasing",
+                        "2 (8-oz) boxes no-boil lasagna noodles (about 24 sheets)",
+                        "1 (12- to 14-oz) block paneer, coarsely grated"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Make the saag blend: Bring a large pot of water to boil. Add spinach and blanch until just wilted, about 2 minutes. Drain, run cold water over to cool, and let drain completely. Transfer to a blender. Add tomatoes, serrano chiles, cilantro, kasoori methi (if using), and 3/4 cup water. Blitz 30 seconds to 1 minute until puréed. Season with salt; set aside. (Can be made up to 2 days ahead.)",
+                    "In the same pot, melt ghee over medium heat. Add onion; sauté 6–8 minutes until softened and lightly golden. Add garlic and ginger; stir 2 minutes. Add chile powder, coriander, cumin, turmeric, and salt; stir well. Add the saag blend and gently simmer, stirring occasionally, until slightly thickened, 10–12 minutes. Remove from heat.",
+                    "Make the béchamel: In a large pot, melt butter over low heat. Whisk in flour until smooth; cook until the roux is golden, 2–3 minutes. Add milk; increase heat to medium and stir continuously until the sauce thickens and coats the back of a spoon, 5–8 minutes. Remove from heat; stir in pepper, nutmeg, and 1/2 cup Parmesan. Season with salt. (Can be made up to 2 days ahead; loosen with milk before using.)",
+                    "Heat oven to 400°F. Grease a 9×13-inch baking dish (at least 2 inches deep) with 1 tablespoon oil. Spread enough béchamel to cover the bottom. Layer 4–6 noodle sheets on top, breaking as needed. Spread 1/3 of the saag, then 1/3 of the paneer, then 1/4 of the remaining béchamel. Repeat twice more. Top with a final layer of noodles, the remaining béchamel, and the reserved 1/4 cup Parmesan.",
+                    "Cover with foil (lightly grease the underside to prevent sticking). Bake 40 minutes.",
+                    "Remove foil and bake uncovered about 20 minutes more, until lightly golden on top. Let cool 15–20 minutes before slicing."
+                  ]
+                }
               ]
             }
           ]
@@ -12979,7 +13718,9 @@ module.exports = {
                     }
                   ],
                   "steps": [
-                    {"html": "Make or obtain the pasta: prepare <a href=\"noodles.html#busiate\">Busiate</a> following the recipe in this section, or use store-bought bucatini or thick spaghetti."},
+                    {
+                      "html": "Make or obtain the pasta: prepare <a href=\"noodles.html#busiate\">Busiate</a> following the recipe in this section, or use store-bought bucatini or thick spaghetti."
+                    },
                     "Make the breadcrumb topping: heat olive oil in a small pan. Add garlic and anchovies, stirring until anchovies dissolve. Add breadcrumbs and toast, stirring, until golden and crisp. Remove from heat and spread out to cool.",
                     "Make the sardine sauce: heat olive oil over medium heat. Add onion and the 2 anchovies; cook until anchovies dissolve and onion softens. Add raisins and pine nuts. Pour in white wine and let reduce briefly. Add saffron water, passata, and boiled fennel. Add fresh sardines and cook about 8 minutes until just cooked through.",
                     "Cook the pasta in well-salted boiling water (8–10 minutes for busiate; per package for store-bought). Drain and toss with the sardine sauce. Plate and top generously with the breadcrumb topping."
@@ -14236,7 +14977,9 @@ module.exports = {
                   "servings": "Serves 4 | Total: ~25 min",
                   "source": "Nik Sharma Cooks (Nik Sharma)",
                   "comments": [
-                    {"html": "Make your own preserved lemons: see <a href='preserves-pickles.html#preserved-lemons'>Preserved Lemons</a> in the Preserves & Pickles section."},
+                    {
+                      "html": "Make your own preserved lemons: see <a href='preserves-pickles.html#preserved-lemons'>Preserved Lemons</a> in the Preserves & Pickles section."
+                    },
                     "Rinse preserved lemons well and discard the soft flesh -- use only the rind.",
                     "Pumpkin or sunflower seeds work in place of pine nuts for a nut-free version.",
                     "The breadcrumb topping is the star: adjust za'atar to taste, and don't skip it."
@@ -14425,57 +15168,57 @@ module.exports = {
                   ]
                 },
                 {
-                                  "title": "Burst Cherry Tomato Orzotto",
-                                  "servings": "Serves 4–6   |   Total: 50 min",
-                                  "source": "New York Times Cooking / Kayla Hoang",
-                                  "comments": [
-                                    "Use the best cherry tomatoes you can find — the dish is only as good as the tomatoes.",
-                                    "Top each serving with a handful of arugula for a fresh, peppery contrast."
-                                  ],
-                                  "ingredientGroups": [
-                                    {
-                                      "label": "Aromatics",
-                                      "ingredients": [
-                                        "3 tablespoons olive oil",
-                                        "1 large shallot, chopped (about 1/3 cup)",
-                                        "1 teaspoon salt, plus more to taste",
-                                        "1 tablespoon garlic, grated (from 3–4 large cloves)",
-                                        "1/4 to 1/2 teaspoon Aleppo pepper or red pepper flakes"
-                                      ]
-                                    },
-                                    {
-                                      "label": "Tomato base",
-                                      "ingredients": [
-                                        "1 1/2 pounds cherry tomatoes",
-                                        "1 cup fresh basil leaves, tightly packed and roughly chopped, plus 1 sprig for cooking",
-                                        "1 1/4 cups water"
-                                      ]
-                                    },
-                                    {
-                                      "label": "Orzo",
-                                      "ingredients": [
-                                        "1 pound orzo",
-                                        "1 quart (4 cups) low-sodium vegetable or chicken broth",
-                                        "1/4 teaspoon salt"
-                                      ]
-                                    },
-                                    {
-                                      "label": "To finish",
-                                      "ingredients": [
-                                        "2/3 cup grated Parmesan, plus more for serving",
-                                        "1 tablespoon unsalted butter",
-                                        "1 1/2 teaspoons fresh lemon juice"
-                                      ]
-                                    }
-                                  ],
-                                  "steps": [
-                                    "Heat olive oil in a large Dutch oven over medium for about 30 seconds. Add shallot and 1 teaspoon salt; cook, stirring often, until translucent, 2–3 minutes. Add garlic and Aleppo pepper or red pepper flakes; stir until fragrant, about 30 seconds.",
-                                    "Add cherry tomatoes, basil sprig, and 1 1/4 cups water. Cover and increase heat to medium-high. Cook, covered, until tomatoes are very soft and burst when pressed, about 8 minutes.",
-                                    "Use the back of a wooden spoon to press all tomatoes against the side of the pot until broken down. Maintain a steady, gentle boil. Cook uncovered, stirring occasionally, until the tomato liquid has thickened and reduced by about half, 6–10 minutes.",
-                                    "Stir in orzo, broth, and 1/4 teaspoon salt. Bring to a boil over high heat, 4–5 minutes. Reduce to a simmer and cook, stirring every minute or two and scraping the bottom, until orzo is tender and saucy, 9–10 minutes.",
-                                    "Remove from heat; discard basil sprig. Stir in Parmesan, butter, lemon juice, and chopped basil until silky. Season with salt. Serve immediately, topped with more Parmesan."
-                                  ]
-                                }
+                  "title": "Burst Cherry Tomato Orzotto",
+                  "servings": "Serves 4–6   |   Total: 50 min",
+                  "source": "New York Times Cooking / Kayla Hoang",
+                  "comments": [
+                    "Use the best cherry tomatoes you can find — the dish is only as good as the tomatoes.",
+                    "Top each serving with a handful of arugula for a fresh, peppery contrast."
+                  ],
+                  "ingredientGroups": [
+                    {
+                      "label": "Aromatics",
+                      "ingredients": [
+                        "3 tablespoons olive oil",
+                        "1 large shallot, chopped (about 1/3 cup)",
+                        "1 teaspoon salt, plus more to taste",
+                        "1 tablespoon garlic, grated (from 3–4 large cloves)",
+                        "1/4 to 1/2 teaspoon Aleppo pepper or red pepper flakes"
+                      ]
+                    },
+                    {
+                      "label": "Tomato base",
+                      "ingredients": [
+                        "1 1/2 pounds cherry tomatoes",
+                        "1 cup fresh basil leaves, tightly packed and roughly chopped, plus 1 sprig for cooking",
+                        "1 1/4 cups water"
+                      ]
+                    },
+                    {
+                      "label": "Orzo",
+                      "ingredients": [
+                        "1 pound orzo",
+                        "1 quart (4 cups) low-sodium vegetable or chicken broth",
+                        "1/4 teaspoon salt"
+                      ]
+                    },
+                    {
+                      "label": "To finish",
+                      "ingredients": [
+                        "2/3 cup grated Parmesan, plus more for serving",
+                        "1 tablespoon unsalted butter",
+                        "1 1/2 teaspoons fresh lemon juice"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Heat olive oil in a large Dutch oven over medium for about 30 seconds. Add shallot and 1 teaspoon salt; cook, stirring often, until translucent, 2–3 minutes. Add garlic and Aleppo pepper or red pepper flakes; stir until fragrant, about 30 seconds.",
+                    "Add cherry tomatoes, basil sprig, and 1 1/4 cups water. Cover and increase heat to medium-high. Cook, covered, until tomatoes are very soft and burst when pressed, about 8 minutes.",
+                    "Use the back of a wooden spoon to press all tomatoes against the side of the pot until broken down. Maintain a steady, gentle boil. Cook uncovered, stirring occasionally, until the tomato liquid has thickened and reduced by about half, 6–10 minutes.",
+                    "Stir in orzo, broth, and 1/4 teaspoon salt. Bring to a boil over high heat, 4–5 minutes. Reduce to a simmer and cook, stirring every minute or two and scraping the bottom, until orzo is tender and saucy, 9–10 minutes.",
+                    "Remove from heat; discard basil sprig. Stir in Parmesan, butter, lemon juice, and chopped basil until silky. Season with salt. Serve immediately, topped with more Parmesan."
+                  ]
+                }
               ]
             }
           ]
@@ -14983,7 +15726,7 @@ module.exports = {
                   "Bake at 375° for 30-40 minutes until deep golden brown. Cool on racks."
                 ]
               }
-            }            ,
+            },
             {
               "title": "Overnight Focaccia",
               "servings": "Makes one 18x13-inch pan (serves 12-16)   |   Total: 3 hours active + overnight",
@@ -15164,7 +15907,7 @@ module.exports = {
                   "Bake 20-25 minutes until golden. Drizzle with more olive oil if desired. Serve warm."
                 ]
               }
-            }            ,
+            },
             {
               "title": "Homemade Naan Bread",
               "servings": "Makes 8 naan",
@@ -15680,7 +16423,7 @@ module.exports = {
                 ]
               }
             },
-{
+            {
               "title": "Brownie Cookies",
               "servings": "Makes 24 cookies",
               "ingredientGroups": [
@@ -15722,8 +16465,8 @@ module.exports = {
                 "Whisk flour, cocoa powder, espresso powder, baking powder, and salt together in a medium bowl. Set aside.",
                 "Beat butter, brown sugar, and granulated sugar on medium-high speed until smooth and creamy, about 3 minutes. Add eggs and vanilla; beat on high 2 full minutes. Scrape bowl; beat on high 1 more minute. Pour in cooled chocolate; beat on medium-high 2 full minutes.",
                 "Add dry ingredients and beat on low until combined. Fold in chocolate chips if using.",
-                "Preheat oven to 350\u00b0F and line large baking sheets with parchment. Meanwhile, cover and refrigerate dough 20 minutes. (Quick chill solidifies fats for controlled spread. If chilling longer than 20 minutes, let dough rest at room temperature 15 minutes before baking.)",
-                "Scoop dough into 1.5-tablespoon balls (about 35 grams each). Place 3 inches apart on prepared sheets. Bake 12\u201313 minutes until edges appear set; centers will be soft and will firm as cookies cool.",
+                "Preheat oven to 350°F and line large baking sheets with parchment. Meanwhile, cover and refrigerate dough 20 minutes. (Quick chill solidifies fats for controlled spread. If chilling longer than 20 minutes, let dough rest at room temperature 15 minutes before baking.)",
+                "Scoop dough into 1.5-tablespoon balls (about 35 grams each). Place 3 inches apart on prepared sheets. Bake 12–13 minutes until edges appear set; centers will be soft and will firm as cookies cool.",
                 "Cool 5 minutes on baking sheet, then transfer to wire rack. Store covered at room temperature up to 1 week. Baked cookies and unbaked dough balls both freeze well up to 3 months."
               ],
               "comments": [
@@ -15735,7 +16478,9 @@ module.exports = {
                 "ingredientGroups": [
                   {
                     "label": "Chocolate base",
-                    "ingredients": ["8 oz (2 four-oz bars) semi-sweet chocolate, coarsely chopped"]
+                    "ingredients": [
+                      "8 oz (2 four-oz bars) semi-sweet chocolate, coarsely chopped"
+                    ]
                   },
                   {
                     "label": "Dry ingredients",
@@ -15759,14 +16504,16 @@ module.exports = {
                   },
                   {
                     "label": "Mix-ins (optional)",
-                    "ingredients": ["3/4 cup semi-sweet chocolate chips"]
+                    "ingredients": [
+                      "3/4 cup semi-sweet chocolate chips"
+                    ]
                   }
                 ]
               }
             },
-{
+            {
               "title": "Classic Sugar Cookies",
-              "servings": "Makes about 4\u20135 dozen cutout cookies",
+              "servings": "Makes about 4–5 dozen cutout cookies",
               "ingredientGroups": [
                 {
                   "label": "Cookie dough",
@@ -15790,7 +16537,7 @@ module.exports = {
                   "label": "Icing",
                   "ingredients": [
                     "3 cups powdered sugar",
-                    "4\u20136 tablespoons milk",
+                    "4–6 tablespoons milk",
                     "1/4 teaspoon vanilla extract",
                     "Food coloring (optional)"
                   ]
@@ -15805,8 +16552,8 @@ module.exports = {
               "steps": [
                 "Beat powdered sugar, butter, vanilla, almond extract, and egg on medium speed until smooth and thoroughly blended. Stir in flour, baking soda, and cream of tartar just until combined; do not overmix.",
                 "Divide dough in half; shape each half into a 1-inch-thick flattened disk. Wrap in plastic and refrigerate at least 2 hours or up to 24 hours, until firm and not sticky.",
-                "Heat oven to 375\u00b0F. Working with one disk at a time on a lightly floured surface, roll to 1/4-inch thickness. Cut with 2- to 2 1/2-inch cookie cutters; place at least 2 inches apart on ungreased cookie sheets. (Dip cutter in flour between cuts. To prevent spreading, freeze cut cookies 15 minutes before baking.)",
-                "Bake on the middle rack 7\u20138 minutes until edges are light brown. Cool 1 minute on sheet; transfer to wire rack. Cool completely, about 30 minutes.",
+                "Heat oven to 375°F. Working with one disk at a time on a lightly floured surface, roll to 1/4-inch thickness. Cut with 2- to 2 1/2-inch cookie cutters; place at least 2 inches apart on ungreased cookie sheets. (Dip cutter in flour between cuts. To prevent spreading, freeze cut cookies 15 minutes before baking.)",
+                "Bake on the middle rack 7–8 minutes until edges are light brown. Cool 1 minute on sheet; transfer to wire rack. Cool completely, about 30 minutes.",
                 "For icing: beat powdered sugar, 4 tablespoons milk, and vanilla until smooth and spreadable, adding more milk 1 teaspoon at a time as needed. Tint with food coloring as desired. Spread over cooled cookies; decorate with colored sugar or sprinkles. Let stand about 4 hours until icing sets.",
                 "Store in an airtight container with waxed paper between layers."
               ],
@@ -15835,19 +16582,21 @@ module.exports = {
                     "label": "Icing",
                     "ingredients": [
                       "3 cups powdered sugar",
-                      "4\u20136 tablespoons milk",
+                      "4–6 tablespoons milk",
                       "1/4 teaspoon vanilla extract",
                       "Food coloring (optional)"
                     ]
                   },
                   {
                     "label": "Decoration (optional)",
-                    "ingredients": ["Colored sugar or candy sprinkles"]
+                    "ingredients": [
+                      "Colored sugar or candy sprinkles"
+                    ]
                   }
                 ]
               }
             },
-{
+            {
               "title": "Coconut Macaroons",
               "servings": "Makes about 18 cookies",
               "ingredientGroups": [
@@ -15864,8 +16613,8 @@ module.exports = {
                 }
               ],
               "steps": [
-                "Preheat oven to 325\u00b0F. Combine coconut, sugar, flour, and salt in a small bowl. Add egg whites and vanilla; mix well.",
-                "Drop by rounded teaspoonfuls onto greased baking sheets. Bake 18\u201320 minutes until golden brown. Cool on a wire rack."
+                "Preheat oven to 325°F. Combine coconut, sugar, flour, and salt in a small bowl. Add egg whites and vanilla; mix well.",
+                "Drop by rounded teaspoonfuls onto greased baking sheets. Bake 18–20 minutes until golden brown. Cool on a wire rack."
               ],
               "source": "Penny Ann Habeck / Taste of Home"
             },
@@ -15972,9 +16721,9 @@ module.exports = {
               },
               "id": "erics-chocolate-chip-cookies"
             },
-{
+            {
               "title": "Fresh Fig Newtons",
-              "servings": "Makes 12\u201318 bar cookies",
+              "servings": "Makes 12–18 bar cookies",
               "ingredientGroups": [
                 {
                   "label": "Filling (1 hour ahead)",
@@ -16007,15 +16756,15 @@ module.exports = {
                 }
               ],
               "steps": [
-                "Combine figs, 1/2 cup brown sugar, lemon zest, coarse salt, and 1 teaspoon vanilla in a medium heavy-bottomed saucepan. Bring to a low boil, stirring as needed. Reduce heat; simmer 40\u201350 minutes, occasionally smashing larger pieces with the back of a fork, until mixture cooks down to a jam-like consistency. Remove from heat; cool completely.",
-                "Preheat oven to 350\u00b0F. Butter a 9x13 baking dish; line with parchment or foil and butter the liner generously.",
+                "Combine figs, 1/2 cup brown sugar, lemon zest, coarse salt, and 1 teaspoon vanilla in a medium heavy-bottomed saucepan. Bring to a low boil, stirring as needed. Reduce heat; simmer 40–50 minutes, occasionally smashing larger pieces with the back of a fork, until mixture cooks down to a jam-like consistency. Remove from heat; cool completely.",
+                "Preheat oven to 350°F. Butter a 9x13 baking dish; line with parchment or foil and butter the liner generously.",
                 "Whisk both flours, baking powder, and salt together in a medium bowl.",
                 "Beat butter and 1 1/2 cups brown sugar in a large bowl until fluffy. Add orange zest and eggs; beat on medium until dough comes together. Stir in vanilla.",
                 "Gradually incorporate flour mixture on low speed until combined. Dough will be sticky.",
                 "Butter two large pieces of parchment or foil. Measure out 1 1/2 cups of dough; press and roll between the pieces into a rectangle roughly the size of the baking dish. This will be the top crust. Freeze to firm up.",
                 "Press remaining dough evenly into prepared baking dish. Bake about 20 minutes until golden.",
                 "Spread fig filling over baked crust. Peel away parchment from frozen top crust; lay over filling, pressing any stray pieces into place.",
-                "Bake 20\u201325 minutes until top is golden brown. Cool completely in the pan on a wire rack, then lift out using the parchment and slice into squares."
+                "Bake 20–25 minutes until top is golden brown. Cool completely in the pan on a wire rack, then lift out using the parchment and slice into squares."
               ],
               "comments": [
                 "Filling can be made up to 3 days ahead and refrigerated."
@@ -16272,7 +17021,7 @@ module.exports = {
         {
           "title": "Sweet",
           "recipes": [
-                        {
+            {
               "id": "baking-sweet-all-shortening-pie-crust",
               "title": "All-Shortening Pie Crust",
               "favorite": true,
@@ -16328,7 +17077,9 @@ module.exports = {
                 {
                   "label": "Crust",
                   "ingredients": [
-                    {"html": "1 disk <a href=\"baking.html#baking-sweet-all-shortening-pie-crust\">All-Shortening Pie Crust</a>"}
+                    {
+                      "html": "1 disk <a href=\"baking.html#baking-sweet-all-shortening-pie-crust\">All-Shortening Pie Crust</a>"
+                    }
                   ]
                 },
                 {
@@ -16342,10 +17093,12 @@ module.exports = {
                 }
               ],
               "steps": [
-                {"html": "Prepare 1 disk of the <a href=\"baking.html#baking-sweet-all-shortening-pie-crust\">All-Shortening Pie Crust</a>. Roll out to approximately 12 inches diameter on a floured surface and mold into the pie plate."},
+                {
+                  "html": "Prepare 1 disk of the <a href=\"baking.html#baking-sweet-all-shortening-pie-crust\">All-Shortening Pie Crust</a>. Roll out to approximately 12 inches diameter on a floured surface and mold into the pie plate."
+                },
                 "Toss sliced apples with 1/4 cup of the brown sugar. Arrange in pie crust.",
                 "Combine remaining brown sugar and flour; cut in margarine until crumbly. Sprinkle mixture over apples.",
-                "Bake at 375\u00b0F for 40 minutes."
+                "Bake at 375°F for 40 minutes."
               ],
               "source": "From Susan Muhlheim"
             },
@@ -16664,7 +17417,7 @@ module.exports = {
                 ]
               }
             },
-{
+            {
               "title": "Chocolate Chip Scones",
               "servings": "Makes 8 large scones",
               "ingredientGroups": [
@@ -16698,9 +17451,9 @@ module.exports = {
               ],
               "steps": [
                 "Whisk flour, baking powder, cinnamon, and salt together in a large bowl. Grate frozen butter using a box grater; add to flour mixture and cut in with a pastry cutter, two forks, or your fingers until mixture comes together in pea-sized crumbs. Refrigerate while mixing wet ingredients.",
-                "Whisk 1/2 cup heavy cream, brown sugar, egg, and vanilla together in a small bowl. Drizzle over flour mixture; add chocolate chips. Mix until everything appears moistened. Turn onto counter and work into a ball with floured hands. (If too sticky, add more flour; if too dry, add 1\u20132 tablespoons more cream.) Press into an 8-inch disc; cut into 8 wedges. Brush with remaining 2 tablespoons heavy cream; sprinkle with coarse sugar if desired.",
-                "Refrigerate scones at least 15 minutes. Meanwhile, preheat oven to 400\u00b0F.",
-                "Arrange scones 2\u20133 inches apart on a parchment-lined baking sheet. Bake 22\u201325 minutes until golden brown around edges and lightly browned on top. Cool a few minutes before serving. Dust with confectioners' sugar if desired."
+                "Whisk 1/2 cup heavy cream, brown sugar, egg, and vanilla together in a small bowl. Drizzle over flour mixture; add chocolate chips. Mix until everything appears moistened. Turn onto counter and work into a ball with floured hands. (If too sticky, add more flour; if too dry, add 1–2 tablespoons more cream.) Press into an 8-inch disc; cut into 8 wedges. Brush with remaining 2 tablespoons heavy cream; sprinkle with coarse sugar if desired.",
+                "Refrigerate scones at least 15 minutes. Meanwhile, preheat oven to 400°F.",
+                "Arrange scones 2–3 inches apart on a parchment-lined baking sheet. Bake 22–25 minutes until golden brown around edges and lightly browned on top. Cool a few minutes before serving. Dust with confectioners' sugar if desired."
               ],
               "comments": [
                 "Mini chocolate chips preferred; regular-size work too (increase to 1 1/2 cups). Can prepare through step 2 and refrigerate overnight. Unbaked scones also freeze well. Leftovers keep at room temperature 2 days or refrigerated 5 days."
@@ -16738,15 +17491,15 @@ module.exports = {
                 ]
               }
             },
-{
+            {
               "title": "Doughnut Glazes",
-              "servings": "Each glaze makes enough for 10\u201312 doughnuts",
+              "servings": "Each glaze makes enough for 10–12 doughnuts",
               "ingredientGroups": [
                 {
                   "label": "Vanilla glaze",
                   "ingredients": [
                     "1 1/2 cups (6 oz) powdered sugar",
-                    "2\u20133 tablespoons milk",
+                    "2–3 tablespoons milk",
                     "1 1/2 teaspoons vanilla extract"
                   ]
                 },
@@ -16754,7 +17507,7 @@ module.exports = {
                   "label": "Funfetti glaze",
                   "ingredients": [
                     "1 1/2 cups (6 oz) powdered sugar",
-                    "2\u20133 tablespoons milk",
+                    "2–3 tablespoons milk",
                     "1 teaspoon vanilla extract",
                     "1/4 teaspoon almond extract",
                     "1 small drop pink food coloring"
@@ -16773,7 +17526,7 @@ module.exports = {
                   "label": "Maple glaze",
                   "ingredients": [
                     "1 1/2 cups (6 oz) powdered sugar",
-                    "1\u20132 tablespoons milk",
+                    "1–2 tablespoons milk",
                     "4 tablespoons maple syrup",
                     "1 teaspoon vanilla extract"
                   ]
@@ -16979,7 +17732,7 @@ module.exports = {
                 ]
               }
             },
-{
+            {
               "title": "Lemony Glazed Cake Doughnuts",
               "servings": "Makes 8 doughnuts (plus holes)",
               "ingredientGroups": [
@@ -16999,7 +17752,7 @@ module.exports = {
                     "1/2 cup granulated sugar",
                     "2 tablespoons unsalted butter, melted and slightly cooled",
                     "1 teaspoon vanilla extract",
-                    "Vegetable oil for frying (6\u20138 cups)"
+                    "Vegetable oil for frying (6–8 cups)"
                   ]
                 },
                 {
@@ -17015,10 +17768,10 @@ module.exports = {
               "steps": [
                 "Whisk baking powder, flour, and 1 teaspoon salt in a medium bowl. Whisk egg yolks, yogurt, granulated sugar, melted butter, and vanilla in a large bowl. Mix in dry ingredients until dough comes together and is smooth.",
                 "Turn dough onto a well-floured sheet of parchment. Dust with flour; cover with a second sheet; roll to 1/2-inch thick. Remove top sheet; brush off excess flour. Punch out circles about 3 1/2 inches in diameter. Punch out centers about 1 inch in diameter. Reroll scraps to punch out more.",
-                "Pour oil into a large pot to a depth of 1 1/2 inches. Fit with deep-fry thermometer; heat over medium-high to 350\u00b0F. Fry doughnuts, turning once, until puffy and mahogany brown, about 2 minutes per side (slightly less for holes). Transfer to a wire rack; cool 10 minutes.",
+                "Pour oil into a large pot to a depth of 1 1/2 inches. Fit with deep-fry thermometer; heat over medium-high to 350°F. Fry doughnuts, turning once, until puffy and mahogany brown, about 2 minutes per side (slightly less for holes). Transfer to a wire rack; cool 10 minutes.",
                 "Whisk powdered sugar, lemon zest, pinch of salt, and 1/4 cup water until smooth. Dip each side of doughnut into glaze; let excess run off. Return to rack. Eat as soon as possible."
               ],
-              "source": "Chris Morocco / Bon App\u00e9tit (bonappetit.com)",
+              "source": "Chris Morocco / Bon Appétit (bonappetit.com)",
               "highAltitude": {
                 "ingredientGroups": [
                   {
@@ -17037,7 +17790,7 @@ module.exports = {
                       "7 tablespoons granulated sugar",
                       "2 tablespoons unsalted butter, melted and slightly cooled",
                       "1 teaspoon vanilla extract",
-                      "Vegetable oil for frying (6\u20138 cups)"
+                      "Vegetable oil for frying (6–8 cups)"
                     ]
                   },
                   {
@@ -17186,7 +17939,7 @@ module.exports = {
                 ]
               }
             },
-{
+            {
               "id": "baking-sweet-passover-cream-puff-shells",
               "title": "Passover Cream Puff Shells",
               "servings": "Makes about 2 dozen shells",
@@ -17203,11 +17956,11 @@ module.exports = {
                 }
               ],
               "steps": [
-                "Position a rack in center of oven; heat to 400\u00b0F. Grease corners of 2 baking sheets; line with parchment paper.",
+                "Position a rack in center of oven; heat to 400°F. Grease corners of 2 baking sheets; line with parchment paper.",
                 "Combine water and butter in a small saucepan over medium-low heat until butter melts. Increase heat; bring to a boil. Remove from heat; add matzo cake meal all at once and mix vigorously. Return to low heat; cook, stirring constantly, until mixture is a thick paste, about 1 minute. Transfer to the bowl of a stand mixer or large bowl; cool 5 minutes.",
                 "Using paddle attachment or wooden spoon, beat in one egg at a time, fully incorporating each before adding the next, until dough is smooth.",
                 "Drop rounded tablespoons (about 1 1/2 tablespoons each) onto baking sheets, spacing 1 1/2 inches apart. Smooth any points with a moistened finger.",
-                "Bake 15 minutes. Reduce oven to 375\u00b0F; bake until golden and firm, 14\u201320 more minutes. Turn off oven; wedge door open with a wooden spoon and leave puffs 30 minutes to dry out.",
+                "Bake 15 minutes. Reduce oven to 375°F; bake until golden and firm, 14–20 more minutes. Turn off oven; wedge door open with a wooden spoon and leave puffs 30 minutes to dry out.",
                 "Remove; pierce each puff at the center of one side with a paring knife to release steam."
               ],
               "comments": [
@@ -17229,11 +17982,11 @@ module.exports = {
                   }
                 ],
                 "steps": [
-                  "Position a rack in center of oven; heat to 400\u00b0F. Grease corners of 2 baking sheets; line with parchment paper.",
-                  "Combine water and butter in a small saucepan over medium-low heat until butter melts. Increase heat; bring to a boil. Remove from heat; add matzo cake meal all at once and mix vigorously. Return to low heat; cook, stirring constantly until paste pulls cleanly from the pan (30\u201360 seconds longer than at sea level). Transfer to stand mixer bowl; cool 5 minutes.",
+                  "Position a rack in center of oven; heat to 400°F. Grease corners of 2 baking sheets; line with parchment paper.",
+                  "Combine water and butter in a small saucepan over medium-low heat until butter melts. Increase heat; bring to a boil. Remove from heat; add matzo cake meal all at once and mix vigorously. Return to low heat; cook, stirring constantly until paste pulls cleanly from the pan (30–60 seconds longer than at sea level). Transfer to stand mixer bowl; cool 5 minutes.",
                   "Using paddle attachment or wooden spoon, beat in one egg at a time, fully incorporating each before adding the next, until dough is smooth.",
                   "Drop rounded tablespoons onto baking sheets, spacing 1 1/2 inches apart. Smooth any points with a moistened finger.",
-                  "Bake the full 15 minutes at 400\u00b0F before reducing heat; do not open the oven early. Reduce to 375\u00b0F; bake until golden and firm, 14\u201320 more minutes. Turn off oven; wedge door open and leave puffs 30 minutes to dry out.",
+                  "Bake the full 15 minutes at 400°F before reducing heat; do not open the oven early. Reduce to 375°F; bake until golden and firm, 14–20 more minutes. Turn off oven; wedge door open and leave puffs 30 minutes to dry out.",
                   "Remove; pierce each puff at the center of one side with a paring knife to release steam."
                 ]
               }
@@ -17514,7 +18267,7 @@ module.exports = {
                 ]
               }
             },
-{
+            {
               "title": "Frangipane",
               "servings": "Makes about 1/2 cup (enough for one tart or tartlets)",
               "ingredientGroups": [
@@ -17807,9 +18560,9 @@ module.exports = {
                 ]
               }
             },
-{
+            {
               "title": "Chai Cake With Brown-Butter-Ghee Streusel",
-              "servings": "Serves 10\u201312",
+              "servings": "Serves 10–12",
               "ingredientGroups": [
                 {
                   "label": "Ghee (make ahead)",
@@ -17856,12 +18609,12 @@ module.exports = {
               "steps": [
                 "Line a fine-mesh sieve with cheesecloth. Melt butter in a medium heavy saucepan over medium heat, stirring often, until simmering. Cook, stirring constantly, 10 minutes. Reduce heat to low; continue cooking, stirring constantly, until golden brown and caramelized milk solids appear on the spatula, about 10 minutes longer. Strain ghee through prepared sieve into a large jar. Reserve ghee and caramelized milk solids separately. (Ghee can be made 3 months ahead; store tightly covered at room temperature.)",
                 "Whisk flour, brown sugar, spices, and salt together for streusel in a medium bowl. Add 1 tablespoon caramelized milk solids and 1/2 cup ghee. Work with hands until mixture resembles wet sand. Set aside.",
-                "Preheat oven to 325\u00b0F. Line a 9x9-inch baking pan with parchment, leaving overhang on 2 sides.",
+                "Preheat oven to 325°F. Line a 9x9-inch baking pan with parchment, leaving overhang on 2 sides.",
                 "Whisk together 2 cups flour, baking powder, baking soda, and salt in a medium bowl. In a large bowl, whisk eggs, egg yolk, yogurt, milk, both sugars, vanilla, 3/4 cup ghee, and 1 teaspoon caramelized milk solids together. Sift in dry ingredients and fold just until no dry spots remain (batter will be thick and slightly lumpy).",
                 "Spoon half of batter into prepared pan; spread to edges. Sprinkle half of streusel evenly over. Dollop remaining batter on top and gently spread. Sprinkle remaining streusel on top; gently pat to adhere.",
-                "Bake until a tester inserted in center comes out clean, 40\u201345 minutes. Transfer to a wire rack; let cool before slicing. (Cake keeps tightly wrapped at room temperature up to 4 days.)"
+                "Bake until a tester inserted in center comes out clean, 40–45 minutes. Transfer to a wire rack; let cool before slicing. (Cake keeps tightly wrapped at room temperature up to 4 days.)"
               ],
-              "source": "Hetal Vasavada / Bon App\u00e9tit (bonappetit.com)",
+              "source": "Hetal Vasavada / Bon Appétit (bonappetit.com)",
               "highAltitude": {
                 "ingredientGroups": [
                   {
@@ -17934,7 +18687,9 @@ module.exports = {
                   "ingredients": [
                     "1/2 cup chilled heavy cream",
                     "3 tablespoons chilled buttermilk, plus more for brushing",
-                    {"html": "3 tablespoons chilled <a href=\"dairy.html#dairy-creme-fraiche\">Creme Fraiche</a> (Dairy), or store-bought"},
+                    {
+                      "html": "3 tablespoons chilled <a href=\"dairy.html#dairy-creme-fraiche\">Creme Fraiche</a> (Dairy), or store-bought"
+                    },
                     "2 tablespoons honey",
                     "2 tablespoons sourdough starter discard",
                     "1 tablespoon finely grated orange or lemon zest"
@@ -17949,8 +18704,12 @@ module.exports = {
                 "Heat oven to 400°F with a rack in the center. Brush scones with buttermilk; sprinkle liberally with sugar. Bake, rotating sheet halfway through, until deep golden brown, 30–32 minutes. Transfer to a wire rack; cool completely before serving."
               ],
               "comments": [
-                {"html": "For add-in variations (blueberry lemon, cranberry orange, strawberry jam, cherry almond, cardamom spiced), see <a href=\"baking.html#baking-sweet-squirls-sourdough-scone-variations\">Sqirl’s Sourdough Scone Variations</a>."},
-                {"html": "Creme fraiche can be purchased or made at home; see <a href=\"dairy.html#dairy-creme-fraiche\">Creme Fraiche</a> (Dairy)."},
+                {
+                  "html": "For add-in variations (blueberry lemon, cranberry orange, strawberry jam, cherry almond, cardamom spiced), see <a href=\"baking.html#baking-sweet-squirls-sourdough-scone-variations\">Sqirl’s Sourdough Scone Variations</a>."
+                },
+                {
+                  "html": "Creme fraiche can be purchased or made at home; see <a href=\"dairy.html#dairy-creme-fraiche\">Creme Fraiche</a> (Dairy)."
+                },
                 "Scones can be frozen through step 4 for up to 2 months; bake from frozen at same time. Baked scones keep in an airtight container at room temperature up to 3 days."
               ],
               "source": "Catalina Flores, adapted by / Los Angeles Times",
@@ -17978,7 +18737,9 @@ module.exports = {
                     "ingredients": [
                       "1/2 cup chilled heavy cream",
                       "3 tablespoons chilled buttermilk, plus more for brushing",
-                      {"html": "3 tablespoons chilled <a href=\"dairy.html#dairy-creme-fraiche\">Creme Fraiche</a> (Dairy), or store-bought"},
+                      {
+                        "html": "3 tablespoons chilled <a href=\"dairy.html#dairy-creme-fraiche\">Creme Fraiche</a> (Dairy), or store-bought"
+                      },
                       "2 tablespoons honey",
                       "2 tablespoons sourdough starter discard",
                       "1 tablespoon finely grated orange or lemon zest"
@@ -18030,7 +18791,9 @@ module.exports = {
                 }
               ],
               "steps": [
-                {"html": "Prepare one batch of <a href=\"baking.html#baking-sweet-squirls-sourdough-scones\">Sqirl’s Sourdough Scones</a>. For Cardamom Spiced, add the spices to the dry ingredients in step 1 of that recipe."},
+                {
+                  "html": "Prepare one batch of <a href=\"baking.html#baking-sweet-squirls-sourdough-scones\">Sqirl’s Sourdough Scones</a>. For Cardamom Spiced, add the spices to the dry ingredients in step 1 of that recipe."
+                },
                 "In step 3, fold in the selected add-ins just before shaping the dough.",
                 "Brush with buttermilk and sprinkle liberally with sugar as usual. For Cardamom Spiced, mix 1 tablespoon sugar with 1/4 teaspoon cinnamon for the topping."
               ],
@@ -18225,13 +18988,15 @@ module.exports = {
                 "Place on a baking sheet. Bake at 350°F for 18 minutes.",
                 "Optional: 10 minutes in, spoon additional spaghetti sauce over the top and sprinkle with parmesan; return to oven for remaining 8 minutes."
               ]
-            }            ,
+            },
             {
               "title": "Eggplant Parm Pizza",
               "servings": "Makes one 12-inch pizza",
               "source": "Bon Appétit (Molly Baz)",
               "comments": [
-                {"html": "Uses one ball of <a href=\"baking.html#baking-savory-72-hour-pizza-dough\">72-Hour Pizza Dough</a>. Make the dough at least 3 days ahead."},
+                {
+                  "html": "Uses one ball of <a href=\"baking.html#baking-savory-72-hour-pizza-dough\">72-Hour Pizza Dough</a>. Make the dough at least 3 days ahead."
+                },
                 "Preheat, stretch, and bake the dough per that recipe's instructions."
               ],
               "ingredientGroups": [
@@ -18278,11 +19043,12 @@ module.exports = {
                 "Arrange eggplant rounds on a wire rack set over a baking sheet. Season generously on both sides with the kosher salt. Let drain 30-45 minutes. Pat dry with paper towels.",
                 "While eggplant drains, make the sauce: heat 2 tablespoons olive oil in a small saucepan over medium heat. Add garlic; cook, stirring occasionally, until fragrant and just beginning to turn golden, 3-4 minutes. Add crushed tomatoes. Season with salt and pepper. Simmer, stirring occasionally, until sauce thickens slightly, 10-12 minutes. Stir in the torn basil. Remove from heat.",
                 "Heat 2 tablespoons of the frying oil in a large skillet over medium-high. Working in batches, fry eggplant rounds until deep golden brown on both sides, 3-4 minutes per side. Add more oil as needed between batches. Transfer to the rack.",
-                {"html": "Assemble: stretch the dough and preheat the oven per the <a href=\"baking.html#baking-savory-72-hour-pizza-dough\">72-Hour Pizza Dough</a> recipe. Spoon sauce over the stretched dough in an even layer, leaving a 1-inch border. Scatter torn mozzarella over the sauce, then arrange fried eggplant rounds on top, overlapping slightly. Bake per the pizza dough recipe instructions."},
+                {
+                  "html": "Assemble: stretch the dough and preheat the oven per the <a href=\"baking.html#baking-savory-72-hour-pizza-dough\">72-Hour Pizza Dough</a> recipe. Spoon sauce over the stretched dough in an even layer, leaving a 1-inch border. Scatter torn mozzarella over the sauce, then arrange fried eggplant rounds on top, overlapping slightly. Bake per the pizza dough recipe instructions."
+                },
                 "Transfer to a cutting board. Grate Parmesan or Pecorino over the top, tear fresh basil over, and scatter Aleppo pepper or red pepper flakes. Slice and serve immediately."
               ]
-            }
-            ,
+            },
             {
               "title": "Gruyere Quiche",
               "favorite": true,
@@ -18290,14 +19056,18 @@ module.exports = {
               "source": "Grits and Chopsticks (broccoli filling) / Once Upon a Chef, Jennifer Segal (spinach filling)",
               "comments": [
                 "Make one filling, not both. Both use the same cream custard base.",
-                {"html": "The crust must be fully blind-baked before filling -- follow the <a href=\"baking.html#baking-sweet-all-shortening-pie-crust\">All-Shortening Pie Crust</a> recipe all the way through the full blind-bake step, then proceed here."},
+                {
+                  "html": "The crust must be fully blind-baked before filling -- follow the <a href=\"baking.html#baking-sweet-all-shortening-pie-crust\">All-Shortening Pie Crust</a> recipe all the way through the full blind-bake step, then proceed here."
+                },
                 "Make-ahead: quiche keeps refrigerated up to 1 day. Freeze up to 3 months. Reheat covered with foil at 300 degrees F for 35-45 minutes until hot in the center."
               ],
               "ingredientGroups": [
                 {
                   "label": "Crust",
                   "ingredients": [
-                    {"html": "1 disk <a href=\"baking.html#baking-sweet-all-shortening-pie-crust\">All-Shortening Pie Crust</a>, fully blind-baked"}
+                    {
+                      "html": "1 disk <a href=\"baking.html#baking-sweet-all-shortening-pie-crust\">All-Shortening Pie Crust</a>, fully blind-baked"
+                    }
                   ]
                 },
                 {
@@ -18338,14 +19108,15 @@ module.exports = {
                 }
               ],
               "steps": [
-                {"html": "Blind bake the crust fully, following the <a href=\"baking.html#baking-sweet-all-shortening-pie-crust\">All-Shortening Pie Crust</a> recipe. Set the baked crust aside on a baking sheet. Reduce oven to 325 degrees F."},
+                {
+                  "html": "Blind bake the crust fully, following the <a href=\"baking.html#baking-sweet-all-shortening-pie-crust\">All-Shortening Pie Crust</a> recipe. Set the baked crust aside on a baking sheet. Reduce oven to 325 degrees F."
+                },
                 "Prepare your chosen filling. Broccoli: heat olive oil in a skillet with a tight-fitting lid over medium heat. Add the onion; saute 2-3 minutes until translucent. Add garlic and broccoli; saute 2 minutes more. Add the tablespoon of water, cover, and reduce heat to medium-low; steam 2-3 minutes until the broccoli is bright green but still slightly crunchy. Remove from heat, drain in a colander, and let cool completely. Spinach: melt butter in a small skillet over medium-low heat. Add shallots and cook until soft and translucent, about 8 minutes -- do not brown. Set aside to cool.",
                 "In a medium bowl, whisk together eggs, cream, salt, pepper, nutmeg, and cayenne until just incorporated -- do not overbeat or you will get froth.",
                 "Spread the filling evenly over the bottom of the baked crust. For spinach: layer shallots first, then Gruyere, then spinach. For broccoli: spread broccoli, then Gruyere. Sprinkle Parmesan over the top if using. Slowly pour the custard over the filling, up to within 1/4 inch of the rim.",
                 "Bake at 325 degrees F for 45-55 minutes until the custard is set and the top is lightly golden. The center should jiggle only slightly when the pan is shaken. Let cool on a wire rack for 10-15 minutes before slicing. Serve warm or at room temperature."
               ]
-            }
-            ,
+            },
             {
               "title": "Mushroom and Gruyere Bread Pudding",
               "servings": "Serves 8-10   |   Total: 1 hour 20 minutes",
@@ -18403,7 +19174,7 @@ module.exports = {
                 "In a separate bowl, whisk together eggs, half-and-half, chicken stock, salt, and pepper. Pour the custard over the stuffing mixture and stir well. Let sit 10 minutes, stirring occasionally, until the bread has absorbed most of the liquid. Transfer to the prepared baking dish; sprinkle evenly with the remaining 1 cup Gruyere.",
                 "Bake 40-50 minutes until the top is golden brown and the custard is set in the middle. Serve hot."
               ]
-            }            ,
+            },
             {
               "title": "Khachapuri Adjaruli (Georgian Cheese Bread Boat)",
               "servings": "Serves 2 as an entree or 4 as an appetizer",
@@ -18411,7 +19182,9 @@ module.exports = {
               "comments": [
                 "The egg yolk and cold butter stirred in at the end are traditional and essential -- don't skip them.",
                 "Herb additions to the cheese filling: stir in 2-3 tablespoons chopped fresh dill and/or 1-2 tablespoons chopped fresh cilantro before filling. Other traditional herb options include tarragon (the classic Georgian choice, tarkhunit), flat-leaf parsley, or a pinch of ground coriander seed.",
-                {"html": "Shortcut: substitute 12 oz store-bought pizza dough or one ball of <a href=\"baking.html#baking-savory-72-hour-pizza-dough\">72-Hour Pizza Dough</a> in place of the handmade dough -- skip steps 1-2 and proceed directly to step 3."}
+                {
+                  "html": "Shortcut: substitute 12 oz store-bought pizza dough or one ball of <a href=\"baking.html#baking-savory-72-hour-pizza-dough\">72-Hour Pizza Dough</a> in place of the handmade dough -- skip steps 1-2 and proceed directly to step 3."
+                }
               ],
               "ingredientGroups": [
                 {
@@ -18491,7 +19264,7 @@ module.exports = {
                   "Using a spoon, make a shallow 2-inch-wide well in the center of the hot cheese. Add the egg yolk and cold butter. Serve immediately: hold one pointed end of the bread with a fork and use a second fork to quickly stir the egg and butter into the cheese until smooth and stretchy. Tear off pieces of the bread boat to dip in the cheese."
                 ]
               }
-            }            ,
+            },
             {
               "title": "Scallion Pancakes",
               "servings": "Makes 8 pancakes (serves 4-6)   |   Total: 2 hours (including 1 hour rest)",
@@ -18793,21 +19566,27 @@ module.exports = {
               "servings": "Serves 6   |   Active: 15 minutes   |   Total: 45 minutes (plus dough rising time)",
               "source": "Bon Appetit (Alfia Muzio), September 2014",
               "comments": [
-                {"html": "The leavening is in the <a href=\"baking.html#baking-savory-grandma-style-pizza-dough\">Grandma-Style Pizza Dough</a>. At high altitude, use the high-altitude adjusted dough."},
+                {
+                  "html": "The leavening is in the <a href=\"baking.html#baking-savory-grandma-style-pizza-dough\">Grandma-Style Pizza Dough</a>. At high altitude, use the high-altitude adjusted dough."
+                },
                 "For a spicier pie, use twice as much hot soppressata and omit the sweet."
               ],
               "ingredientGroups": [
                 {
                   "label": "Dough",
                   "ingredients": [
-                    {"html": "1 recipe <a href=\"baking.html#baking-savory-grandma-style-pizza-dough\">Grandma-Style Pizza Dough</a>, risen on an 18x13-inch baking sheet"}
+                    {
+                      "html": "1 recipe <a href=\"baking.html#baking-savory-grandma-style-pizza-dough\">Grandma-Style Pizza Dough</a>, risen on an 18x13-inch baking sheet"
+                    }
                   ]
                 },
                 {
                   "label": "Toppings",
                   "ingredients": [
                     "12 oz fresh mozzarella, grated (about 2 1/2 cups)",
-                    {"html": "1 cup <a href=\"sauces.html#sauces-italian-fresh-tomato-pizza-sauce\">Fresh Tomato Pizza Sauce</a>"},
+                    {
+                      "html": "1 cup <a href=\"sauces.html#sauces-italian-fresh-tomato-pizza-sauce\">Fresh Tomato Pizza Sauce</a>"
+                    },
                     "2 oz thinly sliced hot soppressata",
                     "2 oz thinly sliced sweet soppressata",
                     "1/2 fennel bulb, thinly sliced",
@@ -18836,7 +19615,7 @@ module.exports = {
         }
       ]
     },
-        {
+    {
       "title": "Dairy",
       "recipes": [
         {
@@ -18899,9 +19678,121 @@ module.exports = {
           ],
           "comments": [
             "Maintain a 5:1 cream-to-buttermilk ratio to scale up. Creme fraiche is richer and more stable than sour cream when cooked (less prone to curdling). Also excellent stirred into pan sauces or served as a topping.",
-            {"html": "Used in <a href=\"baking.html#baking-sweet-squirls-sourdough-scones\">Sqirl’s Sourdough Scones</a>. Store-bought creme fraiche can be substituted."}
+            {
+              "html": "Used in <a href=\"baking.html#baking-sweet-squirls-sourdough-scones\">Sqirl’s Sourdough Scones</a>. Store-bought creme fraiche can be substituted."
+            }
           ],
           "source": "Traditional method"
+        },
+        {
+          "title": "Clotted Cream",
+          "servings": "Makes about 1 cup   |   Total: about 24 hours (mostly hands-off)",
+          "source": "Tasting Table (Catherine Brookes)",
+          "comments": [
+            "Use non-ultra-pasteurized heavy cream -- ultra-pasteurized cream will not clot properly.",
+            "Serve with scones and jam.",
+            "The thin watery liquid beneath the clotted layer (the whey) can be saved for baking."
+          ],
+          "ingredientGroups": [
+            {
+              "ingredients": [
+                "1 (500ml / about 2 cups) carton heavy cream (not ultra-pasteurized)"
+              ]
+            }
+          ],
+          "steps": [
+            "Pour cream into a wide, shallow baking dish -- an 8 or 9-inch square dish works well. The cream should be about 1 inch deep.",
+            "Bake uncovered at 180 degrees F for 10 to 12 hours (or overnight). Do not stir. The top will develop a golden-yellow crust.",
+            "Remove from oven. Cool completely at room temperature, then refrigerate for at least 8 to 12 hours (or overnight).",
+            "Scrape the thick clotted cream layer from the top into a bowl, including the golden crust. Stir gently to combine.",
+            "Cover and refrigerate up to 1 week."
+          ]
+        },
+        {
+          "title": "Coconut Ice Cream",
+          "servings": "Makes about 1 quart   |   Total: 1 hour active + at least 5 hours chilling and freezing",
+          "source": "Self Proclaimed Foodie (Krissy Allori)",
+          "comments": [
+            "Requires an ice cream maker.",
+            "The shredded coconut can be strained out before mixing with the yolks for a smoother texture, or left in for more chew.",
+            "To prevent ice crystals: add 1 tablespoon vodka or coconut-flavored rum to the custard before freezing.",
+            "Homemade ice cream needs 10 to 15 minutes on the counter to soften before serving."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Custard base",
+              "ingredients": [
+                "6 large egg yolks",
+                "3/4 cup granulated sugar"
+              ]
+            },
+            {
+              "label": "Coconut cream",
+              "ingredients": [
+                "1 cup sweetened shredded coconut",
+                "1 cup half-and-half",
+                "1 cup heavy cream",
+                "1 cup canned coconut milk",
+                "1 (14 oz) can coconut cream"
+              ]
+            }
+          ],
+          "steps": [
+            "Whisk egg yolks and sugar in a large bowl until light and fluffy. Set aside.",
+            "In a medium heavy saucepan over medium-high heat, stir shredded coconut constantly until it begins to brown, about 7 minutes -- watch carefully to prevent burning. Add half-and-half, heavy cream, coconut milk, and coconut cream. Heat until the mixture just begins to simmer (scalding point); do not let it boil. Remove from heat.",
+            "Slowly pour the hot coconut mixture into the egg yolk mixture, starting with a small amount while whisking constantly to temper the eggs. Once enough has been added to warm the yolks, add the rest, always whisking. Pour everything back into the saucepan.",
+            "Set over medium-low heat. Cook, stirring slowly and continuously with a spatula, until the custard thickens enough to coat the spatula and a finger drawn across it leaves a clean trail, about 5 minutes. Do not let it boil.",
+            "Pour custard through a fine strainer into a clean bowl and set over an ice bath. Stir occasionally until cooled to room temperature. Refrigerate until cold, at least 1 hour (or overnight).",
+            "Freeze in an ice cream maker per manufacturer's instructions (may need two batches). Transfer to a freezer-safe container and freeze until firm, at least 4 hours. Let sit at room temperature 10 to 15 minutes before scooping."
+          ]
+        },
+        {
+          "title": "Paneer",
+          "servings": "Makes about 11 oz   |   Total: 2.5 to 3 hours (15 min active + 1 to 2 hours pressing)",
+          "source": "Healthy Nibbles and Bits (Lisa Lin)",
+          "comments": [
+            "Lemon juice produces a slightly tangy paneer; white vinegar makes a more neutral block.",
+            "The longer you press, the firmer the paneer -- press longer for frying, shorter for crumbling into dishes.",
+            "Refrigerate submerged in water up to 1 week, or freeze."
+          ],
+          "ingredientGroups": [
+            {
+              "ingredients": [
+                "8 cups whole milk",
+                "6 tablespoons fresh lemon juice or white vinegar"
+              ]
+            }
+          ],
+          "steps": [
+            "Pour milk into a large heavy-bottomed pot. Heat over medium heat, stirring occasionally to prevent scorching, until the milk comes to a full boil and foams up, 10 to 15 minutes.",
+            "Remove from heat. Add lemon juice or vinegar and stir gently for 1 to 2 minutes. Curds will form and separate from the yellowish-green whey. If the curds are not separating, return briefly to low heat and stir.",
+            "Line a colander with two layers of cheesecloth and set over a bowl. Pour curds and whey through the cheesecloth. Rinse curds briefly with cool water. Pull the corners of the cheesecloth together and press or squeeze out as much moisture as possible.",
+            "Fold the cheesecloth around the curds to form a tight block. Place on a plate, set another plate on top, and weigh it down with something heavy (a cast iron pan, cans). Press for 1 to 2 hours until firm.",
+            "Unwrap and use immediately, or refrigerate submerged in water up to 1 week, or freeze."
+          ]
+        },
+        {
+          "title": "Ghee",
+          "servings": "Makes slightly less than 1 pound   |   Total: about 12 min",
+          "source": "Food Network (Alton Brown)",
+          "comments": [
+            "Watch carefully during the second foam -- it can burn quickly.",
+            "Store at room temperature up to 1 month, or refrigerate up to 1 year."
+          ],
+          "ingredientGroups": [
+            {
+              "ingredients": [
+                "1 pound unsalted butter"
+              ]
+            }
+          ],
+          "steps": [
+            "Cut butter into pieces and place in a medium saucepan over medium heat. Melt completely.",
+            "Continue cooking over medium heat, stirring occasionally. The butter will foam (first foam), then the foam will subside. Continue cooking -- it will foam a second time.",
+            "When the second foam appears and the milk solids on the bottom have turned light golden brown, remove from heat immediately. (Total: 10 to 12 min. Watch carefully -- it can burn quickly.)",
+            "Strain through a cheesecloth-lined fine-mesh strainer into a clean glass jar. Discard the milk solids.",
+            "Cool completely before sealing. Store at room temperature up to 1 month, or refrigerate up to 1 year."
+          ]
         }
       ]
     },
@@ -19188,7 +20079,9 @@ module.exports = {
               "servings": "Serves 8",
               "source": "Tamara Andersen / Beyond Mere Sustenance",
               "comments": [
-                {"html": "There is no substitute for preserved lemons -- the fermented flavor is unique. Make your own (see <a href='preserves-pickles.html#preserved-lemons'>Preserved Lemons</a> in the Preserves & Pickles section) or find them at Middle Eastern grocery stores."},
+                {
+                  "html": "There is no substitute for preserved lemons -- the fermented flavor is unique. Make your own (see <a href='preserves-pickles.html#preserved-lemons'>Preserved Lemons</a> in the Preserves & Pickles section) or find them at Middle Eastern grocery stores."
+                },
                 "Pairs well with tagines, roasted chicken, grain salads, and harissa dishes."
               ],
               "ingredientGroups": [
@@ -19453,7 +20346,9 @@ module.exports = {
               "source": "Bon Appetit (Andy Baraghani), January 2018",
               "comments": [
                 "Use whatever fresh chiles you can find, but the sauce should have real heat. Jalapenos work in a pinch but are milder.",
-                {"html": "Excellent with sandwiches, over grilled meats, roasted potatoes, and with <a href=\"baking.html#baking-bread-flaky-bread-malawah\">Flaky Bread (Malawah)</a>."},
+                {
+                  "html": "Excellent with sandwiches, over grilled meats, roasted potatoes, and with <a href=\"baking.html#baking-bread-flaky-bread-malawah\">Flaky Bread (Malawah)</a>."
+                },
                 "Do ahead: sauce (without lemon juice) can be made 1 day ahead. Cover and refrigerate. Let come to room temperature, then stir in lemon juice before serving.",
                 "Special equipment: spice mill or mortar and pestle."
               ],
@@ -19692,6 +20587,72 @@ module.exports = {
             "The next day, transfer the salted lemons and all accumulated juices to a large sterilized canning jar (a 2-liter jar works well). Press firmly down. Add peppercorns and bay leaves. Pour in fresh lemon juice to fully submerge the lemons.",
             "Seal tightly and refrigerate for 3 to 4 weeks before using."
           ]
+        },
+        {
+          "title": "Fig Jam",
+          "servings": "Makes 1 1/2 cups   |   Total: about 30 min active + 1 hour cooling",
+          "source": "Foodal",
+          "comments": [
+            "Refrigerate up to 10 days, or freeze for up to 3 months. This is a quick refrigerator jam, not a shelf-stable canned product.",
+            "Also excellent as a sweet-savory accompaniment to cheese and charcuterie."
+          ],
+          "ingredientGroups": [
+            {
+              "ingredients": [
+                "1 pound fresh black figs, stems removed",
+                "3/4 cup granulated sugar",
+                "1/4 cup water",
+                "2 teaspoons fresh lemon juice (about 1/2 small lemon)"
+              ]
+            }
+          ],
+          "steps": [
+            "Puree the stemmed figs in a food processor until mostly smooth (a few chunks are fine for texture).",
+            "Transfer fig paste to a medium heavy-bottomed pot (not cast iron). Stir in sugar, water, and lemon juice. Bring to a boil over medium-high heat, then reduce to medium.",
+            "Boil, stirring nearly constantly, until the jam has thickened and looks shiny -- it should fall off a spoon in clumps or sheets rather than small drips. To test: spoon a small amount onto a cold plate, wait 1 minute, and check the consistency. Return to heat for a few more minutes if needed.",
+            "Carefully pour into a clean jar. Loosely set the lid (do not tighten while hot -- it can stick). Cool for about 1 hour at room temperature, then refrigerate. Tighten lid once fully cool."
+          ]
+        },
+        {
+          "title": "Slow Cooker Apple Butter",
+          "servings": "Makes 4 pints   |   Total: 12 hours 30 min",
+          "source": "My Baking Addiction (Jamie)",
+          "comments": [
+            "Best made with a mix of apple varieties (Granny Smith, Fuji, Honeycrisp). Sweeter apples need less sugar.",
+            "Refrigerate up to 2 weeks or freeze up to 3 months."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Apples",
+              "ingredients": [
+                "6 1/2 pounds apples, peeled, cored, and sliced"
+              ]
+            },
+            {
+              "label": "Spiced sugar",
+              "ingredients": [
+                "1 cup granulated sugar",
+                "1 cup light brown sugar, lightly packed",
+                "1 tablespoon ground cinnamon",
+                "1/2 teaspoon freshly grated nutmeg",
+                "1/4 teaspoon ground cloves",
+                "1/4 teaspoon salt"
+              ]
+            },
+            {
+              "label": "Finish",
+              "ingredients": [
+                "1 tablespoon pure vanilla extract"
+              ]
+            }
+          ],
+          "steps": [
+            "Place apples in slow cooker. Combine sugars, cinnamon, nutmeg, cloves, and salt in a bowl; pour over apples and mix well.",
+            "Cook on low for about 10 hours, stirring occasionally, until thick and dark brown.",
+            "Uncover; stir in vanilla. Continue cooking uncovered on low for about 2 hours.",
+            "Puree with an immersion blender until smooth.",
+            "Spoon into sterile containers. Refrigerate up to 2 weeks or freeze up to 3 months."
+          ]
         }
       ]
     },
@@ -19836,7 +20797,7 @@ module.exports = {
             ]
           }
         },
-{
+        {
           "title": "Cherry Cobbler With Lemon-Cream Biscuits",
           "servings": "Serves 8",
           "ingredientGroups": [
@@ -19878,15 +20839,15 @@ module.exports = {
             "Whisk flour, granulated sugar, baking powder, lemon zest, and salt in a medium bowl. Add chilled butter; toss to coat. Smash butter into flour with fingertips until largest pieces are about pea-sized.",
             "Stream in chilled cream while tossing constantly with a fork until distributed. Fold with a bench scraper until dough comes together into a mass.",
             "Turn out onto a generously floured surface. Pat into a 3/4-inch-thick rectangle with floured hands. Cut into 4 pieces; stack on top of each other. Roll out to 1/2-inch thick. Using a 1 1/2-inch cutter, punch out biscuits as closely as possible, dipping cutter in flour often. You should get about 40 biscuits. Gather scraps, reroll, and punch out more. Chill until ready to use.",
-            "Place rack in middle of oven; preheat to 400\u00b0F. Mix cherries, granulated sugar, lemon juice, cornstarch, vanilla, cinnamon, almond extract, and salt in a large bowl. Scrape into a 2-quart baking dish or 9-inch cake pan with 2-inch sides; press down firmly to compact. Place on a foil-lined rimmed baking sheet.",
+            "Place rack in middle of oven; preheat to 400°F. Mix cherries, granulated sugar, lemon juice, cornstarch, vanilla, cinnamon, almond extract, and salt in a large bowl. Scrape into a 2-quart baking dish or 9-inch cake pan with 2-inch sides; press down firmly to compact. Place on a foil-lined rimmed baking sheet.",
             "Arrange chilled biscuits over filling, fitting snugly so they're touching. Brush generously with melted butter; sprinkle with raw sugar.",
-            "Bake 10 minutes. Reduce heat to 350\u00b0F; bake until filling is actively bubbling through the center and biscuits are deep golden brown, 50\u201365 minutes more. Let rest at least 20\u201330 minutes before serving. Serve with vanilla ice cream or whipped cream."
+            "Bake 10 minutes. Reduce heat to 350°F; bake until filling is actively bubbling through the center and biscuits are deep golden brown, 50–65 minutes more. Let rest at least 20–30 minutes before serving. Serve with vanilla ice cream or whipped cream."
           ],
           "comments": [
             "Can be baked 1 day ahead; store tightly covered at room temperature.",
             "Special equipment: 1 1/2-inch round cookie cutter."
           ],
-          "source": "Claire Saffitz / Bon App\u00e9tit (June 2019)",
+          "source": "Claire Saffitz / Bon Appétit (June 2019)",
           "highAltitude": {
             "ingredientGroups": [
               {
@@ -19918,7 +20879,9 @@ module.exports = {
               },
               {
                 "label": "To serve",
-                "ingredients": ["Vanilla ice cream or softly whipped cream"]
+                "ingredients": [
+                  "Vanilla ice cream or softly whipped cream"
+                ]
               }
             ]
           }
@@ -19948,9 +20911,9 @@ module.exports = {
             "Refrigerate at least 1 hour before serving."
           ]
         },
-{
+        {
           "title": "Cinnamon Raisin Bagel Bread Pudding",
-          "servings": "Serves 6\u20139",
+          "servings": "Serves 6–9",
           "ingredientGroups": [
             {
               "label": "Custard",
@@ -19980,8 +20943,8 @@ module.exports = {
           ],
           "steps": [
             "Grease a 9-inch square baking pan. Add bagel pieces. Whisk milk, eggs, cinnamon, vanilla, and salt together; pour over bagels. Gently press bagels into the mixture to ensure they're all soaked. Scatter raisins over top if using. Cover and refrigerate overnight.",
-            "In the morning, preheat oven to 350\u00b0F. Remove pan from refrigerator while oven heats. Dot top with butter pieces; sprinkle with brown sugar.",
-            "Bake 30 minutes until center is set with crunchy edges (center should be moist but no liquid egg visible \u2014 not dry).",
+            "In the morning, preheat oven to 350°F. Remove pan from refrigerator while oven heats. Dot top with butter pieces; sprinkle with brown sugar.",
+            "Bake 30 minutes until center is set with crunchy edges (center should be moist but no liquid egg visible — not dry).",
             "Serve warm, sprinkled with powdered sugar and/or drizzled with maple syrup."
           ],
           "comments": [
@@ -20027,7 +20990,7 @@ module.exports = {
             "Fold pudding mixture into the whipped cream. In a large serving bowl, start with a layer of vanilla wafers, then sliced bananas, then pudding. Repeat layers until ingredients are used up. Refrigerate overnight so wafers soften."
           ]
         },
-{
+        {
           "title": "Maple-Honey Pecan Pie",
           "servings": "Serves 8",
           "ingredientGroups": [
@@ -20035,7 +20998,9 @@ module.exports = {
               "label": "Crust",
               "ingredients": [
                 "All-purpose flour, for rolling",
-                {"html": "Dough for one 9-inch single-crust pie (see <a href=\"baking.html#baking-sweet-all-shortening-pie-crust\">All-Shortening Pie Crust</a>)"}
+                {
+                  "html": "Dough for one 9-inch single-crust pie (see <a href=\"baking.html#baking-sweet-all-shortening-pie-crust\">All-Shortening Pie Crust</a>)"
+                }
               ]
             },
             {
@@ -20062,10 +21027,10 @@ module.exports = {
           ],
           "steps": [
             "On a lightly floured surface, roll dough into a 12-inch circle; transfer to a 9-inch metal pie plate. Fold excess dough over and crimp the edges. Freeze 30 minutes or up to 24 hours.",
-            "Place a rimmed baking sheet on the middle oven rack; heat oven to 400\u00b0F.",
-            "Melt butter in a small saucepan over medium heat, swirling occasionally, until foam subsides and milk solids turn golden brown and smell nutty, about 5 minutes. Add maple syrup; cook, stirring, until mixture thickens slightly, 2\u20133 minutes. Remove from heat; whisk in honey. Cool at least 10 minutes.",
+            "Place a rimmed baking sheet on the middle oven rack; heat oven to 400°F.",
+            "Melt butter in a small saucepan over medium heat, swirling occasionally, until foam subsides and milk solids turn golden brown and smell nutty, about 5 minutes. Add maple syrup; cook, stirring, until mixture thickens slightly, 2–3 minutes. Remove from heat; whisk in honey. Cool at least 10 minutes.",
             "In a large bowl, combine both sugars, eggs, bourbon (if using), vanilla, and salt. Gradually pour the syrup mixture into the egg mixture, whisking constantly; scrape in all brown bits from the bottom of the pot.",
-            "Remove crust from freezer; scatter pecans over the bottom. Pour filling over pecans. Set pie plate on the hot baking sheet and bake 10 minutes. Reduce heat to 350\u00b0F; bake 35\u201345 minutes more until center has puffed up and turned golden brown.",
+            "Remove crust from freezer; scatter pecans over the bottom. Pour filling over pecans. Set pie plate on the hot baking sheet and bake 10 minutes. Reduce heat to 350°F; bake 35–45 minutes more until center has puffed up and turned golden brown.",
             "Transfer to a wire rack; sprinkle with flaky sea salt if desired. Cool at least 2 hours before serving. Keeps at room temperature 24+ hours; freezes up to 3 months."
           ],
           "comments": [
@@ -20174,14 +21139,16 @@ module.exports = {
             ]
           }
         },
-{
+        {
           "title": "Mixed Berry Pie",
           "servings": "Serves 8",
           "ingredientGroups": [
             {
               "label": "Crust",
               "ingredients": [
-                {"html": "2 disks <a href=\"baking.html#baking-sweet-all-shortening-pie-crust\">All-Shortening Pie Crust</a>"}
+                {
+                  "html": "2 disks <a href=\"baking.html#baking-sweet-all-shortening-pie-crust\">All-Shortening Pie Crust</a>"
+                }
               ]
             },
             {
@@ -20209,9 +21176,9 @@ module.exports = {
           "steps": [
             "Prepare the All-Shortening Pie Crust (double batch). Divide into 2 portions, one slightly larger. Shape each into a disk; cover and refrigerate 1 hour or overnight.",
             "Whisk sugar, cornstarch, salt, 1/3 cup water, and cinnamon (if using) in a large saucepan until smooth; add blueberries. Bring to a boil; cook, stirring, 2 minutes until thickened. Cool slightly.",
-            "Preheat oven to 400\u00b0F. Gently fold raspberries, strawberries, blackberries, and lemon juice into the blueberry mixture. Roll out the larger dough portion to 1/8-inch thickness; transfer to a 9-inch pie plate. Trim crust to 1/2 inch beyond rim. Add filling; dot with butter.",
+            "Preheat oven to 400°F. Gently fold raspberries, strawberries, blackberries, and lemon juice into the blueberry mixture. Roll out the larger dough portion to 1/8-inch thickness; transfer to a 9-inch pie plate. Trim crust to 1/2 inch beyond rim. Add filling; dot with butter.",
             "Roll remaining dough to 1/8-inch thickness; cut into 1/2-inch-wide strips. Arrange in a lattice pattern over filling; trim and seal edges; flute. Bake 10 minutes.",
-            "Reduce heat to 350\u00b0F; bake 45\u201350 minutes until crust is golden brown and filling is bubbly. Cool on a wire rack."
+            "Reduce heat to 350°F; bake 45–50 minutes until crust is golden brown and filling is bubbly. Cool on a wire rack."
           ],
           "source": "Elaine Moody / Taste of Home"
         },
@@ -20430,9 +21397,9 @@ module.exports = {
             ]
           }
         },
-{
+        {
           "title": "Disney Magical Churros",
-          "servings": "Makes about 12\u201315 churros",
+          "servings": "Makes about 12–15 churros",
           "ingredientGroups": [
             {
               "label": "Dough",
@@ -20462,7 +21429,7 @@ module.exports = {
           "steps": [
             "Combine water, butter, salt, and cinnamon in a medium saucepan over medium heat. Bring to a boil; once butter melts and mixture is boiling, add flour all at once and stir vigorously until a smooth dough forms and pulls away from the pan. Remove from heat; let cool 3 minutes.",
             "Beat in eggs one at a time, stirring vigorously after each until fully incorporated. Dough should be thick, smooth, and sticky.",
-            "Transfer dough to a piping bag fitted with a large star tip. Heat about 2 inches of oil in a heavy pot to 375\u00b0F. Pipe dough into 3-inch strips; fry until deep golden brown, turning once, about 3\u20134 minutes total. Remove; drain on paper towels briefly.",
+            "Transfer dough to a piping bag fitted with a large star tip. Heat about 2 inches of oil in a heavy pot to 375°F. Pipe dough into 3-inch strips; fry until deep golden brown, turning once, about 3–4 minutes total. Remove; drain on paper towels briefly.",
             "Mix cinnamon and sugar in a shallow bowl. Toss warm churros in cinnamon sugar, or serve with a dipping sauce."
           ],
           "comments": [
@@ -20625,15 +21592,15 @@ module.exports = {
             "Dust with remaining 1 tablespoon cocoa powder. Cover and refrigerate at least 4 hours, ideally 24. Top with shaved or grated chocolate just before serving."
           ]
         },
-{
+        {
           "title": "Foolproof Tarte Tatin",
           "servings": "Serves 8",
           "favorite": true,
           "ingredientGroups": [
             {
-              "label": "Apples (1\u20133 days ahead)",
+              "label": "Apples (1–3 days ahead)",
               "ingredients": [
-                "6\u20138 large firm-fleshed apples, a mix of Braeburn, Honeycrisp, and Granny Smith"
+                "6–8 large firm-fleshed apples, a mix of Braeburn, Honeycrisp, and Granny Smith"
               ]
             },
             {
@@ -20651,17 +21618,17 @@ module.exports = {
             }
           ],
           "steps": [
-            "At least 1 day ahead: slice off the bottom of each apple so it sits flat. Peel and quarter; trim cores and seeds. Transfer to a bowl; refrigerate lightly covered 1\u20133 days. (Reduces liquid in the tart; apples may brown slightly \u2014 that's fine.)",
-            "Heat oven to 375\u00b0F (or 350\u00b0F convection). Thickly coat the bottom of a 10-inch heavy ovenproof skillet (preferably nonstick metal) with butter. Sprinkle sugar evenly on top.",
-            "Cut one piece of apple into a thick round disk; place in the center as the \u201cbutton.\u201d Arrange remaining apple pieces standing on their flat ends in tight concentric circles, like petals of a flower, packing closely so they support one another.",
+            "At least 1 day ahead: slice off the bottom of each apple so it sits flat. Peel and quarter; trim cores and seeds. Transfer to a bowl; refrigerate lightly covered 1–3 days. (Reduces liquid in the tart; apples may brown slightly — that's fine.)",
+            "Heat oven to 375°F (or 350°F convection). Thickly coat the bottom of a 10-inch heavy ovenproof skillet (preferably nonstick metal) with butter. Sprinkle sugar evenly on top.",
+            "Cut one piece of apple into a thick round disk; place in the center as the “button.” Arrange remaining apple pieces standing on their flat ends in tight concentric circles, like petals of a flower, packing closely so they support one another.",
             "On a floured surface, roll puff pastry to about 1/8-inch thick. Cut a circle the same diameter as the top of the skillet. Drape over apples; tuck pastry down around the edges, hugging the apple pieces together.",
             "Place skillet on stovetop over medium heat until golden-brown juice begins to bubble around the edges, about 3 minutes. (Spoon out any excess juices if they rise too high.) Raise heat so juices are at a boil; cook until juices darken and smell caramelized, no more than 10 minutes.",
-            "Transfer skillet to oven; bake 45\u201350 minutes until puff pastry is browned and firm.",
-            "Let cool 5 minutes. Carefully invert onto a round serving plate. (Or cool completely in the pan and rewarm 15 minutes in a 350\u00b0F oven before inverting.) If any apples stick, retrieve and rearrange. Serve warm in wedges with heavy cream, creme fraiche, or vanilla ice cream."
+            "Transfer skillet to oven; bake 45–50 minutes until puff pastry is browned and firm.",
+            "Let cool 5 minutes. Carefully invert onto a round serving plate. (Or cool completely in the pan and rewarm 15 minutes in a 350°F oven before inverting.) If any apples stick, retrieve and rearrange. Serve warm in wedges with heavy cream, creme fraiche, or vanilla ice cream."
           ],
           "source": "Ron Paprocki, adapted by Julia Moskin / NYT Cooking"
         },
-{
+        {
           "title": "Pan-Baked Lemon Almond Tart",
           "servings": "Serves 4",
           "ingredientGroups": [
@@ -20691,20 +21658,22 @@ module.exports = {
             }
           ],
           "steps": [
-            "Heat oven to 400\u00b0F. In a bowl, whisk together eggs, sugar, salt, ground almonds, cream, sliced almonds, lemon zest, and lemon juice.",
-            "Melt butter in an 8-inch ovenproof skillet over low heat. When foam subsides, pour in the almond mixture, tilting to distribute evenly. Cook on stovetop until edges just begin to set. Transfer to oven and bake until set, 10\u201315 minutes.",
+            "Heat oven to 400°F. In a bowl, whisk together eggs, sugar, salt, ground almonds, cream, sliced almonds, lemon zest, and lemon juice.",
+            "Melt butter in an 8-inch ovenproof skillet over low heat. When foam subsides, pour in the almond mixture, tilting to distribute evenly. Cook on stovetop until edges just begin to set. Transfer to oven and bake until set, 10–15 minutes.",
             "Briefly run under the broiler, about 1 minute, until just golden on top. Sprinkle with powdered sugar and additional sliced almonds; serve immediately."
           ],
           "source": "Mark Bittman / NYT Cooking"
         },
-{
+        {
           "title": "Passover Profiteroles With Strawberries",
           "servings": "Makes about 2 dozen profiteroles",
           "ingredientGroups": [
             {
               "label": "Cream puff shells",
               "ingredients": [
-                {"html": "1 batch <a href=\"baking.html#baking-sweet-passover-cream-puff-shells\">Passover Cream Puff Shells</a>"}
+                {
+                  "html": "1 batch <a href=\"baking.html#baking-sweet-passover-cream-puff-shells\">Passover Cream Puff Shells</a>"
+                }
               ]
             },
             {
@@ -20734,15 +21703,15 @@ module.exports = {
             {
               "label": "Garnish",
               "ingredients": [
-                "3\u20134 teaspoons minced raw pistachios"
+                "3–4 teaspoons minced raw pistachios"
               ]
             }
           ],
           "steps": [
-            "Combine chocolate and 1/2 cup water in a small heavy saucepan over low heat, stirring often, until melted and smooth, about 3 minutes. Remove from heat; stir in butter and vanilla. (Makes 1 cup; keeps covered and refrigerated 3\u20135 days. Rewarm before using.)",
+            "Combine chocolate and 1/2 cup water in a small heavy saucepan over low heat, stirring often, until melted and smooth, about 3 minutes. Remove from heat; stir in butter and vanilla. (Makes 1 cup; keeps covered and refrigerated 3–5 days. Rewarm before using.)",
             "In a large chilled bowl, whip cream with sugar and vanilla at medium-high speed until stiff. Refrigerate until ready to use, up to 30 minutes.",
             "Slice strawberries into thick lengthwise slices (about 4 cups). Place in a bowl, sprinkle with 2 tablespoons sugar, and mix gently. Refrigerate until ready to use, up to 30 minutes.",
-            "Using a serrated knife, cut off the top half of each puff and reserve as a \u201chat.\u201d",
+            "Using a serrated knife, cut off the top half of each puff and reserve as a “hat.”",
             "Pipe whipped cream generously onto the bottom of each puff using a pastry bag fitted with a large star tip. Top with a layer of strawberries, allowing them to extend slightly over the edges. Pipe another layer of whipped cream over the berries. Set the pastry hat on top.",
             "Drizzle with chocolate sauce (reheat over low heat if too thick). Garnish each with a pinch of minced pistachios. Serve immediately."
           ],
@@ -20750,6 +21719,62 @@ module.exports = {
             "For Passover and pareve serving, substitute non-dairy whipping cream and margarine in the chocolate sauce; use vanilla sugar if kosher-for-Passover vanilla extract is unavailable."
           ],
           "source": "Faye Levy / Los Angeles Times"
+        },
+        {
+          "title": "Old-Fashioned Butterscotch Pudding",
+          "servings": "Serves 4   |   Total: 30 min + 2 hours chilling",
+          "source": "New York Times (Melissa Clark)",
+          "comments": [
+            "Bring the pudding to a FULL boil to activate the cornstarch -- undercooking is the most common reason pudding doesn't set.",
+            "Choose bourbon to underscore the caramelized brown sugar notes, or Scotch for a smoky savory contrast."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Egg base",
+              "ingredients": [
+                "4 large egg yolks",
+                "3 tablespoons cornstarch",
+                "1/2 teaspoon fine sea salt"
+              ]
+            },
+            {
+              "label": "Caramel base",
+              "ingredients": [
+                "3/4 cup (165g) packed dark brown sugar",
+                "1 tablespoon unsalted butter"
+              ]
+            },
+            {
+              "label": "Dairy",
+              "ingredients": [
+                "2 cups whole milk",
+                "1 cup heavy cream"
+              ]
+            },
+            {
+              "label": "Flavorings",
+              "ingredients": [
+                "1 tablespoon bourbon or Scotch whisky (optional)",
+                "2 teaspoons vanilla extract"
+              ]
+            },
+            {
+              "label": "To serve",
+              "ingredients": [
+                "Whipped cream, sour cream, or creme fraiche",
+                "Chopped candied ginger, sliced almonds, Demerara sugar, shaved chocolate, cocoa nibs, or flaky sea salt (optional garnishes)"
+              ]
+            }
+          ],
+          "steps": [
+            "Whisk egg yolks, cornstarch, and salt in a large heatproof bowl until smooth with no lumps.",
+            "In a medium pot over medium heat, combine brown sugar and butter, whisking, until the sugar melts, 1 to 2 minutes. Let cook, whisking constantly, until the mixture starts to smell like hot caramel and darkens slightly, about 1 minute longer. Do not walk away.",
+            "Immediately pour the milk and cream into the pot. (It will bubble fiercely and seize up.) Continue cooking, whisking constantly, until the clumps melt, 2 to 4 minutes.",
+            "Slowly whisk about 1/2 cup of the hot cream mixture into the bowl with the egg yolks, whisking until smooth. Whisk in the remaining hot cream mixture. Pour the egg-cream mixture back into the saucepan over medium heat.",
+            "Cook, whisking constantly (especially around the bottom and edges of the pot), until the pudding comes to a full, vigorous boil. Reduce heat to medium-low and cook, stirring constantly, until it thickens enough to mound thickly on the spoon, 4 to 7 minutes. If it looks curdled at any point, whisk vigorously to smooth it out.",
+            "Strain through a fine sieve into a heatproof bowl. Stir in bourbon or Scotch (if using) and vanilla. Press plastic wrap directly onto the surface of the pudding to prevent a skin from forming. Refrigerate until chilled and set, at least 2 hours.",
+            "Serve topped with whipped cream, sour cream, or creme fraiche, and any desired garnishes."
+          ]
         },
         {
           "title": "Mango with Sticky Rice (Khao Neow Mamuang)",
@@ -20959,6 +21984,35 @@ module.exports = {
               ],
               "steps": [
                 "Blend all ingredients until smooth. Serve immediately."
+              ]
+            },
+            {
+              "title": "Sweet and Sour Mix",
+              "servings": "Makes about 3 cups   |   Total: about 15 min + cooling",
+              "source": "Simple Joy (Lisa Longley)",
+              "comments": [
+                "Refrigerate up to 1 week, or freeze up to 1 month."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Simple syrup",
+                  "ingredients": [
+                    "2 cups water",
+                    "1 cup granulated sugar"
+                  ]
+                },
+                {
+                  "label": "Citrus",
+                  "ingredients": [
+                    "1/2 cup fresh lime juice (about 7 limes)",
+                    "1/2 cup fresh lemon juice (about 2 lemons)"
+                  ]
+                }
+              ],
+              "steps": [
+                "Combine water and sugar in a small saucepan over medium heat. Stir until sugar dissolves completely and the mixture comes to a simmer. Remove from heat and cool to room temperature.",
+                "Stir in lime juice and lemon juice.",
+                "Transfer to a jar or bottle. Refrigerate up to 1 week, or freeze up to 1 month."
               ]
             }
           ]

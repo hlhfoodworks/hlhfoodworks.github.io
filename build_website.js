@@ -501,6 +501,37 @@ const CLUSTER_MAP = {
   'Saag Paneer Lasagna':                                 'Indian',
   'Burst Cherry Tomato Orzotto':                         'Italian',
   'Black Pepper Beef and Cabbage Stir-Fry':              'Chinese',
+  // New recipes added 2026-10-01
+  // Soups & Stews
+  'Creamy Tomato Soup':                                  'General',
+  'Pumpkin Soup':                                        'General',
+  'Locro de Zapallo':                                    'Latin/South American',
+  'French Onion Soup':                                   'French/Continental',
+  'Lentil and Orzo Stew With Roasted Eggplant':          'Mediterranean/Greek',
+  'West African Peanut Soup':                            'West African',
+  'Spiced Chickpea Stew With Coconut and Turmeric':      'Indian',
+  'Spicy Thai Kale Soup':                                'Thai',
+  'Spring Hot-and-Sour Soup':                            'Chinese',
+  // Vegetable Sides
+  'Cornbread Dressing With Sausage and Corn Nuts':       'General',
+  // Rice
+  'Spanish Rice':                                        'Latin/South American',
+  'Pink Risotto With Beet Greens and Roasted Beets':     'Italian',
+  'Tomato Risotto':                                      'Italian',
+  'Saffron Rice':                                        'Indian',
+  'Cornbread Stuffing Fried Rice':                       'General',
+  // Dairy
+  'Clotted Cream':                                       'General',
+  'Coconut Ice Cream':                                   'General',
+  'Paneer':                                              'Indian',
+  'Ghee':                                                'Indian',
+  // Preserves & Pickles
+  'Fig Jam':                                             'General',
+  'Slow Cooker Apple Butter':                            'General',
+  // Desserts
+  'Old-Fashioned Butterscotch Pudding':                  'General',
+  // Drinks
+  'Sweet and Sour Mix':                                  'General',
 };
 
 // ── Helpers ────────────────────────────────────────────────────────────────
