@@ -2013,7 +2013,45 @@ function buildPage(section, navHtml, contentHtml, cookbookData) {
 
   // ── Expand all nav menus ─────────────────────────────────────────────
   document.getElementById('expand-all').addEventListener('click', function () {
-    var navState = {};
+    var navState = {  // New recipes added 2026-10-01
+  // Breakfast — General
+  'Best Blueberry Muffins (More Berries Than Batter)':   'General',
+  // Baking: Cookies — General
+  'Brownie Cookies':                                     'General',
+  'Classic Sugar Cookies':                               'General',
+  'Coconut Macaroons':                                   'General',
+  'Fresh Fig Newtons':                                   'General',
+  // Baking: Sweet — General
+  'Chocolate Chip Scones':                               'General',
+  'Doughnut Glazes':                                     'General',
+  'Lemony Glazed Cake Doughnuts':                        'General',
+  'Passover Cream Puff Shells':                          'General',
+  // Baking: Sweet — French/Continental
+  'Frangipane':                                          'French/Continental',
+  // Baking: Sweet — Indian
+  'Chai Cake With Brown-Butter-Ghee Streusel':           'Indian',
+  // Desserts — General
+  'Cherry Cobbler With Lemon-Cream Biscuits':            'General',
+  'Cinnamon Raisin Bagel Bread Pudding':                 'General',
+  'Maple-Honey Pecan Pie':                               'General',
+  'Mixed Berry Pie':                                     'General',
+  // Desserts — Latin/South American
+  'Disney Magical Churros':                              'Latin/South American',
+  // Desserts — French/Continental
+  'Foolproof Tarte Tatin':                               'French/Continental',
+  'Pan-Baked Lemon Almond Tart':                         'French/Continental',
+  'Passover Profiteroles With Strawberries':             'French/Continental',
+  // Desserts — General (additions)
+  'Strawberry Shortcake':                                'General',
+  // Baking > Bread additions
+  'Cinnamon Almond Babka':                               'General',
+  // Baking > Sweet additions
+  "Sqirl's Sourdough Scones":                            'General',
+  "Sqirl's Sourdough Scone Variations":                  'General',
+  'Ube Chiffon Cake':                                    'Filipino',
+  // Dairy additions
+  'Creme Fraiche':                                       'General',
+};
     document.querySelectorAll('.nav-l2, .nav-l3, .nav-l3b, .nav-l4').forEach(function (list) {
       list.classList.remove('collapsed');
       var hd = document.querySelector('[data-toggle="' + list.id + '"]');

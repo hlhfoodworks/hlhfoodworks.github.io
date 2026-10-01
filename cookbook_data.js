@@ -80,6 +80,95 @@ module.exports = {
             "Sprinkle the lemon juice over the pancake(s) and dust with confectioners' sugar. Serve at once, while puffed and hot."
           ]
         },
+{
+          "title": "Best Blueberry Muffins (More Berries Than Batter)",
+          "servings": "Makes 12 muffins",
+          "ingredientGroups": [
+            {
+              "label": "Dry ingredients",
+              "ingredients": [
+                "1 1/4 cups all-purpose flour",
+                "1/2 cup plus 2 tablespoons granulated sugar (reserve 1 tablespoon for topping)",
+                "1/4 cup cornstarch",
+                "2 teaspoons baking powder",
+                "1 1/4 teaspoons kosher salt",
+                "1/4 teaspoon ground cinnamon"
+              ]
+            },
+            {
+              "label": "Berries",
+              "ingredients": [
+                "2 slightly heaping cups (12 oz) fresh or frozen blueberries"
+              ]
+            },
+            {
+              "label": "Wet ingredients",
+              "ingredients": [
+                "1/2 cup whole milk",
+                "2 tablespoons unsalted butter, melted",
+                "1 1/2 teaspoons pure vanilla extract",
+                "1/4 teaspoon almond extract (optional)",
+                "1 large egg"
+              ]
+            },
+            {
+              "label": "Topping",
+              "ingredients": [
+                "1 tablespoon granulated sugar (reserved from above)",
+                "Cold butter, for serving"
+              ]
+            }
+          ],
+          "steps": [
+            "Heat oven to 400\u00b0F. Spray a 12-cup muffin tin with nonstick baking spray, including the flat top around the cups. (Line with cupcake liners if desired.)",
+            "Whisk flour, 1/2 cup plus 2 tablespoons sugar, cornstarch, baking powder, salt, and cinnamon together in a large bowl. Add blueberries; toss to coat.",
+            "Whisk milk, melted butter, vanilla, almond extract (if using), and egg together in a measuring cup. Pour over dry ingredients; fold gently until batter just forms with small lumps \u2014 stop slightly before it looks done.",
+            "Divide batter among muffin cups; sprinkle each with 1/4 teaspoon of reserved sugar. Bake, rotating tin halfway through, until muffins are domed and light golden, 20\u201324 minutes. Cool in tin 5 minutes; remove and serve hot with cold butter."
+          ],
+          "comments": [
+            "Keeps wrapped individually and frozen up to 1 month; thaw overnight, rewarm in 350\u00b0F oven 10 minutes.",
+            "Variations: lemon-blueberry (add 1 lemon's zest to dry ingredients); whole-wheat (replace 3/4 cup flour with whole-wheat); blackberry or raspberry (substitute 2 cups halved blackberries or whole raspberries)."
+          ],
+          "source": "Los Angeles Times",
+          "highAltitude": {
+            "ingredientGroups": [
+              {
+                "label": "Dry ingredients",
+                "ingredients": [
+                  "1 1/4 cups + 2 tablespoons all-purpose flour",
+                  "1/2 cup granulated sugar (reduced from 1/2 cup + 2 tablespoons; keep 1 tablespoon for topping)",
+                  "1/4 cup cornstarch",
+                  "1 1/2 teaspoons baking powder",
+                  "1 1/4 teaspoons kosher salt",
+                  "1/4 teaspoon ground cinnamon"
+                ]
+              },
+              {
+                "label": "Berries",
+                "ingredients": [
+                  "2 slightly heaping cups (12 oz) fresh or frozen blueberries"
+                ]
+              },
+              {
+                "label": "Wet ingredients",
+                "ingredients": [
+                  "1/2 cup whole milk",
+                  "2 tablespoons unsalted butter, melted",
+                  "1 1/2 teaspoons pure vanilla extract",
+                  "1/4 teaspoon almond extract (optional)",
+                  "1 large egg"
+                ]
+              },
+              {
+                "label": "Topping",
+                "ingredients": [
+                  "1 tablespoon granulated sugar (reserved from above)",
+                  "Cold butter, for serving"
+                ]
+              }
+            ]
+          }
+        },
         {
           "title": "Double Chocolate Muffins",
           "servings": "Makes 18 muffins   |   Prep: 15 minutes   |   Bake: 17-18 minutes",
@@ -15156,6 +15245,110 @@ module.exports = {
                   "Remove from oven and immediately brush with melted butter. Cool in the pan 10 minutes, then turn out onto a wire rack. Serve warm."
                 ]
               }
+            },
+            {
+              "title": "Cinnamon Almond Babka",
+              "servings": "Makes 1 loaf",
+              "ingredientGroups": [
+                {
+                  "label": "Dough",
+                  "ingredients": [
+                    "1/2 cup whole milk, heated to 110°F",
+                    "2 large egg yolks",
+                    "1/2 teaspoon vanilla extract",
+                    "1/2 teaspoon almond extract",
+                    "2 cups all-purpose flour, plus more for dusting",
+                    "1/4 cup granulated sugar",
+                    "1 1/2 teaspoons instant yeast",
+                    "1/2 teaspoon salt",
+                    "1/2 cup (1 stick) unsalted butter, cut into 8 pieces, at room temperature"
+                  ]
+                },
+                {
+                  "label": "Cinnamon-Almond Filling",
+                  "ingredients": [
+                    "1 cup packed light brown sugar",
+                    "1/4 cup all-purpose flour",
+                    "2 tablespoons unsalted butter, melted and slightly cooled",
+                    "1 large egg white",
+                    "2 teaspoons ground cinnamon",
+                    "1/2 teaspoon almond extract",
+                    "1/8 teaspoon salt",
+                    "2 oz almond paste"
+                  ]
+                },
+                {
+                  "label": "Egg Wash",
+                  "ingredients": [
+                    "1 large egg yolk",
+                    "1 tablespoon heavy cream or whole milk"
+                  ]
+                }
+              ],
+              "steps": [
+                "Whisk warm milk, egg yolks, vanilla, and almond extract together in a small bowl or measuring cup.",
+                "In a stand mixer fitted with the dough hook, mix flour, sugar, yeast, and salt on low until combined. Slowly pour in milk mixture; mix until dough just comes together, about 3 minutes. Increase to medium-low; add butter 1 tablespoon at a time until incorporated. Continue mixing until dough is smooth and pulls away from the bowl, 10–12 minutes.",
+                "Transfer dough to a large greased bowl; cover loosely. Let rise at room temperature 1 hour (will rise only slightly). Transfer to refrigerator; let rise until firm and doubled, about 1 hour more.",
+                "Combine all filling ingredients except almond paste; stir to combine. Set aside 1 tablespoon of the filling. Break almond paste into very small pieces; set aside.",
+                "Line an 8 1/2- by 4 1/2-inch loaf pan with parchment paper, leaving overhang on the long sides. Punch down dough on a lightly floured surface. Roll out to a 20- by 14-inch rectangle.",
+                "Spread filling evenly over dough, leaving a 1-inch border along one long edge. Scatter almond paste pieces over filling. Starting from the opposite long side, roll dough tightly into a log; pinch seam to seal.",
+                "Using a sharp knife, cut the log in half lengthwise to expose the filling layers. Twist the two halves together with cut sides facing up; tuck ends under and place in prepared pan. Cover loosely; let rise at room temperature until noticeably puffed, 30–60 minutes.",
+                "Preheat oven to 350°F. Whisk egg yolk and cream; brush over the top. Sprinkle reserved 1 tablespoon filling over the top.",
+                "Bake 35–45 minutes until deep golden brown (or internal temperature reaches 190°F). Cool in pan on a wire rack 20 minutes; lift out using the parchment and cool completely before slicing."
+              ],
+              "comments": [
+                "Best on the day baked, but keeps well wrapped at room temperature 2–3 days. Slice and freeze up to 1 month."
+              ],
+              "source": "Itsy Bitsy Kitchen (itsybitsykitchen.com)",
+              "highAltitude": {
+                "ingredientGroups": [
+                  {
+                    "label": "Dough",
+                    "ingredients": [
+                      "1/2 cup whole milk, heated to 110°F",
+                      "2 large egg yolks",
+                      "1/2 teaspoon vanilla extract",
+                      "1/2 teaspoon almond extract",
+                      "2 cups all-purpose flour, plus more for dusting",
+                      "3 tablespoons granulated sugar",
+                      "1 1/8 teaspoons instant yeast",
+                      "1/2 teaspoon salt",
+                      "1/2 cup (1 stick) unsalted butter, cut into 8 pieces, at room temperature"
+                    ]
+                  },
+                  {
+                    "label": "Cinnamon-Almond Filling",
+                    "ingredients": [
+                      "1 cup packed light brown sugar",
+                      "1/4 cup all-purpose flour",
+                      "2 tablespoons unsalted butter, melted and slightly cooled",
+                      "1 large egg white",
+                      "2 teaspoons ground cinnamon",
+                      "1/2 teaspoon almond extract",
+                      "1/8 teaspoon salt",
+                      "2 oz almond paste"
+                    ]
+                  },
+                  {
+                    "label": "Egg Wash",
+                    "ingredients": [
+                      "1 large egg yolk",
+                      "1 tablespoon heavy cream or whole milk"
+                    ]
+                  }
+                ],
+                "steps": [
+                  "Whisk warm milk, egg yolks, vanilla, and almond extract together in a small bowl or measuring cup.",
+                  "In a stand mixer fitted with the dough hook, mix flour, sugar, yeast, and salt on low until combined. Slowly pour in milk mixture; mix until dough just comes together. Increase to medium-low; add butter 1 tablespoon at a time until incorporated. Continue mixing until dough is smooth and pulls from the bowl, 10–12 minutes.",
+                  "Transfer to a large greased bowl; cover loosely. Let rise at room temperature 45 minutes (shorter than sea level; dough rises faster at altitude). Transfer to refrigerator; let rise until firm and doubled, 45–60 minutes.",
+                  "Combine all filling ingredients except almond paste; stir. Set aside 1 tablespoon. Break almond paste into very small pieces; set aside.",
+                  "Line pan with parchment. Punch down dough; roll to 20- by 14-inch rectangle.",
+                  "Spread filling; scatter almond paste pieces. Roll tightly; pinch seam.",
+                  "Cut in half lengthwise; twist halves together; place in pan. Cover; let rise 20–40 minutes only — at altitude, watch for the dough to look noticeably puffed. Do not let it over-proof or it will collapse in the oven.",
+                  "Preheat oven to 350°F. Brush with egg wash; sprinkle reserved filling.",
+                  "Bake 30–40 minutes (begin checking at 30 minutes) until deep golden brown or 190°F internal. Cool 20 minutes in pan; lift out; cool completely before slicing."
+                ]
+              }
             }
           ]
         },
@@ -15242,6 +15435,195 @@ module.exports = {
                   "Tip: Refrigerating the dough for 30 minutes before baking further reduces spreading at altitude."
                 ]
               }
+            },
+{
+              "title": "Brownie Cookies",
+              "servings": "Makes 24 cookies",
+              "ingredientGroups": [
+                {
+                  "label": "Chocolate base",
+                  "ingredients": [
+                    "8 oz (2 four-oz bars) semi-sweet chocolate, coarsely chopped"
+                  ]
+                },
+                {
+                  "label": "Dry ingredients",
+                  "ingredients": [
+                    "3/4 cup all-purpose flour",
+                    "1/4 cup natural unsweetened or Dutch-process cocoa powder",
+                    "1 teaspoon espresso powder",
+                    "1 teaspoon baking powder",
+                    "1/4 teaspoon salt"
+                  ]
+                },
+                {
+                  "label": "Butter and sugars",
+                  "ingredients": [
+                    "5 tablespoons unsalted butter, at room temperature",
+                    "3/4 cup packed light brown sugar",
+                    "1/4 cup granulated sugar",
+                    "2 large eggs, at room temperature",
+                    "1 teaspoon pure vanilla extract"
+                  ]
+                },
+                {
+                  "label": "Mix-ins (optional)",
+                  "ingredients": [
+                    "3/4 cup semi-sweet chocolate chips"
+                  ]
+                }
+              ],
+              "steps": [
+                "Melt chocolate in a double boiler or microwave (in 20-second increments, stirring after each) until smooth. Set aside to cool slightly.",
+                "Whisk flour, cocoa powder, espresso powder, baking powder, and salt together in a medium bowl. Set aside.",
+                "Beat butter, brown sugar, and granulated sugar on medium-high speed until smooth and creamy, about 3 minutes. Add eggs and vanilla; beat on high 2 full minutes. Scrape bowl; beat on high 1 more minute. Pour in cooled chocolate; beat on medium-high 2 full minutes.",
+                "Add dry ingredients and beat on low until combined. Fold in chocolate chips if using.",
+                "Preheat oven to 350\u00b0F and line large baking sheets with parchment. Meanwhile, cover and refrigerate dough 20 minutes. (Quick chill solidifies fats for controlled spread. If chilling longer than 20 minutes, let dough rest at room temperature 15 minutes before baking.)",
+                "Scoop dough into 1.5-tablespoon balls (about 35 grams each). Place 3 inches apart on prepared sheets. Bake 12\u201313 minutes until edges appear set; centers will be soft and will firm as cookies cool.",
+                "Cool 5 minutes on baking sheet, then transfer to wire rack. Store covered at room temperature up to 1 week. Baked cookies and unbaked dough balls both freeze well up to 3 months."
+              ],
+              "comments": [
+                "Espresso powder deepens the chocolate flavor; can skip or substitute 2 teaspoons instant coffee.",
+                "Use pure chocolate baking bars (not chips) for the chocolate base for best results; Ghirardelli recommended."
+              ],
+              "source": "Sally McKenney / Sally's Baking Addiction (sallysbakingaddiction.com)",
+              "highAltitude": {
+                "ingredientGroups": [
+                  {
+                    "label": "Chocolate base",
+                    "ingredients": ["8 oz (2 four-oz bars) semi-sweet chocolate, coarsely chopped"]
+                  },
+                  {
+                    "label": "Dry ingredients",
+                    "ingredients": [
+                      "3/4 cup + 2 tablespoons all-purpose flour",
+                      "1/4 cup natural unsweetened or Dutch-process cocoa powder",
+                      "1 teaspoon espresso powder",
+                      "3/4 teaspoon baking powder",
+                      "1/4 teaspoon salt"
+                    ]
+                  },
+                  {
+                    "label": "Butter and sugars",
+                    "ingredients": [
+                      "5 tablespoons unsalted butter, at room temperature",
+                      "3/4 cup packed light brown sugar",
+                      "3 tablespoons granulated sugar",
+                      "2 large eggs, at room temperature",
+                      "1 teaspoon pure vanilla extract"
+                    ]
+                  },
+                  {
+                    "label": "Mix-ins (optional)",
+                    "ingredients": ["3/4 cup semi-sweet chocolate chips"]
+                  }
+                ]
+              }
+            },
+{
+              "title": "Classic Sugar Cookies",
+              "servings": "Makes about 4\u20135 dozen cutout cookies",
+              "ingredientGroups": [
+                {
+                  "label": "Cookie dough",
+                  "ingredients": [
+                    "1 1/2 cups powdered sugar",
+                    "1 cup salted butter, softened",
+                    "1 teaspoon vanilla extract",
+                    "1/2 teaspoon almond extract",
+                    "1 large egg"
+                  ]
+                },
+                {
+                  "label": "Dry ingredients",
+                  "ingredients": [
+                    "2 1/2 cups all-purpose flour",
+                    "1 teaspoon baking soda",
+                    "1 teaspoon cream of tartar"
+                  ]
+                },
+                {
+                  "label": "Icing",
+                  "ingredients": [
+                    "3 cups powdered sugar",
+                    "4\u20136 tablespoons milk",
+                    "1/4 teaspoon vanilla extract",
+                    "Food coloring (optional)"
+                  ]
+                },
+                {
+                  "label": "Decoration (optional)",
+                  "ingredients": [
+                    "Colored sugar or candy sprinkles"
+                  ]
+                }
+              ],
+              "steps": [
+                "Beat powdered sugar, butter, vanilla, almond extract, and egg on medium speed until smooth and thoroughly blended. Stir in flour, baking soda, and cream of tartar just until combined; do not overmix.",
+                "Divide dough in half; shape each half into a 1-inch-thick flattened disk. Wrap in plastic and refrigerate at least 2 hours or up to 24 hours, until firm and not sticky.",
+                "Heat oven to 375\u00b0F. Working with one disk at a time on a lightly floured surface, roll to 1/4-inch thickness. Cut with 2- to 2 1/2-inch cookie cutters; place at least 2 inches apart on ungreased cookie sheets. (Dip cutter in flour between cuts. To prevent spreading, freeze cut cookies 15 minutes before baking.)",
+                "Bake on the middle rack 7\u20138 minutes until edges are light brown. Cool 1 minute on sheet; transfer to wire rack. Cool completely, about 30 minutes.",
+                "For icing: beat powdered sugar, 4 tablespoons milk, and vanilla until smooth and spreadable, adding more milk 1 teaspoon at a time as needed. Tint with food coloring as desired. Spread over cooled cookies; decorate with colored sugar or sprinkles. Let stand about 4 hours until icing sets.",
+                "Store in an airtight container with waxed paper between layers."
+              ],
+              "source": "Betty Crocker (bettycrocker.com)",
+              "highAltitude": {
+                "ingredientGroups": [
+                  {
+                    "label": "Cookie dough",
+                    "ingredients": [
+                      "1 cup + 6 tablespoons powdered sugar",
+                      "1 cup salted butter, softened",
+                      "1 teaspoon vanilla extract",
+                      "1/2 teaspoon almond extract",
+                      "1 large egg"
+                    ]
+                  },
+                  {
+                    "label": "Dry ingredients",
+                    "ingredients": [
+                      "2 1/2 cups + 5 tablespoons all-purpose flour",
+                      "3/4 teaspoon baking soda",
+                      "3/4 teaspoon cream of tartar"
+                    ]
+                  },
+                  {
+                    "label": "Icing",
+                    "ingredients": [
+                      "3 cups powdered sugar",
+                      "4\u20136 tablespoons milk",
+                      "1/4 teaspoon vanilla extract",
+                      "Food coloring (optional)"
+                    ]
+                  },
+                  {
+                    "label": "Decoration (optional)",
+                    "ingredients": ["Colored sugar or candy sprinkles"]
+                  }
+                ]
+              }
+            },
+{
+              "title": "Coconut Macaroons",
+              "servings": "Makes about 18 cookies",
+              "ingredientGroups": [
+                {
+                  "label": "Cookie base",
+                  "ingredients": [
+                    "1 1/3 cups sweetened shredded coconut",
+                    "1/3 cup granulated sugar",
+                    "2 tablespoons all-purpose flour",
+                    "1/8 teaspoon salt",
+                    "2 large egg whites, at room temperature",
+                    "1/2 teaspoon vanilla extract"
+                  ]
+                }
+              ],
+              "steps": [
+                "Preheat oven to 325\u00b0F. Combine coconut, sugar, flour, and salt in a small bowl. Add egg whites and vanilla; mix well.",
+                "Drop by rounded teaspoonfuls onto greased baking sheets. Bake 18\u201320 minutes until golden brown. Cool on a wire rack."
+              ],
+              "source": "Penny Ann Habeck / Taste of Home"
             },
             {
               "title": "Eric's Chocolate Chip Cookies",
@@ -15345,6 +15727,89 @@ module.exports = {
                 ]
               },
               "id": "erics-chocolate-chip-cookies"
+            },
+{
+              "title": "Fresh Fig Newtons",
+              "servings": "Makes 12\u201318 bar cookies",
+              "ingredientGroups": [
+                {
+                  "label": "Filling (1 hour ahead)",
+                  "ingredients": [
+                    "16 fresh figs, washed, dried, and quartered",
+                    "1/2 cup packed brown sugar",
+                    "1 tablespoon lemon zest",
+                    "1/4 teaspoon coarse salt",
+                    "1 teaspoon vanilla extract"
+                  ]
+                },
+                {
+                  "label": "Dry ingredients",
+                  "ingredients": [
+                    "1 1/2 cups all-purpose flour",
+                    "1 cup whole wheat flour",
+                    "1 teaspoon baking powder",
+                    "1/2 teaspoon salt"
+                  ]
+                },
+                {
+                  "label": "Cookie dough",
+                  "ingredients": [
+                    "3/4 cup (12 tablespoons) unsalted butter, at room temperature",
+                    "1 1/2 cups packed brown sugar",
+                    "1 tablespoon orange zest",
+                    "2 large eggs",
+                    "4 teaspoons vanilla extract"
+                  ]
+                }
+              ],
+              "steps": [
+                "Combine figs, 1/2 cup brown sugar, lemon zest, coarse salt, and 1 teaspoon vanilla in a medium heavy-bottomed saucepan. Bring to a low boil, stirring as needed. Reduce heat; simmer 40\u201350 minutes, occasionally smashing larger pieces with the back of a fork, until mixture cooks down to a jam-like consistency. Remove from heat; cool completely.",
+                "Preheat oven to 350\u00b0F. Butter a 9x13 baking dish; line with parchment or foil and butter the liner generously.",
+                "Whisk both flours, baking powder, and salt together in a medium bowl.",
+                "Beat butter and 1 1/2 cups brown sugar in a large bowl until fluffy. Add orange zest and eggs; beat on medium until dough comes together. Stir in vanilla.",
+                "Gradually incorporate flour mixture on low speed until combined. Dough will be sticky.",
+                "Butter two large pieces of parchment or foil. Measure out 1 1/2 cups of dough; press and roll between the pieces into a rectangle roughly the size of the baking dish. This will be the top crust. Freeze to firm up.",
+                "Press remaining dough evenly into prepared baking dish. Bake about 20 minutes until golden.",
+                "Spread fig filling over baked crust. Peel away parchment from frozen top crust; lay over filling, pressing any stray pieces into place.",
+                "Bake 20\u201325 minutes until top is golden brown. Cool completely in the pan on a wire rack, then lift out using the parchment and slice into squares."
+              ],
+              "comments": [
+                "Filling can be made up to 3 days ahead and refrigerated."
+              ],
+              "source": "Heather Tullos / Sugar Dish Me (sugardishme.com)",
+              "highAltitude": {
+                "ingredientGroups": [
+                  {
+                    "label": "Filling (1 hour ahead)",
+                    "ingredients": [
+                      "16 fresh figs, washed, dried, and quartered",
+                      "7 tablespoons packed brown sugar",
+                      "1 tablespoon lemon zest",
+                      "1/4 teaspoon coarse salt",
+                      "1 teaspoon vanilla extract"
+                    ]
+                  },
+                  {
+                    "label": "Dry ingredients",
+                    "ingredients": [
+                      "1 1/2 cups + 5 tablespoons all-purpose flour",
+                      "1 cup whole wheat flour",
+                      "3/4 teaspoon baking powder",
+                      "1/2 teaspoon salt"
+                    ]
+                  },
+                  {
+                    "label": "Cookie dough",
+                    "ingredients": [
+                      "3/4 cup (12 tablespoons) unsalted butter, at room temperature",
+                      "1 cup + 6 tablespoons packed brown sugar",
+                      "1 tablespoon orange zest",
+                      "2 large eggs",
+                      "4 teaspoons vanilla extract"
+                    ]
+                  }
+                ]
+              }
             },
             {
               "title": "Kitchen Sink Cookies",
@@ -15955,6 +16420,137 @@ module.exports = {
                 ]
               }
             },
+{
+              "title": "Chocolate Chip Scones",
+              "servings": "Makes 8 large scones",
+              "ingredientGroups": [
+                {
+                  "label": "Dry ingredients",
+                  "ingredients": [
+                    "2 cups all-purpose flour, plus more for hands and surface",
+                    "2 1/2 teaspoons baking powder",
+                    "1 teaspoon ground cinnamon",
+                    "1/2 teaspoon salt"
+                  ]
+                },
+                {
+                  "label": "Wet ingredients",
+                  "ingredients": [
+                    "1/2 cup (8 tablespoons) unsalted butter, frozen",
+                    "1/2 cup heavy cream, plus 2 tablespoons for brushing",
+                    "1/2 cup packed light or dark brown sugar",
+                    "1 large egg",
+                    "1 1/2 teaspoons pure vanilla extract",
+                    "1 1/4 cups mini chocolate chips"
+                  ]
+                },
+                {
+                  "label": "Finishing",
+                  "ingredients": [
+                    "Coarse sugar for sprinkling (optional)",
+                    "Confectioners' sugar for dusting (optional)"
+                  ]
+                }
+              ],
+              "steps": [
+                "Whisk flour, baking powder, cinnamon, and salt together in a large bowl. Grate frozen butter using a box grater; add to flour mixture and cut in with a pastry cutter, two forks, or your fingers until mixture comes together in pea-sized crumbs. Refrigerate while mixing wet ingredients.",
+                "Whisk 1/2 cup heavy cream, brown sugar, egg, and vanilla together in a small bowl. Drizzle over flour mixture; add chocolate chips. Mix until everything appears moistened. Turn onto counter and work into a ball with floured hands. (If too sticky, add more flour; if too dry, add 1\u20132 tablespoons more cream.) Press into an 8-inch disc; cut into 8 wedges. Brush with remaining 2 tablespoons heavy cream; sprinkle with coarse sugar if desired.",
+                "Refrigerate scones at least 15 minutes. Meanwhile, preheat oven to 400\u00b0F.",
+                "Arrange scones 2\u20133 inches apart on a parchment-lined baking sheet. Bake 22\u201325 minutes until golden brown around edges and lightly browned on top. Cool a few minutes before serving. Dust with confectioners' sugar if desired."
+              ],
+              "comments": [
+                "Mini chocolate chips preferred; regular-size work too (increase to 1 1/2 cups). Can prepare through step 2 and refrigerate overnight. Unbaked scones also freeze well. Leftovers keep at room temperature 2 days or refrigerated 5 days."
+              ],
+              "source": "Sally McKenney / Sally's Baking Addiction (sallysbakingaddiction.com)",
+              "highAltitude": {
+                "ingredientGroups": [
+                  {
+                    "label": "Dry ingredients",
+                    "ingredients": [
+                      "2 cups + 4 tablespoons all-purpose flour, plus more for hands and surface",
+                      "2 teaspoons baking powder",
+                      "1 teaspoon ground cinnamon",
+                      "1/2 teaspoon salt"
+                    ]
+                  },
+                  {
+                    "label": "Wet ingredients",
+                    "ingredients": [
+                      "1/2 cup (8 tablespoons) unsalted butter, frozen",
+                      "1/2 cup heavy cream, plus 2 tablespoons for brushing",
+                      "7 tablespoons packed light or dark brown sugar",
+                      "1 large egg",
+                      "1 1/2 teaspoons pure vanilla extract",
+                      "1 1/4 cups mini chocolate chips"
+                    ]
+                  },
+                  {
+                    "label": "Finishing",
+                    "ingredients": [
+                      "Coarse sugar for sprinkling (optional)",
+                      "Confectioners' sugar for dusting (optional)"
+                    ]
+                  }
+                ]
+              }
+            },
+{
+              "title": "Doughnut Glazes",
+              "servings": "Each glaze makes enough for 10\u201312 doughnuts",
+              "ingredientGroups": [
+                {
+                  "label": "Vanilla glaze",
+                  "ingredients": [
+                    "1 1/2 cups (6 oz) powdered sugar",
+                    "2\u20133 tablespoons milk",
+                    "1 1/2 teaspoons vanilla extract"
+                  ]
+                },
+                {
+                  "label": "Funfetti glaze",
+                  "ingredients": [
+                    "1 1/2 cups (6 oz) powdered sugar",
+                    "2\u20133 tablespoons milk",
+                    "1 teaspoon vanilla extract",
+                    "1/4 teaspoon almond extract",
+                    "1 small drop pink food coloring"
+                  ]
+                },
+                {
+                  "label": "Chocolate glaze",
+                  "ingredients": [
+                    "1 1/2 cups (6 oz) powdered sugar",
+                    "4 tablespoons unsweetened cocoa powder",
+                    "3 tablespoons milk",
+                    "1 teaspoon pure vanilla extract"
+                  ]
+                },
+                {
+                  "label": "Maple glaze",
+                  "ingredients": [
+                    "1 1/2 cups (6 oz) powdered sugar",
+                    "1\u20132 tablespoons milk",
+                    "4 tablespoons maple syrup",
+                    "1 teaspoon vanilla extract"
+                  ]
+                },
+                {
+                  "label": "Cinnamon sugar",
+                  "ingredients": [
+                    "1 cup (8 oz) granulated sugar",
+                    "2 tablespoons ground cinnamon",
+                    "1/8 teaspoon salt"
+                  ]
+                }
+              ],
+              "steps": [
+                "For vanilla, funfetti, or maple glaze: whisk all ingredients together until silky and smooth. Add more milk for a thinner glaze. Dip doughnuts while still warm.",
+                "For chocolate glaze: whisk powdered sugar and cocoa together. Slowly stir in milk and vanilla; whisk until smooth, adding a touch more milk if needed for a dippable consistency. Dip doughnuts; let rest to harden slightly.",
+                "For cinnamon sugar: combine sugar, cinnamon, and salt in a medium bowl. Toss doughnuts in cinnamon sugar while still warm.",
+                "All glazes store in an airtight container at room temperature for 2 weeks. Cinnamon sugar keeps up to 2 years."
+              ],
+              "source": "Gemma Stafford / Bigger Bolder Baking (biggerbolderbaking.com)"
+            },
             {
               "title": "Filled Coffee Cake",
               "servings": "Serves 12–16   |   Bake: 350–375°F for 30–40 minutes",
@@ -16139,6 +16735,79 @@ module.exports = {
                 ]
               }
             },
+{
+              "title": "Lemony Glazed Cake Doughnuts",
+              "servings": "Makes 8 doughnuts (plus holes)",
+              "ingredientGroups": [
+                {
+                  "label": "Dry ingredients",
+                  "ingredients": [
+                    "2 1/2 teaspoons baking powder",
+                    "2 cups all-purpose flour, plus more for dusting",
+                    "1 teaspoon kosher salt"
+                  ]
+                },
+                {
+                  "label": "Dough",
+                  "ingredients": [
+                    "2 large egg yolks",
+                    "1 cup whole-milk Greek yogurt",
+                    "1/2 cup granulated sugar",
+                    "2 tablespoons unsalted butter, melted and slightly cooled",
+                    "1 teaspoon vanilla extract",
+                    "Vegetable oil for frying (6\u20138 cups)"
+                  ]
+                },
+                {
+                  "label": "Glaze",
+                  "ingredients": [
+                    "1 cup powdered sugar",
+                    "Zest from 1/4 lemon",
+                    "Pinch of kosher salt",
+                    "1/4 cup water"
+                  ]
+                }
+              ],
+              "steps": [
+                "Whisk baking powder, flour, and 1 teaspoon salt in a medium bowl. Whisk egg yolks, yogurt, granulated sugar, melted butter, and vanilla in a large bowl. Mix in dry ingredients until dough comes together and is smooth.",
+                "Turn dough onto a well-floured sheet of parchment. Dust with flour; cover with a second sheet; roll to 1/2-inch thick. Remove top sheet; brush off excess flour. Punch out circles about 3 1/2 inches in diameter. Punch out centers about 1 inch in diameter. Reroll scraps to punch out more.",
+                "Pour oil into a large pot to a depth of 1 1/2 inches. Fit with deep-fry thermometer; heat over medium-high to 350\u00b0F. Fry doughnuts, turning once, until puffy and mahogany brown, about 2 minutes per side (slightly less for holes). Transfer to a wire rack; cool 10 minutes.",
+                "Whisk powdered sugar, lemon zest, pinch of salt, and 1/4 cup water until smooth. Dip each side of doughnut into glaze; let excess run off. Return to rack. Eat as soon as possible."
+              ],
+              "source": "Chris Morocco / Bon App\u00e9tit (bonappetit.com)",
+              "highAltitude": {
+                "ingredientGroups": [
+                  {
+                    "label": "Dry ingredients",
+                    "ingredients": [
+                      "2 teaspoons baking powder",
+                      "2 cups + 2 tablespoons all-purpose flour, plus more for dusting",
+                      "1 teaspoon kosher salt"
+                    ]
+                  },
+                  {
+                    "label": "Dough",
+                    "ingredients": [
+                      "2 large egg yolks",
+                      "1 cup whole-milk Greek yogurt",
+                      "7 tablespoons granulated sugar",
+                      "2 tablespoons unsalted butter, melted and slightly cooled",
+                      "1 teaspoon vanilla extract",
+                      "Vegetable oil for frying (6\u20138 cups)"
+                    ]
+                  },
+                  {
+                    "label": "Glaze",
+                    "ingredients": [
+                      "1 cup powdered sugar",
+                      "Zest from 1/4 lemon",
+                      "Pinch of kosher salt",
+                      "1/4 cup water"
+                    ]
+                  }
+                ]
+              }
+            },
             {
               "title": "Mom’s Zucchini Bread",
               "servings": "Makes 2 (8x4-inch) loaves   |   Bake: 325°F for 40-60 minutes",
@@ -16270,6 +16939,58 @@ module.exports = {
                   "Add the flour and vanilla.",
                   "Pour into a well-greased loaf pan or bundt pan.",
                   "Bake at 375°F for 70–80 minutes. Start checking at 70 minutes with a toothpick or cake tester in the center. The cake is done when the tester comes out clean and the top is deep golden."
+                ]
+              }
+            },
+{
+              "id": "baking-sweet-passover-cream-puff-shells",
+              "title": "Passover Cream Puff Shells",
+              "servings": "Makes about 2 dozen shells",
+              "ingredientGroups": [
+                {
+                  "label": "Dough",
+                  "ingredients": [
+                    "1 cup water",
+                    "1/2 cup (4 oz) unsalted butter or margarine, cut into 8 pieces",
+                    "1 teaspoon salt",
+                    "1 1/2 cups matzo cake meal",
+                    "5 large eggs"
+                  ]
+                }
+              ],
+              "steps": [
+                "Position a rack in center of oven; heat to 400\u00b0F. Grease corners of 2 baking sheets; line with parchment paper.",
+                "Combine water and butter in a small saucepan over medium-low heat until butter melts. Increase heat; bring to a boil. Remove from heat; add matzo cake meal all at once and mix vigorously. Return to low heat; cook, stirring constantly, until mixture is a thick paste, about 1 minute. Transfer to the bowl of a stand mixer or large bowl; cool 5 minutes.",
+                "Using paddle attachment or wooden spoon, beat in one egg at a time, fully incorporating each before adding the next, until dough is smooth.",
+                "Drop rounded tablespoons (about 1 1/2 tablespoons each) onto baking sheets, spacing 1 1/2 inches apart. Smooth any points with a moistened finger.",
+                "Bake 15 minutes. Reduce oven to 375\u00b0F; bake until golden and firm, 14\u201320 more minutes. Turn off oven; wedge door open with a wooden spoon and leave puffs 30 minutes to dry out.",
+                "Remove; pierce each puff at the center of one side with a paring knife to release steam."
+              ],
+              "comments": [
+                "Best on the day baked. Unfilled shells keep 1 day in an airtight container at room temperature, or freeze well. Reheat in oven or toaster oven before using. Filled cream puffs can be refrigerated up to 1 day.",
+                "Used in Passover Profiteroles with Strawberries (Desserts)."
+              ],
+              "source": "Faye Levy / Los Angeles Times",
+              "highAltitude": {
+                "ingredientGroups": [
+                  {
+                    "label": "Dough",
+                    "ingredients": [
+                      "1 cup water",
+                      "1/2 cup (4 oz) unsalted butter or margarine, cut into 8 pieces",
+                      "1 teaspoon salt",
+                      "1 1/2 cups + 1 tablespoon matzo cake meal",
+                      "5 large eggs"
+                    ]
+                  }
+                ],
+                "steps": [
+                  "Position a rack in center of oven; heat to 400\u00b0F. Grease corners of 2 baking sheets; line with parchment paper.",
+                  "Combine water and butter in a small saucepan over medium-low heat until butter melts. Increase heat; bring to a boil. Remove from heat; add matzo cake meal all at once and mix vigorously. Return to low heat; cook, stirring constantly until paste pulls cleanly from the pan (30\u201360 seconds longer than at sea level). Transfer to stand mixer bowl; cool 5 minutes.",
+                  "Using paddle attachment or wooden spoon, beat in one egg at a time, fully incorporating each before adding the next, until dough is smooth.",
+                  "Drop rounded tablespoons onto baking sheets, spacing 1 1/2 inches apart. Smooth any points with a moistened finger.",
+                  "Bake the full 15 minutes at 400\u00b0F before reducing heat; do not open the oven early. Reduce to 375\u00b0F; bake until golden and firm, 14\u201320 more minutes. Turn off oven; wedge door open and leave puffs 30 minutes to dry out.",
+                  "Remove; pierce each puff at the center of one side with a paring knife to release steam."
                 ]
               }
             },
@@ -16549,6 +17270,29 @@ module.exports = {
                 ]
               }
             },
+{
+              "title": "Frangipane",
+              "servings": "Makes about 1/2 cup (enough for one tart or tartlets)",
+              "ingredientGroups": [
+                {
+                  "label": "Almond cream",
+                  "ingredients": [
+                    "3 tablespoons unsalted butter, softened",
+                    "1/4 cup granulated sugar",
+                    "1/2 cup ground almond meal",
+                    "1 large egg",
+                    "3/4 teaspoon vanilla extract",
+                    "1 tablespoon all-purpose flour"
+                  ]
+                }
+              ],
+              "steps": [
+                "Cream butter and sugar together in the bowl of a stand mixer until pale and fluffy.",
+                "Add almond meal; mix to combine. Add egg and vanilla; beat gently until incorporated. Add flour; mix until smooth.",
+                "Use immediately as a filling for tarts or tartlets, and bake. Refrigerates up to 1 week in an airtight container (bring to room temperature before using). Freezes up to 1 month."
+              ],
+              "source": "Rebecca Franklin / The Spruce Eats (thespruceeats.com)"
+            },
             {
               "title": "Blintz Soufflé",
               "servings": "Serves 6–8   |   Bake: 350°F covered 1 hour, then uncovered 10 minutes",
@@ -16816,6 +17560,323 @@ module.exports = {
                   "Pour melted butter into the bottom of casserole dish(es). Arrange frozen blintzes in a single layer.",
                   "Beat eggs with sugar, vanilla, orange juice, and sour cream until smooth. Pour evenly over blintzes.",
                   "Bake covered at 375° for 45-55 minutes. Remove cover and bake 20-25 minutes more until puffed, golden, and set in the center."
+                ]
+              }
+            },
+{
+              "title": "Chai Cake With Brown-Butter-Ghee Streusel",
+              "servings": "Serves 10\u201312",
+              "ingredientGroups": [
+                {
+                  "label": "Ghee (make ahead)",
+                  "ingredients": [
+                    "2 cups (4 sticks) unsalted butter",
+                    "3 layers cheesecloth (for straining)"
+                  ]
+                },
+                {
+                  "label": "Streusel",
+                  "ingredients": [
+                    "1/2 cup all-purpose flour",
+                    "1 cup (packed) dark brown sugar",
+                    "1/2 teaspoon ground cardamom",
+                    "1/2 teaspoon ground cinnamon",
+                    "1/2 teaspoon ground ginger",
+                    "1/4 teaspoon ground nutmeg",
+                    "1/4 teaspoon ground cloves (optional)",
+                    "1/4 teaspoon ground star anise (optional)",
+                    "1/4 teaspoon kosher salt",
+                    "1 tablespoon reserved caramelized milk solids (from ghee)",
+                    "1/2 cup reserved brown-butter ghee"
+                  ]
+                },
+                {
+                  "label": "Cake batter",
+                  "ingredients": [
+                    "2 cups all-purpose flour",
+                    "1/2 teaspoon baking powder",
+                    "1/4 teaspoon baking soda",
+                    "1/2 teaspoon kosher salt",
+                    "2 large eggs, room temperature",
+                    "1 large egg yolk, room temperature",
+                    "3/4 cup plain yogurt, room temperature",
+                    "1/2 cup milk",
+                    "1/2 cup granulated sugar",
+                    "5 tablespoons (packed) dark brown sugar",
+                    "1 teaspoon vanilla extract",
+                    "3/4 cup reserved brown-butter ghee",
+                    "1 teaspoon reserved caramelized milk solids"
+                  ]
+                }
+              ],
+              "steps": [
+                "Line a fine-mesh sieve with cheesecloth. Melt butter in a medium heavy saucepan over medium heat, stirring often, until simmering. Cook, stirring constantly, 10 minutes. Reduce heat to low; continue cooking, stirring constantly, until golden brown and caramelized milk solids appear on the spatula, about 10 minutes longer. Strain ghee through prepared sieve into a large jar. Reserve ghee and caramelized milk solids separately. (Ghee can be made 3 months ahead; store tightly covered at room temperature.)",
+                "Whisk flour, brown sugar, spices, and salt together for streusel in a medium bowl. Add 1 tablespoon caramelized milk solids and 1/2 cup ghee. Work with hands until mixture resembles wet sand. Set aside.",
+                "Preheat oven to 325\u00b0F. Line a 9x9-inch baking pan with parchment, leaving overhang on 2 sides.",
+                "Whisk together 2 cups flour, baking powder, baking soda, and salt in a medium bowl. In a large bowl, whisk eggs, egg yolk, yogurt, milk, both sugars, vanilla, 3/4 cup ghee, and 1 teaspoon caramelized milk solids together. Sift in dry ingredients and fold just until no dry spots remain (batter will be thick and slightly lumpy).",
+                "Spoon half of batter into prepared pan; spread to edges. Sprinkle half of streusel evenly over. Dollop remaining batter on top and gently spread. Sprinkle remaining streusel on top; gently pat to adhere.",
+                "Bake until a tester inserted in center comes out clean, 40\u201345 minutes. Transfer to a wire rack; let cool before slicing. (Cake keeps tightly wrapped at room temperature up to 4 days.)"
+              ],
+              "source": "Hetal Vasavada / Bon App\u00e9tit (bonappetit.com)",
+              "highAltitude": {
+                "ingredientGroups": [
+                  {
+                    "label": "Ghee (make ahead)",
+                    "ingredients": [
+                      "2 cups (4 sticks) unsalted butter",
+                      "3 layers cheesecloth (for straining)"
+                    ]
+                  },
+                  {
+                    "label": "Streusel",
+                    "ingredients": [
+                      "1/2 cup + 1 tablespoon all-purpose flour",
+                      "14 tablespoons (packed) dark brown sugar",
+                      "1/2 teaspoon ground cardamom",
+                      "1/2 teaspoon ground cinnamon",
+                      "1/2 teaspoon ground ginger",
+                      "1/4 teaspoon ground nutmeg",
+                      "1/4 teaspoon ground cloves (optional)",
+                      "1/4 teaspoon ground star anise (optional)",
+                      "1/4 teaspoon kosher salt",
+                      "1 tablespoon reserved caramelized milk solids",
+                      "1/2 cup reserved brown-butter ghee"
+                    ]
+                  },
+                  {
+                    "label": "Cake batter",
+                    "ingredients": [
+                      "2 cups + 4 tablespoons all-purpose flour",
+                      "scant 1/2 teaspoon baking powder (about 3/8 teaspoon)",
+                      "scant 1/4 teaspoon baking soda",
+                      "1/2 teaspoon kosher salt",
+                      "2 large eggs, room temperature",
+                      "1 large egg yolk, room temperature",
+                      "3/4 cup plain yogurt, room temperature",
+                      "1/2 cup milk",
+                      "7 tablespoons granulated sugar",
+                      "5 tablespoons (packed) dark brown sugar",
+                      "1 teaspoon vanilla extract",
+                      "3/4 cup reserved brown-butter ghee",
+                      "1 teaspoon reserved caramelized milk solids"
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "title": "Sqirl's Sourdough Scones",
+              "servings": "Makes 8 scones",
+              "ingredientGroups": [
+                {
+                  "label": "Dry ingredients",
+                  "ingredients": [
+                    "2 cups all-purpose flour",
+                    "1 cup plus 2 tablespoons whole-grain spelt flour",
+                    "1/3 cup granulated sugar, plus more for sprinkling",
+                    "1 1/2 tablespoons baking powder",
+                    "2 teaspoons fine sea salt (or 1 tablespoon kosher salt)",
+                    "1 teaspoon baking soda"
+                  ]
+                },
+                {
+                  "label": "Butter",
+                  "ingredients": [
+                    "3/4 cup (1 1/2 sticks) unsalted butter, cut into 1/2-inch cubes and chilled"
+                  ]
+                },
+                {
+                  "label": "Liquid ingredients",
+                  "ingredients": [
+                    "1/2 cup chilled heavy cream",
+                    "3 tablespoons chilled buttermilk, plus more for brushing",
+                    {"html": "3 tablespoons chilled <a href=\"dairy.html#dairy-creme-fraiche\">Creme Fraiche</a> (Dairy), or store-bought"},
+                    "2 tablespoons honey",
+                    "2 tablespoons sourdough starter discard",
+                    "1 tablespoon finely grated orange or lemon zest"
+                  ]
+                }
+              ],
+              "steps": [
+                "Whisk both flours, sugar, baking powder, salt, and baking soda together in a large bowl. Add butter; toss to coat in dry ingredients. Place bowl in freezer 10 minutes until butter is very cold.",
+                "In a large measuring cup, whisk together cream, buttermilk, creme fraiche, honey, sourdough starter, and citrus zest. Keep chilled until ready to use. Line a large baking sheet with parchment.",
+                "Using a stand mixer with paddle on low (or fingertips), break butter into pea-sized pieces in the dry ingredients, 1–2 minutes. Pour in chilled liquid and stir gently with a fork until large clumps form.",
+                "Scrape dough onto a lightly floured surface; shape into a 7-inch-diameter disk, 1 1/2 inches thick. Cut into 8 wedges; arrange on prepared baking sheet, evenly spaced. Freeze at least 30 minutes.",
+                "Heat oven to 400°F with a rack in the center. Brush scones with buttermilk; sprinkle liberally with sugar. Bake, rotating sheet halfway through, until deep golden brown, 30–32 minutes. Transfer to a wire rack; cool completely before serving."
+              ],
+              "comments": [
+                {"html": "For add-in variations (blueberry lemon, cranberry orange, strawberry jam, cherry almond, cardamom spiced), see <a href=\"baking.html#baking-sweet-squirls-sourdough-scone-variations\">Sqirl’s Sourdough Scone Variations</a>."},
+                {"html": "Creme fraiche can be purchased or made at home; see <a href=\"dairy.html#dairy-creme-fraiche\">Creme Fraiche</a> (Dairy)."},
+                "Scones can be frozen through step 4 for up to 2 months; bake from frozen at same time. Baked scones keep in an airtight container at room temperature up to 3 days."
+              ],
+              "source": "Catalina Flores, adapted by / Los Angeles Times",
+              "highAltitude": {
+                "ingredientGroups": [
+                  {
+                    "label": "Dry ingredients",
+                    "ingredients": [
+                      "2 cups + 4 tablespoons all-purpose flour",
+                      "1 cup + 4 tablespoons whole-grain spelt flour",
+                      "scant 1/3 cup granulated sugar, plus more for sprinkling",
+                      "1 tablespoon + 1/2 teaspoon baking powder",
+                      "2 teaspoons fine sea salt (or 1 tablespoon kosher salt)",
+                      "3/4 teaspoon baking soda"
+                    ]
+                  },
+                  {
+                    "label": "Butter",
+                    "ingredients": [
+                      "3/4 cup (1 1/2 sticks) unsalted butter, cut into 1/2-inch cubes and chilled"
+                    ]
+                  },
+                  {
+                    "label": "Liquid ingredients",
+                    "ingredients": [
+                      "1/2 cup chilled heavy cream",
+                      "3 tablespoons chilled buttermilk, plus more for brushing",
+                      {"html": "3 tablespoons chilled <a href=\"dairy.html#dairy-creme-fraiche\">Creme Fraiche</a> (Dairy), or store-bought"},
+                      "2 tablespoons honey",
+                      "2 tablespoons sourdough starter discard",
+                      "1 tablespoon finely grated orange or lemon zest"
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "title": "Sqirl's Sourdough Scone Variations",
+              "servings": "Each variation makes 8 scones (using Sqirl’s Sourdough Scones base)",
+              "ingredientGroups": [
+                {
+                  "label": "Blueberry Lemon",
+                  "ingredients": [
+                    "1 cup fresh or frozen blueberries",
+                    "(Use lemon zest in base recipe liquid)"
+                  ]
+                },
+                {
+                  "label": "Cranberry Orange",
+                  "ingredients": [
+                    "1 cup dried cranberries",
+                    "(Use orange zest in base recipe liquid)"
+                  ]
+                },
+                {
+                  "label": "Strawberry Jam",
+                  "ingredients": [
+                    "1/3 cup strawberry jam or preserves",
+                    "(Use lemon zest in base recipe liquid; swirl lightly into dough rather than fully incorporating)"
+                  ]
+                },
+                {
+                  "label": "Cherry Almond",
+                  "ingredients": [
+                    "3/4 cup halved fresh or frozen pitted sweet cherries",
+                    "1/4 cup finely chopped toasted almonds",
+                    "(Use orange zest in base recipe liquid)"
+                  ]
+                },
+                {
+                  "label": "Cardamom Spiced",
+                  "ingredients": [
+                    "1 tablespoon ground cardamom",
+                    "1 teaspoon ground cinnamon",
+                    "(Add dry spices to dry ingredients in step 1 of base recipe; use orange zest in liquid)"
+                  ]
+                }
+              ],
+              "steps": [
+                {"html": "Prepare one batch of <a href=\"baking.html#baking-sweet-squirls-sourdough-scones\">Sqirl’s Sourdough Scones</a>. For Cardamom Spiced, add the spices to the dry ingredients in step 1 of that recipe."},
+                "In step 3, fold in the selected add-ins just before shaping the dough.",
+                "Brush with buttermilk and sprinkle liberally with sugar as usual. For Cardamom Spiced, mix 1 tablespoon sugar with 1/4 teaspoon cinnamon for the topping."
+              ],
+              "source": "Catalina Flores, adapted by / Los Angeles Times"
+            },
+            {
+              "title": "Ube Chiffon Cake",
+              "servings": "Serves 12",
+              "ingredientGroups": [
+                {
+                  "label": "Dry ingredients",
+                  "ingredients": [
+                    "1 1/2 cups sifted cake flour",
+                    "1 1/2 cups granulated sugar",
+                    "2 teaspoons baking powder",
+                    "1/2 teaspoon salt"
+                  ]
+                },
+                {
+                  "label": "Egg yolk batter",
+                  "ingredients": [
+                    "2 large eggs, room temperature",
+                    "5 large egg yolks, room temperature",
+                    "3/4 cup water, room temperature",
+                    "1/2 cup canola oil or vegetable oil",
+                    "2 tablespoons ube extract"
+                  ]
+                },
+                {
+                  "label": "Meringue",
+                  "ingredients": [
+                    "5 large egg whites, room temperature",
+                    "1/2 teaspoon cream of tartar"
+                  ]
+                }
+              ],
+              "steps": [
+                "Adjust baking rack to the lower-third position; preheat oven to 325°F. Line a 16-cup tube pan with parchment paper. Do not grease.",
+                "Whisk cake flour, sugar, baking powder, and salt together in a large bowl.",
+                "Add whole eggs, egg yolks, water, oil, and ube extract; whisk until smooth.",
+                "Using a stand or hand mixer with whisk attachment, whip egg whites with cream of tartar on medium until foamy. Increase to medium-high; whip until stiff peaks form.",
+                "Add egg whites to the yolk mixture; fold gently until no white streaks remain. Handle carefully to preserve the air.",
+                "Pour batter into tube pan; smooth top with a spatula. Tap pan gently to release air bubbles. Bake 30 minutes; rotate pan; bake another 30 minutes, until a skewer inserted in center comes out clean.",
+                "Immediately invert pan to cool — either on the tube pan’s own feet, or over the neck of a bottle. Cool completely, about 2 hours. Do not rush.",
+                "Run a thin knife around the edges to loosen. Gently tap upside down onto parchment; peel off parchment, flip right side up onto a platter, and serve."
+              ],
+              "comments": [
+                "Keeps at room temperature up to 2 days or refrigerated up to 4 days.",
+                "Ube extract is available at Filipino grocery stores and online; do not substitute ube flavoring.",
+                "Special equipment: 16-cup tube pan."
+              ],
+              "source": "Jolina / The Unlikely Baker (theunlikelybaker.com)",
+              "highAltitude": {
+                "ingredientGroups": [
+                  {
+                    "label": "Dry ingredients",
+                    "ingredients": [
+                      "1 1/2 cups + 3 tablespoons sifted cake flour",
+                      "1 cup + 5 tablespoons granulated sugar",
+                      "1 1/2 teaspoons baking powder",
+                      "1/2 teaspoon salt"
+                    ]
+                  },
+                  {
+                    "label": "Egg yolk batter",
+                    "ingredients": [
+                      "2 large eggs, room temperature",
+                      "5 large egg yolks, room temperature",
+                      "3/4 cup water, room temperature",
+                      "1/2 cup canola oil or vegetable oil",
+                      "2 tablespoons ube extract"
+                    ]
+                  },
+                  {
+                    "label": "Meringue",
+                    "ingredients": [
+                      "5 large egg whites, room temperature",
+                      "1/2 teaspoon cream of tartar"
+                    ]
+                  }
+                ],
+                "steps": [
+                  "Adjust baking rack to the lower-third position; preheat oven to 325°F. Line a 16-cup tube pan with parchment paper. Do not grease.",
+                  "Whisk cake flour, sugar, baking powder, and salt together in a large bowl.",
+                  "Add whole eggs, egg yolks, water, oil, and ube extract; whisk until smooth.",
+                  "Using a stand or hand mixer with whisk attachment, whip egg whites with cream of tartar on medium until foamy. Increase to medium-high; whip only to medium-firm peaks (not quite stiff) — at altitude, egg whites can over-expand and collapse; slightly under-beaten whites give the batter room.",
+                  "Add egg whites to the yolk mixture; fold gently until no white streaks remain.",
+                  "Pour batter into tube pan; smooth top. Tap pan gently. Begin checking at 25 minutes per side; total bake time is typically 50–55 minutes.",
+                  "Immediately invert pan to cool. Inverted cooling is even more critical at altitude — leave inverted at least 2–3 hours. Do not rush.",
+                  "Run a thin knife around the edges to loosen. Gently tap upside down onto parchment; peel off parchment, flip right side up onto a platter, and serve."
                 ]
               }
             }
@@ -17574,6 +18635,29 @@ module.exports = {
             "Heat the remaining whey to a simmer in the pot, then lower to a gentle heat. Shape the drained curds loosely into balls and place in the hot whey for 5-10 minutes.",
             "Wearing heat-resistant gloves, remove the balls from the whey and gently stretch, pull, and shape into smooth mozzarella balls. Use immediately or store submerged in lightly salted water in the refrigerator for up to 2 days."
           ]
+        },
+        {
+          "title": "Creme Fraiche",
+          "servings": "Makes about 1/2 cup",
+          "ingredientGroups": [
+            {
+              "label": "Base",
+              "ingredients": [
+                "1/2 cup heavy cream",
+                "3 tablespoons buttermilk"
+              ]
+            }
+          ],
+          "steps": [
+            "Whisk heavy cream and buttermilk together in a clean glass jar. Cover loosely with cheesecloth or a clean towel secured with a rubber band; do not use an airtight lid.",
+            "Let sit in a dark place at cool room temperature (65–70°F) for 2–3 days until thickened and tangy. Taste at 48 hours; if not yet thick enough, let sit another 12–24 hours.",
+            "Once thickened, seal with a lid and refrigerate. Use within 2 weeks."
+          ],
+          "comments": [
+            "Maintain a 5:1 cream-to-buttermilk ratio to scale up. Creme fraiche is richer and more stable than sour cream when cooked (less prone to curdling). Also excellent stirred into pan sauces or served as a topping.",
+            {"html": "Used in <a href=\"baking.html#baking-sweet-squirls-sourdough-scones\">Sqirl’s Sourdough Scones</a> (Baking &gt; Sweet). Store-bought creme fraiche can be substituted."}
+          ],
+          "source": "Traditional method"
         }
       ]
     },
@@ -18508,6 +19592,93 @@ module.exports = {
             ]
           }
         },
+{
+          "title": "Cherry Cobbler With Lemon-Cream Biscuits",
+          "servings": "Serves 8",
+          "ingredientGroups": [
+            {
+              "label": "Biscuits",
+              "ingredients": [
+                "2 cups (250 g) all-purpose flour, plus more for dusting",
+                "1/4 cup (50 g) granulated sugar",
+                "1 tablespoon baking powder",
+                "2 teaspoons finely grated lemon zest",
+                "1 teaspoon kosher salt",
+                "1/2 cup (1 stick / 4 oz) chilled unsalted butter, cut into pieces",
+                "1 1/3 cups chilled heavy cream"
+              ]
+            },
+            {
+              "label": "Filling",
+              "ingredients": [
+                "2 pounds fresh (or frozen) sweet cherries, pitted",
+                "1/2 cup (100 g) granulated sugar",
+                "1/4 cup fresh lemon juice",
+                "3 tablespoons cornstarch",
+                "1 teaspoon vanilla extract",
+                "1/2 teaspoon ground cinnamon",
+                "1/4 teaspoon almond extract",
+                "1/4 teaspoon kosher salt",
+                "3 tablespoons unsalted butter, melted and slightly cooled",
+                "2 tablespoons raw sugar"
+              ]
+            },
+            {
+              "label": "To serve",
+              "ingredients": [
+                "Vanilla ice cream or softly whipped cream"
+              ]
+            }
+          ],
+          "steps": [
+            "Whisk flour, granulated sugar, baking powder, lemon zest, and salt in a medium bowl. Add chilled butter; toss to coat. Smash butter into flour with fingertips until largest pieces are about pea-sized.",
+            "Stream in chilled cream while tossing constantly with a fork until distributed. Fold with a bench scraper until dough comes together into a mass.",
+            "Turn out onto a generously floured surface. Pat into a 3/4-inch-thick rectangle with floured hands. Cut into 4 pieces; stack on top of each other. Roll out to 1/2-inch thick. Using a 1 1/2-inch cutter, punch out biscuits as closely as possible, dipping cutter in flour often. You should get about 40 biscuits. Gather scraps, reroll, and punch out more. Chill until ready to use.",
+            "Place rack in middle of oven; preheat to 400\u00b0F. Mix cherries, granulated sugar, lemon juice, cornstarch, vanilla, cinnamon, almond extract, and salt in a large bowl. Scrape into a 2-quart baking dish or 9-inch cake pan with 2-inch sides; press down firmly to compact. Place on a foil-lined rimmed baking sheet.",
+            "Arrange chilled biscuits over filling, fitting snugly so they're touching. Brush generously with melted butter; sprinkle with raw sugar.",
+            "Bake 10 minutes. Reduce heat to 350\u00b0F; bake until filling is actively bubbling through the center and biscuits are deep golden brown, 50\u201365 minutes more. Let rest at least 20\u201330 minutes before serving. Serve with vanilla ice cream or whipped cream."
+          ],
+          "comments": [
+            "Can be baked 1 day ahead; store tightly covered at room temperature.",
+            "Special equipment: 1 1/2-inch round cookie cutter."
+          ],
+          "source": "Claire Saffitz / Bon App\u00e9tit (June 2019)",
+          "highAltitude": {
+            "ingredientGroups": [
+              {
+                "label": "Biscuits",
+                "ingredients": [
+                  "2 cups + 2 tablespoons all-purpose flour, plus more for dusting",
+                  "1/4 cup (50 g) granulated sugar",
+                  "2 1/2 teaspoons baking powder",
+                  "2 teaspoons finely grated lemon zest",
+                  "1 teaspoon kosher salt",
+                  "1/2 cup (1 stick / 4 oz) chilled unsalted butter, cut into pieces",
+                  "1 1/3 cups chilled heavy cream"
+                ]
+              },
+              {
+                "label": "Filling",
+                "ingredients": [
+                  "2 pounds fresh (or frozen) sweet cherries, pitted",
+                  "7 tablespoons granulated sugar",
+                  "1/4 cup fresh lemon juice",
+                  "3 tablespoons cornstarch",
+                  "1 teaspoon vanilla extract",
+                  "1/2 teaspoon ground cinnamon",
+                  "1/4 teaspoon almond extract",
+                  "1/4 teaspoon kosher salt",
+                  "3 tablespoons unsalted butter, melted and slightly cooled",
+                  "2 tablespoons raw sugar"
+                ]
+              },
+              {
+                "label": "To serve",
+                "ingredients": ["Vanilla ice cream or softly whipped cream"]
+              }
+            ]
+          }
+        },
         {
           "title": "Christy's Easy Lemon Icebox Pie",
           "source": "From Christy Ponder",
@@ -18532,6 +19703,48 @@ module.exports = {
             "Pour filling into the crust.",
             "Refrigerate at least 1 hour before serving."
           ]
+        },
+{
+          "title": "Cinnamon Raisin Bagel Bread Pudding",
+          "servings": "Serves 6\u20139",
+          "ingredientGroups": [
+            {
+              "label": "Custard",
+              "ingredients": [
+                "3 large or 4 medium cinnamon raisin bagels, cut into 1-inch pieces",
+                "1 cup milk",
+                "3 large eggs",
+                "1/2 teaspoon ground cinnamon",
+                "1/2 teaspoon vanilla extract",
+                "Pinch of salt",
+                "1/2 cup raisins (optional)"
+              ]
+            },
+            {
+              "label": "Topping",
+              "ingredients": [
+                "2 tablespoons unsalted butter, cut into small pieces",
+                "2 tablespoons brown sugar"
+              ]
+            },
+            {
+              "label": "To serve",
+              "ingredients": [
+                "Powdered sugar and/or maple syrup"
+              ]
+            }
+          ],
+          "steps": [
+            "Grease a 9-inch square baking pan. Add bagel pieces. Whisk milk, eggs, cinnamon, vanilla, and salt together; pour over bagels. Gently press bagels into the mixture to ensure they're all soaked. Scatter raisins over top if using. Cover and refrigerate overnight.",
+            "In the morning, preheat oven to 350\u00b0F. Remove pan from refrigerator while oven heats. Dot top with butter pieces; sprinkle with brown sugar.",
+            "Bake 30 minutes until center is set with crunchy edges (center should be moist but no liquid egg visible \u2014 not dry).",
+            "Serve warm, sprinkled with powdered sugar and/or drizzled with maple syrup."
+          ],
+          "comments": [
+            "Double the recipe in a 9x13 pan.",
+            "Variations: egg bagels with dried cranberries and orange zest; everything bagels with grated Asiago or Parmesan. Finish with a simple cream cheese glaze."
+          ],
+          "source": "Caroline Lubbers / Whipped the Blog"
         },
         {
           "title": "Lauren's Banana Pudding",
@@ -18569,6 +19782,53 @@ module.exports = {
             "In a separate bowl, whip heavy cream until soft peaks form.",
             "Fold pudding mixture into the whipped cream. In a large serving bowl, start with a layer of vanilla wafers, then sliced bananas, then pudding. Repeat layers until ingredients are used up. Refrigerate overnight so wafers soften."
           ]
+        },
+{
+          "title": "Maple-Honey Pecan Pie",
+          "servings": "Serves 8",
+          "ingredientGroups": [
+            {
+              "label": "Crust",
+              "ingredients": [
+                "All-purpose flour, for rolling",
+                "Dough for one 9-inch single-crust pie (see All-Shortening Pie Crust, Baking > Sweet)"
+              ]
+            },
+            {
+              "label": "Brown butter",
+              "ingredients": [
+                "1/2 cup (115 g) unsalted butter"
+              ]
+            },
+            {
+              "label": "Filling",
+              "ingredients": [
+                "1/4 cup (85 g) maple syrup",
+                "1/4 cup (85 g) honey",
+                "1/2 cup (110 g) light brown sugar",
+                "1/2 cup (75 g) maple sugar (or additional light brown sugar)",
+                "3 large eggs, at room temperature",
+                "1 tablespoon bourbon (optional)",
+                "1 teaspoon vanilla extract",
+                "3/4 teaspoon kosher salt",
+                "1 1/2 cups (180 g) pecan halves",
+                "Flaky sea salt (optional, for finishing)"
+              ]
+            }
+          ],
+          "steps": [
+            "On a lightly floured surface, roll dough into a 12-inch circle; transfer to a 9-inch metal pie plate. Fold excess dough over and crimp the edges. Freeze 30 minutes or up to 24 hours.",
+            "Place a rimmed baking sheet on the middle oven rack; heat oven to 400\u00b0F.",
+            "Melt butter in a small saucepan over medium heat, swirling occasionally, until foam subsides and milk solids turn golden brown and smell nutty, about 5 minutes. Add maple syrup; cook, stirring, until mixture thickens slightly, 2\u20133 minutes. Remove from heat; whisk in honey. Cool at least 10 minutes.",
+            "In a large bowl, combine both sugars, eggs, bourbon (if using), vanilla, and salt. Gradually pour the syrup mixture into the egg mixture, whisking constantly; scrape in all brown bits from the bottom of the pot.",
+            "Remove crust from freezer; scatter pecans over the bottom. Pour filling over pecans. Set pie plate on the hot baking sheet and bake 10 minutes. Reduce heat to 350\u00b0F; bake 35\u201345 minutes more until center has puffed up and turned golden brown.",
+            "Transfer to a wire rack; sprinkle with flaky sea salt if desired. Cool at least 2 hours before serving. Keeps at room temperature 24+ hours; freezes up to 3 months."
+          ],
+          "comments": [
+            "For best flavor, use a good-quality maple syrup. Maple sugar adds depth; light brown sugar is a fine substitute.",
+            "If using a glass pie plate, blind-bake the crust before filling (see All-Shortening Pie Crust recipe for instructions)."
+          ],
+          "source": "Melissa Clark / NYT Cooking"
         },
         {
           "title": "Fresh Cranberry Mold",
@@ -18667,6 +19927,132 @@ module.exports = {
               "Toss berries with sugar and tapioca; spoon over the batter.",
               "Pour 1 cup cold water over the top (do not stir).",
               "Bake at 350° for 30-40 minutes until the top is golden brown and the edges are bubbling."
+            ]
+          }
+        },
+{
+          "title": "Mixed Berry Pie",
+          "servings": "Serves 8",
+          "ingredientGroups": [
+            {
+              "label": "Crust",
+              "ingredients": [
+                {"html": "2 disks <a href=\"baking.html#baking-sweet-all-shortening-pie-crust\">All-Shortening Pie Crust</a> (Baking &gt; Sweet)"}
+              ]
+            },
+            {
+              "label": "Filling base",
+              "ingredients": [
+                "1 cup granulated sugar",
+                "1/4 cup cornstarch",
+                "Dash of salt",
+                "1/3 cup water",
+                "1/2 teaspoon ground cinnamon (optional)",
+                "1 cup fresh blueberries"
+              ]
+            },
+            {
+              "label": "Remaining fruit",
+              "ingredients": [
+                "1 cup fresh raspberries",
+                "1 cup halved fresh strawberries",
+                "3/4 cup fresh blackberries",
+                "1 tablespoon fresh lemon juice",
+                "2 tablespoons unsalted butter"
+              ]
+            }
+          ],
+          "steps": [
+            "Prepare the All-Shortening Pie Crust (double batch). Divide into 2 portions, one slightly larger. Shape each into a disk; cover and refrigerate 1 hour or overnight.",
+            "Whisk sugar, cornstarch, salt, 1/3 cup water, and cinnamon (if using) in a large saucepan until smooth; add blueberries. Bring to a boil; cook, stirring, 2 minutes until thickened. Cool slightly.",
+            "Preheat oven to 400\u00b0F. Gently fold raspberries, strawberries, blackberries, and lemon juice into the blueberry mixture. Roll out the larger dough portion to 1/8-inch thickness; transfer to a 9-inch pie plate. Trim crust to 1/2 inch beyond rim. Add filling; dot with butter.",
+            "Roll remaining dough to 1/8-inch thickness; cut into 1/2-inch-wide strips. Arrange in a lattice pattern over filling; trim and seal edges; flute. Bake 10 minutes.",
+            "Reduce heat to 350\u00b0F; bake 45\u201350 minutes until crust is golden brown and filling is bubbly. Cool on a wire rack."
+          ],
+          "source": "Elaine Moody / Taste of Home"
+        },
+        {
+          "title": "Strawberry Shortcake",
+          "servings": "Serves 4 generously",
+          "ingredientGroups": [
+            {
+              "label": "Strawberries",
+              "ingredients": [
+                "2 pints ripe strawberries, hulled",
+                "1/2 cup granulated sugar, or more to taste"
+              ]
+            },
+            {
+              "label": "Biscuit dough",
+              "ingredients": [
+                "4 cups all-purpose flour, plus more for dusting",
+                "3 tablespoons granulated sugar",
+                "1/4 teaspoon salt",
+                "5 teaspoons baking powder",
+                "3/4 cup (1 1/2 sticks) unsalted butter, softened",
+                "1 1/4 cups heavy cream"
+              ]
+            },
+            {
+              "label": "Biscuit butter",
+              "ingredients": [
+                "1/2 cup (1 stick) unsalted butter, for melting"
+              ]
+            },
+            {
+              "label": "Whipped cream",
+              "ingredients": [
+                "1 3/4 cups heavy cream",
+                "1/4 teaspoon vanilla extract"
+              ]
+            }
+          ],
+          "steps": [
+            "Pick over and hull strawberries. Cut in half or slice depending on size. Gently crush about a quarter of the berries with a fork to release their juices. Mix with remaining berries and 1/2 cup sugar, adding more if necessary. Set aside, covered, about 30 minutes to develop flavor.",
+            "Preheat oven to 450°F.",
+            "Into a large mixing bowl, sift together flour, 3 tablespoons sugar, salt, and baking powder. Add softened butter; rub into dry ingredients as for pastry. Add 1 1/4 cups cream; mix to a soft dough. Knead 1 minute on a lightly floured board; roll to about 1/2-inch thickness. Using a 3-inch biscuit cutter, cut an even number of rounds — 2 rounds per serving.",
+            "Use a little of the remaining butter to grease a baking sheet. Melt remaining butter. Place half the rounds on the sheet; brush with melted butter; place remaining rounds on top. Bake 10–15 minutes until golden brown.",
+            "Remove from oven; pull shortcakes apart. Brush insides with remaining melted butter.",
+            "Beat 1 3/4 cups heavy cream until it thickens. Add vanilla; beat again just until thick.",
+            "Place a bottom half on each plate. Top with a generous spoonful of cream and berries. Cover with the top half; add a few more berries; top with whipped cream. Serve immediately."
+          ],
+          "comments": [
+            "Extra shortcakes may be frozen; warm before using. Also good toasted for breakfast or tea. Any very ripe, macerated fruit works in place of strawberries — ripe peaches are an excellent summer alternative."
+          ],
+          "source": "Jane Grigson’s Fruit Book, adapted by Nancy Harmon Jenkins / NYT Cooking",
+          "highAltitude": {
+            "ingredientGroups": [
+              {
+                "label": "Strawberries",
+                "ingredients": [
+                  "2 pints ripe strawberries, hulled",
+                  "1/2 cup granulated sugar, or more to taste"
+                ]
+              },
+              {
+                "label": "Biscuit dough",
+                "ingredients": [
+                  "4 cups + 8 tablespoons all-purpose flour, plus more for dusting",
+                  "2 tablespoons granulated sugar",
+                  "1/4 teaspoon salt",
+                  "4 teaspoons baking powder",
+                  "3/4 cup (1 1/2 sticks) unsalted butter, softened",
+                  "1 1/4 cups heavy cream"
+                ]
+              },
+              {
+                "label": "Biscuit butter",
+                "ingredients": [
+                  "1/2 cup (1 stick) unsalted butter, for melting"
+                ]
+              },
+              {
+                "label": "Whipped cream",
+                "ingredients": [
+                  "1 3/4 cups heavy cream",
+                  "1/4 teaspoon vanilla extract"
+                ]
+              }
             ]
           }
         },
@@ -18799,6 +20185,47 @@ module.exports = {
               "Return to oven and bake until topping is golden and filling is bubbling at the edges, about 30 minutes."
             ]
           }
+        },
+{
+          "title": "Disney Magical Churros",
+          "servings": "Makes about 12\u201315 churros",
+          "ingredientGroups": [
+            {
+              "label": "Dough",
+              "ingredients": [
+                "1 cup water",
+                "1 stick (4 oz / 113 g) unsalted butter",
+                "1/4 teaspoon salt",
+                "1/4 teaspoon ground cinnamon",
+                "1 1/4 cups all-purpose flour (or cake flour for lighter texture)",
+                "3 large eggs"
+              ]
+            },
+            {
+              "label": "Cinnamon sugar coating",
+              "ingredients": [
+                "1/2 cup granulated sugar",
+                "1/2 teaspoon ground cinnamon"
+              ]
+            },
+            {
+              "label": "Oil",
+              "ingredients": [
+                "Oil for frying"
+              ]
+            }
+          ],
+          "steps": [
+            "Combine water, butter, salt, and cinnamon in a medium saucepan over medium heat. Bring to a boil; once butter melts and mixture is boiling, add flour all at once and stir vigorously until a smooth dough forms and pulls away from the pan. Remove from heat; let cool 3 minutes.",
+            "Beat in eggs one at a time, stirring vigorously after each until fully incorporated. Dough should be thick, smooth, and sticky.",
+            "Transfer dough to a piping bag fitted with a large star tip. Heat about 2 inches of oil in a heavy pot to 375\u00b0F. Pipe dough into 3-inch strips; fry until deep golden brown, turning once, about 3\u20134 minutes total. Remove; drain on paper towels briefly.",
+            "Mix cinnamon and sugar in a shallow bowl. Toss warm churros in cinnamon sugar, or serve with a dipping sauce."
+          ],
+          "comments": [
+            "Adding 1 tablespoon granulated sugar to the dough (with the butter and water) improves flavor.",
+            "Using cake flour in place of all-purpose produces a lighter, crisper texture."
+          ],
+          "source": "Official Disney recipe"
         },
         {
           "title": "Cassata Siciliana",
@@ -18953,6 +20380,132 @@ module.exports = {
             "Working one at a time, briefly dip each ladyfinger into the espresso mixture and arrange rounded side up in a single layer, breaking pieces as needed to fill gaps. Spread half the mascarpone mixture evenly over the ladyfingers. Repeat with remaining ladyfingers and mascarpone.",
             "Dust with remaining 1 tablespoon cocoa powder. Cover and refrigerate at least 4 hours, ideally 24. Top with shaved or grated chocolate just before serving."
           ]
+        },
+{
+          "title": "Foolproof Tarte Tatin",
+          "servings": "Serves 8",
+          "favorite": true,
+          "ingredientGroups": [
+            {
+              "label": "Apples (1\u20133 days ahead)",
+              "ingredients": [
+                "6\u20138 large firm-fleshed apples, a mix of Braeburn, Honeycrisp, and Granny Smith"
+              ]
+            },
+            {
+              "label": "Caramel base",
+              "ingredients": [
+                "6 tablespoons (80 g) salted butter, very soft",
+                "2/3 cup (135 g) granulated or light brown sugar"
+              ]
+            },
+            {
+              "label": "Pastry",
+              "ingredients": [
+                "1 sheet all-butter puff pastry, about 8 oz (store-bought)"
+              ]
+            }
+          ],
+          "steps": [
+            "At least 1 day ahead: slice off the bottom of each apple so it sits flat. Peel and quarter; trim cores and seeds. Transfer to a bowl; refrigerate lightly covered 1\u20133 days. (Reduces liquid in the tart; apples may brown slightly \u2014 that's fine.)",
+            "Heat oven to 375\u00b0F (or 350\u00b0F convection). Thickly coat the bottom of a 10-inch heavy ovenproof skillet (preferably nonstick metal) with butter. Sprinkle sugar evenly on top.",
+            "Cut one piece of apple into a thick round disk; place in the center as the \u201cbutton.\u201d Arrange remaining apple pieces standing on their flat ends in tight concentric circles, like petals of a flower, packing closely so they support one another.",
+            "On a floured surface, roll puff pastry to about 1/8-inch thick. Cut a circle the same diameter as the top of the skillet. Drape over apples; tuck pastry down around the edges, hugging the apple pieces together.",
+            "Place skillet on stovetop over medium heat until golden-brown juice begins to bubble around the edges, about 3 minutes. (Spoon out any excess juices if they rise too high.) Raise heat so juices are at a boil; cook until juices darken and smell caramelized, no more than 10 minutes.",
+            "Transfer skillet to oven; bake 45\u201350 minutes until puff pastry is browned and firm.",
+            "Let cool 5 minutes. Carefully invert onto a round serving plate. (Or cool completely in the pan and rewarm 15 minutes in a 350\u00b0F oven before inverting.) If any apples stick, retrieve and rearrange. Serve warm in wedges with heavy cream, creme fraiche, or vanilla ice cream."
+          ],
+          "source": "Ron Paprocki, adapted by Julia Moskin / NYT Cooking"
+        },
+{
+          "title": "Pan-Baked Lemon Almond Tart",
+          "servings": "Serves 4",
+          "ingredientGroups": [
+            {
+              "label": "Batter",
+              "ingredients": [
+                "4 large eggs",
+                "1/2 to 3/4 cup granulated sugar (to taste)",
+                "Pinch of salt",
+                "1/2 cup ground almonds (almond flour)",
+                "1/2 cup heavy cream",
+                "1/2 cup sliced almonds, plus more for garnish",
+                "Zest and juice of 1 lemon"
+              ]
+            },
+            {
+              "label": "Cooking fat",
+              "ingredients": [
+                "2 tablespoons unsalted butter"
+              ]
+            },
+            {
+              "label": "To serve",
+              "ingredients": [
+                "Powdered sugar"
+              ]
+            }
+          ],
+          "steps": [
+            "Heat oven to 400\u00b0F. In a bowl, whisk together eggs, sugar, salt, ground almonds, cream, sliced almonds, lemon zest, and lemon juice.",
+            "Melt butter in an 8-inch ovenproof skillet over low heat. When foam subsides, pour in the almond mixture, tilting to distribute evenly. Cook on stovetop until edges just begin to set. Transfer to oven and bake until set, 10\u201315 minutes.",
+            "Briefly run under the broiler, about 1 minute, until just golden on top. Sprinkle with powdered sugar and additional sliced almonds; serve immediately."
+          ],
+          "source": "Mark Bittman / NYT Cooking"
+        },
+{
+          "title": "Passover Profiteroles With Strawberries",
+          "servings": "Makes about 2 dozen profiteroles",
+          "ingredientGroups": [
+            {
+              "label": "Cream puff shells",
+              "ingredients": [
+                "1 batch Passover Cream Puff Shells (Baking > Sweet)"
+              ]
+            },
+            {
+              "label": "Chocolate sauce",
+              "ingredients": [
+                "4 oz semisweet chocolate, chopped",
+                "1/2 cup water",
+                "3 tablespoons unsalted butter, room temperature, cut into 3 pieces",
+                "1 teaspoon vanilla extract"
+              ]
+            },
+            {
+              "label": "Chantilly cream",
+              "ingredients": [
+                "2 cups heavy cream, well chilled",
+                "3 tablespoons plus 1 teaspoon granulated sugar",
+                "2 teaspoons vanilla extract"
+              ]
+            },
+            {
+              "label": "Strawberries",
+              "ingredients": [
+                "1 pound strawberries, hulled",
+                "2 tablespoons granulated sugar"
+              ]
+            },
+            {
+              "label": "Garnish",
+              "ingredients": [
+                "3\u20134 teaspoons minced raw pistachios"
+              ]
+            }
+          ],
+          "steps": [
+            "Combine chocolate and 1/2 cup water in a small heavy saucepan over low heat, stirring often, until melted and smooth, about 3 minutes. Remove from heat; stir in butter and vanilla. (Makes 1 cup; keeps covered and refrigerated 3\u20135 days. Rewarm before using.)",
+            "In a large chilled bowl, whip cream with sugar and vanilla at medium-high speed until stiff. Refrigerate until ready to use, up to 30 minutes.",
+            "Slice strawberries into thick lengthwise slices (about 4 cups). Place in a bowl, sprinkle with 2 tablespoons sugar, and mix gently. Refrigerate until ready to use, up to 30 minutes.",
+            "Using a serrated knife, cut off the top half of each puff and reserve as a \u201chat.\u201d",
+            "Pipe whipped cream generously onto the bottom of each puff using a pastry bag fitted with a large star tip. Top with a layer of strawberries, allowing them to extend slightly over the edges. Pipe another layer of whipped cream over the berries. Set the pastry hat on top.",
+            "Drizzle with chocolate sauce (reheat over low heat if too thick). Garnish each with a pinch of minced pistachios. Serve immediately."
+          ],
+          "comments": [
+            "For Passover and pareve serving, substitute non-dairy whipping cream and margarine in the chocolate sauce; use vanilla sugar if kosher-for-Passover vanilla extract is unavailable."
+          ],
+          "source": "Faye Levy / Los Angeles Times"
         },
         {
           "title": "Mango with Sticky Rice (Khao Neow Mamuang)",
