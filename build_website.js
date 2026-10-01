@@ -2051,6 +2051,11 @@ function buildPage(section, navHtml, contentHtml, cookbookData) {
   'Ube Chiffon Cake':                                    'Filipino',
   // Dairy additions
   'Creme Fraiche':                                       'General',
+  // Breakfast additions
+  'Bircher Muesli':                                      'General',
+  'Japanese Souffle Pancakes':                           'Japanese',
+  'Lemon Ricotta Pancakes':                              'General',
+  'Monkey Bread':                                        'General',
 };
     document.querySelectorAll('.nav-l2, .nav-l3, .nav-l3b, .nav-l4').forEach(function (list) {
       list.classList.remove('collapsed');

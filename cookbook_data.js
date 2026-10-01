@@ -747,6 +747,250 @@ module.exports = {
             "Stir in ketchup and soy sauce.",
             "Return eggs and scallion greens to wok. Toss gently to combine. Serve immediately over rice."
           ]
+        },
+        {
+          "title": "Bircher Muesli",
+          "favorite": true,
+          "servings": "Serves 4-6",
+          "source": "Laura / My Little Gourmet (mylittlegourmet.com)",
+          "ingredientGroups": [
+            {
+              "label": "Night before",
+              "ingredients": [
+                "2 cups rolled or quick oats",
+                "1 cup heavy cream",
+                "3/4 cup milk",
+                "1/4 cup apple juice",
+                "3 tablespoons lemon juice",
+                "1 apple, grated with peel, core removed",
+                "1-2 tablespoons honey, to taste",
+                "1 1/2 cups plain yogurt",
+                "Dash of cinnamon (optional)",
+                "Dried fruit such as raisins (optional)",
+                "Nuts such as hazelnuts (optional)",
+                "Toasted coconut (optional)"
+              ]
+            },
+            {
+              "label": "To serve",
+              "ingredients": [
+                "Fresh fruit such as blueberries and strawberries"
+              ]
+            }
+          ],
+          "steps": [
+            "The night before: combine all night-before ingredients in a large container; stir well. Cover and refrigerate overnight. (If using quick oats and short on time, 30-60 minutes of soaking will suffice.)",
+            "In the morning, portion into bowls and top with fresh fruit."
+          ]
+        },
+        {
+          "title": "Japanese Souffle Pancakes",
+          "servings": "Makes 8 pancakes",
+          "source": "NYT Cooking (Daniela Galarza)",
+          "comments": [
+            "Requires four 3-inch-wide pastry rings, at least 1 1/2 inches tall. Cook in two batches of 4.",
+            "Cook over the lowest possible heat -- the low temperature is essential for the custardy, souffle-like texture.",
+            "Serve immediately; these pancakes deflate quickly."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Egg yolk batter",
+              "ingredients": [
+                "2 egg yolks (from 4 large eggs, separated and chilled)",
+                "1 tablespoon granulated sugar",
+                "2 teaspoons vanilla extract",
+                "1 teaspoon baking powder",
+                "6 tablespoons cake flour",
+                "1/4 cup milk, chilled"
+              ]
+            },
+            {
+              "label": "Meringue",
+              "ingredients": [
+                "4 egg whites (chilled)",
+                "1/2 teaspoon fresh lemon juice",
+                "1/2 teaspoon kosher salt",
+                "5 tablespoons granulated sugar"
+              ]
+            },
+            {
+              "label": "To serve",
+              "ingredients": [
+                "Unsalted butter",
+                "Maple syrup",
+                "Confectioners' sugar, whipped cream, and fresh berries (optional)"
+              ]
+            }
+          ],
+          "steps": [
+            "In a large bowl, whisk egg yolks with 1 tablespoon sugar, vanilla, and baking powder until blended. Add cake flour and milk; whisk until smooth.",
+            "In a clean bowl, combine egg whites, lemon juice, and salt. Beat on medium until foamy, about 1 minute. Gradually add 5 tablespoons sugar; increase to high and beat until stiff, glossy peaks form, about 1 more minute. Do not overbeat.",
+            "Scoop about 1/3 of meringue into yolk mixture; fold gently until almost combined. Fold in half the remaining meringue until almost combined, then fold in the rest just until no streaks remain.",
+            "Heat a lidded nonstick skillet over the lowest heat setting. Grease skillet and inside of four pastry rings with butter. Check heat: water droplets should steam off cleanly, not dance or sputter. Place rings in pan; ladle a scant 1/2 cup batter into each. Cover and cook until puffed and small bubbles form on top, 3-4 minutes.",
+            "Remove lid; carefully flip each pancake in its ring using two spatulas. Replace lid; cook until cooked through and springy to the touch, 2-3 minutes.",
+            "Transfer to a platter; re-grease skillet and rings. Repeat with remaining batter to make 4 more pancakes.",
+            "Serve immediately with butter and maple syrup. Top with confectioners' sugar, whipped cream, and/or berries if desired."
+          ],
+          "highAltitude": {
+            "ingredientGroups": [
+              {
+                "label": "Egg yolk batter",
+                "ingredients": [
+                  "2 egg yolks (from 4 large eggs, separated and chilled)",
+                  "1 tablespoon granulated sugar",
+                  "2 teaspoons vanilla extract",
+                  "3/4 teaspoon baking powder",
+                  "6 tablespoons cake flour",
+                  "1/4 cup milk, chilled"
+                ]
+              }
+            ],
+            "steps": [
+              "Beat egg whites to medium-firm peaks (not full stiff peaks) to prevent over-rising at altitude."
+            ]
+          }
+        },
+        {
+          "title": "Lemon Ricotta Pancakes",
+          "servings": "Serves 6   |   About 13 pancakes",
+          "source": "cookingclassy.com",
+          "ingredientGroups": [
+            {
+              "label": "Dry",
+              "ingredients": [
+                "1 1/2 cups all-purpose flour",
+                "3 1/2 tablespoons granulated sugar",
+                "2 teaspoons baking powder",
+                "1/4 teaspoon baking soda",
+                "1/2 teaspoon salt"
+              ]
+            },
+            {
+              "label": "Wet",
+              "ingredients": [
+                "1 cup milk",
+                "3/4 cup ricotta (low-fat or whole)",
+                "3 large eggs",
+                "1 teaspoon vanilla extract",
+                "1-2 tablespoons lemon zest",
+                "1/4 cup fresh lemon juice",
+                "1 tablespoon butter, melted"
+              ]
+            },
+            {
+              "label": "To serve",
+              "ingredients": [
+                "Powdered sugar (optional)",
+                "Maple syrup or berry syrup"
+              ]
+            }
+          ],
+          "steps": [
+            "Preheat an electric griddle to moderately high heat, or set a nonstick skillet over medium heat.",
+            "In a large bowl, whisk together flour, sugar, baking powder, baking soda, and salt.",
+            "In a separate bowl, whisk together milk, ricotta, eggs, and vanilla. Add butter, lemon zest, and lemon juice; stir to combine (mixture will curdle slightly -- that's fine).",
+            "Pour wet mixture into dry and whisk just until combined; batter should be slightly lumpy.",
+            "Butter the griddle or skillet. Pour 1/3 cup batter per pancake. Cook until bubbles appear and bottom is golden brown, then flip and cook until golden on the other side.",
+            "Serve warm, dusted with powdered sugar if desired, drizzled with maple syrup or berry syrup."
+          ],
+          "highAltitude": {
+            "ingredientGroups": [
+              {
+                "label": "Dry",
+                "ingredients": [
+                  "1 1/2 cups all-purpose flour",
+                  "3 1/2 tablespoons granulated sugar",
+                  "1 1/2 teaspoons baking powder",
+                  "1/4 teaspoon baking soda",
+                  "1/2 teaspoon salt"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "title": "Monkey Bread",
+          "servings": "Serves 8",
+          "source": "Bon Appetit (Claire Saffitz), December 2017",
+          "comments": [
+            "Dough can be made 1 day ahead: after punching down (step 5), press into plastic-lined pan and refrigerate overnight instead of freezing.",
+            "Special equipment: 10-inch tube pan or 10-cup Bundt pan."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Dough butter",
+              "ingredients": [
+                "1 cup (2 sticks) unsalted butter, chilled, cut into 1-inch pieces, plus more for bowl"
+              ]
+            },
+            {
+              "label": "Yeast",
+              "ingredients": [
+                "1/3 cup whole milk",
+                "1 package (2 1/4 teaspoons) active dry yeast"
+              ]
+            },
+            {
+              "label": "Dough",
+              "ingredients": [
+                "3 cups (or more) all-purpose flour",
+                "3 tablespoons sugar",
+                "1 teaspoon kosher salt",
+                "4 large eggs, room temperature"
+              ]
+            },
+            {
+              "label": "Coating",
+              "ingredients": [
+                "3/4 cup granulated sugar",
+                "1 tablespoon ground cinnamon",
+                "6 tablespoons unsalted butter, melted, slightly cooled, plus more for pan",
+                "Sanding or granulated sugar for pan"
+              ]
+            },
+            {
+              "label": "To serve",
+              "ingredients": [
+                "Prepared caramel sauce"
+              ]
+            }
+          ],
+          "steps": [
+            "Beat 1 cup butter in a stand mixer with paddle attachment on medium-low until smooth and pliable but still cold, about 1 minute. Scrape into a bowl; set aside (keep the mixer bowl).",
+            "Heat milk in a small saucepan over low until 110-115 degrees F. Whisk in yeast; let sit until foamy, about 5 minutes.",
+            "In the reserved mixer bowl, whisk flour, sugar, and salt. Add yeast mixture and eggs; beat with dough hook on low, increasing to medium, until dough is smooth, elastic, and no longer sticking to the sides, about 5 minutes. Add flour by the tablespoonful as needed if dough isn't pulling away from the bowl cleanly.",
+            "With motor running, add reserved butter a tablespoonful at a time, waiting until absorbed before adding more. Dough will be very smooth, soft, and supple.",
+            "Place dough in a large buttered bowl, cover, and let rise in a warm spot until nearly doubled, 55-65 minutes.",
+            "Punch down dough. Line a 13x9-inch baking dish with plastic wrap; press dough into an even layer. Fold plastic over, eliminating air pockets. Freeze until firm, 20-30 minutes.",
+            "Brush tube or Bundt pan with butter; coat with sanding sugar. Mix 3/4 cup granulated sugar and cinnamon. Remove dough from freezer; peel back plastic. Brush entire surface with melted butter and coat generously with cinnamon sugar. Invert onto work surface sugar side down; remove plastic. Brush other side with butter and coat with more cinnamon sugar. Cut dough into a 12x6 grid.",
+            "Working quickly, roll each piece into a ball, dusting with more cinnamon sugar as needed. Place in prepared pan. Cover with plastic wrap and let rise in a warm spot until nearly doubled, 40-50 minutes. Preheat oven to 350 degrees F.",
+            "Bake until golden brown, 25-35 minutes. Cool 10 minutes; loosen from sides and bottom with an offset spatula. Invert onto a plate, then place a wire rack over and invert right side up. (For Bundt pan: invert directly onto rack.) Cool at least 15 minutes before serving.",
+            "Pour about 1/2 cup caramel sauce over monkey bread if desired; serve with more sauce alongside for dipping."
+          ],
+          "highAltitude": {
+            "ingredientGroups": [
+              {
+                "label": "Yeast",
+                "ingredients": [
+                  "1/3 cup whole milk",
+                  "1 3/4 teaspoons active dry yeast"
+                ]
+              },
+              {
+                "label": "Dough",
+                "ingredients": [
+                  "3 cups (or more) all-purpose flour",
+                  "2 tablespoons + 1 teaspoon sugar",
+                  "1 teaspoon kosher salt",
+                  "4 large eggs, room temperature"
+                ]
+              }
+            ],
+            "steps": [
+              "First rise: check at 40-45 minutes.",
+              "Second rise: check at 25-30 minutes."
+            ]
+          }
         }
       ]
     },
@@ -16084,7 +16328,7 @@ module.exports = {
                 {
                   "label": "Crust",
                   "ingredients": [
-                    {"html": "1 disk <a href=\"baking.html#baking-sweet-all-shortening-pie-crust\">All-Shortening Pie Crust</a> (Baking &gt; Sweet)"}
+                    {"html": "1 disk <a href=\"baking.html#baking-sweet-all-shortening-pie-crust\">All-Shortening Pie Crust</a>"}
                   ]
                 },
                 {
@@ -17987,7 +18231,7 @@ module.exports = {
               "servings": "Makes one 12-inch pizza",
               "source": "Bon Appétit (Molly Baz)",
               "comments": [
-                {"html": "Uses one ball of <a href=\"baking.html#baking-savory-72-hour-pizza-dough\">72-Hour Pizza Dough</a> from Baking &gt; Savory. Make the dough at least 3 days ahead."},
+                {"html": "Uses one ball of <a href=\"baking.html#baking-savory-72-hour-pizza-dough\">72-Hour Pizza Dough</a>. Make the dough at least 3 days ahead."},
                 "Preheat, stretch, and bake the dough per that recipe's instructions."
               ],
               "ingredientGroups": [
@@ -18046,14 +18290,14 @@ module.exports = {
               "source": "Grits and Chopsticks (broccoli filling) / Once Upon a Chef, Jennifer Segal (spinach filling)",
               "comments": [
                 "Make one filling, not both. Both use the same cream custard base.",
-                {"html": "The crust must be fully blind-baked before filling -- follow the <a href=\"baking.html#baking-sweet-all-shortening-pie-crust\">All-Shortening Pie Crust</a> recipe (Baking &gt; Sweet) all the way through the full blind-bake step, then proceed here."},
+                {"html": "The crust must be fully blind-baked before filling -- follow the <a href=\"baking.html#baking-sweet-all-shortening-pie-crust\">All-Shortening Pie Crust</a> recipe all the way through the full blind-bake step, then proceed here."},
                 "Make-ahead: quiche keeps refrigerated up to 1 day. Freeze up to 3 months. Reheat covered with foil at 300 degrees F for 35-45 minutes until hot in the center."
               ],
               "ingredientGroups": [
                 {
                   "label": "Crust",
                   "ingredients": [
-                    {"html": "1 disk <a href=\"baking.html#baking-sweet-all-shortening-pie-crust\">All-Shortening Pie Crust</a> (Baking &gt; Sweet), fully blind-baked"}
+                    {"html": "1 disk <a href=\"baking.html#baking-sweet-all-shortening-pie-crust\">All-Shortening Pie Crust</a>, fully blind-baked"}
                   ]
                 },
                 {
@@ -18094,7 +18338,7 @@ module.exports = {
                 }
               ],
               "steps": [
-                {"html": "Blind bake the crust fully, following the <a href=\"baking.html#baking-sweet-all-shortening-pie-crust\">All-Shortening Pie Crust</a> recipe (Baking &gt; Sweet). Set the baked crust aside on a baking sheet. Reduce oven to 325 degrees F."},
+                {"html": "Blind bake the crust fully, following the <a href=\"baking.html#baking-sweet-all-shortening-pie-crust\">All-Shortening Pie Crust</a> recipe. Set the baked crust aside on a baking sheet. Reduce oven to 325 degrees F."},
                 "Prepare your chosen filling. Broccoli: heat olive oil in a skillet with a tight-fitting lid over medium heat. Add the onion; saute 2-3 minutes until translucent. Add garlic and broccoli; saute 2 minutes more. Add the tablespoon of water, cover, and reduce heat to medium-low; steam 2-3 minutes until the broccoli is bright green but still slightly crunchy. Remove from heat, drain in a colander, and let cool completely. Spinach: melt butter in a small skillet over medium-low heat. Add shallots and cook until soft and translucent, about 8 minutes -- do not brown. Set aside to cool.",
                 "In a medium bowl, whisk together eggs, cream, salt, pepper, nutmeg, and cayenne until just incorporated -- do not overbeat or you will get froth.",
                 "Spread the filling evenly over the bottom of the baked crust. For spinach: layer shallots first, then Gruyere, then spinach. For broccoli: spread broccoli, then Gruyere. Sprinkle Parmesan over the top if using. Slowly pour the custard over the filling, up to within 1/4 inch of the rim.",
@@ -18167,7 +18411,7 @@ module.exports = {
               "comments": [
                 "The egg yolk and cold butter stirred in at the end are traditional and essential -- don't skip them.",
                 "Herb additions to the cheese filling: stir in 2-3 tablespoons chopped fresh dill and/or 1-2 tablespoons chopped fresh cilantro before filling. Other traditional herb options include tarragon (the classic Georgian choice, tarkhunit), flat-leaf parsley, or a pinch of ground coriander seed.",
-                "Shortcut: substitute 12 oz store-bought pizza dough or one ball of 72-Hour Pizza Dough (Baking > Savory) in place of the handmade dough -- skip steps 1-2 and proceed directly to step 3."
+                {"html": "Shortcut: substitute 12 oz store-bought pizza dough or one ball of <a href=\"baking.html#baking-savory-72-hour-pizza-dough\">72-Hour Pizza Dough</a> in place of the handmade dough -- skip steps 1-2 and proceed directly to step 3."}
               ],
               "ingredientGroups": [
                 {
@@ -18556,14 +18800,14 @@ module.exports = {
                 {
                   "label": "Dough",
                   "ingredients": [
-                    {"html": "1 recipe <a href=\"baking.html#baking-savory-grandma-style-pizza-dough\">Grandma-Style Pizza Dough</a> (Baking &gt; Savory), risen on an 18x13-inch baking sheet"}
+                    {"html": "1 recipe <a href=\"baking.html#baking-savory-grandma-style-pizza-dough\">Grandma-Style Pizza Dough</a>, risen on an 18x13-inch baking sheet"}
                   ]
                 },
                 {
                   "label": "Toppings",
                   "ingredients": [
                     "12 oz fresh mozzarella, grated (about 2 1/2 cups)",
-                    {"html": "1 cup <a href=\"sauces.html#sauces-italian-fresh-tomato-pizza-sauce\">Fresh Tomato Pizza Sauce</a> (Sauces &gt; Italian)"},
+                    {"html": "1 cup <a href=\"sauces.html#sauces-italian-fresh-tomato-pizza-sauce\">Fresh Tomato Pizza Sauce</a>"},
                     "2 oz thinly sliced hot soppressata",
                     "2 oz thinly sliced sweet soppressata",
                     "1/2 fennel bulb, thinly sliced",
@@ -18655,7 +18899,7 @@ module.exports = {
           ],
           "comments": [
             "Maintain a 5:1 cream-to-buttermilk ratio to scale up. Creme fraiche is richer and more stable than sour cream when cooked (less prone to curdling). Also excellent stirred into pan sauces or served as a topping.",
-            {"html": "Used in <a href=\"baking.html#baking-sweet-squirls-sourdough-scones\">Sqirl’s Sourdough Scones</a> (Baking &gt; Sweet). Store-bought creme fraiche can be substituted."}
+            {"html": "Used in <a href=\"baking.html#baking-sweet-squirls-sourdough-scones\">Sqirl’s Sourdough Scones</a>. Store-bought creme fraiche can be substituted."}
           ],
           "source": "Traditional method"
         }
@@ -19209,7 +19453,7 @@ module.exports = {
               "source": "Bon Appetit (Andy Baraghani), January 2018",
               "comments": [
                 "Use whatever fresh chiles you can find, but the sauce should have real heat. Jalapenos work in a pinch but are milder.",
-                "Excellent with sandwiches, over grilled meats, roasted potatoes, and with Flaky Bread (Malawah) in Baking > Bread.",
+                {"html": "Excellent with sandwiches, over grilled meats, roasted potatoes, and with <a href=\"baking.html#baking-bread-flaky-bread-malawah\">Flaky Bread (Malawah)</a>."},
                 "Do ahead: sauce (without lemon juice) can be made 1 day ahead. Cover and refrigerate. Let come to room temperature, then stir in lemon juice before serving.",
                 "Special equipment: spice mill or mortar and pestle."
               ],
@@ -19791,7 +20035,7 @@ module.exports = {
               "label": "Crust",
               "ingredients": [
                 "All-purpose flour, for rolling",
-                "Dough for one 9-inch single-crust pie (see All-Shortening Pie Crust, Baking > Sweet)"
+                {"html": "Dough for one 9-inch single-crust pie (see <a href=\"baking.html#baking-sweet-all-shortening-pie-crust\">All-Shortening Pie Crust</a>)"}
               ]
             },
             {
@@ -19937,7 +20181,7 @@ module.exports = {
             {
               "label": "Crust",
               "ingredients": [
-                {"html": "2 disks <a href=\"baking.html#baking-sweet-all-shortening-pie-crust\">All-Shortening Pie Crust</a> (Baking &gt; Sweet)"}
+                {"html": "2 disks <a href=\"baking.html#baking-sweet-all-shortening-pie-crust\">All-Shortening Pie Crust</a>"}
               ]
             },
             {
@@ -20460,7 +20704,7 @@ module.exports = {
             {
               "label": "Cream puff shells",
               "ingredients": [
-                "1 batch Passover Cream Puff Shells (Baking > Sweet)"
+                {"html": "1 batch <a href=\"baking.html#baking-sweet-passover-cream-puff-shells\">Passover Cream Puff Shells</a>"}
               ]
             },
             {
