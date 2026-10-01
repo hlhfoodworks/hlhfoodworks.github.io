@@ -11141,1609 +11141,6 @@ module.exports = {
       ]
     },
     {
-      "title": "Vegetable Sides",
-      "subsections": [
-        {
-          "title": "Potatoes",
-          "recipes": [
-            {
-              "title": "Brown Butter Mashed Potatoes",
-              "servings": "Serves 12",
-              "source": "Food Network / Ree Drummond",
-              "ingredientGroups": [
-                {
-                  "label": "Potatoes",
-                  "ingredients": [
-                    "5 pounds Yukon gold potatoes, peeled and cut into chunks"
-                  ]
-                },
-                {
-                  "label": "Brown butter",
-                  "ingredients": [
-                    "2 1/2 sticks (1 1/4 cups) salted butter"
-                  ]
-                },
-                {
-                  "label": "Enrichments",
-                  "ingredients": [
-                    "1 1/2 packages (12 oz total) cream cheese, softened",
-                    "1/2 cup half-and-half",
-                    "1/2 cup heavy cream",
-                    "Kosher salt and black pepper",
-                    "Splash of milk to thin, if needed"
-                  ]
-                },
-                {
-                  "label": "To serve",
-                  "ingredients": [
-                    "Fresh parsley, chopped"
-                  ]
-                }
-              ],
-              "steps": [
-                "Boil potatoes in salted water until very tender, about 20–25 minutes. Drain.",
-                "Melt butter in a light-colored skillet over medium heat, swirling frequently, until milk solids turn golden brown and butter smells nutty, about 5–8 minutes. Watch carefully to avoid burning.",
-                "Mash or rice potatoes in a large bowl. Add brown butter, cream cheese, half-and-half, and heavy cream; stir until smooth. Season generously with salt and pepper. Thin with a splash of milk if needed.",
-                "Serve topped with fresh parsley."
-              ]
-            },
-            {
-              "title": "Crispy Smashed Potatoes",
-              "favorite": true,
-              "servings": "Serves 6",
-              "source": "Modern Honey / Melissa Stadler",
-              "ingredientGroups": [
-                {
-                  "label": "Potatoes",
-                  "ingredients": [
-                    "1 1/2 pounds petite Yukon gold or fingerling potatoes"
-                  ]
-                },
-                {
-                  "label": "Drizzle",
-                  "ingredients": [
-                    "3 tablespoons salted butter, melted",
-                    "2 tablespoons extra-virgin olive oil",
-                    "1 teaspoon salt",
-                    "1/2 teaspoon pepper"
-                  ]
-                },
-                {
-                  "label": "Garlic cheddar dip",
-                  "ingredients": [
-                    "8 oz sour cream",
-                    "3/4 cup cheddar cheese, grated",
-                    "1 garlic clove, minced (or 1/4 teaspoon garlic powder)",
-                    "1/2 teaspoon garlic salt",
-                    "1/4 teaspoon pepper"
-                  ]
-                },
-                {
-                  "label": "To serve",
-                  "ingredients": [
-                    "Fresh parsley, chopped"
-                  ]
-                }
-              ],
-              "steps": [
-                "Cook potatoes: boil in salted water until fork-tender, 20–25 minutes, then drain. Alternatively, roast at 425 degrees F for about 25 minutes until just tender — this produces a drier potato and results in a crispier final texture after smashing.",
-                "Preheat oven to 425 degrees F (if using the boiling method). Arrange potatoes on a greased rimmed baking sheet. Smash each potato with the bottom of a glass or measuring cup until about 1/2-inch thick.",
-                "Mix melted butter, olive oil, salt, and pepper; drizzle over smashed potatoes.",
-                "Roast 35–45 minutes until deeply golden and crispy.",
-                "Meanwhile, stir together all dip ingredients until combined. Refrigerate until ready to serve.",
-                "Serve potatoes hot with garlic cheddar dip and fresh parsley."
-              ]
-            },
-            {
-              "title": "Over-the-Top Scalloped Potatoes",
-              "servings": "Serves 6–8",
-              "source": "Food Network / Ree Drummond",
-              "comments": [
-                "Contains bacon."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Onion and bacon",
-                  "ingredients": [
-                    "2 tablespoons salted butter",
-                    "1 large white onion, thinly sliced",
-                    "5 slices bacon, diced"
-                  ]
-                },
-                {
-                  "label": "Cream sauce",
-                  "ingredients": [
-                    "2 cups heavy cream",
-                    "1 cup half-and-half",
-                    "1/4 cup all-purpose flour",
-                    "1 teaspoon freshly ground black pepper",
-                    "Pinch kosher salt"
-                  ]
-                },
-                {
-                  "label": "Cheese",
-                  "ingredients": [
-                    "1 cup fontina, grated",
-                    "1 cup Gruyere, grated"
-                  ]
-                },
-                {
-                  "label": "Potatoes",
-                  "ingredients": [
-                    "3 pounds Yukon gold potatoes, sliced 1/8-inch thick (use a mandoline)"
-                  ]
-                },
-                {
-                  "label": "To serve",
-                  "ingredients": [
-                    "2 green onions, thinly sliced"
-                  ]
-                }
-              ],
-              "steps": [
-                "Preheat oven to 350 degrees F. Melt butter in a large skillet over medium heat. Add onion and cook until caramelized, about 15 minutes. Add bacon and cook until crisp. Set aside.",
-                "Whisk together heavy cream, half-and-half, flour, pepper, and salt until smooth.",
-                "Layer half the potatoes in a greased 2-quart baking dish. Top with half the onion-bacon mixture, half the cream sauce, and half the cheese.",
-                "Repeat layers with remaining potatoes, onion-bacon, cream sauce, and cheese.",
-                "Cover tightly with foil and bake 40 minutes. Uncover and bake 20 minutes more until golden and bubbly. Let rest 10 minutes before serving. Top with sliced green onions."
-              ]
-            },
-            {
-              "title": "Perfect Twice Fried French Fries",
-              "servings": "Serves 4–6",
-              "source": "The Salted Potato / Renee Robinson",
-              "favorite": true,
-              "comments": [
-                "The first fry cooks the interior; the second fry crisps the exterior. Two-stage frying is the key to the classic bistro-style fry."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Fries",
-                  "ingredients": [
-                    "4 large Russet potatoes, cut into 1/4-inch sticks (unpeeled)",
-                    "Ice water to cover"
-                  ]
-                },
-                {
-                  "label": "For frying",
-                  "ingredients": [
-                    "2 quarts peanut oil"
-                  ]
-                },
-                {
-                  "label": "To season",
-                  "ingredients": [
-                    "Salt",
-                    "Aleppo pepper"
-                  ]
-                }
-              ],
-              "steps": [
-                "Place potato sticks in a large bowl, cover with ice water, and soak at least 30 minutes (or up to overnight in the refrigerator). Drain and pat thoroughly dry.",
-                "Heat peanut oil to 325 degrees F in a large Dutch oven or heavy-bottomed pot.",
-                "Working in batches, fry potatoes 8–9 minutes until pale golden but not browned. Remove with a spider or slotted spoon; drain on a wire rack. Let rest at least 15 minutes (or cool completely and refrigerate up to 24 hours).",
-                "Heat oil to 350 degrees F. Working in batches, fry potatoes again until deep golden and very crisp, about 2 minutes.",
-                "Drain on wire rack; season immediately with salt and Aleppo pepper. Serve at once."
-              ]
-            },
-            {
-              "title": "Classic Potato Gratin",
-              "servings": "Serves 6",
-              "source": "Claire Saffitz / Bon Appetit, November 2015",
-              "comments": [
-                "Do ahead: bake up to 1 day ahead; cover, refrigerate, bring to room temperature before broiling.",
-                "Do not rinse potato slices after cutting -- the starch is what makes the gratin creamy.",
-                "Comté is an excellent substitute for Gruyere."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Cream mixture",
-                  "ingredients": [
-                    "1 medium shallot, quartered through root end",
-                    "1 1/4 cups heavy cream",
-                    "1 1/2 teaspoons kosher salt",
-                    "1/2 teaspoon freshly ground black pepper",
-                    "1 1/2 teaspoons thyme leaves",
-                    "2 cloves garlic"
-                  ]
-                },
-                {
-                  "label": "Gratin dish",
-                  "ingredients": [
-                    "1 small garlic clove, halved",
-                    "1 1/2 teaspoons unsalted butter, room temperature"
-                  ]
-                },
-                {
-                  "label": "Potatoes",
-                  "ingredients": [
-                    "2 pounds russet potatoes, scrubbed and very thinly sliced on a mandoline (do not rinse after slicing)"
-                  ]
-                },
-                {
-                  "label": "Topping",
-                  "ingredients": [
-                    "1 1/2 oz Gruyere, finely grated",
-                    "1/2 oz Parmesan, finely grated",
-                    "Extra thyme leaves for serving"
-                  ]
-                }
-              ],
-              "steps": [
-                "Preheat oven to 325 degrees F. Rub the inside of a 2-quart shallow baking dish with the cut sides of the halved garlic clove; smear with butter all over.",
-                "Combine shallot, cream, salt, pepper, thyme, and 2 garlic cloves in a small saucepan. Simmer over low heat until shallot and garlic are very soft, 15 to 20 minutes. Let cool slightly, then blend until smooth.",
-                "Fan out handfuls of potato slices and arrange in the buttered dish at a slight angle, shingling as you work. Tuck smaller slices into gaps. Pour cream mixture over potatoes. Cover tightly with foil.",
-                "Bake until potatoes are tender and creamy, 60 to 75 minutes (often closer to 90 -- baking the day ahead avoids this uncertainty). Let cool.",
-                "Heat broiler with rack in highest position. Remove foil and top potatoes with Gruyere and Parmesan. Broil until cheese is bubbling and golden, 5 to 10 minutes. Scatter with thyme leaves and serve."
-              ]
-            },
-            {
-              "title": "Potato Latkes",
-              "favorite": true,
-              "servings": "Makes about 12 latkes",
-              "source": "\"Celebration: The Book of Jewish Festivals,\" ed. Naomi Black (Jonathan David Publishers, 1989)",
-              "comments": [
-                "Keep finished latkes warm in a 250°F oven while frying subsequent batches.",
-                "The original notes you can use more flour or matzo meal as needed to hold the batter together.",
-                "Variation: Pour the same batter into a well-greased muffin pan and bake 45 minutes at 350°F."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Batter",
-                  "ingredients": [
-                    "6 medium potatoes, grated",
-                    "1 onion, grated",
-                    "2 eggs",
-                    "2 tablespoons flour or matzo meal (more as needed)",
-                    "1 teaspoon salt"
-                  ]
-                },
-                {
-                  "label": "For frying",
-                  "ingredients": [
-                    "Vegetable oil"
-                  ]
-                }
-              ],
-              "steps": [
-                "Grate the potatoes into a mixing bowl. Squeeze out the liquid or drain in a colander for a few minutes. Grate the onion into the potatoes.",
-                "Add the eggs and mix. Add the flour and mix. Add the salt and stir until you have a smooth batter that drops heavily from the spoon.",
-                "Heat enough vegetable oil in a frying pan to cover the latkes amply. Drop the batter from a tablespoon into the hot oil, making pancakes about 3 inches in diameter. Do not allow the oil to smoke; let it come back up to temperature after every few latkes and after replenishing the oil.",
-                "Fry until brown on the underside, then turn and brown the other side. Lift out and drain on paper towels. Keep warm in a 250°F oven while frying remaining batches."
-              ]
-            },
-            {
-              "title": "Potatoes Gratin (Low Calorie)",
-              "servings": "Serves 6–8   |   Prep: 10 min   |   Cook: 1 to 1 1/4 hours",
-              "source": "Family recipe card",
-              "comments": [
-                "Low-calorie version using skim milk and eggs rather than cream."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Potatoes",
-                  "ingredients": [
-                    "2 large garlic cloves, halved lengthwise",
-                    "3 pounds new potatoes, unpeeled, scrubbed, and very thinly sliced"
-                  ]
-                },
-                {
-                  "label": "Custard",
-                  "ingredients": [
-                    "3 1/3 cups skim milk",
-                    "2 large eggs, lightly beaten",
-                    "Salt and pepper to taste"
-                  ]
-                },
-                {
-                  "label": "Topping",
-                  "ingredients": [
-                    "6 tablespoons grated parmesan cheese"
-                  ]
-                }
-              ],
-              "steps": [
-                "Preheat oven to 400°F. Rub the inside of a 9x14x2-inch Pyrex dish with the cut side of the garlic. Thinly slice the garlic and toss with the potatoes.",
-                "Layer potatoes in the Pyrex dish. Mix together milk, eggs, salt, and pepper. Pour mixture over potatoes.",
-                "Bake 1 to 1 1/4 hours. Every 15 minutes, remove from oven and, using a knife or wooden spoon, press down the top layer of potatoes that has gotten crusty and fold it into the rest.",
-                "When golden and potatoes are tender, sprinkle with parmesan and return to oven. Bake until a golden crust forms, about 10–15 minutes."
-              ]
-            }
-          ]
-        },
-        {
-          "title": "Stovetop",
-          "recipes": [
-            {
-              "title": "Sautéed Mushrooms",
-              "servings": "Serves 6   |   Prep: 10 min   |   Cook: 20 min   |   Total: 30 min",
-              "source": "Sommer Collier, A Spicy Perspective",
-              "comments": [
-                "The classic steak topping — also great over chicken, pork chops, or grain bowls. Have patience: let the mushrooms release all their moisture before they begin to brown. Leftovers keep in the fridge up to 10 days; reheat on the stovetop with a little extra butter."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Mushrooms and fat",
-                  "ingredients": [
-                    "2 pounds button mushrooms, halved",
-                    "2 tablespoons unsalted butter",
-                    "2 tablespoons olive oil"
-                  ]
-                },
-                {
-                  "label": "Aromatics",
-                  "ingredients": [
-                    "3 garlic cloves, minced",
-                    "Salt and pepper to taste"
-                  ]
-                },
-                {
-                  "label": "Glaze",
-                  "ingredients": [
-                    "1½ tablespoons fresh thyme leaves",
-                    "¾ cup dry sherry"
-                  ]
-                }
-              ],
-              "steps": [
-                "Place a large sauté pan over medium heat. Add the butter and olive oil. Once the butter has melted, add the mushrooms.",
-                "Let the mushrooms sear for 5 minutes, stirring to flip them. Add the garlic and salt and pepper to taste. Sear another 5 minutes to develop a rich caramelized color.",
-                "Stir in the thyme leaves and sherry. Lower heat to medium-low and simmer about 10 minutes, stirring occasionally, until the mushrooms have absorbed the sherry and only a small amount of moisture remains in the pan.",
-                "Taste and adjust salt and pepper. Serve warm over steak, chicken, pork chops, or as a side dish."
-              ]
-            },
-            {
-              "title": "Classic Steakhouse Creamed Spinach",
-              "servings": "Serves 6",
-              "source": "Sabrina Snyder / Dinner, then Dessert",
-              "comments": [
-                "Can be made a day ahead and refrigerated; reheat gently on the stovetop with a splash of milk or cream to loosen."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Spinach",
-                  "ingredients": [
-                    "2 1/4 pounds fresh spinach (or 1 pound frozen spinach, defrosted and squeezed dry)",
-                    "2 teaspoons kosher salt"
-                  ]
-                },
-                {
-                  "label": "Cream sauce base",
-                  "ingredients": [
-                    "4 tablespoons unsalted butter",
-                    "1 medium yellow onion, minced",
-                    "3 cloves garlic, minced",
-                    "2 teaspoons kosher salt",
-                    "1 teaspoon coarse ground black pepper",
-                    "1/2 teaspoon ground nutmeg",
-                    "1/4 cup all-purpose flour",
-                    "3 1/2 cups half-and-half"
-                  ]
-                },
-                {
-                  "label": "Cheese",
-                  "ingredients": [
-                    "1 cup shredded mozzarella",
-                    "4 oz cream cheese",
-                    "1/2 cup grated Parmesan"
-                  ]
-                }
-              ],
-              "steps": [
-                "Bring a large pot of water to a boil with 2 teaspoons salt. Add spinach and cook just until wilted, about 1 minute. Drain, rinse with cold water, and squeeze out as much water as possible in fistfuls. Chop into 3/4-inch pieces.",
-                "Melt butter in a large skillet over medium-low. Add onion and garlic; cook until onions are translucent, 8 to 10 minutes.",
-                "Stir in remaining 2 teaspoons salt, pepper, and nutmeg. Add flour and stir over low heat until the mixture smells nutty, 2 to 3 minutes.",
-                "Pour in half-and-half and cook, stirring, until the mixture comes to a boil.",
-                "Add mozzarella and cream cheese; stir until smooth. Cook until thickened, 6 to 8 minutes.",
-                "Stir in spinach and Parmesan. Serve hot."
-              ]
-            },
-            {
-              "title": "Kickin' Collard Greens",
-              "servings": "Serves 6",
-              "source": "Ken Adams / Allrecipes",
-              "ingredientGroups": [
-                {
-                  "label": "Aromatics",
-                  "ingredients": [
-                    "1 tablespoon olive oil",
-                    "3 slices bacon",
-                    "1 large onion, chopped",
-                    "2 cloves garlic, minced"
-                  ]
-                },
-                {
-                  "label": "Greens",
-                  "ingredients": [
-                    "1 pound fresh collard greens, washed and cut into 2-inch pieces"
-                  ]
-                },
-                {
-                  "label": "Braising liquid",
-                  "ingredients": [
-                    "3 cups chicken broth",
-                    "1 teaspoon salt",
-                    "1 teaspoon black pepper",
-                    "1 pinch Aleppo pepper or red pepper flakes, or more to taste"
-                  ]
-                }
-              ],
-              "steps": [
-                "Heat oil in a large pot over medium-high. Add bacon and cook until crisp, 5 to 7 minutes. Remove with a slotted spoon, crumble, and return to the pot.",
-                "Add onion and cook until tender, about 5 minutes. Add garlic and cook until just fragrant, about 1 minute more. Add collard greens and stir until they start to wilt.",
-                "Pour in chicken broth and season with salt, pepper, and Aleppo pepper. Reduce heat to low, cover, and simmer until greens are very tender, about 45 minutes. Taste and add more Aleppo pepper for heat if desired."
-              ]
-            },
-            {
-              "title": "Eggplant Caponata",
-              "servings": "Serves 4–6",
-              "source": "From Chef Louisa (Villa Britannia, Taormina, Sicily)",
-              "comments": [
-                "Even better a day or two after making — serve warm or cold, as a starter or side.",
-                "The two add-in options (olives and capers, or raisins and pine nuts) can be used separately or mixed together.",
-                "Optional additional vegetables: carrots (parboil 3 minutes like the celery), zucchini or potatoes (deep-fry with the eggplant), artichoke hearts (parboil)."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Eggplant (1 hour ahead)",
-                  "ingredients": [
-                    "600g eggplant, peeled mostly (leaving a little skin), diced into roughly 2 cm cubes",
-                    "1 tablespoon fine salt (for draining)",
-                    "500ml sunflower or peanut oil (for frying)"
-                  ]
-                },
-                {
-                  "label": "Peppers",
-                  "ingredients": [
-                    "500g mixed-color peppers, diced into roughly 2 cm pieces"
-                  ]
-                },
-                {
-                  "label": "Base",
-                  "ingredients": [
-                    "100ml extra-virgin olive oil",
-                    "200g red onion, diced into 1 cm pieces",
-                    "200g celery (outer stalks), lightly peeled, cut into 1 cm pieces (briefly boil in unsalted water 3 minutes — keep crunch)",
-                    "300g cherry or plum tomatoes, roughly chopped"
-                  ]
-                },
-                {
-                  "label": "Sweet-sour finish",
-                  "ingredients": [
-                    "30g (about 2 tablespoons) brown sugar",
-                    "100ml red wine vinegar"
-                  ]
-                },
-                {
-                  "label": "Add-ins",
-                  "ingredients": [
-                    "100g green olives, rinsed and roughly chopped; and 50g capers, desalted and roughly chopped",
-                    "OR: 100g raisins; and 50g pine nuts"
-                  ]
-                },
-                {
-                  "label": "To finish",
-                  "ingredients": [
-                    "Large handful of fresh basil leaves, torn"
-                  ]
-                }
-              ],
-              "steps": [
-                "Toss diced eggplant with the salt in a colander. Place a weighted plate on top (with a bowl underneath). Leave at least 1 hour. Squeeze handfuls to remove remaining moisture before frying.",
-                "Heat sunflower oil in a deep pan until sizzling. Fry eggplant in batches until lightly browned. Remove and drain on kitchen paper. Fry the peppers in the same oil last (they discolor the oil). Drain on kitchen paper.",
-                "In a large pan, heat olive oil over medium heat. Add onion and sweat until soft. Add celery and cook on low 5 minutes.",
-                "Push vegetables to one side of the pan. Add sugar to the exposed side and let it caramelize. Pour red wine vinegar over everything, stir, and let it begin to evaporate.",
-                "Add olives and capers, or raisins and pine nuts (or both). Add tomatoes. Add the fried eggplant and peppers. Warm gently a few minutes — keep each vegetable distinct, do not overcook.",
-                "Tear in the basil. Allow to cool. Ideally make 1–2 days ahead to let flavors develop."
-              ]
-            },
-            {
-              "title": "Mexican Street Corn (Elotes)",
-              "servings": "Serves 4",
-              "source": "Chef Billy Parisi / The Inspired Home",
-              "comments": [
-                "Cotija is a firm, salty Mexican cheese. Feta or Parmesan can substitute if unavailable.",
-                "Ancho chili powder has a mild, slightly fruity heat; regular chili powder works if ancho isn't available."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Corn",
-                  "ingredients": [
-                    "4 ears of corn, shucked"
-                  ]
-                },
-                {
-                  "label": "Topping",
-                  "ingredients": [
-                    "1/3 cup Mexican crema or sour cream",
-                    "1/3 cup mayonnaise",
-                    "2 cloves garlic, finely minced",
-                    "1 teaspoon ancho chili powder, plus more for garnish",
-                    "1 tablespoon fresh cilantro, finely minced, plus more for garnish",
-                    "1/2 cup crumbled cotija cheese, plus more for garnish",
-                    "1/4 teaspoon kosher salt"
-                  ]
-                },
-                {
-                  "label": "Garnish",
-                  "ingredients": [
-                    "Lime wedges"
-                  ]
-                }
-              ],
-              "steps": [
-                "Preheat grill to high heat (450 to 550 degrees F).",
-                "Grill corn, turning occasionally, until cooked through and lightly charred on all sides. Keep warm on a cooler part of the grill.",
-                "In a bowl, whisk together crema, mayonnaise, garlic, chili powder, cilantro, cotija, and salt.",
-                "Generously coat each ear of corn with the crema mixture. Garnish with more chili powder, cilantro, and cotija. Serve with lime wedges."
-              ]
-            },
-            {
-              "title": "Red Cabbage With Walnuts and Feta",
-              "servings": "Serves 6 to 8",
-              "source": "Melissa Clark / New York Times Cooking",
-              "comments": [
-                "Works equally well as a substantial side or light main course.",
-                "A small head of green cabbage also works, though it may cook a bit faster."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Cabbage",
-                  "ingredients": [
-                    "1 medium red cabbage (1 3/4 to 2 pounds)",
-                    "3 tablespoons extra-virgin olive oil",
-                    "1/2 teaspoon salt"
-                  ]
-                },
-                {
-                  "label": "Vinaigrette",
-                  "ingredients": [
-                    "1 tablespoon apple cider vinegar, plus more to taste",
-                    "1/2 teaspoon Dijon mustard",
-                    "1/2 teaspoon salt",
-                    "3 tablespoons extra-virgin olive oil"
-                  ]
-                },
-                {
-                  "label": "To serve",
-                  "ingredients": [
-                    "2/3 cup crumbled feta (3 oz)",
-                    "1/3 cup walnuts, toasted and coarsely chopped",
-                    "Lemon zest",
-                    "Pomegranate seeds",
-                    "Chopped mint, parsley, or dill (optional)"
-                  ]
-                }
-              ],
-              "steps": [
-                "Heat oven to 425 degrees F. Peel any damaged outer leaves from the cabbage. Halve through the core, then cut each half into 1- to 1 1/2-inch wedges, keeping the layers together.",
-                "Arrange wedges on their sides on a sheet pan. Drizzle with 3 tablespoons olive oil and sprinkle with 1/2 teaspoon salt. Roast 20 minutes, flip, and continue roasting until cores are tender and edges are browned, 10 to 20 minutes more.",
-                "While cabbage roasts, whisk together vinegar, mustard, and 1/2 teaspoon salt until salt dissolves. Whisk in 3 tablespoons olive oil until emulsified. Taste and adjust with more vinegar or salt.",
-                "Arrange cabbage on a platter and drizzle with vinaigrette. Top with feta, walnuts, lemon zest, pomegranate seeds, and herbs if using. Serve hot or at room temperature."
-              ]
-            },
-            {
-              "title": "Gochujang Stir-Fried Brussels Sprouts",
-              "servings": "Serves 8 as a side",
-              "source": "Dana / Minimalist Baker",
-              "comments": [
-                "Use gochujang sauce (the ready-to-use sauce), not gochujang paste -- they are different products. Find it at Korean grocery stores or in the international aisle."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Sauce",
-                  "ingredients": [
-                    "1/2 cup Korean gochujang sauce (homemade or store-bought)",
-                    "1 tablespoon sesame oil",
-                    "1/3 cup soy sauce",
-                    "2 to 3 tablespoons maple syrup",
-                    "1 1/2 tablespoons chili garlic sauce",
-                    "1 pinch sea salt"
-                  ]
-                },
-                {
-                  "label": "Brussels sprouts",
-                  "ingredients": [
-                    "1 tablespoon sesame or avocado oil",
-                    "7 heaping cups Brussels sprouts, halved and stems trimmed",
-                    "3 tablespoons soy sauce"
-                  ]
-                },
-                {
-                  "label": "To serve (optional)",
-                  "ingredients": [
-                    "Thinly sliced shallot or green onion",
-                    "Chopped roasted salted peanuts"
-                  ]
-                }
-              ],
-              "steps": [
-                "Make the sauce: whisk together gochujang sauce, sesame oil, soy sauce, maple syrup, chili garlic sauce, and salt. Taste and adjust -- more chili garlic sauce for heat, maple syrup for sweetness. Set aside.",
-                "Heat a large cast-iron or heavy skillet over medium-high. Add oil, then Brussels sprouts. Add 3 tablespoons soy sauce and toss to coat. Spread so each cut side touches the pan surface.",
-                "Cover and cook 2 minutes. Uncover and stir-fry, turning occasionally, until well browned and caramelized on all sides, 2 to 4 minutes more.",
-                "Add sliced shallot or green onion if using. Pour in the prepared sauce and stir-fry 1 to 2 minutes more to coat and caramelize.",
-                "Transfer to a platter. Garnish with crushed peanuts if desired. Serve hot."
-              ]
-            },
-            {
-              "title": "Broccoli with Garlic Sauce",
-              "servings": "Serves 4",
-              "source": "I Heart Umami / ChihYu Smith",
-              "comments": [
-                "Can substitute vegetable broth for chicken broth to make vegetarian.",
-                "Cornstarch can be substituted for tapioca starch in equal measure — both thicken similarly in this sauce."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Garlic sauce",
-                  "ingredients": [
-                    "1 oz garlic cloves (about 5 large), grated or crushed, divided in half",
-                    "1/2 cup chicken broth",
-                    "3 teaspoons tapioca starch (or cornstarch)"
-                  ]
-                },
-                {
-                  "label": "Broccoli",
-                  "ingredients": [
-                    "1 tablespoon avocado oil",
-                    "15 oz broccoli florets",
-                    "1/2 cup chicken broth (for steaming)",
-                    "1/4 teaspoon coarse sea salt"
-                  ]
-                },
-                {
-                  "label": "To serve (optional)",
-                  "ingredients": [
-                    "1/4 teaspoon Takii shiitake mushroom seasoning",
-                    "1 teaspoon toasted sesame oil"
-                  ]
-                }
-              ],
-              "steps": [
-                "Mix 1/2 cup chicken broth with tapioca starch or cornstarch until dissolved; set aside. Grate or crush garlic and divide in half.",
-                "Heat avocado oil in a wide skillet over medium-high heat. Add half the garlic and cook 30 seconds until fragrant. Add broccoli and cook 1 minute.",
-                "Add remaining 1/2 cup broth to skillet; cover and steam broccoli 2 minutes.",
-                "Add remaining garlic and the starch slurry. Toss to coat and cook until sauce thickens, 30–60 seconds.",
-                "Season with salt; add shiitake seasoning and sesame oil if using. Serve immediately."
-              ]
-            },
-            {
-              "title": "Garlicky Broccoli Stir-Fry",
-              "servings": "Serves 4",
-              "source": "Sarah Leung / The Woks of Life",
-              "comments": [
-                "Blanching the broccoli first keeps the sauce clean and ensures tenderness without overcooking.",
-                "Shaoxing wine is a Chinese rice wine; dry sherry can substitute. For vegetarian/vegan, use vegetable stock."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Cornstarch slurry",
-                  "ingredients": [
-                    "1 tablespoon cornstarch",
-                    "2 tablespoons water"
-                  ]
-                },
-                {
-                  "label": "Stir-fry",
-                  "ingredients": [
-                    "4 cups broccoli florets",
-                    "5 cloves garlic, minced",
-                    "1 tablespoon neutral oil",
-                    "1 tablespoon Shaoxing wine",
-                    "1/2 cup chicken stock or vegetable stock",
-                    "1 teaspoon salt",
-                    "1/8 teaspoon white pepper",
-                    "1/2 teaspoon sesame oil"
-                  ]
-                }
-              ],
-              "steps": [
-                "Mix cornstarch into water and stir until completely dissolved; set aside.",
-                "Bring a large pot of water to a boil. Blanch broccoli for 1 minute. Drain and transfer to cold water to stop cooking. Drain well.",
-                "Heat a wok or large skillet over high heat until very hot. Add oil, garlic, broccoli, and Shaoxing wine. Stir-fry 1 minute, then pour in stock. Bring to a boil.",
-                "Season with salt, white pepper, and sesame oil. Stir the cornstarch slurry, then add half to the pan. Stir until the sauce thickens to coat the back of a spoon; add more slurry if needed.",
-                "Plate and serve hot."
-              ]
-            },
-            {
-              "title": "Stir-Fried Spinach With Garlic",
-              "favorite": true,
-              "servings": "Serves 3 to 4",
-              "source": "Rhonda Parkinson / The Spruce Eats",
-              "ingredientGroups": [
-                {
-                  "label": "Stir-fry",
-                  "ingredients": [
-                    "2 tablespoons peanut or vegetable oil",
-                    "1 teaspoon minced garlic",
-                    "1/4 teaspoon chili paste, more to taste",
-                    "1/2 teaspoon fine salt, more to taste",
-                    "10 oz fresh spinach, rinsed and dried"
-                  ]
-                },
-                {
-                  "label": "Finish",
-                  "ingredients": [
-                    "1/4 teaspoon granulated sugar",
-                    "1/4 teaspoon sesame oil",
-                    "1 teaspoon freshly ground black pepper (optional)"
-                  ]
-                }
-              ],
-              "steps": [
-                "Heat a wok over medium heat. Add oil, swirling to coat the pan about halfway up the sides.",
-                "When the oil is hot, add garlic, chili paste, and salt. Stir a few seconds until the garlic is aromatic.",
-                "Add spinach and stir-fry until leaves are almost wilted, 1 to 2 minutes.",
-                "Stir in sugar and sesame oil. Sprinkle with black pepper if using. Serve immediately."
-              ]
-            }
-          ]
-        },
-        {
-          "title": "Oven",
-          "recipes": [
-            {
-              "title": "Herby Roasted Carrots and Radishes",
-              "servings": "Serves 6",
-              "source": "Food Network / Ree Drummond",
-              "ingredientGroups": [
-                {
-                  "label": "Vegetables",
-                  "ingredients": [
-                    "2 pounds rainbow carrots, halved lengthwise",
-                    "1 pound radishes, halved",
-                    "2 jalapenos, sliced",
-                    "2 tablespoons olive oil",
-                    "2 teaspoons kosher salt",
-                    "Black pepper"
-                  ]
-                },
-                {
-                  "label": "Herb oil",
-                  "ingredients": [
-                    "1 cup fresh cilantro, chopped",
-                    "1 cup fresh parsley, chopped",
-                    "Zest and juice of 1 lemon",
-                    "Pinch Aleppo pepper or red pepper flakes",
-                    "1/2 cup olive oil",
-                    "1/2 teaspoon sea salt"
-                  ]
-                },
-                {
-                  "label": "To serve",
-                  "ingredients": [
-                    "1/2 cup raw sliced almonds, toasted"
-                  ]
-                }
-              ],
-              "steps": [
-                "Preheat oven to 475 degrees F. Toss carrots, radishes, and jalapenos with 2 tablespoons olive oil, salt, and pepper; spread on a rimmed baking sheet. Roast 15–18 minutes until caramelized at edges.",
-                "Meanwhile, whisk together cilantro, parsley, lemon zest and juice, Aleppo pepper or red pepper flakes, 1/2 cup olive oil, and sea salt in a bowl.",
-                "Toast almonds in a dry skillet over medium heat until golden, about 3–4 minutes.",
-                "Spoon herb oil over roasted vegetables on a serving platter; scatter toasted almonds over the top."
-              ]
-            },
-            {
-              "title": "Baked Zucchini Fries",
-              "favorite": true,
-              "servings": "Serves 6",
-              "source": "Chungah Rhee / Damn Delicious",
-              "comments": [
-                "Using a cooling rack elevates the fries so air circulates underneath, crisping all sides rather than steaming the bottom.",
-                "Best served right out of the oven."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Coating",
-                  "ingredients": [
-                    "1 cup Panko breadcrumbs",
-                    "1/2 cup freshly grated Parmesan",
-                    "1 teaspoon Italian seasoning",
-                    "Kosher salt and black pepper to taste"
-                  ]
-                },
-                {
-                  "label": "Zucchini",
-                  "ingredients": [
-                    "2 medium zucchini, quartered lengthwise"
-                  ]
-                },
-                {
-                  "label": "For breading",
-                  "ingredients": [
-                    "1/2 cup all-purpose flour",
-                    "2 large eggs, beaten"
-                  ]
-                },
-                {
-                  "label": "Garnish",
-                  "ingredients": [
-                    "2 tablespoons chopped fresh parsley"
-                  ]
-                }
-              ],
-              "steps": [
-                "Preheat oven to 425 degrees F. Set a cooling rack on a sheet pan and coat with cooking spray.",
-                "Combine Panko, Parmesan, and Italian seasoning in a bowl; season with salt and pepper.",
-                "Dredge zucchini spears in flour, dip in beaten eggs, then coat thoroughly in the Panko mixture, pressing to adhere.",
-                "Arrange on the cooling rack and bake until golden and crisp, 20 to 22 minutes.",
-                "Serve immediately, garnished with parsley."
-              ]
-            },
-            {
-              "title": "Beets With Horseradish and Pumpkin Seeds",
-              "servings": "Serves 4",
-              "source": "Vallery Lomas / New York Times Cooking",
-              "comments": [
-                "Do ahead: beets can be roasted and peeled up to 2 days ahead (slice just before serving); horseradish cream and toasted seeds can also be made ahead.",
-                "Plain yogurt works as a substitute for sour cream.",
-                "Beet greens: saute in olive oil and finish with a splash of balsamic vinegar for an excellent accompaniment."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Beets",
-                  "ingredients": [
-                    "1 small bunch red beets (about 1 pound), washed and stems removed",
-                    "1 small bunch golden beets (about 1 pound), washed and stems removed",
-                    "2 tablespoons extra-virgin olive oil",
-                    "Salt and black pepper"
-                  ]
-                },
-                {
-                  "label": "Horseradish cream",
-                  "ingredients": [
-                    "1/2 cup sour cream",
-                    "2 tablespoons prepared horseradish",
-                    "2 tablespoons fresh lemon juice",
-                    "1/4 teaspoon each salt and pepper"
-                  ]
-                },
-                {
-                  "label": "To serve",
-                  "ingredients": [
-                    "1/4 cup raw pumpkin seeds (pepitas)"
-                  ]
-                }
-              ],
-              "steps": [
-                "Heat oven to 375 degrees F. Place all beets on a large sheet of foil, drizzle with olive oil, and wrap tightly. Roast until tender, 65 to 70 minutes. Remove from oven and let cool slightly. Peel skins (use a paring knife if needed).",
-                "While beets roast, whisk together sour cream, horseradish, lemon juice, 1/4 teaspoon salt, and 1/4 teaspoon pepper. Taste and adjust seasoning.",
-                "Toast pumpkin seeds in a small dry skillet over medium heat, shaking, until they begin to pop and smell nutty, 2 to 3 minutes.",
-                "Slice peeled beets 1/4-inch thick and arrange on a serving platter. Season with salt and pepper. Spoon horseradish cream over the top and scatter with toasted pumpkin seeds. Serve warm or at room temperature."
-              ]
-            },
-            {
-              "title": "Brussels Sprouts With Pistachios and Lime",
-              "servings": "Serves 8 to 10",
-              "source": "Christina Chaey and Claire Saffitz / Bon Appetit, November 2019",
-              "comments": [
-                "Do ahead: Brussels sprouts can be roasted and the butter-pistachio mixture can be made up to 3 hours ahead; toss with glaze just before serving.",
-                "Date molasses (also called date syrup) adds a rich, caramel-like sweetness. Pomegranate molasses makes a brighter, more tart version."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Brussels sprouts",
-                  "ingredients": [
-                    "2 pounds Brussels sprouts, trimmed and halved",
-                    "3 tablespoons vegetable oil",
-                    "Kosher salt and freshly ground black pepper"
-                  ]
-                },
-                {
-                  "label": "Brown butter and pistachios",
-                  "ingredients": [
-                    "3 tablespoons unsalted butter",
-                    "3 tablespoons raw pistachios",
-                    "Pinch of salt"
-                  ]
-                },
-                {
-                  "label": "Glaze",
-                  "ingredients": [
-                    "2 tablespoons date molasses or pomegranate molasses",
-                    "1 teaspoon honey",
-                    "2 tablespoons fresh lime juice",
-                    "1 tablespoon water"
-                  ]
-                },
-                {
-                  "label": "To serve",
-                  "ingredients": [
-                    "Zest of 1/2 lime",
-                    "1/2 teaspoon Aleppo pepper or red pepper flakes",
-                    "Lime wedges"
-                  ]
-                }
-              ],
-              "steps": [
-                "Heat oven to 450 degrees F. Toss Brussels sprouts with vegetable oil on a large rimmed baking sheet; season with salt and pepper. Roast, shaking the pan once, until deeply browned on cut sides, about 15 to 25 minutes. Reduce heat to 350 degrees F and continue roasting until a knife slides through easily, 10 to 20 minutes more (35 to 45 minutes total).",
-                "Meanwhile, melt butter in a small skillet over medium heat. Add pistachios and a pinch of salt. Cook, stirring occasionally, until butter is golden brown and nutty, about 4 minutes. Transfer nuts to paper towels and let cool slightly, then coarsely chop.",
-                "In a large bowl, whisk together date molasses, honey, lime juice, and 1 tablespoon water. Add the warm roasted Brussels sprouts and toss to coat.",
-                "Transfer to a platter and scatter chopped pistachios, lime zest, Aleppo pepper, and a pinch of salt over the top. Serve with lime wedges."
-              ]
-            },
-            {
-              "title": "Crack Broccoli",
-              "favorite": true,
-              "servings": "Serves 6",
-              "source": "Jessica Knott / Swanky Recipes",
-              "comments": [
-                "Dry ranch seasoning adds a savory, slightly tangy character. Don't skip it.",
-                "The high oven temperature is essential -- lower temperatures steam rather than char the broccoli."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Seasoned oil",
-                  "ingredients": [
-                    "1/3 cup olive oil (not extra-virgin)",
-                    "Zest of 1/2 lemon",
-                    "2 teaspoons fresh lemon juice",
-                    "1 1/2 teaspoons salt",
-                    "1/2 teaspoon black pepper",
-                    "1/8 teaspoon Aleppo pepper or red pepper flakes",
-                    "1 1/2 teaspoons dry ranch seasoning powder",
-                    "5 cloves garlic, minced (or 1 teaspoon garlic paste)"
-                  ]
-                },
-                {
-                  "label": "Broccoli",
-                  "ingredients": [
-                    "2 1/2 pounds broccoli crowns, cut into florets or 1/2-inch-thick steaks"
-                  ]
-                },
-                {
-                  "label": "Finish",
-                  "ingredients": [
-                    "1/4 cup raw sliced almonds",
-                    "1/3 cup grated Parmesan"
-                  ]
-                }
-              ],
-              "steps": [
-                "Preheat oven to 475 degrees F (or 450 degrees F for less char).",
-                "Whisk together olive oil, lemon zest, lemon juice, salt, pepper, Aleppo pepper, ranch seasoning, and garlic in a large bowl. Add broccoli and toss to coat.",
-                "Spread in a single layer on a large rimmed sheet pan. Roast 10 to 12 minutes. Remove from oven, flip broccoli, and scatter almonds over the pan.",
-                "Return to oven for 5 to 10 minutes more, until broccoli is tender with deeply charred edges and almonds are toasted.",
-                "Remove from oven and immediately sprinkle with Parmesan."
-              ]
-            },
-            {
-              "title": "Zucchini Involtini",
-              "servings": "Serves 4 as a side",
-              "source": "From Chef Louisa (Villa Britannia, Taormina, Sicily)",
-              "comments": [
-                "Same herbed breadcrumb coating as all Villa Britannia involtini (1 part Parmesan to 3 parts fresh breadcrumbs).",
-                "'Blanched tomatoes' means briefly blanched and peeled before chopping."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Bread coating",
-                  "ingredients": [
-                    "1 1/2 cups fresh breadcrumbs (grated or food-processed from crustless white bread)",
-                    "1/2 cup Parmesan, grated",
-                    "2 tablespoons flat-leaf parsley, finely chopped",
-                    "1 clove garlic, finely chopped",
-                    "Salt and pepper to taste"
-                  ]
-                },
-                {
-                  "label": "Zucchini and filling",
-                  "ingredients": [
-                    "3–4 medium zucchini",
-                    "Salt and olive oil",
-                    "2–3 plum tomatoes, blanched, peeled, and roughly chopped",
-                    "Hard cheese (Parmesan, Emmental, or pecorino), cut in small pieces"
-                  ]
-                }
-              ],
-              "steps": [
-                "Make the bread coating: combine breadcrumbs, Parmesan, parsley, garlic, salt, and pepper. Mix with your hands. Add blanched, chopped tomatoes and combine.",
-                "Cut zucchini lengthwise into very thin slices. Salt lightly on both sides and drizzle with olive oil.",
-                "Coat each zucchini slice in the bread coating. Add a little extra coating on top and place a small piece of hard cheese in the center. Roll up and thread onto wooden skewers.",
-                "Fry in a pan lined with baking paper over high heat with a small drizzle of olive oil, 4–6 minutes until lightly browned. Can also be grilled, barbecued, or baked."
-              ]
-            },
-            {
-              "title": "Spicy Roasted Cauliflower with Sriracha and Sesame",
-              "servings": "Serves 4–6",
-              "source": "Todd Porter and Diane Cu / Epicurious",
-              "ingredientGroups": [
-                {
-                  "label": "Sauce",
-                  "ingredients": [
-                    "3 tablespoons sriracha",
-                    "2 tablespoons vegetable or canola oil",
-                    "2 tablespoons honey",
-                    "1 tablespoon toasted sesame oil",
-                    "1 tablespoon rice vinegar",
-                    "2 teaspoons soy sauce",
-                    "1/2 teaspoon garlic powder",
-                    "1/2 teaspoon kosher salt"
-                  ]
-                },
-                {
-                  "label": "Cauliflower",
-                  "ingredients": [
-                    "1 medium head cauliflower (about 2 1/2 pounds), cut into florets"
-                  ]
-                },
-                {
-                  "label": "To serve",
-                  "ingredients": [
-                    "2 tablespoons toasted sesame seeds",
-                    "2 scallions, thinly sliced"
-                  ]
-                }
-              ],
-              "steps": [
-                "Preheat oven to 450°F. In a large bowl, whisk together sriracha, vegetable oil, honey, sesame oil, rice vinegar, soy sauce, garlic powder, and salt.",
-                "Add cauliflower florets and toss until evenly coated. Spread on a large rimmed baking sheet in a single layer.",
-                "Roast until cauliflower is tender and charred in spots, 20–25 minutes.",
-                "Transfer to a platter. Sprinkle with sesame seeds and scallions and serve."
-              ]
-            },
-            {
-              "title": "Tomato Cobbler With Ricotta Biscuits",
-              "servings": "Serves 10   |   Total: 1 hour 30 minutes",
-              "source": "New York Times (Nicole Rucker / Tejal Rao), 2019",
-              "comments": [
-                "This dish sits somewhere between a savory course and a sweet one -- serve it either way.",
-                "Sungold tomatoes are sweeter and especially good here when in season."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Ricotta (30 minutes ahead)",
-                  "ingredients": [
-                    "3/4 cup whole-milk ricotta"
-                  ]
-                },
-                {
-                  "label": "Biscuit dry ingredients",
-                  "ingredients": [
-                    "2 1/2 cups cake flour, plus more for dusting",
-                    "1 tablespoon granulated sugar",
-                    "1 teaspoon kosher salt",
-                    "1 1/2 teaspoons baking powder",
-                    "1 teaspoon baking soda"
-                  ]
-                },
-                {
-                  "label": "Biscuit fat",
-                  "ingredients": [
-                    "1/2 cup unsalted butter, cut into cubes and chilled"
-                  ]
-                },
-                {
-                  "label": "Biscuit liquid",
-                  "ingredients": [
-                    "1 cup buttermilk, plus 2 tablespoons for brushing"
-                  ]
-                },
-                {
-                  "label": "Tomato base",
-                  "ingredients": [
-                    "2 to 2 1/2 pounds cherry tomatoes or Sungold tomatoes",
-                    "1/4 cup extra-virgin olive oil",
-                    "1 tablespoon sherry vinegar",
-                    "2 sprigs fresh thyme",
-                    "1/4 cup granulated sugar",
-                    "2 tablespoons cake flour",
-                    "Kosher salt and freshly ground black pepper"
-                  ]
-                }
-              ],
-              "steps": [
-                "Strain the ricotta in a cheesecloth or fine-mesh strainer for at least 30 minutes. Squeeze out any excess moisture before using.",
-                "Prepare the biscuit dry ingredients: combine 2 1/2 cups cake flour, sugar, salt, baking powder, and baking soda in a large bowl and whisk to combine. Transfer to the freezer to chill for about 20 minutes. Add the cold butter and smear pieces between your fingers, pinching into thin flakes and working into the flour until no large pieces remain.",
-                "Make a well in the center and gradually pour in 1 cup buttermilk, using a fork to fluff in flour from the sides until a shaggy dough forms. Crumble in the ricotta and loosely incorporate with your fingers.",
-                "Scrape the dough onto a lightly floured surface and shape into a roughly 4x6-inch rectangle. Fold into thirds and flatten back to the same size; repeat 2 more times. Flatten to about 1 inch thick. Refrigerate 20 minutes.",
-                "Position a rack in the center of the oven and preheat to 350 degrees F. Cut about half the tomatoes in half. In a 2-quart baking dish, combine all the tomatoes with olive oil, vinegar, thyme sprigs, 1/4 cup sugar, and 2 tablespoons cake flour. Season generously with salt and pepper; let sit while you work on the biscuit dough.",
-                "Lay biscuit dough onto a lightly floured surface. Cut into 2-inch squares or circles and arrange in a single layer over the tomatoes -- you should have about 10-12 biscuits. (Bake any scraps separately.) Brush the tops of the biscuits with the remaining 2 tablespoons buttermilk. Bake 45 minutes, until the tomato mixture has bubbled up and the biscuits are browned on top. Allow to cool; serve warm or at room temperature. Finish with a sprinkle of salt and pepper."
-              ],
-              "highAltitude": {
-                "ingredientGroups": [
-                  {
-                    "label": "Ricotta (30 minutes ahead)",
-                    "ingredients": [
-                      "3/4 cup whole-milk ricotta"
-                    ]
-                  },
-                  {
-                    "label": "Biscuit dry ingredients",
-                    "ingredients": [
-                      "2 1/2 cups cake flour, plus more for dusting",
-                      "1 tablespoon granulated sugar",
-                      "1 teaspoon kosher salt",
-                      "1 teaspoon baking powder (reduced from 1 1/2 teaspoons)",
-                      "3/4 teaspoon baking soda (reduced from 1 teaspoon)"
-                    ]
-                  },
-                  {
-                    "label": "Biscuit fat",
-                    "ingredients": [
-                      "1/2 cup unsalted butter, cut into cubes and chilled"
-                    ]
-                  },
-                  {
-                    "label": "Biscuit liquid",
-                    "ingredients": [
-                      "1 cup buttermilk, plus 2 tablespoons for brushing"
-                    ]
-                  },
-                  {
-                    "label": "Tomato base",
-                    "ingredients": [
-                      "2 to 2 1/2 pounds cherry tomatoes or Sungold tomatoes",
-                      "1/4 cup extra-virgin olive oil",
-                      "1 tablespoon sherry vinegar",
-                      "2 sprigs fresh thyme",
-                      "1/4 cup granulated sugar",
-                      "2 tablespoons cake flour",
-                      "Kosher salt and freshly ground black pepper"
-                    ]
-                  }
-                ],
-                "steps": [
-                  "Strain the ricotta in a cheesecloth or fine-mesh strainer for at least 30 minutes. Squeeze out any excess moisture before using.",
-                  "Prepare the biscuit dry ingredients: combine 2 1/2 cups cake flour, sugar, salt, baking powder, and baking soda in a large bowl and whisk to combine. Transfer to the freezer to chill for about 20 minutes. Add the cold butter and smear pieces between your fingers, pinching into thin flakes and working into the flour until no large pieces remain.",
-                  "Make a well in the center and gradually pour in 1 cup buttermilk, using a fork to fluff in flour from the sides until a shaggy dough forms. Crumble in the ricotta and loosely incorporate with your fingers.",
-                  "Scrape the dough onto a lightly floured surface and shape into a roughly 4x6-inch rectangle. Fold into thirds and flatten back to the same size; repeat 2 more times. Flatten to about 1 inch thick. Refrigerate 20 minutes.",
-                  "Position a rack in the center of the oven and preheat to 350 degrees F. Cut about half the tomatoes in half. In a 2-quart baking dish, combine all the tomatoes with olive oil, vinegar, thyme sprigs, 1/4 cup sugar, and 2 tablespoons cake flour. Season generously with salt and pepper; let sit while you work on the biscuit dough.",
-                  "Lay biscuit dough onto a lightly floured surface. Cut into 2-inch squares or circles and arrange in a single layer over the tomatoes -- you should have about 10-12 biscuits. (Bake any scraps separately.) Brush the tops of the biscuits with the remaining 2 tablespoons buttermilk. Bake 40-45 minutes (check at 40 minutes), until the tomato mixture has bubbled up and the biscuits are browned on top. Allow to cool; serve warm or at room temperature. Finish with a sprinkle of salt and pepper."
-                ]
-              }
-            },
-            {
-              "id": "cornbread-dressing-with-sausage-and-corn-nuts",
-              "title": "Cornbread Dressing With Sausage and Corn Nuts",
-              "servings": "Serves 8 to 10   |   Active: 40 min   |   Total: 2 hours",
-              "source": "Bon Appetit (Rick Martinez and Chris Morocco)",
-              "comments": [
-                {
-                  "html": "Uses homemade or store-bought cornbread. Also forms the base of <a href=\"rice.html#cornbread-stuffing-fried-rice\">Cornbread Stuffing Fried Rice</a>."
-                },
-                "Can be baked at 350 degrees F up to 3 days ahead; let cool, then chill. Reheat in a 350 degrees F oven before increasing to 425 degrees F and removing foil.",
-                "Corn nuts are ground into a powder, not used whole -- they add depth and crunch to the finished texture."
-              ],
-              "ingredientGroups": [
-                {
-                  "label": "Cornbread",
-                  "ingredients": [
-                    "3 lb cornbread, cut into small pieces (about 3/4 inch; 14 to 16 cups)"
-                  ]
-                },
-                {
-                  "label": "Sausage",
-                  "ingredients": [
-                    "1 1/2 lb breakfast sausage, casings removed if needed"
-                  ]
-                },
-                {
-                  "label": "Aromatics",
-                  "ingredients": [
-                    "1 cup (2 sticks) unsalted butter, plus more for pan",
-                    "2 medium onions, chopped",
-                    "4 celery stalks, chopped",
-                    "Kosher salt",
-                    "3 garlic cloves, finely chopped",
-                    "2 Thai chiles or 1 jalapeño (with seeds), chopped"
-                  ]
-                },
-                {
-                  "label": "Corn nut powder",
-                  "ingredients": [
-                    "3/4 cup corn nuts, finely ground in a food processor, blender, or mortar and pestle (about 1/2 cup ground)"
-                  ]
-                },
-                {
-                  "label": "Wine and herbs",
-                  "ingredients": [
-                    "3/4 cup dry white wine",
-                    "1 tablespoon finely chopped fresh sage",
-                    "2 teaspoons finely chopped fresh thyme"
-                  ]
-                },
-                {
-                  "label": "Custard",
-                  "ingredients": [
-                    "3 large eggs",
-                    "3 1/2 cups turkey stock or low-sodium chicken broth",
-                    "Freshly ground black pepper"
-                  ]
-                }
-              ],
-              "steps": [
-                "Preheat oven to 325 degrees F. Divide cornbread evenly between 2 large rimmed baking sheets and bake, tossing occasionally, until dried out and lightly browned around the edges, 40 to 50 minutes. Let cool at least 10 minutes. Increase oven temperature to 350 degrees F.",
-                "Meanwhile, cook breakfast sausage in a large skillet over medium-high heat, stirring and breaking up with a spoon, until lightly browned and cooked through, 6 to 8 minutes. Transfer to a plate.",
-                "Reduce heat to medium and melt butter in the same skillet. Add onions and celery; season with salt. Cook, stirring occasionally, until softened but not browned, 8 to 10 minutes. Add garlic and chiles; cook, stirring once, until very fragrant, about 1 minute. Add ground corn nuts and cook, stirring often, until very fragrant and vegetables are starting to brown around the edges, about 3 minutes. Add wine and cook, stirring occasionally, until almost completely evaporated, about 3 minutes. Add sage and thyme; toss to combine. Remove from heat.",
-                "Combine cornbread, sausage, and sauteed vegetable mixture in a large bowl. Whisk eggs and stock together in a medium bowl until very well combined. Pour over cornbread mixture and let sit, gently stirring every minute or so, until cornbread has absorbed all or virtually all of the liquid. Season with kosher salt (about 1 tablespoon Diamond Crystal or 1 1/2 teaspoons Morton kosher salt) and freshly ground black pepper.",
-                "Lightly butter a 3-quart or 13x9x2-inch casserole dish. Transfer dressing to dish and tap lightly against counter to distribute and compact. Cover tightly with aluminum foil and bake until very hot throughout and bubbles appear around sides, 40 to 45 minutes. Increase oven temperature to 425 degrees F and remove foil. Continue to bake until top is lightly browned, 15 to 20 minutes longer."
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Rice",
-      "recipes": [
-        {
-          "title": "Rice with Dill",
-          "ingredientGroups": [
-            {
-              "label": "Aromatics",
-              "ingredients": [
-                "3 tablespoons butter",
-                "1/2 cup minced onion",
-                "1 can water chestnuts, sliced"
-              ]
-            },
-            {
-              "label": "Rice",
-              "ingredients": [
-                "1 1/2 cups Jasmine or Basmati rice",
-                "2 1/2 cups chicken broth"
-              ]
-            },
-            {
-              "label": "Seasoning",
-              "ingredients": [
-                "Salt to taste",
-                "Pepper to taste",
-                "2 tablespoons chopped fresh dill",
-                "1/2 bay leaf",
-                "Few drops Tabasco sauce to taste"
-              ]
-            }
-          ],
-          "steps": [
-            "Oven method: Preheat oven to 400 degrees. Melt butter in oven-proof casserole over medium heat. Add onion and water chestnuts; cook and stir until softened, about 3 minutes. Add rice and stir to coat with butter. Add chicken broth and stir to ensure no lumps. Add dill, bay leaf, Tabasco, salt, and pepper. Cover with a close-fitting lid and bring to a boil. Transfer to oven and bake for 17 minutes. Remove cover, discard bay leaf, and serve.",
-            "Rice cooker method: Melt butter in skillet over medium heat. Add onion and water chestnuts; cook and stir until softened, about 3 minutes. Add rice and stir to coat with butter, about 1 minute. Transfer rice mixture to rice cooker. Add chicken broth and all seasonings (dill, bay leaf, Tabasco, salt, and pepper). Cook on standard rice setting. When done, remove and discard bay leaf, and serve."
-          ],
-          "comments": [
-            "May be reheated."
-          ]
-        },
-        {
-          "title": "Indian Style Rice",
-          "servings": "Serves 4 to 6   |   Prep: 15 minutes, plus 30 minutes soaking   |   Cook: about 25 minutes (rice cooker)",
-          "comments": [
-            "If you don't have whole cardamom pods or a cinnamon stick, use a pinch each of ground cardamom and ground cinnamon added with the turmeric.",
-            "Adapted for a rice cooker — rather than boiling the rice separately and draining it (the original stovetop method), the sautéed spice mixture is stirred into the rice cooker with the water and rice."
-          ],
-          "source": "Simply Recipes, by Elise Bauer, adapted for a rice cooker",
-          "ingredientGroups": [
-            {
-              "label": "Rice",
-              "ingredients": [
-                "2 cups Jasmine or Basmati rice",
-                "3 cups water",
-                "2 teaspoons salt"
-              ]
-            },
-            {
-              "label": "Whole spices",
-              "ingredients": [
-                "2 cloves",
-                "2 green cardamom pods",
-                "One 2-inch piece cinnamon"
-              ]
-            },
-            {
-              "label": "Aromatics",
-              "ingredients": [
-                "3 tablespoons vegetable oil (or ghee)",
-                "1/2 teaspoon dark mustard seeds",
-                "1/2 teaspoon cumin seeds",
-                "1/4 teaspoon Aleppo pepper or red pepper flakes",
-                "1 medium onion, chopped",
-                "3 garlic cloves, chopped",
-                "1/4 teaspoon turmeric"
-              ]
-            }
-          ],
-          "steps": [
-            "Rinse the rice in a sieve under cool running water until the water runs clear. Soak in cool water 30 minutes, then drain well.",
-            "Sauté: Heat the oil in a large skillet over medium heat. Add the mustard seeds, cumin seeds, and Aleppo pepper or red pepper flakes; cook until the seeds begin to pop, about 30 seconds.",
-            "Add the onion and cook until it begins to brown, 5 to 7 minutes. Add the garlic and cook 2 to 3 minutes more. Stir in the turmeric.",
-            "Rice cooker: Add the drained rice, the cloves, cardamom, cinnamon, and the sautéed onion mixture to the rice cooker. Add the water and salt; stir to combine. Cook on the regular rice cycle.",
-            "Fluff the rice with a fork, picking out the whole cloves, cardamom pod, and cinnamon stick as you find them (or leave them in and warn guests)."
-          ]
-        },
-        {
-          "title": "Wild Mushroom Risotto",
-          "servings": "Serves 6   |   Total: 45-50 min",
-          "source": "Bon Appetit (Lori de Mori)",
-          "comments": [
-            "A mix of mushroom varieties gives the best depth of flavor; pure porcini also works beautifully.",
-            "Vermouth adds a subtle botanical note that white wine alone does not supply -- do not skip it if you have it."
-          ],
-          "ingredientGroups": [
-            {
-              "label": "Mushrooms",
-              "ingredients": [
-                "8 tablespoons (1 stick) unsalted butter, divided into 4 portions of 2 tablespoons each",
-                "1 1/2 pounds fresh wild mushrooms (porcini, hen of the woods, chanterelle, or stemmed shiitake), large ones sliced, small ones halved or quartered",
-                "Salt and black pepper"
-              ]
-            },
-            {
-              "label": "Broth",
-              "ingredients": [
-                "7 cups (about) low-salt chicken broth"
-              ]
-            },
-            {
-              "label": "Risotto base",
-              "ingredients": [
-                "1 1/2 tablespoons unsalted butter",
-                "1 tablespoon extra-virgin olive oil",
-                "3/4 cup finely chopped leek (white and pale green parts only)",
-                "1 1/4 cups arborio rice",
-                "1/4 cup dry white wine",
-                "1/4 cup dry white vermouth"
-              ]
-            },
-            {
-              "label": "To finish",
-              "ingredients": [
-                "1/4 cup grated Parmesan, plus more for serving (optional)"
-              ]
-            }
-          ],
-          "steps": [
-            "Melt 2 tablespoons butter in a large skillet over medium-high. Add one-quarter of the mushrooms, sprinkle with salt, and saute until tender and beginning to brown, 3-4 minutes. Transfer to a bowl. Repeat with remaining butter and mushrooms in 3 more batches, seasoning each with salt and pepper.",
-            "Bring chicken broth to a simmer in a medium saucepan; keep warm over low heat.",
-            "In a separate large saucepan, melt remaining 1 1/2 tablespoons butter with olive oil over medium-low. Add leek, sprinkle with salt, and saute until tender, 4-5 minutes. Add rice and increase heat to medium; stir until edges of rice look translucent, 3-4 minutes. Add white wine and vermouth and stir until absorbed, about 1 minute.",
-            "Add 3/4 cup warm broth; stir until almost fully absorbed. Continue adding broth by 3/4-cup additions, stirring and letting each addition absorb before adding the next, for about 10 minutes total (until rice is halfway cooked). Stir in all sauteed mushrooms.",
-            "Continue adding broth in 3/4-cup additions, stirring constantly, until rice is tender but still firm to the bite and risotto is creamy, about 10 more minutes. Stir in Parmesan if using.",
-            "Transfer to a serving bowl and pass additional Parmesan alongside."
-          ]
-        },
-        {
-          "title": "Spanish Rice",
-          "servings": "Serves 3 to 4   |   Total: about 15 min",
-          "source": "Food.com (JeanSgt)",
-          "comments": [
-            "A good use for leftover rice. Day-old rice that has dried out slightly gives the best texture."
-          ],
-          "ingredientGroups": [
-            {
-              "label": "Aromatics",
-              "ingredients": [
-                "2 tablespoons olive oil",
-                "1 tablespoon butter",
-                "1/2 onion, diced",
-                "4 garlic cloves, minced"
-              ]
-            },
-            {
-              "label": "Sauce",
-              "ingredients": [
-                "1/2 cup tomato sauce",
-                "1/4 cup water",
-                "1/4 teaspoon ground coriander",
-                "Salt and pepper to taste"
-              ]
-            },
-            {
-              "label": "Rice",
-              "ingredients": [
-                "3 cups cooked rice"
-              ]
-            }
-          ],
-          "steps": [
-            "Heat olive oil and butter in a large skillet over medium heat. Add onion and cook until softened, about 3 to 4 minutes. Add garlic; cook 1 minute.",
-            "Stir in tomato sauce, water, and coriander; season with salt and pepper.",
-            "Add cooked rice; stir to combine. Cook, stirring occasionally, until heated through and sauce has coated the rice, about 5 minutes."
-          ]
-        },
-        {
-          "title": "Pink Risotto With Beet Greens and Roasted Beets",
-          "servings": "Serves 4 to 5   |   Total: 45 min + 45-60 min to roast beets",
-          "source": "New York Times (Martha Rose Shulman)",
-          "comments": [
-            "Use a full-bodied vegetable stock to keep it vegetarian."
-          ],
-          "ingredientGroups": [
-            {
-              "label": "Beets (45-60 minutes ahead)",
-              "ingredients": [
-                "3/4 pound beets (1 small bunch), unpeeled"
-              ]
-            },
-            {
-              "label": "Beet greens",
-              "ingredients": [
-                "1 bunch beet greens, stemmed and washed, cut crosswise into 1-inch strips"
-              ]
-            },
-            {
-              "label": "Simmering stock",
-              "ingredients": [
-                "6 to 7 cups chicken or vegetable stock, well seasoned"
-              ]
-            },
-            {
-              "label": "Risotto base",
-              "ingredients": [
-                "2 tablespoons extra-virgin olive oil",
-                "1/2 cup finely chopped onion",
-                "1 1/2 cups Arborio or Carnaroli rice",
-                "2 garlic cloves, minced or pressed",
-                "1/2 cup red wine, rose, or dry white wine",
-                "Salt and freshly ground pepper"
-              ]
-            },
-            {
-              "label": "Finish",
-              "ingredients": [
-                "1 to 2 oz Parmesan, grated (1/4 to 1/2 cup)",
-                "2 tablespoons finely chopped flat-leaf parsley"
-              ]
-            }
-          ],
-          "steps": [
-            "Roast the beets: Wrap unpeeled beets loosely in foil and roast at 400 degrees F until tender when pierced, 45 to 60 minutes. Cool, peel, and dice into small cubes.",
-            "Bring stock to a simmer in a saucepan; season well. Keep on low heat throughout the cooking process.",
-            "Cut stemmed, washed beet greens crosswise into 1-inch strips; set aside.",
-            "Heat olive oil over medium heat in a large nonstick skillet or wide heavy saucepan. Add onion and cook, stirring, until beginning to soften, about 3 minutes. Add rice and garlic; cook, stirring, until grains are separate and beginning to crackle, about 3 minutes. Stir in wine and cook over medium heat, stirring constantly, until mostly evaporated.",
-            "Add a ladleful or two of simmering stock (about 1/2 cup), just enough to cover the rice. Cook, stirring often, adding more stock when the rice is nearly dry, for 10 minutes.",
-            "Stir in beet greens and diced roasted beets. Continue adding stock a ladleful at a time, stirring often, for another 10 to 15 minutes, until the rice is cooked through but still chewy. Taste a grain -- not hard in the middle. Adjust salt as needed.",
-            "Add a generous amount of freshly ground pepper. Stir in another 1/2 cup stock, the Parmesan, and the parsley. Remove from heat. The risotto should be creamy; add more stock if needed. Taste, adjust seasonings, and serve immediately."
-          ]
-        },
-        {
-          "title": "Tomato Risotto",
-          "servings": "Serves 4 to 6   |   Total: 30 min",
-          "source": "New York Times (David Tanis)",
-          "ingredientGroups": [
-            {
-              "label": "Aromatics and rice",
-              "ingredients": [
-                "3 tablespoons extra-virgin olive oil, plus 2 tablespoons for finishing",
-                "1 large onion, diced (about 1 1/2 cups)",
-                "Salt and pepper",
-                "1 1/2 cups Arborio or Carnaroli rice",
-                "Pinch of Aleppo pepper or red pepper flakes",
-                "2 garlic cloves",
-                "1/2 cup white wine",
-                "2 cups diced ripe red tomatoes"
-              ]
-            },
-            {
-              "label": "Liquid",
-              "ingredients": [
-                "3 cups boiling water or vegetable broth"
-              ]
-            },
-            {
-              "label": "Finish",
-              "ingredients": [
-                "1/2 cup grated pecorino or Parmesan, plus more for serving"
-              ]
-            },
-            {
-              "label": "To serve",
-              "ingredients": [
-                "4 medium tomatoes in different colors, sliced",
-                "Chopped parsley, for garnish",
-                "Snipped basil, for garnish"
-              ]
-            }
-          ],
-          "steps": [
-            "Put 3 tablespoons olive oil in a heavy-bottomed saucepan over medium-high heat. Add onion, season generously with salt and pepper, and cook until softened, about 5 minutes.",
-            "Add rice and cook, stirring, until the onions are barely browned and the rice is toasted, about 2 minutes. Add Aleppo pepper or red pepper flakes, garlic, wine, and diced tomatoes. Cook until most of the liquid has evaporated, about 5 minutes.",
-            "Add 2 cups boiling water or broth; adjust heat to a brisk simmer. Cook, stirring with a wooden spoon every minute or so, for 5 to 6 minutes.",
-            "When liquid is absorbed, add remaining 1 cup water or broth and continue cooking, stirring, for another 5 minutes, until rice is cooked but grains are still firm. Taste and adjust seasoning; add a splash more liquid if needed. Turn off heat; stir in pecorino and the remaining 2 tablespoons olive oil.",
-            "Transfer to a low, wide serving bowl. Surround with sliced tomatoes; season them with salt and pepper. Sprinkle with parsley and basil. Pass more cheese at the table."
-          ]
-        },
-        {
-          "title": "Saffron Rice",
-          "servings": "Serves 3   |   Total: about 45 min (including 20-30 min soak)",
-          "source": "Veg Recipes of India (Dassana Amit)",
-          "ingredientGroups": [
-            {
-              "label": "Rice (20-30 minutes ahead)",
-              "ingredients": [
-                "1 1/2 cups Jasmine or Basmati rice"
-              ]
-            },
-            {
-              "label": "Saffron bloom",
-              "ingredients": [
-                "8 to 10 saffron threads",
-                "2 tablespoons warm water or milk"
-              ]
-            },
-            {
-              "label": "Whole spices",
-              "ingredients": [
-                "2 tablespoons ghee",
-                "1/2 teaspoon caraway seeds (shahi jeera)",
-                "3 to 4 green cardamom pods, lightly crushed",
-                "1 Indian bay leaf (tej patta)",
-                "1 inch cinnamon stick",
-                "3 to 4 whole cloves",
-                "1 blade of mace"
-              ]
-            },
-            {
-              "label": "Liquid",
-              "ingredients": [
-                "3 cups water",
-                "1/4 teaspoon turmeric (optional)",
-                "Salt to taste"
-              ]
-            }
-          ],
-          "steps": [
-            "Rinse rice in several changes of cold water until mostly clear. Soak in fresh water for 20 to 30 minutes; drain well.",
-            "Steep saffron threads in 2 tablespoons warm water or milk; set aside.",
-            "Heat ghee in a medium pot over medium heat. Add caraway seeds, cardamoms, bay leaf, cinnamon, cloves, and mace. Saute, stirring, until fragrant, about 30 to 60 seconds.",
-            "Add drained rice and stir gently to coat with the ghee; toast lightly, about 1 minute.",
-            "Add water, the bloomed saffron with its soaking liquid, and turmeric (if using). Season with salt. Bring to a boil over high heat.",
-            "Reduce heat to the lowest setting, cover tightly, and cook until water is absorbed and rice is tender, about 15 minutes.",
-            "Remove from heat and let rest, covered, for 5 minutes. Fluff gently with a fork. Remove whole spices before serving if desired."
-          ]
-        },
-        {
-          "id": "cornbread-stuffing-fried-rice",
-          "title": "Cornbread Stuffing Fried Rice",
-          "servings": "Serves 8   |   Total: about 1 hour (including chili crisp)",
-          "source": "Bon Appetit (Rick Martinez)",
-          "comments": [
-            {
-              "html": "Uses <a href=\"vegetable-sides.html#cornbread-dressing-with-sausage-and-corn-nuts\">Cornbread Dressing With Sausage and Corn Nuts</a> as a key ingredient -- a great use for Thanksgiving leftovers."
-            },
-            "The chili crisp can be made up to 1 week ahead; store in an airtight container.",
-            "Use day-old cooked rice for the best fried-rice texture."
-          ],
-          "ingredientGroups": [
-            {
-              "label": "Chili crisp (make ahead)",
-              "ingredients": [
-                "2 dried guajillo chiles, seeds removed, torn into pieces",
-                "1 dried ancho chile, seeds removed, torn into pieces",
-                "3 chiles de arbol, stems removed",
-                "1 cup vegetable oil",
-                "6 shallots, thinly sliced (about 1 cup)",
-                "8 garlic cloves, thinly sliced",
-                "1 tablespoon finely grated peeled ginger",
-                "1/4 teaspoon ground allspice",
-                "1 tablespoon soy sauce",
-                "2 teaspoons sugar",
-                "1 teaspoon kosher salt"
-              ]
-            },
-            {
-              "label": "Fried rice",
-              "ingredients": [
-                "2 tablespoons vegetable oil, divided",
-                "4 garlic cloves, thinly sliced",
-                "3 cups Cornbread Dressing With Sausage and Corn Nuts, crumbled",
-                "4 cups day-old cooked Jasmine or Basmati rice",
-                "1 pound Brussels sprouts, leaves separated (about 4 cups)",
-                "6 large eggs, beaten",
-                "2 tablespoons soy sauce",
-                "4 scallions, thinly sliced",
-                "Kosher salt"
-              ]
-            }
-          ],
-          "steps": [
-            "Make the chili crisp: Tear guajillo and ancho chiles into pieces; remove seeds. Toast all dried chiles in a dry medium saucepan over medium heat, pressing with a spatula, until fragrant, about 2 minutes. Add oil, shallots, garlic, ginger, and allspice; cook, stirring occasionally, until shallots and garlic are golden, 10 to 12 minutes. Let cool 5 minutes. Stir in soy sauce, sugar, and salt. Transfer to an airtight container. Can be made up to 1 week ahead.",
-            "Heat 1 tablespoon oil in a large wok or skillet over high heat. Add garlic and cook, stirring, until starting to brown, 30 to 60 seconds. Add cornbread dressing and rice; press into an even layer. Cook without stirring until crisp on the bottom, about 4 minutes. Toss to combine, then press again and cook until more is crisp, 3 to 4 minutes more.",
-            "Push rice mixture to sides. Add remaining 1 tablespoon oil to center; add Brussels sprout leaves. Cook, stirring, until bright green and slightly wilted, 1 to 2 minutes. Toss to combine with rice.",
-            "Push mixture to sides; add beaten eggs to center. Scramble and toss just as eggs begin to set. Add soy sauce and 3 tablespoons chili crisp; toss to combine. Season with salt. Transfer to a platter; top with scallions and more chili crisp."
-          ]
-        }
-      ]
-    },
-    {
       "title": "Noodles",
       "subsections": [
         {
@@ -15522,6 +13919,1609 @@ module.exports = {
                 }
               ]
             }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Vegetable Sides",
+      "subsections": [
+        {
+          "title": "Potatoes",
+          "recipes": [
+            {
+              "title": "Brown Butter Mashed Potatoes",
+              "servings": "Serves 12",
+              "source": "Food Network / Ree Drummond",
+              "ingredientGroups": [
+                {
+                  "label": "Potatoes",
+                  "ingredients": [
+                    "5 pounds Yukon gold potatoes, peeled and cut into chunks"
+                  ]
+                },
+                {
+                  "label": "Brown butter",
+                  "ingredients": [
+                    "2 1/2 sticks (1 1/4 cups) salted butter"
+                  ]
+                },
+                {
+                  "label": "Enrichments",
+                  "ingredients": [
+                    "1 1/2 packages (12 oz total) cream cheese, softened",
+                    "1/2 cup half-and-half",
+                    "1/2 cup heavy cream",
+                    "Kosher salt and black pepper",
+                    "Splash of milk to thin, if needed"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "Fresh parsley, chopped"
+                  ]
+                }
+              ],
+              "steps": [
+                "Boil potatoes in salted water until very tender, about 20–25 minutes. Drain.",
+                "Melt butter in a light-colored skillet over medium heat, swirling frequently, until milk solids turn golden brown and butter smells nutty, about 5–8 minutes. Watch carefully to avoid burning.",
+                "Mash or rice potatoes in a large bowl. Add brown butter, cream cheese, half-and-half, and heavy cream; stir until smooth. Season generously with salt and pepper. Thin with a splash of milk if needed.",
+                "Serve topped with fresh parsley."
+              ]
+            },
+            {
+              "title": "Crispy Smashed Potatoes",
+              "favorite": true,
+              "servings": "Serves 6",
+              "source": "Modern Honey / Melissa Stadler",
+              "ingredientGroups": [
+                {
+                  "label": "Potatoes",
+                  "ingredients": [
+                    "1 1/2 pounds petite Yukon gold or fingerling potatoes"
+                  ]
+                },
+                {
+                  "label": "Drizzle",
+                  "ingredients": [
+                    "3 tablespoons salted butter, melted",
+                    "2 tablespoons extra-virgin olive oil",
+                    "1 teaspoon salt",
+                    "1/2 teaspoon pepper"
+                  ]
+                },
+                {
+                  "label": "Garlic cheddar dip",
+                  "ingredients": [
+                    "8 oz sour cream",
+                    "3/4 cup cheddar cheese, grated",
+                    "1 garlic clove, minced (or 1/4 teaspoon garlic powder)",
+                    "1/2 teaspoon garlic salt",
+                    "1/4 teaspoon pepper"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "Fresh parsley, chopped"
+                  ]
+                }
+              ],
+              "steps": [
+                "Cook potatoes: boil in salted water until fork-tender, 20–25 minutes, then drain. Alternatively, roast at 425 degrees F for about 25 minutes until just tender — this produces a drier potato and results in a crispier final texture after smashing.",
+                "Preheat oven to 425 degrees F (if using the boiling method). Arrange potatoes on a greased rimmed baking sheet. Smash each potato with the bottom of a glass or measuring cup until about 1/2-inch thick.",
+                "Mix melted butter, olive oil, salt, and pepper; drizzle over smashed potatoes.",
+                "Roast 35–45 minutes until deeply golden and crispy.",
+                "Meanwhile, stir together all dip ingredients until combined. Refrigerate until ready to serve.",
+                "Serve potatoes hot with garlic cheddar dip and fresh parsley."
+              ]
+            },
+            {
+              "title": "Over-the-Top Scalloped Potatoes",
+              "servings": "Serves 6–8",
+              "source": "Food Network / Ree Drummond",
+              "comments": [
+                "Contains bacon."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Onion and bacon",
+                  "ingredients": [
+                    "2 tablespoons salted butter",
+                    "1 large white onion, thinly sliced",
+                    "5 slices bacon, diced"
+                  ]
+                },
+                {
+                  "label": "Cream sauce",
+                  "ingredients": [
+                    "2 cups heavy cream",
+                    "1 cup half-and-half",
+                    "1/4 cup all-purpose flour",
+                    "1 teaspoon freshly ground black pepper",
+                    "Pinch kosher salt"
+                  ]
+                },
+                {
+                  "label": "Cheese",
+                  "ingredients": [
+                    "1 cup fontina, grated",
+                    "1 cup Gruyere, grated"
+                  ]
+                },
+                {
+                  "label": "Potatoes",
+                  "ingredients": [
+                    "3 pounds Yukon gold potatoes, sliced 1/8-inch thick (use a mandoline)"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "2 green onions, thinly sliced"
+                  ]
+                }
+              ],
+              "steps": [
+                "Preheat oven to 350 degrees F. Melt butter in a large skillet over medium heat. Add onion and cook until caramelized, about 15 minutes. Add bacon and cook until crisp. Set aside.",
+                "Whisk together heavy cream, half-and-half, flour, pepper, and salt until smooth.",
+                "Layer half the potatoes in a greased 2-quart baking dish. Top with half the onion-bacon mixture, half the cream sauce, and half the cheese.",
+                "Repeat layers with remaining potatoes, onion-bacon, cream sauce, and cheese.",
+                "Cover tightly with foil and bake 40 minutes. Uncover and bake 20 minutes more until golden and bubbly. Let rest 10 minutes before serving. Top with sliced green onions."
+              ]
+            },
+            {
+              "title": "Perfect Twice Fried French Fries",
+              "servings": "Serves 4–6",
+              "source": "The Salted Potato / Renee Robinson",
+              "favorite": true,
+              "comments": [
+                "The first fry cooks the interior; the second fry crisps the exterior. Two-stage frying is the key to the classic bistro-style fry."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Fries",
+                  "ingredients": [
+                    "4 large Russet potatoes, cut into 1/4-inch sticks (unpeeled)",
+                    "Ice water to cover"
+                  ]
+                },
+                {
+                  "label": "For frying",
+                  "ingredients": [
+                    "2 quarts peanut oil"
+                  ]
+                },
+                {
+                  "label": "To season",
+                  "ingredients": [
+                    "Salt",
+                    "Aleppo pepper"
+                  ]
+                }
+              ],
+              "steps": [
+                "Place potato sticks in a large bowl, cover with ice water, and soak at least 30 minutes (or up to overnight in the refrigerator). Drain and pat thoroughly dry.",
+                "Heat peanut oil to 325 degrees F in a large Dutch oven or heavy-bottomed pot.",
+                "Working in batches, fry potatoes 8–9 minutes until pale golden but not browned. Remove with a spider or slotted spoon; drain on a wire rack. Let rest at least 15 minutes (or cool completely and refrigerate up to 24 hours).",
+                "Heat oil to 350 degrees F. Working in batches, fry potatoes again until deep golden and very crisp, about 2 minutes.",
+                "Drain on wire rack; season immediately with salt and Aleppo pepper. Serve at once."
+              ]
+            },
+            {
+              "title": "Classic Potato Gratin",
+              "servings": "Serves 6",
+              "source": "Claire Saffitz / Bon Appetit, November 2015",
+              "comments": [
+                "Do ahead: bake up to 1 day ahead; cover, refrigerate, bring to room temperature before broiling.",
+                "Do not rinse potato slices after cutting -- the starch is what makes the gratin creamy.",
+                "Comté is an excellent substitute for Gruyere."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Cream mixture",
+                  "ingredients": [
+                    "1 medium shallot, quartered through root end",
+                    "1 1/4 cups heavy cream",
+                    "1 1/2 teaspoons kosher salt",
+                    "1/2 teaspoon freshly ground black pepper",
+                    "1 1/2 teaspoons thyme leaves",
+                    "2 cloves garlic"
+                  ]
+                },
+                {
+                  "label": "Gratin dish",
+                  "ingredients": [
+                    "1 small garlic clove, halved",
+                    "1 1/2 teaspoons unsalted butter, room temperature"
+                  ]
+                },
+                {
+                  "label": "Potatoes",
+                  "ingredients": [
+                    "2 pounds russet potatoes, scrubbed and very thinly sliced on a mandoline (do not rinse after slicing)"
+                  ]
+                },
+                {
+                  "label": "Topping",
+                  "ingredients": [
+                    "1 1/2 oz Gruyere, finely grated",
+                    "1/2 oz Parmesan, finely grated",
+                    "Extra thyme leaves for serving"
+                  ]
+                }
+              ],
+              "steps": [
+                "Preheat oven to 325 degrees F. Rub the inside of a 2-quart shallow baking dish with the cut sides of the halved garlic clove; smear with butter all over.",
+                "Combine shallot, cream, salt, pepper, thyme, and 2 garlic cloves in a small saucepan. Simmer over low heat until shallot and garlic are very soft, 15 to 20 minutes. Let cool slightly, then blend until smooth.",
+                "Fan out handfuls of potato slices and arrange in the buttered dish at a slight angle, shingling as you work. Tuck smaller slices into gaps. Pour cream mixture over potatoes. Cover tightly with foil.",
+                "Bake until potatoes are tender and creamy, 60 to 75 minutes (often closer to 90 -- baking the day ahead avoids this uncertainty). Let cool.",
+                "Heat broiler with rack in highest position. Remove foil and top potatoes with Gruyere and Parmesan. Broil until cheese is bubbling and golden, 5 to 10 minutes. Scatter with thyme leaves and serve."
+              ]
+            },
+            {
+              "title": "Potato Latkes",
+              "favorite": true,
+              "servings": "Makes about 12 latkes",
+              "source": "\"Celebration: The Book of Jewish Festivals,\" ed. Naomi Black (Jonathan David Publishers, 1989)",
+              "comments": [
+                "Keep finished latkes warm in a 250°F oven while frying subsequent batches.",
+                "The original notes you can use more flour or matzo meal as needed to hold the batter together.",
+                "Variation: Pour the same batter into a well-greased muffin pan and bake 45 minutes at 350°F."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Batter",
+                  "ingredients": [
+                    "6 medium potatoes, grated",
+                    "1 onion, grated",
+                    "2 eggs",
+                    "2 tablespoons flour or matzo meal (more as needed)",
+                    "1 teaspoon salt"
+                  ]
+                },
+                {
+                  "label": "For frying",
+                  "ingredients": [
+                    "Vegetable oil"
+                  ]
+                }
+              ],
+              "steps": [
+                "Grate the potatoes into a mixing bowl. Squeeze out the liquid or drain in a colander for a few minutes. Grate the onion into the potatoes.",
+                "Add the eggs and mix. Add the flour and mix. Add the salt and stir until you have a smooth batter that drops heavily from the spoon.",
+                "Heat enough vegetable oil in a frying pan to cover the latkes amply. Drop the batter from a tablespoon into the hot oil, making pancakes about 3 inches in diameter. Do not allow the oil to smoke; let it come back up to temperature after every few latkes and after replenishing the oil.",
+                "Fry until brown on the underside, then turn and brown the other side. Lift out and drain on paper towels. Keep warm in a 250°F oven while frying remaining batches."
+              ]
+            },
+            {
+              "title": "Potatoes Gratin (Low Calorie)",
+              "servings": "Serves 6–8   |   Prep: 10 min   |   Cook: 1 to 1 1/4 hours",
+              "source": "Family recipe card",
+              "comments": [
+                "Low-calorie version using skim milk and eggs rather than cream."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Potatoes",
+                  "ingredients": [
+                    "2 large garlic cloves, halved lengthwise",
+                    "3 pounds new potatoes, unpeeled, scrubbed, and very thinly sliced"
+                  ]
+                },
+                {
+                  "label": "Custard",
+                  "ingredients": [
+                    "3 1/3 cups skim milk",
+                    "2 large eggs, lightly beaten",
+                    "Salt and pepper to taste"
+                  ]
+                },
+                {
+                  "label": "Topping",
+                  "ingredients": [
+                    "6 tablespoons grated parmesan cheese"
+                  ]
+                }
+              ],
+              "steps": [
+                "Preheat oven to 400°F. Rub the inside of a 9x14x2-inch Pyrex dish with the cut side of the garlic. Thinly slice the garlic and toss with the potatoes.",
+                "Layer potatoes in the Pyrex dish. Mix together milk, eggs, salt, and pepper. Pour mixture over potatoes.",
+                "Bake 1 to 1 1/4 hours. Every 15 minutes, remove from oven and, using a knife or wooden spoon, press down the top layer of potatoes that has gotten crusty and fold it into the rest.",
+                "When golden and potatoes are tender, sprinkle with parmesan and return to oven. Bake until a golden crust forms, about 10–15 minutes."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Stovetop",
+          "recipes": [
+            {
+              "title": "Sautéed Mushrooms",
+              "servings": "Serves 6   |   Prep: 10 min   |   Cook: 20 min   |   Total: 30 min",
+              "source": "Sommer Collier, A Spicy Perspective",
+              "comments": [
+                "The classic steak topping — also great over chicken, pork chops, or grain bowls. Have patience: let the mushrooms release all their moisture before they begin to brown. Leftovers keep in the fridge up to 10 days; reheat on the stovetop with a little extra butter."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Mushrooms and fat",
+                  "ingredients": [
+                    "2 pounds button mushrooms, halved",
+                    "2 tablespoons unsalted butter",
+                    "2 tablespoons olive oil"
+                  ]
+                },
+                {
+                  "label": "Aromatics",
+                  "ingredients": [
+                    "3 garlic cloves, minced",
+                    "Salt and pepper to taste"
+                  ]
+                },
+                {
+                  "label": "Glaze",
+                  "ingredients": [
+                    "1½ tablespoons fresh thyme leaves",
+                    "¾ cup dry sherry"
+                  ]
+                }
+              ],
+              "steps": [
+                "Place a large sauté pan over medium heat. Add the butter and olive oil. Once the butter has melted, add the mushrooms.",
+                "Let the mushrooms sear for 5 minutes, stirring to flip them. Add the garlic and salt and pepper to taste. Sear another 5 minutes to develop a rich caramelized color.",
+                "Stir in the thyme leaves and sherry. Lower heat to medium-low and simmer about 10 minutes, stirring occasionally, until the mushrooms have absorbed the sherry and only a small amount of moisture remains in the pan.",
+                "Taste and adjust salt and pepper. Serve warm over steak, chicken, pork chops, or as a side dish."
+              ]
+            },
+            {
+              "title": "Classic Steakhouse Creamed Spinach",
+              "servings": "Serves 6",
+              "source": "Sabrina Snyder / Dinner, then Dessert",
+              "comments": [
+                "Can be made a day ahead and refrigerated; reheat gently on the stovetop with a splash of milk or cream to loosen."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Spinach",
+                  "ingredients": [
+                    "2 1/4 pounds fresh spinach (or 1 pound frozen spinach, defrosted and squeezed dry)",
+                    "2 teaspoons kosher salt"
+                  ]
+                },
+                {
+                  "label": "Cream sauce base",
+                  "ingredients": [
+                    "4 tablespoons unsalted butter",
+                    "1 medium yellow onion, minced",
+                    "3 cloves garlic, minced",
+                    "2 teaspoons kosher salt",
+                    "1 teaspoon coarse ground black pepper",
+                    "1/2 teaspoon ground nutmeg",
+                    "1/4 cup all-purpose flour",
+                    "3 1/2 cups half-and-half"
+                  ]
+                },
+                {
+                  "label": "Cheese",
+                  "ingredients": [
+                    "1 cup shredded mozzarella",
+                    "4 oz cream cheese",
+                    "1/2 cup grated Parmesan"
+                  ]
+                }
+              ],
+              "steps": [
+                "Bring a large pot of water to a boil with 2 teaspoons salt. Add spinach and cook just until wilted, about 1 minute. Drain, rinse with cold water, and squeeze out as much water as possible in fistfuls. Chop into 3/4-inch pieces.",
+                "Melt butter in a large skillet over medium-low. Add onion and garlic; cook until onions are translucent, 8 to 10 minutes.",
+                "Stir in remaining 2 teaspoons salt, pepper, and nutmeg. Add flour and stir over low heat until the mixture smells nutty, 2 to 3 minutes.",
+                "Pour in half-and-half and cook, stirring, until the mixture comes to a boil.",
+                "Add mozzarella and cream cheese; stir until smooth. Cook until thickened, 6 to 8 minutes.",
+                "Stir in spinach and Parmesan. Serve hot."
+              ]
+            },
+            {
+              "title": "Kickin' Collard Greens",
+              "servings": "Serves 6",
+              "source": "Ken Adams / Allrecipes",
+              "ingredientGroups": [
+                {
+                  "label": "Aromatics",
+                  "ingredients": [
+                    "1 tablespoon olive oil",
+                    "3 slices bacon",
+                    "1 large onion, chopped",
+                    "2 cloves garlic, minced"
+                  ]
+                },
+                {
+                  "label": "Greens",
+                  "ingredients": [
+                    "1 pound fresh collard greens, washed and cut into 2-inch pieces"
+                  ]
+                },
+                {
+                  "label": "Braising liquid",
+                  "ingredients": [
+                    "3 cups chicken broth",
+                    "1 teaspoon salt",
+                    "1 teaspoon black pepper",
+                    "1 pinch Aleppo pepper or red pepper flakes, or more to taste"
+                  ]
+                }
+              ],
+              "steps": [
+                "Heat oil in a large pot over medium-high. Add bacon and cook until crisp, 5 to 7 minutes. Remove with a slotted spoon, crumble, and return to the pot.",
+                "Add onion and cook until tender, about 5 minutes. Add garlic and cook until just fragrant, about 1 minute more. Add collard greens and stir until they start to wilt.",
+                "Pour in chicken broth and season with salt, pepper, and Aleppo pepper. Reduce heat to low, cover, and simmer until greens are very tender, about 45 minutes. Taste and add more Aleppo pepper for heat if desired."
+              ]
+            },
+            {
+              "title": "Eggplant Caponata",
+              "servings": "Serves 4–6",
+              "source": "From Chef Louisa (Villa Britannia, Taormina, Sicily)",
+              "comments": [
+                "Even better a day or two after making — serve warm or cold, as a starter or side.",
+                "The two add-in options (olives and capers, or raisins and pine nuts) can be used separately or mixed together.",
+                "Optional additional vegetables: carrots (parboil 3 minutes like the celery), zucchini or potatoes (deep-fry with the eggplant), artichoke hearts (parboil)."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Eggplant (1 hour ahead)",
+                  "ingredients": [
+                    "600g eggplant, peeled mostly (leaving a little skin), diced into roughly 2 cm cubes",
+                    "1 tablespoon fine salt (for draining)",
+                    "500ml sunflower or peanut oil (for frying)"
+                  ]
+                },
+                {
+                  "label": "Peppers",
+                  "ingredients": [
+                    "500g mixed-color peppers, diced into roughly 2 cm pieces"
+                  ]
+                },
+                {
+                  "label": "Base",
+                  "ingredients": [
+                    "100ml extra-virgin olive oil",
+                    "200g red onion, diced into 1 cm pieces",
+                    "200g celery (outer stalks), lightly peeled, cut into 1 cm pieces (briefly boil in unsalted water 3 minutes — keep crunch)",
+                    "300g cherry or plum tomatoes, roughly chopped"
+                  ]
+                },
+                {
+                  "label": "Sweet-sour finish",
+                  "ingredients": [
+                    "30g (about 2 tablespoons) brown sugar",
+                    "100ml red wine vinegar"
+                  ]
+                },
+                {
+                  "label": "Add-ins",
+                  "ingredients": [
+                    "100g green olives, rinsed and roughly chopped; and 50g capers, desalted and roughly chopped",
+                    "OR: 100g raisins; and 50g pine nuts"
+                  ]
+                },
+                {
+                  "label": "To finish",
+                  "ingredients": [
+                    "Large handful of fresh basil leaves, torn"
+                  ]
+                }
+              ],
+              "steps": [
+                "Toss diced eggplant with the salt in a colander. Place a weighted plate on top (with a bowl underneath). Leave at least 1 hour. Squeeze handfuls to remove remaining moisture before frying.",
+                "Heat sunflower oil in a deep pan until sizzling. Fry eggplant in batches until lightly browned. Remove and drain on kitchen paper. Fry the peppers in the same oil last (they discolor the oil). Drain on kitchen paper.",
+                "In a large pan, heat olive oil over medium heat. Add onion and sweat until soft. Add celery and cook on low 5 minutes.",
+                "Push vegetables to one side of the pan. Add sugar to the exposed side and let it caramelize. Pour red wine vinegar over everything, stir, and let it begin to evaporate.",
+                "Add olives and capers, or raisins and pine nuts (or both). Add tomatoes. Add the fried eggplant and peppers. Warm gently a few minutes — keep each vegetable distinct, do not overcook.",
+                "Tear in the basil. Allow to cool. Ideally make 1–2 days ahead to let flavors develop."
+              ]
+            },
+            {
+              "title": "Mexican Street Corn (Elotes)",
+              "servings": "Serves 4",
+              "source": "Chef Billy Parisi / The Inspired Home",
+              "comments": [
+                "Cotija is a firm, salty Mexican cheese. Feta or Parmesan can substitute if unavailable.",
+                "Ancho chili powder has a mild, slightly fruity heat; regular chili powder works if ancho isn't available."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Corn",
+                  "ingredients": [
+                    "4 ears of corn, shucked"
+                  ]
+                },
+                {
+                  "label": "Topping",
+                  "ingredients": [
+                    "1/3 cup Mexican crema or sour cream",
+                    "1/3 cup mayonnaise",
+                    "2 cloves garlic, finely minced",
+                    "1 teaspoon ancho chili powder, plus more for garnish",
+                    "1 tablespoon fresh cilantro, finely minced, plus more for garnish",
+                    "1/2 cup crumbled cotija cheese, plus more for garnish",
+                    "1/4 teaspoon kosher salt"
+                  ]
+                },
+                {
+                  "label": "Garnish",
+                  "ingredients": [
+                    "Lime wedges"
+                  ]
+                }
+              ],
+              "steps": [
+                "Preheat grill to high heat (450 to 550 degrees F).",
+                "Grill corn, turning occasionally, until cooked through and lightly charred on all sides. Keep warm on a cooler part of the grill.",
+                "In a bowl, whisk together crema, mayonnaise, garlic, chili powder, cilantro, cotija, and salt.",
+                "Generously coat each ear of corn with the crema mixture. Garnish with more chili powder, cilantro, and cotija. Serve with lime wedges."
+              ]
+            },
+            {
+              "title": "Red Cabbage With Walnuts and Feta",
+              "servings": "Serves 6 to 8",
+              "source": "Melissa Clark / New York Times Cooking",
+              "comments": [
+                "Works equally well as a substantial side or light main course.",
+                "A small head of green cabbage also works, though it may cook a bit faster."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Cabbage",
+                  "ingredients": [
+                    "1 medium red cabbage (1 3/4 to 2 pounds)",
+                    "3 tablespoons extra-virgin olive oil",
+                    "1/2 teaspoon salt"
+                  ]
+                },
+                {
+                  "label": "Vinaigrette",
+                  "ingredients": [
+                    "1 tablespoon apple cider vinegar, plus more to taste",
+                    "1/2 teaspoon Dijon mustard",
+                    "1/2 teaspoon salt",
+                    "3 tablespoons extra-virgin olive oil"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "2/3 cup crumbled feta (3 oz)",
+                    "1/3 cup walnuts, toasted and coarsely chopped",
+                    "Lemon zest",
+                    "Pomegranate seeds",
+                    "Chopped mint, parsley, or dill (optional)"
+                  ]
+                }
+              ],
+              "steps": [
+                "Heat oven to 425 degrees F. Peel any damaged outer leaves from the cabbage. Halve through the core, then cut each half into 1- to 1 1/2-inch wedges, keeping the layers together.",
+                "Arrange wedges on their sides on a sheet pan. Drizzle with 3 tablespoons olive oil and sprinkle with 1/2 teaspoon salt. Roast 20 minutes, flip, and continue roasting until cores are tender and edges are browned, 10 to 20 minutes more.",
+                "While cabbage roasts, whisk together vinegar, mustard, and 1/2 teaspoon salt until salt dissolves. Whisk in 3 tablespoons olive oil until emulsified. Taste and adjust with more vinegar or salt.",
+                "Arrange cabbage on a platter and drizzle with vinaigrette. Top with feta, walnuts, lemon zest, pomegranate seeds, and herbs if using. Serve hot or at room temperature."
+              ]
+            },
+            {
+              "title": "Gochujang Stir-Fried Brussels Sprouts",
+              "servings": "Serves 8 as a side",
+              "source": "Dana / Minimalist Baker",
+              "comments": [
+                "Use gochujang sauce (the ready-to-use sauce), not gochujang paste -- they are different products. Find it at Korean grocery stores or in the international aisle."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Sauce",
+                  "ingredients": [
+                    "1/2 cup Korean gochujang sauce (homemade or store-bought)",
+                    "1 tablespoon sesame oil",
+                    "1/3 cup soy sauce",
+                    "2 to 3 tablespoons maple syrup",
+                    "1 1/2 tablespoons chili garlic sauce",
+                    "1 pinch sea salt"
+                  ]
+                },
+                {
+                  "label": "Brussels sprouts",
+                  "ingredients": [
+                    "1 tablespoon sesame or avocado oil",
+                    "7 heaping cups Brussels sprouts, halved and stems trimmed",
+                    "3 tablespoons soy sauce"
+                  ]
+                },
+                {
+                  "label": "To serve (optional)",
+                  "ingredients": [
+                    "Thinly sliced shallot or green onion",
+                    "Chopped roasted salted peanuts"
+                  ]
+                }
+              ],
+              "steps": [
+                "Make the sauce: whisk together gochujang sauce, sesame oil, soy sauce, maple syrup, chili garlic sauce, and salt. Taste and adjust -- more chili garlic sauce for heat, maple syrup for sweetness. Set aside.",
+                "Heat a large cast-iron or heavy skillet over medium-high. Add oil, then Brussels sprouts. Add 3 tablespoons soy sauce and toss to coat. Spread so each cut side touches the pan surface.",
+                "Cover and cook 2 minutes. Uncover and stir-fry, turning occasionally, until well browned and caramelized on all sides, 2 to 4 minutes more.",
+                "Add sliced shallot or green onion if using. Pour in the prepared sauce and stir-fry 1 to 2 minutes more to coat and caramelize.",
+                "Transfer to a platter. Garnish with crushed peanuts if desired. Serve hot."
+              ]
+            },
+            {
+              "title": "Broccoli with Garlic Sauce",
+              "servings": "Serves 4",
+              "source": "I Heart Umami / ChihYu Smith",
+              "comments": [
+                "Can substitute vegetable broth for chicken broth to make vegetarian.",
+                "Cornstarch can be substituted for tapioca starch in equal measure — both thicken similarly in this sauce."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Garlic sauce",
+                  "ingredients": [
+                    "1 oz garlic cloves (about 5 large), grated or crushed, divided in half",
+                    "1/2 cup chicken broth",
+                    "3 teaspoons tapioca starch (or cornstarch)"
+                  ]
+                },
+                {
+                  "label": "Broccoli",
+                  "ingredients": [
+                    "1 tablespoon avocado oil",
+                    "15 oz broccoli florets",
+                    "1/2 cup chicken broth (for steaming)",
+                    "1/4 teaspoon coarse sea salt"
+                  ]
+                },
+                {
+                  "label": "To serve (optional)",
+                  "ingredients": [
+                    "1/4 teaspoon Takii shiitake mushroom seasoning",
+                    "1 teaspoon toasted sesame oil"
+                  ]
+                }
+              ],
+              "steps": [
+                "Mix 1/2 cup chicken broth with tapioca starch or cornstarch until dissolved; set aside. Grate or crush garlic and divide in half.",
+                "Heat avocado oil in a wide skillet over medium-high heat. Add half the garlic and cook 30 seconds until fragrant. Add broccoli and cook 1 minute.",
+                "Add remaining 1/2 cup broth to skillet; cover and steam broccoli 2 minutes.",
+                "Add remaining garlic and the starch slurry. Toss to coat and cook until sauce thickens, 30–60 seconds.",
+                "Season with salt; add shiitake seasoning and sesame oil if using. Serve immediately."
+              ]
+            },
+            {
+              "title": "Garlicky Broccoli Stir-Fry",
+              "servings": "Serves 4",
+              "source": "Sarah Leung / The Woks of Life",
+              "comments": [
+                "Blanching the broccoli first keeps the sauce clean and ensures tenderness without overcooking.",
+                "Shaoxing wine is a Chinese rice wine; dry sherry can substitute. For vegetarian/vegan, use vegetable stock."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Cornstarch slurry",
+                  "ingredients": [
+                    "1 tablespoon cornstarch",
+                    "2 tablespoons water"
+                  ]
+                },
+                {
+                  "label": "Stir-fry",
+                  "ingredients": [
+                    "4 cups broccoli florets",
+                    "5 cloves garlic, minced",
+                    "1 tablespoon neutral oil",
+                    "1 tablespoon Shaoxing wine",
+                    "1/2 cup chicken stock or vegetable stock",
+                    "1 teaspoon salt",
+                    "1/8 teaspoon white pepper",
+                    "1/2 teaspoon sesame oil"
+                  ]
+                }
+              ],
+              "steps": [
+                "Mix cornstarch into water and stir until completely dissolved; set aside.",
+                "Bring a large pot of water to a boil. Blanch broccoli for 1 minute. Drain and transfer to cold water to stop cooking. Drain well.",
+                "Heat a wok or large skillet over high heat until very hot. Add oil, garlic, broccoli, and Shaoxing wine. Stir-fry 1 minute, then pour in stock. Bring to a boil.",
+                "Season with salt, white pepper, and sesame oil. Stir the cornstarch slurry, then add half to the pan. Stir until the sauce thickens to coat the back of a spoon; add more slurry if needed.",
+                "Plate and serve hot."
+              ]
+            },
+            {
+              "title": "Stir-Fried Spinach With Garlic",
+              "favorite": true,
+              "servings": "Serves 3 to 4",
+              "source": "Rhonda Parkinson / The Spruce Eats",
+              "ingredientGroups": [
+                {
+                  "label": "Stir-fry",
+                  "ingredients": [
+                    "2 tablespoons peanut or vegetable oil",
+                    "1 teaspoon minced garlic",
+                    "1/4 teaspoon chili paste, more to taste",
+                    "1/2 teaspoon fine salt, more to taste",
+                    "10 oz fresh spinach, rinsed and dried"
+                  ]
+                },
+                {
+                  "label": "Finish",
+                  "ingredients": [
+                    "1/4 teaspoon granulated sugar",
+                    "1/4 teaspoon sesame oil",
+                    "1 teaspoon freshly ground black pepper (optional)"
+                  ]
+                }
+              ],
+              "steps": [
+                "Heat a wok over medium heat. Add oil, swirling to coat the pan about halfway up the sides.",
+                "When the oil is hot, add garlic, chili paste, and salt. Stir a few seconds until the garlic is aromatic.",
+                "Add spinach and stir-fry until leaves are almost wilted, 1 to 2 minutes.",
+                "Stir in sugar and sesame oil. Sprinkle with black pepper if using. Serve immediately."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Oven",
+          "recipes": [
+            {
+              "title": "Herby Roasted Carrots and Radishes",
+              "servings": "Serves 6",
+              "source": "Food Network / Ree Drummond",
+              "ingredientGroups": [
+                {
+                  "label": "Vegetables",
+                  "ingredients": [
+                    "2 pounds rainbow carrots, halved lengthwise",
+                    "1 pound radishes, halved",
+                    "2 jalapenos, sliced",
+                    "2 tablespoons olive oil",
+                    "2 teaspoons kosher salt",
+                    "Black pepper"
+                  ]
+                },
+                {
+                  "label": "Herb oil",
+                  "ingredients": [
+                    "1 cup fresh cilantro, chopped",
+                    "1 cup fresh parsley, chopped",
+                    "Zest and juice of 1 lemon",
+                    "Pinch Aleppo pepper or red pepper flakes",
+                    "1/2 cup olive oil",
+                    "1/2 teaspoon sea salt"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "1/2 cup raw sliced almonds, toasted"
+                  ]
+                }
+              ],
+              "steps": [
+                "Preheat oven to 475 degrees F. Toss carrots, radishes, and jalapenos with 2 tablespoons olive oil, salt, and pepper; spread on a rimmed baking sheet. Roast 15–18 minutes until caramelized at edges.",
+                "Meanwhile, whisk together cilantro, parsley, lemon zest and juice, Aleppo pepper or red pepper flakes, 1/2 cup olive oil, and sea salt in a bowl.",
+                "Toast almonds in a dry skillet over medium heat until golden, about 3–4 minutes.",
+                "Spoon herb oil over roasted vegetables on a serving platter; scatter toasted almonds over the top."
+              ]
+            },
+            {
+              "title": "Baked Zucchini Fries",
+              "favorite": true,
+              "servings": "Serves 6",
+              "source": "Chungah Rhee / Damn Delicious",
+              "comments": [
+                "Using a cooling rack elevates the fries so air circulates underneath, crisping all sides rather than steaming the bottom.",
+                "Best served right out of the oven."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Coating",
+                  "ingredients": [
+                    "1 cup Panko breadcrumbs",
+                    "1/2 cup freshly grated Parmesan",
+                    "1 teaspoon Italian seasoning",
+                    "Kosher salt and black pepper to taste"
+                  ]
+                },
+                {
+                  "label": "Zucchini",
+                  "ingredients": [
+                    "2 medium zucchini, quartered lengthwise"
+                  ]
+                },
+                {
+                  "label": "For breading",
+                  "ingredients": [
+                    "1/2 cup all-purpose flour",
+                    "2 large eggs, beaten"
+                  ]
+                },
+                {
+                  "label": "Garnish",
+                  "ingredients": [
+                    "2 tablespoons chopped fresh parsley"
+                  ]
+                }
+              ],
+              "steps": [
+                "Preheat oven to 425 degrees F. Set a cooling rack on a sheet pan and coat with cooking spray.",
+                "Combine Panko, Parmesan, and Italian seasoning in a bowl; season with salt and pepper.",
+                "Dredge zucchini spears in flour, dip in beaten eggs, then coat thoroughly in the Panko mixture, pressing to adhere.",
+                "Arrange on the cooling rack and bake until golden and crisp, 20 to 22 minutes.",
+                "Serve immediately, garnished with parsley."
+              ]
+            },
+            {
+              "title": "Beets With Horseradish and Pumpkin Seeds",
+              "servings": "Serves 4",
+              "source": "Vallery Lomas / New York Times Cooking",
+              "comments": [
+                "Do ahead: beets can be roasted and peeled up to 2 days ahead (slice just before serving); horseradish cream and toasted seeds can also be made ahead.",
+                "Plain yogurt works as a substitute for sour cream.",
+                "Beet greens: saute in olive oil and finish with a splash of balsamic vinegar for an excellent accompaniment."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Beets",
+                  "ingredients": [
+                    "1 small bunch red beets (about 1 pound), washed and stems removed",
+                    "1 small bunch golden beets (about 1 pound), washed and stems removed",
+                    "2 tablespoons extra-virgin olive oil",
+                    "Salt and black pepper"
+                  ]
+                },
+                {
+                  "label": "Horseradish cream",
+                  "ingredients": [
+                    "1/2 cup sour cream",
+                    "2 tablespoons prepared horseradish",
+                    "2 tablespoons fresh lemon juice",
+                    "1/4 teaspoon each salt and pepper"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "1/4 cup raw pumpkin seeds (pepitas)"
+                  ]
+                }
+              ],
+              "steps": [
+                "Heat oven to 375 degrees F. Place all beets on a large sheet of foil, drizzle with olive oil, and wrap tightly. Roast until tender, 65 to 70 minutes. Remove from oven and let cool slightly. Peel skins (use a paring knife if needed).",
+                "While beets roast, whisk together sour cream, horseradish, lemon juice, 1/4 teaspoon salt, and 1/4 teaspoon pepper. Taste and adjust seasoning.",
+                "Toast pumpkin seeds in a small dry skillet over medium heat, shaking, until they begin to pop and smell nutty, 2 to 3 minutes.",
+                "Slice peeled beets 1/4-inch thick and arrange on a serving platter. Season with salt and pepper. Spoon horseradish cream over the top and scatter with toasted pumpkin seeds. Serve warm or at room temperature."
+              ]
+            },
+            {
+              "title": "Brussels Sprouts With Pistachios and Lime",
+              "servings": "Serves 8 to 10",
+              "source": "Christina Chaey and Claire Saffitz / Bon Appetit, November 2019",
+              "comments": [
+                "Do ahead: Brussels sprouts can be roasted and the butter-pistachio mixture can be made up to 3 hours ahead; toss with glaze just before serving.",
+                "Date molasses (also called date syrup) adds a rich, caramel-like sweetness. Pomegranate molasses makes a brighter, more tart version."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Brussels sprouts",
+                  "ingredients": [
+                    "2 pounds Brussels sprouts, trimmed and halved",
+                    "3 tablespoons vegetable oil",
+                    "Kosher salt and freshly ground black pepper"
+                  ]
+                },
+                {
+                  "label": "Brown butter and pistachios",
+                  "ingredients": [
+                    "3 tablespoons unsalted butter",
+                    "3 tablespoons raw pistachios",
+                    "Pinch of salt"
+                  ]
+                },
+                {
+                  "label": "Glaze",
+                  "ingredients": [
+                    "2 tablespoons date molasses or pomegranate molasses",
+                    "1 teaspoon honey",
+                    "2 tablespoons fresh lime juice",
+                    "1 tablespoon water"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "Zest of 1/2 lime",
+                    "1/2 teaspoon Aleppo pepper or red pepper flakes",
+                    "Lime wedges"
+                  ]
+                }
+              ],
+              "steps": [
+                "Heat oven to 450 degrees F. Toss Brussels sprouts with vegetable oil on a large rimmed baking sheet; season with salt and pepper. Roast, shaking the pan once, until deeply browned on cut sides, about 15 to 25 minutes. Reduce heat to 350 degrees F and continue roasting until a knife slides through easily, 10 to 20 minutes more (35 to 45 minutes total).",
+                "Meanwhile, melt butter in a small skillet over medium heat. Add pistachios and a pinch of salt. Cook, stirring occasionally, until butter is golden brown and nutty, about 4 minutes. Transfer nuts to paper towels and let cool slightly, then coarsely chop.",
+                "In a large bowl, whisk together date molasses, honey, lime juice, and 1 tablespoon water. Add the warm roasted Brussels sprouts and toss to coat.",
+                "Transfer to a platter and scatter chopped pistachios, lime zest, Aleppo pepper, and a pinch of salt over the top. Serve with lime wedges."
+              ]
+            },
+            {
+              "title": "Crack Broccoli",
+              "favorite": true,
+              "servings": "Serves 6",
+              "source": "Jessica Knott / Swanky Recipes",
+              "comments": [
+                "Dry ranch seasoning adds a savory, slightly tangy character. Don't skip it.",
+                "The high oven temperature is essential -- lower temperatures steam rather than char the broccoli."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Seasoned oil",
+                  "ingredients": [
+                    "1/3 cup olive oil (not extra-virgin)",
+                    "Zest of 1/2 lemon",
+                    "2 teaspoons fresh lemon juice",
+                    "1 1/2 teaspoons salt",
+                    "1/2 teaspoon black pepper",
+                    "1/8 teaspoon Aleppo pepper or red pepper flakes",
+                    "1 1/2 teaspoons dry ranch seasoning powder",
+                    "5 cloves garlic, minced (or 1 teaspoon garlic paste)"
+                  ]
+                },
+                {
+                  "label": "Broccoli",
+                  "ingredients": [
+                    "2 1/2 pounds broccoli crowns, cut into florets or 1/2-inch-thick steaks"
+                  ]
+                },
+                {
+                  "label": "Finish",
+                  "ingredients": [
+                    "1/4 cup raw sliced almonds",
+                    "1/3 cup grated Parmesan"
+                  ]
+                }
+              ],
+              "steps": [
+                "Preheat oven to 475 degrees F (or 450 degrees F for less char).",
+                "Whisk together olive oil, lemon zest, lemon juice, salt, pepper, Aleppo pepper, ranch seasoning, and garlic in a large bowl. Add broccoli and toss to coat.",
+                "Spread in a single layer on a large rimmed sheet pan. Roast 10 to 12 minutes. Remove from oven, flip broccoli, and scatter almonds over the pan.",
+                "Return to oven for 5 to 10 minutes more, until broccoli is tender with deeply charred edges and almonds are toasted.",
+                "Remove from oven and immediately sprinkle with Parmesan."
+              ]
+            },
+            {
+              "title": "Zucchini Involtini",
+              "servings": "Serves 4 as a side",
+              "source": "From Chef Louisa (Villa Britannia, Taormina, Sicily)",
+              "comments": [
+                "Same herbed breadcrumb coating as all Villa Britannia involtini (1 part Parmesan to 3 parts fresh breadcrumbs).",
+                "'Blanched tomatoes' means briefly blanched and peeled before chopping."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Bread coating",
+                  "ingredients": [
+                    "1 1/2 cups fresh breadcrumbs (grated or food-processed from crustless white bread)",
+                    "1/2 cup Parmesan, grated",
+                    "2 tablespoons flat-leaf parsley, finely chopped",
+                    "1 clove garlic, finely chopped",
+                    "Salt and pepper to taste"
+                  ]
+                },
+                {
+                  "label": "Zucchini and filling",
+                  "ingredients": [
+                    "3–4 medium zucchini",
+                    "Salt and olive oil",
+                    "2–3 plum tomatoes, blanched, peeled, and roughly chopped",
+                    "Hard cheese (Parmesan, Emmental, or pecorino), cut in small pieces"
+                  ]
+                }
+              ],
+              "steps": [
+                "Make the bread coating: combine breadcrumbs, Parmesan, parsley, garlic, salt, and pepper. Mix with your hands. Add blanched, chopped tomatoes and combine.",
+                "Cut zucchini lengthwise into very thin slices. Salt lightly on both sides and drizzle with olive oil.",
+                "Coat each zucchini slice in the bread coating. Add a little extra coating on top and place a small piece of hard cheese in the center. Roll up and thread onto wooden skewers.",
+                "Fry in a pan lined with baking paper over high heat with a small drizzle of olive oil, 4–6 minutes until lightly browned. Can also be grilled, barbecued, or baked."
+              ]
+            },
+            {
+              "title": "Spicy Roasted Cauliflower with Sriracha and Sesame",
+              "servings": "Serves 4–6",
+              "source": "Todd Porter and Diane Cu / Epicurious",
+              "ingredientGroups": [
+                {
+                  "label": "Sauce",
+                  "ingredients": [
+                    "3 tablespoons sriracha",
+                    "2 tablespoons vegetable or canola oil",
+                    "2 tablespoons honey",
+                    "1 tablespoon toasted sesame oil",
+                    "1 tablespoon rice vinegar",
+                    "2 teaspoons soy sauce",
+                    "1/2 teaspoon garlic powder",
+                    "1/2 teaspoon kosher salt"
+                  ]
+                },
+                {
+                  "label": "Cauliflower",
+                  "ingredients": [
+                    "1 medium head cauliflower (about 2 1/2 pounds), cut into florets"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "2 tablespoons toasted sesame seeds",
+                    "2 scallions, thinly sliced"
+                  ]
+                }
+              ],
+              "steps": [
+                "Preheat oven to 450°F. In a large bowl, whisk together sriracha, vegetable oil, honey, sesame oil, rice vinegar, soy sauce, garlic powder, and salt.",
+                "Add cauliflower florets and toss until evenly coated. Spread on a large rimmed baking sheet in a single layer.",
+                "Roast until cauliflower is tender and charred in spots, 20–25 minutes.",
+                "Transfer to a platter. Sprinkle with sesame seeds and scallions and serve."
+              ]
+            },
+            {
+              "title": "Tomato Cobbler With Ricotta Biscuits",
+              "servings": "Serves 10   |   Total: 1 hour 30 minutes",
+              "source": "New York Times (Nicole Rucker / Tejal Rao), 2019",
+              "comments": [
+                "This dish sits somewhere between a savory course and a sweet one -- serve it either way.",
+                "Sungold tomatoes are sweeter and especially good here when in season."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Ricotta (30 minutes ahead)",
+                  "ingredients": [
+                    "3/4 cup whole-milk ricotta"
+                  ]
+                },
+                {
+                  "label": "Biscuit dry ingredients",
+                  "ingredients": [
+                    "2 1/2 cups cake flour, plus more for dusting",
+                    "1 tablespoon granulated sugar",
+                    "1 teaspoon kosher salt",
+                    "1 1/2 teaspoons baking powder",
+                    "1 teaspoon baking soda"
+                  ]
+                },
+                {
+                  "label": "Biscuit fat",
+                  "ingredients": [
+                    "1/2 cup unsalted butter, cut into cubes and chilled"
+                  ]
+                },
+                {
+                  "label": "Biscuit liquid",
+                  "ingredients": [
+                    "1 cup buttermilk, plus 2 tablespoons for brushing"
+                  ]
+                },
+                {
+                  "label": "Tomato base",
+                  "ingredients": [
+                    "2 to 2 1/2 pounds cherry tomatoes or Sungold tomatoes",
+                    "1/4 cup extra-virgin olive oil",
+                    "1 tablespoon sherry vinegar",
+                    "2 sprigs fresh thyme",
+                    "1/4 cup granulated sugar",
+                    "2 tablespoons cake flour",
+                    "Kosher salt and freshly ground black pepper"
+                  ]
+                }
+              ],
+              "steps": [
+                "Strain the ricotta in a cheesecloth or fine-mesh strainer for at least 30 minutes. Squeeze out any excess moisture before using.",
+                "Prepare the biscuit dry ingredients: combine 2 1/2 cups cake flour, sugar, salt, baking powder, and baking soda in a large bowl and whisk to combine. Transfer to the freezer to chill for about 20 minutes. Add the cold butter and smear pieces between your fingers, pinching into thin flakes and working into the flour until no large pieces remain.",
+                "Make a well in the center and gradually pour in 1 cup buttermilk, using a fork to fluff in flour from the sides until a shaggy dough forms. Crumble in the ricotta and loosely incorporate with your fingers.",
+                "Scrape the dough onto a lightly floured surface and shape into a roughly 4x6-inch rectangle. Fold into thirds and flatten back to the same size; repeat 2 more times. Flatten to about 1 inch thick. Refrigerate 20 minutes.",
+                "Position a rack in the center of the oven and preheat to 350 degrees F. Cut about half the tomatoes in half. In a 2-quart baking dish, combine all the tomatoes with olive oil, vinegar, thyme sprigs, 1/4 cup sugar, and 2 tablespoons cake flour. Season generously with salt and pepper; let sit while you work on the biscuit dough.",
+                "Lay biscuit dough onto a lightly floured surface. Cut into 2-inch squares or circles and arrange in a single layer over the tomatoes -- you should have about 10-12 biscuits. (Bake any scraps separately.) Brush the tops of the biscuits with the remaining 2 tablespoons buttermilk. Bake 45 minutes, until the tomato mixture has bubbled up and the biscuits are browned on top. Allow to cool; serve warm or at room temperature. Finish with a sprinkle of salt and pepper."
+              ],
+              "highAltitude": {
+                "ingredientGroups": [
+                  {
+                    "label": "Ricotta (30 minutes ahead)",
+                    "ingredients": [
+                      "3/4 cup whole-milk ricotta"
+                    ]
+                  },
+                  {
+                    "label": "Biscuit dry ingredients",
+                    "ingredients": [
+                      "2 1/2 cups cake flour, plus more for dusting",
+                      "1 tablespoon granulated sugar",
+                      "1 teaspoon kosher salt",
+                      "1 teaspoon baking powder (reduced from 1 1/2 teaspoons)",
+                      "3/4 teaspoon baking soda (reduced from 1 teaspoon)"
+                    ]
+                  },
+                  {
+                    "label": "Biscuit fat",
+                    "ingredients": [
+                      "1/2 cup unsalted butter, cut into cubes and chilled"
+                    ]
+                  },
+                  {
+                    "label": "Biscuit liquid",
+                    "ingredients": [
+                      "1 cup buttermilk, plus 2 tablespoons for brushing"
+                    ]
+                  },
+                  {
+                    "label": "Tomato base",
+                    "ingredients": [
+                      "2 to 2 1/2 pounds cherry tomatoes or Sungold tomatoes",
+                      "1/4 cup extra-virgin olive oil",
+                      "1 tablespoon sherry vinegar",
+                      "2 sprigs fresh thyme",
+                      "1/4 cup granulated sugar",
+                      "2 tablespoons cake flour",
+                      "Kosher salt and freshly ground black pepper"
+                    ]
+                  }
+                ],
+                "steps": [
+                  "Strain the ricotta in a cheesecloth or fine-mesh strainer for at least 30 minutes. Squeeze out any excess moisture before using.",
+                  "Prepare the biscuit dry ingredients: combine 2 1/2 cups cake flour, sugar, salt, baking powder, and baking soda in a large bowl and whisk to combine. Transfer to the freezer to chill for about 20 minutes. Add the cold butter and smear pieces between your fingers, pinching into thin flakes and working into the flour until no large pieces remain.",
+                  "Make a well in the center and gradually pour in 1 cup buttermilk, using a fork to fluff in flour from the sides until a shaggy dough forms. Crumble in the ricotta and loosely incorporate with your fingers.",
+                  "Scrape the dough onto a lightly floured surface and shape into a roughly 4x6-inch rectangle. Fold into thirds and flatten back to the same size; repeat 2 more times. Flatten to about 1 inch thick. Refrigerate 20 minutes.",
+                  "Position a rack in the center of the oven and preheat to 350 degrees F. Cut about half the tomatoes in half. In a 2-quart baking dish, combine all the tomatoes with olive oil, vinegar, thyme sprigs, 1/4 cup sugar, and 2 tablespoons cake flour. Season generously with salt and pepper; let sit while you work on the biscuit dough.",
+                  "Lay biscuit dough onto a lightly floured surface. Cut into 2-inch squares or circles and arrange in a single layer over the tomatoes -- you should have about 10-12 biscuits. (Bake any scraps separately.) Brush the tops of the biscuits with the remaining 2 tablespoons buttermilk. Bake 40-45 minutes (check at 40 minutes), until the tomato mixture has bubbled up and the biscuits are browned on top. Allow to cool; serve warm or at room temperature. Finish with a sprinkle of salt and pepper."
+                ]
+              }
+            },
+            {
+              "id": "cornbread-dressing-with-sausage-and-corn-nuts",
+              "title": "Cornbread Dressing With Sausage and Corn Nuts",
+              "servings": "Serves 8 to 10   |   Active: 40 min   |   Total: 2 hours",
+              "source": "Bon Appetit (Rick Martinez and Chris Morocco)",
+              "comments": [
+                {
+                  "html": "Uses homemade or store-bought cornbread. Also forms the base of <a href=\"rice.html#cornbread-stuffing-fried-rice\">Cornbread Stuffing Fried Rice</a>."
+                },
+                "Can be baked at 350 degrees F up to 3 days ahead; let cool, then chill. Reheat in a 350 degrees F oven before increasing to 425 degrees F and removing foil.",
+                "Corn nuts are ground into a powder, not used whole -- they add depth and crunch to the finished texture."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Cornbread",
+                  "ingredients": [
+                    "3 lb cornbread, cut into small pieces (about 3/4 inch; 14 to 16 cups)"
+                  ]
+                },
+                {
+                  "label": "Sausage",
+                  "ingredients": [
+                    "1 1/2 lb breakfast sausage, casings removed if needed"
+                  ]
+                },
+                {
+                  "label": "Aromatics",
+                  "ingredients": [
+                    "1 cup (2 sticks) unsalted butter, plus more for pan",
+                    "2 medium onions, chopped",
+                    "4 celery stalks, chopped",
+                    "Kosher salt",
+                    "3 garlic cloves, finely chopped",
+                    "2 Thai chiles or 1 jalapeño (with seeds), chopped"
+                  ]
+                },
+                {
+                  "label": "Corn nut powder",
+                  "ingredients": [
+                    "3/4 cup corn nuts, finely ground in a food processor, blender, or mortar and pestle (about 1/2 cup ground)"
+                  ]
+                },
+                {
+                  "label": "Wine and herbs",
+                  "ingredients": [
+                    "3/4 cup dry white wine",
+                    "1 tablespoon finely chopped fresh sage",
+                    "2 teaspoons finely chopped fresh thyme"
+                  ]
+                },
+                {
+                  "label": "Custard",
+                  "ingredients": [
+                    "3 large eggs",
+                    "3 1/2 cups turkey stock or low-sodium chicken broth",
+                    "Freshly ground black pepper"
+                  ]
+                }
+              ],
+              "steps": [
+                "Preheat oven to 325 degrees F. Divide cornbread evenly between 2 large rimmed baking sheets and bake, tossing occasionally, until dried out and lightly browned around the edges, 40 to 50 minutes. Let cool at least 10 minutes. Increase oven temperature to 350 degrees F.",
+                "Meanwhile, cook breakfast sausage in a large skillet over medium-high heat, stirring and breaking up with a spoon, until lightly browned and cooked through, 6 to 8 minutes. Transfer to a plate.",
+                "Reduce heat to medium and melt butter in the same skillet. Add onions and celery; season with salt. Cook, stirring occasionally, until softened but not browned, 8 to 10 minutes. Add garlic and chiles; cook, stirring once, until very fragrant, about 1 minute. Add ground corn nuts and cook, stirring often, until very fragrant and vegetables are starting to brown around the edges, about 3 minutes. Add wine and cook, stirring occasionally, until almost completely evaporated, about 3 minutes. Add sage and thyme; toss to combine. Remove from heat.",
+                "Combine cornbread, sausage, and sauteed vegetable mixture in a large bowl. Whisk eggs and stock together in a medium bowl until very well combined. Pour over cornbread mixture and let sit, gently stirring every minute or so, until cornbread has absorbed all or virtually all of the liquid. Season with kosher salt (about 1 tablespoon Diamond Crystal or 1 1/2 teaspoons Morton kosher salt) and freshly ground black pepper.",
+                "Lightly butter a 3-quart or 13x9x2-inch casserole dish. Transfer dressing to dish and tap lightly against counter to distribute and compact. Cover tightly with aluminum foil and bake until very hot throughout and bubbles appear around sides, 40 to 45 minutes. Increase oven temperature to 425 degrees F and remove foil. Continue to bake until top is lightly browned, 15 to 20 minutes longer."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Rice",
+      "recipes": [
+        {
+          "title": "Rice with Dill",
+          "ingredientGroups": [
+            {
+              "label": "Aromatics",
+              "ingredients": [
+                "3 tablespoons butter",
+                "1/2 cup minced onion",
+                "1 can water chestnuts, sliced"
+              ]
+            },
+            {
+              "label": "Rice",
+              "ingredients": [
+                "1 1/2 cups Jasmine or Basmati rice",
+                "2 1/2 cups chicken broth"
+              ]
+            },
+            {
+              "label": "Seasoning",
+              "ingredients": [
+                "Salt to taste",
+                "Pepper to taste",
+                "2 tablespoons chopped fresh dill",
+                "1/2 bay leaf",
+                "Few drops Tabasco sauce to taste"
+              ]
+            }
+          ],
+          "steps": [
+            "Oven method: Preheat oven to 400 degrees. Melt butter in oven-proof casserole over medium heat. Add onion and water chestnuts; cook and stir until softened, about 3 minutes. Add rice and stir to coat with butter. Add chicken broth and stir to ensure no lumps. Add dill, bay leaf, Tabasco, salt, and pepper. Cover with a close-fitting lid and bring to a boil. Transfer to oven and bake for 17 minutes. Remove cover, discard bay leaf, and serve.",
+            "Rice cooker method: Melt butter in skillet over medium heat. Add onion and water chestnuts; cook and stir until softened, about 3 minutes. Add rice and stir to coat with butter, about 1 minute. Transfer rice mixture to rice cooker. Add chicken broth and all seasonings (dill, bay leaf, Tabasco, salt, and pepper). Cook on standard rice setting. When done, remove and discard bay leaf, and serve."
+          ],
+          "comments": [
+            "May be reheated."
+          ]
+        },
+        {
+          "title": "Indian Style Rice",
+          "servings": "Serves 4 to 6   |   Prep: 15 minutes, plus 30 minutes soaking   |   Cook: about 25 minutes (rice cooker)",
+          "comments": [
+            "If you don't have whole cardamom pods or a cinnamon stick, use a pinch each of ground cardamom and ground cinnamon added with the turmeric.",
+            "Adapted for a rice cooker — rather than boiling the rice separately and draining it (the original stovetop method), the sautéed spice mixture is stirred into the rice cooker with the water and rice."
+          ],
+          "source": "Simply Recipes, by Elise Bauer, adapted for a rice cooker",
+          "ingredientGroups": [
+            {
+              "label": "Rice",
+              "ingredients": [
+                "2 cups Jasmine or Basmati rice",
+                "3 cups water",
+                "2 teaspoons salt"
+              ]
+            },
+            {
+              "label": "Whole spices",
+              "ingredients": [
+                "2 cloves",
+                "2 green cardamom pods",
+                "One 2-inch piece cinnamon"
+              ]
+            },
+            {
+              "label": "Aromatics",
+              "ingredients": [
+                "3 tablespoons vegetable oil (or ghee)",
+                "1/2 teaspoon dark mustard seeds",
+                "1/2 teaspoon cumin seeds",
+                "1/4 teaspoon Aleppo pepper or red pepper flakes",
+                "1 medium onion, chopped",
+                "3 garlic cloves, chopped",
+                "1/4 teaspoon turmeric"
+              ]
+            }
+          ],
+          "steps": [
+            "Rinse the rice in a sieve under cool running water until the water runs clear. Soak in cool water 30 minutes, then drain well.",
+            "Sauté: Heat the oil in a large skillet over medium heat. Add the mustard seeds, cumin seeds, and Aleppo pepper or red pepper flakes; cook until the seeds begin to pop, about 30 seconds.",
+            "Add the onion and cook until it begins to brown, 5 to 7 minutes. Add the garlic and cook 2 to 3 minutes more. Stir in the turmeric.",
+            "Rice cooker: Add the drained rice, the cloves, cardamom, cinnamon, and the sautéed onion mixture to the rice cooker. Add the water and salt; stir to combine. Cook on the regular rice cycle.",
+            "Fluff the rice with a fork, picking out the whole cloves, cardamom pod, and cinnamon stick as you find them (or leave them in and warn guests)."
+          ]
+        },
+        {
+          "title": "Wild Mushroom Risotto",
+          "servings": "Serves 6   |   Total: 45-50 min",
+          "source": "Bon Appetit (Lori de Mori)",
+          "comments": [
+            "A mix of mushroom varieties gives the best depth of flavor; pure porcini also works beautifully.",
+            "Vermouth adds a subtle botanical note that white wine alone does not supply -- do not skip it if you have it."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Mushrooms",
+              "ingredients": [
+                "8 tablespoons (1 stick) unsalted butter, divided into 4 portions of 2 tablespoons each",
+                "1 1/2 pounds fresh wild mushrooms (porcini, hen of the woods, chanterelle, or stemmed shiitake), large ones sliced, small ones halved or quartered",
+                "Salt and black pepper"
+              ]
+            },
+            {
+              "label": "Broth",
+              "ingredients": [
+                "7 cups (about) low-salt chicken broth"
+              ]
+            },
+            {
+              "label": "Risotto base",
+              "ingredients": [
+                "1 1/2 tablespoons unsalted butter",
+                "1 tablespoon extra-virgin olive oil",
+                "3/4 cup finely chopped leek (white and pale green parts only)",
+                "1 1/4 cups arborio rice",
+                "1/4 cup dry white wine",
+                "1/4 cup dry white vermouth"
+              ]
+            },
+            {
+              "label": "To finish",
+              "ingredients": [
+                "1/4 cup grated Parmesan, plus more for serving (optional)"
+              ]
+            }
+          ],
+          "steps": [
+            "Melt 2 tablespoons butter in a large skillet over medium-high. Add one-quarter of the mushrooms, sprinkle with salt, and saute until tender and beginning to brown, 3-4 minutes. Transfer to a bowl. Repeat with remaining butter and mushrooms in 3 more batches, seasoning each with salt and pepper.",
+            "Bring chicken broth to a simmer in a medium saucepan; keep warm over low heat.",
+            "In a separate large saucepan, melt remaining 1 1/2 tablespoons butter with olive oil over medium-low. Add leek, sprinkle with salt, and saute until tender, 4-5 minutes. Add rice and increase heat to medium; stir until edges of rice look translucent, 3-4 minutes. Add white wine and vermouth and stir until absorbed, about 1 minute.",
+            "Add 3/4 cup warm broth; stir until almost fully absorbed. Continue adding broth by 3/4-cup additions, stirring and letting each addition absorb before adding the next, for about 10 minutes total (until rice is halfway cooked). Stir in all sauteed mushrooms.",
+            "Continue adding broth in 3/4-cup additions, stirring constantly, until rice is tender but still firm to the bite and risotto is creamy, about 10 more minutes. Stir in Parmesan if using.",
+            "Transfer to a serving bowl and pass additional Parmesan alongside."
+          ]
+        },
+        {
+          "title": "Spanish Rice",
+          "servings": "Serves 3 to 4   |   Total: about 15 min",
+          "source": "Food.com (JeanSgt)",
+          "comments": [
+            "A good use for leftover rice. Day-old rice that has dried out slightly gives the best texture."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Aromatics",
+              "ingredients": [
+                "2 tablespoons olive oil",
+                "1 tablespoon butter",
+                "1/2 onion, diced",
+                "4 garlic cloves, minced"
+              ]
+            },
+            {
+              "label": "Sauce",
+              "ingredients": [
+                "1/2 cup tomato sauce",
+                "1/4 cup water",
+                "1/4 teaspoon ground coriander",
+                "Salt and pepper to taste"
+              ]
+            },
+            {
+              "label": "Rice",
+              "ingredients": [
+                "3 cups cooked rice"
+              ]
+            }
+          ],
+          "steps": [
+            "Heat olive oil and butter in a large skillet over medium heat. Add onion and cook until softened, about 3 to 4 minutes. Add garlic; cook 1 minute.",
+            "Stir in tomato sauce, water, and coriander; season with salt and pepper.",
+            "Add cooked rice; stir to combine. Cook, stirring occasionally, until heated through and sauce has coated the rice, about 5 minutes."
+          ]
+        },
+        {
+          "title": "Pink Risotto With Beet Greens and Roasted Beets",
+          "servings": "Serves 4 to 5   |   Total: 45 min + 45-60 min to roast beets",
+          "source": "New York Times (Martha Rose Shulman)",
+          "comments": [
+            "Use a full-bodied vegetable stock to keep it vegetarian."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Beets (45-60 minutes ahead)",
+              "ingredients": [
+                "3/4 pound beets (1 small bunch), unpeeled"
+              ]
+            },
+            {
+              "label": "Beet greens",
+              "ingredients": [
+                "1 bunch beet greens, stemmed and washed, cut crosswise into 1-inch strips"
+              ]
+            },
+            {
+              "label": "Simmering stock",
+              "ingredients": [
+                "6 to 7 cups chicken or vegetable stock, well seasoned"
+              ]
+            },
+            {
+              "label": "Risotto base",
+              "ingredients": [
+                "2 tablespoons extra-virgin olive oil",
+                "1/2 cup finely chopped onion",
+                "1 1/2 cups Arborio or Carnaroli rice",
+                "2 garlic cloves, minced or pressed",
+                "1/2 cup red wine, rose, or dry white wine",
+                "Salt and freshly ground pepper"
+              ]
+            },
+            {
+              "label": "Finish",
+              "ingredients": [
+                "1 to 2 oz Parmesan, grated (1/4 to 1/2 cup)",
+                "2 tablespoons finely chopped flat-leaf parsley"
+              ]
+            }
+          ],
+          "steps": [
+            "Roast the beets: Wrap unpeeled beets loosely in foil and roast at 400 degrees F until tender when pierced, 45 to 60 minutes. Cool, peel, and dice into small cubes.",
+            "Bring stock to a simmer in a saucepan; season well. Keep on low heat throughout the cooking process.",
+            "Cut stemmed, washed beet greens crosswise into 1-inch strips; set aside.",
+            "Heat olive oil over medium heat in a large nonstick skillet or wide heavy saucepan. Add onion and cook, stirring, until beginning to soften, about 3 minutes. Add rice and garlic; cook, stirring, until grains are separate and beginning to crackle, about 3 minutes. Stir in wine and cook over medium heat, stirring constantly, until mostly evaporated.",
+            "Add a ladleful or two of simmering stock (about 1/2 cup), just enough to cover the rice. Cook, stirring often, adding more stock when the rice is nearly dry, for 10 minutes.",
+            "Stir in beet greens and diced roasted beets. Continue adding stock a ladleful at a time, stirring often, for another 10 to 15 minutes, until the rice is cooked through but still chewy. Taste a grain -- not hard in the middle. Adjust salt as needed.",
+            "Add a generous amount of freshly ground pepper. Stir in another 1/2 cup stock, the Parmesan, and the parsley. Remove from heat. The risotto should be creamy; add more stock if needed. Taste, adjust seasonings, and serve immediately."
+          ]
+        },
+        {
+          "title": "Tomato Risotto",
+          "servings": "Serves 4 to 6   |   Total: 30 min",
+          "source": "New York Times (David Tanis)",
+          "ingredientGroups": [
+            {
+              "label": "Aromatics and rice",
+              "ingredients": [
+                "3 tablespoons extra-virgin olive oil, plus 2 tablespoons for finishing",
+                "1 large onion, diced (about 1 1/2 cups)",
+                "Salt and pepper",
+                "1 1/2 cups Arborio or Carnaroli rice",
+                "Pinch of Aleppo pepper or red pepper flakes",
+                "2 garlic cloves",
+                "1/2 cup white wine",
+                "2 cups diced ripe red tomatoes"
+              ]
+            },
+            {
+              "label": "Liquid",
+              "ingredients": [
+                "3 cups boiling water or vegetable broth"
+              ]
+            },
+            {
+              "label": "Finish",
+              "ingredients": [
+                "1/2 cup grated pecorino or Parmesan, plus more for serving"
+              ]
+            },
+            {
+              "label": "To serve",
+              "ingredients": [
+                "4 medium tomatoes in different colors, sliced",
+                "Chopped parsley, for garnish",
+                "Snipped basil, for garnish"
+              ]
+            }
+          ],
+          "steps": [
+            "Put 3 tablespoons olive oil in a heavy-bottomed saucepan over medium-high heat. Add onion, season generously with salt and pepper, and cook until softened, about 5 minutes.",
+            "Add rice and cook, stirring, until the onions are barely browned and the rice is toasted, about 2 minutes. Add Aleppo pepper or red pepper flakes, garlic, wine, and diced tomatoes. Cook until most of the liquid has evaporated, about 5 minutes.",
+            "Add 2 cups boiling water or broth; adjust heat to a brisk simmer. Cook, stirring with a wooden spoon every minute or so, for 5 to 6 minutes.",
+            "When liquid is absorbed, add remaining 1 cup water or broth and continue cooking, stirring, for another 5 minutes, until rice is cooked but grains are still firm. Taste and adjust seasoning; add a splash more liquid if needed. Turn off heat; stir in pecorino and the remaining 2 tablespoons olive oil.",
+            "Transfer to a low, wide serving bowl. Surround with sliced tomatoes; season them with salt and pepper. Sprinkle with parsley and basil. Pass more cheese at the table."
+          ]
+        },
+        {
+          "title": "Saffron Rice",
+          "servings": "Serves 3   |   Total: about 45 min (including 20-30 min soak)",
+          "source": "Veg Recipes of India (Dassana Amit)",
+          "ingredientGroups": [
+            {
+              "label": "Rice (20-30 minutes ahead)",
+              "ingredients": [
+                "1 1/2 cups Jasmine or Basmati rice"
+              ]
+            },
+            {
+              "label": "Saffron bloom",
+              "ingredients": [
+                "8 to 10 saffron threads",
+                "2 tablespoons warm water or milk"
+              ]
+            },
+            {
+              "label": "Whole spices",
+              "ingredients": [
+                "2 tablespoons ghee",
+                "1/2 teaspoon caraway seeds (shahi jeera)",
+                "3 to 4 green cardamom pods, lightly crushed",
+                "1 Indian bay leaf (tej patta)",
+                "1 inch cinnamon stick",
+                "3 to 4 whole cloves",
+                "1 blade of mace"
+              ]
+            },
+            {
+              "label": "Liquid",
+              "ingredients": [
+                "3 cups water",
+                "1/4 teaspoon turmeric (optional)",
+                "Salt to taste"
+              ]
+            }
+          ],
+          "steps": [
+            "Rinse rice in several changes of cold water until mostly clear. Soak in fresh water for 20 to 30 minutes; drain well.",
+            "Steep saffron threads in 2 tablespoons warm water or milk; set aside.",
+            "Heat ghee in a medium pot over medium heat. Add caraway seeds, cardamoms, bay leaf, cinnamon, cloves, and mace. Saute, stirring, until fragrant, about 30 to 60 seconds.",
+            "Add drained rice and stir gently to coat with the ghee; toast lightly, about 1 minute.",
+            "Add water, the bloomed saffron with its soaking liquid, and turmeric (if using). Season with salt. Bring to a boil over high heat.",
+            "Reduce heat to the lowest setting, cover tightly, and cook until water is absorbed and rice is tender, about 15 minutes.",
+            "Remove from heat and let rest, covered, for 5 minutes. Fluff gently with a fork. Remove whole spices before serving if desired."
+          ]
+        },
+        {
+          "id": "cornbread-stuffing-fried-rice",
+          "title": "Cornbread Stuffing Fried Rice",
+          "servings": "Serves 8   |   Total: about 1 hour (including chili crisp)",
+          "source": "Bon Appetit (Rick Martinez)",
+          "comments": [
+            {
+              "html": "Uses <a href=\"vegetable-sides.html#cornbread-dressing-with-sausage-and-corn-nuts\">Cornbread Dressing With Sausage and Corn Nuts</a> as a key ingredient -- a great use for Thanksgiving leftovers."
+            },
+            "The chili crisp can be made up to 1 week ahead; store in an airtight container.",
+            "Use day-old cooked rice for the best fried-rice texture."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Chili crisp (make ahead)",
+              "ingredients": [
+                "2 dried guajillo chiles, seeds removed, torn into pieces",
+                "1 dried ancho chile, seeds removed, torn into pieces",
+                "3 chiles de arbol, stems removed",
+                "1 cup vegetable oil",
+                "6 shallots, thinly sliced (about 1 cup)",
+                "8 garlic cloves, thinly sliced",
+                "1 tablespoon finely grated peeled ginger",
+                "1/4 teaspoon ground allspice",
+                "1 tablespoon soy sauce",
+                "2 teaspoons sugar",
+                "1 teaspoon kosher salt"
+              ]
+            },
+            {
+              "label": "Fried rice",
+              "ingredients": [
+                "2 tablespoons vegetable oil, divided",
+                "4 garlic cloves, thinly sliced",
+                "3 cups Cornbread Dressing With Sausage and Corn Nuts, crumbled",
+                "4 cups day-old cooked Jasmine or Basmati rice",
+                "1 pound Brussels sprouts, leaves separated (about 4 cups)",
+                "6 large eggs, beaten",
+                "2 tablespoons soy sauce",
+                "4 scallions, thinly sliced",
+                "Kosher salt"
+              ]
+            }
+          ],
+          "steps": [
+            "Make the chili crisp: Tear guajillo and ancho chiles into pieces; remove seeds. Toast all dried chiles in a dry medium saucepan over medium heat, pressing with a spatula, until fragrant, about 2 minutes. Add oil, shallots, garlic, ginger, and allspice; cook, stirring occasionally, until shallots and garlic are golden, 10 to 12 minutes. Let cool 5 minutes. Stir in soy sauce, sugar, and salt. Transfer to an airtight container. Can be made up to 1 week ahead.",
+            "Heat 1 tablespoon oil in a large wok or skillet over high heat. Add garlic and cook, stirring, until starting to brown, 30 to 60 seconds. Add cornbread dressing and rice; press into an even layer. Cook without stirring until crisp on the bottom, about 4 minutes. Toss to combine, then press again and cook until more is crisp, 3 to 4 minutes more.",
+            "Push rice mixture to sides. Add remaining 1 tablespoon oil to center; add Brussels sprout leaves. Cook, stirring, until bright green and slightly wilted, 1 to 2 minutes. Toss to combine with rice.",
+            "Push mixture to sides; add beaten eggs to center. Scramble and toss just as eggs begin to set. Add soy sauce and 3 tablespoons chili crisp; toss to combine. Season with salt. Transfer to a platter; top with scallions and more chili crisp."
           ]
         }
       ]

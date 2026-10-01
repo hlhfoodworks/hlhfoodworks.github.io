@@ -1036,7 +1036,7 @@ function buildPage(section, navHtml, contentHtml, cookbookData) {
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>${esc(section.title)} — Family Cookbook</title>
+<title>${esc(section.title)} — Muhlheim Family Cookbook</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍴</text></svg>">
 <style>
   :root {
@@ -1600,7 +1600,7 @@ function buildPage(section, navHtml, contentHtml, cookbookData) {
 </div>
 
 <div id="main">
-  <h1 id="cookbook-title">Family Cookbook</h1>
+  <h1 id="cookbook-title">Muhlheim Family Cookbook</h1>
   ${contentHtml}
 </div>
 
@@ -1722,7 +1722,7 @@ function buildPage(section, navHtml, contentHtml, cookbookData) {
 
     // Update tab title to the recipe name
     var recipeTitle = target.dataset.title;
-    if (recipeTitle) document.title = recipeTitle + ' — Family Cookbook';
+    if (recipeTitle) document.title = recipeTitle + ' — Muhlheim Family Cookbook';
 
     // Hide nav sidebar
     var nav = document.getElementById('nav');
@@ -2167,11 +2167,11 @@ const redirectHtml = `<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="refresh" content="0; url=breakfast.html">
-<title>Family Cookbook</title>
+<title>Muhlheim Family Cookbook</title>
 </head>
 <body>
 <script>location.replace('breakfast.html');<\/script>
-<a href="breakfast.html">Go to Family Cookbook</a>
+<a href="breakfast.html">Go to Muhlheim Family Cookbook</a>
 </body>
 </html>`;
 fs.writeFileSync(path.join(__dirname, 'index.html'), redirectHtml, 'utf8');
