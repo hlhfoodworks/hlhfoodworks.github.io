@@ -409,7 +409,7 @@ const CLUSTER_MAP = {
   'Israeli Hummus':                                      'Middle Eastern/Persian',
   'Muhammara':                                           'Middle Eastern/Persian',
   // Appetizers — Korean-inspired
-  'Kimchijeon':                                          'Korean-inspired',
+  'Kimchijeon (Korean Kimchi Pancake)':                                          'Korean-inspired',
   // Appetizers — Chinese
   'Creamy Ginger-Soy Dip':                              'Chinese',
   // Mushroom — Italian
@@ -1657,6 +1657,28 @@ function buildPage(section, navHtml, contentHtml, cookbookData) {
     saveNavState(listId, !isOpen);
   }
 
+  // Expand every collapsed ancestor <ul> in the nav that leads to a given
+  // recipe anchor ID, then scroll that nav item into view.
+  // Only opens branches — never collapses anything already open.
+  function expandNavToRecipe(recipeId) {
+    if (!recipeId) return;
+    var navLink = document.querySelector('.nav-recipe-link[href$="#' + recipeId + '"]');
+    if (!navLink) return;
+    // Walk up the DOM, opening any collapsed ancestor lists
+    var el = navLink.parentElement;
+    while (el && el !== nav) {
+      if (el.tagName === 'UL' && el.id && el.classList.contains('collapsed')) {
+        el.classList.remove('collapsed');
+        var hd = document.querySelector('[data-toggle="' + el.id + '"]');
+        if (hd) hd.classList.add('open');
+        saveNavState(el.id, true);
+      }
+      el = el.parentElement;
+    }
+    // Scroll the nav item into view with minimal movement
+    navLink.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
   // Section expand/collapse arrow buttons
   document.querySelectorAll('.nav-sec-arrow[data-toggle]').forEach(function (btn) {
     btn.addEventListener('click', function (e) {
@@ -1718,10 +1740,13 @@ function buildPage(section, navHtml, contentHtml, cookbookData) {
 
   // ── Scroll to hash on page load ───────────────────────────────────────
   if (location.hash) {
-    const el = document.getElementById(location.hash.slice(1));
+    const hashId = location.hash.slice(1);
+    const el = document.getElementById(hashId);
     if (el) requestAnimationFrame(function () {
       el.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
+    // Expand the nav path to this recipe (e.g. after a cross-page search click)
+    expandNavToRecipe(hashId);
   }
 
   // ── Single-recipe focused view (?recipe=ID) ───────────────────────────
@@ -1839,6 +1864,7 @@ function buildPage(section, navHtml, contentHtml, cookbookData) {
               e.preventDefault();
               const el = document.getElementById(r.id);
               if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              expandNavToRecipe(r.id);
               // Leave search results panel open so query state is preserved
             });
           }

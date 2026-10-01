@@ -1683,7 +1683,7 @@ module.exports = {
           ]
         },
         {
-          "title": "Kimchijeon",
+          "title": "Kimchijeon (Korean Kimchi Pancake)",
           "servings": "Serves 2-4   |   Total: 20 minutes",
           "source": "Maangchi (maangchi.com)",
           "comments": [

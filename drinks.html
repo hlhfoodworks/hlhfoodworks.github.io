@@ -601,7 +601,7 @@
 <li class="nav-recipe"><a class="nav-recipe-link" data-recipe-title="Israeli Hummus" href="appetizers.html#appetizers-israeli-hummus"><span class="nav-star"></span><span class="nav-title">Israeli Hummus</span></a></li>
 <li class="nav-recipe"><a class="nav-recipe-link" data-recipe-title="Muhammara" href="appetizers.html#appetizers-muhammara"><span class="nav-star"></span><span class="nav-title">Muhammara</span></a></li>
 </ul></li>
-<li class="nav-cluster"><a class="nav-hd cluster-hd" href="appetizers.html#appetizers--korean-inspired" data-toggle="appetizers--korean-inspired-children"><span class="arrow">▶</span>Korean-inspired</a><ul class="nav-l4 collapsed" id="appetizers--korean-inspired-children"><li class="nav-recipe"><a class="nav-recipe-link" data-recipe-title="Kimchijeon" href="appetizers.html#appetizers-kimchijeon"><span class="nav-star"></span><span class="nav-title">Kimchijeon</span></a></li>
+<li class="nav-cluster"><a class="nav-hd cluster-hd" href="appetizers.html#appetizers--korean-inspired" data-toggle="appetizers--korean-inspired-children"><span class="arrow">▶</span>Korean-inspired</a><ul class="nav-l4 collapsed" id="appetizers--korean-inspired-children"><li class="nav-recipe"><a class="nav-recipe-link" data-recipe-title="Kimchijeon (Korean Kimchi Pancake)" href="appetizers.html#appetizers-kimchijeon-korean-kimchi-pancake"><span class="nav-star"></span><span class="nav-title">Kimchijeon (Korean Kimchi Pancake)</span></a></li>
 </ul></li>
 <li class="nav-cluster"><a class="nav-hd cluster-hd" href="appetizers.html#appetizers--chinese" data-toggle="appetizers--chinese-children"><span class="arrow">▶</span>Chinese</a><ul class="nav-l4 collapsed" id="appetizers--chinese-children"><li class="nav-recipe"><a class="nav-recipe-link" data-recipe-title="Creamy Ginger-Soy Dip" href="appetizers.html#appetizers-creamy-ginger-soy-dip"><span class="nav-star"></span><span class="nav-title">Creamy Ginger-Soy Dip</span></a></li>
 </ul></li>
@@ -1586,6 +1586,28 @@
     saveNavState(listId, !isOpen);
   }
 
+  // Expand every collapsed ancestor <ul> in the nav that leads to a given
+  // recipe anchor ID, then scroll that nav item into view.
+  // Only opens branches — never collapses anything already open.
+  function expandNavToRecipe(recipeId) {
+    if (!recipeId) return;
+    var navLink = document.querySelector('.nav-recipe-link[href$="#' + recipeId + '"]');
+    if (!navLink) return;
+    // Walk up the DOM, opening any collapsed ancestor lists
+    var el = navLink.parentElement;
+    while (el && el !== nav) {
+      if (el.tagName === 'UL' && el.id && el.classList.contains('collapsed')) {
+        el.classList.remove('collapsed');
+        var hd = document.querySelector('[data-toggle="' + el.id + '"]');
+        if (hd) hd.classList.add('open');
+        saveNavState(el.id, true);
+      }
+      el = el.parentElement;
+    }
+    // Scroll the nav item into view with minimal movement
+    navLink.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
   // Section expand/collapse arrow buttons
   document.querySelectorAll('.nav-sec-arrow[data-toggle]').forEach(function (btn) {
     btn.addEventListener('click', function (e) {
@@ -1647,10 +1669,13 @@
 
   // ── Scroll to hash on page load ───────────────────────────────────────
   if (location.hash) {
-    const el = document.getElementById(location.hash.slice(1));
+    const hashId = location.hash.slice(1);
+    const el = document.getElementById(hashId);
     if (el) requestAnimationFrame(function () {
       el.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
+    // Expand the nav path to this recipe (e.g. after a cross-page search click)
+    expandNavToRecipe(hashId);
   }
 
   // ── Single-recipe focused view (?recipe=ID) ───────────────────────────
@@ -1768,6 +1793,7 @@
               e.preventDefault();
               const el = document.getElementById(r.id);
               if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              expandNavToRecipe(r.id);
               // Leave search results panel open so query state is preserved
             });
           }
