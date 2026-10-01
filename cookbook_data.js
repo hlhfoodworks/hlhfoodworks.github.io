@@ -16121,7 +16121,12 @@ module.exports = {
                   "Remove from oven and immediately brush with melted butter. Cool in the pan 10 minutes, then turn out onto a wire rack. Serve warm."
                 ]
               }
-            },
+            }
+          ]
+        },
+        {
+          "title": "Sweet Loaves",
+          "recipes": [
             {
               "title": "Cinnamon Almond Babka",
               "servings": "Makes 1 loaf",
@@ -16223,6 +16228,181 @@ module.exports = {
                   "Cut in half lengthwise; twist halves together; place in pan. Cover; let rise 20–40 minutes only — at altitude, watch for the dough to look noticeably puffed. Do not let it over-proof or it will collapse in the oven.",
                   "Preheat oven to 350°F. Brush with egg wash; sprinkle reserved filling.",
                   "Bake 30–40 minutes (begin checking at 30 minutes) until deep golden brown or 190°F internal. Cool 20 minutes in pan; lift out; cool completely before slicing."
+                ]
+              }
+            },
+            {
+              "title": "Pumpkin Gut Bread",
+              "servings": "Makes 2 (9x5-inch) loaves   |   Bake: 350°F for about 1 hour",
+              "source": "Diana Johnson, EatingRichly.com",
+              "comments": [
+                "Pumpkin guts are the stringy fibrous strands from the inside of a pumpkin, with the seeds removed. Unlike puree, they stay chunky, creating golden ribbons throughout the loaf. Pumpkin puree may be substituted but will blend fully into the batter.",
+                "Recipe makes two loaves and freezes very well."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Dry ingredients",
+                  "ingredients": [
+                    "3 1/2 cups whole wheat flour (all-purpose may be substituted)",
+                    "3 cups sugar",
+                    "2 teaspoons ground cinnamon",
+                    "2 teaspoons ground nutmeg",
+                    "2 teaspoons baking soda",
+                    "1 1/2 teaspoons salt"
+                  ]
+                },
+                {
+                  "label": "Wet ingredients",
+                  "ingredients": [
+                    "4 large eggs, beaten",
+                    "1 cup vegetable oil",
+                    "1/2 cup water"
+                  ]
+                },
+                {
+                  "label": "Pumpkin",
+                  "ingredients": [
+                    "2 cups fresh pumpkin guts (fibrous strands from the pumpkin interior, separated from seeds)"
+                  ]
+                },
+                {
+                  "label": "Pecans (optional)",
+                  "ingredients": [
+                    "1 cup chopped pecans"
+                  ]
+                }
+              ],
+              "steps": [
+                "Preheat oven to 350°F. Grease and flour two 9x5-inch loaf pans.",
+                "Snip the pumpkin gut fibers with scissors into shorter, workable pieces -- avoid large clumps.",
+                "Combine flour, sugar, cinnamon, nutmeg, baking soda, and salt in a large bowl.",
+                "Add eggs, oil, water, and pumpkin guts. Stir until batter is smooth.",
+                "Stir in pecans, or reserve to sprinkle over the top before baking.",
+                "Divide batter between prepared pans. Bake 1 hour, then test the center with a wooden skewer. Continue baking and check every 5 minutes if not clean. Cool in pans 10 minutes, then turn out onto a wire rack."
+              ],
+              "highAltitude": {
+                "ingredientGroups": [
+                  {
+                    "label": "Dry ingredients",
+                    "ingredients": [
+                      "3 1/2 cups whole wheat flour (all-purpose may be substituted)",
+                      "2 2/3 cups sugar",
+                      "2 teaspoons ground cinnamon",
+                      "2 teaspoons ground nutmeg",
+                      "1 1/2 teaspoons baking soda",
+                      "1 1/2 teaspoons salt"
+                    ]
+                  },
+                  {
+                    "label": "Wet ingredients",
+                    "ingredients": [
+                      "4 large eggs, beaten",
+                      "1 cup vegetable oil",
+                      "1/2 cup + 2 tablespoons water"
+                    ]
+                  },
+                  {
+                    "label": "Pumpkin",
+                    "ingredients": [
+                      "2 cups fresh pumpkin guts (fibrous strands from the pumpkin interior, separated from seeds)"
+                    ]
+                  },
+                  {
+                    "label": "Pecans (optional)",
+                    "ingredients": [
+                      "1 cup chopped pecans"
+                    ]
+                  }
+                ],
+                "steps": [
+                  "Preheat oven to 350°F. Grease and flour two 9x5-inch loaf pans.",
+                  "Snip the pumpkin gut fibers with scissors into shorter, workable pieces -- avoid large clumps.",
+                  "Combine flour, sugar, cinnamon, nutmeg, baking soda, and salt in a large bowl.",
+                  "Add eggs, oil, water, and pumpkin guts. Stir until batter is smooth.",
+                  "Stir in pecans, or reserve to sprinkle over the top before baking.",
+                  "Divide batter between prepared pans. Bake 1 hour, then test the center with a wooden skewer. Continue baking and check every 5 minutes if not clean. Cool in pans 10 minutes, then turn out onto a wire rack."
+                ]
+              }
+            },
+            {
+              "title": "Mom’s Zucchini Bread",
+              "servings": "Makes 2 (8x4-inch) loaves   |   Bake: 325°F for 40-60 minutes",
+              "source": "Allrecipes (Vicki Monte), tested by Allrecipes Test Kitchen",
+              "comments": [
+                "Freezes well. Keeps in the refrigerator for weeks."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Dry ingredients",
+                  "ingredients": [
+                    "3 cups all-purpose flour",
+                    "1 tablespoon ground cinnamon",
+                    "1 teaspoon salt",
+                    "1 teaspoon baking powder",
+                    "1 teaspoon baking soda"
+                  ]
+                },
+                {
+                  "label": "Wet ingredients",
+                  "ingredients": [
+                    "2 1/4 cups white sugar",
+                    "1 cup vegetable oil",
+                    "3 large eggs",
+                    "1 tablespoon vanilla extract"
+                  ]
+                },
+                {
+                  "label": "Mix-ins",
+                  "ingredients": [
+                    "2 cups shredded zucchini",
+                    "1 cup chopped walnuts"
+                  ]
+                }
+              ],
+              "steps": [
+                "Preheat oven to 325°F. Grease and flour two 8x4-inch loaf pans.",
+                "Sift flour, cinnamon, salt, baking powder, and baking soda together in a large bowl.",
+                "Beat sugar, oil, eggs, and vanilla with an electric mixer until combined. Add flour mixture and beat well.",
+                "Stir in shredded zucchini and walnuts until combined. Pour into prepared pans.",
+                "Bake until a toothpick inserted in the center comes out clean, 40-60 minutes. Cool in pans on a wire rack for 20 minutes.",
+                "Run a knife around the edges to loosen. Turn out onto a wire rack and cool completely."
+              ],
+              "highAltitude": {
+                "ingredientGroups": [
+                  {
+                    "label": "Dry ingredients",
+                    "ingredients": [
+                      "3 cups + 2 tablespoons all-purpose flour",
+                      "1 tablespoon ground cinnamon",
+                      "1 teaspoon salt",
+                      "3/4 teaspoon baking powder",
+                      "3/4 teaspoon baking soda"
+                    ]
+                  },
+                  {
+                    "label": "Wet ingredients",
+                    "ingredients": [
+                      "2 cups white sugar",
+                      "1 cup + 2 tablespoons vegetable oil",
+                      "3 large eggs",
+                      "1 tablespoon vanilla extract"
+                    ]
+                  },
+                  {
+                    "label": "Mix-ins",
+                    "ingredients": [
+                      "2 cups shredded zucchini",
+                      "1 cup chopped walnuts"
+                    ]
+                  }
+                ],
+                "steps": [
+                  "Preheat oven to 325°F. Grease and flour two 8x4-inch loaf pans.",
+                  "Sift flour, cinnamon, salt, baking powder, and baking soda together in a large bowl.",
+                  "Beat sugar, oil, eggs, and vanilla with an electric mixer until combined. Add flour mixture and beat well.",
+                  "Stir in shredded zucchini and walnuts until combined. Pour into prepared pans.",
+                  "Bake until a toothpick inserted in the center comes out clean, 40-60 minutes. Cool in pans on a wire rack for 20 minutes.",
+                  "Run a knife around the edges to loosen. Turn out onto a wire rack and cool completely."
                 ]
               }
             }
@@ -16911,7 +17091,7 @@ module.exports = {
           "title": "Sweet",
           "subsections": [
             {
-              "title": "Pies, Pastries & Breads",
+              "title": "Pies & Pastries",
               "recipes": [
                 {
                   "id": "baking-sweet-all-shortening-pie-crust",
@@ -17308,88 +17488,6 @@ module.exports = {
                   }
                 },
                 {
-                  "title": "Mom’s Zucchini Bread",
-                  "servings": "Makes 2 (8x4-inch) loaves   |   Bake: 325°F for 40-60 minutes",
-                  "source": "Allrecipes (Vicki Monte), tested by Allrecipes Test Kitchen",
-                  "comments": [
-                    "Freezes well. Keeps in the refrigerator for weeks."
-                  ],
-                  "ingredientGroups": [
-                    {
-                      "label": "Dry ingredients",
-                      "ingredients": [
-                        "3 cups all-purpose flour",
-                        "1 tablespoon ground cinnamon",
-                        "1 teaspoon salt",
-                        "1 teaspoon baking powder",
-                        "1 teaspoon baking soda"
-                      ]
-                    },
-                    {
-                      "label": "Wet ingredients",
-                      "ingredients": [
-                        "2 1/4 cups white sugar",
-                        "1 cup vegetable oil",
-                        "3 large eggs",
-                        "1 tablespoon vanilla extract"
-                      ]
-                    },
-                    {
-                      "label": "Mix-ins",
-                      "ingredients": [
-                        "2 cups shredded zucchini",
-                        "1 cup chopped walnuts"
-                      ]
-                    }
-                  ],
-                  "steps": [
-                    "Preheat oven to 325°F. Grease and flour two 8x4-inch loaf pans.",
-                    "Sift flour, cinnamon, salt, baking powder, and baking soda together in a large bowl.",
-                    "Beat sugar, oil, eggs, and vanilla with an electric mixer until combined. Add flour mixture and beat well.",
-                    "Stir in shredded zucchini and walnuts until combined. Pour into prepared pans.",
-                    "Bake until a toothpick inserted in the center comes out clean, 40-60 minutes. Cool in pans on a wire rack for 20 minutes.",
-                    "Run a knife around the edges to loosen. Turn out onto a wire rack and cool completely."
-                  ],
-                  "highAltitude": {
-                    "ingredientGroups": [
-                      {
-                        "label": "Dry ingredients",
-                        "ingredients": [
-                          "3 cups + 2 tablespoons all-purpose flour",
-                          "1 tablespoon ground cinnamon",
-                          "1 teaspoon salt",
-                          "3/4 teaspoon baking powder",
-                          "3/4 teaspoon baking soda"
-                        ]
-                      },
-                      {
-                        "label": "Wet ingredients",
-                        "ingredients": [
-                          "2 cups white sugar",
-                          "1 cup + 2 tablespoons vegetable oil",
-                          "3 large eggs",
-                          "1 tablespoon vanilla extract"
-                        ]
-                      },
-                      {
-                        "label": "Mix-ins",
-                        "ingredients": [
-                          "2 cups shredded zucchini",
-                          "1 cup chopped walnuts"
-                        ]
-                      }
-                    ],
-                    "steps": [
-                      "Preheat oven to 325°F. Grease and flour two 8x4-inch loaf pans.",
-                      "Sift flour, cinnamon, salt, baking powder, and baking soda together in a large bowl.",
-                      "Beat sugar, oil, eggs, and vanilla with an electric mixer until combined. Add flour mixture and beat well.",
-                      "Stir in shredded zucchini and walnuts until combined. Pour into prepared pans.",
-                      "Bake until a toothpick inserted in the center comes out clean, 40-60 minutes. Cool in pans on a wire rack for 20 minutes.",
-                      "Run a knife around the edges to loosen. Turn out onto a wire rack and cool completely."
-                    ]
-                  }
-                },
-                {
                   "id": "baking-sweet-passover-cream-puff-shells",
                   "title": "Passover Cream Puff Shells",
                   "servings": "Makes about 2 dozen shells",
@@ -17438,99 +17536,6 @@ module.exports = {
                       "Drop rounded tablespoons onto baking sheets, spacing 1 1/2 inches apart. Smooth any points with a moistened finger.",
                       "Bake the full 15 minutes at 400°F before reducing heat; do not open the oven early. Reduce to 375°F; bake until golden and firm, 14–20 more minutes. Turn off oven; wedge door open and leave puffs 30 minutes to dry out.",
                       "Remove; pierce each puff at the center of one side with a paring knife to release steam."
-                    ]
-                  }
-                },
-                {
-                  "title": "Pumpkin Gut Bread",
-                  "servings": "Makes 2 (9x5-inch) loaves   |   Bake: 350°F for about 1 hour",
-                  "source": "Diana Johnson, EatingRichly.com",
-                  "comments": [
-                    "Pumpkin guts are the stringy fibrous strands from the inside of a pumpkin, with the seeds removed. Unlike puree, they stay chunky, creating golden ribbons throughout the loaf. Pumpkin puree may be substituted but will blend fully into the batter.",
-                    "Recipe makes two loaves and freezes very well."
-                  ],
-                  "ingredientGroups": [
-                    {
-                      "label": "Dry ingredients",
-                      "ingredients": [
-                        "3 1/2 cups whole wheat flour (all-purpose may be substituted)",
-                        "3 cups sugar",
-                        "2 teaspoons ground cinnamon",
-                        "2 teaspoons ground nutmeg",
-                        "2 teaspoons baking soda",
-                        "1 1/2 teaspoons salt"
-                      ]
-                    },
-                    {
-                      "label": "Wet ingredients",
-                      "ingredients": [
-                        "4 large eggs, beaten",
-                        "1 cup vegetable oil",
-                        "1/2 cup water"
-                      ]
-                    },
-                    {
-                      "label": "Pumpkin",
-                      "ingredients": [
-                        "2 cups fresh pumpkin guts (fibrous strands from the pumpkin interior, separated from seeds)"
-                      ]
-                    },
-                    {
-                      "label": "Pecans (optional)",
-                      "ingredients": [
-                        "1 cup chopped pecans"
-                      ]
-                    }
-                  ],
-                  "steps": [
-                    "Preheat oven to 350°F. Grease and flour two 9x5-inch loaf pans.",
-                    "Snip the pumpkin gut fibers with scissors into shorter, workable pieces -- avoid large clumps.",
-                    "Combine flour, sugar, cinnamon, nutmeg, baking soda, and salt in a large bowl.",
-                    "Add eggs, oil, water, and pumpkin guts. Stir until batter is smooth.",
-                    "Stir in pecans, or reserve to sprinkle over the top before baking.",
-                    "Divide batter between prepared pans. Bake 1 hour, then test the center with a wooden skewer. Continue baking and check every 5 minutes if not clean. Cool in pans 10 minutes, then turn out onto a wire rack."
-                  ],
-                  "highAltitude": {
-                    "ingredientGroups": [
-                      {
-                        "label": "Dry ingredients",
-                        "ingredients": [
-                          "3 1/2 cups whole wheat flour (all-purpose may be substituted)",
-                          "2 2/3 cups sugar",
-                          "2 teaspoons ground cinnamon",
-                          "2 teaspoons ground nutmeg",
-                          "1 1/2 teaspoons baking soda",
-                          "1 1/2 teaspoons salt"
-                        ]
-                      },
-                      {
-                        "label": "Wet ingredients",
-                        "ingredients": [
-                          "4 large eggs, beaten",
-                          "1 cup vegetable oil",
-                          "1/2 cup + 2 tablespoons water"
-                        ]
-                      },
-                      {
-                        "label": "Pumpkin",
-                        "ingredients": [
-                          "2 cups fresh pumpkin guts (fibrous strands from the pumpkin interior, separated from seeds)"
-                        ]
-                      },
-                      {
-                        "label": "Pecans (optional)",
-                        "ingredients": [
-                          "1 cup chopped pecans"
-                        ]
-                      }
-                    ],
-                    "steps": [
-                      "Preheat oven to 350°F. Grease and flour two 9x5-inch loaf pans.",
-                      "Snip the pumpkin gut fibers with scissors into shorter, workable pieces -- avoid large clumps.",
-                      "Combine flour, sugar, cinnamon, nutmeg, baking soda, and salt in a large bowl.",
-                      "Add eggs, oil, water, and pumpkin guts. Stir until batter is smooth.",
-                      "Stir in pecans, or reserve to sprinkle over the top before baking.",
-                      "Divide batter between prepared pans. Bake 1 hour, then test the center with a wooden skewer. Continue baking and check every 5 minutes if not clean. Cool in pans 10 minutes, then turn out onto a wire rack."
                     ]
                   }
                 },
@@ -17865,6 +17870,593 @@ module.exports = {
                     "Brush with buttermilk and sprinkle liberally with sugar as usual. For Cardamom Spiced, mix 1 tablespoon sugar with 1/4 teaspoon cinnamon for the topping."
                   ],
                   "source": "Catalina Flores, adapted by / Los Angeles Times"
+                },
+                {
+                  "title": "Mixed Berry Pie",
+                  "servings": "Serves 8",
+                  "ingredientGroups": [
+                    {
+                      "label": "Crust",
+                      "ingredients": [
+                        {
+                          "html": "2 disks <a href=\"baking.html#baking-sweet-all-shortening-pie-crust\">All-Shortening Pie Crust</a>"
+                        }
+                      ]
+                    },
+                    {
+                      "label": "Filling base",
+                      "ingredients": [
+                        "1 cup granulated sugar",
+                        "1/4 cup cornstarch",
+                        "Dash of salt",
+                        "1/3 cup water",
+                        "1/2 teaspoon ground cinnamon (optional)",
+                        "1 cup fresh blueberries"
+                      ]
+                    },
+                    {
+                      "label": "Remaining fruit",
+                      "ingredients": [
+                        "1 cup fresh raspberries",
+                        "1 cup halved fresh strawberries",
+                        "3/4 cup fresh blackberries",
+                        "1 tablespoon fresh lemon juice",
+                        "2 tablespoons unsalted butter"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Prepare the All-Shortening Pie Crust (double batch). Divide into 2 portions, one slightly larger. Shape each into a disk; cover and refrigerate 1 hour or overnight.",
+                    "Whisk sugar, cornstarch, salt, 1/3 cup water, and cinnamon (if using) in a large saucepan until smooth; add blueberries. Bring to a boil; cook, stirring, 2 minutes until thickened. Cool slightly.",
+                    "Preheat oven to 400°F. Gently fold raspberries, strawberries, blackberries, and lemon juice into the blueberry mixture. Roll out the larger dough portion to 1/8-inch thickness; transfer to a 9-inch pie plate. Trim crust to 1/2 inch beyond rim. Add filling; dot with butter.",
+                    "Roll remaining dough to 1/8-inch thickness; cut into 1/2-inch-wide strips. Arrange in a lattice pattern over filling; trim and seal edges; flute. Bake 10 minutes.",
+                    "Reduce heat to 350°F; bake 45–50 minutes until crust is golden brown and filling is bubbly. Cool on a wire rack."
+                  ],
+                  "source": "Elaine Moody / Taste of Home"
+                },
+                {
+                  "title": "Maple-Honey Pecan Pie",
+                  "servings": "Serves 8",
+                  "ingredientGroups": [
+                    {
+                      "label": "Crust",
+                      "ingredients": [
+                        "All-purpose flour, for rolling",
+                        {
+                          "html": "Dough for one 9-inch single-crust pie (see <a href=\"baking.html#baking-sweet-all-shortening-pie-crust\">All-Shortening Pie Crust</a>)"
+                        }
+                      ]
+                    },
+                    {
+                      "label": "Brown butter",
+                      "ingredients": [
+                        "1/2 cup (115 g) unsalted butter"
+                      ]
+                    },
+                    {
+                      "label": "Filling",
+                      "ingredients": [
+                        "1/4 cup (85 g) maple syrup",
+                        "1/4 cup (85 g) honey",
+                        "1/2 cup (110 g) light brown sugar",
+                        "1/2 cup (75 g) maple sugar (or additional light brown sugar)",
+                        "3 large eggs, at room temperature",
+                        "1 tablespoon bourbon (optional)",
+                        "1 teaspoon vanilla extract",
+                        "3/4 teaspoon kosher salt",
+                        "1 1/2 cups (180 g) pecan halves",
+                        "Flaky sea salt (optional, for finishing)"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "On a lightly floured surface, roll dough into a 12-inch circle; transfer to a 9-inch metal pie plate. Fold excess dough over and crimp the edges. Freeze 30 minutes or up to 24 hours.",
+                    "Place a rimmed baking sheet on the middle oven rack; heat oven to 400°F.",
+                    "Melt butter in a small saucepan over medium heat, swirling occasionally, until foam subsides and milk solids turn golden brown and smell nutty, about 5 minutes. Add maple syrup; cook, stirring, until mixture thickens slightly, 2–3 minutes. Remove from heat; whisk in honey. Cool at least 10 minutes.",
+                    "In a large bowl, combine both sugars, eggs, bourbon (if using), vanilla, and salt. Gradually pour the syrup mixture into the egg mixture, whisking constantly; scrape in all brown bits from the bottom of the pot.",
+                    "Remove crust from freezer; scatter pecans over the bottom. Pour filling over pecans. Set pie plate on the hot baking sheet and bake 10 minutes. Reduce heat to 350°F; bake 35–45 minutes more until center has puffed up and turned golden brown.",
+                    "Transfer to a wire rack; sprinkle with flaky sea salt if desired. Cool at least 2 hours before serving. Keeps at room temperature 24+ hours; freezes up to 3 months."
+                  ],
+                  "comments": [
+                    "For best flavor, use a good-quality maple syrup. Maple sugar adds depth; light brown sugar is a fine substitute.",
+                    "If using a glass pie plate, blind-bake the crust before filling (see All-Shortening Pie Crust recipe for instructions)."
+                  ],
+                  "source": "Melissa Clark / NYT Cooking"
+                },
+                {
+                  "title": "Foolproof Tarte Tatin",
+                  "servings": "Serves 8",
+                  "favorite": true,
+                  "ingredientGroups": [
+                    {
+                      "label": "Apples (1–3 days ahead)",
+                      "ingredients": [
+                        "6–8 large firm-fleshed apples, a mix of Braeburn, Honeycrisp, and Granny Smith"
+                      ]
+                    },
+                    {
+                      "label": "Caramel base",
+                      "ingredients": [
+                        "6 tablespoons (80 g) salted butter, very soft",
+                        "2/3 cup (135 g) granulated or light brown sugar"
+                      ]
+                    },
+                    {
+                      "label": "Pastry",
+                      "ingredients": [
+                        "1 sheet all-butter puff pastry, about 8 oz (store-bought)"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "At least 1 day ahead: slice off the bottom of each apple so it sits flat. Peel and quarter; trim cores and seeds. Transfer to a bowl; refrigerate lightly covered 1–3 days. (Reduces liquid in the tart; apples may brown slightly — that's fine.)",
+                    "Heat oven to 375°F (or 350°F convection). Thickly coat the bottom of a 10-inch heavy ovenproof skillet (preferably nonstick metal) with butter. Sprinkle sugar evenly on top.",
+                    "Cut one piece of apple into a thick round disk; place in the center as the “button.” Arrange remaining apple pieces standing on their flat ends in tight concentric circles, like petals of a flower, packing closely so they support one another.",
+                    "On a floured surface, roll puff pastry to about 1/8-inch thick. Cut a circle the same diameter as the top of the skillet. Drape over apples; tuck pastry down around the edges, hugging the apple pieces together.",
+                    "Place skillet on stovetop over medium heat until golden-brown juice begins to bubble around the edges, about 3 minutes. (Spoon out any excess juices if they rise too high.) Raise heat so juices are at a boil; cook until juices darken and smell caramelized, no more than 10 minutes.",
+                    "Transfer skillet to oven; bake 45–50 minutes until puff pastry is browned and firm.",
+                    "Let cool 5 minutes. Carefully invert onto a round serving plate. (Or cool completely in the pan and rewarm 15 minutes in a 350°F oven before inverting.) If any apples stick, retrieve and rearrange. Serve warm in wedges with heavy cream, creme fraiche, or vanilla ice cream."
+                  ],
+                  "source": "Ron Paprocki, adapted by Julia Moskin / NYT Cooking"
+                },
+                {
+                  "title": "Pan-Baked Lemon Almond Tart",
+                  "servings": "Serves 4",
+                  "ingredientGroups": [
+                    {
+                      "label": "Batter",
+                      "ingredients": [
+                        "4 large eggs",
+                        "1/2 to 3/4 cup granulated sugar (to taste)",
+                        "Pinch of salt",
+                        "1/2 cup ground almonds (almond flour)",
+                        "1/2 cup heavy cream",
+                        "1/2 cup sliced almonds, plus more for garnish",
+                        "Zest and juice of 1 lemon"
+                      ]
+                    },
+                    {
+                      "label": "Cooking fat",
+                      "ingredients": [
+                        "2 tablespoons unsalted butter"
+                      ]
+                    },
+                    {
+                      "label": "To serve",
+                      "ingredients": [
+                        "Powdered sugar"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Heat oven to 400°F. In a bowl, whisk together eggs, sugar, salt, ground almonds, cream, sliced almonds, lemon zest, and lemon juice.",
+                    "Melt butter in an 8-inch ovenproof skillet over low heat. When foam subsides, pour in the almond mixture, tilting to distribute evenly. Cook on stovetop until edges just begin to set. Transfer to oven and bake until set, 10–15 minutes.",
+                    "Briefly run under the broiler, about 1 minute, until just golden on top. Sprinkle with powdered sugar and additional sliced almonds; serve immediately."
+                  ],
+                  "source": "Mark Bittman / NYT Cooking"
+                },
+                {
+                  "title": "Cherry Cobbler With Lemon-Cream Biscuits",
+                  "servings": "Serves 8",
+                  "ingredientGroups": [
+                    {
+                      "label": "Biscuits",
+                      "ingredients": [
+                        "2 cups (250 g) all-purpose flour, plus more for dusting",
+                        "1/4 cup (50 g) granulated sugar",
+                        "1 tablespoon baking powder",
+                        "2 teaspoons finely grated lemon zest",
+                        "1 teaspoon kosher salt",
+                        "1/2 cup (1 stick / 4 oz) chilled unsalted butter, cut into pieces",
+                        "1 1/3 cups chilled heavy cream"
+                      ]
+                    },
+                    {
+                      "label": "Filling",
+                      "ingredients": [
+                        "2 pounds fresh (or frozen) sweet cherries, pitted",
+                        "1/2 cup (100 g) granulated sugar",
+                        "1/4 cup fresh lemon juice",
+                        "3 tablespoons cornstarch",
+                        "1 teaspoon vanilla extract",
+                        "1/2 teaspoon ground cinnamon",
+                        "1/4 teaspoon almond extract",
+                        "1/4 teaspoon kosher salt",
+                        "3 tablespoons unsalted butter, melted and slightly cooled",
+                        "2 tablespoons raw sugar"
+                      ]
+                    },
+                    {
+                      "label": "To serve",
+                      "ingredients": [
+                        "Vanilla ice cream or softly whipped cream"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Whisk flour, granulated sugar, baking powder, lemon zest, and salt in a medium bowl. Add chilled butter; toss to coat. Smash butter into flour with fingertips until largest pieces are about pea-sized.",
+                    "Stream in chilled cream while tossing constantly with a fork until distributed. Fold with a bench scraper until dough comes together into a mass.",
+                    "Turn out onto a generously floured surface. Pat into a 3/4-inch-thick rectangle with floured hands. Cut into 4 pieces; stack on top of each other. Roll out to 1/2-inch thick. Using a 1 1/2-inch cutter, punch out biscuits as closely as possible, dipping cutter in flour often. You should get about 40 biscuits. Gather scraps, reroll, and punch out more. Chill until ready to use.",
+                    "Place rack in middle of oven; preheat to 400°F. Mix cherries, granulated sugar, lemon juice, cornstarch, vanilla, cinnamon, almond extract, and salt in a large bowl. Scrape into a 2-quart baking dish or 9-inch cake pan with 2-inch sides; press down firmly to compact. Place on a foil-lined rimmed baking sheet.",
+                    "Arrange chilled biscuits over filling, fitting snugly so they're touching. Brush generously with melted butter; sprinkle with raw sugar.",
+                    "Bake 10 minutes. Reduce heat to 350°F; bake until filling is actively bubbling through the center and biscuits are deep golden brown, 50–65 minutes more. Let rest at least 20–30 minutes before serving. Serve with vanilla ice cream or whipped cream."
+                  ],
+                  "comments": [
+                    "Can be baked 1 day ahead; store tightly covered at room temperature.",
+                    "Special equipment: 1 1/2-inch round cookie cutter."
+                  ],
+                  "source": "Claire Saffitz / Bon Appétit (June 2019)",
+                  "highAltitude": {
+                    "ingredientGroups": [
+                      {
+                        "label": "Biscuits",
+                        "ingredients": [
+                          "2 cups + 2 tablespoons all-purpose flour, plus more for dusting",
+                          "1/4 cup (50 g) granulated sugar",
+                          "2 1/2 teaspoons baking powder",
+                          "2 teaspoons finely grated lemon zest",
+                          "1 teaspoon kosher salt",
+                          "1/2 cup (1 stick / 4 oz) chilled unsalted butter, cut into pieces",
+                          "1 1/3 cups chilled heavy cream"
+                        ]
+                      },
+                      {
+                        "label": "Filling",
+                        "ingredients": [
+                          "2 pounds fresh (or frozen) sweet cherries, pitted",
+                          "7 tablespoons granulated sugar",
+                          "1/4 cup fresh lemon juice",
+                          "3 tablespoons cornstarch",
+                          "1 teaspoon vanilla extract",
+                          "1/2 teaspoon ground cinnamon",
+                          "1/4 teaspoon almond extract",
+                          "1/4 teaspoon kosher salt",
+                          "3 tablespoons unsalted butter, melted and slightly cooled",
+                          "2 tablespoons raw sugar"
+                        ]
+                      },
+                      {
+                        "label": "To serve",
+                        "ingredients": [
+                          "Vanilla ice cream or softly whipped cream"
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "title": "Millie's Cobbler",
+                  "source": "Family recipe, attributed to Grampy's girlfriend Millie",
+                  "ingredientGroups": [
+                    {
+                      "label": "Batter",
+                      "ingredients": [
+                        "Slightly less than 1/2 cup butter",
+                        "1/2 cup sugar",
+                        "1 cup flour",
+                        "2 heaping teaspoons baking powder",
+                        "1/2 cup milk"
+                      ]
+                    },
+                    {
+                      "label": "Topping",
+                      "ingredients": [
+                        "2 cups berries",
+                        "1/4 to 1/2 cup sugar",
+                        "1 tablespoon tapioca (for juicy fruit)",
+                        "1 cup cold water"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Melt butter in a baking dish.",
+                    "Whisk together sugar, flour, baking powder, and milk to form a batter; pour over the butter (do not stir).",
+                    "Toss berries with sugar and tapioca; spoon over the batter.",
+                    "Pour 1 cup cold water over the top (do not stir).",
+                    "Bake at 350° for 30-40 minutes until the top is golden brown and the edges are bubbling."
+                  ],
+                  "highAltitude": {
+                    "ingredientGroups": [
+                      {
+                        "label": "Batter",
+                        "ingredients": [
+                          "Slightly less than 1/2 cup butter",
+                          "7 tablespoons sugar",
+                          "1 cup flour",
+                          "1 1/2 teaspoons baking powder (measured level)",
+                          "1/2 cup + 1 tablespoon milk"
+                        ]
+                      },
+                      {
+                        "label": "Topping",
+                        "ingredients": [
+                          "2 cups berries",
+                          "1/4 to 1/2 cup sugar",
+                          "1 tablespoon tapioca (for juicy fruit)",
+                          "1 cup cold water"
+                        ]
+                      }
+                    ],
+                    "steps": [
+                      "Melt butter in a baking dish.",
+                      "Whisk together sugar, flour, baking powder, and milk to form a batter; pour over the butter (do not stir).",
+                      "Toss berries with sugar and tapioca; spoon over the batter.",
+                      "Pour 1 cup cold water over the top (do not stir).",
+                      "Bake at 350° for 30-40 minutes until the top is golden brown and the edges are bubbling."
+                    ]
+                  }
+                },
+                {
+                  "title": "Fresh Southern Peach Cobbler",
+                  "servings": "Serves 6-8   |   Bake: 425°F for 40 minutes total",
+                  "source": "Allrecipes (aeposey), tested by Allrecipes Test Kitchen",
+                  "ingredientGroups": [
+                    {
+                      "label": "Peach filling",
+                      "ingredients": [
+                        "8 fresh peaches, peeled, pitted, and sliced into thin wedges",
+                        "1/4 cup white sugar",
+                        "1/4 cup brown sugar",
+                        "1/4 teaspoon ground cinnamon",
+                        "1/8 teaspoon ground nutmeg",
+                        "1 teaspoon fresh lemon juice",
+                        "2 teaspoons cornstarch"
+                      ]
+                    },
+                    {
+                      "label": "Cobbler topping",
+                      "ingredients": [
+                        "1 cup all-purpose flour",
+                        "1/4 cup white sugar",
+                        "1/4 cup brown sugar",
+                        "1 teaspoon baking powder",
+                        "1/2 teaspoon salt",
+                        "6 tablespoons unsalted butter, chilled and cut into small pieces",
+                        "1/4 cup boiling water"
+                      ]
+                    },
+                    {
+                      "label": "Cinnamon sugar",
+                      "ingredients": [
+                        "3 tablespoons white sugar",
+                        "1 teaspoon ground cinnamon"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Preheat oven to 425°F.",
+                    "Toss peaches with white sugar, brown sugar, cinnamon, nutmeg, lemon juice, and cornstarch. Pour into a 2-quart baking dish. Bake 10 minutes.",
+                    "Meanwhile, combine flour, white sugar, brown sugar, baking powder, and salt. Blend in butter with fingertips or a pastry blender until mixture resembles coarse crumbs. Stir in boiling water until just combined.",
+                    "Remove peaches from oven. Drop spoonfuls of topping over the peaches.",
+                    "Stir together white sugar and cinnamon; sprinkle over entire cobbler.",
+                    "Return to oven and bake until topping is golden and filling is bubbling at the edges, about 30 minutes."
+                  ],
+                  "highAltitude": {
+                    "ingredientGroups": [
+                      {
+                        "label": "Peach filling",
+                        "ingredients": [
+                          "8 fresh peaches, peeled, pitted, and sliced into thin wedges",
+                          "1/4 cup white sugar",
+                          "1/4 cup brown sugar",
+                          "1/4 teaspoon ground cinnamon",
+                          "1/8 teaspoon ground nutmeg",
+                          "1 teaspoon fresh lemon juice",
+                          "2 teaspoons cornstarch"
+                        ]
+                      },
+                      {
+                        "label": "Cobbler topping",
+                        "ingredients": [
+                          "1 cup all-purpose flour",
+                          "1/4 cup white sugar",
+                          "1/4 cup brown sugar",
+                          "3/4 teaspoon baking powder",
+                          "1/2 teaspoon salt",
+                          "6 tablespoons unsalted butter, chilled and cut into small pieces",
+                          "1/4 cup boiling water"
+                        ]
+                      },
+                      {
+                        "label": "Cinnamon sugar",
+                        "ingredients": [
+                          "3 tablespoons white sugar",
+                          "1 teaspoon ground cinnamon"
+                        ]
+                      }
+                    ],
+                    "steps": [
+                      "Preheat oven to 425°F.",
+                      "Toss peaches with white sugar, brown sugar, cinnamon, nutmeg, lemon juice, and cornstarch. Pour into a 2-quart baking dish. Bake 10 minutes.",
+                      "Meanwhile, combine flour, white sugar, brown sugar, baking powder, and salt. Blend in butter with fingertips or a pastry blender until mixture resembles coarse crumbs. Stir in boiling water until just combined.",
+                      "Remove peaches from oven. Drop spoonfuls of topping over the peaches.",
+                      "Stir together white sugar and cinnamon; sprinkle over entire cobbler.",
+                      "Return to oven and bake until topping is golden and filling is bubbling at the edges, about 30 minutes."
+                    ]
+                  }
+                },
+                {
+                  "title": "Strawberry Shortcake",
+                  "servings": "Serves 4 generously",
+                  "ingredientGroups": [
+                    {
+                      "label": "Strawberries",
+                      "ingredients": [
+                        "2 pints ripe strawberries, hulled",
+                        "1/2 cup granulated sugar, or more to taste"
+                      ]
+                    },
+                    {
+                      "label": "Biscuit dough",
+                      "ingredients": [
+                        "4 cups all-purpose flour, plus more for dusting",
+                        "3 tablespoons granulated sugar",
+                        "1/4 teaspoon salt",
+                        "5 teaspoons baking powder",
+                        "3/4 cup (1 1/2 sticks) unsalted butter, softened",
+                        "1 1/4 cups heavy cream"
+                      ]
+                    },
+                    {
+                      "label": "Biscuit butter",
+                      "ingredients": [
+                        "1/2 cup (1 stick) unsalted butter, for melting"
+                      ]
+                    },
+                    {
+                      "label": "Whipped cream",
+                      "ingredients": [
+                        "1 3/4 cups heavy cream",
+                        "1/4 teaspoon vanilla extract"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Pick over and hull strawberries. Cut in half or slice depending on size. Gently crush about a quarter of the berries with a fork to release their juices. Mix with remaining berries and 1/2 cup sugar, adding more if necessary. Set aside, covered, about 30 minutes to develop flavor.",
+                    "Preheat oven to 450°F.",
+                    "Into a large mixing bowl, sift together flour, 3 tablespoons sugar, salt, and baking powder. Add softened butter; rub into dry ingredients as for pastry. Add 1 1/4 cups cream; mix to a soft dough. Knead 1 minute on a lightly floured board; roll to about 1/2-inch thickness. Using a 3-inch biscuit cutter, cut an even number of rounds — 2 rounds per serving.",
+                    "Use a little of the remaining butter to grease a baking sheet. Melt remaining butter. Place half the rounds on the sheet; brush with melted butter; place remaining rounds on top. Bake 10–15 minutes until golden brown.",
+                    "Remove from oven; pull shortcakes apart. Brush insides with remaining melted butter.",
+                    "Beat 1 3/4 cups heavy cream until it thickens. Add vanilla; beat again just until thick.",
+                    "Place a bottom half on each plate. Top with a generous spoonful of cream and berries. Cover with the top half; add a few more berries; top with whipped cream. Serve immediately."
+                  ],
+                  "comments": [
+                    "Extra shortcakes may be frozen; warm before using. Also good toasted for breakfast or tea. Any very ripe, macerated fruit works in place of strawberries — ripe peaches are an excellent summer alternative."
+                  ],
+                  "source": "Jane Grigson’s Fruit Book, adapted by Nancy Harmon Jenkins / NYT Cooking",
+                  "highAltitude": {
+                    "ingredientGroups": [
+                      {
+                        "label": "Strawberries",
+                        "ingredients": [
+                          "2 pints ripe strawberries, hulled",
+                          "1/2 cup granulated sugar, or more to taste"
+                        ]
+                      },
+                      {
+                        "label": "Biscuit dough",
+                        "ingredients": [
+                          "4 cups + 8 tablespoons all-purpose flour, plus more for dusting",
+                          "2 tablespoons granulated sugar",
+                          "1/4 teaspoon salt",
+                          "4 teaspoons baking powder",
+                          "3/4 cup (1 1/2 sticks) unsalted butter, softened",
+                          "1 1/4 cups heavy cream"
+                        ]
+                      },
+                      {
+                        "label": "Biscuit butter",
+                        "ingredients": [
+                          "1/2 cup (1 stick) unsalted butter, for melting"
+                        ]
+                      },
+                      {
+                        "label": "Whipped cream",
+                        "ingredients": [
+                          "1 3/4 cups heavy cream",
+                          "1/4 teaspoon vanilla extract"
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "title": "Passover Profiteroles With Strawberries",
+                  "servings": "Makes about 2 dozen profiteroles",
+                  "ingredientGroups": [
+                    {
+                      "label": "Cream puff shells",
+                      "ingredients": [
+                        {
+                          "html": "1 batch <a href=\"baking.html#baking-sweet-passover-cream-puff-shells\">Passover Cream Puff Shells</a>"
+                        }
+                      ]
+                    },
+                    {
+                      "label": "Chocolate sauce",
+                      "ingredients": [
+                        "4 oz semisweet chocolate, chopped",
+                        "1/2 cup water",
+                        "3 tablespoons unsalted butter, room temperature, cut into 3 pieces",
+                        "1 teaspoon vanilla extract"
+                      ]
+                    },
+                    {
+                      "label": "Chantilly cream",
+                      "ingredients": [
+                        "2 cups heavy cream, well chilled",
+                        "3 tablespoons plus 1 teaspoon granulated sugar",
+                        "2 teaspoons vanilla extract"
+                      ]
+                    },
+                    {
+                      "label": "Strawberries",
+                      "ingredients": [
+                        "1 pound strawberries, hulled",
+                        "2 tablespoons granulated sugar"
+                      ]
+                    },
+                    {
+                      "label": "Garnish",
+                      "ingredients": [
+                        "3–4 teaspoons minced raw pistachios"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Combine chocolate and 1/2 cup water in a small heavy saucepan over low heat, stirring often, until melted and smooth, about 3 minutes. Remove from heat; stir in butter and vanilla. (Makes 1 cup; keeps covered and refrigerated 3–5 days. Rewarm before using.)",
+                    "In a large chilled bowl, whip cream with sugar and vanilla at medium-high speed until stiff. Refrigerate until ready to use, up to 30 minutes.",
+                    "Slice strawberries into thick lengthwise slices (about 4 cups). Place in a bowl, sprinkle with 2 tablespoons sugar, and mix gently. Refrigerate until ready to use, up to 30 minutes.",
+                    "Using a serrated knife, cut off the top half of each puff and reserve as a “hat.”",
+                    "Pipe whipped cream generously onto the bottom of each puff using a pastry bag fitted with a large star tip. Top with a layer of strawberries, allowing them to extend slightly over the edges. Pipe another layer of whipped cream over the berries. Set the pastry hat on top.",
+                    "Drizzle with chocolate sauce (reheat over low heat if too thick). Garnish each with a pinch of minced pistachios. Serve immediately."
+                  ],
+                  "comments": [
+                    "For Passover and pareve serving, substitute non-dairy whipping cream and margarine in the chocolate sauce; use vanilla sugar if kosher-for-Passover vanilla extract is unavailable."
+                  ],
+                  "source": "Faye Levy / Los Angeles Times"
+                },
+                {
+                  "title": "Cinnamon Raisin Bagel Bread Pudding",
+                  "servings": "Serves 6–9",
+                  "ingredientGroups": [
+                    {
+                      "label": "Custard",
+                      "ingredients": [
+                        "3 large or 4 medium cinnamon raisin bagels, cut into 1-inch pieces",
+                        "1 cup milk",
+                        "3 large eggs",
+                        "1/2 teaspoon ground cinnamon",
+                        "1/2 teaspoon vanilla extract",
+                        "Pinch of salt",
+                        "1/2 cup raisins (optional)"
+                      ]
+                    },
+                    {
+                      "label": "Topping",
+                      "ingredients": [
+                        "2 tablespoons unsalted butter, cut into small pieces",
+                        "2 tablespoons brown sugar"
+                      ]
+                    },
+                    {
+                      "label": "To serve",
+                      "ingredients": [
+                        "Powdered sugar and/or maple syrup"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Grease a 9-inch square baking pan. Add bagel pieces. Whisk milk, eggs, cinnamon, vanilla, and salt together; pour over bagels. Gently press bagels into the mixture to ensure they're all soaked. Scatter raisins over top if using. Cover and refrigerate overnight.",
+                    "In the morning, preheat oven to 350°F. Remove pan from refrigerator while oven heats. Dot top with butter pieces; sprinkle with brown sugar.",
+                    "Bake 30 minutes until center is set with crunchy edges (center should be moist but no liquid egg visible — not dry).",
+                    "Serve warm, sprinkled with powdered sugar and/or drizzled with maple syrup."
+                  ],
+                  "comments": [
+                    "Double the recipe in a 9x13 pan.",
+                    "Variations: egg bagels with dried cranberries and orange zest; everything bagels with grated Asiago or Parmesan. Finish with a simple cream cheese glaze."
+                  ],
+                  "source": "Caroline Lubbers / Whipped the Blog"
                 }
               ]
             },
@@ -18635,7 +19227,9 @@ module.exports = {
                     }
                   ],
                   "steps": [
-                    { "html": "Make the ghee: Follow the <a href='dairy.html#dairy-ghee'>Ghee recipe</a> using 2 cups (4 sticks) unsalted butter and a cheesecloth-lined fine-mesh sieve — but unlike that recipe, do not discard the caramelized milk solids. Reserve the strained ghee and the milk solids separately. (Can be made 3 months ahead; store tightly covered at room temperature.)" },
+                    {
+                      "html": "Make the ghee: Follow the <a href='dairy.html#dairy-ghee'>Ghee recipe</a> using 2 cups (4 sticks) unsalted butter and a cheesecloth-lined fine-mesh sieve — but unlike that recipe, do not discard the caramelized milk solids. Reserve the strained ghee and the milk solids separately. (Can be made 3 months ahead; store tightly covered at room temperature.)"
+                    },
                     "Whisk flour, brown sugar, spices, and salt together for streusel in a medium bowl. Add 1 tablespoon caramelized milk solids and 1/2 cup ghee. Work with hands until mixture resembles wet sand. Set aside.",
                     "Preheat oven to 325°F. Line a 9x9-inch baking pan with parchment, leaving overhang on 2 sides.",
                     "Whisk together 2 cups flour, baking powder, baking soda, and salt in a medium bowl. In a large bowl, whisk eggs, egg yolk, yogurt, milk, both sugars, vanilla, 3/4 cup ghee, and 1 teaspoon caramelized milk solids together. Sift in dry ingredients and fold just until no dry spots remain (batter will be thick and slightly lumpy).",
@@ -18767,6 +19361,250 @@ module.exports = {
                       "Pour batter into tube pan; smooth top. Tap pan gently. Begin checking at 25 minutes per side; total bake time is typically 50–55 minutes.",
                       "Immediately invert pan to cool. Inverted cooling is even more critical at altitude — leave inverted at least 2–3 hours. Do not rush.",
                       "Run a thin knife around the edges to loosen. Gently tap upside down onto parchment; peel off parchment, flip right side up onto a platter, and serve."
+                    ]
+                  }
+                },
+                {
+                  "title": "Bonfire Night Cake",
+                  "servings": "Serves 10-12   |   Bake: 350°F for 30-35 minutes",
+                  "source": "Prue Leith",
+                  "comments": [
+                    "Mixed spice is a British blend; substitute pumpkin pie spice or apple pie spice if unavailable.",
+                    "Pressing the apple pieces below the surface of the batter is key -- they will sink into the cake as it bakes rather than burning on top.",
+                    "Winner on The Great British Bake Off."
+                  ],
+                  "ingredientGroups": [
+                    {
+                      "label": "Apples",
+                      "ingredients": [
+                        "4 Granny Smith apples, peeled, cored, and diced",
+                        "1 tablespoon all-purpose flour (for tossing)"
+                      ]
+                    },
+                    {
+                      "label": "Cake batter",
+                      "ingredients": [
+                        "11 tablespoons unsalted butter, softened",
+                        "3/4 cup + 2 tablespoons granulated sugar",
+                        "1 teaspoon vanilla extract",
+                        "4 large eggs",
+                        "2/3 cup sour cream"
+                      ]
+                    },
+                    {
+                      "label": "Dry ingredients",
+                      "ingredients": [
+                        "2 cups all-purpose flour",
+                        "1 1/2 teaspoons baking powder",
+                        "1/4 teaspoon baking soda",
+                        "1 1/2 teaspoons ground cinnamon",
+                        "1 teaspoon mixed spice",
+                        "A grating of fresh nutmeg (about 1/4 of a whole nutmeg)",
+                        "1/2 teaspoon salt",
+                        "Zest of 1 lemon",
+                        "Zest of 1 orange"
+                      ]
+                    },
+                    {
+                      "label": "Cream cheese filling",
+                      "ingredients": [
+                        "7 tablespoons unsalted butter, melted and cooled",
+                        "Two 8-oz packages full-fat cream cheese, softened",
+                        "1 2/3 cups powdered sugar",
+                        "1-2 teaspoons ground cinnamon"
+                      ]
+                    },
+                    {
+                      "label": "Caramel sauce",
+                      "ingredients": [
+                        "2/3 cup granulated sugar",
+                        "1/2 cup heavy cream",
+                        "7 tablespoons unsalted butter",
+                        "1/2 teaspoon salt",
+                        "1/2 teaspoon vanilla extract"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Preheat oven to 350°F. Grease and line two 8-inch round cake pans.",
+                    "Spread diced apples on a double layer of paper towels; lay another double layer on top and press to remove excess moisture. Set aside.",
+                    "Beat butter and sugar together until pale and fluffy. Add vanilla, then add eggs one at a time, scraping down the bowl between each. Stir in sour cream.",
+                    "Toss the dried apple pieces with 1 tablespoon flour until coated (this prevents them from sinking).",
+                    "Sift the remaining flour, baking powder, baking soda, cinnamon, mixed spice, nutmeg, and salt into a bowl; stir in the lemon and orange zests. Fold the dry ingredients into the batter in two additions until just combined. Fold in 3/4 of the apple and divide between the two pans. Scatter the remaining apple evenly over the tops and press down gently so the pieces sit just below the surface.",
+                    "Bake 30-35 minutes until the sponge bounces back when prodded in the center. Cool in pans on a wire rack for 10 minutes, then turn out and cool to room temperature.",
+                    "Make the cream cheese filling: whisk cream cheese, powdered sugar, and cinnamon together. Slowly whisk in the cooled melted butter until combined. Refrigerate until ready to assemble.",
+                    "Make the caramel sauce: melt sugar in a heavy-bottomed saucepan over medium heat, moving it with a fork until dissolved then swirling the pan (do not stir once dissolved). Cook until dark amber. Remove from heat and carefully add cream and butter all at once, stirring constantly. Stir in salt and vanilla. Cool to room temperature.",
+                    "To assemble: place first layer on a plate, spread with cream cheese filling, and drizzle generously with caramel sauce. Top with second layer and repeat."
+                  ],
+                  "highAltitude": {
+                    "ingredientGroups": [
+                      {
+                        "label": "Apples",
+                        "ingredients": [
+                          "4 Granny Smith apples, peeled, cored, and diced",
+                          "1 tablespoon all-purpose flour (for tossing)"
+                        ]
+                      },
+                      {
+                        "label": "Cake batter",
+                        "ingredients": [
+                          "11 tablespoons unsalted butter, softened",
+                          "3/4 cup granulated sugar",
+                          "1 teaspoon vanilla extract",
+                          "4 large eggs",
+                          "2/3 cup + 1 tablespoon sour cream"
+                        ]
+                      },
+                      {
+                        "label": "Dry ingredients",
+                        "ingredients": [
+                          "2 cups + 2 tablespoons all-purpose flour",
+                          "1 1/8 teaspoons baking powder",
+                          "1/4 teaspoon baking soda",
+                          "1 1/2 teaspoons ground cinnamon",
+                          "1 teaspoon mixed spice",
+                          "A grating of fresh nutmeg (about 1/4 of a whole nutmeg)",
+                          "1/2 teaspoon salt",
+                          "Zest of 1 lemon",
+                          "Zest of 1 orange"
+                        ]
+                      },
+                      {
+                        "label": "Cream cheese filling",
+                        "ingredients": [
+                          "7 tablespoons unsalted butter, melted and cooled",
+                          "Two 8-oz packages full-fat cream cheese, softened",
+                          "1 2/3 cups powdered sugar",
+                          "1-2 teaspoons ground cinnamon"
+                        ]
+                      },
+                      {
+                        "label": "Caramel sauce",
+                        "ingredients": [
+                          "2/3 cup granulated sugar",
+                          "1/2 cup heavy cream",
+                          "7 tablespoons unsalted butter",
+                          "1/2 teaspoon salt",
+                          "1/2 teaspoon vanilla extract"
+                        ]
+                      }
+                    ],
+                    "steps": [
+                      "Preheat oven to 350°F. Grease and line two 8-inch round cake pans.",
+                      "Spread diced apples on a double layer of paper towels; lay another double layer on top and press to remove excess moisture. Set aside.",
+                      "Beat butter and sugar together until pale and fluffy. Add vanilla, then add eggs one at a time, scraping down the bowl between each. Stir in sour cream.",
+                      "Toss the dried apple pieces with 1 tablespoon flour until coated (this prevents them from sinking).",
+                      "Sift the remaining flour, baking powder, baking soda, cinnamon, mixed spice, nutmeg, and salt into a bowl; stir in the lemon and orange zests. Fold the dry ingredients into the batter in two additions until just combined. Fold in 3/4 of the apple and divide between the two pans. Scatter the remaining apple evenly over the tops and press down gently so the pieces sit just below the surface.",
+                      "Bake 30-35 minutes until the sponge bounces back when prodded in the center. Cool in pans on a wire rack for 10 minutes, then turn out and cool to room temperature.",
+                      "Make the cream cheese filling: whisk cream cheese, powdered sugar, and cinnamon together. Slowly whisk in the cooled melted butter until combined. Refrigerate until ready to assemble.",
+                      "Make the caramel sauce: melt sugar in a heavy-bottomed saucepan over medium heat, moving it with a fork until dissolved then swirling the pan (do not stir once dissolved). Cook until dark amber. Remove from heat and carefully add cream and butter all at once, stirring constantly. Stir in salt and vanilla. Cool to room temperature.",
+                      "To assemble: place first layer on a plate, spread with cream cheese filling, and drizzle generously with caramel sauce. Top with second layer and repeat."
+                    ]
+                  }
+                },
+                {
+                  "title": "Cassata Siciliana",
+                  "servings": "Serves 10–12",
+                  "source": "From Chef Louisa (Villa Britannia, Taormina, Sicily)",
+                  "comments": [
+                    "The ricotta must be started 13–14 hours ahead (or the night before). The bagna also needs time to cool before using.",
+                    "The assembled cake keeps refrigerated for 2–3 days and actually improves overnight.",
+                    "High-altitude version in Appendix."
+                  ],
+                  "ingredientGroups": [
+                    {
+                      "label": "Sponge",
+                      "ingredients": [
+                        "200g sugar",
+                        "8 eggs",
+                        "250g plain flour, sieved"
+                      ]
+                    },
+                    {
+                      "label": "Bagna (soaking syrup — make ahead, must be cold)",
+                      "ingredients": [
+                        "2 oranges, juiced",
+                        "1 apple, peeled",
+                        "1 pear, peeled",
+                        "1 banana, peeled",
+                        "2 strawberries",
+                        "50g raisins",
+                        "1 liter water",
+                        "100g sugar",
+                        "1 bay leaf",
+                        "20ml orange liqueur"
+                      ]
+                    },
+                    {
+                      "label": "Ricotta filling (13–14 hours ahead)",
+                      "ingredients": [
+                        "700g ricotta",
+                        "100g caster sugar"
+                      ]
+                    },
+                    {
+                      "label": "Assembly",
+                      "ingredients": [
+                        "500ml double cream, whipped to soft peaks",
+                        "1 handful raisins, soaked in orange liqueur",
+                        "1 handful candied fruit, soaked in orange liqueur",
+                        "50g dark chocolate, broken into small pieces"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Ricotta (13–14 hours ahead or overnight): stir the ricotta with the caster sugar and let sit covered in the refrigerator for at least 13–14 hours.",
+                    "Bagna: combine all bagna ingredients except the orange liqueur in a pan. Simmer on low heat until reduced to less than half. Let cool completely, then stir in the orange liqueur.",
+                    "Sponge: beat eggs and sugar together until thick and ribbon-like. Fold in the sieved flour gently. Pour into a greased and floured cake pan and bake at 350°F for 40 minutes, until a skewer comes out clean. Cool completely before slicing.",
+                    "Assembly: stir the raisins, candied fruit, and dark chocolate into the ricotta mixture. Carefully slice the cooled sponge horizontally into 4 even layers. Spoon bagna over each layer to moisten. Alternate layers of whipped cream and ricotta mixture between each sponge tier, spreading evenly. Finish the top with whipped cream, spreading to cover the cake. Refrigerate until serving. Best made a day ahead."
+                  ],
+                  "highAltitude": {
+                    "ingredientGroups": [
+                      {
+                        "label": "Sponge (high altitude — 4,000–5,000 ft)",
+                        "ingredients": [
+                          "180g sugar (reduced from 200g)",
+                          "8 eggs (same — but see note in steps on beating)",
+                          "265g plain flour, sieved (increased from 250g)"
+                        ]
+                      },
+                      {
+                        "label": "Bagna (soaking syrup — make ahead, must be cold)",
+                        "ingredients": [
+                          "2 oranges, juiced",
+                          "1 apple, peeled",
+                          "1 pear, peeled",
+                          "1 banana, peeled",
+                          "2 strawberries",
+                          "50g raisins",
+                          "1 liter water",
+                          "100g sugar",
+                          "1 bay leaf",
+                          "20ml orange liqueur"
+                        ]
+                      },
+                      {
+                        "label": "Ricotta filling (13–14 hours ahead)",
+                        "ingredients": [
+                          "700g ricotta",
+                          "100g caster sugar"
+                        ]
+                      },
+                      {
+                        "label": "Assembly",
+                        "ingredients": [
+                          "500ml double cream, whipped to soft peaks",
+                          "1 handful raisins, soaked in orange liqueur",
+                          "1 handful candied fruit, soaked in orange liqueur",
+                          "50g dark chocolate, broken into small pieces"
+                        ]
+                      }
+                    ],
+                    "steps": [
+                      "Ricotta (13–14 hours ahead or overnight): same as standard version.",
+                      "Bagna: same as standard version.",
+                      "Sponge (high-altitude): beat eggs and sugar until thick, pale, and ribbon-like — stop slightly before the mixture reaches full volume (the foam expands further in the oven at altitude). Fold in the sieved flour gently. Pour into a greased and floured cake pan and bake at 345°F (reduced from 350°F). Begin checking at 35 minutes rather than 40; the cake is done when a skewer comes out clean and it begins to pull away from the sides. Critical: immediately invert the pan onto a wire rack after removing from the oven and cool completely inverted before unmolding.",
+                      "Assembly: same as standard version."
                     ]
                   }
                 }
@@ -20686,233 +21524,6 @@ module.exports = {
       "title": "Desserts",
       "recipes": [
         {
-          "title": "Bonfire Night Cake",
-          "servings": "Serves 10-12   |   Bake: 350°F for 30-35 minutes",
-          "source": "Prue Leith",
-          "comments": [
-            "Mixed spice is a British blend; substitute pumpkin pie spice or apple pie spice if unavailable.",
-            "Pressing the apple pieces below the surface of the batter is key -- they will sink into the cake as it bakes rather than burning on top.",
-            "Winner on The Great British Bake Off."
-          ],
-          "ingredientGroups": [
-            {
-              "label": "Apples",
-              "ingredients": [
-                "4 Granny Smith apples, peeled, cored, and diced",
-                "1 tablespoon all-purpose flour (for tossing)"
-              ]
-            },
-            {
-              "label": "Cake batter",
-              "ingredients": [
-                "11 tablespoons unsalted butter, softened",
-                "3/4 cup + 2 tablespoons granulated sugar",
-                "1 teaspoon vanilla extract",
-                "4 large eggs",
-                "2/3 cup sour cream"
-              ]
-            },
-            {
-              "label": "Dry ingredients",
-              "ingredients": [
-                "2 cups all-purpose flour",
-                "1 1/2 teaspoons baking powder",
-                "1/4 teaspoon baking soda",
-                "1 1/2 teaspoons ground cinnamon",
-                "1 teaspoon mixed spice",
-                "A grating of fresh nutmeg (about 1/4 of a whole nutmeg)",
-                "1/2 teaspoon salt",
-                "Zest of 1 lemon",
-                "Zest of 1 orange"
-              ]
-            },
-            {
-              "label": "Cream cheese filling",
-              "ingredients": [
-                "7 tablespoons unsalted butter, melted and cooled",
-                "Two 8-oz packages full-fat cream cheese, softened",
-                "1 2/3 cups powdered sugar",
-                "1-2 teaspoons ground cinnamon"
-              ]
-            },
-            {
-              "label": "Caramel sauce",
-              "ingredients": [
-                "2/3 cup granulated sugar",
-                "1/2 cup heavy cream",
-                "7 tablespoons unsalted butter",
-                "1/2 teaspoon salt",
-                "1/2 teaspoon vanilla extract"
-              ]
-            }
-          ],
-          "steps": [
-            "Preheat oven to 350°F. Grease and line two 8-inch round cake pans.",
-            "Spread diced apples on a double layer of paper towels; lay another double layer on top and press to remove excess moisture. Set aside.",
-            "Beat butter and sugar together until pale and fluffy. Add vanilla, then add eggs one at a time, scraping down the bowl between each. Stir in sour cream.",
-            "Toss the dried apple pieces with 1 tablespoon flour until coated (this prevents them from sinking).",
-            "Sift the remaining flour, baking powder, baking soda, cinnamon, mixed spice, nutmeg, and salt into a bowl; stir in the lemon and orange zests. Fold the dry ingredients into the batter in two additions until just combined. Fold in 3/4 of the apple and divide between the two pans. Scatter the remaining apple evenly over the tops and press down gently so the pieces sit just below the surface.",
-            "Bake 30-35 minutes until the sponge bounces back when prodded in the center. Cool in pans on a wire rack for 10 minutes, then turn out and cool to room temperature.",
-            "Make the cream cheese filling: whisk cream cheese, powdered sugar, and cinnamon together. Slowly whisk in the cooled melted butter until combined. Refrigerate until ready to assemble.",
-            "Make the caramel sauce: melt sugar in a heavy-bottomed saucepan over medium heat, moving it with a fork until dissolved then swirling the pan (do not stir once dissolved). Cook until dark amber. Remove from heat and carefully add cream and butter all at once, stirring constantly. Stir in salt and vanilla. Cool to room temperature.",
-            "To assemble: place first layer on a plate, spread with cream cheese filling, and drizzle generously with caramel sauce. Top with second layer and repeat."
-          ],
-          "highAltitude": {
-            "ingredientGroups": [
-              {
-                "label": "Apples",
-                "ingredients": [
-                  "4 Granny Smith apples, peeled, cored, and diced",
-                  "1 tablespoon all-purpose flour (for tossing)"
-                ]
-              },
-              {
-                "label": "Cake batter",
-                "ingredients": [
-                  "11 tablespoons unsalted butter, softened",
-                  "3/4 cup granulated sugar",
-                  "1 teaspoon vanilla extract",
-                  "4 large eggs",
-                  "2/3 cup + 1 tablespoon sour cream"
-                ]
-              },
-              {
-                "label": "Dry ingredients",
-                "ingredients": [
-                  "2 cups + 2 tablespoons all-purpose flour",
-                  "1 1/8 teaspoons baking powder",
-                  "1/4 teaspoon baking soda",
-                  "1 1/2 teaspoons ground cinnamon",
-                  "1 teaspoon mixed spice",
-                  "A grating of fresh nutmeg (about 1/4 of a whole nutmeg)",
-                  "1/2 teaspoon salt",
-                  "Zest of 1 lemon",
-                  "Zest of 1 orange"
-                ]
-              },
-              {
-                "label": "Cream cheese filling",
-                "ingredients": [
-                  "7 tablespoons unsalted butter, melted and cooled",
-                  "Two 8-oz packages full-fat cream cheese, softened",
-                  "1 2/3 cups powdered sugar",
-                  "1-2 teaspoons ground cinnamon"
-                ]
-              },
-              {
-                "label": "Caramel sauce",
-                "ingredients": [
-                  "2/3 cup granulated sugar",
-                  "1/2 cup heavy cream",
-                  "7 tablespoons unsalted butter",
-                  "1/2 teaspoon salt",
-                  "1/2 teaspoon vanilla extract"
-                ]
-              }
-            ],
-            "steps": [
-              "Preheat oven to 350°F. Grease and line two 8-inch round cake pans.",
-              "Spread diced apples on a double layer of paper towels; lay another double layer on top and press to remove excess moisture. Set aside.",
-              "Beat butter and sugar together until pale and fluffy. Add vanilla, then add eggs one at a time, scraping down the bowl between each. Stir in sour cream.",
-              "Toss the dried apple pieces with 1 tablespoon flour until coated (this prevents them from sinking).",
-              "Sift the remaining flour, baking powder, baking soda, cinnamon, mixed spice, nutmeg, and salt into a bowl; stir in the lemon and orange zests. Fold the dry ingredients into the batter in two additions until just combined. Fold in 3/4 of the apple and divide between the two pans. Scatter the remaining apple evenly over the tops and press down gently so the pieces sit just below the surface.",
-              "Bake 30-35 minutes until the sponge bounces back when prodded in the center. Cool in pans on a wire rack for 10 minutes, then turn out and cool to room temperature.",
-              "Make the cream cheese filling: whisk cream cheese, powdered sugar, and cinnamon together. Slowly whisk in the cooled melted butter until combined. Refrigerate until ready to assemble.",
-              "Make the caramel sauce: melt sugar in a heavy-bottomed saucepan over medium heat, moving it with a fork until dissolved then swirling the pan (do not stir once dissolved). Cook until dark amber. Remove from heat and carefully add cream and butter all at once, stirring constantly. Stir in salt and vanilla. Cool to room temperature.",
-              "To assemble: place first layer on a plate, spread with cream cheese filling, and drizzle generously with caramel sauce. Top with second layer and repeat."
-            ]
-          }
-        },
-        {
-          "title": "Cherry Cobbler With Lemon-Cream Biscuits",
-          "servings": "Serves 8",
-          "ingredientGroups": [
-            {
-              "label": "Biscuits",
-              "ingredients": [
-                "2 cups (250 g) all-purpose flour, plus more for dusting",
-                "1/4 cup (50 g) granulated sugar",
-                "1 tablespoon baking powder",
-                "2 teaspoons finely grated lemon zest",
-                "1 teaspoon kosher salt",
-                "1/2 cup (1 stick / 4 oz) chilled unsalted butter, cut into pieces",
-                "1 1/3 cups chilled heavy cream"
-              ]
-            },
-            {
-              "label": "Filling",
-              "ingredients": [
-                "2 pounds fresh (or frozen) sweet cherries, pitted",
-                "1/2 cup (100 g) granulated sugar",
-                "1/4 cup fresh lemon juice",
-                "3 tablespoons cornstarch",
-                "1 teaspoon vanilla extract",
-                "1/2 teaspoon ground cinnamon",
-                "1/4 teaspoon almond extract",
-                "1/4 teaspoon kosher salt",
-                "3 tablespoons unsalted butter, melted and slightly cooled",
-                "2 tablespoons raw sugar"
-              ]
-            },
-            {
-              "label": "To serve",
-              "ingredients": [
-                "Vanilla ice cream or softly whipped cream"
-              ]
-            }
-          ],
-          "steps": [
-            "Whisk flour, granulated sugar, baking powder, lemon zest, and salt in a medium bowl. Add chilled butter; toss to coat. Smash butter into flour with fingertips until largest pieces are about pea-sized.",
-            "Stream in chilled cream while tossing constantly with a fork until distributed. Fold with a bench scraper until dough comes together into a mass.",
-            "Turn out onto a generously floured surface. Pat into a 3/4-inch-thick rectangle with floured hands. Cut into 4 pieces; stack on top of each other. Roll out to 1/2-inch thick. Using a 1 1/2-inch cutter, punch out biscuits as closely as possible, dipping cutter in flour often. You should get about 40 biscuits. Gather scraps, reroll, and punch out more. Chill until ready to use.",
-            "Place rack in middle of oven; preheat to 400°F. Mix cherries, granulated sugar, lemon juice, cornstarch, vanilla, cinnamon, almond extract, and salt in a large bowl. Scrape into a 2-quart baking dish or 9-inch cake pan with 2-inch sides; press down firmly to compact. Place on a foil-lined rimmed baking sheet.",
-            "Arrange chilled biscuits over filling, fitting snugly so they're touching. Brush generously with melted butter; sprinkle with raw sugar.",
-            "Bake 10 minutes. Reduce heat to 350°F; bake until filling is actively bubbling through the center and biscuits are deep golden brown, 50–65 minutes more. Let rest at least 20–30 minutes before serving. Serve with vanilla ice cream or whipped cream."
-          ],
-          "comments": [
-            "Can be baked 1 day ahead; store tightly covered at room temperature.",
-            "Special equipment: 1 1/2-inch round cookie cutter."
-          ],
-          "source": "Claire Saffitz / Bon Appétit (June 2019)",
-          "highAltitude": {
-            "ingredientGroups": [
-              {
-                "label": "Biscuits",
-                "ingredients": [
-                  "2 cups + 2 tablespoons all-purpose flour, plus more for dusting",
-                  "1/4 cup (50 g) granulated sugar",
-                  "2 1/2 teaspoons baking powder",
-                  "2 teaspoons finely grated lemon zest",
-                  "1 teaspoon kosher salt",
-                  "1/2 cup (1 stick / 4 oz) chilled unsalted butter, cut into pieces",
-                  "1 1/3 cups chilled heavy cream"
-                ]
-              },
-              {
-                "label": "Filling",
-                "ingredients": [
-                  "2 pounds fresh (or frozen) sweet cherries, pitted",
-                  "7 tablespoons granulated sugar",
-                  "1/4 cup fresh lemon juice",
-                  "3 tablespoons cornstarch",
-                  "1 teaspoon vanilla extract",
-                  "1/2 teaspoon ground cinnamon",
-                  "1/4 teaspoon almond extract",
-                  "1/4 teaspoon kosher salt",
-                  "3 tablespoons unsalted butter, melted and slightly cooled",
-                  "2 tablespoons raw sugar"
-                ]
-              },
-              {
-                "label": "To serve",
-                "ingredients": [
-                  "Vanilla ice cream or softly whipped cream"
-                ]
-              }
-            ]
-          }
-        },
-        {
           "title": "Christy's Easy Lemon Icebox Pie",
           "source": "From Christy Ponder",
           "ingredientGroups": [
@@ -20936,48 +21547,6 @@ module.exports = {
             "Pour filling into the crust.",
             "Refrigerate at least 1 hour before serving."
           ]
-        },
-        {
-          "title": "Cinnamon Raisin Bagel Bread Pudding",
-          "servings": "Serves 6–9",
-          "ingredientGroups": [
-            {
-              "label": "Custard",
-              "ingredients": [
-                "3 large or 4 medium cinnamon raisin bagels, cut into 1-inch pieces",
-                "1 cup milk",
-                "3 large eggs",
-                "1/2 teaspoon ground cinnamon",
-                "1/2 teaspoon vanilla extract",
-                "Pinch of salt",
-                "1/2 cup raisins (optional)"
-              ]
-            },
-            {
-              "label": "Topping",
-              "ingredients": [
-                "2 tablespoons unsalted butter, cut into small pieces",
-                "2 tablespoons brown sugar"
-              ]
-            },
-            {
-              "label": "To serve",
-              "ingredients": [
-                "Powdered sugar and/or maple syrup"
-              ]
-            }
-          ],
-          "steps": [
-            "Grease a 9-inch square baking pan. Add bagel pieces. Whisk milk, eggs, cinnamon, vanilla, and salt together; pour over bagels. Gently press bagels into the mixture to ensure they're all soaked. Scatter raisins over top if using. Cover and refrigerate overnight.",
-            "In the morning, preheat oven to 350°F. Remove pan from refrigerator while oven heats. Dot top with butter pieces; sprinkle with brown sugar.",
-            "Bake 30 minutes until center is set with crunchy edges (center should be moist but no liquid egg visible — not dry).",
-            "Serve warm, sprinkled with powdered sugar and/or drizzled with maple syrup."
-          ],
-          "comments": [
-            "Double the recipe in a 9x13 pan.",
-            "Variations: egg bagels with dried cranberries and orange zest; everything bagels with grated Asiago or Parmesan. Finish with a simple cream cheese glaze."
-          ],
-          "source": "Caroline Lubbers / Whipped the Blog"
         },
         {
           "title": "Lauren's Banana Pudding",
@@ -21017,55 +21586,6 @@ module.exports = {
           ]
         },
         {
-          "title": "Maple-Honey Pecan Pie",
-          "servings": "Serves 8",
-          "ingredientGroups": [
-            {
-              "label": "Crust",
-              "ingredients": [
-                "All-purpose flour, for rolling",
-                {
-                  "html": "Dough for one 9-inch single-crust pie (see <a href=\"baking.html#baking-sweet-all-shortening-pie-crust\">All-Shortening Pie Crust</a>)"
-                }
-              ]
-            },
-            {
-              "label": "Brown butter",
-              "ingredients": [
-                "1/2 cup (115 g) unsalted butter"
-              ]
-            },
-            {
-              "label": "Filling",
-              "ingredients": [
-                "1/4 cup (85 g) maple syrup",
-                "1/4 cup (85 g) honey",
-                "1/2 cup (110 g) light brown sugar",
-                "1/2 cup (75 g) maple sugar (or additional light brown sugar)",
-                "3 large eggs, at room temperature",
-                "1 tablespoon bourbon (optional)",
-                "1 teaspoon vanilla extract",
-                "3/4 teaspoon kosher salt",
-                "1 1/2 cups (180 g) pecan halves",
-                "Flaky sea salt (optional, for finishing)"
-              ]
-            }
-          ],
-          "steps": [
-            "On a lightly floured surface, roll dough into a 12-inch circle; transfer to a 9-inch metal pie plate. Fold excess dough over and crimp the edges. Freeze 30 minutes or up to 24 hours.",
-            "Place a rimmed baking sheet on the middle oven rack; heat oven to 400°F.",
-            "Melt butter in a small saucepan over medium heat, swirling occasionally, until foam subsides and milk solids turn golden brown and smell nutty, about 5 minutes. Add maple syrup; cook, stirring, until mixture thickens slightly, 2–3 minutes. Remove from heat; whisk in honey. Cool at least 10 minutes.",
-            "In a large bowl, combine both sugars, eggs, bourbon (if using), vanilla, and salt. Gradually pour the syrup mixture into the egg mixture, whisking constantly; scrape in all brown bits from the bottom of the pot.",
-            "Remove crust from freezer; scatter pecans over the bottom. Pour filling over pecans. Set pie plate on the hot baking sheet and bake 10 minutes. Reduce heat to 350°F; bake 35–45 minutes more until center has puffed up and turned golden brown.",
-            "Transfer to a wire rack; sprinkle with flaky sea salt if desired. Cool at least 2 hours before serving. Keeps at room temperature 24+ hours; freezes up to 3 months."
-          ],
-          "comments": [
-            "For best flavor, use a good-quality maple syrup. Maple sugar adds depth; light brown sugar is a fine substitute.",
-            "If using a glass pie plate, blind-bake the crust before filling (see All-Shortening Pie Crust recipe for instructions)."
-          ],
-          "source": "Melissa Clark / NYT Cooking"
-        },
-        {
           "title": "Fresh Cranberry Mold",
           "source": "Family recipe card, attributed to Grandmother Brenda",
           "comments": [
@@ -21102,196 +21622,6 @@ module.exports = {
             "Fold fruit mixture into the thickened Jell-O. Stir in pecans.",
             "Pour into mold(s). Refrigerate until fully set."
           ]
-        },
-        {
-          "title": "Millie's Cobbler",
-          "source": "Family recipe, attributed to Grampy's girlfriend Millie",
-          "ingredientGroups": [
-            {
-              "label": "Batter",
-              "ingredients": [
-                "Slightly less than 1/2 cup butter",
-                "1/2 cup sugar",
-                "1 cup flour",
-                "2 heaping teaspoons baking powder",
-                "1/2 cup milk"
-              ]
-            },
-            {
-              "label": "Topping",
-              "ingredients": [
-                "2 cups berries",
-                "1/4 to 1/2 cup sugar",
-                "1 tablespoon tapioca (for juicy fruit)",
-                "1 cup cold water"
-              ]
-            }
-          ],
-          "steps": [
-            "Melt butter in a baking dish.",
-            "Whisk together sugar, flour, baking powder, and milk to form a batter; pour over the butter (do not stir).",
-            "Toss berries with sugar and tapioca; spoon over the batter.",
-            "Pour 1 cup cold water over the top (do not stir).",
-            "Bake at 350° for 30-40 minutes until the top is golden brown and the edges are bubbling."
-          ],
-          "highAltitude": {
-            "ingredientGroups": [
-              {
-                "label": "Batter",
-                "ingredients": [
-                  "Slightly less than 1/2 cup butter",
-                  "7 tablespoons sugar",
-                  "1 cup flour",
-                  "1 1/2 teaspoons baking powder (measured level)",
-                  "1/2 cup + 1 tablespoon milk"
-                ]
-              },
-              {
-                "label": "Topping",
-                "ingredients": [
-                  "2 cups berries",
-                  "1/4 to 1/2 cup sugar",
-                  "1 tablespoon tapioca (for juicy fruit)",
-                  "1 cup cold water"
-                ]
-              }
-            ],
-            "steps": [
-              "Melt butter in a baking dish.",
-              "Whisk together sugar, flour, baking powder, and milk to form a batter; pour over the butter (do not stir).",
-              "Toss berries with sugar and tapioca; spoon over the batter.",
-              "Pour 1 cup cold water over the top (do not stir).",
-              "Bake at 350° for 30-40 minutes until the top is golden brown and the edges are bubbling."
-            ]
-          }
-        },
-        {
-          "title": "Mixed Berry Pie",
-          "servings": "Serves 8",
-          "ingredientGroups": [
-            {
-              "label": "Crust",
-              "ingredients": [
-                {
-                  "html": "2 disks <a href=\"baking.html#baking-sweet-all-shortening-pie-crust\">All-Shortening Pie Crust</a>"
-                }
-              ]
-            },
-            {
-              "label": "Filling base",
-              "ingredients": [
-                "1 cup granulated sugar",
-                "1/4 cup cornstarch",
-                "Dash of salt",
-                "1/3 cup water",
-                "1/2 teaspoon ground cinnamon (optional)",
-                "1 cup fresh blueberries"
-              ]
-            },
-            {
-              "label": "Remaining fruit",
-              "ingredients": [
-                "1 cup fresh raspberries",
-                "1 cup halved fresh strawberries",
-                "3/4 cup fresh blackberries",
-                "1 tablespoon fresh lemon juice",
-                "2 tablespoons unsalted butter"
-              ]
-            }
-          ],
-          "steps": [
-            "Prepare the All-Shortening Pie Crust (double batch). Divide into 2 portions, one slightly larger. Shape each into a disk; cover and refrigerate 1 hour or overnight.",
-            "Whisk sugar, cornstarch, salt, 1/3 cup water, and cinnamon (if using) in a large saucepan until smooth; add blueberries. Bring to a boil; cook, stirring, 2 minutes until thickened. Cool slightly.",
-            "Preheat oven to 400°F. Gently fold raspberries, strawberries, blackberries, and lemon juice into the blueberry mixture. Roll out the larger dough portion to 1/8-inch thickness; transfer to a 9-inch pie plate. Trim crust to 1/2 inch beyond rim. Add filling; dot with butter.",
-            "Roll remaining dough to 1/8-inch thickness; cut into 1/2-inch-wide strips. Arrange in a lattice pattern over filling; trim and seal edges; flute. Bake 10 minutes.",
-            "Reduce heat to 350°F; bake 45–50 minutes until crust is golden brown and filling is bubbly. Cool on a wire rack."
-          ],
-          "source": "Elaine Moody / Taste of Home"
-        },
-        {
-          "title": "Strawberry Shortcake",
-          "servings": "Serves 4 generously",
-          "ingredientGroups": [
-            {
-              "label": "Strawberries",
-              "ingredients": [
-                "2 pints ripe strawberries, hulled",
-                "1/2 cup granulated sugar, or more to taste"
-              ]
-            },
-            {
-              "label": "Biscuit dough",
-              "ingredients": [
-                "4 cups all-purpose flour, plus more for dusting",
-                "3 tablespoons granulated sugar",
-                "1/4 teaspoon salt",
-                "5 teaspoons baking powder",
-                "3/4 cup (1 1/2 sticks) unsalted butter, softened",
-                "1 1/4 cups heavy cream"
-              ]
-            },
-            {
-              "label": "Biscuit butter",
-              "ingredients": [
-                "1/2 cup (1 stick) unsalted butter, for melting"
-              ]
-            },
-            {
-              "label": "Whipped cream",
-              "ingredients": [
-                "1 3/4 cups heavy cream",
-                "1/4 teaspoon vanilla extract"
-              ]
-            }
-          ],
-          "steps": [
-            "Pick over and hull strawberries. Cut in half or slice depending on size. Gently crush about a quarter of the berries with a fork to release their juices. Mix with remaining berries and 1/2 cup sugar, adding more if necessary. Set aside, covered, about 30 minutes to develop flavor.",
-            "Preheat oven to 450°F.",
-            "Into a large mixing bowl, sift together flour, 3 tablespoons sugar, salt, and baking powder. Add softened butter; rub into dry ingredients as for pastry. Add 1 1/4 cups cream; mix to a soft dough. Knead 1 minute on a lightly floured board; roll to about 1/2-inch thickness. Using a 3-inch biscuit cutter, cut an even number of rounds — 2 rounds per serving.",
-            "Use a little of the remaining butter to grease a baking sheet. Melt remaining butter. Place half the rounds on the sheet; brush with melted butter; place remaining rounds on top. Bake 10–15 minutes until golden brown.",
-            "Remove from oven; pull shortcakes apart. Brush insides with remaining melted butter.",
-            "Beat 1 3/4 cups heavy cream until it thickens. Add vanilla; beat again just until thick.",
-            "Place a bottom half on each plate. Top with a generous spoonful of cream and berries. Cover with the top half; add a few more berries; top with whipped cream. Serve immediately."
-          ],
-          "comments": [
-            "Extra shortcakes may be frozen; warm before using. Also good toasted for breakfast or tea. Any very ripe, macerated fruit works in place of strawberries — ripe peaches are an excellent summer alternative."
-          ],
-          "source": "Jane Grigson’s Fruit Book, adapted by Nancy Harmon Jenkins / NYT Cooking",
-          "highAltitude": {
-            "ingredientGroups": [
-              {
-                "label": "Strawberries",
-                "ingredients": [
-                  "2 pints ripe strawberries, hulled",
-                  "1/2 cup granulated sugar, or more to taste"
-                ]
-              },
-              {
-                "label": "Biscuit dough",
-                "ingredients": [
-                  "4 cups + 8 tablespoons all-purpose flour, plus more for dusting",
-                  "2 tablespoons granulated sugar",
-                  "1/4 teaspoon salt",
-                  "4 teaspoons baking powder",
-                  "3/4 cup (1 1/2 sticks) unsalted butter, softened",
-                  "1 1/4 cups heavy cream"
-                ]
-              },
-              {
-                "label": "Biscuit butter",
-                "ingredients": [
-                  "1/2 cup (1 stick) unsalted butter, for melting"
-                ]
-              },
-              {
-                "label": "Whipped cream",
-                "ingredients": [
-                  "1 3/4 cups heavy cream",
-                  "1/4 teaspoon vanilla extract"
-                ]
-              }
-            ]
-          }
         },
         {
           "title": "Summer Pudding",
@@ -21335,95 +21665,6 @@ module.exports = {
           ]
         },
         {
-          "title": "Fresh Southern Peach Cobbler",
-          "servings": "Serves 6-8   |   Bake: 425°F for 40 minutes total",
-          "source": "Allrecipes (aeposey), tested by Allrecipes Test Kitchen",
-          "ingredientGroups": [
-            {
-              "label": "Peach filling",
-              "ingredients": [
-                "8 fresh peaches, peeled, pitted, and sliced into thin wedges",
-                "1/4 cup white sugar",
-                "1/4 cup brown sugar",
-                "1/4 teaspoon ground cinnamon",
-                "1/8 teaspoon ground nutmeg",
-                "1 teaspoon fresh lemon juice",
-                "2 teaspoons cornstarch"
-              ]
-            },
-            {
-              "label": "Cobbler topping",
-              "ingredients": [
-                "1 cup all-purpose flour",
-                "1/4 cup white sugar",
-                "1/4 cup brown sugar",
-                "1 teaspoon baking powder",
-                "1/2 teaspoon salt",
-                "6 tablespoons unsalted butter, chilled and cut into small pieces",
-                "1/4 cup boiling water"
-              ]
-            },
-            {
-              "label": "Cinnamon sugar",
-              "ingredients": [
-                "3 tablespoons white sugar",
-                "1 teaspoon ground cinnamon"
-              ]
-            }
-          ],
-          "steps": [
-            "Preheat oven to 425°F.",
-            "Toss peaches with white sugar, brown sugar, cinnamon, nutmeg, lemon juice, and cornstarch. Pour into a 2-quart baking dish. Bake 10 minutes.",
-            "Meanwhile, combine flour, white sugar, brown sugar, baking powder, and salt. Blend in butter with fingertips or a pastry blender until mixture resembles coarse crumbs. Stir in boiling water until just combined.",
-            "Remove peaches from oven. Drop spoonfuls of topping over the peaches.",
-            "Stir together white sugar and cinnamon; sprinkle over entire cobbler.",
-            "Return to oven and bake until topping is golden and filling is bubbling at the edges, about 30 minutes."
-          ],
-          "highAltitude": {
-            "ingredientGroups": [
-              {
-                "label": "Peach filling",
-                "ingredients": [
-                  "8 fresh peaches, peeled, pitted, and sliced into thin wedges",
-                  "1/4 cup white sugar",
-                  "1/4 cup brown sugar",
-                  "1/4 teaspoon ground cinnamon",
-                  "1/8 teaspoon ground nutmeg",
-                  "1 teaspoon fresh lemon juice",
-                  "2 teaspoons cornstarch"
-                ]
-              },
-              {
-                "label": "Cobbler topping",
-                "ingredients": [
-                  "1 cup all-purpose flour",
-                  "1/4 cup white sugar",
-                  "1/4 cup brown sugar",
-                  "3/4 teaspoon baking powder",
-                  "1/2 teaspoon salt",
-                  "6 tablespoons unsalted butter, chilled and cut into small pieces",
-                  "1/4 cup boiling water"
-                ]
-              },
-              {
-                "label": "Cinnamon sugar",
-                "ingredients": [
-                  "3 tablespoons white sugar",
-                  "1 teaspoon ground cinnamon"
-                ]
-              }
-            ],
-            "steps": [
-              "Preheat oven to 425°F.",
-              "Toss peaches with white sugar, brown sugar, cinnamon, nutmeg, lemon juice, and cornstarch. Pour into a 2-quart baking dish. Bake 10 minutes.",
-              "Meanwhile, combine flour, white sugar, brown sugar, baking powder, and salt. Blend in butter with fingertips or a pastry blender until mixture resembles coarse crumbs. Stir in boiling water until just combined.",
-              "Remove peaches from oven. Drop spoonfuls of topping over the peaches.",
-              "Stir together white sugar and cinnamon; sprinkle over entire cobbler.",
-              "Return to oven and bake until topping is golden and filling is bubbling at the edges, about 30 minutes."
-            ]
-          }
-        },
-        {
           "title": "Disney Magical Churros",
           "servings": "Makes about 12–15 churros",
           "ingredientGroups": [
@@ -21463,112 +21704,6 @@ module.exports = {
             "Using cake flour in place of all-purpose produces a lighter, crisper texture."
           ],
           "source": "Official Disney recipe"
-        },
-        {
-          "title": "Cassata Siciliana",
-          "servings": "Serves 10–12",
-          "source": "From Chef Louisa (Villa Britannia, Taormina, Sicily)",
-          "comments": [
-            "The ricotta must be started 13–14 hours ahead (or the night before). The bagna also needs time to cool before using.",
-            "The assembled cake keeps refrigerated for 2–3 days and actually improves overnight.",
-            "High-altitude version in Appendix."
-          ],
-          "ingredientGroups": [
-            {
-              "label": "Sponge",
-              "ingredients": [
-                "200g sugar",
-                "8 eggs",
-                "250g plain flour, sieved"
-              ]
-            },
-            {
-              "label": "Bagna (soaking syrup — make ahead, must be cold)",
-              "ingredients": [
-                "2 oranges, juiced",
-                "1 apple, peeled",
-                "1 pear, peeled",
-                "1 banana, peeled",
-                "2 strawberries",
-                "50g raisins",
-                "1 liter water",
-                "100g sugar",
-                "1 bay leaf",
-                "20ml orange liqueur"
-              ]
-            },
-            {
-              "label": "Ricotta filling (13–14 hours ahead)",
-              "ingredients": [
-                "700g ricotta",
-                "100g caster sugar"
-              ]
-            },
-            {
-              "label": "Assembly",
-              "ingredients": [
-                "500ml double cream, whipped to soft peaks",
-                "1 handful raisins, soaked in orange liqueur",
-                "1 handful candied fruit, soaked in orange liqueur",
-                "50g dark chocolate, broken into small pieces"
-              ]
-            }
-          ],
-          "steps": [
-            "Ricotta (13–14 hours ahead or overnight): stir the ricotta with the caster sugar and let sit covered in the refrigerator for at least 13–14 hours.",
-            "Bagna: combine all bagna ingredients except the orange liqueur in a pan. Simmer on low heat until reduced to less than half. Let cool completely, then stir in the orange liqueur.",
-            "Sponge: beat eggs and sugar together until thick and ribbon-like. Fold in the sieved flour gently. Pour into a greased and floured cake pan and bake at 350°F for 40 minutes, until a skewer comes out clean. Cool completely before slicing.",
-            "Assembly: stir the raisins, candied fruit, and dark chocolate into the ricotta mixture. Carefully slice the cooled sponge horizontally into 4 even layers. Spoon bagna over each layer to moisten. Alternate layers of whipped cream and ricotta mixture between each sponge tier, spreading evenly. Finish the top with whipped cream, spreading to cover the cake. Refrigerate until serving. Best made a day ahead."
-          ],
-          "highAltitude": {
-            "ingredientGroups": [
-              {
-                "label": "Sponge (high altitude — 4,000–5,000 ft)",
-                "ingredients": [
-                  "180g sugar (reduced from 200g)",
-                  "8 eggs (same — but see note in steps on beating)",
-                  "265g plain flour, sieved (increased from 250g)"
-                ]
-              },
-              {
-                "label": "Bagna (soaking syrup — make ahead, must be cold)",
-                "ingredients": [
-                  "2 oranges, juiced",
-                  "1 apple, peeled",
-                  "1 pear, peeled",
-                  "1 banana, peeled",
-                  "2 strawberries",
-                  "50g raisins",
-                  "1 liter water",
-                  "100g sugar",
-                  "1 bay leaf",
-                  "20ml orange liqueur"
-                ]
-              },
-              {
-                "label": "Ricotta filling (13–14 hours ahead)",
-                "ingredients": [
-                  "700g ricotta",
-                  "100g caster sugar"
-                ]
-              },
-              {
-                "label": "Assembly",
-                "ingredients": [
-                  "500ml double cream, whipped to soft peaks",
-                  "1 handful raisins, soaked in orange liqueur",
-                  "1 handful candied fruit, soaked in orange liqueur",
-                  "50g dark chocolate, broken into small pieces"
-                ]
-              }
-            ],
-            "steps": [
-              "Ricotta (13–14 hours ahead or overnight): same as standard version.",
-              "Bagna: same as standard version.",
-              "Sponge (high-altitude): beat eggs and sugar until thick, pale, and ribbon-like — stop slightly before the mixture reaches full volume (the foam expands further in the oven at altitude). Fold in the sieved flour gently. Pour into a greased and floured cake pan and bake at 345°F (reduced from 350°F). Begin checking at 35 minutes rather than 40; the cake is done when a skewer comes out clean and it begins to pull away from the sides. Critical: immediately invert the pan onto a wire rack after removing from the oven and cool completely inverted before unmolding.",
-              "Assembly: same as standard version."
-            ]
-          }
         },
         {
           "title": "Classic Tiramisu",
@@ -21617,134 +21752,6 @@ module.exports = {
             "Working one at a time, briefly dip each ladyfinger into the espresso mixture and arrange rounded side up in a single layer, breaking pieces as needed to fill gaps. Spread half the mascarpone mixture evenly over the ladyfingers. Repeat with remaining ladyfingers and mascarpone.",
             "Dust with remaining 1 tablespoon cocoa powder. Cover and refrigerate at least 4 hours, ideally 24. Top with shaved or grated chocolate just before serving."
           ]
-        },
-        {
-          "title": "Foolproof Tarte Tatin",
-          "servings": "Serves 8",
-          "favorite": true,
-          "ingredientGroups": [
-            {
-              "label": "Apples (1–3 days ahead)",
-              "ingredients": [
-                "6–8 large firm-fleshed apples, a mix of Braeburn, Honeycrisp, and Granny Smith"
-              ]
-            },
-            {
-              "label": "Caramel base",
-              "ingredients": [
-                "6 tablespoons (80 g) salted butter, very soft",
-                "2/3 cup (135 g) granulated or light brown sugar"
-              ]
-            },
-            {
-              "label": "Pastry",
-              "ingredients": [
-                "1 sheet all-butter puff pastry, about 8 oz (store-bought)"
-              ]
-            }
-          ],
-          "steps": [
-            "At least 1 day ahead: slice off the bottom of each apple so it sits flat. Peel and quarter; trim cores and seeds. Transfer to a bowl; refrigerate lightly covered 1–3 days. (Reduces liquid in the tart; apples may brown slightly — that's fine.)",
-            "Heat oven to 375°F (or 350°F convection). Thickly coat the bottom of a 10-inch heavy ovenproof skillet (preferably nonstick metal) with butter. Sprinkle sugar evenly on top.",
-            "Cut one piece of apple into a thick round disk; place in the center as the “button.” Arrange remaining apple pieces standing on their flat ends in tight concentric circles, like petals of a flower, packing closely so they support one another.",
-            "On a floured surface, roll puff pastry to about 1/8-inch thick. Cut a circle the same diameter as the top of the skillet. Drape over apples; tuck pastry down around the edges, hugging the apple pieces together.",
-            "Place skillet on stovetop over medium heat until golden-brown juice begins to bubble around the edges, about 3 minutes. (Spoon out any excess juices if they rise too high.) Raise heat so juices are at a boil; cook until juices darken and smell caramelized, no more than 10 minutes.",
-            "Transfer skillet to oven; bake 45–50 minutes until puff pastry is browned and firm.",
-            "Let cool 5 minutes. Carefully invert onto a round serving plate. (Or cool completely in the pan and rewarm 15 minutes in a 350°F oven before inverting.) If any apples stick, retrieve and rearrange. Serve warm in wedges with heavy cream, creme fraiche, or vanilla ice cream."
-          ],
-          "source": "Ron Paprocki, adapted by Julia Moskin / NYT Cooking"
-        },
-        {
-          "title": "Pan-Baked Lemon Almond Tart",
-          "servings": "Serves 4",
-          "ingredientGroups": [
-            {
-              "label": "Batter",
-              "ingredients": [
-                "4 large eggs",
-                "1/2 to 3/4 cup granulated sugar (to taste)",
-                "Pinch of salt",
-                "1/2 cup ground almonds (almond flour)",
-                "1/2 cup heavy cream",
-                "1/2 cup sliced almonds, plus more for garnish",
-                "Zest and juice of 1 lemon"
-              ]
-            },
-            {
-              "label": "Cooking fat",
-              "ingredients": [
-                "2 tablespoons unsalted butter"
-              ]
-            },
-            {
-              "label": "To serve",
-              "ingredients": [
-                "Powdered sugar"
-              ]
-            }
-          ],
-          "steps": [
-            "Heat oven to 400°F. In a bowl, whisk together eggs, sugar, salt, ground almonds, cream, sliced almonds, lemon zest, and lemon juice.",
-            "Melt butter in an 8-inch ovenproof skillet over low heat. When foam subsides, pour in the almond mixture, tilting to distribute evenly. Cook on stovetop until edges just begin to set. Transfer to oven and bake until set, 10–15 minutes.",
-            "Briefly run under the broiler, about 1 minute, until just golden on top. Sprinkle with powdered sugar and additional sliced almonds; serve immediately."
-          ],
-          "source": "Mark Bittman / NYT Cooking"
-        },
-        {
-          "title": "Passover Profiteroles With Strawberries",
-          "servings": "Makes about 2 dozen profiteroles",
-          "ingredientGroups": [
-            {
-              "label": "Cream puff shells",
-              "ingredients": [
-                {
-                  "html": "1 batch <a href=\"baking.html#baking-sweet-passover-cream-puff-shells\">Passover Cream Puff Shells</a>"
-                }
-              ]
-            },
-            {
-              "label": "Chocolate sauce",
-              "ingredients": [
-                "4 oz semisweet chocolate, chopped",
-                "1/2 cup water",
-                "3 tablespoons unsalted butter, room temperature, cut into 3 pieces",
-                "1 teaspoon vanilla extract"
-              ]
-            },
-            {
-              "label": "Chantilly cream",
-              "ingredients": [
-                "2 cups heavy cream, well chilled",
-                "3 tablespoons plus 1 teaspoon granulated sugar",
-                "2 teaspoons vanilla extract"
-              ]
-            },
-            {
-              "label": "Strawberries",
-              "ingredients": [
-                "1 pound strawberries, hulled",
-                "2 tablespoons granulated sugar"
-              ]
-            },
-            {
-              "label": "Garnish",
-              "ingredients": [
-                "3–4 teaspoons minced raw pistachios"
-              ]
-            }
-          ],
-          "steps": [
-            "Combine chocolate and 1/2 cup water in a small heavy saucepan over low heat, stirring often, until melted and smooth, about 3 minutes. Remove from heat; stir in butter and vanilla. (Makes 1 cup; keeps covered and refrigerated 3–5 days. Rewarm before using.)",
-            "In a large chilled bowl, whip cream with sugar and vanilla at medium-high speed until stiff. Refrigerate until ready to use, up to 30 minutes.",
-            "Slice strawberries into thick lengthwise slices (about 4 cups). Place in a bowl, sprinkle with 2 tablespoons sugar, and mix gently. Refrigerate until ready to use, up to 30 minutes.",
-            "Using a serrated knife, cut off the top half of each puff and reserve as a “hat.”",
-            "Pipe whipped cream generously onto the bottom of each puff using a pastry bag fitted with a large star tip. Top with a layer of strawberries, allowing them to extend slightly over the edges. Pipe another layer of whipped cream over the berries. Set the pastry hat on top.",
-            "Drizzle with chocolate sauce (reheat over low heat if too thick). Garnish each with a pinch of minced pistachios. Serve immediately."
-          ],
-          "comments": [
-            "For Passover and pareve serving, substitute non-dairy whipping cream and margarine in the chocolate sauce; use vanilla sugar if kosher-for-Passover vanilla extract is unavailable."
-          ],
-          "source": "Faye Levy / Los Angeles Times"
         },
         {
           "title": "Old-Fashioned Butterscotch Pudding",

@@ -365,6 +365,17 @@ const CLUSTER_MAP = {
   'Potato Latkes':                                       'Central/Eastern European',
   // Baking: Sweet — General
   'All-Shortening Pie Crust':                            'General',
+  'Cherry Cobbler With Lemon-Cream Biscuits':            'General',
+  'Cinnamon Raisin Bagel Bread Pudding':                 'General',
+  'Maple-Honey Pecan Pie':                               'General',
+  'Mixed Berry Pie':                                     'General',
+  'Pan-Baked Lemon Almond Tart':                         'General',
+  'Passover Profiteroles With Strawberries':             'General',
+  'Strawberry Shortcake':                                'General',
+  // Baking: Sweet — French/Continental
+  'Foolproof Tarte Tatin':                               'French/Continental',
+  // Baking: Sweet Loaves — Central/Eastern European
+  'Cinnamon Almond Babka':                               'Central/Eastern European',
   'Blueberry Coffee Cake (Blueberry Boy Bait)':          'General',
   'Jumbo Banana-Nut Muffins':                            'General',
   'Mom’s Zucchini Bread':                          'General',
