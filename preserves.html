@@ -1710,7 +1710,7 @@
 
   // Expand every collapsed ancestor <ul> in the nav that leads to a given
   // recipe anchor ID, then scroll that nav item into view.
-  // Only opens branches — never collapses anything already open.
+  // Only opens branches — never collapses anything already open — and remembers every ancestor as open.
   function expandNavToRecipe(recipeId) {
     if (!recipeId) return;
     var navLink = document.querySelector('.nav-recipe-link[href$="#' + recipeId + '"]');
@@ -1718,10 +1718,14 @@
     // Walk up the DOM, opening any collapsed ancestor lists
     var el = navLink.parentElement;
     while (el && el !== nav) {
-      if (el.tagName === 'UL' && el.id && el.classList.contains('collapsed')) {
-        el.classList.remove('collapsed');
-        var hd = document.querySelector('[data-toggle="' + el.id + '"]');
-        if (hd) hd.classList.add('open');
+      if (el.tagName === 'UL' && el.id) {
+        if (el.classList.contains('collapsed')) {
+          el.classList.remove('collapsed');
+          var hd = document.querySelector('[data-toggle="' + el.id + '"]');
+          if (hd) hd.classList.add('open');
+        }
+        // Always persist the open state, even for lists that were already open (e.g. the
+        // default-open current section), so the whole path stays open on the next page.
         saveNavState(el.id, true);
       }
       el = el.parentElement;
@@ -1817,7 +1821,11 @@
     var currentL2Id = 'sec-preserves-children';
     var logoNav = false;
     try { logoNav = sessionStorage.getItem('logoNav') === '1'; sessionStorage.removeItem('logoNav'); } catch (ex) {}
-    if (!logoNav && navState[currentL2Id] === undefined) navState[currentL2Id] = true;
+    if (!logoNav && navState[currentL2Id] === undefined) {
+      navState[currentL2Id] = true;
+      // Persist the default-open current section so it stays open when you move to another page
+      saveNavState(currentL2Id, true);
+    }
     Object.keys(navState).forEach(function (listId) {
       if (!navState[listId]) return; // leave collapsed
       var list = document.getElementById(listId);
