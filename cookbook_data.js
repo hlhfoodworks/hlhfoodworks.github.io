@@ -2664,7 +2664,9 @@ module.exports = {
                 {
                   "label": "Pickled red onions (1 hour ahead)",
                   "ingredients": [
-                    "1 batch Quick Pickled Red Onions (see Pickling section)"
+                    {
+                      "html": "1 batch <a href=\"preserves.html#quick-pickled-red-onions\">Quick Pickled Red Onions</a> (see Pickling section)"
+                    }
                   ]
                 },
                 {
@@ -7260,7 +7262,9 @@ module.exports = {
                   "label": "For serving",
                   "ingredients": [
                     "Cooked rice",
-                    "Pikliz (see recipe)"
+                    {
+                      "html": "<a href=\"preserves.html#haitian-pikliz\">Pikliz</a> (see recipe)"
+                    }
                   ]
                 }
               ],
@@ -11109,7 +11113,9 @@ module.exports = {
               "servings": "Serves 4   |   Total: 30 min",
               "source": "Martha Rose Shulman, NYT Cooking",
               "comments": [
-                "Uses Christy's Pesto (Adapted) already in this cookbook (see Noodles section). Homemade or store-bought pesto both work. Serve with rice or noodles tossed with butter for a simple meal. These reheat well a few hours later."
+                {
+                  "html": "Uses <a href=\"sauces.html#sauces-italian-christy-s-pesto-adapted\">Christy's Pesto (Adapted)</a> already in this cookbook. Homemade or store-bought pesto both work. Serve with rice or noodles tossed with butter for a simple meal. These reheat well a few hours later."
+                }
               ],
               "ingredientGroups": [
                 {
@@ -11123,7 +11129,9 @@ module.exports = {
                 {
                   "label": "Fill",
                   "ingredients": [
-                    "¼ cup pesto (see Christy's Pesto (Adapted) in this cookbook)"
+                    {
+                      "html": "¼ cup pesto (see <a href=\"sauces.html#sauces-italian-christy-s-pesto-adapted\">Christy's Pesto (Adapted)</a> in this cookbook)"
+                    }
                   ]
                 }
               ],
@@ -13412,7 +13420,9 @@ module.exports = {
                     {
                       "label": "Pasta",
                       "ingredients": [
-                        "1 batch Busiate (see recipe, this section) or store-bought bucatini, perciatelli, or thick spaghetti"
+                        {
+                          "html": "1 batch <a href=\"noodles.html#busiate\">Busiate</a> (see recipe, this section) or store-bought bucatini, perciatelli, or thick spaghetti"
+                        }
                       ]
                     },
                     {
@@ -15502,7 +15512,9 @@ module.exports = {
               "ingredients": [
                 "2 tablespoons vegetable oil, divided",
                 "4 garlic cloves, thinly sliced",
-                "3 cups Cornbread Dressing With Sausage and Corn Nuts, crumbled",
+                {
+                  "html": "3 cups <a href=\"vegetable-sides.html#cornbread-dressing-with-sausage-and-corn-nuts\">Cornbread Dressing With Sausage and Corn Nuts</a>, crumbled"
+                },
                 "4 cups day-old cooked Jasmine or Basmati rice",
                 "1 pound Brussels sprouts, leaves separated (about 4 cups)",
                 "6 large eggs, beaten",
@@ -21001,6 +21013,7 @@ module.exports = {
           "recipes": [
             {
               "title": "Christy's Pesto (Adapted)",
+              "id": "sauces-italian-christy-s-pesto-adapted",
               "servings": "Six 2-person servings",
               "comments": [
                 "Walnuts can be swapped for pine nuts or pecans, or a mix of the two."
