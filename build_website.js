@@ -118,7 +118,7 @@ const CLUSTER_MAP = {
   'Sheet-Pan Gnocchi with Asparagus, Leeks and Peas':   'Italian',
   'Spaghetti Carbonara':                                'Italian',
   'Spaghetti with Burrata and Garlic-Chili Oil':        'Italian',
-  'Old-Fashioned Spaghetti':                            'General',
+  'Old-Fashioned Spaghetti':                            'Italian',
   'Spaghetti with Fresh Tomato and Basil Sauce':        'Italian',
   // Noodles — Mediterranean/Greek
   '"Finnish" Baked Feta Pasta':                         'Mediterranean/Greek',
@@ -141,6 +141,7 @@ const CLUSTER_MAP = {
   // Noodles — Thai
   'Fried Drunken Noodles with Chicken (Phad Kii Maw Gai)': 'Thai',
   // Noodles — Korean-inspired
+  'Gochujang Buttered Noodles':                          'Korean-inspired',
   'Kimchi Udon with Scallions':                          'Korean-inspired',
   // Noodles — Chinese
   'Biang Biang Noodles with Chili Oil (You Po Mian)':   'Chinese',
@@ -259,6 +260,7 @@ const CLUSTER_MAP = {
   'Expertly Spiced and Glazed Roast Turkey':             'General',
   'Turkey and Quinoa Meatloaf':                          'General',
   // Turkey — Indian
+  'Spicy Turkey Stir-Fry with Crisp Garlic and Ginger':  'Thai',
   'Turkey Tikka Masala':                                 'Indian',
   // Other (Meat Mains) — General
   "Christy's Jambalaya":                                 'General',

@@ -7020,6 +7020,66 @@ module.exports = {
               ]
             },
             {
+              "title": "Spicy Turkey Stir-Fry with Crisp Garlic and Ginger",
+              "servings": "Serves 4   |   Total: 25 min",
+              "source": "Melissa Clark, NYT Cooking",
+              "comments": [
+                "Ground pork can be used instead of ground turkey.",
+                "Sticky rice can be used instead of white rice.",
+                "Serve over rice for a substantial meal, or over a bed of crisp lettuce for something lighter. Let the turkey get deeply brown and do not stir it too much."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Crisp garlic and ginger",
+                  "ingredients": [
+                    "2 tablespoons neutral oil, such as safflower or grapeseed",
+                    "4 garlic cloves, thinly sliced",
+                    "1 (2-inch) knob ginger, cut into matchsticks",
+                    "Fine sea salt"
+                  ]
+                },
+                {
+                  "label": "Aromatics",
+                  "ingredients": [
+                    "2 tablespoons coconut oil (or more neutral oil)",
+                    "3 scallions, white and green parts separated, thinly sliced",
+                    "1/4 teaspoon Aleppo pepper or red pepper flakes, plus more to taste"
+                  ]
+                },
+                {
+                  "label": "Turkey",
+                  "ingredients": [
+                    "1 pound ground turkey, preferably dark meat"
+                  ]
+                },
+                {
+                  "label": "Finishing sauce",
+                  "ingredients": [
+                    "2 tablespoons lime juice, plus more to taste",
+                    "1 tablespoon fish sauce",
+                    "1/2 teaspoon soy sauce, plus more to taste",
+                    "1/2 teaspoon sugar or honey (optional)"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "Cooked white rice",
+                    "2/3 cup cilantro leaves and tender stems",
+                    "1/3 cup torn basil leaves (or use more cilantro)",
+                    "1 fresh bird's-eye chile or serrano chile, thinly sliced"
+                  ]
+                }
+              ],
+              "steps": [
+                "In a cold 12-inch skillet, combine the oil, garlic and ginger. Place over medium heat until sizzling, then continue to cook, stirring frequently, until the garlic and ginger are golden brown, 5 to 7 minutes. Transfer with a slotted spoon to a paper towel-lined plate and sprinkle lightly with salt.",
+                "Add the coconut oil to the pan, then stir in the scallion whites and cook until starting to brown, about 2 minutes. Stir in the Aleppo pepper or red pepper flakes and cook for 1 minute.",
+                "Stir in the turkey, raise the heat to medium-high, and cook, breaking up the meat with a spoon, until golden and crisp, about 7 minutes. Do not stir the meat too much, so it can turn deep brown.",
+                "Remove the pan from the heat and stir in the lime juice, fish sauce and soy sauce. Taste and add more lime juice, Aleppo pepper or red pepper flakes, soy sauce and sugar or honey if you like.",
+                "Gently mix about two-thirds of the fried garlic and ginger into the turkey. Serve the turkey over rice, topped with the cilantro, basil, scallion greens and fresh chile, and garnished with the remaining fried garlic and ginger."
+              ]
+            },
+            {
               "title": "Turkey Tikka Masala",
               "servings": "Serves 6   |   Total: 1 1/2 hrs, plus 4 hrs marinating",
               "comments": [
@@ -13793,6 +13853,58 @@ module.exports = {
                     "Heat oil in a large skillet over high heat. Add onion; stir-fry until it starts to brown, about 2 minutes. Add both bell peppers, broccoli, cashews, and salt. Stir-fry until broccoli stems are tender and cashews are slightly toasted, about 5 minutes.",
                     "Reduce heat to low. Add water and stir until it evaporates. Add garlic and ginger; stir-fry 1 minute. Turn off heat. Pour in the sauce and stir until it thickens into a glossy glaze. Add drained noodles and stir gently until evenly coated.",
                     "Serve warm."
+                  ]
+                },
+                {
+                  "title": "Gochujang Buttered Noodles",
+                  "servings": "Serves 4   |   Total: 25 min",
+                  "source": "Eric Kim, NYT Cooking",
+                  "comments": [
+                    "Use plain gochujang paste, not gochujang sauce, which often includes additives like vinegar and sugar. To measure gochujang easily, swipe the inside of the measuring cup with a little neutral oil so the paste slips right out.",
+                    "For a single serving: use 4 to 5 oz fresh or instant ramen noodles; 1 1/2 tablespoons unsalted butter (1 tablespoon to fry the garlic and 1/2 tablespoon for the sauce at the end); 3 garlic cloves; 1 heaping tablespoon gochujang; 1 tablespoon honey; 1 tablespoon sherry vinegar or rice vinegar. Decrease the cook times throughout by 1 to 2 minutes."
+                  ],
+                  "ingredientGroups": [
+                    {
+                      "label": "Pasta",
+                      "ingredients": [
+                        "1 pound spaghetti or other long pasta"
+                      ]
+                    },
+                    {
+                      "label": "Garlic butter",
+                      "ingredients": [
+                        "4 tablespoons unsalted butter",
+                        "12 garlic cloves, finely chopped (about 1/3 cup)",
+                        "Salt"
+                      ]
+                    },
+                    {
+                      "label": "Sauce",
+                      "ingredients": [
+                        "1/4 cup gochujang paste (not sauce)",
+                        "1/4 cup honey",
+                        "1/4 cup sherry vinegar or rice vinegar"
+                      ]
+                    },
+                    {
+                      "label": "To finish",
+                      "ingredients": [
+                        "2 tablespoons unsalted butter",
+                        "Salt and pepper"
+                      ]
+                    },
+                    {
+                      "label": "To serve (optional)",
+                      "ingredients": [
+                        "Finely chopped cilantro or thinly sliced scallions"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Bring a large pot of water to a boil. Add the spaghetti and cook according to package instructions. Reserve 1 cup of the cooking water. Drain the spaghetti and return it to its pot.",
+                    "While the pasta cooks, melt the 4 tablespoons butter in a skillet over medium-low. Add the garlic and season generously with salt. Cook, stirring occasionally, until the garlic starts to soften but not brown, 1 to 3 minutes.",
+                    "Stir in the gochujang, honey and vinegar and bring to a simmer over medium-high. Cook, stirring constantly, until the mixture reduces significantly, 3 to 4 minutes; when you drag a spatula across the bottom of the pan, it should leave behind a trail that stays put for about 3 seconds. Remove from the heat.",
+                    "Transfer the sauce to the pot with the spaghetti and add the remaining 2 tablespoons butter. Vigorously stir until the butter melts. Add splashes of the pasta cooking water, as needed, to thin out the sauce. Taste and season with salt and pepper. Top with the cilantro or scallions (if using) and serve immediately."
                   ]
                 },
                 {
