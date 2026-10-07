@@ -10174,6 +10174,67 @@ module.exports = {
               ]
             },
             {
+              "title": "Coconut Curry Chickpeas with Pumpkin and Lime",
+              "servings": "Serves 4 to 6   |   Total: 30 min",
+              "source": "Melissa Clark, NYT Cooking",
+              "comments": [
+                "Do not use light coconut milk.",
+                "To add more vegetables, stir in spinach, baby kale or sliced green beans during the last few minutes of cooking and let them soften in the sauce.",
+                "Serve over rice or couscous if you like."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Aromatics",
+                  "ingredients": [
+                    "3 tablespoons neutral oil, such as sunflower or canola",
+                    "1 large onion, chopped",
+                    "2 jalapeños, seeded or not, thinly sliced",
+                    "1 bay leaf"
+                  ]
+                },
+                {
+                  "label": "Ginger, garlic and spices",
+                  "ingredients": [
+                    "1 knob ginger (about 1 inch), minced",
+                    "4 garlic cloves, minced",
+                    "1 1/2 teaspoons garam masala",
+                    "1 teaspoon ground cumin",
+                    "1/2 teaspoon ground turmeric"
+                  ]
+                },
+                {
+                  "label": "Chickpeas and sauce",
+                  "ingredients": [
+                    "2 (15-oz) cans chickpeas, rinsed",
+                    "1 (13.5-oz) can coconut milk (not light)",
+                    "1 (13.5-oz) can pumpkin puree",
+                    "1/2 cup water",
+                    "1 1/2 teaspoons fine sea salt, more as needed"
+                  ]
+                },
+                {
+                  "label": "To finish",
+                  "ingredients": [
+                    "3/4 cup chopped cilantro, plus more for serving",
+                    "2 to 3 tablespoons fresh lime juice, plus lime wedges for serving"
+                  ]
+                },
+                {
+                  "label": "To serve (optional)",
+                  "ingredients": [
+                    "Cooked rice or couscous"
+                  ]
+                }
+              ],
+              "steps": [
+                "Heat the oil in a large skillet over medium-high heat. Stir in the onion, jalapeños and bay leaf. Cook, stirring occasionally, until the onion is golden on the edges, about 8 minutes.",
+                "Add the ginger and garlic and cook until fragrant, about 2 minutes, stirring frequently. Stir in the garam masala, cumin and turmeric and cook for an additional 30 seconds.",
+                "Stir in the chickpeas, coconut milk, pumpkin, 1/2 cup water and salt. Bring to a simmer and continue to simmer for 10 minutes, stirring occasionally, to let the flavors meld. Add more water if it starts to look too thick.",
+                "Stir in the cilantro and lime juice to taste. Taste and add more salt if necessary.",
+                "Serve over rice or couscous if you like, topped with more cilantro and with lime wedges on the side."
+              ]
+            },
+            {
               "title": "Chickpea Tikka Masala",
               "servings": "Serves 4–6   |   Makes about 5 cups",
               "source": "Washington Post",
@@ -12473,6 +12534,50 @@ module.exports = {
             {
               "title": "Cream, Butter & Cheese",
               "recipes": [
+                {
+                  "title": "Creamy Cajun Chicken Pasta",
+                  "servings": "Serves 2 to 3   |   Total: 30 min",
+                  "comments": [
+                    "Inspired by the Southwestern/Cajun chicken pasta at Friday's.",
+                    "Fettuccine is the pasta used in the original; any long pasta works."
+                  ],
+                  "ingredientGroups": [
+                    {
+                      "label": "Pasta",
+                      "ingredients": [
+                        "6 oz fettuccine"
+                      ]
+                    },
+                    {
+                      "label": "Chicken and vegetables",
+                      "ingredients": [
+                        "1 tablespoon olive oil",
+                        "5 oz boneless, skinless chicken breast, cut into thin strips",
+                        "1/2 red bell pepper, diced",
+                        "1/2 green bell pepper, diced",
+                        "1/2 onion, diced",
+                        "2 garlic cloves, minced"
+                      ]
+                    },
+                    {
+                      "label": "Sauce",
+                      "ingredients": [
+                        "1 cup heavy cream",
+                        "1 1/2 tablespoons Cajun seasoning",
+                        "1 teaspoon paprika",
+                        "1 teaspoon black pepper",
+                        "Salt"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Cook the fettuccine in a large pot of salted boiling water until al dente. Reserve a splash of the pasta water, then drain.",
+                    "Meanwhile, heat the olive oil in a large skillet over medium-high heat. Add the chicken and cook, stirring, until browned and cooked through, 5 to 6 minutes.",
+                    "Add the red and green bell peppers and the onion and cook until softened, 3 to 4 minutes. Add the garlic and cook about 30 seconds, until fragrant.",
+                    "Stir in the Cajun seasoning, paprika and black pepper, then pour in the cream. Simmer over medium-low heat until the sauce thickens slightly, 3 to 5 minutes. Season with salt to taste.",
+                    "Add the pasta and toss to coat, loosening with a splash of the reserved pasta water if needed. Serve hot."
+                  ]
+                },
                 {
                   "title": "Brie Linguine",
                   "servings": "Serves 6   |   Prep: 15 minutes, plus 2–3 hours resting",

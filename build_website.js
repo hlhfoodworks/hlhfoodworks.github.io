@@ -97,6 +97,7 @@ const CLUSTER_MAP = {
   'Creamy Baked Mac and Cheese':                         'General',
   'Spinach Lasagna':                                     'Italian',
   // Noodles — Italian
+  'Creamy Cajun Chicken Pasta':                          'General',
   'Brie Linguine':                                       'Italian',
   'Crisp Gnocchi with Sausage and Peas':                 'Italian',
   'Crispy-Crackly Minty-Pea Lasagna':                   'Italian',
@@ -504,6 +505,7 @@ const CLUSTER_MAP = {
   'Aloo Gobi':                                           'Indian',
   'Baked Rajma (Punjabi-Style Red Beans With Cream)':    'Indian',
   'Cauliflower Curry':                                   'Indian',
+  'Coconut Curry Chickpeas with Pumpkin and Lime':       'Indian',
   'Chickpea Tikka Masala':                               'Indian',
   'Gobhi Masaledaar':                                    'Indian',
   'Indian Spiced Zucchini and Tomatoes':                 'Indian',
