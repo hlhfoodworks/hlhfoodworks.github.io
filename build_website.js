@@ -118,6 +118,7 @@ const CLUSTER_MAP = {
   'Sheet-Pan Gnocchi with Asparagus, Leeks and Peas':   'Italian',
   'Spaghetti Carbonara':                                'Italian',
   'Spaghetti with Burrata and Garlic-Chili Oil':        'Italian',
+  'Old-Fashioned Spaghetti':                            'General',
   'Spaghetti with Fresh Tomato and Basil Sauce':        'Italian',
   // Noodles — Mediterranean/Greek
   '"Finnish" Baked Feta Pasta':                         'Mediterranean/Greek',

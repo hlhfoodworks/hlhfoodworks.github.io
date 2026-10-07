@@ -12157,6 +12157,62 @@ module.exports = {
                   ]
                 },
                 {
+                  "title": "Old-Fashioned Spaghetti",
+                  "servings": "Serves 2   |   Total: 35 min",
+                  "comments": [
+                    "The very first recipe Eric ever cooked for Lauren."
+                  ],
+                  "ingredientGroups": [
+                    {
+                      "label": "Aromatics",
+                      "ingredients": [
+                        "1 tablespoon olive oil",
+                        "1/4 cup finely diced onion",
+                        "1/4 cup finely diced green bell pepper",
+                        "1 to 2 garlic cloves, minced"
+                      ]
+                    },
+                    {
+                      "label": "Meat",
+                      "ingredients": [
+                        "1/2 pound ground beef"
+                      ]
+                    },
+                    {
+                      "label": "Sauce",
+                      "ingredients": [
+                        "1 can (14 oz) crushed tomatoes",
+                        "2 tablespoons tomato paste",
+                        "1/2 teaspoon dried oregano",
+                        "1/2 teaspoon dried basil",
+                        "1/4 teaspoon sugar",
+                        "Salt",
+                        "Black pepper"
+                      ]
+                    },
+                    {
+                      "label": "Pasta",
+                      "ingredients": [
+                        "4 to 6 oz spaghetti",
+                        "Salt, for the pasta water"
+                      ]
+                    },
+                    {
+                      "label": "To serve",
+                      "ingredients": [
+                        "Shaved Parmesan cheese"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Heat the olive oil in a skillet over medium heat. Add the onion and green bell pepper and cook 3 to 4 minutes, until they begin to soften. Stir in the garlic and cook about 30 seconds, until fragrant.",
+                    "Add the ground beef. Break it up with a wooden spoon and cook about 6 minutes, until fully browned. Drain any excess grease.",
+                    "Stir in the tomato paste, then the crushed tomatoes. Add the oregano, basil, sugar, salt and pepper. Reduce the heat and simmer uncovered 15 to 20 minutes, until the flavors meld and the peppers soften.",
+                    "Meanwhile, cook the spaghetti in a pot of salted boiling water until al dente. Drain, reserving a splash of the pasta water.",
+                    "Toss the spaghetti in the skillet with the sauce. If it is too thick, loosen it with a splash of the reserved pasta water. Serve hot, topped with shaved Parmesan."
+                  ]
+                },
+                {
                   "title": "Spaghetti with Fresh Tomato and Basil Sauce",
                   "servings": "Serves 4   |   Total: 40 min",
                   "source": "New York Times (Scott Conant)",
