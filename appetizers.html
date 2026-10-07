@@ -580,27 +580,11 @@
   }
   .ing-sug:hover, .ing-sug.active { background: #4e3522; color: var(--nav-hover); }
   .ing-sug-n { color: #9a7a58; font-size: 0.7rem; }
-  #ing-opts { display: flex; align-items: center; flex-wrap: wrap; gap: 4px 10px; margin-top: 7px; font-size: 0.72rem; color: #a8906e; }
-  #ing-opts select {
-    background: #4e3522; color: var(--nav-text); border: none; border-radius: 4px; font-size: 0.74rem; font-family: inherit; padding: 1px 2px;
-  }
-  #ing-opts label { display: inline-flex; align-items: center; gap: 4px; cursor: pointer; }
+  #ing-opts { display: flex; margin-top: 5px; }
   #ing-clear { display: none; background: none; border: none; color: #9a7a58; font-size: 0.72rem; cursor: pointer; text-decoration: underline; padding: 0; margin-left: auto; font-family: inherit; }
   #ing-clear:hover { color: var(--nav-hover); }
   #ing-hint { font-size: 0.72rem; color: #c9a77a; margin-top: 6px; }
   #ing-hint a { color: var(--nav-hover); }
-  .ing-row { border-bottom: 1px solid #4a3220; padding-bottom: 3px; }
-  .ing-row .sr-item { padding-bottom: 0; }
-  .ing-have {
-    flex-shrink: 0; margin-left: 6px; font-size: 0.68rem; padding: 0 6px; border-radius: 8px;
-    background: #4e3522; color: #c9a77a; align-self: flex-start;
-  }
-  .ing-have.full { background: var(--fav); color: #1a0e00; font-weight: bold; }
-  .ing-need {
-    font-size: 0.68rem; color: #8a6e4c; padding: 0 14px 0 25px; cursor: pointer; font-style: italic;
-    overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
-  }
-  .ing-need.open { display: block; -webkit-line-clamp: unset; }
   @media (max-width: 480px) { #ing-input { font-size: 16px; } }
 
 </style>
@@ -627,10 +611,7 @@
       <div id="ing-chips"><input id="ing-input" type="text" placeholder="Add an ingredient…" autocomplete="off" autocapitalize="off" aria-label="Add an ingredient"></div>
       <div id="ing-suggest"></div>
       <div id="ing-hint"></div>
-      <div id="ing-opts">
-        <label>Missing at most <select id="ing-missing"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3" selected>3</option><option value="5">5</option><option value="any">any</option></select></label>
-        <label><input type="checkbox" id="ing-usual" checked> Assume basic pantry</label>
-        <button type="button" id="ing-clear">Clear</button>
+      <div id="ing-opts"><button type="button" id="ing-clear">Clear</button>
       </div>
     </div>
   </div>
@@ -2874,8 +2855,6 @@
   var ingInput = document.getElementById('ing-input');
   var suggest = document.getElementById('ing-suggest');
   var hintEl = document.getElementById('ing-hint');
-  var missSel = document.getElementById('ing-missing');
-  var usualCb = document.getElementById('ing-usual');
   var clearBtn = document.getElementById('ing-clear');
   if (!ingWrap) return;
 
@@ -3050,44 +3029,29 @@
   ingInput.addEventListener('blur', function () { setTimeout(hideSuggest, 120); });
   chipBox.addEventListener('click', function () { ingInput.focus(); });
   clearBtn.addEventListener('click', function () { chips = []; afterChange(); ingInput.focus(); });
-  missSel.addEventListener('change', function () { store('ingMissing', missSel.value); runIngSearch(); });
-  usualCb.addEventListener('change', function () { store('ingUsual', usualCb.checked ? '1' : '0'); runIngSearch(); });
-
-  // ── matching ──
-  function matcher(haveSet) {
-    var memo = {};
-    return function covered(i) {
-      if (memo[i] !== undefined) return memo[i];
-      var ok = !!haveSet[i];
-      if (!ok) { var ch = chain(i); for (var a = 0; a < ch.length && !ok; a++) if (haveSet[ch[a]]) ok = true; }
-      if (!ok && IDX.mem[i]) { var m = IDX.mem[i]; for (var b = 0; b < m.length && !ok; b++) if (haveSet[m[b]]) ok = true; }
-      memo[i] = ok; return ok;
-    };
+  // ── matching: a recipe matches when it uses EVERY ingredient typed (inspiration search, not a shopping check) ──
+  // A typed ingredient h is found in a recipe if the recipe lists h, lists a child of h (typing a parent finds its children),
+  // lists an either/or group containing one of those, or lists an "(any)" item whose members include h.
+  var recSets = null;
+  function buildSets() {
+    if (recSets) return;
+    recSets = IDX.recipes.map(function (r) {
+      var set = {};
+      var add = function (i) { set[i] = 1; chain(i).forEach(function (p) { set[p] = 1; }); if (IDX.mem[i]) IDX.mem[i].forEach(function (m) { set[m] = 1; chain(m).forEach(function (p) { set[p] = 1; }); }); };
+      r.req.forEach(add);
+      (r.any || []).forEach(function (g) { g.forEach(add); });
+      (r.opt || []).forEach(add);
+      return set;
+    });
   }
-  function evaluate(haveIdx, assumeUsual) {
-    var haveSet = {}; haveIdx.forEach(function (i) { haveSet[i] = 1; });
-    var covered = matcher(haveSet);
-    var skip = function (i) { return IDX.sA[i] || (assumeUsual && IDX.sU[i]); };
+  function evaluate(haveIdx) {
+    buildSets();
     var out = [];
-    IDX.recipes.forEach(function (r) {
-      var needed = 0, got = 0, missing = [];
-      r.req.forEach(function (i) {
-        if (skip(i)) return;
-        needed++;
-        if (covered(i)) got++; else missing.push(IDX.names[i]);
-      });
-      (r.any || []).forEach(function (g) {
-        if (g.some(skip)) return;
-        needed++;
-        if (g.some(covered)) got++; else missing.push(g.map(function (i) { return IDX.names[i]; }).join(' or '));
-      });
-      if (!needed || !got) return;
-      out.push({ r: r, needed: needed, got: got, missing: missing });
+    IDX.recipes.forEach(function (r, ri) {
+      var set = recSets[ri];
+      if (haveIdx.every(function (h) { return set[h]; })) out.push({ r: r });
     });
-    out.sort(function (a, b) {
-      return (b.got / b.needed) - (a.got / a.needed) || (a.needed - a.got) - (b.needed - b.got) ||
-        (b.r.f ? 1 : 0) - (a.r.f ? 1 : 0) || a.r.t.localeCompare(b.r.t);
-    });
+    out.sort(function (a, b) { return (b.r.f ? 1 : 0) - (a.r.f ? 1 : 0) || a.r.t.localeCompare(b.r.t); });
     return out;
   }
 
@@ -3115,31 +3079,24 @@
       }
       var known = chips.filter(function (c) { return c.idx >= 0; }).map(function (c) { return c.idx; });
       if (!known.length) { searchResults.style.display = 'none'; return; }
-      var all = evaluate(known, usualCb.checked);
-      var maxMiss = missSel.value === 'any' ? 999 : parseInt(missSel.value, 10);
-      var res = all.filter(function (m) { return (m.needed - m.got) <= maxMiss; });
-
+      var res = evaluate(known);
       if (!res.length) {
-        var onlyStaples = known.every(function (i) { return IDX.sA[i] || (usualCb.checked && IDX.sU[i]); });
-        searchResults.innerHTML = '<div class="sr-empty">' + (onlyStaples ? 'Pantry staples are not counted. Add other ingredients.' :
-          (all.length ? 'No recipes within ' + maxMiss + ' missing. Try raising “missing at most”.' : 'No recipes found.')) + '</div>';
+        searchResults.innerHTML = '<div class="sr-empty">No recipes use ' + (known.length > 1 ? 'all of these' : 'this') + '.' + (known.length > 1 ? ' Try removing one.' : '') + '</div>';
         searchResults.style.display = 'block';
         return;
       }
       var label = document.createElement('div');
       label.className = 'sr-label';
-      label.textContent = res.length + ' recipe' + (res.length !== 1 ? 's' : '') + (all.length > res.length ? ' (' + (all.length - res.length) + ' more with more missing)' : '');
+      label.textContent = res.length + ' recipe' + (res.length !== 1 ? 's' : '');
       searchResults.appendChild(label);
 
-      res.slice(0, 100).forEach(function (m) {
+      res.forEach(function (m) {
         var r = m.r, isSamePage = r.page === CURRENT_PAGE;
-        var row = document.createElement('div');
-        row.className = 'ing-row';
         var a = document.createElement('a');
         a.className = 'sr-item';
         a.href = isSamePage ? (r.page + '#' + r.id) : (r.page + '?have=' + encodeURIComponent(haveParam()) + '#' + r.id);
-        a.innerHTML = '<span class="sr-star">' + (r.f ? '★' : '') + '</span><span class="sr-title">' + esc(r.t) + '</span>' +
-          '<span class="ing-have' + (m.got === m.needed ? ' full' : '') + '">' + m.got + '/' + m.needed + '</span>';
+        a.innerHTML = '<span class="sr-star">' + (r.f ? '\u2605' : '') + '</span><span class="sr-title">' + esc(r.t) + '</span>' +
+          (!isSamePage ? '<span class="sr-section">' + esc(r.s) + '</span>' : '');
         if (isSamePage) {
           a.addEventListener('click', function (e) {
             e.preventDefault();
@@ -3148,15 +3105,7 @@
             expandNavToRecipe(r.id);
           });
         }
-        row.appendChild(a);
-        var need = document.createElement('div');
-        need.className = 'ing-need';
-        var sec = isSamePage ? '' : r.s + ' · ';
-        need.textContent = m.missing.length ? sec + 'Need: ' + m.missing.join(', ') : sec + 'You have everything';
-        need.title = 'Click to expand';
-        need.addEventListener('click', function () { need.classList.toggle('open'); });
-        row.appendChild(need);
-        searchResults.appendChild(row);
+        searchResults.appendChild(a);
       });
       searchResults.style.display = 'block';
       if (window.innerWidth <= 480) {
@@ -3197,8 +3146,6 @@
   });
 
   // ── restore state ──
-  var sm = load('ingMissing'); if (sm && /^(0|1|2|3|5|any)$/.test(sm)) missSel.value = sm;
-  var su = load('ingUsual'); if (su === '0') usualCb.checked = false;
   var urlHave = new URLSearchParams(location.search).get('have');
   var saved = null;
   try { saved = JSON.parse(load('ingChips') || 'null'); } catch (e) {}

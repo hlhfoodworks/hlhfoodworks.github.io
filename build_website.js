@@ -1621,10 +1621,7 @@ ${INGREDIENT_CSS}
       <div id="ing-chips"><input id="ing-input" type="text" placeholder="Add an ingredient…" autocomplete="off" autocapitalize="off" aria-label="Add an ingredient"></div>
       <div id="ing-suggest"></div>
       <div id="ing-hint"></div>
-      <div id="ing-opts">
-        <label>Missing at most <select id="ing-missing"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3" selected>3</option><option value="5">5</option><option value="any">any</option></select></label>
-        <label><input type="checkbox" id="ing-usual" checked> Assume basic pantry</label>
-        <button type="button" id="ing-clear">Clear</button>
+      <div id="ing-opts"><button type="button" id="ing-clear">Clear</button>
       </div>
     </div>
   </div>

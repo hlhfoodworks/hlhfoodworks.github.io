@@ -41,25 +41,9 @@
   }
   .ing-sug:hover, .ing-sug.active { background: #4e3522; color: var(--nav-hover); }
   .ing-sug-n { color: #9a7a58; font-size: 0.7rem; }
-  #ing-opts { display: flex; align-items: center; flex-wrap: wrap; gap: 4px 10px; margin-top: 7px; font-size: 0.72rem; color: #a8906e; }
-  #ing-opts select {
-    background: #4e3522; color: var(--nav-text); border: none; border-radius: 4px; font-size: 0.74rem; font-family: inherit; padding: 1px 2px;
-  }
-  #ing-opts label { display: inline-flex; align-items: center; gap: 4px; cursor: pointer; }
+  #ing-opts { display: flex; margin-top: 5px; }
   #ing-clear { display: none; background: none; border: none; color: #9a7a58; font-size: 0.72rem; cursor: pointer; text-decoration: underline; padding: 0; margin-left: auto; font-family: inherit; }
   #ing-clear:hover { color: var(--nav-hover); }
   #ing-hint { font-size: 0.72rem; color: #c9a77a; margin-top: 6px; }
   #ing-hint a { color: var(--nav-hover); }
-  .ing-row { border-bottom: 1px solid #4a3220; padding-bottom: 3px; }
-  .ing-row .sr-item { padding-bottom: 0; }
-  .ing-have {
-    flex-shrink: 0; margin-left: 6px; font-size: 0.68rem; padding: 0 6px; border-radius: 8px;
-    background: #4e3522; color: #c9a77a; align-self: flex-start;
-  }
-  .ing-have.full { background: var(--fav); color: #1a0e00; font-weight: bold; }
-  .ing-need {
-    font-size: 0.68rem; color: #8a6e4c; padding: 0 14px 0 25px; cursor: pointer; font-style: italic;
-    overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
-  }
-  .ing-need.open { display: block; -webkit-line-clamp: unset; }
   @media (max-width: 480px) { #ing-input { font-size: 16px; } }
