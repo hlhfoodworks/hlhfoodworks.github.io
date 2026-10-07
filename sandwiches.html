@@ -1765,13 +1765,13 @@
   function removeChip(n) { chips.splice(n, 1); afterChange(); }
   function persist() { store('ingChips', JSON.stringify(chips.map(function (c) { return c.text; }))); }
   function renderChips() {
-    chipBox.innerHTML = '';
+    Array.prototype.slice.call(chipBox.querySelectorAll('.ing-chip')).forEach(function (x) { chipBox.removeChild(x); });   // keep the input
     chips.forEach(function (c, n) {
       var s = document.createElement('span');
       s.className = 'ing-chip' + (c.idx < 0 ? ' unknown' : '');
       s.innerHTML = esc(c.text) + '<button type="button" aria-label="Remove ' + esc(c.text) + '">✕</button>';
       s.querySelector('button').addEventListener('click', function () { removeChip(n); ingInput.focus(); });
-      chipBox.appendChild(s);
+      chipBox.insertBefore(s, ingInput);
     });
     clearBtn.style.display = chips.length ? 'inline' : 'none';
   }
