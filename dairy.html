@@ -537,6 +537,68 @@
     #search-results .sr-item { padding-top: 5px; padding-bottom: 5px; }
     #search-results .sr-label { padding-top: 5px; padding-bottom: 3px; }
   }
+  /* ── Ingredient search mode ── */
+  #mode-toggle { display: flex; margin-bottom: 8px; border: 1px solid #5a3e28; border-radius: var(--radius); overflow: hidden; }
+  #mode-toggle button {
+    flex: 1; padding: 5px 4px; font-size: 0.74rem; font-family: inherit; cursor: pointer;
+    background: none; border: none; color: #a8906e; line-height: 1.2;
+  }
+  #mode-toggle button + button { border-left: 1px solid #5a3e28; }
+  #mode-toggle button:hover { color: var(--nav-hover); background: #4e3522; }
+  #mode-toggle button.active { background: #4e3522; color: var(--nav-text); font-weight: bold; }
+  #ing-wrap { display: none; position: relative; }
+  #ing-chips {
+    display: flex; flex-wrap: wrap; gap: 4px; align-items: center;
+    background: #4e3522; border-radius: var(--radius); padding: 5px 6px; cursor: text;
+  }
+  #ing-input {
+    flex: 1; min-width: 90px; border: none; background: none; outline: none;
+    color: var(--nav-text); font-size: 0.85rem; font-family: inherit; padding: 2px 2px;
+  }
+  #ing-input::placeholder { color: #9a7a58; }
+  #ing-chips:focus-within { outline: 2px solid var(--nav-hover); }
+  .ing-chip {
+    display: inline-flex; align-items: center; gap: 3px; background: #6b4a2e; color: var(--nav-text);
+    border-radius: 10px; padding: 1px 3px 1px 8px; font-size: 0.76rem;
+  }
+  .ing-chip.unknown { background: none; border: 1px dashed #9a7a58; color: #c9a77a; }
+  .ing-chip button {
+    background: none; border: none; color: #c9a77a; cursor: pointer; font-size: 0.7rem; padding: 0 4px; line-height: 1;
+  }
+  .ing-chip button:hover { color: var(--nav-hover); }
+  #ing-suggest {
+    display: none; position: absolute; left: 0; right: 0; z-index: 50; margin-top: 2px;
+    background: #3a2616; border: 1px solid #5a3e28; border-radius: var(--radius); max-height: 240px; overflow-y: auto;
+  }
+  .ing-sug {
+    display: flex; justify-content: space-between; width: 100%; background: none; border: none;
+    padding: 5px 10px; font-size: 0.8rem; font-family: inherit; color: var(--nav-text); cursor: pointer; text-align: left;
+  }
+  .ing-sug:hover, .ing-sug.active { background: #4e3522; color: var(--nav-hover); }
+  .ing-sug-n { color: #9a7a58; font-size: 0.7rem; }
+  #ing-opts { display: flex; align-items: center; flex-wrap: wrap; gap: 4px 10px; margin-top: 7px; font-size: 0.72rem; color: #a8906e; }
+  #ing-opts select {
+    background: #4e3522; color: var(--nav-text); border: none; border-radius: 4px; font-size: 0.74rem; font-family: inherit; padding: 1px 2px;
+  }
+  #ing-opts label { display: inline-flex; align-items: center; gap: 4px; cursor: pointer; }
+  #ing-clear { display: none; background: none; border: none; color: #9a7a58; font-size: 0.72rem; cursor: pointer; text-decoration: underline; padding: 0; margin-left: auto; font-family: inherit; }
+  #ing-clear:hover { color: var(--nav-hover); }
+  #ing-hint { font-size: 0.72rem; color: #c9a77a; margin-top: 6px; }
+  #ing-hint a { color: var(--nav-hover); }
+  .ing-row { border-bottom: 1px solid #4a3220; padding-bottom: 3px; }
+  .ing-row .sr-item { padding-bottom: 0; }
+  .ing-have {
+    flex-shrink: 0; margin-left: 6px; font-size: 0.68rem; padding: 0 6px; border-radius: 8px;
+    background: #4e3522; color: #c9a77a; align-self: flex-start;
+  }
+  .ing-have.full { background: var(--fav); color: #1a0e00; font-weight: bold; }
+  .ing-need {
+    font-size: 0.68rem; color: #8a6e4c; padding: 0 14px 0 25px; cursor: pointer; font-style: italic;
+    overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+  }
+  .ing-need.open { display: block; -webkit-line-clamp: unset; }
+  @media (max-width: 480px) { #ing-input { font-size: 16px; } }
+
 </style>
 </head>
 <body>
@@ -549,9 +611,23 @@
 <div id="nav">
   <div id="nav-header"><h1><a href="breakfast.html" id="cookbook-logo-link">Muhlheim Family Cookbook</a></h1></div>
   <div id="search-wrap">
+    <div id="mode-toggle" role="group" aria-label="Search mode">
+      <button type="button" data-mode="name" class="active" aria-pressed="true">Recipe name</button>
+      <button type="button" data-mode="ing" aria-pressed="false">I have these ingredients</button>
+    </div>
     <div id="search-box-wrap">
       <input id="search" type="text" placeholder="Search recipes…" autocomplete="off">
       <button id="search-clear" title="Clear search">✕</button>
+    </div>
+    <div id="ing-wrap">
+      <div id="ing-chips"><input id="ing-input" type="text" placeholder="Add an ingredient…" autocomplete="off" autocapitalize="off" aria-label="Add an ingredient"></div>
+      <div id="ing-suggest"></div>
+      <div id="ing-hint"></div>
+      <div id="ing-opts">
+        <label>Missing at most <select id="ing-missing"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3" selected>3</option><option value="5">5</option><option value="any">any</option></select></label>
+        <label><input type="checkbox" id="ing-usual" checked> Assume basic pantry</label>
+        <button type="button" id="ing-clear">Clear</button>
+      </div>
     </div>
   </div>
   <div id="search-results"></div>
@@ -1855,6 +1931,361 @@
     searchClear.style.display = 'block';
     runSearch();
   }
+
+// ── Ingredient search ("I have these ingredients") ───────────────────────
+// Source file for the client code inlined into every page by build_website.js. Plain ES5/ES6, no template literals,
+// no "</script". Uses CURRENT_PAGE, expandNavToRecipe, search, searchClear, searchResults from the page script.
+(function () {
+  var modeBtns = document.querySelectorAll('#mode-toggle button');
+  var nameWrap = document.getElementById('search-box-wrap');
+  var ingWrap = document.getElementById('ing-wrap');
+  var chipBox = document.getElementById('ing-chips');
+  var ingInput = document.getElementById('ing-input');
+  var suggest = document.getElementById('ing-suggest');
+  var hintEl = document.getElementById('ing-hint');
+  var missSel = document.getElementById('ing-missing');
+  var usualCb = document.getElementById('ing-usual');
+  var clearBtn = document.getElementById('ing-clear');
+  if (!ingWrap) return;
+
+  var mode = 'name';
+  var chips = [];                    // [{ text, idx }]  idx = index into IDX.names, or -1 if unknown
+  var nameQuery = '';                // remembered recipe-name query while in ingredient mode
+  var IDX = null, loading = false, queue = [];
+  var keyMap = {}, children = {}, recipeCount = [], sugActive = -1, sugItems = [];
+
+  function esc(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;'); }
+  function store(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+  function load(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+
+  // same folding as ingredient_index.js (foldKey): accents, hyphens, plurals
+  function keyWord(w) { return (w.length > 3 && !/(ss|us|is)$/.test(w)) ? w.replace(/ies$/, 'y').replace(/s$/, '') : w; }
+  function foldKey(s) {
+    return s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/-/g, ' ').replace(/[^a-z0-9' ]+/g, ' ')
+      .replace(/\s+/g, ' ').trim().split(' ').map(keyWord).join(' ');
+  }
+
+  function loadIdx(cb) {
+    if (IDX) { cb(IDX); return; }
+    queue.push(cb);
+    if (loading) return;
+    loading = true;
+    fetch('ingredient-index.json').then(function (r) { return r.json(); }).then(function (d) {
+      IDX = d; prep(); loading = false; queue.splice(0).forEach(function (f) { f(IDX); });
+    }).catch(function () {
+      IDX = { names: [], keys: [], parent: {}, virtual: [], stapleA: [], stapleU: [], alias: {}, mem: {}, recipes: [] };
+      prep(); loading = false; queue.splice(0).forEach(function (f) { f(IDX); });
+    });
+  }
+
+  function chain(i) { var out = [], c = IDX.parent[i], g = 0; while (c !== undefined && g++ < 10) { out.push(c); c = IDX.parent[c]; } return out; }
+
+  function prep() {
+    IDX.keys.forEach(function (k, i) { keyMap[k] = i; });
+    IDX.sA = {}; IDX.sU = {};
+    IDX.stapleA.forEach(function (i) { IDX.sA[i] = 1; });
+    IDX.stapleU.forEach(function (i) { IDX.sU[i] = 1; });
+    // recipe counts per name, counting descendants too (typing a parent finds its children)
+    recipeCount = IDX.names.map(function () { return {}; });
+    IDX.recipes.forEach(function (r, ri) {
+      var all = r.req.slice();
+      (r.any || []).forEach(function (g) { all = all.concat(g); });
+      all.forEach(function (i) { recipeCount[i][ri] = 1; chain(i).forEach(function (p) { recipeCount[p][ri] = 1; }); });
+    });
+    recipeCount = recipeCount.map(function (o) { return Object.keys(o).length; });
+  }
+
+  // ── resolving typed text to a canonical name ──
+  function resolve(text) {
+    var k = foldKey(text);
+    if (!k) return -1;
+    if (keyMap[k] !== undefined) return keyMap[k];
+    if (IDX.alias[k] !== undefined) return IDX.alias[k];
+    return -1;
+  }
+  function lev(a, b) {
+    var m = a.length, n = b.length, d = [], i, j;
+    for (i = 0; i <= m; i++) { d[i] = [i]; }
+    for (j = 0; j <= n; j++) d[0][j] = j;
+    for (i = 1; i <= m; i++) for (j = 1; j <= n; j++) d[i][j] = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+    return d[m][n];
+  }
+  function didYouMean(text) {
+    var k = foldKey(text), out = [];
+    IDX.keys.forEach(function (n, i) {
+      if (recipeCount[i] === 0) return;
+      var s = 0;
+      if (n.indexOf(k) >= 0 || k.indexOf(n) >= 0) s = 1;
+      else if (Math.abs(n.length - k.length) <= 2 && lev(n, k) <= 2) s = 2;
+      if (s) out.push({ i: i, s: s, c: recipeCount[i] });
+    });
+    out.sort(function (a, b) { return a.s - b.s || b.c - a.c; });
+    return out.slice(0, 3).map(function (o) { return IDX.names[o.i]; });
+  }
+
+  // ── chips ──
+  function addTerms(text) {
+    var parts = text.split(/[,;\n]+/).map(function (s) { return s.trim(); }).filter(Boolean);
+    if (!parts.length) return;
+    loadIdx(function () {
+      parts.forEach(function (p) {
+        var idx = resolve(p);
+        var shown = idx >= 0 ? IDX.names[idx] : p;
+        if (chips.some(function (c) { return c.idx >= 0 ? c.idx === idx : (c.idx === -1 && idx === -1 && foldKey(c.text) === foldKey(p)); })) return;
+        chips.push({ text: shown, idx: idx });
+      });
+      afterChange();
+    });
+  }
+  function removeChip(n) { chips.splice(n, 1); afterChange(); }
+  function persist() { store('ingChips', JSON.stringify(chips.map(function (c) { return c.text; }))); }
+  function renderChips() {
+    chipBox.innerHTML = '';
+    chips.forEach(function (c, n) {
+      var s = document.createElement('span');
+      s.className = 'ing-chip' + (c.idx < 0 ? ' unknown' : '');
+      s.innerHTML = esc(c.text) + '<button type="button" aria-label="Remove ' + esc(c.text) + '">✕</button>';
+      s.querySelector('button').addEventListener('click', function () { removeChip(n); ingInput.focus(); });
+      chipBox.appendChild(s);
+    });
+    clearBtn.style.display = chips.length ? 'inline' : 'none';
+  }
+  function afterChange() {
+    persist(); renderChips(); hideSuggest(); runIngSearch();
+  }
+
+  // ── autocomplete ──
+  function hideSuggest() { suggest.style.display = 'none'; suggest.innerHTML = ''; sugActive = -1; sugItems = []; }
+  function showSuggest() {
+    var q = ingInput.value.trim();
+    if (!q) { hideSuggest(); return; }
+    loadIdx(function () {
+      var k = foldKey(q), have = {};
+      chips.forEach(function (c) { if (c.idx >= 0) have[c.idx] = 1; });
+      var pre = [], sub = [];
+      IDX.keys.forEach(function (n, i) {
+        if (have[i] || recipeCount[i] === 0) return;
+        var words = n.split(' ');
+        if (n.indexOf(k) === 0) pre.push(i);
+        else if (words.some(function (w) { return w.indexOf(k) === 0; }) || n.indexOf(k) >= 0) sub.push(i);
+      });
+      var byCount = function (a, b) { return recipeCount[b] - recipeCount[a] || IDX.keys[a].length - IDX.keys[b].length; };
+      pre.sort(byCount); sub.sort(byCount);
+      sugItems = pre.concat(sub).slice(0, 8);
+      sugActive = -1;
+      if (!sugItems.length) { hideSuggest(); return; }
+      suggest.innerHTML = '';
+      sugItems.forEach(function (i, n) {
+        var b = document.createElement('button');
+        b.type = 'button'; b.className = 'ing-sug';
+        b.innerHTML = '<span>' + esc(IDX.names[i]) + '</span><span class="ing-sug-n">' + recipeCount[i] + '</span>';
+        b.addEventListener('mousedown', function (e) { e.preventDefault(); pick(n); });
+        suggest.appendChild(b);
+      });
+      suggest.style.display = 'block';
+    });
+  }
+  function pick(n) {
+    var i = sugItems[n];
+    ingInput.value = '';
+    addTerms(IDX.names[i]);
+  }
+  function moveActive(d) {
+    var els = suggest.children;
+    if (!els.length) return;
+    if (sugActive >= 0) els[sugActive].classList.remove('active');
+    sugActive = (sugActive + d + els.length) % els.length;
+    els[sugActive].classList.add('active');
+  }
+
+  ingInput.addEventListener('input', function () {
+    if (/[,;]/.test(ingInput.value)) { var v = ingInput.value; ingInput.value = ''; addTerms(v); return; }
+    showSuggest();
+  });
+  ingInput.addEventListener('paste', function (e) {
+    var t = (e.clipboardData || window.clipboardData).getData('text');
+    if (/[,;\n]/.test(t)) { e.preventDefault(); addTerms(t); }
+  });
+  ingInput.addEventListener('keydown', function (e) {
+    if (e.key === 'ArrowDown') { e.preventDefault(); if (!sugItems.length) showSuggest(); else moveActive(1); }
+    else if (e.key === 'ArrowUp') { e.preventDefault(); moveActive(-1); }
+    else if (e.key === 'Escape') { hideSuggest(); }
+    else if (e.key === 'Enter') {
+      e.preventDefault();
+      if (sugActive >= 0) pick(sugActive);
+      else if (ingInput.value.trim()) { var v = ingInput.value; ingInput.value = ''; addTerms(v); }
+    } else if (e.key === 'Backspace' && !ingInput.value && chips.length) { removeChip(chips.length - 1); }
+  });
+  ingInput.addEventListener('blur', function () { setTimeout(hideSuggest, 120); });
+  chipBox.addEventListener('click', function () { ingInput.focus(); });
+  clearBtn.addEventListener('click', function () { chips = []; afterChange(); ingInput.focus(); });
+  missSel.addEventListener('change', function () { store('ingMissing', missSel.value); runIngSearch(); });
+  usualCb.addEventListener('change', function () { store('ingUsual', usualCb.checked ? '1' : '0'); runIngSearch(); });
+
+  // ── matching ──
+  function matcher(haveSet) {
+    var memo = {};
+    return function covered(i) {
+      if (memo[i] !== undefined) return memo[i];
+      var ok = !!haveSet[i];
+      if (!ok) { var ch = chain(i); for (var a = 0; a < ch.length && !ok; a++) if (haveSet[ch[a]]) ok = true; }
+      if (!ok && IDX.mem[i]) { var m = IDX.mem[i]; for (var b = 0; b < m.length && !ok; b++) if (haveSet[m[b]]) ok = true; }
+      memo[i] = ok; return ok;
+    };
+  }
+  function evaluate(haveIdx, assumeUsual) {
+    var haveSet = {}; haveIdx.forEach(function (i) { haveSet[i] = 1; });
+    var covered = matcher(haveSet);
+    var skip = function (i) { return IDX.sA[i] || (assumeUsual && IDX.sU[i]); };
+    var out = [];
+    IDX.recipes.forEach(function (r) {
+      var needed = 0, got = 0, missing = [];
+      r.req.forEach(function (i) {
+        if (skip(i)) return;
+        needed++;
+        if (covered(i)) got++; else missing.push(IDX.names[i]);
+      });
+      (r.any || []).forEach(function (g) {
+        if (g.some(skip)) return;
+        needed++;
+        if (g.some(covered)) got++; else missing.push(g.map(function (i) { return IDX.names[i]; }).join(' or '));
+      });
+      if (!needed || !got) return;
+      out.push({ r: r, needed: needed, got: got, missing: missing });
+    });
+    out.sort(function (a, b) {
+      return (b.got / b.needed) - (a.got / a.needed) || (a.needed - a.got) - (b.needed - b.got) ||
+        (b.r.f ? 1 : 0) - (a.r.f ? 1 : 0) || a.r.t.localeCompare(b.r.t);
+    });
+    return out;
+  }
+
+  function haveParam() { return chips.map(function (c) { return c.text; }).join(','); }
+
+  function runIngSearch() {
+    searchResults.innerHTML = '';
+    hintEl.innerHTML = '';
+    if (!chips.length) { searchResults.style.display = 'none'; return; }
+    loadIdx(function () {
+      var unknown = chips.filter(function (c) { return c.idx < 0; });
+      if (unknown.length) {
+        hintEl.innerHTML = unknown.map(function (c) {
+          var alt = didYouMean(c.text);
+          return '<div>No recipes use “' + esc(c.text) + '”' + (alt.length ? ' — did you mean ' + alt.map(function (a) { return '<a href="#" data-add="' + esc(a) + '">' + esc(a) + '</a>'; }).join(', ') + '?' : '.') + '</div>';
+        }).join('');
+        Array.prototype.forEach.call(hintEl.querySelectorAll('a[data-add]'), function (a) {
+          a.addEventListener('click', function (e) {
+            e.preventDefault();
+            var bad = a.parentNode.textContent;
+            chips = chips.filter(function (c) { return bad.indexOf('“' + c.text + '”') < 0; });
+            addTerms(a.getAttribute('data-add'));
+          });
+        });
+      }
+      var known = chips.filter(function (c) { return c.idx >= 0; }).map(function (c) { return c.idx; });
+      if (!known.length) { searchResults.style.display = 'none'; return; }
+      var all = evaluate(known, usualCb.checked);
+      var maxMiss = missSel.value === 'any' ? 999 : parseInt(missSel.value, 10);
+      var res = all.filter(function (m) { return (m.needed - m.got) <= maxMiss; });
+
+      if (!res.length) {
+        var onlyStaples = known.every(function (i) { return IDX.sA[i] || (usualCb.checked && IDX.sU[i]); });
+        searchResults.innerHTML = '<div class="sr-empty">' + (onlyStaples ? 'Pantry staples are not counted. Add other ingredients.' :
+          (all.length ? 'No recipes within ' + maxMiss + ' missing. Try raising “missing at most”.' : 'No recipes found.')) + '</div>';
+        searchResults.style.display = 'block';
+        return;
+      }
+      var label = document.createElement('div');
+      label.className = 'sr-label';
+      label.textContent = res.length + ' recipe' + (res.length !== 1 ? 's' : '') + (all.length > res.length ? ' (' + (all.length - res.length) + ' more with more missing)' : '');
+      searchResults.appendChild(label);
+
+      res.slice(0, 100).forEach(function (m) {
+        var r = m.r, isSamePage = r.page === CURRENT_PAGE;
+        var row = document.createElement('div');
+        row.className = 'ing-row';
+        var a = document.createElement('a');
+        a.className = 'sr-item';
+        a.href = isSamePage ? (r.page + '#' + r.id) : (r.page + '?have=' + encodeURIComponent(haveParam()) + '#' + r.id);
+        a.innerHTML = '<span class="sr-star">' + (r.f ? '★' : '') + '</span><span class="sr-title">' + esc(r.t) + '</span>' +
+          '<span class="ing-have' + (m.got === m.needed ? ' full' : '') + '">' + m.got + '/' + m.needed + '</span>';
+        if (isSamePage) {
+          a.addEventListener('click', function (e) {
+            e.preventDefault();
+            var el = document.getElementById(r.id);
+            if (el) { var rect = el.getBoundingClientRect(); window.scrollTo({ top: Math.max(0, window.pageYOffset + rect.top - 24), behavior: 'smooth' }); }
+            expandNavToRecipe(r.id);
+          });
+        }
+        row.appendChild(a);
+        var need = document.createElement('div');
+        need.className = 'ing-need';
+        var sec = isSamePage ? '' : r.s + ' · ';
+        need.textContent = m.missing.length ? sec + 'Need: ' + m.missing.join(', ') : sec + 'You have everything';
+        need.title = 'Click to expand';
+        need.addEventListener('click', function () { need.classList.toggle('open'); });
+        row.appendChild(need);
+        searchResults.appendChild(row);
+      });
+      searchResults.style.display = 'block';
+      if (window.innerWidth <= 480) {
+        searchResults.style.maxHeight = '';
+        requestAnimationFrame(function () {
+          var kids = searchResults.children, h = 0, n = Math.min(kids.length, 6);
+          for (var i = 0; i < n; i++) h += kids[i].offsetHeight;
+          searchResults.style.maxHeight = (h + 8) + 'px';
+        });
+      }
+    });
+  }
+
+  // ── mode toggle ──
+  function setMode(m, noFocus) {
+    if (m === mode) return;
+    if (mode === 'name') nameQuery = search.value;
+    mode = m;
+    Array.prototype.forEach.call(modeBtns, function (b) {
+      var on = b.getAttribute('data-mode') === m;
+      b.classList.toggle('active', on); b.setAttribute('aria-pressed', on ? 'true' : 'false');
+    });
+    searchResults.innerHTML = ''; searchResults.style.display = 'none';
+    if (m === 'ing') {
+      nameWrap.style.display = 'none'; ingWrap.style.display = 'block';
+      renderChips(); runIngSearch();
+      if (!noFocus) ingInput.focus();
+    } else {
+      ingWrap.style.display = 'none'; nameWrap.style.display = '';
+      hideSuggest();
+      search.value = nameQuery; searchClear.style.display = search.value ? 'block' : 'none';
+      if (search.value) runSearch();
+      if (!noFocus) search.focus();
+    }
+  }
+  Array.prototype.forEach.call(modeBtns, function (b) {
+    b.addEventListener('click', function () { setMode(b.getAttribute('data-mode')); });
+  });
+
+  // ── restore state ──
+  var sm = load('ingMissing'); if (sm && /^(0|1|2|3|5|any)$/.test(sm)) missSel.value = sm;
+  var su = load('ingUsual'); if (su === '0') usualCb.checked = false;
+  var urlHave = new URLSearchParams(location.search).get('have');
+  var saved = null;
+  try { saved = JSON.parse(load('ingChips') || 'null'); } catch (e) {}
+  var startTerms = urlHave ? urlHave.split(',') : (Array.isArray(saved) ? saved : []);
+  if (startTerms.length) {
+    loadIdx(function () {
+      startTerms.forEach(function (t) {
+        var idx = resolve(t);
+        if (!chips.some(function (c) { return c.text === (idx >= 0 ? IDX.names[idx] : t); })) chips.push({ text: idx >= 0 ? IDX.names[idx] : t, idx: idx });
+      });
+      renderChips();
+      if (urlHave) { setMode('ing', true); } else if (mode === 'ing') { runIngSearch(); }
+    });
+  }
+  ingInput.addEventListener('focus', function () { loadIdx(function () {}); }, { once: true });
+  window.__ing = { loadIdx: loadIdx, resolve: resolve, evaluate: evaluate, names: function () { return IDX.names; } };   // test hook
+})();
+
 
   // ── Favorites toggle (localStorage-persisted) ─────────────────────────
   const favBtn = document.getElementById('fav-toggle');

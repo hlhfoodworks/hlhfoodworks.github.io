@@ -3,6 +3,9 @@ const fs = require('fs');
 const path = require('path');
 const data = require('./cookbook_data.js');
 const { displayTitle } = require('./recipe_utils.js');
+const { buildIngredientIndex } = require('./ingredient_index.js');
+const INGREDIENT_CSS = fs.readFileSync(path.join(__dirname, 'ingredient_search.css'), 'utf8');
+const INGREDIENT_JS = fs.readFileSync(path.join(__dirname, 'ingredient_search_client.js'), 'utf8');
 
 // ── Cluster assignments ────────────────────────────────────────────────────
 // Recipes not in this map are rendered without a cluster level in the nav.
@@ -995,7 +998,7 @@ function buildSectionContent(section) {
 
 // ── Search index (all recipes, all sections) ───────────────────────────────
 
-function buildSearchIndex(data) {
+function buildSearchIndex(data, sink) {
   const index = [];
   for (const section of data.sections) {
     const filename = sectionFilename(section.title);
@@ -1007,6 +1010,7 @@ function buildSearchIndex(data) {
       flat.forEach(r => {
         const id = r.id || `${idPrefix}-${slug(r.title)}`;
         index.push({ title: r.title, page: filename, id, fav: r.favorite ? 1 : 0, section: section.title });
+        if (sink) sink.push({ recipe: r, id, page: filename, section: section.title });
       });
     };
 
@@ -1592,6 +1596,7 @@ function buildPage(section, navHtml, contentHtml, cookbookData) {
     #search-results .sr-item { padding-top: 5px; padding-bottom: 5px; }
     #search-results .sr-label { padding-top: 5px; padding-bottom: 3px; }
   }
+${INGREDIENT_CSS}
 </style>
 </head>
 <body>
@@ -1604,9 +1609,23 @@ function buildPage(section, navHtml, contentHtml, cookbookData) {
 <div id="nav">
   <div id="nav-header"><h1><a href="breakfast.html" id="cookbook-logo-link">Muhlheim Family Cookbook</a></h1></div>
   <div id="search-wrap">
+    <div id="mode-toggle" role="group" aria-label="Search mode">
+      <button type="button" data-mode="name" class="active" aria-pressed="true">Recipe name</button>
+      <button type="button" data-mode="ing" aria-pressed="false">I have these ingredients</button>
+    </div>
     <div id="search-box-wrap">
       <input id="search" type="text" placeholder="Search recipes…" autocomplete="off">
       <button id="search-clear" title="Clear search">✕</button>
+    </div>
+    <div id="ing-wrap">
+      <div id="ing-chips"><input id="ing-input" type="text" placeholder="Add an ingredient…" autocomplete="off" autocapitalize="off" aria-label="Add an ingredient"></div>
+      <div id="ing-suggest"></div>
+      <div id="ing-hint"></div>
+      <div id="ing-opts">
+        <label>Missing at most <select id="ing-missing"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3" selected>3</option><option value="5">5</option><option value="any">any</option></select></label>
+        <label><input type="checkbox" id="ing-usual" checked> Assume basic pantry</label>
+        <button type="button" id="ing-clear">Clear</button>
+      </div>
     </div>
   </div>
   <div id="search-results"></div>
@@ -1963,6 +1982,8 @@ function buildPage(section, navHtml, contentHtml, cookbookData) {
     runSearch();
   }
 
+${INGREDIENT_JS}
+
   // ── Favorites toggle (localStorage-persisted) ─────────────────────────
   const favBtn = document.getElementById('fav-toggle');
   const allRecipes = Array.from(document.querySelectorAll('.recipe'));
@@ -2217,9 +2238,17 @@ function buildPage(section, navHtml, contentHtml, cookbookData) {
 // ── Assemble ───────────────────────────────────────────────────────────────
 
 // Write search-index.json
-const searchIndex = buildSearchIndex(data);
+const ingEntries = [];
+const searchIndex = buildSearchIndex(data, ingEntries);
 fs.writeFileSync(path.join(__dirname, 'search-index.json'), JSON.stringify(searchIndex), 'utf8');
 console.log('Written: search-index.json (' + searchIndex.length + ' recipes)');
+
+// Write ingredient-index.json (lazy-loaded by the "I have these ingredients" search)
+const ingResult = buildIngredientIndex(ingEntries);
+if (ingResult.problems.length) { console.error('WARNING: ' + ingResult.problems.length + ' unparsed ingredient line(s); run node check_ingredients.js'); }
+const ingJson = JSON.stringify(ingResult.index);
+fs.writeFileSync(path.join(__dirname, 'ingredient-index.json'), ingJson, 'utf8');
+console.log('Written: ingredient-index.json (' + ingResult.index.recipes.length + ' recipes, ' + ingResult.index.names.length + ' names, ' + Math.round(ingJson.length / 1024) + ' KB)');
 
 // Write index.html redirect to breakfast.html
 const redirectHtml = `<!DOCTYPE html>
