@@ -303,6 +303,7 @@ module.exports = {
         },
         {
           "title": "Glazed Cinnamon Rolls (Tangzhong Version)",
+          "made": true,
           "favorite": true,
           "servings": "One dozen round rolls   |   Cook: 15-17 minutes",
           "comments": [
@@ -443,6 +444,7 @@ module.exports = {
         },
         {
           "title": "Homemade Biscuits",
+          "made": true,
           "favorite": true,
           "servings": "8 large biscuits   |   Prep: 15 minutes   |   Cook: 15 to 20 minutes",
           "comments": [
@@ -543,6 +545,7 @@ module.exports = {
         },
         {
           "title": "Raised Waffles",
+          "made": true,
           "favorite": true,
           "servings": "About 8 waffles",
           "comments": [
@@ -618,6 +621,7 @@ module.exports = {
         },
         {
           "title": "Green Shakshuka with Feta",
+          "made": true,
           "servings": "Serves 4–6",
           "source": "Chaya Rappoport / The Nosher",
           "ingredientGroups": [
@@ -660,6 +664,7 @@ module.exports = {
         },
         {
           "title": "Shakshuka With Feta",
+          "made": true,
           "servings": "Serves 4–6   |   Total: 50 min",
           "source": "Melissa Clark / NYT Cooking",
           "ingredientGroups": [
@@ -715,6 +720,7 @@ module.exports = {
         },
         {
           "title": "Chinese Tomato Egg Stir-fry",
+          "made": true,
           "servings": "Serves 2",
           "source": "Adapted from The Woks of Life (thewoksoflife.com)",
           "ingredientGroups": [
@@ -750,6 +756,7 @@ module.exports = {
         },
         {
           "title": "Bircher Muesli",
+          "made": true,
           "favorite": true,
           "servings": "Serves 4-6",
           "source": "Laura / My Little Gourmet (mylittlegourmet.com)",
@@ -910,6 +917,7 @@ module.exports = {
         },
         {
           "title": "Monkey Bread",
+          "made": true,
           "servings": "Serves 8",
           "source": "Bon Appetit (Claire Saffitz), December 2017",
           "comments": [
@@ -999,6 +1007,7 @@ module.exports = {
       "recipes": [
         {
           "title": "Blackberry Brie Grilled Cheese",
+          "made": true,
           "servings": "Makes 1 large sandwich   |   Total: 25 min",
           "source": "Ree Drummond / Food Network, The Pioneer Woman",
           "comments": [
@@ -1146,6 +1155,7 @@ module.exports = {
         },
         {
           "title": "Blooming Onions",
+          "made": true,
           "servings": "Makes 3 onions",
           "source": "Beth Pierce / Small Town Woman",
           "comments": [
@@ -1209,6 +1219,7 @@ module.exports = {
         },
         {
           "title": "Fried Dill Pickles",
+          "made": true,
           "servings": "Serves 4",
           "source": "Holly Nilsson / Spend with Pennies",
           "comments": [
@@ -1319,6 +1330,7 @@ module.exports = {
         },
         {
           "title": "Burrata Bruschetta Toasts",
+          "made": true,
           "servings": "Serves 8",
           "source": "Molly, yestoyolks.com",
           "comments": [
@@ -1442,6 +1454,7 @@ module.exports = {
         },
         {
           "title": "Charoset (Ashkenazic Style)",
+          "made": true,
           "favorite": true,
           "servings": "Serves 18–24",
           "source": "\"Celebration: The Book of Jewish Festivals,\" ed. Naomi Black (Jonathan David Publishers, 1989)",
@@ -1469,6 +1482,7 @@ module.exports = {
         },
         {
           "title": "Eggplant Pkhali",
+          "made": true,
           "servings": "Makes about 2 cups",
           "source": "Justin and Sarah Poitras / Travel Cook Repeat",
           "comments": [
@@ -1518,6 +1532,7 @@ module.exports = {
         },
         {
           "title": "Baba Ganoush",
+          "made": true,
           "favorite": true,
           "servings": "Serves 4",
           "source": "Love and Lemons / Jeanine Donofrio",
@@ -1562,6 +1577,7 @@ module.exports = {
         },
         {
           "title": "Israeli Hummus",
+          "made": true,
           "servings": "Serves 4 to 6",
           "source": "Milk Street / WGBH",
           "comments": [
@@ -1613,6 +1629,7 @@ module.exports = {
         },
         {
           "title": "Muhammara",
+          "made": true,
           "servings": "Serves 6",
           "source": "Ninon Michels / Nim Pairings",
           "comments": [
@@ -1684,6 +1701,7 @@ module.exports = {
         },
         {
           "title": "Kimchijeon (Korean Kimchi Pancake)",
+          "made": true,
           "servings": "Serves 2-4   |   Total: 20 minutes",
           "source": "Maangchi (maangchi.com)",
           "comments": [
@@ -1938,6 +1956,7 @@ module.exports = {
         },
         {
           "title": "Creamy Spinach-Artichoke Chicken Stew",
+          "made": true,
           "servings": "Serves 4 to 6   |   Total: 50 minutes",
           "source": "NYT Cooking, by Sarah DiGregorio",
           "ingredientGroups": [
@@ -2217,6 +2236,7 @@ module.exports = {
         },
         {
           "title": "Creamy Tomato Soup",
+          "made": true,
           "servings": "Serves 4   |   Total: 1 hour, largely unattended",
           "source": "Los Angeles Times",
           "comments": [
@@ -2353,6 +2373,7 @@ module.exports = {
         },
         {
           "title": "French Onion Soup",
+          "made": true,
           "servings": "Serves 4 to 6   |   Total: 1 hour (10 min prep, 50 min cook)",
           "source": "Gimme Some Oven",
           "comments": [
@@ -2652,6 +2673,7 @@ module.exports = {
           "recipes": [
             {
               "title": "Barbecue Bacon Wedge Salad with Grilled Corn",
+              "made": true,
               "servings": "Serves 4",
               "source": "Food Network / Katie Lee Biegel",
               "comments": [
@@ -2716,6 +2738,7 @@ module.exports = {
             },
             {
               "title": "Boston Lettuce and Endives Salad",
+              "made": true,
               "servings": "Serves 6",
               "source": "Ricardo Cuisine",
               "ingredientGroups": [
@@ -2750,6 +2773,7 @@ module.exports = {
             },
             {
               "title": "Crunchy Romaine Toss",
+              "made": true,
               "favorite": true,
               "servings": "Serves 10-12",
               "source": "From Christy Ponder",
@@ -2818,6 +2842,7 @@ module.exports = {
             },
             {
               "title": "Joan's on Third Butter Lettuce Salad (Copycat)",
+              "made": true,
               "servings": "Serves 4",
               "comments": [
                 "Original recipe uses French feta; family uses goat cheese in oil instead. Shallot is in the original but was skipped. Dressing recipe from CopyKat Recipes."
@@ -2862,6 +2887,7 @@ module.exports = {
             },
             {
               "title": "Nechamie's Summer Salad",
+              "made": true,
               "source": "From Nechamie Greenberg (Chabad Jewish Center of Pudong)",
               "comments": [
                 "The dressing makes more than needed for one salad — leftovers keep refrigerated for 1–2 weeks."
@@ -2900,6 +2926,7 @@ module.exports = {
             },
             {
               "title": "Nechamie's Poppy Seed Salad",
+              "made": true,
               "source": "From Nechamie Greenberg (Chabad Jewish Center of Pudong)",
               "ingredientGroups": [
                 {
@@ -2937,6 +2964,7 @@ module.exports = {
             },
             {
               "title": "Nechamie's Spinach and Egg Salad",
+              "made": true,
               "source": "From Nechamie Greenberg (Chabad Jewish Center of Pudong)",
               "ingredientGroups": [
                 {
@@ -2968,6 +2996,7 @@ module.exports = {
             },
             {
               "title": "Pear, Gorgonzola and Walnut Salad",
+              "made": true,
               "servings": "Serves 4   |   Total: 10 min",
               "source": "Sarah Epperson Loveless, EatingWell",
               "comments": [
@@ -3047,6 +3076,7 @@ module.exports = {
             },
             {
               "title": "Charred Broccoli and Cauliflower Salad",
+              "made": true,
               "servings": "Serves 6 to 8   |   Total: 30 min   |   Active: 25 min",
               "source": "https://www.foodnetwork.com/recipes/ree-drummond/charred-broccoli-and-cauliflower-salad-19673188",
               "comments": [
@@ -3161,6 +3191,7 @@ module.exports = {
             },
             {
               "title": "Shaved Brussels Sprouts Salad With Lemon and Pecorino",
+              "made": true,
               "favorite": true,
               "servings": "Serves 6",
               "source": "Katie Morford / Mom's Kitchen Handbook",
@@ -3202,6 +3233,7 @@ module.exports = {
             },
             {
               "title": "Wood Ranch's Peanut Coleslaw",
+              "made": true,
               "favorite": true,
               "servings": "Serves 6",
               "source": "Kadee and Desarae / Oh So Delicioso",
@@ -3356,6 +3388,7 @@ module.exports = {
             },
             {
               "title": "Moroccan-Style Carrot Salad",
+              "made": true,
               "servings": "Serves 6",
               "source": "Suzy Karadsheh / The Mediterranean Dish",
               "comments": [
@@ -3435,6 +3468,7 @@ module.exports = {
             },
             {
               "title": "Indian Slaw",
+              "made": true,
               "servings": "Serves 8",
               "source": "Glebe Kitchen / Romain",
               "favorite": true,
@@ -3528,6 +3562,7 @@ module.exports = {
             },
             {
               "title": "Chilled Cucumber Salad (Din Tai Fung Style)",
+              "made": true,
               "servings": "Serves 4",
               "source": "Andrea Potischman / Simmer + Sauce",
               "comments": [
@@ -3563,6 +3598,7 @@ module.exports = {
             },
             {
               "title": "Cucumber Salad with Sesame and Rice Vinegar",
+              "made": true,
               "servings": "Serves 2 to 4",
               "source": "Lauren Muhlheim, adapted from Deb Perelman / Smitten Kitchen",
               "favorite": true,
@@ -3606,6 +3642,7 @@ module.exports = {
             },
             {
               "title": "Dumpling Tomato Salad with Chili Crisp Vinaigrette",
+              "made": true,
               "servings": "Serves 4   |   Total: 20 min",
               "source": "Hetty Lui McKinnon / NYT Cooking",
               "comments": [
@@ -3758,6 +3795,7 @@ module.exports = {
             },
             {
               "title": "Holly's Spicy Noodle Salad with Peanut Dressing",
+              "made": true,
               "servings": "Serves 10 as appetizer, 6 as main",
               "source": "Pacific Flavors by Hugh Carpenter; shared by Holly Arledge",
               "comments": [
@@ -3818,6 +3856,7 @@ module.exports = {
           "recipes": [
             {
               "title": "Baked Crunchy Hot Honey Chicken",
+              "made": true,
               "servings": "Serves 6   |   Prep: 15 minutes   |   Cook: 25 minutes   |   Total: 40 minutes",
               "source": "Half Baked Harvest, by Tieghan Gerard",
               "ingredientGroups": [
@@ -3876,6 +3915,7 @@ module.exports = {
             },
             {
               "title": "Brown Butter Sage Skillet Chicken",
+              "made": true,
               "servings": "Serves 4   |   Prep: 10 minutes   |   Cook: 20 minutes   |   Total: 30 minutes",
               "comments": [
                 "Thin-sliced chicken breasts cook fastest; if starting with standard breasts, slice horizontally through the middle for thinner cutlets.",
@@ -3923,6 +3963,7 @@ module.exports = {
             },
             {
               "title": "Company Baked Chicken",
+              "made": true,
               "favorite": true,
               "comments": [
                 "Marked \"v. good!\" on the original card."
@@ -4055,6 +4096,7 @@ module.exports = {
             },
             {
               "title": "Crispy Chicken With Lime Butter",
+              "made": true,
               "servings": "Serves 4   |   Prep: 5 minutes   |   Cook: 35 minutes   |   Total: 40 minutes",
               "comments": [
                 "The rendered chicken fat (schmaltz) can be saved to pan-fry vegetables, enrich a soup or sauce, or spread on toast."
@@ -4101,6 +4143,7 @@ module.exports = {
             },
             {
               "title": "Crispy Spice Rubbed Chicken Thighs",
+              "made": true,
               "favorite": true,
               "servings": "Serves 3 to 4   |   Prep: 5 minutes   |   Cook: 30 minutes   |   Total: 35 minutes",
               "source": "Fifteen Spatulas",
@@ -4139,6 +4182,7 @@ module.exports = {
             },
             {
               "title": "Grilled Buffalo Wings",
+              "made": true,
               "servings": "Serves 6 to 8   |   Total: 35 minutes",
               "comments": [
                 "Crowding the wings close together on the grill is intentional — it creates steam that helps render the fat and keep the meat moist before crisping."
@@ -4209,6 +4253,7 @@ module.exports = {
             },
             {
               "title": "Skillet Chicken and Zucchini With Charred Scallion Salsa",
+              "made": true,
               "servings": "Serves 4   |   Total: 40 minutes",
               "comments": [
                 "Any seasonal, quick-roasting vegetable can stand in for the zucchini — cherry tomatoes or asparagus both work well.",
@@ -4364,6 +4409,7 @@ module.exports = {
             },
             {
               "title": "Weeknight Fancy Chicken and Rice",
+              "made": true,
               "servings": "Serves 4 to 6   |   Total: 50 minutes",
               "comments": [
                 "Garnish is flexible — dried cranberries, hazelnuts, or pine nuts can stand in for or join the apricots and almonds."
@@ -4434,6 +4480,7 @@ module.exports = {
             },
             {
               "title": "Western River Curry Chicken Salad",
+              "made": true,
               "servings": "Serves 4–6",
               "source": "As served by Western River Expeditions in the Grand Canyon",
               "comments": [
@@ -4539,6 +4586,7 @@ module.exports = {
             },
             {
               "title": "Slow-Cooker Chicken Mole",
+              "made": true,
               "servings": "Serves 6   |   Prep: 15 minutes   |   Cook: 4 hours   |   Total: 4 hours 15 minutes",
               "comments": [
                 "Makes extra sauce; keeps refrigerated up to 4 days or frozen up to 3 months. Good over rice, with pinto beans, or warm corn tortillas."
@@ -4629,6 +4677,7 @@ module.exports = {
             },
             {
               "title": "Chicken Cacciatore",
+              "made": true,
               "servings": "Serves 4 to 5   |   Total: 1 hour 45 minutes",
               "source": "NYT Cooking, by Martha Rose Shulman",
               "ingredientGroups": [
@@ -4699,6 +4748,7 @@ module.exports = {
             },
             {
               "title": "Chicken Piccata",
+              "made": true,
               "servings": "Serves 4   |   Prep: 15 minutes   |   Cook: 25 minutes   |   Total: 40 minutes",
               "source": "Food Network, by Giada De Laurentiis",
               "ingredientGroups": [
@@ -4787,6 +4837,7 @@ module.exports = {
             },
             {
               "title": "Marry Me Chicken",
+              "made": true,
               "servings": "Serves 4   |   Prep: 10 minutes   |   Cook: 50 minutes   |   Total: 1 hour",
               "comments": [
                 "To make slicing into cutlets easier, freeze the chicken breasts for 20 minutes first.",
@@ -4904,6 +4955,7 @@ module.exports = {
             },
             {
               "title": "Chicken Kiev",
+              "made": true,
               "servings": "Serves 2   |   Prep: 30 minutes   |   Cook: 30 minutes   |   Total: 1 hour, plus 1 hour freezing",
               "source": "RecipeTin Eats, by Nagi Maehashi",
               "ingredientGroups": [
@@ -4962,6 +5014,7 @@ module.exports = {
             },
             {
               "title": "Chicken Paprikash",
+              "made": true,
               "servings": "Serves 4 to 6   |   Cook: 1 hour   |   Total: 1 hour",
               "comments": [
                 "Use fresh Hungarian paprika if you can find it — it loses flavor quickly (within a few months) and turns dull and bitter with age."
@@ -5016,6 +5069,7 @@ module.exports = {
             },
             {
               "title": "Chicken-Zucchini Meatballs With Feta",
+              "made": true,
               "servings": "Serves 4   |   Total: 45 minutes",
               "comments": [
                 "Made here with ground chicken; ground turkey can be substituted.",
@@ -5252,6 +5306,7 @@ module.exports = {
             },
             {
               "title": "Roast Lemon-Garlic Chicken with Green Olives",
+              "made": true,
               "servings": "Serves 4",
               "comments": [
                 "The lemon-herb mixture can be made up to 4 hours ahead, covered, and kept at room temperature.",
@@ -5294,6 +5349,7 @@ module.exports = {
             {
               "id": "chicken-tagine-with-olives-and-preserved-lemons",
               "title": "Chicken Tagine With Olives and Preserved Lemons",
+              "made": true,
               "servings": "Serves 4   |   Total: 1 hour, plus marinating",
               "source": "NYT Cooking, from Shallots New York, adapted by Florence Fabricant",
               "comments": [
@@ -5539,6 +5595,7 @@ module.exports = {
             },
             {
               "title": "Spiced Green Meatballs with Pickle Rice and Salty Yogurt",
+              "made": true,
               "servings": "Serves 4   |   Prep: 55 minutes   |   Total: 1 hour 15 minutes",
               "comments": [
                 "Made here with ground chicken; ground turkey, pork, lamb, or beef can be substituted."
@@ -5702,6 +5759,7 @@ module.exports = {
             },
             {
               "title": "Bhatti da Murgh (Indian Grilled Chicken With Whole Spices)",
+              "made": true,
               "favorite": true,
               "servings": "Serves 6 to 8   |   Total: 1 1/2 hours, plus marinating",
               "comments": [
@@ -5778,6 +5836,7 @@ module.exports = {
             },
             {
               "title": "Chicken Tikka Masala",
+              "made": true,
               "servings": "Serves 6   |   Prep: 20 minutes, plus 8 hours (up to 48) marinating   |   Cook: 40 minutes",
               "comments": [
                 "Cashew cream can stand in for the heavy cream: blend 1/3 cup raw cashews (soaked, if your blender isn't powerful) with 1/3 cup water until very smooth.",
@@ -5908,6 +5967,7 @@ module.exports = {
             },
             {
               "title": "Pad Krapow Gai (Thai Basil Chicken)",
+              "made": true,
               "favorite": true,
               "servings": "Serves 2 to 4   |   Total: 15 minutes",
               "comments": [
@@ -6220,6 +6280,7 @@ module.exports = {
             },
             {
               "title": "Coconut-Gochujang Glazed Chicken With Broccoli",
+              "made": true,
               "servings": "Serves 4   |   Total: 15 minutes",
               "source": "NYT Cooking, by Kay Chun",
               "ingredientGroups": [
@@ -6270,6 +6331,7 @@ module.exports = {
             },
             {
               "title": "Peachy Peanut & Kimchi Chicken",
+              "made": true,
               "servings": "Serves 4   |   Prep: 50 minutes   |   Total: 2 hours (including marinating)",
               "comments": [
                 "Chicken needs at least 1 hour to marinate (up to 2 days ahead is fine) — factor that into timing beyond the active cook time."
@@ -6345,6 +6407,7 @@ module.exports = {
             },
             {
               "title": "Chili Crisp Chicken n' Peanuts Scoop",
+              "made": true,
               "servings": "Serves 6   |   Active: 15–20 minutes",
               "comments": [
                 "A not-so-classic chicken salad made spicy with chili crisp and nutty with peanut butter — no cooking required. Be gentle when mixing; the acid in the dressing can break down the chicken if you overwork it. A few careful folds are all it takes.",
@@ -6403,6 +6466,7 @@ module.exports = {
             },
             {
               "title": "Christy's Stir-Fry (Adapted)",
+              "made": true,
               "ingredientGroups": [
                 {
                   "label": "Chicken and vegetables",
@@ -6446,6 +6510,7 @@ module.exports = {
             },
             {
               "title": "Kung Pao Chicken and Broccoli",
+              "made": true,
               "servings": "Serves 2   |   Prep: 30 minutes   |   Cook: 30 minutes   |   Total: 1 hour",
               "source": "https://cambodiarecipe.com/kung-pao-chicken-and-broccoli/",
               "ingredientGroups": [
@@ -6607,6 +6672,7 @@ module.exports = {
             },
             {
               "title": "Crispy Chicken Katsu Bowls",
+              "made": true,
               "favorite": true,
               "servings": "Serves 4   |   Prep: 30 minutes   |   Cook: 15 minutes   |   Total: 45 minutes",
               "source": "https://www.halfbakedharvest.com/chicken-katsu-bowls/",
@@ -6720,6 +6786,7 @@ module.exports = {
             },
             {
               "title": "One-Pot Japanese Curry Chicken and Rice",
+              "made": true,
               "servings": "Serves 4   |   Total: 1 hour",
               "comments": [
                 "Sweet potatoes, cauliflower, or peas would be good substitutions or additions to the potato and carrots.",
@@ -6862,6 +6929,7 @@ module.exports = {
           "recipes": [
             {
               "title": "Bristol Farms Turkey Salad (Copycat)",
+              "made": true,
               "servings": "Serves 6–8",
               "source": "Grandmother Brenda's ingredient list, inspired by Bristol Farms deli turkey salad",
               "comments": [
@@ -6900,6 +6968,7 @@ module.exports = {
             },
             {
               "title": "Expertly Spiced and Glazed Roast Turkey",
+              "made": true,
               "servings": "Serves 8–10   |   Active: 45 min   |   Total: About 2 hrs (plus 24–48 hrs dry-brining)",
               "comments": [
                 "Turkey is spatchcocked for more even roasting. Begin 24–48 hours ahead for the dry brine.",
@@ -6965,6 +7034,7 @@ module.exports = {
             },
             {
               "title": "Turkey and Quinoa Meatloaf",
+              "made": true,
               "favorite": true,
               "servings": "Serves 4   |   Total: 1 hr 10 min",
               "comments": [
@@ -7081,6 +7151,7 @@ module.exports = {
             },
             {
               "title": "Turkey Tikka Masala",
+              "made": true,
               "servings": "Serves 6   |   Total: 1 1/2 hrs, plus 4 hrs marinating",
               "comments": [
                 "A great way to use leftover Thanksgiving turkey.",
@@ -7165,6 +7236,7 @@ module.exports = {
           "recipes": [
             {
               "title": "Sloppy Moes",
+              "made": true,
               "favorite": true,
               "servings": "Serves 6   |   Active: 20 min   |   Total: 45 min",
               "source": "Molly Baz, Cook This Book",
@@ -7221,6 +7293,7 @@ module.exports = {
             },
             {
               "title": "Slow Cooker Pork Mole",
+              "made": true,
               "servings": "Serves 8   |   Total: 8–10 hours (plus 30 min prep)",
               "source": "Adapted from Muy Bueno (Yvette Marquez-Sharpnack) and Food Network Kitchen",
               "ingredientGroups": [
@@ -7283,6 +7356,7 @@ module.exports = {
             {
               "id": "haitian-pork-griot",
               "title": "Haitian Pork Griot",
+              "made": true,
               "favorite": true,
               "servings": "Serves 6   |   Total: 3 hours, plus overnight marinating",
               "source": "Patrick Celestin, adapted by Melissa Clark (NYT Cooking)",
@@ -7443,6 +7517,7 @@ module.exports = {
             },
             {
               "title": "Moo Shu Mushrooms",
+              "made": true,
               "servings": "Serves 4   |   Total: 45 min",
               "source": "J. Kenji López-Alt, NYT Cooking (January 28, 2020)",
               "comments": [
@@ -7513,6 +7588,7 @@ module.exports = {
           "recipes": [
             {
               "title": "Garlic & Rosemary Grilled Lamb Chops",
+              "made": true,
               "favorite": true,
               "servings": "Serves 4   |   Prep: 15 min   |   Cook: 10 min   |   Total: 25 min (plus 1 hr to overnight marinating)",
               "source": "Jannese, Delish D'Lites",
@@ -7544,6 +7620,7 @@ module.exports = {
             },
             {
               "title": "Lula Kebabs",
+              "made": true,
               "servings": "Serves 6   |   Prep: 30 min   |   Cook: 10 min   |   Total: 40 min",
               "source": "Janelle Leatherwood, The Stuffed Grape Leaf",
               "ingredientGroups": [
@@ -7623,6 +7700,7 @@ module.exports = {
             {
               "id": "rib-roast",
               "title": "Four Peppercorn Crusted Rotisserie Rib Roast",
+              "made": true,
               "favorite": true,
               "servings": "Serves 4–6",
               "source": "Lauren Muhlheim (family recipe, December 2020)",
@@ -7658,6 +7736,7 @@ module.exports = {
             },
             {
               "title": "The Best Passover Brisket",
+              "made": true,
               "servings": "Serves 12   |   Prep: 15 min   |   Cook: 3 hrs 30 min   |   Total: 3 hrs 45 min",
               "source": "Phoebe Lapine, Feed Me Phoebe",
               "ingredientGroups": [
@@ -7700,6 +7779,7 @@ module.exports = {
             },
             {
               "title": "Brenda's Brisket",
+              "made": true,
               "source": "Family recipe card, credited to Grandmother Brenda",
               "comments": [
                 "Best made a day ahead — brisket is much easier to slice when cold, and the fat can be skimmed from the surface before reheating."
@@ -7774,6 +7854,7 @@ module.exports = {
             {
               "id": "sous-vide-beef-ribs",
               "title": "Sous Vide Beef Back Ribs",
+              "made": true,
               "favorite": true,
               "servings": "Serves 6–8   |   Prep: 20 min   |   Sous vide: 24 hrs   |   Finish: 10 min   |   Total: ~24.5 hrs",
               "source": "Sip Bite Go, Two Kooks in the Kitchen, Went Here 8 This (Family hybrid)",
@@ -7821,6 +7902,7 @@ module.exports = {
             },
             {
               "title": "Nancy's Flank Steak",
+              "made": true,
               "ingredientGroups": [
                 {
                   "label": "Marinade",
@@ -7900,6 +7982,7 @@ module.exports = {
             },
             {
               "title": "Asian Braised Short Ribs",
+              "made": true,
               "favorite": true,
               "servings": "Serves 6   |   Prep: 30 min   |   Cook: 6 hrs (slow cooker)   |   Total: ~6.5 hrs",
               "source": "Williams-Sonoma Kitchen",
@@ -8055,6 +8138,7 @@ module.exports = {
             },
             {
               "title": "Korean Beef Bowl",
+              "made": true,
               "servings": "Serves 4   |   Active: 20 min   |   Total: 25 min",
               "source": "Khin's Kitchen, Glebe Kitchen, Chef Savvy (Family hybrid)",
               "ingredientGroups": [
@@ -8109,6 +8193,7 @@ module.exports = {
             },
             {
               "title": "Sweet Potato Shepherd's Pie",
+              "made": true,
               "servings": "Serves 6   |   Total: ~50 min",
               "source": "Shira Rosenbluth's mother",
               "comments": [
@@ -8238,6 +8323,7 @@ module.exports = {
             },
             {
               "title": "Sriracha Maple Salmon",
+              "made": true,
               "servings": "Serves 4   |   Active: 10 min   |   Total: 16 min",
               "source": "Ree Drummond, Food Network (The Pioneer Woman)",
               "ingredientGroups": [
@@ -8278,6 +8364,7 @@ module.exports = {
             },
             {
               "title": "Fish and Chips with Malt Vinegar Mayonnaise",
+              "made": true,
               "servings": "Serves 4   |   Special equipment: deep-fry thermometer",
               "source": "Adam Evans, Bon Appétit (September 2013)",
               "comments": [
@@ -8341,6 +8428,7 @@ module.exports = {
             },
             {
               "title": "Smoked Salmon Niçoise Salad",
+              "made": true,
               "favorite": true,
               "servings": "Serves 2–4   |   Active: 15 min   |   Total: 45 min",
               "source": "Molly Yeh, Food Network (Girl Meets Farm)",
@@ -8396,6 +8484,7 @@ module.exports = {
             },
             {
               "title": "Sole with Lemon-Caper Sauce",
+              "made": true,
               "servings": "Serves 2–4   |   Total: 20 min (all active)",
               "source": "Giada De Laurentiis, Food Network (Giada Entertains)",
               "ingredientGroups": [
@@ -8593,6 +8682,7 @@ module.exports = {
             },
             {
               "title": "Fast Vietnamese Caramel Bluefish",
+              "made": true,
               "favorite": true,
               "servings": "Serves 4   |   Total: 20 min",
               "source": "Melissa Clark, NYT Cooking",
@@ -8685,6 +8775,7 @@ module.exports = {
             },
             {
               "title": "Broiled Cod in Miso Sauce",
+              "made": true,
               "ingredientGroups": [
                 {
                   "label": "Marinade",
@@ -8755,6 +8846,7 @@ module.exports = {
             },
             {
               "title": "Moules Marinières",
+              "made": true,
               "favorite": true,
               "servings": "Serves 4   |   Prep: 45 min   |   Cook: 15 min   |   Total: 1 hour",
               "source": "Florence Fabricant, NYT Cooking; garlic and cream option adapted from George Duran, Food Network",
@@ -8807,6 +8899,7 @@ module.exports = {
             },
             {
               "title": "Shrimp with Orzo and Peas",
+              "made": true,
               "servings": "Serves 2–4   |   Total: ~20 min",
               "source": "Adapted from Pampered Chef, 29 Minutes to Dinner",
               "ingredientGroups": [
@@ -8950,6 +9043,7 @@ module.exports = {
             },
             {
               "title": "Shrimp Scampi with Linguini",
+              "made": true,
               "servings": "Serves 4–6   |   Prep: 15 min   |   Cook: 25 min   |   Total: 40 min",
               "source": "Tyler Florence, Food Network (Food 911)",
               "ingredientGroups": [
@@ -9107,6 +9201,7 @@ module.exports = {
             },
             {
               "title": "Yang Chow Slippery Shrimp",
+              "made": true,
               "servings": "Serves 4   |   Total: 25 min",
               "source": "Los Angeles Times (Yang Chow Restaurant)",
               "ingredientGroups": [
@@ -9208,6 +9303,7 @@ module.exports = {
             },
             {
               "title": "Peppered Duck Breast With Red Wine Sauce",
+              "made": true,
               "servings": "Serves 6   |   Total: ~1½ hours (including 1 hour marinate)",
               "source": "David Tanis, NYT Cooking",
               "comments": [
@@ -9248,6 +9344,7 @@ module.exports = {
             },
             {
               "title": "Sheet-Pan Italian Sub Dinner",
+              "made": true,
               "servings": "Serves 4   |   Total: 25 min",
               "source": "Ali Slagle, NYT Cooking",
               "comments": [
@@ -9292,6 +9389,7 @@ module.exports = {
             },
             {
               "title": "Naomi's Nabe (Japanese Hot Pot)",
+              "made": true,
               "source": "From Naomi Shalowitz",
               "comments": [
                 "A reference card combining a magazine clipping and Naomi's handwritten ingredient selections. Nabe is a communal hot pot served at the table -- quantities are flexible; scale to your group.",
@@ -9365,6 +9463,7 @@ module.exports = {
           "recipes": [
             {
               "title": "Lentil Chili",
+              "made": true,
               "favorite": true,
               "servings": "Serves 12 (about 1 cup each)",
               "source": "Low Fat & Loving It (cookbook)",
@@ -9541,6 +9640,7 @@ module.exports = {
             },
             {
               "title": "Sweet Potato and Black Bean Enchiladas",
+              "made": true,
               "servings": "Serves 5",
               "source": "Food Network / Martina McBride",
               "comments": [
@@ -9601,6 +9701,7 @@ module.exports = {
             },
             {
               "title": "Eggplant Involtini",
+              "made": true,
               "servings": "Serves 4   |   Total: 1 hour",
               "comments": [
                 "A lighter, weeknight-friendly take on eggplant parmesan — no breading, no frying. The eggplant is roasted or grilled into silky planks, rolled around a three-cheese filling, and baked in homemade tomato sauce. If you don't want to make the sauce, 3 cups of good store-bought sauce works fine."
@@ -9678,6 +9779,7 @@ module.exports = {
             },
             {
               "title": "Eggplant Involtini alla Siciliana",
+              "made": true,
               "servings": "Serves 4",
               "source": "From Chef Louisa (Villa Britannia, Taormina, Sicily)",
               "comments": [
@@ -9717,6 +9819,7 @@ module.exports = {
             },
             {
               "title": "Eggplant Parmesan",
+              "made": true,
               "servings": "Serves 6–8   |   Prep: 20 minutes   |   Cook: 40 minutes   |   Total: 1 hour",
               "source": "https://www.loveandlemons.com/eggplant-parmesan/",
               "ingredientGroups": [
@@ -9937,6 +10040,7 @@ module.exports = {
             },
             {
               "title": "Vegan Stuffed Cabbage",
+              "made": true,
               "favorite": true,
               "servings": "Serves 4 to 6",
               "ingredientGroups": [
@@ -10001,6 +10105,7 @@ module.exports = {
             },
             {
               "title": "Aloo Gobi",
+              "made": true,
               "servings": "Serves 2–3",
               "source": "Manali Singh / Cook With Manali",
               "comments": [
@@ -10059,6 +10164,7 @@ module.exports = {
             },
             {
               "title": "Baked Rajma (Punjabi-Style Red Beans With Cream)",
+              "made": true,
               "servings": "Serves 4   |   Total: 1 hr",
               "source": "Tejal Rao / NYT Cooking",
               "comments": [
@@ -10236,6 +10342,7 @@ module.exports = {
             },
             {
               "title": "Chickpea Tikka Masala",
+              "made": true,
               "servings": "Serves 4–6   |   Makes about 5 cups",
               "source": "Washington Post",
               "comments": [
@@ -10285,6 +10392,7 @@ module.exports = {
             },
             {
               "title": "Quick Chana Masala",
+              "made": true,
               "servings": "Serves 4",
               "source": "Cookie and Kate / Kathryne Taylor; adapted from The Oh She Glows Cookbook by Angela Liddon",
               "ingredientGroups": [
@@ -10524,6 +10632,7 @@ module.exports = {
             },
             {
               "title": "Mattar Paneer (Peas and Paneer in Spiced Tomato Gravy)",
+              "made": true,
               "servings": "Serves 2–4",
               "source": "New York Times / Zainab Shah",
               "comments": [
@@ -10581,6 +10690,7 @@ module.exports = {
             },
             {
               "title": "Authentic Saag Paneer",
+              "made": true,
               "servings": "Serves 4   |   Total: 1 hr",
               "source": "Allrecipes",
               "comments": [
@@ -10897,6 +11007,7 @@ module.exports = {
             },
             {
               "title": "Baked Tofu With Peanut Sauce and Coconut-Lime Rice",
+              "made": true,
               "servings": "Serves 4   |   Total: ~45 min",
               "source": "Yewande Komolafe, NYT Cooking",
               "comments": [
@@ -10963,6 +11074,7 @@ module.exports = {
             },
             {
               "title": "Silken Tofu With Spicy Soy Dressing",
+              "made": true,
               "servings": "Serves 4",
               "source": "New York Times / Hetty Lui McKinnon",
               "comments": [
@@ -11009,6 +11121,7 @@ module.exports = {
           "recipes": [
             {
               "title": "Mushrooms Florentine",
+              "made": true,
               "favorite": true,
               "servings": "Serves 8–10",
               "source": "Family recipe card, credited to Sue Karp",
@@ -11109,6 +11222,7 @@ module.exports = {
             },
             {
               "title": "Stuffed Portobello Mushrooms with Crispy Goat Cheese",
+              "made": true,
               "servings": "Serves 4   |   Prep: 15 min   |   Cook: 45 min   |   Total: 1 hour",
               "source": "Laura Davidson, A Beautiful Plate",
               "comments": [
@@ -11231,6 +11345,7 @@ module.exports = {
             },
             {
               "title": "Roasted Portobellos With Pesto",
+              "made": true,
               "servings": "Serves 4   |   Total: 30 min",
               "source": "Martha Rose Shulman, NYT Cooking",
               "comments": [
@@ -11503,6 +11618,7 @@ module.exports = {
                 },
                 {
                   "title": "Creamy Baked Mac and Cheese",
+                  "made": true,
                   "servings": "Serves 8-10",
                   "source": "thechunkychef.com",
                   "comments": [
@@ -11551,6 +11667,7 @@ module.exports = {
                 },
                 {
                   "title": "Classic Stuffed Shells",
+                  "made": true,
                   "servings": "Serves 6   |   Total: 55 min",
                   "source": "Sara Welch, dinneratthezoo.com",
                   "comments": [
@@ -11601,6 +11718,7 @@ module.exports = {
                 },
                 {
                   "title": "Homemade Butternut Squash Ravioli",
+                  "made": true,
                   "servings": "Serves 12 (makes about 6 dozen ravioli)   |   Total: 1 hr 45 min",
                   "source": "Krissy Allori, selfproclaimedfoodie.com",
                   "comments": [
@@ -11707,6 +11825,7 @@ module.exports = {
                 },
                 {
                   "title": "Sheet-Pan Gnocchi with Asparagus, Leeks and Peas",
+                  "made": true,
                   "servings": "Serves 4   |   Total: 30 min",
                   "source": "New York Times (Susan Spungen)",
                   "comments": [
@@ -11806,6 +11925,7 @@ module.exports = {
                 },
                 {
                   "title": "\"Finnish\" Baked Feta Pasta",
+                  "made": true,
                   "favorite": true,
                   "servings": "Serves 4-6 | Total: ~55 min",
                   "source": "ScheckEats (Jeremy Scheck)",
@@ -12083,6 +12203,7 @@ module.exports = {
                 },
                 {
                   "title": "BIG Noods alla Gin with Sungold Tomatoes",
+                  "made": true,
                   "favorite": true,
                   "servings": "Serves 4 to 6   |   Prep: 40 minutes   |   Total: 50 minutes",
                   "comments": [
@@ -12147,6 +12268,7 @@ module.exports = {
                 },
                 {
                   "title": "Lisa's Angel Hair Tomato Basil Toss",
+                  "made": true,
                   "servings": "Serves 4–6",
                   "source": "Family recipe card, credited to Lisa Sullivan; subtitled \"Angel Hair Tomato Basil Toss\"",
                   "ingredientGroups": [
@@ -12230,6 +12352,7 @@ module.exports = {
                 },
                 {
                   "title": "Pasta Alla Norma",
+                  "made": true,
                   "favorite": true,
                   "servings": "Serves 4-6   |   Total: 45 min",
                   "source": "New York Times (Mark Bittman)",
@@ -12279,6 +12402,7 @@ module.exports = {
                 },
                 {
                   "title": "Old-Fashioned Spaghetti",
+                  "made": true,
                   "servings": "Serves 2   |   Total: 35 min",
                   "comments": [
                     "The very first recipe Eric ever cooked for Lauren."
@@ -12335,6 +12459,7 @@ module.exports = {
                 },
                 {
                   "title": "Spaghetti with Fresh Tomato and Basil Sauce",
+                  "made": true,
                   "servings": "Serves 4   |   Total: 40 min",
                   "source": "New York Times (Scott Conant)",
                   "comments": [
@@ -12378,6 +12503,7 @@ module.exports = {
                 },
                 {
                   "title": "Rigatoni with Easy Vodka Sauce",
+                  "made": true,
                   "favorite": true,
                   "servings": "Serves 4 | Total: ~40 min",
                   "source": "Bon Appetit (Claire Saffitz)",
@@ -12536,6 +12662,7 @@ module.exports = {
               "recipes": [
                 {
                   "title": "Creamy Cajun Chicken Pasta",
+                  "made": true,
                   "servings": "Serves 2 to 3   |   Total: 30 min",
                   "comments": [
                     "Inspired by the Southwestern/Cajun chicken pasta at Friday's.",
@@ -12580,6 +12707,7 @@ module.exports = {
                 },
                 {
                   "title": "Brie Linguine",
+                  "made": true,
                   "servings": "Serves 6   |   Prep: 15 minutes, plus 2–3 hours resting",
                   "comments": [
                     "A very intense pasta, best served as a side dish.",
@@ -12623,6 +12751,7 @@ module.exports = {
                 },
                 {
                   "title": "Pasta with Sausage, Basil, and Mustard",
+                  "made": true,
                   "favorite": true,
                   "servings": "Serves 4   |   Active: 10 min   |   Total: 20 min",
                   "source": "Nigel Slater, Food & Wine (September 2002)",
@@ -12661,6 +12790,7 @@ module.exports = {
                 },
                 {
                   "title": "Crisp Gnocchi with Sausage and Peas",
+                  "made": true,
                   "servings": "Serves 4",
                   "source": "New York Times (Ali Slagle)",
                   "comments": [
@@ -12765,6 +12895,7 @@ module.exports = {
                 },
                 {
                   "title": "Nuala's Riccota Penne",
+                  "made": true,
                   "servings": "Serves 2–3",
                   "source": "Family recipe card, credited to Nuala O'Connor",
                   "ingredientGroups": [
@@ -12896,6 +13027,7 @@ module.exports = {
                 },
                 {
                   "title": "Pasta (or Ravioli) with Brown Butter and Crispy Sage",
+                  "made": true,
                   "servings": "Serves 4",
                   "source": "Adapted from New York Times (Mark Bittman) and Marilena Leavitt, marilenaskitchen.com",
                   "comments": [
@@ -13040,6 +13172,7 @@ module.exports = {
                 },
                 {
                   "title": "Pasta with Gorgonzola and Arugula",
+                  "made": true,
                   "servings": "Serves 4   |   Total: 30 min",
                   "source": "New York Times (Mark Bittman)",
                   "comments": [
@@ -13143,6 +13276,7 @@ module.exports = {
                 },
                 {
                   "title": "Smoked Gouda Mac and Cheese",
+                  "made": true,
                   "servings": "Serves 8 | Total: 30 min",
                   "source": "Joyous Apron (MinShien)",
                   "comments": [
@@ -13182,6 +13316,7 @@ module.exports = {
                 },
                 {
                   "title": "Ravioli with Sage Brown Butter Sauce",
+                  "made": true,
                   "servings": "Serves 2 | Total: 20 min",
                   "source": "Budget Bytes",
                   "comments": [
@@ -13479,6 +13614,7 @@ module.exports = {
                 {
                   "id": "preserved-lemon-zaatar-pasta",
                   "title": "Preserved Lemon Za'atar Pasta",
+                  "made": true,
                   "servings": "Serves 4 | Total: ~25 min",
                   "source": "Nik Sharma Cooks (Nik Sharma)",
                   "comments": [
@@ -13748,6 +13884,7 @@ module.exports = {
               "recipes": [
                 {
                   "title": "Fried Drunken Noodles with Chicken (Phad Kii Maw Gai)",
+                  "made": true,
                   "servings": "Serves 6",
                   "source": "\"A Passion for Thai Cooking\" by Sompon and Elizabeth Nabnian, p. 69",
                   "comments": [
@@ -14014,6 +14151,7 @@ module.exports = {
                 },
                 {
                   "title": "Kimchi Udon with Scallions",
+                  "made": true,
                   "servings": "Serves 4   |   Total: 20 min",
                   "source": "Bon Appetit (Andy Baraghani)",
                   "ingredientGroups": [
@@ -14250,6 +14388,7 @@ module.exports = {
             },
             {
               "title": "Crispy Smashed Potatoes",
+              "made": true,
               "favorite": true,
               "servings": "Serves 6",
               "source": "Modern Honey / Melissa Stadler",
@@ -14351,6 +14490,7 @@ module.exports = {
             },
             {
               "title": "Perfect Twice Fried French Fries",
+              "made": true,
               "servings": "Serves 4–6",
               "source": "The Salted Potato / Renee Robinson",
               "favorite": true,
@@ -14440,6 +14580,7 @@ module.exports = {
             },
             {
               "title": "Potato Latkes",
+              "made": true,
               "favorite": true,
               "servings": "Makes about 12 latkes",
               "source": "\"Celebration: The Book of Jewish Festivals,\" ed. Naomi Black (Jonathan David Publishers, 1989)",
@@ -14517,6 +14658,7 @@ module.exports = {
           "recipes": [
             {
               "title": "Sautéed Mushrooms",
+              "made": true,
               "servings": "Serves 6   |   Prep: 10 min   |   Cook: 20 min   |   Total: 30 min",
               "source": "Sommer Collier, A Spicy Perspective",
               "comments": [
@@ -14555,6 +14697,7 @@ module.exports = {
             },
             {
               "title": "Classic Steakhouse Creamed Spinach",
+              "made": true,
               "servings": "Serves 6",
               "source": "Sabrina Snyder / Dinner, then Dessert",
               "comments": [
@@ -14601,6 +14744,7 @@ module.exports = {
             },
             {
               "title": "Kickin' Collard Greens",
+              "made": true,
               "servings": "Serves 6",
               "source": "Ken Adams / Allrecipes",
               "ingredientGroups": [
@@ -14700,6 +14844,7 @@ module.exports = {
             },
             {
               "title": "Mexican Street Corn (Elotes)",
+              "made": true,
               "servings": "Serves 4",
               "source": "Chef Billy Parisi / The Inspired Home",
               "comments": [
@@ -14741,6 +14886,7 @@ module.exports = {
             },
             {
               "title": "Red Cabbage With Walnuts and Feta",
+              "made": true,
               "servings": "Serves 6 to 8",
               "source": "Melissa Clark / New York Times Cooking",
               "comments": [
@@ -14828,6 +14974,7 @@ module.exports = {
             },
             {
               "title": "Broccoli with Garlic Sauce",
+              "made": true,
               "servings": "Serves 4",
               "source": "I Heart Umami / ChihYu Smith",
               "comments": [
@@ -14870,6 +15017,7 @@ module.exports = {
             },
             {
               "title": "Garlicky Broccoli Stir-Fry",
+              "made": true,
               "servings": "Serves 4",
               "source": "Sarah Leung / The Woks of Life",
               "comments": [
@@ -14908,6 +15056,7 @@ module.exports = {
             },
             {
               "title": "Stir-Fried Spinach With Garlic",
+              "made": true,
               "favorite": true,
               "servings": "Serves 3 to 4",
               "source": "Rhonda Parkinson / The Spruce Eats",
@@ -14986,6 +15135,7 @@ module.exports = {
             },
             {
               "title": "Baked Zucchini Fries",
+              "made": true,
               "favorite": true,
               "servings": "Serves 6",
               "source": "Chungah Rhee / Damn Delicious",
@@ -15033,6 +15183,7 @@ module.exports = {
             },
             {
               "title": "Beets With Horseradish and Pumpkin Seeds",
+              "made": true,
               "servings": "Serves 4",
               "source": "Vallery Lomas / New York Times Cooking",
               "comments": [
@@ -15125,6 +15276,7 @@ module.exports = {
             },
             {
               "title": "Crack Broccoli",
+              "made": true,
               "favorite": true,
               "servings": "Serves 6",
               "source": "Jessica Knott / Swanky Recipes",
@@ -15357,6 +15509,7 @@ module.exports = {
             {
               "id": "cornbread-dressing-with-sausage-and-corn-nuts",
               "title": "Cornbread Dressing With Sausage and Corn Nuts",
+              "made": true,
               "servings": "Serves 8 to 10   |   Active: 40 min   |   Total: 2 hours",
               "source": "Bon Appetit (Rick Martinez and Chris Morocco)",
               "comments": [
@@ -15430,6 +15583,7 @@ module.exports = {
       "recipes": [
         {
           "title": "Rice with Dill",
+          "made": true,
           "ingredientGroups": [
             {
               "label": "Aromatics",
@@ -15467,6 +15621,7 @@ module.exports = {
         },
         {
           "title": "Indian Style Rice",
+          "made": true,
           "servings": "Serves 4 to 6   |   Prep: 15 minutes, plus 30 minutes soaking   |   Cook: about 25 minutes (rice cooker)",
           "comments": [
             "If you don't have whole cardamom pods or a cinnamon stick, use a pinch each of ground cardamom and ground cinnamon added with the turmeric.",
@@ -15513,6 +15668,7 @@ module.exports = {
         },
         {
           "title": "Wild Mushroom Risotto",
+          "made": true,
           "servings": "Serves 6   |   Total: 45-50 min",
           "source": "Bon Appetit (Lori de Mori)",
           "comments": [
@@ -15563,6 +15719,7 @@ module.exports = {
         },
         {
           "title": "Spanish Rice",
+          "made": true,
           "servings": "Serves 3 to 4   |   Total: about 15 min",
           "source": "Food.com (JeanSgt)",
           "comments": [
@@ -15602,6 +15759,7 @@ module.exports = {
         },
         {
           "title": "Pink Risotto With Beet Greens and Roasted Beets",
+          "made": true,
           "servings": "Serves 4 to 5   |   Total: 45 min + 45-60 min to roast beets",
           "source": "New York Times (Martha Rose Shulman)",
           "comments": [
@@ -15754,6 +15912,7 @@ module.exports = {
         {
           "id": "cornbread-stuffing-fried-rice",
           "title": "Cornbread Stuffing Fried Rice",
+          "made": true,
           "servings": "Serves 8   |   Total: about 1 hour (including chili crisp)",
           "source": "Bon Appetit (Rick Martinez)",
           "comments": [
@@ -15814,6 +15973,7 @@ module.exports = {
           "recipes": [
             {
               "title": "Nechamie's Challah",
+              "made": true,
               "favorite": true,
               "servings": "Makes 2 large loaves",
               "source": "From Nechamie (Chabad Jewish Center of Pudong)",
@@ -16006,6 +16166,7 @@ module.exports = {
             },
             {
               "title": "Same-Day Focaccia",
+              "made": true,
               "servings": "Serves 8-12   |   Total: about 2 hours",
               "source": "Gimme Some Oven (Ali Martin)",
               "comments": [
@@ -16084,6 +16245,7 @@ module.exports = {
             },
             {
               "title": "Homemade Naan Bread",
+              "made": true,
               "servings": "Makes 8 naan",
               "source": "Kristyn Merkley, Lil’ Luna (lilluna.com)",
               "comments": [
@@ -16295,6 +16457,7 @@ module.exports = {
             },
             {
               "title": "Ultra-Fluffy Milk Bread Rolls",
+              "made": true,
               "favorite": true,
               "servings": "Makes 9 rolls",
               "source": "Cleobuttera (Tasbih), adapted from King Arthur Flour",
@@ -16414,6 +16577,7 @@ module.exports = {
           "recipes": [
             {
               "title": "Cinnamon Almond Babka",
+              "made": true,
               "servings": "Makes 1 loaf",
               "ingredientGroups": [
                 {
@@ -16611,6 +16775,7 @@ module.exports = {
             },
             {
               "title": "Mom’s Zucchini Bread",
+              "made": true,
               "servings": "Makes 2 (8x4-inch) loaves   |   Bake: 325°F for 40-60 minutes",
               "source": "Allrecipes (Vicki Monte), tested by Allrecipes Test Kitchen",
               "comments": [
@@ -16698,6 +16863,7 @@ module.exports = {
           "recipes": [
             {
               "title": "Brenda's Chocolate Chip Cookies",
+              "made": true,
               "servings": "Makes 50-100 cookies",
               "ingredientGroups": [
                 {
@@ -16867,6 +17033,7 @@ module.exports = {
             },
             {
               "title": "Classic Sugar Cookies",
+              "made": true,
               "servings": "Makes about 4–5 dozen cutout cookies",
               "ingredientGroups": [
                 {
@@ -16952,6 +17119,7 @@ module.exports = {
             },
             {
               "title": "Coconut Macaroons",
+              "made": true,
               "servings": "Makes about 18 cookies",
               "ingredientGroups": [
                 {
@@ -16974,6 +17142,7 @@ module.exports = {
             },
             {
               "title": "Eric's Chocolate Chip Cookies",
+              "made": true,
               "favorite": true,
               "servings": "About 3 dozen cookies",
               "comments": [
@@ -17333,6 +17502,7 @@ module.exports = {
             },
             {
               "title": "Nut Butter Balls",
+              "made": true,
               "servings": "About 4 dozen   |   Bake: 325°F for 25 minutes",
               "source": "Family recipe card (Grandmother Brenda's collection)",
               "comments": [
@@ -17381,6 +17551,7 @@ module.exports = {
                 {
                   "id": "baking-sweet-all-shortening-pie-crust",
                   "title": "All-Shortening Pie Crust",
+                  "made": true,
                   "favorite": true,
                   "servings": "Makes 2 crusts   |   Prep: 15 minutes + 30-minute chill",
                   "source": "The Pioneer Woman (Ree Drummond) / The Kitchn (blind baking method)",
@@ -17429,6 +17600,7 @@ module.exports = {
                 },
                 {
                   "title": "Susan's Apple Pie",
+                  "made": true,
                   "servings": "Makes 1 pie",
                   "ingredientGroups": [
                     {
@@ -17535,6 +17707,7 @@ module.exports = {
                 },
                 {
                   "title": "Doughnut Glazes",
+                  "made": true,
                   "servings": "Each glaze makes enough for 10–12 doughnuts",
                   "ingredientGroups": [
                     {
@@ -17592,6 +17765,7 @@ module.exports = {
                 },
                 {
                   "title": "Jumbo Banana-Nut Muffins",
+                  "made": true,
                   "servings": "Makes 12 muffins",
                   "comments": [
                     "Recipe scaled 1.5x from original (from 9 jumbo muffins to 12). Walnuts made optional.",
@@ -17701,6 +17875,7 @@ module.exports = {
                 },
                 {
                   "title": "Lemony Glazed Cake Doughnuts",
+                  "made": true,
                   "servings": "Makes 8 doughnuts (plus holes)",
                   "ingredientGroups": [
                     {
@@ -17775,6 +17950,7 @@ module.exports = {
                 {
                   "id": "baking-sweet-passover-cream-puff-shells",
                   "title": "Passover Cream Puff Shells",
+                  "made": true,
                   "servings": "Makes about 2 dozen shells",
                   "ingredientGroups": [
                     {
@@ -17826,6 +18002,7 @@ module.exports = {
                 },
                 {
                   "title": "Frangipane",
+                  "made": true,
                   "servings": "Makes about 1/2 cup (enough for one tart or tartlets)",
                   "ingredientGroups": [
                     {
@@ -17916,6 +18093,7 @@ module.exports = {
                 },
                 {
                   "title": "Brenda's Noodle Kugel",
+                  "made": true,
                   "favorite": true,
                   "source": "Family recipe card, credited to Brenda",
                   "comments": [
@@ -18158,6 +18336,7 @@ module.exports = {
                 },
                 {
                   "title": "Mixed Berry Pie",
+                  "made": true,
                   "servings": "Serves 8",
                   "ingredientGroups": [
                     {
@@ -18201,6 +18380,7 @@ module.exports = {
                 },
                 {
                   "title": "Maple-Honey Pecan Pie",
+                  "made": true,
                   "servings": "Serves 8",
                   "ingredientGroups": [
                     {
@@ -18250,6 +18430,7 @@ module.exports = {
                 },
                 {
                   "title": "Foolproof Tarte Tatin",
+                  "made": true,
                   "servings": "Serves 8",
                   "favorite": true,
                   "ingredientGroups": [
@@ -18473,6 +18654,7 @@ module.exports = {
                 },
                 {
                   "title": "Fresh Southern Peach Cobbler",
+                  "made": true,
                   "servings": "Serves 6-8   |   Bake: 425°F for 40 minutes total",
                   "source": "Allrecipes (aeposey), tested by Allrecipes Test Kitchen",
                   "ingredientGroups": [
@@ -18562,6 +18744,7 @@ module.exports = {
                 },
                 {
                   "title": "Strawberry Shortcake",
+                  "made": true,
                   "servings": "Serves 4 generously",
                   "ingredientGroups": [
                     {
@@ -18647,6 +18830,7 @@ module.exports = {
                 },
                 {
                   "title": "Passover Profiteroles With Strawberries",
+                  "made": true,
                   "servings": "Makes about 2 dozen profiteroles",
                   "ingredientGroups": [
                     {
@@ -18703,6 +18887,7 @@ module.exports = {
                 },
                 {
                   "title": "Cinnamon Raisin Bagel Bread Pudding",
+                  "made": true,
                   "servings": "Serves 6–9",
                   "ingredientGroups": [
                     {
@@ -18750,6 +18935,7 @@ module.exports = {
               "recipes": [
                 {
                   "title": "Blueberry Coffee Cake (Blueberry Boy Bait)",
+                  "made": true,
                   "favorite": true,
                   "servings": "Serves 12-16   |   Bake: 375°F for 45-55 minutes",
                   "source": "Adapted from Once Upon a Chef (onceuponachef.com) by Jennifer Segal",
@@ -18947,6 +19133,7 @@ module.exports = {
                 },
                 {
                   "title": "Chocolate \"Birthday Cake\"",
+                  "made": true,
                   "favorite": true,
                   "servings": "One large sheet cake or a 2-layer 9-inch cake   |   Cook: 40-45 minutes",
                   "comments": [
@@ -19140,6 +19327,7 @@ module.exports = {
                 },
                 {
                   "title": "Nana's Poundcake",
+                  "made": true,
                   "favorite": true,
                   "servings": "1 loaf or bundt cake   |   Cook: 90 minutes",
                   "comments": [
@@ -19474,6 +19662,7 @@ module.exports = {
                 },
                 {
                   "title": "Chai Cake With Brown-Butter-Ghee Streusel",
+                  "made": true,
                   "servings": "Serves 10–12",
                   "ingredientGroups": [
                     {
@@ -19563,6 +19752,7 @@ module.exports = {
                 },
                 {
                   "title": "Ube Chiffon Cake",
+                  "made": true,
                   "servings": "Serves 12",
                   "ingredientGroups": [
                     {
@@ -19651,6 +19841,7 @@ module.exports = {
                 },
                 {
                   "title": "Bonfire Night Cake",
+                  "made": true,
                   "servings": "Serves 10-12   |   Bake: 350°F for 30-35 minutes",
                   "source": "Prue Leith",
                   "comments": [
@@ -19902,6 +20093,7 @@ module.exports = {
           "recipes": [
             {
               "title": "72-Hour Pizza Dough",
+              "made": true,
               "favorite": true,
               "servings": "Makes 3 pizzas (~283g each)",
               "source": "The Gourmandise School (The Pizza Class)",
@@ -19948,6 +20140,7 @@ module.exports = {
             },
             {
               "title": "Susan's Calzones",
+              "made": true,
               "servings": "Serves 4",
               "source": "Family recipe card, credited to Susan",
               "ingredientGroups": [
@@ -19999,6 +20192,7 @@ module.exports = {
             },
             {
               "title": "Eggplant Parm Pizza",
+              "made": true,
               "servings": "Makes one 12-inch pizza",
               "source": "Bon Appétit (Molly Baz)",
               "comments": [
@@ -20059,6 +20253,7 @@ module.exports = {
             },
             {
               "title": "Gruyere Quiche",
+              "made": true,
               "favorite": true,
               "servings": "Serves 4-6   |   Total: 1 hour 30 minutes (including blind baking)",
               "source": "Grits and Chopsticks (broccoli filling) / Once Upon a Chef, Jennifer Segal (spinach filling)",
@@ -20185,6 +20380,7 @@ module.exports = {
             },
             {
               "title": "Khachapuri Adjaruli (Georgian Cheese Bread Boat)",
+              "made": true,
               "servings": "Serves 2 as an entree or 4 as an appetizer",
               "source": "New York Times Cooking (Daniela Galarza, adapted from Carla Capalbo)",
               "comments": [
@@ -20275,6 +20471,7 @@ module.exports = {
             },
             {
               "title": "Scallion Pancakes",
+              "made": true,
               "servings": "Makes 8 pancakes (serves 4-6)   |   Total: 2 hours (including 1 hour rest)",
               "source": "Bon Appétit (Sue Li)",
               "comments": [
@@ -20327,6 +20524,7 @@ module.exports = {
             },
             {
               "title": "Buttermilk Cornbread",
+              "made": true,
               "servings": "Makes one 13x9-inch pan (about 16 pieces)   |   Total: 35 minutes",
               "source": "Bon Appetit (Molly Baz), November 2018",
               "comments": [
@@ -20498,6 +20696,7 @@ module.exports = {
             },
             {
               "title": "Grandma-Style Pizza Dough",
+              "made": true,
               "favorite": true,
               "servings": "Makes enough for 1 pie (18x13-inch baking sheet)   |   Active: 30 minutes   |   Total: 25 hours (including overnight refrigerator rise)",
               "source": "Bon Appetit (Alfia Muzio), September 2014",
@@ -20570,6 +20769,7 @@ module.exports = {
             },
             {
               "title": "Hot and Sweet Soppressata and Fennel Grandma Pie",
+              "made": true,
               "favorite": true,
               "servings": "Serves 6   |   Active: 15 minutes   |   Total: 45 minutes (plus dough rising time)",
               "source": "Bon Appetit (Alfia Muzio), September 2014",
@@ -20694,6 +20894,7 @@ module.exports = {
         },
         {
           "title": "Clotted Cream",
+          "made": true,
           "servings": "Makes about 1 cup   |   Total: about 24 hours (mostly hands-off)",
           "source": "Tasting Table (Catherine Brookes)",
           "comments": [
@@ -20756,6 +20957,7 @@ module.exports = {
         },
         {
           "title": "Paneer",
+          "made": true,
           "servings": "Makes about 11 oz   |   Total: 2.5 to 3 hours (15 min active + 1 to 2 hours pressing)",
           "source": "Healthy Nibbles and Bits (Lisa Lin)",
           "comments": [
@@ -20781,6 +20983,7 @@ module.exports = {
         },
         {
           "title": "Ghee",
+          "made": true,
           "servings": "Makes slightly less than 1 pound   |   Total: about 12 min",
           "source": "Food Network (Alton Brown)",
           "comments": [
@@ -20809,6 +21012,7 @@ module.exports = {
       "recipes": [
         {
           "title": "Christy's Dressing",
+          "made": true,
           "source": "From Christy Ponder",
           "comments": [
             "Suggested pairings: walnuts and mandarin oranges; walnuts and dried cranberries; or avocado, tomatoes, and onions."
@@ -20829,6 +21033,7 @@ module.exports = {
         },
         {
           "title": "Greek Salad Dressing",
+          "made": true,
           "servings": "Serves 6   |   Prep: 5 minutes",
           "comments": [
             "Garlic doubled from the original recipe, and microplaned rather than minced for a smoother, more evenly distributed flavor."
@@ -20853,6 +21058,7 @@ module.exports = {
         },
         {
           "title": "Lemon Mustard Vinaigrette",
+          "made": true,
           "favorite": true,
           "servings": "Serves 6   |   Prep: 5 minutes",
           "comments": [
@@ -20929,6 +21135,7 @@ module.exports = {
             {
               "id": "cherry-bbq-sauce",
               "title": "Cherry Barbecue Sauce",
+              "made": true,
               "favorite": true,
               "servings": "Makes about 3½ cups   |   Total: 30 min",
               "source": "Ilene Harrington, Taste of Home",
@@ -20967,6 +21174,7 @@ module.exports = {
             },
             {
               "title": "Creamy Louisiana Marinade",
+              "made": true,
               "servings": "Makes about 7/8 cup; enough to marinate 1 1/2 pounds",
               "ingredientGroups": [
                 {
@@ -20999,6 +21207,7 @@ module.exports = {
             {
               "id": "horseradish-sauce",
               "title": "Horseradish Sauce",
+              "made": true,
               "favorite": true,
               "servings": "Serves 8   |   Total: 5 min",
               "source": "CAROL46, Allrecipes",
@@ -21027,6 +21236,7 @@ module.exports = {
             {
               "id": "joan-chili-aioli",
               "title": "Joan's on Third Chili Aioli",
+              "made": true,
               "favorite": true,
               "servings": "Makes about 2 cups   |   Prep: 10 min",
               "source": "Los Angeles Times (adapted from Joan's on Third)",
@@ -21051,6 +21261,7 @@ module.exports = {
             {
               "id": "steak-seasoning-rub",
               "title": "Steak Seasoning Rub",
+              "made": true,
               "favorite": true,
               "servings": "Makes enough for 4 large steaks   |   Total: 5 min",
               "source": "Sommer Collier, A Spicy Perspective",
@@ -21084,6 +21295,7 @@ module.exports = {
             {
               "id": "moroccan-preserved-lemon-yogurt-sauce",
               "title": "Moroccan Preserved Lemon Yogurt Sauce",
+              "made": true,
               "servings": "Serves 8",
               "source": "Tamara Andersen / Beyond Mere Sustenance",
               "comments": [
@@ -21147,6 +21359,7 @@ module.exports = {
             },
             {
               "title": "Authentic Raita",
+              "made": true,
               "servings": "Makes about 1 1/2 cups",
               "source": "Sylvia Fountaine / Feasting at Home",
               "comments": [
@@ -21184,6 +21397,7 @@ module.exports = {
           "recipes": [
             {
               "title": "Authentic Chimichurri",
+              "made": true,
               "servings": "Serves 8   |   Total: 10 min (ideally rests 2 hrs)",
               "source": "Karina Carrel, Cafe Delites",
               "ingredientGroups": [
@@ -21208,6 +21422,7 @@ module.exports = {
             },
             {
               "title": "Chicken Fajita Marinade",
+              "made": true,
               "servings": "Serves 4   |   Prep: 10 minutes   |   Cook: 1 minute   |   Total: 41 minutes (includes 30 minutes marinating)",
               "comments": [
                 "This is a marinade rather than a full dish — cook the marinated chicken and vegetables however you like (grill, skillet, or oven).",
@@ -21248,6 +21463,7 @@ module.exports = {
             },
             {
               "title": "D.L. Jardine's Fajita Marinade",
+              "made": true,
               "servings": "Serves 4",
               "comments": [
                 "Works for both chicken and beef; marinate all day or overnight for best results."
@@ -21286,6 +21502,7 @@ module.exports = {
           "recipes": [
             {
               "title": "Christy's Pesto (Adapted)",
+              "made": true,
               "id": "sauces-italian-christy-s-pesto-adapted",
               "servings": "Six 2-person servings",
               "comments": [
@@ -21314,6 +21531,7 @@ module.exports = {
             },
             {
               "title": "Fresh Tomato Pizza Sauce",
+              "made": true,
               "favorite": true,
               "servings": "Makes about 5 cups   |   Total: 5 minutes",
               "source": "Bon Appetit (Alfia Muzio), September 2014",
@@ -21370,6 +21588,7 @@ module.exports = {
             },
             {
               "title": "Sage Pesto",
+              "made": true,
               "servings": "Makes 1 cup (serving: 1 tablespoon)",
               "ingredientGroups": [
                 {
@@ -21492,6 +21711,7 @@ module.exports = {
           "recipes": [
             {
               "title": "Yemenite Green Hot Sauce (Zhug)",
+              "made": true,
               "servings": "Serves 4 as a condiment   |   Total: 15 minutes",
               "source": "Bon Appetit (Andy Baraghani), January 2018",
               "comments": [
@@ -21548,6 +21768,7 @@ module.exports = {
           "recipes": [
         {
           "title": "Dill Pickles",
+          "made": true,
           "servings": "Makes 4 (8-oz) or 2 (16-oz) jars   |   Prep: 10 minutes   |   Chilling: 1–5 days",
           "comments": [
             "Chips are lightly pickled after 1 day; spears take 2 days. The best flavor develops around day 5 or 6 — worth the wait. Keep refrigerated for several weeks."
@@ -21589,6 +21810,7 @@ module.exports = {
         },
         {
           "title": "Quick Pickled Green Onions",
+          "made": true,
           "servings": "Makes about 8 servings   |   Prep: 15 minutes   |   Pickling: 2 hours minimum (best after 24–48 hours)",
           "source": "https://www.forkintheroad.co/quick-pickled-green-onions/",
           "comments": [
@@ -21637,6 +21859,7 @@ module.exports = {
         {
           "id": "quick-pickled-red-onions",
           "title": "Quick Pickled Red Onions",
+          "made": true,
           "servings": "Makes about 8 servings   |   Prep: 5 minutes   |   Total: 15 minutes",
           "comments": [
             "Great on burgers, grain bowls, salads, sandwiches, or a cheese board. Ready to eat in just 15 minutes, and keeps in the fridge for up to 2 weeks."
@@ -21669,6 +21892,7 @@ module.exports = {
         {
           "id": "haitian-pikliz",
           "title": "Pikliz",
+          "made": true,
           "favorite": true,
           "servings": "Makes 1 quart   |   Prep: 30 min   |   Ready after: 3 days' pickling",
           "source": "Patrick Celestin, adapted by Melissa Clark (NYT Cooking)",
@@ -21709,6 +21933,7 @@ module.exports = {
         {
           "id": "preserved-lemons",
           "title": "Preserved Lemons",
+          "made": true,
           "servings": "Makes about 8 preserved lemons   |   Active: 20 min   |   Pickling: 3 to 4 weeks",
           "source": "The Mediterranean Dish (Suzy Karadsheh)",
           "comments": [
@@ -21846,6 +22071,7 @@ module.exports = {
         },
         {
           "title": "Lauren's Banana Pudding",
+          "made": true,
           "favorite": true,
           "servings": "Serves 10–12   |   Prep: 15 min   |   Rest: 1 hr (pudding) + overnight   |   Total: ~1.25 hrs active",
           "source": "Lauren Muhlheim",
@@ -21921,6 +22147,7 @@ module.exports = {
         },
         {
           "title": "Summer Pudding",
+          "made": true,
           "ingredientGroups": [
             {
               "label": "Bread",
@@ -21962,6 +22189,7 @@ module.exports = {
         },
         {
           "title": "Disney Magical Churros",
+          "made": true,
           "servings": "Makes about 12–15 churros",
           "ingredientGroups": [
             {
@@ -22003,6 +22231,7 @@ module.exports = {
         },
         {
           "title": "Classic Tiramisu",
+          "made": true,
           "servings": "Serves 8-10   |   Chill: at least 4 hours, ideally 24",
           "source": "Alison Roman, NYT Cooking",
           "comments": [
@@ -22051,6 +22280,7 @@ module.exports = {
         },
         {
           "title": "Old-Fashioned Butterscotch Pudding",
+          "made": true,
           "servings": "Serves 4   |   Total: 30 min + 2 hours chilling",
           "source": "New York Times (Melissa Clark)",
           "comments": [
@@ -22107,6 +22337,7 @@ module.exports = {
         },
         {
           "title": "Mango with Sticky Rice (Khao Neow Mamuang)",
+          "made": true,
           "favorite": true,
           "servings": "Serves about 8",
           "source": "\"A Passion for Thai Cooking\" by Sompon and Elizabeth Nabnian, p. 136",
@@ -22164,6 +22395,7 @@ module.exports = {
           "recipes": [
             {
               "title": "Melon Ball",
+              "made": true,
               "servings": "Makes 1 drink",
               "source": "The Kitchn",
               "ingredientGroups": [
@@ -22245,6 +22477,7 @@ module.exports = {
             },
             {
               "title": "Christy's Iced Tea",
+              "made": true,
               "servings": "Makes 1 gallon",
               "source": "From Christy Ponder",
               "ingredientGroups": [

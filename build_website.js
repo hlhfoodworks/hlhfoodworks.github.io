@@ -6,6 +6,10 @@ const { displayTitle } = require('./recipe_utils.js');
 const { buildIngredientIndex } = require('./ingredient_index.js');
 const INGREDIENT_CSS = fs.readFileSync(path.join(__dirname, 'ingredient_search.css'), 'utf8');
 const INGREDIENT_JS = fs.readFileSync(path.join(__dirname, 'ingredient_search_client.js'), 'utf8');
+const MADE_CFG = JSON.parse(fs.readFileSync(path.join(__dirname, 'made_it_config.json'), 'utf8'));
+const MADE_CSS = fs.readFileSync(path.join(__dirname, 'made_it.css'), 'utf8');
+const MADE_JS = fs.readFileSync(path.join(__dirname, 'made_it_client.js'), 'utf8')
+  .split('__MADE_FORM_ID__').join(MADE_CFG.formId).split('__MADE_ENTRY__').join(MADE_CFG.entryField).split('__MADE_PASSWORD__').join(MADE_CFG.password);
 
 // ── Cluster assignments ────────────────────────────────────────────────────
 // Recipes not in this map are rendered without a cluster level in the nav.
@@ -691,10 +695,13 @@ function renderRecipe(recipe, idPrefix) {
   const altBadge = hasAlt ? `<p class="altitude-badge">🏔 High altitude version</p>` : '';
   const articleClass = hasAlt ? 'recipe has-alt' : 'recipe';
 
-  return `<article class="${articleClass}" id="${esc(id)}"${isFav} data-title="${esc(recipe.title)}">
+  const madeAttr = recipe.made ? ' data-made="1"' : '';
+  const madeBtn = `<button class="made-btn${recipe.made ? ' made' : ''}" type="button" data-id="${esc(id)}" data-title="${esc(recipe.title)}" title="${recipe.made ? 'Made it' : 'Not yet made (author only)'}" aria-label="${recipe.made ? 'Made' : 'Not yet made'}: ${esc(recipe.title)}"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">${recipe.made ? 'Made' : 'Not made'}</span></button>`;
+  return `<article class="${articleClass}" id="${esc(id)}"${isFav}${madeAttr} data-title="${esc(recipe.title)}">
   <div class="recipe-header-row">
     <h3>${esc(title)}</h3>
     <div class="recipe-btns">
+      ${madeBtn}
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy ${esc(recipe.title)}">📋 Copy Recipe</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print ${esc(recipe.title)}">🖨 Print</button>
       <a class="link-btn" href="?recipe=${esc(id)}" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open ${esc(recipe.title)} in new tab">🔗 Link</a>
@@ -930,7 +937,7 @@ function navRecipeItem(domId, recipe, pageFile) {
   const starHtml = recipe.favorite
     ? `<span class="nav-star">★</span>`
     : `<span class="nav-star"></span>`;
-  return `<li class="nav-recipe"><a class="nav-recipe-link" data-recipe-title="${esc(recipe.title)}" href="${esc(pageFile)}#${esc(domId)}">${starHtml}<span class="nav-title">${esc(recipe.title)}</span></a></li>\n`;
+  return `<li class="nav-recipe"${recipe.made ? ' data-made="1"' : ''}><a class="nav-recipe-link" data-recipe-title="${esc(recipe.title)}" href="${esc(pageFile)}#${esc(domId)}">${starHtml}<span class="nav-title">${esc(recipe.title)}</span></a></li>\n`;
 }
 
 // ── Single-section content HTML ────────────────────────────────────────────
@@ -1014,7 +1021,7 @@ function buildSearchIndex(data, sink) {
       const flat = clusterGroups.flatMap(g => g.recipes);
       flat.forEach(r => {
         const id = r.id || `${idPrefix}-${slug(r.title)}`;
-        index.push({ title: r.title, page: filename, id, fav: r.favorite ? 1 : 0, section: section.title });
+        index.push({ title: r.title, page: filename, id, fav: r.favorite ? 1 : 0, made: r.made ? 1 : 0, section: section.title });
         if (sink) sink.push({ recipe: r, id, page: filename, section: section.title });
       });
     };
@@ -1602,6 +1609,7 @@ function buildPage(section, navHtml, contentHtml, cookbookData) {
     #search-results .sr-label { padding-top: 5px; padding-bottom: 3px; }
   }
 ${INGREDIENT_CSS}
+${MADE_CSS}
 </style>
 </head>
 <body>
@@ -1632,6 +1640,8 @@ ${INGREDIENT_CSS}
   </div>
   <div id="search-results"></div>
   <button id="fav-toggle"><span class="star">★</span> Favorites only</button>
+  <button id="notmade-toggle"><span class="nm-icon">&#9675;</span> Not yet made</button>
+  <div id="made-pending"><span class="made-pend-n"></span><button type="button" class="made-copy">Copy list</button></div>
   <button id="alt-toggle"><span class="alt-icon">&#9650;</span> High Altitude</button>
   <div id="expand-collapse-row">
     <button id="expand-all"><span class="expand-icon">⊞</span> Expand all</button>
@@ -2187,27 +2197,29 @@ ${INGREDIENT_JS}
     try { localStorage.removeItem('navState'); } catch (e) {}
   });
 
+${MADE_JS}
   // ── Apply filters (favorites — current page only) ─────────────────────
   function applyFilters() {
+    var filtering = favOnly || notMade;
     allRecipes.forEach(function (r) {
-      var favMatch = !favOnly || r.dataset.fav === '1';
+      var favMatch = (!favOnly || r.dataset.fav === '1') && (!notMade || r.dataset.made !== '1');
       r.classList.toggle('hidden', !favMatch);
     });
     document.querySelectorAll('.cluster-group').forEach(function (g) {
       var visible = g.querySelectorAll('.recipe:not(.hidden)').length > 0;
-      g.classList.toggle('all-hidden', !visible && favOnly);
+      g.classList.toggle('all-hidden', !visible && filtering);
     });
     document.querySelectorAll('.sub-subsection').forEach(function (s) {
       var visible = s.querySelectorAll('.recipe:not(.hidden)').length > 0;
-      s.classList.toggle('all-hidden', !visible && favOnly);
+      s.classList.toggle('all-hidden', !visible && filtering);
     });
     document.querySelectorAll('.subsection').forEach(function (s) {
       var visible = s.querySelectorAll('.recipe:not(.hidden)').length > 0;
-      s.classList.toggle('all-hidden', !visible && favOnly);
+      s.classList.toggle('all-hidden', !visible && filtering);
     });
     document.querySelectorAll('.section').forEach(function (s) {
       var visible = s.querySelectorAll('.recipe:not(.hidden)').length > 0;
-      s.classList.toggle('all-hidden', !visible && favOnly);
+      s.classList.toggle('all-hidden', !visible && filtering);
     });
     var favTitles = new Set();
     allRecipes.forEach(function (r) { if (r.dataset.fav === '1') favTitles.add(r.dataset.title); });
@@ -2218,21 +2230,32 @@ ${INGREDIENT_JS}
       // For other-page recipes, read the star span stamped at build time.
       var starEl = link ? link.querySelector('.nav-star') : null;
       var isFavInNav = starEl ? starEl.textContent.trim() === '★' : false;
-      var show = !favOnly || favTitles.has(title) || isFavInNav;
+      var show = (!favOnly || favTitles.has(title) || isFavInNav) && (!notMade || li.dataset.made !== '1');
       li.classList.toggle('nav-hidden', !show);
     });
     document.querySelectorAll('.nav-cluster').forEach(function (li) {
       var anyVisible = li.querySelectorAll('.nav-recipe:not(.nav-hidden)').length > 0;
-      li.classList.toggle('nav-hidden', !anyVisible && favOnly);
+      li.classList.toggle('nav-hidden', !anyVisible && filtering);
     });
     document.querySelectorAll('.nav-sub').forEach(function (li) {
       var anyVisible = li.querySelectorAll('.nav-recipe:not(.nav-hidden)').length > 0;
-      li.classList.toggle('nav-hidden', !anyVisible && favOnly);
+      li.classList.toggle('nav-hidden', !anyVisible && filtering);
     });
   }
 })();
 </script>
 
+<div id="made-modal" hidden>
+  <form id="made-form" role="dialog" aria-modal="true" aria-labelledby="made-title">
+    <div id="made-dialog">
+      <h2 id="made-title">Mark as made</h2>
+      <p id="made-name"></p>
+      <input id="made-pw" type="password" placeholder="Confirmation password" autocomplete="off" aria-label="Confirmation password">
+      <p id="made-err" role="alert"></p>
+      <div class="made-actions"><button type="button" id="made-cancel">Cancel</button><button type="submit">Confirm</button></div>
+    </div>
+  </form>
+</div>
 </body>
 </html>`;
 }

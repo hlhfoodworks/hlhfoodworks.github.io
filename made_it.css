@@ -1,0 +1,37 @@
+  /* ── Made-it mark ── */
+  .made-btn {
+    flex-shrink: 0; display: inline-flex; align-items: center; gap: 4px;
+    background: none; border: 1px solid var(--border); border-radius: var(--radius);
+    color: var(--muted); font-size: 0.72rem; padding: 3px 8px; margin-top: 2px;
+    cursor: pointer; font-family: 'Helvetica Neue', Arial, sans-serif; white-space: nowrap;
+  }
+  .made-btn svg { width: 13px; height: 13px; flex-shrink: 0; }
+  .made-btn .ic-made { display: none; }
+  .made-btn:hover { background: var(--border); color: var(--text); }
+  .made-btn.made { color: #2e7d32; border-color: #9ccc9f; background: #e6f4ea; cursor: default; }
+  .made-btn.made .ic-made { display: block; }
+  .made-btn.made .ic-not { display: none; }
+  .made-btn.made:hover { background: #e6f4ea; color: #2e7d32; }
+  #notmade-toggle {
+    display: flex; align-items: center; gap: 8px; padding: 7px 14px; font-size: 0.82rem; cursor: pointer;
+    color: var(--nav-text); background: none; border: none; border-bottom: 1px solid #5a3e28; text-align: left; width: 100%;
+  }
+  #notmade-toggle:hover { background: #4e3522; }
+  #notmade-toggle .nm-icon { color: #a8906e; }
+  #notmade-toggle.active { background: #6b4a2e; font-weight: bold; }
+  #made-pending {
+    display: none; align-items: center; justify-content: space-between; gap: 8px; padding: 6px 14px;
+    font-size: 0.72rem; color: #c9a77a; border-bottom: 1px solid #5a3e28;
+  }
+  #made-pending .made-copy { background: none; border: none; color: var(--nav-hover); text-decoration: underline; cursor: pointer; font-size: 0.72rem; font-family: inherit; padding: 0; }
+  #made-modal[hidden] { display: none; }
+  #made-modal { position: fixed; inset: 0; background: rgba(0,0,0,0.45); display: flex; align-items: center; justify-content: center; z-index: 1000; }
+  #made-dialog { background: #fff; color: #2b2118; border-radius: 8px; padding: 18px 20px; width: min(340px, 90vw); box-shadow: 0 8px 28px rgba(0,0,0,0.3); font-family: 'Helvetica Neue', Arial, sans-serif; }
+  #made-dialog h2 { font-size: 1rem; margin: 0 0 4px; }
+  #made-dialog p { font-size: 0.82rem; margin: 0 0 10px; color: #5b4a3a; }
+  #made-dialog input { width: 100%; box-sizing: border-box; padding: 7px 9px; font-size: 16px; border: 1px solid #b9a98f; border-radius: 4px; }
+  #made-err { color: #b3261e; font-size: 0.78rem; min-height: 1.1em; margin: 6px 0 0; }
+  #made-dialog .made-actions { display: flex; justify-content: flex-end; gap: 8px; margin-top: 10px; }
+  #made-dialog button { font-size: 0.82rem; padding: 5px 12px; border-radius: 4px; border: 1px solid #b9a98f; background: #f6f1e8; cursor: pointer; }
+  #made-dialog button[type=submit] { background: #3b2a1a; color: #fff; border-color: #3b2a1a; }
+  @media print { .made-btn, #made-modal { display: none !important; } }
