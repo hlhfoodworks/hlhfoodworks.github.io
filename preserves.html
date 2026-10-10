@@ -2708,17 +2708,22 @@
 
     // apply locally-pending marks, and drop any that the published data already contains
     var localIds = getPending();
+    var stillPending = [], otherPage = [];
     localIds.forEach(function (id) {
       var btn = document.querySelector('.made-btn[data-id="' + id.replace(/"/g, '') + '"]');
-      if (btn && !btn.classList.contains('made')) showMade(btn);
+      if (!btn) { stillPending.push(id); otherPage.push(id); return; }
+      if (btn.classList.contains('made')) return;          // this page's published HTML already says made -> no longer pending
+      showMade(btn); stillPending.push(id);
     });
-    if (localIds.length) {
-      loadSearchIndex(function (index) {
+    if (stillPending.length !== localIds.length) setPending(stillPending);
+    // ids for recipes on other pages: ask a fresh copy of search-index.json (bypass the browser cache)
+    if (otherPage.length) {
+      fetch('search-index.json?t=' + Date.now(), { cache: 'no-store' }).then(function (r) { return r.json(); }).then(function (index) {
         var madeIds = {};
         index.forEach(function (r) { if (r.made) madeIds[r.id] = 1; });
-        var keep = getPending().filter(function (id) { return !madeIds[id]; });
-        if (keep.length !== getPending().length) setPending(keep);
-      });
+        var cur = getPending(), keep = cur.filter(function (id) { return !madeIds[id]; });
+        if (keep.length !== cur.length) setPending(keep);
+      }).catch(function () {});
     }
     renderPending();
 
