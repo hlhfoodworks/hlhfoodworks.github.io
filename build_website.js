@@ -1639,8 +1639,10 @@ ${MADE_CSS}
     </div>
   </div>
   <div id="search-results"></div>
-  <button id="fav-toggle"><span class="star">★</span> Favorites only</button>
-  <button id="notmade-toggle"><span class="nm-icon">&#9675;</span> Not yet made</button>
+  <div id="filter-row">
+    <button id="fav-toggle"><span class="star">★</span> Favorites only</button>
+    <button id="notmade-toggle"><span class="nm-icon">&#9675;</span> Not yet made</button>
+  </div>
   <div id="made-pending"><span class="made-pend-n"></span><button type="button" class="made-copy">Copy list</button></div>
   <button id="alt-toggle"><span class="alt-icon">&#9650;</span> High Altitude</button>
   <div id="expand-collapse-row">
