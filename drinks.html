@@ -1491,6 +1491,18 @@
 
 </div>
 
+<div id="made-modal" hidden>
+  <form id="made-form" role="dialog" aria-modal="true" aria-labelledby="made-title">
+    <div id="made-dialog">
+      <h2 id="made-title">Mark as made</h2>
+      <p id="made-name"></p>
+      <input id="made-pw" type="password" placeholder="Confirmation password" autocomplete="off" aria-label="Confirmation password">
+      <p id="made-err" role="alert"></p>
+      <div class="made-actions"><button type="button" id="made-cancel">Cancel</button><button type="submit">Confirm</button></div>
+    </div>
+  </form>
+</div>
+
 <script>
 (function () {
   const COOKBOOK_DATA = {
@@ -2697,16 +2709,5 @@
 })();
 </script>
 
-<div id="made-modal" hidden>
-  <form id="made-form" role="dialog" aria-modal="true" aria-labelledby="made-title">
-    <div id="made-dialog">
-      <h2 id="made-title">Mark as made</h2>
-      <p id="made-name"></p>
-      <input id="made-pw" type="password" placeholder="Confirmation password" autocomplete="off" aria-label="Confirmation password">
-      <p id="made-err" role="alert"></p>
-      <div class="made-actions"><button type="button" id="made-cancel">Cancel</button><button type="submit">Confirm</button></div>
-    </div>
-  </form>
-</div>
 </body>
 </html>
