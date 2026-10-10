@@ -45,6 +45,7 @@ module.exports = {
         },
         {
           "title": "Baked German Pancake (or Dutch Babies)",
+          "made": true,
           "servings": "One 12-inch pancake, or four 6-inch Dutch babies   |   Cook: 15-25 minutes",
           "source": "The Breakfast Book, by Marion Cunningham",
           "ingredientGroups": [
