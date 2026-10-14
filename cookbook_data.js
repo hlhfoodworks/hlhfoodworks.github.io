@@ -13071,6 +13071,7 @@ module.exports = {
                 },
                 {
                   "title": "Chili Crisp Fettuccine Alfredo with Spinach",
+                  "made": true,
                   "servings": "Serves 6   |   Total: 25 min",
                   "source": "New York Times (Genevieve Ko)",
                   "comments": [
