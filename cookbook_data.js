@@ -13075,9 +13075,18 @@ module.exports = {
                   "source": "New York Times (Genevieve Ko)",
                   "comments": [
                     "Lao Gan Ma and Fly By Jing are the favored brands.",
-                    "Chili crisp varies widely in heat; start with 1 tablespoon and add more to taste. For the most flavor, use more of the solids than the oil."
+                    "Chili crisp varies widely in heat; start with 1 tablespoon and add more to taste. For the most flavor, use more of the solids than the oil.",
+                    "Blanching the spinach and squeezing it dry keeps it from watering down the sauce."
                   ],
                   "ingredientGroups": [
+                    {
+                      "label": "Spinach",
+                      "ingredients": [
+                        "10 oz fresh spinach",
+                        "Ice, for the ice bath",
+                        "Salt, for the blanching and pasta water"
+                      ]
+                    },
                     {
                       "label": "Chili butter",
                       "ingredients": [
@@ -13094,22 +13103,29 @@ module.exports = {
                     {
                       "label": "Pasta",
                       "ingredients": [
-                        "Salt",
                         "1 pound dried fettuccine"
                       ]
                     },
                     {
-                      "label": "Spinach and cheese",
+                      "label": "Cheese",
                       "ingredients": [
-                        "1 (5-oz) package baby spinach",
                         "3/4 cup finely grated Parmesan (2 1/4 oz), plus more for serving"
                       ]
                     }
                   ],
                   "steps": [
-                    "Bring a large pot of salted water to a boil. While it heats, melt butter with chili crisp in a very large skillet or Dutch oven over low. Whisk in cream and keep warm over low (it should steam, not bubble).",
+                    {
+                      "lead": "Blanch the spinach:",
+                      "bullets": [
+                        "Bring a large pot of lightly salted water to a boil. Meanwhile, fill a large bowl with ice and cold water.",
+                        "Add the spinach to the boiling water (in two batches if the pot is crowded) and blanch for 1 to 2 minutes, until bright green and wilted.",
+                        "Using tongs or a spider, immediately transfer the spinach to the ice bath and let it chill for about 2 minutes, until completely cool.",
+                        "Drain well, then squeeze out as much water as possible with your hands (or press it in a clean kitchen towel). Coarsely chop and fluff apart the clump. Set aside."
+                      ]
+                    },
+                    "Season the pot of water generously with more salt and return it to a boil. While it heats, melt butter with chili crisp in a very large skillet or Dutch oven over low. Whisk in cream and keep warm over low (it should steam, not bubble).",
                     "Cook fettuccine until al dente per package directions. Use tongs to transfer noodles to the cream mixture, reserving pasta water.",
-                    "Add spinach and turn with tongs until noodles are well coated.",
+                    "Add the blanched spinach and turn with tongs until noodles are well coated.",
                     "Add Parmesan and toss over low heat until noodles are slicked with a creamy sauce, adding a spoonful or two of pasta water to loosen if needed. Divide among serving dishes; top with more Parmesan and additional chili crisp if desired. Serve immediately."
                   ]
                 },
