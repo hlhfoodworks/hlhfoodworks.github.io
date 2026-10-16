@@ -1000,6 +1000,60 @@ module.exports = {
               "Second rise: check at 25-30 minutes."
             ]
           }
+        },
+        {
+          "title": "Peach Baked Oatmeal",
+          "made": true,
+          "servings": "Serves 6",
+          "source": "Kara Lydon, RD, LDN (karalydon.com)",
+          "comments": [
+            "Frozen or canned peaches work year-round. Brown sugar can be replaced with coconut sugar or maple syrup, and almond milk with cow's milk or another non-dairy milk.",
+            "Make ahead: mix the batter the night before and refrigerate. Let it sit out while the oven preheats, stir, and bake.",
+            "Leftovers keep in the refrigerator up to 4 days (reheat 1 minute in the microwave with a splash of milk) or in the freezer up to 3 months."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Wet ingredients",
+              "ingredients": [
+                "2 eggs",
+                "1/3 cup brown sugar",
+                "2 teaspoons vanilla extract",
+                "2 tablespoons butter, melted",
+                "2 1/2 cups unsweetened almond milk"
+              ]
+            },
+            {
+              "label": "Dry ingredients",
+              "ingredients": [
+                "2 cups old-fashioned rolled oats",
+                "1 teaspoon baking powder",
+                "2 teaspoons cinnamon",
+                "1/2 teaspoon nutmeg",
+                "1/2 teaspoon salt"
+              ]
+            },
+            {
+              "label": "Peaches",
+              "ingredients": [
+                "3 peaches, chopped (1 1/2 cups) and sliced (1/2 cup)"
+              ]
+            },
+            {
+              "label": "To top (optional)",
+              "ingredients": [
+                "1/2 cup chopped toasted pecans"
+              ]
+            }
+          ],
+          "steps": [
+            "Preheat the oven to 375°F.",
+            "In a large bowl, whisk the eggs, brown sugar, vanilla, butter, and almond milk until combined.",
+            "Add the oats, baking powder, cinnamon, nutmeg, and salt and stir to combine.",
+            "Fold in the chopped peaches.",
+            "Pour into a 9-inch square or 11x7 baking dish. Top with the sliced peaches and the pecans, if using.",
+            "Bake until the center is set, about 45 to 50 minutes.",
+            "Cool on a wire rack at least 10 to 15 minutes. Serve hot or cold."
+          ]
         }
       ]
     },
@@ -2663,6 +2717,71 @@ module.exports = {
             "Add mushrooms and peas; cook until crisp-tender, about 3 minutes. If using egg, gently stir it in with a few turns of the spoon to set it into ribbons, about 30 seconds. If using tofu, drop in by spoonfuls; if using yuba, thinly slice before adding. Cook until heated through, about 1 minute. Season with salt.",
             "Ladle into bowls and sprinkle with more Aleppo pepper or red pepper flakes if desired."
           ]
+        },
+        {
+          "title": "Vegetarian Beet Borscht",
+          "made": true,
+          "servings": "Serves 4 to 6",
+          "source": "Sylvia Fountaine, Feasting at Home",
+          "comments": [
+            "Use veggie broth, or chicken stock or beef stock for a traditional version. Balance the salt and vinegar to taste for the best punchy flavor.",
+            "Instant Pot: On Saute, cook the oil and onions 4 to 5 minutes. Add the remaining vegetables and stir. Add the broth, tomato paste, bay leaves, spices, salt, and pepper, then cancel Saute. Seal and cook on high pressure 10 minutes, natural release 5 minutes, then manual release. Stir in the vinegar and adjust the seasoning.",
+            "A food processor with a grater or slicer attachment makes quick work of the beets and carrots.",
+            "Leftovers keep in the refrigerator up to 4 days, or in the freezer up to 6 months. Good hot or chilled."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Aromatics",
+              "ingredients": [
+                "2 tablespoons olive oil or butter",
+                "1 medium onion, diced",
+                "6 large garlic cloves, rough chopped"
+              ]
+            },
+            {
+              "label": "Vegetables",
+              "ingredients": [
+                "2 stalks celery, chopped",
+                "1 cup carrots, sliced or diced small",
+                "1 extra large beet, thinly sliced or small diced (about 2 cups)",
+                "2 cups red cabbage, shredded or chopped",
+                "1 cup beet stems and greens, chopped (optional, or add another cup of cabbage)"
+              ]
+            },
+            {
+              "label": "Broth and seasonings",
+              "ingredients": [
+                "4 cups veggie broth",
+                "2 tablespoons tomato paste",
+                "1 teaspoon celery seeds (optional)",
+                "1/4 teaspoon allspice",
+                "A pinch of cayenne pepper, more to taste",
+                "2 bay leaves",
+                "1 to 1 1/2 teaspoons salt, adjusted to the broth",
+                "1/4 to 1/2 teaspoon black pepper"
+              ]
+            },
+            {
+              "label": "To finish",
+              "ingredients": [
+                "1 to 2 tablespoons apple cider vinegar"
+              ]
+            },
+            {
+              "label": "To serve",
+              "ingredients": [
+                "1/2 cup chopped fresh dill",
+                "Sour cream, Greek yogurt, or vegan yogurt"
+              ]
+            }
+          ],
+          "steps": [
+            "In a Dutch oven or heavy soup pot over medium-high heat, warm the oil. Add the onions and stir until golden, 4 to 5 minutes. Lower the heat, add the garlic, and saute 2 minutes.",
+            "Add the celery, carrots, beets, cabbage, and beet greens and stir to coat with the onions and oil. Add the broth, tomato paste, celery seeds, allspice, cayenne, bay leaves, salt, and pepper.",
+            "Cover and simmer on low heat 20 to 25 minutes, until the beets and carrots are tender.",
+            "Stir in the apple cider vinegar. Taste and adjust the salt and pepper.",
+            "Top each bowl with a dollop of sour cream or yogurt and plenty of fresh dill."
+          ]
         }
       ]
     },
@@ -3037,6 +3156,46 @@ module.exports = {
               "steps": [
                 "Whisk together all dressing ingredients in a large bowl. Add lettuces and gently toss to coat.",
                 "Top with sliced pear, Gorgonzola, walnuts, and golden raisins. Serve immediately."
+              ]
+            },
+            {
+              "title": "Lacinato Kale and Mint Salad with Spicy Peanut Dressing",
+              "servings": "Serves 4 as a side, 2 as a main",
+              "source": "dymnyno, Food52",
+              "comments": [
+                "The salad holds up well in the refrigerator, so it can be made ahead.",
+                "Tahini or almond butter can replace the peanut butter. Honey can replace the pomegranate molasses.",
+                "Skipping the water makes a thick sauce that also works for wraps, chicken, or dipping vegetables.",
+                "Toss with about half of the dressing first, then decide whether it needs more."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Salad",
+                  "ingredients": [
+                    "1 large bunch lacinato kale, chopped very small, almost minced",
+                    "1 cup fresh mint, minced",
+                    "1 cup walnuts, chopped"
+                  ]
+                },
+                {
+                  "label": "Spicy peanut dressing",
+                  "ingredients": [
+                    "3 tablespoons smooth natural peanut butter",
+                    "3 tablespoons warm water",
+                    "3 tablespoons rice wine vinegar",
+                    "1 tablespoon pomegranate molasses",
+                    "1 tablespoon soy sauce",
+                    "1 teaspoon minced fresh garlic",
+                    "2 teaspoons peeled and minced fresh ginger",
+                    "1 teaspoon sesame oil",
+                    "1 teaspoon Aleppo pepper or red pepper flakes"
+                  ]
+                }
+              ],
+              "steps": [
+                "Toss the chopped kale, mint, and walnuts together in a large bowl.",
+                "Put all of the dressing ingredients in a blender and blend on high speed until smooth.",
+                "Toss the salad with about half of the dressing, taste, and add more as needed."
               ]
             }
           ]
@@ -3688,6 +3847,85 @@ module.exports = {
                 "Whisk together chili crisp, rice vinegar, and soy sauce. Taste; add more soy sauce if needed.",
                 "Heat a large (12-inch) nonstick or cast-iron skillet over medium-high for 1–2 minutes until very hot. Add 1–2 tablespoons oil. Working in batches, add dumplings flat-side down and cook until bottoms are lightly browned, 1–2 minutes. Add about 1/4 cup water, cover, and steam until water evaporates, 3–4 minutes. Transfer to a plate; repeat with remaining dumplings.",
                 "Place warm dumplings over the tomato salad and drizzle with vinaigrette. Toss gently. Top with crispy fried shallots (if using) and remaining basil. Serve warm or at room temperature."
+              ]
+            },
+            {
+              "title": "BBQ Grilled Corn, Jalapeño and Peach Quinoa Salad",
+              "made": true,
+              "servings": "Serves 6",
+              "source": "Tieghan Gerard, Half Baked Harvest",
+              "comments": [
+                "Serve cold, at room temperature, or warm off the grill. Warm quinoa and hot grilled vegetables slightly melt the cheddar.",
+                "Mango can replace the peach and sour cream the Greek yogurt."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Quinoa",
+                  "ingredients": [
+                    "1 cup uncooked quinoa, rinsed"
+                  ]
+                },
+                {
+                  "label": "Grilling seasoning",
+                  "ingredients": [
+                    "2 tablespoons olive oil",
+                    "1/2 tablespoon smoked paprika",
+                    "1/2 teaspoon chili powder",
+                    "1/2 teaspoon garlic powder",
+                    "1/2 teaspoon salt",
+                    "1/2 teaspoon pepper"
+                  ]
+                },
+                {
+                  "label": "Vegetables to grill",
+                  "ingredients": [
+                    "2 ears corn, husked",
+                    "2 jalapeños"
+                  ]
+                },
+                {
+                  "label": "BBQ dressing",
+                  "ingredients": [
+                    "1/2 cup BBQ sauce",
+                    "2 tablespoons Greek yogurt",
+                    "2 tablespoons olive oil",
+                    "3 tablespoons fresh lime juice",
+                    "2 tablespoons minced fresh cilantro",
+                    "1/4 teaspoon salt",
+                    "1/4 teaspoon pepper"
+                  ]
+                },
+                {
+                  "label": "Salad additions",
+                  "ingredients": [
+                    "2 peaches, chopped",
+                    "1 cup grape tomatoes, halved or quartered",
+                    "3/4 cup sharp white cheddar cheese, cubed",
+                    "3 green onions, chopped"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "2 tablespoons chopped fresh cilantro"
+                  ]
+                }
+              ],
+              "steps": [
+                "Cook the quinoa according to the package directions.",
+                "While the quinoa cooks, preheat the grill to its highest setting.",
+                {
+                  "lead": "Grill the vegetables:",
+                  "bullets": [
+                    "Combine the olive oil, smoked paprika, chili powder, garlic powder, salt, and pepper in a small bowl.",
+                    "Brush the corn with the seasoned oil and wrap each ear in a single layer of aluminum foil. Brush the jalapeños with the seasoned oil.",
+                    "Grill about 5 minutes per side, rotating the corn 4 to 5 times and the jalapeños 2 times. Remove the jalapeños after about 15 minutes and the corn after about 20 minutes."
+                  ]
+                },
+                "While the vegetables grill, whisk together the dressing ingredients in a small bowl. Taste, adjust the seasoning, and set aside.",
+                "Let the grilled vegetables cool 5 minutes. Toss the quinoa in a large bowl with 1/4 to 1/3 cup of the dressing.",
+                "Slice the jalapeños (remove the seeds if desired) and cut the corn from the cobs. Add both to the quinoa along with the peaches, tomatoes, and cheddar and toss well.",
+                "Serve with the remaining dressing and garnish with the cilantro."
               ]
             }
           ]
@@ -6922,6 +7160,193 @@ module.exports = {
                 "Cover tightly with foil and bake 35–40 minutes, until dumplings are heated through and the sauce is bubbling.",
                 "Uncover, stir the sauce gently if desired, and top with chili crisp. Serve warm."
               ]
+            },
+            {
+              "title": "Pesto Peach Chicken in White Wine with Burrata",
+              "made": true,
+              "servings": "Serves 4   |   Total: 25 minutes",
+              "source": "Tieghan Gerard, Half Baked Harvest",
+              "comments": [
+                "Thin chicken cutlets are key; chicken tenders or strips also work. Cultured butter gives extra-rich browning.",
+                "Serve with crusty bread to soak up the sauce, or with potatoes, rice, or pasta.",
+                "Make ahead: bread the chicken and slice the peaches in advance and store separately in the refrigerator."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Breading",
+                  "ingredients": [
+                    "1 large egg, beaten",
+                    "1/4 cup all-purpose flour",
+                    "1 tablespoon chopped fresh rosemary"
+                  ]
+                },
+                {
+                  "label": "Chicken",
+                  "ingredients": [
+                    "4 boneless skinless chicken breast cutlets (about 3/4 inch thick)",
+                    "Kosher salt and black pepper"
+                  ]
+                },
+                {
+                  "label": "Searing fat",
+                  "ingredients": [
+                    "3 tablespoons cold salted butter, cubed",
+                    "2 tablespoons extra-virgin olive oil"
+                  ]
+                },
+                {
+                  "label": "Basting butter",
+                  "ingredients": [
+                    "3 tablespoons cold salted butter, cubed"
+                  ]
+                },
+                {
+                  "label": "Pan sauce",
+                  "ingredients": [
+                    "3/4 cup dry white wine, such as Pinot Grigio or Sauvignon Blanc",
+                    "3 tablespoons fresh lemon juice"
+                  ]
+                },
+                {
+                  "label": "Peaches",
+                  "ingredients": [
+                    "2 to 3 peaches, sliced",
+                    "1 tablespoon honey",
+                    "Salt",
+                    "Aleppo pepper or red pepper flakes (optional)"
+                  ]
+                },
+                {
+                  "label": "To finish",
+                  "ingredients": [
+                    "8 oz burrata cheese, at room temperature",
+                    "1/3 cup basil pesto",
+                    "1/2 cup fresh basil, torn"
+                  ]
+                }
+              ],
+              "steps": [
+                "Preheat the broiler.",
+                "Place the egg and flour in separate shallow bowls and toss the rosemary with the flour. Season the chicken with salt and pepper, then dredge both sides through the egg and then the flour. Set on a plate.",
+                "In an ovenproof skillet, melt the searing butter with the olive oil. Add the chicken and cook until the bottom is golden brown, 3 to 4 minutes.",
+                "Flip the chicken and add the basting butter, swirling it around the chicken. Cook, basting, until the chicken is cooked through and golden brown, 4 to 5 minutes.",
+                "Reduce the heat to medium-low and pour in the wine and lemon juice. Simmer 5 minutes.",
+                "Remove from the heat and arrange the peaches around the chicken. Drizzle with the honey and sprinkle with salt and pepper flakes, if using. Broil 1 minute, until the peaches soften.",
+                "Break the burrata over the peaches and chicken and spoon the pesto over the whole skillet. Let sit 5 minutes to warm the cheese. Top with the basil and serve."
+              ]
+            },
+            {
+              "title": "Garlicky Chicken Thighs with Scallion and Lime",
+              "servings": "Serves 4   |   Total: 35 minutes",
+              "source": "New York Times, by Alison Roman",
+              "comments": [
+                "Serve with rice, whole grains, or crusty bread for mopping up the sauce."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Chicken",
+                  "ingredients": [
+                    "1 1/2 pounds bone-in, skin-on chicken thighs",
+                    "Kosher salt and freshly ground pepper"
+                  ]
+                },
+                {
+                  "label": "Searing fat",
+                  "ingredients": [
+                    "1 tablespoon canola oil"
+                  ]
+                },
+                {
+                  "label": "Scallions",
+                  "ingredients": [
+                    "1 bunch scallions (2 thinly sliced for serving, the rest left whole)"
+                  ]
+                },
+                {
+                  "label": "Garlic",
+                  "ingredients": [
+                    "1 head garlic, unpeeled and halved crosswise",
+                    "2 cloves garlic, peeled and finely grated"
+                  ]
+                },
+                {
+                  "label": "Sauce",
+                  "ingredients": [
+                    "2 tablespoons fresh lime juice",
+                    "1 tablespoon low-sodium soy sauce",
+                    "1 cup water"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "1 lime"
+                  ]
+                }
+              ],
+              "steps": [
+                "Season the chicken with salt and pepper on both sides.",
+                "Heat the oil in a large Dutch oven or high-sided skillet over medium heat.",
+                "Add the chicken skin side down and cook undisturbed until crisped and the fat has begun to render, 8 to 10 minutes. Flip skin side up and cook until golden brown, 4 to 6 minutes. Meanwhile, thinly slice 2 of the scallions and set aside.",
+                "Add both halves of the garlic head, cut side down, and the remaining whole scallions to the pot. Season with salt and pepper and toss to coat in the chicken fat. Cook until the scallions are lightly blistered and browned, about 3 minutes. Add the grated garlic and stir 1 to 2 minutes, without browning.",
+                "Add the lime juice, soy sauce, and water. Bring to a simmer, partly cover, and cook until the chicken is completely tender and nearly falling apart on the underside and the liquid has reduced by three-quarters, 15 to 20 minutes. Discard the halved garlic head.",
+                "Scatter the sliced scallions over the chicken and zest the lime over the top. Cut the lime into quarters and serve alongside."
+              ]
+            },
+            {
+              "title": "Crispy Smashed Chicken Breasts with Gin and Sage",
+              "servings": "Serves 6   |   Total: 1 hour, plus 1 hour marinating",
+              "source": "New York Times, recipe from Amy Thielen, adapted by Eric Kim",
+              "comments": [
+                "Pour the sauce around the platter, not over the chicken, so the skin stays crisp."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Marinade (1 to 6 hours ahead)",
+                  "ingredients": [
+                    "3 large skin-on chicken breasts, boneless",
+                    "6 garlic cloves, smashed and peeled",
+                    "12 sage leaves",
+                    "1/2 teaspoon fine sea salt",
+                    "1/2 teaspoon freshly ground black pepper"
+                  ]
+                },
+                {
+                  "label": "Crispy sage",
+                  "ingredients": [
+                    "12 sage leaves, rinsed and dried thoroughly",
+                    "3 tablespoons olive oil",
+                    "1 tablespoon cold butter"
+                  ]
+                },
+                {
+                  "label": "Pan sauce",
+                  "ingredients": [
+                    "1/4 cup gin",
+                    "3/4 cup chicken stock, preferably homemade",
+                    "1 to 2 tablespoons fresh lemon juice",
+                    "2 tablespoons cold butter",
+                    "Fine sea salt and freshly ground black pepper"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "Lemon wedges"
+                  ]
+                }
+              ],
+              "steps": [
+                "Rinse the sage leaves and dry thoroughly with a towel.",
+                "If the chicken breasts have the rib cage attached, remove it and any other bones with a sharp knife. Do not trim off any skin or fat. Set each breast skin side down and pound with a meat mallet to even out the hump and flatten to an even thickness.",
+                "Put the chicken in a large bowl or baking dish with the garlic, 12 sage leaves, salt, and pepper. Turn to coat, then arrange the chicken skin side up on top of the garlic and sage in a single layer. Cover and refrigerate at least 1 hour and up to 6 hours.",
+                "Heat the olive oil and 1 tablespoon butter in a very large stainless steel saute pan over medium-low. When the butter melts, add the remaining 12 sage leaves and fry, turning gently with a fork, until crisp, about 3 minutes. Remove the crispy sage to a plate.",
+                "Turn the heat to medium and add the chicken skin side down, along with its garlic and sage. Cook slowly but steadily, lowering the heat if the oil smokes, pressing the chicken with a spatula for contact with the pan, until the skin is a deep caramel color and the white of doneness creeps two-thirds of the way up the sides, 25 to 30 minutes. Remove any garlic or sage that threatens to burn and save it for the sauce.",
+                "When the skin is dark amber, flip the chicken, lower the heat to medium-low, and cook until browned, 5 to 10 minutes. Turn off the heat; residual heat continues to cook the chicken.",
+                "Transfer the chicken to a serving platter. Add the gin to the pan over medium-low heat and simmer 30 seconds. Add the chicken stock and cook, scraping up the browned bits, until reduced by half, 2 to 3 minutes (about 1/2 cup of sauce).",
+                "Add the lemon juice, any reserved garlic, and the 2 tablespoons cold butter. Remove from the heat and swirl the pan to emulsify. Adjust the salt and pepper.",
+                "Slice the chicken crosswise, cutting neatly through the skin, and return to the platter. Pour the sauce around the perimeter, top with the crispy sage, garnish with lemon wedges, and serve immediately."
+              ]
             }
           ]
         },
@@ -7581,6 +8006,60 @@ module.exports = {
                 "Wipe out wok, return to high heat. Add remaining 1 tablespoon oil, swirl. Add remaining ginger slice, sizzle 5 seconds. Add fresh mushrooms and stir-fry until lightly browned, 2–3 min. Add scallions, sliced wood ears, and day lilies; stir-fry until softened, about 30 seconds.",
                 "Return pork and eggs to wok. Stir sauce and add to wok with MSG (if using). Stir-fry to combine; season with salt and white pepper. Discard ginger. Serve immediately with Mandarin pancakes and hoisin sauce."
               ]
+            },
+            {
+              "title": "Smothered Pork Chop",
+              "servings": "Serves 2   |   Active: 30 minutes, plus 8+ hours brining",
+              "source": "Molly Baz, The Club",
+              "comments": [
+                "Brining is the key to a juicy chop: season it at least 8 hours ahead and up to 48 hours. The honey speeds browning so the inside does not overcook.",
+                "If the chop has a thick fat cap, hold it with tongs and roll the fat cap along the bottom of the skillet to render and brown it."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Spiced honey brine (8 to 48 hours ahead)",
+                  "ingredients": [
+                    "1 tablespoon fennel seeds",
+                    "9 whole cloves",
+                    "3/4 teaspoon Aleppo pepper or red pepper flakes",
+                    "2 teaspoons kosher salt",
+                    "3 tablespoons runny honey"
+                  ]
+                },
+                {
+                  "label": "Pork",
+                  "ingredients": [
+                    "One 14 to 18 oz well-marbled, bone-in pork chop, cut 1 1/4 to 1 1/2 inches thick"
+                  ]
+                },
+                {
+                  "label": "Searing fat",
+                  "ingredients": [
+                    "1 tablespoon neutral oil, such as grapeseed, canola, or avocado, plus more as needed"
+                  ]
+                },
+                {
+                  "label": "Pan sauce",
+                  "ingredients": [
+                    "1 tablespoon unsalted butter",
+                    "1 medium shallot, finely chopped",
+                    "Kosher salt",
+                    "1/3 cup sherry vinegar",
+                    "1/3 cup heavy cream",
+                    "1 tablespoon Worcestershire sauce"
+                  ]
+                }
+              ],
+              "steps": [
+                "In a spice grinder, blitz the fennel seeds, cloves, and pepper flakes until finely ground. Transfer to a small bowl and stir in the salt and honey.",
+                "Brush the pork chop all over with the spiced honey. Cover with plastic wrap and refrigerate at least 8 hours and up to 48 hours.",
+                "Heat a large skillet over medium-high heat for 1 minute. Swirl in the oil, reduce the heat to medium, and add the chop. Cook until lightly browned underneath, about 2 minutes, adding a small glug of oil if the pan is ever dry.",
+                "Flip and keep cooking, flipping every 1 to 2 minutes, until the outside is deeply caramelized and almost blackened and the internal temperature reads 135°F in the thickest part, about 7 to 9 minutes. Frequent flipping cooks the chop evenly without drying it out.",
+                "Transfer to a plate to rest. Tip out and discard any fat or oil in the pan and wipe out any burnt bits with a paper towel.",
+                "Increase the heat to medium-high and add the butter. Once melted, add the shallot, season with salt, and cook over medium heat until softened but not browned, 2 to 3 minutes.",
+                "Stir in the sherry vinegar and cook, stirring, 1 minute. Stir in the cream and cook until the sauce is thick and coats the back of a spoon. Add the Worcestershire and season with salt to taste.",
+                "Pour the entire contents of the pan over the rested chop and serve with a sharp steak knife."
+              ]
             }
           ]
         },
@@ -8028,6 +8507,7 @@ module.exports = {
             },
             {
               "title": "Black Pepper Beef and Cabbage Stir-Fry",
+              "made": true,
               "servings": "Serves 2–4   |   Total: 20 min",
               "source": "New York Times Cooking / Sue Li",
               "comments": [
@@ -8797,6 +9277,59 @@ module.exports = {
               "steps": [
                 "Mix miso paste, sugar, mirin, and sake in a shallow baking dish. Add fish and turn to coat. Marinate 2-4 hours.",
                 "Remove fish from marinade. Broil until opaque in center, approximately 3 minutes per side."
+              ]
+            },
+            {
+              "title": "Grilled Salmon Salad with Lime, Chiles and Herbs",
+              "servings": "Serves 4   |   Total: 30 minutes",
+              "source": "New York Times, by Melissa Clark",
+              "comments": [
+                "The dressing is based on nuoc cham. Other fish or chicken can replace the salmon; adjust the cooking time and toss with the dressing while still warm.",
+                "No grill: roast the salmon on a baking sheet at 450°F until just cooked, 7 to 12 minutes, without flipping. Roast the lime halves cut side up alongside; they will not char but will mellow."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Dressing",
+                  "ingredients": [
+                    "1 lime, halved",
+                    "2 small fresh red or green chiles, or 1 large one, thinly sliced, seeds removed if you like",
+                    "1 shallot (or 2 scallions, or 2 tablespoons red onion), thinly sliced, half reserved for serving",
+                    "2 tablespoons fish sauce",
+                    "Pinch of kosher salt",
+                    "Pinch of granulated sugar",
+                    "1/4 cup extra-virgin olive oil or grapeseed oil, plus more for brushing"
+                  ]
+                },
+                {
+                  "label": "Salmon",
+                  "ingredients": [
+                    "1 1/4 pounds salmon fillet, preferably 1 large center-cut piece"
+                  ]
+                },
+                {
+                  "label": "Charred lime",
+                  "ingredients": [
+                    "1 lime, halved"
+                  ]
+                },
+                {
+                  "label": "Salad",
+                  "ingredients": [
+                    "8 cups salad greens, such as Little Gem, bibb, or Boston lettuce",
+                    "1 cup mixed soft herbs (such as cilantro, mint, and basil), leaves and tender stems",
+                    "1 cup thinly sliced radishes, cucumbers, or both (optional)",
+                    "Kosher salt"
+                  ]
+                }
+              ],
+              "steps": [
+                "Light the grill for indirect heat, or heat the oven to 450°F.",
+                "Make the dressing: Squeeze the juice of the halved lime into a small bowl. Add the chiles, half of the sliced shallot, the fish sauce, and a pinch each of salt and sugar. Let sit 1 minute to dissolve the salt, then whisk in the olive oil. It will not emulsify, so mix again before using.",
+                "Brush the salmon with oil and place it in a grilling basket if you have one. Cook over the indirect (unlit) side of the grill 2 to 5 minutes per side, depending on the heat and thickness. Check often. Individual fillets cook faster than a single large piece.",
+                "Halve the other lime, brush the cut sides with olive oil, and grill cut side down over direct heat until charred, about 1 minute.",
+                "Transfer the cooked salmon to a plate and spoon some dressing over it. Let cool slightly, then break into large chunks.",
+                "Place the greens, remaining shallot, herbs, and radishes or cucumber in a large shallow bowl or on a platter. Add a little dressing, squeeze some charred lime juice over, and drizzle with olive oil. Toss and taste, adding lime juice, oil, or salt as needed.",
+                "Top with the salmon chunks and drizzle with more (or all) of the dressing. Serve with the remaining charred lime half for squeezing."
               ]
             }
           ]
@@ -11114,6 +11647,128 @@ module.exports = {
                 "Pour dressing over tofu. Top with sliced scallion and fresh cilantro.",
                 "Serve immediately, cutting into the tofu at the table."
               ]
+            },
+            {
+              "title": "I Can't Believe It's Not Chicken (Super-Savory Grated Tofu)",
+              "servings": "Serves 4   |   Total: 30 minutes",
+              "source": "New York Times, by Nisha Vora, from Big Vegan Flavor",
+              "comments": [
+                "Super-firm (high-protein) tofu is the most convincing meat substitute. With extra-firm tofu, press for 10 minutes, grate, then dab with towels to remove water.",
+                "No gochugaru: use 1 to 1 1/2 teaspoons Sichuan chile flakes or sriracha.",
+                "No Chinese black vinegar: use 2 parts rice vinegar to 1 part aged balsamic vinegar.",
+                "Serve with stir-fried or steamed green beans or broccoli. To make ahead, grate the tofu and prep the aromatics the night before. Leftovers keep 4 to 5 days in the refrigerator."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Rice",
+                  "ingredients": [
+                    "1 to 1 1/2 cups uncooked white or brown rice (or 3 to 4 1/2 cups cooked)"
+                  ]
+                },
+                {
+                  "label": "Tofu",
+                  "ingredients": [
+                    "One 10 to 12 oz package super-firm tofu",
+                    "1 1/2 tablespoons neutral-flavored oil"
+                  ]
+                },
+                {
+                  "label": "Aromatics",
+                  "ingredients": [
+                    "4 scallions, sliced at an angle (reserve the dark green tops for garnish)",
+                    "1 to 2 Thai chiles (or 1 small serrano pepper), thinly sliced (optional, for spicy)",
+                    "3 garlic cloves, thinly sliced"
+                  ]
+                },
+                {
+                  "label": "Sauce",
+                  "ingredients": [
+                    "3 tablespoons tamari or soy sauce",
+                    "1 tablespoon Chinese black vinegar",
+                    "1 teaspoon organic cane sugar, pure maple syrup, or agave nectar",
+                    "1 tablespoon gochugaru (Korean chile flakes)",
+                    "1 tablespoon toasted sesame oil"
+                  ]
+                },
+                {
+                  "label": "To finish",
+                  "ingredients": [
+                    "1 tablespoon roasted black or white sesame seeds"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "Reserved scallion tops",
+                    "1 handful cilantro leaves and tender stems, roughly chopped"
+                  ]
+                }
+              ],
+              "steps": [
+                "Cook the rice using your preferred method, or use leftover cooked rice.",
+                "Wrap the tofu in a thin dish towel and gently squeeze with your palms to remove some water, without squishing it. Grate the tofu on the large holes of a box grater. If small pieces break off, slice them very thinly.",
+                "In a large nonstick skillet, heat the oil over medium-high heat. After a minute or two, add the scallions, chiles (if using), and garlic. Cook, stirring frequently, until the garlic is slightly golden and the scallions are softened, about 2 minutes.",
+                "Add the grated tofu and toss to coat in the oil. Cook undisturbed 2 minutes, then stir. Continue cooking, stirring every 2 minutes, until golden brown in some spots, 10 to 14 minutes total.",
+                "Meanwhile, whisk together the sauce ingredients in a small bowl.",
+                "Pour the sauce into the pan (it will bubble rapidly) and stir with a silicone spatula to coat the tofu. Cook 1 minute. Remove from the heat and sprinkle with the sesame seeds.",
+                "Serve over the rice, topped with the reserved scallion tops and cilantro."
+              ]
+            },
+            {
+              "title": "Peter Fang's Crispy Tofu with Peanut Sauce",
+              "servings": "Serves 2 to 4",
+              "source": "Peter Fang, Nanking (via KCRW)",
+              "comments": [
+                "The peanut sauce makes about 1 cup and keeps up to 3 days in an airtight container in the refrigerator. It is also good drizzled over the rice, and over potstickers, pan-fried buns, onion cakes, or shrimp.",
+                "The sauce should be about as thick as BBQ sauce; thin with hot water, 1 teaspoon at a time.",
+                "Serve with garlicky spicy marinated cucumbers."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Tofu (15 minutes ahead)",
+                  "ingredients": [
+                    "One 14 oz package medium-firm tofu",
+                    "1 1/2 teaspoons salt",
+                    "1 1/2 teaspoons ground black pepper",
+                    "1 teaspoon sugar",
+                    "1 teaspoon paprika"
+                  ]
+                },
+                {
+                  "label": "Peanut sauce (10 minutes ahead)",
+                  "ingredients": [
+                    "1/2 cup creamy peanut butter",
+                    "1/4 cup toasted sesame oil",
+                    "1/4 cup light agave nectar",
+                    "2 tablespoons soy sauce",
+                    "2 tablespoons Chinese black vinegar",
+                    "1 tablespoon white distilled vinegar",
+                    "2 teaspoons sambal oelek",
+                    "1 teaspoon Aleppo pepper or red pepper flakes",
+                    "1/2 teaspoon finely minced garlic"
+                  ]
+                },
+                {
+                  "label": "Frying oil",
+                  "ingredients": [
+                    "Neutral oil, for frying"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "Steamed white rice"
+                  ]
+                }
+              ],
+              "steps": [
+                "Make the peanut sauce: In a medium bowl, whisk the peanut butter and sesame oil until fully emulsified. Add the remaining sauce ingredients and stir to combine. Let sit 10 minutes before serving.",
+                "Drain the tofu and gently pat dry with paper towels. Slice in half horizontally through the equator, then slice each piece in half in both directions to make 8 squares. Cut each square in half on the diagonal to make triangles. Lay on a sheet pan.",
+                "Mix the salt, pepper, sugar, and paprika with a fork. Season both sides of the tofu and let sit 15 minutes.",
+                "Fill a cast-iron skillet or deep pan halfway with oil and heat over high heat to 365°F.",
+                "Working in batches so the pan is not crowded, fry the tofu until golden brown, about 3 minutes per side, flipping halfway through.",
+                "Serve drizzled with the peanut sauce, with steamed white rice on the side (drizzle sauce over the rice too)."
+              ]
             }
           ]
         },
@@ -12655,6 +13310,57 @@ module.exports = {
                     "Stir in orzo, broth, and 1/4 teaspoon salt. Bring to a boil over high heat, 4–5 minutes. Reduce to a simmer and cook, stirring every minute or two and scraping the bottom, until orzo is tender and saucy, 9–10 minutes.",
                     "Remove from heat; discard basil sprig. Stir in Parmesan, butter, lemon juice, and chopped basil until silky. Season with salt. Serve immediately, topped with more Parmesan."
                   ]
+                },
+                {
+                  "title": "Pasta with Eggplant and Zucchini",
+                  "made": true,
+                  "servings": "Serves 4   |   Total: 40 minutes",
+                  "source": "New York Times, by Pierre Franey",
+                  "comments": [],
+                  "ingredientGroups": [
+                    {
+                      "label": "Tomato sauce",
+                      "ingredients": [
+                        "1 tablespoon olive oil",
+                        "1 tablespoon finely chopped garlic",
+                        "One 28 oz can crushed tomatoes",
+                        "4 tablespoons chopped fresh Italian parsley",
+                        "2 tablespoons dried oregano",
+                        "1/8 teaspoon Aleppo pepper or red pepper flakes (optional)",
+                        "Salt and freshly ground black pepper to taste"
+                      ]
+                    },
+                    {
+                      "label": "Vegetables",
+                      "ingredients": [
+                        "3 tablespoons olive oil",
+                        "1 pound eggplant, peeled and cut into 1-inch cubes",
+                        "1/2 pound zucchini, cut into 1-inch-thick slices",
+                        "Salt and freshly ground black pepper"
+                      ]
+                    },
+                    {
+                      "label": "Pasta",
+                      "ingredients": [
+                        "Salt",
+                        "3/4 pound dry pasta, like ziti, fusilli, shells, or rigatoni"
+                      ]
+                    },
+                    {
+                      "label": "To finish",
+                      "ingredients": [
+                        "4 tablespoons coarsely chopped fresh basil",
+                        "4 tablespoons grated Parmesan cheese"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Heat 1 tablespoon of the olive oil in a saucepan and add the garlic. Cook and stir without browning. Add the tomatoes, parsley, oregano, pepper flakes, salt, and pepper. Stir to blend, bring to a boil, and simmer 15 minutes.",
+                    "Meanwhile, cut the ends off the eggplant, peel it, and cut into 1-inch cubes. Cut the ends off the zucchini and slice into 1-inch-thick slices.",
+                    "Heat the remaining olive oil in a large skillet. When the oil is very hot, add the eggplant, zucchini, salt, and pepper. Cook, tossing, until nicely browned and tender. Add to the tomato sauce, mix well, and cook 15 minutes.",
+                    "Drop the pasta into salted boiling water and cook to the desired doneness. Drain, reserving 1/2 cup of the cooking liquid.",
+                    "Return the pasta to the pot. Add the reserved cooking liquid, the vegetable and sauce mixture, the basil, and the Parmesan. Toss and serve hot."
+                  ]
                 }
               ]
             },
@@ -13375,6 +14081,47 @@ module.exports = {
                     "Add spinach and reserved pasta water to the skillet. Return to low heat; stir until spinach wilts, about 2 minutes. Season with salt.",
                     "Add drained ravioli and toss to coat. Serve with Parmesan and freshly cracked pepper."
                   ]
+                },
+                {
+                  "title": "Haluski (Buttery Cabbage and Noodles)",
+                  "made": true,
+                  "servings": "Serves 4   |   Total: 1 hour",
+                  "source": "New York Times, by Ali Slagle",
+                  "comments": [
+                    "Browning of the cabbage is welcome, but if it starts to burn, reduce the heat and add a tablespoon or two of water."
+                  ],
+                  "ingredientGroups": [
+                    {
+                      "label": "Cabbage",
+                      "ingredients": [
+                        "5 tablespoons unsalted butter",
+                        "1 yellow onion, thinly sliced",
+                        "Salt and pepper",
+                        "2 pounds green cabbage (about 1 small), core chopped and leaves thinly sliced",
+                        "1 tablespoon mild white miso paste",
+                        "2 teaspoons smoked paprika"
+                      ]
+                    },
+                    {
+                      "label": "Noodles",
+                      "ingredients": [
+                        "Salt",
+                        "12 oz wide egg noodles"
+                      ]
+                    },
+                    {
+                      "label": "To finish",
+                      "ingredients": [
+                        "1 tablespoon unsalted butter"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "In a large Dutch oven, melt 5 tablespoons of the butter over medium-high. Add the onion, season with salt and pepper, and cook, stirring often, until softened and lightly browned, 3 to 6 minutes.",
+                    "Add the cabbage, miso paste, and smoked paprika, season generously with salt and pepper, and stir to combine. Reduce the heat to medium-low, cover, and cook, stirring occasionally, until the cabbage is tender but not mushy, 35 to 40 minutes.",
+                    "Meanwhile, bring a large pot of salted water to a boil. When the cabbage is done, remove from the heat and keep covered. Cook the noodles according to the package directions. Reserve 1/2 cup pasta water, then drain.",
+                    "Add the noodles, reserved pasta water, and remaining 1 tablespoon butter to the cabbage. Stir over medium-high heat until the noodles are saucy and glossed with butter, 1 to 2 minutes. Season to taste with salt and pepper."
+                  ]
                 }
               ]
             },
@@ -13694,6 +14441,69 @@ module.exports = {
                     "In the wiped saucepan, heat remaining 2 tablespoons oil over medium-high. Saute remaining 2 grated garlic cloves until fragrant, 30-45 seconds. Fold in preserved lemon and cooked spaghetti; toss to combine.",
                     "In a separate bowl, combine ricotta, lemon juice, and lemon zest. Whip with a hand mixer or food processor until smooth. Season with salt and pepper.",
                     "Divide whipped ricotta among 4 serving bowls. Mound pasta on top. Spoon 2-3 generous tablespoons of the breadcrumb mixture over each bowl; garnish with fresh basil. Drizzle with olive oil; serve immediately."
+                  ]
+                },
+                {
+                  "title": "Seedy Spaghetti with a Whole Lotta Kale",
+                  "made": true,
+                  "servings": "Serves 2 large portions or 4 small portions   |   Total: 45 minutes",
+                  "source": "Molly Baz, The Club",
+                  "comments": [
+                    "Whole wheat pasta is nutty and earthy; regular spaghetti works too. Molly Baz prefers De Cecco over Barilla for its thicker, more toothsome bite."
+                  ],
+                  "ingredientGroups": [
+                    {
+                      "label": "Pasta",
+                      "ingredients": [
+                        "Kosher salt",
+                        "8 oz whole wheat spaghetti"
+                      ]
+                    },
+                    {
+                      "label": "Seeds",
+                      "ingredients": [
+                        "1/4 cup flax seeds",
+                        "1/4 cup black and/or white sesame seeds"
+                      ]
+                    },
+                    {
+                      "label": "Garlic and spices",
+                      "ingredients": [
+                        "8 large cloves garlic, thinly sliced",
+                        "1/4 cup olive oil, plus more as needed",
+                        "1 tablespoon plus 1 teaspoon sweet paprika",
+                        "1 teaspoon Aleppo pepper or red pepper flakes, plus more for serving"
+                      ]
+                    },
+                    {
+                      "label": "Kale",
+                      "ingredients": [
+                        "2 bunches lacinato kale (about 1 pound), stems removed, leaves cut or ripped into 2- to 3-inch pieces"
+                      ]
+                    },
+                    {
+                      "label": "Finishing",
+                      "ingredients": [
+                        "3 oz (about 12 large) Spanish olives with pimentos, plus 2 tablespoons olive brine",
+                        "1 to 2 juicy lemons"
+                      ]
+                    },
+                    {
+                      "label": "To serve",
+                      "ingredients": [
+                        "1 cup fresh ricotta"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Bring a large pot of generously salted water to a boil. Cook the spaghetti until al dente, about 2 minutes less than the package directions. Drain, reserving 1/2 cup pasta water.",
+                    "While the pasta boils, toast the seeds in a large skillet over medium-high heat, swirling occasionally, until fragrant and the white sesame seeds are deeply golden, 5 to 6 minutes. Watch out: flax seeds may pop. Transfer to a small bowl.",
+                    "Return the skillet to medium heat. Add the olive oil and garlic, season generously with salt, and saute until the garlic is softened but not browned, 4 to 5 minutes, reducing the heat as needed.",
+                    "Add the paprika and pepper flakes, season with salt, and cook, toasting the spices, 30 seconds.",
+                    "Add the kale, drizzling with more olive oil if the skillet is dry. Cook, stirring, until softened and tender, 3 to 4 minutes.",
+                    "Add the drained pasta and a small splash of pasta water and mix to combine.",
+                    "Tear the olives into big pieces and add to the skillet with the olive brine, half of the toasted seeds, and the juice of 1 lemon. Mix and season to taste with salt and more pepper flakes.",
+                    "Divide between dishes and top each serving with a big dollop of ricotta, the remaining seeds, a drizzle of olive oil, and another squeeze of lemon."
                   ]
                 }
               ]
@@ -14668,6 +15478,57 @@ module.exports = {
                 "Bake 1 to 1 1/4 hours. Every 15 minutes, remove from oven and, using a knife or wooden spoon, press down the top layer of potatoes that has gotten crusty and fold it into the rest.",
                 "When golden and potatoes are tender, sprinkle with parmesan and return to oven. Bake until a golden crust forms, about 10–15 minutes."
               ]
+            },
+            {
+              "title": "Crispy Accordion Potatoes",
+              "made": true,
+              "servings": "Serves 4 to 6",
+              "source": "Brendan Cunningham, I'm Hungry For That",
+              "comments": [
+                "Russets get crispier outside; Yukon Golds stay creamier inside. Peeling is optional; scrub well if leaving the skins on.",
+                "Keep the cuts close together and give the potatoes space on the pan. For extra crunch, finish under the broiler 1 to 2 minutes, watching closely.",
+                "For a richer finish, swap half the oil for melted butter or brush with butter after baking."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Potatoes",
+                  "ingredients": [
+                    "4 to 6 large white potatoes"
+                  ]
+                },
+                {
+                  "label": "Seasoning oil",
+                  "ingredients": [
+                    "2 tablespoons olive oil",
+                    "1 teaspoon smoked paprika",
+                    "1/2 teaspoon garlic powder",
+                    "1/2 teaspoon onion powder",
+                    "1/2 teaspoon Italian seasoning",
+                    "1 teaspoon salt"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "Fresh parsley"
+                  ]
+                }
+              ],
+              "steps": [
+                "Preheat the oven to 425°F. Line a baking tray with foil and lightly oil it.",
+                "Mix the olive oil, smoked paprika, garlic powder, onion powder, Italian seasoning, and salt in a small bowl.",
+                "Peel the potatoes and slice off the rounded sides and tips to leave a flat rectangle. Cut into 1/3-inch-thick slices.",
+                {
+                  "lead": "Make the accordion cuts:",
+                  "bullets": [
+                    "Place a potato slice between two chopsticks or skewers so they stop the knife from cutting through.",
+                    "Slice crosswise with cuts very close together, about 10 per inch.",
+                    "Flip the slice and cut diagonally from corner to corner, again without cutting all the way through. Repeat with all of the slices."
+                  ]
+                },
+                "Place the potatoes on the baking sheet and brush generously with the seasoning oil.",
+                "Bake 20 minutes, flip, brush again, and bake 10 to 20 minutes more, until the edges are crispy and lightly browned. Garnish with parsley."
+              ]
             }
           ]
         },
@@ -15103,6 +15964,142 @@ module.exports = {
                 "When the oil is hot, add garlic, chili paste, and salt. Stir a few seconds until the garlic is aromatic.",
                 "Add spinach and stir-fry until leaves are almost wilted, 1 to 2 minutes.",
                 "Stir in sugar and sesame oil. Sprinkle with black pepper if using. Serve immediately."
+              ]
+            },
+            {
+              "title": "Kale Stir Fry with Mushroom and Red Onion",
+              "servings": "Serves 4   |   Total: 15 minutes",
+              "source": "Thomas, Gastroplant",
+              "comments": [
+                "Remove and discard the kale stems, or slice them very small and add them with the onion and mushrooms.",
+                "Chard and collards work in place of kale. Use a nonstick skillet; you do not need a wok."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Searing fat",
+                  "ingredients": [
+                    "2 tablespoons neutral high-heat oil, such as peanut, canola, or avocado"
+                  ]
+                },
+                {
+                  "label": "Onion and mushrooms",
+                  "ingredients": [
+                    "1/2 large red onion (about 150 grams), sliced",
+                    "8 oz brown or white mushrooms (about 250 grams), trimmed and sliced"
+                  ]
+                },
+                {
+                  "label": "Kale",
+                  "ingredients": [
+                    "6 to 8 cups kale (about 150 grams), leaves cut into bite-size pieces"
+                  ]
+                },
+                {
+                  "label": "Seasoning",
+                  "ingredients": [
+                    "1 1/2 tablespoons balsamic vinegar",
+                    "1 1/2 tablespoons soy sauce",
+                    "Salt and black pepper to taste"
+                  ]
+                }
+              ],
+              "steps": [
+                "Heat the oil in a large skillet over medium-high heat.",
+                "Add the onion and mushrooms, spread them out, and let sit 2 minutes before stirring. Continue cooking and stirring until the onion is just translucent and the mushrooms are just tender, about 5 more minutes.",
+                "Add the kale and stir well. Cook 2 to 3 minutes more, until bright green and just tender.",
+                "Turn off the heat and stir in the balsamic vinegar and soy sauce. Let the liquid reduce about 30 seconds. Season to taste and serve immediately."
+              ]
+            },
+            {
+              "title": "Gochujang-Glazed Eggplant with Fried Scallions",
+              "servings": "Serves 4 to 6   |   Total: 45 minutes",
+              "source": "New York Times, by Eric Kim",
+              "comments": [
+                "Inspired by the Korean banchan gaji bokkeum. Great with white rice, and just as good cold or at room temperature.",
+                "Use any leftover scallion oil to fry eggs or dress a salad. Leftovers keep 3 to 5 days in the refrigerator."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Eggplant (30 minutes ahead)",
+                  "ingredients": [
+                    "1 pound Asian eggplant (about 3 large; preferably Korean, Chinese, or Japanese), halved lengthwise and cut into 4- to 5-inch segments",
+                    "1 teaspoon kosher salt"
+                  ]
+                },
+                {
+                  "label": "Gochujang sauce",
+                  "ingredients": [
+                    "2 tablespoons gochujang",
+                    "1 tablespoon soy sauce",
+                    "2 packed teaspoons dark brown sugar",
+                    "1 teaspoon toasted sesame oil",
+                    "2 garlic cloves, finely grated"
+                  ]
+                },
+                {
+                  "label": "Scallion oil",
+                  "ingredients": [
+                    "1/2 cup olive oil",
+                    "4 scallions, trimmed, cut into 3-inch segments, then very thinly sliced lengthwise, white and green parts separated"
+                  ]
+                }
+              ],
+              "steps": [
+                "Place the eggplant in a colander set inside a large bowl or the sink. Sprinkle with the salt, toss, and let sit 30 minutes.",
+                "Meanwhile, whisk the sauce ingredients together in a small bowl and set aside.",
+                "Add the olive oil and the white parts of the scallions to a large nonstick skillet. Turn the heat to medium and fry, stirring often, until crispy and evenly browned, about 8 minutes. Transfer to a paper towel with a slotted spoon.",
+                "Reserve a small handful of raw scallion greens for garnish. Fry the remaining scallion greens in the oil until crispy and lightly browned, 3 to 5 minutes. Transfer to a paper towel.",
+                "Remove the skillet from the heat and carefully pour the hot scallion oil into a glass container or measuring cup.",
+                "Dry the salted eggplant with a paper towel. Place the skillet over medium-high heat and add 2 tablespoons of the scallion oil.",
+                "When the oil shimmers and you see a wisp of smoke, add half the eggplant, cut sides down, and fry until browned and starting to soften, 2 to 3 minutes. Flip once and cook 1 minute more. Transfer to a plate, add 2 more tablespoons scallion oil to the pan, and repeat with the second batch.",
+                "Return the first batch to the pan alongside the second. Reduce the heat to medium-low, pour in the gochujang sauce, and toss until evenly coated and starting to caramelize, about 1 minute.",
+                "Plate on a large platter and garnish with the fried scallions and the reserved raw scallion greens. Serve immediately."
+              ]
+            },
+            {
+              "title": "Seared Zucchini and Halloumi in Red-Wine Vinaigrette",
+              "made": true,
+              "servings": "Serves 4   |   Total: 30 minutes",
+              "source": "New York Times, by Ali Slagle",
+              "comments": [
+                "Serve with whole grains, pita, hummus, grilled fish, chicken kebabs, or other Mediterranean dishes. Eat right away so the halloumi edges stay crunchy."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Zucchini",
+                  "ingredients": [
+                    "2 medium zucchini, sliced into 1/4-inch-thick rounds",
+                    "1 tablespoon extra-virgin olive oil, plus more as needed",
+                    "Salt and black pepper"
+                  ]
+                },
+                {
+                  "label": "Vinaigrette",
+                  "ingredients": [
+                    "2 tablespoons red wine vinegar",
+                    "1 large garlic clove, finely chopped",
+                    "2 tablespoons extra-virgin olive oil"
+                  ]
+                },
+                {
+                  "label": "Halloumi",
+                  "ingredients": [
+                    "1 tablespoon extra-virgin olive oil",
+                    "One 8 to 9 oz block halloumi, sliced 1/4 inch thick"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "A handful of torn mint, basil, parsley, and/or dill leaves"
+                  ]
+                }
+              ],
+              "steps": [
+                "In a large skillet over medium-high heat, heat 1 tablespoon oil. Add a single layer of zucchini and cook until golden brown and slightly yielding when pressed, 2 to 4 minutes per side. Transfer to a platter or shallow bowl and season with salt and pepper. Repeat with the remaining zucchini, adding more oil and reducing the heat as needed to prevent burning.",
+                "Add the garlic, vinegar, and 2 tablespoons oil to the platter of zucchini and toss to coat.",
+                "Return the skillet to medium-high and add 1 tablespoon oil. Rip the halloumi slices into 2 or 3 pieces each, add to the skillet, and cook until golden brown, 2 to 4 minutes per side.",
+                "Transfer the halloumi to the zucchini, stir to combine, and top with the herbs. Eat right away."
               ]
             }
           ]
@@ -15591,6 +16588,81 @@ module.exports = {
                 "Combine cornbread, sausage, and sauteed vegetable mixture in a large bowl. Whisk eggs and stock together in a medium bowl until very well combined. Pour over cornbread mixture and let sit, gently stirring every minute or so, until cornbread has absorbed all or virtually all of the liquid. Season with kosher salt (about 1 tablespoon Diamond Crystal or 1 1/2 teaspoons Morton kosher salt) and freshly ground black pepper.",
                 "Lightly butter a 3-quart or 13x9x2-inch casserole dish. Transfer dressing to dish and tap lightly against counter to distribute and compact. Cover tightly with aluminum foil and bake until very hot throughout and bubbles appear around sides, 40 to 45 minutes. Increase oven temperature to 425 degrees F and remove foil. Continue to bake until top is lightly browned, 15 to 20 minutes longer."
               ]
+            },
+            {
+              "title": "Roasted Beets and Carrots with Burrata",
+              "made": true,
+              "servings": "Serves 4 to 6",
+              "source": "Emily Paster, West of the Loop",
+              "comments": [
+                "The beets and carrots can be roasted ahead and refrigerated. The recipe makes more dressing than you need; use the rest during the week.",
+                "Look for carrots with the green tops attached for the best flavor. Crumbled fresh goat cheese can replace the burrata."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Roasting vegetables",
+                  "ingredients": [
+                    "3 to 4 small to medium beets",
+                    "1 bunch carrots with green tops (5 to 6 carrots)",
+                    "Several tablespoons olive oil",
+                    "Salt and pepper"
+                  ]
+                },
+                {
+                  "label": "Dressing",
+                  "ingredients": [
+                    "1/4 cup freshly squeezed lime juice",
+                    "2 tablespoons honey",
+                    "2 teaspoons mustard",
+                    "1/2 cup extra-virgin olive oil",
+                    "Salt and pepper to taste"
+                  ]
+                },
+                {
+                  "label": "To assemble",
+                  "ingredients": [
+                    "8 oz burrata",
+                    "1/2 cup chopped hazelnuts, toasted",
+                    "Micro greens (optional)"
+                  ]
+                }
+              ],
+              "steps": [
+                "Preheat the oven to 400°F. Cut the tops and tails off the beets and wrap them in aluminum foil.",
+                "Peel the carrots and cut them in half crosswise, then in half lengthwise. Cut large pieces into quarters. Arrange on a sheet pan, toss with olive oil, and season with salt and pepper.",
+                "Roast the carrots about 30 minutes and the beets 40 to 45 minutes, until a knife easily pierces the beets.",
+                "When the beets are cool enough to handle, slip off the skins and halve them. Cut each half into 2 or 3 wedges.",
+                "Make the dressing: Whisk the lime juice, honey, and mustard in a small bowl until dissolved. While whisking, slowly pour in the olive oil in a steady stream until combined.",
+                "Arrange the beets and carrots on a platter. Tear the burrata into pieces and scatter around the vegetables. Top with the hazelnuts and micro greens.",
+                "Dress the salad just before serving and season with salt and pepper."
+              ]
+            },
+            {
+              "title": "Roasted Baby Carrots",
+              "made": true,
+              "servings": "Makes about 3 cups (serves 4)",
+              "source": "Katie Webster, Healthy Seasonal Recipes",
+              "comments": [
+                "Preheating the pan and patting the carrots dry help them brown.",
+                "Whole baby carrots (1 bunch, about 1 1/4 to 1 1/2 pounds, peeled with the tops trimmed to 1 inch) work too; roast 20 to 25 minutes, halving any thicker than 1 inch lengthwise.",
+                "Variations, tossed with the carrots after roasting: 2 teaspoons lemon juice whisked with 1 teaspoon harissa paste; 2 teaspoons chopped fresh herbs (dill, tarragon, or a mix of rosemary, sage, thyme, and chives); or 1 tablespoon basil pesto."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Carrots",
+                  "ingredients": [
+                    "1 pound peeled baby-cut carrots",
+                    "1 tablespoon extra-virgin olive oil",
+                    "1/4 teaspoon salt",
+                    "1/8 teaspoon freshly ground pepper"
+                  ]
+                }
+              ],
+              "steps": [
+                "Place a rack in the middle of the oven with a large rimmed baking sheet on it. Preheat the oven to 425°F.",
+                "Pat the carrots dry. Toss with the oil, salt, and pepper.",
+                "Spread the carrots on the hot pan. Roast, stirring once or twice, until just tender and browning, 18 to 20 minutes."
+              ]
             }
           ]
         }
@@ -15979,6 +17051,78 @@ module.exports = {
             "Heat 1 tablespoon oil in a large wok or skillet over high heat. Add garlic and cook, stirring, until starting to brown, 30 to 60 seconds. Add cornbread dressing and rice; press into an even layer. Cook without stirring until crisp on the bottom, about 4 minutes. Toss to combine, then press again and cook until more is crisp, 3 to 4 minutes more.",
             "Push rice mixture to sides. Add remaining 1 tablespoon oil to center; add Brussels sprout leaves. Cook, stirring, until bright green and slightly wilted, 1 to 2 minutes. Toss to combine with rice.",
             "Push mixture to sides; add beaten eggs to center. Scramble and toss just as eggs begin to set. Add soy sauce and 3 tablespoons chili crisp; toss to combine. Season with salt. Transfer to a platter; top with scallions and more chili crisp."
+          ]
+        },
+        {
+          "title": "Turmeric Rice",
+          "made": true,
+          "servings": "Serves 2",
+          "source": "Swasthi Shreekanth, Swasthi's Recipes (indianhealthyrecipes.com)",
+          "comments": [
+            "Cook the whole dish on low heat for the best flavor.",
+            "Shortcut: use 3/4 teaspoon garam masala in place of the whole spices (a little over 1 teaspoon if doubling).",
+            "Butter (or ghee) is essential here; do not substitute oil.",
+            "Variations: add about 1/2 cup mint leaves with the ginger and garlic, about 1 teaspoon ground fennel with the spices, or 1 chopped green chili with the ginger and garlic.",
+            "Mace is hard to find: a pinch (about 1/8 teaspoon) of freshly grated nutmeg can replace the strand of mace. Nutmeg is stronger, so start small."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Rice (15 minutes ahead)",
+              "ingredients": [
+                "1 cup Jasmine or Basmati rice (aged basmati preferred)"
+              ]
+            },
+            {
+              "label": "Aromatics",
+              "ingredients": [
+                "1 tablespoon unsalted butter (or ghee)",
+                "1 teaspoon minced fresh ginger",
+                "1 teaspoon minced garlic"
+              ]
+            },
+            {
+              "label": "Whole spices",
+              "ingredients": [
+                "1 bay leaf",
+                "1/2 teaspoon cumin seeds (or caraway seeds)",
+                "4 green cardamom pods",
+                "4 cloves",
+                "2 inches cinnamon stick (2 pieces)",
+                "1 strand mace or a pinch of freshly grated nutmeg (optional)",
+                "1 star anise"
+              ]
+            },
+            {
+              "label": "Ground spices",
+              "ingredients": [
+                "1/2 teaspoon turmeric",
+                "1/4 to 1/2 teaspoon ground black pepper"
+              ]
+            },
+            {
+              "label": "Cooking liquid",
+              "ingredients": [
+                "1 1/2 to 2 cups stock or water (2 cups for aged basmati)",
+                "1/2 teaspoon salt, adjusted to taste"
+              ]
+            },
+            {
+              "label": "To serve (optional)",
+              "ingredients": [
+                "1/4 cup chopped fresh cilantro",
+                "1/4 cup nuts and raisins"
+              ]
+            }
+          ],
+          "steps": [
+            "Rinse the rice well in several changes of water. Soak for at least 15 minutes, then drain completely and set aside.",
+            "Heat the butter in a pot over medium-low. Add the ginger and garlic and saute 30 to 60 seconds, without browning.",
+            "Add the whole spices (or garam masala), the pepper, and the turmeric.",
+            "Add the drained rice, turn the heat to high, and fry about 2 minutes, stirring only occasionally so the grains do not break.",
+            "Add the stock or water and the salt. Taste the liquid and add more salt if needed. Bring to a rolling boil.",
+            "Reduce the heat to very low, cover, and cook about 10 to 11 minutes, until the liquid is absorbed and the rice is cooked through.",
+            "Fluff with a fork and garnish with cilantro, and nuts and raisins if using. Serve with a curry, dal, or raita.",
+            "Rice cooker: Saute the ginger, garlic, spices, and drained rice in the butter in a skillet as in steps 2 to 4. Transfer to the rice cooker, add the stock or water and the salt, and stir. Cook on the regular rice cycle, then fluff and garnish as in step 7."
           ]
         }
       ]
@@ -21022,6 +22166,41 @@ module.exports = {
             "Strain through a cheesecloth-lined fine-mesh strainer into a clean glass jar. Discard the milk solids.",
             "Cool completely before sealing. Store at room temperature up to 1 month, or refrigerate up to 1 year."
           ]
+        },
+        {
+          "title": "Honey Vanilla Whipped Butter",
+          "made": true,
+          "servings": "Makes about 1 1/2 cups",
+          "source": "Jessie-Sierra Ross, Straight to the Hips, Baby",
+          "comments": [
+            "Serve with fresh-baked bread, biscuits, or waffles, or on challah with thin slices of apple.",
+            "Reserve the buttermilk; it is good in cakes, waffles, and pancakes.",
+            "Use within 1 week."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Butter",
+              "ingredients": [
+                "2 pints heavy whipping cream"
+              ]
+            },
+            {
+              "label": "To finish",
+              "ingredients": [
+                "4 tablespoons honey",
+                "2 teaspoons vanilla extract",
+                "Generous pinch of salt"
+              ]
+            }
+          ],
+          "steps": [
+            "In the bowl of a stand mixer fitted with the whisk attachment, pour in the cream. Start whipping, gradually increasing the speed from 1 to 8. You may need the splash shield.",
+            "Whip past soft and hard peaks until the butterfat separates from the buttermilk, about 12 to 15 minutes.",
+            "Drain the buttermilk through a fine sieve into a bowl or jar and reserve it.",
+            "Transfer the butterfat to a medium bowl and press with a spatula to remove remaining buttermilk. Run the butterfat under gently running, very cold water, folding and pressing, until the water runs clear. The butter will be dense, slightly yellow, and very rich.",
+            "Return the butter to the mixer bowl with the whisk attachment. Add the honey, vanilla, and salt and whip until well mixed and aerated, about 3 minutes.",
+            "Transfer to a ramekin or bowl, cover with plastic wrap, and refrigerate until firm."
+          ]
         }
       ]
     },
@@ -21102,6 +22281,31 @@ module.exports = {
           "steps": [
             "Add all ingredients except the salt and pepper to a mason jar. Seal tightly and shake well (or whisk together in a bowl, adding the oil in a steady stream).",
             "Season with the salt and pepper to taste."
+          ]
+        },
+        {
+          "title": "Creamy Dijon Turmeric Dressing",
+          "servings": "Makes about 1/2 cup",
+          "source": "Lauren O'Connor, The Healing GERD Dietitian (nutrisavvyhealth.com)",
+          "comments": [
+            "Whole milk yogurt gives the creamiest, richest result."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Dressing",
+              "ingredients": [
+                "1/2 cup plain whole milk yogurt",
+                "1 tablespoon grapeseed oil",
+                "1 medium clove garlic",
+                "1 teaspoon Dijon mustard",
+                "1/2 teaspoon turmeric",
+                "1/8 teaspoon black pepper",
+                "1/4 to 1/2 teaspoon honey, to taste"
+              ]
+            }
+          ],
+          "steps": [
+            "Combine all ingredients in a high-speed blender and process until smooth."
           ]
         }
       ]
@@ -21406,6 +22610,59 @@ module.exports = {
                 "Combine all ingredients in a bowl and stir.",
                 "Taste and adjust salt and lemon juice. Garnish with additional fresh herbs.",
                 "Refrigerate until ready to serve. Keeps 4 to 5 days."
+              ]
+            },
+            {
+              "title": "Peach Barbecue Sauce",
+              "made": true,
+              "servings": "Makes about 6 pints",
+              "source": "Rachel Turiel, 6512 and Growing (DIY Kitchen, August 2012)",
+              "comments": [
+                "Adapted by Rachel Turiel from the Simple Bites small batch peach barbecue sauce, with less sugar and more spice.",
+                "Do not peel the peaches; the peels melt away and add to the color of the sauce. Pickled peaches have also been used in place of fresh.",
+                "If you are not canning the sauce, use 1/2 to 3/4 cup vinegar. The brown sugar can be omitted or increased with no effect on canning safety.",
+                "Smoked paprika is preferred; plain paprika is fine.",
+                "Also good as a marinade: marinate meat in the sauce (plus a little olive oil) 1 to 2 days, then bake the whole piece with the remaining sauce.",
+                "To freeze peaches for other uses, slice and freeze in a single layer on cookie sheets, then transfer to a bag."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Peaches",
+                  "ingredients": [
+                    "6 pounds peaches (about 22), pitted and quartered, not peeled"
+                  ]
+                },
+                {
+                  "label": "Aromatics",
+                  "ingredients": [
+                    "1 1/2 cups chopped onions",
+                    "3 cloves garlic"
+                  ]
+                },
+                {
+                  "label": "Liquids and sweeteners",
+                  "ingredients": [
+                    "1 cup apple cider vinegar (1/2 to 3/4 cup if not canning)",
+                    "1/2 cup molasses",
+                    "1/2 cup brown sugar",
+                    "Juice of 3 limes"
+                  ]
+                },
+                {
+                  "label": "Spices",
+                  "ingredients": [
+                    "2 tablespoons smoked paprika",
+                    "2 tablespoons chile powder or cayenne pepper",
+                    "2 tablespoons salt",
+                    "2 tablespoons ground ginger",
+                    "2 tablespoons cumin or coriander (or both)"
+                  ]
+                }
+              ],
+              "steps": [
+                "Combine everything in a large pot and simmer, lid off, 1 to 3 hours, stirring frequently. The longer it simmers, the more concentrated and flavorful the sauce.",
+                "Blend with an immersion blender or other blending tool.",
+                "To can, process in a boiling-water canner."
               ]
             }
           ]
@@ -22402,6 +23659,51 @@ module.exports = {
             "Mix the thin coconut sauce ingredients together and set aside.",
             "When ready to serve, divide the sticky rice into portions. Peel the mango and slice thinly. Lay mango slices on top of the rice. Pour the thin coconut sauce over the mango and sprinkle with sesame seeds."
           ]
+        },
+        {
+          "title": "Passion Fruit (Lilikoi) Ice Cream",
+          "made": true,
+          "servings": "Makes about 1 quart",
+          "source": "David Lebovitz, The Perfect Scoop (via My Food Affair)",
+          "comments": [
+            "Quantities are doubled from the original recipe.",
+            "Frozen passion fruit pulp works if fresh fruit is hard to find.",
+            "1/4 cup Cointreau added to the custard is a luscious variation."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Passion fruit base",
+              "ingredients": [
+                "1 cup fresh or frozen passion fruit pulp (from 12 to 16 fresh passion fruits)",
+                "1 cup heavy cream"
+              ]
+            },
+            {
+              "label": "Custard",
+              "ingredients": [
+                "3/4 cup whole milk",
+                "3/4 cup plus 2 tablespoons sugar",
+                "2 pinches of salt",
+                "1 cup heavy cream",
+                "6 large egg yolks"
+              ]
+            },
+            {
+              "label": "To finish (optional)",
+              "ingredients": [
+                "A few drops pure orange oil, or grated zest of 2 small oranges",
+                "2 spoonfuls passion fruit seeds"
+              ]
+            }
+          ],
+          "steps": [
+            "If using fresh passion fruit, cut each in half at the equator and scoop the pulp and seeds into a nonreactive strainer set over a bowl. Press with a flexible rubber spatula to extract as much pulp as possible, until the seeds look rather dry.",
+            "Mix the passion fruit pulp with 1 cup of the cream in a large bowl. Set a mesh strainer over the bowl.",
+            "Warm the milk, sugar, salt, and remaining 1 cup cream in a medium saucepan. In a separate bowl, whisk the egg yolks. Slowly pour the warm mixture into the yolks, whisking constantly, then scrape the warmed yolks back into the saucepan.",
+            "Stir the mixture constantly over medium heat with a heatproof spatula, scraping the bottom, until it thickens and coats the spatula.",
+            "Pour the custard through the strainer into the passion fruit and cream mixture and stir. Stir in the orange oil or zest, if using. Cool over an ice bath, then chill thoroughly in the refrigerator.",
+            "Freeze in an ice cream maker according to the manufacturer's instructions. Add the passion fruit seeds during the last few minutes of churning, if you wish."
+          ]
         }
       ]
     },
@@ -22467,6 +23769,46 @@ module.exports = {
                 "In a pitcher, combine equal parts Aperol, Campari, red vermouth, white vermouth, and gin with plenty of ice.",
                 "Add a splash of orange juice and a squeeze of lemon. Stir.",
                 "Add 50ml soda water per person. Pour into glasses over ice. Garnish with a cherry or strawberry."
+              ]
+            },
+            {
+              "title": "Peach Lemonade Spritz",
+              "servings": "Makes 2 cocktails",
+              "source": "Food Network, by Alex Guarnaschelli, from The Kitchen",
+              "comments": [
+                "A nectarine or apricot can replace the peach. Thawed frozen peach slices, 3 oz peach puree, canned peaches, or peach juice also work.",
+                "For best results, refrigerate all ingredients beforehand.",
+                "The source used Ketel One Botanical Peach and Orange Blossom vodka."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Lemonade syrup (1 hour ahead)",
+                  "ingredients": [
+                    "1/2 cup sugar",
+                    "3/4 cup water",
+                    "Zest and juice of 1 lemon"
+                  ]
+                },
+                {
+                  "label": "Cocktail",
+                  "ingredients": [
+                    "1 ripe peach, pitted and sliced into 8 wedges",
+                    "3 oz Peach or Orange Blossom vodka",
+                    "Ice"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "2 oz club soda",
+                    "2 fresh mint or basil sprigs"
+                  ]
+                }
+              ],
+              "steps": [
+                "Make the lemonade syrup: In a small saucepan, heat the water over medium heat. Add the sugar and whisk until dissolved, 1 to 2 minutes. Stir in the lemon zest and juice. Transfer to a small bowl and let cool.",
+                "Muddle and mix: Place half of the peach in a cocktail shaker and muddle. Add 4 oz of the lemonade syrup, the vodka, and a few ice cubes. Cover and shake thoroughly.",
+                "Divide between 2 glasses with a few ice cubes and the remaining peach slices. Top with a splash of club soda, garnish with mint or basil, stir, and serve."
               ]
             }
           ]

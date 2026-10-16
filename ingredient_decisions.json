@@ -305,7 +305,42 @@
   "whole-wheat flour": "whole wheat flour",
   "wild fennel": "fennel fronds",
   "zest": "lemon",
-  "zucchinis": "zucchini"
+  "zucchinis": "zucchini",
+  "asian eggplant": "eggplant",
+  "baby-cut carrot": "baby carrot",
+  "carrots green top": "carrot",
+  "basil pesto": "pesto",
+  "boneless skinless chicken breast cutlet": "chicken cutlet",
+  "skin-on chicken breast": "chicken breast",
+  "brown mushroom": "mushroom",
+  "white mushroom": "mushroom",
+  "bunch lacinato kale": "lacinato kale",
+  "burrata cheese": "burrata",
+  "mixed soft herb": "herb",
+  "neutral high-heat oil": "neutral oil",
+  "neutral-flavored oil": "neutral oil",
+  "old-fashioned rolled oats": "rolled oats",
+  "runny honey": "honey",
+  "sharp white cheddar cheese": "sharp cheddar cheese",
+  "smooth natural peanut butter": "natural peanut butter",
+  "spanish olives pimento": "green olive",
+  "veggie broth": "vegetable broth",
+  "white potato": "potato",
+  "whole wheat spaghetti": "whole-wheat spaghetti",
+  "wide egg noodles": "egg noodles",
+  "light agave nectar": "agave nectar",
+  "medium-firm tofu": "firm tofu",
+  "white distilled vinegar": "distilled white vinegar",
+  "mild white miso paste": "white miso paste",
+  "strand mace": "mace",
+  "roasted black sesame seed": "black sesame seed",
+  "orange blossom vodka": "peach or orange blossom vodka",
+  "block halloumi": "halloumi",
+  "micro greens": "microgreens",
+  "frozen passion fruit pulp": "passion fruit pulp",
+  "spoonfuls passion fruit seed": "passion fruit seed",
+  "unsweetened almond milk": "almond milk",
+  "dark chinese vinegar": "chinese black vinegar"
  },
  "ignore": [
   "aluminum foil",
@@ -952,6 +987,21 @@
     "chile de arbol"
    ],
    "mode": "single"
+  },
+  "3 oz Peach or Orange Blossom vodka": {
+   "items": [
+    "peach or orange blossom vodka"
+   ]
+  },
+  "1 cup beet stems and greens, chopped (optional, or add another cup of cabbage)": {
+   "items": [
+    "beet greens"
+   ]
+  },
+  "One 14 to 18 oz well-marbled, bone-in pork chop, cut 1 1/4 to 1 1/2 inches thick": {
+   "items": [
+    "pork chop"
+   ]
   }
  },
  "parents": {
@@ -974,7 +1024,12 @@
   "kashmiri chile powder": "chile powder",
   "chipotle chile powder": "chile powder",
   "red chile powder": "chile powder",
-  "dark chili powder": "chili powder"
+  "dark chili powder": "chili powder",
+  "almond milk": "milk",
+  "peach or orange blossom vodka": "vodka",
+  "passion fruit seed": "passion fruit pulp",
+  "gochugaru": "chile flake",
+  "halloumi": "cheese"
  },
  "noParent": [
   "sweetened condensed milk",

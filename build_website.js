@@ -555,6 +555,33 @@ const CLUSTER_MAP = {
   'Old-Fashioned Butterscotch Pudding':                  'General',
   // Drinks
   'Sweet and Sour Mix':                                  'General',
+  // --- Oct 15 2026 batch ---
+  "Creamy Dijon Turmeric Dressing": "General",
+  "Honey Vanilla Whipped Butter": "General",
+  "Turmeric Rice": "Indian",
+  "Passion Fruit (Lilikoi) Ice Cream": "General",
+  "Peach Lemonade Spritz": "General",
+  "Peach Baked Oatmeal": "General",
+  "Vegetarian Beet Borscht": "Central/Eastern European",
+  "BBQ Grilled Corn, Jalapeño and Peach Quinoa Salad": "General",
+  "Roasted Beets and Carrots with Burrata": "General",
+  "Lacinato Kale and Mint Salad with Spicy Peanut Dressing": "General",
+  "Pesto Peach Chicken in White Wine with Burrata": "Italian",
+  "Garlicky Chicken Thighs with Scallion and Lime": "General",
+  "Crispy Smashed Chicken Breasts with Gin and Sage": "General",
+  "Smothered Pork Chop": "General",
+  "Grilled Salmon Salad with Lime, Chiles and Herbs": "Vietnamese",
+  "I Can't Believe It's Not Chicken (Super-Savory Grated Tofu)": "Korean-inspired",
+  "Roasted Baby Carrots": "General",
+  "Crispy Accordion Potatoes": "General",
+  "Kale Stir Fry with Mushroom and Red Onion": "General",
+  "Gochujang-Glazed Eggplant with Fried Scallions": "Korean-inspired",
+  "Seared Zucchini and Halloumi in Red-Wine Vinaigrette": "Mediterranean/Greek",
+  "Seedy Spaghetti with a Whole Lotta Kale": "Italian",
+  "Haluski (Buttery Cabbage and Noodles)": "Central/Eastern European",
+  "Pasta with Eggplant and Zucchini": "Italian",
+  "Peter Fang's Crispy Tofu with Peanut Sauce": "Chinese",
+  "Peach Barbecue Sauce": "General",
 };
 
 // ── Helpers ────────────────────────────────────────────────────────────────
