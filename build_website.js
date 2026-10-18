@@ -582,6 +582,11 @@ const CLUSTER_MAP = {
   "Pasta with Eggplant and Zucchini": "Italian",
   "Peter Fang's Crispy Tofu with Peanut Sauce": "Chinese",
   "Peach Barbecue Sauce": "General",
+  // --- Oct 18 2026 batch ---
+  "Creamy Chickpea Pasta with Spinach and Rosemary": "Italian",
+  "Chickpea Salad with Fresh Herbs and Scallions": "General",
+  "Tuna Surprise (Bucatini alla Tuna Surprise)": "Italian",
+  "Lebanese Green Beans with Walnuts (Loubieh B'Joz)": "Middle Eastern/Persian",
 };
 
 // ── Helpers ────────────────────────────────────────────────────────────────

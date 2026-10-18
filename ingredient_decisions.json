@@ -340,7 +340,10 @@
   "frozen passion fruit pulp": "passion fruit pulp",
   "spoonfuls passion fruit seed": "passion fruit seed",
   "unsweetened almond milk": "almond milk",
-  "dark chinese vinegar": "chinese black vinegar"
+  "dark chinese vinegar": "chinese black vinegar",
+  "better than bouillon chicken base": "chicken bouillon",
+  "dried bucatini": "bucatini",
+  "plain full-fat greek yogurt": "full-fat greek yogurt"
  },
  "ignore": [
   "aluminum foil",
@@ -1002,6 +1005,16 @@
    "items": [
     "pork chop"
    ]
+  },
+  "1/2 cup (2 1/2 oz) shelled peas, fresh or frozen": {
+   "items": [
+    "pea"
+   ]
+  },
+  "1/2 cup thinly sliced scallion whites and light green parts (from 4 large scallions)": {
+   "items": [
+    "scallion"
+   ]
   }
  },
  "parents": {
@@ -1029,7 +1042,8 @@
   "peach or orange blossom vodka": "vodka",
   "passion fruit seed": "passion fruit pulp",
   "gochugaru": "chile flake",
-  "halloumi": "cheese"
+  "halloumi": "cheese",
+  "bucatini": "pasta"
  },
  "noParent": [
   "sweetened condensed milk",

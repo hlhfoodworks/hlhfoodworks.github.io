@@ -3927,6 +3927,43 @@ module.exports = {
                 "Slice the jalapeños (remove the seeds if desired) and cut the corn from the cobs. Add both to the quinoa along with the peaches, tomatoes, and cheddar and toss well.",
                 "Serve with the remaining dressing and garnish with the cilantro."
               ]
+            },
+            {
+              "title": "Chickpea Salad with Fresh Herbs and Scallions",
+              "servings": "Serves 4 to 6   |   Total: 15 minutes, plus 30 minutes marinating",
+              "source": "New York Times, by Lidey Heuck",
+              "comments": [
+                "A lighter take on American potato salad; lightly mashing some of the chickpeas gives it the creamy texture. It travels well.",
+                "Keeps in the refrigerator up to 2 days. Let it sit at room temperature 30 minutes before serving."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Dressing",
+                  "ingredients": [
+                    "1/2 cup plain full-fat Greek yogurt",
+                    "3 tablespoons mayonnaise",
+                    "2 tablespoons lemon juice (from 1 lemon)",
+                    "1 1/2 teaspoons Dijon mustard",
+                    "1 teaspoon kosher salt",
+                    "1/2 teaspoon black pepper",
+                    "2 tablespoons minced fresh dill, plus more for serving",
+                    "2 tablespoons minced fresh parsley, plus more for serving"
+                  ]
+                },
+                {
+                  "label": "Salad",
+                  "ingredients": [
+                    "Three 15 oz cans chickpeas, rinsed",
+                    "1 cup finely diced celery (about 3 stalks)",
+                    "1/2 cup thinly sliced scallions, white and green parts (2 to 3 scallions)"
+                  ]
+                }
+              ],
+              "steps": [
+                "In a small bowl, combine the yogurt, mayonnaise, lemon juice, mustard, salt, and pepper. Whisk until smooth, then add the dill and parsley and stir to combine. Set aside.",
+                "Place the chickpeas in a large bowl and lightly mash about 1/3 of them with a fork. Add the celery and scallions and toss.",
+                "Pour the dressing over the salad, toss well, and set aside at room temperature for at least 30 minutes. Sprinkle with more dill and parsley and serve."
+              ]
             }
           ]
         },
@@ -14122,6 +14159,61 @@ module.exports = {
                     "Meanwhile, bring a large pot of salted water to a boil. When the cabbage is done, remove from the heat and keep covered. Cook the noodles according to the package directions. Reserve 1/2 cup pasta water, then drain.",
                     "Add the noodles, reserved pasta water, and remaining 1 tablespoon butter to the cabbage. Stir over medium-high heat until the noodles are saucy and glossed with butter, 1 to 2 minutes. Season to taste with salt and pepper."
                   ]
+                },
+                {
+                  "title": "Creamy Chickpea Pasta with Spinach and Rosemary",
+                  "servings": "Serves 4   |   Total: 30 minutes",
+                  "source": "New York Times, by Alexa Weibel",
+                  "comments": [
+                    "Greens and beans can be swapped. For other flavors, try ground coriander, toasted fennel seeds, coarsely crumbled pink peppercorns, or smoked paprika."
+                  ],
+                  "ingredientGroups": [
+                    {
+                      "label": "Pasta",
+                      "ingredients": [
+                        "Kosher salt",
+                        "12 oz spaghetti or bucatini"
+                      ]
+                    },
+                    {
+                      "label": "Chickpeas",
+                      "ingredients": [
+                        "1/4 cup olive oil",
+                        "One 14 oz can chickpeas, rinsed and drained",
+                        "2 teaspoons finely chopped fresh rosemary, plus more for garnish",
+                        "1/4 to 1/2 teaspoon Aleppo pepper or red pepper flakes (optional)",
+                        "Black pepper"
+                      ]
+                    },
+                    {
+                      "label": "Cream sauce",
+                      "ingredients": [
+                        "1 large shallot, finely chopped",
+                        "2 garlic cloves, finely chopped",
+                        "1 cup heavy cream",
+                        "One 6 oz bag baby spinach"
+                      ]
+                    },
+                    {
+                      "label": "To finish",
+                      "ingredients": [
+                        "1/2 cup finely grated Parmesan"
+                      ]
+                    },
+                    {
+                      "label": "To serve",
+                      "ingredients": [
+                        "Lemon wedges"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Bring a large pot of salted water to a boil over high heat.",
+                    "In a wide, deep skillet, heat the oil over medium-high. Add the chickpeas, rosemary, and Aleppo pepper, if using. Season generously with salt and pepper and cook, stirring occasionally, until the chickpeas start to caramelize at their edges and pop, 5 to 7 minutes. Using a slotted spoon, transfer about half the chickpeas to a bowl and reserve for garnish.",
+                    "Reduce the heat to medium, add the shallots and garlic to the skillet, and season with salt and pepper. Cook, stirring occasionally, until the shallots are softened, about 3 minutes. Add the heavy cream and cook until slightly thickened, about 3 minutes. Turn off the heat, stir in the spinach, and season to taste with salt and pepper.",
+                    "Add the pasta to the boiling water and reduce the heat to medium. Cook until a couple of minutes short of al dente, about 5 minutes. Do not drain. Using tongs, transfer the pasta directly from the pot to the spinach and cream sauce. Add 1 cup pasta cooking water and the Parmesan and cook over medium-high, stirring vigorously with the tongs, until the sauce is thickened and the noodles are al dente, about 2 minutes. Add a splash of pasta water to loosen the sauce, if needed.",
+                    "Transfer to bowls and top with the reserved chickpeas, more rosemary, and black pepper. Serve immediately, with lemon wedges for squeezing."
+                  ]
                 }
               ]
             },
@@ -14698,6 +14790,89 @@ module.exports = {
                     "While second batch of clams cooks, add linguine to the boiling water and cook until very al dente, about 1 minute less than package directions.",
                     "Remove whole cooked clams from the pan and keep warm. Add butter and the shelled clam meat to the pan. Bring to a boil, add cooked linguine and herbs, and toss together, cooking until the sauce clings to the pasta. Turn off heat and toss in Parmigiano-Reggiano if using. Finish with a drizzle of high-quality olive oil; toss vigorously.",
                     "Divide into serving dishes and garnish with whole clams in shells and more Parmigiano shavings if desired."
+                  ]
+                },
+                {
+                  "title": "Tuna Surprise (Bucatini alla Tuna Surprise)",
+                  "servings": "Serves 2   |   Total: 1 hour",
+                  "source": "Zahra Tangorra, shared by Molly Baz, The Club",
+                  "comments": [
+                    "Zahra Tangorra's take on tuna noodle casserole, developed at her restaurant Brucie."
+                  ],
+                  "ingredientGroups": [
+                    {
+                      "label": "Breadcrumbs",
+                      "ingredients": [
+                        "2 oz torn stale bread (about 2/3 cup packed)",
+                        "2 tablespoons sesame seeds",
+                        "1/2 teaspoon garlic powder",
+                        "2 tablespoons extra-virgin olive oil",
+                        "Kosher salt",
+                        "1/4 cup grated Parmigiano Reggiano or Pecorino Romano (from 1 1/2 oz, 1/2 cup packed total, divided)",
+                        "1 tablespoon chopped fresh dill",
+                        "Zest of 1 lemon"
+                      ]
+                    },
+                    {
+                      "label": "Pasta",
+                      "ingredients": [
+                        "Kosher salt",
+                        "6 oz dried bucatini"
+                      ]
+                    },
+                    {
+                      "label": "Sauce base",
+                      "ingredients": [
+                        "2 tablespoons extra-virgin olive oil",
+                        "1/2 cup thinly sliced scallion whites and light green parts (from 4 large scallions)",
+                        "2 large cloves garlic, finely chopped",
+                        "2 oz shiitake mushrooms, thinly sliced (1 packed cup)"
+                      ]
+                    },
+                    {
+                      "label": "Sauce",
+                      "ingredients": [
+                        "1 tablespoon butter",
+                        "6 oz (1 cup) cherry tomatoes, halved",
+                        "1 tablespoon capers",
+                        "1 big pinch Aleppo pepper or red pepper flakes",
+                        "1 tablespoon Better Than Bouillon chicken base",
+                        "1/4 cup heavy cream"
+                      ]
+                    },
+                    {
+                      "label": "Tuna and herbs",
+                      "ingredients": [
+                        "1/2 cup (2 1/2 oz) shelled peas, fresh or frozen",
+                        "One 5 oz can oil-packed tuna, drained",
+                        "2 tablespoons chopped fresh dill (3 tablespoons total with the breadcrumbs)",
+                        "2 tablespoons chopped fresh chives (1/4 cup total)",
+                        "Juice of 1/2 lemon",
+                        "Big grating of fresh nutmeg",
+                        "8 large basil leaves, whole"
+                      ]
+                    },
+                    {
+                      "label": "To finish",
+                      "ingredients": [
+                        "4 oz (1 cup grated) sharp white cheddar cheese",
+                        "1/4 cup grated Parmigiano Reggiano or Pecorino Romano, plus more for serving",
+                        "2 tablespoons chopped fresh chives",
+                        "Reserved scallion greens (about 1/2 cup)",
+                        "Lemon, for squeezing",
+                        "Extra-virgin olive oil, for serving"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    "Preheat the oven to 400°F.",
+                    "Prep: Halve the cherry tomatoes. Thinly slice the scallions, keeping the whites and light green parts separate from the dark green tops (about 1/2 cup of each); reserve the greens for serving. Slice the shiitakes, chop the garlic, dill, and chives. Drain the tuna. Grate the Parmigiano on the small holes (about 1/2 cup packed) and the cheddar on the large holes (about 1 cup).",
+                    "Make the breadcrumbs: Pulse the torn bread in a food processor to pea-sized crumbs. Transfer to a mixing bowl and toss with the sesame seeds, garlic powder, 2 tablespoons olive oil, and a little salt. Spread on a baking sheet (do not wash the bowl) and bake until golden brown, stirring once, about 10 to 12 minutes. Return the hot crumbs to the bowl and toss with 1/4 cup of the grated Parmigiano, 1 tablespoon of the dill, and the lemon zest.",
+                    "Make the pasta: Bring a large pot of generously salted water to a boil over high heat. Cook the bucatini to al dente, about 1 minute shy of the package directions. Drain, reserving 1/2 cup pasta water.",
+                    "Make the sauce: Heat the remaining 2 tablespoons olive oil in a large saute pan over medium-high heat. Add the scallion whites, garlic, and mushrooms and saute about 2 minutes, stirring frequently so they do not burn. Add the butter, tomatoes, capers, pepper flakes, Better Than Bouillon, cream, and 2 tablespoons pasta water and simmer 4 to 6 minutes, stirring frequently, until the cream is super reduced and the tomatoes have collapsed.",
+                    "Remove from the heat and add the peas, tuna, the remaining 2 tablespoons dill, 2 tablespoons of the chives, the juice of 1/2 lemon, a big grating of nutmeg, and the whole basil leaves.",
+                    "Add the cooked pasta to the sauce with a big splash of pasta water. Return to medium-high heat, stirring to coat, until the noodles are glossy and the sauce is thickened, 3 to 4 minutes. Remove from the heat and stir in the cheddar and the remaining 1/4 cup Parmigiano until melted. Season to taste with salt and pepper.",
+                    "Transfer to bowls. Top each portion with the remaining 2 tablespoons chives, the scallion greens, more Parmigiano, the breadcrumbs, a drizzle of olive oil, and another squeeze of lemon."
                   ]
                 }
               ]
@@ -16100,6 +16275,50 @@ module.exports = {
                 "Add the garlic, vinegar, and 2 tablespoons oil to the platter of zucchini and toss to coat.",
                 "Return the skillet to medium-high and add 1 tablespoon oil. Rip the halloumi slices into 2 or 3 pieces each, add to the skillet, and cook until golden brown, 2 to 4 minutes per side.",
                 "Transfer the halloumi to the zucchini, stir to combine, and top with the herbs. Eat right away."
+              ]
+            },
+            {
+              "title": "Lebanese Green Beans with Walnuts (Loubieh B'Joz)",
+              "servings": "Serves 4   |   Total: 23 minutes",
+              "source": "Kevin, Silk Road Recipes (silkroadrecipes.com)",
+              "comments": [
+                "Serve with grilled meat, zaatar chicken, or warm flatbread for scooping up the sauce.",
+                "Regular green beans work best; haricots verts, or flat Italian or Romano beans, also work. Frozen beans are fine (cook just until tender).",
+                "Pine nuts can be replaced with more walnuts. Greek yogurt can replace the labneh.",
+                "Let the beans cool slightly before tossing with the sauce so it does not turn oily."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Green beans",
+                  "ingredients": [
+                    "2 pounds fresh green beans, trimmed",
+                    "Salt, for the cooking water"
+                  ]
+                },
+                {
+                  "label": "Walnut sauce",
+                  "ingredients": [
+                    "1 cup walnuts",
+                    "1/4 cup pine nuts",
+                    "6 cloves garlic",
+                    "1/2 teaspoon kosher salt",
+                    "1/4 teaspoon Aleppo pepper or red pepper flakes",
+                    "2 tablespoons olive oil"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "Labneh or Greek yogurt",
+                    "Lemon zest"
+                  ]
+                }
+              ],
+              "steps": [
+                "Boil the trimmed green beans in salted water until tender but still bright green, about 5 minutes. Drain and set aside to cool slightly.",
+                "In a food processor, pulse the walnuts, pine nuts, garlic, salt, and pepper flakes until finely chopped. Slowly drizzle in the olive oil while processing until the sauce is thick and pesto-like, not smooth.",
+                "Toss the green beans with the walnut sauce.",
+                "Spread a layer of labneh or Greek yogurt on a plate, pile the beans on top, and finish with lemon zest."
               ]
             }
           ]
