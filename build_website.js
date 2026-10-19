@@ -4,9 +4,14 @@ const path = require('path');
 const data = require('./cookbook_data.js');
 const { displayTitle } = require('./recipe_utils.js');
 const { buildIngredientIndex } = require('./ingredient_index.js');
+const { parseLine } = require('./ingredient_parser.js');
 const INGREDIENT_CSS = fs.readFileSync(path.join(__dirname, 'ingredient_search.css'), 'utf8');
 const INGREDIENT_JS = fs.readFileSync(path.join(__dirname, 'ingredient_search_client.js'), 'utf8');
 const MADE_CFG = JSON.parse(fs.readFileSync(path.join(__dirname, 'made_it_config.json'), 'utf8'));
+const SHOP_CSS = fs.readFileSync(path.join(__dirname, 'shopping_list.css'), 'utf8');
+const SHOP_CFG = JSON.parse(fs.readFileSync(path.join(__dirname, 'shopping_config.json'), 'utf8'));
+const SHOP_JS = fs.readFileSync(path.join(__dirname, 'shopping_list_client.js'), 'utf8')
+  .split('__SHOP_URL__').join(SHOP_CFG.url || '').split('__SHOP_KEY__').join(SHOP_CFG.key || '');
 const MADE_CSS = fs.readFileSync(path.join(__dirname, 'made_it.css'), 'utf8');
 const MADE_JS = fs.readFileSync(path.join(__dirname, 'made_it_client.js'), 'utf8')
   .split('__MADE_FORM_ID__').join(MADE_CFG.formId).split('__MADE_ENTRY__').join(MADE_CFG.entryField).split('__MADE_PASSWORD__').join(MADE_CFG.password);
@@ -676,7 +681,13 @@ function renderStep(step) {
 function renderIngredientGroups(ingredientGroups) {
   return (ingredientGroups || []).map(g => {
     const note = g.note ? ` <span class="group-note">(${esc(g.note)})</span>` : '';
-    const items = g.ingredients.map(i => typeof i === 'object' && i.html ? `<li>${i.html}</li>` : `<li>${esc(i)}</li>`).join('\n');
+    const items = g.ingredients.map(i => {
+      const raw = typeof i === 'object' && i.html ? i.html : i;
+      let ing = '';
+      try { const pl = parseLine(raw, { html: typeof i === 'object' }); if (pl.kind === 'ingredient') ing = pl.items.join(' / '); } catch (e) {}
+      const attr = ing ? ` data-ing="${esc(ing)}"` : '';
+      return typeof i === 'object' && i.html ? `<li${attr}>${i.html}</li>` : `<li${attr}>${esc(i)}</li>`;
+    }).join('\n');
     const label = g.label ? `<h4>${esc(g.label)}${note}</h4>` : '';
     return `<div class="ing-group">${label}<ul class="ingredients">${items}</ul></div>`;
   }).join('\n');
@@ -734,6 +745,7 @@ function renderRecipe(recipe, idPrefix) {
     <h3>${esc(title)}</h3>
     <div class="recipe-btns">
       ${madeBtn}
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for ${esc(recipe.title)}">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy ${esc(recipe.title)}">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print ${esc(recipe.title)}">🖨 Print</button>
       <a class="link-btn" href="?recipe=${esc(id)}" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open ${esc(recipe.title)} in new tab">🔗 Link</a>
@@ -1642,6 +1654,7 @@ function buildPage(section, navHtml, contentHtml, cookbookData) {
   }
 ${INGREDIENT_CSS}
 ${MADE_CSS}
+${SHOP_CSS}
 </style>
 </head>
 <body>
@@ -1675,6 +1688,7 @@ ${MADE_CSS}
     <button id="fav-toggle"><span class="star">★</span> Favorites only</button>
     <button id="notmade-toggle"><span class="nm-icon">&#9675;</span> Not yet made</button>
   </div>
+  <button id="shop-list-toggle" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.6 12.2a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 7H6"/></svg>Shopping list<span class="shop-badge"></span></button>
   <div id="made-pending"><span class="made-pend-n"></span><button type="button" class="made-copy">Copy list</button></div>
   <button id="alt-toggle"><span class="alt-icon">&#9650;</span> High Altitude</button>
   <div id="expand-collapse-row">
@@ -2244,6 +2258,7 @@ ${INGREDIENT_JS}
   });
 
 ${MADE_JS}
+${SHOP_JS}
   // ── Apply filters (favorites — current page only) ─────────────────────
   function applyFilters() {
     var filtering = favOnly || notMade;

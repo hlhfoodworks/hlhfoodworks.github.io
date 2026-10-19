@@ -630,6 +630,43 @@
   #made-dialog button[type=submit] { background: #3b2a1a; color: #fff; border-color: #3b2a1a; }
   @media print { .made-btn, #made-modal { display: none !important; } }
 
+/* ── Shopping checklist (see shopping_list_client.js) ── */
+.shop-btn { display: inline-flex; align-items: center; gap: 4px; }
+.shop-btn svg { width: 14px; height: 14px; }
+.shop-btn.active { background: #f3e9d6; border-color: var(--accent2); color: var(--accent); }
+.shop-panel { margin: 12px 0 4px; border: 1px solid var(--accent2); border-radius: 8px; background: #fbf5ea;
+  padding: 14px 16px; font-family: 'Helvetica Neue', Arial, sans-serif; }
+.shop-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.shop-head strong { font-size: 0.95rem; color: var(--accent); }
+.shop-head span { font-size: 0.75rem; color: var(--muted); }
+.shop-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 24px; margin-top: 8px; }
+.shop-group-label { grid-column: 1 / -1; font-size: 0.72rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin-top: 8px; }
+.shop-item { display: flex; gap: 8px; align-items: flex-start; font-size: 0.86rem; padding: 3px 0; cursor: pointer; }
+.shop-item input { margin-top: 3px; accent-color: var(--accent); }
+.shop-actions { display: flex; gap: 8px; align-items: center; margin-top: 12px; flex-wrap: wrap; }
+.shop-actions button { font: 0.8rem 'Helvetica Neue', Arial, sans-serif; border-radius: var(--radius); padding: 6px 12px; cursor: pointer;
+  background: none; color: var(--muted); border: 1px solid var(--border); }
+.shop-actions button:hover { background: var(--border); color: var(--text); }
+.shop-actions button.shop-primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+.shop-actions button.shop-primary:hover { background: #6f360f; }
+.shop-count { font-size: 0.78rem; color: var(--muted); margin-left: auto; }
+.shop-msg { font-size: 0.8rem; color: #2e7d32; margin-top: 8px; min-height: 1em; }
+@media (max-width: 640px) { .shop-cols { grid-template-columns: 1fr; } }
+@media print { .shop-panel, .shop-btn { display: none !important; } }
+
+#shop-list-toggle { display: none; align-items: center; gap: 8px; padding: 7px 14px; font-size: 0.82rem; cursor: pointer;
+  color: var(--nav-text); background: none; border: none; border-bottom: 1px solid #5a3e28; text-align: left; width: 100%; }
+#shop-list-toggle:hover { background: #4e3522; }
+#shop-list-toggle svg { width: 14px; height: 14px; }
+.shop-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.45); display: flex; align-items: center; justify-content: center; z-index: 1000; }
+.shop-dialog { background: #fff; color: #2b2118; border-radius: 8px; padding: 18px 20px; width: min(460px, 92vw); max-height: 84vh; display: flex; flex-direction: column;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.3); font-family: 'Helvetica Neue', Arial, sans-serif; }
+.shop-dialog h2 { font-size: 1rem; margin: 0 0 8px; }
+.shop-listbody { overflow-y: auto; font-size: 0.86rem; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 6px 0; min-height: 60px; }
+.shop-row { display: flex; justify-content: space-between; gap: 12px; padding: 3px 0; }
+.shop-row small { color: var(--muted); text-align: right; font-size: 0.72rem; }
+.shop-danger { color: #a33 !important; }
+
 </style>
 </head>
 <body>
@@ -663,6 +700,7 @@
     <button id="fav-toggle"><span class="star">★</span> Favorites only</button>
     <button id="notmade-toggle"><span class="nm-icon">&#9675;</span> Not yet made</button>
   </div>
+  <button id="shop-list-toggle" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.6 12.2a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 7H6"/></svg>Shopping list<span class="shop-badge"></span></button>
   <div id="made-pending"><span class="made-pend-n"></span><button type="button" class="made-copy">Copy list</button></div>
   <button id="alt-toggle"><span class="alt-icon">&#9650;</span> High Altitude</button>
   <div id="expand-collapse-row">
@@ -1325,6 +1363,7 @@
     <h3>Dill Pickles</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="preserves-pickles-ferments-dill-pickles" data-title="Dill Pickles" title="Made it" aria-label="Made: Dill Pickles"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Dill Pickles">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Dill Pickles">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Dill Pickles">🖨 Print</button>
       <a class="link-btn" href="?recipe=preserves-pickles-ferments-dill-pickles" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Dill Pickles in new tab">🔗 Link</a>
@@ -1334,15 +1373,15 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Cucumbers and aromatics</h4><ul class="ingredients"><li>12–14 Persian cucumbers, or 8–10 small pickling cucumbers</li>
-<li>4 garlic cloves, halved</li>
-<li>2 teaspoons mustard seeds</li>
-<li>2 teaspoons peppercorns</li>
-<li>Fresh dill sprigs, a few per jar</li></ul></div>
-<div class="ing-group"><h4>Brine</h4><ul class="ingredients"><li>2 cups water</li>
-<li>2 cups distilled white vinegar</li>
-<li>¼ cup cane sugar</li>
-<li>2 tablespoons sea salt</li></ul></div>
+      <div class="ing-group"><h4>Cucumbers and aromatics</h4><ul class="ingredients"><li data-ing="persian cucumber">12–14 Persian cucumbers, or 8–10 small pickling cucumbers</li>
+<li data-ing="garlic">4 garlic cloves, halved</li>
+<li data-ing="mustard seed">2 teaspoons mustard seeds</li>
+<li data-ing="black peppercorn">2 teaspoons peppercorns</li>
+<li data-ing="dill">Fresh dill sprigs, a few per jar</li></ul></div>
+<div class="ing-group"><h4>Brine</h4><ul class="ingredients"><li data-ing="water">2 cups water</li>
+<li data-ing="distilled white vinegar">2 cups distilled white vinegar</li>
+<li data-ing="sugar">¼ cup cane sugar</li>
+<li data-ing="sea salt">2 tablespoons sea salt</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1359,6 +1398,7 @@
     <h3>Quick Pickled Green Onions</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="preserves-pickles-ferments-quick-pickled-green-onions" data-title="Quick Pickled Green Onions" title="Made it" aria-label="Made: Quick Pickled Green Onions"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Quick Pickled Green Onions">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Quick Pickled Green Onions">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Quick Pickled Green Onions">🖨 Print</button>
       <a class="link-btn" href="?recipe=preserves-pickles-ferments-quick-pickled-green-onions" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Quick Pickled Green Onions in new tab">🔗 Link</a>
@@ -1368,15 +1408,15 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Green onions and aromatics</h4><ul class="ingredients"><li>1 bunch green onions (about 10), roots trimmed</li>
-<li>1-inch piece fresh ginger</li>
-<li>2 whole garlic cloves</li>
-<li>2 teaspoons ground mustard</li>
-<li>1 teaspoon Aleppo pepper or red pepper flakes (optional)</li></ul></div>
-<div class="ing-group"><h4>Brine</h4><ul class="ingredients"><li>2 cups water</li>
-<li>1 cup rice vinegar (or white wine vinegar, apple cider vinegar, or plain white vinegar)</li>
-<li>1 tablespoon salt</li>
-<li>1 tablespoon sugar</li></ul></div>
+      <div class="ing-group"><h4>Green onions and aromatics</h4><ul class="ingredients"><li data-ing="scallion">1 bunch green onions (about 10), roots trimmed</li>
+<li data-ing="ginger root">1-inch piece fresh ginger</li>
+<li data-ing="whole garlic">2 whole garlic cloves</li>
+<li data-ing="ground mustard">2 teaspoons ground mustard</li>
+<li data-ing="aleppo pepper or red pepper flakes">1 teaspoon Aleppo pepper or red pepper flakes (optional)</li></ul></div>
+<div class="ing-group"><h4>Brine</h4><ul class="ingredients"><li data-ing="water">2 cups water</li>
+<li data-ing="rice vinegar">1 cup rice vinegar (or white wine vinegar, apple cider vinegar, or plain white vinegar)</li>
+<li data-ing="salt">1 tablespoon salt</li>
+<li data-ing="sugar">1 tablespoon sugar</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1394,6 +1434,7 @@
     <h3>Quick Pickled Red Onions</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="quick-pickled-red-onions" data-title="Quick Pickled Red Onions" title="Made it" aria-label="Made: Quick Pickled Red Onions"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Quick Pickled Red Onions">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Quick Pickled Red Onions">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Quick Pickled Red Onions">🖨 Print</button>
       <a class="link-btn" href="?recipe=quick-pickled-red-onions" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Quick Pickled Red Onions in new tab">🔗 Link</a>
@@ -1403,11 +1444,11 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Red onion</h4><ul class="ingredients"><li>1 medium red onion, peeled, halved, and sliced as thinly as possible</li></ul></div>
-<div class="ing-group"><h4>Brine</h4><ul class="ingredients"><li>3/4 cup apple cider vinegar (or white vinegar)</li>
-<li>1/2 cup water</li>
-<li>2 teaspoons granulated sugar</li>
-<li>1 teaspoon kosher salt</li></ul></div>
+      <div class="ing-group"><h4>Red onion</h4><ul class="ingredients"><li data-ing="red onion">1 medium red onion, peeled, halved, and sliced as thinly as possible</li></ul></div>
+<div class="ing-group"><h4>Brine</h4><ul class="ingredients"><li data-ing="apple cider vinegar">3/4 cup apple cider vinegar (or white vinegar)</li>
+<li data-ing="water">1/2 cup water</li>
+<li data-ing="sugar">2 teaspoons granulated sugar</li>
+<li data-ing="kosher salt">1 teaspoon kosher salt</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1425,6 +1466,7 @@
     <h3>★ Pikliz</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="haitian-pikliz" data-title="Pikliz" title="Made it" aria-label="Made: Pikliz"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Pikliz">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Pikliz">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Pikliz">🖨 Print</button>
       <a class="link-btn" href="?recipe=haitian-pikliz" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Pikliz in new tab">🔗 Link</a>
@@ -1434,18 +1476,18 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Pickle</h4><ul class="ingredients"><li>2 cups thinly sliced green cabbage</li>
-<li>1 medium onion, halved and thinly sliced</li>
-<li>1 large carrot, peeled and coarsely grated (1 cup)</li>
-<li>1/2 medium bell pepper (green, red or yellow), seeded and thinly sliced (1 cup)</li>
-<li>2 scallions, thinly sliced</li>
-<li>4 Scotch bonnet or habanero chiles, seeded and very thinly sliced</li>
-<li>4 garlic cloves, finely chopped</li>
-<li>1 1/4 teaspoons kosher salt</li>
-<li>12 black peppercorns</li>
-<li>4 whole cloves</li></ul></div>
-<div class="ing-group"><h4>Brine</h4><ul class="ingredients"><li>1 1/2 cups cane vinegar, cider vinegar or white vinegar</li>
-<li>Juice of 1/2 lime</li></ul></div>
+      <div class="ing-group"><h4>Pickle</h4><ul class="ingredients"><li data-ing="green cabbage">2 cups thinly sliced green cabbage</li>
+<li data-ing="onion">1 medium onion, halved and thinly sliced</li>
+<li data-ing="carrot">1 large carrot, peeled and coarsely grated (1 cup)</li>
+<li data-ing="bell pepper">1/2 medium bell pepper (green, red or yellow), seeded and thinly sliced (1 cup)</li>
+<li data-ing="scallion">2 scallions, thinly sliced</li>
+<li data-ing="scotch bonnet / habanero">4 Scotch bonnet or habanero chiles, seeded and very thinly sliced</li>
+<li data-ing="garlic">4 garlic cloves, finely chopped</li>
+<li data-ing="kosher salt">1 1/4 teaspoons kosher salt</li>
+<li data-ing="black peppercorn">12 black peppercorns</li>
+<li data-ing="whole cloves">4 whole cloves</li></ul></div>
+<div class="ing-group"><h4>Brine</h4><ul class="ingredients"><li data-ing="cane vinegar / apple cider vinegar / white vinegar">1 1/2 cups cane vinegar, cider vinegar or white vinegar</li>
+<li data-ing="lime juice">Juice of 1/2 lime</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1462,6 +1504,7 @@
     <h3>Preserved Lemons</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="preserved-lemons" data-title="Preserved Lemons" title="Made it" aria-label="Made: Preserved Lemons"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Preserved Lemons">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Preserved Lemons">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Preserved Lemons">🖨 Print</button>
       <a class="link-btn" href="?recipe=preserved-lemons" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Preserved Lemons in new tab">🔗 Link</a>
@@ -1471,12 +1514,12 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Day 1 -- Salt and cure</h4><ul class="ingredients"><li>8 large lemons, scrubbed clean</li>
-<li>1/2 cup kosher salt</li>
-<li>2 tablespoons sugar</li></ul></div>
-<div class="ing-group"><h4>Day 2 -- Pack the jar</h4><ul class="ingredients"><li>2 tablespoons peppercorns</li>
-<li>4 to 5 dry bay leaves</li>
-<li>2 1/2 cups fresh lemon juice (from 7 to 8 additional lemons)</li></ul></div>
+      <div class="ing-group"><h4>Day 1 -- Salt and cure</h4><ul class="ingredients"><li data-ing="lemon">8 large lemons, scrubbed clean</li>
+<li data-ing="kosher salt">1/2 cup kosher salt</li>
+<li data-ing="sugar">2 tablespoons sugar</li></ul></div>
+<div class="ing-group"><h4>Day 2 -- Pack the jar</h4><ul class="ingredients"><li data-ing="black peppercorn">2 tablespoons peppercorns</li>
+<li data-ing="bay leaf">4 to 5 dry bay leaves</li>
+<li data-ing="lemon juice">2 1/2 cups fresh lemon juice (from 7 to 8 additional lemons)</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1497,6 +1540,7 @@
     <h3>Fig Jam</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="preserves-jams-spreads-fig-jam" data-title="Fig Jam" title="Not yet made (author only)" aria-label="Not yet made: Fig Jam"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Fig Jam">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Fig Jam">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Fig Jam">🖨 Print</button>
       <a class="link-btn" href="?recipe=preserves-jams-spreads-fig-jam" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Fig Jam in new tab">🔗 Link</a>
@@ -1506,10 +1550,10 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><ul class="ingredients"><li>1 pound fresh black figs, stems removed</li>
-<li>3/4 cup granulated sugar</li>
-<li>1/4 cup water</li>
-<li>2 teaspoons fresh lemon juice (about 1/2 small lemon)</li></ul></div>
+      <div class="ing-group"><ul class="ingredients"><li data-ing="black fig">1 pound fresh black figs, stems removed</li>
+<li data-ing="sugar">3/4 cup granulated sugar</li>
+<li data-ing="water">1/4 cup water</li>
+<li data-ing="lemon juice">2 teaspoons fresh lemon juice (about 1/2 small lemon)</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1525,6 +1569,7 @@
     <h3>Slow Cooker Apple Butter</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="preserves-jams-spreads-slow-cooker-apple-butter" data-title="Slow Cooker Apple Butter" title="Not yet made (author only)" aria-label="Not yet made: Slow Cooker Apple Butter"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Slow Cooker Apple Butter">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Slow Cooker Apple Butter">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Slow Cooker Apple Butter">🖨 Print</button>
       <a class="link-btn" href="?recipe=preserves-jams-spreads-slow-cooker-apple-butter" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Slow Cooker Apple Butter in new tab">🔗 Link</a>
@@ -1534,14 +1579,14 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Apples</h4><ul class="ingredients"><li>6 1/2 pounds apples, peeled, cored, and sliced</li></ul></div>
-<div class="ing-group"><h4>Spiced sugar</h4><ul class="ingredients"><li>1 cup granulated sugar</li>
-<li>1 cup light brown sugar, lightly packed</li>
-<li>1 tablespoon ground cinnamon</li>
-<li>1/2 teaspoon freshly grated nutmeg</li>
-<li>1/4 teaspoon ground cloves</li>
-<li>1/4 teaspoon salt</li></ul></div>
-<div class="ing-group"><h4>Finish</h4><ul class="ingredients"><li>1 tablespoon pure vanilla extract</li></ul></div>
+      <div class="ing-group"><h4>Apples</h4><ul class="ingredients"><li data-ing="apple">6 1/2 pounds apples, peeled, cored, and sliced</li></ul></div>
+<div class="ing-group"><h4>Spiced sugar</h4><ul class="ingredients"><li data-ing="sugar">1 cup granulated sugar</li>
+<li data-ing="light brown sugar">1 cup light brown sugar, lightly packed</li>
+<li data-ing="ground cinnamon">1 tablespoon ground cinnamon</li>
+<li data-ing="nutmeg">1/2 teaspoon freshly grated nutmeg</li>
+<li data-ing="ground clove">1/4 teaspoon ground cloves</li>
+<li data-ing="salt">1/4 teaspoon salt</li></ul></div>
+<div class="ing-group"><h4>Finish</h4><ul class="ingredients"><li data-ing="vanilla extract">1 tablespoon pure vanilla extract</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -2821,6 +2866,145 @@
     }
   })();
 
+
+  // ── Shopping checklist (see shopping_list.css). Reads the ingredient lines already on the page. ──
+  // The "Shop" button on each recipe opens a checklist (all unticked). "Copy checked" copies the ticked lines.
+  // https://script.google.com/macros/s/AKfycbzY1Qi--vCFGalcT9QYdBe8HC46HWHGE_8WZ91vuA2fVaYagEQ34nlwjU7ebCuPsv8n/exec / shop-9a779a2e2e26 are replaced from shopping_config.json at build time. With no URL set, only "Copy checked" is offered.
+  (function () {
+    var URL_ = 'https://script.google.com/macros/s/AKfycbzY1Qi--vCFGalcT9QYdBe8HC46HWHGE_8WZ91vuA2fVaYagEQ34nlwjU7ebCuPsv8n/exec', KEY_ = 'shop-9a779a2e2e26';
+    var ENABLED = !!URL_ && URL_.indexOf('__SHOP') !== 0;
+    var CART = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.6 12.2a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 7H6"/></svg>';
+    function visible(el) { return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length); }
+    function collect(art) {
+      var out = [];
+      art.querySelectorAll('.ing-group').forEach(function (g) {
+        if (!visible(g)) return;
+        var h = g.querySelector('h4');
+        var label = h ? h.firstChild && h.firstChild.textContent.trim() : '';
+        g.querySelectorAll('li').forEach(function (li) { out.push({ g: label || '', t: li.textContent.trim(), n: li.getAttribute('data-ing') || '' }); });
+      });
+      return out;
+    }
+    function copyText(text, done) {
+      function fallback() {
+        var ta = document.createElement('textarea'); ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+        document.body.appendChild(ta); ta.select();
+        try { document.execCommand('copy'); done(true); } catch (e) { done(false); }
+        document.body.removeChild(ta);
+      }
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(function () { done(true); }, fallback);
+      else fallback();
+    }
+    function post(payload) {
+      payload.key = KEY_;
+      return fetch(URL_, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(payload) });
+    }
+    function getList() {
+      return fetch(URL_ + '?action=list&key=' + encodeURIComponent(KEY_)).then(function (r) { return r.json(); })
+        .then(function (j) { if (!j.ok) throw new Error(j.error || 'error'); return j.items || []; });
+    }
+    var badge = document.getElementById('shop-list-toggle');
+    function setBadge(n) { if (badge) badge.querySelector('.shop-badge').textContent = n ? ' (' + n + ')' : ''; }
+    function refreshBadge() { if (ENABLED) getList().then(function (l) { setBadge(l.length); }, function () {}); }
+    function build(art, btn) {
+      var items = collect(art);
+      var panel = document.createElement('div');
+      panel.className = 'shop-panel'; panel.setAttribute('role', 'region'); panel.setAttribute('aria-label', 'Shopping checklist');
+      var head = document.createElement('div'); head.className = 'shop-head';
+      head.innerHTML = '<strong>Shopping checklist</strong><span>Tick what you need to buy.</span>';
+      var cols = document.createElement('div'); cols.className = 'shop-cols';
+      var last = null;
+      items.forEach(function (it) {
+        if (it.g !== last) { if (it.g) { var l = document.createElement('div'); l.className = 'shop-group-label'; l.textContent = it.g; cols.appendChild(l); } last = it.g; }
+        var lab = document.createElement('label'); lab.className = 'shop-item';
+        var cb = document.createElement('input'); cb.type = 'checkbox'; cb.checked = false;
+        var sp = document.createElement('span'); sp.textContent = it.t;
+        lab.appendChild(cb); lab.appendChild(sp); cols.appendChild(lab);
+      });
+      var actions = document.createElement('div'); actions.className = 'shop-actions';
+      var copyBtn = document.createElement('button'); copyBtn.type = 'button'; copyBtn.className = 'shop-primary'; copyBtn.textContent = 'Copy checked';
+      var clearBtn = document.createElement('button'); clearBtn.type = 'button'; clearBtn.textContent = 'Untick all';
+      var count = document.createElement('span'); count.className = 'shop-count';
+      var addBtn = null;
+      if (ENABLED) { addBtn = document.createElement('button'); addBtn.type = 'button'; addBtn.className = 'shop-primary'; addBtn.textContent = 'Add to shopping list'; actions.appendChild(addBtn); copyBtn.className = ''; }
+      actions.appendChild(copyBtn); actions.appendChild(clearBtn); actions.appendChild(count);
+      var msg = document.createElement('div'); msg.className = 'shop-msg'; msg.setAttribute('aria-live', 'polite');
+      panel.appendChild(head); panel.appendChild(cols); panel.appendChild(actions); panel.appendChild(msg);
+      function boxes() { return cols.querySelectorAll('input'); }
+      function checked() { var r = []; boxes().forEach(function (c, i) { if (c.checked) r.push(items[i].t); }); return r; }
+      function checkedObjs() { var r = []; boxes().forEach(function (c, i) { if (c.checked) r.push({ item: items[i].t, ingredient: items[i].n, recipe: art.getAttribute('data-title') || '' }); }); return r; }
+      function update() { count.textContent = checked().length + ' of ' + items.length + ' checked'; msg.textContent = ''; }
+      cols.addEventListener('change', update);
+      copyBtn.addEventListener('click', function () {
+        var c = checked();
+        if (!c.length) { msg.textContent = 'Nothing checked yet.'; return; }
+        copyText(c.join('\n'), function (ok) { msg.textContent = ok ? 'Copied ' + c.length + ' item' + (c.length === 1 ? '' : 's') + '.' : 'Could not copy.'; });
+      });
+      if (addBtn) addBtn.addEventListener('click', function () {
+        var c = checkedObjs();
+        if (!c.length) { msg.textContent = 'Nothing checked yet.'; return; }
+        addBtn.disabled = true; msg.textContent = 'Adding...';
+        post({ action: 'add', items: c }).then(function () { return getList(); }).then(function (l) {
+          msg.textContent = 'Sent ' + c.length + ' item' + (c.length === 1 ? '' : 's') + '. The list now has ' + l.length + '.';
+          setBadge(l.length); boxes().forEach(function (x) { x.checked = false; }); count.textContent = '';
+        }, function () { msg.textContent = 'Sent, but could not confirm. Check the list.'; }).then(function () { addBtn.disabled = false; });
+      });
+      clearBtn.addEventListener('click', function () { boxes().forEach(function (c) { c.checked = false; }); update(); });
+      update();
+      return panel;
+    }
+    function openList() {
+      var ov = document.createElement('div'); ov.className = 'shop-overlay';
+      var dlg = document.createElement('div'); dlg.className = 'shop-dialog'; dlg.setAttribute('role', 'dialog'); dlg.setAttribute('aria-label', 'Shopping list');
+      var title = document.createElement('h2'); title.textContent = 'Shopping list';
+      var body = document.createElement('div'); body.className = 'shop-listbody'; body.textContent = 'Loading...';
+      var acts = document.createElement('div'); acts.className = 'shop-actions';
+      var refresh = document.createElement('button'); refresh.type = 'button'; refresh.textContent = 'Refresh';
+      var copy = document.createElement('button'); copy.type = 'button'; copy.textContent = 'Copy list';
+      var clear = document.createElement('button'); clear.type = 'button'; clear.className = 'shop-danger'; clear.textContent = 'Clear list';
+      var close = document.createElement('button'); close.type = 'button'; close.textContent = 'Close';
+      var msg = document.createElement('div'); msg.className = 'shop-msg';
+      [refresh, copy, clear, close].forEach(function (b) { acts.appendChild(b); });
+      dlg.appendChild(title); dlg.appendChild(body); dlg.appendChild(acts); dlg.appendChild(msg); ov.appendChild(dlg); document.body.appendChild(ov);
+      var current = [];
+      function render(l) {
+        current = l; setBadge(l.length); body.textContent = '';
+        if (!l.length) { body.textContent = 'The list is empty.'; return; }
+        l.slice().sort(function (a, b) { return (a.ingredient || a.item).toLowerCase() < (b.ingredient || b.item).toLowerCase() ? -1 : 1; }).forEach(function (it) {
+          var row = document.createElement('div'); row.className = 'shop-row';
+          var t = document.createElement('span'); t.textContent = it.item;
+          var r = document.createElement('small'); r.textContent = it.recipe;
+          row.appendChild(t); row.appendChild(r); body.appendChild(row);
+        });
+      }
+      function load() { body.textContent = 'Loading...'; getList().then(render, function () { body.textContent = 'Could not load the list.'; }); }
+      refresh.addEventListener('click', load);
+      copy.addEventListener('click', function () { copyText(current.map(function (i) { return i.item; }).join('\n'), function (ok) { msg.textContent = ok ? 'Copied ' + current.length + ' items.' : 'Could not copy.'; }); });
+      clear.addEventListener('click', function () {
+        if (!current.length) return;
+        if (!window.confirm('Clear all ' + current.length + ' items? They move to the History tab of the sheet.')) return;
+        post({ action: 'clear' }).then(function () { return getList(); }).then(render, function () { msg.textContent = 'Could not confirm. Refresh.'; });
+      });
+      function shut() { document.body.removeChild(ov); }
+      close.addEventListener('click', shut); ov.addEventListener('click', function (e) { if (e.target === ov) shut(); });
+      load();
+    }
+    if (badge) {
+      if (ENABLED) { badge.style.display = 'flex'; badge.addEventListener('click', openList); refreshBadge(); }
+    }
+    document.querySelectorAll('.shop-btn').forEach(function (btn) {
+      btn.innerHTML = CART + 'Shop';
+      btn.addEventListener('click', function () {
+        var art = btn.closest('.recipe'); if (!art) return;
+        var open = art.querySelector('.shop-panel');
+        if (open) { open.parentNode.removeChild(open); btn.classList.remove('active'); btn.setAttribute('aria-expanded', 'false'); return; }
+        var panel = build(art, btn);
+        var body = art.querySelector('.recipe-body');
+        art.insertBefore(panel, body);
+        btn.classList.add('active'); btn.setAttribute('aria-expanded', 'true');
+      });
+    });
+  })();
 
   // ── Apply filters (favorites — current page only) ─────────────────────
   function applyFilters() {

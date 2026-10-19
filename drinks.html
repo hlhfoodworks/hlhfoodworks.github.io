@@ -630,6 +630,43 @@
   #made-dialog button[type=submit] { background: #3b2a1a; color: #fff; border-color: #3b2a1a; }
   @media print { .made-btn, #made-modal { display: none !important; } }
 
+/* ── Shopping checklist (see shopping_list_client.js) ── */
+.shop-btn { display: inline-flex; align-items: center; gap: 4px; }
+.shop-btn svg { width: 14px; height: 14px; }
+.shop-btn.active { background: #f3e9d6; border-color: var(--accent2); color: var(--accent); }
+.shop-panel { margin: 12px 0 4px; border: 1px solid var(--accent2); border-radius: 8px; background: #fbf5ea;
+  padding: 14px 16px; font-family: 'Helvetica Neue', Arial, sans-serif; }
+.shop-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.shop-head strong { font-size: 0.95rem; color: var(--accent); }
+.shop-head span { font-size: 0.75rem; color: var(--muted); }
+.shop-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 24px; margin-top: 8px; }
+.shop-group-label { grid-column: 1 / -1; font-size: 0.72rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin-top: 8px; }
+.shop-item { display: flex; gap: 8px; align-items: flex-start; font-size: 0.86rem; padding: 3px 0; cursor: pointer; }
+.shop-item input { margin-top: 3px; accent-color: var(--accent); }
+.shop-actions { display: flex; gap: 8px; align-items: center; margin-top: 12px; flex-wrap: wrap; }
+.shop-actions button { font: 0.8rem 'Helvetica Neue', Arial, sans-serif; border-radius: var(--radius); padding: 6px 12px; cursor: pointer;
+  background: none; color: var(--muted); border: 1px solid var(--border); }
+.shop-actions button:hover { background: var(--border); color: var(--text); }
+.shop-actions button.shop-primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+.shop-actions button.shop-primary:hover { background: #6f360f; }
+.shop-count { font-size: 0.78rem; color: var(--muted); margin-left: auto; }
+.shop-msg { font-size: 0.8rem; color: #2e7d32; margin-top: 8px; min-height: 1em; }
+@media (max-width: 640px) { .shop-cols { grid-template-columns: 1fr; } }
+@media print { .shop-panel, .shop-btn { display: none !important; } }
+
+#shop-list-toggle { display: none; align-items: center; gap: 8px; padding: 7px 14px; font-size: 0.82rem; cursor: pointer;
+  color: var(--nav-text); background: none; border: none; border-bottom: 1px solid #5a3e28; text-align: left; width: 100%; }
+#shop-list-toggle:hover { background: #4e3522; }
+#shop-list-toggle svg { width: 14px; height: 14px; }
+.shop-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.45); display: flex; align-items: center; justify-content: center; z-index: 1000; }
+.shop-dialog { background: #fff; color: #2b2118; border-radius: 8px; padding: 18px 20px; width: min(460px, 92vw); max-height: 84vh; display: flex; flex-direction: column;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.3); font-family: 'Helvetica Neue', Arial, sans-serif; }
+.shop-dialog h2 { font-size: 1rem; margin: 0 0 8px; }
+.shop-listbody { overflow-y: auto; font-size: 0.86rem; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 6px 0; min-height: 60px; }
+.shop-row { display: flex; justify-content: space-between; gap: 12px; padding: 3px 0; }
+.shop-row small { color: var(--muted); text-align: right; font-size: 0.72rem; }
+.shop-danger { color: #a33 !important; }
+
 </style>
 </head>
 <body>
@@ -663,6 +700,7 @@
     <button id="fav-toggle"><span class="star">★</span> Favorites only</button>
     <button id="notmade-toggle"><span class="nm-icon">&#9675;</span> Not yet made</button>
   </div>
+  <button id="shop-list-toggle" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.6 12.2a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 7H6"/></svg>Shopping list<span class="shop-badge"></span></button>
   <div id="made-pending"><span class="made-pend-n"></span><button type="button" class="made-copy">Copy list</button></div>
   <button id="alt-toggle"><span class="alt-icon">&#9650;</span> High Altitude</button>
   <div id="expand-collapse-row">
@@ -1325,6 +1363,7 @@
     <h3>Melon Ball</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="drinks-alcoholic-melon-ball" data-title="Melon Ball" title="Made it" aria-label="Made: Melon Ball"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Melon Ball">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Melon Ball">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Melon Ball">🖨 Print</button>
       <a class="link-btn" href="?recipe=drinks-alcoholic-melon-ball" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Melon Ball in new tab">🔗 Link</a>
@@ -1334,10 +1373,10 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><ul class="ingredients"><li>2 oz Midori</li>
-<li>1 oz vodka</li>
-<li>Fresh-squeezed orange juice, to top</li>
-<li>Fresh melon balls, for garnish (optional)</li></ul></div>
+      <div class="ing-group"><ul class="ingredients"><li data-ing="midori">2 oz Midori</li>
+<li data-ing="vodka">1 oz vodka</li>
+<li data-ing="orange juice">Fresh-squeezed orange juice, to top</li>
+<li data-ing="melon">Fresh melon balls, for garnish (optional)</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1352,6 +1391,7 @@
     <h3>Peach Lemonade Spritz</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="drinks-alcoholic-peach-lemonade-spritz" data-title="Peach Lemonade Spritz" title="Not yet made (author only)" aria-label="Not yet made: Peach Lemonade Spritz"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Peach Lemonade Spritz">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Peach Lemonade Spritz">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Peach Lemonade Spritz">🖨 Print</button>
       <a class="link-btn" href="?recipe=drinks-alcoholic-peach-lemonade-spritz" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Peach Lemonade Spritz in new tab">🔗 Link</a>
@@ -1361,14 +1401,14 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Lemonade syrup (1 hour ahead)</h4><ul class="ingredients"><li>1/2 cup sugar</li>
-<li>3/4 cup water</li>
-<li>Zest and juice of 1 lemon</li></ul></div>
-<div class="ing-group"><h4>Cocktail</h4><ul class="ingredients"><li>1 ripe peach, pitted and sliced into 8 wedges</li>
-<li>3 oz Peach or Orange Blossom vodka</li>
-<li>Ice</li></ul></div>
-<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li>2 oz club soda</li>
-<li>2 fresh mint or basil sprigs</li></ul></div>
+      <div class="ing-group"><h4>Lemonade syrup (1 hour ahead)</h4><ul class="ingredients"><li data-ing="sugar">1/2 cup sugar</li>
+<li data-ing="water">3/4 cup water</li>
+<li data-ing="lemon / lemon juice">Zest and juice of 1 lemon</li></ul></div>
+<div class="ing-group"><h4>Cocktail</h4><ul class="ingredients"><li data-ing="peach">1 ripe peach, pitted and sliced into 8 wedges</li>
+<li data-ing="peach or orange blossom vodka">3 oz Peach or Orange Blossom vodka</li>
+<li data-ing="ice">Ice</li></ul></div>
+<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li data-ing="club soda">2 oz club soda</li>
+<li data-ing="mint / basil">2 fresh mint or basil sprigs</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1385,6 +1425,7 @@
     <h3>Aperitivo Numero Uno</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="drinks-alcoholic-aperitivo-numero-uno" data-title="Aperitivo Numero Uno" title="Not yet made (author only)" aria-label="Not yet made: Aperitivo Numero Uno"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Aperitivo Numero Uno">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Aperitivo Numero Uno">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Aperitivo Numero Uno">🖨 Print</button>
       <a class="link-btn" href="?recipe=drinks-alcoholic-aperitivo-numero-uno" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Aperitivo Numero Uno in new tab">🔗 Link</a>
@@ -1394,16 +1435,16 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Cocktail base</h4><ul class="ingredients"><li>Aperol</li>
-<li>Campari</li>
-<li>Red vermouth (e.g. Cinzano Rosso)</li>
-<li>White vermouth (e.g. Cinzano Bianco)</li>
-<li>Gin</li></ul></div>
-<div class="ing-group"><h4>Per serving</h4><ul class="ingredients"><li>A splash of fresh orange juice</li>
-<li>A squeeze of lemon</li>
-<li>50ml soda water</li>
-<li>Plenty of ice</li></ul></div>
-<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li>Cherries or strawberries</li></ul></div>
+      <div class="ing-group"><h4>Cocktail base</h4><ul class="ingredients"><li data-ing="aperol">Aperol</li>
+<li data-ing="campari">Campari</li>
+<li data-ing="red vermouth">Red vermouth (e.g. Cinzano Rosso)</li>
+<li data-ing="white vermouth">White vermouth (e.g. Cinzano Bianco)</li>
+<li data-ing="gin">Gin</li></ul></div>
+<div class="ing-group"><h4>Per serving</h4><ul class="ingredients"><li data-ing="orange juice">A splash of fresh orange juice</li>
+<li data-ing="lemon">A squeeze of lemon</li>
+<li data-ing="soda water">50ml soda water</li>
+<li data-ing="ice">Plenty of ice</li></ul></div>
+<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li data-ing="cherry / strawberry">Cherries or strawberries</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1423,6 +1464,7 @@
     <h3>Apple Pie a la Mode Shake</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="drinks-non-alcoholic-apple-pie-a-la-mode-shake" data-title="Apple Pie a la Mode Shake" title="Not yet made (author only)" aria-label="Not yet made: Apple Pie a la Mode Shake"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Apple Pie a la Mode Shake">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Apple Pie a la Mode Shake">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Apple Pie a la Mode Shake">🖨 Print</button>
       <a class="link-btn" href="?recipe=drinks-non-alcoholic-apple-pie-a-la-mode-shake" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Apple Pie a la Mode Shake in new tab">🔗 Link</a>
@@ -1432,12 +1474,12 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><ul class="ingredients"><li>1/2 cup frozen applesauce</li>
-<li>2 tablespoons brown sugar</li>
-<li>1 cup skim milk or plain non-fat yogurt</li>
-<li>1/2 teaspoon cinnamon</li>
-<li>1/2 teaspoon vanilla extract</li>
-<li>Ice as needed</li></ul></div>
+      <div class="ing-group"><ul class="ingredients"><li data-ing="frozen applesauce">1/2 cup frozen applesauce</li>
+<li data-ing="brown sugar">2 tablespoons brown sugar</li>
+<li data-ing="skim milk / plain nonfat yogurt">1 cup skim milk or plain non-fat yogurt</li>
+<li data-ing="cinnamon">1/2 teaspoon cinnamon</li>
+<li data-ing="vanilla extract">1/2 teaspoon vanilla extract</li>
+<li data-ing="ice">Ice as needed</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1450,6 +1492,7 @@
     <h3>Christy's Iced Tea</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="drinks-non-alcoholic-christy-s-iced-tea" data-title="Christy's Iced Tea" title="Made it" aria-label="Made: Christy's Iced Tea"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Christy's Iced Tea">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Christy's Iced Tea">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Christy's Iced Tea">🖨 Print</button>
       <a class="link-btn" href="?recipe=drinks-non-alcoholic-christy-s-iced-tea" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Christy's Iced Tea in new tab">🔗 Link</a>
@@ -1459,13 +1502,13 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Tea base</h4><ul class="ingredients"><li>7 tea bags</li>
-<li>12 sprigs fresh mint</li>
-<li>Rind of 3 lemons</li>
-<li>8 cups boiling water</li></ul></div>
-<div class="ing-group"><h4>Sweetener</h4><ul class="ingredients"><li>Juice of 7 lemons</li>
-<li>2 cups sugar (or 1 cup sugar + 3 packets Sweet'n Low)</li></ul></div>
-<div class="ing-group"><h4>To finish</h4><ul class="ingredients"><li>8 cups cold water</li></ul></div>
+      <div class="ing-group"><h4>Tea base</h4><ul class="ingredients"><li data-ing="tea bag">7 tea bags</li>
+<li data-ing="mint">12 sprigs fresh mint</li>
+<li data-ing="lemon">Rind of 3 lemons</li>
+<li data-ing="water">8 cups boiling water</li></ul></div>
+<div class="ing-group"><h4>Sweetener</h4><ul class="ingredients"><li data-ing="lemon juice">Juice of 7 lemons</li>
+<li data-ing="sugar">2 cups sugar (or 1 cup sugar + 3 packets Sweet'n Low)</li></ul></div>
+<div class="ing-group"><h4>To finish</h4><ul class="ingredients"><li data-ing="water">8 cups cold water</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1481,6 +1524,7 @@
     <h3>Peanut Butter-Chocolate Shake</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="drinks-non-alcoholic-peanut-butter-chocolate-shake" data-title="Peanut Butter-Chocolate Shake" title="Not yet made (author only)" aria-label="Not yet made: Peanut Butter-Chocolate Shake"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Peanut Butter-Chocolate Shake">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Peanut Butter-Chocolate Shake">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Peanut Butter-Chocolate Shake">🖨 Print</button>
       <a class="link-btn" href="?recipe=drinks-non-alcoholic-peanut-butter-chocolate-shake" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Peanut Butter-Chocolate Shake in new tab">🔗 Link</a>
@@ -1490,10 +1534,10 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><ul class="ingredients"><li>1 cup plain non-fat yogurt or skim milk</li>
-<li>1 packet chocolate instant breakfast mix</li>
-<li>2 tablespoons smooth peanut butter</li>
-<li>Ice</li></ul></div>
+      <div class="ing-group"><ul class="ingredients"><li data-ing="plain nonfat yogurt / skim milk">1 cup plain non-fat yogurt or skim milk</li>
+<li data-ing="chocolate instant breakfast mix">1 packet chocolate instant breakfast mix</li>
+<li data-ing="smooth peanut butter">2 tablespoons smooth peanut butter</li>
+<li data-ing="ice">Ice</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1506,6 +1550,7 @@
     <h3>Very Berry Shake</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="drinks-non-alcoholic-very-berry-shake" data-title="Very Berry Shake" title="Not yet made (author only)" aria-label="Not yet made: Very Berry Shake"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Very Berry Shake">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Very Berry Shake">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Very Berry Shake">🖨 Print</button>
       <a class="link-btn" href="?recipe=drinks-non-alcoholic-very-berry-shake" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Very Berry Shake in new tab">🔗 Link</a>
@@ -1515,10 +1560,10 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><ul class="ingredients"><li>1 cup frozen unsweetened berries (any combination)</li>
-<li>1 cup plain non-fat yogurt or skim milk</li>
-<li>3 tablespoons all-fruit strawberry spread (or 1 tablespoon sugar)</li>
-<li>1 teaspoon vanilla</li></ul></div>
+      <div class="ing-group"><ul class="ingredients"><li data-ing="frozen unsweetened berry">1 cup frozen unsweetened berries (any combination)</li>
+<li data-ing="plain nonfat yogurt / skim milk">1 cup plain non-fat yogurt or skim milk</li>
+<li data-ing="all-fruit strawberry spread">3 tablespoons all-fruit strawberry spread (or 1 tablespoon sugar)</li>
+<li data-ing="vanilla extract">1 teaspoon vanilla</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1535,6 +1580,7 @@
     <h3>Sweet and Sour Mix</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="drinks-mixers-sweet-and-sour-mix" data-title="Sweet and Sour Mix" title="Not yet made (author only)" aria-label="Not yet made: Sweet and Sour Mix"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Sweet and Sour Mix">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Sweet and Sour Mix">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Sweet and Sour Mix">🖨 Print</button>
       <a class="link-btn" href="?recipe=drinks-mixers-sweet-and-sour-mix" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Sweet and Sour Mix in new tab">🔗 Link</a>
@@ -1544,10 +1590,10 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Simple syrup</h4><ul class="ingredients"><li>2 cups water</li>
-<li>1 cup granulated sugar</li></ul></div>
-<div class="ing-group"><h4>Citrus</h4><ul class="ingredients"><li>1/2 cup fresh lime juice (about 7 limes)</li>
-<li>1/2 cup fresh lemon juice (about 2 lemons)</li></ul></div>
+      <div class="ing-group"><h4>Simple syrup</h4><ul class="ingredients"><li data-ing="water">2 cups water</li>
+<li data-ing="sugar">1 cup granulated sugar</li></ul></div>
+<div class="ing-group"><h4>Citrus</h4><ul class="ingredients"><li data-ing="lime juice">1/2 cup fresh lime juice (about 7 limes)</li>
+<li data-ing="lemon juice">1/2 cup fresh lemon juice (about 2 lemons)</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -2778,6 +2824,145 @@
     }
   })();
 
+
+  // ── Shopping checklist (see shopping_list.css). Reads the ingredient lines already on the page. ──
+  // The "Shop" button on each recipe opens a checklist (all unticked). "Copy checked" copies the ticked lines.
+  // https://script.google.com/macros/s/AKfycbzY1Qi--vCFGalcT9QYdBe8HC46HWHGE_8WZ91vuA2fVaYagEQ34nlwjU7ebCuPsv8n/exec / shop-9a779a2e2e26 are replaced from shopping_config.json at build time. With no URL set, only "Copy checked" is offered.
+  (function () {
+    var URL_ = 'https://script.google.com/macros/s/AKfycbzY1Qi--vCFGalcT9QYdBe8HC46HWHGE_8WZ91vuA2fVaYagEQ34nlwjU7ebCuPsv8n/exec', KEY_ = 'shop-9a779a2e2e26';
+    var ENABLED = !!URL_ && URL_.indexOf('__SHOP') !== 0;
+    var CART = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.6 12.2a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 7H6"/></svg>';
+    function visible(el) { return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length); }
+    function collect(art) {
+      var out = [];
+      art.querySelectorAll('.ing-group').forEach(function (g) {
+        if (!visible(g)) return;
+        var h = g.querySelector('h4');
+        var label = h ? h.firstChild && h.firstChild.textContent.trim() : '';
+        g.querySelectorAll('li').forEach(function (li) { out.push({ g: label || '', t: li.textContent.trim(), n: li.getAttribute('data-ing') || '' }); });
+      });
+      return out;
+    }
+    function copyText(text, done) {
+      function fallback() {
+        var ta = document.createElement('textarea'); ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+        document.body.appendChild(ta); ta.select();
+        try { document.execCommand('copy'); done(true); } catch (e) { done(false); }
+        document.body.removeChild(ta);
+      }
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(function () { done(true); }, fallback);
+      else fallback();
+    }
+    function post(payload) {
+      payload.key = KEY_;
+      return fetch(URL_, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(payload) });
+    }
+    function getList() {
+      return fetch(URL_ + '?action=list&key=' + encodeURIComponent(KEY_)).then(function (r) { return r.json(); })
+        .then(function (j) { if (!j.ok) throw new Error(j.error || 'error'); return j.items || []; });
+    }
+    var badge = document.getElementById('shop-list-toggle');
+    function setBadge(n) { if (badge) badge.querySelector('.shop-badge').textContent = n ? ' (' + n + ')' : ''; }
+    function refreshBadge() { if (ENABLED) getList().then(function (l) { setBadge(l.length); }, function () {}); }
+    function build(art, btn) {
+      var items = collect(art);
+      var panel = document.createElement('div');
+      panel.className = 'shop-panel'; panel.setAttribute('role', 'region'); panel.setAttribute('aria-label', 'Shopping checklist');
+      var head = document.createElement('div'); head.className = 'shop-head';
+      head.innerHTML = '<strong>Shopping checklist</strong><span>Tick what you need to buy.</span>';
+      var cols = document.createElement('div'); cols.className = 'shop-cols';
+      var last = null;
+      items.forEach(function (it) {
+        if (it.g !== last) { if (it.g) { var l = document.createElement('div'); l.className = 'shop-group-label'; l.textContent = it.g; cols.appendChild(l); } last = it.g; }
+        var lab = document.createElement('label'); lab.className = 'shop-item';
+        var cb = document.createElement('input'); cb.type = 'checkbox'; cb.checked = false;
+        var sp = document.createElement('span'); sp.textContent = it.t;
+        lab.appendChild(cb); lab.appendChild(sp); cols.appendChild(lab);
+      });
+      var actions = document.createElement('div'); actions.className = 'shop-actions';
+      var copyBtn = document.createElement('button'); copyBtn.type = 'button'; copyBtn.className = 'shop-primary'; copyBtn.textContent = 'Copy checked';
+      var clearBtn = document.createElement('button'); clearBtn.type = 'button'; clearBtn.textContent = 'Untick all';
+      var count = document.createElement('span'); count.className = 'shop-count';
+      var addBtn = null;
+      if (ENABLED) { addBtn = document.createElement('button'); addBtn.type = 'button'; addBtn.className = 'shop-primary'; addBtn.textContent = 'Add to shopping list'; actions.appendChild(addBtn); copyBtn.className = ''; }
+      actions.appendChild(copyBtn); actions.appendChild(clearBtn); actions.appendChild(count);
+      var msg = document.createElement('div'); msg.className = 'shop-msg'; msg.setAttribute('aria-live', 'polite');
+      panel.appendChild(head); panel.appendChild(cols); panel.appendChild(actions); panel.appendChild(msg);
+      function boxes() { return cols.querySelectorAll('input'); }
+      function checked() { var r = []; boxes().forEach(function (c, i) { if (c.checked) r.push(items[i].t); }); return r; }
+      function checkedObjs() { var r = []; boxes().forEach(function (c, i) { if (c.checked) r.push({ item: items[i].t, ingredient: items[i].n, recipe: art.getAttribute('data-title') || '' }); }); return r; }
+      function update() { count.textContent = checked().length + ' of ' + items.length + ' checked'; msg.textContent = ''; }
+      cols.addEventListener('change', update);
+      copyBtn.addEventListener('click', function () {
+        var c = checked();
+        if (!c.length) { msg.textContent = 'Nothing checked yet.'; return; }
+        copyText(c.join('\n'), function (ok) { msg.textContent = ok ? 'Copied ' + c.length + ' item' + (c.length === 1 ? '' : 's') + '.' : 'Could not copy.'; });
+      });
+      if (addBtn) addBtn.addEventListener('click', function () {
+        var c = checkedObjs();
+        if (!c.length) { msg.textContent = 'Nothing checked yet.'; return; }
+        addBtn.disabled = true; msg.textContent = 'Adding...';
+        post({ action: 'add', items: c }).then(function () { return getList(); }).then(function (l) {
+          msg.textContent = 'Sent ' + c.length + ' item' + (c.length === 1 ? '' : 's') + '. The list now has ' + l.length + '.';
+          setBadge(l.length); boxes().forEach(function (x) { x.checked = false; }); count.textContent = '';
+        }, function () { msg.textContent = 'Sent, but could not confirm. Check the list.'; }).then(function () { addBtn.disabled = false; });
+      });
+      clearBtn.addEventListener('click', function () { boxes().forEach(function (c) { c.checked = false; }); update(); });
+      update();
+      return panel;
+    }
+    function openList() {
+      var ov = document.createElement('div'); ov.className = 'shop-overlay';
+      var dlg = document.createElement('div'); dlg.className = 'shop-dialog'; dlg.setAttribute('role', 'dialog'); dlg.setAttribute('aria-label', 'Shopping list');
+      var title = document.createElement('h2'); title.textContent = 'Shopping list';
+      var body = document.createElement('div'); body.className = 'shop-listbody'; body.textContent = 'Loading...';
+      var acts = document.createElement('div'); acts.className = 'shop-actions';
+      var refresh = document.createElement('button'); refresh.type = 'button'; refresh.textContent = 'Refresh';
+      var copy = document.createElement('button'); copy.type = 'button'; copy.textContent = 'Copy list';
+      var clear = document.createElement('button'); clear.type = 'button'; clear.className = 'shop-danger'; clear.textContent = 'Clear list';
+      var close = document.createElement('button'); close.type = 'button'; close.textContent = 'Close';
+      var msg = document.createElement('div'); msg.className = 'shop-msg';
+      [refresh, copy, clear, close].forEach(function (b) { acts.appendChild(b); });
+      dlg.appendChild(title); dlg.appendChild(body); dlg.appendChild(acts); dlg.appendChild(msg); ov.appendChild(dlg); document.body.appendChild(ov);
+      var current = [];
+      function render(l) {
+        current = l; setBadge(l.length); body.textContent = '';
+        if (!l.length) { body.textContent = 'The list is empty.'; return; }
+        l.slice().sort(function (a, b) { return (a.ingredient || a.item).toLowerCase() < (b.ingredient || b.item).toLowerCase() ? -1 : 1; }).forEach(function (it) {
+          var row = document.createElement('div'); row.className = 'shop-row';
+          var t = document.createElement('span'); t.textContent = it.item;
+          var r = document.createElement('small'); r.textContent = it.recipe;
+          row.appendChild(t); row.appendChild(r); body.appendChild(row);
+        });
+      }
+      function load() { body.textContent = 'Loading...'; getList().then(render, function () { body.textContent = 'Could not load the list.'; }); }
+      refresh.addEventListener('click', load);
+      copy.addEventListener('click', function () { copyText(current.map(function (i) { return i.item; }).join('\n'), function (ok) { msg.textContent = ok ? 'Copied ' + current.length + ' items.' : 'Could not copy.'; }); });
+      clear.addEventListener('click', function () {
+        if (!current.length) return;
+        if (!window.confirm('Clear all ' + current.length + ' items? They move to the History tab of the sheet.')) return;
+        post({ action: 'clear' }).then(function () { return getList(); }).then(render, function () { msg.textContent = 'Could not confirm. Refresh.'; });
+      });
+      function shut() { document.body.removeChild(ov); }
+      close.addEventListener('click', shut); ov.addEventListener('click', function (e) { if (e.target === ov) shut(); });
+      load();
+    }
+    if (badge) {
+      if (ENABLED) { badge.style.display = 'flex'; badge.addEventListener('click', openList); refreshBadge(); }
+    }
+    document.querySelectorAll('.shop-btn').forEach(function (btn) {
+      btn.innerHTML = CART + 'Shop';
+      btn.addEventListener('click', function () {
+        var art = btn.closest('.recipe'); if (!art) return;
+        var open = art.querySelector('.shop-panel');
+        if (open) { open.parentNode.removeChild(open); btn.classList.remove('active'); btn.setAttribute('aria-expanded', 'false'); return; }
+        var panel = build(art, btn);
+        var body = art.querySelector('.recipe-body');
+        art.insertBefore(panel, body);
+        btn.classList.add('active'); btn.setAttribute('aria-expanded', 'true');
+      });
+    });
+  })();
 
   // ── Apply filters (favorites — current page only) ─────────────────────
   function applyFilters() {

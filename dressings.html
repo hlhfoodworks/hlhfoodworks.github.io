@@ -630,6 +630,43 @@
   #made-dialog button[type=submit] { background: #3b2a1a; color: #fff; border-color: #3b2a1a; }
   @media print { .made-btn, #made-modal { display: none !important; } }
 
+/* ── Shopping checklist (see shopping_list_client.js) ── */
+.shop-btn { display: inline-flex; align-items: center; gap: 4px; }
+.shop-btn svg { width: 14px; height: 14px; }
+.shop-btn.active { background: #f3e9d6; border-color: var(--accent2); color: var(--accent); }
+.shop-panel { margin: 12px 0 4px; border: 1px solid var(--accent2); border-radius: 8px; background: #fbf5ea;
+  padding: 14px 16px; font-family: 'Helvetica Neue', Arial, sans-serif; }
+.shop-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.shop-head strong { font-size: 0.95rem; color: var(--accent); }
+.shop-head span { font-size: 0.75rem; color: var(--muted); }
+.shop-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 24px; margin-top: 8px; }
+.shop-group-label { grid-column: 1 / -1; font-size: 0.72rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin-top: 8px; }
+.shop-item { display: flex; gap: 8px; align-items: flex-start; font-size: 0.86rem; padding: 3px 0; cursor: pointer; }
+.shop-item input { margin-top: 3px; accent-color: var(--accent); }
+.shop-actions { display: flex; gap: 8px; align-items: center; margin-top: 12px; flex-wrap: wrap; }
+.shop-actions button { font: 0.8rem 'Helvetica Neue', Arial, sans-serif; border-radius: var(--radius); padding: 6px 12px; cursor: pointer;
+  background: none; color: var(--muted); border: 1px solid var(--border); }
+.shop-actions button:hover { background: var(--border); color: var(--text); }
+.shop-actions button.shop-primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+.shop-actions button.shop-primary:hover { background: #6f360f; }
+.shop-count { font-size: 0.78rem; color: var(--muted); margin-left: auto; }
+.shop-msg { font-size: 0.8rem; color: #2e7d32; margin-top: 8px; min-height: 1em; }
+@media (max-width: 640px) { .shop-cols { grid-template-columns: 1fr; } }
+@media print { .shop-panel, .shop-btn { display: none !important; } }
+
+#shop-list-toggle { display: none; align-items: center; gap: 8px; padding: 7px 14px; font-size: 0.82rem; cursor: pointer;
+  color: var(--nav-text); background: none; border: none; border-bottom: 1px solid #5a3e28; text-align: left; width: 100%; }
+#shop-list-toggle:hover { background: #4e3522; }
+#shop-list-toggle svg { width: 14px; height: 14px; }
+.shop-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.45); display: flex; align-items: center; justify-content: center; z-index: 1000; }
+.shop-dialog { background: #fff; color: #2b2118; border-radius: 8px; padding: 18px 20px; width: min(460px, 92vw); max-height: 84vh; display: flex; flex-direction: column;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.3); font-family: 'Helvetica Neue', Arial, sans-serif; }
+.shop-dialog h2 { font-size: 1rem; margin: 0 0 8px; }
+.shop-listbody { overflow-y: auto; font-size: 0.86rem; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 6px 0; min-height: 60px; }
+.shop-row { display: flex; justify-content: space-between; gap: 12px; padding: 3px 0; }
+.shop-row small { color: var(--muted); text-align: right; font-size: 0.72rem; }
+.shop-danger { color: #a33 !important; }
+
 </style>
 </head>
 <body>
@@ -663,6 +700,7 @@
     <button id="fav-toggle"><span class="star">★</span> Favorites only</button>
     <button id="notmade-toggle"><span class="nm-icon">&#9675;</span> Not yet made</button>
   </div>
+  <button id="shop-list-toggle" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.6 12.2a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 7H6"/></svg>Shopping list<span class="shop-badge"></span></button>
   <div id="made-pending"><span class="made-pend-n"></span><button type="button" class="made-copy">Copy list</button></div>
   <button id="alt-toggle"><span class="alt-icon">&#9650;</span> High Altitude</button>
   <div id="expand-collapse-row">
@@ -1324,6 +1362,7 @@
     <h3>Christy's Dressing</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="dressings-christy-s-dressing" data-title="Christy's Dressing" title="Made it" aria-label="Made: Christy's Dressing"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Christy's Dressing">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Christy's Dressing">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Christy's Dressing">🖨 Print</button>
       <a class="link-btn" href="?recipe=dressings-christy-s-dressing" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Christy's Dressing in new tab">🔗 Link</a>
@@ -1333,10 +1372,10 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><ul class="ingredients"><li>3 tablespoons soy sauce</li>
-<li>4 tablespoons balsamic vinegar</li>
-<li>2 tablespoons sugar</li>
-<li>1/2 cup olive oil</li></ul></div>
+      <div class="ing-group"><ul class="ingredients"><li data-ing="soy sauce">3 tablespoons soy sauce</li>
+<li data-ing="balsamic vinegar">4 tablespoons balsamic vinegar</li>
+<li data-ing="sugar">2 tablespoons sugar</li>
+<li data-ing="olive oil">1/2 cup olive oil</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1349,6 +1388,7 @@
     <h3>Creamy Dijon Turmeric Dressing</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="dressings-creamy-dijon-turmeric-dressing" data-title="Creamy Dijon Turmeric Dressing" title="Not yet made (author only)" aria-label="Not yet made: Creamy Dijon Turmeric Dressing"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Creamy Dijon Turmeric Dressing">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Creamy Dijon Turmeric Dressing">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Creamy Dijon Turmeric Dressing">🖨 Print</button>
       <a class="link-btn" href="?recipe=dressings-creamy-dijon-turmeric-dressing" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Creamy Dijon Turmeric Dressing in new tab">🔗 Link</a>
@@ -1358,13 +1398,13 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Dressing</h4><ul class="ingredients"><li>1/2 cup plain whole milk yogurt</li>
-<li>1 tablespoon grapeseed oil</li>
-<li>1 medium clove garlic</li>
-<li>1 teaspoon Dijon mustard</li>
-<li>1/2 teaspoon turmeric</li>
-<li>1/8 teaspoon black pepper</li>
-<li>1/4 to 1/2 teaspoon honey, to taste</li></ul></div>
+      <div class="ing-group"><h4>Dressing</h4><ul class="ingredients"><li data-ing="plain whole milk yogurt">1/2 cup plain whole milk yogurt</li>
+<li data-ing="grapeseed oil">1 tablespoon grapeseed oil</li>
+<li data-ing="garlic">1 medium clove garlic</li>
+<li data-ing="dijon mustard">1 teaspoon Dijon mustard</li>
+<li data-ing="turmeric">1/2 teaspoon turmeric</li>
+<li data-ing="black pepper">1/8 teaspoon black pepper</li>
+<li data-ing="honey">1/4 to 1/2 teaspoon honey, to taste</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1377,6 +1417,7 @@
     <h3>Greek Salad Dressing</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="dressings-greek-salad-dressing" data-title="Greek Salad Dressing" title="Made it" aria-label="Made: Greek Salad Dressing"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Greek Salad Dressing">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Greek Salad Dressing">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Greek Salad Dressing">🖨 Print</button>
       <a class="link-btn" href="?recipe=dressings-greek-salad-dressing" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Greek Salad Dressing in new tab">🔗 Link</a>
@@ -1386,13 +1427,13 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><ul class="ingredients"><li>1/4 cup extra-virgin olive oil</li>
-<li>3 tablespoons red wine vinegar</li>
-<li>2 garlic cloves, microplaned</li>
-<li>1/2 teaspoon dried oregano, plus more for sprinkling</li>
-<li>1/4 teaspoon Dijon mustard</li>
-<li>1/4 teaspoon sea salt</li>
-<li>Freshly ground black pepper, to taste</li></ul></div>
+      <div class="ing-group"><ul class="ingredients"><li data-ing="extra-virgin olive oil">1/4 cup extra-virgin olive oil</li>
+<li data-ing="red wine vinegar">3 tablespoons red wine vinegar</li>
+<li data-ing="garlic">2 garlic cloves, microplaned</li>
+<li data-ing="dried oregano">1/2 teaspoon dried oregano, plus more for sprinkling</li>
+<li data-ing="dijon mustard">1/4 teaspoon Dijon mustard</li>
+<li data-ing="sea salt">1/4 teaspoon sea salt</li>
+<li data-ing="black pepper">Freshly ground black pepper, to taste</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1405,6 +1446,7 @@
     <h3>★ Lemon Mustard Vinaigrette</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="dressings-lemon-mustard-vinaigrette" data-title="Lemon Mustard Vinaigrette" title="Made it" aria-label="Made: Lemon Mustard Vinaigrette"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Lemon Mustard Vinaigrette">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Lemon Mustard Vinaigrette">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Lemon Mustard Vinaigrette">🖨 Print</button>
       <a class="link-btn" href="?recipe=dressings-lemon-mustard-vinaigrette" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Lemon Mustard Vinaigrette in new tab">🔗 Link</a>
@@ -1414,16 +1456,16 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><ul class="ingredients"><li>1 1/2 tablespoons Dijon mustard</li>
-<li>1/4 cup freshly squeezed lemon juice</li>
-<li>1 teaspoon apple cider vinegar</li>
-<li>2 teaspoons honey or pure maple syrup</li>
-<li>4 small cloves garlic, microplaned</li>
-<li>1/2 teaspoon dried oregano</li>
-<li>1/4 teaspoon dried basil</li>
-<li>3/4 cup extra virgin olive oil</li>
-<li>1/2 teaspoon kosher salt</li>
-<li>1/4 teaspoon freshly ground black pepper</li></ul></div>
+      <div class="ing-group"><ul class="ingredients"><li data-ing="dijon mustard">1 1/2 tablespoons Dijon mustard</li>
+<li data-ing="lemon juice">1/4 cup freshly squeezed lemon juice</li>
+<li data-ing="apple cider vinegar">1 teaspoon apple cider vinegar</li>
+<li data-ing="honey / maple syrup">2 teaspoons honey or pure maple syrup</li>
+<li data-ing="garlic">4 small cloves garlic, microplaned</li>
+<li data-ing="dried oregano">1/2 teaspoon dried oregano</li>
+<li data-ing="dried basil">1/4 teaspoon dried basil</li>
+<li data-ing="extra-virgin olive oil">3/4 cup extra virgin olive oil</li>
+<li data-ing="kosher salt">1/2 teaspoon kosher salt</li>
+<li data-ing="black pepper">1/4 teaspoon freshly ground black pepper</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -2534,6 +2576,145 @@
     }
   })();
 
+
+  // ── Shopping checklist (see shopping_list.css). Reads the ingredient lines already on the page. ──
+  // The "Shop" button on each recipe opens a checklist (all unticked). "Copy checked" copies the ticked lines.
+  // https://script.google.com/macros/s/AKfycbzY1Qi--vCFGalcT9QYdBe8HC46HWHGE_8WZ91vuA2fVaYagEQ34nlwjU7ebCuPsv8n/exec / shop-9a779a2e2e26 are replaced from shopping_config.json at build time. With no URL set, only "Copy checked" is offered.
+  (function () {
+    var URL_ = 'https://script.google.com/macros/s/AKfycbzY1Qi--vCFGalcT9QYdBe8HC46HWHGE_8WZ91vuA2fVaYagEQ34nlwjU7ebCuPsv8n/exec', KEY_ = 'shop-9a779a2e2e26';
+    var ENABLED = !!URL_ && URL_.indexOf('__SHOP') !== 0;
+    var CART = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.6 12.2a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 7H6"/></svg>';
+    function visible(el) { return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length); }
+    function collect(art) {
+      var out = [];
+      art.querySelectorAll('.ing-group').forEach(function (g) {
+        if (!visible(g)) return;
+        var h = g.querySelector('h4');
+        var label = h ? h.firstChild && h.firstChild.textContent.trim() : '';
+        g.querySelectorAll('li').forEach(function (li) { out.push({ g: label || '', t: li.textContent.trim(), n: li.getAttribute('data-ing') || '' }); });
+      });
+      return out;
+    }
+    function copyText(text, done) {
+      function fallback() {
+        var ta = document.createElement('textarea'); ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+        document.body.appendChild(ta); ta.select();
+        try { document.execCommand('copy'); done(true); } catch (e) { done(false); }
+        document.body.removeChild(ta);
+      }
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(function () { done(true); }, fallback);
+      else fallback();
+    }
+    function post(payload) {
+      payload.key = KEY_;
+      return fetch(URL_, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(payload) });
+    }
+    function getList() {
+      return fetch(URL_ + '?action=list&key=' + encodeURIComponent(KEY_)).then(function (r) { return r.json(); })
+        .then(function (j) { if (!j.ok) throw new Error(j.error || 'error'); return j.items || []; });
+    }
+    var badge = document.getElementById('shop-list-toggle');
+    function setBadge(n) { if (badge) badge.querySelector('.shop-badge').textContent = n ? ' (' + n + ')' : ''; }
+    function refreshBadge() { if (ENABLED) getList().then(function (l) { setBadge(l.length); }, function () {}); }
+    function build(art, btn) {
+      var items = collect(art);
+      var panel = document.createElement('div');
+      panel.className = 'shop-panel'; panel.setAttribute('role', 'region'); panel.setAttribute('aria-label', 'Shopping checklist');
+      var head = document.createElement('div'); head.className = 'shop-head';
+      head.innerHTML = '<strong>Shopping checklist</strong><span>Tick what you need to buy.</span>';
+      var cols = document.createElement('div'); cols.className = 'shop-cols';
+      var last = null;
+      items.forEach(function (it) {
+        if (it.g !== last) { if (it.g) { var l = document.createElement('div'); l.className = 'shop-group-label'; l.textContent = it.g; cols.appendChild(l); } last = it.g; }
+        var lab = document.createElement('label'); lab.className = 'shop-item';
+        var cb = document.createElement('input'); cb.type = 'checkbox'; cb.checked = false;
+        var sp = document.createElement('span'); sp.textContent = it.t;
+        lab.appendChild(cb); lab.appendChild(sp); cols.appendChild(lab);
+      });
+      var actions = document.createElement('div'); actions.className = 'shop-actions';
+      var copyBtn = document.createElement('button'); copyBtn.type = 'button'; copyBtn.className = 'shop-primary'; copyBtn.textContent = 'Copy checked';
+      var clearBtn = document.createElement('button'); clearBtn.type = 'button'; clearBtn.textContent = 'Untick all';
+      var count = document.createElement('span'); count.className = 'shop-count';
+      var addBtn = null;
+      if (ENABLED) { addBtn = document.createElement('button'); addBtn.type = 'button'; addBtn.className = 'shop-primary'; addBtn.textContent = 'Add to shopping list'; actions.appendChild(addBtn); copyBtn.className = ''; }
+      actions.appendChild(copyBtn); actions.appendChild(clearBtn); actions.appendChild(count);
+      var msg = document.createElement('div'); msg.className = 'shop-msg'; msg.setAttribute('aria-live', 'polite');
+      panel.appendChild(head); panel.appendChild(cols); panel.appendChild(actions); panel.appendChild(msg);
+      function boxes() { return cols.querySelectorAll('input'); }
+      function checked() { var r = []; boxes().forEach(function (c, i) { if (c.checked) r.push(items[i].t); }); return r; }
+      function checkedObjs() { var r = []; boxes().forEach(function (c, i) { if (c.checked) r.push({ item: items[i].t, ingredient: items[i].n, recipe: art.getAttribute('data-title') || '' }); }); return r; }
+      function update() { count.textContent = checked().length + ' of ' + items.length + ' checked'; msg.textContent = ''; }
+      cols.addEventListener('change', update);
+      copyBtn.addEventListener('click', function () {
+        var c = checked();
+        if (!c.length) { msg.textContent = 'Nothing checked yet.'; return; }
+        copyText(c.join('\n'), function (ok) { msg.textContent = ok ? 'Copied ' + c.length + ' item' + (c.length === 1 ? '' : 's') + '.' : 'Could not copy.'; });
+      });
+      if (addBtn) addBtn.addEventListener('click', function () {
+        var c = checkedObjs();
+        if (!c.length) { msg.textContent = 'Nothing checked yet.'; return; }
+        addBtn.disabled = true; msg.textContent = 'Adding...';
+        post({ action: 'add', items: c }).then(function () { return getList(); }).then(function (l) {
+          msg.textContent = 'Sent ' + c.length + ' item' + (c.length === 1 ? '' : 's') + '. The list now has ' + l.length + '.';
+          setBadge(l.length); boxes().forEach(function (x) { x.checked = false; }); count.textContent = '';
+        }, function () { msg.textContent = 'Sent, but could not confirm. Check the list.'; }).then(function () { addBtn.disabled = false; });
+      });
+      clearBtn.addEventListener('click', function () { boxes().forEach(function (c) { c.checked = false; }); update(); });
+      update();
+      return panel;
+    }
+    function openList() {
+      var ov = document.createElement('div'); ov.className = 'shop-overlay';
+      var dlg = document.createElement('div'); dlg.className = 'shop-dialog'; dlg.setAttribute('role', 'dialog'); dlg.setAttribute('aria-label', 'Shopping list');
+      var title = document.createElement('h2'); title.textContent = 'Shopping list';
+      var body = document.createElement('div'); body.className = 'shop-listbody'; body.textContent = 'Loading...';
+      var acts = document.createElement('div'); acts.className = 'shop-actions';
+      var refresh = document.createElement('button'); refresh.type = 'button'; refresh.textContent = 'Refresh';
+      var copy = document.createElement('button'); copy.type = 'button'; copy.textContent = 'Copy list';
+      var clear = document.createElement('button'); clear.type = 'button'; clear.className = 'shop-danger'; clear.textContent = 'Clear list';
+      var close = document.createElement('button'); close.type = 'button'; close.textContent = 'Close';
+      var msg = document.createElement('div'); msg.className = 'shop-msg';
+      [refresh, copy, clear, close].forEach(function (b) { acts.appendChild(b); });
+      dlg.appendChild(title); dlg.appendChild(body); dlg.appendChild(acts); dlg.appendChild(msg); ov.appendChild(dlg); document.body.appendChild(ov);
+      var current = [];
+      function render(l) {
+        current = l; setBadge(l.length); body.textContent = '';
+        if (!l.length) { body.textContent = 'The list is empty.'; return; }
+        l.slice().sort(function (a, b) { return (a.ingredient || a.item).toLowerCase() < (b.ingredient || b.item).toLowerCase() ? -1 : 1; }).forEach(function (it) {
+          var row = document.createElement('div'); row.className = 'shop-row';
+          var t = document.createElement('span'); t.textContent = it.item;
+          var r = document.createElement('small'); r.textContent = it.recipe;
+          row.appendChild(t); row.appendChild(r); body.appendChild(row);
+        });
+      }
+      function load() { body.textContent = 'Loading...'; getList().then(render, function () { body.textContent = 'Could not load the list.'; }); }
+      refresh.addEventListener('click', load);
+      copy.addEventListener('click', function () { copyText(current.map(function (i) { return i.item; }).join('\n'), function (ok) { msg.textContent = ok ? 'Copied ' + current.length + ' items.' : 'Could not copy.'; }); });
+      clear.addEventListener('click', function () {
+        if (!current.length) return;
+        if (!window.confirm('Clear all ' + current.length + ' items? They move to the History tab of the sheet.')) return;
+        post({ action: 'clear' }).then(function () { return getList(); }).then(render, function () { msg.textContent = 'Could not confirm. Refresh.'; });
+      });
+      function shut() { document.body.removeChild(ov); }
+      close.addEventListener('click', shut); ov.addEventListener('click', function (e) { if (e.target === ov) shut(); });
+      load();
+    }
+    if (badge) {
+      if (ENABLED) { badge.style.display = 'flex'; badge.addEventListener('click', openList); refreshBadge(); }
+    }
+    document.querySelectorAll('.shop-btn').forEach(function (btn) {
+      btn.innerHTML = CART + 'Shop';
+      btn.addEventListener('click', function () {
+        var art = btn.closest('.recipe'); if (!art) return;
+        var open = art.querySelector('.shop-panel');
+        if (open) { open.parentNode.removeChild(open); btn.classList.remove('active'); btn.setAttribute('aria-expanded', 'false'); return; }
+        var panel = build(art, btn);
+        var body = art.querySelector('.recipe-body');
+        art.insertBefore(panel, body);
+        btn.classList.add('active'); btn.setAttribute('aria-expanded', 'true');
+      });
+    });
+  })();
 
   // ── Apply filters (favorites — current page only) ─────────────────────
   function applyFilters() {

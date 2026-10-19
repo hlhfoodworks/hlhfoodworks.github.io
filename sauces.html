@@ -630,6 +630,43 @@
   #made-dialog button[type=submit] { background: #3b2a1a; color: #fff; border-color: #3b2a1a; }
   @media print { .made-btn, #made-modal { display: none !important; } }
 
+/* ── Shopping checklist (see shopping_list_client.js) ── */
+.shop-btn { display: inline-flex; align-items: center; gap: 4px; }
+.shop-btn svg { width: 14px; height: 14px; }
+.shop-btn.active { background: #f3e9d6; border-color: var(--accent2); color: var(--accent); }
+.shop-panel { margin: 12px 0 4px; border: 1px solid var(--accent2); border-radius: 8px; background: #fbf5ea;
+  padding: 14px 16px; font-family: 'Helvetica Neue', Arial, sans-serif; }
+.shop-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.shop-head strong { font-size: 0.95rem; color: var(--accent); }
+.shop-head span { font-size: 0.75rem; color: var(--muted); }
+.shop-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 24px; margin-top: 8px; }
+.shop-group-label { grid-column: 1 / -1; font-size: 0.72rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin-top: 8px; }
+.shop-item { display: flex; gap: 8px; align-items: flex-start; font-size: 0.86rem; padding: 3px 0; cursor: pointer; }
+.shop-item input { margin-top: 3px; accent-color: var(--accent); }
+.shop-actions { display: flex; gap: 8px; align-items: center; margin-top: 12px; flex-wrap: wrap; }
+.shop-actions button { font: 0.8rem 'Helvetica Neue', Arial, sans-serif; border-radius: var(--radius); padding: 6px 12px; cursor: pointer;
+  background: none; color: var(--muted); border: 1px solid var(--border); }
+.shop-actions button:hover { background: var(--border); color: var(--text); }
+.shop-actions button.shop-primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+.shop-actions button.shop-primary:hover { background: #6f360f; }
+.shop-count { font-size: 0.78rem; color: var(--muted); margin-left: auto; }
+.shop-msg { font-size: 0.8rem; color: #2e7d32; margin-top: 8px; min-height: 1em; }
+@media (max-width: 640px) { .shop-cols { grid-template-columns: 1fr; } }
+@media print { .shop-panel, .shop-btn { display: none !important; } }
+
+#shop-list-toggle { display: none; align-items: center; gap: 8px; padding: 7px 14px; font-size: 0.82rem; cursor: pointer;
+  color: var(--nav-text); background: none; border: none; border-bottom: 1px solid #5a3e28; text-align: left; width: 100%; }
+#shop-list-toggle:hover { background: #4e3522; }
+#shop-list-toggle svg { width: 14px; height: 14px; }
+.shop-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.45); display: flex; align-items: center; justify-content: center; z-index: 1000; }
+.shop-dialog { background: #fff; color: #2b2118; border-radius: 8px; padding: 18px 20px; width: min(460px, 92vw); max-height: 84vh; display: flex; flex-direction: column;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.3); font-family: 'Helvetica Neue', Arial, sans-serif; }
+.shop-dialog h2 { font-size: 1rem; margin: 0 0 8px; }
+.shop-listbody { overflow-y: auto; font-size: 0.86rem; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 6px 0; min-height: 60px; }
+.shop-row { display: flex; justify-content: space-between; gap: 12px; padding: 3px 0; }
+.shop-row small { color: var(--muted); text-align: right; font-size: 0.72rem; }
+.shop-danger { color: #a33 !important; }
+
 </style>
 </head>
 <body>
@@ -663,6 +700,7 @@
     <button id="fav-toggle"><span class="star">★</span> Favorites only</button>
     <button id="notmade-toggle"><span class="nm-icon">&#9675;</span> Not yet made</button>
   </div>
+  <button id="shop-list-toggle" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.6 12.2a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 7H6"/></svg>Shopping list<span class="shop-badge"></span></button>
   <div id="made-pending"><span class="made-pend-n"></span><button type="button" class="made-copy">Copy list</button></div>
   <button id="alt-toggle"><span class="alt-icon">&#9650;</span> High Altitude</button>
   <div id="expand-collapse-row">
@@ -1325,6 +1363,7 @@
     <h3>Bo's Barbeque Sauce</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="sauces-general-bo-s-barbeque-sauce" data-title="Bo's Barbeque Sauce" title="Not yet made (author only)" aria-label="Not yet made: Bo's Barbeque Sauce"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Bo's Barbeque Sauce">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Bo's Barbeque Sauce">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Bo's Barbeque Sauce">🖨 Print</button>
       <a class="link-btn" href="?recipe=sauces-general-bo-s-barbeque-sauce" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Bo's Barbeque Sauce in new tab">🔗 Link</a>
@@ -1334,21 +1373,21 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li>2 tablespoons bacon drippings</li>
-<li>1 medium onion, finely chopped</li>
-<li>1 clove garlic, minced</li></ul></div>
-<div class="ing-group"><h4>Sauce</h4><ul class="ingredients"><li>14 oz ketchup</li>
-<li>6 tablespoons Worcestershire sauce</li>
-<li>2 tablespoons cider vinegar</li>
-<li>1/4 cup dry white wine</li>
-<li>1 teaspoon dry mustard</li>
-<li>2 tablespoons dark brown sugar</li>
-<li>1-2 tablespoons pure ground red hot chile</li>
-<li>1-2 tablespoons pure ground mild red chile</li>
-<li>1/4 teaspoon cayenne or pequin quebrado</li>
-<li>3/4 teaspoon ground cumin seed</li>
-<li>1/4 teaspoon ground coriander seed</li>
-<li>1 teaspoon liquid smoke</li></ul></div>
+      <div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li data-ing="bacon dripping">2 tablespoons bacon drippings</li>
+<li data-ing="onion">1 medium onion, finely chopped</li>
+<li data-ing="garlic">1 clove garlic, minced</li></ul></div>
+<div class="ing-group"><h4>Sauce</h4><ul class="ingredients"><li data-ing="ketchup">14 oz ketchup</li>
+<li data-ing="worcestershire sauce">6 tablespoons Worcestershire sauce</li>
+<li data-ing="apple cider vinegar">2 tablespoons cider vinegar</li>
+<li data-ing="white wine">1/4 cup dry white wine</li>
+<li data-ing="ground mustard">1 teaspoon dry mustard</li>
+<li data-ing="dark brown sugar">2 tablespoons dark brown sugar</li>
+<li data-ing="ground red hot chile">1-2 tablespoons pure ground red hot chile</li>
+<li data-ing="ground mild red chile">1-2 tablespoons pure ground mild red chile</li>
+<li data-ing="ground cayenne pepper / pequin quebrado">1/4 teaspoon cayenne or pequin quebrado</li>
+<li data-ing="ground cumin">3/4 teaspoon ground cumin seed</li>
+<li data-ing="ground coriander">1/4 teaspoon ground coriander seed</li>
+<li data-ing="liquid smoke">1 teaspoon liquid smoke</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1362,6 +1401,7 @@
     <h3>★ Cherry Barbecue Sauce</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="cherry-bbq-sauce" data-title="Cherry Barbecue Sauce" title="Made it" aria-label="Made: Cherry Barbecue Sauce"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Cherry Barbecue Sauce">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Cherry Barbecue Sauce">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Cherry Barbecue Sauce">🖨 Print</button>
       <a class="link-btn" href="?recipe=cherry-bbq-sauce" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Cherry Barbecue Sauce in new tab">🔗 Link</a>
@@ -1371,17 +1411,17 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li>1 medium onion, chopped</li>
-<li>2 tablespoons butter</li>
-<li>2 garlic cloves, minced</li></ul></div>
-<div class="ing-group"><h4>Sauce</h4><ul class="ingredients"><li>2 cups fresh or frozen dark sweet cherries, pitted and coarsely chopped</li>
-<li>1 cup ketchup</li>
-<li>2/3 cup packed brown sugar</li>
-<li>1/4 cup cider vinegar</li>
-<li>1 tablespoon Worcestershire sauce</li>
-<li>2 teaspoons ground mustard</li>
-<li>1/2 teaspoon pepper</li>
-<li>1/8 teaspoon Liquid Smoke (optional)</li></ul></div>
+      <div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li data-ing="onion">1 medium onion, chopped</li>
+<li data-ing="butter">2 tablespoons butter</li>
+<li data-ing="garlic">2 garlic cloves, minced</li></ul></div>
+<div class="ing-group"><h4>Sauce</h4><ul class="ingredients"><li data-ing="sweet cherry / frozen dark sweet cherry">2 cups fresh or frozen dark sweet cherries, pitted and coarsely chopped</li>
+<li data-ing="ketchup">1 cup ketchup</li>
+<li data-ing="brown sugar">2/3 cup packed brown sugar</li>
+<li data-ing="apple cider vinegar">1/4 cup cider vinegar</li>
+<li data-ing="worcestershire sauce">1 tablespoon Worcestershire sauce</li>
+<li data-ing="ground mustard">2 teaspoons ground mustard</li>
+<li data-ing="black pepper">1/2 teaspoon pepper</li>
+<li data-ing="liquid smoke">1/8 teaspoon Liquid Smoke (optional)</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1395,6 +1435,7 @@
     <h3>Creamy Louisiana Marinade</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="sauces-general-creamy-louisiana-marinade" data-title="Creamy Louisiana Marinade" title="Made it" aria-label="Made: Creamy Louisiana Marinade"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Creamy Louisiana Marinade">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Creamy Louisiana Marinade">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Creamy Louisiana Marinade">🖨 Print</button>
       <a class="link-btn" href="?recipe=sauces-general-creamy-louisiana-marinade" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Creamy Louisiana Marinade in new tab">🔗 Link</a>
@@ -1404,18 +1445,18 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Marinade</h4><ul class="ingredients"><li>1/2 cup mayo</li>
-<li>1/2 teaspoon Creole or grainy mustard</li>
-<li>2 teaspoons fresh lemon juice</li>
-<li>2 green onions, green and white parts, minced</li>
-<li>1/2 teaspoon Worcestershire sauce</li>
-<li>1 teaspoon minced fresh rosemary (or 1/4 teaspoon dried)</li>
-<li>1 teaspoon minced fresh basil (or 1/4 teaspoon dried)</li>
-<li>1 teaspoon minced fresh oregano (or 1/4 teaspoon dried)</li>
-<li>1/2 teaspoon paprika</li>
-<li>1/2 teaspoon freshly ground black pepper</li>
-<li>1/4 teaspoon cayenne</li>
-<li>1/4 teaspoon salt</li></ul></div>
+      <div class="ing-group"><h4>Marinade</h4><ul class="ingredients"><li data-ing="mayonnaise">1/2 cup mayo</li>
+<li data-ing="creole mustard / grainy mustard">1/2 teaspoon Creole or grainy mustard</li>
+<li data-ing="lemon juice">2 teaspoons fresh lemon juice</li>
+<li data-ing="scallion">2 green onions, green and white parts, minced</li>
+<li data-ing="worcestershire sauce">1/2 teaspoon Worcestershire sauce</li>
+<li data-ing="rosemary">1 teaspoon minced fresh rosemary (or 1/4 teaspoon dried)</li>
+<li data-ing="basil">1 teaspoon minced fresh basil (or 1/4 teaspoon dried)</li>
+<li data-ing="oregano">1 teaspoon minced fresh oregano (or 1/4 teaspoon dried)</li>
+<li data-ing="paprika">1/2 teaspoon paprika</li>
+<li data-ing="black pepper">1/2 teaspoon freshly ground black pepper</li>
+<li data-ing="ground cayenne pepper">1/4 teaspoon cayenne</li>
+<li data-ing="salt">1/4 teaspoon salt</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1429,6 +1470,7 @@
     <h3>★ Horseradish Sauce</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="horseradish-sauce" data-title="Horseradish Sauce" title="Made it" aria-label="Made: Horseradish Sauce"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Horseradish Sauce">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Horseradish Sauce">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Horseradish Sauce">🖨 Print</button>
       <a class="link-btn" href="?recipe=horseradish-sauce" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Horseradish Sauce in new tab">🔗 Link</a>
@@ -1438,13 +1480,13 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><ul class="ingredients"><li>1/2 cup sour cream</li>
-<li>3 tablespoons mayonnaise</li>
-<li>2 tablespoons prepared horseradish</li>
-<li>1 tablespoon cider vinegar</li>
-<li>1/8 teaspoon mustard powder</li>
-<li>1/8 teaspoon cayenne pepper</li>
-<li>Salt and freshly ground black pepper, to taste</li></ul></div>
+      <div class="ing-group"><ul class="ingredients"><li data-ing="sour cream">1/2 cup sour cream</li>
+<li data-ing="mayonnaise">3 tablespoons mayonnaise</li>
+<li data-ing="prepared horseradish">2 tablespoons prepared horseradish</li>
+<li data-ing="apple cider vinegar">1 tablespoon cider vinegar</li>
+<li data-ing="ground mustard">1/8 teaspoon mustard powder</li>
+<li data-ing="ground cayenne pepper">1/8 teaspoon cayenne pepper</li>
+<li data-ing="salt / black pepper">Salt and freshly ground black pepper, to taste</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1457,6 +1499,7 @@
     <h3>★ Joan's on Third Chili Aioli</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="joan-chili-aioli" data-title="Joan's on Third Chili Aioli" title="Made it" aria-label="Made: Joan's on Third Chili Aioli"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Joan's on Third Chili Aioli">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Joan's on Third Chili Aioli">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Joan's on Third Chili Aioli">🖨 Print</button>
       <a class="link-btn" href="?recipe=joan-chili-aioli" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Joan's on Third Chili Aioli in new tab">🔗 Link</a>
@@ -1466,14 +1509,14 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><ul class="ingredients"><li>2 cups mayonnaise</li>
-<li>3 cloves garlic, peeled and minced</li>
-<li>1/4 cup plus 3 tablespoons canola oil blend</li>
-<li>1 teaspoon ground cumin</li>
-<li>1 1/2 teaspoons lemon juice</li>
-<li>3 tablespoons dark chili powder</li>
-<li>1 tablespoon plus 1/2 teaspoon paprika</li>
-<li>Salt and pepper</li></ul></div>
+      <div class="ing-group"><ul class="ingredients"><li data-ing="mayonnaise">2 cups mayonnaise</li>
+<li data-ing="garlic">3 cloves garlic, peeled and minced</li>
+<li data-ing="canola oil">1/4 cup plus 3 tablespoons canola oil blend</li>
+<li data-ing="ground cumin">1 teaspoon ground cumin</li>
+<li data-ing="lemon juice">1 1/2 teaspoons lemon juice</li>
+<li data-ing="dark chili powder">3 tablespoons dark chili powder</li>
+<li data-ing="paprika">1 tablespoon plus 1/2 teaspoon paprika</li>
+<li data-ing="salt / black pepper">Salt and pepper</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1486,6 +1529,7 @@
     <h3>Peach Barbecue Sauce</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="sauces-general-peach-barbecue-sauce" data-title="Peach Barbecue Sauce" title="Made it" aria-label="Made: Peach Barbecue Sauce"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Peach Barbecue Sauce">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Peach Barbecue Sauce">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Peach Barbecue Sauce">🖨 Print</button>
       <a class="link-btn" href="?recipe=sauces-general-peach-barbecue-sauce" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Peach Barbecue Sauce in new tab">🔗 Link</a>
@@ -1495,18 +1539,18 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Peaches</h4><ul class="ingredients"><li>6 pounds peaches (about 22), pitted and quartered, not peeled</li></ul></div>
-<div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li>1 1/2 cups chopped onions</li>
-<li>3 cloves garlic</li></ul></div>
-<div class="ing-group"><h4>Liquids and sweeteners</h4><ul class="ingredients"><li>1 cup apple cider vinegar (1/2 to 3/4 cup if not canning)</li>
-<li>1/2 cup molasses</li>
-<li>1/2 cup brown sugar</li>
-<li>Juice of 3 limes</li></ul></div>
-<div class="ing-group"><h4>Spices</h4><ul class="ingredients"><li>2 tablespoons smoked paprika</li>
-<li>2 tablespoons chile powder or cayenne pepper</li>
-<li>2 tablespoons salt</li>
-<li>2 tablespoons ground ginger</li>
-<li>2 tablespoons cumin or coriander (or both)</li></ul></div>
+      <div class="ing-group"><h4>Peaches</h4><ul class="ingredients"><li data-ing="peach">6 pounds peaches (about 22), pitted and quartered, not peeled</li></ul></div>
+<div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li data-ing="onion">1 1/2 cups chopped onions</li>
+<li data-ing="garlic">3 cloves garlic</li></ul></div>
+<div class="ing-group"><h4>Liquids and sweeteners</h4><ul class="ingredients"><li data-ing="apple cider vinegar">1 cup apple cider vinegar (1/2 to 3/4 cup if not canning)</li>
+<li data-ing="molasses">1/2 cup molasses</li>
+<li data-ing="brown sugar">1/2 cup brown sugar</li>
+<li data-ing="lime juice">Juice of 3 limes</li></ul></div>
+<div class="ing-group"><h4>Spices</h4><ul class="ingredients"><li data-ing="smoked paprika">2 tablespoons smoked paprika</li>
+<li data-ing="chile powder / ground cayenne pepper">2 tablespoons chile powder or cayenne pepper</li>
+<li data-ing="salt">2 tablespoons salt</li>
+<li data-ing="ground ginger">2 tablespoons ground ginger</li>
+<li data-ing="ground cumin / coriander">2 tablespoons cumin or coriander (or both)</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1521,6 +1565,7 @@
     <h3>★ Steak Seasoning Rub</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="steak-seasoning-rub" data-title="Steak Seasoning Rub" title="Made it" aria-label="Made: Steak Seasoning Rub"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Steak Seasoning Rub">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Steak Seasoning Rub">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Steak Seasoning Rub">🖨 Print</button>
       <a class="link-btn" href="?recipe=steak-seasoning-rub" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Steak Seasoning Rub in new tab">🔗 Link</a>
@@ -1530,16 +1575,16 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><ul class="ingredients"><li>1 tablespoon kosher salt</li>
-<li>1 tablespoon brown sugar, packed</li>
-<li>2 teaspoons smoked paprika</li>
-<li>2 teaspoons ground ancho chile pepper (or chili powder)</li>
-<li>1 teaspoon dried thyme</li>
-<li>1 teaspoon black pepper</li>
-<li>½ teaspoon garlic powder</li>
-<li>½ teaspoon onion powder</li>
-<li>½ teaspoon ground mustard</li>
-<li>½ teaspoon ground cumin</li></ul></div>
+      <div class="ing-group"><ul class="ingredients"><li data-ing="kosher salt">1 tablespoon kosher salt</li>
+<li data-ing="brown sugar">1 tablespoon brown sugar, packed</li>
+<li data-ing="smoked paprika">2 teaspoons smoked paprika</li>
+<li data-ing="ground ancho chile">2 teaspoons ground ancho chile pepper (or chili powder)</li>
+<li data-ing="dried thyme">1 teaspoon dried thyme</li>
+<li data-ing="black pepper">1 teaspoon black pepper</li>
+<li data-ing="garlic powder">½ teaspoon garlic powder</li>
+<li data-ing="onion powder">½ teaspoon onion powder</li>
+<li data-ing="ground mustard">½ teaspoon ground mustard</li>
+<li data-ing="ground cumin">½ teaspoon ground cumin</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1553,6 +1598,7 @@
     <h3>Moroccan Preserved Lemon Yogurt Sauce</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="moroccan-preserved-lemon-yogurt-sauce" data-title="Moroccan Preserved Lemon Yogurt Sauce" title="Made it" aria-label="Made: Moroccan Preserved Lemon Yogurt Sauce"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Moroccan Preserved Lemon Yogurt Sauce">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Moroccan Preserved Lemon Yogurt Sauce">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Moroccan Preserved Lemon Yogurt Sauce">🖨 Print</button>
       <a class="link-btn" href="?recipe=moroccan-preserved-lemon-yogurt-sauce" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Moroccan Preserved Lemon Yogurt Sauce in new tab">🔗 Link</a>
@@ -1562,11 +1608,11 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Sauce</h4><ul class="ingredients"><li>8 oz plain Greek yogurt (nonfat or whole milk)</li>
-<li>1 preserved lemon, rinsed, flesh removed, rind minced</li>
-<li>1/4 cup fresh herbs, finely chopped (cilantro, parsley, mint, or a combination)</li>
-<li>1 to 2 teaspoons preserved lemon brine, to taste</li></ul></div>
-<div class="ing-group"><h4>Garnish</h4><ul class="ingredients"><li>Aleppo pepper or red pepper flakes (optional)</li></ul></div>
+      <div class="ing-group"><h4>Sauce</h4><ul class="ingredients"><li data-ing="plain greek yogurt">8 oz plain Greek yogurt (nonfat or whole milk)</li>
+<li data-ing="preserved lemon">1 preserved lemon, rinsed, flesh removed, rind minced</li>
+<li data-ing="herb (any)">1/4 cup fresh herbs, finely chopped (cilantro, parsley, mint, or a combination)</li>
+<li data-ing="preserved lemon brine">1 to 2 teaspoons preserved lemon brine, to taste</li></ul></div>
+<div class="ing-group"><h4>Garnish</h4><ul class="ingredients"><li data-ing="aleppo pepper or red pepper flakes">Aleppo pepper or red pepper flakes (optional)</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1580,6 +1626,7 @@
     <h3>Tahini Sauce With Garlic and Lemon</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="sauces-general-tahini-sauce-with-garlic-and-lemon" data-title="Tahini Sauce With Garlic and Lemon" title="Not yet made (author only)" aria-label="Not yet made: Tahini Sauce With Garlic and Lemon"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Tahini Sauce With Garlic and Lemon">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Tahini Sauce With Garlic and Lemon">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Tahini Sauce With Garlic and Lemon">🖨 Print</button>
       <a class="link-btn" href="?recipe=sauces-general-tahini-sauce-with-garlic-and-lemon" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Tahini Sauce With Garlic and Lemon in new tab">🔗 Link</a>
@@ -1589,12 +1636,12 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Lemon-garlic juice</h4><ul class="ingredients"><li>1 whole head garlic, broken into individual unpeeled cloves (about 20 cloves)</li>
-<li>2/3 cup fresh lemon juice (from 3 to 4 lemons)</li></ul></div>
-<div class="ing-group"><h4>Sauce</h4><ul class="ingredients"><li>1/2 teaspoon ground cumin</li>
-<li>1 generous cup tahini paste (about 10 oz)</li>
-<li>Cold water as needed</li>
-<li>Kosher salt to taste</li></ul></div>
+      <div class="ing-group"><h4>Lemon-garlic juice</h4><ul class="ingredients"><li data-ing="garlic">1 whole head garlic, broken into individual unpeeled cloves (about 20 cloves)</li>
+<li data-ing="lemon juice">2/3 cup fresh lemon juice (from 3 to 4 lemons)</li></ul></div>
+<div class="ing-group"><h4>Sauce</h4><ul class="ingredients"><li data-ing="ground cumin">1/2 teaspoon ground cumin</li>
+<li data-ing="tahini paste">1 generous cup tahini paste (about 10 oz)</li>
+<li data-ing="water">Cold water as needed</li>
+<li data-ing="kosher salt">Kosher salt to taste</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1609,6 +1656,7 @@
     <h3>Authentic Raita</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="sauces-general-authentic-raita" data-title="Authentic Raita" title="Made it" aria-label="Made: Authentic Raita"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Authentic Raita">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Authentic Raita">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Authentic Raita">🖨 Print</button>
       <a class="link-btn" href="?recipe=sauces-general-authentic-raita" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Authentic Raita in new tab">🔗 Link</a>
@@ -1618,17 +1666,17 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Raita</h4><ul class="ingredients"><li>3/4 cup plain whole-milk yogurt (or coconut yogurt)</li>
-<li>1/2 cup Persian or English cucumber, finely diced or grated, seeds scraped</li>
-<li>1 tablespoon finely chopped red onion (optional; or substitute chives or green onion)</li>
-<li>2 teaspoons fresh lemon or lime juice, more to taste</li>
-<li>1 tablespoon olive oil</li>
-<li>1/2 teaspoon ground cumin</li>
-<li>1/2 teaspoon ground coriander</li>
-<li>2 to 3 tablespoons fresh mint leaves, chopped</li>
-<li>2 to 3 tablespoons fresh cilantro, chopped</li>
-<li>1/4 teaspoon salt, more to taste</li>
-<li>1/4 teaspoon pepper</li></ul></div>
+      <div class="ing-group"><h4>Raita</h4><ul class="ingredients"><li data-ing="plain yogurt">3/4 cup plain whole-milk yogurt (or coconut yogurt)</li>
+<li data-ing="persian cucumber / english cucumber">1/2 cup Persian or English cucumber, finely diced or grated, seeds scraped</li>
+<li data-ing="red onion">1 tablespoon finely chopped red onion (optional; or substitute chives or green onion)</li>
+<li data-ing="lemon / lime juice">2 teaspoons fresh lemon or lime juice, more to taste</li>
+<li data-ing="olive oil">1 tablespoon olive oil</li>
+<li data-ing="ground cumin">1/2 teaspoon ground cumin</li>
+<li data-ing="ground coriander">1/2 teaspoon ground coriander</li>
+<li data-ing="mint">2 to 3 tablespoons fresh mint leaves, chopped</li>
+<li data-ing="cilantro">2 to 3 tablespoons fresh cilantro, chopped</li>
+<li data-ing="salt">1/4 teaspoon salt, more to taste</li>
+<li data-ing="black pepper">1/4 teaspoon pepper</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1647,6 +1695,7 @@
     <h3>Authentic Chimichurri</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="sauces-latin-south-american-authentic-chimichurri" data-title="Authentic Chimichurri" title="Made it" aria-label="Made: Authentic Chimichurri"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Authentic Chimichurri">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Authentic Chimichurri">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Authentic Chimichurri">🖨 Print</button>
       <a class="link-btn" href="?recipe=sauces-latin-south-american-authentic-chimichurri" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Authentic Chimichurri in new tab">🔗 Link</a>
@@ -1656,14 +1705,14 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><ul class="ingredients"><li>1/2 cup olive oil</li>
-<li>2 tablespoons red wine vinegar</li>
-<li>1/2 cup fresh parsley, finely chopped</li>
-<li>3–4 cloves garlic, finely chopped or minced</li>
-<li>2 small red chilies (or 1), deseeded and finely chopped (about 1 tablespoon)</li>
-<li>3/4 teaspoon dried oregano</li>
-<li>1 teaspoon coarse salt</li>
-<li>1/2 teaspoon pepper</li></ul></div>
+      <div class="ing-group"><ul class="ingredients"><li data-ing="olive oil">1/2 cup olive oil</li>
+<li data-ing="red wine vinegar">2 tablespoons red wine vinegar</li>
+<li data-ing="parsley">1/2 cup fresh parsley, finely chopped</li>
+<li data-ing="garlic">3–4 cloves garlic, finely chopped or minced</li>
+<li data-ing="red chile">2 small red chilies (or 1), deseeded and finely chopped (about 1 tablespoon)</li>
+<li data-ing="dried oregano">3/4 teaspoon dried oregano</li>
+<li data-ing="coarse salt">1 teaspoon coarse salt</li>
+<li data-ing="black pepper">1/2 teaspoon pepper</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1678,6 +1727,7 @@
     <h3>Chicken Fajita Marinade</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="sauces-latin-south-american-chicken-fajita-marinade" data-title="Chicken Fajita Marinade" title="Made it" aria-label="Made: Chicken Fajita Marinade"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Chicken Fajita Marinade">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Chicken Fajita Marinade">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Chicken Fajita Marinade">🖨 Print</button>
       <a class="link-btn" href="?recipe=sauces-latin-south-american-chicken-fajita-marinade" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Chicken Fajita Marinade in new tab">🔗 Link</a>
@@ -1687,20 +1737,20 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Marinade</h4><ul class="ingredients"><li>1/4 cup olive oil</li>
-<li>1/3 cup lime juice</li>
-<li>1/4 cup water</li>
-<li>1 teaspoon sugar</li>
-<li>1 1/4 teaspoons kosher salt</li>
-<li>1/4 teaspoon ground cumin</li>
-<li>2 cloves garlic, minced</li>
-<li>1 1/2 teaspoons smoked paprika</li>
-<li>1 teaspoon onion powder</li>
-<li>1 to 2 tablespoons chili powder, to taste (start with 1 tablespoon if your chili powder has real heat)</li>
-<li>1/4 teaspoon pepper</li></ul></div>
-<div class="ing-group"><h4>To marinate</h4><ul class="ingredients"><li>1 pound chicken, sliced</li>
-<li>1 1/2 cups sliced bell peppers</li>
-<li>1/2 cup sliced onion</li></ul></div>
+      <div class="ing-group"><h4>Marinade</h4><ul class="ingredients"><li data-ing="olive oil">1/4 cup olive oil</li>
+<li data-ing="lime juice">1/3 cup lime juice</li>
+<li data-ing="water">1/4 cup water</li>
+<li data-ing="sugar">1 teaspoon sugar</li>
+<li data-ing="kosher salt">1 1/4 teaspoons kosher salt</li>
+<li data-ing="ground cumin">1/4 teaspoon ground cumin</li>
+<li data-ing="garlic">2 cloves garlic, minced</li>
+<li data-ing="smoked paprika">1 1/2 teaspoons smoked paprika</li>
+<li data-ing="onion powder">1 teaspoon onion powder</li>
+<li data-ing="chili powder">1 to 2 tablespoons chili powder, to taste (start with 1 tablespoon if your chili powder has real heat)</li>
+<li data-ing="black pepper">1/4 teaspoon pepper</li></ul></div>
+<div class="ing-group"><h4>To marinate</h4><ul class="ingredients"><li data-ing="chicken">1 pound chicken, sliced</li>
+<li data-ing="bell pepper">1 1/2 cups sliced bell peppers</li>
+<li data-ing="onion">1/2 cup sliced onion</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1715,6 +1765,7 @@
     <h3>D.L. Jardine's Fajita Marinade</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="sauces-latin-south-american-d-l-jardine-s-fajita-marinade" data-title="D.L. Jardine's Fajita Marinade" title="Made it" aria-label="Made: D.L. Jardine's Fajita Marinade"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for D.L. Jardine's Fajita Marinade">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy D.L. Jardine's Fajita Marinade">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print D.L. Jardine's Fajita Marinade">🖨 Print</button>
       <a class="link-btn" href="?recipe=sauces-latin-south-american-d-l-jardine-s-fajita-marinade" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open D.L. Jardine's Fajita Marinade in new tab">🔗 Link</a>
@@ -1724,15 +1775,15 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Liquids</h4><ul class="ingredients"><li>3/4 cup Worcestershire sauce</li>
-<li>1/4 cup light soy sauce</li>
-<li>2 tablespoons water</li>
-<li>1 tablespoon white vinegar</li>
-<li>2 tablespoons lime juice</li></ul></div>
-<div class="ing-group"><h4>Spice blend <span class="group-note">(combine in a small bowl)</span></h4><ul class="ingredients"><li>1/2 teaspoon garlic powder</li>
-<li>1/2 teaspoon black pepper</li>
-<li>1/2 teaspoon cumin</li>
-<li>1/2 teaspoon oregano</li></ul></div>
+      <div class="ing-group"><h4>Liquids</h4><ul class="ingredients"><li data-ing="worcestershire sauce">3/4 cup Worcestershire sauce</li>
+<li data-ing="light soy sauce">1/4 cup light soy sauce</li>
+<li data-ing="water">2 tablespoons water</li>
+<li data-ing="white vinegar">1 tablespoon white vinegar</li>
+<li data-ing="lime juice">2 tablespoons lime juice</li></ul></div>
+<div class="ing-group"><h4>Spice blend <span class="group-note">(combine in a small bowl)</span></h4><ul class="ingredients"><li data-ing="garlic powder">1/2 teaspoon garlic powder</li>
+<li data-ing="black pepper">1/2 teaspoon black pepper</li>
+<li data-ing="ground cumin">1/2 teaspoon cumin</li>
+<li data-ing="oregano">1/2 teaspoon oregano</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1749,6 +1800,7 @@
     <h3>Christy's Pesto (Adapted)</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="sauces-italian-christy-s-pesto-adapted" data-title="Christy's Pesto (Adapted)" title="Made it" aria-label="Made: Christy's Pesto (Adapted)"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Christy's Pesto (Adapted)">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Christy's Pesto (Adapted)">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Christy's Pesto (Adapted)">🖨 Print</button>
       <a class="link-btn" href="?recipe=sauces-italian-christy-s-pesto-adapted" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Christy's Pesto (Adapted) in new tab">🔗 Link</a>
@@ -1758,13 +1810,13 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><ul class="ingredients"><li>6 cloves garlic</li>
-<li>4 cups fresh basil leaves (about 2 bunches, stemmed)</li>
-<li>3/4 cup olive oil</li>
-<li>1 cup chopped walnuts</li>
-<li>1 teaspoon salt</li>
-<li>1 cup grated Parmesan cheese</li>
-<li>1 tablespoon warm water</li></ul></div>
+      <div class="ing-group"><ul class="ingredients"><li data-ing="garlic">6 cloves garlic</li>
+<li data-ing="basil">4 cups fresh basil leaves (about 2 bunches, stemmed)</li>
+<li data-ing="olive oil">3/4 cup olive oil</li>
+<li data-ing="walnut">1 cup chopped walnuts</li>
+<li data-ing="salt">1 teaspoon salt</li>
+<li data-ing="parmesan">1 cup grated Parmesan cheese</li>
+<li data-ing="water">1 tablespoon warm water</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1780,6 +1832,7 @@
     <h3>★ Fresh Tomato Pizza Sauce</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="sauces-italian-fresh-tomato-pizza-sauce" data-title="Fresh Tomato Pizza Sauce" title="Made it" aria-label="Made: Fresh Tomato Pizza Sauce"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Fresh Tomato Pizza Sauce">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Fresh Tomato Pizza Sauce">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Fresh Tomato Pizza Sauce">🖨 Print</button>
       <a class="link-btn" href="?recipe=sauces-italian-fresh-tomato-pizza-sauce" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Fresh Tomato Pizza Sauce in new tab">🔗 Link</a>
@@ -1789,12 +1842,12 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Sauce</h4><ul class="ingredients"><li>1 28-oz can whole peeled tomatoes, drained</li>
-<li>2 anchovy fillets packed in oil, drained</li>
-<li>2 garlic cloves</li>
-<li>6 tablespoons olive oil</li>
-<li>1/4 cup fresh basil leaves</li>
-<li>Kosher salt and freshly ground black pepper</li></ul></div>
+      <div class="ing-group"><h4>Sauce</h4><ul class="ingredients"><li data-ing="canned whole tomato">1 28-oz can whole peeled tomatoes, drained</li>
+<li data-ing="anchovy fillet (in oil)">2 anchovy fillets packed in oil, drained</li>
+<li data-ing="garlic">2 garlic cloves</li>
+<li data-ing="olive oil">6 tablespoons olive oil</li>
+<li data-ing="basil">1/4 cup fresh basil leaves</li>
+<li data-ing="kosher salt / black pepper">Kosher salt and freshly ground black pepper</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1807,6 +1860,7 @@
     <h3>Garlic and Oregano Pesto</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="sauces-italian-garlic-and-oregano-pesto" data-title="Garlic and Oregano Pesto" title="Not yet made (author only)" aria-label="Not yet made: Garlic and Oregano Pesto"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Garlic and Oregano Pesto">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Garlic and Oregano Pesto">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Garlic and Oregano Pesto">🖨 Print</button>
       <a class="link-btn" href="?recipe=sauces-italian-garlic-and-oregano-pesto" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Garlic and Oregano Pesto in new tab">🔗 Link</a>
@@ -1816,12 +1870,12 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Pesto</h4><ul class="ingredients"><li>1 cup fresh oregano leaves, tightly packed</li>
-<li>1/2 cup grated Parmesan</li>
-<li>2 cloves garlic, peeled</li>
-<li>1/2 cup raw almonds</li>
-<li>Salt and pepper to taste</li>
-<li>1/2 cup olive oil</li></ul></div>
+      <div class="ing-group"><h4>Pesto</h4><ul class="ingredients"><li data-ing="oregano">1 cup fresh oregano leaves, tightly packed</li>
+<li data-ing="parmesan">1/2 cup grated Parmesan</li>
+<li data-ing="garlic">2 cloves garlic, peeled</li>
+<li data-ing="almond">1/2 cup raw almonds</li>
+<li data-ing="salt / black pepper">Salt and pepper to taste</li>
+<li data-ing="olive oil">1/2 cup olive oil</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1836,6 +1890,7 @@
     <h3>Sage Pesto</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="sauces-italian-sage-pesto" data-title="Sage Pesto" title="Made it" aria-label="Made: Sage Pesto"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Sage Pesto">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Sage Pesto">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Sage Pesto">🖨 Print</button>
       <a class="link-btn" href="?recipe=sauces-italian-sage-pesto" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Sage Pesto in new tab">🔗 Link</a>
@@ -1845,15 +1900,15 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Processor base</h4><ul class="ingredients"><li>2 tablespoons pine nuts, toasted</li>
-<li>2 large garlic cloves, peeled</li></ul></div>
-<div class="ing-group"><h4>Herbs and greens</h4><ul class="ingredients"><li>2 cups torn spinach</li>
-<li>2 cups fresh flat-leaf parsley leaves</li>
-<li>3/4 cup fresh sage leaves</li></ul></div>
-<div class="ing-group"><h4>Seasoning</h4><ul class="ingredients"><li>2 tablespoons (1/2 oz) grated fresh Parmesan</li>
-<li>4 teaspoons lemon juice</li>
-<li>1/8 teaspoon salt</li></ul></div>
-<div class="ing-group"><h4>Finish</h4><ul class="ingredients"><li>3 tablespoons extra-virgin olive oil</li></ul></div>
+      <div class="ing-group"><h4>Processor base</h4><ul class="ingredients"><li data-ing="pine nut">2 tablespoons pine nuts, toasted</li>
+<li data-ing="garlic">2 large garlic cloves, peeled</li></ul></div>
+<div class="ing-group"><h4>Herbs and greens</h4><ul class="ingredients"><li data-ing="spinach">2 cups torn spinach</li>
+<li data-ing="flat-leaf parsley">2 cups fresh flat-leaf parsley leaves</li>
+<li data-ing="sage">3/4 cup fresh sage leaves</li></ul></div>
+<div class="ing-group"><h4>Seasoning</h4><ul class="ingredients"><li data-ing="parmesan">2 tablespoons (1/2 oz) grated fresh Parmesan</li>
+<li data-ing="lemon juice">4 teaspoons lemon juice</li>
+<li data-ing="salt">1/8 teaspoon salt</li></ul></div>
+<div class="ing-group"><h4>Finish</h4><ul class="ingredients"><li data-ing="extra-virgin olive oil">3 tablespoons extra-virgin olive oil</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1869,6 +1924,7 @@
     <h3>Sun-Dried Tomato Cream Sauce</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="sauces-italian-sun-dried-tomato-cream-sauce" data-title="Sun-Dried Tomato Cream Sauce" title="Not yet made (author only)" aria-label="Not yet made: Sun-Dried Tomato Cream Sauce"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Sun-Dried Tomato Cream Sauce">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Sun-Dried Tomato Cream Sauce">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Sun-Dried Tomato Cream Sauce">🖨 Print</button>
       <a class="link-btn" href="?recipe=sauces-italian-sun-dried-tomato-cream-sauce" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Sun-Dried Tomato Cream Sauce in new tab">🔗 Link</a>
@@ -1878,15 +1934,15 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Roux</h4><ul class="ingredients"><li>1 tablespoon butter</li>
-<li>1 garlic clove, pushed through a press (increase to taste)</li>
-<li>2 tablespoons flour</li></ul></div>
-<div class="ing-group"><h4>Sauce</h4><ul class="ingredients"><li>3/4 cup chicken broth</li>
-<li>1/2 cup heavy cream</li>
-<li>2 tablespoons sun-dried tomato slivers in oil</li>
-<li>1/4 teaspoon dried thyme</li>
-<li>1/4 teaspoon salt</li>
-<li>1/4 teaspoon Aleppo pepper or red pepper flakes</li></ul></div>
+      <div class="ing-group"><h4>Roux</h4><ul class="ingredients"><li data-ing="butter">1 tablespoon butter</li>
+<li data-ing="garlic">1 garlic clove, pushed through a press (increase to taste)</li>
+<li data-ing="all-purpose flour">2 tablespoons flour</li></ul></div>
+<div class="ing-group"><h4>Sauce</h4><ul class="ingredients"><li data-ing="chicken broth">3/4 cup chicken broth</li>
+<li data-ing="heavy cream">1/2 cup heavy cream</li>
+<li data-ing="sun-dried tomato sliver (in oil)">2 tablespoons sun-dried tomato slivers in oil</li>
+<li data-ing="dried thyme">1/4 teaspoon dried thyme</li>
+<li data-ing="salt">1/4 teaspoon salt</li>
+<li data-ing="aleppo pepper or red pepper flakes">1/4 teaspoon Aleppo pepper or red pepper flakes</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1906,6 +1962,7 @@
     <h3>Béarnaise Sauce</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="sauces-french-continental-b-arnaise-sauce" data-title="Béarnaise Sauce" title="Not yet made (author only)" aria-label="Not yet made: Béarnaise Sauce"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Béarnaise Sauce">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Béarnaise Sauce">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Béarnaise Sauce">🖨 Print</button>
       <a class="link-btn" href="?recipe=sauces-french-continental-b-arnaise-sauce" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Béarnaise Sauce in new tab">🔗 Link</a>
@@ -1915,14 +1972,14 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Reduction</h4><ul class="ingredients"><li>1/4 cup dry white wine</li>
-<li>2 tablespoons white wine vinegar or sherry vinegar</li>
-<li>1 tablespoon minced shallot</li>
-<li>1/4 teaspoon kosher salt</li></ul></div>
-<div class="ing-group"><h4>Sauce</h4><ul class="ingredients"><li>4 teaspoons chopped fresh tarragon, divided</li>
-<li>3 egg yolks</li>
-<li>3/4 cup (1-1/2 sticks) unsalted butter, melted and kept warm</li>
-<li>1/8 teaspoon freshly ground black pepper</li></ul></div>
+      <div class="ing-group"><h4>Reduction</h4><ul class="ingredients"><li data-ing="white wine">1/4 cup dry white wine</li>
+<li data-ing="white wine vinegar / sherry vinegar">2 tablespoons white wine vinegar or sherry vinegar</li>
+<li data-ing="shallot">1 tablespoon minced shallot</li>
+<li data-ing="kosher salt">1/4 teaspoon kosher salt</li></ul></div>
+<div class="ing-group"><h4>Sauce</h4><ul class="ingredients"><li data-ing="tarragon">4 teaspoons chopped fresh tarragon, divided</li>
+<li data-ing="egg">3 egg yolks</li>
+<li data-ing="unsalted butter">3/4 cup (1-1/2 sticks) unsalted butter, melted and kept warm</li>
+<li data-ing="black pepper">1/8 teaspoon freshly ground black pepper</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1944,6 +2001,7 @@
     <h3>Yemenite Green Hot Sauce (Zhug)</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="sauces-middle-eastern-persian-yemenite-green-hot-sauce-zhug" data-title="Yemenite Green Hot Sauce (Zhug)" title="Made it" aria-label="Made: Yemenite Green Hot Sauce (Zhug)"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Yemenite Green Hot Sauce (Zhug)">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Yemenite Green Hot Sauce (Zhug)">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Yemenite Green Hot Sauce (Zhug)">🖨 Print</button>
       <a class="link-btn" href="?recipe=sauces-middle-eastern-persian-yemenite-green-hot-sauce-zhug" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Yemenite Green Hot Sauce (Zhug) in new tab">🔗 Link</a>
@@ -1953,17 +2011,17 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Whole spices</h4><ul class="ingredients"><li>2 cardamom pods</li>
-<li>1 teaspoon black peppercorns</li>
-<li>1 teaspoon coriander seeds</li>
-<li>1/2 teaspoon cumin seeds</li></ul></div>
-<div class="ing-group"><h4>Chile paste</h4><ul class="ingredients"><li>4 serrano chiles, finely chopped</li>
-<li>2 garlic cloves, chopped</li>
-<li>Kosher salt</li></ul></div>
-<div class="ing-group"><h4>Sauce</h4><ul class="ingredients"><li>1 cup very finely chopped parsley</li>
-<li>3/4 cup very finely chopped cilantro</li>
-<li>2/3 cup extra-virgin olive oil</li>
-<li>4 teaspoons fresh lemon juice</li></ul></div>
+      <div class="ing-group"><h4>Whole spices</h4><ul class="ingredients"><li data-ing="cardamom pod">2 cardamom pods</li>
+<li data-ing="black peppercorn">1 teaspoon black peppercorns</li>
+<li data-ing="coriander seed">1 teaspoon coriander seeds</li>
+<li data-ing="cumin seed">1/2 teaspoon cumin seeds</li></ul></div>
+<div class="ing-group"><h4>Chile paste</h4><ul class="ingredients"><li data-ing="serrano">4 serrano chiles, finely chopped</li>
+<li data-ing="garlic">2 garlic cloves, chopped</li>
+<li data-ing="kosher salt">Kosher salt</li></ul></div>
+<div class="ing-group"><h4>Sauce</h4><ul class="ingredients"><li data-ing="parsley">1 cup very finely chopped parsley</li>
+<li data-ing="cilantro">3/4 cup very finely chopped cilantro</li>
+<li data-ing="extra-virgin olive oil">2/3 cup extra-virgin olive oil</li>
+<li data-ing="lemon juice">4 teaspoons fresh lemon juice</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -3670,6 +3728,145 @@
     }
   })();
 
+
+  // ── Shopping checklist (see shopping_list.css). Reads the ingredient lines already on the page. ──
+  // The "Shop" button on each recipe opens a checklist (all unticked). "Copy checked" copies the ticked lines.
+  // https://script.google.com/macros/s/AKfycbzY1Qi--vCFGalcT9QYdBe8HC46HWHGE_8WZ91vuA2fVaYagEQ34nlwjU7ebCuPsv8n/exec / shop-9a779a2e2e26 are replaced from shopping_config.json at build time. With no URL set, only "Copy checked" is offered.
+  (function () {
+    var URL_ = 'https://script.google.com/macros/s/AKfycbzY1Qi--vCFGalcT9QYdBe8HC46HWHGE_8WZ91vuA2fVaYagEQ34nlwjU7ebCuPsv8n/exec', KEY_ = 'shop-9a779a2e2e26';
+    var ENABLED = !!URL_ && URL_.indexOf('__SHOP') !== 0;
+    var CART = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.6 12.2a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 7H6"/></svg>';
+    function visible(el) { return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length); }
+    function collect(art) {
+      var out = [];
+      art.querySelectorAll('.ing-group').forEach(function (g) {
+        if (!visible(g)) return;
+        var h = g.querySelector('h4');
+        var label = h ? h.firstChild && h.firstChild.textContent.trim() : '';
+        g.querySelectorAll('li').forEach(function (li) { out.push({ g: label || '', t: li.textContent.trim(), n: li.getAttribute('data-ing') || '' }); });
+      });
+      return out;
+    }
+    function copyText(text, done) {
+      function fallback() {
+        var ta = document.createElement('textarea'); ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+        document.body.appendChild(ta); ta.select();
+        try { document.execCommand('copy'); done(true); } catch (e) { done(false); }
+        document.body.removeChild(ta);
+      }
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(function () { done(true); }, fallback);
+      else fallback();
+    }
+    function post(payload) {
+      payload.key = KEY_;
+      return fetch(URL_, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(payload) });
+    }
+    function getList() {
+      return fetch(URL_ + '?action=list&key=' + encodeURIComponent(KEY_)).then(function (r) { return r.json(); })
+        .then(function (j) { if (!j.ok) throw new Error(j.error || 'error'); return j.items || []; });
+    }
+    var badge = document.getElementById('shop-list-toggle');
+    function setBadge(n) { if (badge) badge.querySelector('.shop-badge').textContent = n ? ' (' + n + ')' : ''; }
+    function refreshBadge() { if (ENABLED) getList().then(function (l) { setBadge(l.length); }, function () {}); }
+    function build(art, btn) {
+      var items = collect(art);
+      var panel = document.createElement('div');
+      panel.className = 'shop-panel'; panel.setAttribute('role', 'region'); panel.setAttribute('aria-label', 'Shopping checklist');
+      var head = document.createElement('div'); head.className = 'shop-head';
+      head.innerHTML = '<strong>Shopping checklist</strong><span>Tick what you need to buy.</span>';
+      var cols = document.createElement('div'); cols.className = 'shop-cols';
+      var last = null;
+      items.forEach(function (it) {
+        if (it.g !== last) { if (it.g) { var l = document.createElement('div'); l.className = 'shop-group-label'; l.textContent = it.g; cols.appendChild(l); } last = it.g; }
+        var lab = document.createElement('label'); lab.className = 'shop-item';
+        var cb = document.createElement('input'); cb.type = 'checkbox'; cb.checked = false;
+        var sp = document.createElement('span'); sp.textContent = it.t;
+        lab.appendChild(cb); lab.appendChild(sp); cols.appendChild(lab);
+      });
+      var actions = document.createElement('div'); actions.className = 'shop-actions';
+      var copyBtn = document.createElement('button'); copyBtn.type = 'button'; copyBtn.className = 'shop-primary'; copyBtn.textContent = 'Copy checked';
+      var clearBtn = document.createElement('button'); clearBtn.type = 'button'; clearBtn.textContent = 'Untick all';
+      var count = document.createElement('span'); count.className = 'shop-count';
+      var addBtn = null;
+      if (ENABLED) { addBtn = document.createElement('button'); addBtn.type = 'button'; addBtn.className = 'shop-primary'; addBtn.textContent = 'Add to shopping list'; actions.appendChild(addBtn); copyBtn.className = ''; }
+      actions.appendChild(copyBtn); actions.appendChild(clearBtn); actions.appendChild(count);
+      var msg = document.createElement('div'); msg.className = 'shop-msg'; msg.setAttribute('aria-live', 'polite');
+      panel.appendChild(head); panel.appendChild(cols); panel.appendChild(actions); panel.appendChild(msg);
+      function boxes() { return cols.querySelectorAll('input'); }
+      function checked() { var r = []; boxes().forEach(function (c, i) { if (c.checked) r.push(items[i].t); }); return r; }
+      function checkedObjs() { var r = []; boxes().forEach(function (c, i) { if (c.checked) r.push({ item: items[i].t, ingredient: items[i].n, recipe: art.getAttribute('data-title') || '' }); }); return r; }
+      function update() { count.textContent = checked().length + ' of ' + items.length + ' checked'; msg.textContent = ''; }
+      cols.addEventListener('change', update);
+      copyBtn.addEventListener('click', function () {
+        var c = checked();
+        if (!c.length) { msg.textContent = 'Nothing checked yet.'; return; }
+        copyText(c.join('\n'), function (ok) { msg.textContent = ok ? 'Copied ' + c.length + ' item' + (c.length === 1 ? '' : 's') + '.' : 'Could not copy.'; });
+      });
+      if (addBtn) addBtn.addEventListener('click', function () {
+        var c = checkedObjs();
+        if (!c.length) { msg.textContent = 'Nothing checked yet.'; return; }
+        addBtn.disabled = true; msg.textContent = 'Adding...';
+        post({ action: 'add', items: c }).then(function () { return getList(); }).then(function (l) {
+          msg.textContent = 'Sent ' + c.length + ' item' + (c.length === 1 ? '' : 's') + '. The list now has ' + l.length + '.';
+          setBadge(l.length); boxes().forEach(function (x) { x.checked = false; }); count.textContent = '';
+        }, function () { msg.textContent = 'Sent, but could not confirm. Check the list.'; }).then(function () { addBtn.disabled = false; });
+      });
+      clearBtn.addEventListener('click', function () { boxes().forEach(function (c) { c.checked = false; }); update(); });
+      update();
+      return panel;
+    }
+    function openList() {
+      var ov = document.createElement('div'); ov.className = 'shop-overlay';
+      var dlg = document.createElement('div'); dlg.className = 'shop-dialog'; dlg.setAttribute('role', 'dialog'); dlg.setAttribute('aria-label', 'Shopping list');
+      var title = document.createElement('h2'); title.textContent = 'Shopping list';
+      var body = document.createElement('div'); body.className = 'shop-listbody'; body.textContent = 'Loading...';
+      var acts = document.createElement('div'); acts.className = 'shop-actions';
+      var refresh = document.createElement('button'); refresh.type = 'button'; refresh.textContent = 'Refresh';
+      var copy = document.createElement('button'); copy.type = 'button'; copy.textContent = 'Copy list';
+      var clear = document.createElement('button'); clear.type = 'button'; clear.className = 'shop-danger'; clear.textContent = 'Clear list';
+      var close = document.createElement('button'); close.type = 'button'; close.textContent = 'Close';
+      var msg = document.createElement('div'); msg.className = 'shop-msg';
+      [refresh, copy, clear, close].forEach(function (b) { acts.appendChild(b); });
+      dlg.appendChild(title); dlg.appendChild(body); dlg.appendChild(acts); dlg.appendChild(msg); ov.appendChild(dlg); document.body.appendChild(ov);
+      var current = [];
+      function render(l) {
+        current = l; setBadge(l.length); body.textContent = '';
+        if (!l.length) { body.textContent = 'The list is empty.'; return; }
+        l.slice().sort(function (a, b) { return (a.ingredient || a.item).toLowerCase() < (b.ingredient || b.item).toLowerCase() ? -1 : 1; }).forEach(function (it) {
+          var row = document.createElement('div'); row.className = 'shop-row';
+          var t = document.createElement('span'); t.textContent = it.item;
+          var r = document.createElement('small'); r.textContent = it.recipe;
+          row.appendChild(t); row.appendChild(r); body.appendChild(row);
+        });
+      }
+      function load() { body.textContent = 'Loading...'; getList().then(render, function () { body.textContent = 'Could not load the list.'; }); }
+      refresh.addEventListener('click', load);
+      copy.addEventListener('click', function () { copyText(current.map(function (i) { return i.item; }).join('\n'), function (ok) { msg.textContent = ok ? 'Copied ' + current.length + ' items.' : 'Could not copy.'; }); });
+      clear.addEventListener('click', function () {
+        if (!current.length) return;
+        if (!window.confirm('Clear all ' + current.length + ' items? They move to the History tab of the sheet.')) return;
+        post({ action: 'clear' }).then(function () { return getList(); }).then(render, function () { msg.textContent = 'Could not confirm. Refresh.'; });
+      });
+      function shut() { document.body.removeChild(ov); }
+      close.addEventListener('click', shut); ov.addEventListener('click', function (e) { if (e.target === ov) shut(); });
+      load();
+    }
+    if (badge) {
+      if (ENABLED) { badge.style.display = 'flex'; badge.addEventListener('click', openList); refreshBadge(); }
+    }
+    document.querySelectorAll('.shop-btn').forEach(function (btn) {
+      btn.innerHTML = CART + 'Shop';
+      btn.addEventListener('click', function () {
+        var art = btn.closest('.recipe'); if (!art) return;
+        var open = art.querySelector('.shop-panel');
+        if (open) { open.parentNode.removeChild(open); btn.classList.remove('active'); btn.setAttribute('aria-expanded', 'false'); return; }
+        var panel = build(art, btn);
+        var body = art.querySelector('.recipe-body');
+        art.insertBefore(panel, body);
+        btn.classList.add('active'); btn.setAttribute('aria-expanded', 'true');
+      });
+    });
+  })();
 
   // ── Apply filters (favorites — current page only) ─────────────────────
   function applyFilters() {

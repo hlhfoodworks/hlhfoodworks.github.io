@@ -630,6 +630,43 @@
   #made-dialog button[type=submit] { background: #3b2a1a; color: #fff; border-color: #3b2a1a; }
   @media print { .made-btn, #made-modal { display: none !important; } }
 
+/* ── Shopping checklist (see shopping_list_client.js) ── */
+.shop-btn { display: inline-flex; align-items: center; gap: 4px; }
+.shop-btn svg { width: 14px; height: 14px; }
+.shop-btn.active { background: #f3e9d6; border-color: var(--accent2); color: var(--accent); }
+.shop-panel { margin: 12px 0 4px; border: 1px solid var(--accent2); border-radius: 8px; background: #fbf5ea;
+  padding: 14px 16px; font-family: 'Helvetica Neue', Arial, sans-serif; }
+.shop-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.shop-head strong { font-size: 0.95rem; color: var(--accent); }
+.shop-head span { font-size: 0.75rem; color: var(--muted); }
+.shop-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 24px; margin-top: 8px; }
+.shop-group-label { grid-column: 1 / -1; font-size: 0.72rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin-top: 8px; }
+.shop-item { display: flex; gap: 8px; align-items: flex-start; font-size: 0.86rem; padding: 3px 0; cursor: pointer; }
+.shop-item input { margin-top: 3px; accent-color: var(--accent); }
+.shop-actions { display: flex; gap: 8px; align-items: center; margin-top: 12px; flex-wrap: wrap; }
+.shop-actions button { font: 0.8rem 'Helvetica Neue', Arial, sans-serif; border-radius: var(--radius); padding: 6px 12px; cursor: pointer;
+  background: none; color: var(--muted); border: 1px solid var(--border); }
+.shop-actions button:hover { background: var(--border); color: var(--text); }
+.shop-actions button.shop-primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+.shop-actions button.shop-primary:hover { background: #6f360f; }
+.shop-count { font-size: 0.78rem; color: var(--muted); margin-left: auto; }
+.shop-msg { font-size: 0.8rem; color: #2e7d32; margin-top: 8px; min-height: 1em; }
+@media (max-width: 640px) { .shop-cols { grid-template-columns: 1fr; } }
+@media print { .shop-panel, .shop-btn { display: none !important; } }
+
+#shop-list-toggle { display: none; align-items: center; gap: 8px; padding: 7px 14px; font-size: 0.82rem; cursor: pointer;
+  color: var(--nav-text); background: none; border: none; border-bottom: 1px solid #5a3e28; text-align: left; width: 100%; }
+#shop-list-toggle:hover { background: #4e3522; }
+#shop-list-toggle svg { width: 14px; height: 14px; }
+.shop-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.45); display: flex; align-items: center; justify-content: center; z-index: 1000; }
+.shop-dialog { background: #fff; color: #2b2118; border-radius: 8px; padding: 18px 20px; width: min(460px, 92vw); max-height: 84vh; display: flex; flex-direction: column;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.3); font-family: 'Helvetica Neue', Arial, sans-serif; }
+.shop-dialog h2 { font-size: 1rem; margin: 0 0 8px; }
+.shop-listbody { overflow-y: auto; font-size: 0.86rem; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 6px 0; min-height: 60px; }
+.shop-row { display: flex; justify-content: space-between; gap: 12px; padding: 3px 0; }
+.shop-row small { color: var(--muted); text-align: right; font-size: 0.72rem; }
+.shop-danger { color: #a33 !important; }
+
 </style>
 </head>
 <body>
@@ -663,6 +700,7 @@
     <button id="fav-toggle"><span class="star">★</span> Favorites only</button>
     <button id="notmade-toggle"><span class="nm-icon">&#9675;</span> Not yet made</button>
   </div>
+  <button id="shop-list-toggle" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.6 12.2a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 7H6"/></svg>Shopping list<span class="shop-badge"></span></button>
   <div id="made-pending"><span class="made-pend-n"></span><button type="button" class="made-copy">Copy list</button></div>
   <button id="alt-toggle"><span class="alt-icon">&#9650;</span> High Altitude</button>
   <div id="expand-collapse-row">
@@ -1324,6 +1362,7 @@
     <h3>Creamy Spinach-Artichoke Chicken Stew</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="soups-stews-creamy-spinach-artichoke-chicken-stew" data-title="Creamy Spinach-Artichoke Chicken Stew" title="Made it" aria-label="Made: Creamy Spinach-Artichoke Chicken Stew"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Creamy Spinach-Artichoke Chicken Stew">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Creamy Spinach-Artichoke Chicken Stew">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Creamy Spinach-Artichoke Chicken Stew">🖨 Print</button>
       <a class="link-btn" href="?recipe=soups-stews-creamy-spinach-artichoke-chicken-stew" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Creamy Spinach-Artichoke Chicken Stew in new tab">🔗 Link</a>
@@ -1333,22 +1372,22 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li>2 tablespoons unsalted butter</li>
-<li>1 large yellow or red onion, finely chopped</li>
-<li>Kosher salt and black pepper</li>
-<li>3 celery stalks, chopped</li>
-<li>8 garlic cloves, smashed and chopped</li></ul></div>
-<div class="ing-group"><h4>Braise</h4><ul class="ingredients"><li>2 cups chicken stock</li>
-<li>3/4 cup white wine</li>
-<li>2 to 2 1/4 pounds boneless, skinless chicken thighs</li>
-<li>1/2 lemon, juiced (about 1 1/2 tablespoons)</li>
-<li>1 teaspoon Aleppo pepper or red pepper flakes</li></ul></div>
-<div class="ing-group"><h4>Spinach and artichokes</h4><ul class="ingredients"><li>1 (10-ounce) package frozen cut spinach</li>
-<li>1 (12-ounce) jar marinated artichoke hearts, drained (about 1 heaping cup)</li></ul></div>
-<div class="ing-group"><h4>To finish</h4><ul class="ingredients"><li>1/2 cup cream cheese (about 4 ounces)</li>
-<li>1/2 cup finely chopped fresh dill</li>
-<li>4 to 6 scallions, thinly sliced</li>
-<li>Grated Parmesan cheese</li></ul></div>
+      <div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li data-ing="unsalted butter">2 tablespoons unsalted butter</li>
+<li data-ing="yellow onion / red onion">1 large yellow or red onion, finely chopped</li>
+<li data-ing="kosher salt / black pepper">Kosher salt and black pepper</li>
+<li data-ing="celery">3 celery stalks, chopped</li>
+<li data-ing="garlic">8 garlic cloves, smashed and chopped</li></ul></div>
+<div class="ing-group"><h4>Braise</h4><ul class="ingredients"><li data-ing="chicken broth">2 cups chicken stock</li>
+<li data-ing="white wine">3/4 cup white wine</li>
+<li data-ing="boneless skinless chicken thigh">2 to 2 1/4 pounds boneless, skinless chicken thighs</li>
+<li data-ing="lemon">1/2 lemon, juiced (about 1 1/2 tablespoons)</li>
+<li data-ing="aleppo pepper or red pepper flakes">1 teaspoon Aleppo pepper or red pepper flakes</li></ul></div>
+<div class="ing-group"><h4>Spinach and artichokes</h4><ul class="ingredients"><li data-ing="frozen spinach">1 (10-ounce) package frozen cut spinach</li>
+<li data-ing="canned marinated artichoke heart">1 (12-ounce) jar marinated artichoke hearts, drained (about 1 heaping cup)</li></ul></div>
+<div class="ing-group"><h4>To finish</h4><ul class="ingredients"><li data-ing="cream cheese">1/2 cup cream cheese (about 4 ounces)</li>
+<li data-ing="dill">1/2 cup finely chopped fresh dill</li>
+<li data-ing="scallion">4 to 6 scallions, thinly sliced</li>
+<li data-ing="parmesan">Grated Parmesan cheese</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1367,6 +1406,7 @@
     <h3>Creamy Tomato Soup</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="soups-stews-creamy-tomato-soup" data-title="Creamy Tomato Soup" title="Made it" aria-label="Made: Creamy Tomato Soup"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Creamy Tomato Soup">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Creamy Tomato Soup">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Creamy Tomato Soup">🖨 Print</button>
       <a class="link-btn" href="?recipe=soups-stews-creamy-tomato-soup" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Creamy Tomato Soup in new tab">🔗 Link</a>
@@ -1376,12 +1416,12 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Soup</h4><ul class="ingredients"><li>3 tablespoons extra-virgin olive oil, plus more if needed</li>
-<li>1/2 small yellow onion, finely diced</li>
-<li>Kosher salt</li>
-<li>1/4 teaspoon Aleppo pepper or red pepper flakes (optional)</li>
-<li>1 can (28 oz) whole peeled plum tomatoes, preferably San Marzano</li>
-<li>3 tablespoons heavy cream or creme fraiche</li></ul></div>
+      <div class="ing-group"><h4>Soup</h4><ul class="ingredients"><li data-ing="extra-virgin olive oil">3 tablespoons extra-virgin olive oil, plus more if needed</li>
+<li data-ing="yellow onion">1/2 small yellow onion, finely diced</li>
+<li data-ing="kosher salt">Kosher salt</li>
+<li data-ing="aleppo pepper or red pepper flakes">1/4 teaspoon Aleppo pepper or red pepper flakes (optional)</li>
+<li data-ing="canned whole plum tomato">1 can (28 oz) whole peeled plum tomatoes, preferably San Marzano</li>
+<li data-ing="heavy cream / creme fraiche">3 tablespoons heavy cream or creme fraiche</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1397,6 +1437,7 @@
     <h3>Hearty Beef Stew With Red Onions and Ale</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="soups-stews-hearty-beef-stew-with-red-onions-and-ale" data-title="Hearty Beef Stew With Red Onions and Ale" title="Not yet made (author only)" aria-label="Not yet made: Hearty Beef Stew With Red Onions and Ale"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Hearty Beef Stew With Red Onions and Ale">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Hearty Beef Stew With Red Onions and Ale">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Hearty Beef Stew With Red Onions and Ale">🖨 Print</button>
       <a class="link-btn" href="?recipe=soups-stews-hearty-beef-stew-with-red-onions-and-ale" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Hearty Beef Stew With Red Onions and Ale in new tab">🔗 Link</a>
@@ -1406,26 +1447,26 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Beef</h4><ul class="ingredients"><li>2 pounds boneless beef stew meat, cut into 1-inch chunks</li>
-<li>Kosher salt and black pepper</li>
-<li>1–2 tablespoons all-purpose flour</li>
-<li>2 tablespoons unsalted butter</li>
-<li>1 tablespoon olive oil, plus more as needed</li></ul></div>
-<div class="ing-group"><h4>Onions</h4><ul class="ingredients"><li>3 medium red onions (2 sliced into half-moons; 1 cut into ½-inch wedges for Step 6)</li></ul></div>
-<div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li>4 garlic cloves, thinly sliced</li>
-<li>1 tablespoon tomato paste</li>
-<li>1 teaspoon ground coriander</li>
-<li>¼ teaspoon ground allspice</li></ul></div>
-<div class="ing-group"><h4>Liquid</h4><ul class="ingredients"><li>2 cups beef or chicken stock (preferably homemade)</li>
-<li>1 cup ale or beer (nonalcoholic is fine)</li>
-<li>1 cup water</li>
-<li>1 rosemary sprig</li></ul></div>
-<div class="ing-group"><h4>Vegetables</h4><ul class="ingredients"><li>3 carrots, sliced</li>
+      <div class="ing-group"><h4>Beef</h4><ul class="ingredients"><li data-ing="boneless beef stew meat">2 pounds boneless beef stew meat, cut into 1-inch chunks</li>
+<li data-ing="kosher salt / black pepper">Kosher salt and black pepper</li>
+<li data-ing="all-purpose flour">1–2 tablespoons all-purpose flour</li>
+<li data-ing="unsalted butter">2 tablespoons unsalted butter</li>
+<li data-ing="olive oil">1 tablespoon olive oil, plus more as needed</li></ul></div>
+<div class="ing-group"><h4>Onions</h4><ul class="ingredients"><li data-ing="red onion">3 medium red onions (2 sliced into half-moons; 1 cut into ½-inch wedges for Step 6)</li></ul></div>
+<div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li data-ing="garlic">4 garlic cloves, thinly sliced</li>
+<li data-ing="tomato paste">1 tablespoon tomato paste</li>
+<li data-ing="ground coriander">1 teaspoon ground coriander</li>
+<li data-ing="ground allspice">¼ teaspoon ground allspice</li></ul></div>
+<div class="ing-group"><h4>Liquid</h4><ul class="ingredients"><li data-ing="beef broth / chicken broth">2 cups beef or chicken stock (preferably homemade)</li>
+<li data-ing="ale / beer">1 cup ale or beer (nonalcoholic is fine)</li>
+<li data-ing="water">1 cup water</li>
+<li data-ing="rosemary">1 rosemary sprig</li></ul></div>
+<div class="ing-group"><h4>Vegetables</h4><ul class="ingredients"><li data-ing="carrot">3 carrots, sliced</li>
 <li>Red onion wedges (from Step 2 prep)</li></ul></div>
-<div class="ing-group"><h4>Finish</h4><ul class="ingredients"><li>1 tablespoon cider vinegar or sherry vinegar, plus more to taste</li></ul></div>
-<div class="ing-group"><h4>Garnish</h4><ul class="ingredients"><li>Chopped fresh chives</li>
-<li>Flaky sea salt</li>
-<li>Freshly ground black pepper</li></ul></div>
+<div class="ing-group"><h4>Finish</h4><ul class="ingredients"><li data-ing="apple cider vinegar / sherry vinegar">1 tablespoon cider vinegar or sherry vinegar, plus more to taste</li></ul></div>
+<div class="ing-group"><h4>Garnish</h4><ul class="ingredients"><li data-ing="chives">Chopped fresh chives</li>
+<li data-ing="flaky sea salt">Flaky sea salt</li>
+<li data-ing="black pepper">Freshly ground black pepper</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1444,6 +1485,7 @@
     <h3>Pumpkin Soup</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="soups-stews-pumpkin-soup" data-title="Pumpkin Soup" title="Not yet made (author only)" aria-label="Not yet made: Pumpkin Soup"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Pumpkin Soup">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Pumpkin Soup">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Pumpkin Soup">🖨 Print</button>
       <a class="link-btn" href="?recipe=soups-stews-pumpkin-soup" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Pumpkin Soup in new tab">🔗 Link</a>
@@ -1453,22 +1495,22 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Bacon</h4><ul class="ingredients"><li>4 slices bacon</li>
-<li>2 tablespoons bacon drippings or butter (as needed)</li></ul></div>
-<div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li>1 medium onion, diced</li>
-<li>1/2 cup shredded carrot (about 1 medium)</li>
-<li>1 clove garlic, minced</li></ul></div>
-<div class="ing-group"><h4>Soup</h4><ul class="ingredients"><li>2 1/2 cups chicken broth</li>
-<li>1 teaspoon brown sugar</li>
-<li>1 bay leaf</li>
-<li>2 sprigs fresh thyme (or 1/4 teaspoon dried thyme)</li>
-<li>1/2 teaspoon salt</li>
-<li>1/4 teaspoon black pepper</li>
-<li>1/8 teaspoon ground nutmeg</li>
-<li>1 (15 oz) can pumpkin puree</li>
-<li>1/2 cup heavy whipping cream, plus extra for garnish</li></ul></div>
-<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li>2 tablespoons chopped fresh parsley, divided</li>
-<li>1/2 cup croutons (optional)</li></ul></div>
+      <div class="ing-group"><h4>Bacon</h4><ul class="ingredients"><li data-ing="bacon">4 slices bacon</li>
+<li data-ing="bacon dripping / butter">2 tablespoons bacon drippings or butter (as needed)</li></ul></div>
+<div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li data-ing="onion">1 medium onion, diced</li>
+<li data-ing="carrot">1/2 cup shredded carrot (about 1 medium)</li>
+<li data-ing="garlic">1 clove garlic, minced</li></ul></div>
+<div class="ing-group"><h4>Soup</h4><ul class="ingredients"><li data-ing="chicken broth">2 1/2 cups chicken broth</li>
+<li data-ing="brown sugar">1 teaspoon brown sugar</li>
+<li data-ing="bay leaf">1 bay leaf</li>
+<li data-ing="thyme">2 sprigs fresh thyme (or 1/4 teaspoon dried thyme)</li>
+<li data-ing="salt">1/2 teaspoon salt</li>
+<li data-ing="black pepper">1/4 teaspoon black pepper</li>
+<li data-ing="ground nutmeg">1/8 teaspoon ground nutmeg</li>
+<li data-ing="pumpkin puree">1 (15 oz) can pumpkin puree</li>
+<li data-ing="heavy cream">1/2 cup heavy whipping cream, plus extra for garnish</li></ul></div>
+<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li data-ing="parsley">2 tablespoons chopped fresh parsley, divided</li>
+<li data-ing="crouton">1/2 cup croutons (optional)</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1486,6 +1528,7 @@
     <h3>Taco Soup</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="soups-stews-taco-soup" data-title="Taco Soup" title="Not yet made (author only)" aria-label="Not yet made: Taco Soup"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Taco Soup">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Taco Soup">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Taco Soup">🖨 Print</button>
       <a class="link-btn" href="?recipe=soups-stews-taco-soup" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Taco Soup in new tab">🔗 Link</a>
@@ -1495,19 +1538,19 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Chicken</h4><ul class="ingredients"><li>1 pound ground chicken</li>
-<li>1/4 cup chopped onion</li>
-<li>Garlic powder to taste</li></ul></div>
-<div class="ing-group"><h4>Canned goods</h4><ul class="ingredients"><li>1 (16-oz) can tomatoes with liquid</li>
-<li>1 (16-oz) can kidney beans with liquid</li>
-<li>1 (17-oz) can corn with liquid</li>
-<li>1 (8-oz) can tomato sauce</li></ul></div>
-<div class="ing-group"><h4>Seasoning</h4><ul class="ingredients"><li>1 package taco seasoning</li></ul></div>
-<div class="ing-group"><h4>To serve (optional)</h4><ul class="ingredients"><li>Avocados</li>
-<li>Grated cheese</li>
-<li>Sour cream</li>
-<li>Taco chips</li>
-<li>Jalapeños</li></ul></div>
+      <div class="ing-group"><h4>Chicken</h4><ul class="ingredients"><li data-ing="ground chicken">1 pound ground chicken</li>
+<li data-ing="onion">1/4 cup chopped onion</li>
+<li data-ing="garlic powder">Garlic powder to taste</li></ul></div>
+<div class="ing-group"><h4>Canned goods</h4><ul class="ingredients"><li data-ing="canned tomato">1 (16-oz) can tomatoes with liquid</li>
+<li data-ing="canned kidney bean">1 (16-oz) can kidney beans with liquid</li>
+<li data-ing="canned corn">1 (17-oz) can corn with liquid</li>
+<li data-ing="tomato sauce">1 (8-oz) can tomato sauce</li></ul></div>
+<div class="ing-group"><h4>Seasoning</h4><ul class="ingredients"><li data-ing="taco seasoning">1 package taco seasoning</li></ul></div>
+<div class="ing-group"><h4>To serve (optional)</h4><ul class="ingredients"><li data-ing="avocado">Avocados</li>
+<li data-ing="cheese">Grated cheese</li>
+<li data-ing="sour cream">Sour cream</li>
+<li data-ing="taco chip">Taco chips</li>
+<li data-ing="jalapeno">Jalapeños</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1524,6 +1567,7 @@
     <h3>Locro de Zapallo (Peruvian Pumpkin Stew)</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="soups-stews-locro-de-zapallo-peruvian-pumpkin-stew" data-title="Locro de Zapallo (Peruvian Pumpkin Stew)" title="Not yet made (author only)" aria-label="Not yet made: Locro de Zapallo (Peruvian Pumpkin Stew)"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Locro de Zapallo (Peruvian Pumpkin Stew)">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Locro de Zapallo (Peruvian Pumpkin Stew)">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Locro de Zapallo (Peruvian Pumpkin Stew)">🖨 Print</button>
       <a class="link-btn" href="?recipe=soups-stews-locro-de-zapallo-peruvian-pumpkin-stew" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Locro de Zapallo (Peruvian Pumpkin Stew) in new tab">🔗 Link</a>
@@ -1533,20 +1577,20 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li>2 tablespoons olive oil</li>
-<li>1 large red onion, diced</li>
-<li>4 garlic cloves, minced</li>
-<li>1 tablespoon fresh oregano, chopped</li>
-<li>1 fresh chili pepper, seeded and minced (optional)</li></ul></div>
-<div class="ing-group"><h4>Vegetables</h4><ul class="ingredients"><li>3 1/2 pounds pumpkin or butternut squash, peeled, seeded, and cut into 1-inch cubes</li>
-<li>2 medium potatoes, peeled and diced</li>
-<li>2 to 3 cups water or vegetable broth</li>
-<li>Salt to taste</li></ul></div>
-<div class="ing-group"><h4>Finish</h4><ul class="ingredients"><li>1 cup frozen peas</li>
-<li>1 cup frozen corn</li>
-<li>1/2 cup heavy cream</li>
-<li>1/2 cup crumbled feta</li></ul></div>
-<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li>Fresh cilantro</li></ul></div>
+      <div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li data-ing="olive oil">2 tablespoons olive oil</li>
+<li data-ing="red onion">1 large red onion, diced</li>
+<li data-ing="garlic">4 garlic cloves, minced</li>
+<li data-ing="oregano">1 tablespoon fresh oregano, chopped</li>
+<li data-ing="chile">1 fresh chili pepper, seeded and minced (optional)</li></ul></div>
+<div class="ing-group"><h4>Vegetables</h4><ul class="ingredients"><li data-ing="pumpkin / butternut squash">3 1/2 pounds pumpkin or butternut squash, peeled, seeded, and cut into 1-inch cubes</li>
+<li data-ing="potato">2 medium potatoes, peeled and diced</li>
+<li data-ing="water / vegetable broth">2 to 3 cups water or vegetable broth</li>
+<li data-ing="salt">Salt to taste</li></ul></div>
+<div class="ing-group"><h4>Finish</h4><ul class="ingredients"><li data-ing="frozen pea">1 cup frozen peas</li>
+<li data-ing="frozen corn">1 cup frozen corn</li>
+<li data-ing="heavy cream">1/2 cup heavy cream</li>
+<li data-ing="crumbled feta cheese">1/2 cup crumbled feta</li></ul></div>
+<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li data-ing="cilantro">Fresh cilantro</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1567,6 +1611,7 @@
     <h3>Creamy Tortellini Soup</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="soups-stews-creamy-tortellini-soup" data-title="Creamy Tortellini Soup" title="Not yet made (author only)" aria-label="Not yet made: Creamy Tortellini Soup"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Creamy Tortellini Soup">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Creamy Tortellini Soup">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Creamy Tortellini Soup">🖨 Print</button>
       <a class="link-btn" href="?recipe=soups-stews-creamy-tortellini-soup" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Creamy Tortellini Soup in new tab">🔗 Link</a>
@@ -1576,24 +1621,24 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Sausage (optional)</h4><ul class="ingredients"><li>1 tablespoon olive oil</li>
-<li>1 pound loose sweet Italian sausage, or links with casings removed</li></ul></div>
-<div class="ing-group"><h4>Soup base</h4><ul class="ingredients"><li>1 medium white or yellow onion, diced</li>
-<li>6 garlic cloves, minced</li>
-<li>1 teaspoon paprika</li>
-<li>1/2 teaspoon dried fennel seeds</li>
-<li>1 1/2 teaspoons salt</li>
-<li>1 1/2 teaspoons black pepper</li>
-<li>Aleppo pepper or red pepper flakes, a pinch</li>
-<li>2 tablespoons tomato paste</li>
-<li>1 (28-oz) can tomato purée</li>
-<li>8 cups (64 oz) vegetable or chicken stock</li>
-<li>1 (9- to 10-oz) package refrigerated or frozen cheese tortellini</li></ul></div>
-<div class="ing-group"><h4>To finish</h4><ul class="ingredients"><li>1 1/4 cups heavy cream</li>
-<li>1 bunch Tuscan (lacinato) kale, leaves stripped and chopped</li>
-<li>1/2 cup roughly chopped fresh basil</li>
-<li>Juice of 1 lemon</li></ul></div>
-<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li>Grated Parmesan</li></ul></div>
+      <div class="ing-group"><h4>Sausage (optional)</h4><ul class="ingredients"><li data-ing="olive oil">1 tablespoon olive oil</li>
+<li data-ing="loose sweet italian sausage">1 pound loose sweet Italian sausage, or links with casings removed</li></ul></div>
+<div class="ing-group"><h4>Soup base</h4><ul class="ingredients"><li data-ing="white onion / yellow onion">1 medium white or yellow onion, diced</li>
+<li data-ing="garlic">6 garlic cloves, minced</li>
+<li data-ing="paprika">1 teaspoon paprika</li>
+<li data-ing="fennel seed">1/2 teaspoon dried fennel seeds</li>
+<li data-ing="salt">1 1/2 teaspoons salt</li>
+<li data-ing="black pepper">1 1/2 teaspoons black pepper</li>
+<li data-ing="aleppo pepper or red pepper flakes">Aleppo pepper or red pepper flakes, a pinch</li>
+<li data-ing="tomato paste">2 tablespoons tomato paste</li>
+<li data-ing="canned tomato puree">1 (28-oz) can tomato purée</li>
+<li data-ing="vegetable broth / chicken broth">8 cups (64 oz) vegetable or chicken stock</li>
+<li data-ing="cheese tortellini / frozen cheese tortellini">1 (9- to 10-oz) package refrigerated or frozen cheese tortellini</li></ul></div>
+<div class="ing-group"><h4>To finish</h4><ul class="ingredients"><li data-ing="heavy cream">1 1/4 cups heavy cream</li>
+<li data-ing="tuscan kale">1 bunch Tuscan (lacinato) kale, leaves stripped and chopped</li>
+<li data-ing="basil">1/2 cup roughly chopped fresh basil</li>
+<li data-ing="lemon juice">Juice of 1 lemon</li></ul></div>
+<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li data-ing="parmesan">Grated Parmesan</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1612,6 +1657,7 @@
     <h3>Dijon and Cognac Beef Stew</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="soups-stews-dijon-and-cognac-beef-stew" data-title="Dijon and Cognac Beef Stew" title="Not yet made (author only)" aria-label="Not yet made: Dijon and Cognac Beef Stew"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Dijon and Cognac Beef Stew">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Dijon and Cognac Beef Stew">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Dijon and Cognac Beef Stew">🖨 Print</button>
       <a class="link-btn" href="?recipe=soups-stews-dijon-and-cognac-beef-stew" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Dijon and Cognac Beef Stew in new tab">🔗 Link</a>
@@ -1621,22 +1667,22 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li>1/4 pound salt pork, diced</li>
-<li>1 large onion, finely diced</li>
-<li>3 shallots, chopped</li>
-<li>2 tablespoons unsalted butter, plus more as needed</li></ul></div>
-<div class="ing-group"><h4>Beef</h4><ul class="ingredients"><li>2 pounds beef chuck, cut into 1-inch cubes</li>
-<li>2 tablespoons all-purpose flour</li>
-<li>Kosher salt and black pepper</li></ul></div>
-<div class="ing-group"><h4>Braising liquid</h4><ul class="ingredients"><li>1/2 cup Cognac</li>
-<li>2 cups beef stock</li>
-<li>1/2 cup Dijon mustard</li>
-<li>1 tablespoon Pommery mustard (or other whole-grain Dijon)</li></ul></div>
-<div class="ing-group"><h4>Add-ins</h4><ul class="ingredients"><li>4 large carrots, peeled and cut into half-moon slices</li>
-<li>2 tablespoons unsalted butter</li>
-<li>1/2 pound mushrooms, stemmed, cleaned, and quartered</li>
+      <div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li data-ing="salt pork">1/4 pound salt pork, diced</li>
+<li data-ing="onion">1 large onion, finely diced</li>
+<li data-ing="shallot">3 shallots, chopped</li>
+<li data-ing="unsalted butter">2 tablespoons unsalted butter, plus more as needed</li></ul></div>
+<div class="ing-group"><h4>Beef</h4><ul class="ingredients"><li data-ing="beef chuck">2 pounds beef chuck, cut into 1-inch cubes</li>
+<li data-ing="all-purpose flour">2 tablespoons all-purpose flour</li>
+<li data-ing="kosher salt / black pepper">Kosher salt and black pepper</li></ul></div>
+<div class="ing-group"><h4>Braising liquid</h4><ul class="ingredients"><li data-ing="cognac">1/2 cup Cognac</li>
+<li data-ing="beef broth">2 cups beef stock</li>
+<li data-ing="dijon mustard">1/2 cup Dijon mustard</li>
+<li data-ing="pommery mustard">1 tablespoon Pommery mustard (or other whole-grain Dijon)</li></ul></div>
+<div class="ing-group"><h4>Add-ins</h4><ul class="ingredients"><li data-ing="carrot">4 large carrots, peeled and cut into half-moon slices</li>
+<li data-ing="unsalted butter">2 tablespoons unsalted butter</li>
+<li data-ing="mushroom">1/2 pound mushrooms, stemmed, cleaned, and quartered</li>
 <li>3 tablespoons Pommery mustard (remaining)</li>
-<li>1/4 cup red wine</li></ul></div>
+<li data-ing="red wine">1/4 cup red wine</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1653,6 +1699,7 @@
     <h3>French Onion Soup</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="soups-stews-french-onion-soup" data-title="French Onion Soup" title="Made it" aria-label="Made: French Onion Soup"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for French Onion Soup">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy French Onion Soup">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print French Onion Soup">🖨 Print</button>
       <a class="link-btn" href="?recipe=soups-stews-french-onion-soup" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open French Onion Soup in new tab">🔗 Link</a>
@@ -1662,18 +1709,18 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Caramelized onions</h4><ul class="ingredients"><li>4 pounds yellow onions, peeled and thinly sliced (about 5 to 6 large)</li>
-<li>3 tablespoons butter</li>
-<li>4 cloves garlic, minced</li>
-<li>3 tablespoons all-purpose flour</li>
-<li>1/2 cup dry white wine</li></ul></div>
-<div class="ing-group"><h4>Soup</h4><ul class="ingredients"><li>6 cups beef stock (or vegetable stock)</li>
-<li>1 teaspoon Worcestershire sauce</li>
-<li>1 bay leaf</li>
-<li>3 sprigs fresh thyme (or 1 teaspoon dried thyme)</li>
-<li>Fine sea salt and freshly cracked black pepper to taste</li></ul></div>
-<div class="ing-group"><h4>Topping</h4><ul class="ingredients"><li>1 baguette, sliced 1 inch thick</li>
-<li>Grated or sliced Gruyere, Asiago, Swiss, Gouda, or Mozzarella cheese (about 1/4 cup shredded per bowl)</li></ul></div>
+      <div class="ing-group"><h4>Caramelized onions</h4><ul class="ingredients"><li data-ing="yellow onion">4 pounds yellow onions, peeled and thinly sliced (about 5 to 6 large)</li>
+<li data-ing="butter">3 tablespoons butter</li>
+<li data-ing="garlic">4 cloves garlic, minced</li>
+<li data-ing="all-purpose flour">3 tablespoons all-purpose flour</li>
+<li data-ing="white wine">1/2 cup dry white wine</li></ul></div>
+<div class="ing-group"><h4>Soup</h4><ul class="ingredients"><li data-ing="beef broth">6 cups beef stock (or vegetable stock)</li>
+<li data-ing="worcestershire sauce">1 teaspoon Worcestershire sauce</li>
+<li data-ing="bay leaf">1 bay leaf</li>
+<li data-ing="thyme">3 sprigs fresh thyme (or 1 teaspoon dried thyme)</li>
+<li data-ing="sea salt / black pepper">Fine sea salt and freshly cracked black pepper to taste</li></ul></div>
+<div class="ing-group"><h4>Topping</h4><ul class="ingredients"><li data-ing="baguette">1 baguette, sliced 1 inch thick</li>
+<li data-ing="gruyere">Grated or sliced Gruyere, Asiago, Swiss, Gouda, or Mozzarella cheese (about 1/4 cup shredded per bowl)</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1692,6 +1739,7 @@
     <h3>Vegetarian Beet Borscht</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="soups-stews-vegetarian-beet-borscht" data-title="Vegetarian Beet Borscht" title="Made it" aria-label="Made: Vegetarian Beet Borscht"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Vegetarian Beet Borscht">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Vegetarian Beet Borscht">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Vegetarian Beet Borscht">🖨 Print</button>
       <a class="link-btn" href="?recipe=soups-stews-vegetarian-beet-borscht" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Vegetarian Beet Borscht in new tab">🔗 Link</a>
@@ -1701,25 +1749,25 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li>2 tablespoons olive oil or butter</li>
-<li>1 medium onion, diced</li>
-<li>6 large garlic cloves, rough chopped</li></ul></div>
-<div class="ing-group"><h4>Vegetables</h4><ul class="ingredients"><li>2 stalks celery, chopped</li>
-<li>1 cup carrots, sliced or diced small</li>
-<li>1 extra large beet, thinly sliced or small diced (about 2 cups)</li>
-<li>2 cups red cabbage, shredded or chopped</li>
-<li>1 cup beet stems and greens, chopped (optional, or add another cup of cabbage)</li></ul></div>
-<div class="ing-group"><h4>Broth and seasonings</h4><ul class="ingredients"><li>4 cups veggie broth</li>
-<li>2 tablespoons tomato paste</li>
-<li>1 teaspoon celery seeds (optional)</li>
-<li>1/4 teaspoon allspice</li>
-<li>A pinch of cayenne pepper, more to taste</li>
-<li>2 bay leaves</li>
-<li>1 to 1 1/2 teaspoons salt, adjusted to the broth</li>
-<li>1/4 to 1/2 teaspoon black pepper</li></ul></div>
-<div class="ing-group"><h4>To finish</h4><ul class="ingredients"><li>1 to 2 tablespoons apple cider vinegar</li></ul></div>
-<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li>1/2 cup chopped fresh dill</li>
-<li>Sour cream, Greek yogurt, or vegan yogurt</li></ul></div>
+      <div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li data-ing="olive oil / butter">2 tablespoons olive oil or butter</li>
+<li data-ing="onion">1 medium onion, diced</li>
+<li data-ing="garlic">6 large garlic cloves, rough chopped</li></ul></div>
+<div class="ing-group"><h4>Vegetables</h4><ul class="ingredients"><li data-ing="celery">2 stalks celery, chopped</li>
+<li data-ing="carrot">1 cup carrots, sliced or diced small</li>
+<li data-ing="beet">1 extra large beet, thinly sliced or small diced (about 2 cups)</li>
+<li data-ing="red cabbage">2 cups red cabbage, shredded or chopped</li>
+<li data-ing="beet greens">1 cup beet stems and greens, chopped (optional, or add another cup of cabbage)</li></ul></div>
+<div class="ing-group"><h4>Broth and seasonings</h4><ul class="ingredients"><li data-ing="vegetable broth">4 cups veggie broth</li>
+<li data-ing="tomato paste">2 tablespoons tomato paste</li>
+<li data-ing="celery seed">1 teaspoon celery seeds (optional)</li>
+<li data-ing="allspice">1/4 teaspoon allspice</li>
+<li data-ing="ground cayenne pepper">A pinch of cayenne pepper, more to taste</li>
+<li data-ing="bay leaf">2 bay leaves</li>
+<li data-ing="salt">1 to 1 1/2 teaspoons salt, adjusted to the broth</li>
+<li data-ing="black pepper">1/4 to 1/2 teaspoon black pepper</li></ul></div>
+<div class="ing-group"><h4>To finish</h4><ul class="ingredients"><li data-ing="apple cider vinegar">1 to 2 tablespoons apple cider vinegar</li></ul></div>
+<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li data-ing="dill">1/2 cup chopped fresh dill</li>
+<li data-ing="sour cream">Sour cream, Greek yogurt, or vegan yogurt</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1739,6 +1787,7 @@
     <h3>Gazpacho</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="soups-stews-gazpacho" data-title="Gazpacho" title="Not yet made (author only)" aria-label="Not yet made: Gazpacho"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Gazpacho">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Gazpacho">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Gazpacho">🖨 Print</button>
       <a class="link-btn" href="?recipe=soups-stews-gazpacho" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Gazpacho in new tab">🔗 Link</a>
@@ -1748,19 +1797,19 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Soup base</h4><ul class="ingredients"><li>3 cloves garlic, mashed</li>
-<li>1 medium onion, peeled and chopped</li>
-<li>5 very ripe tomatoes, peeled and chopped</li>
-<li>Small bunch flat-leaf parsley, chopped fine</li>
-<li>2 tablespoons wine vinegar</li>
-<li>3 tablespoons olive oil</li>
-<li>1/4 teaspoon paprika</li>
-<li>1 cup beef stock or consommé</li>
-<li>Salt and pepper to taste</li></ul></div>
-<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li>1 cucumber, peeled, seeded, and diced</li>
-<li>1 green pepper, finely diced</li>
-<li>1/2 onion, finely diced</li>
-<li>Croutons</li></ul></div>
+      <div class="ing-group"><h4>Soup base</h4><ul class="ingredients"><li data-ing="garlic">3 cloves garlic, mashed</li>
+<li data-ing="onion">1 medium onion, peeled and chopped</li>
+<li data-ing="tomato">5 very ripe tomatoes, peeled and chopped</li>
+<li data-ing="flat-leaf parsley">Small bunch flat-leaf parsley, chopped fine</li>
+<li data-ing="wine vinegar">2 tablespoons wine vinegar</li>
+<li data-ing="olive oil">3 tablespoons olive oil</li>
+<li data-ing="paprika">1/4 teaspoon paprika</li>
+<li data-ing="beef broth / consomme">1 cup beef stock or consommé</li>
+<li data-ing="salt / black pepper">Salt and pepper to taste</li></ul></div>
+<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li data-ing="cucumber">1 cucumber, peeled, seeded, and diced</li>
+<li data-ing="green pepper">1 green pepper, finely diced</li>
+<li data-ing="onion">1/2 onion, finely diced</li>
+<li data-ing="crouton">Croutons</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1776,6 +1825,7 @@
     <h3>Lentil and Orzo Stew With Roasted Eggplant</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="soups-stews-lentil-and-orzo-stew-with-roasted-eggplant" data-title="Lentil and Orzo Stew With Roasted Eggplant" title="Not yet made (author only)" aria-label="Not yet made: Lentil and Orzo Stew With Roasted Eggplant"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Lentil and Orzo Stew With Roasted Eggplant">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Lentil and Orzo Stew With Roasted Eggplant">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Lentil and Orzo Stew With Roasted Eggplant">🖨 Print</button>
       <a class="link-btn" href="?recipe=soups-stews-lentil-and-orzo-stew-with-roasted-eggplant" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Lentil and Orzo Stew With Roasted Eggplant in new tab">🔗 Link</a>
@@ -1785,21 +1835,21 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Roasted eggplant (25-30 minutes ahead)</h4><ul class="ingredients"><li>1 1/2 pounds eggplant (2 small or 1 large), chopped into 1-inch pieces</li>
-<li>1/4 cup olive oil</li>
-<li>1 tablespoon coriander seeds, crushed</li>
-<li>Kosher salt and black pepper</li></ul></div>
-<div class="ing-group"><h4>Stew base</h4><ul class="ingredients"><li>2 tablespoons olive oil</li>
-<li>1 medium carrot, finely chopped</li>
-<li>1 medium yellow onion, finely chopped</li>
-<li>2 celery stalks, finely chopped</li>
-<li>3 garlic cloves, finely chopped</li>
-<li>1 tablespoon tomato paste</li>
-<li>1 cup dried lentils (green, black, or brown)</li>
-<li>5 cups chicken or vegetable stock, or water</li></ul></div>
-<div class="ing-group"><h4>Pasta and finish</h4><ul class="ingredients"><li>1/2 cup orzo or other small pasta (ditalini, stelline, or macaroni)</li>
-<li>Zest and juice of 1 lemon, plus 4 lemon wedges for serving</li></ul></div>
-<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li>1/4 cup shaved ricotta salata or crumbled feta</li></ul></div>
+      <div class="ing-group"><h4>Roasted eggplant (25-30 minutes ahead)</h4><ul class="ingredients"><li data-ing="eggplant">1 1/2 pounds eggplant (2 small or 1 large), chopped into 1-inch pieces</li>
+<li data-ing="olive oil">1/4 cup olive oil</li>
+<li data-ing="coriander seed">1 tablespoon coriander seeds, crushed</li>
+<li data-ing="kosher salt / black pepper">Kosher salt and black pepper</li></ul></div>
+<div class="ing-group"><h4>Stew base</h4><ul class="ingredients"><li data-ing="olive oil">2 tablespoons olive oil</li>
+<li data-ing="carrot">1 medium carrot, finely chopped</li>
+<li data-ing="yellow onion">1 medium yellow onion, finely chopped</li>
+<li data-ing="celery">2 celery stalks, finely chopped</li>
+<li data-ing="garlic">3 garlic cloves, finely chopped</li>
+<li data-ing="tomato paste">1 tablespoon tomato paste</li>
+<li data-ing="dried lentils">1 cup dried lentils (green, black, or brown)</li>
+<li data-ing="chicken broth / vegetable broth">5 cups chicken or vegetable stock, or water</li></ul></div>
+<div class="ing-group"><h4>Pasta and finish</h4><ul class="ingredients"><li data-ing="orzo / pasta">1/2 cup orzo or other small pasta (ditalini, stelline, or macaroni)</li>
+<li data-ing="lemon / lemon juice">Zest and juice of 1 lemon, plus 4 lemon wedges for serving</li></ul></div>
+<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li data-ing="ricotta salata / crumbled feta cheese">1/4 cup shaved ricotta salata or crumbled feta</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1820,6 +1870,7 @@
     <h3>West African Peanut Soup</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="soups-stews-west-african-peanut-soup" data-title="West African Peanut Soup" title="Not yet made (author only)" aria-label="Not yet made: West African Peanut Soup"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for West African Peanut Soup">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy West African Peanut Soup">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print West African Peanut Soup">🖨 Print</button>
       <a class="link-btn" href="?recipe=soups-stews-west-african-peanut-soup" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open West African Peanut Soup in new tab">🔗 Link</a>
@@ -1829,20 +1880,20 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li>1 tablespoon olive oil</li>
-<li>1 large red onion, chopped</li>
-<li>1/2 jalapeno, finely chopped (optional)</li>
-<li>1/2 teaspoon fine sea salt, plus more to taste</li>
-<li>1 tablespoon fresh ginger, grated</li>
-<li>3 garlic cloves, pressed or minced</li></ul></div>
-<div class="ing-group"><h4>Soup base</h4><ul class="ingredients"><li>4 cups vegetable broth</li>
-<li>2 cups water</li>
-<li>1/2 cup creamy peanut butter</li>
-<li>1/4 cup tomato paste</li></ul></div>
-<div class="ing-group"><h4>Greens and finish</h4><ul class="ingredients"><li>1 bunch collard greens or kale, ribs removed, leaves sliced into thin ribbons</li>
-<li>1 to 2 tablespoons hot sauce (such as Sriracha), to taste</li></ul></div>
-<div class="ing-group"><h4>To serve (optional)</h4><ul class="ingredients"><li>Cooked brown rice</li>
-<li>Roasted peanuts, sliced green onion, fresh cilantro</li></ul></div>
+      <div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li data-ing="olive oil">1 tablespoon olive oil</li>
+<li data-ing="red onion">1 large red onion, chopped</li>
+<li data-ing="jalapeno">1/2 jalapeno, finely chopped (optional)</li>
+<li data-ing="sea salt">1/2 teaspoon fine sea salt, plus more to taste</li>
+<li data-ing="ginger root">1 tablespoon fresh ginger, grated</li>
+<li data-ing="garlic">3 garlic cloves, pressed or minced</li></ul></div>
+<div class="ing-group"><h4>Soup base</h4><ul class="ingredients"><li data-ing="vegetable broth">4 cups vegetable broth</li>
+<li data-ing="water">2 cups water</li>
+<li data-ing="creamy peanut butter">1/2 cup creamy peanut butter</li>
+<li data-ing="tomato paste">1/4 cup tomato paste</li></ul></div>
+<div class="ing-group"><h4>Greens and finish</h4><ul class="ingredients"><li data-ing="collard greens / kale">1 bunch collard greens or kale, ribs removed, leaves sliced into thin ribbons</li>
+<li data-ing="hot sauce">1 to 2 tablespoons hot sauce (such as Sriracha), to taste</li></ul></div>
+<div class="ing-group"><h4>To serve (optional)</h4><ul class="ingredients"><li data-ing="brown rice">Cooked brown rice</li>
+<li data-ing="roasted peanut">Roasted peanuts, sliced green onion, fresh cilantro</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1862,6 +1913,7 @@
     <h3>Red Lentil Soup</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="soups-stews-red-lentil-soup" data-title="Red Lentil Soup" title="Not yet made (author only)" aria-label="Not yet made: Red Lentil Soup"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Red Lentil Soup">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Red Lentil Soup">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Red Lentil Soup">🖨 Print</button>
       <a class="link-btn" href="?recipe=soups-stews-red-lentil-soup" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Red Lentil Soup in new tab">🔗 Link</a>
@@ -1871,20 +1923,20 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li>3 tablespoons olive oil, plus more to drizzle</li>
-<li>1 large onion, diced</li>
-<li>4 cloves garlic, minced</li>
-<li>2 tablespoons tomato paste</li>
-<li>1 teaspoon ground cumin</li>
-<li>1/4 teaspoon chili powder or ground cayenne</li></ul></div>
-<div class="ing-group"><h4>Lentils and vegetables</h4><ul class="ingredients"><li>4 cups chicken or vegetable stock</li>
-<li>2 cups water</li>
-<li>1 cup red lentils, rinsed</li>
-<li>1 large carrot, peeled and diced</li></ul></div>
-<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li>Juice of 1 lemon</li>
-<li>Fresh cilantro, chopped</li>
-<li>Olive oil drizzle</li>
-<li>Salt and black pepper</li></ul></div>
+      <div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li data-ing="olive oil">3 tablespoons olive oil, plus more to drizzle</li>
+<li data-ing="onion">1 large onion, diced</li>
+<li data-ing="garlic">4 cloves garlic, minced</li>
+<li data-ing="tomato paste">2 tablespoons tomato paste</li>
+<li data-ing="ground cumin">1 teaspoon ground cumin</li>
+<li data-ing="chili powder / ground cayenne pepper">1/4 teaspoon chili powder or ground cayenne</li></ul></div>
+<div class="ing-group"><h4>Lentils and vegetables</h4><ul class="ingredients"><li data-ing="chicken broth / vegetable broth">4 cups chicken or vegetable stock</li>
+<li data-ing="water">2 cups water</li>
+<li data-ing="red lentils">1 cup red lentils, rinsed</li>
+<li data-ing="carrot">1 large carrot, peeled and diced</li></ul></div>
+<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li data-ing="lemon juice">Juice of 1 lemon</li>
+<li data-ing="cilantro">Fresh cilantro, chopped</li>
+<li data-ing="olive oil">Olive oil drizzle</li>
+<li data-ing="salt / black pepper">Salt and black pepper</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1904,6 +1956,7 @@
     <h3>Spiced Chickpea Stew With Coconut and Turmeric</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="soups-stews-spiced-chickpea-stew-with-coconut-and-turmeric" data-title="Spiced Chickpea Stew With Coconut and Turmeric" title="Not yet made (author only)" aria-label="Not yet made: Spiced Chickpea Stew With Coconut and Turmeric"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Spiced Chickpea Stew With Coconut and Turmeric">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Spiced Chickpea Stew With Coconut and Turmeric">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Spiced Chickpea Stew With Coconut and Turmeric">🖨 Print</button>
       <a class="link-btn" href="?recipe=soups-stews-spiced-chickpea-stew-with-coconut-and-turmeric" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Spiced Chickpea Stew With Coconut and Turmeric in new tab">🔗 Link</a>
@@ -1913,20 +1966,20 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li>1/4 cup olive oil, plus more for serving</li>
-<li>4 garlic cloves, chopped</li>
-<li>1 large yellow onion, chopped</li>
-<li>1 (2-inch) piece ginger, finely chopped</li>
-<li>Kosher salt and black pepper</li></ul></div>
-<div class="ing-group"><h4>Spices and chickpeas</h4><ul class="ingredients"><li>1 1/2 teaspoons ground turmeric, plus more for serving</li>
-<li>1 teaspoon Aleppo pepper or red pepper flakes, plus more for serving</li>
-<li>2 (15 oz) cans chickpeas, drained and rinsed</li></ul></div>
-<div class="ing-group"><h4>Liquid</h4><ul class="ingredients"><li>2 (15 oz) cans full-fat coconut milk</li>
-<li>2 cups vegetable or chicken stock</li></ul></div>
-<div class="ing-group"><h4>Greens</h4><ul class="ingredients"><li>1 bunch Swiss chard, kale, or collard greens, stems removed, torn into bite-size pieces</li></ul></div>
-<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li>1 cup fresh mint leaves</li>
-<li>Yogurt (optional)</li>
-<li>Toasted pita, lavash, or other flatbread (optional)</li></ul></div>
+      <div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li data-ing="olive oil">1/4 cup olive oil, plus more for serving</li>
+<li data-ing="garlic">4 garlic cloves, chopped</li>
+<li data-ing="yellow onion">1 large yellow onion, chopped</li>
+<li data-ing="ginger root">1 (2-inch) piece ginger, finely chopped</li>
+<li data-ing="kosher salt / black pepper">Kosher salt and black pepper</li></ul></div>
+<div class="ing-group"><h4>Spices and chickpeas</h4><ul class="ingredients"><li data-ing="ground turmeric">1 1/2 teaspoons ground turmeric, plus more for serving</li>
+<li data-ing="aleppo pepper or red pepper flakes">1 teaspoon Aleppo pepper or red pepper flakes, plus more for serving</li>
+<li data-ing="canned chickpea">2 (15 oz) cans chickpeas, drained and rinsed</li></ul></div>
+<div class="ing-group"><h4>Liquid</h4><ul class="ingredients"><li data-ing="canned full-fat coconut milk">2 (15 oz) cans full-fat coconut milk</li>
+<li data-ing="vegetable broth / chicken broth">2 cups vegetable or chicken stock</li></ul></div>
+<div class="ing-group"><h4>Greens</h4><ul class="ingredients"><li data-ing="swiss chard">1 bunch Swiss chard, kale, or collard greens, stems removed, torn into bite-size pieces</li></ul></div>
+<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li data-ing="mint">1 cup fresh mint leaves</li>
+<li data-ing="yogurt">Yogurt (optional)</li>
+<li data-ing="pita bread">Toasted pita, lavash, or other flatbread (optional)</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1947,6 +2000,7 @@
     <h3>Spicy Thai Kale Soup</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="soups-stews-spicy-thai-kale-soup" data-title="Spicy Thai Kale Soup" title="Not yet made (author only)" aria-label="Not yet made: Spicy Thai Kale Soup"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Spicy Thai Kale Soup">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Spicy Thai Kale Soup">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Spicy Thai Kale Soup">🖨 Print</button>
       <a class="link-btn" href="?recipe=soups-stews-spicy-thai-kale-soup" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Spicy Thai Kale Soup in new tab">🔗 Link</a>
@@ -1956,21 +2010,21 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li>1 tablespoon olive or coconut oil</li>
-<li>3 garlic cloves, minced</li>
-<li>1 tablespoon fresh ginger, grated</li>
-<li>1 lemongrass stalk, bruised and cut into 2-inch pieces</li></ul></div>
-<div class="ing-group"><h4>Vegetables</h4><ul class="ingredients"><li>8 oz cremini mushrooms, sliced</li>
-<li>1 red bell pepper, diced</li>
-<li>4 cups kale, stems removed, leaves roughly chopped</li></ul></div>
-<div class="ing-group"><h4>Soup</h4><ul class="ingredients"><li>4 cups vegetable broth</li>
-<li>1 can (14 oz) coconut milk</li>
-<li>2 tablespoons red curry paste</li>
-<li>1 to 2 teaspoons hot chili oil, to taste</li>
-<li>Juice of 1 lime</li>
-<li>Salt to taste</li></ul></div>
-<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li>3 green onions, thinly sliced</li>
-<li>1/4 cup fresh cilantro, roughly chopped</li></ul></div>
+      <div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li data-ing="olive oil / coconut oil">1 tablespoon olive or coconut oil</li>
+<li data-ing="garlic">3 garlic cloves, minced</li>
+<li data-ing="ginger root">1 tablespoon fresh ginger, grated</li>
+<li data-ing="lemongrass stalk">1 lemongrass stalk, bruised and cut into 2-inch pieces</li></ul></div>
+<div class="ing-group"><h4>Vegetables</h4><ul class="ingredients"><li data-ing="cremini mushroom">8 oz cremini mushrooms, sliced</li>
+<li data-ing="red bell pepper">1 red bell pepper, diced</li>
+<li data-ing="kale">4 cups kale, stems removed, leaves roughly chopped</li></ul></div>
+<div class="ing-group"><h4>Soup</h4><ul class="ingredients"><li data-ing="vegetable broth">4 cups vegetable broth</li>
+<li data-ing="coconut milk">1 can (14 oz) coconut milk</li>
+<li data-ing="red curry paste">2 tablespoons red curry paste</li>
+<li data-ing="hot chile oil">1 to 2 teaspoons hot chili oil, to taste</li>
+<li data-ing="lime juice">Juice of 1 lime</li>
+<li data-ing="salt">Salt to taste</li></ul></div>
+<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li data-ing="scallion">3 green onions, thinly sliced</li>
+<li data-ing="cilantro">1/4 cup fresh cilantro, roughly chopped</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1987,6 +2041,7 @@
     <h3>Thai-Inspired Chicken Meatball Soup</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="soups-stews-thai-inspired-chicken-meatball-soup" data-title="Thai-Inspired Chicken Meatball Soup" title="Not yet made (author only)" aria-label="Not yet made: Thai-Inspired Chicken Meatball Soup"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Thai-Inspired Chicken Meatball Soup">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Thai-Inspired Chicken Meatball Soup">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Thai-Inspired Chicken Meatball Soup">🖨 Print</button>
       <a class="link-btn" href="?recipe=soups-stews-thai-inspired-chicken-meatball-soup" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Thai-Inspired Chicken Meatball Soup in new tab">🔗 Link</a>
@@ -1996,23 +2051,23 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li>1 (4-inch) piece fresh ginger, peeled</li>
-<li>6 garlic cloves, peeled</li>
-<li>1 jalapeño</li></ul></div>
-<div class="ing-group"><h4>Meatball mix</h4><ul class="ingredients"><li>2 pounds ground chicken</li>
-<li>1 large bunch cilantro, leaves and stems finely chopped (reserve a few whole leaves for serving)</li>
-<li>2 tablespoons fish sauce</li>
-<li>1 teaspoon kosher salt</li></ul></div>
-<div class="ing-group"><h4>For browning</h4><ul class="ingredients"><li>2 tablespoons vegetable or coconut oil, plus more as needed</li></ul></div>
-<div class="ing-group"><h4>Broth</h4><ul class="ingredients"><li>2 cups chicken broth</li>
-<li>1 (14-ounce) can full-fat coconut milk</li>
-<li>1/2 teaspoon granulated sugar</li>
+      <div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li data-ing="ginger root">1 (4-inch) piece fresh ginger, peeled</li>
+<li data-ing="garlic">6 garlic cloves, peeled</li>
+<li data-ing="jalapeno">1 jalapeño</li></ul></div>
+<div class="ing-group"><h4>Meatball mix</h4><ul class="ingredients"><li data-ing="ground chicken">2 pounds ground chicken</li>
+<li data-ing="cilantro">1 large bunch cilantro, leaves and stems finely chopped (reserve a few whole leaves for serving)</li>
+<li data-ing="fish sauce">2 tablespoons fish sauce</li>
+<li data-ing="kosher salt">1 teaspoon kosher salt</li></ul></div>
+<div class="ing-group"><h4>For browning</h4><ul class="ingredients"><li data-ing="vegetable oil / coconut oil">2 tablespoons vegetable or coconut oil, plus more as needed</li></ul></div>
+<div class="ing-group"><h4>Broth</h4><ul class="ingredients"><li data-ing="chicken broth">2 cups chicken broth</li>
+<li data-ing="canned full-fat coconut milk">1 (14-ounce) can full-fat coconut milk</li>
+<li data-ing="sugar">1/2 teaspoon granulated sugar</li>
 <li>1 tablespoon fish sauce (remaining from the 3 tablespoons above)</li></ul></div>
-<div class="ing-group"><h4>To finish</h4><ul class="ingredients"><li>5 ounces baby spinach</li>
-<li>1 tablespoon lime juice</li></ul></div>
-<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li>Steamed white or brown rice</li>
+<div class="ing-group"><h4>To finish</h4><ul class="ingredients"><li data-ing="baby spinach">5 ounces baby spinach</li>
+<li data-ing="lime juice">1 tablespoon lime juice</li></ul></div>
+<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li data-ing="white rice / brown rice">Steamed white or brown rice</li>
 <li>Reserved cilantro leaves</li>
-<li>Lime wedges</li></ul></div>
+<li data-ing="lime">Lime wedges</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -2031,6 +2086,7 @@
     <h3>Tom Kha Gai Soup</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="soups-stews-tom-kha-gai-soup" data-title="Tom Kha Gai Soup" title="Not yet made (author only)" aria-label="Not yet made: Tom Kha Gai Soup"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Tom Kha Gai Soup">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Tom Kha Gai Soup">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Tom Kha Gai Soup">🖨 Print</button>
       <a class="link-btn" href="?recipe=soups-stews-tom-kha-gai-soup" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Tom Kha Gai Soup in new tab">🔗 Link</a>
@@ -2040,23 +2096,23 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li>1 tablespoon neutral oil</li>
-<li>2 shallots, peeled and thinly sliced</li>
-<li>2-inch piece galangal root, sliced</li>
-<li>1 lemongrass stalk, chopped</li>
-<li>5 large kaffir lime leaves</li>
-<li>2 rounded tablespoons red curry paste</li>
-<li>7 cups chicken stock</li></ul></div>
-<div class="ing-group"><h4>Coconut broth</h4><ul class="ingredients"><li>4 boneless skinless chicken breasts, thinly sliced</li>
-<li>2 1/2 cups full-fat coconut milk</li>
-<li>1/3 cup heavy cream (optional)</li>
-<li>2 oz palm sugar (or coconut sugar or brown sugar)</li>
-<li>1 1/2 tablespoons fish sauce</li></ul></div>
-<div class="ing-group"><h4>Mushrooms</h4><ul class="ingredients"><li>1 can (15 oz) rice straw mushrooms, drained (substitute: 8 oz cremini mushrooms, quartered)</li></ul></div>
-<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li>Fresh lime juice, to taste</li>
-<li>Salt, to taste</li>
-<li>Chopped fresh cilantro</li>
-<li>Chili oil (optional)</li></ul></div>
+      <div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li data-ing="neutral oil">1 tablespoon neutral oil</li>
+<li data-ing="shallot">2 shallots, peeled and thinly sliced</li>
+<li data-ing="galangal root">2-inch piece galangal root, sliced</li>
+<li data-ing="lemongrass stalk">1 lemongrass stalk, chopped</li>
+<li data-ing="kaffir lime leaf">5 large kaffir lime leaves</li>
+<li data-ing="red curry paste">2 rounded tablespoons red curry paste</li>
+<li data-ing="chicken broth">7 cups chicken stock</li></ul></div>
+<div class="ing-group"><h4>Coconut broth</h4><ul class="ingredients"><li data-ing="boneless skinless chicken breast">4 boneless skinless chicken breasts, thinly sliced</li>
+<li data-ing="full-fat coconut milk">2 1/2 cups full-fat coconut milk</li>
+<li data-ing="heavy cream">1/3 cup heavy cream (optional)</li>
+<li data-ing="palm sugar">2 oz palm sugar (or coconut sugar or brown sugar)</li>
+<li data-ing="fish sauce">1 1/2 tablespoons fish sauce</li></ul></div>
+<div class="ing-group"><h4>Mushrooms</h4><ul class="ingredients"><li data-ing="canned rice straw mushroom">1 can (15 oz) rice straw mushrooms, drained (substitute: 8 oz cremini mushrooms, quartered)</li></ul></div>
+<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li data-ing="lime juice">Fresh lime juice, to taste</li>
+<li data-ing="salt">Salt, to taste</li>
+<li data-ing="cilantro">Chopped fresh cilantro</li>
+<li data-ing="chile oil">Chili oil (optional)</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -2075,6 +2131,7 @@
     <h3>Spring Hot-and-Sour Soup</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="soups-stews-spring-hot-and-sour-soup" data-title="Spring Hot-and-Sour Soup" title="Not yet made (author only)" aria-label="Not yet made: Spring Hot-and-Sour Soup"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Spring Hot-and-Sour Soup">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Spring Hot-and-Sour Soup">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Spring Hot-and-Sour Soup">🖨 Print</button>
       <a class="link-btn" href="?recipe=soups-stews-spring-hot-and-sour-soup" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Spring Hot-and-Sour Soup in new tab">🔗 Link</a>
@@ -2084,19 +2141,19 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li>1 tablespoon extra-virgin olive oil or vegetable oil</li>
-<li>3 garlic cloves, thinly sliced</li>
-<li>1 inch piece ginger, peeled, finely chopped</li></ul></div>
-<div class="ing-group"><h4>Broth</h4><ul class="ingredients"><li>3 cups water</li>
-<li>2 tablespoons miso, dissolved in 2 tablespoons water</li>
-<li>1 tablespoon soy sauce</li>
-<li>2 teaspoons unseasoned rice vinegar or apple cider vinegar</li>
-<li>1/2 teaspoon toasted sesame oil</li>
-<li>1/2 teaspoon Aleppo pepper or red pepper flakes, plus more for serving</li></ul></div>
-<div class="ing-group"><h4>Add-ins</h4><ul class="ingredients"><li>2 oz shiitake or cremini mushrooms, trimmed, thinly sliced</li>
-<li>1 cup mixed peas (baby, snow, and/or sugar snap -- halved if large)</li>
-<li>1 large egg, lightly beaten -- OR 8 oz silken tofu -- OR 2.5 oz yuba sheets</li>
-<li>Kosher salt</li></ul></div>
+      <div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li data-ing="extra-virgin olive oil / vegetable oil">1 tablespoon extra-virgin olive oil or vegetable oil</li>
+<li data-ing="garlic">3 garlic cloves, thinly sliced</li>
+<li data-ing="ginger root">1 inch piece ginger, peeled, finely chopped</li></ul></div>
+<div class="ing-group"><h4>Broth</h4><ul class="ingredients"><li data-ing="water">3 cups water</li>
+<li data-ing="miso">2 tablespoons miso, dissolved in 2 tablespoons water</li>
+<li data-ing="soy sauce">1 tablespoon soy sauce</li>
+<li data-ing="rice vinegar / apple cider vinegar">2 teaspoons unseasoned rice vinegar or apple cider vinegar</li>
+<li data-ing="toasted sesame oil">1/2 teaspoon toasted sesame oil</li>
+<li data-ing="aleppo pepper or red pepper flakes">1/2 teaspoon Aleppo pepper or red pepper flakes, plus more for serving</li></ul></div>
+<div class="ing-group"><h4>Add-ins</h4><ul class="ingredients"><li data-ing="shiitake mushroom / cremini mushroom">2 oz shiitake or cremini mushrooms, trimmed, thinly sliced</li>
+<li data-ing="pea (any)">1 cup mixed peas (baby, snow, and/or sugar snap -- halved if large)</li>
+<li data-ing="egg">1 large egg, lightly beaten -- OR 8 oz silken tofu -- OR 2.5 oz yuba sheets</li>
+<li data-ing="kosher salt">Kosher salt</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -4096,6 +4153,145 @@
     }
   })();
 
+
+  // ── Shopping checklist (see shopping_list.css). Reads the ingredient lines already on the page. ──
+  // The "Shop" button on each recipe opens a checklist (all unticked). "Copy checked" copies the ticked lines.
+  // https://script.google.com/macros/s/AKfycbzY1Qi--vCFGalcT9QYdBe8HC46HWHGE_8WZ91vuA2fVaYagEQ34nlwjU7ebCuPsv8n/exec / shop-9a779a2e2e26 are replaced from shopping_config.json at build time. With no URL set, only "Copy checked" is offered.
+  (function () {
+    var URL_ = 'https://script.google.com/macros/s/AKfycbzY1Qi--vCFGalcT9QYdBe8HC46HWHGE_8WZ91vuA2fVaYagEQ34nlwjU7ebCuPsv8n/exec', KEY_ = 'shop-9a779a2e2e26';
+    var ENABLED = !!URL_ && URL_.indexOf('__SHOP') !== 0;
+    var CART = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.6 12.2a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 7H6"/></svg>';
+    function visible(el) { return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length); }
+    function collect(art) {
+      var out = [];
+      art.querySelectorAll('.ing-group').forEach(function (g) {
+        if (!visible(g)) return;
+        var h = g.querySelector('h4');
+        var label = h ? h.firstChild && h.firstChild.textContent.trim() : '';
+        g.querySelectorAll('li').forEach(function (li) { out.push({ g: label || '', t: li.textContent.trim(), n: li.getAttribute('data-ing') || '' }); });
+      });
+      return out;
+    }
+    function copyText(text, done) {
+      function fallback() {
+        var ta = document.createElement('textarea'); ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+        document.body.appendChild(ta); ta.select();
+        try { document.execCommand('copy'); done(true); } catch (e) { done(false); }
+        document.body.removeChild(ta);
+      }
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(function () { done(true); }, fallback);
+      else fallback();
+    }
+    function post(payload) {
+      payload.key = KEY_;
+      return fetch(URL_, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(payload) });
+    }
+    function getList() {
+      return fetch(URL_ + '?action=list&key=' + encodeURIComponent(KEY_)).then(function (r) { return r.json(); })
+        .then(function (j) { if (!j.ok) throw new Error(j.error || 'error'); return j.items || []; });
+    }
+    var badge = document.getElementById('shop-list-toggle');
+    function setBadge(n) { if (badge) badge.querySelector('.shop-badge').textContent = n ? ' (' + n + ')' : ''; }
+    function refreshBadge() { if (ENABLED) getList().then(function (l) { setBadge(l.length); }, function () {}); }
+    function build(art, btn) {
+      var items = collect(art);
+      var panel = document.createElement('div');
+      panel.className = 'shop-panel'; panel.setAttribute('role', 'region'); panel.setAttribute('aria-label', 'Shopping checklist');
+      var head = document.createElement('div'); head.className = 'shop-head';
+      head.innerHTML = '<strong>Shopping checklist</strong><span>Tick what you need to buy.</span>';
+      var cols = document.createElement('div'); cols.className = 'shop-cols';
+      var last = null;
+      items.forEach(function (it) {
+        if (it.g !== last) { if (it.g) { var l = document.createElement('div'); l.className = 'shop-group-label'; l.textContent = it.g; cols.appendChild(l); } last = it.g; }
+        var lab = document.createElement('label'); lab.className = 'shop-item';
+        var cb = document.createElement('input'); cb.type = 'checkbox'; cb.checked = false;
+        var sp = document.createElement('span'); sp.textContent = it.t;
+        lab.appendChild(cb); lab.appendChild(sp); cols.appendChild(lab);
+      });
+      var actions = document.createElement('div'); actions.className = 'shop-actions';
+      var copyBtn = document.createElement('button'); copyBtn.type = 'button'; copyBtn.className = 'shop-primary'; copyBtn.textContent = 'Copy checked';
+      var clearBtn = document.createElement('button'); clearBtn.type = 'button'; clearBtn.textContent = 'Untick all';
+      var count = document.createElement('span'); count.className = 'shop-count';
+      var addBtn = null;
+      if (ENABLED) { addBtn = document.createElement('button'); addBtn.type = 'button'; addBtn.className = 'shop-primary'; addBtn.textContent = 'Add to shopping list'; actions.appendChild(addBtn); copyBtn.className = ''; }
+      actions.appendChild(copyBtn); actions.appendChild(clearBtn); actions.appendChild(count);
+      var msg = document.createElement('div'); msg.className = 'shop-msg'; msg.setAttribute('aria-live', 'polite');
+      panel.appendChild(head); panel.appendChild(cols); panel.appendChild(actions); panel.appendChild(msg);
+      function boxes() { return cols.querySelectorAll('input'); }
+      function checked() { var r = []; boxes().forEach(function (c, i) { if (c.checked) r.push(items[i].t); }); return r; }
+      function checkedObjs() { var r = []; boxes().forEach(function (c, i) { if (c.checked) r.push({ item: items[i].t, ingredient: items[i].n, recipe: art.getAttribute('data-title') || '' }); }); return r; }
+      function update() { count.textContent = checked().length + ' of ' + items.length + ' checked'; msg.textContent = ''; }
+      cols.addEventListener('change', update);
+      copyBtn.addEventListener('click', function () {
+        var c = checked();
+        if (!c.length) { msg.textContent = 'Nothing checked yet.'; return; }
+        copyText(c.join('\n'), function (ok) { msg.textContent = ok ? 'Copied ' + c.length + ' item' + (c.length === 1 ? '' : 's') + '.' : 'Could not copy.'; });
+      });
+      if (addBtn) addBtn.addEventListener('click', function () {
+        var c = checkedObjs();
+        if (!c.length) { msg.textContent = 'Nothing checked yet.'; return; }
+        addBtn.disabled = true; msg.textContent = 'Adding...';
+        post({ action: 'add', items: c }).then(function () { return getList(); }).then(function (l) {
+          msg.textContent = 'Sent ' + c.length + ' item' + (c.length === 1 ? '' : 's') + '. The list now has ' + l.length + '.';
+          setBadge(l.length); boxes().forEach(function (x) { x.checked = false; }); count.textContent = '';
+        }, function () { msg.textContent = 'Sent, but could not confirm. Check the list.'; }).then(function () { addBtn.disabled = false; });
+      });
+      clearBtn.addEventListener('click', function () { boxes().forEach(function (c) { c.checked = false; }); update(); });
+      update();
+      return panel;
+    }
+    function openList() {
+      var ov = document.createElement('div'); ov.className = 'shop-overlay';
+      var dlg = document.createElement('div'); dlg.className = 'shop-dialog'; dlg.setAttribute('role', 'dialog'); dlg.setAttribute('aria-label', 'Shopping list');
+      var title = document.createElement('h2'); title.textContent = 'Shopping list';
+      var body = document.createElement('div'); body.className = 'shop-listbody'; body.textContent = 'Loading...';
+      var acts = document.createElement('div'); acts.className = 'shop-actions';
+      var refresh = document.createElement('button'); refresh.type = 'button'; refresh.textContent = 'Refresh';
+      var copy = document.createElement('button'); copy.type = 'button'; copy.textContent = 'Copy list';
+      var clear = document.createElement('button'); clear.type = 'button'; clear.className = 'shop-danger'; clear.textContent = 'Clear list';
+      var close = document.createElement('button'); close.type = 'button'; close.textContent = 'Close';
+      var msg = document.createElement('div'); msg.className = 'shop-msg';
+      [refresh, copy, clear, close].forEach(function (b) { acts.appendChild(b); });
+      dlg.appendChild(title); dlg.appendChild(body); dlg.appendChild(acts); dlg.appendChild(msg); ov.appendChild(dlg); document.body.appendChild(ov);
+      var current = [];
+      function render(l) {
+        current = l; setBadge(l.length); body.textContent = '';
+        if (!l.length) { body.textContent = 'The list is empty.'; return; }
+        l.slice().sort(function (a, b) { return (a.ingredient || a.item).toLowerCase() < (b.ingredient || b.item).toLowerCase() ? -1 : 1; }).forEach(function (it) {
+          var row = document.createElement('div'); row.className = 'shop-row';
+          var t = document.createElement('span'); t.textContent = it.item;
+          var r = document.createElement('small'); r.textContent = it.recipe;
+          row.appendChild(t); row.appendChild(r); body.appendChild(row);
+        });
+      }
+      function load() { body.textContent = 'Loading...'; getList().then(render, function () { body.textContent = 'Could not load the list.'; }); }
+      refresh.addEventListener('click', load);
+      copy.addEventListener('click', function () { copyText(current.map(function (i) { return i.item; }).join('\n'), function (ok) { msg.textContent = ok ? 'Copied ' + current.length + ' items.' : 'Could not copy.'; }); });
+      clear.addEventListener('click', function () {
+        if (!current.length) return;
+        if (!window.confirm('Clear all ' + current.length + ' items? They move to the History tab of the sheet.')) return;
+        post({ action: 'clear' }).then(function () { return getList(); }).then(render, function () { msg.textContent = 'Could not confirm. Refresh.'; });
+      });
+      function shut() { document.body.removeChild(ov); }
+      close.addEventListener('click', shut); ov.addEventListener('click', function (e) { if (e.target === ov) shut(); });
+      load();
+    }
+    if (badge) {
+      if (ENABLED) { badge.style.display = 'flex'; badge.addEventListener('click', openList); refreshBadge(); }
+    }
+    document.querySelectorAll('.shop-btn').forEach(function (btn) {
+      btn.innerHTML = CART + 'Shop';
+      btn.addEventListener('click', function () {
+        var art = btn.closest('.recipe'); if (!art) return;
+        var open = art.querySelector('.shop-panel');
+        if (open) { open.parentNode.removeChild(open); btn.classList.remove('active'); btn.setAttribute('aria-expanded', 'false'); return; }
+        var panel = build(art, btn);
+        var body = art.querySelector('.recipe-body');
+        art.insertBefore(panel, body);
+        btn.classList.add('active'); btn.setAttribute('aria-expanded', 'true');
+      });
+    });
+  })();
 
   // ── Apply filters (favorites — current page only) ─────────────────────
   function applyFilters() {

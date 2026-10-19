@@ -630,6 +630,43 @@
   #made-dialog button[type=submit] { background: #3b2a1a; color: #fff; border-color: #3b2a1a; }
   @media print { .made-btn, #made-modal { display: none !important; } }
 
+/* ── Shopping checklist (see shopping_list_client.js) ── */
+.shop-btn { display: inline-flex; align-items: center; gap: 4px; }
+.shop-btn svg { width: 14px; height: 14px; }
+.shop-btn.active { background: #f3e9d6; border-color: var(--accent2); color: var(--accent); }
+.shop-panel { margin: 12px 0 4px; border: 1px solid var(--accent2); border-radius: 8px; background: #fbf5ea;
+  padding: 14px 16px; font-family: 'Helvetica Neue', Arial, sans-serif; }
+.shop-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.shop-head strong { font-size: 0.95rem; color: var(--accent); }
+.shop-head span { font-size: 0.75rem; color: var(--muted); }
+.shop-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 24px; margin-top: 8px; }
+.shop-group-label { grid-column: 1 / -1; font-size: 0.72rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin-top: 8px; }
+.shop-item { display: flex; gap: 8px; align-items: flex-start; font-size: 0.86rem; padding: 3px 0; cursor: pointer; }
+.shop-item input { margin-top: 3px; accent-color: var(--accent); }
+.shop-actions { display: flex; gap: 8px; align-items: center; margin-top: 12px; flex-wrap: wrap; }
+.shop-actions button { font: 0.8rem 'Helvetica Neue', Arial, sans-serif; border-radius: var(--radius); padding: 6px 12px; cursor: pointer;
+  background: none; color: var(--muted); border: 1px solid var(--border); }
+.shop-actions button:hover { background: var(--border); color: var(--text); }
+.shop-actions button.shop-primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+.shop-actions button.shop-primary:hover { background: #6f360f; }
+.shop-count { font-size: 0.78rem; color: var(--muted); margin-left: auto; }
+.shop-msg { font-size: 0.8rem; color: #2e7d32; margin-top: 8px; min-height: 1em; }
+@media (max-width: 640px) { .shop-cols { grid-template-columns: 1fr; } }
+@media print { .shop-panel, .shop-btn { display: none !important; } }
+
+#shop-list-toggle { display: none; align-items: center; gap: 8px; padding: 7px 14px; font-size: 0.82rem; cursor: pointer;
+  color: var(--nav-text); background: none; border: none; border-bottom: 1px solid #5a3e28; text-align: left; width: 100%; }
+#shop-list-toggle:hover { background: #4e3522; }
+#shop-list-toggle svg { width: 14px; height: 14px; }
+.shop-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.45); display: flex; align-items: center; justify-content: center; z-index: 1000; }
+.shop-dialog { background: #fff; color: #2b2118; border-radius: 8px; padding: 18px 20px; width: min(460px, 92vw); max-height: 84vh; display: flex; flex-direction: column;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.3); font-family: 'Helvetica Neue', Arial, sans-serif; }
+.shop-dialog h2 { font-size: 1rem; margin: 0 0 8px; }
+.shop-listbody { overflow-y: auto; font-size: 0.86rem; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 6px 0; min-height: 60px; }
+.shop-row { display: flex; justify-content: space-between; gap: 12px; padding: 3px 0; }
+.shop-row small { color: var(--muted); text-align: right; font-size: 0.72rem; }
+.shop-danger { color: #a33 !important; }
+
 </style>
 </head>
 <body>
@@ -663,6 +700,7 @@
     <button id="fav-toggle"><span class="star">★</span> Favorites only</button>
     <button id="notmade-toggle"><span class="nm-icon">&#9675;</span> Not yet made</button>
   </div>
+  <button id="shop-list-toggle" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.6 12.2a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 7H6"/></svg>Shopping list<span class="shop-badge"></span></button>
   <div id="made-pending"><span class="made-pend-n"></span><button type="button" class="made-copy">Copy list</button></div>
   <button id="alt-toggle"><span class="alt-icon">&#9650;</span> High Altitude</button>
   <div id="expand-collapse-row">
@@ -1325,6 +1363,7 @@
     <h3>Barbecue Bacon Wedge Salad with Grilled Corn</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="salads-green-salads-barbecue-bacon-wedge-salad-with-grilled-corn" data-title="Barbecue Bacon Wedge Salad with Grilled Corn" title="Made it" aria-label="Made: Barbecue Bacon Wedge Salad with Grilled Corn"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Barbecue Bacon Wedge Salad with Grilled Corn">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Barbecue Bacon Wedge Salad with Grilled Corn">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Barbecue Bacon Wedge Salad with Grilled Corn">🖨 Print</button>
       <a class="link-btn" href="?recipe=salads-green-salads-barbecue-bacon-wedge-salad-with-grilled-corn" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Barbecue Bacon Wedge Salad with Grilled Corn in new tab">🔗 Link</a>
@@ -1335,22 +1374,22 @@
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
       <div class="ing-group"><h4>Pickled red onions (1 hour ahead)</h4><ul class="ingredients"><li>1 batch <a href="preserves.html#quick-pickled-red-onions">Quick Pickled Red Onions</a> (see Pickling section)</li></ul></div>
-<div class="ing-group"><h4>Blue cheese dressing</h4><ul class="ingredients"><li>1/2 cup mayonnaise</li>
-<li>2 tablespoons buttermilk</li>
-<li>1 tablespoon white vinegar</li>
-<li>1/4 teaspoon sugar</li>
-<li>Dash hot sauce</li>
-<li>Salt and pepper</li>
-<li>1/4 cup crumbled blue cheese</li></ul></div>
-<div class="ing-group"><h4>Barbecue bacon</h4><ul class="ingredients"><li>1/4 cup barbecue sauce</li>
-<li>2 tablespoons apple cider vinegar</li>
-<li>1 tablespoon dark brown sugar</li>
-<li>1/2 pound slab bacon, cut into lardons</li></ul></div>
-<div class="ing-group"><h4>Grilled corn</h4><ul class="ingredients"><li>1 ear corn, husked</li>
-<li>1 tablespoon olive oil</li></ul></div>
-<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li>1 head iceberg lettuce, quartered into wedges</li>
-<li>1 cup cherry tomatoes, halved</li>
-<li>Salt and pepper</li></ul></div>
+<div class="ing-group"><h4>Blue cheese dressing</h4><ul class="ingredients"><li data-ing="mayonnaise">1/2 cup mayonnaise</li>
+<li data-ing="buttermilk">2 tablespoons buttermilk</li>
+<li data-ing="white vinegar">1 tablespoon white vinegar</li>
+<li data-ing="sugar">1/4 teaspoon sugar</li>
+<li data-ing="hot sauce">Dash hot sauce</li>
+<li data-ing="salt / black pepper">Salt and pepper</li>
+<li data-ing="blue cheese">1/4 cup crumbled blue cheese</li></ul></div>
+<div class="ing-group"><h4>Barbecue bacon</h4><ul class="ingredients"><li data-ing="barbecue sauce">1/4 cup barbecue sauce</li>
+<li data-ing="apple cider vinegar">2 tablespoons apple cider vinegar</li>
+<li data-ing="dark brown sugar">1 tablespoon dark brown sugar</li>
+<li data-ing="slab bacon">1/2 pound slab bacon, cut into lardons</li></ul></div>
+<div class="ing-group"><h4>Grilled corn</h4><ul class="ingredients"><li data-ing="corn">1 ear corn, husked</li>
+<li data-ing="olive oil">1 tablespoon olive oil</li></ul></div>
+<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li data-ing="iceberg lettuce">1 head iceberg lettuce, quartered into wedges</li>
+<li data-ing="cherry tomato">1 cup cherry tomatoes, halved</li>
+<li data-ing="salt / black pepper">Salt and pepper</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1367,6 +1406,7 @@
     <h3>Boston Lettuce and Endives Salad</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="salads-green-salads-boston-lettuce-and-endives-salad" data-title="Boston Lettuce and Endives Salad" title="Made it" aria-label="Made: Boston Lettuce and Endives Salad"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Boston Lettuce and Endives Salad">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Boston Lettuce and Endives Salad">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Boston Lettuce and Endives Salad">🖨 Print</button>
       <a class="link-btn" href="?recipe=salads-green-salads-boston-lettuce-and-endives-salad" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Boston Lettuce and Endives Salad in new tab">🔗 Link</a>
@@ -1376,18 +1416,18 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Dressing</h4><ul class="ingredients"><li>1/4 cup mayonnaise</li>
-<li>2 tablespoons apple cider vinegar</li>
-<li>1 tablespoon whole-grain mustard</li>
-<li>1 tablespoon maple syrup</li>
-<li>1 small garlic clove, finely chopped</li>
-<li>Salt and pepper to taste</li></ul></div>
-<div class="ing-group"><h4>Salad</h4><ul class="ingredients"><li>4 cups Boston lettuce leaves (about 1 small head), torn</li>
-<li>2 white endives, halved and separated into leaves</li>
-<li>2 red endives, halved and separated into leaves</li>
-<li>1 red apple, cored and thinly sliced</li>
-<li>1/2 cup red grapes, halved</li>
-<li>1/2 cup roasted walnuts</li></ul></div>
+      <div class="ing-group"><h4>Dressing</h4><ul class="ingredients"><li data-ing="mayonnaise">1/4 cup mayonnaise</li>
+<li data-ing="apple cider vinegar">2 tablespoons apple cider vinegar</li>
+<li data-ing="whole-grain mustard">1 tablespoon whole-grain mustard</li>
+<li data-ing="maple syrup">1 tablespoon maple syrup</li>
+<li data-ing="garlic">1 small garlic clove, finely chopped</li>
+<li data-ing="salt / black pepper">Salt and pepper to taste</li></ul></div>
+<div class="ing-group"><h4>Salad</h4><ul class="ingredients"><li data-ing="boston lettuce">4 cups Boston lettuce leaves (about 1 small head), torn</li>
+<li data-ing="white endive">2 white endives, halved and separated into leaves</li>
+<li data-ing="red endive">2 red endives, halved and separated into leaves</li>
+<li data-ing="red apple">1 red apple, cored and thinly sliced</li>
+<li data-ing="red grape">1/2 cup red grapes, halved</li>
+<li data-ing="roasted walnut">1/2 cup roasted walnuts</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1402,6 +1442,7 @@
     <h3>Butter Lettuce and Citrus Salad</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="salads-green-salads-butter-lettuce-and-citrus-salad" data-title="Butter Lettuce and Citrus Salad" title="Not yet made (author only)" aria-label="Not yet made: Butter Lettuce and Citrus Salad"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Butter Lettuce and Citrus Salad">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Butter Lettuce and Citrus Salad">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Butter Lettuce and Citrus Salad">🖨 Print</button>
       <a class="link-btn" href="?recipe=salads-green-salads-butter-lettuce-and-citrus-salad" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Butter Lettuce and Citrus Salad in new tab">🔗 Link</a>
@@ -1411,12 +1452,12 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><ul class="ingredients"><li>1 head butter lettuce</li>
-<li>1 shallot</li>
-<li>Salt &amp; pepper to taste</li>
-<li>1 grapefruit or orange</li>
-<li>2 tablespoons lemon juice</li>
-<li>¼ cup olive oil</li></ul></div>
+      <div class="ing-group"><ul class="ingredients"><li data-ing="butter lettuce">1 head butter lettuce</li>
+<li data-ing="shallot">1 shallot</li>
+<li data-ing="salt / black pepper">Salt &amp; pepper to taste</li>
+<li data-ing="grapefruit / orange">1 grapefruit or orange</li>
+<li data-ing="lemon juice">2 tablespoons lemon juice</li>
+<li data-ing="olive oil">¼ cup olive oil</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1432,6 +1473,7 @@
     <h3>★ Crunchy Romaine Toss</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="salads-green-salads-crunchy-romaine-toss" data-title="Crunchy Romaine Toss" title="Made it" aria-label="Made: Crunchy Romaine Toss"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Crunchy Romaine Toss">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Crunchy Romaine Toss">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Crunchy Romaine Toss">🖨 Print</button>
       <a class="link-btn" href="?recipe=salads-green-salads-crunchy-romaine-toss" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Crunchy Romaine Toss in new tab">🔗 Link</a>
@@ -1441,18 +1483,18 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Sweet &amp; Sour Dressing</h4><ul class="ingredients"><li>1 cup vegetable oil</li>
-<li>1 cup sugar</li>
-<li>1/2 cup white vinegar</li>
-<li>3 teaspoons soy sauce</li>
-<li>Salt and pepper to taste</li></ul></div>
-<div class="ing-group"><h4>Toasted noodle mixture</h4><ul class="ingredients"><li>1 package ramen noodles, uncooked, broken up (discard flavor packet)</li>
-<li>1 cup walnuts, chopped</li>
-<li>2 tablespoons unsalted butter</li>
-<li>2 tablespoons olive oil</li></ul></div>
-<div class="ing-group"><h4>Salad</h4><ul class="ingredients"><li>1 bunch broccoli, coarsely chopped</li>
-<li>1 head romaine lettuce, washed and broken into pieces</li>
-<li>4 green onions, chopped</li></ul></div>
+      <div class="ing-group"><h4>Sweet &amp; Sour Dressing</h4><ul class="ingredients"><li data-ing="vegetable oil">1 cup vegetable oil</li>
+<li data-ing="sugar">1 cup sugar</li>
+<li data-ing="white vinegar">1/2 cup white vinegar</li>
+<li data-ing="soy sauce">3 teaspoons soy sauce</li>
+<li data-ing="salt / black pepper">Salt and pepper to taste</li></ul></div>
+<div class="ing-group"><h4>Toasted noodle mixture</h4><ul class="ingredients"><li data-ing="ramen noodles">1 package ramen noodles, uncooked, broken up (discard flavor packet)</li>
+<li data-ing="walnut">1 cup walnuts, chopped</li>
+<li data-ing="unsalted butter">2 tablespoons unsalted butter</li>
+<li data-ing="olive oil">2 tablespoons olive oil</li></ul></div>
+<div class="ing-group"><h4>Salad</h4><ul class="ingredients"><li data-ing="broccoli">1 bunch broccoli, coarsely chopped</li>
+<li data-ing="romaine lettuce">1 head romaine lettuce, washed and broken into pieces</li>
+<li data-ing="scallion">4 green onions, chopped</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1468,6 +1510,7 @@
     <h3>Joan's on Third Butter Lettuce Salad (Copycat)</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="salads-green-salads-joan-s-on-third-butter-lettuce-salad-copycat" data-title="Joan's on Third Butter Lettuce Salad (Copycat)" title="Made it" aria-label="Made: Joan's on Third Butter Lettuce Salad (Copycat)"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Joan's on Third Butter Lettuce Salad (Copycat)">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Joan's on Third Butter Lettuce Salad (Copycat)">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Joan's on Third Butter Lettuce Salad (Copycat)">🖨 Print</button>
       <a class="link-btn" href="?recipe=salads-green-salads-joan-s-on-third-butter-lettuce-salad-copycat" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Joan's on Third Butter Lettuce Salad (Copycat) in new tab">🔗 Link</a>
@@ -1477,17 +1520,17 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Dressing</h4><ul class="ingredients"><li>¼ cup white wine vinegar (or champagne vinegar)</li>
-<li>1 tablespoon Dijon mustard</li>
-<li>2–3 cloves garlic, minced</li>
-<li>¼ teaspoon lemon juice</li>
-<li>Dried oregano, to taste</li>
-<li>Dried basil, to taste</li>
-<li>9 tablespoons extra virgin olive oil</li>
-<li>Salt and freshly ground black pepper, to taste</li></ul></div>
-<div class="ing-group"><h4>Salad</h4><ul class="ingredients"><li>1–2 large heads butter lettuce, washed, dried, and torn</li>
-<li>½ cup goat cheese, crumbled</li>
-<li>⅓ cup dried cranberries</li></ul></div>
+      <div class="ing-group"><h4>Dressing</h4><ul class="ingredients"><li data-ing="white wine vinegar">¼ cup white wine vinegar (or champagne vinegar)</li>
+<li data-ing="dijon mustard">1 tablespoon Dijon mustard</li>
+<li data-ing="garlic">2–3 cloves garlic, minced</li>
+<li data-ing="lemon juice">¼ teaspoon lemon juice</li>
+<li data-ing="dried oregano">Dried oregano, to taste</li>
+<li data-ing="dried basil">Dried basil, to taste</li>
+<li data-ing="extra-virgin olive oil">9 tablespoons extra virgin olive oil</li>
+<li data-ing="salt / black pepper">Salt and freshly ground black pepper, to taste</li></ul></div>
+<div class="ing-group"><h4>Salad</h4><ul class="ingredients"><li data-ing="butter lettuce">1–2 large heads butter lettuce, washed, dried, and torn</li>
+<li data-ing="goat cheese">½ cup goat cheese, crumbled</li>
+<li data-ing="dried cranberry">⅓ cup dried cranberries</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1505,6 +1548,7 @@
     <h3>Lacinato Kale and Mint Salad with Spicy Peanut Dressing</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="salads-green-salads-lacinato-kale-and-mint-salad-with-spicy-peanut-dressing" data-title="Lacinato Kale and Mint Salad with Spicy Peanut Dressing" title="Not yet made (author only)" aria-label="Not yet made: Lacinato Kale and Mint Salad with Spicy Peanut Dressing"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Lacinato Kale and Mint Salad with Spicy Peanut Dressing">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Lacinato Kale and Mint Salad with Spicy Peanut Dressing">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Lacinato Kale and Mint Salad with Spicy Peanut Dressing">🖨 Print</button>
       <a class="link-btn" href="?recipe=salads-green-salads-lacinato-kale-and-mint-salad-with-spicy-peanut-dressing" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Lacinato Kale and Mint Salad with Spicy Peanut Dressing in new tab">🔗 Link</a>
@@ -1514,18 +1558,18 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Salad</h4><ul class="ingredients"><li>1 large bunch lacinato kale, chopped very small, almost minced</li>
-<li>1 cup fresh mint, minced</li>
-<li>1 cup walnuts, chopped</li></ul></div>
-<div class="ing-group"><h4>Spicy peanut dressing</h4><ul class="ingredients"><li>3 tablespoons smooth natural peanut butter</li>
-<li>3 tablespoons warm water</li>
-<li>3 tablespoons rice wine vinegar</li>
-<li>1 tablespoon pomegranate molasses</li>
-<li>1 tablespoon soy sauce</li>
-<li>1 teaspoon minced fresh garlic</li>
-<li>2 teaspoons peeled and minced fresh ginger</li>
-<li>1 teaspoon sesame oil</li>
-<li>1 teaspoon Aleppo pepper or red pepper flakes</li></ul></div>
+      <div class="ing-group"><h4>Salad</h4><ul class="ingredients"><li data-ing="lacinato kale">1 large bunch lacinato kale, chopped very small, almost minced</li>
+<li data-ing="mint">1 cup fresh mint, minced</li>
+<li data-ing="walnut">1 cup walnuts, chopped</li></ul></div>
+<div class="ing-group"><h4>Spicy peanut dressing</h4><ul class="ingredients"><li data-ing="natural peanut butter">3 tablespoons smooth natural peanut butter</li>
+<li data-ing="water">3 tablespoons warm water</li>
+<li data-ing="rice vinegar">3 tablespoons rice wine vinegar</li>
+<li data-ing="pomegranate molasses">1 tablespoon pomegranate molasses</li>
+<li data-ing="soy sauce">1 tablespoon soy sauce</li>
+<li data-ing="garlic">1 teaspoon minced fresh garlic</li>
+<li data-ing="ginger root">2 teaspoons peeled and minced fresh ginger</li>
+<li data-ing="sesame oil">1 teaspoon sesame oil</li>
+<li data-ing="aleppo pepper or red pepper flakes">1 teaspoon Aleppo pepper or red pepper flakes</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1540,6 +1584,7 @@
     <h3>Nechamie's Poppy Seed Salad</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="salads-green-salads-nechamie-s-poppy-seed-salad" data-title="Nechamie's Poppy Seed Salad" title="Made it" aria-label="Made: Nechamie's Poppy Seed Salad"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Nechamie's Poppy Seed Salad">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Nechamie's Poppy Seed Salad">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Nechamie's Poppy Seed Salad">🖨 Print</button>
       <a class="link-btn" href="?recipe=salads-green-salads-nechamie-s-poppy-seed-salad" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Nechamie's Poppy Seed Salad in new tab">🔗 Link</a>
@@ -1549,23 +1594,23 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Dressing</h4><ul class="ingredients"><li>1 1/3 cups oil</li>
-<li>3/4 cup vinegar</li>
-<li>3/4 cup sugar</li>
-<li>6 heaping tablespoons mayonnaise</li>
-<li>2 cloves garlic</li>
-<li>Prepared mustard (a generous squeeze)</li>
-<li>1 1/2 tablespoons poppy seeds</li>
-<li>Salt to taste</li>
-<li>Pepper to taste</li></ul></div>
-<div class="ing-group"><h4>Salad</h4><ul class="ingredients"><li>Romaine lettuce</li>
-<li>Purple cabbage, shredded</li>
-<li>Mushrooms, sliced</li>
-<li>Radishes, thinly sliced</li>
-<li>Scallions, thinly sliced</li>
-<li>Cherry tomatoes</li>
-<li>Cucumbers, sliced</li>
-<li>Chow mein noodles</li></ul></div>
+      <div class="ing-group"><h4>Dressing</h4><ul class="ingredients"><li data-ing="oil">1 1/3 cups oil</li>
+<li data-ing="vinegar">3/4 cup vinegar</li>
+<li data-ing="sugar">3/4 cup sugar</li>
+<li data-ing="mayonnaise">6 heaping tablespoons mayonnaise</li>
+<li data-ing="garlic">2 cloves garlic</li>
+<li data-ing="prepared mustard">Prepared mustard (a generous squeeze)</li>
+<li data-ing="poppy seed">1 1/2 tablespoons poppy seeds</li>
+<li data-ing="salt">Salt to taste</li>
+<li data-ing="black pepper">Pepper to taste</li></ul></div>
+<div class="ing-group"><h4>Salad</h4><ul class="ingredients"><li data-ing="romaine lettuce">Romaine lettuce</li>
+<li data-ing="purple cabbage">Purple cabbage, shredded</li>
+<li data-ing="mushroom">Mushrooms, sliced</li>
+<li data-ing="radish">Radishes, thinly sliced</li>
+<li data-ing="scallion">Scallions, thinly sliced</li>
+<li data-ing="cherry tomato">Cherry tomatoes</li>
+<li data-ing="cucumber">Cucumbers, sliced</li>
+<li data-ing="chow mein noodles">Chow mein noodles</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1579,6 +1624,7 @@
     <h3>Nechamie's Spinach and Egg Salad</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="salads-green-salads-nechamie-s-spinach-and-egg-salad" data-title="Nechamie's Spinach and Egg Salad" title="Made it" aria-label="Made: Nechamie's Spinach and Egg Salad"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Nechamie's Spinach and Egg Salad">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Nechamie's Spinach and Egg Salad">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Nechamie's Spinach and Egg Salad">🖨 Print</button>
       <a class="link-btn" href="?recipe=salads-green-salads-nechamie-s-spinach-and-egg-salad" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Nechamie's Spinach and Egg Salad in new tab">🔗 Link</a>
@@ -1588,17 +1634,17 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Dressing</h4><ul class="ingredients"><li>2 tablespoons brown sugar</li>
-<li>2 tablespoons vinegar</li>
-<li>1/4 cup oil</li>
-<li>1/2 teaspoon mustard</li>
-<li>2 tablespoons mayonnaise</li>
-<li>1/4 teaspoon salt</li>
-<li>Pepper to taste</li></ul></div>
-<div class="ing-group"><h4>Salad</h4><ul class="ingredients"><li>Spinach</li>
-<li>3 hard-boiled eggs, sliced</li>
-<li>Chow mein noodles to taste</li>
-<li>Scallions, finely chopped</li></ul></div>
+      <div class="ing-group"><h4>Dressing</h4><ul class="ingredients"><li data-ing="brown sugar">2 tablespoons brown sugar</li>
+<li data-ing="vinegar">2 tablespoons vinegar</li>
+<li data-ing="oil">1/4 cup oil</li>
+<li data-ing="mustard">1/2 teaspoon mustard</li>
+<li data-ing="mayonnaise">2 tablespoons mayonnaise</li>
+<li data-ing="salt">1/4 teaspoon salt</li>
+<li data-ing="black pepper">Pepper to taste</li></ul></div>
+<div class="ing-group"><h4>Salad</h4><ul class="ingredients"><li data-ing="spinach">Spinach</li>
+<li data-ing="egg">3 hard-boiled eggs, sliced</li>
+<li data-ing="chow mein noodles">Chow mein noodles to taste</li>
+<li data-ing="scallion">Scallions, finely chopped</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1612,6 +1658,7 @@
     <h3>Nechamie's Summer Salad</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="salads-green-salads-nechamie-s-summer-salad" data-title="Nechamie's Summer Salad" title="Made it" aria-label="Made: Nechamie's Summer Salad"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Nechamie's Summer Salad">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Nechamie's Summer Salad">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Nechamie's Summer Salad">🖨 Print</button>
       <a class="link-btn" href="?recipe=salads-green-salads-nechamie-s-summer-salad" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Nechamie's Summer Salad in new tab">🔗 Link</a>
@@ -1621,21 +1668,21 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Dressing</h4><ul class="ingredients"><li>1 cup vinegar</li>
-<li>3/4 cup sugar</li>
-<li>3/4 cup ketchup</li>
-<li>1/4 cup oil</li>
-<li>2 cloves garlic, crushed</li>
-<li>3/4 teaspoon paprika</li>
-<li>1/4 teaspoon mustard</li>
-<li>1 teaspoon salt</li></ul></div>
-<div class="ing-group"><h4>Salad</h4><ul class="ingredients"><li>1 bag Romaine lettuce</li>
-<li>5–6 mushrooms, sliced</li>
-<li>1 container cherry tomatoes</li>
-<li>3/4 to 1 mango, cubed</li>
-<li>3/4 avocado, cubed</li>
-<li>A handful of salted cashews</li>
-<li>A handful of sunflower seeds</li></ul></div>
+      <div class="ing-group"><h4>Dressing</h4><ul class="ingredients"><li data-ing="vinegar">1 cup vinegar</li>
+<li data-ing="sugar">3/4 cup sugar</li>
+<li data-ing="ketchup">3/4 cup ketchup</li>
+<li data-ing="oil">1/4 cup oil</li>
+<li data-ing="garlic">2 cloves garlic, crushed</li>
+<li data-ing="paprika">3/4 teaspoon paprika</li>
+<li data-ing="mustard">1/4 teaspoon mustard</li>
+<li data-ing="salt">1 teaspoon salt</li></ul></div>
+<div class="ing-group"><h4>Salad</h4><ul class="ingredients"><li data-ing="romaine lettuce">1 bag Romaine lettuce</li>
+<li data-ing="mushroom">5–6 mushrooms, sliced</li>
+<li data-ing="cherry tomato">1 container cherry tomatoes</li>
+<li data-ing="mango">3/4 to 1 mango, cubed</li>
+<li data-ing="avocado">3/4 avocado, cubed</li>
+<li data-ing="salted cashew">A handful of salted cashews</li>
+<li data-ing="sunflower seed">A handful of sunflower seeds</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1649,6 +1696,7 @@
     <h3>Pear, Gorgonzola and Walnut Salad</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="salads-green-salads-pear-gorgonzola-and-walnut-salad" data-title="Pear, Gorgonzola and Walnut Salad" title="Made it" aria-label="Made: Pear, Gorgonzola and Walnut Salad"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Pear, Gorgonzola and Walnut Salad">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Pear, Gorgonzola and Walnut Salad">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Pear, Gorgonzola and Walnut Salad">🖨 Print</button>
       <a class="link-btn" href="?recipe=salads-green-salads-pear-gorgonzola-and-walnut-salad" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Pear, Gorgonzola and Walnut Salad in new tab">🔗 Link</a>
@@ -1658,18 +1706,18 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Dressing</h4><ul class="ingredients"><li>2 tablespoons olive oil</li>
-<li>2 tablespoons fresh lemon juice (from 1 lemon)</li>
-<li>2 teaspoons honey</li>
-<li>1 teaspoon chopped fresh thyme</li>
-<li>1 teaspoon Dijon mustard</li>
-<li>1/2 teaspoon black pepper</li>
-<li>1/4 teaspoon kosher salt</li></ul></div>
-<div class="ing-group"><h4>Salad</h4><ul class="ingredients"><li>4 cups mixed baby lettuces</li></ul></div>
-<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li>1 medium ripe Bosc pear, thinly sliced</li>
-<li>1/4 cup crumbled Gorgonzola cheese</li>
-<li>1/4 cup toasted walnuts, coarsely chopped</li>
-<li>1/4 cup golden raisins</li></ul></div>
+      <div class="ing-group"><h4>Dressing</h4><ul class="ingredients"><li data-ing="olive oil">2 tablespoons olive oil</li>
+<li data-ing="lemon juice">2 tablespoons fresh lemon juice (from 1 lemon)</li>
+<li data-ing="honey">2 teaspoons honey</li>
+<li data-ing="thyme">1 teaspoon chopped fresh thyme</li>
+<li data-ing="dijon mustard">1 teaspoon Dijon mustard</li>
+<li data-ing="black pepper">1/2 teaspoon black pepper</li>
+<li data-ing="kosher salt">1/4 teaspoon kosher salt</li></ul></div>
+<div class="ing-group"><h4>Salad</h4><ul class="ingredients"><li data-ing="mixed baby lettuce">4 cups mixed baby lettuces</li></ul></div>
+<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li data-ing="bosc pear">1 medium ripe Bosc pear, thinly sliced</li>
+<li data-ing="gorgonzola cheese">1/4 cup crumbled Gorgonzola cheese</li>
+<li data-ing="walnut">1/4 cup toasted walnuts, coarsely chopped</li>
+<li data-ing="golden raisin">1/4 cup golden raisins</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1687,6 +1735,7 @@
     <h3>BBQ Grilled Corn, Jalapeño and Peach Quinoa Salad</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="salads-chopped-composed-salads-bbq-grilled-corn-jalape-o-and-peach-quinoa-salad" data-title="BBQ Grilled Corn, Jalapeño and Peach Quinoa Salad" title="Made it" aria-label="Made: BBQ Grilled Corn, Jalapeño and Peach Quinoa Salad"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for BBQ Grilled Corn, Jalapeño and Peach Quinoa Salad">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy BBQ Grilled Corn, Jalapeño and Peach Quinoa Salad">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print BBQ Grilled Corn, Jalapeño and Peach Quinoa Salad">🖨 Print</button>
       <a class="link-btn" href="?recipe=salads-chopped-composed-salads-bbq-grilled-corn-jalape-o-and-peach-quinoa-salad" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open BBQ Grilled Corn, Jalapeño and Peach Quinoa Salad in new tab">🔗 Link</a>
@@ -1696,27 +1745,27 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Quinoa</h4><ul class="ingredients"><li>1 cup uncooked quinoa, rinsed</li></ul></div>
-<div class="ing-group"><h4>Grilling seasoning</h4><ul class="ingredients"><li>2 tablespoons olive oil</li>
-<li>1/2 tablespoon smoked paprika</li>
-<li>1/2 teaspoon chili powder</li>
-<li>1/2 teaspoon garlic powder</li>
-<li>1/2 teaspoon salt</li>
-<li>1/2 teaspoon pepper</li></ul></div>
-<div class="ing-group"><h4>Vegetables to grill</h4><ul class="ingredients"><li>2 ears corn, husked</li>
-<li>2 jalapeños</li></ul></div>
-<div class="ing-group"><h4>BBQ dressing</h4><ul class="ingredients"><li>1/2 cup BBQ sauce</li>
-<li>2 tablespoons Greek yogurt</li>
-<li>2 tablespoons olive oil</li>
-<li>3 tablespoons fresh lime juice</li>
-<li>2 tablespoons minced fresh cilantro</li>
-<li>1/4 teaspoon salt</li>
-<li>1/4 teaspoon pepper</li></ul></div>
-<div class="ing-group"><h4>Salad additions</h4><ul class="ingredients"><li>2 peaches, chopped</li>
-<li>1 cup grape tomatoes, halved or quartered</li>
-<li>3/4 cup sharp white cheddar cheese, cubed</li>
-<li>3 green onions, chopped</li></ul></div>
-<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li>2 tablespoons chopped fresh cilantro</li></ul></div>
+      <div class="ing-group"><h4>Quinoa</h4><ul class="ingredients"><li data-ing="quinoa">1 cup uncooked quinoa, rinsed</li></ul></div>
+<div class="ing-group"><h4>Grilling seasoning</h4><ul class="ingredients"><li data-ing="olive oil">2 tablespoons olive oil</li>
+<li data-ing="smoked paprika">1/2 tablespoon smoked paprika</li>
+<li data-ing="chili powder">1/2 teaspoon chili powder</li>
+<li data-ing="garlic powder">1/2 teaspoon garlic powder</li>
+<li data-ing="salt">1/2 teaspoon salt</li>
+<li data-ing="black pepper">1/2 teaspoon pepper</li></ul></div>
+<div class="ing-group"><h4>Vegetables to grill</h4><ul class="ingredients"><li data-ing="corn">2 ears corn, husked</li>
+<li data-ing="jalapeno">2 jalapeños</li></ul></div>
+<div class="ing-group"><h4>BBQ dressing</h4><ul class="ingredients"><li data-ing="bbq sauce">1/2 cup BBQ sauce</li>
+<li data-ing="greek yogurt">2 tablespoons Greek yogurt</li>
+<li data-ing="olive oil">2 tablespoons olive oil</li>
+<li data-ing="lime juice">3 tablespoons fresh lime juice</li>
+<li data-ing="cilantro">2 tablespoons minced fresh cilantro</li>
+<li data-ing="salt">1/4 teaspoon salt</li>
+<li data-ing="black pepper">1/4 teaspoon pepper</li></ul></div>
+<div class="ing-group"><h4>Salad additions</h4><ul class="ingredients"><li data-ing="peach">2 peaches, chopped</li>
+<li data-ing="grape tomato">1 cup grape tomatoes, halved or quartered</li>
+<li data-ing="sharp cheddar cheese">3/4 cup sharp white cheddar cheese, cubed</li>
+<li data-ing="scallion">3 green onions, chopped</li></ul></div>
+<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li data-ing="cilantro">2 tablespoons chopped fresh cilantro</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1737,6 +1786,7 @@
     <h3>Broccoli Salad</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="salads-chopped-composed-salads-broccoli-salad" data-title="Broccoli Salad" title="Not yet made (author only)" aria-label="Not yet made: Broccoli Salad"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Broccoli Salad">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Broccoli Salad">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Broccoli Salad">🖨 Print</button>
       <a class="link-btn" href="?recipe=salads-chopped-composed-salads-broccoli-salad" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Broccoli Salad in new tab">🔗 Link</a>
@@ -1746,14 +1796,14 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Broccoli</h4><ul class="ingredients"><li>1 1/2 to 2 pounds fresh broccoli (about 4 cups)</li>
-<li>Salt to taste</li></ul></div>
-<div class="ing-group"><h4>Dressing</h4><ul class="ingredients"><li>1 small red onion, cut into 1/2-inch cubes (about 1 cup)</li>
-<li>2 teaspoons Dijon mustard</li>
-<li>3 tablespoons lemon juice</li>
-<li>1/4 cup olive oil</li>
-<li>1/4 cup flat-leaf parsley, finely chopped</li>
-<li>Salt to taste</li></ul></div>
+      <div class="ing-group"><h4>Broccoli</h4><ul class="ingredients"><li data-ing="broccoli">1 1/2 to 2 pounds fresh broccoli (about 4 cups)</li>
+<li data-ing="salt">Salt to taste</li></ul></div>
+<div class="ing-group"><h4>Dressing</h4><ul class="ingredients"><li data-ing="red onion">1 small red onion, cut into 1/2-inch cubes (about 1 cup)</li>
+<li data-ing="dijon mustard">2 teaspoons Dijon mustard</li>
+<li data-ing="lemon juice">3 tablespoons lemon juice</li>
+<li data-ing="olive oil">1/4 cup olive oil</li>
+<li data-ing="flat-leaf parsley">1/4 cup flat-leaf parsley, finely chopped</li>
+<li data-ing="salt">Salt to taste</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1769,6 +1819,7 @@
     <h3>Charred Broccoli and Cauliflower Salad</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="salads-chopped-composed-salads-charred-broccoli-and-cauliflower-salad" data-title="Charred Broccoli and Cauliflower Salad" title="Made it" aria-label="Made: Charred Broccoli and Cauliflower Salad"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Charred Broccoli and Cauliflower Salad">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Charred Broccoli and Cauliflower Salad">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Charred Broccoli and Cauliflower Salad">🖨 Print</button>
       <a class="link-btn" href="?recipe=salads-chopped-composed-salads-charred-broccoli-and-cauliflower-salad" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Charred Broccoli and Cauliflower Salad in new tab">🔗 Link</a>
@@ -1778,22 +1829,22 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Vegetables</h4><ul class="ingredients"><li>1 medium crown broccoli, broken into large florets</li>
-<li>1 medium cauliflower, broken into large florets</li>
-<li>3 tablespoons olive oil</li>
-<li>1 teaspoon kosher salt</li>
-<li>1/2 teaspoon freshly ground black pepper</li></ul></div>
-<div class="ing-group"><h4>Dressing</h4><ul class="ingredients"><li>2/3 cup mayonnaise</li>
-<li>1/3 cup Greek yogurt</li>
-<li>2 tablespoons chopped fresh dill</li>
-<li>2 tablespoons chopped fresh parsley</li>
-<li>Zest and juice of 1 lemon</li>
-<li>Pinch kosher salt</li>
-<li>Pinch freshly ground black pepper</li></ul></div>
-<div class="ing-group"><h4>Salad</h4><ul class="ingredients"><li>1 cup arugula</li>
-<li>1/2 cup dried blueberries, plus extra for garnish</li>
-<li>1/4 cup pickled red onions, plus extra for garnish</li>
-<li>2 tablespoons sunflower seeds, plus extra for garnish</li></ul></div>
+      <div class="ing-group"><h4>Vegetables</h4><ul class="ingredients"><li data-ing="crown broccoli">1 medium crown broccoli, broken into large florets</li>
+<li data-ing="cauliflower">1 medium cauliflower, broken into large florets</li>
+<li data-ing="olive oil">3 tablespoons olive oil</li>
+<li data-ing="kosher salt">1 teaspoon kosher salt</li>
+<li data-ing="black pepper">1/2 teaspoon freshly ground black pepper</li></ul></div>
+<div class="ing-group"><h4>Dressing</h4><ul class="ingredients"><li data-ing="mayonnaise">2/3 cup mayonnaise</li>
+<li data-ing="greek yogurt">1/3 cup Greek yogurt</li>
+<li data-ing="dill">2 tablespoons chopped fresh dill</li>
+<li data-ing="parsley">2 tablespoons chopped fresh parsley</li>
+<li data-ing="lemon / lemon juice">Zest and juice of 1 lemon</li>
+<li data-ing="kosher salt">Pinch kosher salt</li>
+<li data-ing="black pepper">Pinch freshly ground black pepper</li></ul></div>
+<div class="ing-group"><h4>Salad</h4><ul class="ingredients"><li data-ing="arugula">1 cup arugula</li>
+<li data-ing="dried blueberry">1/2 cup dried blueberries, plus extra for garnish</li>
+<li data-ing="pickled red onion">1/4 cup pickled red onions, plus extra for garnish</li>
+<li data-ing="sunflower seed">2 tablespoons sunflower seeds, plus extra for garnish</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1811,6 +1862,7 @@
     <h3>Chickpea Salad with Fresh Herbs and Scallions</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="salads-chopped-composed-salads-chickpea-salad-with-fresh-herbs-and-scallions" data-title="Chickpea Salad with Fresh Herbs and Scallions" title="Not yet made (author only)" aria-label="Not yet made: Chickpea Salad with Fresh Herbs and Scallions"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Chickpea Salad with Fresh Herbs and Scallions">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Chickpea Salad with Fresh Herbs and Scallions">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Chickpea Salad with Fresh Herbs and Scallions">🖨 Print</button>
       <a class="link-btn" href="?recipe=salads-chopped-composed-salads-chickpea-salad-with-fresh-herbs-and-scallions" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Chickpea Salad with Fresh Herbs and Scallions in new tab">🔗 Link</a>
@@ -1820,17 +1872,17 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Dressing</h4><ul class="ingredients"><li>1/2 cup plain full-fat Greek yogurt</li>
-<li>3 tablespoons mayonnaise</li>
-<li>2 tablespoons lemon juice (from 1 lemon)</li>
-<li>1 1/2 teaspoons Dijon mustard</li>
-<li>1 teaspoon kosher salt</li>
-<li>1/2 teaspoon black pepper</li>
-<li>2 tablespoons minced fresh dill, plus more for serving</li>
-<li>2 tablespoons minced fresh parsley, plus more for serving</li></ul></div>
-<div class="ing-group"><h4>Salad</h4><ul class="ingredients"><li>Three 15 oz cans chickpeas, rinsed</li>
-<li>1 cup finely diced celery (about 3 stalks)</li>
-<li>1/2 cup thinly sliced scallions, white and green parts (2 to 3 scallions)</li></ul></div>
+      <div class="ing-group"><h4>Dressing</h4><ul class="ingredients"><li data-ing="full-fat greek yogurt">1/2 cup plain full-fat Greek yogurt</li>
+<li data-ing="mayonnaise">3 tablespoons mayonnaise</li>
+<li data-ing="lemon juice">2 tablespoons lemon juice (from 1 lemon)</li>
+<li data-ing="dijon mustard">1 1/2 teaspoons Dijon mustard</li>
+<li data-ing="kosher salt">1 teaspoon kosher salt</li>
+<li data-ing="black pepper">1/2 teaspoon black pepper</li>
+<li data-ing="dill">2 tablespoons minced fresh dill, plus more for serving</li>
+<li data-ing="parsley">2 tablespoons minced fresh parsley, plus more for serving</li></ul></div>
+<div class="ing-group"><h4>Salad</h4><ul class="ingredients"><li data-ing="canned chickpea">Three 15 oz cans chickpeas, rinsed</li>
+<li data-ing="celery">1 cup finely diced celery (about 3 stalks)</li>
+<li data-ing="scallion">1/2 cup thinly sliced scallions, white and green parts (2 to 3 scallions)</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1845,6 +1897,7 @@
     <h3>Dumpling Tomato Salad with Chili Crisp Vinaigrette</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="salads-chopped-composed-salads-dumpling-tomato-salad-with-chili-crisp-vinaigrette" data-title="Dumpling Tomato Salad with Chili Crisp Vinaigrette" title="Made it" aria-label="Made: Dumpling Tomato Salad with Chili Crisp Vinaigrette"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Dumpling Tomato Salad with Chili Crisp Vinaigrette">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Dumpling Tomato Salad with Chili Crisp Vinaigrette">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Dumpling Tomato Salad with Chili Crisp Vinaigrette">🖨 Print</button>
       <a class="link-btn" href="?recipe=salads-chopped-composed-salads-dumpling-tomato-salad-with-chili-crisp-vinaigrette" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Dumpling Tomato Salad with Chili Crisp Vinaigrette in new tab">🔗 Link</a>
@@ -1854,17 +1907,17 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Tomato salad</h4><ul class="ingredients"><li>2 1/2 pounds ripe tomatoes (any variety), cut into 1- to 2-inch pieces, at room temperature</li>
-<li>1 garlic clove, grated</li>
-<li>1/2 cup fresh basil leaves, torn, divided</li>
-<li>1 teaspoon kosher salt (Diamond Crystal brand preferred)</li>
-<li>Black pepper</li></ul></div>
-<div class="ing-group"><h4>Chili crisp vinaigrette</h4><ul class="ingredients"><li>3 tablespoons chili crisp (or chili oil)</li>
-<li>2 tablespoons rice vinegar</li>
-<li>1 tablespoon soy sauce, or more to taste</li></ul></div>
-<div class="ing-group"><h4>Dumplings</h4><ul class="ingredients"><li>1 pound frozen potsticker dumplings (not thawed)</li>
-<li>1–2 tablespoons neutral oil (canola or vegetable)</li></ul></div>
-<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li>1–2 tablespoons store-bought crispy fried shallots (optional)</li></ul></div>
+      <div class="ing-group"><h4>Tomato salad</h4><ul class="ingredients"><li data-ing="tomato">2 1/2 pounds ripe tomatoes (any variety), cut into 1- to 2-inch pieces, at room temperature</li>
+<li data-ing="garlic">1 garlic clove, grated</li>
+<li data-ing="basil">1/2 cup fresh basil leaves, torn, divided</li>
+<li data-ing="kosher salt">1 teaspoon kosher salt (Diamond Crystal brand preferred)</li>
+<li data-ing="black pepper">Black pepper</li></ul></div>
+<div class="ing-group"><h4>Chili crisp vinaigrette</h4><ul class="ingredients"><li data-ing="chile">3 tablespoons chili crisp (or chili oil)</li>
+<li data-ing="rice vinegar">2 tablespoons rice vinegar</li>
+<li data-ing="soy sauce">1 tablespoon soy sauce, or more to taste</li></ul></div>
+<div class="ing-group"><h4>Dumplings</h4><ul class="ingredients"><li data-ing="frozen potsticker dumpling">1 pound frozen potsticker dumplings (not thawed)</li>
+<li data-ing="neutral oil">1–2 tablespoons neutral oil (canola or vegetable)</li></ul></div>
+<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li data-ing="crispy fried shallot">1–2 tablespoons store-bought crispy fried shallots (optional)</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1880,6 +1933,7 @@
     <h3>Nechamie's Coleslaw Salad</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="salads-chopped-composed-salads-nechamie-s-coleslaw-salad" data-title="Nechamie's Coleslaw Salad" title="Not yet made (author only)" aria-label="Not yet made: Nechamie's Coleslaw Salad"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Nechamie's Coleslaw Salad">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Nechamie's Coleslaw Salad">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Nechamie's Coleslaw Salad">🖨 Print</button>
       <a class="link-btn" href="?recipe=salads-chopped-composed-salads-nechamie-s-coleslaw-salad" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Nechamie's Coleslaw Salad in new tab">🔗 Link</a>
@@ -1889,14 +1943,14 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Dressing</h4><ul class="ingredients"><li>1/4 cup vinegar</li>
-<li>1/4 cup oil</li>
-<li>1/4 cup sugar</li>
-<li>3/4 teaspoon pepper</li>
-<li>1 teaspoon salt</li></ul></div>
-<div class="ing-group"><h4>Salad</h4><ul class="ingredients"><li>1 package coleslaw mix</li>
-<li>Craisins to taste</li>
-<li>Slivered almonds, toasted, to taste</li></ul></div>
+      <div class="ing-group"><h4>Dressing</h4><ul class="ingredients"><li data-ing="vinegar">1/4 cup vinegar</li>
+<li data-ing="oil">1/4 cup oil</li>
+<li data-ing="sugar">1/4 cup sugar</li>
+<li data-ing="black pepper">3/4 teaspoon pepper</li>
+<li data-ing="salt">1 teaspoon salt</li></ul></div>
+<div class="ing-group"><h4>Salad</h4><ul class="ingredients"><li data-ing="coleslaw mix">1 package coleslaw mix</li>
+<li data-ing="dried cranberry">Craisins to taste</li>
+<li data-ing="almond">Slivered almonds, toasted, to taste</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1910,6 +1964,7 @@
     <h3>Nechamie's Popped Rice Salad</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="salads-chopped-composed-salads-nechamie-s-popped-rice-salad" data-title="Nechamie's Popped Rice Salad" title="Not yet made (author only)" aria-label="Not yet made: Nechamie's Popped Rice Salad"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Nechamie's Popped Rice Salad">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Nechamie's Popped Rice Salad">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Nechamie's Popped Rice Salad">🖨 Print</button>
       <a class="link-btn" href="?recipe=salads-chopped-composed-salads-nechamie-s-popped-rice-salad" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Nechamie's Popped Rice Salad in new tab">🔗 Link</a>
@@ -1919,14 +1974,14 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Dressing</h4><ul class="ingredients"><li>1 cup oil</li>
-<li>3/4 cup vinegar</li>
-<li>3/4 cup sugar</li>
-<li>Salt to taste</li></ul></div>
-<div class="ing-group"><h4>Salad</h4><ul class="ingredients"><li>Romaine lettuce</li>
-<li>Cucumbers, sliced</li>
-<li>Avocado, diced</li></ul></div>
-<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li>Jasmine or Basmati rice, popped (see Step 1)</li></ul></div>
+      <div class="ing-group"><h4>Dressing</h4><ul class="ingredients"><li data-ing="oil">1 cup oil</li>
+<li data-ing="vinegar">3/4 cup vinegar</li>
+<li data-ing="sugar">3/4 cup sugar</li>
+<li data-ing="salt">Salt to taste</li></ul></div>
+<div class="ing-group"><h4>Salad</h4><ul class="ingredients"><li data-ing="romaine lettuce">Romaine lettuce</li>
+<li data-ing="cucumber">Cucumbers, sliced</li>
+<li data-ing="avocado">Avocado, diced</li></ul></div>
+<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li data-ing="jasmine or basmati rice">Jasmine or Basmati rice, popped (see Step 1)</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1941,6 +1996,7 @@
     <h3>★ Shaved Brussels Sprouts Salad With Lemon and Pecorino</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="salads-chopped-composed-salads-shaved-brussels-sprouts-salad-with-lemon-and-pecorino" data-title="Shaved Brussels Sprouts Salad With Lemon and Pecorino" title="Made it" aria-label="Made: Shaved Brussels Sprouts Salad With Lemon and Pecorino"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Shaved Brussels Sprouts Salad With Lemon and Pecorino">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Shaved Brussels Sprouts Salad With Lemon and Pecorino">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Shaved Brussels Sprouts Salad With Lemon and Pecorino">🖨 Print</button>
       <a class="link-btn" href="?recipe=salads-chopped-composed-salads-shaved-brussels-sprouts-salad-with-lemon-and-pecorino" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Shaved Brussels Sprouts Salad With Lemon and Pecorino in new tab">🔗 Link</a>
@@ -1950,14 +2006,14 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Almonds</h4><ul class="ingredients"><li>3/4 cup sliced almonds</li></ul></div>
-<div class="ing-group"><h4>Salad</h4><ul class="ingredients"><li>1 pound Brussels sprouts, trimmed and shaved very thin (food processor slicer blade or mandoline)</li>
-<li>2 oz Pecorino Romano, finely grated (about 1/2 cup)</li>
-<li>1/8 cup fresh mint, roughly chopped</li></ul></div>
-<div class="ing-group"><h4>Dressing</h4><ul class="ingredients"><li>1/4 cup fresh lemon juice (Meyer lemon if available)</li>
-<li>2 1/2 tablespoons extra-virgin olive oil</li>
-<li>1/2 teaspoon kosher salt</li>
-<li>Freshly ground black pepper to taste</li></ul></div>
+      <div class="ing-group"><h4>Almonds</h4><ul class="ingredients"><li data-ing="almond">3/4 cup sliced almonds</li></ul></div>
+<div class="ing-group"><h4>Salad</h4><ul class="ingredients"><li data-ing="brussels sprouts">1 pound Brussels sprouts, trimmed and shaved very thin (food processor slicer blade or mandoline)</li>
+<li data-ing="pecorino">2 oz Pecorino Romano, finely grated (about 1/2 cup)</li>
+<li data-ing="mint">1/8 cup fresh mint, roughly chopped</li></ul></div>
+<div class="ing-group"><h4>Dressing</h4><ul class="ingredients"><li data-ing="lemon juice">1/4 cup fresh lemon juice (Meyer lemon if available)</li>
+<li data-ing="extra-virgin olive oil">2 1/2 tablespoons extra-virgin olive oil</li>
+<li data-ing="kosher salt">1/2 teaspoon kosher salt</li>
+<li data-ing="black pepper">Freshly ground black pepper to taste</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1972,6 +2028,7 @@
     <h3>★ Wood Ranch's Peanut Coleslaw</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="salads-chopped-composed-salads-wood-ranch-s-peanut-coleslaw" data-title="Wood Ranch's Peanut Coleslaw" title="Made it" aria-label="Made: Wood Ranch's Peanut Coleslaw"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Wood Ranch's Peanut Coleslaw">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Wood Ranch's Peanut Coleslaw">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Wood Ranch's Peanut Coleslaw">🖨 Print</button>
       <a class="link-btn" href="?recipe=salads-chopped-composed-salads-wood-ranch-s-peanut-coleslaw" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Wood Ranch's Peanut Coleslaw in new tab">🔗 Link</a>
@@ -1981,18 +2038,18 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Dressing</h4><ul class="ingredients"><li>1/3 cup red wine vinegar</li>
-<li>1/3 cup neutral oil (avocado, canola, or light olive oil)</li>
-<li>1 1/2 tablespoons sugar</li>
-<li>1/2 teaspoon seasoning salt</li>
-<li>1/2 teaspoon garlic powder</li>
-<li>1 teaspoon sesame seeds (black or white) (optional)</li></ul></div>
-<div class="ing-group"><h4>Slaw</h4><ul class="ingredients"><li>16 oz green cabbage, shredded (pre-bagged or equivalent)</li>
-<li>1 1/2 cups purple cabbage, chopped</li>
-<li>3/4 cup celery, chopped</li>
-<li>2 green onions, chopped</li>
-<li>1 cup peanuts</li>
-<li>1/4 cup fresh cilantro, chopped (optional)</li></ul></div>
+      <div class="ing-group"><h4>Dressing</h4><ul class="ingredients"><li data-ing="red wine vinegar">1/3 cup red wine vinegar</li>
+<li data-ing="neutral oil">1/3 cup neutral oil (avocado, canola, or light olive oil)</li>
+<li data-ing="sugar">1 1/2 tablespoons sugar</li>
+<li data-ing="seasoning salt">1/2 teaspoon seasoning salt</li>
+<li data-ing="garlic powder">1/2 teaspoon garlic powder</li>
+<li data-ing="sesame seed">1 teaspoon sesame seeds (black or white) (optional)</li></ul></div>
+<div class="ing-group"><h4>Slaw</h4><ul class="ingredients"><li data-ing="green cabbage">16 oz green cabbage, shredded (pre-bagged or equivalent)</li>
+<li data-ing="purple cabbage">1 1/2 cups purple cabbage, chopped</li>
+<li data-ing="celery">3/4 cup celery, chopped</li>
+<li data-ing="scallion">2 green onions, chopped</li>
+<li data-ing="peanut">1 cup peanuts</li>
+<li data-ing="cilantro">1/4 cup fresh cilantro, chopped (optional)</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -2007,6 +2064,7 @@
     <h3>Yellow Mustard Potato Salad</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="salads-chopped-composed-salads-yellow-mustard-potato-salad" data-title="Yellow Mustard Potato Salad" title="Not yet made (author only)" aria-label="Not yet made: Yellow Mustard Potato Salad"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Yellow Mustard Potato Salad">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Yellow Mustard Potato Salad">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Yellow Mustard Potato Salad">🖨 Print</button>
       <a class="link-btn" href="?recipe=salads-chopped-composed-salads-yellow-mustard-potato-salad" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Yellow Mustard Potato Salad in new tab">🔗 Link</a>
@@ -2016,15 +2074,15 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Potatoes</h4><ul class="ingredients"><li>2 1/2 pounds russet potatoes (about 3 medium-large), peeled and cubed</li></ul></div>
-<div class="ing-group"><h4>Dressing</h4><ul class="ingredients"><li>2 ribs celery, finely chopped</li>
-<li>1/2 small yellow onion, finely chopped</li>
-<li>3 tablespoons chopped pimento, drained</li>
-<li>3 tablespoons sweet pickle relish</li>
-<li>1/3 cup mayonnaise</li>
-<li>1/3 cup yellow mustard</li>
-<li>Salt and pepper to taste</li></ul></div>
-<div class="ing-group"><h4>Garnish</h4><ul class="ingredients"><li>2 tablespoons chopped parsley (optional)</li></ul></div>
+      <div class="ing-group"><h4>Potatoes</h4><ul class="ingredients"><li data-ing="russet potato">2 1/2 pounds russet potatoes (about 3 medium-large), peeled and cubed</li></ul></div>
+<div class="ing-group"><h4>Dressing</h4><ul class="ingredients"><li data-ing="celery">2 ribs celery, finely chopped</li>
+<li data-ing="yellow onion">1/2 small yellow onion, finely chopped</li>
+<li data-ing="pimento">3 tablespoons chopped pimento, drained</li>
+<li data-ing="sweet pickle relish">3 tablespoons sweet pickle relish</li>
+<li data-ing="mayonnaise">1/3 cup mayonnaise</li>
+<li data-ing="yellow mustard">1/3 cup yellow mustard</li>
+<li data-ing="salt / black pepper">Salt and pepper to taste</li></ul></div>
+<div class="ing-group"><h4>Garnish</h4><ul class="ingredients"><li data-ing="parsley">2 tablespoons chopped parsley (optional)</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -2041,6 +2099,7 @@
     <h3>Roasted Cauliflower Salad</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="salads-chopped-composed-salads-roasted-cauliflower-salad" data-title="Roasted Cauliflower Salad" title="Not yet made (author only)" aria-label="Not yet made: Roasted Cauliflower Salad"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Roasted Cauliflower Salad">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Roasted Cauliflower Salad">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Roasted Cauliflower Salad">🖨 Print</button>
       <a class="link-btn" href="?recipe=salads-chopped-composed-salads-roasted-cauliflower-salad" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Roasted Cauliflower Salad in new tab">🔗 Link</a>
@@ -2050,17 +2109,17 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Cauliflower</h4><ul class="ingredients"><li>2 heads cauliflower, broken into florets</li>
-<li>2 tablespoons olive oil</li>
-<li>2 teaspoons kosher salt</li>
-<li>1 teaspoon black pepper</li></ul></div>
-<div class="ing-group"><h4>Dressing</h4><ul class="ingredients"><li>1/4 cup pesto</li>
-<li>3 tablespoons champagne vinegar</li></ul></div>
-<div class="ing-group"><h4>Salad</h4><ul class="ingredients"><li>1/2 cup pine nuts</li>
-<li>6 cups mixed baby arugula, spinach, and kale</li>
-<li>1/2 cup Castelvetrano olives, halved</li>
-<li>1/2 cup kalamata olives, halved</li>
-<li>1/2 cup fresh Italian parsley, chopped</li></ul></div>
+      <div class="ing-group"><h4>Cauliflower</h4><ul class="ingredients"><li data-ing="cauliflower">2 heads cauliflower, broken into florets</li>
+<li data-ing="olive oil">2 tablespoons olive oil</li>
+<li data-ing="kosher salt">2 teaspoons kosher salt</li>
+<li data-ing="black pepper">1 teaspoon black pepper</li></ul></div>
+<div class="ing-group"><h4>Dressing</h4><ul class="ingredients"><li data-ing="pesto">1/4 cup pesto</li>
+<li data-ing="champagne vinegar">3 tablespoons champagne vinegar</li></ul></div>
+<div class="ing-group"><h4>Salad</h4><ul class="ingredients"><li data-ing="pine nut">1/2 cup pine nuts</li>
+<li data-ing="mixed baby arugula">6 cups mixed baby arugula, spinach, and kale</li>
+<li data-ing="castelvetrano olive">1/2 cup Castelvetrano olives, halved</li>
+<li data-ing="kalamata olive">1/2 cup kalamata olives, halved</li>
+<li data-ing="italian parsley">1/2 cup fresh Italian parsley, chopped</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -2079,6 +2138,7 @@
     <h3>Dad's Greek Salad</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="salads-chopped-composed-salads-dad-s-greek-salad" data-title="Dad's Greek Salad" title="Not yet made (author only)" aria-label="Not yet made: Dad's Greek Salad"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Dad's Greek Salad">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Dad's Greek Salad">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Dad's Greek Salad">🖨 Print</button>
       <a class="link-btn" href="?recipe=salads-chopped-composed-salads-dad-s-greek-salad" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Dad's Greek Salad in new tab">🔗 Link</a>
@@ -2088,19 +2148,19 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Dressing</h4><ul class="ingredients"><li>6 tablespoons extra-virgin olive oil</li>
-<li>2 tablespoons fresh lemon juice</li>
-<li>1 teaspoon red wine vinegar</li>
-<li>1/2 teaspoon chopped garlic</li>
-<li>1/2 teaspoon dried oregano (or 1 teaspoon fresh)</li>
-<li>1/2 teaspoon dried dill (or 1 teaspoon fresh)</li>
-<li>Salt and freshly ground black pepper</li></ul></div>
-<div class="ing-group"><h4>Salad</h4><ul class="ingredients"><li>3 large plum tomatoes, seeded and coarsely chopped</li>
-<li>3/4 large cucumber, peeled, seeded, and coarsely chopped</li>
-<li>1/2 small red onion, chopped</li>
-<li>1 bell pepper, seeded and coarsely chopped</li>
-<li>1/2 cup pitted black olives (preferably brine-cured), coarsely chopped</li>
-<li>Heaping 1/2 cup crumbled feta cheese</li></ul></div>
+      <div class="ing-group"><h4>Dressing</h4><ul class="ingredients"><li data-ing="extra-virgin olive oil">6 tablespoons extra-virgin olive oil</li>
+<li data-ing="lemon juice">2 tablespoons fresh lemon juice</li>
+<li data-ing="red wine vinegar">1 teaspoon red wine vinegar</li>
+<li data-ing="garlic">1/2 teaspoon chopped garlic</li>
+<li data-ing="oregano">1/2 teaspoon dried oregano (or 1 teaspoon fresh)</li>
+<li data-ing="dill">1/2 teaspoon dried dill (or 1 teaspoon fresh)</li>
+<li data-ing="salt / black pepper">Salt and freshly ground black pepper</li></ul></div>
+<div class="ing-group"><h4>Salad</h4><ul class="ingredients"><li data-ing="plum tomato">3 large plum tomatoes, seeded and coarsely chopped</li>
+<li data-ing="cucumber">3/4 large cucumber, peeled, seeded, and coarsely chopped</li>
+<li data-ing="red onion">1/2 small red onion, chopped</li>
+<li data-ing="bell pepper">1 bell pepper, seeded and coarsely chopped</li>
+<li data-ing="black olive">1/2 cup pitted black olives (preferably brine-cured), coarsely chopped</li>
+<li data-ing="crumbled feta cheese">Heaping 1/2 cup crumbled feta cheese</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -2117,6 +2177,7 @@
     <h3>Moroccan-Style Carrot Salad</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="salads-chopped-composed-salads-moroccan-style-carrot-salad" data-title="Moroccan-Style Carrot Salad" title="Made it" aria-label="Made: Moroccan-Style Carrot Salad"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Moroccan-Style Carrot Salad">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Moroccan-Style Carrot Salad">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Moroccan-Style Carrot Salad">🖨 Print</button>
       <a class="link-btn" href="?recipe=salads-chopped-composed-salads-moroccan-style-carrot-salad" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Moroccan-Style Carrot Salad in new tab">🔗 Link</a>
@@ -2126,18 +2187,18 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Carrots</h4><ul class="ingredients"><li>2 pounds carrots, peeled and cut into 1/4-inch rounds</li>
-<li>Kosher salt</li></ul></div>
-<div class="ing-group"><h4>Dressing</h4><ul class="ingredients"><li>1/2 teaspoon harissa spice (dry spice blend)</li>
-<li>1/2 teaspoon ground cumin</li>
-<li>1/2 teaspoon ground coriander</li>
-<li>1/2 teaspoon sweet paprika</li>
-<li>1 to 2 cloves garlic, minced</li>
-<li>1 to 2 tablespoons fresh lemon juice</li>
-<li>3 tablespoons extra-virgin olive oil</li></ul></div>
-<div class="ing-group"><h4>Finish</h4><ul class="ingredients"><li>1 celery stalk, finely chopped</li>
-<li>1/2 cup fresh cilantro, chopped (mint or parsley can substitute)</li>
-<li>3 tablespoons toasted sesame seeds (optional)</li></ul></div>
+      <div class="ing-group"><h4>Carrots</h4><ul class="ingredients"><li data-ing="carrot">2 pounds carrots, peeled and cut into 1/4-inch rounds</li>
+<li data-ing="kosher salt">Kosher salt</li></ul></div>
+<div class="ing-group"><h4>Dressing</h4><ul class="ingredients"><li data-ing="harissa spice">1/2 teaspoon harissa spice (dry spice blend)</li>
+<li data-ing="ground cumin">1/2 teaspoon ground cumin</li>
+<li data-ing="ground coriander">1/2 teaspoon ground coriander</li>
+<li data-ing="sweet paprika">1/2 teaspoon sweet paprika</li>
+<li data-ing="garlic">1 to 2 cloves garlic, minced</li>
+<li data-ing="lemon juice">1 to 2 tablespoons fresh lemon juice</li>
+<li data-ing="extra-virgin olive oil">3 tablespoons extra-virgin olive oil</li></ul></div>
+<div class="ing-group"><h4>Finish</h4><ul class="ingredients"><li data-ing="celery">1 celery stalk, finely chopped</li>
+<li data-ing="cilantro">1/2 cup fresh cilantro, chopped (mint or parsley can substitute)</li>
+<li data-ing="sesame seed">3 tablespoons toasted sesame seeds (optional)</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -2155,6 +2216,7 @@
     <h3>Parsley Salad</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="salads-chopped-composed-salads-parsley-salad" data-title="Parsley Salad" title="Not yet made (author only)" aria-label="Not yet made: Parsley Salad"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Parsley Salad">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Parsley Salad">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Parsley Salad">🖨 Print</button>
       <a class="link-btn" href="?recipe=salads-chopped-composed-salads-parsley-salad" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Parsley Salad in new tab">🔗 Link</a>
@@ -2164,14 +2226,14 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Dressing</h4><ul class="ingredients"><li>2 tablespoons fresh lemon juice</li>
-<li>2 tablespoons lemon zest</li>
-<li>6 tablespoons walnut oil</li>
-<li>2 teaspoons dark sesame oil</li>
-<li>1 teaspoon honey</li>
-<li>Salt and freshly ground pepper to taste</li></ul></div>
-<div class="ing-group"><h4>Salad</h4><ul class="ingredients"><li>4 oz Italian flat-leaf parsley, leaves only (about 2 quarts loosely packed)</li>
-<li>3 tablespoons toasted sesame seeds</li></ul></div>
+      <div class="ing-group"><h4>Dressing</h4><ul class="ingredients"><li data-ing="lemon juice">2 tablespoons fresh lemon juice</li>
+<li data-ing="lemon">2 tablespoons lemon zest</li>
+<li data-ing="walnut oil">6 tablespoons walnut oil</li>
+<li data-ing="dark sesame oil">2 teaspoons dark sesame oil</li>
+<li data-ing="honey">1 teaspoon honey</li>
+<li data-ing="salt / black pepper">Salt and freshly ground pepper to taste</li></ul></div>
+<div class="ing-group"><h4>Salad</h4><ul class="ingredients"><li data-ing="italian flat-leaf parsley">4 oz Italian flat-leaf parsley, leaves only (about 2 quarts loosely packed)</li>
+<li data-ing="sesame seed">3 tablespoons toasted sesame seeds</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -2190,6 +2252,7 @@
     <h3>★ Indian Slaw</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="salads-chopped-composed-salads-indian-slaw" data-title="Indian Slaw" title="Made it" aria-label="Made: Indian Slaw"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Indian Slaw">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Indian Slaw">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Indian Slaw">🖨 Print</button>
       <a class="link-btn" href="?recipe=salads-chopped-composed-salads-indian-slaw" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Indian Slaw in new tab">🔗 Link</a>
@@ -2199,24 +2262,24 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Dressing (4 hours ahead)</h4><ul class="ingredients"><li>1/2 cup full-fat yogurt</li>
-<li>1/2 cup mayonnaise</li>
-<li>1/2 teaspoon coriander powder</li>
-<li>1/2 teaspoon cumin powder</li>
-<li>1/4 teaspoon Kashmiri chili powder</li>
-<li>1/2 teaspoon coarse black pepper</li>
-<li>1/4 teaspoon mustard powder</li>
-<li>2 1/2 tablespoons lemon juice</li>
-<li>1 teaspoon sugar</li>
-<li>1 tablespoon milk to thin (optional)</li></ul></div>
-<div class="ing-group"><h4>Slaw</h4><ul class="ingredients"><li>1 small green cabbage, thinly sliced</li>
-<li>1/2 large Spanish onion, thinly sliced</li>
-<li>2 large carrots, shredded</li>
-<li>2 large jalapenos, seeded and julienned</li>
-<li>2 1/2 teaspoons kosher salt</li>
-<li>1 tablespoon vegetable oil</li>
-<li>1/2 cup cashews</li>
-<li>Large handful fresh cilantro, roughly chopped</li></ul></div>
+      <div class="ing-group"><h4>Dressing (4 hours ahead)</h4><ul class="ingredients"><li data-ing="full-fat yogurt">1/2 cup full-fat yogurt</li>
+<li data-ing="mayonnaise">1/2 cup mayonnaise</li>
+<li data-ing="ground coriander">1/2 teaspoon coriander powder</li>
+<li data-ing="ground cumin">1/2 teaspoon cumin powder</li>
+<li data-ing="kashmiri chile powder">1/4 teaspoon Kashmiri chili powder</li>
+<li data-ing="coarse black pepper">1/2 teaspoon coarse black pepper</li>
+<li data-ing="ground mustard">1/4 teaspoon mustard powder</li>
+<li data-ing="lemon juice">2 1/2 tablespoons lemon juice</li>
+<li data-ing="sugar">1 teaspoon sugar</li>
+<li data-ing="milk">1 tablespoon milk to thin (optional)</li></ul></div>
+<div class="ing-group"><h4>Slaw</h4><ul class="ingredients"><li data-ing="green cabbage">1 small green cabbage, thinly sliced</li>
+<li data-ing="spanish onion">1/2 large Spanish onion, thinly sliced</li>
+<li data-ing="carrot">2 large carrots, shredded</li>
+<li data-ing="jalapeno">2 large jalapenos, seeded and julienned</li>
+<li data-ing="kosher salt">2 1/2 teaspoons kosher salt</li>
+<li data-ing="vegetable oil">1 tablespoon vegetable oil</li>
+<li data-ing="cashew">1/2 cup cashews</li>
+<li data-ing="cilantro">Large handful fresh cilantro, roughly chopped</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -2235,6 +2298,7 @@
     <h3>Spring Roll Salad with Peanut Dressing</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="salads-chopped-composed-salads-spring-roll-salad-with-peanut-dressing" data-title="Spring Roll Salad with Peanut Dressing" title="Not yet made (author only)" aria-label="Not yet made: Spring Roll Salad with Peanut Dressing"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Spring Roll Salad with Peanut Dressing">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Spring Roll Salad with Peanut Dressing">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Spring Roll Salad with Peanut Dressing">🖨 Print</button>
       <a class="link-btn" href="?recipe=salads-chopped-composed-salads-spring-roll-salad-with-peanut-dressing" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Spring Roll Salad with Peanut Dressing in new tab">🔗 Link</a>
@@ -2244,25 +2308,25 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Peanut dressing</h4><ul class="ingredients"><li>1/4 cup peanut butter</li>
-<li>3 tablespoons soy sauce</li>
-<li>2 tablespoons fresh lime juice</li>
-<li>1 tablespoon toasted sesame oil</li>
-<li>1 tablespoon honey or agave</li>
-<li>1 clove garlic, minced</li>
-<li>1 teaspoon freshly grated ginger</li>
-<li>2–3 tablespoons warm water, as needed</li></ul></div>
-<div class="ing-group"><h4>Salad</h4><ul class="ingredients"><li>4 oz rice vermicelli noodles</li>
-<li>2 cups shredded cabbage (green or purple)</li>
-<li>1 cup shredded carrots</li>
-<li>1 red bell pepper, thinly sliced</li>
-<li>1 cup bean sprouts</li>
-<li>3 scallions, thinly sliced</li>
-<li>1/4 cup fresh basil leaves, torn</li>
-<li>1/4 cup fresh cilantro leaves</li>
-<li>1 tablespoon chopped fresh mint, or to taste</li></ul></div>
-<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li>1/4 cup roasted peanuts, roughly chopped</li>
-<li>Lime wedges</li></ul></div>
+      <div class="ing-group"><h4>Peanut dressing</h4><ul class="ingredients"><li data-ing="peanut butter">1/4 cup peanut butter</li>
+<li data-ing="soy sauce">3 tablespoons soy sauce</li>
+<li data-ing="lime juice">2 tablespoons fresh lime juice</li>
+<li data-ing="toasted sesame oil">1 tablespoon toasted sesame oil</li>
+<li data-ing="honey / agave">1 tablespoon honey or agave</li>
+<li data-ing="garlic">1 clove garlic, minced</li>
+<li data-ing="ginger root">1 teaspoon freshly grated ginger</li>
+<li data-ing="water">2–3 tablespoons warm water, as needed</li></ul></div>
+<div class="ing-group"><h4>Salad</h4><ul class="ingredients"><li data-ing="rice vermicelli noodles">4 oz rice vermicelli noodles</li>
+<li data-ing="cabbage">2 cups shredded cabbage (green or purple)</li>
+<li data-ing="carrot">1 cup shredded carrots</li>
+<li data-ing="red bell pepper">1 red bell pepper, thinly sliced</li>
+<li data-ing="bean sprouts">1 cup bean sprouts</li>
+<li data-ing="scallion">3 scallions, thinly sliced</li>
+<li data-ing="basil">1/4 cup fresh basil leaves, torn</li>
+<li data-ing="cilantro">1/4 cup fresh cilantro leaves</li>
+<li data-ing="mint">1 tablespoon chopped fresh mint, or to taste</li></ul></div>
+<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li data-ing="roasted peanut">1/4 cup roasted peanuts, roughly chopped</li>
+<li data-ing="lime">Lime wedges</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -2282,6 +2346,7 @@
     <h3>Chilled Cucumber Salad (Din Tai Fung Style)</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="salads-chopped-composed-salads-chilled-cucumber-salad-din-tai-fung-style" data-title="Chilled Cucumber Salad (Din Tai Fung Style)" title="Made it" aria-label="Made: Chilled Cucumber Salad (Din Tai Fung Style)"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Chilled Cucumber Salad (Din Tai Fung Style)">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Chilled Cucumber Salad (Din Tai Fung Style)">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Chilled Cucumber Salad (Din Tai Fung Style)">🖨 Print</button>
       <a class="link-btn" href="?recipe=salads-chopped-composed-salads-chilled-cucumber-salad-din-tai-fung-style" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Chilled Cucumber Salad (Din Tai Fung Style) in new tab">🔗 Link</a>
@@ -2291,15 +2356,15 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Cucumbers</h4><ul class="ingredients"><li>5 Persian cucumbers, cut into 1/2-inch thick rounds</li>
-<li>1 1/2 tablespoons kosher salt</li></ul></div>
-<div class="ing-group"><h4>Marinade</h4><ul class="ingredients"><li>3 tablespoons rice vinegar</li>
-<li>2 tablespoons mirin</li>
-<li>2 tablespoons honey</li>
-<li>2 teaspoons canola oil</li>
-<li>2 teaspoons sesame oil</li>
-<li>1/2 teaspoon chili garlic sauce</li>
-<li>1/2 to 3/4 teaspoon salt</li></ul></div>
+      <div class="ing-group"><h4>Cucumbers</h4><ul class="ingredients"><li data-ing="persian cucumber">5 Persian cucumbers, cut into 1/2-inch thick rounds</li>
+<li data-ing="kosher salt">1 1/2 tablespoons kosher salt</li></ul></div>
+<div class="ing-group"><h4>Marinade</h4><ul class="ingredients"><li data-ing="rice vinegar">3 tablespoons rice vinegar</li>
+<li data-ing="mirin">2 tablespoons mirin</li>
+<li data-ing="honey">2 tablespoons honey</li>
+<li data-ing="canola oil">2 teaspoons canola oil</li>
+<li data-ing="sesame oil">2 teaspoons sesame oil</li>
+<li data-ing="chile garlic sauce">1/2 teaspoon chili garlic sauce</li>
+<li data-ing="salt">1/2 to 3/4 teaspoon salt</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -2315,6 +2380,7 @@
     <h3>★ Cucumber Salad with Sesame and Rice Vinegar</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="salads-chopped-composed-salads-cucumber-salad-with-sesame-and-rice-vinegar" data-title="Cucumber Salad with Sesame and Rice Vinegar" title="Made it" aria-label="Made: Cucumber Salad with Sesame and Rice Vinegar"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Cucumber Salad with Sesame and Rice Vinegar">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Cucumber Salad with Sesame and Rice Vinegar">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Cucumber Salad with Sesame and Rice Vinegar">🖨 Print</button>
       <a class="link-btn" href="?recipe=salads-chopped-composed-salads-cucumber-salad-with-sesame-and-rice-vinegar" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Cucumber Salad with Sesame and Rice Vinegar in new tab">🔗 Link</a>
@@ -2324,16 +2390,16 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Cucumbers</h4><ul class="ingredients"><li>2 Persian cucumbers (about 1 pound), seeded and cut into thick wedges</li>
-<li>1 1/2 teaspoons kosher salt (Diamond brand; use 3/4 teaspoon if using another brand)</li></ul></div>
-<div class="ing-group"><h4>Dressing</h4><ul class="ingredients"><li>3 tablespoons unseasoned rice vinegar</li>
-<li>1 tablespoon toasted sesame oil</li>
-<li>3 tablespoons light soy sauce</li>
-<li>1 1/2 teaspoons chili oil</li>
-<li>3/4 teaspoon sugar</li>
-<li>Ground black or white pepper to taste</li></ul></div>
-<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li>Chili oil or chili crisp to taste, or Aleppo pepper or red pepper flakes</li>
-<li>Toasted sesame seeds</li></ul></div>
+      <div class="ing-group"><h4>Cucumbers</h4><ul class="ingredients"><li data-ing="persian cucumber">2 Persian cucumbers (about 1 pound), seeded and cut into thick wedges</li>
+<li data-ing="kosher salt">1 1/2 teaspoons kosher salt (Diamond brand; use 3/4 teaspoon if using another brand)</li></ul></div>
+<div class="ing-group"><h4>Dressing</h4><ul class="ingredients"><li data-ing="rice vinegar">3 tablespoons unseasoned rice vinegar</li>
+<li data-ing="toasted sesame oil">1 tablespoon toasted sesame oil</li>
+<li data-ing="light soy sauce">3 tablespoons light soy sauce</li>
+<li data-ing="chile oil">1 1/2 teaspoons chili oil</li>
+<li data-ing="sugar">3/4 teaspoon sugar</li>
+<li data-ing="black pepper / white pepper">Ground black or white pepper to taste</li></ul></div>
+<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li data-ing="chile oil / chile">Chili oil or chili crisp to taste, or Aleppo pepper or red pepper flakes</li>
+<li data-ing="sesame seed">Toasted sesame seeds</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -2355,6 +2421,7 @@
     <h3>Chuck Wagon Barbecued Pasta Salad</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="salads-pasta-salads-chuck-wagon-barbecued-pasta-salad" data-title="Chuck Wagon Barbecued Pasta Salad" title="Not yet made (author only)" aria-label="Not yet made: Chuck Wagon Barbecued Pasta Salad"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Chuck Wagon Barbecued Pasta Salad">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Chuck Wagon Barbecued Pasta Salad">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Chuck Wagon Barbecued Pasta Salad">🖨 Print</button>
       <a class="link-btn" href="?recipe=salads-pasta-salads-chuck-wagon-barbecued-pasta-salad" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Chuck Wagon Barbecued Pasta Salad in new tab">🔗 Link</a>
@@ -2364,20 +2431,20 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Pasta</h4><ul class="ingredients"><li>4 oz wagon wheel pasta</li></ul></div>
-<div class="ing-group"><h4>Salad</h4><ul class="ingredients"><li>1 (15-oz) can garbanzo beans, rinsed and drained</li>
-<li>1/3 cup chopped green sweet pepper</li>
-<li>1/3 cup chopped red sweet pepper</li>
-<li>8 oz smoked turkey breast, cubed</li>
-<li>4 oz mozzarella, cubed</li>
-<li>4 oz cheddar, cubed</li>
-<li>1 small red onion, thinly sliced into rings</li>
-<li>3 tablespoons sliced pitted ripe olives</li></ul></div>
-<div class="ing-group"><h4>Dressing</h4><ul class="ingredients"><li>1/3 cup bottled barbecue sauce</li>
-<li>3 tablespoons Dijon-style mustard</li></ul></div>
-<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li>1 head green and/or red-tip leaf lettuce</li>
-<li>1/4 cup toasted pine nuts</li>
-<li>Thin sweet pepper strips (optional)</li></ul></div>
+      <div class="ing-group"><h4>Pasta</h4><ul class="ingredients"><li data-ing="wagon wheel pasta">4 oz wagon wheel pasta</li></ul></div>
+<div class="ing-group"><h4>Salad</h4><ul class="ingredients"><li data-ing="canned chickpea">1 (15-oz) can garbanzo beans, rinsed and drained</li>
+<li data-ing="green sweet pepper">1/3 cup chopped green sweet pepper</li>
+<li data-ing="sweet red pepper">1/3 cup chopped red sweet pepper</li>
+<li data-ing="smoked turkey breast">8 oz smoked turkey breast, cubed</li>
+<li data-ing="mozzarella">4 oz mozzarella, cubed</li>
+<li data-ing="cheddar cheese">4 oz cheddar, cubed</li>
+<li data-ing="red onion">1 small red onion, thinly sliced into rings</li>
+<li data-ing="olive">3 tablespoons sliced pitted ripe olives</li></ul></div>
+<div class="ing-group"><h4>Dressing</h4><ul class="ingredients"><li data-ing="bottled barbecue sauce">1/3 cup bottled barbecue sauce</li>
+<li data-ing="dijon mustard">3 tablespoons Dijon-style mustard</li></ul></div>
+<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li data-ing="green red-tip lettuce / red-tip lettuce">1 head green and/or red-tip leaf lettuce</li>
+<li data-ing="pine nut">1/4 cup toasted pine nuts</li>
+<li data-ing="sweet pepper">Thin sweet pepper strips (optional)</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -2394,6 +2461,7 @@
     <h3>Asian Pasta Salad</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="salads-pasta-salads-asian-pasta-salad" data-title="Asian Pasta Salad" title="Not yet made (author only)" aria-label="Not yet made: Asian Pasta Salad"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Asian Pasta Salad">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Asian Pasta Salad">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Asian Pasta Salad">🖨 Print</button>
       <a class="link-btn" href="?recipe=salads-pasta-salads-asian-pasta-salad" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Asian Pasta Salad in new tab">🔗 Link</a>
@@ -2403,23 +2471,23 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Noodles and protein</h4><ul class="ingredients"><li>1 pound cappellini (thin spaghetti), cooked and drained</li>
-<li>1 package firm tofu, cubed</li></ul></div>
-<div class="ing-group"><h4>Vegetables</h4><ul class="ingredients"><li>1 handful fresh snow peas</li>
-<li>1 can water chestnuts, sliced</li>
-<li>1 bunch scallions, chopped</li></ul></div>
-<div class="ing-group"><h4>Toppings</h4><ul class="ingredients"><li>1 small package sesame seeds, slightly toasted</li>
-<li>1 package pine nuts (pignoli)</li></ul></div>
-<div class="ing-group"><h4>Dressing (overnight)</h4><ul class="ingredients"><li>4 tablespoons dry sherry</li>
-<li>1 egg yolk</li>
-<li>3 tablespoons lemon juice</li>
-<li>2 tablespoons Dijon mustard</li>
-<li>2 tablespoons soy sauce (or teriyaki sauce)</li>
-<li>2 tablespoons sugar</li>
-<li>1/2 teaspoon ground ginger</li>
-<li>Basil and Aleppo pepper or red pepper flakes to taste</li>
-<li>1/2 cup olive oil</li>
-<li>1/2 cup vegetable oil</li></ul></div>
+      <div class="ing-group"><h4>Noodles and protein</h4><ul class="ingredients"><li data-ing="cappellini">1 pound cappellini (thin spaghetti), cooked and drained</li>
+<li data-ing="firm tofu">1 package firm tofu, cubed</li></ul></div>
+<div class="ing-group"><h4>Vegetables</h4><ul class="ingredients"><li data-ing="snow pea">1 handful fresh snow peas</li>
+<li data-ing="canned water chestnut">1 can water chestnuts, sliced</li>
+<li data-ing="scallion">1 bunch scallions, chopped</li></ul></div>
+<div class="ing-group"><h4>Toppings</h4><ul class="ingredients"><li data-ing="sesame seed">1 small package sesame seeds, slightly toasted</li>
+<li data-ing="pine nut">1 package pine nuts (pignoli)</li></ul></div>
+<div class="ing-group"><h4>Dressing (overnight)</h4><ul class="ingredients"><li data-ing="sherry">4 tablespoons dry sherry</li>
+<li data-ing="egg">1 egg yolk</li>
+<li data-ing="lemon juice">3 tablespoons lemon juice</li>
+<li data-ing="dijon mustard">2 tablespoons Dijon mustard</li>
+<li data-ing="soy sauce">2 tablespoons soy sauce (or teriyaki sauce)</li>
+<li data-ing="sugar">2 tablespoons sugar</li>
+<li data-ing="ground ginger">1/2 teaspoon ground ginger</li>
+<li data-ing="basil / aleppo pepper or red pepper flakes">Basil and Aleppo pepper or red pepper flakes to taste</li>
+<li data-ing="olive oil">1/2 cup olive oil</li>
+<li data-ing="vegetable oil">1/2 cup vegetable oil</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -2435,6 +2503,7 @@
     <h3>Holly's Spicy Noodle Salad with Peanut Dressing</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="salads-pasta-salads-holly-s-spicy-noodle-salad-with-peanut-dressing" data-title="Holly's Spicy Noodle Salad with Peanut Dressing" title="Made it" aria-label="Made: Holly's Spicy Noodle Salad with Peanut Dressing"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Holly's Spicy Noodle Salad with Peanut Dressing">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Holly's Spicy Noodle Salad with Peanut Dressing">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Holly's Spicy Noodle Salad with Peanut Dressing">🖨 Print</button>
       <a class="link-btn" href="?recipe=salads-pasta-salads-holly-s-spicy-noodle-salad-with-peanut-dressing" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Holly's Spicy Noodle Salad with Peanut Dressing in new tab">🔗 Link</a>
@@ -2444,26 +2513,26 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Noodles</h4><ul class="ingredients"><li>1/4 pound dried Chinese spaghetti noodles (or thin spaghetti)</li>
-<li>2 tablespoons safflower oil (to toss after cooking)</li></ul></div>
-<div class="ing-group"><h4>Vegetables</h4><ul class="ingredients"><li>1 cup shredded iceberg lettuce</li>
-<li>1 cup fresh bean sprouts</li>
-<li>1 cup thinly sliced mushrooms</li>
-<li>1 pound pencil-thin asparagus (or broccoli or snow peas)</li>
-<li>1 large red bell pepper, sliced or julienned</li></ul></div>
-<div class="ing-group"><h4>Dressing</h4><ul class="ingredients"><li>1/4 cup white sesame seeds</li>
-<li>1/2 cup chicken stock, heated to boiling</li>
-<li>1/2 cup peanut butter</li>
-<li>1/4 cup red wine vinegar</li>
-<li>2 tablespoons dark soy sauce</li>
-<li>2 tablespoons sesame oil</li>
-<li>1 tablespoon dry sherry</li>
-<li>1 tablespoon sugar</li>
-<li>1 1/2 teaspoons Chinese chili sauce (optional)</li>
-<li>1/2 teaspoon salt</li>
-<li>1/2 cup minced green onions</li>
-<li>2 tablespoons finely minced ginger</li>
-<li>1 large garlic clove, minced</li></ul></div>
+      <div class="ing-group"><h4>Noodles</h4><ul class="ingredients"><li data-ing="chinese spaghetti noodles">1/4 pound dried Chinese spaghetti noodles (or thin spaghetti)</li>
+<li data-ing="safflower oil">2 tablespoons safflower oil (to toss after cooking)</li></ul></div>
+<div class="ing-group"><h4>Vegetables</h4><ul class="ingredients"><li data-ing="iceberg lettuce">1 cup shredded iceberg lettuce</li>
+<li data-ing="bean sprouts">1 cup fresh bean sprouts</li>
+<li data-ing="mushroom">1 cup thinly sliced mushrooms</li>
+<li data-ing="asparagus">1 pound pencil-thin asparagus (or broccoli or snow peas)</li>
+<li data-ing="red bell pepper">1 large red bell pepper, sliced or julienned</li></ul></div>
+<div class="ing-group"><h4>Dressing</h4><ul class="ingredients"><li data-ing="white sesame seed">1/4 cup white sesame seeds</li>
+<li data-ing="chicken broth">1/2 cup chicken stock, heated to boiling</li>
+<li data-ing="peanut butter">1/2 cup peanut butter</li>
+<li data-ing="red wine vinegar">1/4 cup red wine vinegar</li>
+<li data-ing="dark soy sauce">2 tablespoons dark soy sauce</li>
+<li data-ing="sesame oil">2 tablespoons sesame oil</li>
+<li data-ing="sherry">1 tablespoon dry sherry</li>
+<li data-ing="sugar">1 tablespoon sugar</li>
+<li data-ing="chinese chile sauce">1 1/2 teaspoons Chinese chili sauce (optional)</li>
+<li data-ing="salt">1/2 teaspoon salt</li>
+<li data-ing="scallion">1/2 cup minced green onions</li>
+<li data-ing="ginger root">2 tablespoons finely minced ginger</li>
+<li data-ing="garlic">1 large garlic clove, minced</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -4795,6 +4864,145 @@
     }
   })();
 
+
+  // ── Shopping checklist (see shopping_list.css). Reads the ingredient lines already on the page. ──
+  // The "Shop" button on each recipe opens a checklist (all unticked). "Copy checked" copies the ticked lines.
+  // https://script.google.com/macros/s/AKfycbzY1Qi--vCFGalcT9QYdBe8HC46HWHGE_8WZ91vuA2fVaYagEQ34nlwjU7ebCuPsv8n/exec / shop-9a779a2e2e26 are replaced from shopping_config.json at build time. With no URL set, only "Copy checked" is offered.
+  (function () {
+    var URL_ = 'https://script.google.com/macros/s/AKfycbzY1Qi--vCFGalcT9QYdBe8HC46HWHGE_8WZ91vuA2fVaYagEQ34nlwjU7ebCuPsv8n/exec', KEY_ = 'shop-9a779a2e2e26';
+    var ENABLED = !!URL_ && URL_.indexOf('__SHOP') !== 0;
+    var CART = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.6 12.2a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 7H6"/></svg>';
+    function visible(el) { return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length); }
+    function collect(art) {
+      var out = [];
+      art.querySelectorAll('.ing-group').forEach(function (g) {
+        if (!visible(g)) return;
+        var h = g.querySelector('h4');
+        var label = h ? h.firstChild && h.firstChild.textContent.trim() : '';
+        g.querySelectorAll('li').forEach(function (li) { out.push({ g: label || '', t: li.textContent.trim(), n: li.getAttribute('data-ing') || '' }); });
+      });
+      return out;
+    }
+    function copyText(text, done) {
+      function fallback() {
+        var ta = document.createElement('textarea'); ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+        document.body.appendChild(ta); ta.select();
+        try { document.execCommand('copy'); done(true); } catch (e) { done(false); }
+        document.body.removeChild(ta);
+      }
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(function () { done(true); }, fallback);
+      else fallback();
+    }
+    function post(payload) {
+      payload.key = KEY_;
+      return fetch(URL_, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(payload) });
+    }
+    function getList() {
+      return fetch(URL_ + '?action=list&key=' + encodeURIComponent(KEY_)).then(function (r) { return r.json(); })
+        .then(function (j) { if (!j.ok) throw new Error(j.error || 'error'); return j.items || []; });
+    }
+    var badge = document.getElementById('shop-list-toggle');
+    function setBadge(n) { if (badge) badge.querySelector('.shop-badge').textContent = n ? ' (' + n + ')' : ''; }
+    function refreshBadge() { if (ENABLED) getList().then(function (l) { setBadge(l.length); }, function () {}); }
+    function build(art, btn) {
+      var items = collect(art);
+      var panel = document.createElement('div');
+      panel.className = 'shop-panel'; panel.setAttribute('role', 'region'); panel.setAttribute('aria-label', 'Shopping checklist');
+      var head = document.createElement('div'); head.className = 'shop-head';
+      head.innerHTML = '<strong>Shopping checklist</strong><span>Tick what you need to buy.</span>';
+      var cols = document.createElement('div'); cols.className = 'shop-cols';
+      var last = null;
+      items.forEach(function (it) {
+        if (it.g !== last) { if (it.g) { var l = document.createElement('div'); l.className = 'shop-group-label'; l.textContent = it.g; cols.appendChild(l); } last = it.g; }
+        var lab = document.createElement('label'); lab.className = 'shop-item';
+        var cb = document.createElement('input'); cb.type = 'checkbox'; cb.checked = false;
+        var sp = document.createElement('span'); sp.textContent = it.t;
+        lab.appendChild(cb); lab.appendChild(sp); cols.appendChild(lab);
+      });
+      var actions = document.createElement('div'); actions.className = 'shop-actions';
+      var copyBtn = document.createElement('button'); copyBtn.type = 'button'; copyBtn.className = 'shop-primary'; copyBtn.textContent = 'Copy checked';
+      var clearBtn = document.createElement('button'); clearBtn.type = 'button'; clearBtn.textContent = 'Untick all';
+      var count = document.createElement('span'); count.className = 'shop-count';
+      var addBtn = null;
+      if (ENABLED) { addBtn = document.createElement('button'); addBtn.type = 'button'; addBtn.className = 'shop-primary'; addBtn.textContent = 'Add to shopping list'; actions.appendChild(addBtn); copyBtn.className = ''; }
+      actions.appendChild(copyBtn); actions.appendChild(clearBtn); actions.appendChild(count);
+      var msg = document.createElement('div'); msg.className = 'shop-msg'; msg.setAttribute('aria-live', 'polite');
+      panel.appendChild(head); panel.appendChild(cols); panel.appendChild(actions); panel.appendChild(msg);
+      function boxes() { return cols.querySelectorAll('input'); }
+      function checked() { var r = []; boxes().forEach(function (c, i) { if (c.checked) r.push(items[i].t); }); return r; }
+      function checkedObjs() { var r = []; boxes().forEach(function (c, i) { if (c.checked) r.push({ item: items[i].t, ingredient: items[i].n, recipe: art.getAttribute('data-title') || '' }); }); return r; }
+      function update() { count.textContent = checked().length + ' of ' + items.length + ' checked'; msg.textContent = ''; }
+      cols.addEventListener('change', update);
+      copyBtn.addEventListener('click', function () {
+        var c = checked();
+        if (!c.length) { msg.textContent = 'Nothing checked yet.'; return; }
+        copyText(c.join('\n'), function (ok) { msg.textContent = ok ? 'Copied ' + c.length + ' item' + (c.length === 1 ? '' : 's') + '.' : 'Could not copy.'; });
+      });
+      if (addBtn) addBtn.addEventListener('click', function () {
+        var c = checkedObjs();
+        if (!c.length) { msg.textContent = 'Nothing checked yet.'; return; }
+        addBtn.disabled = true; msg.textContent = 'Adding...';
+        post({ action: 'add', items: c }).then(function () { return getList(); }).then(function (l) {
+          msg.textContent = 'Sent ' + c.length + ' item' + (c.length === 1 ? '' : 's') + '. The list now has ' + l.length + '.';
+          setBadge(l.length); boxes().forEach(function (x) { x.checked = false; }); count.textContent = '';
+        }, function () { msg.textContent = 'Sent, but could not confirm. Check the list.'; }).then(function () { addBtn.disabled = false; });
+      });
+      clearBtn.addEventListener('click', function () { boxes().forEach(function (c) { c.checked = false; }); update(); });
+      update();
+      return panel;
+    }
+    function openList() {
+      var ov = document.createElement('div'); ov.className = 'shop-overlay';
+      var dlg = document.createElement('div'); dlg.className = 'shop-dialog'; dlg.setAttribute('role', 'dialog'); dlg.setAttribute('aria-label', 'Shopping list');
+      var title = document.createElement('h2'); title.textContent = 'Shopping list';
+      var body = document.createElement('div'); body.className = 'shop-listbody'; body.textContent = 'Loading...';
+      var acts = document.createElement('div'); acts.className = 'shop-actions';
+      var refresh = document.createElement('button'); refresh.type = 'button'; refresh.textContent = 'Refresh';
+      var copy = document.createElement('button'); copy.type = 'button'; copy.textContent = 'Copy list';
+      var clear = document.createElement('button'); clear.type = 'button'; clear.className = 'shop-danger'; clear.textContent = 'Clear list';
+      var close = document.createElement('button'); close.type = 'button'; close.textContent = 'Close';
+      var msg = document.createElement('div'); msg.className = 'shop-msg';
+      [refresh, copy, clear, close].forEach(function (b) { acts.appendChild(b); });
+      dlg.appendChild(title); dlg.appendChild(body); dlg.appendChild(acts); dlg.appendChild(msg); ov.appendChild(dlg); document.body.appendChild(ov);
+      var current = [];
+      function render(l) {
+        current = l; setBadge(l.length); body.textContent = '';
+        if (!l.length) { body.textContent = 'The list is empty.'; return; }
+        l.slice().sort(function (a, b) { return (a.ingredient || a.item).toLowerCase() < (b.ingredient || b.item).toLowerCase() ? -1 : 1; }).forEach(function (it) {
+          var row = document.createElement('div'); row.className = 'shop-row';
+          var t = document.createElement('span'); t.textContent = it.item;
+          var r = document.createElement('small'); r.textContent = it.recipe;
+          row.appendChild(t); row.appendChild(r); body.appendChild(row);
+        });
+      }
+      function load() { body.textContent = 'Loading...'; getList().then(render, function () { body.textContent = 'Could not load the list.'; }); }
+      refresh.addEventListener('click', load);
+      copy.addEventListener('click', function () { copyText(current.map(function (i) { return i.item; }).join('\n'), function (ok) { msg.textContent = ok ? 'Copied ' + current.length + ' items.' : 'Could not copy.'; }); });
+      clear.addEventListener('click', function () {
+        if (!current.length) return;
+        if (!window.confirm('Clear all ' + current.length + ' items? They move to the History tab of the sheet.')) return;
+        post({ action: 'clear' }).then(function () { return getList(); }).then(render, function () { msg.textContent = 'Could not confirm. Refresh.'; });
+      });
+      function shut() { document.body.removeChild(ov); }
+      close.addEventListener('click', shut); ov.addEventListener('click', function (e) { if (e.target === ov) shut(); });
+      load();
+    }
+    if (badge) {
+      if (ENABLED) { badge.style.display = 'flex'; badge.addEventListener('click', openList); refreshBadge(); }
+    }
+    document.querySelectorAll('.shop-btn').forEach(function (btn) {
+      btn.innerHTML = CART + 'Shop';
+      btn.addEventListener('click', function () {
+        var art = btn.closest('.recipe'); if (!art) return;
+        var open = art.querySelector('.shop-panel');
+        if (open) { open.parentNode.removeChild(open); btn.classList.remove('active'); btn.setAttribute('aria-expanded', 'false'); return; }
+        var panel = build(art, btn);
+        var body = art.querySelector('.recipe-body');
+        art.insertBefore(panel, body);
+        btn.classList.add('active'); btn.setAttribute('aria-expanded', 'true');
+      });
+    });
+  })();
 
   // ── Apply filters (favorites — current page only) ─────────────────────
   function applyFilters() {

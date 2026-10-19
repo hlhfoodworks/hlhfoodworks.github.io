@@ -630,6 +630,43 @@
   #made-dialog button[type=submit] { background: #3b2a1a; color: #fff; border-color: #3b2a1a; }
   @media print { .made-btn, #made-modal { display: none !important; } }
 
+/* ── Shopping checklist (see shopping_list_client.js) ── */
+.shop-btn { display: inline-flex; align-items: center; gap: 4px; }
+.shop-btn svg { width: 14px; height: 14px; }
+.shop-btn.active { background: #f3e9d6; border-color: var(--accent2); color: var(--accent); }
+.shop-panel { margin: 12px 0 4px; border: 1px solid var(--accent2); border-radius: 8px; background: #fbf5ea;
+  padding: 14px 16px; font-family: 'Helvetica Neue', Arial, sans-serif; }
+.shop-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.shop-head strong { font-size: 0.95rem; color: var(--accent); }
+.shop-head span { font-size: 0.75rem; color: var(--muted); }
+.shop-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 24px; margin-top: 8px; }
+.shop-group-label { grid-column: 1 / -1; font-size: 0.72rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin-top: 8px; }
+.shop-item { display: flex; gap: 8px; align-items: flex-start; font-size: 0.86rem; padding: 3px 0; cursor: pointer; }
+.shop-item input { margin-top: 3px; accent-color: var(--accent); }
+.shop-actions { display: flex; gap: 8px; align-items: center; margin-top: 12px; flex-wrap: wrap; }
+.shop-actions button { font: 0.8rem 'Helvetica Neue', Arial, sans-serif; border-radius: var(--radius); padding: 6px 12px; cursor: pointer;
+  background: none; color: var(--muted); border: 1px solid var(--border); }
+.shop-actions button:hover { background: var(--border); color: var(--text); }
+.shop-actions button.shop-primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+.shop-actions button.shop-primary:hover { background: #6f360f; }
+.shop-count { font-size: 0.78rem; color: var(--muted); margin-left: auto; }
+.shop-msg { font-size: 0.8rem; color: #2e7d32; margin-top: 8px; min-height: 1em; }
+@media (max-width: 640px) { .shop-cols { grid-template-columns: 1fr; } }
+@media print { .shop-panel, .shop-btn { display: none !important; } }
+
+#shop-list-toggle { display: none; align-items: center; gap: 8px; padding: 7px 14px; font-size: 0.82rem; cursor: pointer;
+  color: var(--nav-text); background: none; border: none; border-bottom: 1px solid #5a3e28; text-align: left; width: 100%; }
+#shop-list-toggle:hover { background: #4e3522; }
+#shop-list-toggle svg { width: 14px; height: 14px; }
+.shop-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.45); display: flex; align-items: center; justify-content: center; z-index: 1000; }
+.shop-dialog { background: #fff; color: #2b2118; border-radius: 8px; padding: 18px 20px; width: min(460px, 92vw); max-height: 84vh; display: flex; flex-direction: column;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.3); font-family: 'Helvetica Neue', Arial, sans-serif; }
+.shop-dialog h2 { font-size: 1rem; margin: 0 0 8px; }
+.shop-listbody { overflow-y: auto; font-size: 0.86rem; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 6px 0; min-height: 60px; }
+.shop-row { display: flex; justify-content: space-between; gap: 12px; padding: 3px 0; }
+.shop-row small { color: var(--muted); text-align: right; font-size: 0.72rem; }
+.shop-danger { color: #a33 !important; }
+
 </style>
 </head>
 <body>
@@ -663,6 +700,7 @@
     <button id="fav-toggle"><span class="star">★</span> Favorites only</button>
     <button id="notmade-toggle"><span class="nm-icon">&#9675;</span> Not yet made</button>
   </div>
+  <button id="shop-list-toggle" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.6 12.2a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 7H6"/></svg>Shopping list<span class="shop-badge"></span></button>
   <div id="made-pending"><span class="made-pend-n"></span><button type="button" class="made-copy">Copy list</button></div>
   <button id="alt-toggle"><span class="alt-icon">&#9650;</span> High Altitude</button>
   <div id="expand-collapse-row">
@@ -1325,6 +1363,7 @@
     <h3>★ Lentil Chili</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="vegetarian-mains-vegetables-lentil-chili" data-title="Lentil Chili" title="Made it" aria-label="Made: Lentil Chili"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Lentil Chili">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Lentil Chili">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Lentil Chili">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetarian-mains-vegetables-lentil-chili" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Lentil Chili in new tab">🔗 Link</a>
@@ -1334,22 +1373,22 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li>1/3 cup olive oil</li>
-<li>1 medium onion, cut into 1/2-inch chunks</li>
-<li>2 garlic cloves, minced</li>
-<li>1 medium carrot, peeled and coarsely chopped</li></ul></div>
-<div class="ing-group"><h4>Chili base</h4><ul class="ingredients"><li>7 cups water</li>
-<li>1/3 cup tomato paste</li>
-<li>2 cups (about 12 oz) brown lentils, rinsed</li>
-<li>1 green pepper, cut into 1/2-inch chunks</li>
-<li>1 sweet red pepper, cut into 1/2-inch chunks</li></ul></div>
-<div class="ing-group"><h4>Beans and tomatoes</h4><ul class="ingredients"><li>1 (19-oz) can red kidney beans, rinsed and drained</li>
-<li>1 cup canned garbanzo beans, rinsed and drained</li>
-<li>2 cups canned whole tomatoes in puree</li></ul></div>
-<div class="ing-group"><h4>Seasoning</h4><ul class="ingredients"><li>1/3 cup chili powder</li>
-<li>4 teaspoons ground cumin</li>
-<li>1/4 teaspoon Aleppo pepper or red pepper flakes (or more to taste)</li>
-<li>Salt and freshly ground black pepper to taste</li></ul></div>
+      <div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li data-ing="olive oil">1/3 cup olive oil</li>
+<li data-ing="onion">1 medium onion, cut into 1/2-inch chunks</li>
+<li data-ing="garlic">2 garlic cloves, minced</li>
+<li data-ing="carrot">1 medium carrot, peeled and coarsely chopped</li></ul></div>
+<div class="ing-group"><h4>Chili base</h4><ul class="ingredients"><li data-ing="water">7 cups water</li>
+<li data-ing="tomato paste">1/3 cup tomato paste</li>
+<li data-ing="brown lentils">2 cups (about 12 oz) brown lentils, rinsed</li>
+<li data-ing="green pepper">1 green pepper, cut into 1/2-inch chunks</li>
+<li data-ing="sweet red pepper">1 sweet red pepper, cut into 1/2-inch chunks</li></ul></div>
+<div class="ing-group"><h4>Beans and tomatoes</h4><ul class="ingredients"><li data-ing="canned red kidney bean">1 (19-oz) can red kidney beans, rinsed and drained</li>
+<li data-ing="canned chickpea">1 cup canned garbanzo beans, rinsed and drained</li>
+<li data-ing="canned whole tomato">2 cups canned whole tomatoes in puree</li></ul></div>
+<div class="ing-group"><h4>Seasoning</h4><ul class="ingredients"><li data-ing="chili powder">1/3 cup chili powder</li>
+<li data-ing="ground cumin">4 teaspoons ground cumin</li>
+<li data-ing="aleppo pepper or red pepper flakes">1/4 teaspoon Aleppo pepper or red pepper flakes (or more to taste)</li>
+<li data-ing="salt / black pepper">Salt and freshly ground black pepper to taste</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1365,6 +1404,7 @@
     <h3>Smoky Chickpeas With Spinach</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="vegetarian-mains-vegetables-smoky-chickpeas-with-spinach" data-title="Smoky Chickpeas With Spinach" title="Not yet made (author only)" aria-label="Not yet made: Smoky Chickpeas With Spinach"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Smoky Chickpeas With Spinach">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Smoky Chickpeas With Spinach">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Smoky Chickpeas With Spinach">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetarian-mains-vegetables-smoky-chickpeas-with-spinach" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Smoky Chickpeas With Spinach in new tab">🔗 Link</a>
@@ -1374,14 +1414,14 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Spice oil</h4><ul class="ingredients"><li>1 1/2 tablespoons extra-virgin olive oil</li>
-<li>2 cloves garlic, minced</li>
-<li>1 teaspoon smoked paprika</li>
-<li>1/2 teaspoon ground turmeric</li></ul></div>
-<div class="ing-group"><h4>Chickpeas and spinach</h4><ul class="ingredients"><li>2 cups cooked chickpeas (one 15 oz can, rinsed and drained)</li>
-<li>6 cups fresh spinach</li>
-<li>2 tablespoons water or vegetable broth</li>
-<li>Salt and pepper to taste</li></ul></div>
+      <div class="ing-group"><h4>Spice oil</h4><ul class="ingredients"><li data-ing="extra-virgin olive oil">1 1/2 tablespoons extra-virgin olive oil</li>
+<li data-ing="garlic">2 cloves garlic, minced</li>
+<li data-ing="smoked paprika">1 teaspoon smoked paprika</li>
+<li data-ing="ground turmeric">1/2 teaspoon ground turmeric</li></ul></div>
+<div class="ing-group"><h4>Chickpeas and spinach</h4><ul class="ingredients"><li data-ing="canned chickpea">2 cups cooked chickpeas (one 15 oz can, rinsed and drained)</li>
+<li data-ing="spinach">6 cups fresh spinach</li>
+<li data-ing="water / vegetable broth">2 tablespoons water or vegetable broth</li>
+<li data-ing="salt / black pepper">Salt and pepper to taste</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1398,6 +1438,7 @@
     <h3>Chickpea Tacos</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="vegetarian-mains-vegetables-chickpea-tacos" data-title="Chickpea Tacos" title="Not yet made (author only)" aria-label="Not yet made: Chickpea Tacos"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Chickpea Tacos">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Chickpea Tacos">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Chickpea Tacos">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetarian-mains-vegetables-chickpea-tacos" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Chickpea Tacos in new tab">🔗 Link</a>
@@ -1407,27 +1448,27 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Cilantro sauce</h4><ul class="ingredients"><li>1 cup fresh cilantro</li>
-<li>1/2 cup plain yogurt</li>
-<li>1/4 cup red wine vinegar</li>
-<li>1/4 cup extra-virgin olive oil</li>
-<li>2 teaspoons mustard</li>
-<li>2 cloves garlic</li>
-<li>1/2 teaspoon smoked paprika</li>
-<li>1/2 teaspoon cumin</li>
-<li>1/2 teaspoon black pepper</li></ul></div>
-<div class="ing-group"><h4>Chickpea filling</h4><ul class="ingredients"><li>1 tablespoon oil</li>
-<li>Two 15-oz cans chickpeas, drained and patted dry</li>
-<li>1 teaspoon salt</li>
-<li>1 teaspoon dried oregano</li>
-<li>1 teaspoon garlic powder</li>
-<li>1 teaspoon onion powder</li>
-<li>1 teaspoon cumin</li>
-<li>1 teaspoon smoked paprika</li></ul></div>
-<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li>Tortillas</li>
-<li>White onion, diced</li>
-<li>Fresh cilantro</li>
-<li>Lime wedges</li></ul></div>
+      <div class="ing-group"><h4>Cilantro sauce</h4><ul class="ingredients"><li data-ing="cilantro">1 cup fresh cilantro</li>
+<li data-ing="plain yogurt">1/2 cup plain yogurt</li>
+<li data-ing="red wine vinegar">1/4 cup red wine vinegar</li>
+<li data-ing="extra-virgin olive oil">1/4 cup extra-virgin olive oil</li>
+<li data-ing="mustard">2 teaspoons mustard</li>
+<li data-ing="garlic">2 cloves garlic</li>
+<li data-ing="smoked paprika">1/2 teaspoon smoked paprika</li>
+<li data-ing="ground cumin">1/2 teaspoon cumin</li>
+<li data-ing="black pepper">1/2 teaspoon black pepper</li></ul></div>
+<div class="ing-group"><h4>Chickpea filling</h4><ul class="ingredients"><li data-ing="oil">1 tablespoon oil</li>
+<li data-ing="canned chickpea">Two 15-oz cans chickpeas, drained and patted dry</li>
+<li data-ing="salt">1 teaspoon salt</li>
+<li data-ing="dried oregano">1 teaspoon dried oregano</li>
+<li data-ing="garlic powder">1 teaspoon garlic powder</li>
+<li data-ing="onion powder">1 teaspoon onion powder</li>
+<li data-ing="ground cumin">1 teaspoon cumin</li>
+<li data-ing="smoked paprika">1 teaspoon smoked paprika</li></ul></div>
+<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li data-ing="tortillas">Tortillas</li>
+<li data-ing="white onion">White onion, diced</li>
+<li data-ing="cilantro">Fresh cilantro</li>
+<li data-ing="lime">Lime wedges</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1442,6 +1483,7 @@
     <h3>Extra-Stuffed Veggie Burritos</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="vegetarian-mains-vegetables-extra-stuffed-veggie-burritos" data-title="Extra-Stuffed Veggie Burritos" title="Not yet made (author only)" aria-label="Not yet made: Extra-Stuffed Veggie Burritos"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Extra-Stuffed Veggie Burritos">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Extra-Stuffed Veggie Burritos">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Extra-Stuffed Veggie Burritos">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetarian-mains-vegetables-extra-stuffed-veggie-burritos" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Extra-Stuffed Veggie Burritos in new tab">🔗 Link</a>
@@ -1451,23 +1493,23 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Quinoa</h4><ul class="ingredients"><li>1/3 cup dried quinoa, rinsed</li>
-<li>1/4 teaspoon kosher salt</li>
-<li>2/3 cup water</li>
-<li>1 tablespoon fresh lime juice</li></ul></div>
-<div class="ing-group"><h4>Burrito filling</h4><ul class="ingredients"><li>2 tablespoons extra-virgin olive oil</li>
-<li>1/2 red bell pepper, seeded and thinly sliced</li>
-<li>1/2 green bell pepper, seeded and thinly sliced</li>
-<li>2 scallions, trimmed and thinly sliced</li>
-<li>4 oz cremini mushrooms, sliced</li>
-<li>One 15-oz can pinto beans, undrained</li>
-<li>1 tablespoon adobo sauce from a can of chipotle chiles, or more to taste</li>
-<li>1 tablespoon ground cumin</li>
-<li>1 teaspoon granulated garlic (garlic powder)</li>
-<li>1/2 teaspoon kosher salt</li></ul></div>
-<div class="ing-group"><h4>Assembly</h4><ul class="ingredients"><li>Two 9- or 10-inch flour tortillas</li>
-<li>1/4 cup sour cream</li>
-<li>1 cup baby spinach or other tender salad greens</li></ul></div>
+      <div class="ing-group"><h4>Quinoa</h4><ul class="ingredients"><li data-ing="dried quinoa">1/3 cup dried quinoa, rinsed</li>
+<li data-ing="kosher salt">1/4 teaspoon kosher salt</li>
+<li data-ing="water">2/3 cup water</li>
+<li data-ing="lime juice">1 tablespoon fresh lime juice</li></ul></div>
+<div class="ing-group"><h4>Burrito filling</h4><ul class="ingredients"><li data-ing="extra-virgin olive oil">2 tablespoons extra-virgin olive oil</li>
+<li data-ing="red bell pepper">1/2 red bell pepper, seeded and thinly sliced</li>
+<li data-ing="green bell pepper">1/2 green bell pepper, seeded and thinly sliced</li>
+<li data-ing="scallion">2 scallions, trimmed and thinly sliced</li>
+<li data-ing="cremini mushroom">4 oz cremini mushrooms, sliced</li>
+<li data-ing="canned pinto bean">One 15-oz can pinto beans, undrained</li>
+<li data-ing="adobo sauce">1 tablespoon adobo sauce from a can of chipotle chiles, or more to taste</li>
+<li data-ing="ground cumin">1 tablespoon ground cumin</li>
+<li data-ing="granulated garlic">1 teaspoon granulated garlic (garlic powder)</li>
+<li data-ing="kosher salt">1/2 teaspoon kosher salt</li></ul></div>
+<div class="ing-group"><h4>Assembly</h4><ul class="ingredients"><li data-ing="flour tortilla">Two 9- or 10-inch flour tortillas</li>
+<li data-ing="sour cream">1/4 cup sour cream</li>
+<li data-ing="baby spinach / salad greens">1 cup baby spinach or other tender salad greens</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1483,6 +1525,7 @@
     <h3>Slow Cooker Vegan Mole Chili</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="vegetarian-mains-vegetables-slow-cooker-vegan-mole-chili" data-title="Slow Cooker Vegan Mole Chili" title="Not yet made (author only)" aria-label="Not yet made: Slow Cooker Vegan Mole Chili"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Slow Cooker Vegan Mole Chili">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Slow Cooker Vegan Mole Chili">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Slow Cooker Vegan Mole Chili">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetarian-mains-vegetables-slow-cooker-vegan-mole-chili" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Slow Cooker Vegan Mole Chili in new tab">🔗 Link</a>
@@ -1492,27 +1535,27 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Dried chilies</h4><ul class="ingredients"><li>3 oz dried ancho chilies</li></ul></div>
-<div class="ing-group"><h4>Spice paste</h4><ul class="ingredients"><li>¼ cup light cooking oil (such as avocado)</li>
-<li>3 tablespoons chili powder</li>
-<li>1 tablespoon cacao powder</li>
-<li>1½ teaspoons Mexican oregano</li>
-<li>1 teaspoon cinnamon</li>
-<li>1 teaspoon cumin</li>
-<li>1 teaspoon paprika</li></ul></div>
-<div class="ing-group"><h4>Chili base</h4><ul class="ingredients"><li>1 medium red onion, finely diced</li>
-<li>1 medium sweet potato, peeled and finely diced</li>
-<li>4 garlic cloves, minced</li>
-<li>14 oz block tofu, frozen, thawed, drained, and finely diced (see note)</li>
-<li>1 can chickpeas, rinsed and drained</li>
-<li>3 bay leaves</li>
-<li>¼ cup coconut sugar</li>
-<li>1 teaspoon sea salt</li>
-<li>1½ oz good dark chocolate (at least 70%)</li>
-<li>3 cups mushroom stock (or vegetable stock)</li></ul></div>
-<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li>Cilantro (optional)</li>
-<li>Greek yogurt (optional; omit if strictly vegan)</li>
-<li>Quinoa, rice, or other grain</li></ul></div>
+      <div class="ing-group"><h4>Dried chilies</h4><ul class="ingredients"><li data-ing="dried ancho chile">3 oz dried ancho chilies</li></ul></div>
+<div class="ing-group"><h4>Spice paste</h4><ul class="ingredients"><li data-ing="light cooking oil">¼ cup light cooking oil (such as avocado)</li>
+<li data-ing="chili powder">3 tablespoons chili powder</li>
+<li data-ing="cacao powder">1 tablespoon cacao powder</li>
+<li data-ing="mexican oregano">1½ teaspoons Mexican oregano</li>
+<li data-ing="cinnamon">1 teaspoon cinnamon</li>
+<li data-ing="ground cumin">1 teaspoon cumin</li>
+<li data-ing="paprika">1 teaspoon paprika</li></ul></div>
+<div class="ing-group"><h4>Chili base</h4><ul class="ingredients"><li data-ing="red onion">1 medium red onion, finely diced</li>
+<li data-ing="sweet potato">1 medium sweet potato, peeled and finely diced</li>
+<li data-ing="garlic">4 garlic cloves, minced</li>
+<li data-ing="block tofu">14 oz block tofu, frozen, thawed, drained, and finely diced (see note)</li>
+<li data-ing="canned chickpea">1 can chickpeas, rinsed and drained</li>
+<li data-ing="bay leaf">3 bay leaves</li>
+<li data-ing="coconut sugar">¼ cup coconut sugar</li>
+<li data-ing="sea salt">1 teaspoon sea salt</li>
+<li data-ing="dark chocolate">1½ oz good dark chocolate (at least 70%)</li>
+<li data-ing="mushroom broth">3 cups mushroom stock (or vegetable stock)</li></ul></div>
+<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li data-ing="cilantro">Cilantro (optional)</li>
+<li data-ing="greek yogurt">Greek yogurt (optional; omit if strictly vegan)</li>
+<li data-ing="quinoa">Quinoa, rice, or other grain</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1528,6 +1571,7 @@
     <h3>Sweet Potato and Black Bean Enchiladas</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="vegetarian-mains-vegetables-sweet-potato-and-black-bean-enchiladas" data-title="Sweet Potato and Black Bean Enchiladas" title="Made it" aria-label="Made: Sweet Potato and Black Bean Enchiladas"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Sweet Potato and Black Bean Enchiladas">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Sweet Potato and Black Bean Enchiladas">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Sweet Potato and Black Bean Enchiladas">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetarian-mains-vegetables-sweet-potato-and-black-bean-enchiladas" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Sweet Potato and Black Bean Enchiladas in new tab">🔗 Link</a>
@@ -1537,27 +1581,27 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Red enchilada sauce</h4><ul class="ingredients"><li>2 tablespoons vegetable oil</li>
-<li>2 cloves garlic, minced</li>
-<li>One 15-oz can tomato sauce</li>
-<li>3/4 cup reduced-sodium chicken broth (or vegetable broth)</li>
-<li>1/2 teaspoon chipotle chile powder</li>
-<li>1/2 teaspoon ground cumin</li>
-<li>1–3 chipotle chiles in adobo sauce, minced (to taste)</li></ul></div>
-<div class="ing-group"><h4>Filling</h4><ul class="ingredients"><li>1 teaspoon olive oil</li>
-<li>3 cloves garlic, minced</li>
-<li>1 small onion, diced</li>
-<li>1 jalapeno, minced</li>
-<li>2 1/2 cups sweet potato, peeled and cubed (about 1 medium)</li>
-<li>One 10-oz can diced tomatoes with green chiles</li>
-<li>1 1/2 cups canned black beans, drained and rinsed</li>
-<li>1/4 cup fresh cilantro, chopped</li>
-<li>1 teaspoon ground cumin</li>
-<li>1/2 teaspoon chili powder</li>
-<li>Salt to taste</li></ul></div>
-<div class="ing-group"><h4>Assembly</h4><ul class="ingredients"><li>10 whole-wheat flour tortillas</li>
-<li>2 cups shredded Mexican cheese blend, divided</li></ul></div>
-<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li>Sour cream</li></ul></div>
+      <div class="ing-group"><h4>Red enchilada sauce</h4><ul class="ingredients"><li data-ing="vegetable oil">2 tablespoons vegetable oil</li>
+<li data-ing="garlic">2 cloves garlic, minced</li>
+<li data-ing="tomato sauce">One 15-oz can tomato sauce</li>
+<li data-ing="reduced-sodium chicken broth">3/4 cup reduced-sodium chicken broth (or vegetable broth)</li>
+<li data-ing="chipotle chile powder">1/2 teaspoon chipotle chile powder</li>
+<li data-ing="ground cumin">1/2 teaspoon ground cumin</li>
+<li data-ing="chipotle chile (in adobo)">1–3 chipotle chiles in adobo sauce, minced (to taste)</li></ul></div>
+<div class="ing-group"><h4>Filling</h4><ul class="ingredients"><li data-ing="olive oil">1 teaspoon olive oil</li>
+<li data-ing="garlic">3 cloves garlic, minced</li>
+<li data-ing="onion">1 small onion, diced</li>
+<li data-ing="jalapeno">1 jalapeno, minced</li>
+<li data-ing="sweet potato">2 1/2 cups sweet potato, peeled and cubed (about 1 medium)</li>
+<li data-ing="canned tomatoes green chile">One 10-oz can diced tomatoes with green chiles</li>
+<li data-ing="canned black bean">1 1/2 cups canned black beans, drained and rinsed</li>
+<li data-ing="cilantro">1/4 cup fresh cilantro, chopped</li>
+<li data-ing="ground cumin">1 teaspoon ground cumin</li>
+<li data-ing="chili powder">1/2 teaspoon chili powder</li>
+<li data-ing="salt">Salt to taste</li></ul></div>
+<div class="ing-group"><h4>Assembly</h4><ul class="ingredients"><li data-ing="whole-wheat flour tortillas">10 whole-wheat flour tortillas</li>
+<li data-ing="shredded mexican cheese blend">2 cups shredded Mexican cheese blend, divided</li></ul></div>
+<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li data-ing="sour cream">Sour cream</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1579,6 +1623,7 @@
     <h3>Eggplant Involtini</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="vegetarian-mains-vegetables-eggplant-involtini" data-title="Eggplant Involtini" title="Made it" aria-label="Made: Eggplant Involtini"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Eggplant Involtini">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Eggplant Involtini">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Eggplant Involtini">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetarian-mains-vegetables-eggplant-involtini" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Eggplant Involtini in new tab">🔗 Link</a>
@@ -1588,24 +1633,24 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Eggplant</h4><ul class="ingredients"><li>2 medium eggplants (about 1 pound each), tops trimmed</li>
-<li>Olive oil, for brushing</li>
-<li>Kosher salt and freshly ground black pepper</li></ul></div>
-<div class="ing-group"><h4>Tomato sauce</h4><ul class="ingredients"><li>2 tablespoons olive oil</li>
-<li>3 garlic cloves, minced</li>
-<li>1 teaspoon kosher salt</li>
-<li>Aleppo pepper or red pepper flakes, to taste</li>
-<li>½ teaspoon dried oregano</li>
-<li>1 (28-ounce) can whole or crushed tomatoes</li></ul></div>
-<div class="ing-group"><h4>Filling</h4><ul class="ingredients"><li>1 cup ricotta</li>
-<li>4 ounces mozzarella, coarsely grated</li>
-<li>¼ cup grated Parmesan (of the ½ cup total)</li>
-<li>Finely grated zest from half a lemon</li>
-<li>½ teaspoon kosher salt</li>
-<li>Freshly ground black pepper</li></ul></div>
+      <div class="ing-group"><h4>Eggplant</h4><ul class="ingredients"><li data-ing="eggplant">2 medium eggplants (about 1 pound each), tops trimmed</li>
+<li data-ing="olive oil">Olive oil, for brushing</li>
+<li data-ing="kosher salt / black pepper">Kosher salt and freshly ground black pepper</li></ul></div>
+<div class="ing-group"><h4>Tomato sauce</h4><ul class="ingredients"><li data-ing="olive oil">2 tablespoons olive oil</li>
+<li data-ing="garlic">3 garlic cloves, minced</li>
+<li data-ing="kosher salt">1 teaspoon kosher salt</li>
+<li data-ing="aleppo pepper or red pepper flakes">Aleppo pepper or red pepper flakes, to taste</li>
+<li data-ing="dried oregano">½ teaspoon dried oregano</li>
+<li data-ing="whole crushed tomato / crushed tomato">1 (28-ounce) can whole or crushed tomatoes</li></ul></div>
+<div class="ing-group"><h4>Filling</h4><ul class="ingredients"><li data-ing="ricotta cheese">1 cup ricotta</li>
+<li data-ing="mozzarella">4 ounces mozzarella, coarsely grated</li>
+<li data-ing="parmesan">¼ cup grated Parmesan (of the ½ cup total)</li>
+<li data-ing="lemon">Finely grated zest from half a lemon</li>
+<li data-ing="kosher salt">½ teaspoon kosher salt</li>
+<li data-ing="black pepper">Freshly ground black pepper</li></ul></div>
 <div class="ing-group"><h4>To finish</h4><ul class="ingredients"><li>¼ cup grated Parmesan (remaining)</li>
-<li>Juice from half a lemon</li>
-<li>Fresh basil leaves</li></ul></div>
+<li data-ing="lemon juice">Juice from half a lemon</li>
+<li data-ing="basil">Fresh basil leaves</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1629,6 +1674,7 @@
     <h3>Eggplant Involtini alla Siciliana</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="vegetarian-mains-vegetables-eggplant-involtini-alla-siciliana" data-title="Eggplant Involtini alla Siciliana" title="Made it" aria-label="Made: Eggplant Involtini alla Siciliana"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Eggplant Involtini alla Siciliana">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Eggplant Involtini alla Siciliana">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Eggplant Involtini alla Siciliana">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetarian-mains-vegetables-eggplant-involtini-alla-siciliana" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Eggplant Involtini alla Siciliana in new tab">🔗 Link</a>
@@ -1638,16 +1684,16 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Bread coating</h4><ul class="ingredients"><li>1 1/2 cups fresh breadcrumbs (grated or food-processed from crustless white bread)</li>
-<li>1/2 cup Parmesan, grated</li>
-<li>2 tablespoons flat-leaf parsley, finely chopped</li>
-<li>1 clove garlic, finely chopped</li>
-<li>Salt and pepper to taste</li></ul></div>
-<div class="ing-group"><h4>Eggplant and filling</h4><ul class="ingredients"><li>2 medium eggplants</li>
-<li>Olive oil, for coating</li>
-<li>Sun-dried tomatoes, roughly chopped (to taste)</li>
-<li>Smoky cheese (scamorza affumicata, provola, or smoked Gouda), cut in small pieces</li>
-<li>Fresh basil, finely chopped</li></ul></div>
+      <div class="ing-group"><h4>Bread coating</h4><ul class="ingredients"><li data-ing="breadcrumb">1 1/2 cups fresh breadcrumbs (grated or food-processed from crustless white bread)</li>
+<li data-ing="parmesan">1/2 cup Parmesan, grated</li>
+<li data-ing="flat-leaf parsley">2 tablespoons flat-leaf parsley, finely chopped</li>
+<li data-ing="garlic">1 clove garlic, finely chopped</li>
+<li data-ing="salt / black pepper">Salt and pepper to taste</li></ul></div>
+<div class="ing-group"><h4>Eggplant and filling</h4><ul class="ingredients"><li data-ing="eggplant">2 medium eggplants</li>
+<li data-ing="olive oil">Olive oil, for coating</li>
+<li data-ing="sun dried tomato">Sun-dried tomatoes, roughly chopped (to taste)</li>
+<li data-ing="smoky cheese">Smoky cheese (scamorza affumicata, provola, or smoked Gouda), cut in small pieces</li>
+<li data-ing="basil">Fresh basil, finely chopped</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1663,6 +1709,7 @@
     <h3>Eggplant Parmesan</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="vegetarian-mains-vegetables-eggplant-parmesan" data-title="Eggplant Parmesan" title="Made it" aria-label="Made: Eggplant Parmesan"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Eggplant Parmesan">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Eggplant Parmesan">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Eggplant Parmesan">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetarian-mains-vegetables-eggplant-parmesan" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Eggplant Parmesan in new tab">🔗 Link</a>
@@ -1672,22 +1719,22 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Eggplant</h4><ul class="ingredients"><li>2 large eggplants, cut into ¼-inch-thick rounds</li></ul></div>
-<div class="ing-group"><h4>Egg wash</h4><ul class="ingredients"><li>3 large eggs, beaten</li></ul></div>
-<div class="ing-group"><h4>Panko coating</h4><ul class="ingredients"><li>1½ cups panko breadcrumbs</li>
-<li>1 cup grated Parmesan cheese (of the 1¼ cups total)</li>
-<li>2 teaspoons dried oregano</li>
-<li>2 tablespoons fresh thyme leaves</li>
-<li>½ teaspoon Aleppo pepper or red pepper flakes</li>
-<li>½ teaspoon sea salt</li>
-<li>Freshly ground black pepper</li>
-<li>Extra-virgin olive oil, for drizzling</li></ul></div>
-<div class="ing-group"><h4>Assembly</h4><ul class="ingredients"><li>28 ounces marinara sauce</li>
-<li>2 large fresh mozzarella balls, thinly sliced (or one package shredded mozzarella)</li>
+      <div class="ing-group"><h4>Eggplant</h4><ul class="ingredients"><li data-ing="eggplant">2 large eggplants, cut into ¼-inch-thick rounds</li></ul></div>
+<div class="ing-group"><h4>Egg wash</h4><ul class="ingredients"><li data-ing="egg">3 large eggs, beaten</li></ul></div>
+<div class="ing-group"><h4>Panko coating</h4><ul class="ingredients"><li data-ing="panko breadcrumb">1½ cups panko breadcrumbs</li>
+<li data-ing="parmesan">1 cup grated Parmesan cheese (of the 1¼ cups total)</li>
+<li data-ing="dried oregano">2 teaspoons dried oregano</li>
+<li data-ing="thyme">2 tablespoons fresh thyme leaves</li>
+<li data-ing="aleppo pepper or red pepper flakes">½ teaspoon Aleppo pepper or red pepper flakes</li>
+<li data-ing="sea salt">½ teaspoon sea salt</li>
+<li data-ing="black pepper">Freshly ground black pepper</li>
+<li data-ing="extra-virgin olive oil">Extra-virgin olive oil, for drizzling</li></ul></div>
+<div class="ing-group"><h4>Assembly</h4><ul class="ingredients"><li data-ing="marinara sauce">28 ounces marinara sauce</li>
+<li data-ing="fresh mozzarella ball">2 large fresh mozzarella balls, thinly sliced (or one package shredded mozzarella)</li>
 <li>¼ cup grated Parmesan cheese (remaining from the 1¼ cups total)</li>
-<li>Extra-virgin olive oil, for drizzling</li>
-<li>Sea salt, for sprinkling</li></ul></div>
-<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li>⅓ cup fresh basil leaves</li></ul></div>
+<li data-ing="extra-virgin olive oil">Extra-virgin olive oil, for drizzling</li>
+<li data-ing="sea salt">Sea salt, for sprinkling</li></ul></div>
+<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li data-ing="basil">⅓ cup fresh basil leaves</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1710,6 +1757,7 @@
     <h3>Roasted Tomatoes With White Beans and Basil</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="vegetarian-mains-vegetables-roasted-tomatoes-with-white-beans-and-basil" data-title="Roasted Tomatoes With White Beans and Basil" title="Not yet made (author only)" aria-label="Not yet made: Roasted Tomatoes With White Beans and Basil"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Roasted Tomatoes With White Beans and Basil">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Roasted Tomatoes With White Beans and Basil">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Roasted Tomatoes With White Beans and Basil">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetarian-mains-vegetables-roasted-tomatoes-with-white-beans-and-basil" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Roasted Tomatoes With White Beans and Basil in new tab">🔗 Link</a>
@@ -1719,13 +1767,13 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Tomatoes</h4><ul class="ingredients"><li>1 pound cherry tomatoes, halved</li>
-<li>6 small garlic cloves, peeled</li>
-<li>4 tablespoons olive oil, divided</li>
-<li>1 teaspoon kosher salt</li>
-<li>Black pepper or Aleppo pepper or red pepper flakes to taste</li></ul></div>
-<div class="ing-group"><h4>Beans</h4><ul class="ingredients"><li>1 15 oz can cannellini or other white beans, drained and rinsed</li></ul></div>
-<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li>1/4 cup fresh basil leaves, thinly sliced</li></ul></div>
+      <div class="ing-group"><h4>Tomatoes</h4><ul class="ingredients"><li data-ing="cherry tomato">1 pound cherry tomatoes, halved</li>
+<li data-ing="garlic">6 small garlic cloves, peeled</li>
+<li data-ing="olive oil">4 tablespoons olive oil, divided</li>
+<li data-ing="kosher salt">1 teaspoon kosher salt</li>
+<li data-ing="black pepper / aleppo pepper or red pepper flakes">Black pepper or Aleppo pepper or red pepper flakes to taste</li></ul></div>
+<div class="ing-group"><h4>Beans</h4><ul class="ingredients"><li data-ing="cannellini / white bean">1 15 oz can cannellini or other white beans, drained and rinsed</li></ul></div>
+<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li data-ing="basil">1/4 cup fresh basil leaves, thinly sliced</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1746,6 +1794,7 @@
     <h3>Moroccan Eggplant with Couscous</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="vegetarian-mains-vegetables-moroccan-eggplant-with-couscous" data-title="Moroccan Eggplant with Couscous" title="Not yet made (author only)" aria-label="Not yet made: Moroccan Eggplant with Couscous"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Moroccan Eggplant with Couscous">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Moroccan Eggplant with Couscous">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Moroccan Eggplant with Couscous">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetarian-mains-vegetables-moroccan-eggplant-with-couscous" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Moroccan Eggplant with Couscous in new tab">🔗 Link</a>
@@ -1755,23 +1804,23 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Spice mixture</h4><ul class="ingredients"><li>2 teaspoons curry powder</li>
-<li>2 teaspoons ground cumin</li>
-<li>1 teaspoon ground cinnamon</li>
-<li>1/2 teaspoon salt</li>
-<li>1/2 teaspoon pepper</li></ul></div>
-<div class="ing-group"><h4>Vegetables</h4><ul class="ingredients"><li>1 tablespoon olive oil</li>
-<li>8 cups (1/2-inch) cubed peeled eggplant (about 1 1/2 pounds)</li>
-<li>2 1/3 cups chopped tomato</li>
-<li>1 1/2 cups chopped onion</li>
-<li>1 cup chopped carrot</li>
-<li>1 cup chopped green cabbage</li>
-<li>1 tablespoon minced peeled gingerroot</li>
-<li>2 garlic cloves, minced</li></ul></div>
-<div class="ing-group"><h4>Liquid and couscous</h4><ul class="ingredients"><li>2 cups tomato juice</li>
-<li>1 cup orange juice</li>
-<li>1 cup water</li>
-<li>2 cups uncooked couscous</li></ul></div>
+      <div class="ing-group"><h4>Spice mixture</h4><ul class="ingredients"><li data-ing="curry powder">2 teaspoons curry powder</li>
+<li data-ing="ground cumin">2 teaspoons ground cumin</li>
+<li data-ing="ground cinnamon">1 teaspoon ground cinnamon</li>
+<li data-ing="salt">1/2 teaspoon salt</li>
+<li data-ing="black pepper">1/2 teaspoon pepper</li></ul></div>
+<div class="ing-group"><h4>Vegetables</h4><ul class="ingredients"><li data-ing="olive oil">1 tablespoon olive oil</li>
+<li data-ing="eggplant">8 cups (1/2-inch) cubed peeled eggplant (about 1 1/2 pounds)</li>
+<li data-ing="tomato">2 1/3 cups chopped tomato</li>
+<li data-ing="onion">1 1/2 cups chopped onion</li>
+<li data-ing="carrot">1 cup chopped carrot</li>
+<li data-ing="green cabbage">1 cup chopped green cabbage</li>
+<li data-ing="ginger root">1 tablespoon minced peeled gingerroot</li>
+<li data-ing="garlic">2 garlic cloves, minced</li></ul></div>
+<div class="ing-group"><h4>Liquid and couscous</h4><ul class="ingredients"><li data-ing="tomato juice">2 cups tomato juice</li>
+<li data-ing="orange juice">1 cup orange juice</li>
+<li data-ing="water">1 cup water</li>
+<li data-ing="couscous">2 cups uncooked couscous</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1790,6 +1839,7 @@
     <h3>★ Vegan Stuffed Cabbage</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="vegetarian-mains-vegetables-vegan-stuffed-cabbage" data-title="Vegan Stuffed Cabbage" title="Made it" aria-label="Made: Vegan Stuffed Cabbage"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Vegan Stuffed Cabbage">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Vegan Stuffed Cabbage">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Vegan Stuffed Cabbage">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetarian-mains-vegetables-vegan-stuffed-cabbage" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Vegan Stuffed Cabbage in new tab">🔗 Link</a>
@@ -1799,28 +1849,28 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Cabbage</h4><ul class="ingredients"><li>1 medium-large green cabbage</li></ul></div>
-<div class="ing-group"><h4>Stuffing aromatics</h4><ul class="ingredients"><li>Generous amount of olive oil for sauteing</li>
-<li>1 large red onion, peeled and finely chopped</li>
-<li>5 garlic cloves, crushed</li>
-<li>1 fresh jalapeño, minced</li>
-<li>2 medium carrots, peeled and cut into small cubes</li>
-<li>1/4 cup white wine</li>
-<li>1/4 cup water</li>
-<li>1 teaspoon salt</li></ul></div>
-<div class="ing-group"><h4>Stuffing finish</h4><ul class="ingredients"><li>1 1/4 cups Jasmine or Basmati rice (uncooked)</li>
-<li>Handful of fresh parsley, chopped</li>
-<li>Handful of fresh cilantro, chopped</li>
-<li>1/2 cup dried barberries (or cranberries), whole</li>
-<li>1 to 2 tablespoons pomegranate molasses (or date syrup), to taste</li>
-<li>Ground pepper to taste</li>
-<li>Ground cumin to taste</li>
-<li>Ground nutmeg to taste</li></ul></div>
-<div class="ing-group"><h4>Sauce</h4><ul class="ingredients"><li>3 tablespoons tomato paste</li>
-<li>2 cups water</li>
-<li>Salt, black pepper, ground cumin, and ground nutmeg to taste</li></ul></div>
-<div class="ing-group"><h4>Assembly</h4><ul class="ingredients"><li>Olive oil for drizzling</li>
-<li>Fresh thyme branches</li></ul></div>
+      <div class="ing-group"><h4>Cabbage</h4><ul class="ingredients"><li data-ing="green cabbage">1 medium-large green cabbage</li></ul></div>
+<div class="ing-group"><h4>Stuffing aromatics</h4><ul class="ingredients"><li data-ing="olive oil">Generous amount of olive oil for sauteing</li>
+<li data-ing="red onion">1 large red onion, peeled and finely chopped</li>
+<li data-ing="garlic">5 garlic cloves, crushed</li>
+<li data-ing="jalapeno">1 fresh jalapeño, minced</li>
+<li data-ing="carrot">2 medium carrots, peeled and cut into small cubes</li>
+<li data-ing="white wine">1/4 cup white wine</li>
+<li data-ing="water">1/4 cup water</li>
+<li data-ing="salt">1 teaspoon salt</li></ul></div>
+<div class="ing-group"><h4>Stuffing finish</h4><ul class="ingredients"><li data-ing="jasmine or basmati rice">1 1/4 cups Jasmine or Basmati rice (uncooked)</li>
+<li data-ing="parsley">Handful of fresh parsley, chopped</li>
+<li data-ing="cilantro">Handful of fresh cilantro, chopped</li>
+<li data-ing="dried barberry">1/2 cup dried barberries (or cranberries), whole</li>
+<li data-ing="pomegranate molasses">1 to 2 tablespoons pomegranate molasses (or date syrup), to taste</li>
+<li data-ing="black pepper">Ground pepper to taste</li>
+<li data-ing="ground cumin">Ground cumin to taste</li>
+<li data-ing="ground nutmeg">Ground nutmeg to taste</li></ul></div>
+<div class="ing-group"><h4>Sauce</h4><ul class="ingredients"><li data-ing="tomato paste">3 tablespoons tomato paste</li>
+<li data-ing="water">2 cups water</li>
+<li data-ing="salt">Salt, black pepper, ground cumin, and ground nutmeg to taste</li></ul></div>
+<div class="ing-group"><h4>Assembly</h4><ul class="ingredients"><li data-ing="olive oil">Olive oil for drizzling</li>
+<li data-ing="thyme branch">Fresh thyme branches</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1843,6 +1893,7 @@
     <h3>Aloo Gobi</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="vegetarian-mains-vegetables-aloo-gobi" data-title="Aloo Gobi" title="Made it" aria-label="Made: Aloo Gobi"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Aloo Gobi">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Aloo Gobi">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Aloo Gobi">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetarian-mains-vegetables-aloo-gobi" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Aloo Gobi in new tab">🔗 Link</a>
@@ -1852,20 +1903,20 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Vegetables</h4><ul class="ingredients"><li>2 medium potatoes (about 240 grams total), sliced 1/4 inch thick</li>
-<li>1 small head cauliflower (about 280 grams), cut into small florets</li></ul></div>
-<div class="ing-group"><h4>Oil and tempering</h4><ul class="ingredients"><li>2 tablespoons plus 2 teaspoons oil (mustard oil preferred), divided</li>
-<li>1/2 teaspoon cumin seeds</li></ul></div>
-<div class="ing-group"><h4>Aromatics and masala</h4><ul class="ingredients"><li>1 medium red onion, finely chopped</li>
-<li>1 1/2 teaspoons ginger-garlic paste</li>
-<li>2 medium tomatoes, finely chopped</li></ul></div>
-<div class="ing-group"><h4>Spices</h4><ul class="ingredients"><li>1/2 teaspoon turmeric powder</li>
-<li>1/2 teaspoon amchur (dried mango powder)</li>
-<li>1/4 teaspoon Aleppo pepper or red pepper flakes</li>
-<li>1 teaspoon coriander powder</li>
-<li>1/4 teaspoon garam masala</li></ul></div>
-<div class="ing-group"><h4>Finish</h4><ul class="ingredients"><li>3/4 teaspoon salt, or to taste</li>
-<li>2 tablespoons chopped fresh cilantro, plus more to garnish</li></ul></div>
+      <div class="ing-group"><h4>Vegetables</h4><ul class="ingredients"><li data-ing="potato">2 medium potatoes (about 240 grams total), sliced 1/4 inch thick</li>
+<li data-ing="cauliflower">1 small head cauliflower (about 280 grams), cut into small florets</li></ul></div>
+<div class="ing-group"><h4>Oil and tempering</h4><ul class="ingredients"><li data-ing="oil">2 tablespoons plus 2 teaspoons oil (mustard oil preferred), divided</li>
+<li data-ing="cumin seed">1/2 teaspoon cumin seeds</li></ul></div>
+<div class="ing-group"><h4>Aromatics and masala</h4><ul class="ingredients"><li data-ing="red onion">1 medium red onion, finely chopped</li>
+<li data-ing="ginger-garlic paste">1 1/2 teaspoons ginger-garlic paste</li>
+<li data-ing="tomato">2 medium tomatoes, finely chopped</li></ul></div>
+<div class="ing-group"><h4>Spices</h4><ul class="ingredients"><li data-ing="ground turmeric">1/2 teaspoon turmeric powder</li>
+<li data-ing="amchur">1/2 teaspoon amchur (dried mango powder)</li>
+<li data-ing="aleppo pepper or red pepper flakes">1/4 teaspoon Aleppo pepper or red pepper flakes</li>
+<li data-ing="ground coriander">1 teaspoon coriander powder</li>
+<li data-ing="garam masala">1/4 teaspoon garam masala</li></ul></div>
+<div class="ing-group"><h4>Finish</h4><ul class="ingredients"><li data-ing="salt">3/4 teaspoon salt, or to taste</li>
+<li data-ing="cilantro">2 tablespoons chopped fresh cilantro, plus more to garnish</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1883,6 +1934,7 @@
     <h3>Authentic Saag Paneer</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="vegetarian-mains-vegetables-authentic-saag-paneer" data-title="Authentic Saag Paneer" title="Made it" aria-label="Made: Authentic Saag Paneer"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Authentic Saag Paneer">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Authentic Saag Paneer">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Authentic Saag Paneer">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetarian-mains-vegetables-authentic-saag-paneer" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Authentic Saag Paneer in new tab">🔗 Link</a>
@@ -1892,21 +1944,21 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Greens</h4><ul class="ingredients"><li>About 1 1/2 pounds spinach, roughly chopped</li>
-<li>1 bunch fenugreek leaves, roughly chopped</li></ul></div>
-<div class="ing-group"><h4>Paneer</h4><ul class="ingredients"><li>1 tablespoon canola oil</li>
-<li>1/2 pound paneer, cubed</li></ul></div>
-<div class="ing-group"><h4>Aromatics and masala</h4><ul class="ingredients"><li>2 tablespoons canola oil</li>
-<li>1 teaspoon cumin seeds</li>
-<li>1 onion, thinly sliced</li>
-<li>3 cloves garlic, minced</li>
-<li>1 teaspoon grated fresh ginger</li>
-<li>1 tomato, diced</li>
-<li>2 teaspoons garam masala</li>
-<li>1/2 teaspoon ground turmeric</li>
-<li>1/2 teaspoon Aleppo pepper or red pepper flakes</li></ul></div>
-<div class="ing-group"><h4>Cream</h4><ul class="ingredients"><li>1/2 cup heavy whipping cream</li>
-<li>Salt to taste</li></ul></div>
+      <div class="ing-group"><h4>Greens</h4><ul class="ingredients"><li data-ing="spinach">About 1 1/2 pounds spinach, roughly chopped</li>
+<li data-ing="fenugreek">1 bunch fenugreek leaves, roughly chopped</li></ul></div>
+<div class="ing-group"><h4>Paneer</h4><ul class="ingredients"><li data-ing="canola oil">1 tablespoon canola oil</li>
+<li data-ing="paneer">1/2 pound paneer, cubed</li></ul></div>
+<div class="ing-group"><h4>Aromatics and masala</h4><ul class="ingredients"><li data-ing="canola oil">2 tablespoons canola oil</li>
+<li data-ing="cumin seed">1 teaspoon cumin seeds</li>
+<li data-ing="onion">1 onion, thinly sliced</li>
+<li data-ing="garlic">3 cloves garlic, minced</li>
+<li data-ing="ginger root">1 teaspoon grated fresh ginger</li>
+<li data-ing="tomato">1 tomato, diced</li>
+<li data-ing="garam masala">2 teaspoons garam masala</li>
+<li data-ing="ground turmeric">1/2 teaspoon ground turmeric</li>
+<li data-ing="aleppo pepper or red pepper flakes">1/2 teaspoon Aleppo pepper or red pepper flakes</li></ul></div>
+<div class="ing-group"><h4>Cream</h4><ul class="ingredients"><li data-ing="heavy cream">1/2 cup heavy whipping cream</li>
+<li data-ing="salt">Salt to taste</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1923,6 +1975,7 @@
     <h3>Baked Rajma (Punjabi-Style Red Beans With Cream)</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="vegetarian-mains-vegetables-baked-rajma-punjabi-style-red-beans-with-cream" data-title="Baked Rajma (Punjabi-Style Red Beans With Cream)" title="Made it" aria-label="Made: Baked Rajma (Punjabi-Style Red Beans With Cream)"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Baked Rajma (Punjabi-Style Red Beans With Cream)">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Baked Rajma (Punjabi-Style Red Beans With Cream)">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Baked Rajma (Punjabi-Style Red Beans With Cream)">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetarian-mains-vegetables-baked-rajma-punjabi-style-red-beans-with-cream" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Baked Rajma (Punjabi-Style Red Beans With Cream) in new tab">🔗 Link</a>
@@ -1933,19 +1986,19 @@
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
       <div class="ing-group"><h4>Onion-garlic purée</h4><ul class="ingredients"><li>1 red onion, divided: 3/4 roughly chopped (for purée), 1/4 thinly sliced (reserved for garnish)</li>
-<li>4 garlic cloves</li>
-<li>1 fresh green chile</li>
-<li>One 1-inch piece fresh ginger, peeled</li></ul></div>
-<div class="ing-group"><h4>Oil and tempering</h4><ul class="ingredients"><li>2 tablespoons neutral oil</li>
-<li>1/4 teaspoon cumin seeds</li>
-<li>1 teaspoon sea salt</li></ul></div>
-<div class="ing-group"><h4>Beans and sauce</h4><ul class="ingredients"><li>One 28-oz can crushed, diced, or whole tomatoes (puréed if not already crushed)</li>
-<li>Two 15-oz cans kidney beans, drained</li>
-<li>1/2 teaspoon Aleppo pepper or red pepper flakes</li>
-<li>1/4 teaspoon garam masala</li>
-<li>1/2 cup heavy cream</li></ul></div>
-<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li>1/4 cup roughly chopped fresh cilantro</li>
-<li>Hot rice, flour tortillas, or buttered toast</li></ul></div>
+<li data-ing="garlic">4 garlic cloves</li>
+<li data-ing="green chile">1 fresh green chile</li>
+<li data-ing="ginger root">One 1-inch piece fresh ginger, peeled</li></ul></div>
+<div class="ing-group"><h4>Oil and tempering</h4><ul class="ingredients"><li data-ing="neutral oil">2 tablespoons neutral oil</li>
+<li data-ing="cumin seed">1/4 teaspoon cumin seeds</li>
+<li data-ing="sea salt">1 teaspoon sea salt</li></ul></div>
+<div class="ing-group"><h4>Beans and sauce</h4><ul class="ingredients"><li data-ing="tomato / whole tomato">One 28-oz can crushed, diced, or whole tomatoes (puréed if not already crushed)</li>
+<li data-ing="canned kidney bean">Two 15-oz cans kidney beans, drained</li>
+<li data-ing="aleppo pepper or red pepper flakes">1/2 teaspoon Aleppo pepper or red pepper flakes</li>
+<li data-ing="garam masala">1/4 teaspoon garam masala</li>
+<li data-ing="heavy cream">1/2 cup heavy cream</li></ul></div>
+<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li data-ing="cilantro">1/4 cup roughly chopped fresh cilantro</li>
+<li data-ing="rice">Hot rice, flour tortillas, or buttered toast</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1963,6 +2016,7 @@
     <h3>Cauliflower Curry</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="vegetarian-mains-vegetables-cauliflower-curry" data-title="Cauliflower Curry" title="Not yet made (author only)" aria-label="Not yet made: Cauliflower Curry"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Cauliflower Curry">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Cauliflower Curry">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Cauliflower Curry">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetarian-mains-vegetables-cauliflower-curry" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Cauliflower Curry in new tab">🔗 Link</a>
@@ -1972,23 +2026,23 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Oil and tempering</h4><ul class="ingredients"><li>2 tablespoons oil</li>
-<li>1/4 teaspoon mustard seeds (optional)</li>
-<li>1/2 teaspoon cumin seeds</li>
-<li>1 sprig fresh curry leaves or 1 bay leaf (optional)</li></ul></div>
-<div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li>1 1/4 cups onion, finely chopped (about 2 medium)</li>
-<li>1 green chile, slit or chopped (optional)</li>
-<li>1/2 tablespoon fresh ginger, grated or finely chopped</li>
-<li>1/2 tablespoon garlic, minced or pressed (about 2 cloves)</li></ul></div>
-<div class="ing-group"><h4>Tomatoes and spices</h4><ul class="ingredients"><li>1 cup tomatoes, finely chopped or puréed (about 2 medium)</li>
-<li>3/4 teaspoon salt, or to taste</li>
-<li>1/4 teaspoon turmeric</li>
-<li>1/2 teaspoon Aleppo pepper or red pepper flakes</li>
-<li>1 teaspoon garam masala or curry powder</li>
-<li>1/2 teaspoon coriander powder</li></ul></div>
-<div class="ing-group"><h4>Cauliflower</h4><ul class="ingredients"><li>1 medium head cauliflower (about 2 heaped cups florets, 250 grams)</li></ul></div>
-<div class="ing-group"><h4>Finish</h4><ul class="ingredients"><li>3/4 to 1 1/4 cups water or coconut milk</li>
-<li>Fresh cilantro for garnish</li></ul></div>
+      <div class="ing-group"><h4>Oil and tempering</h4><ul class="ingredients"><li data-ing="oil">2 tablespoons oil</li>
+<li data-ing="mustard seed">1/4 teaspoon mustard seeds (optional)</li>
+<li data-ing="cumin seed">1/2 teaspoon cumin seeds</li>
+<li data-ing="curry leaf / bay leaf">1 sprig fresh curry leaves or 1 bay leaf (optional)</li></ul></div>
+<div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li data-ing="onion">1 1/4 cups onion, finely chopped (about 2 medium)</li>
+<li data-ing="green chile">1 green chile, slit or chopped (optional)</li>
+<li data-ing="ginger root">1/2 tablespoon fresh ginger, grated or finely chopped</li>
+<li data-ing="garlic">1/2 tablespoon garlic, minced or pressed (about 2 cloves)</li></ul></div>
+<div class="ing-group"><h4>Tomatoes and spices</h4><ul class="ingredients"><li data-ing="tomato">1 cup tomatoes, finely chopped or puréed (about 2 medium)</li>
+<li data-ing="salt">3/4 teaspoon salt, or to taste</li>
+<li data-ing="turmeric">1/4 teaspoon turmeric</li>
+<li data-ing="aleppo pepper or red pepper flakes">1/2 teaspoon Aleppo pepper or red pepper flakes</li>
+<li data-ing="garam masala / curry powder">1 teaspoon garam masala or curry powder</li>
+<li data-ing="ground coriander">1/2 teaspoon coriander powder</li></ul></div>
+<div class="ing-group"><h4>Cauliflower</h4><ul class="ingredients"><li data-ing="cauliflower">1 medium head cauliflower (about 2 heaped cups florets, 250 grams)</li></ul></div>
+<div class="ing-group"><h4>Finish</h4><ul class="ingredients"><li data-ing="water / coconut milk">3/4 to 1 1/4 cups water or coconut milk</li>
+<li data-ing="cilantro">Fresh cilantro for garnish</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -2006,6 +2060,7 @@
     <h3>Chickpea Tikka Masala</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="vegetarian-mains-vegetables-chickpea-tikka-masala" data-title="Chickpea Tikka Masala" title="Made it" aria-label="Made: Chickpea Tikka Masala"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Chickpea Tikka Masala">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Chickpea Tikka Masala">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Chickpea Tikka Masala">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetarian-mains-vegetables-chickpea-tikka-masala" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Chickpea Tikka Masala in new tab">🔗 Link</a>
@@ -2015,18 +2070,18 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Tomato purée</h4><ul class="ingredients"><li>One 28-oz can no-salt-added whole or diced tomatoes, with juices</li></ul></div>
-<div class="ing-group"><h4>Aromatics and spices</h4><ul class="ingredients"><li>1 tablespoon extra-virgin olive oil</li>
-<li>1 medium yellow onion, finely chopped (about 1 1/2 cups)</li>
-<li>1/2 teaspoon fine sea salt, plus more to taste</li>
-<li>1 tablespoon fresh ginger root, peeled and grated or minced</li>
-<li>3 cloves garlic, pressed or minced</li>
-<li>1 tablespoon garam masala</li>
-<li>1/8 teaspoon ground cayenne pepper (optional)</li></ul></div>
-<div class="ing-group"><h4>Chickpeas and sauce</h4><ul class="ingredients"><li>One 15-oz can no-salt-added chickpeas, rinsed and drained</li>
-<li>3/4 cup canned coconut milk (regular or low-fat)</li>
-<li>1/2 cup chopped fresh cilantro, plus more for garnish</li></ul></div>
-<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li>Jasmine or Basmati rice</li></ul></div>
+      <div class="ing-group"><h4>Tomato purée</h4><ul class="ingredients"><li data-ing="canned tomato">One 28-oz can no-salt-added whole or diced tomatoes, with juices</li></ul></div>
+<div class="ing-group"><h4>Aromatics and spices</h4><ul class="ingredients"><li data-ing="extra-virgin olive oil">1 tablespoon extra-virgin olive oil</li>
+<li data-ing="yellow onion">1 medium yellow onion, finely chopped (about 1 1/2 cups)</li>
+<li data-ing="sea salt">1/2 teaspoon fine sea salt, plus more to taste</li>
+<li data-ing="ginger root">1 tablespoon fresh ginger root, peeled and grated or minced</li>
+<li data-ing="garlic">3 cloves garlic, pressed or minced</li>
+<li data-ing="garam masala">1 tablespoon garam masala</li>
+<li data-ing="ground cayenne pepper">1/8 teaspoon ground cayenne pepper (optional)</li></ul></div>
+<div class="ing-group"><h4>Chickpeas and sauce</h4><ul class="ingredients"><li data-ing="canned chickpea">One 15-oz can no-salt-added chickpeas, rinsed and drained</li>
+<li data-ing="canned coconut milk">3/4 cup canned coconut milk (regular or low-fat)</li>
+<li data-ing="cilantro">1/2 cup chopped fresh cilantro, plus more for garnish</li></ul></div>
+<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li data-ing="jasmine or basmati rice">Jasmine or Basmati rice</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -2043,6 +2098,7 @@
     <h3>Coconut Curry Chickpeas with Pumpkin and Lime</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="vegetarian-mains-vegetables-coconut-curry-chickpeas-with-pumpkin-and-lime" data-title="Coconut Curry Chickpeas with Pumpkin and Lime" title="Not yet made (author only)" aria-label="Not yet made: Coconut Curry Chickpeas with Pumpkin and Lime"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Coconut Curry Chickpeas with Pumpkin and Lime">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Coconut Curry Chickpeas with Pumpkin and Lime">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Coconut Curry Chickpeas with Pumpkin and Lime">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetarian-mains-vegetables-coconut-curry-chickpeas-with-pumpkin-and-lime" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Coconut Curry Chickpeas with Pumpkin and Lime in new tab">🔗 Link</a>
@@ -2052,23 +2108,23 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li>3 tablespoons neutral oil, such as sunflower or canola</li>
-<li>1 large onion, chopped</li>
-<li>2 jalapeños, seeded or not, thinly sliced</li>
-<li>1 bay leaf</li></ul></div>
-<div class="ing-group"><h4>Ginger, garlic and spices</h4><ul class="ingredients"><li>1 knob ginger (about 1 inch), minced</li>
-<li>4 garlic cloves, minced</li>
-<li>1 1/2 teaspoons garam masala</li>
-<li>1 teaspoon ground cumin</li>
-<li>1/2 teaspoon ground turmeric</li></ul></div>
-<div class="ing-group"><h4>Chickpeas and sauce</h4><ul class="ingredients"><li>2 (15-oz) cans chickpeas, rinsed</li>
-<li>1 (13.5-oz) can coconut milk (not light)</li>
-<li>1 (13.5-oz) can pumpkin puree</li>
-<li>1/2 cup water</li>
-<li>1 1/2 teaspoons fine sea salt, more as needed</li></ul></div>
-<div class="ing-group"><h4>To finish</h4><ul class="ingredients"><li>3/4 cup chopped cilantro, plus more for serving</li>
-<li>2 to 3 tablespoons fresh lime juice, plus lime wedges for serving</li></ul></div>
-<div class="ing-group"><h4>To serve (optional)</h4><ul class="ingredients"><li>Cooked rice or couscous</li></ul></div>
+      <div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li data-ing="neutral oil">3 tablespoons neutral oil, such as sunflower or canola</li>
+<li data-ing="onion">1 large onion, chopped</li>
+<li data-ing="jalapeno">2 jalapeños, seeded or not, thinly sliced</li>
+<li data-ing="bay leaf">1 bay leaf</li></ul></div>
+<div class="ing-group"><h4>Ginger, garlic and spices</h4><ul class="ingredients"><li data-ing="ginger root">1 knob ginger (about 1 inch), minced</li>
+<li data-ing="garlic">4 garlic cloves, minced</li>
+<li data-ing="garam masala">1 1/2 teaspoons garam masala</li>
+<li data-ing="ground cumin">1 teaspoon ground cumin</li>
+<li data-ing="ground turmeric">1/2 teaspoon ground turmeric</li></ul></div>
+<div class="ing-group"><h4>Chickpeas and sauce</h4><ul class="ingredients"><li data-ing="canned chickpea">2 (15-oz) cans chickpeas, rinsed</li>
+<li data-ing="coconut milk">1 (13.5-oz) can coconut milk (not light)</li>
+<li data-ing="pumpkin puree">1 (13.5-oz) can pumpkin puree</li>
+<li data-ing="water">1/2 cup water</li>
+<li data-ing="sea salt">1 1/2 teaspoons fine sea salt, more as needed</li></ul></div>
+<div class="ing-group"><h4>To finish</h4><ul class="ingredients"><li data-ing="cilantro">3/4 cup chopped cilantro, plus more for serving</li>
+<li data-ing="lime juice">2 to 3 tablespoons fresh lime juice, plus lime wedges for serving</li></ul></div>
+<div class="ing-group"><h4>To serve (optional)</h4><ul class="ingredients"><li data-ing="rice / couscous">Cooked rice or couscous</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -2085,6 +2141,7 @@
     <h3>Curry Tomatoes and Chickpeas with Cucumber Yogurt</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="vegetarian-mains-vegetables-curry-tomatoes-and-chickpeas-with-cucumber-yogurt" data-title="Curry Tomatoes and Chickpeas with Cucumber Yogurt" title="Not yet made (author only)" aria-label="Not yet made: Curry Tomatoes and Chickpeas with Cucumber Yogurt"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Curry Tomatoes and Chickpeas with Cucumber Yogurt">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Curry Tomatoes and Chickpeas with Cucumber Yogurt">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Curry Tomatoes and Chickpeas with Cucumber Yogurt">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetarian-mains-vegetables-curry-tomatoes-and-chickpeas-with-cucumber-yogurt" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Curry Tomatoes and Chickpeas with Cucumber Yogurt in new tab">🔗 Link</a>
@@ -2094,18 +2151,18 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Cucumber yogurt</h4><ul class="ingredients"><li>1 cup plain whole-milk yogurt</li>
-<li>1 small cucumber (about 5 oz), grated or finely chopped</li>
-<li>Salt</li></ul></div>
-<div class="ing-group"><h4>Tomatoes and chickpeas</h4><ul class="ingredients"><li>3 tablespoons neutral oil</li>
-<li>1 pint cherry tomatoes (about 10 oz)</li>
-<li>One 15-oz can chickpeas, drained and rinsed</li>
-<li>2 teaspoons curry powder</li>
-<li>Salt and black pepper</li>
-<li>Aleppo pepper or red pepper flakes</li></ul></div>
-<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li>Cooked rice or warm flatbread</li>
-<li>Fresh cilantro or mint</li>
-<li>Pistachios (optional)</li></ul></div>
+      <div class="ing-group"><h4>Cucumber yogurt</h4><ul class="ingredients"><li data-ing="plain yogurt">1 cup plain whole-milk yogurt</li>
+<li data-ing="cucumber">1 small cucumber (about 5 oz), grated or finely chopped</li>
+<li data-ing="salt">Salt</li></ul></div>
+<div class="ing-group"><h4>Tomatoes and chickpeas</h4><ul class="ingredients"><li data-ing="neutral oil">3 tablespoons neutral oil</li>
+<li data-ing="cherry tomato">1 pint cherry tomatoes (about 10 oz)</li>
+<li data-ing="canned chickpea">One 15-oz can chickpeas, drained and rinsed</li>
+<li data-ing="curry powder">2 teaspoons curry powder</li>
+<li data-ing="salt / black pepper">Salt and black pepper</li>
+<li data-ing="aleppo pepper or red pepper flakes">Aleppo pepper or red pepper flakes</li></ul></div>
+<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li data-ing="rice / flatbread">Cooked rice or warm flatbread</li>
+<li data-ing="cilantro / mint">Fresh cilantro or mint</li>
+<li data-ing="pistachio">Pistachios (optional)</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -2121,6 +2178,7 @@
     <h3>Gobhi Masaledaar</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="vegetarian-mains-vegetables-gobhi-masaledaar" data-title="Gobhi Masaledaar" title="Not yet made (author only)" aria-label="Not yet made: Gobhi Masaledaar"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Gobhi Masaledaar">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Gobhi Masaledaar">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Gobhi Masaledaar">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetarian-mains-vegetables-gobhi-masaledaar" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Gobhi Masaledaar in new tab">🔗 Link</a>
@@ -2130,19 +2188,19 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Oil and tempering</h4><ul class="ingredients"><li>3 tablespoons oil</li>
-<li>1/2 teaspoon cumin seeds</li>
-<li>1 teaspoon fresh ginger, grated</li>
-<li>2 cloves garlic, minced</li></ul></div>
-<div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li>1 medium onion, finely chopped</li>
-<li>2 tomatoes, finely chopped</li></ul></div>
-<div class="ing-group"><h4>Cauliflower and spices</h4><ul class="ingredients"><li>1 medium head cauliflower (about 4 cups florets)</li>
-<li>1/2 teaspoon turmeric</li>
-<li>1 teaspoon coriander powder</li>
-<li>1/2 teaspoon Aleppo pepper or red pepper flakes</li>
-<li>1/2 teaspoon garam masala</li>
-<li>Salt to taste</li></ul></div>
-<div class="ing-group"><h4>Finish</h4><ul class="ingredients"><li>2 tablespoons fresh cilantro, chopped</li></ul></div>
+      <div class="ing-group"><h4>Oil and tempering</h4><ul class="ingredients"><li data-ing="oil">3 tablespoons oil</li>
+<li data-ing="cumin seed">1/2 teaspoon cumin seeds</li>
+<li data-ing="ginger root">1 teaspoon fresh ginger, grated</li>
+<li data-ing="garlic">2 cloves garlic, minced</li></ul></div>
+<div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li data-ing="onion">1 medium onion, finely chopped</li>
+<li data-ing="tomato">2 tomatoes, finely chopped</li></ul></div>
+<div class="ing-group"><h4>Cauliflower and spices</h4><ul class="ingredients"><li data-ing="cauliflower">1 medium head cauliflower (about 4 cups florets)</li>
+<li data-ing="turmeric">1/2 teaspoon turmeric</li>
+<li data-ing="ground coriander">1 teaspoon coriander powder</li>
+<li data-ing="aleppo pepper or red pepper flakes">1/2 teaspoon Aleppo pepper or red pepper flakes</li>
+<li data-ing="garam masala">1/2 teaspoon garam masala</li>
+<li data-ing="salt">Salt to taste</li></ul></div>
+<div class="ing-group"><h4>Finish</h4><ul class="ingredients"><li data-ing="cilantro">2 tablespoons fresh cilantro, chopped</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -2159,6 +2217,7 @@
     <h3>Indian Spiced Zucchini and Tomatoes</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="vegetarian-mains-vegetables-indian-spiced-zucchini-and-tomatoes" data-title="Indian Spiced Zucchini and Tomatoes" title="Not yet made (author only)" aria-label="Not yet made: Indian Spiced Zucchini and Tomatoes"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Indian Spiced Zucchini and Tomatoes">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Indian Spiced Zucchini and Tomatoes">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Indian Spiced Zucchini and Tomatoes">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetarian-mains-vegetables-indian-spiced-zucchini-and-tomatoes" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Indian Spiced Zucchini and Tomatoes in new tab">🔗 Link</a>
@@ -2168,18 +2227,18 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Aromatics and spices</h4><ul class="ingredients"><li>1 medium onion, diced</li>
-<li>2 tablespoons fresh ginger, minced or grated</li>
-<li>1/4 teaspoon Aleppo pepper or red pepper flakes</li>
-<li>2 cloves garlic, grated</li>
-<li>1 tablespoon ground cumin</li>
-<li>1/2 tablespoon turmeric</li>
-<li>1 teaspoon coriander</li>
-<li>1/2 teaspoon sea salt</li></ul></div>
-<div class="ing-group"><h4>Vegetables</h4><ul class="ingredients"><li>1 large or 2 medium zucchini, cut into large dice</li>
-<li>2 tomatoes, diced</li></ul></div>
-<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li>1/4 cup fresh cilantro</li>
-<li>Plain yogurt (optional)</li></ul></div>
+      <div class="ing-group"><h4>Aromatics and spices</h4><ul class="ingredients"><li data-ing="onion">1 medium onion, diced</li>
+<li data-ing="ginger root">2 tablespoons fresh ginger, minced or grated</li>
+<li data-ing="aleppo pepper or red pepper flakes">1/4 teaspoon Aleppo pepper or red pepper flakes</li>
+<li data-ing="garlic">2 cloves garlic, grated</li>
+<li data-ing="ground cumin">1 tablespoon ground cumin</li>
+<li data-ing="turmeric">1/2 tablespoon turmeric</li>
+<li data-ing="coriander">1 teaspoon coriander</li>
+<li data-ing="sea salt">1/2 teaspoon sea salt</li></ul></div>
+<div class="ing-group"><h4>Vegetables</h4><ul class="ingredients"><li data-ing="zucchini">1 large or 2 medium zucchini, cut into large dice</li>
+<li data-ing="tomato">2 tomatoes, diced</li></ul></div>
+<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li data-ing="cilantro">1/4 cup fresh cilantro</li>
+<li data-ing="plain yogurt">Plain yogurt (optional)</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -2196,6 +2255,7 @@
     <h3>Masoor Dal (Spiced Red Lentils)</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="vegetarian-mains-vegetables-masoor-dal-spiced-red-lentils" data-title="Masoor Dal (Spiced Red Lentils)" title="Not yet made (author only)" aria-label="Not yet made: Masoor Dal (Spiced Red Lentils)"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Masoor Dal (Spiced Red Lentils)">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Masoor Dal (Spiced Red Lentils)">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Masoor Dal (Spiced Red Lentils)">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetarian-mains-vegetables-masoor-dal-spiced-red-lentils" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Masoor Dal (Spiced Red Lentils) in new tab">🔗 Link</a>
@@ -2205,23 +2265,23 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li>2 tablespoons vegetable oil</li>
-<li>1 large onion, finely chopped</li>
-<li>1 medium sweet potato (about 8 oz), peeled and diced into 1/2-inch cubes</li>
-<li>1 tablespoon fresh ginger, grated</li>
-<li>2 cloves garlic, minced</li>
-<li>1 red chili, thinly sliced</li></ul></div>
-<div class="ing-group"><h4>Spices</h4><ul class="ingredients"><li>1 teaspoon ground coriander</li>
-<li>1 teaspoon ground cumin</li>
-<li>1/2 teaspoon turmeric</li>
-<li>1/2 teaspoon ground ginger</li></ul></div>
-<div class="ing-group"><h4>Lentils</h4><ul class="ingredients"><li>1 cup (about 7 oz) red lentils, rinsed</li>
-<li>One 14-oz can chopped tomatoes</li>
-<li>2 cups water</li></ul></div>
-<div class="ing-group"><h4>Paneer (optional)</h4><ul class="ingredients"><li>1 cup paneer, cut into cubes</li>
-<li>Oil for frying</li></ul></div>
-<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li>Cooked rice or naan</li>
-<li>Fresh cilantro</li></ul></div>
+      <div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li data-ing="vegetable oil">2 tablespoons vegetable oil</li>
+<li data-ing="onion">1 large onion, finely chopped</li>
+<li data-ing="sweet potato">1 medium sweet potato (about 8 oz), peeled and diced into 1/2-inch cubes</li>
+<li data-ing="ginger root">1 tablespoon fresh ginger, grated</li>
+<li data-ing="garlic">2 cloves garlic, minced</li>
+<li data-ing="red chile">1 red chili, thinly sliced</li></ul></div>
+<div class="ing-group"><h4>Spices</h4><ul class="ingredients"><li data-ing="ground coriander">1 teaspoon ground coriander</li>
+<li data-ing="ground cumin">1 teaspoon ground cumin</li>
+<li data-ing="turmeric">1/2 teaspoon turmeric</li>
+<li data-ing="ground ginger">1/2 teaspoon ground ginger</li></ul></div>
+<div class="ing-group"><h4>Lentils</h4><ul class="ingredients"><li data-ing="red lentils">1 cup (about 7 oz) red lentils, rinsed</li>
+<li data-ing="canned tomato">One 14-oz can chopped tomatoes</li>
+<li data-ing="water">2 cups water</li></ul></div>
+<div class="ing-group"><h4>Paneer (optional)</h4><ul class="ingredients"><li data-ing="paneer">1 cup paneer, cut into cubes</li>
+<li data-ing="oil">Oil for frying</li></ul></div>
+<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li data-ing="rice / naan">Cooked rice or naan</li>
+<li data-ing="cilantro">Fresh cilantro</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -2238,6 +2298,7 @@
     <h3>Mattar Paneer (Peas and Paneer in Spiced Tomato Gravy)</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="vegetarian-mains-vegetables-mattar-paneer-peas-and-paneer-in-spiced-tomato-gravy" data-title="Mattar Paneer (Peas and Paneer in Spiced Tomato Gravy)" title="Made it" aria-label="Made: Mattar Paneer (Peas and Paneer in Spiced Tomato Gravy)"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Mattar Paneer (Peas and Paneer in Spiced Tomato Gravy)">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Mattar Paneer (Peas and Paneer in Spiced Tomato Gravy)">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Mattar Paneer (Peas and Paneer in Spiced Tomato Gravy)">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetarian-mains-vegetables-mattar-paneer-peas-and-paneer-in-spiced-tomato-gravy" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Mattar Paneer (Peas and Paneer in Spiced Tomato Gravy) in new tab">🔗 Link</a>
@@ -2247,21 +2308,21 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Paneer</h4><ul class="ingredients"><li>2 tablespoons ghee, divided</li>
-<li>14 oz paneer, cut into 1/2-inch cubes</li></ul></div>
-<div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li>1 medium yellow onion, finely chopped</li>
-<li>1 tablespoon ginger paste (or 1 tablespoon fresh ginger, grated)</li>
-<li>1 tablespoon garlic paste (or 4 cloves garlic, minced)</li>
-<li>1 teaspoon cumin seeds</li></ul></div>
-<div class="ing-group"><h4>Tomato gravy</h4><ul class="ingredients"><li>1 teaspoon Kashmiri red chile powder</li>
-<li>1/2 teaspoon turmeric</li>
-<li>One 14-oz can whole plum tomatoes, crushed by hand</li>
-<li>2 tablespoons cashew butter</li>
-<li>Salt</li></ul></div>
-<div class="ing-group"><h4>Peas and finish</h4><ul class="ingredients"><li>1 cup frozen peas, thawed</li>
-<li>1 teaspoon garam masala</li>
-<li>2 tablespoons heavy cream (optional)</li></ul></div>
-<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li>Jasmine or Basmati rice or roti</li></ul></div>
+      <div class="ing-group"><h4>Paneer</h4><ul class="ingredients"><li data-ing="ghee">2 tablespoons ghee, divided</li>
+<li data-ing="paneer">14 oz paneer, cut into 1/2-inch cubes</li></ul></div>
+<div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li data-ing="yellow onion">1 medium yellow onion, finely chopped</li>
+<li data-ing="ginger paste">1 tablespoon ginger paste (or 1 tablespoon fresh ginger, grated)</li>
+<li data-ing="garlic paste">1 tablespoon garlic paste (or 4 cloves garlic, minced)</li>
+<li data-ing="cumin seed">1 teaspoon cumin seeds</li></ul></div>
+<div class="ing-group"><h4>Tomato gravy</h4><ul class="ingredients"><li data-ing="kashmiri chile powder">1 teaspoon Kashmiri red chile powder</li>
+<li data-ing="turmeric">1/2 teaspoon turmeric</li>
+<li data-ing="canned whole plum tomato">One 14-oz can whole plum tomatoes, crushed by hand</li>
+<li data-ing="cashew butter">2 tablespoons cashew butter</li>
+<li data-ing="salt">Salt</li></ul></div>
+<div class="ing-group"><h4>Peas and finish</h4><ul class="ingredients"><li data-ing="frozen pea">1 cup frozen peas, thawed</li>
+<li data-ing="garam masala">1 teaspoon garam masala</li>
+<li data-ing="heavy cream">2 tablespoons heavy cream (optional)</li></ul></div>
+<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li data-ing="jasmine or basmati rice / roti">Jasmine or Basmati rice or roti</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -2278,6 +2339,7 @@
     <h3>Quick Chana Masala</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="vegetarian-mains-vegetables-quick-chana-masala" data-title="Quick Chana Masala" title="Made it" aria-label="Made: Quick Chana Masala"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Quick Chana Masala">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Quick Chana Masala">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Quick Chana Masala">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetarian-mains-vegetables-quick-chana-masala" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Quick Chana Masala in new tab">🔗 Link</a>
@@ -2287,22 +2349,22 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li>2 tablespoons coconut or olive oil</li>
-<li>1 medium yellow onion, finely chopped</li>
-<li>1 medium serrano or jalapeno pepper, minced</li>
-<li>1/2 teaspoon fine sea salt</li></ul></div>
-<div class="ing-group"><h4>Spice paste</h4><ul class="ingredients"><li>5 cloves garlic, minced</li>
-<li>1 tablespoon fresh ginger, minced</li>
-<li>1 1/2 teaspoons garam masala</li>
-<li>1 1/2 teaspoons ground coriander</li>
-<li>3/4 teaspoon ground cumin</li>
-<li>1/2 teaspoon ground turmeric</li>
-<li>Pinch cayenne pepper</li></ul></div>
-<div class="ing-group"><h4>Tomatoes and chickpeas</h4><ul class="ingredients"><li>One 28-oz can fire-roasted crushed tomatoes</li>
-<li>Two 14-oz cans chickpeas, drained and rinsed</li></ul></div>
-<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li>Jasmine or Basmati rice</li>
-<li>Lemon wedges</li>
-<li>Fresh cilantro</li></ul></div>
+      <div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li data-ing="coconut oil / olive oil">2 tablespoons coconut or olive oil</li>
+<li data-ing="yellow onion">1 medium yellow onion, finely chopped</li>
+<li data-ing="serrano / jalapeno">1 medium serrano or jalapeno pepper, minced</li>
+<li data-ing="sea salt">1/2 teaspoon fine sea salt</li></ul></div>
+<div class="ing-group"><h4>Spice paste</h4><ul class="ingredients"><li data-ing="garlic">5 cloves garlic, minced</li>
+<li data-ing="ginger root">1 tablespoon fresh ginger, minced</li>
+<li data-ing="garam masala">1 1/2 teaspoons garam masala</li>
+<li data-ing="ground coriander">1 1/2 teaspoons ground coriander</li>
+<li data-ing="ground cumin">3/4 teaspoon ground cumin</li>
+<li data-ing="ground turmeric">1/2 teaspoon ground turmeric</li>
+<li data-ing="ground cayenne pepper">Pinch cayenne pepper</li></ul></div>
+<div class="ing-group"><h4>Tomatoes and chickpeas</h4><ul class="ingredients"><li data-ing="canned fire-roasted crushed tomato">One 28-oz can fire-roasted crushed tomatoes</li>
+<li data-ing="canned chickpea">Two 14-oz cans chickpeas, drained and rinsed</li></ul></div>
+<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li data-ing="jasmine or basmati rice">Jasmine or Basmati rice</li>
+<li data-ing="lemon">Lemon wedges</li>
+<li data-ing="cilantro">Fresh cilantro</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -2321,6 +2383,7 @@
     <h3>Thai Basil Eggplant</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="vegetarian-mains-vegetables-thai-basil-eggplant" data-title="Thai Basil Eggplant" title="Not yet made (author only)" aria-label="Not yet made: Thai Basil Eggplant"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Thai Basil Eggplant">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Thai Basil Eggplant">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Thai Basil Eggplant">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetarian-mains-vegetables-thai-basil-eggplant" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Thai Basil Eggplant in new tab">🔗 Link</a>
@@ -2330,26 +2393,26 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Sauce</h4><ul class="ingredients"><li>2 tablespoons tamari</li>
-<li>1 tablespoon sesame oil</li>
-<li>1 tablespoon rice vinegar</li>
-<li>4 teaspoons sambal oelek or sriracha</li>
-<li>1 tablespoon palm sugar, coconut sugar, or brown sugar</li>
-<li>2 tablespoons vegan fish sauce</li>
-<li>1/4 cup water</li>
-<li>2 teaspoons cornstarch</li></ul></div>
-<div class="ing-group"><h4>Stir-fry</h4><ul class="ingredients"><li>3 tablespoons canola oil</li>
-<li>3 Chinese eggplants (or 7 Thai eggplants), cut into 1-inch pieces</li>
-<li>1/2 cup shallots or red onion, minced</li>
-<li>4 cloves garlic, minced</li>
-<li>1 red bell pepper, sliced</li>
-<li>1/2 green bell pepper, sliced</li>
-<li>5 Bird's eye chiles, sliced</li>
-<li>1 1/2 cups Thai basil, roughly chopped</li></ul></div>
-<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li>Jasmine or Basmati rice</li>
-<li>Fresh Thai basil</li>
-<li>Bird's eye chiles, sliced</li>
-<li>Garlic chives or green onion</li></ul></div>
+      <div class="ing-group"><h4>Sauce</h4><ul class="ingredients"><li data-ing="tamari">2 tablespoons tamari</li>
+<li data-ing="sesame oil">1 tablespoon sesame oil</li>
+<li data-ing="rice vinegar">1 tablespoon rice vinegar</li>
+<li data-ing="sambal oelek / sriracha">4 teaspoons sambal oelek or sriracha</li>
+<li data-ing="palm sugar">1 tablespoon palm sugar, coconut sugar, or brown sugar</li>
+<li data-ing="fish sauce">2 tablespoons vegan fish sauce</li>
+<li data-ing="water">1/4 cup water</li>
+<li data-ing="corn starch">2 teaspoons cornstarch</li></ul></div>
+<div class="ing-group"><h4>Stir-fry</h4><ul class="ingredients"><li data-ing="canola oil">3 tablespoons canola oil</li>
+<li data-ing="chinese eggplant">3 Chinese eggplants (or 7 Thai eggplants), cut into 1-inch pieces</li>
+<li data-ing="shallot / red onion">1/2 cup shallots or red onion, minced</li>
+<li data-ing="garlic">4 cloves garlic, minced</li>
+<li data-ing="red bell pepper">1 red bell pepper, sliced</li>
+<li data-ing="green bell pepper">1/2 green bell pepper, sliced</li>
+<li data-ing="bird's eye chile">5 Bird's eye chiles, sliced</li>
+<li data-ing="thai basil">1 1/2 cups Thai basil, roughly chopped</li></ul></div>
+<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li data-ing="jasmine or basmati rice">Jasmine or Basmati rice</li>
+<li data-ing="thai basil">Fresh Thai basil</li>
+<li data-ing="bird's eye chile">Bird's eye chiles, sliced</li>
+<li data-ing="chives / scallion">Garlic chives or green onion</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -2369,6 +2432,7 @@
     <h3>Kung Pao Eggplant</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="vegetarian-mains-vegetables-kung-pao-eggplant" data-title="Kung Pao Eggplant" title="Not yet made (author only)" aria-label="Not yet made: Kung Pao Eggplant"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Kung Pao Eggplant">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Kung Pao Eggplant">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Kung Pao Eggplant">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetarian-mains-vegetables-kung-pao-eggplant" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Kung Pao Eggplant in new tab">🔗 Link</a>
@@ -2378,23 +2442,23 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Sauce</h4><ul class="ingredients"><li>2 tablespoons tamari or soy sauce</li>
-<li>2 tablespoons rice vinegar</li>
-<li>3 tablespoons vegetable broth</li>
-<li>2 tablespoons pure maple syrup</li>
-<li>1 tablespoon fresh ginger, finely grated</li>
-<li>1 teaspoon arrowroot or cornstarch</li>
-<li>1 teaspoon toasted sesame oil</li></ul></div>
-<div class="ing-group"><h4>Stir-fry</h4><ul class="ingredients"><li>1 tablespoon plus 1 teaspoon coconut oil, divided</li>
-<li>2 medium eggplants (about 2 pounds total), cut into 1-inch cubes</li>
-<li>Kosher salt</li>
-<li>1 large red bell pepper, diced</li>
-<li>1 large green bell pepper, diced</li>
-<li>2 stalks celery, thinly sliced</li>
-<li>2 cloves garlic, minced</li>
-<li>3–4 dried red Chinese or Arbol chilies</li></ul></div>
-<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li>1/2 cup roasted unsalted peanuts</li>
-<li>2 scallions, thinly sliced</li></ul></div>
+      <div class="ing-group"><h4>Sauce</h4><ul class="ingredients"><li data-ing="tamari / soy sauce">2 tablespoons tamari or soy sauce</li>
+<li data-ing="rice vinegar">2 tablespoons rice vinegar</li>
+<li data-ing="vegetable broth">3 tablespoons vegetable broth</li>
+<li data-ing="maple syrup">2 tablespoons pure maple syrup</li>
+<li data-ing="ginger root">1 tablespoon fresh ginger, finely grated</li>
+<li data-ing="arrowroot / corn starch">1 teaspoon arrowroot or cornstarch</li>
+<li data-ing="toasted sesame oil">1 teaspoon toasted sesame oil</li></ul></div>
+<div class="ing-group"><h4>Stir-fry</h4><ul class="ingredients"><li data-ing="coconut oil">1 tablespoon plus 1 teaspoon coconut oil, divided</li>
+<li data-ing="eggplant">2 medium eggplants (about 2 pounds total), cut into 1-inch cubes</li>
+<li data-ing="kosher salt">Kosher salt</li>
+<li data-ing="red bell pepper">1 large red bell pepper, diced</li>
+<li data-ing="green bell pepper">1 large green bell pepper, diced</li>
+<li data-ing="celery">2 stalks celery, thinly sliced</li>
+<li data-ing="garlic">2 cloves garlic, minced</li>
+<li data-ing="dried red chinese arbol chile">3–4 dried red Chinese or Arbol chilies</li></ul></div>
+<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li data-ing="roasted unsalted peanut">1/2 cup roasted unsalted peanuts</li>
+<li data-ing="scallion">2 scallions, thinly sliced</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -2411,6 +2475,7 @@
     <h3>Sticky Sesame Cauliflower</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="vegetarian-mains-vegetables-sticky-sesame-cauliflower" data-title="Sticky Sesame Cauliflower" title="Not yet made (author only)" aria-label="Not yet made: Sticky Sesame Cauliflower"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Sticky Sesame Cauliflower">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Sticky Sesame Cauliflower">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Sticky Sesame Cauliflower">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetarian-mains-vegetables-sticky-sesame-cauliflower" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Sticky Sesame Cauliflower in new tab">🔗 Link</a>
@@ -2420,23 +2485,23 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Sesame sauce</h4><ul class="ingredients"><li>2 teaspoons sesame oil</li>
-<li>2 cloves garlic, minced</li>
-<li>2 teaspoons freshly grated ginger</li>
-<li>1/4 cup tamari or soy sauce</li>
-<li>1/3 cup maple syrup</li>
-<li>1 1/2 tablespoons rice vinegar</li>
-<li>1 teaspoon sriracha</li>
-<li>2 teaspoons cornstarch dissolved in 1/4 cup cold water</li></ul></div>
-<div class="ing-group"><h4>Cauliflower batter</h4><ul class="ingredients"><li>1/2 cup rice flour</li>
-<li>3 tablespoons cornstarch</li>
-<li>1/2 teaspoon garlic powder</li>
-<li>1/4 teaspoon salt</li>
-<li>Dash of black pepper and cayenne</li>
-<li>1/2 cup water</li>
-<li>2 teaspoons sesame oil</li></ul></div>
-<div class="ing-group"><h4>Cauliflower</h4><ul class="ingredients"><li>1 small head cauliflower, cut into equal-sized florets</li></ul></div>
-<div class="ing-group"><h4>Garnish</h4><ul class="ingredients"><li>Sesame seeds (white and black), sliced scallions</li></ul></div>
+      <div class="ing-group"><h4>Sesame sauce</h4><ul class="ingredients"><li data-ing="sesame oil">2 teaspoons sesame oil</li>
+<li data-ing="garlic">2 cloves garlic, minced</li>
+<li data-ing="ginger root">2 teaspoons freshly grated ginger</li>
+<li data-ing="tamari / soy sauce">1/4 cup tamari or soy sauce</li>
+<li data-ing="maple syrup">1/3 cup maple syrup</li>
+<li data-ing="rice vinegar">1 1/2 tablespoons rice vinegar</li>
+<li data-ing="sriracha">1 teaspoon sriracha</li>
+<li data-ing="corn starch">2 teaspoons cornstarch dissolved in 1/4 cup cold water</li></ul></div>
+<div class="ing-group"><h4>Cauliflower batter</h4><ul class="ingredients"><li data-ing="rice flour">1/2 cup rice flour</li>
+<li data-ing="corn starch">3 tablespoons cornstarch</li>
+<li data-ing="garlic powder">1/2 teaspoon garlic powder</li>
+<li data-ing="salt">1/4 teaspoon salt</li>
+<li data-ing="black pepper / ground cayenne pepper">Dash of black pepper and cayenne</li>
+<li data-ing="water">1/2 cup water</li>
+<li data-ing="sesame oil">2 teaspoons sesame oil</li></ul></div>
+<div class="ing-group"><h4>Cauliflower</h4><ul class="ingredients"><li data-ing="cauliflower">1 small head cauliflower, cut into equal-sized florets</li></ul></div>
+<div class="ing-group"><h4>Garnish</h4><ul class="ingredients"><li data-ing="sesame seed">Sesame seeds (white and black), sliced scallions</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -2459,6 +2524,7 @@
     <h3>Sesame Ginger Tofu and Veggie Stir Fry</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="vegetarian-mains-tofu-sesame-ginger-tofu-and-veggie-stir-fry" data-title="Sesame Ginger Tofu and Veggie Stir Fry" title="Not yet made (author only)" aria-label="Not yet made: Sesame Ginger Tofu and Veggie Stir Fry"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Sesame Ginger Tofu and Veggie Stir Fry">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Sesame Ginger Tofu and Veggie Stir Fry">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Sesame Ginger Tofu and Veggie Stir Fry">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetarian-mains-tofu-sesame-ginger-tofu-and-veggie-stir-fry" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Sesame Ginger Tofu and Veggie Stir Fry in new tab">🔗 Link</a>
@@ -2468,22 +2534,22 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Tofu and coating</h4><ul class="ingredients"><li>14 oz extra-firm tofu</li>
-<li>1 tablespoon cornstarch</li>
-<li>½ teaspoon kosher salt</li></ul></div>
-<div class="ing-group"><h4>Sauce</h4><ul class="ingredients"><li>1 tablespoon sesame oil</li>
-<li>1½ tablespoons grated ginger</li>
-<li>1½ tablespoons minced garlic</li>
-<li>1 tablespoon rice vinegar</li>
-<li>3 tablespoons soy sauce (or GF tamari)</li>
-<li>¼ teaspoon Aleppo pepper or red pepper flakes</li>
-<li>3 tablespoons brown sugar</li>
-<li>1 tablespoon cornstarch</li>
-<li>2 tablespoons water</li></ul></div>
-<div class="ing-group"><h4>Stir fry</h4><ul class="ingredients"><li>3 tablespoons avocado oil</li>
-<li>2½ cups green beans, cut into 1-inch pieces</li>
-<li>1 cup baby carrots, cut lengthwise</li></ul></div>
-<div class="ing-group"><h4>To serve (optional)</h4><ul class="ingredients"><li>Rice, quinoa, noodles, or cauliflower rice</li></ul></div>
+      <div class="ing-group"><h4>Tofu and coating</h4><ul class="ingredients"><li data-ing="extra-firm tofu">14 oz extra-firm tofu</li>
+<li data-ing="corn starch">1 tablespoon cornstarch</li>
+<li data-ing="kosher salt">½ teaspoon kosher salt</li></ul></div>
+<div class="ing-group"><h4>Sauce</h4><ul class="ingredients"><li data-ing="sesame oil">1 tablespoon sesame oil</li>
+<li data-ing="ginger root">1½ tablespoons grated ginger</li>
+<li data-ing="garlic">1½ tablespoons minced garlic</li>
+<li data-ing="rice vinegar">1 tablespoon rice vinegar</li>
+<li data-ing="soy sauce">3 tablespoons soy sauce (or GF tamari)</li>
+<li data-ing="aleppo pepper or red pepper flakes">¼ teaspoon Aleppo pepper or red pepper flakes</li>
+<li data-ing="brown sugar">3 tablespoons brown sugar</li>
+<li data-ing="corn starch">1 tablespoon cornstarch</li>
+<li data-ing="water">2 tablespoons water</li></ul></div>
+<div class="ing-group"><h4>Stir fry</h4><ul class="ingredients"><li data-ing="avocado oil">3 tablespoons avocado oil</li>
+<li data-ing="green bean">2½ cups green beans, cut into 1-inch pieces</li>
+<li data-ing="baby carrot">1 cup baby carrots, cut lengthwise</li></ul></div>
+<div class="ing-group"><h4>To serve (optional)</h4><ul class="ingredients"><li data-ing="rice">Rice, quinoa, noodles, or cauliflower rice</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -2500,6 +2566,7 @@
     <h3>Tofu Stir Fry</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="vegetarian-mains-tofu-tofu-stir-fry" data-title="Tofu Stir Fry" title="Not yet made (author only)" aria-label="Not yet made: Tofu Stir Fry"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Tofu Stir Fry">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Tofu Stir Fry">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Tofu Stir Fry">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetarian-mains-tofu-tofu-stir-fry" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Tofu Stir Fry in new tab">🔗 Link</a>
@@ -2509,22 +2576,22 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Sauce</h4><ul class="ingredients"><li>2 garlic cloves, minced (of 4 total)</li>
-<li>2 teaspoons fresh ginger, grated</li>
-<li>1 tablespoon honey</li>
-<li>1 teaspoon sriracha</li>
-<li>¼ cup lime juice</li>
-<li>¼ cup reduced-sodium soy sauce</li></ul></div>
-<div class="ing-group"><h4>Tofu</h4><ul class="ingredients"><li>1 block extra-firm tofu</li></ul></div>
-<div class="ing-group"><h4>Stir fry</h4><ul class="ingredients"><li>2 tablespoons sesame oil</li>
+      <div class="ing-group"><h4>Sauce</h4><ul class="ingredients"><li data-ing="garlic">2 garlic cloves, minced (of 4 total)</li>
+<li data-ing="ginger root">2 teaspoons fresh ginger, grated</li>
+<li data-ing="honey">1 tablespoon honey</li>
+<li data-ing="sriracha">1 teaspoon sriracha</li>
+<li data-ing="lime juice">¼ cup lime juice</li>
+<li data-ing="reduced-sodium soy sauce">¼ cup reduced-sodium soy sauce</li></ul></div>
+<div class="ing-group"><h4>Tofu</h4><ul class="ingredients"><li data-ing="block extra-firm tofu">1 block extra-firm tofu</li></ul></div>
+<div class="ing-group"><h4>Stir fry</h4><ul class="ingredients"><li data-ing="sesame oil">2 tablespoons sesame oil</li>
 <li>2 garlic cloves, minced (remaining)</li>
-<li>1 cup white onion, sliced</li>
-<li>1 cup carrot, sliced</li>
-<li>1 cup red bell pepper, sliced</li>
-<li>½ cup edamame, frozen, thawed</li>
-<li>3 cups soba noodles, cooked</li>
-<li>1 tablespoon sesame seeds</li></ul></div>
-<div class="ing-group"><h4>Garnish</h4><ul class="ingredients"><li>Green onion, chopped</li></ul></div>
+<li data-ing="white onion">1 cup white onion, sliced</li>
+<li data-ing="carrot">1 cup carrot, sliced</li>
+<li data-ing="red bell pepper">1 cup red bell pepper, sliced</li>
+<li data-ing="frozen edamame">½ cup edamame, frozen, thawed</li>
+<li data-ing="soba noodles">3 cups soba noodles, cooked</li>
+<li data-ing="sesame seed">1 tablespoon sesame seeds</li></ul></div>
+<div class="ing-group"><h4>Garnish</h4><ul class="ingredients"><li data-ing="scallion">Green onion, chopped</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -2545,6 +2612,7 @@
     <h3>Baked Tofu With Peanut Sauce and Coconut-Lime Rice</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="vegetarian-mains-tofu-baked-tofu-with-peanut-sauce-and-coconut-lime-rice" data-title="Baked Tofu With Peanut Sauce and Coconut-Lime Rice" title="Made it" aria-label="Made: Baked Tofu With Peanut Sauce and Coconut-Lime Rice"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Baked Tofu With Peanut Sauce and Coconut-Lime Rice">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Baked Tofu With Peanut Sauce and Coconut-Lime Rice">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Baked Tofu With Peanut Sauce and Coconut-Lime Rice">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetarian-mains-tofu-baked-tofu-with-peanut-sauce-and-coconut-lime-rice" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Baked Tofu With Peanut Sauce and Coconut-Lime Rice in new tab">🔗 Link</a>
@@ -2554,29 +2622,29 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Pickled peppers</h4><ul class="ingredients"><li>4 tablespoons lime juice (of ⅔ cup total)</li>
-<li>½ teaspoon kosher salt</li>
-<li>8 baby bell peppers or 1 medium bell pepper (any color), stemmed and thinly sliced lengthwise</li>
-<li>Freshly ground black pepper</li></ul></div>
-<div class="ing-group"><h4>Coconut-lime rice</h4><ul class="ingredients"><li>1 cup long-grain rice (jasmine or basmati)</li>
-<li>½ cup full-fat coconut milk</li>
-<li>1 cup water</li>
-<li>Salt</li></ul></div>
+      <div class="ing-group"><h4>Pickled peppers</h4><ul class="ingredients"><li data-ing="lime juice">4 tablespoons lime juice (of ⅔ cup total)</li>
+<li data-ing="kosher salt">½ teaspoon kosher salt</li>
+<li data-ing="baby bell pepper / bell pepper">8 baby bell peppers or 1 medium bell pepper (any color), stemmed and thinly sliced lengthwise</li>
+<li data-ing="black pepper">Freshly ground black pepper</li></ul></div>
+<div class="ing-group"><h4>Coconut-lime rice</h4><ul class="ingredients"><li data-ing="long-grain rice">1 cup long-grain rice (jasmine or basmati)</li>
+<li data-ing="full-fat coconut milk">½ cup full-fat coconut milk</li>
+<li data-ing="water">1 cup water</li>
+<li data-ing="salt">Salt</li></ul></div>
 <div class="ing-group"><h4>Peanut sauce</h4><ul class="ingredients"><li>4 tablespoons lime juice (remaining from the ⅔ cup)</li>
-<li>1 cup smooth, natural peanut butter</li>
-<li>1 tablespoon red miso</li>
-<li>1 tablespoon grated ginger</li>
-<li>1 tablespoon fish sauce (optional)</li>
-<li>2 teaspoons chopped habanero pepper (stem and seeds removed) or 1 tablespoon sambal</li>
-<li>2 tablespoons peanut or vegetable oil</li>
-<li>1 tablespoon buckwheat honey or molasses (+ 1 tablespoon more for dressing in Step 5)</li>
-<li>¾ cup water</li></ul></div>
-<div class="ing-group"><h4>Tofu</h4><ul class="ingredients"><li>2 (14-oz) packages extra-firm tofu, drained and sliced crosswise ¼-inch thick</li>
-<li>Peanut or vegetable oil, for brushing pan and drizzling</li>
-<li>Salt</li></ul></div>
-<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li>Zest of 1 lime</li>
-<li>3 cups peppery greens (arugula, mizuna, or baby mustard greens)</li>
-<li>2 scallions, trimmed and thinly sliced</li></ul></div>
+<li data-ing="natural peanut butter">1 cup smooth, natural peanut butter</li>
+<li data-ing="red miso">1 tablespoon red miso</li>
+<li data-ing="ginger root">1 tablespoon grated ginger</li>
+<li data-ing="fish sauce">1 tablespoon fish sauce (optional)</li>
+<li data-ing="habanero / sambal oelek">2 teaspoons chopped habanero pepper (stem and seeds removed) or 1 tablespoon sambal</li>
+<li data-ing="peanut oil / vegetable oil">2 tablespoons peanut or vegetable oil</li>
+<li data-ing="buckwheat honey / molasses">1 tablespoon buckwheat honey or molasses (+ 1 tablespoon more for dressing in Step 5)</li>
+<li data-ing="water">¾ cup water</li></ul></div>
+<div class="ing-group"><h4>Tofu</h4><ul class="ingredients"><li data-ing="extra-firm tofu">2 (14-oz) packages extra-firm tofu, drained and sliced crosswise ¼-inch thick</li>
+<li data-ing="peanut oil / vegetable oil">Peanut or vegetable oil, for brushing pan and drizzling</li>
+<li data-ing="salt">Salt</li></ul></div>
+<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li data-ing="lime">Zest of 1 lime</li>
+<li data-ing="peppery greens">3 cups peppery greens (arugula, mizuna, or baby mustard greens)</li>
+<li data-ing="scallion">2 scallions, trimmed and thinly sliced</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -2597,6 +2665,7 @@
     <h3>I Can't Believe It's Not Chicken (Super-Savory Grated Tofu)</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="vegetarian-mains-tofu-i-can-t-believe-it-s-not-chicken-super-savory-grated-tofu" data-title="I Can't Believe It's Not Chicken (Super-Savory Grated Tofu)" title="Not yet made (author only)" aria-label="Not yet made: I Can't Believe It's Not Chicken (Super-Savory Grated Tofu)"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for I Can't Believe It's Not Chicken (Super-Savory Grated Tofu)">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy I Can't Believe It's Not Chicken (Super-Savory Grated Tofu)">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print I Can't Believe It's Not Chicken (Super-Savory Grated Tofu)">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetarian-mains-tofu-i-can-t-believe-it-s-not-chicken-super-savory-grated-tofu" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open I Can't Believe It's Not Chicken (Super-Savory Grated Tofu) in new tab">🔗 Link</a>
@@ -2606,20 +2675,20 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Rice</h4><ul class="ingredients"><li>1 to 1 1/2 cups uncooked white or brown rice (or 3 to 4 1/2 cups cooked)</li></ul></div>
-<div class="ing-group"><h4>Tofu</h4><ul class="ingredients"><li>One 10 to 12 oz package super-firm tofu</li>
-<li>1 1/2 tablespoons neutral-flavored oil</li></ul></div>
-<div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li>4 scallions, sliced at an angle (reserve the dark green tops for garnish)</li>
-<li>1 to 2 Thai chiles (or 1 small serrano pepper), thinly sliced (optional, for spicy)</li>
-<li>3 garlic cloves, thinly sliced</li></ul></div>
-<div class="ing-group"><h4>Sauce</h4><ul class="ingredients"><li>3 tablespoons tamari or soy sauce</li>
-<li>1 tablespoon Chinese black vinegar</li>
-<li>1 teaspoon organic cane sugar, pure maple syrup, or agave nectar</li>
-<li>1 tablespoon gochugaru (Korean chile flakes)</li>
-<li>1 tablespoon toasted sesame oil</li></ul></div>
-<div class="ing-group"><h4>To finish</h4><ul class="ingredients"><li>1 tablespoon roasted black or white sesame seeds</li></ul></div>
+      <div class="ing-group"><h4>Rice</h4><ul class="ingredients"><li data-ing="white rice / brown rice">1 to 1 1/2 cups uncooked white or brown rice (or 3 to 4 1/2 cups cooked)</li></ul></div>
+<div class="ing-group"><h4>Tofu</h4><ul class="ingredients"><li data-ing="super-firm tofu">One 10 to 12 oz package super-firm tofu</li>
+<li data-ing="neutral oil">1 1/2 tablespoons neutral-flavored oil</li></ul></div>
+<div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li data-ing="scallion">4 scallions, sliced at an angle (reserve the dark green tops for garnish)</li>
+<li data-ing="thai chile">1 to 2 Thai chiles (or 1 small serrano pepper), thinly sliced (optional, for spicy)</li>
+<li data-ing="garlic">3 garlic cloves, thinly sliced</li></ul></div>
+<div class="ing-group"><h4>Sauce</h4><ul class="ingredients"><li data-ing="tamari / soy sauce">3 tablespoons tamari or soy sauce</li>
+<li data-ing="chinese black vinegar">1 tablespoon Chinese black vinegar</li>
+<li data-ing="sugar">1 teaspoon organic cane sugar, pure maple syrup, or agave nectar</li>
+<li data-ing="gochugaru">1 tablespoon gochugaru (Korean chile flakes)</li>
+<li data-ing="toasted sesame oil">1 tablespoon toasted sesame oil</li></ul></div>
+<div class="ing-group"><h4>To finish</h4><ul class="ingredients"><li data-ing="black sesame seed / white sesame seed">1 tablespoon roasted black or white sesame seeds</li></ul></div>
 <div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li>Reserved scallion tops</li>
-<li>1 handful cilantro leaves and tender stems, roughly chopped</li></ul></div>
+<li data-ing="cilantro">1 handful cilantro leaves and tender stems, roughly chopped</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -2641,6 +2710,7 @@
     <h3>Peter Fang's Crispy Tofu with Peanut Sauce</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="vegetarian-mains-tofu-peter-fang-s-crispy-tofu-with-peanut-sauce" data-title="Peter Fang's Crispy Tofu with Peanut Sauce" title="Not yet made (author only)" aria-label="Not yet made: Peter Fang's Crispy Tofu with Peanut Sauce"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Peter Fang's Crispy Tofu with Peanut Sauce">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Peter Fang's Crispy Tofu with Peanut Sauce">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Peter Fang's Crispy Tofu with Peanut Sauce">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetarian-mains-tofu-peter-fang-s-crispy-tofu-with-peanut-sauce" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Peter Fang's Crispy Tofu with Peanut Sauce in new tab">🔗 Link</a>
@@ -2650,22 +2720,22 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Tofu (15 minutes ahead)</h4><ul class="ingredients"><li>One 14 oz package medium-firm tofu</li>
-<li>1 1/2 teaspoons salt</li>
-<li>1 1/2 teaspoons ground black pepper</li>
-<li>1 teaspoon sugar</li>
-<li>1 teaspoon paprika</li></ul></div>
-<div class="ing-group"><h4>Peanut sauce (10 minutes ahead)</h4><ul class="ingredients"><li>1/2 cup creamy peanut butter</li>
-<li>1/4 cup toasted sesame oil</li>
-<li>1/4 cup light agave nectar</li>
-<li>2 tablespoons soy sauce</li>
-<li>2 tablespoons Chinese black vinegar</li>
-<li>1 tablespoon white distilled vinegar</li>
-<li>2 teaspoons sambal oelek</li>
-<li>1 teaspoon Aleppo pepper or red pepper flakes</li>
-<li>1/2 teaspoon finely minced garlic</li></ul></div>
-<div class="ing-group"><h4>Frying oil</h4><ul class="ingredients"><li>Neutral oil, for frying</li></ul></div>
-<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li>Steamed white rice</li></ul></div>
+      <div class="ing-group"><h4>Tofu (15 minutes ahead)</h4><ul class="ingredients"><li data-ing="firm tofu">One 14 oz package medium-firm tofu</li>
+<li data-ing="salt">1 1/2 teaspoons salt</li>
+<li data-ing="black pepper">1 1/2 teaspoons ground black pepper</li>
+<li data-ing="sugar">1 teaspoon sugar</li>
+<li data-ing="paprika">1 teaspoon paprika</li></ul></div>
+<div class="ing-group"><h4>Peanut sauce (10 minutes ahead)</h4><ul class="ingredients"><li data-ing="creamy peanut butter">1/2 cup creamy peanut butter</li>
+<li data-ing="toasted sesame oil">1/4 cup toasted sesame oil</li>
+<li data-ing="agave nectar">1/4 cup light agave nectar</li>
+<li data-ing="soy sauce">2 tablespoons soy sauce</li>
+<li data-ing="chinese black vinegar">2 tablespoons Chinese black vinegar</li>
+<li data-ing="distilled white vinegar">1 tablespoon white distilled vinegar</li>
+<li data-ing="sambal oelek">2 teaspoons sambal oelek</li>
+<li data-ing="aleppo pepper or red pepper flakes">1 teaspoon Aleppo pepper or red pepper flakes</li>
+<li data-ing="garlic">1/2 teaspoon finely minced garlic</li></ul></div>
+<div class="ing-group"><h4>Frying oil</h4><ul class="ingredients"><li data-ing="neutral oil">Neutral oil, for frying</li></ul></div>
+<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li data-ing="white rice">Steamed white rice</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -2683,6 +2753,7 @@
     <h3>Silken Tofu With Spicy Soy Dressing</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="vegetarian-mains-tofu-silken-tofu-with-spicy-soy-dressing" data-title="Silken Tofu With Spicy Soy Dressing" title="Made it" aria-label="Made: Silken Tofu With Spicy Soy Dressing"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Silken Tofu With Spicy Soy Dressing">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Silken Tofu With Spicy Soy Dressing">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Silken Tofu With Spicy Soy Dressing">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetarian-mains-tofu-silken-tofu-with-spicy-soy-dressing" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Silken Tofu With Spicy Soy Dressing in new tab">🔗 Link</a>
@@ -2692,16 +2763,16 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Spicy soy dressing</h4><ul class="ingredients"><li>3 tablespoons soy sauce</li>
-<li>2 tablespoons rice vinegar</li>
-<li>1 tablespoon sesame oil</li>
-<li>1–2 tablespoons chili oil (to taste)</li>
-<li>1 teaspoon sesame seeds</li>
-<li>1 teaspoon sugar</li>
-<li>1 scallion, thinly sliced</li></ul></div>
-<div class="ing-group"><h4>Tofu</h4><ul class="ingredients"><li>Two 14–16-oz blocks silken tofu</li></ul></div>
-<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li>1 scallion, thinly sliced</li>
-<li>Fresh cilantro</li></ul></div>
+      <div class="ing-group"><h4>Spicy soy dressing</h4><ul class="ingredients"><li data-ing="soy sauce">3 tablespoons soy sauce</li>
+<li data-ing="rice vinegar">2 tablespoons rice vinegar</li>
+<li data-ing="sesame oil">1 tablespoon sesame oil</li>
+<li data-ing="chile oil">1–2 tablespoons chili oil (to taste)</li>
+<li data-ing="sesame seed">1 teaspoon sesame seeds</li>
+<li data-ing="sugar">1 teaspoon sugar</li>
+<li data-ing="scallion">1 scallion, thinly sliced</li></ul></div>
+<div class="ing-group"><h4>Tofu</h4><ul class="ingredients"><li data-ing="blocks silken tofu">Two 14–16-oz blocks silken tofu</li></ul></div>
+<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li data-ing="scallion">1 scallion, thinly sliced</li>
+<li data-ing="cilantro">Fresh cilantro</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -2722,6 +2793,7 @@
     <h3>★ Mushrooms Florentine</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="vegetarian-mains-mushroom-mushrooms-florentine" data-title="Mushrooms Florentine" title="Made it" aria-label="Made: Mushrooms Florentine"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Mushrooms Florentine">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Mushrooms Florentine">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Mushrooms Florentine">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetarian-mains-mushroom-mushrooms-florentine" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Mushrooms Florentine in new tab">🔗 Link</a>
@@ -2731,13 +2803,13 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Mushrooms</h4><ul class="ingredients"><li>2 pounds small fresh mushrooms, stems removed</li>
-<li>Butter, for sautéing</li></ul></div>
-<div class="ing-group"><h4>Spinach base</h4><ul class="ingredients"><li>4 packages (10 oz each) frozen chopped spinach, defrosted and squeezed very dry</li>
-<li>1 large onion, chopped</li>
-<li>1/2 cup butter, melted</li>
-<li>Garlic salt, to taste</li></ul></div>
-<div class="ing-group"><h4>Cheese</h4><ul class="ingredients"><li>2 cups grated cheddar, divided</li></ul></div>
+      <div class="ing-group"><h4>Mushrooms</h4><ul class="ingredients"><li data-ing="mushroom">2 pounds small fresh mushrooms, stems removed</li>
+<li data-ing="butter">Butter, for sautéing</li></ul></div>
+<div class="ing-group"><h4>Spinach base</h4><ul class="ingredients"><li data-ing="frozen spinach">4 packages (10 oz each) frozen chopped spinach, defrosted and squeezed very dry</li>
+<li data-ing="onion">1 large onion, chopped</li>
+<li data-ing="butter">1/2 cup butter, melted</li>
+<li data-ing="garlic salt">Garlic salt, to taste</li></ul></div>
+<div class="ing-group"><h4>Cheese</h4><ul class="ingredients"><li data-ing="cheddar cheese">2 cups grated cheddar, divided</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -2757,6 +2829,7 @@
     <h3>Oven Polenta with Roasted Mushrooms and Thyme</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="vegetarian-mains-mushroom-oven-polenta-with-roasted-mushrooms-and-thyme" data-title="Oven Polenta with Roasted Mushrooms and Thyme" title="Not yet made (author only)" aria-label="Not yet made: Oven Polenta with Roasted Mushrooms and Thyme"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Oven Polenta with Roasted Mushrooms and Thyme">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Oven Polenta with Roasted Mushrooms and Thyme">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Oven Polenta with Roasted Mushrooms and Thyme">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetarian-mains-mushroom-oven-polenta-with-roasted-mushrooms-and-thyme" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Oven Polenta with Roasted Mushrooms and Thyme in new tab">🔗 Link</a>
@@ -2766,20 +2839,20 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Mushrooms</h4><ul class="ingredients"><li>1½ pounds mixed mushrooms (crimini, shiitake, oyster, and/or maitake), torn into 1-inch pieces</li>
-<li>4 thyme sprigs, plus thyme leaves for serving</li>
-<li>6 garlic cloves, smashed</li>
-<li>Kosher salt and freshly ground pepper</li>
-<li>¼ cup extra-virgin olive oil</li></ul></div>
-<div class="ing-group"><h4>Polenta</h4><ul class="ingredients"><li>4½ cups water</li>
-<li>2 tablespoons unsalted butter</li>
-<li>Kosher salt</li>
-<li>1 cup polenta</li></ul></div>
-<div class="ing-group"><h4>Polenta — finish</h4><ul class="ingredients"><li>4 oz Parmesan, finely grated, plus more for serving</li></ul></div>
-<div class="ing-group"><h4>Mushrooms — finish</h4><ul class="ingredients"><li>1 tablespoon red wine vinegar</li></ul></div>
-<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li>Flaky sea salt</li>
-<li>Thyme leaves</li>
-<li>More Parmesan</li></ul></div>
+      <div class="ing-group"><h4>Mushrooms</h4><ul class="ingredients"><li data-ing="mushroom (any)">1½ pounds mixed mushrooms (crimini, shiitake, oyster, and/or maitake), torn into 1-inch pieces</li>
+<li data-ing="thyme">4 thyme sprigs, plus thyme leaves for serving</li>
+<li data-ing="garlic">6 garlic cloves, smashed</li>
+<li data-ing="kosher salt / black pepper">Kosher salt and freshly ground pepper</li>
+<li data-ing="extra-virgin olive oil">¼ cup extra-virgin olive oil</li></ul></div>
+<div class="ing-group"><h4>Polenta</h4><ul class="ingredients"><li data-ing="water">4½ cups water</li>
+<li data-ing="unsalted butter">2 tablespoons unsalted butter</li>
+<li data-ing="kosher salt">Kosher salt</li>
+<li data-ing="polenta">1 cup polenta</li></ul></div>
+<div class="ing-group"><h4>Polenta — finish</h4><ul class="ingredients"><li data-ing="parmesan">4 oz Parmesan, finely grated, plus more for serving</li></ul></div>
+<div class="ing-group"><h4>Mushrooms — finish</h4><ul class="ingredients"><li data-ing="red wine vinegar">1 tablespoon red wine vinegar</li></ul></div>
+<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li data-ing="flaky sea salt">Flaky sea salt</li>
+<li data-ing="thyme">Thyme leaves</li>
+<li data-ing="parmesan">More Parmesan</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -2797,6 +2870,7 @@
     <h3>Roasted Portobellos With Pesto</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="vegetarian-mains-mushroom-roasted-portobellos-with-pesto" data-title="Roasted Portobellos With Pesto" title="Made it" aria-label="Made: Roasted Portobellos With Pesto"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Roasted Portobellos With Pesto">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Roasted Portobellos With Pesto">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Roasted Portobellos With Pesto">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetarian-mains-mushroom-roasted-portobellos-with-pesto" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Roasted Portobellos With Pesto in new tab">🔗 Link</a>
@@ -2806,9 +2880,9 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Mushrooms</h4><ul class="ingredients"><li>8 medium (roasting size) portobello mushrooms</li>
-<li>1 tablespoon extra-virgin olive oil</li>
-<li>Salt and freshly ground pepper</li></ul></div>
+      <div class="ing-group"><h4>Mushrooms</h4><ul class="ingredients"><li data-ing="portobello mushroom">8 medium (roasting size) portobello mushrooms</li>
+<li data-ing="extra-virgin olive oil">1 tablespoon extra-virgin olive oil</li>
+<li data-ing="salt / black pepper">Salt and freshly ground pepper</li></ul></div>
 <div class="ing-group"><h4>Fill</h4><ul class="ingredients"><li>¼ cup pesto (see <a href="sauces.html#sauces-italian-christy-s-pesto-adapted">Christy's Pesto (Adapted)</a> in this cookbook)</li></ul></div>
     </div>
     <div class="steps-col">
@@ -2822,6 +2896,7 @@
     <h3>Stuffed Portobello Mushrooms with Crispy Goat Cheese</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="vegetarian-mains-mushroom-stuffed-portobello-mushrooms-with-crispy-goat-cheese" data-title="Stuffed Portobello Mushrooms with Crispy Goat Cheese" title="Made it" aria-label="Made: Stuffed Portobello Mushrooms with Crispy Goat Cheese"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Stuffed Portobello Mushrooms with Crispy Goat Cheese">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Stuffed Portobello Mushrooms with Crispy Goat Cheese">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Stuffed Portobello Mushrooms with Crispy Goat Cheese">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetarian-mains-mushroom-stuffed-portobello-mushrooms-with-crispy-goat-cheese" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Stuffed Portobello Mushrooms with Crispy Goat Cheese in new tab">🔗 Link</a>
@@ -2831,26 +2906,26 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Marinara</h4><ul class="ingredients"><li>1 tablespoon olive oil</li>
-<li>4 garlic cloves, roughly chopped</li>
-<li>2 tablespoons tomato paste</li>
-<li>2 dried bay leaves</li>
-<li>1 tablespoon dried oregano</li>
-<li>1 (28-oz) can Italian crushed tomatoes</li>
-<li>Salt and freshly ground black pepper</li></ul></div>
-<div class="ing-group"><h4>Mushrooms</h4><ul class="ingredients"><li>8 large (4-inch wide) portobello mushrooms, stems trimmed</li>
-<li>Extra-virgin olive oil</li>
-<li>Kosher salt and freshly ground black pepper</li></ul></div>
-<div class="ing-group"><h4>Spinach</h4><ul class="ingredients"><li>1 tablespoon extra-virgin olive oil</li>
-<li>1 shallot, finely sliced</li>
-<li>6 oz baby spinach</li>
-<li>Kosher salt and freshly ground black pepper</li></ul></div>
-<div class="ing-group"><h4>Breadcrumb topping</h4><ul class="ingredients"><li>2 tablespoons unsalted butter</li>
-<li>1 shallot, finely diced</li>
-<li>½ cup panko breadcrumbs</li>
-<li>1 garlic clove, finely minced</li>
-<li>Kosher salt and freshly ground black pepper</li></ul></div>
-<div class="ing-group"><h4>Assembly</h4><ul class="ingredients"><li>4 oz goat cheese, cold from the fridge</li></ul></div>
+      <div class="ing-group"><h4>Marinara</h4><ul class="ingredients"><li data-ing="olive oil">1 tablespoon olive oil</li>
+<li data-ing="garlic">4 garlic cloves, roughly chopped</li>
+<li data-ing="tomato paste">2 tablespoons tomato paste</li>
+<li data-ing="dried bay leaf">2 dried bay leaves</li>
+<li data-ing="dried oregano">1 tablespoon dried oregano</li>
+<li data-ing="canned italian crushed tomato">1 (28-oz) can Italian crushed tomatoes</li>
+<li data-ing="salt / black pepper">Salt and freshly ground black pepper</li></ul></div>
+<div class="ing-group"><h4>Mushrooms</h4><ul class="ingredients"><li data-ing="portobello mushroom">8 large (4-inch wide) portobello mushrooms, stems trimmed</li>
+<li data-ing="extra-virgin olive oil">Extra-virgin olive oil</li>
+<li data-ing="kosher salt / black pepper">Kosher salt and freshly ground black pepper</li></ul></div>
+<div class="ing-group"><h4>Spinach</h4><ul class="ingredients"><li data-ing="extra-virgin olive oil">1 tablespoon extra-virgin olive oil</li>
+<li data-ing="shallot">1 shallot, finely sliced</li>
+<li data-ing="baby spinach">6 oz baby spinach</li>
+<li data-ing="kosher salt / black pepper">Kosher salt and freshly ground black pepper</li></ul></div>
+<div class="ing-group"><h4>Breadcrumb topping</h4><ul class="ingredients"><li data-ing="unsalted butter">2 tablespoons unsalted butter</li>
+<li data-ing="shallot">1 shallot, finely diced</li>
+<li data-ing="panko breadcrumb">½ cup panko breadcrumbs</li>
+<li data-ing="garlic">1 garlic clove, finely minced</li>
+<li data-ing="kosher salt / black pepper">Kosher salt and freshly ground black pepper</li></ul></div>
+<div class="ing-group"><h4>Assembly</h4><ul class="ingredients"><li data-ing="goat cheese">4 oz goat cheese, cold from the fridge</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -2870,6 +2945,7 @@
     <h3>Truffle Mushroom Risotto</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="vegetarian-mains-mushroom-truffle-mushroom-risotto" data-title="Truffle Mushroom Risotto" title="Not yet made (author only)" aria-label="Not yet made: Truffle Mushroom Risotto"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Truffle Mushroom Risotto">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Truffle Mushroom Risotto">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Truffle Mushroom Risotto">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetarian-mains-mushroom-truffle-mushroom-risotto" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Truffle Mushroom Risotto in new tab">🔗 Link</a>
@@ -2879,21 +2955,21 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Risotto base</h4><ul class="ingredients"><li>2 tablespoons unsalted butter (of 4 oz / 1 stick total, divided)</li>
-<li>2 small shallots, finely minced</li>
-<li>1½ cups arborio rice</li>
-<li>½ cup dry white wine</li></ul></div>
-<div class="ing-group"><h4>Broth</h4><ul class="ingredients"><li>6 cups chicken or vegetable broth, warmed</li></ul></div>
-<div class="ing-group"><h4>Mushrooms</h4><ul class="ingredients"><li>1 tablespoon unsalted butter + 1 tablespoon neutral oil</li>
-<li>12 oz cremini mushrooms, quartered</li>
-<li>Salt and freshly cracked pepper</li></ul></div>
-<div class="ing-group"><h4>Finish</h4><ul class="ingredients"><li>Remaining 5 tablespoons unsalted butter</li>
-<li>2 tablespoons black truffle puree</li>
-<li>½ cup mascarpone</li>
-<li>⅔ cup freshly grated Parmesan, plus more for garnish</li>
-<li>Salt and freshly cracked pepper</li></ul></div>
-<div class="ing-group"><h4>Garnish</h4><ul class="ingredients"><li>Chopped chives</li>
-<li>Extra Parmesan</li></ul></div>
+      <div class="ing-group"><h4>Risotto base</h4><ul class="ingredients"><li data-ing="unsalted butter">2 tablespoons unsalted butter (of 4 oz / 1 stick total, divided)</li>
+<li data-ing="shallot">2 small shallots, finely minced</li>
+<li data-ing="arborio rice">1½ cups arborio rice</li>
+<li data-ing="white wine">½ cup dry white wine</li></ul></div>
+<div class="ing-group"><h4>Broth</h4><ul class="ingredients"><li data-ing="chicken broth / vegetable broth">6 cups chicken or vegetable broth, warmed</li></ul></div>
+<div class="ing-group"><h4>Mushrooms</h4><ul class="ingredients"><li data-ing="unsalted butter / neutral oil">1 tablespoon unsalted butter + 1 tablespoon neutral oil</li>
+<li data-ing="cremini mushroom">12 oz cremini mushrooms, quartered</li>
+<li data-ing="salt / black pepper">Salt and freshly cracked pepper</li></ul></div>
+<div class="ing-group"><h4>Finish</h4><ul class="ingredients"><li data-ing="unsalted butter">Remaining 5 tablespoons unsalted butter</li>
+<li data-ing="black truffle puree">2 tablespoons black truffle puree</li>
+<li data-ing="mascarpone">½ cup mascarpone</li>
+<li data-ing="parmesan">⅔ cup freshly grated Parmesan, plus more for garnish</li>
+<li data-ing="salt / black pepper">Salt and freshly cracked pepper</li></ul></div>
+<div class="ing-group"><h4>Garnish</h4><ul class="ingredients"><li data-ing="chives">Chopped chives</li>
+<li data-ing="parmesan">Extra Parmesan</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -5933,6 +6009,145 @@
     }
   })();
 
+
+  // ── Shopping checklist (see shopping_list.css). Reads the ingredient lines already on the page. ──
+  // The "Shop" button on each recipe opens a checklist (all unticked). "Copy checked" copies the ticked lines.
+  // https://script.google.com/macros/s/AKfycbzY1Qi--vCFGalcT9QYdBe8HC46HWHGE_8WZ91vuA2fVaYagEQ34nlwjU7ebCuPsv8n/exec / shop-9a779a2e2e26 are replaced from shopping_config.json at build time. With no URL set, only "Copy checked" is offered.
+  (function () {
+    var URL_ = 'https://script.google.com/macros/s/AKfycbzY1Qi--vCFGalcT9QYdBe8HC46HWHGE_8WZ91vuA2fVaYagEQ34nlwjU7ebCuPsv8n/exec', KEY_ = 'shop-9a779a2e2e26';
+    var ENABLED = !!URL_ && URL_.indexOf('__SHOP') !== 0;
+    var CART = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.6 12.2a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 7H6"/></svg>';
+    function visible(el) { return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length); }
+    function collect(art) {
+      var out = [];
+      art.querySelectorAll('.ing-group').forEach(function (g) {
+        if (!visible(g)) return;
+        var h = g.querySelector('h4');
+        var label = h ? h.firstChild && h.firstChild.textContent.trim() : '';
+        g.querySelectorAll('li').forEach(function (li) { out.push({ g: label || '', t: li.textContent.trim(), n: li.getAttribute('data-ing') || '' }); });
+      });
+      return out;
+    }
+    function copyText(text, done) {
+      function fallback() {
+        var ta = document.createElement('textarea'); ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+        document.body.appendChild(ta); ta.select();
+        try { document.execCommand('copy'); done(true); } catch (e) { done(false); }
+        document.body.removeChild(ta);
+      }
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(function () { done(true); }, fallback);
+      else fallback();
+    }
+    function post(payload) {
+      payload.key = KEY_;
+      return fetch(URL_, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(payload) });
+    }
+    function getList() {
+      return fetch(URL_ + '?action=list&key=' + encodeURIComponent(KEY_)).then(function (r) { return r.json(); })
+        .then(function (j) { if (!j.ok) throw new Error(j.error || 'error'); return j.items || []; });
+    }
+    var badge = document.getElementById('shop-list-toggle');
+    function setBadge(n) { if (badge) badge.querySelector('.shop-badge').textContent = n ? ' (' + n + ')' : ''; }
+    function refreshBadge() { if (ENABLED) getList().then(function (l) { setBadge(l.length); }, function () {}); }
+    function build(art, btn) {
+      var items = collect(art);
+      var panel = document.createElement('div');
+      panel.className = 'shop-panel'; panel.setAttribute('role', 'region'); panel.setAttribute('aria-label', 'Shopping checklist');
+      var head = document.createElement('div'); head.className = 'shop-head';
+      head.innerHTML = '<strong>Shopping checklist</strong><span>Tick what you need to buy.</span>';
+      var cols = document.createElement('div'); cols.className = 'shop-cols';
+      var last = null;
+      items.forEach(function (it) {
+        if (it.g !== last) { if (it.g) { var l = document.createElement('div'); l.className = 'shop-group-label'; l.textContent = it.g; cols.appendChild(l); } last = it.g; }
+        var lab = document.createElement('label'); lab.className = 'shop-item';
+        var cb = document.createElement('input'); cb.type = 'checkbox'; cb.checked = false;
+        var sp = document.createElement('span'); sp.textContent = it.t;
+        lab.appendChild(cb); lab.appendChild(sp); cols.appendChild(lab);
+      });
+      var actions = document.createElement('div'); actions.className = 'shop-actions';
+      var copyBtn = document.createElement('button'); copyBtn.type = 'button'; copyBtn.className = 'shop-primary'; copyBtn.textContent = 'Copy checked';
+      var clearBtn = document.createElement('button'); clearBtn.type = 'button'; clearBtn.textContent = 'Untick all';
+      var count = document.createElement('span'); count.className = 'shop-count';
+      var addBtn = null;
+      if (ENABLED) { addBtn = document.createElement('button'); addBtn.type = 'button'; addBtn.className = 'shop-primary'; addBtn.textContent = 'Add to shopping list'; actions.appendChild(addBtn); copyBtn.className = ''; }
+      actions.appendChild(copyBtn); actions.appendChild(clearBtn); actions.appendChild(count);
+      var msg = document.createElement('div'); msg.className = 'shop-msg'; msg.setAttribute('aria-live', 'polite');
+      panel.appendChild(head); panel.appendChild(cols); panel.appendChild(actions); panel.appendChild(msg);
+      function boxes() { return cols.querySelectorAll('input'); }
+      function checked() { var r = []; boxes().forEach(function (c, i) { if (c.checked) r.push(items[i].t); }); return r; }
+      function checkedObjs() { var r = []; boxes().forEach(function (c, i) { if (c.checked) r.push({ item: items[i].t, ingredient: items[i].n, recipe: art.getAttribute('data-title') || '' }); }); return r; }
+      function update() { count.textContent = checked().length + ' of ' + items.length + ' checked'; msg.textContent = ''; }
+      cols.addEventListener('change', update);
+      copyBtn.addEventListener('click', function () {
+        var c = checked();
+        if (!c.length) { msg.textContent = 'Nothing checked yet.'; return; }
+        copyText(c.join('\n'), function (ok) { msg.textContent = ok ? 'Copied ' + c.length + ' item' + (c.length === 1 ? '' : 's') + '.' : 'Could not copy.'; });
+      });
+      if (addBtn) addBtn.addEventListener('click', function () {
+        var c = checkedObjs();
+        if (!c.length) { msg.textContent = 'Nothing checked yet.'; return; }
+        addBtn.disabled = true; msg.textContent = 'Adding...';
+        post({ action: 'add', items: c }).then(function () { return getList(); }).then(function (l) {
+          msg.textContent = 'Sent ' + c.length + ' item' + (c.length === 1 ? '' : 's') + '. The list now has ' + l.length + '.';
+          setBadge(l.length); boxes().forEach(function (x) { x.checked = false; }); count.textContent = '';
+        }, function () { msg.textContent = 'Sent, but could not confirm. Check the list.'; }).then(function () { addBtn.disabled = false; });
+      });
+      clearBtn.addEventListener('click', function () { boxes().forEach(function (c) { c.checked = false; }); update(); });
+      update();
+      return panel;
+    }
+    function openList() {
+      var ov = document.createElement('div'); ov.className = 'shop-overlay';
+      var dlg = document.createElement('div'); dlg.className = 'shop-dialog'; dlg.setAttribute('role', 'dialog'); dlg.setAttribute('aria-label', 'Shopping list');
+      var title = document.createElement('h2'); title.textContent = 'Shopping list';
+      var body = document.createElement('div'); body.className = 'shop-listbody'; body.textContent = 'Loading...';
+      var acts = document.createElement('div'); acts.className = 'shop-actions';
+      var refresh = document.createElement('button'); refresh.type = 'button'; refresh.textContent = 'Refresh';
+      var copy = document.createElement('button'); copy.type = 'button'; copy.textContent = 'Copy list';
+      var clear = document.createElement('button'); clear.type = 'button'; clear.className = 'shop-danger'; clear.textContent = 'Clear list';
+      var close = document.createElement('button'); close.type = 'button'; close.textContent = 'Close';
+      var msg = document.createElement('div'); msg.className = 'shop-msg';
+      [refresh, copy, clear, close].forEach(function (b) { acts.appendChild(b); });
+      dlg.appendChild(title); dlg.appendChild(body); dlg.appendChild(acts); dlg.appendChild(msg); ov.appendChild(dlg); document.body.appendChild(ov);
+      var current = [];
+      function render(l) {
+        current = l; setBadge(l.length); body.textContent = '';
+        if (!l.length) { body.textContent = 'The list is empty.'; return; }
+        l.slice().sort(function (a, b) { return (a.ingredient || a.item).toLowerCase() < (b.ingredient || b.item).toLowerCase() ? -1 : 1; }).forEach(function (it) {
+          var row = document.createElement('div'); row.className = 'shop-row';
+          var t = document.createElement('span'); t.textContent = it.item;
+          var r = document.createElement('small'); r.textContent = it.recipe;
+          row.appendChild(t); row.appendChild(r); body.appendChild(row);
+        });
+      }
+      function load() { body.textContent = 'Loading...'; getList().then(render, function () { body.textContent = 'Could not load the list.'; }); }
+      refresh.addEventListener('click', load);
+      copy.addEventListener('click', function () { copyText(current.map(function (i) { return i.item; }).join('\n'), function (ok) { msg.textContent = ok ? 'Copied ' + current.length + ' items.' : 'Could not copy.'; }); });
+      clear.addEventListener('click', function () {
+        if (!current.length) return;
+        if (!window.confirm('Clear all ' + current.length + ' items? They move to the History tab of the sheet.')) return;
+        post({ action: 'clear' }).then(function () { return getList(); }).then(render, function () { msg.textContent = 'Could not confirm. Refresh.'; });
+      });
+      function shut() { document.body.removeChild(ov); }
+      close.addEventListener('click', shut); ov.addEventListener('click', function (e) { if (e.target === ov) shut(); });
+      load();
+    }
+    if (badge) {
+      if (ENABLED) { badge.style.display = 'flex'; badge.addEventListener('click', openList); refreshBadge(); }
+    }
+    document.querySelectorAll('.shop-btn').forEach(function (btn) {
+      btn.innerHTML = CART + 'Shop';
+      btn.addEventListener('click', function () {
+        var art = btn.closest('.recipe'); if (!art) return;
+        var open = art.querySelector('.shop-panel');
+        if (open) { open.parentNode.removeChild(open); btn.classList.remove('active'); btn.setAttribute('aria-expanded', 'false'); return; }
+        var panel = build(art, btn);
+        var body = art.querySelector('.recipe-body');
+        art.insertBefore(panel, body);
+        btn.classList.add('active'); btn.setAttribute('aria-expanded', 'true');
+      });
+    });
+  })();
 
   // ── Apply filters (favorites — current page only) ─────────────────────
   function applyFilters() {

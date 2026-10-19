@@ -630,6 +630,43 @@
   #made-dialog button[type=submit] { background: #3b2a1a; color: #fff; border-color: #3b2a1a; }
   @media print { .made-btn, #made-modal { display: none !important; } }
 
+/* ── Shopping checklist (see shopping_list_client.js) ── */
+.shop-btn { display: inline-flex; align-items: center; gap: 4px; }
+.shop-btn svg { width: 14px; height: 14px; }
+.shop-btn.active { background: #f3e9d6; border-color: var(--accent2); color: var(--accent); }
+.shop-panel { margin: 12px 0 4px; border: 1px solid var(--accent2); border-radius: 8px; background: #fbf5ea;
+  padding: 14px 16px; font-family: 'Helvetica Neue', Arial, sans-serif; }
+.shop-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.shop-head strong { font-size: 0.95rem; color: var(--accent); }
+.shop-head span { font-size: 0.75rem; color: var(--muted); }
+.shop-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 24px; margin-top: 8px; }
+.shop-group-label { grid-column: 1 / -1; font-size: 0.72rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin-top: 8px; }
+.shop-item { display: flex; gap: 8px; align-items: flex-start; font-size: 0.86rem; padding: 3px 0; cursor: pointer; }
+.shop-item input { margin-top: 3px; accent-color: var(--accent); }
+.shop-actions { display: flex; gap: 8px; align-items: center; margin-top: 12px; flex-wrap: wrap; }
+.shop-actions button { font: 0.8rem 'Helvetica Neue', Arial, sans-serif; border-radius: var(--radius); padding: 6px 12px; cursor: pointer;
+  background: none; color: var(--muted); border: 1px solid var(--border); }
+.shop-actions button:hover { background: var(--border); color: var(--text); }
+.shop-actions button.shop-primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+.shop-actions button.shop-primary:hover { background: #6f360f; }
+.shop-count { font-size: 0.78rem; color: var(--muted); margin-left: auto; }
+.shop-msg { font-size: 0.8rem; color: #2e7d32; margin-top: 8px; min-height: 1em; }
+@media (max-width: 640px) { .shop-cols { grid-template-columns: 1fr; } }
+@media print { .shop-panel, .shop-btn { display: none !important; } }
+
+#shop-list-toggle { display: none; align-items: center; gap: 8px; padding: 7px 14px; font-size: 0.82rem; cursor: pointer;
+  color: var(--nav-text); background: none; border: none; border-bottom: 1px solid #5a3e28; text-align: left; width: 100%; }
+#shop-list-toggle:hover { background: #4e3522; }
+#shop-list-toggle svg { width: 14px; height: 14px; }
+.shop-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.45); display: flex; align-items: center; justify-content: center; z-index: 1000; }
+.shop-dialog { background: #fff; color: #2b2118; border-radius: 8px; padding: 18px 20px; width: min(460px, 92vw); max-height: 84vh; display: flex; flex-direction: column;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.3); font-family: 'Helvetica Neue', Arial, sans-serif; }
+.shop-dialog h2 { font-size: 1rem; margin: 0 0 8px; }
+.shop-listbody { overflow-y: auto; font-size: 0.86rem; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 6px 0; min-height: 60px; }
+.shop-row { display: flex; justify-content: space-between; gap: 12px; padding: 3px 0; }
+.shop-row small { color: var(--muted); text-align: right; font-size: 0.72rem; }
+.shop-danger { color: #a33 !important; }
+
 </style>
 </head>
 <body>
@@ -663,6 +700,7 @@
     <button id="fav-toggle"><span class="star">★</span> Favorites only</button>
     <button id="notmade-toggle"><span class="nm-icon">&#9675;</span> Not yet made</button>
   </div>
+  <button id="shop-list-toggle" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.6 12.2a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 7H6"/></svg>Shopping list<span class="shop-badge"></span></button>
   <div id="made-pending"><span class="made-pend-n"></span><button type="button" class="made-copy">Copy list</button></div>
   <button id="alt-toggle"><span class="alt-icon">&#9650;</span> High Altitude</button>
   <div id="expand-collapse-row">
@@ -1324,6 +1362,7 @@
     <h3>Cornbread Stuffing Fried Rice</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="cornbread-stuffing-fried-rice" data-title="Cornbread Stuffing Fried Rice" title="Made it" aria-label="Made: Cornbread Stuffing Fried Rice"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Cornbread Stuffing Fried Rice">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Cornbread Stuffing Fried Rice">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Cornbread Stuffing Fried Rice">🖨 Print</button>
       <a class="link-btn" href="?recipe=cornbread-stuffing-fried-rice" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Cornbread Stuffing Fried Rice in new tab">🔗 Link</a>
@@ -1333,26 +1372,26 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Chili crisp (make ahead)</h4><ul class="ingredients"><li>2 dried guajillo chiles, seeds removed, torn into pieces</li>
-<li>1 dried ancho chile, seeds removed, torn into pieces</li>
-<li>3 chiles de arbol, stems removed</li>
-<li>1 cup vegetable oil</li>
-<li>6 shallots, thinly sliced (about 1 cup)</li>
-<li>8 garlic cloves, thinly sliced</li>
-<li>1 tablespoon finely grated peeled ginger</li>
-<li>1/4 teaspoon ground allspice</li>
-<li>1 tablespoon soy sauce</li>
-<li>2 teaspoons sugar</li>
-<li>1 teaspoon kosher salt</li></ul></div>
-<div class="ing-group"><h4>Fried rice</h4><ul class="ingredients"><li>2 tablespoons vegetable oil, divided</li>
-<li>4 garlic cloves, thinly sliced</li>
+      <div class="ing-group"><h4>Chili crisp (make ahead)</h4><ul class="ingredients"><li data-ing="dried guajillo chile">2 dried guajillo chiles, seeds removed, torn into pieces</li>
+<li data-ing="dried ancho chile">1 dried ancho chile, seeds removed, torn into pieces</li>
+<li data-ing="chile de arbol">3 chiles de arbol, stems removed</li>
+<li data-ing="vegetable oil">1 cup vegetable oil</li>
+<li data-ing="shallot">6 shallots, thinly sliced (about 1 cup)</li>
+<li data-ing="garlic">8 garlic cloves, thinly sliced</li>
+<li data-ing="ginger root">1 tablespoon finely grated peeled ginger</li>
+<li data-ing="ground allspice">1/4 teaspoon ground allspice</li>
+<li data-ing="soy sauce">1 tablespoon soy sauce</li>
+<li data-ing="sugar">2 teaspoons sugar</li>
+<li data-ing="kosher salt">1 teaspoon kosher salt</li></ul></div>
+<div class="ing-group"><h4>Fried rice</h4><ul class="ingredients"><li data-ing="vegetable oil">2 tablespoons vegetable oil, divided</li>
+<li data-ing="garlic">4 garlic cloves, thinly sliced</li>
 <li>3 cups <a href="vegetable-sides.html#cornbread-dressing-with-sausage-and-corn-nuts">Cornbread Dressing With Sausage and Corn Nuts</a>, crumbled</li>
-<li>4 cups day-old cooked Jasmine or Basmati rice</li>
-<li>1 pound Brussels sprouts, leaves separated (about 4 cups)</li>
-<li>6 large eggs, beaten</li>
-<li>2 tablespoons soy sauce</li>
-<li>4 scallions, thinly sliced</li>
-<li>Kosher salt</li></ul></div>
+<li data-ing="jasmine or basmati rice">4 cups day-old cooked Jasmine or Basmati rice</li>
+<li data-ing="brussels sprouts">1 pound Brussels sprouts, leaves separated (about 4 cups)</li>
+<li data-ing="egg">6 large eggs, beaten</li>
+<li data-ing="soy sauce">2 tablespoons soy sauce</li>
+<li data-ing="scallion">4 scallions, thinly sliced</li>
+<li data-ing="kosher salt">Kosher salt</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1368,6 +1407,7 @@
     <h3>Indian Style Rice</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="rice-indian-style-rice" data-title="Indian Style Rice" title="Made it" aria-label="Made: Indian Style Rice"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Indian Style Rice">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Indian Style Rice">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Indian Style Rice">🖨 Print</button>
       <a class="link-btn" href="?recipe=rice-indian-style-rice" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Indian Style Rice in new tab">🔗 Link</a>
@@ -1377,19 +1417,19 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Rice</h4><ul class="ingredients"><li>2 cups Jasmine or Basmati rice</li>
-<li>3 cups water</li>
-<li>2 teaspoons salt</li></ul></div>
-<div class="ing-group"><h4>Whole spices</h4><ul class="ingredients"><li>2 cloves</li>
-<li>2 green cardamom pods</li>
-<li>One 2-inch piece cinnamon</li></ul></div>
-<div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li>3 tablespoons vegetable oil (or ghee)</li>
-<li>1/2 teaspoon dark mustard seeds</li>
-<li>1/2 teaspoon cumin seeds</li>
-<li>1/4 teaspoon Aleppo pepper or red pepper flakes</li>
-<li>1 medium onion, chopped</li>
-<li>3 garlic cloves, chopped</li>
-<li>1/4 teaspoon turmeric</li></ul></div>
+      <div class="ing-group"><h4>Rice</h4><ul class="ingredients"><li data-ing="jasmine or basmati rice">2 cups Jasmine or Basmati rice</li>
+<li data-ing="water">3 cups water</li>
+<li data-ing="salt">2 teaspoons salt</li></ul></div>
+<div class="ing-group"><h4>Whole spices</h4><ul class="ingredients"><li data-ing="cloves">2 cloves</li>
+<li data-ing="green cardamom pod">2 green cardamom pods</li>
+<li data-ing="cinnamon">One 2-inch piece cinnamon</li></ul></div>
+<div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li data-ing="vegetable oil">3 tablespoons vegetable oil (or ghee)</li>
+<li data-ing="dark mustard seed">1/2 teaspoon dark mustard seeds</li>
+<li data-ing="cumin seed">1/2 teaspoon cumin seeds</li>
+<li data-ing="aleppo pepper or red pepper flakes">1/4 teaspoon Aleppo pepper or red pepper flakes</li>
+<li data-ing="onion">1 medium onion, chopped</li>
+<li data-ing="garlic">3 garlic cloves, chopped</li>
+<li data-ing="turmeric">1/4 teaspoon turmeric</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1406,6 +1446,7 @@
     <h3>Rice with Dill</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="rice-rice-with-dill" data-title="Rice with Dill" title="Made it" aria-label="Made: Rice with Dill"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Rice with Dill">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Rice with Dill">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Rice with Dill">🖨 Print</button>
       <a class="link-btn" href="?recipe=rice-rice-with-dill" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Rice with Dill in new tab">🔗 Link</a>
@@ -1415,16 +1456,16 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li>3 tablespoons butter</li>
-<li>1/2 cup minced onion</li>
-<li>1 can water chestnuts, sliced</li></ul></div>
-<div class="ing-group"><h4>Rice</h4><ul class="ingredients"><li>1 1/2 cups Jasmine or Basmati rice</li>
-<li>2 1/2 cups chicken broth</li></ul></div>
-<div class="ing-group"><h4>Seasoning</h4><ul class="ingredients"><li>Salt to taste</li>
-<li>Pepper to taste</li>
-<li>2 tablespoons chopped fresh dill</li>
-<li>1/2 bay leaf</li>
-<li>Few drops Tabasco sauce to taste</li></ul></div>
+      <div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li data-ing="butter">3 tablespoons butter</li>
+<li data-ing="onion">1/2 cup minced onion</li>
+<li data-ing="canned water chestnut">1 can water chestnuts, sliced</li></ul></div>
+<div class="ing-group"><h4>Rice</h4><ul class="ingredients"><li data-ing="jasmine or basmati rice">1 1/2 cups Jasmine or Basmati rice</li>
+<li data-ing="chicken broth">2 1/2 cups chicken broth</li></ul></div>
+<div class="ing-group"><h4>Seasoning</h4><ul class="ingredients"><li data-ing="salt">Salt to taste</li>
+<li data-ing="black pepper">Pepper to taste</li>
+<li data-ing="dill">2 tablespoons chopped fresh dill</li>
+<li data-ing="bay leaf">1/2 bay leaf</li>
+<li data-ing="tabasco sauce">Few drops Tabasco sauce to taste</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1440,6 +1481,7 @@
     <h3>Spanish Rice</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="rice-spanish-rice" data-title="Spanish Rice" title="Made it" aria-label="Made: Spanish Rice"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Spanish Rice">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Spanish Rice">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Spanish Rice">🖨 Print</button>
       <a class="link-btn" href="?recipe=rice-spanish-rice" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Spanish Rice in new tab">🔗 Link</a>
@@ -1449,15 +1491,15 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li>2 tablespoons olive oil</li>
-<li>1 tablespoon butter</li>
-<li>1/2 onion, diced</li>
-<li>4 garlic cloves, minced</li></ul></div>
-<div class="ing-group"><h4>Sauce</h4><ul class="ingredients"><li>1/2 cup tomato sauce</li>
-<li>1/4 cup water</li>
-<li>1/4 teaspoon ground coriander</li>
-<li>Salt and pepper to taste</li></ul></div>
-<div class="ing-group"><h4>Rice</h4><ul class="ingredients"><li>3 cups cooked rice</li></ul></div>
+      <div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li data-ing="olive oil">2 tablespoons olive oil</li>
+<li data-ing="butter">1 tablespoon butter</li>
+<li data-ing="onion">1/2 onion, diced</li>
+<li data-ing="garlic">4 garlic cloves, minced</li></ul></div>
+<div class="ing-group"><h4>Sauce</h4><ul class="ingredients"><li data-ing="tomato sauce">1/2 cup tomato sauce</li>
+<li data-ing="water">1/4 cup water</li>
+<li data-ing="ground coriander">1/4 teaspoon ground coriander</li>
+<li data-ing="salt / black pepper">Salt and pepper to taste</li></ul></div>
+<div class="ing-group"><h4>Rice</h4><ul class="ingredients"><li data-ing="rice">3 cups cooked rice</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1475,6 +1517,7 @@
     <h3>Pink Risotto With Beet Greens and Roasted Beets</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="rice-pink-risotto-with-beet-greens-and-roasted-beets" data-title="Pink Risotto With Beet Greens and Roasted Beets" title="Made it" aria-label="Made: Pink Risotto With Beet Greens and Roasted Beets"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Pink Risotto With Beet Greens and Roasted Beets">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Pink Risotto With Beet Greens and Roasted Beets">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Pink Risotto With Beet Greens and Roasted Beets">🖨 Print</button>
       <a class="link-btn" href="?recipe=rice-pink-risotto-with-beet-greens-and-roasted-beets" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Pink Risotto With Beet Greens and Roasted Beets in new tab">🔗 Link</a>
@@ -1484,17 +1527,17 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Beets (45-60 minutes ahead)</h4><ul class="ingredients"><li>3/4 pound beets (1 small bunch), unpeeled</li></ul></div>
-<div class="ing-group"><h4>Beet greens</h4><ul class="ingredients"><li>1 bunch beet greens, stemmed and washed, cut crosswise into 1-inch strips</li></ul></div>
-<div class="ing-group"><h4>Simmering stock</h4><ul class="ingredients"><li>6 to 7 cups chicken or vegetable stock, well seasoned</li></ul></div>
-<div class="ing-group"><h4>Risotto base</h4><ul class="ingredients"><li>2 tablespoons extra-virgin olive oil</li>
-<li>1/2 cup finely chopped onion</li>
-<li>1 1/2 cups Arborio or Carnaroli rice</li>
-<li>2 garlic cloves, minced or pressed</li>
-<li>1/2 cup red wine, rose, or dry white wine</li>
-<li>Salt and freshly ground pepper</li></ul></div>
-<div class="ing-group"><h4>Finish</h4><ul class="ingredients"><li>1 to 2 oz Parmesan, grated (1/4 to 1/2 cup)</li>
-<li>2 tablespoons finely chopped flat-leaf parsley</li></ul></div>
+      <div class="ing-group"><h4>Beets (45-60 minutes ahead)</h4><ul class="ingredients"><li data-ing="beet">3/4 pound beets (1 small bunch), unpeeled</li></ul></div>
+<div class="ing-group"><h4>Beet greens</h4><ul class="ingredients"><li data-ing="beet greens">1 bunch beet greens, stemmed and washed, cut crosswise into 1-inch strips</li></ul></div>
+<div class="ing-group"><h4>Simmering stock</h4><ul class="ingredients"><li data-ing="chicken broth / vegetable broth">6 to 7 cups chicken or vegetable stock, well seasoned</li></ul></div>
+<div class="ing-group"><h4>Risotto base</h4><ul class="ingredients"><li data-ing="extra-virgin olive oil">2 tablespoons extra-virgin olive oil</li>
+<li data-ing="onion">1/2 cup finely chopped onion</li>
+<li data-ing="arborio rice / carnaroli rice">1 1/2 cups Arborio or Carnaroli rice</li>
+<li data-ing="garlic">2 garlic cloves, minced or pressed</li>
+<li data-ing="red wine">1/2 cup red wine, rose, or dry white wine</li>
+<li data-ing="salt / black pepper">Salt and freshly ground pepper</li></ul></div>
+<div class="ing-group"><h4>Finish</h4><ul class="ingredients"><li data-ing="parmesan">1 to 2 oz Parmesan, grated (1/4 to 1/2 cup)</li>
+<li data-ing="flat-leaf parsley">2 tablespoons finely chopped flat-leaf parsley</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1513,6 +1556,7 @@
     <h3>Tomato Risotto</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="rice-tomato-risotto" data-title="Tomato Risotto" title="Not yet made (author only)" aria-label="Not yet made: Tomato Risotto"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Tomato Risotto">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Tomato Risotto">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Tomato Risotto">🖨 Print</button>
       <a class="link-btn" href="?recipe=rice-tomato-risotto" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Tomato Risotto in new tab">🔗 Link</a>
@@ -1522,19 +1566,19 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Aromatics and rice</h4><ul class="ingredients"><li>3 tablespoons extra-virgin olive oil, plus 2 tablespoons for finishing</li>
-<li>1 large onion, diced (about 1 1/2 cups)</li>
-<li>Salt and pepper</li>
-<li>1 1/2 cups Arborio or Carnaroli rice</li>
-<li>Pinch of Aleppo pepper or red pepper flakes</li>
-<li>2 garlic cloves</li>
-<li>1/2 cup white wine</li>
-<li>2 cups diced ripe red tomatoes</li></ul></div>
-<div class="ing-group"><h4>Liquid</h4><ul class="ingredients"><li>3 cups boiling water or vegetable broth</li></ul></div>
-<div class="ing-group"><h4>Finish</h4><ul class="ingredients"><li>1/2 cup grated pecorino or Parmesan, plus more for serving</li></ul></div>
-<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li>4 medium tomatoes in different colors, sliced</li>
-<li>Chopped parsley, for garnish</li>
-<li>Snipped basil, for garnish</li></ul></div>
+      <div class="ing-group"><h4>Aromatics and rice</h4><ul class="ingredients"><li data-ing="extra-virgin olive oil">3 tablespoons extra-virgin olive oil, plus 2 tablespoons for finishing</li>
+<li data-ing="onion">1 large onion, diced (about 1 1/2 cups)</li>
+<li data-ing="salt / black pepper">Salt and pepper</li>
+<li data-ing="arborio rice / carnaroli rice">1 1/2 cups Arborio or Carnaroli rice</li>
+<li data-ing="aleppo pepper or red pepper flakes">Pinch of Aleppo pepper or red pepper flakes</li>
+<li data-ing="garlic">2 garlic cloves</li>
+<li data-ing="white wine">1/2 cup white wine</li>
+<li data-ing="red tomato">2 cups diced ripe red tomatoes</li></ul></div>
+<div class="ing-group"><h4>Liquid</h4><ul class="ingredients"><li data-ing="water / vegetable broth">3 cups boiling water or vegetable broth</li></ul></div>
+<div class="ing-group"><h4>Finish</h4><ul class="ingredients"><li data-ing="pecorino / parmesan">1/2 cup grated pecorino or Parmesan, plus more for serving</li></ul></div>
+<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li data-ing="tomato">4 medium tomatoes in different colors, sliced</li>
+<li data-ing="parsley">Chopped parsley, for garnish</li>
+<li data-ing="basil">Snipped basil, for garnish</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1551,6 +1595,7 @@
     <h3>Wild Mushroom Risotto</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="rice-wild-mushroom-risotto" data-title="Wild Mushroom Risotto" title="Made it" aria-label="Made: Wild Mushroom Risotto"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Wild Mushroom Risotto">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Wild Mushroom Risotto">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Wild Mushroom Risotto">🖨 Print</button>
       <a class="link-btn" href="?recipe=rice-wild-mushroom-risotto" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Wild Mushroom Risotto in new tab">🔗 Link</a>
@@ -1560,17 +1605,17 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Mushrooms</h4><ul class="ingredients"><li>8 tablespoons (1 stick) unsalted butter, divided into 4 portions of 2 tablespoons each</li>
-<li>1 1/2 pounds fresh wild mushrooms (porcini, hen of the woods, chanterelle, or stemmed shiitake), large ones sliced, small ones halved or quartered</li>
-<li>Salt and black pepper</li></ul></div>
-<div class="ing-group"><h4>Broth</h4><ul class="ingredients"><li>7 cups (about) low-salt chicken broth</li></ul></div>
-<div class="ing-group"><h4>Risotto base</h4><ul class="ingredients"><li>1 1/2 tablespoons unsalted butter</li>
-<li>1 tablespoon extra-virgin olive oil</li>
-<li>3/4 cup finely chopped leek (white and pale green parts only)</li>
-<li>1 1/4 cups arborio rice</li>
-<li>1/4 cup dry white wine</li>
-<li>1/4 cup dry white vermouth</li></ul></div>
-<div class="ing-group"><h4>To finish</h4><ul class="ingredients"><li>1/4 cup grated Parmesan, plus more for serving (optional)</li></ul></div>
+      <div class="ing-group"><h4>Mushrooms</h4><ul class="ingredients"><li data-ing="unsalted butter">8 tablespoons (1 stick) unsalted butter, divided into 4 portions of 2 tablespoons each</li>
+<li data-ing="wild mushroom">1 1/2 pounds fresh wild mushrooms (porcini, hen of the woods, chanterelle, or stemmed shiitake), large ones sliced, small ones halved or quartered</li>
+<li data-ing="salt / black pepper">Salt and black pepper</li></ul></div>
+<div class="ing-group"><h4>Broth</h4><ul class="ingredients"><li data-ing="low-salt chicken broth">7 cups (about) low-salt chicken broth</li></ul></div>
+<div class="ing-group"><h4>Risotto base</h4><ul class="ingredients"><li data-ing="unsalted butter">1 1/2 tablespoons unsalted butter</li>
+<li data-ing="extra-virgin olive oil">1 tablespoon extra-virgin olive oil</li>
+<li data-ing="leek">3/4 cup finely chopped leek (white and pale green parts only)</li>
+<li data-ing="arborio rice">1 1/4 cups arborio rice</li>
+<li data-ing="white wine">1/4 cup dry white wine</li>
+<li data-ing="white vermouth">1/4 cup dry white vermouth</li></ul></div>
+<div class="ing-group"><h4>To finish</h4><ul class="ingredients"><li data-ing="parmesan">1/4 cup grated Parmesan, plus more for serving (optional)</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1591,6 +1636,7 @@
     <h3>Saffron Rice</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="rice-saffron-rice" data-title="Saffron Rice" title="Not yet made (author only)" aria-label="Not yet made: Saffron Rice"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Saffron Rice">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Saffron Rice">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Saffron Rice">🖨 Print</button>
       <a class="link-btn" href="?recipe=rice-saffron-rice" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Saffron Rice in new tab">🔗 Link</a>
@@ -1600,19 +1646,19 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Rice (20-30 minutes ahead)</h4><ul class="ingredients"><li>1 1/2 cups Jasmine or Basmati rice</li></ul></div>
-<div class="ing-group"><h4>Saffron bloom</h4><ul class="ingredients"><li>8 to 10 saffron threads</li>
-<li>2 tablespoons warm water or milk</li></ul></div>
-<div class="ing-group"><h4>Whole spices</h4><ul class="ingredients"><li>2 tablespoons ghee</li>
-<li>1/2 teaspoon caraway seeds (shahi jeera)</li>
-<li>3 to 4 green cardamom pods, lightly crushed</li>
-<li>1 Indian bay leaf (tej patta)</li>
-<li>1 inch cinnamon stick</li>
-<li>3 to 4 whole cloves</li>
-<li>1 blade of mace</li></ul></div>
-<div class="ing-group"><h4>Liquid</h4><ul class="ingredients"><li>3 cups water</li>
-<li>1/4 teaspoon turmeric (optional)</li>
-<li>Salt to taste</li></ul></div>
+      <div class="ing-group"><h4>Rice (20-30 minutes ahead)</h4><ul class="ingredients"><li data-ing="jasmine or basmati rice">1 1/2 cups Jasmine or Basmati rice</li></ul></div>
+<div class="ing-group"><h4>Saffron bloom</h4><ul class="ingredients"><li data-ing="saffron thread">8 to 10 saffron threads</li>
+<li data-ing="water / milk">2 tablespoons warm water or milk</li></ul></div>
+<div class="ing-group"><h4>Whole spices</h4><ul class="ingredients"><li data-ing="ghee">2 tablespoons ghee</li>
+<li data-ing="caraway seed">1/2 teaspoon caraway seeds (shahi jeera)</li>
+<li data-ing="green cardamom pod">3 to 4 green cardamom pods, lightly crushed</li>
+<li data-ing="indian bay leaf">1 Indian bay leaf (tej patta)</li>
+<li data-ing="cinnamon stick">1 inch cinnamon stick</li>
+<li data-ing="whole cloves">3 to 4 whole cloves</li>
+<li data-ing="mace">1 blade of mace</li></ul></div>
+<div class="ing-group"><h4>Liquid</h4><ul class="ingredients"><li data-ing="water">3 cups water</li>
+<li data-ing="turmeric">1/4 teaspoon turmeric (optional)</li>
+<li data-ing="salt">Salt to taste</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1631,6 +1677,7 @@
     <h3>Turmeric Rice</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="rice-turmeric-rice" data-title="Turmeric Rice" title="Made it" aria-label="Made: Turmeric Rice"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Turmeric Rice">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Turmeric Rice">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Turmeric Rice">🖨 Print</button>
       <a class="link-btn" href="?recipe=rice-turmeric-rice" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Turmeric Rice in new tab">🔗 Link</a>
@@ -1640,23 +1687,23 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Rice (15 minutes ahead)</h4><ul class="ingredients"><li>1 cup Jasmine or Basmati rice (aged basmati preferred)</li></ul></div>
-<div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li>1 tablespoon unsalted butter (or ghee)</li>
-<li>1 teaspoon minced fresh ginger</li>
-<li>1 teaspoon minced garlic</li></ul></div>
-<div class="ing-group"><h4>Whole spices</h4><ul class="ingredients"><li>1 bay leaf</li>
-<li>1/2 teaspoon cumin seeds (or caraway seeds)</li>
-<li>4 green cardamom pods</li>
-<li>4 cloves</li>
-<li>2 inches cinnamon stick (2 pieces)</li>
-<li>1 strand mace or a pinch of freshly grated nutmeg (optional)</li>
-<li>1 star anise</li></ul></div>
-<div class="ing-group"><h4>Ground spices</h4><ul class="ingredients"><li>1/2 teaspoon turmeric</li>
-<li>1/4 to 1/2 teaspoon ground black pepper</li></ul></div>
-<div class="ing-group"><h4>Cooking liquid</h4><ul class="ingredients"><li>1 1/2 to 2 cups stock or water (2 cups for aged basmati)</li>
-<li>1/2 teaspoon salt, adjusted to taste</li></ul></div>
-<div class="ing-group"><h4>To serve (optional)</h4><ul class="ingredients"><li>1/4 cup chopped fresh cilantro</li>
-<li>1/4 cup nuts and raisins</li></ul></div>
+      <div class="ing-group"><h4>Rice (15 minutes ahead)</h4><ul class="ingredients"><li data-ing="jasmine or basmati rice">1 cup Jasmine or Basmati rice (aged basmati preferred)</li></ul></div>
+<div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li data-ing="unsalted butter">1 tablespoon unsalted butter (or ghee)</li>
+<li data-ing="ginger root">1 teaspoon minced fresh ginger</li>
+<li data-ing="garlic">1 teaspoon minced garlic</li></ul></div>
+<div class="ing-group"><h4>Whole spices</h4><ul class="ingredients"><li data-ing="bay leaf">1 bay leaf</li>
+<li data-ing="cumin seed">1/2 teaspoon cumin seeds (or caraway seeds)</li>
+<li data-ing="green cardamom pod">4 green cardamom pods</li>
+<li data-ing="cloves">4 cloves</li>
+<li data-ing="cinnamon stick">2 inches cinnamon stick (2 pieces)</li>
+<li data-ing="mace / nutmeg">1 strand mace or a pinch of freshly grated nutmeg (optional)</li>
+<li data-ing="star anise">1 star anise</li></ul></div>
+<div class="ing-group"><h4>Ground spices</h4><ul class="ingredients"><li data-ing="turmeric">1/2 teaspoon turmeric</li>
+<li data-ing="black pepper">1/4 to 1/2 teaspoon ground black pepper</li></ul></div>
+<div class="ing-group"><h4>Cooking liquid</h4><ul class="ingredients"><li data-ing="broth / water">1 1/2 to 2 cups stock or water (2 cups for aged basmati)</li>
+<li data-ing="salt">1/2 teaspoon salt, adjusted to taste</li></ul></div>
+<div class="ing-group"><h4>To serve (optional)</h4><ul class="ingredients"><li data-ing="cilantro">1/4 cup chopped fresh cilantro</li>
+<li data-ing="nut / raisin">1/4 cup nuts and raisins</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -3127,6 +3174,145 @@
     }
   })();
 
+
+  // ── Shopping checklist (see shopping_list.css). Reads the ingredient lines already on the page. ──
+  // The "Shop" button on each recipe opens a checklist (all unticked). "Copy checked" copies the ticked lines.
+  // https://script.google.com/macros/s/AKfycbzY1Qi--vCFGalcT9QYdBe8HC46HWHGE_8WZ91vuA2fVaYagEQ34nlwjU7ebCuPsv8n/exec / shop-9a779a2e2e26 are replaced from shopping_config.json at build time. With no URL set, only "Copy checked" is offered.
+  (function () {
+    var URL_ = 'https://script.google.com/macros/s/AKfycbzY1Qi--vCFGalcT9QYdBe8HC46HWHGE_8WZ91vuA2fVaYagEQ34nlwjU7ebCuPsv8n/exec', KEY_ = 'shop-9a779a2e2e26';
+    var ENABLED = !!URL_ && URL_.indexOf('__SHOP') !== 0;
+    var CART = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.6 12.2a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 7H6"/></svg>';
+    function visible(el) { return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length); }
+    function collect(art) {
+      var out = [];
+      art.querySelectorAll('.ing-group').forEach(function (g) {
+        if (!visible(g)) return;
+        var h = g.querySelector('h4');
+        var label = h ? h.firstChild && h.firstChild.textContent.trim() : '';
+        g.querySelectorAll('li').forEach(function (li) { out.push({ g: label || '', t: li.textContent.trim(), n: li.getAttribute('data-ing') || '' }); });
+      });
+      return out;
+    }
+    function copyText(text, done) {
+      function fallback() {
+        var ta = document.createElement('textarea'); ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+        document.body.appendChild(ta); ta.select();
+        try { document.execCommand('copy'); done(true); } catch (e) { done(false); }
+        document.body.removeChild(ta);
+      }
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(function () { done(true); }, fallback);
+      else fallback();
+    }
+    function post(payload) {
+      payload.key = KEY_;
+      return fetch(URL_, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(payload) });
+    }
+    function getList() {
+      return fetch(URL_ + '?action=list&key=' + encodeURIComponent(KEY_)).then(function (r) { return r.json(); })
+        .then(function (j) { if (!j.ok) throw new Error(j.error || 'error'); return j.items || []; });
+    }
+    var badge = document.getElementById('shop-list-toggle');
+    function setBadge(n) { if (badge) badge.querySelector('.shop-badge').textContent = n ? ' (' + n + ')' : ''; }
+    function refreshBadge() { if (ENABLED) getList().then(function (l) { setBadge(l.length); }, function () {}); }
+    function build(art, btn) {
+      var items = collect(art);
+      var panel = document.createElement('div');
+      panel.className = 'shop-panel'; panel.setAttribute('role', 'region'); panel.setAttribute('aria-label', 'Shopping checklist');
+      var head = document.createElement('div'); head.className = 'shop-head';
+      head.innerHTML = '<strong>Shopping checklist</strong><span>Tick what you need to buy.</span>';
+      var cols = document.createElement('div'); cols.className = 'shop-cols';
+      var last = null;
+      items.forEach(function (it) {
+        if (it.g !== last) { if (it.g) { var l = document.createElement('div'); l.className = 'shop-group-label'; l.textContent = it.g; cols.appendChild(l); } last = it.g; }
+        var lab = document.createElement('label'); lab.className = 'shop-item';
+        var cb = document.createElement('input'); cb.type = 'checkbox'; cb.checked = false;
+        var sp = document.createElement('span'); sp.textContent = it.t;
+        lab.appendChild(cb); lab.appendChild(sp); cols.appendChild(lab);
+      });
+      var actions = document.createElement('div'); actions.className = 'shop-actions';
+      var copyBtn = document.createElement('button'); copyBtn.type = 'button'; copyBtn.className = 'shop-primary'; copyBtn.textContent = 'Copy checked';
+      var clearBtn = document.createElement('button'); clearBtn.type = 'button'; clearBtn.textContent = 'Untick all';
+      var count = document.createElement('span'); count.className = 'shop-count';
+      var addBtn = null;
+      if (ENABLED) { addBtn = document.createElement('button'); addBtn.type = 'button'; addBtn.className = 'shop-primary'; addBtn.textContent = 'Add to shopping list'; actions.appendChild(addBtn); copyBtn.className = ''; }
+      actions.appendChild(copyBtn); actions.appendChild(clearBtn); actions.appendChild(count);
+      var msg = document.createElement('div'); msg.className = 'shop-msg'; msg.setAttribute('aria-live', 'polite');
+      panel.appendChild(head); panel.appendChild(cols); panel.appendChild(actions); panel.appendChild(msg);
+      function boxes() { return cols.querySelectorAll('input'); }
+      function checked() { var r = []; boxes().forEach(function (c, i) { if (c.checked) r.push(items[i].t); }); return r; }
+      function checkedObjs() { var r = []; boxes().forEach(function (c, i) { if (c.checked) r.push({ item: items[i].t, ingredient: items[i].n, recipe: art.getAttribute('data-title') || '' }); }); return r; }
+      function update() { count.textContent = checked().length + ' of ' + items.length + ' checked'; msg.textContent = ''; }
+      cols.addEventListener('change', update);
+      copyBtn.addEventListener('click', function () {
+        var c = checked();
+        if (!c.length) { msg.textContent = 'Nothing checked yet.'; return; }
+        copyText(c.join('\n'), function (ok) { msg.textContent = ok ? 'Copied ' + c.length + ' item' + (c.length === 1 ? '' : 's') + '.' : 'Could not copy.'; });
+      });
+      if (addBtn) addBtn.addEventListener('click', function () {
+        var c = checkedObjs();
+        if (!c.length) { msg.textContent = 'Nothing checked yet.'; return; }
+        addBtn.disabled = true; msg.textContent = 'Adding...';
+        post({ action: 'add', items: c }).then(function () { return getList(); }).then(function (l) {
+          msg.textContent = 'Sent ' + c.length + ' item' + (c.length === 1 ? '' : 's') + '. The list now has ' + l.length + '.';
+          setBadge(l.length); boxes().forEach(function (x) { x.checked = false; }); count.textContent = '';
+        }, function () { msg.textContent = 'Sent, but could not confirm. Check the list.'; }).then(function () { addBtn.disabled = false; });
+      });
+      clearBtn.addEventListener('click', function () { boxes().forEach(function (c) { c.checked = false; }); update(); });
+      update();
+      return panel;
+    }
+    function openList() {
+      var ov = document.createElement('div'); ov.className = 'shop-overlay';
+      var dlg = document.createElement('div'); dlg.className = 'shop-dialog'; dlg.setAttribute('role', 'dialog'); dlg.setAttribute('aria-label', 'Shopping list');
+      var title = document.createElement('h2'); title.textContent = 'Shopping list';
+      var body = document.createElement('div'); body.className = 'shop-listbody'; body.textContent = 'Loading...';
+      var acts = document.createElement('div'); acts.className = 'shop-actions';
+      var refresh = document.createElement('button'); refresh.type = 'button'; refresh.textContent = 'Refresh';
+      var copy = document.createElement('button'); copy.type = 'button'; copy.textContent = 'Copy list';
+      var clear = document.createElement('button'); clear.type = 'button'; clear.className = 'shop-danger'; clear.textContent = 'Clear list';
+      var close = document.createElement('button'); close.type = 'button'; close.textContent = 'Close';
+      var msg = document.createElement('div'); msg.className = 'shop-msg';
+      [refresh, copy, clear, close].forEach(function (b) { acts.appendChild(b); });
+      dlg.appendChild(title); dlg.appendChild(body); dlg.appendChild(acts); dlg.appendChild(msg); ov.appendChild(dlg); document.body.appendChild(ov);
+      var current = [];
+      function render(l) {
+        current = l; setBadge(l.length); body.textContent = '';
+        if (!l.length) { body.textContent = 'The list is empty.'; return; }
+        l.slice().sort(function (a, b) { return (a.ingredient || a.item).toLowerCase() < (b.ingredient || b.item).toLowerCase() ? -1 : 1; }).forEach(function (it) {
+          var row = document.createElement('div'); row.className = 'shop-row';
+          var t = document.createElement('span'); t.textContent = it.item;
+          var r = document.createElement('small'); r.textContent = it.recipe;
+          row.appendChild(t); row.appendChild(r); body.appendChild(row);
+        });
+      }
+      function load() { body.textContent = 'Loading...'; getList().then(render, function () { body.textContent = 'Could not load the list.'; }); }
+      refresh.addEventListener('click', load);
+      copy.addEventListener('click', function () { copyText(current.map(function (i) { return i.item; }).join('\n'), function (ok) { msg.textContent = ok ? 'Copied ' + current.length + ' items.' : 'Could not copy.'; }); });
+      clear.addEventListener('click', function () {
+        if (!current.length) return;
+        if (!window.confirm('Clear all ' + current.length + ' items? They move to the History tab of the sheet.')) return;
+        post({ action: 'clear' }).then(function () { return getList(); }).then(render, function () { msg.textContent = 'Could not confirm. Refresh.'; });
+      });
+      function shut() { document.body.removeChild(ov); }
+      close.addEventListener('click', shut); ov.addEventListener('click', function (e) { if (e.target === ov) shut(); });
+      load();
+    }
+    if (badge) {
+      if (ENABLED) { badge.style.display = 'flex'; badge.addEventListener('click', openList); refreshBadge(); }
+    }
+    document.querySelectorAll('.shop-btn').forEach(function (btn) {
+      btn.innerHTML = CART + 'Shop';
+      btn.addEventListener('click', function () {
+        var art = btn.closest('.recipe'); if (!art) return;
+        var open = art.querySelector('.shop-panel');
+        if (open) { open.parentNode.removeChild(open); btn.classList.remove('active'); btn.setAttribute('aria-expanded', 'false'); return; }
+        var panel = build(art, btn);
+        var body = art.querySelector('.recipe-body');
+        art.insertBefore(panel, body);
+        btn.classList.add('active'); btn.setAttribute('aria-expanded', 'true');
+      });
+    });
+  })();
 
   // ── Apply filters (favorites — current page only) ─────────────────────
   function applyFilters() {

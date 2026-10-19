@@ -630,6 +630,43 @@
   #made-dialog button[type=submit] { background: #3b2a1a; color: #fff; border-color: #3b2a1a; }
   @media print { .made-btn, #made-modal { display: none !important; } }
 
+/* ── Shopping checklist (see shopping_list_client.js) ── */
+.shop-btn { display: inline-flex; align-items: center; gap: 4px; }
+.shop-btn svg { width: 14px; height: 14px; }
+.shop-btn.active { background: #f3e9d6; border-color: var(--accent2); color: var(--accent); }
+.shop-panel { margin: 12px 0 4px; border: 1px solid var(--accent2); border-radius: 8px; background: #fbf5ea;
+  padding: 14px 16px; font-family: 'Helvetica Neue', Arial, sans-serif; }
+.shop-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.shop-head strong { font-size: 0.95rem; color: var(--accent); }
+.shop-head span { font-size: 0.75rem; color: var(--muted); }
+.shop-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 24px; margin-top: 8px; }
+.shop-group-label { grid-column: 1 / -1; font-size: 0.72rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin-top: 8px; }
+.shop-item { display: flex; gap: 8px; align-items: flex-start; font-size: 0.86rem; padding: 3px 0; cursor: pointer; }
+.shop-item input { margin-top: 3px; accent-color: var(--accent); }
+.shop-actions { display: flex; gap: 8px; align-items: center; margin-top: 12px; flex-wrap: wrap; }
+.shop-actions button { font: 0.8rem 'Helvetica Neue', Arial, sans-serif; border-radius: var(--radius); padding: 6px 12px; cursor: pointer;
+  background: none; color: var(--muted); border: 1px solid var(--border); }
+.shop-actions button:hover { background: var(--border); color: var(--text); }
+.shop-actions button.shop-primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+.shop-actions button.shop-primary:hover { background: #6f360f; }
+.shop-count { font-size: 0.78rem; color: var(--muted); margin-left: auto; }
+.shop-msg { font-size: 0.8rem; color: #2e7d32; margin-top: 8px; min-height: 1em; }
+@media (max-width: 640px) { .shop-cols { grid-template-columns: 1fr; } }
+@media print { .shop-panel, .shop-btn { display: none !important; } }
+
+#shop-list-toggle { display: none; align-items: center; gap: 8px; padding: 7px 14px; font-size: 0.82rem; cursor: pointer;
+  color: var(--nav-text); background: none; border: none; border-bottom: 1px solid #5a3e28; text-align: left; width: 100%; }
+#shop-list-toggle:hover { background: #4e3522; }
+#shop-list-toggle svg { width: 14px; height: 14px; }
+.shop-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.45); display: flex; align-items: center; justify-content: center; z-index: 1000; }
+.shop-dialog { background: #fff; color: #2b2118; border-radius: 8px; padding: 18px 20px; width: min(460px, 92vw); max-height: 84vh; display: flex; flex-direction: column;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.3); font-family: 'Helvetica Neue', Arial, sans-serif; }
+.shop-dialog h2 { font-size: 1rem; margin: 0 0 8px; }
+.shop-listbody { overflow-y: auto; font-size: 0.86rem; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 6px 0; min-height: 60px; }
+.shop-row { display: flex; justify-content: space-between; gap: 12px; padding: 3px 0; }
+.shop-row small { color: var(--muted); text-align: right; font-size: 0.72rem; }
+.shop-danger { color: #a33 !important; }
+
 </style>
 </head>
 <body>
@@ -663,6 +700,7 @@
     <button id="fav-toggle"><span class="star">★</span> Favorites only</button>
     <button id="notmade-toggle"><span class="nm-icon">&#9675;</span> Not yet made</button>
   </div>
+  <button id="shop-list-toggle" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.6 12.2a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 7H6"/></svg>Shopping list<span class="shop-badge"></span></button>
   <div id="made-pending"><span class="made-pend-n"></span><button type="button" class="made-copy">Copy list</button></div>
   <button id="alt-toggle"><span class="alt-icon">&#9650;</span> High Altitude</button>
   <div id="expand-collapse-row">
@@ -1325,6 +1363,7 @@
     <h3>Brown Butter Mashed Potatoes</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="vegetable-sides-potatoes-brown-butter-mashed-potatoes" data-title="Brown Butter Mashed Potatoes" title="Not yet made (author only)" aria-label="Not yet made: Brown Butter Mashed Potatoes"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Brown Butter Mashed Potatoes">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Brown Butter Mashed Potatoes">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Brown Butter Mashed Potatoes">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetable-sides-potatoes-brown-butter-mashed-potatoes" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Brown Butter Mashed Potatoes in new tab">🔗 Link</a>
@@ -1334,14 +1373,14 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Potatoes</h4><ul class="ingredients"><li>5 pounds Yukon gold potatoes, peeled and cut into chunks</li></ul></div>
-<div class="ing-group"><h4>Brown butter</h4><ul class="ingredients"><li>2 1/2 sticks (1 1/4 cups) salted butter</li></ul></div>
-<div class="ing-group"><h4>Enrichments</h4><ul class="ingredients"><li>1 1/2 packages (12 oz total) cream cheese, softened</li>
-<li>1/2 cup half-and-half</li>
-<li>1/2 cup heavy cream</li>
-<li>Kosher salt and black pepper</li>
-<li>Splash of milk to thin, if needed</li></ul></div>
-<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li>Fresh parsley, chopped</li></ul></div>
+      <div class="ing-group"><h4>Potatoes</h4><ul class="ingredients"><li data-ing="yukon gold potato">5 pounds Yukon gold potatoes, peeled and cut into chunks</li></ul></div>
+<div class="ing-group"><h4>Brown butter</h4><ul class="ingredients"><li data-ing="salted butter">2 1/2 sticks (1 1/4 cups) salted butter</li></ul></div>
+<div class="ing-group"><h4>Enrichments</h4><ul class="ingredients"><li data-ing="cream cheese">1 1/2 packages (12 oz total) cream cheese, softened</li>
+<li data-ing="half-and-half">1/2 cup half-and-half</li>
+<li data-ing="heavy cream">1/2 cup heavy cream</li>
+<li data-ing="kosher salt / black pepper">Kosher salt and black pepper</li>
+<li data-ing="milk">Splash of milk to thin, if needed</li></ul></div>
+<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li data-ing="parsley">Fresh parsley, chopped</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1357,6 +1396,7 @@
     <h3>Classic Potato Gratin</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="vegetable-sides-potatoes-classic-potato-gratin" data-title="Classic Potato Gratin" title="Not yet made (author only)" aria-label="Not yet made: Classic Potato Gratin"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Classic Potato Gratin">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Classic Potato Gratin">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Classic Potato Gratin">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetable-sides-potatoes-classic-potato-gratin" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Classic Potato Gratin in new tab">🔗 Link</a>
@@ -1366,18 +1406,18 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Cream mixture</h4><ul class="ingredients"><li>1 medium shallot, quartered through root end</li>
-<li>1 1/4 cups heavy cream</li>
-<li>1 1/2 teaspoons kosher salt</li>
-<li>1/2 teaspoon freshly ground black pepper</li>
-<li>1 1/2 teaspoons thyme leaves</li>
-<li>2 cloves garlic</li></ul></div>
-<div class="ing-group"><h4>Gratin dish</h4><ul class="ingredients"><li>1 small garlic clove, halved</li>
-<li>1 1/2 teaspoons unsalted butter, room temperature</li></ul></div>
-<div class="ing-group"><h4>Potatoes</h4><ul class="ingredients"><li>2 pounds russet potatoes, scrubbed and very thinly sliced on a mandoline (do not rinse after slicing)</li></ul></div>
-<div class="ing-group"><h4>Topping</h4><ul class="ingredients"><li>1 1/2 oz Gruyere, finely grated</li>
-<li>1/2 oz Parmesan, finely grated</li>
-<li>Extra thyme leaves for serving</li></ul></div>
+      <div class="ing-group"><h4>Cream mixture</h4><ul class="ingredients"><li data-ing="shallot">1 medium shallot, quartered through root end</li>
+<li data-ing="heavy cream">1 1/4 cups heavy cream</li>
+<li data-ing="kosher salt">1 1/2 teaspoons kosher salt</li>
+<li data-ing="black pepper">1/2 teaspoon freshly ground black pepper</li>
+<li data-ing="thyme">1 1/2 teaspoons thyme leaves</li>
+<li data-ing="garlic">2 cloves garlic</li></ul></div>
+<div class="ing-group"><h4>Gratin dish</h4><ul class="ingredients"><li data-ing="garlic">1 small garlic clove, halved</li>
+<li data-ing="unsalted butter">1 1/2 teaspoons unsalted butter, room temperature</li></ul></div>
+<div class="ing-group"><h4>Potatoes</h4><ul class="ingredients"><li data-ing="russet potato">2 pounds russet potatoes, scrubbed and very thinly sliced on a mandoline (do not rinse after slicing)</li></ul></div>
+<div class="ing-group"><h4>Topping</h4><ul class="ingredients"><li data-ing="gruyere">1 1/2 oz Gruyere, finely grated</li>
+<li data-ing="parmesan">1/2 oz Parmesan, finely grated</li>
+<li data-ing="thyme">Extra thyme leaves for serving</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1394,6 +1434,7 @@
     <h3>Crispy Accordion Potatoes</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="vegetable-sides-potatoes-crispy-accordion-potatoes" data-title="Crispy Accordion Potatoes" title="Made it" aria-label="Made: Crispy Accordion Potatoes"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Crispy Accordion Potatoes">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Crispy Accordion Potatoes">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Crispy Accordion Potatoes">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetable-sides-potatoes-crispy-accordion-potatoes" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Crispy Accordion Potatoes in new tab">🔗 Link</a>
@@ -1403,14 +1444,14 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Potatoes</h4><ul class="ingredients"><li>4 to 6 large white potatoes</li></ul></div>
-<div class="ing-group"><h4>Seasoning oil</h4><ul class="ingredients"><li>2 tablespoons olive oil</li>
-<li>1 teaspoon smoked paprika</li>
-<li>1/2 teaspoon garlic powder</li>
-<li>1/2 teaspoon onion powder</li>
-<li>1/2 teaspoon Italian seasoning</li>
-<li>1 teaspoon salt</li></ul></div>
-<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li>Fresh parsley</li></ul></div>
+      <div class="ing-group"><h4>Potatoes</h4><ul class="ingredients"><li data-ing="potato">4 to 6 large white potatoes</li></ul></div>
+<div class="ing-group"><h4>Seasoning oil</h4><ul class="ingredients"><li data-ing="olive oil">2 tablespoons olive oil</li>
+<li data-ing="smoked paprika">1 teaspoon smoked paprika</li>
+<li data-ing="garlic powder">1/2 teaspoon garlic powder</li>
+<li data-ing="onion powder">1/2 teaspoon onion powder</li>
+<li data-ing="italian seasoning">1/2 teaspoon Italian seasoning</li>
+<li data-ing="salt">1 teaspoon salt</li></ul></div>
+<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li data-ing="parsley">Fresh parsley</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1430,6 +1471,7 @@
     <h3>★ Crispy Smashed Potatoes</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="vegetable-sides-potatoes-crispy-smashed-potatoes" data-title="Crispy Smashed Potatoes" title="Made it" aria-label="Made: Crispy Smashed Potatoes"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Crispy Smashed Potatoes">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Crispy Smashed Potatoes">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Crispy Smashed Potatoes">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetable-sides-potatoes-crispy-smashed-potatoes" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Crispy Smashed Potatoes in new tab">🔗 Link</a>
@@ -1439,17 +1481,17 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Potatoes</h4><ul class="ingredients"><li>1 1/2 pounds petite Yukon gold or fingerling potatoes</li></ul></div>
-<div class="ing-group"><h4>Drizzle</h4><ul class="ingredients"><li>3 tablespoons salted butter, melted</li>
-<li>2 tablespoons extra-virgin olive oil</li>
-<li>1 teaspoon salt</li>
-<li>1/2 teaspoon pepper</li></ul></div>
-<div class="ing-group"><h4>Garlic cheddar dip</h4><ul class="ingredients"><li>8 oz sour cream</li>
-<li>3/4 cup cheddar cheese, grated</li>
-<li>1 garlic clove, minced (or 1/4 teaspoon garlic powder)</li>
-<li>1/2 teaspoon garlic salt</li>
-<li>1/4 teaspoon pepper</li></ul></div>
-<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li>Fresh parsley, chopped</li></ul></div>
+      <div class="ing-group"><h4>Potatoes</h4><ul class="ingredients"><li data-ing="fingerling potato">1 1/2 pounds petite Yukon gold or fingerling potatoes</li></ul></div>
+<div class="ing-group"><h4>Drizzle</h4><ul class="ingredients"><li data-ing="salted butter">3 tablespoons salted butter, melted</li>
+<li data-ing="extra-virgin olive oil">2 tablespoons extra-virgin olive oil</li>
+<li data-ing="salt">1 teaspoon salt</li>
+<li data-ing="black pepper">1/2 teaspoon pepper</li></ul></div>
+<div class="ing-group"><h4>Garlic cheddar dip</h4><ul class="ingredients"><li data-ing="sour cream">8 oz sour cream</li>
+<li data-ing="cheddar cheese">3/4 cup cheddar cheese, grated</li>
+<li data-ing="garlic">1 garlic clove, minced (or 1/4 teaspoon garlic powder)</li>
+<li data-ing="garlic salt">1/2 teaspoon garlic salt</li>
+<li data-ing="black pepper">1/4 teaspoon pepper</li></ul></div>
+<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li data-ing="parsley">Fresh parsley, chopped</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1467,6 +1509,7 @@
     <h3>Over-the-Top Scalloped Potatoes</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="vegetable-sides-potatoes-over-the-top-scalloped-potatoes" data-title="Over-the-Top Scalloped Potatoes" title="Not yet made (author only)" aria-label="Not yet made: Over-the-Top Scalloped Potatoes"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Over-the-Top Scalloped Potatoes">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Over-the-Top Scalloped Potatoes">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Over-the-Top Scalloped Potatoes">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetable-sides-potatoes-over-the-top-scalloped-potatoes" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Over-the-Top Scalloped Potatoes in new tab">🔗 Link</a>
@@ -1476,18 +1519,18 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Onion and bacon</h4><ul class="ingredients"><li>2 tablespoons salted butter</li>
-<li>1 large white onion, thinly sliced</li>
-<li>5 slices bacon, diced</li></ul></div>
-<div class="ing-group"><h4>Cream sauce</h4><ul class="ingredients"><li>2 cups heavy cream</li>
-<li>1 cup half-and-half</li>
-<li>1/4 cup all-purpose flour</li>
-<li>1 teaspoon freshly ground black pepper</li>
-<li>Pinch kosher salt</li></ul></div>
-<div class="ing-group"><h4>Cheese</h4><ul class="ingredients"><li>1 cup fontina, grated</li>
-<li>1 cup Gruyere, grated</li></ul></div>
-<div class="ing-group"><h4>Potatoes</h4><ul class="ingredients"><li>3 pounds Yukon gold potatoes, sliced 1/8-inch thick (use a mandoline)</li></ul></div>
-<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li>2 green onions, thinly sliced</li></ul></div>
+      <div class="ing-group"><h4>Onion and bacon</h4><ul class="ingredients"><li data-ing="salted butter">2 tablespoons salted butter</li>
+<li data-ing="white onion">1 large white onion, thinly sliced</li>
+<li data-ing="bacon">5 slices bacon, diced</li></ul></div>
+<div class="ing-group"><h4>Cream sauce</h4><ul class="ingredients"><li data-ing="heavy cream">2 cups heavy cream</li>
+<li data-ing="half-and-half">1 cup half-and-half</li>
+<li data-ing="all-purpose flour">1/4 cup all-purpose flour</li>
+<li data-ing="black pepper">1 teaspoon freshly ground black pepper</li>
+<li data-ing="kosher salt">Pinch kosher salt</li></ul></div>
+<div class="ing-group"><h4>Cheese</h4><ul class="ingredients"><li data-ing="fontina">1 cup fontina, grated</li>
+<li data-ing="gruyere">1 cup Gruyere, grated</li></ul></div>
+<div class="ing-group"><h4>Potatoes</h4><ul class="ingredients"><li data-ing="yukon gold potato">3 pounds Yukon gold potatoes, sliced 1/8-inch thick (use a mandoline)</li></ul></div>
+<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li data-ing="scallion">2 green onions, thinly sliced</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1504,6 +1547,7 @@
     <h3>★ Perfect Twice Fried French Fries</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="vegetable-sides-potatoes-perfect-twice-fried-french-fries" data-title="Perfect Twice Fried French Fries" title="Made it" aria-label="Made: Perfect Twice Fried French Fries"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Perfect Twice Fried French Fries">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Perfect Twice Fried French Fries">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Perfect Twice Fried French Fries">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetable-sides-potatoes-perfect-twice-fried-french-fries" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Perfect Twice Fried French Fries in new tab">🔗 Link</a>
@@ -1513,11 +1557,11 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Fries</h4><ul class="ingredients"><li>4 large Russet potatoes, cut into 1/4-inch sticks (unpeeled)</li>
-<li>Ice water to cover</li></ul></div>
-<div class="ing-group"><h4>For frying</h4><ul class="ingredients"><li>2 quarts peanut oil</li></ul></div>
-<div class="ing-group"><h4>To season</h4><ul class="ingredients"><li>Salt</li>
-<li>Aleppo pepper</li></ul></div>
+      <div class="ing-group"><h4>Fries</h4><ul class="ingredients"><li data-ing="russet potato">4 large Russet potatoes, cut into 1/4-inch sticks (unpeeled)</li>
+<li data-ing="water">Ice water to cover</li></ul></div>
+<div class="ing-group"><h4>For frying</h4><ul class="ingredients"><li data-ing="peanut oil">2 quarts peanut oil</li></ul></div>
+<div class="ing-group"><h4>To season</h4><ul class="ingredients"><li data-ing="salt">Salt</li>
+<li data-ing="aleppo pepper or red pepper flakes">Aleppo pepper</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1536,6 +1580,7 @@
     <h3>★ Potato Latkes</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="vegetable-sides-potatoes-potato-latkes" data-title="Potato Latkes" title="Made it" aria-label="Made: Potato Latkes"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Potato Latkes">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Potato Latkes">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Potato Latkes">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetable-sides-potatoes-potato-latkes" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Potato Latkes in new tab">🔗 Link</a>
@@ -1545,12 +1590,12 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Batter</h4><ul class="ingredients"><li>6 medium potatoes, grated</li>
-<li>1 onion, grated</li>
-<li>2 eggs</li>
-<li>2 tablespoons flour or matzo meal (more as needed)</li>
-<li>1 teaspoon salt</li></ul></div>
-<div class="ing-group"><h4>For frying</h4><ul class="ingredients"><li>Vegetable oil</li></ul></div>
+      <div class="ing-group"><h4>Batter</h4><ul class="ingredients"><li data-ing="potato">6 medium potatoes, grated</li>
+<li data-ing="onion">1 onion, grated</li>
+<li data-ing="egg">2 eggs</li>
+<li data-ing="all-purpose flour / matzo meal">2 tablespoons flour or matzo meal (more as needed)</li>
+<li data-ing="salt">1 teaspoon salt</li></ul></div>
+<div class="ing-group"><h4>For frying</h4><ul class="ingredients"><li data-ing="vegetable oil">Vegetable oil</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1569,6 +1614,7 @@
     <h3>Potatoes Gratin (Low Calorie)</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="vegetable-sides-potatoes-potatoes-gratin-low-calorie" data-title="Potatoes Gratin (Low Calorie)" title="Not yet made (author only)" aria-label="Not yet made: Potatoes Gratin (Low Calorie)"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Potatoes Gratin (Low Calorie)">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Potatoes Gratin (Low Calorie)">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Potatoes Gratin (Low Calorie)">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetable-sides-potatoes-potatoes-gratin-low-calorie" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Potatoes Gratin (Low Calorie) in new tab">🔗 Link</a>
@@ -1578,12 +1624,12 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Potatoes</h4><ul class="ingredients"><li>2 large garlic cloves, halved lengthwise</li>
-<li>3 pounds new potatoes, unpeeled, scrubbed, and very thinly sliced</li></ul></div>
-<div class="ing-group"><h4>Custard</h4><ul class="ingredients"><li>3 1/3 cups skim milk</li>
-<li>2 large eggs, lightly beaten</li>
-<li>Salt and pepper to taste</li></ul></div>
-<div class="ing-group"><h4>Topping</h4><ul class="ingredients"><li>6 tablespoons grated parmesan cheese</li></ul></div>
+      <div class="ing-group"><h4>Potatoes</h4><ul class="ingredients"><li data-ing="garlic">2 large garlic cloves, halved lengthwise</li>
+<li data-ing="new potato">3 pounds new potatoes, unpeeled, scrubbed, and very thinly sliced</li></ul></div>
+<div class="ing-group"><h4>Custard</h4><ul class="ingredients"><li data-ing="skim milk">3 1/3 cups skim milk</li>
+<li data-ing="egg">2 large eggs, lightly beaten</li>
+<li data-ing="salt / black pepper">Salt and pepper to taste</li></ul></div>
+<div class="ing-group"><h4>Topping</h4><ul class="ingredients"><li data-ing="parmesan">6 tablespoons grated parmesan cheese</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1604,6 +1650,7 @@
     <h3>Classic Steakhouse Creamed Spinach</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="vegetable-sides-stovetop-classic-steakhouse-creamed-spinach" data-title="Classic Steakhouse Creamed Spinach" title="Made it" aria-label="Made: Classic Steakhouse Creamed Spinach"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Classic Steakhouse Creamed Spinach">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Classic Steakhouse Creamed Spinach">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Classic Steakhouse Creamed Spinach">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetable-sides-stovetop-classic-steakhouse-creamed-spinach" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Classic Steakhouse Creamed Spinach in new tab">🔗 Link</a>
@@ -1613,19 +1660,19 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Spinach</h4><ul class="ingredients"><li>2 1/4 pounds fresh spinach (or 1 pound frozen spinach, defrosted and squeezed dry)</li>
-<li>2 teaspoons kosher salt</li></ul></div>
-<div class="ing-group"><h4>Cream sauce base</h4><ul class="ingredients"><li>4 tablespoons unsalted butter</li>
-<li>1 medium yellow onion, minced</li>
-<li>3 cloves garlic, minced</li>
-<li>2 teaspoons kosher salt</li>
-<li>1 teaspoon coarse ground black pepper</li>
-<li>1/2 teaspoon ground nutmeg</li>
-<li>1/4 cup all-purpose flour</li>
-<li>3 1/2 cups half-and-half</li></ul></div>
-<div class="ing-group"><h4>Cheese</h4><ul class="ingredients"><li>1 cup shredded mozzarella</li>
-<li>4 oz cream cheese</li>
-<li>1/2 cup grated Parmesan</li></ul></div>
+      <div class="ing-group"><h4>Spinach</h4><ul class="ingredients"><li data-ing="spinach">2 1/4 pounds fresh spinach (or 1 pound frozen spinach, defrosted and squeezed dry)</li>
+<li data-ing="kosher salt">2 teaspoons kosher salt</li></ul></div>
+<div class="ing-group"><h4>Cream sauce base</h4><ul class="ingredients"><li data-ing="unsalted butter">4 tablespoons unsalted butter</li>
+<li data-ing="yellow onion">1 medium yellow onion, minced</li>
+<li data-ing="garlic">3 cloves garlic, minced</li>
+<li data-ing="kosher salt">2 teaspoons kosher salt</li>
+<li data-ing="coarse ground black pepper">1 teaspoon coarse ground black pepper</li>
+<li data-ing="ground nutmeg">1/2 teaspoon ground nutmeg</li>
+<li data-ing="all-purpose flour">1/4 cup all-purpose flour</li>
+<li data-ing="half-and-half">3 1/2 cups half-and-half</li></ul></div>
+<div class="ing-group"><h4>Cheese</h4><ul class="ingredients"><li data-ing="shredded mozzarella">1 cup shredded mozzarella</li>
+<li data-ing="cream cheese">4 oz cream cheese</li>
+<li data-ing="parmesan">1/2 cup grated Parmesan</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1643,6 +1690,7 @@
     <h3>Kale Stir Fry with Mushroom and Red Onion</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="vegetable-sides-stovetop-kale-stir-fry-with-mushroom-and-red-onion" data-title="Kale Stir Fry with Mushroom and Red Onion" title="Not yet made (author only)" aria-label="Not yet made: Kale Stir Fry with Mushroom and Red Onion"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Kale Stir Fry with Mushroom and Red Onion">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Kale Stir Fry with Mushroom and Red Onion">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Kale Stir Fry with Mushroom and Red Onion">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetable-sides-stovetop-kale-stir-fry-with-mushroom-and-red-onion" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Kale Stir Fry with Mushroom and Red Onion in new tab">🔗 Link</a>
@@ -1652,13 +1700,13 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Searing fat</h4><ul class="ingredients"><li>2 tablespoons neutral high-heat oil, such as peanut, canola, or avocado</li></ul></div>
-<div class="ing-group"><h4>Onion and mushrooms</h4><ul class="ingredients"><li>1/2 large red onion (about 150 grams), sliced</li>
-<li>8 oz brown or white mushrooms (about 250 grams), trimmed and sliced</li></ul></div>
-<div class="ing-group"><h4>Kale</h4><ul class="ingredients"><li>6 to 8 cups kale (about 150 grams), leaves cut into bite-size pieces</li></ul></div>
-<div class="ing-group"><h4>Seasoning</h4><ul class="ingredients"><li>1 1/2 tablespoons balsamic vinegar</li>
-<li>1 1/2 tablespoons soy sauce</li>
-<li>Salt and black pepper to taste</li></ul></div>
+      <div class="ing-group"><h4>Searing fat</h4><ul class="ingredients"><li data-ing="neutral oil">2 tablespoons neutral high-heat oil, such as peanut, canola, or avocado</li></ul></div>
+<div class="ing-group"><h4>Onion and mushrooms</h4><ul class="ingredients"><li data-ing="red onion">1/2 large red onion (about 150 grams), sliced</li>
+<li data-ing="mushroom">8 oz brown or white mushrooms (about 250 grams), trimmed and sliced</li></ul></div>
+<div class="ing-group"><h4>Kale</h4><ul class="ingredients"><li data-ing="kale">6 to 8 cups kale (about 150 grams), leaves cut into bite-size pieces</li></ul></div>
+<div class="ing-group"><h4>Seasoning</h4><ul class="ingredients"><li data-ing="balsamic vinegar">1 1/2 tablespoons balsamic vinegar</li>
+<li data-ing="soy sauce">1 1/2 tablespoons soy sauce</li>
+<li data-ing="salt / black pepper">Salt and black pepper to taste</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1674,6 +1722,7 @@
     <h3>Kickin' Collard Greens</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="vegetable-sides-stovetop-kickin-collard-greens" data-title="Kickin' Collard Greens" title="Made it" aria-label="Made: Kickin' Collard Greens"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Kickin' Collard Greens">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Kickin' Collard Greens">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Kickin' Collard Greens">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetable-sides-stovetop-kickin-collard-greens" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Kickin' Collard Greens in new tab">🔗 Link</a>
@@ -1683,15 +1732,15 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li>1 tablespoon olive oil</li>
-<li>3 slices bacon</li>
-<li>1 large onion, chopped</li>
-<li>2 cloves garlic, minced</li></ul></div>
-<div class="ing-group"><h4>Greens</h4><ul class="ingredients"><li>1 pound fresh collard greens, washed and cut into 2-inch pieces</li></ul></div>
-<div class="ing-group"><h4>Braising liquid</h4><ul class="ingredients"><li>3 cups chicken broth</li>
-<li>1 teaspoon salt</li>
-<li>1 teaspoon black pepper</li>
-<li>1 pinch Aleppo pepper or red pepper flakes, or more to taste</li></ul></div>
+      <div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li data-ing="olive oil">1 tablespoon olive oil</li>
+<li data-ing="bacon">3 slices bacon</li>
+<li data-ing="onion">1 large onion, chopped</li>
+<li data-ing="garlic">2 cloves garlic, minced</li></ul></div>
+<div class="ing-group"><h4>Greens</h4><ul class="ingredients"><li data-ing="collard greens">1 pound fresh collard greens, washed and cut into 2-inch pieces</li></ul></div>
+<div class="ing-group"><h4>Braising liquid</h4><ul class="ingredients"><li data-ing="chicken broth">3 cups chicken broth</li>
+<li data-ing="salt">1 teaspoon salt</li>
+<li data-ing="black pepper">1 teaspoon black pepper</li>
+<li data-ing="aleppo pepper or red pepper flakes">1 pinch Aleppo pepper or red pepper flakes, or more to taste</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1706,6 +1755,7 @@
     <h3>Sautéed Mushrooms</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="vegetable-sides-stovetop-saut-ed-mushrooms" data-title="Sautéed Mushrooms" title="Made it" aria-label="Made: Sautéed Mushrooms"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Sautéed Mushrooms">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Sautéed Mushrooms">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Sautéed Mushrooms">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetable-sides-stovetop-saut-ed-mushrooms" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Sautéed Mushrooms in new tab">🔗 Link</a>
@@ -1715,13 +1765,13 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Mushrooms and fat</h4><ul class="ingredients"><li>2 pounds button mushrooms, halved</li>
-<li>2 tablespoons unsalted butter</li>
-<li>2 tablespoons olive oil</li></ul></div>
-<div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li>3 garlic cloves, minced</li>
-<li>Salt and pepper to taste</li></ul></div>
-<div class="ing-group"><h4>Glaze</h4><ul class="ingredients"><li>1½ tablespoons fresh thyme leaves</li>
-<li>¾ cup dry sherry</li></ul></div>
+      <div class="ing-group"><h4>Mushrooms and fat</h4><ul class="ingredients"><li data-ing="button mushroom">2 pounds button mushrooms, halved</li>
+<li data-ing="unsalted butter">2 tablespoons unsalted butter</li>
+<li data-ing="olive oil">2 tablespoons olive oil</li></ul></div>
+<div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li data-ing="garlic">3 garlic cloves, minced</li>
+<li data-ing="salt / black pepper">Salt and pepper to taste</li></ul></div>
+<div class="ing-group"><h4>Glaze</h4><ul class="ingredients"><li data-ing="thyme">1½ tablespoons fresh thyme leaves</li>
+<li data-ing="sherry">¾ cup dry sherry</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1739,6 +1789,7 @@
     <h3>Mexican Street Corn (Elotes)</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="vegetable-sides-stovetop-mexican-street-corn-elotes" data-title="Mexican Street Corn (Elotes)" title="Made it" aria-label="Made: Mexican Street Corn (Elotes)"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Mexican Street Corn (Elotes)">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Mexican Street Corn (Elotes)">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Mexican Street Corn (Elotes)">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetable-sides-stovetop-mexican-street-corn-elotes" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Mexican Street Corn (Elotes) in new tab">🔗 Link</a>
@@ -1748,15 +1799,15 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Corn</h4><ul class="ingredients"><li>4 ears of corn, shucked</li></ul></div>
-<div class="ing-group"><h4>Topping</h4><ul class="ingredients"><li>1/3 cup Mexican crema or sour cream</li>
-<li>1/3 cup mayonnaise</li>
-<li>2 cloves garlic, finely minced</li>
-<li>1 teaspoon ancho chili powder, plus more for garnish</li>
-<li>1 tablespoon fresh cilantro, finely minced, plus more for garnish</li>
-<li>1/2 cup crumbled cotija cheese, plus more for garnish</li>
-<li>1/4 teaspoon kosher salt</li></ul></div>
-<div class="ing-group"><h4>Garnish</h4><ul class="ingredients"><li>Lime wedges</li></ul></div>
+      <div class="ing-group"><h4>Corn</h4><ul class="ingredients"><li data-ing="corn">4 ears of corn, shucked</li></ul></div>
+<div class="ing-group"><h4>Topping</h4><ul class="ingredients"><li data-ing="mexican crema / sour cream">1/3 cup Mexican crema or sour cream</li>
+<li data-ing="mayonnaise">1/3 cup mayonnaise</li>
+<li data-ing="garlic">2 cloves garlic, finely minced</li>
+<li data-ing="ancho chile powder">1 teaspoon ancho chili powder, plus more for garnish</li>
+<li data-ing="cilantro">1 tablespoon fresh cilantro, finely minced, plus more for garnish</li>
+<li data-ing="cotija cheese">1/2 cup crumbled cotija cheese, plus more for garnish</li>
+<li data-ing="kosher salt">1/4 teaspoon kosher salt</li></ul></div>
+<div class="ing-group"><h4>Garnish</h4><ul class="ingredients"><li data-ing="lime">Lime wedges</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1775,6 +1826,7 @@
     <h3>Eggplant Caponata</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="vegetable-sides-stovetop-eggplant-caponata" data-title="Eggplant Caponata" title="Not yet made (author only)" aria-label="Not yet made: Eggplant Caponata"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Eggplant Caponata">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Eggplant Caponata">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Eggplant Caponata">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetable-sides-stovetop-eggplant-caponata" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Eggplant Caponata in new tab">🔗 Link</a>
@@ -1784,19 +1836,19 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Eggplant (1 hour ahead)</h4><ul class="ingredients"><li>600g eggplant, peeled mostly (leaving a little skin), diced into roughly 2 cm cubes</li>
-<li>1 tablespoon fine salt (for draining)</li>
-<li>500ml sunflower or peanut oil (for frying)</li></ul></div>
-<div class="ing-group"><h4>Peppers</h4><ul class="ingredients"><li>500g mixed-color peppers, diced into roughly 2 cm pieces</li></ul></div>
-<div class="ing-group"><h4>Base</h4><ul class="ingredients"><li>100ml extra-virgin olive oil</li>
-<li>200g red onion, diced into 1 cm pieces</li>
-<li>200g celery (outer stalks), lightly peeled, cut into 1 cm pieces (briefly boil in unsalted water 3 minutes — keep crunch)</li>
-<li>300g cherry or plum tomatoes, roughly chopped</li></ul></div>
-<div class="ing-group"><h4>Sweet-sour finish</h4><ul class="ingredients"><li>30g (about 2 tablespoons) brown sugar</li>
-<li>100ml red wine vinegar</li></ul></div>
-<div class="ing-group"><h4>Add-ins</h4><ul class="ingredients"><li>100g green olives, rinsed and roughly chopped; and 50g capers, desalted and roughly chopped</li>
-<li>OR: 100g raisins; and 50g pine nuts</li></ul></div>
-<div class="ing-group"><h4>To finish</h4><ul class="ingredients"><li>Large handful of fresh basil leaves, torn</li></ul></div>
+      <div class="ing-group"><h4>Eggplant (1 hour ahead)</h4><ul class="ingredients"><li data-ing="eggplant">600g eggplant, peeled mostly (leaving a little skin), diced into roughly 2 cm cubes</li>
+<li data-ing="salt">1 tablespoon fine salt (for draining)</li>
+<li data-ing="sunflower oil / peanut oil">500ml sunflower or peanut oil (for frying)</li></ul></div>
+<div class="ing-group"><h4>Peppers</h4><ul class="ingredients"><li data-ing="bell pepper (any)">500g mixed-color peppers, diced into roughly 2 cm pieces</li></ul></div>
+<div class="ing-group"><h4>Base</h4><ul class="ingredients"><li data-ing="extra-virgin olive oil">100ml extra-virgin olive oil</li>
+<li data-ing="red onion">200g red onion, diced into 1 cm pieces</li>
+<li data-ing="celery">200g celery (outer stalks), lightly peeled, cut into 1 cm pieces (briefly boil in unsalted water 3 minutes — keep crunch)</li>
+<li data-ing="cherry tomato / plum tomato">300g cherry or plum tomatoes, roughly chopped</li></ul></div>
+<div class="ing-group"><h4>Sweet-sour finish</h4><ul class="ingredients"><li data-ing="brown sugar">30g (about 2 tablespoons) brown sugar</li>
+<li data-ing="red wine vinegar">100ml red wine vinegar</li></ul></div>
+<div class="ing-group"><h4>Add-ins</h4><ul class="ingredients"><li data-ing="green olive">100g green olives, rinsed and roughly chopped; and 50g capers, desalted and roughly chopped</li>
+<li data-ing="raisin / pine nut">OR: 100g raisins; and 50g pine nuts</li></ul></div>
+<div class="ing-group"><h4>To finish</h4><ul class="ingredients"><li data-ing="basil">Large handful of fresh basil leaves, torn</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1817,6 +1869,7 @@
     <h3>Red Cabbage With Walnuts and Feta</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="vegetable-sides-stovetop-red-cabbage-with-walnuts-and-feta" data-title="Red Cabbage With Walnuts and Feta" title="Made it" aria-label="Made: Red Cabbage With Walnuts and Feta"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Red Cabbage With Walnuts and Feta">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Red Cabbage With Walnuts and Feta">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Red Cabbage With Walnuts and Feta">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetable-sides-stovetop-red-cabbage-with-walnuts-and-feta" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Red Cabbage With Walnuts and Feta in new tab">🔗 Link</a>
@@ -1826,18 +1879,18 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Cabbage</h4><ul class="ingredients"><li>1 medium red cabbage (1 3/4 to 2 pounds)</li>
-<li>3 tablespoons extra-virgin olive oil</li>
-<li>1/2 teaspoon salt</li></ul></div>
-<div class="ing-group"><h4>Vinaigrette</h4><ul class="ingredients"><li>1 tablespoon apple cider vinegar, plus more to taste</li>
-<li>1/2 teaspoon Dijon mustard</li>
-<li>1/2 teaspoon salt</li>
-<li>3 tablespoons extra-virgin olive oil</li></ul></div>
-<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li>2/3 cup crumbled feta (3 oz)</li>
-<li>1/3 cup walnuts, toasted and coarsely chopped</li>
-<li>Lemon zest</li>
-<li>Pomegranate seeds</li>
-<li>Chopped mint, parsley, or dill (optional)</li></ul></div>
+      <div class="ing-group"><h4>Cabbage</h4><ul class="ingredients"><li data-ing="red cabbage">1 medium red cabbage (1 3/4 to 2 pounds)</li>
+<li data-ing="extra-virgin olive oil">3 tablespoons extra-virgin olive oil</li>
+<li data-ing="salt">1/2 teaspoon salt</li></ul></div>
+<div class="ing-group"><h4>Vinaigrette</h4><ul class="ingredients"><li data-ing="apple cider vinegar">1 tablespoon apple cider vinegar, plus more to taste</li>
+<li data-ing="dijon mustard">1/2 teaspoon Dijon mustard</li>
+<li data-ing="salt">1/2 teaspoon salt</li>
+<li data-ing="extra-virgin olive oil">3 tablespoons extra-virgin olive oil</li></ul></div>
+<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li data-ing="crumbled feta cheese">2/3 cup crumbled feta (3 oz)</li>
+<li data-ing="walnut">1/3 cup walnuts, toasted and coarsely chopped</li>
+<li data-ing="lemon">Lemon zest</li>
+<li data-ing="pomegranate seed">Pomegranate seeds</li>
+<li data-ing="mint">Chopped mint, parsley, or dill (optional)</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1853,6 +1906,7 @@
     <h3>Seared Zucchini and Halloumi in Red-Wine Vinaigrette</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="vegetable-sides-stovetop-seared-zucchini-and-halloumi-in-red-wine-vinaigrette" data-title="Seared Zucchini and Halloumi in Red-Wine Vinaigrette" title="Made it" aria-label="Made: Seared Zucchini and Halloumi in Red-Wine Vinaigrette"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Seared Zucchini and Halloumi in Red-Wine Vinaigrette">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Seared Zucchini and Halloumi in Red-Wine Vinaigrette">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Seared Zucchini and Halloumi in Red-Wine Vinaigrette">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetable-sides-stovetop-seared-zucchini-and-halloumi-in-red-wine-vinaigrette" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Seared Zucchini and Halloumi in Red-Wine Vinaigrette in new tab">🔗 Link</a>
@@ -1862,15 +1916,15 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Zucchini</h4><ul class="ingredients"><li>2 medium zucchini, sliced into 1/4-inch-thick rounds</li>
-<li>1 tablespoon extra-virgin olive oil, plus more as needed</li>
-<li>Salt and black pepper</li></ul></div>
-<div class="ing-group"><h4>Vinaigrette</h4><ul class="ingredients"><li>2 tablespoons red wine vinegar</li>
-<li>1 large garlic clove, finely chopped</li>
-<li>2 tablespoons extra-virgin olive oil</li></ul></div>
-<div class="ing-group"><h4>Halloumi</h4><ul class="ingredients"><li>1 tablespoon extra-virgin olive oil</li>
-<li>One 8 to 9 oz block halloumi, sliced 1/4 inch thick</li></ul></div>
-<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li>A handful of torn mint, basil, parsley, and/or dill leaves</li></ul></div>
+      <div class="ing-group"><h4>Zucchini</h4><ul class="ingredients"><li data-ing="zucchini">2 medium zucchini, sliced into 1/4-inch-thick rounds</li>
+<li data-ing="extra-virgin olive oil">1 tablespoon extra-virgin olive oil, plus more as needed</li>
+<li data-ing="salt / black pepper">Salt and black pepper</li></ul></div>
+<div class="ing-group"><h4>Vinaigrette</h4><ul class="ingredients"><li data-ing="red wine vinegar">2 tablespoons red wine vinegar</li>
+<li data-ing="garlic">1 large garlic clove, finely chopped</li>
+<li data-ing="extra-virgin olive oil">2 tablespoons extra-virgin olive oil</li></ul></div>
+<div class="ing-group"><h4>Halloumi</h4><ul class="ingredients"><li data-ing="extra-virgin olive oil">1 tablespoon extra-virgin olive oil</li>
+<li data-ing="halloumi">One 8 to 9 oz block halloumi, sliced 1/4 inch thick</li></ul></div>
+<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li data-ing="mint">A handful of torn mint, basil, parsley, and/or dill leaves</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1889,6 +1943,7 @@
     <h3>Lebanese Green Beans with Walnuts (Loubieh B'Joz)</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="vegetable-sides-stovetop-lebanese-green-beans-with-walnuts-loubieh-b-joz" data-title="Lebanese Green Beans with Walnuts (Loubieh B'Joz)" title="Not yet made (author only)" aria-label="Not yet made: Lebanese Green Beans with Walnuts (Loubieh B'Joz)"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Lebanese Green Beans with Walnuts (Loubieh B'Joz)">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Lebanese Green Beans with Walnuts (Loubieh B'Joz)">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Lebanese Green Beans with Walnuts (Loubieh B'Joz)">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetable-sides-stovetop-lebanese-green-beans-with-walnuts-loubieh-b-joz" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Lebanese Green Beans with Walnuts (Loubieh B'Joz) in new tab">🔗 Link</a>
@@ -1898,16 +1953,16 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Green beans</h4><ul class="ingredients"><li>2 pounds fresh green beans, trimmed</li>
-<li>Salt, for the cooking water</li></ul></div>
-<div class="ing-group"><h4>Walnut sauce</h4><ul class="ingredients"><li>1 cup walnuts</li>
-<li>1/4 cup pine nuts</li>
-<li>6 cloves garlic</li>
-<li>1/2 teaspoon kosher salt</li>
-<li>1/4 teaspoon Aleppo pepper or red pepper flakes</li>
-<li>2 tablespoons olive oil</li></ul></div>
-<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li>Labneh or Greek yogurt</li>
-<li>Lemon zest</li></ul></div>
+      <div class="ing-group"><h4>Green beans</h4><ul class="ingredients"><li data-ing="green bean">2 pounds fresh green beans, trimmed</li>
+<li data-ing="salt">Salt, for the cooking water</li></ul></div>
+<div class="ing-group"><h4>Walnut sauce</h4><ul class="ingredients"><li data-ing="walnut">1 cup walnuts</li>
+<li data-ing="pine nut">1/4 cup pine nuts</li>
+<li data-ing="garlic">6 cloves garlic</li>
+<li data-ing="kosher salt">1/2 teaspoon kosher salt</li>
+<li data-ing="aleppo pepper or red pepper flakes">1/4 teaspoon Aleppo pepper or red pepper flakes</li>
+<li data-ing="olive oil">2 tablespoons olive oil</li></ul></div>
+<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li data-ing="labneh / greek yogurt">Labneh or Greek yogurt</li>
+<li data-ing="lemon">Lemon zest</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1926,6 +1981,7 @@
     <h3>Gochujang Stir-Fried Brussels Sprouts</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="vegetable-sides-stovetop-gochujang-stir-fried-brussels-sprouts" data-title="Gochujang Stir-Fried Brussels Sprouts" title="Not yet made (author only)" aria-label="Not yet made: Gochujang Stir-Fried Brussels Sprouts"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Gochujang Stir-Fried Brussels Sprouts">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Gochujang Stir-Fried Brussels Sprouts">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Gochujang Stir-Fried Brussels Sprouts">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetable-sides-stovetop-gochujang-stir-fried-brussels-sprouts" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Gochujang Stir-Fried Brussels Sprouts in new tab">🔗 Link</a>
@@ -1935,17 +1991,17 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Sauce</h4><ul class="ingredients"><li>1/2 cup Korean gochujang sauce (homemade or store-bought)</li>
-<li>1 tablespoon sesame oil</li>
-<li>1/3 cup soy sauce</li>
-<li>2 to 3 tablespoons maple syrup</li>
-<li>1 1/2 tablespoons chili garlic sauce</li>
-<li>1 pinch sea salt</li></ul></div>
-<div class="ing-group"><h4>Brussels sprouts</h4><ul class="ingredients"><li>1 tablespoon sesame or avocado oil</li>
-<li>7 heaping cups Brussels sprouts, halved and stems trimmed</li>
-<li>3 tablespoons soy sauce</li></ul></div>
-<div class="ing-group"><h4>To serve (optional)</h4><ul class="ingredients"><li>Thinly sliced shallot or green onion</li>
-<li>Chopped roasted salted peanuts</li></ul></div>
+      <div class="ing-group"><h4>Sauce</h4><ul class="ingredients"><li data-ing="gochujang sauce">1/2 cup Korean gochujang sauce (homemade or store-bought)</li>
+<li data-ing="sesame oil">1 tablespoon sesame oil</li>
+<li data-ing="soy sauce">1/3 cup soy sauce</li>
+<li data-ing="maple syrup">2 to 3 tablespoons maple syrup</li>
+<li data-ing="chile garlic sauce">1 1/2 tablespoons chili garlic sauce</li>
+<li data-ing="sea salt">1 pinch sea salt</li></ul></div>
+<div class="ing-group"><h4>Brussels sprouts</h4><ul class="ingredients"><li data-ing="sesame oil / avocado oil">1 tablespoon sesame or avocado oil</li>
+<li data-ing="brussels sprouts">7 heaping cups Brussels sprouts, halved and stems trimmed</li>
+<li data-ing="soy sauce">3 tablespoons soy sauce</li></ul></div>
+<div class="ing-group"><h4>To serve (optional)</h4><ul class="ingredients"><li data-ing="shallot / scallion">Thinly sliced shallot or green onion</li>
+<li data-ing="roasted salted peanut">Chopped roasted salted peanuts</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1962,6 +2018,7 @@
     <h3>Gochujang-Glazed Eggplant with Fried Scallions</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="vegetable-sides-stovetop-gochujang-glazed-eggplant-with-fried-scallions" data-title="Gochujang-Glazed Eggplant with Fried Scallions" title="Not yet made (author only)" aria-label="Not yet made: Gochujang-Glazed Eggplant with Fried Scallions"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Gochujang-Glazed Eggplant with Fried Scallions">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Gochujang-Glazed Eggplant with Fried Scallions">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Gochujang-Glazed Eggplant with Fried Scallions">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetable-sides-stovetop-gochujang-glazed-eggplant-with-fried-scallions" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Gochujang-Glazed Eggplant with Fried Scallions in new tab">🔗 Link</a>
@@ -1971,15 +2028,15 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Eggplant (30 minutes ahead)</h4><ul class="ingredients"><li>1 pound Asian eggplant (about 3 large; preferably Korean, Chinese, or Japanese), halved lengthwise and cut into 4- to 5-inch segments</li>
-<li>1 teaspoon kosher salt</li></ul></div>
-<div class="ing-group"><h4>Gochujang sauce</h4><ul class="ingredients"><li>2 tablespoons gochujang</li>
-<li>1 tablespoon soy sauce</li>
-<li>2 packed teaspoons dark brown sugar</li>
-<li>1 teaspoon toasted sesame oil</li>
-<li>2 garlic cloves, finely grated</li></ul></div>
-<div class="ing-group"><h4>Scallion oil</h4><ul class="ingredients"><li>1/2 cup olive oil</li>
-<li>4 scallions, trimmed, cut into 3-inch segments, then very thinly sliced lengthwise, white and green parts separated</li></ul></div>
+      <div class="ing-group"><h4>Eggplant (30 minutes ahead)</h4><ul class="ingredients"><li data-ing="eggplant">1 pound Asian eggplant (about 3 large; preferably Korean, Chinese, or Japanese), halved lengthwise and cut into 4- to 5-inch segments</li>
+<li data-ing="kosher salt">1 teaspoon kosher salt</li></ul></div>
+<div class="ing-group"><h4>Gochujang sauce</h4><ul class="ingredients"><li data-ing="gochujang paste">2 tablespoons gochujang</li>
+<li data-ing="soy sauce">1 tablespoon soy sauce</li>
+<li data-ing="dark brown sugar">2 packed teaspoons dark brown sugar</li>
+<li data-ing="toasted sesame oil">1 teaspoon toasted sesame oil</li>
+<li data-ing="garlic">2 garlic cloves, finely grated</li></ul></div>
+<div class="ing-group"><h4>Scallion oil</h4><ul class="ingredients"><li data-ing="olive oil">1/2 cup olive oil</li>
+<li data-ing="scallion">4 scallions, trimmed, cut into 3-inch segments, then very thinly sliced lengthwise, white and green parts separated</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -2003,6 +2060,7 @@
     <h3>Broccoli with Garlic Sauce</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="vegetable-sides-stovetop-broccoli-with-garlic-sauce" data-title="Broccoli with Garlic Sauce" title="Made it" aria-label="Made: Broccoli with Garlic Sauce"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Broccoli with Garlic Sauce">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Broccoli with Garlic Sauce">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Broccoli with Garlic Sauce">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetable-sides-stovetop-broccoli-with-garlic-sauce" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Broccoli with Garlic Sauce in new tab">🔗 Link</a>
@@ -2012,15 +2070,15 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Garlic sauce</h4><ul class="ingredients"><li>1 oz garlic cloves (about 5 large), grated or crushed, divided in half</li>
-<li>1/2 cup chicken broth</li>
-<li>3 teaspoons tapioca starch (or cornstarch)</li></ul></div>
-<div class="ing-group"><h4>Broccoli</h4><ul class="ingredients"><li>1 tablespoon avocado oil</li>
-<li>15 oz broccoli florets</li>
-<li>1/2 cup chicken broth (for steaming)</li>
-<li>1/4 teaspoon coarse sea salt</li></ul></div>
-<div class="ing-group"><h4>To serve (optional)</h4><ul class="ingredients"><li>1/4 teaspoon Takii shiitake mushroom seasoning</li>
-<li>1 teaspoon toasted sesame oil</li></ul></div>
+      <div class="ing-group"><h4>Garlic sauce</h4><ul class="ingredients"><li data-ing="garlic">1 oz garlic cloves (about 5 large), grated or crushed, divided in half</li>
+<li data-ing="chicken broth">1/2 cup chicken broth</li>
+<li data-ing="tapioca starch">3 teaspoons tapioca starch (or cornstarch)</li></ul></div>
+<div class="ing-group"><h4>Broccoli</h4><ul class="ingredients"><li data-ing="avocado oil">1 tablespoon avocado oil</li>
+<li data-ing="broccoli">15 oz broccoli florets</li>
+<li data-ing="chicken broth">1/2 cup chicken broth (for steaming)</li>
+<li data-ing="coarse sea salt">1/4 teaspoon coarse sea salt</li></ul></div>
+<div class="ing-group"><h4>To serve (optional)</h4><ul class="ingredients"><li data-ing="takii shiitake mushroom seasoning">1/4 teaspoon Takii shiitake mushroom seasoning</li>
+<li data-ing="toasted sesame oil">1 teaspoon toasted sesame oil</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -2037,6 +2095,7 @@
     <h3>Garlicky Broccoli Stir-Fry</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="vegetable-sides-stovetop-garlicky-broccoli-stir-fry" data-title="Garlicky Broccoli Stir-Fry" title="Made it" aria-label="Made: Garlicky Broccoli Stir-Fry"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Garlicky Broccoli Stir-Fry">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Garlicky Broccoli Stir-Fry">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Garlicky Broccoli Stir-Fry">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetable-sides-stovetop-garlicky-broccoli-stir-fry" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Garlicky Broccoli Stir-Fry in new tab">🔗 Link</a>
@@ -2046,16 +2105,16 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Cornstarch slurry</h4><ul class="ingredients"><li>1 tablespoon cornstarch</li>
-<li>2 tablespoons water</li></ul></div>
-<div class="ing-group"><h4>Stir-fry</h4><ul class="ingredients"><li>4 cups broccoli florets</li>
-<li>5 cloves garlic, minced</li>
-<li>1 tablespoon neutral oil</li>
-<li>1 tablespoon Shaoxing wine</li>
-<li>1/2 cup chicken stock or vegetable stock</li>
-<li>1 teaspoon salt</li>
-<li>1/8 teaspoon white pepper</li>
-<li>1/2 teaspoon sesame oil</li></ul></div>
+      <div class="ing-group"><h4>Cornstarch slurry</h4><ul class="ingredients"><li data-ing="corn starch">1 tablespoon cornstarch</li>
+<li data-ing="water">2 tablespoons water</li></ul></div>
+<div class="ing-group"><h4>Stir-fry</h4><ul class="ingredients"><li data-ing="broccoli">4 cups broccoli florets</li>
+<li data-ing="garlic">5 cloves garlic, minced</li>
+<li data-ing="neutral oil">1 tablespoon neutral oil</li>
+<li data-ing="shaoxing wine">1 tablespoon Shaoxing wine</li>
+<li data-ing="chicken broth / vegetable broth">1/2 cup chicken stock or vegetable stock</li>
+<li data-ing="salt">1 teaspoon salt</li>
+<li data-ing="white pepper">1/8 teaspoon white pepper</li>
+<li data-ing="sesame oil">1/2 teaspoon sesame oil</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -2072,6 +2131,7 @@
     <h3>★ Stir-Fried Spinach With Garlic</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="vegetable-sides-stovetop-stir-fried-spinach-with-garlic" data-title="Stir-Fried Spinach With Garlic" title="Made it" aria-label="Made: Stir-Fried Spinach With Garlic"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Stir-Fried Spinach With Garlic">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Stir-Fried Spinach With Garlic">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Stir-Fried Spinach With Garlic">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetable-sides-stovetop-stir-fried-spinach-with-garlic" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Stir-Fried Spinach With Garlic in new tab">🔗 Link</a>
@@ -2081,14 +2141,14 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Stir-fry</h4><ul class="ingredients"><li>2 tablespoons peanut or vegetable oil</li>
-<li>1 teaspoon minced garlic</li>
-<li>1/4 teaspoon chili paste, more to taste</li>
-<li>1/2 teaspoon fine salt, more to taste</li>
-<li>10 oz fresh spinach, rinsed and dried</li></ul></div>
-<div class="ing-group"><h4>Finish</h4><ul class="ingredients"><li>1/4 teaspoon granulated sugar</li>
-<li>1/4 teaspoon sesame oil</li>
-<li>1 teaspoon freshly ground black pepper (optional)</li></ul></div>
+      <div class="ing-group"><h4>Stir-fry</h4><ul class="ingredients"><li data-ing="peanut oil / vegetable oil">2 tablespoons peanut or vegetable oil</li>
+<li data-ing="garlic">1 teaspoon minced garlic</li>
+<li data-ing="chile paste">1/4 teaspoon chili paste, more to taste</li>
+<li data-ing="salt">1/2 teaspoon fine salt, more to taste</li>
+<li data-ing="spinach">10 oz fresh spinach, rinsed and dried</li></ul></div>
+<div class="ing-group"><h4>Finish</h4><ul class="ingredients"><li data-ing="sugar">1/4 teaspoon granulated sugar</li>
+<li data-ing="sesame oil">1/4 teaspoon sesame oil</li>
+<li data-ing="black pepper">1 teaspoon freshly ground black pepper (optional)</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -2109,6 +2169,7 @@
     <h3>★ Baked Zucchini Fries</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="vegetable-sides-oven-baked-zucchini-fries" data-title="Baked Zucchini Fries" title="Made it" aria-label="Made: Baked Zucchini Fries"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Baked Zucchini Fries">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Baked Zucchini Fries">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Baked Zucchini Fries">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetable-sides-oven-baked-zucchini-fries" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Baked Zucchini Fries in new tab">🔗 Link</a>
@@ -2118,14 +2179,14 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Coating</h4><ul class="ingredients"><li>1 cup Panko breadcrumbs</li>
-<li>1/2 cup freshly grated Parmesan</li>
-<li>1 teaspoon Italian seasoning</li>
-<li>Kosher salt and black pepper to taste</li></ul></div>
-<div class="ing-group"><h4>Zucchini</h4><ul class="ingredients"><li>2 medium zucchini, quartered lengthwise</li></ul></div>
-<div class="ing-group"><h4>For breading</h4><ul class="ingredients"><li>1/2 cup all-purpose flour</li>
-<li>2 large eggs, beaten</li></ul></div>
-<div class="ing-group"><h4>Garnish</h4><ul class="ingredients"><li>2 tablespoons chopped fresh parsley</li></ul></div>
+      <div class="ing-group"><h4>Coating</h4><ul class="ingredients"><li data-ing="panko breadcrumb">1 cup Panko breadcrumbs</li>
+<li data-ing="parmesan">1/2 cup freshly grated Parmesan</li>
+<li data-ing="italian seasoning">1 teaspoon Italian seasoning</li>
+<li data-ing="kosher salt / black pepper">Kosher salt and black pepper to taste</li></ul></div>
+<div class="ing-group"><h4>Zucchini</h4><ul class="ingredients"><li data-ing="zucchini">2 medium zucchini, quartered lengthwise</li></ul></div>
+<div class="ing-group"><h4>For breading</h4><ul class="ingredients"><li data-ing="all-purpose flour">1/2 cup all-purpose flour</li>
+<li data-ing="egg">2 large eggs, beaten</li></ul></div>
+<div class="ing-group"><h4>Garnish</h4><ul class="ingredients"><li data-ing="parsley">2 tablespoons chopped fresh parsley</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -2142,6 +2203,7 @@
     <h3>Beets With Horseradish and Pumpkin Seeds</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="vegetable-sides-oven-beets-with-horseradish-and-pumpkin-seeds" data-title="Beets With Horseradish and Pumpkin Seeds" title="Made it" aria-label="Made: Beets With Horseradish and Pumpkin Seeds"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Beets With Horseradish and Pumpkin Seeds">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Beets With Horseradish and Pumpkin Seeds">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Beets With Horseradish and Pumpkin Seeds">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetable-sides-oven-beets-with-horseradish-and-pumpkin-seeds" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Beets With Horseradish and Pumpkin Seeds in new tab">🔗 Link</a>
@@ -2151,15 +2213,15 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Beets</h4><ul class="ingredients"><li>1 small bunch red beets (about 1 pound), washed and stems removed</li>
-<li>1 small bunch golden beets (about 1 pound), washed and stems removed</li>
-<li>2 tablespoons extra-virgin olive oil</li>
-<li>Salt and black pepper</li></ul></div>
-<div class="ing-group"><h4>Horseradish cream</h4><ul class="ingredients"><li>1/2 cup sour cream</li>
-<li>2 tablespoons prepared horseradish</li>
-<li>2 tablespoons fresh lemon juice</li>
-<li>1/4 teaspoon each salt and pepper</li></ul></div>
-<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li>1/4 cup raw pumpkin seeds (pepitas)</li></ul></div>
+      <div class="ing-group"><h4>Beets</h4><ul class="ingredients"><li data-ing="red beet">1 small bunch red beets (about 1 pound), washed and stems removed</li>
+<li data-ing="golden beet">1 small bunch golden beets (about 1 pound), washed and stems removed</li>
+<li data-ing="extra-virgin olive oil">2 tablespoons extra-virgin olive oil</li>
+<li data-ing="salt / black pepper">Salt and black pepper</li></ul></div>
+<div class="ing-group"><h4>Horseradish cream</h4><ul class="ingredients"><li data-ing="sour cream">1/2 cup sour cream</li>
+<li data-ing="prepared horseradish">2 tablespoons prepared horseradish</li>
+<li data-ing="lemon juice">2 tablespoons fresh lemon juice</li>
+<li data-ing="salt / black pepper">1/4 teaspoon each salt and pepper</li></ul></div>
+<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li data-ing="pumpkin seed">1/4 cup raw pumpkin seeds (pepitas)</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -2175,6 +2237,7 @@
     <h3>Brussels Sprouts With Pistachios and Lime</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="vegetable-sides-oven-brussels-sprouts-with-pistachios-and-lime" data-title="Brussels Sprouts With Pistachios and Lime" title="Not yet made (author only)" aria-label="Not yet made: Brussels Sprouts With Pistachios and Lime"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Brussels Sprouts With Pistachios and Lime">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Brussels Sprouts With Pistachios and Lime">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Brussels Sprouts With Pistachios and Lime">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetable-sides-oven-brussels-sprouts-with-pistachios-and-lime" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Brussels Sprouts With Pistachios and Lime in new tab">🔗 Link</a>
@@ -2184,19 +2247,19 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Brussels sprouts</h4><ul class="ingredients"><li>2 pounds Brussels sprouts, trimmed and halved</li>
-<li>3 tablespoons vegetable oil</li>
-<li>Kosher salt and freshly ground black pepper</li></ul></div>
-<div class="ing-group"><h4>Brown butter and pistachios</h4><ul class="ingredients"><li>3 tablespoons unsalted butter</li>
-<li>3 tablespoons raw pistachios</li>
-<li>Pinch of salt</li></ul></div>
-<div class="ing-group"><h4>Glaze</h4><ul class="ingredients"><li>2 tablespoons date molasses or pomegranate molasses</li>
-<li>1 teaspoon honey</li>
-<li>2 tablespoons fresh lime juice</li>
-<li>1 tablespoon water</li></ul></div>
-<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li>Zest of 1/2 lime</li>
-<li>1/2 teaspoon Aleppo pepper or red pepper flakes</li>
-<li>Lime wedges</li></ul></div>
+      <div class="ing-group"><h4>Brussels sprouts</h4><ul class="ingredients"><li data-ing="brussels sprouts">2 pounds Brussels sprouts, trimmed and halved</li>
+<li data-ing="vegetable oil">3 tablespoons vegetable oil</li>
+<li data-ing="kosher salt / black pepper">Kosher salt and freshly ground black pepper</li></ul></div>
+<div class="ing-group"><h4>Brown butter and pistachios</h4><ul class="ingredients"><li data-ing="unsalted butter">3 tablespoons unsalted butter</li>
+<li data-ing="pistachio">3 tablespoons raw pistachios</li>
+<li data-ing="salt">Pinch of salt</li></ul></div>
+<div class="ing-group"><h4>Glaze</h4><ul class="ingredients"><li data-ing="date molasses / pomegranate molasses">2 tablespoons date molasses or pomegranate molasses</li>
+<li data-ing="honey">1 teaspoon honey</li>
+<li data-ing="lime juice">2 tablespoons fresh lime juice</li>
+<li data-ing="water">1 tablespoon water</li></ul></div>
+<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li data-ing="lime">Zest of 1/2 lime</li>
+<li data-ing="aleppo pepper or red pepper flakes">1/2 teaspoon Aleppo pepper or red pepper flakes</li>
+<li data-ing="lime">Lime wedges</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -2212,6 +2275,7 @@
     <h3>Cornbread Dressing With Sausage and Corn Nuts</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="cornbread-dressing-with-sausage-and-corn-nuts" data-title="Cornbread Dressing With Sausage and Corn Nuts" title="Made it" aria-label="Made: Cornbread Dressing With Sausage and Corn Nuts"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Cornbread Dressing With Sausage and Corn Nuts">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Cornbread Dressing With Sausage and Corn Nuts">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Cornbread Dressing With Sausage and Corn Nuts">🖨 Print</button>
       <a class="link-btn" href="?recipe=cornbread-dressing-with-sausage-and-corn-nuts" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Cornbread Dressing With Sausage and Corn Nuts in new tab">🔗 Link</a>
@@ -2221,21 +2285,21 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Cornbread</h4><ul class="ingredients"><li>3 lb cornbread, cut into small pieces (about 3/4 inch; 14 to 16 cups)</li></ul></div>
-<div class="ing-group"><h4>Sausage</h4><ul class="ingredients"><li>1 1/2 lb breakfast sausage, casings removed if needed</li></ul></div>
-<div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li>1 cup (2 sticks) unsalted butter, plus more for pan</li>
-<li>2 medium onions, chopped</li>
-<li>4 celery stalks, chopped</li>
-<li>Kosher salt</li>
-<li>3 garlic cloves, finely chopped</li>
-<li>2 Thai chiles or 1 jalapeño (with seeds), chopped</li></ul></div>
-<div class="ing-group"><h4>Corn nut powder</h4><ul class="ingredients"><li>3/4 cup corn nuts, finely ground in a food processor, blender, or mortar and pestle (about 1/2 cup ground)</li></ul></div>
-<div class="ing-group"><h4>Wine and herbs</h4><ul class="ingredients"><li>3/4 cup dry white wine</li>
-<li>1 tablespoon finely chopped fresh sage</li>
-<li>2 teaspoons finely chopped fresh thyme</li></ul></div>
-<div class="ing-group"><h4>Custard</h4><ul class="ingredients"><li>3 large eggs</li>
-<li>3 1/2 cups turkey stock or low-sodium chicken broth</li>
-<li>Freshly ground black pepper</li></ul></div>
+      <div class="ing-group"><h4>Cornbread</h4><ul class="ingredients"><li data-ing="cornbread">3 lb cornbread, cut into small pieces (about 3/4 inch; 14 to 16 cups)</li></ul></div>
+<div class="ing-group"><h4>Sausage</h4><ul class="ingredients"><li data-ing="breakfast sausage">1 1/2 lb breakfast sausage, casings removed if needed</li></ul></div>
+<div class="ing-group"><h4>Aromatics</h4><ul class="ingredients"><li data-ing="unsalted butter">1 cup (2 sticks) unsalted butter, plus more for pan</li>
+<li data-ing="onion">2 medium onions, chopped</li>
+<li data-ing="celery">4 celery stalks, chopped</li>
+<li data-ing="kosher salt">Kosher salt</li>
+<li data-ing="garlic">3 garlic cloves, finely chopped</li>
+<li data-ing="thai chile / jalapeno">2 Thai chiles or 1 jalapeño (with seeds), chopped</li></ul></div>
+<div class="ing-group"><h4>Corn nut powder</h4><ul class="ingredients"><li data-ing="corn nut">3/4 cup corn nuts, finely ground in a food processor, blender, or mortar and pestle (about 1/2 cup ground)</li></ul></div>
+<div class="ing-group"><h4>Wine and herbs</h4><ul class="ingredients"><li data-ing="white wine">3/4 cup dry white wine</li>
+<li data-ing="sage">1 tablespoon finely chopped fresh sage</li>
+<li data-ing="thyme">2 teaspoons finely chopped fresh thyme</li></ul></div>
+<div class="ing-group"><h4>Custard</h4><ul class="ingredients"><li data-ing="egg">3 large eggs</li>
+<li data-ing="turkey broth / low-sodium chicken broth">3 1/2 cups turkey stock or low-sodium chicken broth</li>
+<li data-ing="black pepper">Freshly ground black pepper</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -2252,6 +2316,7 @@
     <h3>★ Crack Broccoli</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="vegetable-sides-oven-crack-broccoli" data-title="Crack Broccoli" title="Made it" aria-label="Made: Crack Broccoli"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Crack Broccoli">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Crack Broccoli">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Crack Broccoli">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetable-sides-oven-crack-broccoli" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Crack Broccoli in new tab">🔗 Link</a>
@@ -2261,17 +2326,17 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Seasoned oil</h4><ul class="ingredients"><li>1/3 cup olive oil (not extra-virgin)</li>
-<li>Zest of 1/2 lemon</li>
-<li>2 teaspoons fresh lemon juice</li>
-<li>1 1/2 teaspoons salt</li>
-<li>1/2 teaspoon black pepper</li>
-<li>1/8 teaspoon Aleppo pepper or red pepper flakes</li>
-<li>1 1/2 teaspoons dry ranch seasoning powder</li>
-<li>5 cloves garlic, minced (or 1 teaspoon garlic paste)</li></ul></div>
-<div class="ing-group"><h4>Broccoli</h4><ul class="ingredients"><li>2 1/2 pounds broccoli crowns, cut into florets or 1/2-inch-thick steaks</li></ul></div>
-<div class="ing-group"><h4>Finish</h4><ul class="ingredients"><li>1/4 cup raw sliced almonds</li>
-<li>1/3 cup grated Parmesan</li></ul></div>
+      <div class="ing-group"><h4>Seasoned oil</h4><ul class="ingredients"><li data-ing="olive oil">1/3 cup olive oil (not extra-virgin)</li>
+<li data-ing="lemon">Zest of 1/2 lemon</li>
+<li data-ing="lemon juice">2 teaspoons fresh lemon juice</li>
+<li data-ing="salt">1 1/2 teaspoons salt</li>
+<li data-ing="black pepper">1/2 teaspoon black pepper</li>
+<li data-ing="aleppo pepper or red pepper flakes">1/8 teaspoon Aleppo pepper or red pepper flakes</li>
+<li data-ing="ranch seasoning powder">1 1/2 teaspoons dry ranch seasoning powder</li>
+<li data-ing="garlic">5 cloves garlic, minced (or 1 teaspoon garlic paste)</li></ul></div>
+<div class="ing-group"><h4>Broccoli</h4><ul class="ingredients"><li data-ing="broccoli crown">2 1/2 pounds broccoli crowns, cut into florets or 1/2-inch-thick steaks</li></ul></div>
+<div class="ing-group"><h4>Finish</h4><ul class="ingredients"><li data-ing="almond">1/4 cup raw sliced almonds</li>
+<li data-ing="parmesan">1/3 cup grated Parmesan</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -2288,6 +2353,7 @@
     <h3>Herby Roasted Carrots and Radishes</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="vegetable-sides-oven-herby-roasted-carrots-and-radishes" data-title="Herby Roasted Carrots and Radishes" title="Not yet made (author only)" aria-label="Not yet made: Herby Roasted Carrots and Radishes"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Herby Roasted Carrots and Radishes">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Herby Roasted Carrots and Radishes">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Herby Roasted Carrots and Radishes">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetable-sides-oven-herby-roasted-carrots-and-radishes" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Herby Roasted Carrots and Radishes in new tab">🔗 Link</a>
@@ -2297,19 +2363,19 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Vegetables</h4><ul class="ingredients"><li>2 pounds rainbow carrots, halved lengthwise</li>
-<li>1 pound radishes, halved</li>
-<li>2 jalapenos, sliced</li>
-<li>2 tablespoons olive oil</li>
-<li>2 teaspoons kosher salt</li>
-<li>Black pepper</li></ul></div>
-<div class="ing-group"><h4>Herb oil</h4><ul class="ingredients"><li>1 cup fresh cilantro, chopped</li>
-<li>1 cup fresh parsley, chopped</li>
-<li>Zest and juice of 1 lemon</li>
-<li>Pinch Aleppo pepper or red pepper flakes</li>
-<li>1/2 cup olive oil</li>
-<li>1/2 teaspoon sea salt</li></ul></div>
-<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li>1/2 cup raw sliced almonds, toasted</li></ul></div>
+      <div class="ing-group"><h4>Vegetables</h4><ul class="ingredients"><li data-ing="rainbow carrot">2 pounds rainbow carrots, halved lengthwise</li>
+<li data-ing="radish">1 pound radishes, halved</li>
+<li data-ing="jalapeno">2 jalapenos, sliced</li>
+<li data-ing="olive oil">2 tablespoons olive oil</li>
+<li data-ing="kosher salt">2 teaspoons kosher salt</li>
+<li data-ing="black pepper">Black pepper</li></ul></div>
+<div class="ing-group"><h4>Herb oil</h4><ul class="ingredients"><li data-ing="cilantro">1 cup fresh cilantro, chopped</li>
+<li data-ing="parsley">1 cup fresh parsley, chopped</li>
+<li data-ing="lemon / lemon juice">Zest and juice of 1 lemon</li>
+<li data-ing="aleppo pepper or red pepper flakes">Pinch Aleppo pepper or red pepper flakes</li>
+<li data-ing="olive oil">1/2 cup olive oil</li>
+<li data-ing="sea salt">1/2 teaspoon sea salt</li></ul></div>
+<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li data-ing="almond">1/2 cup raw sliced almonds, toasted</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -2325,6 +2391,7 @@
     <h3>Roasted Baby Carrots</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="vegetable-sides-oven-roasted-baby-carrots" data-title="Roasted Baby Carrots" title="Made it" aria-label="Made: Roasted Baby Carrots"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Roasted Baby Carrots">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Roasted Baby Carrots">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Roasted Baby Carrots">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetable-sides-oven-roasted-baby-carrots" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Roasted Baby Carrots in new tab">🔗 Link</a>
@@ -2334,10 +2401,10 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Carrots</h4><ul class="ingredients"><li>1 pound peeled baby-cut carrots</li>
-<li>1 tablespoon extra-virgin olive oil</li>
-<li>1/4 teaspoon salt</li>
-<li>1/8 teaspoon freshly ground pepper</li></ul></div>
+      <div class="ing-group"><h4>Carrots</h4><ul class="ingredients"><li data-ing="baby carrot">1 pound peeled baby-cut carrots</li>
+<li data-ing="extra-virgin olive oil">1 tablespoon extra-virgin olive oil</li>
+<li data-ing="salt">1/4 teaspoon salt</li>
+<li data-ing="black pepper">1/8 teaspoon freshly ground pepper</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -2352,6 +2419,7 @@
     <h3>Roasted Beets and Carrots with Burrata</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="vegetable-sides-oven-roasted-beets-and-carrots-with-burrata" data-title="Roasted Beets and Carrots with Burrata" title="Made it" aria-label="Made: Roasted Beets and Carrots with Burrata"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Roasted Beets and Carrots with Burrata">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Roasted Beets and Carrots with Burrata">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Roasted Beets and Carrots with Burrata">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetable-sides-oven-roasted-beets-and-carrots-with-burrata" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Roasted Beets and Carrots with Burrata in new tab">🔗 Link</a>
@@ -2361,18 +2429,18 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Roasting vegetables</h4><ul class="ingredients"><li>3 to 4 small to medium beets</li>
-<li>1 bunch carrots with green tops (5 to 6 carrots)</li>
-<li>Several tablespoons olive oil</li>
-<li>Salt and pepper</li></ul></div>
-<div class="ing-group"><h4>Dressing</h4><ul class="ingredients"><li>1/4 cup freshly squeezed lime juice</li>
-<li>2 tablespoons honey</li>
-<li>2 teaspoons mustard</li>
-<li>1/2 cup extra-virgin olive oil</li>
-<li>Salt and pepper to taste</li></ul></div>
-<div class="ing-group"><h4>To assemble</h4><ul class="ingredients"><li>8 oz burrata</li>
-<li>1/2 cup chopped hazelnuts, toasted</li>
-<li>Micro greens (optional)</li></ul></div>
+      <div class="ing-group"><h4>Roasting vegetables</h4><ul class="ingredients"><li data-ing="beet">3 to 4 small to medium beets</li>
+<li data-ing="carrot">1 bunch carrots with green tops (5 to 6 carrots)</li>
+<li data-ing="olive oil">Several tablespoons olive oil</li>
+<li data-ing="salt / black pepper">Salt and pepper</li></ul></div>
+<div class="ing-group"><h4>Dressing</h4><ul class="ingredients"><li data-ing="lime juice">1/4 cup freshly squeezed lime juice</li>
+<li data-ing="honey">2 tablespoons honey</li>
+<li data-ing="mustard">2 teaspoons mustard</li>
+<li data-ing="extra-virgin olive oil">1/2 cup extra-virgin olive oil</li>
+<li data-ing="salt / black pepper">Salt and pepper to taste</li></ul></div>
+<div class="ing-group"><h4>To assemble</h4><ul class="ingredients"><li data-ing="burrata">8 oz burrata</li>
+<li data-ing="hazelnut">1/2 cup chopped hazelnuts, toasted</li>
+<li data-ing="microgreen">Micro greens (optional)</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -2391,6 +2459,7 @@
     <h3>Spicy Roasted Cauliflower with Sriracha and Sesame</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="vegetable-sides-oven-spicy-roasted-cauliflower-with-sriracha-and-sesame" data-title="Spicy Roasted Cauliflower with Sriracha and Sesame" title="Not yet made (author only)" aria-label="Not yet made: Spicy Roasted Cauliflower with Sriracha and Sesame"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Spicy Roasted Cauliflower with Sriracha and Sesame">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Spicy Roasted Cauliflower with Sriracha and Sesame">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Spicy Roasted Cauliflower with Sriracha and Sesame">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetable-sides-oven-spicy-roasted-cauliflower-with-sriracha-and-sesame" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Spicy Roasted Cauliflower with Sriracha and Sesame in new tab">🔗 Link</a>
@@ -2400,17 +2469,17 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Sauce</h4><ul class="ingredients"><li>3 tablespoons sriracha</li>
-<li>2 tablespoons vegetable or canola oil</li>
-<li>2 tablespoons honey</li>
-<li>1 tablespoon toasted sesame oil</li>
-<li>1 tablespoon rice vinegar</li>
-<li>2 teaspoons soy sauce</li>
-<li>1/2 teaspoon garlic powder</li>
-<li>1/2 teaspoon kosher salt</li></ul></div>
-<div class="ing-group"><h4>Cauliflower</h4><ul class="ingredients"><li>1 medium head cauliflower (about 2 1/2 pounds), cut into florets</li></ul></div>
-<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li>2 tablespoons toasted sesame seeds</li>
-<li>2 scallions, thinly sliced</li></ul></div>
+      <div class="ing-group"><h4>Sauce</h4><ul class="ingredients"><li data-ing="sriracha">3 tablespoons sriracha</li>
+<li data-ing="vegetable oil / canola oil">2 tablespoons vegetable or canola oil</li>
+<li data-ing="honey">2 tablespoons honey</li>
+<li data-ing="toasted sesame oil">1 tablespoon toasted sesame oil</li>
+<li data-ing="rice vinegar">1 tablespoon rice vinegar</li>
+<li data-ing="soy sauce">2 teaspoons soy sauce</li>
+<li data-ing="garlic powder">1/2 teaspoon garlic powder</li>
+<li data-ing="kosher salt">1/2 teaspoon kosher salt</li></ul></div>
+<div class="ing-group"><h4>Cauliflower</h4><ul class="ingredients"><li data-ing="cauliflower">1 medium head cauliflower (about 2 1/2 pounds), cut into florets</li></ul></div>
+<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li data-ing="sesame seed">2 tablespoons toasted sesame seeds</li>
+<li data-ing="scallion">2 scallions, thinly sliced</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -2426,6 +2495,7 @@
     <h3>Tomato Cobbler With Ricotta Biscuits</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="vegetable-sides-oven-tomato-cobbler-with-ricotta-biscuits" data-title="Tomato Cobbler With Ricotta Biscuits" title="Not yet made (author only)" aria-label="Not yet made: Tomato Cobbler With Ricotta Biscuits"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Tomato Cobbler With Ricotta Biscuits">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Tomato Cobbler With Ricotta Biscuits">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Tomato Cobbler With Ricotta Biscuits">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetable-sides-oven-tomato-cobbler-with-ricotta-biscuits" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Tomato Cobbler With Ricotta Biscuits in new tab">🔗 Link</a>
@@ -2435,35 +2505,35 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="alt-standard"><div class="ing-group"><h4>Ricotta (30 minutes ahead)</h4><ul class="ingredients"><li>3/4 cup whole-milk ricotta</li></ul></div>
-<div class="ing-group"><h4>Biscuit dry ingredients</h4><ul class="ingredients"><li>2 1/2 cups cake flour, plus more for dusting</li>
-<li>1 tablespoon granulated sugar</li>
-<li>1 teaspoon kosher salt</li>
-<li>1 1/2 teaspoons baking powder</li>
-<li>1 teaspoon baking soda</li></ul></div>
-<div class="ing-group"><h4>Biscuit fat</h4><ul class="ingredients"><li>1/2 cup unsalted butter, cut into cubes and chilled</li></ul></div>
-<div class="ing-group"><h4>Biscuit liquid</h4><ul class="ingredients"><li>1 cup buttermilk, plus 2 tablespoons for brushing</li></ul></div>
-<div class="ing-group"><h4>Tomato base</h4><ul class="ingredients"><li>2 to 2 1/2 pounds cherry tomatoes or Sungold tomatoes</li>
-<li>1/4 cup extra-virgin olive oil</li>
-<li>1 tablespoon sherry vinegar</li>
-<li>2 sprigs fresh thyme</li>
-<li>1/4 cup granulated sugar</li>
-<li>2 tablespoons cake flour</li>
-<li>Kosher salt and freshly ground black pepper</li></ul></div></div><div class="alt-high"><div class="ing-group"><h4>Ricotta (30 minutes ahead)</h4><ul class="ingredients"><li>3/4 cup whole-milk ricotta</li></ul></div>
-<div class="ing-group"><h4>Biscuit dry ingredients</h4><ul class="ingredients"><li>2 1/2 cups cake flour, plus more for dusting</li>
-<li>1 tablespoon granulated sugar</li>
-<li>1 teaspoon kosher salt</li>
-<li>1 teaspoon baking powder (reduced from 1 1/2 teaspoons)</li>
-<li>3/4 teaspoon baking soda (reduced from 1 teaspoon)</li></ul></div>
-<div class="ing-group"><h4>Biscuit fat</h4><ul class="ingredients"><li>1/2 cup unsalted butter, cut into cubes and chilled</li></ul></div>
-<div class="ing-group"><h4>Biscuit liquid</h4><ul class="ingredients"><li>1 cup buttermilk, plus 2 tablespoons for brushing</li></ul></div>
-<div class="ing-group"><h4>Tomato base</h4><ul class="ingredients"><li>2 to 2 1/2 pounds cherry tomatoes or Sungold tomatoes</li>
-<li>1/4 cup extra-virgin olive oil</li>
-<li>1 tablespoon sherry vinegar</li>
-<li>2 sprigs fresh thyme</li>
-<li>1/4 cup granulated sugar</li>
-<li>2 tablespoons cake flour</li>
-<li>Kosher salt and freshly ground black pepper</li></ul></div></div>
+      <div class="alt-standard"><div class="ing-group"><h4>Ricotta (30 minutes ahead)</h4><ul class="ingredients"><li data-ing="ricotta cheese">3/4 cup whole-milk ricotta</li></ul></div>
+<div class="ing-group"><h4>Biscuit dry ingredients</h4><ul class="ingredients"><li data-ing="cake flour">2 1/2 cups cake flour, plus more for dusting</li>
+<li data-ing="sugar">1 tablespoon granulated sugar</li>
+<li data-ing="kosher salt">1 teaspoon kosher salt</li>
+<li data-ing="baking powder">1 1/2 teaspoons baking powder</li>
+<li data-ing="baking soda">1 teaspoon baking soda</li></ul></div>
+<div class="ing-group"><h4>Biscuit fat</h4><ul class="ingredients"><li data-ing="unsalted butter">1/2 cup unsalted butter, cut into cubes and chilled</li></ul></div>
+<div class="ing-group"><h4>Biscuit liquid</h4><ul class="ingredients"><li data-ing="buttermilk">1 cup buttermilk, plus 2 tablespoons for brushing</li></ul></div>
+<div class="ing-group"><h4>Tomato base</h4><ul class="ingredients"><li data-ing="cherry tomato / sungold tomato">2 to 2 1/2 pounds cherry tomatoes or Sungold tomatoes</li>
+<li data-ing="extra-virgin olive oil">1/4 cup extra-virgin olive oil</li>
+<li data-ing="sherry vinegar">1 tablespoon sherry vinegar</li>
+<li data-ing="thyme">2 sprigs fresh thyme</li>
+<li data-ing="sugar">1/4 cup granulated sugar</li>
+<li data-ing="cake flour">2 tablespoons cake flour</li>
+<li data-ing="kosher salt / black pepper">Kosher salt and freshly ground black pepper</li></ul></div></div><div class="alt-high"><div class="ing-group"><h4>Ricotta (30 minutes ahead)</h4><ul class="ingredients"><li data-ing="ricotta cheese">3/4 cup whole-milk ricotta</li></ul></div>
+<div class="ing-group"><h4>Biscuit dry ingredients</h4><ul class="ingredients"><li data-ing="cake flour">2 1/2 cups cake flour, plus more for dusting</li>
+<li data-ing="sugar">1 tablespoon granulated sugar</li>
+<li data-ing="kosher salt">1 teaspoon kosher salt</li>
+<li data-ing="baking powder">1 teaspoon baking powder (reduced from 1 1/2 teaspoons)</li>
+<li data-ing="baking soda">3/4 teaspoon baking soda (reduced from 1 teaspoon)</li></ul></div>
+<div class="ing-group"><h4>Biscuit fat</h4><ul class="ingredients"><li data-ing="unsalted butter">1/2 cup unsalted butter, cut into cubes and chilled</li></ul></div>
+<div class="ing-group"><h4>Biscuit liquid</h4><ul class="ingredients"><li data-ing="buttermilk">1 cup buttermilk, plus 2 tablespoons for brushing</li></ul></div>
+<div class="ing-group"><h4>Tomato base</h4><ul class="ingredients"><li data-ing="cherry tomato / sungold tomato">2 to 2 1/2 pounds cherry tomatoes or Sungold tomatoes</li>
+<li data-ing="extra-virgin olive oil">1/4 cup extra-virgin olive oil</li>
+<li data-ing="sherry vinegar">1 tablespoon sherry vinegar</li>
+<li data-ing="thyme">2 sprigs fresh thyme</li>
+<li data-ing="sugar">1/4 cup granulated sugar</li>
+<li data-ing="cake flour">2 tablespoons cake flour</li>
+<li data-ing="kosher salt / black pepper">Kosher salt and freshly ground black pepper</li></ul></div></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -2488,6 +2558,7 @@
     <h3>Zucchini Involtini</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="vegetable-sides-oven-zucchini-involtini" data-title="Zucchini Involtini" title="Not yet made (author only)" aria-label="Not yet made: Zucchini Involtini"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Zucchini Involtini">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Zucchini Involtini">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Zucchini Involtini">🖨 Print</button>
       <a class="link-btn" href="?recipe=vegetable-sides-oven-zucchini-involtini" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Zucchini Involtini in new tab">🔗 Link</a>
@@ -2497,15 +2568,15 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Bread coating</h4><ul class="ingredients"><li>1 1/2 cups fresh breadcrumbs (grated or food-processed from crustless white bread)</li>
-<li>1/2 cup Parmesan, grated</li>
-<li>2 tablespoons flat-leaf parsley, finely chopped</li>
-<li>1 clove garlic, finely chopped</li>
-<li>Salt and pepper to taste</li></ul></div>
-<div class="ing-group"><h4>Zucchini and filling</h4><ul class="ingredients"><li>3–4 medium zucchini</li>
-<li>Salt and olive oil</li>
-<li>2–3 plum tomatoes, blanched, peeled, and roughly chopped</li>
-<li>Hard cheese (Parmesan, Emmental, or pecorino), cut in small pieces</li></ul></div>
+      <div class="ing-group"><h4>Bread coating</h4><ul class="ingredients"><li data-ing="breadcrumb">1 1/2 cups fresh breadcrumbs (grated or food-processed from crustless white bread)</li>
+<li data-ing="parmesan">1/2 cup Parmesan, grated</li>
+<li data-ing="flat-leaf parsley">2 tablespoons flat-leaf parsley, finely chopped</li>
+<li data-ing="garlic">1 clove garlic, finely chopped</li>
+<li data-ing="salt / black pepper">Salt and pepper to taste</li></ul></div>
+<div class="ing-group"><h4>Zucchini and filling</h4><ul class="ingredients"><li data-ing="zucchini">3–4 medium zucchini</li>
+<li data-ing="salt / olive oil">Salt and olive oil</li>
+<li data-ing="plum tomato">2–3 plum tomatoes, blanched, peeled, and roughly chopped</li>
+<li data-ing="hard cheese">Hard cheese (Parmesan, Emmental, or pecorino), cut in small pieces</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -5044,6 +5115,145 @@
     }
   })();
 
+
+  // ── Shopping checklist (see shopping_list.css). Reads the ingredient lines already on the page. ──
+  // The "Shop" button on each recipe opens a checklist (all unticked). "Copy checked" copies the ticked lines.
+  // https://script.google.com/macros/s/AKfycbzY1Qi--vCFGalcT9QYdBe8HC46HWHGE_8WZ91vuA2fVaYagEQ34nlwjU7ebCuPsv8n/exec / shop-9a779a2e2e26 are replaced from shopping_config.json at build time. With no URL set, only "Copy checked" is offered.
+  (function () {
+    var URL_ = 'https://script.google.com/macros/s/AKfycbzY1Qi--vCFGalcT9QYdBe8HC46HWHGE_8WZ91vuA2fVaYagEQ34nlwjU7ebCuPsv8n/exec', KEY_ = 'shop-9a779a2e2e26';
+    var ENABLED = !!URL_ && URL_.indexOf('__SHOP') !== 0;
+    var CART = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.6 12.2a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 7H6"/></svg>';
+    function visible(el) { return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length); }
+    function collect(art) {
+      var out = [];
+      art.querySelectorAll('.ing-group').forEach(function (g) {
+        if (!visible(g)) return;
+        var h = g.querySelector('h4');
+        var label = h ? h.firstChild && h.firstChild.textContent.trim() : '';
+        g.querySelectorAll('li').forEach(function (li) { out.push({ g: label || '', t: li.textContent.trim(), n: li.getAttribute('data-ing') || '' }); });
+      });
+      return out;
+    }
+    function copyText(text, done) {
+      function fallback() {
+        var ta = document.createElement('textarea'); ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+        document.body.appendChild(ta); ta.select();
+        try { document.execCommand('copy'); done(true); } catch (e) { done(false); }
+        document.body.removeChild(ta);
+      }
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(function () { done(true); }, fallback);
+      else fallback();
+    }
+    function post(payload) {
+      payload.key = KEY_;
+      return fetch(URL_, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(payload) });
+    }
+    function getList() {
+      return fetch(URL_ + '?action=list&key=' + encodeURIComponent(KEY_)).then(function (r) { return r.json(); })
+        .then(function (j) { if (!j.ok) throw new Error(j.error || 'error'); return j.items || []; });
+    }
+    var badge = document.getElementById('shop-list-toggle');
+    function setBadge(n) { if (badge) badge.querySelector('.shop-badge').textContent = n ? ' (' + n + ')' : ''; }
+    function refreshBadge() { if (ENABLED) getList().then(function (l) { setBadge(l.length); }, function () {}); }
+    function build(art, btn) {
+      var items = collect(art);
+      var panel = document.createElement('div');
+      panel.className = 'shop-panel'; panel.setAttribute('role', 'region'); panel.setAttribute('aria-label', 'Shopping checklist');
+      var head = document.createElement('div'); head.className = 'shop-head';
+      head.innerHTML = '<strong>Shopping checklist</strong><span>Tick what you need to buy.</span>';
+      var cols = document.createElement('div'); cols.className = 'shop-cols';
+      var last = null;
+      items.forEach(function (it) {
+        if (it.g !== last) { if (it.g) { var l = document.createElement('div'); l.className = 'shop-group-label'; l.textContent = it.g; cols.appendChild(l); } last = it.g; }
+        var lab = document.createElement('label'); lab.className = 'shop-item';
+        var cb = document.createElement('input'); cb.type = 'checkbox'; cb.checked = false;
+        var sp = document.createElement('span'); sp.textContent = it.t;
+        lab.appendChild(cb); lab.appendChild(sp); cols.appendChild(lab);
+      });
+      var actions = document.createElement('div'); actions.className = 'shop-actions';
+      var copyBtn = document.createElement('button'); copyBtn.type = 'button'; copyBtn.className = 'shop-primary'; copyBtn.textContent = 'Copy checked';
+      var clearBtn = document.createElement('button'); clearBtn.type = 'button'; clearBtn.textContent = 'Untick all';
+      var count = document.createElement('span'); count.className = 'shop-count';
+      var addBtn = null;
+      if (ENABLED) { addBtn = document.createElement('button'); addBtn.type = 'button'; addBtn.className = 'shop-primary'; addBtn.textContent = 'Add to shopping list'; actions.appendChild(addBtn); copyBtn.className = ''; }
+      actions.appendChild(copyBtn); actions.appendChild(clearBtn); actions.appendChild(count);
+      var msg = document.createElement('div'); msg.className = 'shop-msg'; msg.setAttribute('aria-live', 'polite');
+      panel.appendChild(head); panel.appendChild(cols); panel.appendChild(actions); panel.appendChild(msg);
+      function boxes() { return cols.querySelectorAll('input'); }
+      function checked() { var r = []; boxes().forEach(function (c, i) { if (c.checked) r.push(items[i].t); }); return r; }
+      function checkedObjs() { var r = []; boxes().forEach(function (c, i) { if (c.checked) r.push({ item: items[i].t, ingredient: items[i].n, recipe: art.getAttribute('data-title') || '' }); }); return r; }
+      function update() { count.textContent = checked().length + ' of ' + items.length + ' checked'; msg.textContent = ''; }
+      cols.addEventListener('change', update);
+      copyBtn.addEventListener('click', function () {
+        var c = checked();
+        if (!c.length) { msg.textContent = 'Nothing checked yet.'; return; }
+        copyText(c.join('\n'), function (ok) { msg.textContent = ok ? 'Copied ' + c.length + ' item' + (c.length === 1 ? '' : 's') + '.' : 'Could not copy.'; });
+      });
+      if (addBtn) addBtn.addEventListener('click', function () {
+        var c = checkedObjs();
+        if (!c.length) { msg.textContent = 'Nothing checked yet.'; return; }
+        addBtn.disabled = true; msg.textContent = 'Adding...';
+        post({ action: 'add', items: c }).then(function () { return getList(); }).then(function (l) {
+          msg.textContent = 'Sent ' + c.length + ' item' + (c.length === 1 ? '' : 's') + '. The list now has ' + l.length + '.';
+          setBadge(l.length); boxes().forEach(function (x) { x.checked = false; }); count.textContent = '';
+        }, function () { msg.textContent = 'Sent, but could not confirm. Check the list.'; }).then(function () { addBtn.disabled = false; });
+      });
+      clearBtn.addEventListener('click', function () { boxes().forEach(function (c) { c.checked = false; }); update(); });
+      update();
+      return panel;
+    }
+    function openList() {
+      var ov = document.createElement('div'); ov.className = 'shop-overlay';
+      var dlg = document.createElement('div'); dlg.className = 'shop-dialog'; dlg.setAttribute('role', 'dialog'); dlg.setAttribute('aria-label', 'Shopping list');
+      var title = document.createElement('h2'); title.textContent = 'Shopping list';
+      var body = document.createElement('div'); body.className = 'shop-listbody'; body.textContent = 'Loading...';
+      var acts = document.createElement('div'); acts.className = 'shop-actions';
+      var refresh = document.createElement('button'); refresh.type = 'button'; refresh.textContent = 'Refresh';
+      var copy = document.createElement('button'); copy.type = 'button'; copy.textContent = 'Copy list';
+      var clear = document.createElement('button'); clear.type = 'button'; clear.className = 'shop-danger'; clear.textContent = 'Clear list';
+      var close = document.createElement('button'); close.type = 'button'; close.textContent = 'Close';
+      var msg = document.createElement('div'); msg.className = 'shop-msg';
+      [refresh, copy, clear, close].forEach(function (b) { acts.appendChild(b); });
+      dlg.appendChild(title); dlg.appendChild(body); dlg.appendChild(acts); dlg.appendChild(msg); ov.appendChild(dlg); document.body.appendChild(ov);
+      var current = [];
+      function render(l) {
+        current = l; setBadge(l.length); body.textContent = '';
+        if (!l.length) { body.textContent = 'The list is empty.'; return; }
+        l.slice().sort(function (a, b) { return (a.ingredient || a.item).toLowerCase() < (b.ingredient || b.item).toLowerCase() ? -1 : 1; }).forEach(function (it) {
+          var row = document.createElement('div'); row.className = 'shop-row';
+          var t = document.createElement('span'); t.textContent = it.item;
+          var r = document.createElement('small'); r.textContent = it.recipe;
+          row.appendChild(t); row.appendChild(r); body.appendChild(row);
+        });
+      }
+      function load() { body.textContent = 'Loading...'; getList().then(render, function () { body.textContent = 'Could not load the list.'; }); }
+      refresh.addEventListener('click', load);
+      copy.addEventListener('click', function () { copyText(current.map(function (i) { return i.item; }).join('\n'), function (ok) { msg.textContent = ok ? 'Copied ' + current.length + ' items.' : 'Could not copy.'; }); });
+      clear.addEventListener('click', function () {
+        if (!current.length) return;
+        if (!window.confirm('Clear all ' + current.length + ' items? They move to the History tab of the sheet.')) return;
+        post({ action: 'clear' }).then(function () { return getList(); }).then(render, function () { msg.textContent = 'Could not confirm. Refresh.'; });
+      });
+      function shut() { document.body.removeChild(ov); }
+      close.addEventListener('click', shut); ov.addEventListener('click', function (e) { if (e.target === ov) shut(); });
+      load();
+    }
+    if (badge) {
+      if (ENABLED) { badge.style.display = 'flex'; badge.addEventListener('click', openList); refreshBadge(); }
+    }
+    document.querySelectorAll('.shop-btn').forEach(function (btn) {
+      btn.innerHTML = CART + 'Shop';
+      btn.addEventListener('click', function () {
+        var art = btn.closest('.recipe'); if (!art) return;
+        var open = art.querySelector('.shop-panel');
+        if (open) { open.parentNode.removeChild(open); btn.classList.remove('active'); btn.setAttribute('aria-expanded', 'false'); return; }
+        var panel = build(art, btn);
+        var body = art.querySelector('.recipe-body');
+        art.insertBefore(panel, body);
+        btn.classList.add('active'); btn.setAttribute('aria-expanded', 'true');
+      });
+    });
+  })();
 
   // ── Apply filters (favorites — current page only) ─────────────────────
   function applyFilters() {

@@ -630,6 +630,43 @@
   #made-dialog button[type=submit] { background: #3b2a1a; color: #fff; border-color: #3b2a1a; }
   @media print { .made-btn, #made-modal { display: none !important; } }
 
+/* ── Shopping checklist (see shopping_list_client.js) ── */
+.shop-btn { display: inline-flex; align-items: center; gap: 4px; }
+.shop-btn svg { width: 14px; height: 14px; }
+.shop-btn.active { background: #f3e9d6; border-color: var(--accent2); color: var(--accent); }
+.shop-panel { margin: 12px 0 4px; border: 1px solid var(--accent2); border-radius: 8px; background: #fbf5ea;
+  padding: 14px 16px; font-family: 'Helvetica Neue', Arial, sans-serif; }
+.shop-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.shop-head strong { font-size: 0.95rem; color: var(--accent); }
+.shop-head span { font-size: 0.75rem; color: var(--muted); }
+.shop-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 24px; margin-top: 8px; }
+.shop-group-label { grid-column: 1 / -1; font-size: 0.72rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin-top: 8px; }
+.shop-item { display: flex; gap: 8px; align-items: flex-start; font-size: 0.86rem; padding: 3px 0; cursor: pointer; }
+.shop-item input { margin-top: 3px; accent-color: var(--accent); }
+.shop-actions { display: flex; gap: 8px; align-items: center; margin-top: 12px; flex-wrap: wrap; }
+.shop-actions button { font: 0.8rem 'Helvetica Neue', Arial, sans-serif; border-radius: var(--radius); padding: 6px 12px; cursor: pointer;
+  background: none; color: var(--muted); border: 1px solid var(--border); }
+.shop-actions button:hover { background: var(--border); color: var(--text); }
+.shop-actions button.shop-primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+.shop-actions button.shop-primary:hover { background: #6f360f; }
+.shop-count { font-size: 0.78rem; color: var(--muted); margin-left: auto; }
+.shop-msg { font-size: 0.8rem; color: #2e7d32; margin-top: 8px; min-height: 1em; }
+@media (max-width: 640px) { .shop-cols { grid-template-columns: 1fr; } }
+@media print { .shop-panel, .shop-btn { display: none !important; } }
+
+#shop-list-toggle { display: none; align-items: center; gap: 8px; padding: 7px 14px; font-size: 0.82rem; cursor: pointer;
+  color: var(--nav-text); background: none; border: none; border-bottom: 1px solid #5a3e28; text-align: left; width: 100%; }
+#shop-list-toggle:hover { background: #4e3522; }
+#shop-list-toggle svg { width: 14px; height: 14px; }
+.shop-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.45); display: flex; align-items: center; justify-content: center; z-index: 1000; }
+.shop-dialog { background: #fff; color: #2b2118; border-radius: 8px; padding: 18px 20px; width: min(460px, 92vw); max-height: 84vh; display: flex; flex-direction: column;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.3); font-family: 'Helvetica Neue', Arial, sans-serif; }
+.shop-dialog h2 { font-size: 1rem; margin: 0 0 8px; }
+.shop-listbody { overflow-y: auto; font-size: 0.86rem; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 6px 0; min-height: 60px; }
+.shop-row { display: flex; justify-content: space-between; gap: 12px; padding: 3px 0; }
+.shop-row small { color: var(--muted); text-align: right; font-size: 0.72rem; }
+.shop-danger { color: #a33 !important; }
+
 </style>
 </head>
 <body>
@@ -663,6 +700,7 @@
     <button id="fav-toggle"><span class="star">★</span> Favorites only</button>
     <button id="notmade-toggle"><span class="nm-icon">&#9675;</span> Not yet made</button>
   </div>
+  <button id="shop-list-toggle" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.6 12.2a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 7H6"/></svg>Shopping list<span class="shop-badge"></span></button>
   <div id="made-pending"><span class="made-pend-n"></span><button type="button" class="made-copy">Copy list</button></div>
   <button id="alt-toggle"><span class="alt-icon">&#9650;</span> High Altitude</button>
   <div id="expand-collapse-row">
@@ -1324,6 +1362,7 @@
     <h3>Christy's Easy Lemon Icebox Pie</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="desserts-christy-s-easy-lemon-icebox-pie" data-title="Christy's Easy Lemon Icebox Pie" title="Not yet made (author only)" aria-label="Not yet made: Christy's Easy Lemon Icebox Pie"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Christy's Easy Lemon Icebox Pie">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Christy's Easy Lemon Icebox Pie">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Christy's Easy Lemon Icebox Pie">🖨 Print</button>
       <a class="link-btn" href="?recipe=desserts-christy-s-easy-lemon-icebox-pie" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Christy's Easy Lemon Icebox Pie in new tab">🔗 Link</a>
@@ -1333,10 +1372,10 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Crust</h4><ul class="ingredients"><li>1 prepared graham cracker pie crust</li></ul></div>
-<div class="ing-group"><h4>Filling</h4><ul class="ingredients"><li>6 oz frozen lemonade concentrate</li>
-<li>1 can low-fat sweetened condensed milk</li>
-<li>9 oz low-fat Cool Whip</li></ul></div>
+      <div class="ing-group"><h4>Crust</h4><ul class="ingredients"><li data-ing="prepared graham cracker pie crust">1 prepared graham cracker pie crust</li></ul></div>
+<div class="ing-group"><h4>Filling</h4><ul class="ingredients"><li data-ing="frozen lemonade concentrate">6 oz frozen lemonade concentrate</li>
+<li data-ing="canned low-fat sweetened condensed milk">1 can low-fat sweetened condensed milk</li>
+<li data-ing="low-fat cool whip">9 oz low-fat Cool Whip</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1351,6 +1390,7 @@
     <h3>Disney Magical Churros</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="desserts-disney-magical-churros" data-title="Disney Magical Churros" title="Made it" aria-label="Made: Disney Magical Churros"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Disney Magical Churros">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Disney Magical Churros">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Disney Magical Churros">🖨 Print</button>
       <a class="link-btn" href="?recipe=desserts-disney-magical-churros" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Disney Magical Churros in new tab">🔗 Link</a>
@@ -1360,15 +1400,15 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Dough</h4><ul class="ingredients"><li>1 cup water</li>
-<li>1 stick (4 oz / 113 g) unsalted butter</li>
-<li>1/4 teaspoon salt</li>
-<li>1/4 teaspoon ground cinnamon</li>
-<li>1 1/4 cups all-purpose flour (or cake flour for lighter texture)</li>
-<li>3 large eggs</li></ul></div>
-<div class="ing-group"><h4>Cinnamon sugar coating</h4><ul class="ingredients"><li>1/2 cup granulated sugar</li>
-<li>1/2 teaspoon ground cinnamon</li></ul></div>
-<div class="ing-group"><h4>Oil</h4><ul class="ingredients"><li>Oil for frying</li></ul></div>
+      <div class="ing-group"><h4>Dough</h4><ul class="ingredients"><li data-ing="water">1 cup water</li>
+<li data-ing="unsalted butter">1 stick (4 oz / 113 g) unsalted butter</li>
+<li data-ing="salt">1/4 teaspoon salt</li>
+<li data-ing="ground cinnamon">1/4 teaspoon ground cinnamon</li>
+<li data-ing="all-purpose flour">1 1/4 cups all-purpose flour (or cake flour for lighter texture)</li>
+<li data-ing="egg">3 large eggs</li></ul></div>
+<div class="ing-group"><h4>Cinnamon sugar coating</h4><ul class="ingredients"><li data-ing="sugar">1/2 cup granulated sugar</li>
+<li data-ing="ground cinnamon">1/2 teaspoon ground cinnamon</li></ul></div>
+<div class="ing-group"><h4>Oil</h4><ul class="ingredients"><li data-ing="oil">Oil for frying</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1384,6 +1424,7 @@
     <h3>Fresh Cranberry Mold</h3>
     <div class="recipe-btns">
       <button class="made-btn" type="button" data-id="desserts-fresh-cranberry-mold" data-title="Fresh Cranberry Mold" title="Not yet made (author only)" aria-label="Not yet made: Fresh Cranberry Mold"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Not made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Fresh Cranberry Mold">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Fresh Cranberry Mold">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Fresh Cranberry Mold">🖨 Print</button>
       <a class="link-btn" href="?recipe=desserts-fresh-cranberry-mold" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Fresh Cranberry Mold in new tab">🔗 Link</a>
@@ -1393,13 +1434,13 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Jell-O base</h4><ul class="ingredients"><li>2 packages red Jell-O, made with only 1 cup boiling water per package (2 cups total); chill until slightly thickened</li></ul></div>
-<div class="ing-group"><h4>Fruit mixture</h4><ul class="ingredients"><li>1/2 pound fresh cranberries</li>
-<li>1 apple, unpeeled</li>
-<li>1 orange, unpeeled</li>
-<li>1 cup sugar</li>
-<li>1 cup crushed pineapple with juice</li></ul></div>
-<div class="ing-group"><h4>Nuts</h4><ul class="ingredients"><li>1 cup pecans</li></ul></div>
+      <div class="ing-group"><h4>Jell-O base</h4><ul class="ingredients"><li data-ing="red jell-o">2 packages red Jell-O, made with only 1 cup boiling water per package (2 cups total); chill until slightly thickened</li></ul></div>
+<div class="ing-group"><h4>Fruit mixture</h4><ul class="ingredients"><li data-ing="cranberry">1/2 pound fresh cranberries</li>
+<li data-ing="apple">1 apple, unpeeled</li>
+<li data-ing="orange">1 orange, unpeeled</li>
+<li data-ing="sugar">1 cup sugar</li>
+<li data-ing="pineapple juice">1 cup crushed pineapple with juice</li></ul></div>
+<div class="ing-group"><h4>Nuts</h4><ul class="ingredients"><li data-ing="pecan">1 cup pecans</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1415,6 +1456,7 @@
     <h3>★ Lauren's Banana Pudding</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="desserts-lauren-s-banana-pudding" data-title="Lauren's Banana Pudding" title="Made it" aria-label="Made: Lauren's Banana Pudding"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Lauren's Banana Pudding">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Lauren's Banana Pudding">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Lauren's Banana Pudding">🖨 Print</button>
       <a class="link-btn" href="?recipe=desserts-lauren-s-banana-pudding" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Lauren's Banana Pudding in new tab">🔗 Link</a>
@@ -1424,12 +1466,12 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Pudding base (1 hour ahead)</h4><ul class="ingredients"><li>1½ cups cold water</li>
-<li>1 (14 oz) can sweetened condensed milk</li>
-<li>⅔ cup instant vanilla pudding powder (or 1 whole box)</li></ul></div>
-<div class="ing-group"><h4>Whipped cream</h4><ul class="ingredients"><li>3 cups heavy cream</li></ul></div>
-<div class="ing-group"><h4>Assembly</h4><ul class="ingredients"><li>1 box vanilla wafers</li>
-<li>3–4 bananas, sliced</li></ul></div>
+      <div class="ing-group"><h4>Pudding base (1 hour ahead)</h4><ul class="ingredients"><li data-ing="water">1½ cups cold water</li>
+<li data-ing="sweetened condensed milk">1 (14 oz) can sweetened condensed milk</li>
+<li data-ing="instant vanilla pudding powder">⅔ cup instant vanilla pudding powder (or 1 whole box)</li></ul></div>
+<div class="ing-group"><h4>Whipped cream</h4><ul class="ingredients"><li data-ing="heavy cream">3 cups heavy cream</li></ul></div>
+<div class="ing-group"><h4>Assembly</h4><ul class="ingredients"><li data-ing="vanilla wafer">1 box vanilla wafers</li>
+<li data-ing="banana">3–4 bananas, sliced</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1444,6 +1486,7 @@
     <h3>Old-Fashioned Butterscotch Pudding</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="desserts-old-fashioned-butterscotch-pudding" data-title="Old-Fashioned Butterscotch Pudding" title="Made it" aria-label="Made: Old-Fashioned Butterscotch Pudding"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Old-Fashioned Butterscotch Pudding">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Old-Fashioned Butterscotch Pudding">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Old-Fashioned Butterscotch Pudding">🖨 Print</button>
       <a class="link-btn" href="?recipe=desserts-old-fashioned-butterscotch-pudding" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Old-Fashioned Butterscotch Pudding in new tab">🔗 Link</a>
@@ -1453,17 +1496,17 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Egg base</h4><ul class="ingredients"><li>4 large egg yolks</li>
-<li>3 tablespoons cornstarch</li>
-<li>1/2 teaspoon fine sea salt</li></ul></div>
-<div class="ing-group"><h4>Caramel base</h4><ul class="ingredients"><li>3/4 cup (165g) packed dark brown sugar</li>
-<li>1 tablespoon unsalted butter</li></ul></div>
-<div class="ing-group"><h4>Dairy</h4><ul class="ingredients"><li>2 cups whole milk</li>
-<li>1 cup heavy cream</li></ul></div>
-<div class="ing-group"><h4>Flavorings</h4><ul class="ingredients"><li>1 tablespoon bourbon or Scotch whisky (optional)</li>
-<li>2 teaspoons vanilla extract</li></ul></div>
-<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li>Whipped cream, sour cream, or creme fraiche</li>
-<li>Chopped candied ginger, sliced almonds, Demerara sugar, shaved chocolate, cocoa nibs, or flaky sea salt (optional garnishes)</li></ul></div>
+      <div class="ing-group"><h4>Egg base</h4><ul class="ingredients"><li data-ing="egg">4 large egg yolks</li>
+<li data-ing="corn starch">3 tablespoons cornstarch</li>
+<li data-ing="sea salt">1/2 teaspoon fine sea salt</li></ul></div>
+<div class="ing-group"><h4>Caramel base</h4><ul class="ingredients"><li data-ing="dark brown sugar">3/4 cup (165g) packed dark brown sugar</li>
+<li data-ing="unsalted butter">1 tablespoon unsalted butter</li></ul></div>
+<div class="ing-group"><h4>Dairy</h4><ul class="ingredients"><li data-ing="whole milk">2 cups whole milk</li>
+<li data-ing="heavy cream">1 cup heavy cream</li></ul></div>
+<div class="ing-group"><h4>Flavorings</h4><ul class="ingredients"><li data-ing="bourbon / scotch whisky">1 tablespoon bourbon or Scotch whisky (optional)</li>
+<li data-ing="vanilla extract">2 teaspoons vanilla extract</li></ul></div>
+<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li data-ing="whipped cream">Whipped cream, sour cream, or creme fraiche</li>
+<li data-ing="candied ginger">Chopped candied ginger, sliced almonds, Demerara sugar, shaved chocolate, cocoa nibs, or flaky sea salt (optional garnishes)</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1482,6 +1525,7 @@
     <h3>Passion Fruit (Lilikoi) Ice Cream</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="desserts-passion-fruit-lilikoi-ice-cream" data-title="Passion Fruit (Lilikoi) Ice Cream" title="Made it" aria-label="Made: Passion Fruit (Lilikoi) Ice Cream"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Passion Fruit (Lilikoi) Ice Cream">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Passion Fruit (Lilikoi) Ice Cream">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Passion Fruit (Lilikoi) Ice Cream">🖨 Print</button>
       <a class="link-btn" href="?recipe=desserts-passion-fruit-lilikoi-ice-cream" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Passion Fruit (Lilikoi) Ice Cream in new tab">🔗 Link</a>
@@ -1491,15 +1535,15 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Passion fruit base</h4><ul class="ingredients"><li>1 cup fresh or frozen passion fruit pulp (from 12 to 16 fresh passion fruits)</li>
-<li>1 cup heavy cream</li></ul></div>
-<div class="ing-group"><h4>Custard</h4><ul class="ingredients"><li>3/4 cup whole milk</li>
-<li>3/4 cup plus 2 tablespoons sugar</li>
-<li>2 pinches of salt</li>
-<li>1 cup heavy cream</li>
-<li>6 large egg yolks</li></ul></div>
-<div class="ing-group"><h4>To finish (optional)</h4><ul class="ingredients"><li>A few drops pure orange oil, or grated zest of 2 small oranges</li>
-<li>2 spoonfuls passion fruit seeds</li></ul></div>
+      <div class="ing-group"><h4>Passion fruit base</h4><ul class="ingredients"><li data-ing="passion fruit pulp">1 cup fresh or frozen passion fruit pulp (from 12 to 16 fresh passion fruits)</li>
+<li data-ing="heavy cream">1 cup heavy cream</li></ul></div>
+<div class="ing-group"><h4>Custard</h4><ul class="ingredients"><li data-ing="whole milk">3/4 cup whole milk</li>
+<li data-ing="sugar">3/4 cup plus 2 tablespoons sugar</li>
+<li data-ing="salt">2 pinches of salt</li>
+<li data-ing="heavy cream">1 cup heavy cream</li>
+<li data-ing="egg">6 large egg yolks</li></ul></div>
+<div class="ing-group"><h4>To finish (optional)</h4><ul class="ingredients"><li data-ing="orange">A few drops pure orange oil, or grated zest of 2 small oranges</li>
+<li data-ing="passion fruit seed">2 spoonfuls passion fruit seeds</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1517,6 +1561,7 @@
     <h3>Summer Pudding</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="desserts-summer-pudding" data-title="Summer Pudding" title="Made it" aria-label="Made: Summer Pudding"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Summer Pudding">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Summer Pudding">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Summer Pudding">🖨 Print</button>
       <a class="link-btn" href="?recipe=desserts-summer-pudding" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Summer Pudding in new tab">🔗 Link</a>
@@ -1526,14 +1571,14 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Bread</h4><ul class="ingredients"><li>6 slices French bread</li></ul></div>
-<div class="ing-group"><h4>Fruit</h4><ul class="ingredients"><li>1 1/2 cups halved fresh strawberries</li>
-<li>1 1/2 cups frozen raspberries</li>
-<li>1 1/2 cups frozen blueberries</li>
-<li>1 1/2 cups frozen blackberries</li></ul></div>
-<div class="ing-group"><h4>Sauce</h4><ul class="ingredients"><li>1/2 cup sugar</li>
-<li>1/4 cup cranberry juice cocktail</li></ul></div>
-<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li>Whipped cream</li></ul></div>
+      <div class="ing-group"><h4>Bread</h4><ul class="ingredients"><li data-ing="french bread">6 slices French bread</li></ul></div>
+<div class="ing-group"><h4>Fruit</h4><ul class="ingredients"><li data-ing="strawberry">1 1/2 cups halved fresh strawberries</li>
+<li data-ing="frozen raspberry">1 1/2 cups frozen raspberries</li>
+<li data-ing="frozen blueberry">1 1/2 cups frozen blueberries</li>
+<li data-ing="frozen blackberry">1 1/2 cups frozen blackberries</li></ul></div>
+<div class="ing-group"><h4>Sauce</h4><ul class="ingredients"><li data-ing="sugar">1/2 cup sugar</li>
+<li data-ing="cranberry juice cocktail">1/4 cup cranberry juice cocktail</li></ul></div>
+<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li data-ing="whipped cream">Whipped cream</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1553,6 +1598,7 @@
     <h3>Classic Tiramisu</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="desserts-classic-tiramisu" data-title="Classic Tiramisu" title="Made it" aria-label="Made: Classic Tiramisu"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Classic Tiramisu">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Classic Tiramisu">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Classic Tiramisu">🖨 Print</button>
       <a class="link-btn" href="?recipe=desserts-classic-tiramisu" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Classic Tiramisu in new tab">🔗 Link</a>
@@ -1562,16 +1608,16 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Egg yolk cream</h4><ul class="ingredients"><li>4 large egg yolks</li>
-<li>1/4 cup granulated sugar</li></ul></div>
-<div class="ing-group"><h4>Mascarpone cream</h4><ul class="ingredients"><li>3/4 cup heavy cream</li>
-<li>1/4 cup granulated sugar</li>
-<li>1 cup mascarpone (8 oz)</li></ul></div>
-<div class="ing-group"><h4>Espresso soak</h4><ul class="ingredients"><li>1 3/4 cups espresso or very strong coffee</li>
-<li>2 tablespoons rum or cognac</li></ul></div>
-<div class="ing-group"><h4>Assembly</h4><ul class="ingredients"><li>2 tablespoons unsweetened cocoa powder</li>
-<li>About 24 ladyfingers (one 7-oz package)</li>
-<li>1-2 oz bittersweet chocolate, for shaving (optional)</li></ul></div>
+      <div class="ing-group"><h4>Egg yolk cream</h4><ul class="ingredients"><li data-ing="egg">4 large egg yolks</li>
+<li data-ing="sugar">1/4 cup granulated sugar</li></ul></div>
+<div class="ing-group"><h4>Mascarpone cream</h4><ul class="ingredients"><li data-ing="heavy cream">3/4 cup heavy cream</li>
+<li data-ing="sugar">1/4 cup granulated sugar</li>
+<li data-ing="mascarpone">1 cup mascarpone (8 oz)</li></ul></div>
+<div class="ing-group"><h4>Espresso soak</h4><ul class="ingredients"><li data-ing="espresso / strong coffee">1 3/4 cups espresso or very strong coffee</li>
+<li data-ing="rum / cognac">2 tablespoons rum or cognac</li></ul></div>
+<div class="ing-group"><h4>Assembly</h4><ul class="ingredients"><li data-ing="unsweetened cocoa powder">2 tablespoons unsweetened cocoa powder</li>
+<li data-ing="ladyfinger">About 24 ladyfingers (one 7-oz package)</li>
+<li data-ing="bittersweet chocolate">1-2 oz bittersweet chocolate, for shaving (optional)</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -1592,6 +1638,7 @@
     <h3>★ Mango with Sticky Rice (Khao Neow Mamuang)</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="desserts-mango-with-sticky-rice-khao-neow-mamuang" data-title="Mango with Sticky Rice (Khao Neow Mamuang)" title="Made it" aria-label="Made: Mango with Sticky Rice (Khao Neow Mamuang)"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
+      <button class="shop-btn" type="button" aria-expanded="false" title="Make a shopping checklist" aria-label="Shopping checklist for Mango with Sticky Rice (Khao Neow Mamuang)">Shop</button>
       <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Mango with Sticky Rice (Khao Neow Mamuang)">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Mango with Sticky Rice (Khao Neow Mamuang)">🖨 Print</button>
       <a class="link-btn" href="?recipe=desserts-mango-with-sticky-rice-khao-neow-mamuang" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Mango with Sticky Rice (Khao Neow Mamuang) in new tab">🔗 Link</a>
@@ -1601,15 +1648,15 @@
   <div class="recipe-body">
     <div class="ingredients-col">
       <h4 class="col-heading">Ingredients</h4>
-      <div class="ing-group"><h4>Rice</h4><ul class="ingredients"><li>300g (2 cups) sticky rice (glutinous rice), soaked in water at least 3 hours or overnight</li></ul></div>
-<div class="ing-group"><h4>Thick coconut sauce</h4><ul class="ingredients"><li>250ml (1 cup) thick coconut milk</li>
-<li>100g (1/2 cup) sugar</li>
-<li>1/4 teaspoon salt</li></ul></div>
-<div class="ing-group"><h4>Thin coconut sauce</h4><ul class="ingredients"><li>60ml (1/4 cup) thin coconut milk</li>
-<li>1 tablespoon sugar</li>
-<li>Pinch of salt</li></ul></div>
-<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li>1 mango</li>
-<li>1-1/2 teaspoons sesame seeds, roasted</li></ul></div>
+      <div class="ing-group"><h4>Rice</h4><ul class="ingredients"><li data-ing="sticky rice (in water)">300g (2 cups) sticky rice (glutinous rice), soaked in water at least 3 hours or overnight</li></ul></div>
+<div class="ing-group"><h4>Thick coconut sauce</h4><ul class="ingredients"><li data-ing="coconut milk">250ml (1 cup) thick coconut milk</li>
+<li data-ing="sugar">100g (1/2 cup) sugar</li>
+<li data-ing="salt">1/4 teaspoon salt</li></ul></div>
+<div class="ing-group"><h4>Thin coconut sauce</h4><ul class="ingredients"><li data-ing="coconut milk">60ml (1/4 cup) thin coconut milk</li>
+<li data-ing="sugar">1 tablespoon sugar</li>
+<li data-ing="salt">Pinch of salt</li></ul></div>
+<div class="ing-group"><h4>To serve</h4><ul class="ingredients"><li data-ing="mango">1 mango</li>
+<li data-ing="sesame seed">1-1/2 teaspoons sesame seeds, roasted</li></ul></div>
     </div>
     <div class="steps-col">
       <h4 class="col-heading">Steps</h4>
@@ -3009,6 +3056,145 @@
     }
   })();
 
+
+  // ── Shopping checklist (see shopping_list.css). Reads the ingredient lines already on the page. ──
+  // The "Shop" button on each recipe opens a checklist (all unticked). "Copy checked" copies the ticked lines.
+  // https://script.google.com/macros/s/AKfycbzY1Qi--vCFGalcT9QYdBe8HC46HWHGE_8WZ91vuA2fVaYagEQ34nlwjU7ebCuPsv8n/exec / shop-9a779a2e2e26 are replaced from shopping_config.json at build time. With no URL set, only "Copy checked" is offered.
+  (function () {
+    var URL_ = 'https://script.google.com/macros/s/AKfycbzY1Qi--vCFGalcT9QYdBe8HC46HWHGE_8WZ91vuA2fVaYagEQ34nlwjU7ebCuPsv8n/exec', KEY_ = 'shop-9a779a2e2e26';
+    var ENABLED = !!URL_ && URL_.indexOf('__SHOP') !== 0;
+    var CART = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.6 12.2a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 7H6"/></svg>';
+    function visible(el) { return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length); }
+    function collect(art) {
+      var out = [];
+      art.querySelectorAll('.ing-group').forEach(function (g) {
+        if (!visible(g)) return;
+        var h = g.querySelector('h4');
+        var label = h ? h.firstChild && h.firstChild.textContent.trim() : '';
+        g.querySelectorAll('li').forEach(function (li) { out.push({ g: label || '', t: li.textContent.trim(), n: li.getAttribute('data-ing') || '' }); });
+      });
+      return out;
+    }
+    function copyText(text, done) {
+      function fallback() {
+        var ta = document.createElement('textarea'); ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+        document.body.appendChild(ta); ta.select();
+        try { document.execCommand('copy'); done(true); } catch (e) { done(false); }
+        document.body.removeChild(ta);
+      }
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(function () { done(true); }, fallback);
+      else fallback();
+    }
+    function post(payload) {
+      payload.key = KEY_;
+      return fetch(URL_, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(payload) });
+    }
+    function getList() {
+      return fetch(URL_ + '?action=list&key=' + encodeURIComponent(KEY_)).then(function (r) { return r.json(); })
+        .then(function (j) { if (!j.ok) throw new Error(j.error || 'error'); return j.items || []; });
+    }
+    var badge = document.getElementById('shop-list-toggle');
+    function setBadge(n) { if (badge) badge.querySelector('.shop-badge').textContent = n ? ' (' + n + ')' : ''; }
+    function refreshBadge() { if (ENABLED) getList().then(function (l) { setBadge(l.length); }, function () {}); }
+    function build(art, btn) {
+      var items = collect(art);
+      var panel = document.createElement('div');
+      panel.className = 'shop-panel'; panel.setAttribute('role', 'region'); panel.setAttribute('aria-label', 'Shopping checklist');
+      var head = document.createElement('div'); head.className = 'shop-head';
+      head.innerHTML = '<strong>Shopping checklist</strong><span>Tick what you need to buy.</span>';
+      var cols = document.createElement('div'); cols.className = 'shop-cols';
+      var last = null;
+      items.forEach(function (it) {
+        if (it.g !== last) { if (it.g) { var l = document.createElement('div'); l.className = 'shop-group-label'; l.textContent = it.g; cols.appendChild(l); } last = it.g; }
+        var lab = document.createElement('label'); lab.className = 'shop-item';
+        var cb = document.createElement('input'); cb.type = 'checkbox'; cb.checked = false;
+        var sp = document.createElement('span'); sp.textContent = it.t;
+        lab.appendChild(cb); lab.appendChild(sp); cols.appendChild(lab);
+      });
+      var actions = document.createElement('div'); actions.className = 'shop-actions';
+      var copyBtn = document.createElement('button'); copyBtn.type = 'button'; copyBtn.className = 'shop-primary'; copyBtn.textContent = 'Copy checked';
+      var clearBtn = document.createElement('button'); clearBtn.type = 'button'; clearBtn.textContent = 'Untick all';
+      var count = document.createElement('span'); count.className = 'shop-count';
+      var addBtn = null;
+      if (ENABLED) { addBtn = document.createElement('button'); addBtn.type = 'button'; addBtn.className = 'shop-primary'; addBtn.textContent = 'Add to shopping list'; actions.appendChild(addBtn); copyBtn.className = ''; }
+      actions.appendChild(copyBtn); actions.appendChild(clearBtn); actions.appendChild(count);
+      var msg = document.createElement('div'); msg.className = 'shop-msg'; msg.setAttribute('aria-live', 'polite');
+      panel.appendChild(head); panel.appendChild(cols); panel.appendChild(actions); panel.appendChild(msg);
+      function boxes() { return cols.querySelectorAll('input'); }
+      function checked() { var r = []; boxes().forEach(function (c, i) { if (c.checked) r.push(items[i].t); }); return r; }
+      function checkedObjs() { var r = []; boxes().forEach(function (c, i) { if (c.checked) r.push({ item: items[i].t, ingredient: items[i].n, recipe: art.getAttribute('data-title') || '' }); }); return r; }
+      function update() { count.textContent = checked().length + ' of ' + items.length + ' checked'; msg.textContent = ''; }
+      cols.addEventListener('change', update);
+      copyBtn.addEventListener('click', function () {
+        var c = checked();
+        if (!c.length) { msg.textContent = 'Nothing checked yet.'; return; }
+        copyText(c.join('\n'), function (ok) { msg.textContent = ok ? 'Copied ' + c.length + ' item' + (c.length === 1 ? '' : 's') + '.' : 'Could not copy.'; });
+      });
+      if (addBtn) addBtn.addEventListener('click', function () {
+        var c = checkedObjs();
+        if (!c.length) { msg.textContent = 'Nothing checked yet.'; return; }
+        addBtn.disabled = true; msg.textContent = 'Adding...';
+        post({ action: 'add', items: c }).then(function () { return getList(); }).then(function (l) {
+          msg.textContent = 'Sent ' + c.length + ' item' + (c.length === 1 ? '' : 's') + '. The list now has ' + l.length + '.';
+          setBadge(l.length); boxes().forEach(function (x) { x.checked = false; }); count.textContent = '';
+        }, function () { msg.textContent = 'Sent, but could not confirm. Check the list.'; }).then(function () { addBtn.disabled = false; });
+      });
+      clearBtn.addEventListener('click', function () { boxes().forEach(function (c) { c.checked = false; }); update(); });
+      update();
+      return panel;
+    }
+    function openList() {
+      var ov = document.createElement('div'); ov.className = 'shop-overlay';
+      var dlg = document.createElement('div'); dlg.className = 'shop-dialog'; dlg.setAttribute('role', 'dialog'); dlg.setAttribute('aria-label', 'Shopping list');
+      var title = document.createElement('h2'); title.textContent = 'Shopping list';
+      var body = document.createElement('div'); body.className = 'shop-listbody'; body.textContent = 'Loading...';
+      var acts = document.createElement('div'); acts.className = 'shop-actions';
+      var refresh = document.createElement('button'); refresh.type = 'button'; refresh.textContent = 'Refresh';
+      var copy = document.createElement('button'); copy.type = 'button'; copy.textContent = 'Copy list';
+      var clear = document.createElement('button'); clear.type = 'button'; clear.className = 'shop-danger'; clear.textContent = 'Clear list';
+      var close = document.createElement('button'); close.type = 'button'; close.textContent = 'Close';
+      var msg = document.createElement('div'); msg.className = 'shop-msg';
+      [refresh, copy, clear, close].forEach(function (b) { acts.appendChild(b); });
+      dlg.appendChild(title); dlg.appendChild(body); dlg.appendChild(acts); dlg.appendChild(msg); ov.appendChild(dlg); document.body.appendChild(ov);
+      var current = [];
+      function render(l) {
+        current = l; setBadge(l.length); body.textContent = '';
+        if (!l.length) { body.textContent = 'The list is empty.'; return; }
+        l.slice().sort(function (a, b) { return (a.ingredient || a.item).toLowerCase() < (b.ingredient || b.item).toLowerCase() ? -1 : 1; }).forEach(function (it) {
+          var row = document.createElement('div'); row.className = 'shop-row';
+          var t = document.createElement('span'); t.textContent = it.item;
+          var r = document.createElement('small'); r.textContent = it.recipe;
+          row.appendChild(t); row.appendChild(r); body.appendChild(row);
+        });
+      }
+      function load() { body.textContent = 'Loading...'; getList().then(render, function () { body.textContent = 'Could not load the list.'; }); }
+      refresh.addEventListener('click', load);
+      copy.addEventListener('click', function () { copyText(current.map(function (i) { return i.item; }).join('\n'), function (ok) { msg.textContent = ok ? 'Copied ' + current.length + ' items.' : 'Could not copy.'; }); });
+      clear.addEventListener('click', function () {
+        if (!current.length) return;
+        if (!window.confirm('Clear all ' + current.length + ' items? They move to the History tab of the sheet.')) return;
+        post({ action: 'clear' }).then(function () { return getList(); }).then(render, function () { msg.textContent = 'Could not confirm. Refresh.'; });
+      });
+      function shut() { document.body.removeChild(ov); }
+      close.addEventListener('click', shut); ov.addEventListener('click', function (e) { if (e.target === ov) shut(); });
+      load();
+    }
+    if (badge) {
+      if (ENABLED) { badge.style.display = 'flex'; badge.addEventListener('click', openList); refreshBadge(); }
+    }
+    document.querySelectorAll('.shop-btn').forEach(function (btn) {
+      btn.innerHTML = CART + 'Shop';
+      btn.addEventListener('click', function () {
+        var art = btn.closest('.recipe'); if (!art) return;
+        var open = art.querySelector('.shop-panel');
+        if (open) { open.parentNode.removeChild(open); btn.classList.remove('active'); btn.setAttribute('aria-expanded', 'false'); return; }
+        var panel = build(art, btn);
+        var body = art.querySelector('.recipe-body');
+        art.insertBefore(panel, body);
+        btn.classList.add('active'); btn.setAttribute('aria-expanded', 'true');
+      });
+    });
+  })();
 
   // ── Apply filters (favorites — current page only) ─────────────────────
   function applyFilters() {
