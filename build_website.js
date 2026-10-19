@@ -734,7 +734,7 @@ function renderRecipe(recipe, idPrefix) {
     <h3>${esc(title)}</h3>
     <div class="recipe-btns">
       ${madeBtn}
-      <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy ${esc(recipe.title)}">📋 Copy Recipe</button>
+      <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy ${esc(recipe.title)}">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print ${esc(recipe.title)}">🖨 Print</button>
       <a class="link-btn" href="?recipe=${esc(id)}" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open ${esc(recipe.title)} in new tab">🔗 Link</a>
     </div>
@@ -2168,7 +2168,7 @@ ${INGREDIENT_JS}
       function showSuccess() {
         btn.textContent = '✓ Copied!';
         btn.classList.add('copied');
-        setTimeout(function () { btn.textContent = '📋 Copy Recipe'; btn.classList.remove('copied'); }, 2000);
+        setTimeout(function () { btn.textContent = '📋 Copy'; btn.classList.remove('copied'); }, 2000);
       }
       function fallbackCopy() {
         var ta = document.createElement('textarea');

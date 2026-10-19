@@ -1324,7 +1324,7 @@
     <h3>Blackberry Brie Grilled Cheese</h3>
     <div class="recipe-btns">
       <button class="made-btn made" type="button" data-id="sandwiches-blackberry-brie-grilled-cheese" data-title="Blackberry Brie Grilled Cheese" title="Made it" aria-label="Made: Blackberry Brie Grilled Cheese"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">Made</span></button>
-      <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Blackberry Brie Grilled Cheese">📋 Copy Recipe</button>
+      <button class="copy-btn" title="Copy recipe to clipboard" aria-label="Copy Blackberry Brie Grilled Cheese">📋 Copy</button>
       <button class="print-btn" title="Print this recipe" aria-label="Print Blackberry Brie Grilled Cheese">🖨 Print</button>
       <a class="link-btn" href="?recipe=sandwiches-blackberry-brie-grilled-cheese" target="_blank" rel="noopener" title="Open recipe in new tab" aria-label="Open Blackberry Brie Grilled Cheese in new tab">🔗 Link</a>
     </div>
@@ -2190,7 +2190,7 @@
       function showSuccess() {
         btn.textContent = '✓ Copied!';
         btn.classList.add('copied');
-        setTimeout(function () { btn.textContent = '📋 Copy Recipe'; btn.classList.remove('copied'); }, 2000);
+        setTimeout(function () { btn.textContent = '📋 Copy'; btn.classList.remove('copied'); }, 2000);
       }
       function fallbackCopy() {
         var ta = document.createElement('textarea');
