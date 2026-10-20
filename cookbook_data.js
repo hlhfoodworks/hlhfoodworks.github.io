@@ -16279,6 +16279,7 @@ module.exports = {
             },
             {
               "title": "Lebanese Green Beans with Walnuts (Loubieh B'Joz)",
+              "made": true,
               "servings": "Serves 4   |   Total: 23 minutes",
               "source": "Kevin, Silk Road Recipes (silkroadrecipes.com)",
               "comments": [

@@ -631,7 +631,14 @@
   @media print { .made-btn, #made-modal { display: none !important; } }
 
 /* ── Shopping checklist (see shopping_list_client.js) ── */
-.shop-btn { display: inline-flex; align-items: center; gap: 4px; }
+.shop-btn {
+  flex-shrink: 0; display: inline-flex; align-items: center; gap: 4px;
+  background: none; border: 1px solid var(--border); border-radius: var(--radius);
+  color: var(--muted); font-size: 0.72rem; padding: 3px 8px; margin-top: 2px;
+  cursor: pointer; font-family: 'Helvetica Neue', Arial, sans-serif; white-space: nowrap;
+  transition: background 0.12s, color 0.12s;
+}
+.shop-btn:hover { background: var(--border); color: var(--text); }
 .shop-btn svg { width: 14px; height: 14px; }
 .shop-btn.active { background: #f3e9d6; border-color: var(--accent2); color: var(--accent); }
 .shop-panel { margin: 12px 0 4px; border: 1px solid var(--accent2); border-radius: 8px; background: #fbf5ea;
@@ -1149,7 +1156,7 @@
 <li class="nav-cluster"><a class="nav-hd cluster-hd" href="vegetable-sides.html#vegetable-sides-stovetop--mediterranean-greek" data-toggle="vegetable-sides-stovetop--mediterranean-greek-children"><span class="arrow">▶</span>Mediterranean/Greek</a><ul class="nav-l4 collapsed" id="vegetable-sides-stovetop--mediterranean-greek-children"><li class="nav-recipe" data-made="1"><a class="nav-recipe-link" data-recipe-title="Red Cabbage With Walnuts and Feta" href="vegetable-sides.html#vegetable-sides-stovetop-red-cabbage-with-walnuts-and-feta"><span class="nav-star"></span><span class="nav-title">Red Cabbage With Walnuts and Feta</span></a></li>
 <li class="nav-recipe" data-made="1"><a class="nav-recipe-link" data-recipe-title="Seared Zucchini and Halloumi in Red-Wine Vinaigrette" href="vegetable-sides.html#vegetable-sides-stovetop-seared-zucchini-and-halloumi-in-red-wine-vinaigrette"><span class="nav-star"></span><span class="nav-title">Seared Zucchini and Halloumi in Red-Wine Vinaigrette</span></a></li>
 </ul></li>
-<li class="nav-cluster"><a class="nav-hd cluster-hd" href="vegetable-sides.html#vegetable-sides-stovetop--middle-eastern-persian" data-toggle="vegetable-sides-stovetop--middle-eastern-persian-children"><span class="arrow">▶</span>Middle Eastern/Persian</a><ul class="nav-l4 collapsed" id="vegetable-sides-stovetop--middle-eastern-persian-children"><li class="nav-recipe"><a class="nav-recipe-link" data-recipe-title="Lebanese Green Beans with Walnuts (Loubieh B'Joz)" href="vegetable-sides.html#vegetable-sides-stovetop-lebanese-green-beans-with-walnuts-loubieh-b-joz"><span class="nav-star"></span><span class="nav-title">Lebanese Green Beans with Walnuts (Loubieh B'Joz)</span></a></li>
+<li class="nav-cluster"><a class="nav-hd cluster-hd" href="vegetable-sides.html#vegetable-sides-stovetop--middle-eastern-persian" data-toggle="vegetable-sides-stovetop--middle-eastern-persian-children"><span class="arrow">▶</span>Middle Eastern/Persian</a><ul class="nav-l4 collapsed" id="vegetable-sides-stovetop--middle-eastern-persian-children"><li class="nav-recipe" data-made="1"><a class="nav-recipe-link" data-recipe-title="Lebanese Green Beans with Walnuts (Loubieh B'Joz)" href="vegetable-sides.html#vegetable-sides-stovetop-lebanese-green-beans-with-walnuts-loubieh-b-joz"><span class="nav-star"></span><span class="nav-title">Lebanese Green Beans with Walnuts (Loubieh B'Joz)</span></a></li>
 </ul></li>
 <li class="nav-cluster"><a class="nav-hd cluster-hd" href="vegetable-sides.html#vegetable-sides-stovetop--korean-inspired" data-toggle="vegetable-sides-stovetop--korean-inspired-children"><span class="arrow">▶</span>Korean-inspired</a><ul class="nav-l4 collapsed" id="vegetable-sides-stovetop--korean-inspired-children"><li class="nav-recipe"><a class="nav-recipe-link" data-recipe-title="Gochujang Stir-Fried Brussels Sprouts" href="vegetable-sides.html#vegetable-sides-stovetop-gochujang-stir-fried-brussels-sprouts"><span class="nav-star"></span><span class="nav-title">Gochujang Stir-Fried Brussels Sprouts</span></a></li>
 <li class="nav-recipe"><a class="nav-recipe-link" data-recipe-title="Gochujang-Glazed Eggplant with Fried Scallions" href="vegetable-sides.html#vegetable-sides-stovetop-gochujang-glazed-eggplant-with-fried-scallions"><span class="nav-star"></span><span class="nav-title">Gochujang-Glazed Eggplant with Fried Scallions</span></a></li>
@@ -2947,7 +2954,7 @@
         post({ action: 'add', items: c }).then(function () { return getList(); }).then(function (l) {
           msg.textContent = 'Sent ' + c.length + ' item' + (c.length === 1 ? '' : 's') + '. The list now has ' + l.length + '.';
           setBadge(l.length); boxes().forEach(function (x) { x.checked = false; }); count.textContent = '';
-        }, function () { msg.textContent = 'Sent, but could not confirm. Check the list.'; }).then(function () { addBtn.disabled = false; });
+        }, function (err) { msg.textContent = 'Sent, but could not confirm (' + ((err && err.message) || 'error') + '). Check the Sheet.'; }).then(function () { addBtn.disabled = false; });
       });
       clearBtn.addEventListener('click', function () { boxes().forEach(function (c) { c.checked = false; }); update(); });
       update();
