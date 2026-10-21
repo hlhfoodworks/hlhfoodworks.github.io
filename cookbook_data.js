@@ -14168,7 +14168,7 @@ module.exports = {
                   "comments": [
                     "Greens and beans can be swapped. For other flavors, try ground coriander, toasted fennel seeds, coarsely crumbled pink peppercorns, or smoked paprika.",
                     "Our changes from the NYT recipe: we use 1 pound of pasta and double everything else (the original, written for 12 oz, did not make enough sauce).",
-                    "Salt the pasta water very generously."
+                    "Salt the chickpeas and the shallots very generously as they cook."
                   ],
                   "ingredientGroups": [
                     {
@@ -14211,9 +14211,9 @@ module.exports = {
                     }
                   ],
                   "steps": [
-                    "Bring a large pot of water to a boil over high heat and salt it very generously.",
-                    "In a wide, deep skillet, heat the oil over medium-high. Add the chickpeas, rosemary, and Aleppo pepper, if using. Season generously with salt and pepper and cook, stirring occasionally, until the chickpeas start to caramelize at their edges and pop, 5 to 7 minutes. Using a slotted spoon, transfer about half the chickpeas to a bowl and reserve for garnish.",
-                    "Reduce the heat to medium, add the shallots and garlic to the skillet, and season with salt and pepper. Cook, stirring occasionally, until the shallots are softened, about 3 minutes. Add the heavy cream and cook until slightly thickened, about 3 minutes. Turn off the heat, stir in the spinach, and season to taste with salt and pepper.",
+                    "Bring a large pot of salted water to a boil over high heat.",
+                    "In a wide, deep skillet, heat the oil over medium-high. Add the chickpeas, rosemary, and Aleppo pepper, if using. Season very generously with salt and pepper and cook, stirring occasionally, until the chickpeas start to caramelize at their edges and pop, 5 to 7 minutes. Using a slotted spoon, transfer about half the chickpeas to a bowl and reserve for garnish.",
+                    "Reduce the heat to medium, add the shallots and garlic to the skillet, and season very generously with salt and pepper. Cook, stirring occasionally, until the shallots are softened, about 3 minutes. Add the heavy cream and cook until slightly thickened, about 3 minutes. Turn off the heat, stir in the spinach, and season to taste with salt and pepper.",
                     "Add the pasta to the boiling water and reduce the heat to medium. Cook until a couple of minutes short of al dente, about 5 minutes. Do not drain. Using tongs, transfer the pasta directly from the pot to the spinach and cream sauce. Add 2 cups pasta cooking water and the Parmesan and cook over medium-high, stirring vigorously with the tongs, until the sauce is thickened and the noodles are al dente, about 2 minutes. Add a splash of pasta water to loosen the sauce, if needed.",
                     "Transfer to bowls and top with the reserved chickpeas, more rosemary, and black pepper. Serve immediately, with lemon wedges for squeezing."
                   ]
