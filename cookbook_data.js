@@ -14162,42 +14162,45 @@ module.exports = {
                 },
                 {
                   "title": "Creamy Chickpea Pasta with Spinach and Rosemary",
-                  "servings": "Serves 4   |   Total: 30 minutes",
+                  "made": true,
+                  "servings": "Serves 4 to 6   |   Total: 30 minutes",
                   "source": "New York Times, by Alexa Weibel",
                   "comments": [
-                    "Greens and beans can be swapped. For other flavors, try ground coriander, toasted fennel seeds, coarsely crumbled pink peppercorns, or smoked paprika."
+                    "Greens and beans can be swapped. For other flavors, try ground coriander, toasted fennel seeds, coarsely crumbled pink peppercorns, or smoked paprika.",
+                    "Our changes from the NYT recipe: we use 1 pound of pasta and double everything else (the original, written for 12 oz, did not make enough sauce).",
+                    "Salt the pasta water very generously."
                   ],
                   "ingredientGroups": [
                     {
                       "label": "Pasta",
                       "ingredients": [
                         "Kosher salt",
-                        "12 oz spaghetti or bucatini"
+                        "1 pound spaghetti or bucatini"
                       ]
                     },
                     {
                       "label": "Chickpeas",
                       "ingredients": [
-                        "1/4 cup olive oil",
-                        "One 14 oz can chickpeas, rinsed and drained",
-                        "2 teaspoons finely chopped fresh rosemary, plus more for garnish",
-                        "1/4 to 1/2 teaspoon Aleppo pepper or red pepper flakes (optional)",
+                        "1/2 cup olive oil",
+                        "Two 14 oz cans chickpeas, rinsed and drained",
+                        "4 teaspoons finely chopped fresh rosemary, plus more for garnish",
+                        "1/2 to 1 teaspoon Aleppo pepper or red pepper flakes (optional)",
                         "Black pepper"
                       ]
                     },
                     {
                       "label": "Cream sauce",
                       "ingredients": [
-                        "1 large shallot, finely chopped",
-                        "2 garlic cloves, finely chopped",
-                        "1 cup heavy cream",
-                        "One 6 oz bag baby spinach"
+                        "2 large shallots, finely chopped",
+                        "4 garlic cloves, finely chopped",
+                        "2 cups heavy cream",
+                        "Two 6 oz bags baby spinach"
                       ]
                     },
                     {
                       "label": "To finish",
                       "ingredients": [
-                        "1/2 cup finely grated Parmesan"
+                        "1 cup finely grated Parmesan"
                       ]
                     },
                     {
@@ -14208,10 +14211,10 @@ module.exports = {
                     }
                   ],
                   "steps": [
-                    "Bring a large pot of salted water to a boil over high heat.",
+                    "Bring a large pot of water to a boil over high heat and salt it very generously.",
                     "In a wide, deep skillet, heat the oil over medium-high. Add the chickpeas, rosemary, and Aleppo pepper, if using. Season generously with salt and pepper and cook, stirring occasionally, until the chickpeas start to caramelize at their edges and pop, 5 to 7 minutes. Using a slotted spoon, transfer about half the chickpeas to a bowl and reserve for garnish.",
                     "Reduce the heat to medium, add the shallots and garlic to the skillet, and season with salt and pepper. Cook, stirring occasionally, until the shallots are softened, about 3 minutes. Add the heavy cream and cook until slightly thickened, about 3 minutes. Turn off the heat, stir in the spinach, and season to taste with salt and pepper.",
-                    "Add the pasta to the boiling water and reduce the heat to medium. Cook until a couple of minutes short of al dente, about 5 minutes. Do not drain. Using tongs, transfer the pasta directly from the pot to the spinach and cream sauce. Add 1 cup pasta cooking water and the Parmesan and cook over medium-high, stirring vigorously with the tongs, until the sauce is thickened and the noodles are al dente, about 2 minutes. Add a splash of pasta water to loosen the sauce, if needed.",
+                    "Add the pasta to the boiling water and reduce the heat to medium. Cook until a couple of minutes short of al dente, about 5 minutes. Do not drain. Using tongs, transfer the pasta directly from the pot to the spinach and cream sauce. Add 2 cups pasta cooking water and the Parmesan and cook over medium-high, stirring vigorously with the tongs, until the sauce is thickened and the noodles are al dente, about 2 minutes. Add a splash of pasta water to loosen the sauce, if needed.",
                     "Transfer to bowls and top with the reserved chickpeas, more rosemary, and black pepper. Serve immediately, with lemon wedges for squeezing."
                   ]
                 }
