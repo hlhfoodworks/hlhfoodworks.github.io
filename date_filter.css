@@ -1,0 +1,58 @@
+/* ── Date added + tidied sidebar controls (implemented 2026-10-29) ──
+   Inlined into every page by build_website.js. See CLAUDE.md "Date added". */
+.added-date { display:inline-flex; align-items:center; gap:5px; font-size:0.75rem; color:var(--muted); background:#f6efe2; border:1px solid var(--border); border-radius:999px; padding:2px 9px; white-space:nowrap; font-family:'Helvetica Neue',Arial,sans-serif; }
+.added-date svg { width:12px; height:12px; }
+.source-row { display:flex; justify-content:space-between; align-items:center; gap:6px 12px; flex-wrap:wrap; }
+#date-status { display:none; font-family:'Helvetica Neue',Arial,sans-serif; font-size:0.85rem; color:var(--muted); background:var(--surface); border:1px solid var(--border); border-left:3px solid var(--accent); border-radius:6px; padding:8px 12px; margin-bottom:14px; }
+#date-status.on { display:flex; justify-content:space-between; gap:10px; align-items:center; }
+#date-status button { background:none; border:none; color:var(--accent); text-decoration:underline; cursor:pointer; font-size:0.82rem; padding:0; }
+#date-status .dsec { font-size:0.78rem; }
+@media print { .added-date { border:none; background:none; padding:0; } #date-status { display:none !important; } }
+/* Card: buttons on their own row under the title */
+.recipe .recipe-header-row { display:block; }
+.recipe .recipe-header-row h3 { margin-bottom:8px; }
+.recipe .recipe-btns { flex-wrap:wrap; justify-content:flex-start; gap:6px; margin:0 0 10px; padding-bottom:10px; border-bottom:1px dashed var(--border); }
+.recipe .recipe-btns .copy-btn { margin-left:auto; }
+/* Sidebar groups */
+.nav-group { border-bottom: 1px solid #5a3e28; padding: 8px 12px 10px; }
+.nav-group-hd { font-size: 0.66rem; letter-spacing: 0.08em; text-transform: uppercase; color: #9a7a58; margin-bottom: 6px; display:block; }
+#filter-row { display: flex !important; gap: 6px; border-bottom: none !important; width:100%; }
+#filter-row > button, #filter-row #fav-toggle, #filter-row #notmade-toggle {
+  flex: 1 1 0; min-width: 0; width:auto; display:flex; align-items:center; justify-content:center; gap:5px;
+  padding: 5px 6px; font-size: 0.76rem; white-space: nowrap; color: var(--nav-text);
+  background: #4e3522; border: 1px solid #6b4a2e !important; border-radius: 999px; cursor: pointer; font-family: inherit; font-weight: normal;
+}
+#filter-row #fav-toggle:hover, #filter-row #notmade-toggle:hover, #date-toggle:hover { border-color: var(--nav-hover) !important; background:#4e3522; }
+#filter-row #fav-toggle.active { background: var(--fav); color:#1a0e00; border-color: var(--fav) !important; font-weight:bold; }
+#filter-row #notmade-toggle.active { background: #f5e9d5; color:#3b2a1a; border-color:#f5e9d5 !important; font-weight:bold; }
+#date-toggle svg { width: 12px; height: 12px; flex-shrink:0; color:#a8906e; }
+#date-toggle .dt-val { margin:0; color:inherit; font-size:inherit; overflow:hidden; text-overflow:ellipsis; }
+#date-toggle .dt-caret { font-size: 0.6rem; color:#a8906e; }
+#date-toggle.open { border-color: var(--nav-hover) !important; }
+#date-toggle.active { background: var(--nav-hover); color:#1a0e00; border-color: var(--nav-hover) !important; font-weight:bold; }
+#date-toggle.active svg, #date-toggle.active .dt-caret { color:#1a0e00; }
+#date-filter { border-bottom: none; }
+#date-filter #date-panel { display:none; margin-top:8px; padding:10px; background:#33241a; border:1px solid #5a3e28; border-radius:6px; }
+#date-filter.open #date-panel { display:block; }
+#tools-row { display:flex; gap:6px; padding:8px 12px; }
+#tools-row > button { flex:1 1 0; min-width:0; width:auto; border:none !important; border-radius:6px; padding:6px 8px; font-size:0.78rem; gap:6px; white-space:nowrap; background:none; }
+#tools-row > button:hover { background:#4e3522; }
+#tools-row #alt-toggle .sw { margin-left:auto; width:26px; height:14px; border-radius:7px; background:#6b4a2e; position:relative; flex-shrink:0; transition:background .15s; }
+#tools-row #alt-toggle .sw::after { content:''; position:absolute; top:2px; left:2px; width:10px; height:10px; border-radius:50%; background:#c9a77a; transition:left .15s; }
+#tools-row #alt-toggle.active { background:#1a3a5c; color:#8ecfff; font-weight:bold; }
+#tools-row #alt-toggle.active .sw { background:#3d8bd0; }
+#tools-row #alt-toggle.active .sw::after { left:14px; background:#fff; }
+#tree-hd { display:flex; align-items:center; justify-content:space-between; padding:8px 8px 0 14px; }
+#tree-hd .nav-group-hd { margin:0; }
+#tree-hd #expand-collapse-row { display:flex; width:auto; border:none; gap:2px; }
+#tree-hd #expand-all, #tree-hd #collapse-all { flex:none; padding:2px 6px; border:none; border-radius:4px; }
+#tree-hd #expand-all .expand-icon, #tree-hd #collapse-all .collapse-icon { font-size:1rem; }
+.dp-presets { display:flex; flex-wrap:wrap; gap:6px; margin:0 0 10px; }
+.dp-presets button { background:#4e3522; color:var(--nav-text); border:1px solid #6b4a2e; border-radius:999px; font-size:0.72rem; padding:3px 10px; cursor:pointer; font-family:inherit; }
+.dp-presets button:hover { border-color:var(--nav-hover); }
+.dp-presets button.on { background:var(--nav-hover); color:#1a0e00; border-color:var(--nav-hover); font-weight:bold; }
+.dp-range { display:grid; grid-template-columns:auto 1fr; gap:6px 8px; align-items:center; font-size:0.72rem; color:#c9a77a; }
+.dp-range input { background:#fdfaf5; color:#2c1a0e; border:1px solid #6b4a2e; border-radius:4px; padding:3px 6px; font-size:0.78rem; font-family:inherit; min-width:0; }
+.dp-foot { display:flex; justify-content:space-between; align-items:center; margin-top:10px; font-size:0.72rem; color:#c9a77a; }
+.dp-foot button { background:none; border:none; color:var(--nav-hover); text-decoration:underline; cursor:pointer; font-size:0.72rem; padding:0; font-family:inherit; }
+.date-hidden { display:none !important; }

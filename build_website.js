@@ -13,6 +13,13 @@ const SHOP_CFG = JSON.parse(fs.readFileSync(path.join(__dirname, 'shopping_confi
 const SHOP_JS = fs.readFileSync(path.join(__dirname, 'shopping_list_client.js'), 'utf8')
   .split('__SHOP_URL__').join(SHOP_CFG.url || '').split('__SHOP_KEY__').join(SHOP_CFG.key || '');
 const MADE_CSS = fs.readFileSync(path.join(__dirname, 'made_it.css'), 'utf8');
+const DATE_CSS = fs.readFileSync(path.join(__dirname, 'date_filter.css'), 'utf8');
+const DATE_JS = fs.readFileSync(path.join(__dirname, 'date_filter_client.js'), 'utf8');
+const ADDED_FALLBACK = '2026-09-25';   // recipes with no "added" date (see CLAUDE.md)
+const CAL_SVG = '<svg viewBox="0 0 16 16" aria-hidden="true"><rect x="2" y="3" width="12" height="11" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M2 6.5h12M5.5 1.5v3M10.5 1.5v3" stroke="currentColor" stroke-width="1.3" fill="none" stroke-linecap="round"/></svg>';
+const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+function addedDate(recipe) { return /^\d{4}-\d\d-\d\d$/.test(recipe.added || '') ? recipe.added : ADDED_FALLBACK; }
+function prettyDate(iso) { const [y, m, d] = iso.split('-'); return MONTHS[+m - 1] + ' ' + (+d) + ', ' + y; }
 const MADE_JS = fs.readFileSync(path.join(__dirname, 'made_it_client.js'), 'utf8')
   .split('__MADE_FORM_ID__').join(MADE_CFG.formId).split('__MADE_ENTRY__').join(MADE_CFG.entryField).split('__MADE_PASSWORD__').join(MADE_CFG.password);
 
@@ -700,12 +707,14 @@ function renderRecipe(recipe, idPrefix) {
   const hasAlt = !!recipe.highAltitude;
 
   const servings = recipe.servings ? `<p class="meta">${esc(recipe.servings)}</p>` : '';
-  const source = recipe.source
-    ? `<p class="source">Source: ${
+  const added = addedDate(recipe);
+  const addedTag = `<span class="added-date" title="Date this recipe was added to the cookbook">${CAL_SVG}Added ${prettyDate(added)}</span>`;
+  const source = `<p class="source source-row"><span>${recipe.source
+    ? `Source: ${
         recipe.source.startsWith('http')
           ? `<a href="${esc(recipe.source)}" target="_blank" rel="noopener">${esc(recipe.source)}</a>`
           : esc(recipe.source)
-      }</p>` : '';
+      }` : ''}</span>${addedTag}</p>`;
 
   let commentsHtml, groupsHtml, stepsHtml;
 
@@ -740,7 +749,7 @@ function renderRecipe(recipe, idPrefix) {
 
   const madeAttr = recipe.made ? ' data-made="1"' : '';
   const madeBtn = `<button class="made-btn${recipe.made ? ' made' : ''}" type="button" data-id="${esc(id)}" data-title="${esc(recipe.title)}" title="${recipe.made ? 'Made it' : 'Not yet made (author only)'}" aria-label="${recipe.made ? 'Made' : 'Not yet made'}: ${esc(recipe.title)}"><svg class="ic-not" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="ic-made" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#2e7d32"/><path d="M4.6 8.4l2.3 2.3 4.5-4.9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="made-label">${recipe.made ? 'Made' : 'Not made'}</span></button>`;
-  return `<article class="${articleClass}" id="${esc(id)}"${isFav}${madeAttr} data-title="${esc(recipe.title)}">
+  return `<article class="${articleClass}" id="${esc(id)}"${isFav}${madeAttr} data-added="${added}" data-title="${esc(recipe.title)}">
   <div class="recipe-header-row">
     <h3>${esc(title)}</h3>
     <div class="recipe-btns">
@@ -981,7 +990,7 @@ function navRecipeItem(domId, recipe, pageFile) {
   const starHtml = recipe.favorite
     ? `<span class="nav-star">★</span>`
     : `<span class="nav-star"></span>`;
-  return `<li class="nav-recipe"${recipe.made ? ' data-made="1"' : ''}><a class="nav-recipe-link" data-recipe-title="${esc(recipe.title)}" href="${esc(pageFile)}#${esc(domId)}">${starHtml}<span class="nav-title">${esc(recipe.title)}</span></a></li>\n`;
+  return `<li class="nav-recipe"${recipe.made ? ' data-made="1"' : ''} data-added="${addedDate(recipe)}"><a class="nav-recipe-link" data-recipe-title="${esc(recipe.title)}" href="${esc(pageFile)}#${esc(domId)}">${starHtml}<span class="nav-title">${esc(recipe.title)}</span></a></li>\n`;
 }
 
 // ── Single-section content HTML ────────────────────────────────────────────
@@ -1655,6 +1664,7 @@ function buildPage(section, navHtml, contentHtml, cookbookData) {
 ${INGREDIENT_CSS}
 ${MADE_CSS}
 ${SHOP_CSS}
+${DATE_CSS}
 </style>
 </head>
 <body>
@@ -1684,16 +1694,39 @@ ${SHOP_CSS}
     </div>
   </div>
   <div id="search-results"></div>
-  <div id="filter-row">
-    <button id="fav-toggle"><span class="star">★</span> Favorites only</button>
-    <button id="notmade-toggle"><span class="nm-icon">&#9675;</span> Not yet made</button>
+  <div class="nav-group" id="filter-group">
+    <div class="nav-group-hd">Show only</div>
+    <div id="filter-row">
+      <button id="fav-toggle"><span class="star">★</span> Favorites</button>
+      <button id="notmade-toggle"><span class="nm-icon">&#9675;</span> Not made</button>
+      <button id="date-toggle" type="button" aria-expanded="false">${CAL_SVG}<span class="dt-val">Added</span><span class="dt-caret">&#9662;</span></button>
+    </div>
+    <div id="date-filter">
+    <div id="date-panel">
+      <div class="dp-presets">
+        <button type="button" data-days="7">Last 7 days</button>
+        <button type="button" data-days="30">Last 30 days</button>
+        <button type="button" data-days="90">Last 90 days</button>
+        <button type="button" data-days="0" class="on">Any time</button>
+      </div>
+      <div class="dp-range">
+        <label for="date-from">From</label><input type="date" id="date-from">
+        <label for="date-to">To</label><input type="date" id="date-to">
+      </div>
+      <div class="dp-foot"><span id="date-count"></span><button type="button" id="date-clear">Clear</button></div>
+    </div>
+    </div>
   </div>
-  <button id="shop-list-toggle" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.6 12.2a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 7H6"/></svg>Shopping list<span class="shop-badge"></span></button>
+  <div class="nav-group" id="tools-row">
+    <button id="shop-list-toggle" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.6 12.2a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 7H6"/></svg>Shopping list<span class="shop-badge"></span></button>
+    <button id="alt-toggle"><span class="alt-icon">&#9650;</span> High altitude<span class="sw" aria-hidden="true"></span></button>
+  </div>
   <div id="made-pending"><span class="made-pend-n"></span><button type="button" class="made-copy">Copy list</button></div>
-  <button id="alt-toggle"><span class="alt-icon">&#9650;</span> High Altitude</button>
-  <div id="expand-collapse-row">
-    <button id="expand-all"><span class="expand-icon">⊞</span> Expand all</button>
-    <button id="collapse-all"><span class="collapse-icon">⊟</span> Collapse all</button>
+  <div id="tree-hd"><span class="nav-group-hd">Recipes</span>
+    <span id="expand-collapse-row">
+      <button id="expand-all" title="Expand all" aria-label="Expand all"><span class="expand-icon">⊞</span></button>
+      <button id="collapse-all" title="Collapse all" aria-label="Collapse all"><span class="collapse-icon">⊟</span></button>
+    </span>
   </div>
   <div id="nav-tree">
     ${navHtml}
@@ -1702,6 +1735,7 @@ ${SHOP_CSS}
 
 <div id="main">
   <h1 id="cookbook-title">Muhlheim Family Cookbook</h1>
+  <div id="date-status" aria-live="polite"></div>
   ${contentHtml}
 </div>
 
@@ -2259,11 +2293,12 @@ ${INGREDIENT_JS}
 
 ${MADE_JS}
 ${SHOP_JS}
+${DATE_JS}
   // ── Apply filters (favorites — current page only) ─────────────────────
   function applyFilters() {
-    var filtering = favOnly || notMade;
+    var filtering = favOnly || notMade || !!(dateFrom || dateTo);
     allRecipes.forEach(function (r) {
-      var favMatch = (!favOnly || r.dataset.fav === '1') && (!notMade || r.dataset.made !== '1');
+      var favMatch = (!favOnly || r.dataset.fav === '1') && (!notMade || r.dataset.made !== '1') && dateMatch(r);
       r.classList.toggle('hidden', !favMatch);
     });
     document.querySelectorAll('.cluster-group').forEach(function (g) {
@@ -2291,7 +2326,7 @@ ${SHOP_JS}
       // For other-page recipes, read the star span stamped at build time.
       var starEl = link ? link.querySelector('.nav-star') : null;
       var isFavInNav = starEl ? starEl.textContent.trim() === '★' : false;
-      var show = (!favOnly || favTitles.has(title) || isFavInNav) && (!notMade || li.dataset.made !== '1');
+      var show = (!favOnly || favTitles.has(title) || isFavInNav) && (!notMade || li.dataset.made !== '1') && dateMatch(li);
       li.classList.toggle('nav-hidden', !show);
     });
     document.querySelectorAll('.nav-cluster').forEach(function (li) {
@@ -2299,6 +2334,10 @@ ${SHOP_JS}
       li.classList.toggle('nav-hidden', !anyVisible && filtering);
     });
     document.querySelectorAll('.nav-sub').forEach(function (li) {
+      var anyVisible = li.querySelectorAll('.nav-recipe:not(.nav-hidden)').length > 0;
+      li.classList.toggle('nav-hidden', !anyVisible && filtering);
+    });
+    document.querySelectorAll('.nav-section').forEach(function (li) {
       var anyVisible = li.querySelectorAll('.nav-recipe:not(.nav-hidden)').length > 0;
       li.classList.toggle('nav-hidden', !anyVisible && filtering);
     });
