@@ -8929,6 +8929,58 @@ module.exports = {
           "title": "Fish",
           "recipes": [
             {
+              "title": "Warm Rice Salad With Salmon and Arugula",
+              "added": "2026-10-29",
+              "servings": "Serves 4   |   Total: 30 minutes",
+              "source": "New York Times, by Ashley Lonsdale",
+              "comments": [
+                "Serve warm, at room temperature or chilled."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Rice",
+                  "ingredients": [
+                    "1 1/2 cups jasmine rice",
+                    "2 1/4 cups water",
+                    "2 tablespoons extra-virgin olive oil",
+                    "1 teaspoon kosher salt (such as Diamond Crystal)"
+                  ]
+                },
+                {
+                  "label": "Salmon",
+                  "ingredients": [
+                    "1 (3/4-pound) salmon fillet, skin removed",
+                    "1 tablespoon Dijon mustard",
+                    "Kosher salt and freshly ground black pepper"
+                  ]
+                },
+                {
+                  "label": "Dressing",
+                  "ingredients": [
+                    "1 tablespoon Dijon mustard",
+                    "1/4 cup chopped dill",
+                    "3 tablespoons fresh lemon juice",
+                    "2 tablespoons capers, chopped",
+                    "1 small shallot, minced",
+                    "2 tablespoons extra-virgin olive oil"
+                  ]
+                },
+                {
+                  "label": "To finish",
+                  "ingredients": [
+                    "5 oz baby arugula"
+                  ]
+                }
+              ],
+              "steps": [
+                "Rinse the rice until the water runs clear. In a wide, lidded pot or Dutch oven, bring the rice, water and 2 tablespoons olive oil to a boil. Season with 1 teaspoon salt, cover and simmer over medium-low for 5 minutes.",
+                "Meanwhile, brush the salmon with 1 tablespoon mustard and season with salt and pepper on all sides.",
+                "Gently lay the salmon on top of the rice. Cover and simmer on low heat for another 10 minutes, until all the liquid is absorbed and the salmon is just cooked through. Remove from the heat and let steam for 5 more minutes without lifting the lid.",
+                "While the salmon and rice cook, make the dressing: in a small bowl, whisk the remaining 1 tablespoon mustard with the dill, lemon juice, capers and shallot. Stream in the remaining 2 tablespoons olive oil while whisking continuously. Taste and adjust.",
+                "Fluff the rice with a fork, break the salmon into bite-size pieces, drizzle in the dressing and gently fold in the arugula, which will wilt slightly from the heat. Taste, adjust seasoning and serve warm or at room temperature."
+              ]
+            },
+            {
               "title": "Dry-Brined Salmon",
               "added": "2026-09-25",
               "favorite": true,
@@ -16020,6 +16072,31 @@ module.exports = {
           "title": "Stovetop",
           "recipes": [
             {
+              "title": "Butter-Poached Carrots",
+              "added": "2026-10-29",
+              "servings": "Serves 2   |   Prep: 5 minutes   |   Cook: 5 minutes   |   Total: 10 minutes",
+              "source": "New York Times, recipe from Bee Wilson (by way of Raymond Blanc), adapted by Eric Kim",
+              "comments": [
+                "The butter and water emulsify into a glossy sauce while the carrots cook, so they keep their color and sweet flavor.",
+                "Easy to scale up; can be held in the pot until just before serving."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Carrots",
+                  "ingredients": [
+                    "9 oz carrots, peeled, trimmed and cut into 1/2-inch coins (2 to 4 medium)",
+                    "1 tablespoon unsalted butter",
+                    "1/4 cup water",
+                    "Salt"
+                  ]
+                }
+              ],
+              "steps": [
+                "In a small saucepan with a lid, combine the carrots, butter, 1/4 cup water and a fat pinch of salt.",
+                "Cover and place over high heat. Simmer vigorously until the carrots are tender and the water and butter have reduced and turned glossy, 5 to 8 minutes. Add a tablespoon or two of water if the pan begins to dry out. Serve warm."
+              ]
+            },
+            {
               "title": "Sautéed Mushrooms",
               "added": "2026-09-25",
               "made": true,
@@ -17225,6 +17302,72 @@ module.exports = {
     {
       "title": "Rice",
       "recipes": [
+        {
+          "title": "Broccoli Rice With Eggs",
+          "added": "2026-10-29",
+          "servings": "Serves 4   |   Total: 40 minutes",
+          "source": "New York Times, by Hetty Lui McKinnon",
+          "comments": [
+            "Other types of rice can be used, but cook times will vary.",
+            "The cook time gives crisp-tender broccoli; for a softer bite, add it to the rice 2 or 3 minutes earlier.",
+            "Leftover broccoli rice makes good fried rice."
+          ],
+          "ingredientGroups": [
+            {
+              "label": "Rice",
+              "ingredients": [
+                "1 1/2 cups white rice, preferably short-grain",
+                "2 1/4 cups water",
+                "2 tablespoons vegetable oil",
+                "2 teaspoons salt"
+              ]
+            },
+            {
+              "label": "Broccoli",
+              "ingredients": [
+                "2 small heads broccoli (1 pound)",
+                "1/2 teaspoon salt"
+              ]
+            },
+            {
+              "label": "Fried eggs",
+              "ingredients": [
+                "Vegetable oil, for frying",
+                "4 eggs",
+                "Salt"
+              ]
+            },
+            {
+              "label": "Soy-oil drizzle",
+              "ingredients": [
+                "2 tablespoons vegetable oil",
+                "1 tablespoon soy sauce"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "lead": "Cook the rice:",
+              "bullets": [
+                "Place the rice in a medium Dutch oven or similar heavy pot. Wash the rice, swirling it with your fingers, then carefully pour off the starchy water. Repeat two more times, until the water runs clear.",
+                "Add the water, 2 tablespoons oil and 2 teaspoons salt; stir to combine.",
+                "Bring to a rolling boil over medium-high heat, then cover, reduce heat to low and cook for 14 minutes."
+              ]
+            },
+            "Meanwhile, separate the broccoli heads from the stems and slice or peel the woody exterior off the stems. Finely chop the florets and stems (or pulse a few times in a food processor, then chop any larger pieces by hand to avoid overprocessing).",
+            "After 14 minutes, add the broccoli on top of the rice, sprinkle with 1/2 teaspoon salt and cover again. Cook until the rice is tender and the broccoli is bright green and softened, 8 to 10 minutes.",
+            {
+              "lead": "While the rice finishes, fry the eggs:",
+              "bullets": [
+                "Heat a wok or large well-seasoned cast-iron or nonstick skillet over medium-high. Add a drizzle of oil and crack in as many eggs as fit comfortably; work in batches if needed.",
+                "Reduce heat to medium and fry until the edges are frizzled, the whites are set and the yolks are cooked to your liking. Season with a pinch of salt. Remove and repeat with the remaining eggs. Set aside."
+              ]
+            },
+            "In a small bowl, combine the remaining 2 tablespoons oil and the soy sauce. (It won't emulsify, and that is OK.)",
+            "When the rice and broccoli are ready, turn off the heat and stir to combine. Taste and season with more salt if needed.",
+            "Divide among bowls and top each with a fried egg. Give the soy-oil drizzle a quick stir and drizzle a little over each egg. Serve immediately."
+          ]
+        },
         {
           "title": "Rice with Dill",
           "added": "2026-09-27",

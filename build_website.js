@@ -599,6 +599,9 @@ const CLUSTER_MAP = {
   "Chickpea Salad with Fresh Herbs and Scallions": "General",
   "Tuna Surprise (Bucatini alla Tuna Surprise)": "Italian",
   "Lebanese Green Beans with Walnuts (Loubieh B'Joz)": "Middle Eastern/Persian",
+  "Broccoli Rice With Eggs": "Chinese",
+  "Butter-Poached Carrots": "French/Continental",
+  "Warm Rice Salad With Salmon and Arugula": "General",
 };
 
 // ── Helpers ────────────────────────────────────────────────────────────────
