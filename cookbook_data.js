@@ -3267,6 +3267,85 @@ module.exports = {
           "title": "Chopped & Composed Salads",
           "recipes": [
             {
+              "title": "Pea and Burrata Salad",
+              "added": "2026-10-30",
+              "servings": "Serves 2   |   Total: 30 min",
+              "source": "Food Network / Ree Drummond",
+              "comments": [
+                "Burrata is a fresh Italian mozzarella with a soft, creamy center."
+              ],
+              "ingredientGroups": [
+                {
+                  "label": "Peas",
+                  "ingredients": [
+                    "Kosher salt, for the blanching water",
+                    "10 oz fresh peas"
+                  ]
+                },
+                {
+                  "label": "Toasted bread",
+                  "ingredients": [
+                    "1 small loaf ciabatta, sliced",
+                    "2 tablespoons olive oil",
+                    "Kosher salt and freshly cracked black pepper"
+                  ]
+                },
+                {
+                  "label": "Dressing",
+                  "ingredients": [
+                    "3 tablespoons olive oil",
+                    "1 tablespoon honey",
+                    "2 cloves garlic, grated",
+                    "2 tablespoons minced fresh chives, divided",
+                    "Juice of 1 lemon (zest the lemon first and save the zest for serving)",
+                    "Kosher salt and freshly cracked black pepper"
+                  ]
+                },
+                {
+                  "label": "Pea mash",
+                  "ingredients": [
+                    "1/4 cup torn fresh mint leaves, divided"
+                  ]
+                },
+                {
+                  "label": "To serve",
+                  "ingredients": [
+                    "6 oz burrata",
+                    "1 tablespoon olive oil",
+                    "Freshly cracked black pepper",
+                    "Flaky sea salt",
+                    "Zest of 1 lemon (reserved from above)"
+                  ]
+                }
+              ],
+              "steps": [
+                "Preheat the oven to 425°F.",
+                {
+                  "lead": "Blanch the peas and toast the bread:",
+                  "bullets": [
+                    "Bring a pot of salted water to a boil. Blanch the peas until tender, 2 to 3 minutes, then drain.",
+                    "Meanwhile, spread the ciabatta on a sheet pan, drizzle with 2 tablespoons olive oil and sprinkle with a good pinch of salt and pepper. Toast in the oven until lightly golden, about 5 minutes. Set aside."
+                  ]
+                },
+                "Make the dressing: in a bowl, combine 3 tablespoons olive oil, the honey, garlic, lemon juice and the chives (reserve 1 teaspoon chives for garnish). Add a pinch of salt and pepper and mix.",
+                {
+                  "lead": "Make the pea mash:",
+                  "bullets": [
+                    "Add the peas to the bowl and mash with the back of a fork until most are broken up.",
+                    "Stir in the mint (reserve a little for garnish) and about a third of the dressing, enough to lightly coat the peas."
+                  ]
+                },
+                {
+                  "lead": "Assemble:",
+                  "bullets": [
+                    "Spread the peas on a large platter as a base. Place the burrata in the middle and tear it open to reveal the creamy center.",
+                    "Drizzle with the remaining 1 tablespoon olive oil, then sprinkle with black pepper, flaky salt and a little more dressing if desired.",
+                    "Sprinkle with the lemon zest and the reserved chives and mint. Serve with the warm toasted bread."
+                  ]
+                }
+              ]
+            },
+            {
               "title": "Broccoli Salad",
               "added": "2026-09-27",
               "servings": "Serves 4",
@@ -13716,6 +13795,92 @@ module.exports = {
             {
               "title": "Cream, Butter & Cheese",
               "recipes": [
+                {
+                  "title": "Garlic Butter Pasta with Crispy Prosciutto",
+                  "added": "2026-10-30",
+                  "servings": "Serves 4–8   |   Total: 20 min",
+                  "source": "State of Dinner (Erin Gierhart)",
+                  "comments": [
+                    "Serves about 4 as a main or 8 as a side. For 2, halve everything.",
+                    "The water amount matters: 8 cups for 1 pound of pasta concentrates the starch for the sauce. Scoop out the pasta water right before draining, when it is starchiest.",
+                    "Bucatini can be swapped for spaghetti, linguine, angel hair or gemelli.",
+                    "If you don't have fresh oregano, use 1 teaspoon dried oregano or Italian seasoning, or fresh basil.",
+                    "If slicing the garlic instead of mincing it, add 2 more cloves.",
+                    "To make it a one-pot meal: sauté mushrooms with the garlic, or add peas or spinach with the pasta and cook a few minutes before adding the Parmesan.",
+                    "Leftovers keep 3 to 5 days, airtight. Reheat with a splash of water."
+                  ],
+                  "ingredientGroups": [
+                    {
+                      "label": "Crispy prosciutto",
+                      "ingredients": [
+                        "4 oz prosciutto"
+                      ]
+                    },
+                    {
+                      "label": "Pasta",
+                      "ingredients": [
+                        "8 cups water",
+                        "1 teaspoon kosher salt",
+                        "1 pound bucatini or spaghetti"
+                      ]
+                    },
+                    {
+                      "label": "Garlic butter sauce",
+                      "ingredients": [
+                        "1/2 cup butter",
+                        "6 cloves garlic, minced",
+                        "1/4 teaspoon Aleppo pepper or red pepper flakes, or to taste",
+                        "1 tablespoon chopped fresh oregano (or 1 teaspoon dried)"
+                      ]
+                    },
+                    {
+                      "label": "Finishing",
+                      "ingredients": [
+                        "1 cup finely grated Parmesan cheese"
+                      ]
+                    },
+                    {
+                      "label": "To serve (optional)",
+                      "ingredients": [
+                        "Chopped fresh parsley",
+                        "Additional grated Parmesan cheese"
+                      ]
+                    }
+                  ],
+                  "steps": [
+                    {
+                      "lead": "Crisp the prosciutto:",
+                      "bullets": [
+                        "Preheat the oven to 400°F and line a large baking sheet with parchment paper.",
+                        "Lay the prosciutto on the sheet with space between the strips. Bake 8 to 12 minutes, until the edges are brown.",
+                        "Cool completely, then break into pieces."
+                      ]
+                    },
+                    {
+                      "lead": "Cook the pasta while the prosciutto bakes:",
+                      "bullets": [
+                        "Bring the 8 cups of water to a boil in a large pan. Add the salt and pasta and stir well. Cook to al dente according to the package, stirring often so it doesn't stick.",
+                        "Right before draining, scoop out 1 1/2 cups of pasta water. Drain the pasta; do not rinse."
+                      ]
+                    },
+                    {
+                      "lead": "Make the sauce:",
+                      "bullets": [
+                        "Melt the butter in a large skillet or Dutch oven over medium heat. Add the garlic and pepper flakes and cook 60 seconds.",
+                        "Add the oregano and cook until the garlic browns. Watch closely; burnt garlic turns bitter.",
+                        "Add 1 cup of the pasta water (it will bubble). Stir and cook about 1 minute."
+                      ]
+                    },
+                    {
+                      "lead": "Toss and finish:",
+                      "bullets": [
+                        "Add half the pasta and toss to coat, then add the rest and toss. If it seems dry, add the remaining 1/2 cup pasta water.",
+                        "Sprinkle the Parmesan over the pasta and toss quickly so it spreads through the sauce before it clumps.",
+                        "Just before serving, toss in the crispy prosciutto (or scatter it on each plate). Garnish with parsley and more Parmesan if you like."
+                      ]
+                    }
+                  ]
+                },
                 {
                   "title": "Creamy Cajun Chicken Pasta",
                   "added": "2026-10-06",

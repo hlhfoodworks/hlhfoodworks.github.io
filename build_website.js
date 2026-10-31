@@ -134,6 +134,7 @@ const CLUSTER_MAP = {
   'Quick Ragu with Ricotta and Lemon':                  'Italian',
   'Sheet-Pan Gnocchi with Asparagus, Leeks and Peas':   'Italian',
   'Spaghetti Carbonara':                                'Italian',
+  'Garlic Butter Pasta with Crispy Prosciutto':         'Italian',
   'Spaghetti with Burrata and Garlic-Chili Oil':        'Italian',
   'Old-Fashioned Spaghetti':                            'Italian',
   'Spaghetti with Fresh Tomato and Basil Sauce':        'Italian',
@@ -427,6 +428,7 @@ const CLUSTER_MAP = {
   "Barbara Glabman's Cheese Ball":                       'General',
   // Appetizers — Italian
   'Burrata Bruschetta Toasts':                           'Italian',
+  'Pea and Burrata Salad':                               'Italian',
   'Marinated Anchovies and Prawns':                      'Italian',
   'Shrimp Dip':                                          'General',
   'Blooming Onions':                                     'General',
